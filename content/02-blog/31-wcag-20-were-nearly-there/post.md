@@ -1,0 +1,20 @@
+Title: WCAG 2.0: we're nearly there
+----
+Date: 2008-11-04 17:05:11
+----
+Author: 
+----
+Text:
+
+<p>The second version of the <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG)</a> has been in development for a while now and is hotly anticipated. With WCAG 1.0 published in 1999 and applicable to a mostly static web and W3C technologies only, WCAG 2.0 will be a welcome addition to any web developers arsenal as it caters much more to today&#39;s dynamic, <abbr title="Asynchronous JavaScript and XML">AJAX</abbr> orientated web.</p>
+
+<p>Yesterday saw the guidelines move into <a href="http://www.w3.org/WAI/intro/w3c-process">Proposed Recommendation</a>. This means that the guidelines have been written, reviewed and implemented in real websites and are ready to be used. The next, and final stage is for the the guidelines to become a W3C Recommendation. And the good news? This could happen as early as December.</p>
+
+<p>Although not officially finalised quite yet there is no reason why you can&#39;t start using WCAG 2.0 now. I&#39;ve actually been using it for a while and find it much easier to use than WCAG 1.0. It provides more techniques and advisory techniques, is more testable than WCAG 1.0 and has a wealth of supporting documentation and practical tools to help you implement the guidelines.</p>
+
+<p>To get started check out the <a href="http://www.w3.org/WAI/intro/wcag20.php">WCAG 2.0 overview</a> section on the Web Accessibility Initiative (WAI) website. This will give you an idea of what resources there are for you to use. A favorite of mine is the <a href="http://www.w3.org/WAI/WCAG20/quickref/">Quick reference</a>. This is a customisable document that allows you to select what guidelines you want to review based on technology type (<abbr title="&quot;Cascading">CSS</abbr>, <abbr title="Synchronized Multimedia Integration Language">SMIL</abbr>, Scripting, <abbr title="Accessible Rich Internet Applications">ARIA</abbr>), levels of compliance (Level A, Level AA and Level AAA), techniques and advisory techniques. It&#39;s the quick way in for any busy web developer.</p>
+
+<p>There are also resources published and in development for those who have been working with WCAG 1.0 and want to <a href="http://www.w3.org/WAI/intro/wcag20.php#trans">transition websites to WCAG 2.0</a>.</p>
+
+So why not try it out and see what you think. Enjoy!
+

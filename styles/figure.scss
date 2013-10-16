@@ -1,0 +1,63 @@
+// Figure
+// -------------------------------
+.content figure {
+	padding:0 0 16px;
+	// Elements
+	img, svg,
+	video, object,
+	iframe {
+		display:block;
+		margin:0 0 16px;
+		max-width:100%;
+		width:100%;
+		border:none;
+		}
+	// Caption
+	figcaption {
+		display:block;
+		clear:both;
+		}
+	// Float
+	&.float {
+		padding-top:5px;
+		max-width:50%;
+		&.left {
+			float:left;
+			margin-right:16px;
+			figcaption {
+				text-align:right;
+				}
+			}
+		&.right {
+			float:right;
+			margin-left:16px;
+			figcaption {
+				text-align:left;
+				}
+			}
+		}
+	// Duplet
+	&.duplet {
+		white-space:nowrap;
+		img, svg,
+		video, object,
+		iframe {
+			// 48.8*2 + 2.4
+			display:inline-block;
+			margin-right:2.4%;
+			max-width:48.8%;
+			}
+		}
+	// Triplet
+	&.triplet {
+		white-space:nowrap;
+		img, svg,
+		video, object,
+		iframe {
+			// 31.8*3 + 2.3*2
+			display:inline-block;
+			margin-right:2.3%;
+			max-width:31.8%;
+			}
+		}
+	}
