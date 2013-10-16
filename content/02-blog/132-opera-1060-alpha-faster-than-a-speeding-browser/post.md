@@ -1,0 +1,17 @@
+Title: Opera 10.60 alpha: faster than a speeding browser
+----
+Date: 2010-05-31 11:00:00
+----
+Author: 
+----
+Text:
+
+<p>At Opera, the wheels of progress never stop turning — this morning we released an alpha version of Opera 10.60 for desktop. You can <a href="http://www.opera.com/browser/next/">download and try it for Mac, Windows and Linux</a>.</p>
+
+<p>The main improvement this time around is speed — a lot of work has gone into making our rendering even faster, and we&#39;ve had great results, squeezing even more performance out of our Vega graphics library and Carakan JavaScript engine. The 10.60 alpha version already performs 76% better on the <a href="http://service.futuremark.com/peacekeeper/index.action">Peacekeeper Browser Benchmark</a> than 10.50, and 265% better than Opera 10.10!</p>
+
+<img src="http://forum-test.oslo.osa/kirby/content/blog/132-opera-1060-alpha-faster-than-a-speeding-browser/peacekeeper.png" alt="Peacekeeper benchmark results for Opera. Opera 10.60 alpha 7204, Opera 10.50 4082, Opera 10.10 1974" />
+
+<p>We also improved significantly on the <a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider.html">Sunspider JavaScript Benchmark</a>, with the test taking only 394.6<acronym title="milliseconds">ms</acronym> to complete in the Opera 10.60 alpha (compared to 429<acronym title="milliseconds">ms</acronym> in Opera 10.50).</p>
+
+<p>We will follow up soon with an Opera 10.60 beta, which will feature further speed refinements as well as some new standards support and other developer features. Watch this space!</p>

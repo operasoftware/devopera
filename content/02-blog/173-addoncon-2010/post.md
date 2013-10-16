@@ -1,0 +1,19 @@
+Title: Add-on-Con 2010
+----
+Date: 2010-12-07 23:54:52
+----
+Author: 
+----
+Text:
+
+<p>A quick heads-up to say that Opera is out in full force at this week&#39;s <a href="http://addoncon.com/">Add-on-Con event</a> in Mountain View, at the fantastic setting of the <a href="http://www.computerhistory.org/">Computer History Museum</a>.</p> 
+<h3>Pre-conference workshop (Wednesday, Dec 8th)</h3>
+<p><a href="http://twitter.com/miketaylr">Mike Taylor</a> and <a href="http://no.linkedin.com/in/gautamchandna">Gautam Chandna</a> will be doing a workshop on Opera extensions:</p>
+<ul>
+<li>9:05-10:05: Useful JavaScript techniques for building Add-ons</li>
+<li>10:10-11:05: The Future of Opera Addons</li>
+</ul>
+<h3>Main conference day (Thursday, Dec 9th)</h3>
+<p><a href="http://twitter.com/chaals">Chaals</a> will be representing Opera in the first panel session of the day &quot;What comes after the URL and how does it affect the current Ecosystem?&quot; (9:00-10:10) as well as the last one, titled &quot;The future of the browser&quot; (4:10-5:15).</p>
+<p>In the afternoon (2:30-3:15), <a href="http://twitter.com/miketaylr">Mike</a> and <a href="http://no.linkedin.com/in/arnsteinteigene">Arnstein</a> will give a developer talk titled &quot;Building Opera extensions with web standards&quot;.</p>
+<p>We&#39;ll be posting slides of the Add-on-Con talks later on - in the meantime, be sure to attend if you&#39;re in the Bay Area, or else, try following the event <a href="http://search.twitter.com/search?q=addoncon">on Twitter</a>.</p>

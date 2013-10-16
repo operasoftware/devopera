@@ -1,0 +1,61 @@
+Title: Hello Opera 10.60
+----
+Date: 2010-07-01 06:00:00
+----
+Author: 
+----
+Text:
+
+<p>We&#39;re very pleased to release <a href="http://www.opera.com/desktop/">Opera 10.60 for all platforms</a>. Linux users will notice that we&#39;re skipping 10.5x Final, as we want to get all platforms in step again.</p>
+
+<h3>Features</h3>
+
+<p>I don&#39;t know about you, but I like having some new things to play with! We&#39;ve got some speed, some HTML5 and some <a href="http://www.isgeolocationpartofhtml5.com/" target="_blank">&quot;HTML5&quot;</a> for you.</p>
+
+<h4>Speed</h4>
+
+<p><img src="http://forum-test.oslo.osa/kirby/content/blog/141-hello-opera-1060/opera10.60-peacekeeper3.png" alt="Peacekeeper benchmark comparison, showing Opera 10.60 in the lead: Opera 10.60 - 6844; Opera 10.50 - 4056; Opera 10.10 - 1924; Chrome 5.0.375.86 - 6173; Safari 5.0 - 4021; Firefox 3.6.6 - 2890. Tests carrried out on Windows Vista / Intel Core 2 Quad Q8200 2.33GHz 3GB" /></p>
+
+<p>When it was released back in March, Opera 10.50 was the fastest browser on the planet — now with Opera 10.60, we&#39;ve cranked the dials up to 11 and set the controls for the heart of the sun, increasing our JavaScript engine&#39;s performance to make it up to 50% faster than the previous version.</p>
+
+
+<h4>Geolocation</h4>
+<p>Allowing sites access to your location can enhance their usability and utility, and this feature comes to Opera 10.60. As an example, we&#39;ve created this <a href="http://www.opera.com/livemap/">live download map of Opera 10.60</a>. For a closer look at this technology see Shwetank&#39;s article <a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a>.</p>
+
+
+<img src="http://forum-test.oslo.osa/kirby/content/blog/141-hello-opera-1060/geolocationbar.png" alt="Opera 10.60&#39;s Geolocation bar" />
+
+<p>A note on privacy: when a site requests Geolocation information, the browser will alert you and ask for permission. You can grant it or deny it, and optionally have the browser remember your choice for that site on subsequent visits.</p>
+
+
+<p>Geolocation works best on desktop computers using WiFi. This is because the location services provider (Google, in the case of Opera 10.60) compares the information about WiFi networks near you with its central database of WiFi hotspots and locations to find out where you are. Opera 10.60 has an option to periodically send such information to our service provider; <strong>this is <em>off</em> by default in Opera 10.60</strong> in order to protect your privacy and conserve your bandwidth. If you wish to enable it and help improve the database, turn on the <cite>Collect location data in background</cite> option in <a href="opera:config#Geolocation"><code>opera:config#Geolocation</code></a>.</p>
+
+<p>You might also be interested in <a href="http://datadriven.com.au/2010/06/privacy-of-geolocation-implementations/">Privacy of Geolocation Implementations</a>, a position paper by Marcos Caceres for the <a href="http://www.w3.org/2010/api-privacy-ws/">W3C Workshop on Privacy for Advanced Web APIs</a>.</p>
+
+
+<h4>HTML5 AppCache for Offline Applications</h4>
+<p>HTML5 allows developers to code <a href="http://dev.w3.org/html5/spec/offline.html#">offline applications</a>: in-browser applications so that they continue working when an internet connection is unavailable. This is as useful for a London businesswoman working on a train as it goes through a tunnel as for an Indian student working on a laptop during  a power outage. Read our tutorial <a href="http://dev.opera.com/articles/view/html5-offline-applications/"> Running your web applications offline with HTML5 AppCache</a>.</p>
+
+
+<p>AppCache further blurs the difference between Web and desktop applications, and at Opera we&#39;re very excited about this. Our developer environment <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> uses of AppCache so it can work offline too. (<a href="http://my.opera.com/dragonfly/blog/2010/07/01/opera-dragonfly-updated-for-opera-10-60">Read more about Opera Dragonfly using HTML5 AppCache</a>.)</p>
+
+
+<h4>WebM video</h4>
+<p>Opera 10.60 is the first browser to ship with support for <a href="http://www.webmproject.org/about/">WebM video</a>, the new video codec open-sourced by Google as a very high quality codec for delivering video content over the Web (including <a href="http://zaheer.merali.org/articles/2010/06/02/webm-and-vp8-streaming-live-from-flumotion/" target="_blank">streaming</a> video) without the royalties than encumber its competitors. YouTube is converting all its videos to WebM. It&#39;s the future of video over the Web; as Håkon Wium Lie, our Chief Technology Officer and co-inventor of CSS, <a href="http://labs.opera.com/news/2010/05/19/" target="_blank">said</a>:</p>
+
+
+<blockquote>WebM will join the list of open and freely usable Web formats, and video will finally become a first-class citizen of the Web.</blockquote>
+
+<h4>Web Workers</h4>
+
+<p>We&#39;ve begun our work to support <a href="http://www.w3.org/TR/workers/" target="_blank">Web Workers</a>. Web Workers allow your JavaScript to delegate tasks to other processes that run in parallel, so your main script can do the exciting stuff while the Web Worker sits in the corner doing heavy computations without slowing the main script down. Our very own Daniel Davis has written a fun tutorial <a href="http://dev.opera.com/articles/view/web-workers-rise-up/">Web Workers rise up!</a></p>
+ 
+<p>You might not notice significant differences in timings in Opera with Web Workers running (check our <a href="http://people.opera.com/danield/webapps/web-workers/">Web Workers speed test</a> in Opera 10.60 and other browsers). This is because we&#39;ve long built our JavaScript engine so that it doesn&#39;t slow down too much even while doing heavy lifting (which is why we have the fastest JavaScript engine in the world). Opera is a single-threaded application currently, so Web Workers don&#39;t speed it up that much. As we develop a multithreaded version of Opera (for platforms that can support that—not every platform can) you&#39;ll notice greater speed differences between apps that use Workers and those that don&#39;t.</p>
+<h4>Vendor Prefixed CSS</h4>
+Opera 10.60 supports a small number of CSS properties with vendor prefixes. See <a href="http://my.opera.com/ODIN/blog/2010/06/25/o-vendor-prefixed-css-supported-in-opera-10-50">-o- vendor prefixed CSS supported in Opera 10.50 and 10.60</a>.
+<h3>Bugs</h3>
+<p>We sincerely hope there aren&#39;t any, but it&#39;s almost certain that there are so, if you find a bug please help us squash it using our <a href="https://bugs.opera.com/wizard">bug reporting wizard</a>.</p>
+
+
+
+ 
