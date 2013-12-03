@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: Perspective</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	.translatez .facet{
+	-webkit-transform: translateZ(0);
+	   -moz-transform: translateZ(0);
+	    -ms-transform: translateZ(0);
+	}
+	.fxd{font-family: monospace;}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>3D CSS Transforms: <code>translateZ()</code></h1>
+        <p>Adjust the value below to understand the effect of <code>translateZ()</code>.</p>
+    </header>
+    
+    <form id="changetranslate" action="#">
+    	<p><label for="translateZ">translateZ(</label>
+    	<input type="range" id="translateZ" value="0" min="-500" max="500" step="100">
+    	<span class="fxd"><span id="translateZvalue"></span>px)</span> 
+    	<button type="reset">Reset</button></p>
+    </form>
+
+    <div id="stage" class="perspective translatez">
+        <div class="facet">1</div>
+        <div class="facet">2</div>
+        <div class="facet">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+<script>
+(function(d){
+	var form = document.forms[0];
+
+	var updateStyles = function(value){
+		var css = d.styleSheets[1],  // using the embedded style sheet.
+			v = value+''; // force to string
+			newrule = css.cssRules[0].cssText.replace(/([-0-9]{1,})(px|em|rem|cm|mm|in|pt|pc|ex|ch|vw|vh|vmin|vmax)/, value+"$2");
+	
+		css.insertRule(newrule,0); // Insert at the top of the rule stack.
+		css.deleteRule(1);         // Delete what is now the second rule.
+	}
+
+
+	form.addEventListener('submit', function(e){
+		e.preventDefault();
+	} ,false);
+
+	form.addEventListener('reset', function(e){
+		updateStyles(0);
+	} ,false);
+
+	form.addEventListener('change', function(e){
+		e.preventDefault();
+		var tz = d.getElementById('translateZ').value;
+		updateStyles(tz);
+	},false)
+})(document)
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: Changing Perspective with the perspective property</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style>
+	#stage{
+		-webkit-perspective: 500px; 
+		   -moz-perspective: 500px; 
+		    -ms-perspective: 500px; 
+		        perspective: 500px;
+	}
+	form{
+		z-index:9999;
+	}
+	
+	div{
+	    background: #eee;
+	    margin: 1rem;
+	}
+    div p{
+        text-align:center;
+    }
+    label{
+        font-family: monospace;
+    }
+    .facet, .plane{
+		-webkit-transform: rotate3d(-10,0,0,-45deg);
+		   -moz-transform: rotate3d(-10,0,0,-45deg);
+			-ms-transform: rotate3d(-10,0,0,-45deg);
+				transform: rotate3d(-10,0,0,-45deg);
+	}
+	#perspective{font-family:monospace;text-align: right;}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>3D CSS Transforms: Perspective</h1>
+        <p>Adjust the value of the range to see how the value of perspective affects a 3d rotation transform (<code>rotate3d(0,10,0,-45deg)</code>)</p>
+    </header>
+
+    <form id="persprange">
+        <p><label for="perspective">perspective:</label> 
+        <input type="text" id="perspective" value="500" min="0" max="1500" required size="5"><code>px</code></p>
+        <p><button type="reset">Reset</button></p>
+    </form>
+
+    <div id="stage">
+        <div class="facet">1</div>
+        <div class="facet">2</div>
+        <div class="facet">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+<script type="application/javascript">
+(function(d){
+	var f = d.forms[0], 
+		css = d.styleSheets[1], // grabs internal style sheet
+		
+		updateStyles = function(value){
+			var c = css, 
+			persp = c.cssRules[0].cssText.split(':'), // grabs first rule in that sheet & splits it.
+			newrule = persp[0],
+			startval = d.getElementById('startval'); 
+		
+			persp[1] = ': ';
+			persp[2] = value;
+			persp[3] = 'px; }';
+		
+			newrule = persp.join('');
+		
+			c.insertRule(newrule ,0); // Insert at the top of the rule stack.
+			c.deleteRule(1);         // Delete what is now the second rule.
+		};
+	
+	f.addEventListener('submit',function(e){ 
+		e.preventDefault(); 	
+	},false);
+	
+	f.addEventListener('reset',function(e){ 
+		var startval = d.getElementById('perspective').getAttribute('min');
+		updateStyles( startval );
+		removeError(); 
+
+	},false);
+	
+	f.addEventListener('change', function(e){
+		e.preventDefault();
+	
+		var perspective = f['perspective'].value; // grabs the range
+			
+		// Remove the error message if there is one.
+		removeError();
+		
+		if( perspective < 0 ){
+			showError();
+			return;
+		}
+		
+		updateStyles( perspective );
+		
+	}, false);
+
+	/*
+	   Eliminates the risk of a zero value input. 
+	*/
+	function removeError(){
+		var err = d.getElementById('error');
+		if( err ){
+			err.parentNode.removeChild(err);
+		}
+	}
+	
+	function showError(){
+		var msg = d.createTextNode('Value must be greater than zero.'),
+		err = d.createElement('p');
+			
+		err.id = 'error';
+		err.appendChild(msg);
+				
+		f.appendChild(err);
+	}
+
+})(document);
+</script>
+
+
+</body>
+</html>

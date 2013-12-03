@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: Containing Block</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	.perspective, #rotate #stage{
+		-webkit-perspective: 500px;
+		   -moz-perspective: 500px;
+			-ms-perspective: 500px;
+				perspective: 500px;
+	}
+
+	#containing .facet{
+		position: absolute;
+		left:10%;
+		z-index: 100;
+		margin:0
+	}
+
+	#containing .facet:first-child{
+		top:0px;
+	}
+
+	#containing .facet:nth-child(2){
+		top:4ex;
+	}
+
+	#containing .facet:nth-child(3){
+		top:8ex;
+	}
+	</style>
+
+</head>
+<body id="containing">
+   <header>
+        <h1>3D CSS Transforms: Containing Block</h1>
+        <p>In this example, a child element is absolutely-positioned inside of a parent element with <code>perspective: 500px</code> applied. Toggle the perspective property to understand how perspective creates a containing block.</p>
+    </header>
+
+    <form id="toggle">
+        <p>
+            <input type="checkbox" id="togglePersp" checked><label for="togglePersp">Toggle <code>perspective</code></label>
+        </p>
+    </form>
+
+    <div id="stage" class="perspective">
+        <div class="facet">1</div>
+        <div class="facet">2</div>
+        <div class="facet">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-pf.js"></script>
+<script type="application/javascript">
+(function(d){
+	var toggle = d.getElementById('toggle');
+	if( toggle ){
+		toggle.addEventListener('change', function(e){
+			e.preventDefault();
+			var stage = d.getElementById('stage');
+			// consider adding support for non classList browsers
+			e.target.checked ? stage.classList.add('perspective') : stage.classList.remove('perspective');
+		}, false);
+	}
+})(document);
+</script>
+
+</body>
+</html>

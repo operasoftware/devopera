@@ -1,0 +1,123 @@
+/*--------------------
+Creating playing cards
+----------------------*/
+
+#deck{
+	-webkit-perspective: 2000px;
+	   -moz-perspective: 2000px;
+		-ms-perspective: 2000px;
+			perspective: 2000px;
+}
+
+.spades{color:#000;}
+.hearts{color:#c00;}
+.card{
+	height: 20rem;
+	border-radius: 5px;
+	border: 10px solid #fff;
+	box-shadow: 0px 1px 10px #333;
+	margin: 1rem;
+	float: left;
+	width: 13.3rem;
+	position: relative;
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	   -moz-transition:    -moz-transform 1s ease-in-out;
+		-ms-transition:     -ms-transform 1s ease-in-out;
+			transition:         transform 1s ease-in-out;
+}
+
+.front, .back{
+	margin: 0;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+.front{
+	text-align:center;
+	font-size: 7rem;
+	background: rgba(255,255,255,.5);
+	padding: 30% 1rem;
+	width:11.3rem;
+	height:60%;
+	-webkit-transform: rotate3d(0,100,0,180deg);
+   	   -moz-transform: rotate3d(0,100,0,180deg);
+	    -ms-transform: rotate3d(0,100,0,180deg);
+		    transform: rotate3d(0,100,0,180deg);
+}
+
+.back{
+	text-align: center;
+	font-size: 7rem;
+	height: inherit;
+	width: inherit;
+}
+
+.flipped .card{
+	-webkit-transform: rotate3d(0,200,0,-180deg);
+   	   -moz-transform: rotate3d(0,200,0,-180deg);
+	    -ms-transform: rotate3d(0,200,0,-180deg);
+		    transform: rotate3d(0,200,0,-180deg);
+}
+
+#transformstyle .card:first-child{
+	-webkit-transform-style: flat;
+	   -moz-transform-style: flat;
+	    -ms-transform-style: flat;
+	    	transform-style: flat;
+	/*
+	Because the transform-style is flat,
+	no containing block is created. We
+	need to create it with relative
+	positioning.
+	*/
+	position:relative;
+}
+
+#transformstyle .card:nth-child(2){
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+#transformstyle .front, #transformstyle .back{
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+}
+
+#transformstyle .back, #twosided .back{
+	background-color: rgba(34,85,136,1);
+}
+
+#backfacevis .card{
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		 -o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+#backfacevis .card:first-child .front,
+#backfacevis .card:first-child .back{
+	-webkit-backface-visibility: visible;
+	   -moz-backface-visibility: visible;
+		-ms-backface-visibility: visible;
+		 -o-backface-visibility: visible;
+			backface-visibility: visible;
+}
+
+#backfacevis .card:nth-child(2) .front,
+#backfacevis .card:nth-child(2) .back{
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		 -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+}
+
+#backfacevis .back{
+	background-color: rgba(34,85,136,.5);
+}

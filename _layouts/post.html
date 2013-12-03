@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<main class="main">
+	<article role="main" class="content">
+		<h1>{{ page.title }}</h1>
+		<p>By Author at <time>{{ page.date | date_to_string }}</time></p>
+
+{{ content }}
+
+		<p>Tags:
+			<a href="">some</a>
+			<a href="">fake</a>
+			<a href="">tags</a>
+		</p>
+	</article>
+</main>

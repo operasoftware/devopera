@@ -1,0 +1,15 @@
+---
+title: Dev.Opera
+layout: default
+---
+<main class="main">
+	<section>
+		<h2>Articles</h2>
+{% for post in site.posts %}
+		<article class="content">
+			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<p>By {{ post.author }} at <time>{{ post.date | date_to_string }}</time></p>
+		</article>
+{% endfor %}
+	</section>
+</main>

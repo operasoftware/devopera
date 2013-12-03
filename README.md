@@ -1,4 +1,4 @@
-devopera
-========
+# Dev.Opera
 
-Repository for source code of new Dev.Opera backend
+Repository for source code of new Dev.Opera
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: Perspective</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	.perspective{
+    	-webkit-perspective: 500px;
+      	   -moz-perspective: 500px;
+            -ms-perspective: 500px;
+                perspective: 500px;
+	}
+
+	
+	.facet{ 
+		-webkit-transform: rotate3d(-10,0,0,-45deg);
+		   -moz-transform: rotate3d(-10,0,0,-45deg);
+			-ms-transform: rotate3d(-10,0,0,-45deg);
+				transform: rotate3d(-10,0,0,-45deg);
+	}
+	</style>
+</head>
+<body>
+  <header>
+        <h1>3D CSS Transforms: Perspective</h1>
+        <p>In this example, we have added a <code>perspective</code> property to <code>&lt;div id="stage"&gt;</code>. Its value is <code>500px</code>. Each paragraph has been rotated counter-clockwise by 45 degrees along the X direction vector (<code>transform: rotate3d(-10,0,0,-45deg)</code>). Toggle the perspective property to see how it affects rendering.</p>
+    </header>
+
+
+    <form id="toggle">
+        <p>
+            <input type="checkbox" id="togglePersp" checked> <label for="togglePersp">Toggle <code>perspective</code></label>
+        </p>
+    </form>
+
+    <div id="stage" class="perspective">
+        <div class="facet">1</div>
+        <div class="facet">2</div>
+        <div class="facet">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-pf.js"></script>
+<script type="application/javascript">
+(function(d){
+	var toggle = d.getElementById('toggle');
+
+	if( toggle ){
+		toggle.addEventListener('change', function(e){
+			e.preventDefault();
+			var stage = d.getElementById('stage');
+			e.target.checked ? stage.classList.add('perspective') : stage.classList.remove('perspective');
+		}, false);
+	}
+})(document);
+
+</script>
+
+</body>
+</html>
