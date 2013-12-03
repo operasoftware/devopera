@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: perspective-origin</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	.perspective{
+    	-webkit-perspective: 500px;
+      	   -moz-perspective: 500px;
+            -ms-perspective: 500px;
+                perspective: 500px;
+                
+                -webkit-perspective-origin: 200% 1500px;
+	}
+
+	
+	.facet{ 
+		-webkit-transform: rotate3d(-10,0,0,-45deg);
+		   -moz-transform: rotate3d(-10,0,0,-45deg);
+			-ms-transform: rotate3d(-10,0,0,-45deg);
+				transform: rotate3d(-10,0,0,-45deg);
+	}
+	</style>
+</head>
+<body>
+   <header>
+        <h1>3D CSS Transforms: <code>perspective-origin</code></h1>
+    </header>
+
+   <form id="persporiginrange">
+   		<p>Adjust each value to see how the perspective and the transform are affected by the <code>perspective-origin</code> property.</p>
+   		
+        <fieldset><legend>perspective-origin: 
+        <span id="pxval"></span>
+        <span id="pyval"></span>
+        </legend>
+        <p class="nowrap"><label for="perspectiveX">X</label><input type="range" id="perspectiveX" value="0" min="-2000" max="2000">
+        <label for="perspectiveY">Y</label><input type="range" id="perspectiveY" value="0" min="-2000" max="2000"></p>
+        </fieldset>
+        <button type="reset">Reset</button>
+    </form>
+
+
+    <div id="stage" class="perspective">
+        <div class="facet">1</div>
+        <div class="facet">2</div>
+        <div class="facet">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+<script type="application/javascript">
+(function(){
+	window.addEventListener('DOMContentLoaded',function(e){
+		var persporigin = document.getElementById('persporiginrange');
+		
+		persporigin.addEventListener('submit',function(e){ e.preventDefault(); },false);
+   
+		persporigin.addEventListener('change', function(e){
+			e.preventDefault();
+			var stage = document.getElementById('stage'),
+				px = document.getElementById('perspectiveX'),
+				py = document.getElementById('perspectiveY');
+
+				stage.style.webkitPerspectiveOrigin = px.value+'px '+py.value+'px';
+				stage.style.mozPerspectiveOrigin    = px.value+'px '+py.value+'px';
+				stage.style.msPerspectiveOrigin     = px.value+'px '+py.value+'px';
+				stage.style.perspectiveOrigin       = px.value+'px '+py.value+'px';
+
+				document.getElementById('pxval').innerHTML = px.value+'px';
+				document.getElementById('pyval').innerHTML = py.value+'px';
+		}, false);
+	
+		persporigin.addEventListener('reset',function(e){
+			var px = document.getElementById('perspectiveX'),
+				py = document.getElementById('perspectiveY');
+
+				document.getElementById('pxval').innerHTML = document.getElementById('pyval').innerHTML = '';
+				stage.removeAttribute('style');
+
+		},false);
+    
+	},false);
+})();	
+</script>
+
+</body>
+</html>

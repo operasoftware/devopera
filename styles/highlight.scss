@@ -1,0 +1,15 @@
+// Highlight
+// -------------------------------
+.content pre {
+	color:#000;
+	.keyword {
+		font-weight:bold;
+		}
+	.attribute,
+	.function {
+		color:$green;
+		}
+	.string {
+		color:$red;
+		}
+	}

@@ -1,0 +1,22 @@
+// Global
+// -------------------------------
+body {
+	background:#FFF;
+	color:#000;
+	font:16px/1.4 Helvetica, Arial, sans-serif;
+	}
+a {
+	text-decoration:none;
+	color:$link;
+	&:visited {
+		color:$visited;
+		}
+	}
+
+// Main
+// -------------------------------
+.main {
+	margin:auto;
+	padding:20px 30px;
+	max-width:900px;
+	}

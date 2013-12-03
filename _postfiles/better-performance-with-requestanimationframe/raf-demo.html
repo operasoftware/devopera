@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<title>Script-based animation using requestAnimationFrame</title>
+<!--background photo "Lily Pads in Tulsa", by BaronBrian http://www.flickr.com/photos/baronbrian/4138917429/-->
+<style>
+#animated { 
+  position: absolute;
+  left: 50px;
+  top: 185px;
+  width: 30px;
+  height: 23px;
+  background-image: url('frog.png');
+  background-position: 0px 0px;
+  }
+#pond {
+  width: 640px;
+  height: 429px;
+  background-image: url('pond.jpg');
+}
+</style>
+</head>
+<body>
+  <button onclick="start()">Click me to start!</button>
+  <button onclick="stop()">Click me to stop!</button>
+  <div id="pond">
+    <div id="animated"></div>
+  </div>
+<script>
+var requestId = 0;
+var animationStartTime = 0;
+
+function animate(time) {
+  var frog = document.getElementById("animated");
+  frog.style.left = (50 + (time - animationStartTime)/10 % 300) + "px";
+  frog.style.top = (185 - 10 * ((time - animationStartTime)/100 % 10) + ((time - animationStartTime)/100 % 10) * ((time - animationStartTime)/100 % 10) ) + "px";
+  var t = (time - animationStartTime)/10 % 100;
+  frog.style.backgroundPosition = - Math.floor(t / (100/2)) * 60+ "px";
+  requestId = window.requestAnimationFrame(animate);
+}
+function start() {
+  animationStartTime = window.performance.now();
+  requestId = window.requestAnimationFrame(animate);
+}
+function stop() {
+  if (requestId)
+    window.cancelAnimationFrame(requestId);
+  requestId = 0;
+}
+</script>
+</body>
+</html>

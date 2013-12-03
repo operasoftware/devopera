@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D Transforms: backface-visibility</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<link rel="stylesheet" href="3d-transforms-card.css" type="text/css">	
+</head>
+<body id="backfacevis">
+
+<form id="flipcards" action="#">
+	<h1>3D Transforms: the <code>backface-visibility</code> property</h1>
+
+	<p>Click the button below to flip the cards. For the left card, the value of <code>backface-visibility</code> is <code>visible</code>. For the right card, the value is <code>hidden</code>. In both cases, the colors on each side of the card use alpha transparency which makes them "see-through."</p>
+
+ <p><button>Flip cards</button></p>
+</form>
+
+<div id="deck" style="margin-left:25px;">
+    <div class="card spades">
+       <div class="back">&nbsp;</div>
+       <div class="front">A&#9824;</div>
+    </div>
+    <div class="card hearts">
+       <div class="back">&nbsp;</div>
+       <div class="front">Q&#9829;</div>
+    </div>
+</div>
+
+<script type="application/javascript" src="3d-transforms-flip.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: rotate3d()</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	.plane{	
+		-webkit-transform: rotate3d(0, 0, 0, 0deg);
+		   -moz-transform: rotate3d(0, 0, 0, 0deg); 
+		    -ms-transform: rotate3d(0, 0, 0, 0deg); 
+		        transform: rotate3d(0, 0, 0, 0deg); 		
+	}	
+	
+	header,form{
+		background: rgba(255,255,255,.9);
+	}
+	form{	
+		width:inherit;
+	}
+	#rotate3 p{display:inline-block;}
+	
+	input{padding:.2em}
+	input, input:invalid{
+		border: 2px solid #999;
+	}
+	
+	input:invalid{
+		border: 2px solid #c00;
+		outline:none;
+	}
+	</style>
+</head>
+<body>
+<header>
+        <h1>3D CSS Transforms: <code>rotate3d()</code></h1>
+        <p>Adjust the values below to understand the effect of <code id="r3d">rotate3d()</code>. The unit for <code>angle</code> may be degrees (<code>deg</code>), radians (rad), gradians (<code>grad</code>) or turns (<code>turn</code>). Open the developer console to view the current matrix for the transform.</p>
+    </header>
+    
+   <form id="rotate3" action="3d-transforms-rotate3d.html">
+    	<p>
+    	<label for="x">x</label>
+    	<input type="number" id="x" name="x" value="0" required title="This value must be a number">
+    	</p>
+    	
+    	<p>
+    	<label for="y">y</label>
+    	<input type="number" id="y" name="y" value="0" required title="This value must be a number">
+    	</p>
+    	
+    	<p>
+    	<label for="z">z</label>
+    	<input type="number" id="z" name="z" value="0" required title="This value must be a number">
+    	</p>
+    	
+    	<p>
+    	<label for="angle">angle</label>
+    	<input type="text" id="angle" name="angle" value="0deg" required pattern="[-.0-9]{1,}(deg|turn|rad|grad)" title="Include a unit such as deg, turn, rad, or grad">
+    	</p>
+    	<p><button type="reset">Reset</button></p>
+    	<br style="clear:both;">
+    </form> 
+
+    <div id="stage" class="perspective rotate3d">
+        <div class="plane">1</div>
+        <div class="plane">2</div>
+        <div class="plane">3</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+<script>
+(function(d){
+	var form   = d.forms[0],
+	    inputs = d.querySelectorAll('input'),
+		updatecss, 
+		getmatrices;
+			
+	getmatrices = function(){
+		var pl = d.querySelector('.plane');
+		
+		if( window.console ){
+			var prefix = ['-webkit-','-ms-','-moz-','-o-',''];
+				
+			prefix.map( function(p){
+				var mtx = getComputedStyle(pl).getPropertyValue(p+'transform');
+				if( mtx ){
+					console.log( mtx );
+				}
+			}); 
+
+		}
+	}
+			
+	updatecss = function(e){
+		e.stopImmediatePropagation();
+		e.stopPropagation();
+		
+		var css = d.styleSheets[1],  // using the embedded style sheet.
+				inp = inputs,
+				current = css.cssRules[0].cssText.split(':'),
+				val = [],
+				rotate3d = ': rotate3d(',
+				newrule = current[0];
+	
+		if(e.type == 'reset'){
+			
+			newrule += rotate3d; 
+			newrule += '0, 0, 0, 0deg); }';
+	
+		} else {
+			
+			// build new values
+			val[0] = +(inp[0].value);
+			val[1] = +(inp[1].value);
+			val[2] = +(inp[2].value);
+			
+			inp[3].validity.valid === true ? val[3] = inp[3].value : val[3] = inp[3].value+='deg';
+			
+			newrule += rotate3d += val.join(',') + '); }';
+		}
+	
+		css.insertRule(newrule,0); // Insert at the top of the rule stack.
+		css.deleteRule(1);         // Delete what is now the second rule.
+		
+		getmatrices();
+		
+	}
+
+	form.addEventListener('reset',updatecss,false);
+	form.addEventListener('change',updatecss,false);
+	form.addEventListener('submit',function(e){ 
+		e.preventDefault(); 
+	},false);
+
+})(document);
+</script>
+
+
+</body>
+</html>

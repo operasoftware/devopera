@@ -1,0 +1,32 @@
+// Colors
+// -------------------------------
+$red:#CC0F16;
+$green:#00A700;
+$blue:#1096D5;
+
+$link:$blue;
+$visited:#6040A0;
+
+// Mixins
+// -------------------------------
+@mixin retina {
+	@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+		@content;
+		}
+	}
+@mixin linear-gradient($from, $to) {
+	background:-webkit-linear-gradient($from, $to);
+	background:-moz-linear-gradient($from, $to);
+	background:-ms-linear-gradient($from, $to);
+	background:linear-gradient($from, $to);
+	}
+@mixin clear {
+	&:before,
+	&:after {
+		display:block;
+		content:'';
+		}
+	&:after {
+		clear:both;
+		}
+	}

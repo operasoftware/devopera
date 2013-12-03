@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: Perspective function</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style>
+        #stage{margin:0;}
+        .facet{
+            -webkit-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+               -moz-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+                -ms-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+                    transform: perspective(1000px) rotate3d(1,0,0,45deg);
+        }
+        #perspective{font-family:monospace; text-align:right;}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>3D CSS Transforms: Perspective Function</h1>
+    </header>
+
+	 <form id="changeperspective" action="#">
+    	<p><label for="perspective">perspective(</label>
+    	<input type="text" id="perspective" name="perspective" value="1000" min="0" max="1000" size="5"><code>px) rotate3d(20,10,0,-45deg);</code>
+    	<button type="reset">Reset</button></p>
+    </form>
+    
+    <div id="stage">
+        <div class="facet">1</div>
+		<div class="facet">2</div> 
+ 		<div class="facet">3</div>
+    </div> 
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+<script>
+'use strict';
+(function(d){
+	var form = d.forms[0];
+
+	function updateStyle( value ){
+		var css = d.styleSheets[1],  // using the embedded style sheet.
+			oldrule = css.cssRules[1].cssText.split(':'),
+			newrule = [],
+			nr;
+		
+		value = value + ''; // forces this to be a string.
+		
+		newrule[0] = oldrule[0]+':';
+		newrule[1] = oldrule[1].replace(/(perspective\()\d{1,}px\)/i, "$1"+value+'px)');
+		
+		nr = newrule.join('')
+		
+		css.insertRule(nr,1); // Insert at the old position.
+		css.deleteRule(2);    // Delete what is now the second rule.
+	}
+
+	form.addEventListener('submit', function(e){
+		e.preventDefault();
+	}, false);
+
+	form.addEventListener('reset', function(e){
+		updateStyle(1000);
+		removeError(); 
+	}, false);
+
+	form.addEventListener('change', function(e){
+		e.preventDefault();
+		var value = d.getElementById('perspective').value;
+		// Remove the error message if there is one.
+		removeError();
+	
+		if( value <= 0 ){
+			showError();
+			return;
+		} 
+		updateStyle( value );
+	},false);
+
+	/*
+	   Eliminates the value of a zero input.
+	*/
+	function removeError(){
+		var err = d.getElementById('error');
+		if( err ){
+			err.parentNode.removeChild(err);
+		}
+	}
+
+	function showError(){
+		var msg = d.createTextNode('Value must be greater than zero.'),
+		err = d.createElement('p');
+		
+		err.id = 'error';
+		err.appendChild(msg);
+			
+		form.appendChild(err);
+	}
+})(document);
+</script>
+</body>
+</html>

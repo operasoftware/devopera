@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D CSS Transforms: scale3d()</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+	#stage{	
+		-webkit-perspective: 300px;
+		   -moz-perspective: 300px;
+			-ms-perspective: 300px;
+				perspective: 300px;
+ 
+		/* 
+		  Safari 6.0.2 renders this differently than Chromium-descended 
+		  WebKits currently do. Using 'flat' brings the differences in line,
+		  but undoes the true 3D effect you get with Safari.
+		 */
+ 	
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				
+				position:relative;
+				z-index:1;
+ 	}
+ 	
+ 	#wrap{
+    -webkit-transform-style: preserve-3d;
+   	   -moz-transform-style: preserve-3d;
+   	    -ms-transform-style: preserve-3d;
+         	transform-style: preserve-3d;
+			
+		/* 
+		  IE 10 requires the perspective on 
+		  #wrap as well.
+		*/
+			-ms-perspective: 300px;
+			position:relative;
+			z-index:2
+				 
+ 	}
+ 	
+ 	.scale3d{
+		-webkit-transform: scale3d(1,1,1);
+		   -moz-transform: scale3d(1,1,1); 
+		    -ms-transform: scale3d(1,1,1); 
+		        transform: scale3d(1,1,1);  	
+ 	}
+ 	
+	.plane{
+		padding: 1rem;
+		margin: 1rem auto;
+		font-size: 4rem;
+		font-weight: bold;
+		color: #fff;
+		width: 500px;
+		text-align: center;
+
+		-webkit-transform: rotateY(45deg);
+		   -moz-transform: rotateY(45deg); 
+		    -ms-transform: rotateY(45deg); 
+		        transform: rotateY(45deg); 
+	}
+
+	.plane:first-child{
+    	background: rgba(255,102,255,1); 
+    	
+	}
+	.plane:nth-child(2){
+		background: rgba(255,204,0,.7);
+	}
+	.plane:nth-child(3){
+		background: rgba(0,0,255,.7);
+	}
+	
+	header, form{
+		background: rgba(255,255,255,.9);
+		position:relative;
+	}
+	form{	
+		width:inherit;
+		z-index:9999;
+		position:relative;
+	}
+	form p{
+		display:inline-block;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	 <header>
+        <h1>3D CSS Transforms: <code>scale3d()</code></h1>
+        <p>Adjust the values below to understand the effect of <code id="r3d">scale3d()</code>. The objects below have been rotated 45 degrees along the Y axis. (You can navigate between fields using the <kbd>Tab</kbd> key, and use the <kbd>Esc</kbd> key to reset the form.) </p>
+    </header>
+    
+ <form action="#">
+    	<p>
+    	<label for="x">x</label>
+    	<input type="number" id="x" name="x" value="1" step=".5" tabindex="1">
+    	</p>
+    	
+    	<p>
+    	<label for="y">y</label>
+    	<input type="number" id="y" name="y" value="1" step=".5" tabindex="2">
+    	</p>
+    	
+    	<p>
+    	<label for="z">z</label>
+    	<input type="number" id="z" name="z" value="1" step=".5" tabindex="3">
+    	</p>
+
+    	<p><button type="reset" tabindex="4">Reset</button></p>
+    	<br style="clear:both;">
+    </form> 
+
+    <div id="stage">
+    	<div id="wrap" class="scale3d">
+			<div class="plane">1</div>
+			<div class="plane">2</div>
+			<div class="plane">3</div>
+		</div>
+    </div>
+
+<script type="application/javascript" src="3d-transforms-escreset.js"></script>
+
+<script type="application/javascript">
+(function(d){
+	var f = d.forms[0];
+
+	var updatecss = function(e){
+		
+		e.preventDefault();
+		css = d.styleSheets[1],
+		s3d = css.cssRules[2].cssText.split(':')[0];
+		newrule = [];
+	
+		// Using array concatenation since it's a smidgen faster.
+		newrule[0] = s3d;
+		newrule[1] = ': ';
+		newrule[2] = 'scale3d(';
+		newrule[3] = f['x'].value;
+		newrule[4] = ', ';
+		newrule[5] = f['y'].value;	
+		newrule[6] = ', ';
+		newrule[7] = f['z'].value;	
+		newrule[8] = '); }';
+
+		newrule = newrule.join('');
+
+		css.insertRule(newrule,2); // Insert at the top of the rule stack.
+		css.deleteRule(3);         // Delete what is now the second rule.
+	}
+	var reset = function(e){
+		var css = d.styleSheets[1], 
+			selector = [], 
+			newrule;
+	
+		selector[0] = css.cssRules[2].cssText.split(':')[0];
+		selector[1] = ': ';
+		selector[2] = 'scale3d(1, 1, 1); }';
+	
+		newrule = selector.join('');
+	
+		css.insertRule(newrule,2); // Insert at the top of the rule stack.
+		css.deleteRule(3);         // Delete what is now the second rule.
+	}
+
+	f.addEventListener('reset',reset,false);
+
+	f.addEventListener('change',updatecss,false);
+
+	f.addEventListener('submit',updatecss,false);
+})(document);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3D Transforms: transform-style</title>
+	<link rel="stylesheet" href="3d-transforms.css" type="text/css">
+	<style type="text/css">
+#stage{
+    -webkit-perspective: 500px;
+       -moz-perspective: 500px;
+        -ms-perspective: 500px;
+         -o-perspective: 500px;
+            perspective: 500px;
+    background:transparent;
+}
+
+#wrap{
+  -webkit-transform-style: flat;
+     -moz-transform-style: flat;
+      -ms-transform-style: flat;
+       -o-transform-style: flat;
+          transform-style: flat;
+    -webkit-transform: rotate3d(10,10,1,-25deg);
+       -moz-transform: rotate3d(10,10,1,-25deg);
+        -ms-transform: rotate3d(10,10,1,-25deg);
+            transform: rotate3d(10,10,1,-25deg);
+}
+
+
+#wrap.threed{
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+
+figure{margin: 0;}
+
+#wrap figure{
+  position: absolute;
+}
+
+
+.plane{
+    -webkit-backface-visibility: visible;
+       -moz-backface-visibility: visible;
+        -ms-backface-visibility: visible;
+         -o-backface-visibility: visible;
+            backface-visibility: visible;
+}
+
+.plane:nth-child(1){
+  -webkit-transform: translateZ( -200px );
+     -moz-transform: translateZ( -200px );
+      -ms-transform: translateZ( -200px );
+       -o-transform: translateZ( -200px );
+          transform: translateZ( -200px );
+}
+
+.plane:nth-child(2){
+  -webkit-transform: translateZ( 0px );
+     -moz-transform: translateZ( 0px );
+      -ms-transform: translateZ( 0px );
+       -o-transform: translateZ( 0px );
+          transform: translateZ( 0px );
+}
+
+.plane:nth-child(3){
+  -webkit-transform: translateZ( 200px );
+     -moz-transform: translateZ( 200px );
+      -ms-transform: translateZ( 200px );
+       -o-transform: translateZ( 200px );
+          transform: translateZ( 200px );
+}
+
+
+label{margin-left: 1em; cursor: pointer;}
+
+</style>
+
+</head>
+<body id="transformstyle">
+
+<h1>3D Transforms: the <code>transform-style</code> property</h1>
+
+ <form id="toggle">
+ <p>Use the check box below to toggle between the <code>flat</code> and <code>preserve-3d</code> values for <code>transform-style</code>.</p>	
+        <p>
+            <input type="checkbox" id="toggle3d" checked> <label for="toggle3d"><code>transform-style:</code><code id="ts">flat</code> </label>
+        </p>
+    </form>
+    
+
+<div id="stage">
+  <div id="wrap">
+	<figure class="plane">1</figure>
+	<figure class="plane">2</figure>
+	<figure class="plane">3</figure>
+  </div>
+</div>
+
+<script type="application/javascript" src="3d-transforms-pf.js"></script>
+<script type="application/javascript">
+(function(d){
+	var toggle = d.getElementById('toggle3d')
+	
+	if( toggle ){
+		toggle.addEventListener('change', function(e){
+			e.preventDefault();
+			var wrap = d.getElementById('wrap'), 
+				ts = d.getElementById('ts'), 
+				tx, value;
+			
+			wrap.classList.toggle('threed');
+			
+			value = ts.firstChild.textContent === 'flat' ? 'preserve-3d' : 'flat';
+			
+			tx = document.createTextNode(value);
+			ts.replaceChild(tx, ts.firstChild);
+		}, false);
+	}
+	
+	
+	
+})(document);
+</script>
+</body>
+</html>
