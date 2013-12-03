@@ -1,7 +1,7 @@
 ---
 title: Understanding 3D Transforms
 author: Tiffany Brown
-layout: default
+layout: post
 ---
 <ol>
 	<li>Introduction</li>

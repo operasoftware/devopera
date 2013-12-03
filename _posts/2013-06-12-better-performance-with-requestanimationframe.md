@@ -1,7 +1,7 @@
 ---
 title: Better Performance With requestAnimationFrame
 author: Luz Caballero
-layout: default
+layout: post
 ---
 
 ## Introduction

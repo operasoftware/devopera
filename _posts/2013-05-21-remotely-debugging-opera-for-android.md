@@ -1,7 +1,7 @@
 ---
 title: Remotely Debugging Opera for Android
 author: Chris Mills
-layout: default
+layout: post
 ---
 <h2>Introduction</h2>
 
