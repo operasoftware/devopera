@@ -2,5 +2,6 @@ name: Dev.Opera
 url: dev.opera
 markdown: redcarpet
 permalink: /:title
+# TODO: permalink: /:categories/:title
 rss_name: feed
 rss_post_limit: 25
