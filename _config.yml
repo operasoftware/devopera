@@ -4,3 +4,16 @@ markdown: redcarpet
 permalink: /:title
 rss_name: feed
 rss_post_limit: 25
+authors:
+  andreasbovens:
+    display_name: Andreas Bovens
+    twitter: andreasbovens
+  chrismills:
+    display_name: Chris Mills
+    twitter: chrisdavidmills
+  shwetankdixit:
+    display_name: Shwetank Dixit
+    twitter: shwetank
+  pepelsbey:
+    display_name: Vadim Makeev
+    twitter: pepelsbey
