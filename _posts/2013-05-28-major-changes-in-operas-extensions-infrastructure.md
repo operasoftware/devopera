@@ -1,9 +1,9 @@
 ---
 title: Major Changes in Opera’s Extensions Infrastructure
 author: Andreas Bovens
+categories: articles
 layout: post
 ---
-
 With Opera switching from Presto to Chromium and a complete UI remake, our extensions infrastructure has also gotten a major overhaul: from Opera 15 onward, <strong>Opera 11 &amp; 12’s extension format is no longer supported, and instead, we’ve switched to Chromium’s extension model</strong>. At this point, Opera 15 (available as <a href="http://www.opera.com/next/">Opera Next</a>) supports a subset of the Chromium extension APIs — with more to come —, as well as our own Speed Dial API.
 
 If you want to upgrade your existing Opera extension to the new format, you can use the conversion tool we’ve built into the Opera extensions catalog’s <a href="https://addons.opera.com/developer/">developer interface</a> and test if the extension works as expected (<a href="http://dev.opera.com/extension-docs/tut_conversion.html">detailed steps</a>). Of course, you can also reuse an existing Chromium extension or create a new one from scratch. There's a whole <a href="http://dev.opera.com/extension-docs/">new tutorial section</a> with API documentation, examples and more for you to get started.

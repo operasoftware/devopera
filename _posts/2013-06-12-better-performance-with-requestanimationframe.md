@@ -1,9 +1,9 @@
 ---
 title: Better Performance With requestAnimationFrame
 author: Luz Caballero
+categories: articles
 layout: post
 ---
-
 ## Introduction
 
 This article discusses how you can (and should) improve the performance of your animations, using the `requestAnimationFrame` API instead of the old `setInterval`/`setTimeout` methods, and how `requestAnimationFrame` is used. And of course, we will show you the mandatory code <a href="raf-demo.html">example of `requestAnimationFrame` in action</a>.

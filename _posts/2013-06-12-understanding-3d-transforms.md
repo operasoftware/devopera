@@ -1,6 +1,7 @@
 ---
 title: Understanding 3D Transforms
 author: Tiffany Brown
+categories: articles
 layout: post
 ---
 

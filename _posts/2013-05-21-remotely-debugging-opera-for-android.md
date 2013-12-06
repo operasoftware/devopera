@@ -1,19 +1,20 @@
 ---
 title: Remotely Debugging Opera for Android
 author: Chris Mills
+categories: articles
 layout: post
 ---
-<h2>Introduction</h2>
+## Introduction
 
 Now that Opera for Android is out, you'll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+ (<code>&lt;input type=color&gt;</code>, <code>@supports</code>, etc,).
 
 Because current and future Opera for Android releases are based on Chromium, we can't use Presto-based Opera desktop releases to connect to them (wait for Chromium-based Opera desktop releases for that). So here's how to connect Opera for Android to another Chromium-based desktop browser for remote debugging.
 
-<h2>Preparing your desktop</h2>
+## Preparing your desktop
 
 You'll be remotely debugging your phone from your desktop, so let's get the desktop ready.
 
-<h3>Install Android SDK</h3>
+### Install Android SDK
 
 The first thing you'll need is the <a href="http://developer.android.com/sdk/index.html#download">Android SDK — download it</a> and then put the kettle on; it's a 400MB file. 
 
@@ -25,7 +26,7 @@ Extract the files to a memorable location, such as <samp>/Users/<em>your-user-na
 
 You'll need a Chromium-based desktop browser. Until Chromium-based Opera desktop releases are available, we suggest Google Chrome, Chromium, or the Yandex browser.
 
-<h3>Preparing your device</h3>
+### Preparing your device
 
 Ensure that you have a USB cable available to connect your Android device to your computer (the USB power cable should be fine) and <a href="https://play.google.com/store/apps/details?id=com.opera.browser">Opera for Android</a> installed on it (see the <a href="http://www.opera.com/help/mobile">Opera for Android user guide</a> for installation help, if needed.) Keep the phone disconnected from your computer just for now.
 
