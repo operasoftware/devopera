@@ -19,14 +19,14 @@ As much as I don't want to be dismissive of these old-school methods, they do ha
 Second, not only do timers continue to run for invisible animations, but when their time is up they also _always_ enqueue their callback functions. Let me explain why this can sometimes pose a problem &mdash; say you didn't do your job particularly well and for some reason the callback function takes more time to finish than you have set up your timers for. Once the timers are up they will enqueue yet *another* callback function, even though the previous one hasn't finished running. As this process repeats itself over time, you can quickly enqueue a virtually infinite amount of timer code, causing the browser to stall. Figure 1 provides an illustration of this.
 
 <figure>
-	<img src="{% postfile figure1.png %}">
+	<img src="figure1.png">
 	<figcaption>Figure 1: If your callback functions take longer than your timers, enqueuing of multiple callback functions can choke up the browser.</figcaption>
 </figure>
 
-But even in cases where your callback functions don't take longer than the timers, `setTimeout` and `setInterval` still aren't optimal. Both can only redraw animations at a fixed rate, so to make sure the animation is smooth, we tend to err on the side of caution and choose a frequency slightly higher than the display refresh rate. This, however, causes unnecessary drawing, as some frames are drawn before the display refresh rate is ready to paint the animation outcome and are therefore just discarded. Figure 2 illustrates this problem. 
+But even in cases where your callback functions don't take longer than the timers, `setTimeout` and `setInterval` still aren't optimal. Both can only redraw animations at a fixed rate, so to make sure the animation is smooth, we tend to err on the side of caution and choose a frequency slightly higher than the display refresh rate. This, however, causes unnecessary drawing, as some frames are drawn before the display refresh rate is ready to paint the animation outcome and are therefore just discarded. Figure 2 illustrates this problem.
 
 <figure>
-	<img src="{% postfile figure2.png %}">
+	<img src="figure2.png">
 	<figcaption>Figure 2: Skipped frames can lead to higher CPU usage and battery consumption, and sometimes even choppy animations.</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ Here is the simple code that handles the animation inside our frog demo:
 		requestId = 0;
 	}
 
-`requestAnimationFrame` is a method that will signal to the browser that a script-based animation needs to be resampled by enqueuing a **callback** to the **animation frame request callback list**. This holds a list of the ids of the callback functions that are waiting to be executed. Calling `requestAnimationFrame` returns the **id** (`requestId`) that identifies the callback that has been enqueued. That `id` can be later used to cancel the callback, by using `cancelAnimationFrame(id)`. 
+`requestAnimationFrame` is a method that will signal to the browser that a script-based animation needs to be resampled by enqueuing a **callback** to the **animation frame request callback list**. This holds a list of the ids of the callback functions that are waiting to be executed. Calling `requestAnimationFrame` returns the **id** (`requestId`) that identifies the callback that has been enqueued. That `id` can be later used to cancel the callback, by using `cancelAnimationFrame(id)`.
 
 The `requestAnimationFrame` method takes as its argument the callback that needs to be executed to draw a new frame of the animation (`animate`). The callback, in turn, is itself a function that receives as an argument the **timestamp** of when the animation update was requested (`time`).
 

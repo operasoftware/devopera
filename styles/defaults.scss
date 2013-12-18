@@ -14,12 +14,6 @@ $visited:#6040A0;
 		@content;
 		}
 	}
-@mixin linear-gradient($from, $to) {
-	background:-webkit-linear-gradient($from, $to);
-	background:-moz-linear-gradient($from, $to);
-	background:-ms-linear-gradient($from, $to);
-	background:linear-gradient($from, $to);
-	}
 @mixin clear {
 	&:before,
 	&:after {
