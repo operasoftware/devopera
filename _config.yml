@@ -2,3 +2,9 @@ title: Dev.Opera
 url: http://dev.opera.com
 markdown: redcarpet
 permalink: /:categories/:title
+exclude:
+- 'node_modules'
+- 'Gruntfile.js'
+- 'package.json'
+- 'README.md'
+- '*.scss'
