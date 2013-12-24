@@ -10,7 +10,6 @@
     "grunt-autoprefixer": "~0.5.0",
     "grunt-csso": "~0.5.2",
     "grunt-jekyll": "~0.4.1",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-concurrent": "~0.4.2"
+    "grunt-contrib-htmlmin": "~0.1.3"
   }
 }

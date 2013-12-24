@@ -23,10 +23,22 @@ module.exports = function(grunt) {
 		jekyll: {
 			build: {}
 		},
+		htmlmin: {
+			site: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true
+				},
+				expand: true,
+				cwd: '_site',
+				src: '**/*.html',
+				dest: '_site'
+			}
+		},
 		watch: {
 			styles: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'csso', 'jekyll']
+				tasks: ['sass', 'autoprefixer', 'jekyll']
 			},
 			jekyll: {
 				files: [
@@ -46,13 +58,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-csso');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
 	grunt.registerTask('default', [
 		'sass',
 		'autoprefixer',
 		'csso',
-		'jekyll',
-		'watch'
+		'jekyll'
 	]);
 
 };
