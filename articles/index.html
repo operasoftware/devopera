@@ -1,0 +1,17 @@
+---
+title: Articles
+layout: default
+---
+
+<main class="main">
+	<article role="main" class="content">
+		<h1>{{ page.title }}</h1>
+{% for article in site.categories.articles %}
+		<h2><a href="{{ post.url }}">{{ article.title }}</a></h2>
+		<p>
+			<a href="{{ article.author }}">{{ article.author }}</a>
+			<time>{{ article.date | date: '%d %B %Y' }}</time>
+		</p>
+{% endfor %}
+	</article>
+</main>
