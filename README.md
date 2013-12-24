@@ -11,6 +11,10 @@ Repository for source code of new Dev.Opera
 5. Run `npm install` inside
 6. Run `grunt`
 
-Now you're ready to develop Dev.Opera: all changes inside `dev.opera` are now tracked by Grunt. This will automatically compile all `SCSS` styles to `CSS` and run `jekyll build` when needed. Once you're done with development, just close current console instance or press `Ctrl C` to stop watcher.
+There are two modes of development available:
 
-To launch Jekyll server open _another_ console instance (tab) and run `jekyll serve`.
+1. If you're developing some feature or article, run `grunt watch` and all your changes will be generated automatically every time you save any Jekyll template or Sass file. As quick as possible. To stop watching changes press `Ctrl C`.
+
+2. If you need to build production version of Dev.Opera, run `grunt` and everything will be not just builded, but also compressed. Just once.
+
+To launch Jekyll server open _another_ console instance or tab and run `jekyll serve`.
