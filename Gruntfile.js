@@ -46,6 +46,8 @@ module.exports = function(grunt) {
 					'!_site/**',
 					'!node_modules/**',
 					'!.sass-cache/**',
+					'!Gruntfile.js',
+					'!package.json',
 					'!.git/**'
 				],
 				tasks: 'jekyll'
@@ -64,7 +66,8 @@ module.exports = function(grunt) {
 		'sass',
 		'autoprefixer',
 		'csso',
-		'jekyll'
+		'jekyll',
+		'htmlmin'
 	]);
 
 };
