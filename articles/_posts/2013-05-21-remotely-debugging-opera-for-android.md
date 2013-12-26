@@ -1,7 +1,11 @@
 ---
-title: "Remotely Debugging Opera for Android"
-author: "Chris Mills"
+title: Remotely debugging Opera for Android
+authors: brucelawson chrismills
 layout: article
+tags:
+- android
+- opera 14
+- remote debugging
 ---
 
 ## Introduction
@@ -18,9 +22,13 @@ You'll be remotely debugging your phone from your desktop, so let's get the desk
 
 The first thing you'll need is the [Android SDK — download it][1] and then put the kettle on; it's a 400MB file.
 
-Extract the files to a memorable location, such as <samp>/Users/<em>your-user-name</em>/adt</samp> or <samp>c:android/adt</samp>. If you choose something else, use that in the example steps below.
+[1]: http://developer.android.com/sdk/index.html#download
+
+Extract the files to a memorable location, such as /Users/_your-user-name_/adt or c:android/adt. If you choose something else, use that in the example steps below.
 
 Windows users may need to [install Device drivers][2]. Linux and Mac users shouldn't need to.
+
+[2]: http://developer.android.com/tools/extras/oem-usb.html
 
 ### Install a Chromium-based browser
 
@@ -30,9 +38,16 @@ You'll need a Chromium-based desktop browser. Until Chromium-based Opera desktop
 
 Ensure that you have a USB cable available to connect your Android device to your computer (the USB power cable should be fine) and [Opera for Android][3] installed on it (see the [Opera for Android user guide][4] for installation help, if needed.) Keep the phone disconnected from your computer just for now.
 
+[3]: https://play.google.com/store/apps/details?id=com.opera.browser
+[4]: http://www.opera.com/help/mobile
+
 Note that you can't remotely debug Opera Mini from desktop, as the rendering is done on our Mini servers and only displayed on the device. ([Opera Mini FAQs][5])
 
+[5]: http://www.opera.com/help/mini/faq
+
 Next, you need to [enable USB debugging on your device][6]. Check the "USB debugging" checkbox in Developer Options.
+
+[6]: http://developer.android.com/tools/device.html
 
 - On Android 2.3, the option is under Settings > Applications > Development
 - On Android 4.0 and newer, it's in Settings > Developer options
@@ -48,19 +63,24 @@ Before moving on, connect your phone to your computer via the USB cable. If it w
 
 ## Connect desktop to device
 
-Start Opera for Android, and enable debugging by entering <samp>opera:debug</samp> in your address bar and checking the "enable" checkbox in the resulting page, as seen below.
+Start Opera for Android, and enable debugging by entering opera:debug in your address bar and checking the "enable" checkbox in the resulting page, as seen below.
 
 ![opera:debug page and 'enable' checkbox](opera-debug.png)
 
 Now let's get the debugger started:
 
-- In your computer's terminal, navigate to the directory into which you extracted the Android SDK. Once there, navigate to sdk > platform-tools. Inside there you should see an executable called adb, which is an acronym for Android Debugging Bridge.
-- To start the debugging bridge, Type in the following terminal command: `adb forward tcp:9222 localabstract:opera_devtools_remote`
-- You should see a message output along the lines of the following:
-	- daemon not running. starting it now on port 5037
-	- daemon started successfully
+In your computer's terminal, navigate to the directory into which you extracted the Android SDK. Once there, navigate to sdk > platform-tools. Inside there you should see an executable called adb, which is an acronym for Android Debugging Bridge.
 
-If you are using Linux or Mac OSX, you will have to add ./ at the start of the terminal command above, to tell terminal to look for adb inside the current directory, and not your Path. To avoid having to do this every time, you could add a path to adb in your actual path. You can do this by placing a line in your <samp>~/.profile</samp> or <samp>~/.bash_profile</samp> like so:
+To start the debugging bridge, Type in the following terminal command:
+
+	adb forward tcp:9222 localabstract:opera_devtools_remote
+
+You should see a message output along the lines of the following:
+
+	$ daemon not running. starting it now on port 5037*
+	$ daemon started successfully
+
+If you are using Linux or Mac OSX, you will have to add ./ at the start of the terminal command above, to tell terminal to look for adb inside the current directory, and not your Path. To avoid having to do this every time, you could add a path to adb in your actual path. You can do this by placing a line in your ~/.profile or ~/.bash_profile like so:
 
 	export PATH=/Users/your-username/path-to-adk-folder/adt/sdk/platform-tools/:$PATH
 
@@ -68,13 +88,15 @@ You'll then need to restart the Terminal, or open a new tab.
 
 ## Debug!
 
-Your device and desktop browser should now be connected and able to send information to each other across the debugging bridge. To begin debugging, go to <samp>localhost:9222</samp> in your desktop browser. You'll see a list of inspectable tabs (note that if you open a new tab on the device, you'll need to refresh the Inspectable Tabs page):
+Your device and desktop browser should now be connected and able to send information to each other across the debugging bridge. To begin debugging, go to localhost:9222 in your desktop browser. You'll see a list of inspectable tabs (note that if you open a new tab on the device, you'll need to refresh the Inspectable Tabs page):
 
 ![localhost:9222 list of inspectable tabs](inspectable-tabs.png)
 
-If you instead get a message saying that the server sent no data, or similar, you might have typed in the Terminal command incorrectly. Go back to the Terminal, check it, and try again. There is a very small chance that, if it didn't work, the bridge isn't running, but its process still is. If you still have a problem upon retrying the Terminal command, you might have kill the process directly. This can be done by first typing the command <code>ps -A</code> to bring up a list of running processes, finding the right process ID (the one with "adb fork-server server" in the CMD column), and then killing it with <code>kill <em>your-process-id</em></code>.
+If you instead get a message saying that the server sent no data, or similar, you might have typed in the Terminal command incorrectly. Go back to the Terminal, check it, and try again. There is a very small chance that, if it didn't work, the bridge isn't running, but its process still is. If you still have a problem upon retrying the Terminal command, you might have kill the process directly. This can be done by first typing the command `ps -A` to bring up a list of running processes, finding the right process ID (the one with "adb fork-server server" in the CMD column), and then killing it with `kill _your-process-id_`.
 
-Clicking on one of the inspectable tabs brings up the web inspector full-screen, allowing you to debug, change the page, and [all sorts of amazing things][7]:
+Clicking on one of the inspectable tabs brings up the web inspector full-screen, allowing you to debug, change the page, and [all sorts of amazing things][10]:
+
+[10]: https://docs.google.com/presentation/d/1DNljLkRpe9LIDfcqcpHzdLvEOyuVH4d1y9dtAJBr1I8/preview#slide=id.p19
 
 ![web inspector showing page, changing a heading](web-inspector.gif)
 
@@ -84,16 +106,10 @@ and the changes are immediately visible on your device:
 
 ## What about Opera Dragonfly?
 
-The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, hence using the Web Inspector for now. If you'd like to work on future incarnations of Opera Dragonfly, [we're hiring][8]!
+The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, hence using the Web Inspector for now. If you'd like to work on future incarnations of Opera Dragonfly, [we're hiring][13]!
 
-Cover image by [sleepingcatbeads][9].
+[13]: http://business.opera.com/company/jobs/opening/372/
 
-[1]: http://developer.android.com/sdk/index.html#download
-[2]: http://developer.android.com/tools/extras/oem-usb.html
-[3]: https://play.google.com/store/apps/details?id=com.opera.browser
-[4]: http://www.opera.com/help/mobile
-[5]: http://www.opera.com/help/mini/faq
-[6]: http://developer.android.com/tools/device.html
-[7]: https://docs.google.com/presentation/d/1DNljLkRpe9LIDfcqcpHzdLvEOyuVH4d1y9dtAJBr1I8/preview#slide=id.p19
-[8]: http://business.opera.com/company/jobs/opening/372/
-[9]: http://www.flickr.com/photos/sleepingcatbeads/3872894835/
+Cover image by [sleepingcatbeads][14].
+
+[14]: http://www.flickr.com/photos/sleepingcatbeads/3872894835/
