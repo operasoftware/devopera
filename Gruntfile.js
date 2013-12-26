@@ -3,6 +3,9 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		sass: {
 			compile: {
+				options: {
+					style: 'compressed'
+				},
 				files: {
 					'styles/screen.css': 'styles/screen.scss'
 				}
@@ -30,9 +33,17 @@ module.exports = function(grunt) {
 					collapseWhitespace: true
 				},
 				expand: true,
-				cwd: '_site',
+				cwd: '_site/',
 				src: '**/*.html',
-				dest: '_site'
+				dest: '_site/'
+			}
+		},
+		imagemin: {
+			site: {
+				expand: true,
+				cwd: '_site/',
+				src: '**/*.{png,jpg,gif}',
+				dest: '_site/'
 			}
 		},
 		watch: {
@@ -61,13 +72,15 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	grunt.registerTask('default', [
 		'sass',
 		'autoprefixer',
 		'csso',
 		'jekyll',
-		'htmlmin'
+		'htmlmin',
+		'imagemin'
 	]);
 
 };
