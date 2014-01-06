@@ -3,21 +3,35 @@ layout: default
 ---
 
 <main class="main">
-	<section>
+	<section class="main-articles">
 		<h2><a href="/articles/">Articles</a></h2>
 {% for article in site.categories.articles limit:4 %}
 		<article class="content">
 			<h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-			<p>By {{ article.author }} at <time>{{ article.date | date: '%d %B %Y' }}</time></p>
+			<p>By 
+{% for authors in site.categories.authors %}
+	{% assign author = authors.id | remove: '/authors/' %}
+	{% if article.authors contains author %}
+		<a href="{{ authors.url }}">{{ authors.title }}</a> 
+	{% endif %}
+{% endfor %}
+			at <time>{{ article.date | date: '%d %B %Y' }}</time></p>
 		</article>
 {% endfor %}
 	</section>
-	<section>
+	<section class="main-blog">
 		<h2><a href="/blog/">Blog</a></h2>
 {% for post in site.categories.blog limit:4 %}
 		<article class="content">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-			<p>By {{ post.author }} at <time>{{ post.date | date: '%d %B %Y' }}</time></p>
+			<p>By 
+{% for authors in site.categories.authors %}
+	{% assign author = authors.id | remove: '/authors/' %}
+	{% if post.authors contains author %}
+		<a href="{{ authors.url }}">{{ authors.title }}</a> 
+	{% endif %}
+{% endfor %}
+			at <time>{{ post.date | date: '%d %B %Y' }}</time></p>
 		</article>
 {% endfor %}
 	</section>

@@ -90,7 +90,7 @@ $gutter:                24px!default;
 /**
  * Would you like Sass’ silent classes, or regular CSS classes?
  */
-$use-silent-classes:    false!default;
+$use-silent-classes:    true!default;
 
 
 /**
@@ -211,9 +211,9 @@ $class-type:            unquote(".");
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
 #{$class-type}grid{
-    list-style:none;                /* [1] */
-    margin:0;                       /* [2] */
-    padding:0;                      /* [2] */
+    // list-style:none;                /* [1] */
+    // margin:0;                       /* [2] */
+    // padding:0;                      /* [2] */
     margin-left:-$gutter;           /* [3] */
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;

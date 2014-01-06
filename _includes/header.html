@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="no-js ie6 oldie"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="no-js ie7 oldie"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="no-js ie8 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head>
 	<title>{{ site.title }}{% if page.title %} — {{ page.title }}{% endif %}</title>
@@ -12,17 +12,22 @@
 </head>
 <body>
 	<header class="header" role="banner">
-		<div class="header-wrap">
-			<div class="header-title">
-				<a href="/">
-					<h1>Dev.<span>Opera</span></h1>
-				</a>
-			</div>
-			<form action="http://google.com/" method="get">
-				<fieldset class="header-search">
-					<input type="text" name="q" placeholder="Search Dev.Opera">
-					<input type="hidden" name="site" value="dev.opera.com">
-				</fieldset>
-			</form>
+		<div class="header-title">
+			<a href="/">
+				<h1>Dev.<span>Opera</span></h1>
+			</a>
 		</div>
+		<nav class="header-menu">
+			<ul>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/articles/">Articles</a></li>
+				<li><a href="">Extensions</a></li>
+			</ul>
+		</nav>
+		<form class="header-search" action="http://google.com/" method="get">
+			<fieldset>
+				<input type="text" name="q" placeholder="Search Dev.Opera">
+				<input type="hidden" name="site" value="dev.opera.com">
+			</fieldset>
+		</form>
 	</header>

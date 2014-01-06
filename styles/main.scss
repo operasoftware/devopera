@@ -1,0 +1,17 @@
+// Main
+// -------------------------------
+.main {
+	@extend %grid;
+	}
+	.main-articles {
+		@extend %grid__item;
+		@extend %one-half;
+		}
+	.main-blog {
+		@extend %grid__item;
+		@extend %one-half;
+		}
+	.main-content {
+		@extend %grid__item;
+		@extend %one-whole;
+		}
