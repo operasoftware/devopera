@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 		watch: {
 			styles: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'jekyll']
+				tasks: ['sass', 'autoprefixer', 'copy:css']
 			},
 			jekyll: {
 				files: [
@@ -62,7 +62,14 @@ module.exports = function(grunt) {
 					'!package.json',
 					'!.git/**'
 				],
-				tasks: 'jekyll'
+				tasks: ['htmlmin', 'jekyll']
+			}
+		},
+		copy: {
+			css: {
+				files: {
+					'_site/styles/screen.css' : 'styles/screen.css'
+				}
 			}
 		}
 	});
@@ -74,6 +81,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', [
 		'sass',
