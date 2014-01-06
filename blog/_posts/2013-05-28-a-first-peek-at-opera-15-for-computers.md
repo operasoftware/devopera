@@ -1,6 +1,6 @@
 ---
 title: "A first peek at Opera 15 for Computers"
-author:
+authors:
 - bruce-lawson
 tags:
 - stash

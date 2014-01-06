@@ -1,6 +1,6 @@
 ---
 title: "Opera’s WebKit patches"
-author:
+authors:
 - bruce-lawson
 tags:
 - webkit

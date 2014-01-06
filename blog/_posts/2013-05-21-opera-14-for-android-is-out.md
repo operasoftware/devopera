@@ -1,6 +1,6 @@
 ---
 title: "Opera 14 for Android is out!"
-author:
+authors:
 - andreas-bovens
 tags:
 - chromium
