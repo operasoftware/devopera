@@ -1,7 +1,14 @@
 ---
 title: "Opera’s WebKit patches"
-author: "Bruce Lawson"
-tags: webkit open-source css opera multi-column media-queries
+author:
+- bruce-lawson
+tags:
+- webkit
+- open-source
+- css
+- opera
+- multi-column
+- media-queries
 intro: "About five weeks ago, we announced that Opera's products would transition to using WebKit. We said “Opera will contribute to the WebKit and Chromium projects. Our work on web standards to advance the web continues.”"
 layout: post
 ---

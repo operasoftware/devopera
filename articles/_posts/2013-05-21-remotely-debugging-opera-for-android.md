@@ -1,11 +1,13 @@
 ---
 title: Remotely debugging Opera for Android
-authors: brucelawson chrismills
-layout: article
+authors:
+- bruce-lawson
+- chris-mills
 tags:
 - android
 - opera 14
 - remote debugging
+layout: article
 ---
 
 ## Introduction

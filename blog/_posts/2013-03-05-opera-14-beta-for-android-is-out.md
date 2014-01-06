@@ -1,7 +1,13 @@
 ---
 title: "Opera 14 beta for Android is out"
-author: "Andreas Bovens"
-tags: webkit browsers opera mobile android
+author:
+- andreas-bovens
+tags:
+- webkit
+- browsers
+- opera
+- mobile
+- android
 intro: "Yes, that's right: 14. We think that the engine switch from Presto to WebKit that we announced a few weeks ago is such a big step that we decided to skip the 13 number altogether, and go straight to 14! But there's more than just the engine to talk about: you'll also notice a total overhaul of the UI in native code, making it fit well with the latest Android design guidelines. Go get the beta from Google Play or point your browser to m.opera.com, and give it a spin!"
 layout: post
 ---

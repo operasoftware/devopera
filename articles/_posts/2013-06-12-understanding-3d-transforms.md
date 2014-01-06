@@ -1,11 +1,12 @@
 ---
 title: Understanding 3D Transforms
-authors: webinista
-layout: article
+authors:
+- tiffany-brown
 tags:
 - css
 - css3
 - transforms
+layout: article
 ---
 
 1. Introduction

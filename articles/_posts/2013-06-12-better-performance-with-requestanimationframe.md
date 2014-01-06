@@ -1,13 +1,14 @@
 ---
 title: Better Performance With requestAnimationFrame
-authors: dropoutwannabe
-layout: article
+authors:
+- luz-caballero
 tags:
 - animation
 - javascript
 - requestanimationframe
 - setinterval
 - settimeout
+layout: article
 ---
 
 ## Introduction

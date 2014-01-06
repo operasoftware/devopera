@@ -1,7 +1,12 @@
 ---
 title: "A first peek at Opera 15 for Computers"
-author: "Bruce Lawson"
-tags: stash discover opera-15 blink
+author:
+- bruce-lawson
+tags:
+- stash
+- discover
+- opera-15
+- blink
 intro: "Hurrah! Hot on the heels of the release of Opera 14 for Android (based on Chromium 26), here's a first peek at our all new Opera for Computers. It's called Opera Next 15 and it's based on Chromium 28 — which means that it comes with Blink on board — but as it's an evergreen browser with a fast release cycle, we don't recommend reading too much into the digits — it's what's in it that counts!"
 layout: post
 ---
