@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 					'!package.json',
 					'!.git/**'
 				],
-				tasks: ['htmlmin', 'jekyll']
+				tasks: ['jekyll', 'htmlmin']
 			}
 		},
 		copy: {
