@@ -5,13 +5,14 @@
 	}
 	.main-articles {
 		@extend %grid__item;
-		@extend %one-half;
+		@extend %lap--one-half;
+		@extend %desk--one-third;
 		}
 	.main-blog {
 		@extend %grid__item;
-		@extend %one-half;
+		@extend %lap--one-half;
+		@extend %desk--one-third;
 		}
 	.main-content {
 		@extend %grid__item;
-		@extend %one-whole;
 		}

@@ -1,13 +1,13 @@
 // Header
 // -------------------------------
 .header {
-	padding:20px 0;
+	padding:36px 0;
 	@extend %grid;
 	}
 	.header-title {
 		@extend %grid__item;
 		@extend %palm--one-whole;
-		@extend %lap--one-half;
+		@extend %lap--one-third;
 		@extend %desk--three-twelfths;
 		}
 	.header-menu {
@@ -19,13 +19,13 @@
 			@extend %grid;
 			li {
 				@extend %grid__item;
-				@extend %one-third;
+				@extend %palm--one-whole;
+				@extend %lap--one-third;
+				@extend %desk--one-third;
 				}
 			}
 		}
 	.header-search {
 		@extend %grid__item;
-		@extend %palm--one-whole;
-		@extend %lap--one-half;
 		@extend %desk--three-twelfths;
 		}
