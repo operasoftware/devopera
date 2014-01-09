@@ -13,16 +13,12 @@
 <body>
 	<header class="header" role="banner">
 		<div class="header-title">
-			<a href="/">
+{% if page.url != '/index.html' %}<a href="/">{% endif %}
 				<h1>Dev.<span>Opera</span></h1>
-			</a>
+{% if page.url != '/index.html' %}</a>{% endif %}
 		</div>
 		<nav class="header-menu">
-			<ul>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/articles/">Articles</a></li>
-				<li><a href="">Extensions</a></li>
-			</ul>
+			{% include menu.html items='blog|articles|extensions' %}
 		</nav>
 		<form class="header-search" action="http://google.com/" method="get">
 			<fieldset>
