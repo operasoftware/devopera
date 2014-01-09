@@ -2,13 +2,12 @@
 <ul>
 {% for item in items %}
 	<li>
-{% unless page.url contains item %}
-		<a href="/{{ item }}/">
-{% endunless %}
-			{{ item | capitalize }}
-{% unless page.url contains item %}
-		</a>
-{% endunless %}
+	{% assign url = page.url | remove: 'index.html' | replace: '/','' %}
+	{% if url == item %}
+		{{ item | capitalize }}
+	{% else %}
+		<a href="/{{ item }}/">{{ item | capitalize }}</a>
+	{% endif %}
 	</li>
 {% endfor %}
 </ul>

@@ -13,9 +13,13 @@
 <body>
 	<header class="header" role="banner">
 		<div class="header-title">
-{% if page.url != '/index.html' %}<a href="/">{% endif %}
-				<h1>Dev.<span>Opera</span></h1>
-{% if page.url != '/index.html' %}</a>{% endif %}
+			<h1>
+{% if page.url == '/index.html' %}
+				Dev.<span>Opera</span>
+{% else %}
+				<a href="/">Dev.<span>Opera</span></a>
+{% endif %}
+			</h1>
 		</div>
 		<nav class="header-menu">
 			{% include menu.html items='blog|articles|extensions' %}

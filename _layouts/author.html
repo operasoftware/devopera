@@ -10,9 +10,9 @@ layout: default
 		<ul>
 {% assign author = page.id | remove: '/authors/' %}
 {% for post in site.posts %}
-{% if post.authors contains author %}
+	{% if post.authors contains author %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}
+	{% endif %}
 {% endfor %}
 		</ul>
 	</article>

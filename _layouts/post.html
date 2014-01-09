@@ -5,14 +5,13 @@ layout: default
 <main class="main">
 	<article role="main" class="main-content">
 		<h1>{{ page.title }}</h1>
-		<p>
-			By {{ page.author }} at <time>{{ page.date | date: '%d %B %Y' }}</time>
+		<p>By {% include author.html object=page %} at <time>{{ page.date | date: '%d %B %Y' }}</time>
+		</p>
+		<p>Tags:
 {% for tag in page.tags %}
 			<a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 		</p>
-
 {{ content }}
-
 	</article>
 </main>

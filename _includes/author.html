@@ -1,0 +1,6 @@
+{% for authors in site.categories.authors %}
+	{% assign author = authors.id | remove: '/authors/' %}
+	{% if {{include.object}}.authors contains author %}
+		<a href="{{ authors.url }}">{{ authors.title }}</a>
+	{% endif %}
+{% endfor %}
