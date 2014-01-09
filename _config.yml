@@ -1,11 +1,11 @@
 title: Dev.Opera
-url: http://dev.opera.com
 markdown: kramdown
 kramdown:
   auto_ids: true
   transliterated_header_ids: true
 permalink: /:categories/:title
-include: .htaccess
+include:
+- '.htaccess'
 exclude:
 - 'node_modules'
 - 'Gruntfile.js'
