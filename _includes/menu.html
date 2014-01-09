@@ -1,0 +1,14 @@
+{% assign items = include.items | split: '|' %}
+<ul>
+{% for item in items %}
+	<li>
+{% unless page.url contains item %}
+		<a href="/{{ item }}/">
+{% endunless %}
+			{{ item | capitalize }}
+{% unless page.url contains item %}
+		</a>
+{% endunless %}
+	</li>
+{% endfor %}
+</ul>
