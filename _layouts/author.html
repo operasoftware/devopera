@@ -11,7 +11,9 @@ layout: default
 {% assign author = page.id | remove: '/authors/' %}
 {% for post in site.posts %}
 	{% if post.authors contains author %}
+		{% unless post.lang %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endunless %}
 	{% endif %}
 {% endfor %}
 		</ul>
