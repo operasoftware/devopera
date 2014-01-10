@@ -5,8 +5,8 @@ authors:
 - chris-mills
 tags:
 - android
-- opera 14
-- remote debugging
+- opera-14
+- remote-debugging
 layout: article
 ---
 
