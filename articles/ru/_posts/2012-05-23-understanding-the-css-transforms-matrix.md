@@ -11,7 +11,6 @@ tags:
 - transform-origin
 - vector
 - math
-lang: ru
 layout: article
 ---
 
