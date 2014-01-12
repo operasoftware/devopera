@@ -6,7 +6,7 @@ layout: default
 	<section class="main-articles">
 		<h2><a href="/articles/">Articles</a></h2>
 {% for post in site.categories.articles %}
-	{% unless post.categories.size > 1 %}
+	{% unless post.categories[1] %}
 		<article class="content">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a> {{ post.categories }}</h3>
 			<p>
@@ -20,7 +20,7 @@ layout: default
 	<section class="main-blog">
 		<h2><a href="/blog/">Blog</a></h2>
 {% for post in site.categories.blog %}
-	{% unless post.categories.size > 1 %}
+	{% unless post.categories[1] %}
 		<article class="content">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 			<p>

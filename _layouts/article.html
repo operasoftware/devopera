@@ -14,6 +14,18 @@ layout: default
 			<a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 		</p>
+		<p>Translations:
+{% for post in site.categories.articles %}
+	{% assign lang = post.categories[1] %}
+	{% if lang %}
+		{% assign current = page.url | split: '/' | last %}
+		{% assign translation = post.url | split: '/' | last %}
+		{% if translation == current %}
+			<a href="{{ post.url }}">{{ site.data.lang[lang] }}</a>
+		{% endif %}
+	{% endif %}
+{% endfor %}
+		</p>
 {{ content }}
 	</article>
 </main>
