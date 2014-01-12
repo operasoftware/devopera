@@ -11,16 +11,20 @@ layout: default
 		</p>
 		<p>Tags:
 {% for tag in page.tags %}
-			<a href="/tags/{{ tag }}">{{ tag }}</a>
+			 <a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 		</p>
 		<p>Translations:
 {% for post in site.categories.articles %}
-	{% assign lang = post.categories[1] %}
-	{% if lang %}
-		{% assign current = page.url | split: '/' | last %}
-		{% assign translation = post.url | split: '/' | last %}
-		{% if translation == current %}
+	{% assign current = page.url | split: '/' | last %}
+	{% if post.url contains current %}
+		{% assign lang = post.categories[1] %}
+		{% unless lang %}
+			{% assign lang = 'en' %}
+		{% endunless %}
+		{% if page.url == post.url %}
+			{{ site.data.lang[lang] }}
+		{% else %}
 			<a href="{{ post.url }}">{{ site.data.lang[lang] }}</a>
 		{% endif %}
 	{% endif %}
