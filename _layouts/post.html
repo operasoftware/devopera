@@ -3,9 +3,15 @@ layout: default
 ---
 
 <main class="main">
-	<article role="main" class="main-content">
+	{% assign lang = page.categories[1] %}
+	{% unless lang %}
+		{% assign lang = 'en' %}
+	{% endunless %}
+	<article role="main" class="main-content" lang="{{ lang }}">
 		<h1>{{ page.title }}</h1>
-		<p>By {% include author.html object=page %} at <time>{{ page.date | date: '%d %B %Y' }}</time>
+		<p>
+			By {% include author.html object=page %}
+			at <time>{{ page.date | date: '%d %B %Y' }}</time>
 		</p>
 		<p>Tags:
 {% for tag in page.tags %}

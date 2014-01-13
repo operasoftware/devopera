@@ -3,7 +3,11 @@ layout: default
 ---
 
 <main class="main">
-	<article role="main" class="main-content">
+	{% assign lang = page.categories[1] %}
+	{% unless lang %}
+		{% assign lang = 'en' %}
+	{% endunless %}
+	<article role="main" class="main-content" lang="{{ lang }}">
 		<h1>{{ page.title }}</h1>
 		<p>
 			By {% include author.html object=page %}
@@ -11,7 +15,7 @@ layout: default
 		</p>
 		<p>Tags:
 {% for tag in page.tags %}
-			 <a href="/tags/{{ tag }}">{{ tag }}</a>
+			<a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 		</p>
 {% include translations.html category=site.categories.articles %}
