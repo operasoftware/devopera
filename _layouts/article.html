@@ -14,27 +14,7 @@ layout: default
 			 <a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 		</p>
-{% assign translated = false %}
-{% capture translations %}
-	{% for post in site.categories.articles %}
-		{% assign current = page.url | split: '/' | last %}
-		{% if post.url contains current %}
-			{% assign lang = post.categories[1] %}
-			{% unless lang %}
-				{% assign lang = 'en' %}
-			{% endunless %}
-			{% if page.url != post.url %}
-				{% assign translated = true %}
-				<a href="{{ post.url }}">{{ site.data.lang[lang] }}</a>
-			{% else %}
-				{{ site.data.lang[lang] }}
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-{% endcapture %}
-{% if translated %}
-	<p>Translations: {{ translations }}</p>
-{% endif %}
+{% include translations.html category=site.categories.articles %}
 {{ content }}
 	</article>
 </main>
