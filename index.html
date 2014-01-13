@@ -5,30 +5,42 @@ layout: default
 <main class="main">
 	<section class="main-articles">
 		<h2><a href="/articles/">Articles</a></h2>
-{% for post in site.categories.articles %}
-	{% unless post.categories[1] %}
-		<article class="content">
-			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-			<p>
-				By {% include author.html object=post %}
-				at <time>{{ post.date | date: '%d %B %Y' }}</time>
-			</p>
-		</article>
-	{% endunless %}
+{% capture articles %}
+	{% for post in site.categories.articles %}
+		{% unless post.categories[1] %}
+			<article class="content">
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				<p>
+					By {% include author.html object=post %}
+					at <time>{{ post.date | date: '%d %B %Y' }}</time>
+				</p>
+			</article>(•)
+		{% endunless %}
+	{% endfor %}
+{% endcapture %}
+{% assign articles = articles | split: '(•)' %}
+{% for article in articles limit:4 %}
+	{{ article }}
 {% endfor %}
 	</section>
 	<section class="main-blog">
 		<h2><a href="/blog/">Blog</a></h2>
-{% for post in site.categories.blog %}
-	{% unless post.categories[1] %}
-		<article class="content">
-			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-			<p>
-				By {% include author.html object=post %}
-				at <time>{{ post.date | date: '%d %B %Y' }}</time>
-			</p>
-		</article>
-	{% endunless %}
+{% capture posts %}
+	{% for post in site.categories.blog %}
+		{% unless post.categories[1] %}
+			<article class="content">
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				<p>
+					By {% include author.html object=post %}
+					at <time>{{ post.date | date: '%d %B %Y' }}</time>
+				</p>
+			</article>(•)
+		{% endunless %}
+	{% endfor %}
+{% endcapture %}
+{% assign posts = posts | split: '(•)' %}
+{% for post in posts limit:4 %}
+	{{ post }}
 {% endfor %}
 	</section>
 </main>
