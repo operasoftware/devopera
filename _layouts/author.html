@@ -8,7 +8,7 @@ layout: default
 		<img src="{{ page.url }}.jpg">
 		<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
 		<ul>
-{% assign author = page.id | remove: '/authors/' %}
+{% assign author = page.id | split: '/' | last %}
 {% for post in site.posts %}
 	{% if post.authors contains author %}
 		{% unless post.categories[1] %}
