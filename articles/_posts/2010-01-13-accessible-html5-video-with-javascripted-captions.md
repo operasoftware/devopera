@@ -43,7 +43,7 @@ However, in practice, nobody knows how to do that and no browser knows how to ge
 
 For those with JavaScript enabled, I want to show individual lines of the transcript overlaid on top of the video as captions. They will still be plain text, so assistive technologies can access the captions, as well as being viewable on screen, and these will be synchronised with the video.
 
-Here’s a silly sample video that shows the technique: [ Example captioned video — How to Leverage a Synergy][4]. (You need to be using an [Ogg video-enabled browser][5].)
+Here’s a silly sample video that shows the technique: [Example captioned video — How to Leverage a Synergy][4]. (You need to be using an [Ogg video-enabled browser][5].)
 
 [4]: http://people.opera.com/brucel/demo/video/accessible-html5-video-captions.html
 [5]: http://www.opera.com/browser/next/

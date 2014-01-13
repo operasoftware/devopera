@@ -43,7 +43,7 @@ I’ve also used un-prefixed versions of the `transform` properties in this arti
 [8]: http://en.wikipedia.org/wiki/Matrix_(mathematics)
 
 <figure id="figure-1">
-	<img src="1.gif" alt="A 3 by 3 grid of numbers. Top row: 1, 2, 8. Middle row: 10, 3, 9. Bottom row: 7, 4, 0">
+	<img src="/articles/understanding-the-css-transforms-matrix/1.gif" alt="A 3 by 3 grid of numbers. Top row: 1, 2, 8. Middle row: 10, 3, 9. Bottom row: 7, 4, 0">
 	<figcaption markdown="span">Figure 1: An example of a matrix</figcaption>
 </figure>
 
@@ -62,14 +62,14 @@ First let’s talk about coordinate systems. Every document viewport is a coordi
 When a transform is applied to an object, it creates a **local coordinate system**. By default, the **origin** — the `(0,0)` point — of the local coordinate system lies at the object’s center or `50% 50%` ([Figure 2](#figure-2)).
 
 <figure id="figure-2">
-	<img src="2.gif" alt="An example of a local coordinate system">
+	<img src="/articles/understanding-the-css-transforms-matrix/2.gif" alt="An example of a local coordinate system">
 	<figcaption markdown="span">Figure 2: A local coordinate system</figcaption>
 </figure>
 
 We can change the origin of the local coordinate system by adjusting the `transform-origin` property ([Figure 3](#figure-3)). Using `transform-origin: 50px 70px`, for example, puts the coordinate system origin 50 pixels from the left of the object’s box, and 70 pixels from its top. Transforms for any point within the object’s local coordinate system are relative to this local origin.
 
 <figure id="figure-3">
-	<img src="4.gif" alt="An example of a local coordinate system">
+	<img src="/articles/understanding-the-css-transforms-matrix/4.gif" alt="An example of a local coordinate system">
 	<figcaption markdown="span">Figure 3: A local coordinate system, with a transform origin of `(50px,70px)`. Also shown is a point at `(30px,30px)`</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ Let’s look at an example using the [3×3 matrix][18] used to calculate two dim
 [20]: http://www.w3.org/TR/css3-transforms/#mathematical-description
 
 <figure id="figure-4">
-	<img src="3.gif" alt="A 3×3 grid of numbers. Top row: a c e. Middle row: b d f. Bottom row: 0 0 1">
+	<img src="/articles/understanding-the-css-transforms-matrix/3.gif" alt="A 3×3 grid of numbers. Top row: a c e. Middle row: b d f. Bottom row: 0 0 1">
 	<figcaption markdown="span">Figure 4: The CSS two-dimensional transform matrix</figcaption>
 </figure>
 
@@ -94,14 +94,14 @@ When we apply a 2D transform, the browser multiplies the matrix by a vector: `[x
 To determine the transformed coordinates, we multiply each entity in each row of the matrix by its corresponding row in the vector. Then we add the products ([Figure 5](#figure-5)).
 
 <figure id="figure-5">
-	<img src="5.gif" alt="When multiplying a matrix by a vector, the product is the sum of the products of each element in the matrix multiplied by its corresponding element in the vector">
+	<img src="/articles/understanding-the-css-transforms-matrix/5.gif" alt="When multiplying a matrix by a vector, the product is the sum of the products of each element in the matrix multiplied by its corresponding element in the vector">
 	<figcaption markdown="span">Figure 5: Multiplying a matrix by a vector</figcaption>
 </figure>
 
 I know that looks like a bunch of meaningless numbers and letters. But as mentioned above, each type of transform has its own matrix. [Figure 6](#figure-6) shows the matrix for a translation transformation.
 
 <figure id="figure-6">
-	<img src="6.gif" alt="The translation is an identity matrix, but position 0,2 is the x-axis translation and 1,2 is the y-axis translation">
+	<img src="/articles/understanding-the-css-transforms-matrix/6.gif" alt="The translation is an identity matrix, but position 0,2 is the x-axis translation and 1,2 is the y-axis translation">
 	<figcaption markdown="span">Figure 6: the translation matrix</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ The values `tx` and `ty` are the values by which the origin should be translated
 Let’s transform an object that has its top-left corner aligned with the top-left corner of our viewport ([Figure 7](#figure-7)). Its global coordinates are `(0,0)`.
 
 <figure id="figure-7">
-	<img src="4b.png" alt="An object with coordinates of (0,0)">
+	<img src="/articles/understanding-the-css-transforms-matrix/4b.png" alt="An object with coordinates of (0,0)">
 	<figcaption markdown="span">Figure 7: An object with global coordinates of `(0,0)`</figcaption>
 </figure>
 
@@ -127,14 +127,14 @@ We’ll translate this object by 150 pixels along the _X_ and _Y_ axes, using th
 This, by the way, is the equivalent of `transform: translate(150px,150px)`. Let’s calculate the result of this transform for a point at `(220px,220px)` ([Figure 8](#figure-8)).
 
 <figure id="figure-8">
-	<img src="7.gif" alt="Multiplying our translation matrix by our vector gives us coordinates of 370,370">
+	<img src="/articles/understanding-the-css-transforms-matrix/7.gif" alt="Multiplying our translation matrix by our vector gives us coordinates of 370,370">
 	<figcaption markdown="span">Figure 8: Calculating a translation transform</figcaption>
 </figure>
 
 Transforms map coordinates and lengths from the object’s local coordinate system to the previous coordinate system. Where a point is rendered in the viewport depends on the transform applied offset from the object’s start position. In this example, our point at `(220px,220px)` is now rendered at `(370px,370px)`. Other coordinates within our object’s bounds have also been shifted by 150 pixels to the right, and 150 pixels down ([Figure 9](#figure-9)).
 
 <figure id="figure-9">
-	<img src="7b.png" alt="A 4×4 matrix, with the values sx, sy, sz, and 1 on the diagonal">
+	<img src="/articles/understanding-the-css-transforms-matrix/7b.png" alt="A 4×4 matrix, with the values sx, sy, sz, and 1 on the diagonal">
 	<figcaption markdown="span">Figure 9: Our object after the translation is applied</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ The translation matrix is a special case. It is both _additive_ and _multiplicat
 We covered the 3×3 translation matrix above. Let’s try another example using the 4×4 transformation matrix for scaling ([Figure 10](#figure-10)).
 
 <figure id="figure-10">
-	<img src="8.gif" alt="A 4×4 matrix, with the values sx, sy, sz, and 1 on the diagonal">
+	<img src="/articles/understanding-the-css-transforms-matrix/8.gif" alt="A 4×4 matrix, with the values sx, sy, sz, and 1 on the diagonal">
 	<figcaption markdown="span">Figure 10: The 4×4 transformation matrix for scaling</figcaption>
 </figure>
 
@@ -160,14 +160,14 @@ Let’s continue with our object from above. We’re going to scale down along t
 This is the equivalent of `transform: scale3d(0.8, 0.5, 1)`. Because we are only scaling along the _X_ and _Y_ axes (creating a 2D transform), we could also use `transform: matrix(.8, 0, 0, .5, 0, 0)` or `scale(.8,.5)`. You can see the effect of this transform in [Figure 11](#figure-11).
 
 <figure id="figure-11">
-	<img src="9b.png" alt="The effect of our scaling matrix">
+	<img src="/articles/understanding-the-css-transforms-matrix/9b.png" alt="The effect of our scaling matrix">
 	<figcaption markdown="span">Figure 11: A 300×300 pixel object after our scaling transform has been applied</figcaption>
 </figure>
 
 If we multiply this matrix by a coordinate vector `[150,150,1]`, ([Figure 12](#figure-12)), we get the our point’s new coordinates: `(120,75,1)`.
 
 <figure id="figure-12">
-	<img src="9.gif" alt="A scaling matrix where sx equals .8, sy equals .5, and sz equals 1 multiplied by the vector 150, 150, 1 produces coordinates of 120, 75, 1">
+	<img src="/articles/understanding-the-css-transforms-matrix/9.gif" alt="A scaling matrix where sx equals .8, sy equals .5, and sz equals 1 multiplied by the vector 150, 150, 1 produces coordinates of 120, 75, 1">
 	<figcaption markdown="span">Figure 12: Calculating a scaling transform</figcaption>
 </figure>
 
@@ -185,21 +185,21 @@ Finally, let’s look at how to create a compound transform — a transform equa
 The rotation matrix, expressed as a vector, is `[cos(a) sin(a) -sin(a) cos(a) 0 0]` where _a_ is an angle. To scale, we need to use the matrix `[sx 0 0 sy 0 0]`. To combine, multiply the rotation matrix by the scaling matrix as shown in [Figure 13](#figure-13) (both the sine and cosine of 45° is 0.7071).
 
 <figure id="figure-13">
-	<img src="10.gif" alt="Multiplying a 45 degree rotation matrix by a 1.5 scaling matrix">
+	<img src="/articles/understanding-the-css-transforms-matrix/10.gif" alt="Multiplying a 45 degree rotation matrix by a 1.5 scaling matrix">
 	<figcaption markdown="span">Figure 13: Calculating a compound transform matrix</figcaption>
 </figure>
 
 Using CSS, this would be: `transform: matrix(1.0606, 1.0606, -1.0606, 1.0606, 0, 1)`. [Figure 14](#figure-14) shows the effect of this transform after it’s applied.
 
 <figure id="figure-14">
-	<img src="10b.png" alt="Applying a compound transform to an object">
+	<img src="/articles/understanding-the-css-transforms-matrix/10b.png" alt="Applying a compound transform to an object">
 	<figcaption markdown="span">Figure 14: Our 300×300 pixel object after it has been scaled and rotated</figcaption>
 </figure>
 
 Now let’s calculate the new viewport coordinates of a point at `(298,110)` as shown in [Figure 15](#figure-15).
 
 <figure id="figure-15">
-	<img src="11.gif" alt="Calculating the effect of the above compound transform matrix returns coordinates of 316.0588,432.4248">
+	<img src="/articles/understanding-the-css-transforms-matrix/11.gif" alt="Calculating the effect of the above compound transform matrix returns coordinates of 316.0588,432.4248">
 	<figcaption markdown="span">Figure 15: Applying the transform</figcaption>
 </figure>
 

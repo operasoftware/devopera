@@ -36,7 +36,7 @@ Opera 15 adds a lot of goodies under its hood, including [three-dimensional CSS 
 What separates 3D transforms from 2D transforms is perspective (see Figure 1): creating the illusion of depth and space on a two-dimensional screen by translating points along or around a z-axis.
 
 <figure id="perspectivedrawing">
-	<img src="staircase.jpg">
+	<img src="/articles/understanding-3d-transforms/staircase.jpg">
 	<figcaption markdown="span">Figure 1: Staircase perspective drawing by [Luciano Testoni][17].</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ If we think of our drawing surface as a [coordinate system][19], we can also thi
 [19]: http://en.wikipedia.org/wiki/Coordinate_system
 
 <figure id="origin">
-	<img src="coordinate-system.png">
+	<img src="/articles/understanding-3d-transforms/coordinate-system.png">
 	<figcaption markdown="span">Figure 2: The origin of a three-dimensional coordinate system.</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ When we apply a transform, our drawing surface becomes a containing block. This 
 You've probably noticed that we applied our `perspective` property to `#stage` rather than to its child elements. That's because `perspective` sets the stage, so to speak, for the transforms applied to its children ([Figure 3](#perspective1)). Without the `perspective` property, your transforms may appear flat and two-dimensional ([view perspective demo](perspective.html)).
 
 <figure id="perspective1">
-	<img src="perspective.png" alt="An example of transformed elements in 3D">
+	<img src="/articles/understanding-3d-transforms/perspective.png" alt="An example of transformed elements in 3D">
 	<figcaption markdown="span">Figure 3: An example of a 3D rotation transform with the `perspective` property applied.</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ Unlike the `perspective` property, negative values are allowed. If two values ar
 As [shown below](#persporigin) in Figure 4, this CSS creates the effect of looking at our child elements towards a point that is 200% along the x-axis and 1500 pixels along the y-axis.
 
 <figure id="persporigin">
-	<img src="perspective-origin.png">
+	<img src="/articles/understanding-3d-transforms/perspective-origin.png">
 	<figcaption markdown="span">Figure 4: The parent element in this example has a style sheet of `perspective-origin: 200% 1500px` applied.</figcaption>
 </figure>
 
@@ -157,8 +157,8 @@ Think about a playing card. It has two sides, one of which you can see at any gi
 	<body>
 		<div id="deck">
 			<div class="card">
-			   <div class="back">&nbsp;</div>
-			   <div class="front">A&#9824;</div>
+				<div class="back">&nbsp;</div>
+				<div class="front">A&#9824;</div>
 			</div>
 		</div>
 	</body>
@@ -171,7 +171,7 @@ Here we have our main container — `<div id="deck">` — and our _card_ contain
 As mentioned above, at any given time a real playing card has a face you can see and a face you can't. The face you can't see is known as its _back face._ With 3D transforms, we can control the visibility of this back face using the `backface-visibility` property. Valid values are `visible` and `hidden`. Back faces are visible by default.
 
 <figure id="backfacevis">
-	<img src="backface.png">
+	<img src="/articles/understanding-3d-transforms/backface.png">
 	<figcaption markdown="span">Figure 5: The card on the left has a `backface-visibility` of `visible`, while the one on the right has a value of `hidden`.</figcaption>
 </figure>
 
@@ -184,14 +184,14 @@ As with a paper drawing, three-dimensional transforms map three dimensions of co
 In [Figure 6](#transformstyle) below, we have three objects whose positions have been translated in the z-direction. Their parent element has also been rotated slightly. When the value of `transform-style` — applied here to the parent element — is `preserve-3d`, we see that the transformation shows three elements in faux three dimensional space.
 
 <figure id="transformstyle">
-	<img src="transstyle.png">
+	<img src="/articles/understanding-3d-transforms/transstyle.png">
 	<figcaption markdown="span">Figure 6: The parent element for these three objects has a `transform-style` value of `preserve-3d`.</figcaption>
 </figure>
 
 Contrast that with [Figure 7](#transformstyleflat), in which the value of `transform-style` is `flat`. These same objects are now rendered as a flattened stack ([see `transform-style` demo](transform-style.html)).
 
 <figure id="transformstyleflat">
-	<img src="transstyle-flat.png">
+	<img src="/articles/understanding-3d-transforms/transstyle-flat.png">
 	<figcaption markdown="span">Figure 7: The parent element in this example has a `transform-style` value of `flat`, instead of `preserve-3d`.</figcaption>
 </figure>
 
@@ -216,7 +216,7 @@ Two dimensional transforms allow developers to manipulate an object along the x 
 The `perspective()` function represents the distance of the z-plane (z = 0) from the viewer. Its argument must have a length such as pixels or ems, and a value greater than zero. Using it causes points to be scaled in the X and Y directions based on their Z values (see [Figure 8](#perspectivefunc)). Lower values create a more exaggerated perspective effect, while higher values result in a more subtle effect. Try the [perspective function demo](perspective-func.html) to get a sense of how it works.
 
 <figure id="perspectivefunc">
-	<img src="perspective-func.png">
+	<img src="/articles/understanding-3d-transforms/perspective-func.png">
 	<figcaption markdown="span">Figure 8: The second figure has a `transform: perspective(200px) rotate3d(20,10,0,-45deg)` style applied.</figcaption>
 </figure>
 
@@ -227,7 +227,7 @@ By using the `perspective()` function, you're creating a **perspective projectio
 In mathematics, a **matrix** is a rectangle of values. An example of a 4-by-4 matrix is shown in [Figure 9](#matrix).
 
 <figure id="matrix">
-	<img src="matrix.gif">
+	<img src="/articles/understanding-3d-transforms/matrix.gif">
 	<figcaption markdown="span">Figure 9: A 4-by-4 matrix.</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ Each transform function — `perspective()`, `rotate3d()`, and so on — can be 
 [48]: http://www.w3.org/TR/css3-transforms/#mathematical-description
 
 <figure id="perspectiveprojection">
-	<img src="persp-matrix.gif">
+	<img src="/articles/understanding-3d-transforms/persp-matrix.gif">
 	<figcaption markdown="span">Figure 10: The perspective projection matrix.</figcaption>
 </figure>
 
@@ -249,7 +249,7 @@ To create a compound transforms using `matrix3d()` you'll need to [multiply the 
 [52]: http://en.wikipedia.org/wiki/Matrix_multiplication
 
 <figure id="matrixmult">
-	<img src="multiplied.gif">
+	<img src="/articles/understanding-3d-transforms/multiplied.gif">
 	<figcaption markdown="span">Figure 11: Multiplying the perspective matrix (left) by the three-dimensional scaling matrix.</figcaption>
 </figure>
 
@@ -297,21 +297,21 @@ Whenever we apply a transform, the browser multiplies the transform matrix by th
 In most cases, when we transform our objects, our z-coordinate is 0. When we apply a z-axis scaling transform to our object, [as shown in Figure 12](#findingscalezcoordinates), our z-coordinate remains zero.
 
 <figure id="findingscalezcoordinates">
-	<img src="scalezmatrix.gif">
+	<img src="/articles/understanding-3d-transforms/scalezmatrix.gif">
 	<figcaption markdown="span">Figure 12: We're multiplying a 3D scaling matrix — the equivalent of `scaleZ(3)` by the coordinates of a point at `(100,200,0)`.</figcaption>
 </figure>
 
 In order to see a visual effect of scaling along the z-axis, the product of our transform matrix and our object's vertices must result in a z value other than zero. Typically this occurs when we use multiple transform functions, and/or nest transformed objects. In [Figure 13](#rotateYscaleZ), we're finding the cumulative transform matrix for `transform: scaleZ(10) rotateY(20deg)` (which is equivalent to `transform: scale3d(1,1,10) rotateY(20deg)`).
 
 <figure id="rotateYscaleZ">
-	<img src="rotateY-scaleZ.gif" alt="Finding the matrix product of a y-axis rotation and a z-axis scaling transform">
+	<img src="/articles/understanding-3d-transforms/rotateY-scaleZ.gif" alt="Finding the matrix product of a y-axis rotation and a z-axis scaling transform">
 	<figcaption markdown="span">Figure 13: Multiplying the matrix for a 20 degree rotation along the y axis by the matrix for a scale along the Z axis.</figcaption>
 </figure>
 
 Now, if we multiply this new matrix transform by the coordinates of a point located at (100,200,0), we can see that we now have a z value that's greater than zero (see Figure 14). The transformed coordinate value of our point is (94,200,34).
 
 <figure id="rotateYscaleZ">
-	<img src="Zmorethan0.gif" alt="Finding the matrix product of a y-axis rotation and a z-axis scaling transform">
+	<img src="/articles/understanding-3d-transforms/Zmorethan0.gif" alt="Finding the matrix product of a y-axis rotation and a z-axis scaling transform">
 	<figcaption markdown="span">Figure 14: Finding the transformed coordinates of a point at `(100,200,0)`.</figcaption>
 </figure>
 
@@ -322,14 +322,14 @@ As with two-dimensional scaling, positive numbers greater than 1 increase the va
 As these function names suggest, `rotateX()`, `rotateY()` and `rotateZ()` rotate an object around the x, y or z axis. Rotations using `rotateX()` spin elements around a horizontal axis ([Figure 15](#rotatex)), while those using `rotateY()` spin elements around a vertical axis.
 
 <figure id="rotatex">
-	<img src="rotateX.png">
+	<img src="/articles/understanding-3d-transforms/rotateX.png">
 	<figcaption markdown="span">Figure 15: Using `rotateX()` to tilt objects.</figcaption>
 </figure>
 
 Rotations using `rotateZ()` are like those of a pinwheel or the hands of an analog clock ([Figure 16](#rotatez)). They spin around the z-axis, behaving exactly like the 2D `rotate()` transform function. In fact, `rotateZ()` and `rotate()` are aliases. If you are only rotating around the z-axis, `rotate()` offers the broadest compatibility with older browsers. You can see how each of these functions work in this [3D rotation demo](rotateXYZ.html).
 
 <figure id="rotatez">
-	<img src="rotateZ.png">
+	<img src="/articles/understanding-3d-transforms/rotateZ.png">
 	<figcaption markdown="span">Figure 16: Using `rotateZ()` to tilt objects.</figcaption>
 </figure>
 
@@ -340,7 +340,7 @@ Each of these functions accept a CSS angle as an argument. Valid values may be d
 `rotate3d()` is a bit more complicated, accepting four parameters. The first three must be numbers, either positive or negative. Together they form an [x,y,z] direction vector. The fourth parameter must be an angle, and determines the angle of rotation in the direction specified by the direction vector. See Figure 17 for an example.
 
 <figure id="rotate3d">
-	<img src="rotate3d.png">
+	<img src="/articles/understanding-3d-transforms/rotate3d.png">
 	<figcaption markdown="span">Figure 17: Rotating around two axes using `rotate3d(1,1,0,45deg)`.</figcaption>
 </figure>
 
