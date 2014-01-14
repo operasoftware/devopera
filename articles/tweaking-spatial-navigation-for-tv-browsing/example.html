@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<meta name="description" content="Spatial navigation web demo. This example shows how to specify which elements on a page should receive focus using the CSS Basic User Interface Module" >
+<style>
+body {
+    background:#eee;
+    color:#333;
+}
+h2 {
+    clear:both;
+}
+li {
+    border:1px solid #ddd;
+    float:left;
+    list-style:none;
+    margin:3px;
+    padding:12px;
+}
+li a img {
+    float:left;
+    height:200px;
+    width:200px;
+    -moz-transition-duration:0.2s;
+    -ms-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    transition-duration:0.2s;
+}
+li a:hover img,
+li a:focus img {
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+footer {
+    clear:both;
+    display:block;
+}
+</style>
+<title>Gallery demo</title>
+</head>
+<body>
+<h1>Gallery demo</h1>
+
+<p>Spatial navigation can sometimes work unexpectedly, with the cursor either moving to seemingly random elements or not moving past a particular element, as with the first example below.</p>
+
+<p>Using CSS such as <code>nav-right: #2;</code> it is possible to specify which element should receive focus next when spatial navigation is used, as in the second example below.</p>
+
+<h2>List without <code>nav-left</code>/<code>nav-right</code></h2>
+<ul>
+    <li><a href="index.html#"><img src="images/nasa1.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa2.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa3.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa4.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa5.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa6.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa7.jpg"></a></li>
+    <li><a href="index.html#"><img src="images/nasa8.jpg"></a></li>
+</ul>
+
+<h2>List with <code>nav-left</code>/<code>nav-right</code></h2>
+<ul>
+    <li><a href="index.html#"><img src="images/nasa1.jpg" id="1" style="nav-left:#8; nav-right:#2;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa2.jpg" id="2" style="nav-left:#1; nav-right:#3;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa3.jpg" id="3" style="nav-left:#2; nav-right:#4;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa4.jpg" id="4" style="nav-left:#3; nav-right:#5;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa5.jpg" id="5" style="nav-left:#4; nav-right:#6;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa6.jpg" id="6" style="nav-left:#5; nav-right:#7;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa7.jpg" id="7" style="nav-left:#6; nav-right:#8;"></a></li>
+    <li><a href="index.html#"><img src="images/nasa8.jpg" id="8" style="nav-left:#7; nav-right:#1;"></a></li>
+</ul>
+
+<footer>
+    CSS3 spec: <a href="http://www.w3.org/TR/css3-ui/#nav-dir">Basic User Interface Module</a><br>
+    Photos: <a href="http://www.nasa.gov">NASA</a>
+</footer>
+
+<script src="http://dev.opera.com/static/articles/device/device.js"></script>
+</body>
+</html>
