@@ -22,7 +22,7 @@ layout: article
 
 ## Introduction {#intro}
 
-The matrix functions -- `matrix()` and `matrix3d()` -- are two of the more brain-bending things to understand about [CSS3 Transforms][6]. In most cases, you’ll use functions such as `rotate()` and `skewY()` for ease and clarity’s sake. Behind every transform, though, is an equivalent matrix. It’s helpful to understand a bit about how they work, so let’s take a look.
+The matrix functions — `matrix()` and `matrix3d()` — are two of the more brain-bending things to understand about [CSS3 Transforms][6]. In most cases, you’ll use functions such as `rotate()` and `skewY()` for ease and clarity’s sake. Behind every transform, though, is an equivalent matrix. It’s helpful to understand a bit about how they work, so let’s take a look.
 
 [6]: http://dev.w3.org/csswg/css3-transforms/
 

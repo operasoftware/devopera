@@ -97,7 +97,7 @@ As I said above, this is a hack. It requires lots of developer work (although to
 
 A couple of problems remain with the script. Firstly, if I mark up abbreviations in the transcript with `abbr`, or foreign languages with `span lang=`, it won’t make it through to the synchronised captions (although it’s unlikely to matter). I haven’t tried including any WAI-ARIA information such as `aria-describedby` (and would welcome feedback on how this should work with ARIA).
 
-Also, in production-ready code the user should be given the option of seeing the transcript rather than captions, even if they are running JavaScript -- perhaps they’re using a mobile phone and don’t want to download the whole video, but want to see the contents as plain text.
+Also, in production-ready code the user should be given the option of seeing the transcript rather than captions, even if they are running JavaScript — perhaps they’re using a mobile phone and don’t want to download the whole video, but want to see the contents as plain text.
 
 The code is released with a creative commons license, so please feel free to amend it--and please leave a link or [tweet me][10] if you do.
 
