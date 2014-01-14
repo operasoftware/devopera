@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+
+<style type="text/css">
+@-o-viewport {
+  width: device-width;
+}
+
+body{
+	background-color: #333;
+	color: #fff;
+	font-family: 'Nobile', sans-serif;
+	text-align: center;
+
+}
+#container{
+	width:70px;
+		margin:0px auto;
+		text-align:left;
+		padding-left:45px;
+}
+
+#saber{
+	width: 20px;
+	height: 50px;
+	background-color: gray;
+	border: 1px solid black;	
+	border-radius: 3px;
+}
+
+.lighton{
+	width: 10px;
+	height: 150px;
+	margin-left: 5px;
+	background-color: #fff;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	box-shadow: 1px 1px 25px #6276d0;
+}
+
+.light{
+	width: 10px;
+	height: 120px;
+	box-shadow: none;
+	background-color: #333;
+}
+
+#warning{
+	color: red;
+	font-size: 0.9em;
+}
+
+button {
+  width: 12em;
+  height: 2.5em;
+  border: 0;
+  border-radius: 1.5em;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.7));
+  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.7));
+  background: -ms-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.7));
+  background: -o-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.7));
+  background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.7));
+  background-color: rgb(200,200,200);
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 1px 0px 1px rgb(200,200,200);
+}
+
+button:hover, button:focus {
+  background-color: rgb(250,250,250);
+}
+
+button:active {
+  box-shadow: inset 1px 1px 5px black;
+}
+
+</style>
+</head>
+<body>
+<h1>May the force be with you!</h1>
+<div id="warning"></div>
+<div id="container">
+<div id="saberlight" class="light"></div>
+<div id="saber"></div>
+<br />
+<audio src="slowsabr.ogg"  id="swipe">
+	<source src="slowsabr.ogg">
+	<source src="slowsabr.mp3">
+</audio>
+<br /><br />
+<audio id="saberon">
+	<source src="saberon.ogg">
+	<source src="saberon.mp3">
+</audio>
+</div>
+<button id="play">Start Lasersword</div>
+
+<script type="text/javascript">
+var play = document.querySelector('#play');
+var saber = document.querySelector('#saberon');
+var saberStatus = false;
+
+if (window.DeviceMotionEvent){
+play.addEventListener('click', saberuse, true);
+
+window.addEventListener('devicemotion', update_dm, true);
+
+function update_dm(event){
+	var swipe = document.querySelector('#swipe');
+
+	var acc_x = Math.abs(event.acceleration.x);
+	var acc_y = Math.abs(event.acceleration.y);
+	var acc_z = Math.abs(event.acceleration.z);
+	
+	if ( (acc_x || acc_y || acc_z) > 8){
+	if (saberStatus == true){
+		swipe.play();
+		}
+	}
+}
+
+function saberuse() {
+var light  = document.querySelector('#saberlight');
+
+	if (saberStatus == false){
+		saber.play();
+		light.className = 'lighton';
+		saberStatus = true;
+		play.innerHTML = "Stop lightsaber";
+	} else if (saberStatus == true) {
+		light.className = 'light';
+		saberStatus = false;	
+		play.innerHTML = "Start Lightsaber";	
+	}
+}
+
+function playswipe(){
+var swipe = document.querySelector('#swipe');
+if (swipe.ended || swipe.paused){
+swipe.play();
+}
+
+}
+
+} else {
+	var warning = document.querySelector("#warning");
+	warning.innerHTML = "This demo needs a browser which implements the W3C DeviceOrientation specification (in particular, the 'devicemotion' event). Please use a browser which does so to experience this demo properly.";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html manifest="cam.manifest">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+<style type="text/css">
+@-o-viewport {
+  width: device-width;
+  height: device-height;
+}
+
+body{
+	background-color: #333;
+	color: #fff;
+	font-family: 'Nobile', sans-serif;
+}
+
+#container{
+	width: 100%;
+}
+
+canvas{
+	border: 1px solid #ccc;
+}
+video{
+	margin-bottom: 10px;
+	width: 150px;
+	height: 225px;
+}
+#button{
+	font-size: 1.0em;
+	margin-bottom: 10px;
+	/*padding-left: 65px;*/
+}
+#left{
+	float: left;
+	width: 50%;
+}
+#right{
+	padding-top: 5px;
+	float: right;
+	width: 45%;
+}
+#footer{
+	clear: both;
+	color: #fff;
+}
+a:visited{
+	color: #fff;
+}
+
+#warning{
+	color: red;
+	font-size: 0.9em;
+	text-shadow: 1px 1px 2px black;
+}
+
+</style>
+
+
+<meta name="viewport" content="width=device-width, height=device-height" />
+</head>
+<body>
+<h1>Get Device Orientation Info</h1>
+<div id="warning"></div>
+<div id="container">
+<div id="message"></div>
+</div>
+<script type="text/javascript">
+if (window.DeviceOrientationEvent){
+window.addEventListener('deviceorientation', update, true);
+
+function update(event){
+var message = document.querySelector('#message');
+message.innerHTML = "Alpha is:"+event.alpha+", Beta is:"+event.beta+", and Gamma is:"+event.gamma+"";
+document.body.style.backgroundColor = "rgb( "+Math.abs(event.alpha)+", "+Math.abs(event.beta)+", "+Math.abs(event.gamma)+" )";
+}
+
+} else {
+	var warning = document.querySelector("#warning");
+	warning.innerHTML = "This demo needs a browser which implements the W3C DeviceOrientation specification (in particular, the 'deviceorientation' event). Please use a browser which does so to experience this demo properly.";
+}
+
+</script>
+
+</body>
+</html>
