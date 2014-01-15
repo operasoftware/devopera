@@ -1,0 +1,29 @@
+
+body {
+	background-color:#ccc;
+	color:#333;
+	font-family:verdana, serif;
+}
+
+h1 { font-size:1.6em; }
+
+h3 { font-size: 1.2em; }
+
+article { margin-left:40px; }
+
+figure { margin:0; }
+
+figcaption { font-size:.8em; }
+
+div { font-size:.9em; }
+
+.nav { margin-bottom:2em; }
+
+.nav span {
+	cursor:pointer;
+	background-color:#fff;
+	margin-right:1em;
+	display:inline-block;
+	border:1px solid #000;
+	padding:.2em 1em;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>HTML5 Video WebVTT Example</title>
+	<link rel="stylesheet" href="webvtt-example.css" />
+	<!-- Playr -->
+	<link rel="stylesheet" href="playr/playr.css" />
+	<script src="playr/playr.js"></script>
+	<script src="transcript.js"></script>
+</head>
+<body>
+	<article>
+		<h1><abbr title="Web Video Text Track">WebVTT</abbr> Video Subtitles and Captions with Playr</h1>
+		<figure>
+			<video preload="metadata" controls class="playr_video">
+				<source src="http://html5multimedia.com/media/elephants-dream-medium.mp4" type="video/mp4">
+				<source src="http://html5multimedia.com/media/elephants-dream-medium.webm" type="video/webm">
+				<track label="English subtitles" kind="subtitles" srclang="en" src="elephants-dream-subtitles-en.vtt" default>
+				<track label="Deutsch subtitles" kind="subtitles" srclang="de" src="elephants-dream-subtitles-de.vtt">
+				<track label="English chapters" kind="chapters" srclang="en" src="elephants-dream-chapters-en.vtt">		
+			</video>
+			<figcaption>&copy; copyright 2006, Blender Foundation / Netherlands Media Art Institute /<br/><a href="http://www.elephantsdream.org">www.elephantsdream.org</a></figcaption>
+		</figure>
+		<section class="transcript">
+			<h3>Video Transcript</h3>
+			<div class="nav">
+				<span onclick="loadTranscript('en');">English</span>
+				<span onclick="loadTranscript('de');">Deutsch</span>
+			</div>
+			<div id="transcript"></div>
+		</section>
+	</article>
+</body>
+</html>
