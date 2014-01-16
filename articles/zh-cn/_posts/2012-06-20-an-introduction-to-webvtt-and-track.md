@@ -112,7 +112,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 	<td> 行位置，负数从框底部数起，正数从顶部数起</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>[0-100]%</td>
 	<td>百分数意味着离框顶部的位置</td>
 </tr>
@@ -239,22 +239,22 @@ HTML5 的 `<track>` 元素可以把外部轨道文件链接到特定资源上。
 	<td>字幕</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>captions</td>
 	<td>标题，不仅仅是标题，还包括音效及其他音频信息。</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>descriptions</td>
 	<td>描述，视频的文本描述。</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>chapters</td>
 	<td>章节导航</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>metadata</td>
 	<td>元数据</td>
 </tr>

@@ -112,7 +112,7 @@ These cue settings allow you to specify the position and alignment of the cue te
 	<td>References a particular line number that the cue is to be displayed on. Line numbers are based on the size of the first line of the cue. A negative number counts from the bottom of the frame, positive numbers from the top</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>[0-100]%</td>
 	<td>Percentage value indicating the position relative to the top of the frame</td>
 </tr>
@@ -239,22 +239,22 @@ HTML5’s `<track>` element allows you to link external track files with a parti
 	<td>Indicates that the resource specified by <code>src</code> is to be used as subtitles.</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>captions</td>
 	<td>Indicates that the resource specified by <code>src</code> is to be used as captions. Captions contain more than just dialogue, they can also contain musical queues, sound effects and other audio information.</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>descriptions</td>
 	<td>Indicates that the resource specified by <code>src</code> is to be used as descriptions. These contain textual descriptions intended for audio when the visual component is unavailable.</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>chapters</td>
 	<td>Indicates that the resource specified by <code>src</code> is to be used as chapter navigation.</td>
 </tr>
 <tr>
-	<td>&#xA0;</td>
+	<td></td>
 	<td>metadata</td>
 	<td>Indicates that the resource specified by <code>src</code> is to be used as metadata.</td>
 </tr>
