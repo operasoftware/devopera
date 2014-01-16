@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo gallery with object-fit:none; and CSS3 transitions</title>
+<style>
+body {
+  width: 600px;
+  margin: 20px auto; /* center */
+  padding: 1em;
+  font-family: helvetica, arial, 'sans-serif';
+}
+
+div {
+  background: #eee;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: inset 5px 5px 10px #ddd;
+ -webkit-box-shadow: inset 5px 5px 10px #ddd;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  position: relative;
+  height: 350px;
+  width: auto;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #ccc;
+  overflow: hidden;
+ -ms-object-fit: none;
+ -moz-object-fit: none;
+ -o-object-fit: none;
+ -webkit-object-fit: none;
+  object-fit: none;
+ -ms-object-position: 25% 50%;
+ -moz-object-position: 25% 50%;
+ -o-object-position: 25% 50%;
+ -webkit-object-position: 25% 50%;
+  object-position: 25% 50%;
+ -ms-transition: 1s width, 1s height;
+ -moz-transition: 1s width, 1s height;
+ -o-transition: 1s width, 1s height;
+ -webkit-transition: 1s width, 1s height;
+  transition: 1s width, 1s height;
+}
+
+img:hover,img:focus {
+  height: 350px;
+  width: 350px;
+}
+
+div p {
+  margin-left: 70%;
+}
+</style>
+</head>
+<body>
+<h1>Holiday in Sydney</h1>
+
+<div>
+<img src="photo1.jpg" alt="Gabriel in Sydney Harbour" tabindex="0">
+<p>This is a picture of my son Gabriel, standing on a jetty in Sydney Harbour, Australia. We loved taking the ferries around the harbour and seeing all the sights!</p>
+</div>
+
+<div>
+<img src="photo2.jpg" alt="Elva eating really messily in Manly near Sydney" tabindex="0">
+<p>We also visited Manly, a lovely seaside area in the north of Sydney. After a nice day at the beach, building sandcastles and digging holes, we went for some dinner on the promenade, and my daughter Elva got very messy with her spaghetti bolognese!</p>
+</div>
+
+<div>
+<img src="photo3.jpg" alt="Kirsty and Elva enjoying a ride in Luna Park, Sydney" tabindex="0">
+<p>Luna Park is a somewhat cheesy but very good fun traditional style old time funfair, with dodgems, carousels, ferris wheel, and more. This picture shows Elva and my beautiful other half, Kirsty.</p>
+</div>
+
+<div>
+<img src="photo4.jpg" alt="Gabriel standing just outside Luna Park, Sydney" tabindex="0">
+<p>The front entrance to Luna Park is a giant scary mouth, which you have to walk through to get inside - kind of intimidating, but fun! You can see it in the background of this image.</p>
+</div>
+
+<p>This is an example for the <a href="http://dev.opera.com/articles/view/css3-object-fit-object-position/">The CSS3 object-fit and object-position properties</a> article.</p>
+</body>
+</html>
