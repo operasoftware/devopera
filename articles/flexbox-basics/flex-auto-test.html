@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox example</title>
+	<style>
+
+/* || General styles */
+	
+	html {
+	  font-size: 62.5%;
+	}
+	
+	body {
+	  font-family: sans-serif;
+	}
+
+/* || Styling of outer container */
+	
+	section {
+	  width: 90%;
+	  background: -webkit-linear-gradient(top,#666,#999);
+	  background: -moz-linear-gradient(top,#666,#eee);
+	  background: -ms-linear-gradient(top,#666,#eee);
+	  background: -o-linear-gradient(top,#666,#eee);
+	  background: linear-gradient(to bottom,#666,#999);
+	  border-radius: 10px;
+	  margin: 0 auto;
+	  padding: 0.5rem;
+	  min-width: 290px;
+	  max-width: 1000px;
+	  
+	  display: -webkit-flex;
+	  -webkit-flex-flow: row wrap;
+	  -webkit-justify-content: space-around;
+	  
+	  display: -moz-flex;
+	  -moz-flex-flow: row wrap;
+	  -moz-justify-content: center;
+	  
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: center;
+    }
+
+/* || Styling of inner containers */
+	
+	article {
+	  border: 1px solid #aaa;
+	  padding: 0.5rem;
+	  margin: 0.5rem;
+	  border-radius: 10px;
+	  background: -webkit-linear-gradient(top,#ccc,#eee);
+	  background: -moz-linear-gradient(top,#ccc,#eee);
+	  background: -ms-linear-gradient(top,#ccc,#eee);
+	  background: -o-linear-gradient(top,#ccc,#eee);
+	  background: linear-gradient(to bottom,#ddd,#fff);
+	  background-clip: padding-box;
+	}
+		
+/* || General styling of buttons */
+
+button {
+	  background: -webkit-linear-gradient(top,#ccc,#eee);
+	  background: -moz-linear-gradient(top,#ccc,#eee);
+	  background: -ms-linear-gradient(top,#ccc,#eee);
+	  background: -o-linear-gradient(top,#ccc,#eee);
+	  background: linear-gradient(to bottom,#ccc,#eee);
+	  
+	  box-shadow: 1px 1px 1px #aaa;
+	  
+	  border: 0;
+	  border-radius: 5px;
+	  border: 1px solid #aaa;
+	  padding: 0.5rem;
+	  margin: 0.5rem;
+	}
+	
+	button:hover, button:focus {
+	  background: -webkit-linear-gradient(top,#ddd,#fff);
+	  background: -moz-linear-gradient(top,#ddd,#fff);
+	  background: -ms-linear-gradient(top,#ddd,#fff);
+	  background: -o-linear-gradient(top,#ddd,#fff);
+	  background: linear-gradient(to bottom,#ddd,#fff);
+	}
+	
+	button:active {
+	  box-shadow: inset 1px 1px 1px #aaa;
+	}
+
+/* || Styling of first inner container's children */
+	
+	#first {
+	  display: -webkit-flex;
+	  -webkit-flex-flow: column;
+	  -webkit-justify-content: flex-start;
+	  
+	  display: -moz-flex;
+	  -moz-flex-flow: column;
+	  -moz-justify-content: center;
+	  
+	  display: flex;
+	  flex-flow: column;
+	  justify-content: center;
+	  
+	  -webkit-flex: 1;
+	  -moz-flex: 1;
+	  flex: 1;
+	  min-width: 20rem;
+	}
+	
+    textarea {
+	  height: 5rem;
+	}
+	
+/* || Styling of second inner container's children */
+	
+	#second {
+	  -webkit-flex: 1;
+	  -moz-flex: 1;
+      flex: 1;
+            
+      font-size: 1.6rem;
+      min-width: 20rem;
+      
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      display: -moz-flex;
+      -moz-align-items: center;
+      display: flex;
+      align-items: center;
+
+	}
+	
+	
+/* || Styling of third inner container's children */
+	
+	#third {
+	  -webkit-flex: auto;
+	  -moz-flex: auto;
+	  flex: auto;
+	  
+	  min-width: 20rem;
+	
+      display: -webkit-flex;
+      -webkit-flex-flow: row wrap;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      
+      display: -moz-flex;
+      -moz-flex-flow: row wrap;
+      -moz-align-items: center;
+      -moz-justify-content: center;
+      
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+	}
+		
+	</style>
+</head>
+<body>
+
+<section>
+  <article id="first">
+    <textarea></textarea>
+    <button>Submit</button>
+  </article>
+  <article id="second">
+    <p>This is a box of information about this fake toolbar. What a hoot!</p>
+  </article>
+  <article id="third">
+    <button>Control 1</button><button>Control 2</button>
+    <button>Control 3</button><button>Control 4</button>
+    <button>Control 5</button><button>Control 6</button>
+  </article>
+</section>
+
+	
+</body>
+</html>

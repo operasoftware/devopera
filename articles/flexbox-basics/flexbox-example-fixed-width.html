@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>Flexbox example - fixed width children</title>
+	<link href='http://fonts.googleapis.com/css?family=Spicy+Rice|Gentium+Basic' rel='stylesheet' type='text/css'>
+	
+	<style>
+	
+	html {
+	  background: url(bg.png);
+	}
+	
+	body {
+	  font-family: sans-serif;
+	  width: 70%;
+	  margin: 0 auto;
+	  position: relative;
+	  font-size: 62.5%;
+	  padding-bottom: 12rem;
+	  
+	  background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+	  background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+	  background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+	  background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+	}
+	
+	section {
+	  padding: 1rem 4rem;
+	}
+	
+	#fixed {
+	  position: fixed;
+	  left: 15%;
+	  right: 15%;
+	  bottom: 0;
+	}
+	
+	footer {
+	  background: -webkit-linear-gradient(left, rgba(0,204,0,0), rgba(0,204,0,1) 5%, rgba(0,204,0,1) 95%, rgba(0,204,0,0) 100%);
+	  background: -moz-linear-gradient(left, rgba(0,204,0,0), rgba(0,204,0,1) 5%, rgba(0,204,0,1) 95%, rgba(0,204,0,0) 100%);
+	  background: -ms-linear-gradient(left, rgba(0,204,0,0), rgba(0,204,0,1) 5%, rgba(0,204,0,1) 95%, rgba(0,204,0,0) 100%);
+	  background: -o-linear-gradient(left, rgba(0,204,0,0), rgba(0,204,0,1) 5%, rgba(0,204,0,1) 95%, rgba(0,204,0,0) 100%);
+	  background: linear-gradient(to right, rgba(0,204,0,0), rgba(0,204,0,1) 5%, rgba(0,204,0,1) 95%, rgba(0,204,0,0) 100%);
+
+	  padding: 0rem 3rem 0rem;
+	}
+		
+	#silhouette {
+	  background: url(silhouette_small.png) no-repeat 60px 0;
+	  height: 100px;
+	}
+		
+	footer div {
+	  margin: 1rem 0.5%;
+	  background: rgba(0,0,0,0.05);
+	  padding: 0.5rem;
+	  border-radius: 1rem;
+	  box-shadow: inset 1px 1px 3px black;
+	  position: relative;
+	}
+	
+	h1, h2 {
+	  font-family: 'Spicy Rice', cursive;
+	  margin: 0.5rem 0 0.5rem 0;
+	}
+	
+	h1 {
+	  font-size: 3rem;
+	  text-shadow: 3px 3px 5px black;
+	  color: rgb(0,204,0);
+	}
+	
+	h2 {
+	  font-size: 1.2rem;
+	  color: white;
+	  text-shadow: 1px 1px 2px black;
+	  background: -webkit-linear-gradient(top,rgba(200,200,200,0.4), rgba(200,200,200,0.8));
+	  background: -moz-linear-gradient(top,rgba(200,200,200,0.4), rgba(200,200,200,0.8));
+	  background: -ms-linear-gradient(top,rgba(200,200,200,0.4), rgba(200,200,200,0.8));
+	  background: -o-linear-gradient(top,rgba(200,200,200,0.4), rgba(200,200,200,0.8));
+      background: linear-gradient(to bottom,rgba(200,200,200,0.4), rgba(200,200,200,0.8));
+	  border: 1px solid rgba(200,200,200,0.25);
+	  border-radius: 5px;
+	  padding: 0 0.15rem;
+	  
+	  position: absolute;
+	  bottom: -1.2rem;
+	  left: 1rem;
+	}
+	
+	p, li {
+	  font-family: 'Gentium Basic', serif;
+	  font-size: 1.1rem;
+	  line-height: 1.3rem;
+	}
+	
+	ul {
+	  padding-left: 20px;
+	}
+	
+	footer p, footer li {
+	  font-size: 0.8rem;
+	  line-height: 1.2rem;
+	  color: white;
+	}
+	    
+    a, a:visited {
+      color: white;
+      
+    }
+    
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+            
+    /* || Flexbox stuff */
+    
+    footer {
+      display: -webkit-flex;
+      -webkit-flex-flow: row wrap;
+      -webkit-align-items: stretch;
+      -webkit-justify-content: space-around;
+      display: -moz-flex;
+      -moz-flex-flow: row wrap;
+      -moz-align-items: stretch;
+      -moz-justify-content: space-around;
+      display: -ms-flex;
+      -ms-flex-flow: row wrap;
+      -ms-align-items: stretch;
+      -ms-justify-content: space-around;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+        
+    #first {
+      width: 22%;
+    }
+    
+    #second {
+      -webkit-order: 2;
+      -moz-order: 2;
+      -ms-order: 2;
+      order: 2;
+      width: 40%;
+    }
+    
+    #third {
+      width: 25%;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      body {
+        width: 100%;
+      }
+      
+      #fixed {
+        left: 0%;
+	    right: 0%;
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      #first {
+        width: 45%;
+      }
+    
+      #second {
+        width: 99%;
+      }
+    
+      #third {
+        width: 45%;
+      }
+      
+      body {
+        padding-bottom: 22rem;
+      }
+
+    }
+    
+    @media screen and (max-width: 600px) {
+      #fixed {
+        position: static;
+      }
+      
+      body {
+        padding-bottom: 0;
+      }
+      
+      #first, #second, #third {
+        width: 99%;
+      }
+      
+      footer {
+        padding: 0 1rem 0;
+      }
+    
+    }
+    
+    @media screen and (max-width: 380px) {
+      section {
+        padding: 1rem 1rem;
+      }
+      
+    }
+    
+		
+	</style>
+</head>
+<body>
+
+<section>
+
+<h1>We hate Lorem Ipsum</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique ante id lorem euismod consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eleifend sem vulputate libero interdum ut venenatis mi elementum. Sed a porttitor felis. Ut non tincidunt urna. Nunc aliquet rhoncus sem in pulvinar. Nunc ullamcorper mi vel felis fringilla sed interdum nulla facilisis. Nunc iaculis vestibulum eros in posuere. Aenean adipiscing nunc eu tellus eleifend eu lacinia orci pellentesque.</p> 
+
+<p>Duis diam tellus, ullamcorper et lobortis a, suscipit vitae velit. Vestibulum in magna eros, in placerat ligula. Donec nec elit non quam malesuada faucibus eget in libero. Aliquam eros lorem, sollicitudin eu fringilla eu, convallis adipiscing nibh. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tristique enim in dolor aliquam sollicitudin. Proin ipsum diam, sollicitudin nec interdum vel, scelerisque ac tellus. Nunc vel urna sed quam bibendum iaculis.</p> 
+
+<p>Donec risus urna, lobortis nec bibendum eu, tempus in sem. Integer sed dui neque, vel congue velit. Mauris tristique ligula ut nibh euismod ac consectetur metus blandit. Nulla eget magna lectus, vel aliquet mi. In hac habitasse platea dictumst. Aliquam erat volutpat. Maecenas at orci massa. In luctus, neque in sollicitudin molestie, libero lorem scelerisque ipsum, nec pharetra lorem enim id arcu.</p> 
+
+<p>Phasellus ut velit id metus pharetra tempor. Donec vitae sapien nulla, id egestas libero. Donec metus sapien, feugiat a laoreet at, congue sed ipsum. Donec accumsan tempus accumsan. Phasellus aliquam vehicula lacus in fermentum. Nulla consectetur pulvinar felis, nec varius leo dignissim eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam id diam ut est eleifend aliquam. Etiam orci dui, dictum sit amet faucibus ut, faucibus in ante.</p> 
+
+<p>In sit amet nisi libero, euismod varius nisi. Nulla vitae porta turpis. Vestibulum convallis lectus quis urna lacinia accumsan. Curabitur vel nulla nibh. Nullam sit amet purus turpis, quis facilisis felis. Maecenas at aliquam erat. Ut et leo vulputate lectus pharetra semper. Vivamus et turpis quis nisl semper venenatis sed eget lectus. Sed accumsan rhoncus adipiscing. Etiam eu ligula dui. Sed ac porta ante. Curabitur hendrerit nisi at velit auctor ullamcorper. Nullam ullamcorper odio eu quam adipiscing tristique.</p> 
+
+<p>Pellentesque tristique accumsan dolor nec dictum. Donec ornare, urna quis elementum pellentesque, velit eros ornare mauris, non rutrum justo libero quis tellus. In at sollicitudin augue. Proin porta purus vel eros consequat vulputate ullamcorper magna imperdiet. Proin non condimentum quam. Curabitur est augue, vehicula in egestas vel, ornare a dolor. Maecenas lacinia suscipit orci, quis viverra ligula facilisis eget. Nunc lectus magna, vulputate quis volutpat porttitor, auctor sed erat. In hac habitasse platea dictumst. Nulla facilisi. Proin elementum ornare molestie. Aenean consequat lacus ac risus lacinia pharetra. Proin odio lectus, pulvinar quis mattis a, malesuada ac ligula. Suspendisse potenti.</p> 
+
+<p>Nunc volutpat, tellus vitae porttitor iaculis, dui est consectetur magna, in porttitor lectus neque non nisl. Aliquam erat volutpat. Duis pretium, quam rhoncus scelerisque sollicitudin, sem est dapibus lorem, a tempus massa justo molestie odio. Morbi faucibus accumsan tristique. Duis auctor, mauris sed sollicitudin porta, nibh justo faucibus elit, et imperdiet orci lectus quis magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ultricies nisl vitae justo pulvinar pretium. Duis laoreet vehicula mi vitae vehicula.</p>
+
+<p>Donec eget erat a ligula porta laoreet in ut augue. Ut in erat massa, nec ultrices est. Nulla facilisi. Quisque mollis, ipsum nec lobortis scelerisque, tellus urna rutrum leo, a pretium metus augue non magna. Aliquam erat volutpat. Ut euismod aliquet tortor, in facilisis dolor elementum blandit. Nullam varius sagittis rutrum. Ut dignissim ultricies arcu. Cras iaculis arcu et lectus pharetra euismod. Sed accumsan suscipit auctor.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique ante id lorem euismod consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eleifend sem vulputate libero interdum ut venenatis mi elementum. Sed a porttitor felis. Ut non tincidunt urna. Nunc aliquet rhoncus sem in pulvinar. Nunc ullamcorper mi vel felis fringilla sed interdum nulla facilisis. Nunc iaculis vestibulum eros in posuere. Aenean adipiscing nunc eu tellus eleifend eu lacinia orci pellentesque.</p> 
+
+<p>Duis diam tellus, ullamcorper et lobortis a, suscipit vitae velit. Vestibulum in magna eros, in placerat ligula. Donec nec elit non quam malesuada faucibus eget in libero. Aliquam eros lorem, sollicitudin eu fringilla eu, convallis adipiscing nibh. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tristique enim in dolor aliquam sollicitudin. Proin ipsum diam, sollicitudin nec interdum vel, scelerisque ac tellus. Nunc vel urna sed quam bibendum iaculis.</p> 
+
+<p>Donec risus urna, lobortis nec bibendum eu, tempus in sem. Integer sed dui neque, vel congue velit. Mauris tristique ligula ut nibh euismod ac consectetur metus blandit. Nulla eget magna lectus, vel aliquet mi. In hac habitasse platea dictumst. Aliquam erat volutpat. Maecenas at orci massa. In luctus, neque in sollicitudin molestie, libero lorem scelerisque ipsum, nec pharetra lorem enim id arcu.</p> 
+
+<p>Phasellus ut velit id metus pharetra tempor. Donec vitae sapien nulla, id egestas libero. Donec metus sapien, feugiat a laoreet at, congue sed ipsum. Donec accumsan tempus accumsan. Phasellus aliquam vehicula lacus in fermentum. Nulla consectetur pulvinar felis, nec varius leo dignissim eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam id diam ut est eleifend aliquam. Etiam orci dui, dictum sit amet faucibus ut, faucibus in ante.</p> 
+
+<p>In sit amet nisi libero, euismod varius nisi. Nulla vitae porta turpis. Vestibulum convallis lectus quis urna lacinia accumsan. Curabitur vel nulla nibh. Nullam sit amet purus turpis, quis facilisis felis. Maecenas at aliquam erat. Ut et leo vulputate lectus pharetra semper. Vivamus et turpis quis nisl semper venenatis sed eget lectus. Sed accumsan rhoncus adipiscing. Etiam eu ligula dui. Sed ac porta ante. Curabitur hendrerit nisi at velit auctor ullamcorper. Nullam ullamcorper odio eu quam adipiscing tristique.</p> 
+
+<p>Pellentesque tristique accumsan dolor nec dictum. Donec ornare, urna quis elementum pellentesque, velit eros ornare mauris, non rutrum justo libero quis tellus. In at sollicitudin augue. Proin porta purus vel eros consequat vulputate ullamcorper magna imperdiet. Proin non condimentum quam. Curabitur est augue, vehicula in egestas vel, ornare a dolor. Maecenas lacinia suscipit orci, quis viverra ligula facilisis eget. Nunc lectus magna, vulputate quis volutpat porttitor, auctor sed erat. In hac habitasse platea dictumst. Nulla facilisi. Proin elementum ornare molestie. Aenean consequat lacus ac risus lacinia pharetra. Proin odio lectus, pulvinar quis mattis a, malesuada ac ligula. Suspendisse potenti.</p> 
+
+<p>Nunc volutpat, tellus vitae porttitor iaculis, dui est consectetur magna, in porttitor lectus neque non nisl. Aliquam erat volutpat. Duis pretium, quam rhoncus scelerisque sollicitudin, sem est dapibus lorem, a tempus massa justo molestie odio. Morbi faucibus accumsan tristique. Duis auctor, mauris sed sollicitudin porta, nibh justo faucibus elit, et imperdiet orci lectus quis magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ultricies nisl vitae justo pulvinar pretium. Duis laoreet vehicula mi vitae vehicula.</p>
+
+<p>Donec eget erat a ligula porta laoreet in ut augue. Ut in erat massa, nec ultrices est. Nulla facilisi. Quisque mollis, ipsum nec lobortis scelerisque, tellus urna rutrum leo, a pretium metus augue non magna. Aliquam erat volutpat. Ut euismod aliquet tortor, in facilisis dolor elementum blandit. Nullam varius sagittis rutrum. Ut dignissim ultricies arcu. Cras iaculis arcu et lectus pharetra euismod. Sed accumsan suscipit auctor.</p>
+
+</section>
+
+<div id="fixed">
+<div id="silhouette"></div>
+<footer>
+  <div id="first">
+    <h2>Contact</h2>
+    <p>Chris Mills,
+             Geeksville<br>
+             Arizona,
+             Earth</p>
+    <p>Email: <a href="mailto:cmills@opera.com">cmills@opera.com</a></p>
+  </div>
+  <div id="second">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="http://dev.opera.com/articles/view/flexbox-basics/">Return to the flexbox article on dev.opera</a></li>
+      <li><a href="http://dev.opera.com">Go to the dev.opera.com homepage</a></li>
+      <li><a href="http://www.w3.org/TR/css3-flexbox/">Read the Flexbox specification</a></li>
+      <li><a href="http://www.opera.com">Visit Opera's homepage</a></li>
+      <li><a href="https://twitter.com/chrisdavidmills">Follow Chris Mills on Twitter</a></li>
+    </ul>
+    
+  </div>
+  <div id="third">
+    <h2>Copyright</h2>
+    <p>This example is released under a public domain license. Please feel free to rip it off, learn from it, and make use of it!</p>
+  </div>
+</footer>
+</div>
+	
+</body>
+</html>
