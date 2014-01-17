@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Introduction to HTML5 video – Example 4: fancy video swap</title>
+<meta charset=utf-8>
+<script>
+/* hacked together by patrick h. lauke / april 2010
+   there are far more efficient ways of coding this - it's just a quick proof of concept
+   normally we'd put this script into an external .js file ... this is here only for the convenience of the reader */
+   
+/* we only do any scripting if the browser actually supports video */
+if (!!document.createElement('video').play) {
+
+	window.addEventListener('load',function() {
+		var video=document.getElementById('player');
+	
+		/* remove the controls attribute */
+		video.removeAttribute('controls');
+	
+		/* wrap the video in a div, so we can absolutely position the new controller in there */
+		var container=document.createElement('div');
+		container.style.position='relative';
+		video.parentNode.insertBefore(container,video);
+		video.parentNode.removeChild(video);
+		container.appendChild(video);
+		
+		/* create the controller - we're using innerHTML here for expediency */
+		var controller = document.createElement('div');
+		controller.id="controls";
+		video.parentNode.appendChild(controller);
+		controller.innerHTML='<button id="playpause"><img src="play.png" width="15" height="15" alt="play"></button><output id="display">-:--:--</output><img src="audio.png" width="15" height="15" alt="volume" id="volumeicon"><input type="range" min="0" max="1" step="0.1" id="volume">';
+
+		/* set the value of the volume slider to match that of the video (should be 1, but just in case) */
+		document.getElementById('volume').value = video.volume;
+		
+		/* listen for timeupdate and update the time display in the controller*/
+		video.addEventListener('timeupdate',function(e) {
+			/* split currentTime (seconds) into separate hour/minute/second strings */
+			var s=e.target.currentTime;
+			var h=Math.floor(s/3600);
+			s=s%3600;
+			var m=Math.floor(s/60);
+			s=Math.floor(s%60);
+			/* pad the minute and second strings to two digits */
+			if (s.toString().length < 2) s="0"+s;
+			if (m.toString().length < 2) m="0"+m;
+			
+			document.getElementById('display').innerHTML = h+":"+m+":"+s;
+		}, true);
+
+		/* when video actually starts playback, update the play/pause button */
+		video.addEventListener('play',function(e) {
+			document.getElementById('playpause').innerHTML='<img src="pause.png" width="15" height="15" alt="pause">';
+		}, true);
+
+		/* when video actually pauses, update the play/pause button */	
+		video.addEventListener('pause',function(e) {
+			document.getElementById('playpause').innerHTML='<img src="play.png" width="15" height="15" alt="play">';
+		}, true);
+
+		/* when video reahes the end, update the play/pause button */		
+		video.addEventListener('ended',function(e) {
+			document.getElementById('playpause').innerHTML='<img src="play.png" width="15" height="15" alt="play">';
+		}, true);
+
+		/* determine what to do if the play/pause button has been clicked */
+		document.getElementById('playpause').addEventListener('click',function() {
+			
+			if (document.getElementById('player').paused) {
+				/* if video is currently paused, play it */
+				document.getElementById('player').play();
+			} else {
+				/* video isn't paused... */
+				if (document.getElementById('player').ended) {
+					/* if we're at the end, reset currentTime and play */
+					document.getElementById('player').currentTime=0;
+					document.getElementById('playpause').innerHTML='<img src="pause.png" width="15" height="15" alt="pause">';
+					document.getElementById('player').play();
+				} else {
+					/* otherwise, just pause */
+					document.getElementById('player').pause();
+				}
+			}
+		}, true);
+		
+		/* listen out for a change to the volume slider and update video volume accordingly */
+		document.getElementById('volume').addEventListener('change',function(e) {
+			document.getElementById('player').volume=e.target.value;
+			if (e.target.value==0) {
+				/* if the volume is set to zero, we explicitly set the muted attribute on the video */
+				document.getElementById('player').muted = true;
+				document.getElementById('volumeicon').src="audio-mute.png";
+			} else {
+				/* if the audio was muted, we unmute it automatically on volume change */
+				document.getElementById('player').muted = false;
+				document.getElementById('volumeicon').src="audio.png";
+			}
+			return false;
+		}, true);
+		
+		var b = document.querySelectorAll('#chooser button');
+		for(i = 0; i<b.length; i++) {
+			b[i].addEventListener('click',function(e) {
+				var v = document.getElementById('player');
+
+				/* kludge to get Safari to behave... */
+				var targ = e.target;
+				if (targ.tagName != 'BUTTON') { targ = targ.parentNode; }
+
+				if (v.canPlayType("video/ogg") == 'maybe' || v.canPlayType("video/ogg") == 'probably') {
+					v.src = targ.getAttribute('data-file')+'.ogv';
+				} else if (v.canPlayType("video/mp4") == 'maybe' || v.canPlayType("video/mp4") == 'probably') {
+					v.src = targ.getAttribute('data-file')+'.mp4';
+				}
+				v.load();
+				/* small kludge to force video element to fire the "paused" event correctly and change the play/pause button */
+				v.play();
+				v.pause();
+			},true);
+  		}
+		
+	}, true);
+	
+}	
+</script>
+
+<style>
+@font-face {
+	/* typeface: Xenon2 http://www.splintered.co.uk/experiments/61/ */
+	font-family: "Xenon2";
+	src: url(xenon2.ttf);
+}
+
+html { background: #eee; }
+h1 { font-size: 0.7em; margin: 0; padding: 0; }
+
+body {
+	background: #eee;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.2;
+	color: #222;
+	padding: 0; margin: 0.25em;
+}
+
+a { color: #227; }
+
+small { font-size: 0.75em; }
+
+video {
+	display: block; /* styling shim for older browsers */
+	border: 5px #ddd solid;
+	border-radius: 5px;
+}
+
+#controls {
+	position: absolute;
+	bottom: 20px;
+	left: 113px;
+	border-radius: 5px;
+	border: 1px #333 solid;
+	background: #000 url(gradient.png) repeat-x top left;
+	width: 200px;
+	height: 31px;
+	opacity: 0.3;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#controls:hover { 
+	border-color: #555;
+	opacity: 0.85;
+}
+
+#controls button {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: transparent;
+}
+
+#controls #display {
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: "Xenon2", sans-serif;
+	font-size: 16px;
+}
+
+#controls #volume {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	width: 50px;
+	height: 15px;
+}
+
+#controls #volumeicon {
+	position: absolute;
+	top: 8px;
+	right: 62px;
+}
+
+#chooser, #chooser li { list-style: none; margin: 0; padding: 0; }
+#chooser { margin-top: 1em; }
+#chooser li { float: left; }
+#chooser button { background: none; border: none; margin: 0 4px; padding: 0;
+	opacity: 0.5; 	
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#chooser button:focus, #chooser button:hover { opacity: 1; }
+
+#credits { clear:left; padding: 0.25em 0 0 0; }
+#credits p { margin: 0; padding: 0; }
+small { font-size: 0.5em; }
+</style>
+
+</head>
+
+<body>
+
+<h1>Introduction to HTML5 <code>&lt;video&gt;</code> – example 4: fancy video swap</h1>
+
+<video controls width="426" height="240" id="player">
+	<p>Choose from one of the videos below (obviously you'd want to code some more sensible fallback here).</p>
+</video>
+
+<ul id="chooser">
+<li><button data-file="../videos/windowsill"><img src="../thumbs/windowsill.jpg" width="100" height="100" alt="Windowsill of lost memories"></button></li>
+<li><button data-file="../videos/garden1"><img src="../thumbs/garden1.jpg" width="100" height="100" alt="Garden serenity part 1"></button></li>
+<li><button data-file="../videos/fridge"><img src="../thumbs/fridge.jpg" width="100" height="100" alt="Fridge magnet world tour"></button></li>
+<li><button data-file="../videos/garden2"><img src="../thumbs/garden2.jpg" width="100" height="100" alt="Garden serenity part 2"></button></li>
+</ul>
+
+<div id="credits">
+<p><small>Video: <a href="http://www.splintered.co.uk">Patrick H. Lauke</a>. Music: <a href="http://incompetech.com">Kevin MacLeod</a>. <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a></small></p>
+<p><small><a href="../../../../../index.html">Dev.Opera – Opera Developer Community</a></small></p>
+</div>
+</body>
+</html>

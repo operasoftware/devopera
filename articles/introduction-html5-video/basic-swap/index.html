@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Introduction to HTML5 video – Example 3: basic video swap</title>
+<meta charset=utf-8>
+<style>
+html { background: #eee; }
+h1 { font-size: 0.7em; margin: 0; padding: 0; }
+body {
+	width: 700px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.2;
+	color: #222;
+	padding: 0; margin: 0.25em;
+}
+a { color: #227; }
+video { display: block; margin: 0.25em 0; }
+#credits { padding: 0.25em 0 0 0; }
+#credits p { margin: 0; padding: 0; }
+small { font-size: 0.5em; }
+</style>
+</head>
+<body>
+<h1>Introduction to HTML5 <code>&lt;video&gt;</code> – example 3: basic video swap</h1>
+<video width=426 height=240 controls id=videoPlayer></video>
+<button data-file="../videos/windowsill">Video 1</button>
+<button data-file="../videos/garden1">Video 2</button>
+<button data-file="../videos/fridge">Video 3</button>
+<button data-file="../videos/garden2">Video 4</button>
+
+<div id="credits">
+<p><small>Video: <a href="http://www.splintered.co.uk">Patrick H. Lauke</a>. Music: <a href="http://incompetech.com">Kevin MacLeod</a>. <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a></small></p>
+<p><small><a href="../../../../../index.html">Dev.Opera – Opera Developer Community</a></small></p>
+</div>
+<script>
+  /* use global variable for ease */
+  var v = document.getElementById('videoPlayer');
+  /* grab all buttons and attach click events */
+  var b = document.getElementsByTagName('button');
+  for(i = 0; i<b.length; i++) {
+    b[i].addEventListener('click',swapVideo,true);
+  }
+
+  function swapVideo(e) {
+    /* change the video src attribute based on the
+       data-file attribute of the pressed button,
+       selecting the most appropriate of either Ogg or MP4 */
+    if (v.canPlayType("video/ogg") == 'maybe' || v.canPlayType("video/ogg") == 'probably') {
+      v.src = e.target.getAttribute('data-file')+'.ogv';
+    } else if (v.canPlayType("video/mp4") == 'maybe' || v.canPlayType("video/mp4") == 'probably') {
+      v.src = e.target.getAttribute('data-file')+'.mp4';
+    }
+    v.load();
+  }
+</script>
+</body>
+</html>

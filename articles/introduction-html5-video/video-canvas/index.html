@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Video with overlaid canvas</title>
+<script>
+/* only do any of the scripting if both video and canvas appear to be supported */
+if ((!!document.createElement('video').play)&&(!!document.createElement('canvas').getContext)) {
+
+	var megamouse = {
+		x: 0,
+		y: 0,
+		dx : 0,
+		dy : 0,
+		cv_w: 0,
+		cv_h: 0,
+		ctx : new Object(),
+		v: new Object(),
+		pointer : new Image(),
+		
+		init : function(v) {
+			megamouse.v = v;
+			megamouse.pointer.src = 'mouse.png';
+			
+			/* wrap the video in a div, so we can absolutely position the canvas there */
+			var container=document.createElement('div');
+			container.style.position='relative';
+			megamouse.v.parentNode.insertBefore(container,megamouse.v);
+			megamouse.v.parentNode.removeChild(megamouse.v);
+			container.appendChild(megamouse.v);
+			/* create the controller - we're using innerHTML here for expediency */
+			var canvas = document.createElement('canvas');
+			canvas.style.position='absolute';
+			canvas.style.top='0';
+			canvas.style.left='0';
+			canvas.width = megamouse.v.width;
+			megamouse.cv_w = canvas.width;
+			canvas.height = megamouse.v.height-40; /* leave some space for the controls to peek through */
+			megamouse.cv_h = canvas.height;
+			megamouse.x = megamouse.cv_w/2;
+			megamouse.y = megamouse.cv_h/2;
+			container.appendChild(canvas);
+			megamouse.ctx = canvas.getContext('2d');
+			
+			/* every 30 milliseconds, call the move function */
+			setInterval(megamouse.move, 30);
+
+		},
+		
+		move : function(e) {
+			/* only do stuff when the video is not paused */
+			if (!megamouse.v.paused) {
+				megamouse.dx += Math.floor(Math.random()*20-10);
+				megamouse.dy += Math.floor(Math.random()*20-10);
+				megamouse.x += megamouse.dx;
+				megamouse.y += megamouse.dy;
+				// sanity checks
+				if (megamouse.x<50) { megamouse.dx = 0-megamouse.dx; megamouse.x=50; }
+				if (megamouse.x>(megamouse.cv_w-50)) { megamouse.dx = 0-megamouse.dx; megamouse.x=megamouse.cv_w-50; }
+				if (megamouse.y<50) { megamouse.dy = 0-megamouse.dy; megamouse.y=50; }
+				if (megamouse.y>(megamouse.cv_h-80)) { megamouse.dy = 0-megamouse.dy; megamouse.y=megamouse.cv_h-80; }
+				if (megamouse.dx>20) { megamouse.dx = 20 };
+				if (megamouse.dy>20) { megamouse.dy = 20 };
+				if (megamouse.dx<-20) { megamouse.dx = -20 };
+				if (megamouse.dy<-20) { megamouse.dy = -20 };
+				megamouse.ctx.clearRect(0, 0, megamouse.cv_w, megamouse.cv_h)
+				megamouse.ctx.drawImage(megamouse.pointer, megamouse.x, megamouse.y);
+			}
+		}
+	};
+
+	window.addEventListener('load',function() {
+		megamouse.init(document.querySelector('video'));
+	}, true);
+
+}
+</script>
+<style>
+@font-face {
+	/* typeface: Creepsville by Big Tony O'Farrell - Rubber Wolf? Graphics http://www.rockfiend.net/rubberwolf/ */
+	font-family: "Creepsville";
+	src: url(RW-creepsville.ttf);
+}
+
+body {
+	background: #eee;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.2;
+	color: #222;
+}
+
+a { color: #227; }
+
+h1 {
+	font-family: "Creepsville", sans-serif;
+	font-size: 4em;
+	width: 640px;
+	margin: 10px;
+	padding: 0;
+	color: #d00;
+	text-shadow: 2px 5px 10px #bbb;
+	letter-spacing: -0.06em;
+}
+</style>
+</head>
+<body>
+<h1>Attack of the mousepointer</h1>
+
+<div>
+<video src="../videos/mousepointer.ogv" controls width=640 height=480>
+	<p>This page demonstrates the use of HTML5 open video – if you're not using a browser that can display the open Ogg Theora codec, there's not much to see. Download the <a href="../videos/mousepointer.ogv">Attack of the mousepointer video</a></p>
+</video>
+</div>
+
+<p>This demonstration supplements the <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="../../../../../index.html">Dev.Opera</a>.</p>
+</body>
+</html>

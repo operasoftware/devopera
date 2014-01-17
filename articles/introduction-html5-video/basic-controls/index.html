@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Introduction to HTML5 video – Example 1: basic video controls with JavaScript</title>
+<meta charset=utf-8>
+<style>
+html { background: #eee; }
+h1 { font-size: 0.7em; margin: 0; padding: 0; }
+body {
+	width: 700px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.2;
+	color: #222;
+	padding: 0; margin: 0.25em;
+}
+a { color: #227; }
+video { display: block; margin: 0.25em 0; }
+#credits { padding: 0.25em 0 0 0; }
+#credits p { margin: 0; padding: 0; }
+small { font-size: 0.5em; }
+</style>
+</head>
+<body>
+<h1>Introduction to HTML5 <code>&lt;video&gt;</code> – example 1: basic video controls with JavaScript</h1>
+<video width=426 height=240 controls id=videoPlayer>
+  <source src="../videos/windowsill.ogv" type=video/ogg>
+  <source src="../videos/windowsill.mp4" type=video/mp4>
+  <p>Download the video in <a href="../videos/windowsill.ogv">Ogg</a> or <a href="../videos/windowsill.mp4">MP4</a> format.</p>
+</video>
+<div>
+<button id=buttonPlay>Play</button>
+<button id=buttonPause>Pause</button>
+Current time is: <span id="timeDisplay"></span>
+</div>
+<div id="credits">
+<p><small>Video: <a href="http://www.splintered.co.uk">Patrick H. Lauke</a>. Music: <a href="http://incompetech.com">Kevin MacLeod</a>. <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a></small></p>
+<p><small><a href="../../../../../index.html">Dev.Opera – Opera Developer Community</a></small></p>
+</div>
+<script>
+  /* use global variable for ease */
+  var v = document.getElementById('videoPlayer');
+  /* play button */
+  document.getElementById('buttonPlay').addEventListener('click',function(e){v.play();},true);
+  /* pause button */
+  document.getElementById('buttonPause').addEventListener('click',function(e){v.pause();},true);
+  /* current time display (rounded to nearest second) */
+  v.addEventListener('timeupdate',function(e){document.getElementById('timeDisplay').innerHTML = Math.floor(e.target.currentTime);},true);
+</script>
+</body>
+</html>

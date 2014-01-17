@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Turkish dancing, with transitions</title>
+<meta charset=utf-8>
+<style>
+html { background: #eee; }
+body {
+	width: 700px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.2;
+	color: #222;
+}
+
+a { color: #227; }
+
+pre { border: 1px #ddd solid; background: #FF9; font-size: 1.2em; padding: 1em; }
+
+video {
+	width: 75px;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+ 
+video:hover, video:focus { width:600px; }
+
+</style>
+</head>
+<body>
+<h1>Video with CSS transitions on <code>:hover</code> and <code>:focus</code></h1>
+<video src=../videos/turkish.ogv controls>
+	<p>This page demonstrates the use of HTML5 open video – if you're not using a browser that can display the open Ogg Theora codec, there's not much to see. Download the <a href="../videos/turkish.ogv">Turkish dancing masterclass video</a></p>
+</video>
+
+<pre><code>
+video {
+	width: 75px;
+	-o-transition: all 0.5s ease-in-out;
+	...
+}
+ 
+video:hover,video:focus { width:600px; }
+</code></pre>
+
+<p>This demonstration supplements the <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="../../../../../index.html">Dev.Opera</a>.</p>
+</body>
+</html>
