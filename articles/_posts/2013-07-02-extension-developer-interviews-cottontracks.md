@@ -1,6 +1,6 @@
 ---
-title: 'Extension developer interview: coffee with the cottonTracks team
-authors'
+title: 'Extension developer interview: coffee with the cottonTracks team'
+authors:
 - andreas-bovens
 tags:
 - cottontracks
