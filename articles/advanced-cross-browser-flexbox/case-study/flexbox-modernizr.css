@@ -1,0 +1,351 @@
+/* Import fonts */
+
+@font-face {
+    font-family: 'groovy';
+    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot');
+    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.woff') format('woff'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.ttf') format('truetype'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'neuropol';
+    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot');
+    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.woff') format('woff'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.ttf') format('truetype'),
+         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* basic typography */
+
+html {
+  font-size: 10px;
+  font-family: groovy;
+}
+
+h1,h2,h3,nav {
+  font-family: neuropol;
+}
+
+h1 {
+  font-size: 10rem;
+  padding: 2rem 0;
+  margin: 0;
+  color: black;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.8); 
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-top: 0rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+/* basic layout */
+
+section {
+  padding: 0 1%;
+}
+
+article {
+  padding: 1rem;
+}
+
+/* nav */
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li a {
+  display: inline-block;
+  font-size: 2rem;
+  background-color: rgb(0,0,255);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+  background: -ms-linear-gradient(bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+  background: -o-linear-gradient(bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+  background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.1));
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav li a:hover, nav li a:focus {
+  background-color: rgb(0,0,150);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2));
+  background: -ms-linear-gradient(bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2));
+  background: -o-linear-gradient(bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2));
+  background: linear-gradient(to top, rgba(0,0,0,0.7),rgba(0,0,0,0.2));
+}
+
+nav li a:active {
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,0.9);
+}
+
+
+/* flexbox stuff */
+
+section {
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+nav {
+  padding: 1rem;
+   -webkit-flex: 1 100%;
+  -moz-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+}
+
+article:nth-of-type(1) {
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+article:nth-of-type(2) {
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+/* flexing the nav */
+
+nav {
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; 
+}
+
+nav ul {
+  text-align: center;
+  
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; 
+  width: 80%;
+}
+
+nav a {
+  width: 100%;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  min-width: 5rem;
+}
+
+/* flexing the images */
+
+article:nth-of-type(2) {
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -ms-box-align: center;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  align-content: flex-start;
+}
+
+article p {
+  margin: 0.5rem;
+  
+  -webkit-flex: 1 20rem;
+  -moz-flex: 1 20rem;
+  -ms-flex: 1 20rem;
+  flex: 1 20rem;
+}
+
+article p img {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+}
+
+
+
+/* legacy flexbox fallback */
+
+.no-flexbox section {
+  display: -webkit-box;
+  display: -moz-box;
+  
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  
+}
+
+.no-flexbox nav {
+  padding: 1rem;
+  width: 20%;
+}
+
+.no-flexbox article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+
+.no-flexbox article p {
+  float: left;
+}
+
+
+.no-flexbox article img {
+  display: block;
+  width: 200px;
+}
+
+
+/* no flexbox at all fallback */
+
+.no-flexbox-legacy nav, .no-flexbox-legacy article {
+  float: left;
+}
+
+.no-flexbox-legacy nav {
+  width: 20%;
+}
+
+.no-flexbox-legacy article {
+  width: 36%;
+}
+
+/* media queries for wide and narrow screens */
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  
+  .no-flexbox section { 
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+  }
+  
+  .no-flexbox nav {
+    width: 100%;
+    margin-left: -3rem;
+  }
+  
+  .no-flexbox nav a, .no-flexbox nav ul, .no-flexbox nav li {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  article:nth-of-type(1) {
+    -webkit-flex: 1 100%;
+    -moz-flex: 1 100%;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+  }
+  
+  body {
+    min-width: 320px;
+  }
+  
+  nav ul {
+    width: 100%;
+  }
+    
+  .no-flexbox-legacy nav, .no-flexbox-legacy article {
+    float: none;
+  }
+
+  .no-flexbox-legacy nav, .no-flexbox-legacy article {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  section {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
