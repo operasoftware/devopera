@@ -16,3 +16,15 @@
 	.main-content {
 		@extend %grid__item;
 		}
+
+// Archive
+// -------------------------------
+.archive {
+	@extend %grid;
+	}
+	.archive-first,
+	.archive-second {
+		@extend %grid__item;
+		@extend %lap--one-half;
+		@extend %desk--one-half;
+		}
