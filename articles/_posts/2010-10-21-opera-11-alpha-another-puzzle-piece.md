@@ -1,5 +1,5 @@
 ---
-title: Opera 11 Alpha: Adding Another Piece to the Puzzle
+title: 'Opera 11 Alpha: Adding Another Piece to the Puzzle'
 authors:
 - chris-mills
 tags:

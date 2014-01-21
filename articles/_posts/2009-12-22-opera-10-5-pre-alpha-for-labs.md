@@ -43,7 +43,7 @@ Carakan is our new JavaScript engine. It’s fast, more than 7x faster in [SunSp
 
 ### `<video>`
 
-This build features a long-awaited update to our support for the HTML5 `<video>` element, allowing native playback and control of video inside the browser. It has been much improved since our [first proof of concept][3] was released in 2007. Check out Philip Jägenstedt’s [(re-)Introducing <video>][4] article for all the details.
+This build features a long-awaited update to our support for the HTML5 `<video>` element, allowing native playback and control of video inside the browser. It has been much improved since our [first proof of concept][3] was released in 2007. Check out Philip Jägenstedt’s [(re-)Introducing `<video>`][4] article for all the details.
 
 [3]: /articles/a-call-for-video-on-the-web-opera-vid/
 [4]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
@@ -58,7 +58,7 @@ We are now using Presto 2.5, which contains a huge numbers of improvements. It a
 
 Vega is our [new graphics library][6]. It’s currently software-based and displays everything you see on-screen. Vega can be hardware accelerated, but as you can see from the complex graphics benchmark in Peacekeeper, we don’t seem to need it yet. (Note that Futuremarks’ Peacekeeper test does no include the results of their complex graphics tests in the overall score. We believe this is wrong in 2009 and will simply be silly if not changed in 2010.)
 
-[6]: http://my.opera.com/core/blog/2009/02/04/vega (Opera Core Concerns - Vega - Opera’s vector graphics library)
+[6]: http://my.opera.com/core/blog/2009/02/04/vega
 
 ### Peacekeeper Complex Graphic Benchmarks
 
