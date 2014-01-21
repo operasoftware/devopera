@@ -1,0 +1,15 @@
+---
+title: Opera Kestrel Beta 2 is Now Available
+authors:
+- chris-mills
+tags:
+- opera-9.5
+- obsolete
+layout: article
+---
+
+This week we released an exciting new beta release of Kestrel, the new Opera desktop browser — Beta 2, to be exact. It’s got some exciting new additions, such as support for full CSS3 selectors and HSL, support for MathML, further speed optimizations, support for HTML5’s `getElementsByClassName`, and improved synchronization of bookmarks, Speed Dial sites, and other settings through Opera Link.
+
+You can download the beta and start playing around with it right away, and find more out about its features at the [Opera desktop product page][1].
+
+[1]: http://www.opera.com/products/desktop/next/
