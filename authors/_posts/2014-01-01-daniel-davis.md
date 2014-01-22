@@ -1,5 +1,5 @@
 ---
 title: Daniel Davis
-twitter: ourmaninjapan
+link: http://twitter.com/ourmaninjapan
 layout: author
 ---

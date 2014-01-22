@@ -4,7 +4,16 @@ layout: default
 
 <main class="main">
 	<article role="main" class="main-content">
-		<h1>{{ page.title }} <a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a></h1>
+		<h1>
+			{{ page.title }}
+{% if page.link %}
+	{% if page.link contains 'twitter.com' %}
+			<a href="{{ page.link }}">@{{ page.link | split: '/' | last }}</a>
+	{% else %}
+			<a href="{{ page.link }}">{{ page.link | replace: 'http://' | replace: 'https://' |  replace: 'www.' }}</a>
+	{% endif %}
+{% endif %}
+		</h1>
 		<img src="{{ page.url }}.jpg">
 		<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
 		<ul>

@@ -1,5 +1,5 @@
 ---
 title: Mike Taylor
-twitter: miketaylr
+link: http://twitter.com/miketaylr
 layout: author
 ---

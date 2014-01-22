@@ -1,5 +1,5 @@
 ---
 title: Yenny Otero
-twitter: yennyo
+link: http://twitter.com/yennyo
 layout: author
 ---

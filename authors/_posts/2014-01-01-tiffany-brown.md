@@ -1,5 +1,5 @@
 ---
 title: Tiffany Brown
-twitter: webinista
+link: http://twitter.com/webinista
 layout: author
 ---

@@ -1,5 +1,5 @@
 ---
 title: Luz Caballero
-twitter: gerbille
+link: http://twitter.com/gerbille
 layout: author
 ---

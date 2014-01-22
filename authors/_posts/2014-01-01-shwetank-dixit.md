@@ -1,5 +1,5 @@
 ---
 title: Shwetank Dixit
-twitter: shwetank
+link: http://twitter.com/shwetank
 layout: author
 ---

@@ -6,9 +6,10 @@ layout: default
 <main class="main">
 	<article role="main" class="main-content">
 		<h1>{{ page.title }}</h1>
+		<ul>
 {% for author in site.categories.authors %}
-		<h2><a href="{{ author.url }}">{{ author.title }}</a></h2>
-		<p>{{ author.title }} <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></p>
+			<li><a href="{{ author.url }}">{{ author.title }}</a></li>
 {% endfor %}
+		</ul>
 	</article>
 </main>

@@ -1,5 +1,5 @@
 ---
 title: Vadim Makeev
-twitter: pepelsbey
+link: http://twitter.com/pepelsbey
 layout: author
 ---

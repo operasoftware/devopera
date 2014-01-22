@@ -1,5 +1,5 @@
 ---
 title: Ian Devlin
-twitter: iandevlin
+link: http://twitter.com/iandevlin
 layout: author
 ---
