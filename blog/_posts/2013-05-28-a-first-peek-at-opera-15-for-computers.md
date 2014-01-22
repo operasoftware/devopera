@@ -13,7 +13,7 @@ layout: post
 
 Hurrah! Hot on the heels of the release of [Opera 14 for Android][1] (based on Chromium 26), here's a first peek at our all new Opera for Computers. It's called [Opera Next 15][2] and it's based on Chromium 28 — which means that it comes with [Blink][3] on board — but as it's an evergreen browser with a [URL=http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle]fast release cycle[/URL], we don't recommend reading too much into the digits — it's what's in it that counts!
 
-[1]: http://my.opera.com/ODIN/blog/opera-14-for-android-is-out
+[1]: /blog/opera-14-for-android-is-out
 [2]: http://www.opera.com/next/
 [3]: http://www.chromium.org/blink
 

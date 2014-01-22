@@ -15,11 +15,11 @@ layout: post
 
 About five weeks ago, we [announced][1] that Opera's products would transition to using WebKit. We said "Opera will contribute to the WebKit and Chromium projects. Our work on web standards to advance the web continues."
 
-[1]: http://my.opera.com/ODIN/blog/300-million-users-and-move-to-webkit
+[1]: /blog/300-million-users-and-move-to-webkit
 
 Obviously, replacing a rendering engine is a huge engineering change, so we've been working flat out, hooking up the new rendering engine, rewriting the UI, integrating new features and testing everything so that you can actually see products. (Have you tried [Opera 14 beta for Android 2.3][2] and above yet?)
 
-[2]: http://my.opera.com/ODIN/blog/2013/03/05/opera-14-beta-for-android-is-out
+[2]: /blog/2013/03/05/opera-14-beta-for-android-is-out
 
 But we haven't forgotten our commitment to contributing back. Here are the patches we've submitted to enhance any WebKit-based browser so that they better support CSS:
 
