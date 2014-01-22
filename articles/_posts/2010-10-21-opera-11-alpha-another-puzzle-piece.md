@@ -5,7 +5,7 @@ authors:
 tags:
 - opera-11
 - extensions
-- obsolete
+- labs
 layout: article
 ---
 

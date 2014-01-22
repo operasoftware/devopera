@@ -4,7 +4,6 @@ authors:
 - tim-johansson
 tags:
 - webgl
-- obsolete
 - labs
 layout: article
 ---

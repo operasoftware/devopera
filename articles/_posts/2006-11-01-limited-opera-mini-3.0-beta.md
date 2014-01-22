@@ -3,8 +3,8 @@ title: Limited Opera Mini 3.0 Beta
 authors:
 - thomas-ford
 tags:
-- obsolete
 - opera-mini
+- labs
 layout: article
 ---
 

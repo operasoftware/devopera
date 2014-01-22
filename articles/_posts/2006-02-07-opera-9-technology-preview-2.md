@@ -4,7 +4,7 @@ authors:
 - hakon-wium-lie
 tags:
 - opera-9
-- obsolete
+- labs
 layout: article
 ---
 

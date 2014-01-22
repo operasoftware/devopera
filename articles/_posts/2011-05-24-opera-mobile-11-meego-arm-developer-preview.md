@@ -6,7 +6,6 @@ tags:
 - meego
 - arm
 - opera-mobile
-- obsolete
 - labs
 layout: article
 ---

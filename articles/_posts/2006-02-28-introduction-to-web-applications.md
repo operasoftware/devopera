@@ -3,7 +3,7 @@ title: Introduction to Web Applications
 authors:
 - hakon-wium-lie
 tags:
-- obsolete
+- labs
 layout: article
 ---
 

@@ -5,7 +5,7 @@ authors:
 tags:
 - security
 - certificates
-- obsolete
+- labs
 layout: article
 ---
 

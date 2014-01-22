@@ -5,7 +5,7 @@ authors:
 tags:
 - webapps
 - opera-9
-- obsolete
+- labs
 layout: article
 ---
 

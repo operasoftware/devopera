@@ -4,7 +4,6 @@ authors:
 - yngve-pettersen
 tags:
 - security
-- obsolete
 - labs
 layout: article
 ---

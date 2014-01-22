@@ -6,7 +6,7 @@ tags:
 - html5
 - html5-parser
 - opera-11.50
-- obsolete
+- labs
 layout: article
 ---
 

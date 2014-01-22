@@ -4,7 +4,6 @@ authors:
 - roberto-mateu
 tags:
 - opera-turbo
-- obsolete
 - labs
 layout: article
 ---

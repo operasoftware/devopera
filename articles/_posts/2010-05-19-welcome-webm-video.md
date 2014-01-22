@@ -5,7 +5,6 @@ authors:
 tags:
 - webm
 - video
-- obsolete
 - labs
 layout: article
 ---

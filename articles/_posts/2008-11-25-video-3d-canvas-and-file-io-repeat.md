@@ -7,7 +7,6 @@ tags:
 - file-io
 - canvas
 - opera-9.62
-- obsolete
 - labs
 layout: article
 ---

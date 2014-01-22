@@ -6,7 +6,6 @@ tags:
 - opera-mobile
 - maemo
 - labs
-- obsolete
 layout: article
 ---
 

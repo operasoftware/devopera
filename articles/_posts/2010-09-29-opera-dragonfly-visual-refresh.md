@@ -4,7 +4,7 @@ authors:
 - david-storey
 tags:
 - dragonfly
-- obsolete
+- labs
 layout: article
 ---
 

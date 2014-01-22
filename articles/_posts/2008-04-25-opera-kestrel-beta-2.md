@@ -4,7 +4,7 @@ authors:
 - chris-mills
 tags:
 - opera-9.5
-- obsolete
+- labs
 layout: article
 ---
 

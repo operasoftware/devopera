@@ -6,7 +6,7 @@ tags:
 - svg
 - debugging
 - opera-9
-- obsolete
+- labs
 layout: article
 ---
 

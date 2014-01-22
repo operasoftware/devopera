@@ -6,7 +6,6 @@ tags:
 - opera-mini
 - android
 - labs
-- obsolete
 layout: article
 ---
 

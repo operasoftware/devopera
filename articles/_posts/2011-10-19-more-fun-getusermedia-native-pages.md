@@ -5,7 +5,7 @@ authors:
 tags:
 - getusermedia
 - opera-mobile
-- obsolete
+- labs
 layout: article
 ---
 

@@ -5,6 +5,7 @@ authors:
 tags:
 - fingertouch
 - opera-mobile
+- labs
 layout: article
 ---
 

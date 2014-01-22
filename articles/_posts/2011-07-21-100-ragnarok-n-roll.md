@@ -5,6 +5,7 @@ authors:
 tags:
 - html5
 - opera-12
+- labs
 layout: article
 ---
 

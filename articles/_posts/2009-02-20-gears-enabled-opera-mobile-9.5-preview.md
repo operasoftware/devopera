@@ -5,7 +5,6 @@ authors:
 tags:
 - gears
 - opera-mobile
-- obsolete
 - labs
 layout: article
 ---

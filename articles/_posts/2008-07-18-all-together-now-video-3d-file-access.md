@@ -8,6 +8,7 @@ tags:
 - ecmascript
 - javascript
 - opera-10
+- labs
 layout: article
 ---
 

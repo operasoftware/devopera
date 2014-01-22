@@ -7,7 +7,6 @@ tags:
 - intel
 - meego
 - opera-mobile
-- obsolete
 - labs
 layout: article
 ---

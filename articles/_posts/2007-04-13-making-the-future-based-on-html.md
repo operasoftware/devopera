@@ -6,7 +6,7 @@ tags:
 - w3c
 - htmlwg
 - whatwg
-- obsolete
+- labs
 layout: article
 ---
 

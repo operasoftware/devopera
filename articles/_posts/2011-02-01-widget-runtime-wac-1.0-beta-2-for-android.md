@@ -6,7 +6,6 @@ tags:
 - wac
 - widgets
 - android
-- obsolete
 - labs
 layout: article
 ---

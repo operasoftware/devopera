@@ -6,6 +6,7 @@ tags:
 - video
 - open-web
 - opera-9.50
+- labs
 layout: article
 ---
 

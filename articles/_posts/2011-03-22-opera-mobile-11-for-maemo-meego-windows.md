@@ -7,7 +7,6 @@ tags:
 - maemo
 - meego
 - labs
-- obsolete
 layout: article
 ---
 

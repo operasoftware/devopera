@@ -5,7 +5,6 @@ authors:
 tags:
 - opera-widgets
 - opera-mobile
-- obsolete
 - labs
 layout: article
 ---

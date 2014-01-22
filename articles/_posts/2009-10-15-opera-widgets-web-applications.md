@@ -5,7 +5,6 @@ authors:
 tags:
 - widgets
 - webapps
-- obsolete
 - labs
 layout: article
 ---

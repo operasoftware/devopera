@@ -4,8 +4,8 @@ authors:
 - arve-bersvendsen
 tags:
 - server-sent-events
-- obsolete
 - opera-9
+- labs
 layout: article
 ---
 

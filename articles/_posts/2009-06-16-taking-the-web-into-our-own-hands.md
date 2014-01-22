@@ -4,7 +4,6 @@ authors:
 - lawrence-eng
 tags:
 - unite
-- obsolete
 - labs
 layout: article
 ---

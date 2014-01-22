@@ -4,7 +4,7 @@ authors:
 - chris-mills
 tags:
 - geolocation
-- obsolete
+- labs
 layout: article
 ---
 

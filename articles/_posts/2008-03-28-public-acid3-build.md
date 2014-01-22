@@ -4,7 +4,6 @@ authors:
 - lars-bolstad
 tags:
 - acid
-- obsolete
 - labs
 layout: article
 ---

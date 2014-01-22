@@ -5,7 +5,6 @@ authors:
 tags:
 - maemo
 - opera-mobile
-- obsolete
 - labs
 layout: article
 ---

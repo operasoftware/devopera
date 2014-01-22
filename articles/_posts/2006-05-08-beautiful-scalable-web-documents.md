@@ -6,6 +6,7 @@ tags:
 - svg
 - open-web
 - opera-9
+- labs
 layout: article
 ---
 

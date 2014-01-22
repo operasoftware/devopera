@@ -4,7 +4,6 @@ authors:
 - andreas-bovens
 tags:
 - opera-mobile-emulator
-- obsolete
 - labs
 layout: article
 ---
