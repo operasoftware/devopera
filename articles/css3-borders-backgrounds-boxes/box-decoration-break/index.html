@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 | backgrounds and borders</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Storey"/>
+		<style type="text/css">
+			body {
+				font: 12px/1.6 helvetica, arial, sans-serif;
+				margin: 3em;
+				width:  35em;
+			}
+
+			h1 {
+				font-size: 16px;
+			}
+
+			section {
+				display: block;
+				width: 29em;
+			}
+			section code {
+				border: 1px solid rgb(238,206,0);
+				border-radius: 4px;
+				background: yellow url("gradient.svgz");
+				padding: 2px;
+				box-shadow: 0px 1px 3px dimgrey;
+			}
+
+			#clone {
+				margin-bottom: 3em;
+			}
+
+			#slice code {
+				box-decoration-break: slice;
+			}
+
+			#clone code {
+				box-decoration-break: clone;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="slice">
+			<h1>Box-decoration-break: slice</h1>
+			<p>No border and no padding are inserted at the break. No <code>box-shadow</code> is drawn at the broken edge; <code>border-radius</code> has no effect at its corners; and the <code>border-image</code> is rendered for the whole box as if it were unbroken. The effect is as though the element were rendered with no break present, and then sliced by the break afterward.</p>
+		</section>
+
+		<section id="clone">
+			<h1>Box-decoration-break: clone</h1>
+			<p>Each box is independently wrapped with the border and padding. The <code>border-radius</code> and <code>border-image</code> and <code>box-shadow</code>, if any, are applied to each box independently. The background is drawn independently in each box of the element. A <code>no-repeat</code> background image will thus be rendered once in each box of the element.</p>
+		</section>
+
+		<p>See the Dev.Opera article <a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and boxes</a> for more information on <code>box-decoration-break</code> and other CSS3 Backgrounds and Borders properties. If the demos above do not work correctly in your browser it is likely that <code>box-decoration-break</code> is not supported. If not try with the <a href="http://www.opera.com/browser/next">latest version of Opera</a>.</p>
+	</body>
+</html>
