@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gradient demo</title>
+		<style>
+		html {
+		  background-image: url(metal003.gif);
+		}
+		
+		body {
+		  font-family: helvetica;
+		}
+		
+		header {
+		  text-shadow: 1px 1px 2px white;  
+		}
+		
+		article {
+		  display: block;
+		  width: 50%;
+		  padding: 10px;
+		  margin-bottom: 30px;
+		  border-radius: 30px;
+		  box-shadow: 3px 3px 20px black;
+		}
+		
+		
+		#grad1 {
+		background-image: -webkit-linear-gradient(rgb(100,100,100),rgb(200,200,200));
+		background-image: -moz-linear-gradient(rgb(100,100,100),rgb(200,200,200));
+		background-image: -ms-linear-gradient(rgb(100,100,100),rgb(200,200,200));
+		background-image: -o-linear-gradient(rgb(100,100,100),rgb(200,200,200));
+        background-image: linear-gradient(rgb(100,100,100),rgb(200,200,200));
+
+		}
+		
+		#grad2 {
+		background-image: -webkit-linear-gradient(left,rgba(100,100,100,1),rgba(100,100,100,0.5));
+		background-image: -moz-linear-gradient(left,rgba(100,100,100,1),rgba(100,100,100,0.5));
+		background-image: -ms-linear-gradient(left,rgba(100,100,100,1),rgba(100,100,100,0.5));
+		background-image: -o-linear-gradient(left,rgba(100,100,100,1),rgba(100,100,100,0.5));
+		background-image: linear-gradient(to right,rgba(100,100,100,1),rgba(100,100,100,0.5));
+		}
+		
+		#grad3 {
+		background-image: -webkit-linear-gradient(top left,rgb(255,0,0),rgb(100,0,0) 50%,rgb(50,0,0) 75%,rgb(150,0,0));
+		background-image: -moz-linear-gradient(top left,rgb(255,0,0),rgb(100,0,0) 50%,rgb(50,0,0) 75%,rgb(150,0,0));
+		background-image: -ms-linear-gradient(top left,rgb(255,0,0),rgb(100,0,0) 50%,rgb(50,0,0) 75%,rgb(150,0,0));
+		background-image: -o-linear-gradient(top left,rgb(255,0,0),rgb(100,0,0) 50%,rgb(50,0,0) 75%,rgb(150,0,0));
+		background-image: linear-gradient(to bottom right,rgb(255,0,0),rgb(100,0,0) 50%,rgb(50,0,0) 75%,rgb(150,0,0));
+		}
+		
+		#grad4 {
+		background-image: -webkit-repeating-linear-gradient(20deg,rgb(255,0,0),rgb(100,0,0) 20px, rgb(255,0,0) 40px);
+		background-image: -moz-repeating-linear-gradient(20deg,rgb(255,0,0),rgb(100,0,0) 20px, rgb(255,0,0) 40px);
+		background-image: -ms-repeating-linear-gradient(20deg,rgb(255,0,0),rgb(100,0,0) 20px, rgb(255,0,0) 40px);
+		background-image: -o-repeating-linear-gradient(20deg,rgb(255,0,0),rgb(100,0,0) 20px, rgb(255,0,0) 40px);
+		background-image: repeating-linear-gradient(70deg,rgb(255,0,0),rgb(100,0,0) 20px, rgb(255,0,0) 40px);
+		}
+		</style>
+	</head>
+	<body>
+	<header>
+	  <h1>My gradient examples</h1>
+	</header>
+	
+	<article id="grad1">
+	<h2>Gradients rock!</h2>
+	</article>
+	
+	<article id="grad2">
+	<h2>A transparent gradient</h2>
+	</article>
+	
+	<article id="grad3">
+	<h2>Multiple colour stops</h2>
+	</article>
+	
+	<article id="grad4">
+	<h2>Repeating gradient</h2>
+	</article>
+	</body>
+</html>
