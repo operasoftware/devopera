@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Radial gradient demo</title>
+        <script>
+          document.createElement('header');
+          document.createElement('section');
+        </script>
+        <style>
+
+        section, header {
+          display: block;
+        }
+
+        html {
+          background-color:white;
+          background-image:
+            -ms-radial-gradient(midnightblue 9px, transparent 10px),        
+            -ms-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+          background-image:
+            -moz-radial-gradient(midnightblue 9px, transparent 10px),        
+            -moz-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+          background-image:
+            -o-radial-gradient(midnightblue 9px, transparent 10px),        
+            -o-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+          background-image:
+            -webkit-radial-gradient(midnightblue 9px, transparent 10px),        
+            -webkit-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+          background-image:
+            radial-gradient(midnightblue 9px, transparent 10px),        
+            repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px); 
+            background-size: 30px 30px, 90px 90px; 
+            background-position: -50px 0;
+        }
+
+        body {
+          font-family: helvetica;
+          font-size: 100%;
+        }
+
+        header {
+          text-shadow: 0px 0px 4px white, 0px 0px 8px #999999;
+        }
+
+        section#panel {
+          border: 2px solid black;
+          height: 140px;
+          width: 590px;
+          position: absolute;
+          border-radius: 60px;
+          background-color: #444444;
+          left: 50%;
+          margin: 50px 0 50px -295px;
+          box-shadow: inset 1px 1px 10px black;
+          background-image: -moz-linear-gradient(top,rgb(150,150,150),rgb(75,75,75));
+          background-image: -ms-linear-gradient(top,rgb(150,150,150),rgb(75,75,75));
+          background-image: -o-linear-gradient(top,rgb(150,150,150),rgb(75,75,75));
+          background-image: -webkit-linear-gradient(top,rgb(150,150,150),rgb(75,75,75));
+          background-image: linear-gradient(to bottom,rgb(150,150,150),rgb(75,75,75));
+        }
+
+        a, a:visited {
+          border: 1px solid #333333;
+          color: black;
+          text-shadow: 1px 1px 1px #444444;
+          letter-spacing: 0.05em;
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+          width: 107px;
+          border-radius: 60px;
+          line-height: 107px;
+          float: left;
+          text-align: center;
+          margin: 0 19px 0 19px;
+        }
+
+        a:hover, a:focus {
+          box-shadow: inset 1px 1px 10px black;
+        }
+
+        a:active {
+          box-shadow: inset 1px 1px 40px black;
+        }
+
+        #grad1 {
+          background-image: -webkit-radial-gradient(30% 40%, rgb(255,0,0), rgb(0,0,0));
+          background-image: -moz-radial-gradient(30% 40%, rgb(255,0,0), rgb(0,0,0));
+          background-image: -ms-radial-gradient(30% 40%, rgb(255,0,0), rgb(0,0,0));
+          background-image: -o-radial-gradient(30% 40%, rgb(255,0,0), rgb(0,0,0));
+          background-image: radial-gradient(circle at 30% 40%, rgb(255,0,0), rgb(0,0,0));
+        }
+
+        #grad2 {
+          background-image: -webkit-radial-gradient(30% 40%, rgb(0,255,0), rgb(0,0,0));
+          background-image: -moz-radial-gradient(30% 40%, rgb(0,255,0), rgb(0,0,0));
+          background-image: -ms-radial-gradient(30% 40%, rgb(0,255,0), rgb(0,0,0));
+          background-image: -o-radial-gradient(30% 40%, rgb(0,255,0), rgb(0,0,0));
+          background-image: radial-gradient(circle at 30% 40%, rgb(0,255,0), rgb(0,0,0));
+        }
+
+        #grad3 {
+          background-image: -webkit-radial-gradient(30% 40%, rgb(50,50,200), rgb(0,0,0));
+          background-image: -moz-radial-gradient(30% 40%, rgb(50,50,200), rgb(0,0,0));
+          background-image: -ms-radial-gradient(30% 40%, rgb(50,50,200), rgb(0,0,0));
+          background-image: -o-radial-gradient(30% 40%, rgb(50,50,200), rgb(0,0,0));
+          background-image: radial-gradient(circle at 30% 40%, rgb(50,50,200), rgb(0,0,0));
+        }
+
+        #grad4 {
+          background-image: -webkit-radial-gradient(30% 40%, rgb(255,255,100), rgb(0,0,0));
+          background-image: -moz-radial-gradient(30% 40%, rgb(255,255,100), rgb(0,0,0));
+          background-image: -ms-radial-gradient(30% 40%, rgb(255,255,100), rgb(0,0,0));
+          background-image: -o-radial-gradient(30% 40%, rgb(255,255,100), rgb(0,0,0));
+          background-image: radial-gradient(circle at 30% 40%, rgb(255,255,100), rgb(0,0,0));
+        }
+
+        section#rainbow {
+           background-color: rgba(0,0,0,0.6);
+           background-image: -o-double-rainbow(50% 225%);
+           /*-o-double-rainbow(<position> [, <size> || <shape>])*/
+           width: 100%;
+           height: 100%;
+           position: fixed;
+           bottom: 0;
+           left: 0;
+           opacity: 0;
+           -o-transition: 2s all;
+           z-index: 0;
+        }
+
+        section#rainbow:target {
+          opacity: 1;
+        }
+        </style>
+    </head>
+    <body>
+
+    <section id="rainbow">
+    </section>
+
+    <section id="panel">
+      <p><a href="http://www.opera.com" id="grad1">Stop</a></p>
+
+      <p><a href="http://www.opera.com" id="grad2">Go!</a></p>
+
+      <p><a href="http://www.opera.com" id="grad3">Help</a></p>
+
+      <p><a href="#rainbow" id="grad4">On/Off</a></p>
+    </section>
+
+    </body>
+</html>

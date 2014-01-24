@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<title>Repeating radial gradient demo</title>
+		<script>
+		  document.createElement('header');
+		  document.createElement('section');
+		</script>
+		<style>
+		
+		section {
+		  width: 300px;
+		  height: 200px;
+		  float: left;
+		}
+		
+		#repeat1 {
+		  background: -webkit-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%, #000099);
+		  background: -moz-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%, #000099);
+		  background: -ms-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%, #000099);
+		  background: -o-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%, #000099);
+		  background: repeating-radial-gradient(30px circle, #000099, #0000FA 50%, #000099);
+		}
+		
+		#repeat2 {
+		  background: -webkit-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%);
+		  background: -moz-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%);
+		  background: -ms-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%);
+		  background: -o-repeating-radial-gradient(center, 30px 30px, #000099, #0000FA 50%);
+		  background: repeating-radial-gradient(30px circle at center, #000099, #0000FA 50%);
+		}
+		
+		#repeat3 {
+		  background: -webkit-repeating-radial-gradient(center, circle closest-side, #000099, #0000FA 50%, #000099);
+		  background: -moz-repeating-radial-gradient(center, circle closest-side, #000099, #0000FA 50%, #000099);
+		  background: -ms-repeating-radial-gradient(center, circle closest-side, #000099, #0000FA 50%, #000099);
+		  background: -o-repeating-radial-gradient(center, circle closest-side, #000099, #0000FA 50%, #000099);
+		  background: repeating-radial-gradient(closest-side circle at center, #000099, #0000FA 50%, #000099);
+		}
+		
+		#repeat4 {
+		  background: -webkit-repeating-radial-gradient(center,#000099, #0000FA 50%, #000099);
+		  background: -moz-repeating-radial-gradient(center, #000099, #0000FA 50%, #000099);
+		  background: -ms-repeating-radial-gradient(center, #000099, #0000FA 50%, #000099);
+		  background: -o-repeating-radial-gradient(center, #000099, #0000FA 50%, #000099);
+		  background: repeating-radial-gradient(ellipse, #000099, #0000FA 50%, #000099);
+		}
+		
+		</style>
+	</head>
+	<body>
+	
+	  <section id="repeat1">
+	  
+	  </section>
+	  <section id="repeat2">
+	  
+	  </section>
+	  <section id="repeat3">
+	  
+	  </section>
+	  <section id="repeat4">
+	  
+	  </section>
+	
+	</body>
+</html>
