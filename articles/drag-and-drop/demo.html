@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag and drop demo</title>
+<style>
+
+h1, h2 {
+  color: #000;
+  font-family: Helvetica, sans-serif;
+}
+
+#wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 0.25em;
+}
+
+body {font-family: sans-serif;}
+li {list-style-type:none;}
+ul {padding-left:0;margin-top: 0;}
+
+dl {
+  margin-top: 0em;
+}
+
+dt,dd {
+  padding: 0.5em;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+dt {
+  font-weight: bold;
+  background: #6A93D4;
+}
+
+dd {
+  color: #1B1BB3;
+  white-space: pre-wrap;
+}
+
+li, h2 + p {
+  background: -webkit-linear-gradient(#6A93D4, #1B1BB3);
+  background: -moz-linear-gradient(#6A93D4, #1B1BB3);
+  background: -ms-linear-gradient(#6A93D4, #1B1BB3);
+  background: -o-linear-gradient(#6A93D4, #1B1BB3);
+  background: linear-gradient(#6A93D4, #1B1BB3);
+  
+  margin-top: 0.5em;
+  padding: 0.5em;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  box-shadow: 2px 2px 3px black;
+  
+  border-radius: 3px;
+}
+
+#dl-head {
+  visibility: hidden;
+}
+
+</style>
+</head>
+<body>
+  <div id="wrapper">
+  <noscript><p>Enable JavaScript and reload</p></noscript>
+  <h2>Drag sources</h2>
+  <ul>
+    <li draggable="true">Draggable element (only copy and link modifiers are allowed).</li>
+    <li>Select some text to create a draggable selection.</li>
+    <li><a href="http://www.example.com/">Draggable link (drag it vertically)</a>.</li>
+    <li draggable="true" itemscope><span itemprop="foo">Draggable</span> element with microdata.<a itemprop="foo" href="http://www.example.com/"></a><a itemprop="bar" href="http://www.example.org/"></a></li>
+    <li>Select this entire paragraph to <span itemscope><span itemprop="baz">create</span><a itemprop="qux" href="http://www.example.com/"></a></span> a <span itemscope><span itemprop="foo">draggable</span><a itemprop="foo" href="http://www.example.com/"></a><a itemprop="bar" href="http://www.example.org/"></a></span> selection intersecting some microdata.</li>
+    <li>Now, drag some files from your computer to this page.</li>
+  </ul>
+  <h2>Drop target</h2>
+  <p>Drop onto this text. The dropped data should appear below.</p>
+  <h2 id="dl-head">Drop data</h2>
+  <dl></dl>
+ </div>
+  <script>
+    var dragel = document.getElementsByTagName('li')[0],
+        dragmicro = document.getElementsByTagName('li')[3],
+        droptarget = document.getElementsByTagName('p')[0],
+        output = document.getElementsByTagName('dl')[0];
+        
+    dragel.addEventListener('dragstart', function (e) {
+      e.dataTransfer.setData('text/plain','Hello world');
+      e.dataTransfer.effectAllowed = 'copyLink';
+    }, false);
+    
+    dragmicro.addEventListener('dragstart',function (e) {
+      e.dataTransfer.setData('text/plain','Ooh, you found me');
+      e.dataTransfer.effectAllowed = 'all';
+    }, false);
+    
+    ['dragenter', 'dragover'].forEach(function(item){
+      droptarget.addEventListener(item, function(e){
+        e.preventDefault();
+      }, false);
+    });
+    
+    droptarget.addEventListener('drop', function (e) {
+      e.preventDefault();
+      while( output.hasChildNodes() ) {
+        output.removeChild(output.firstChild);
+      }
+      defItem('dropEffect',e.dataTransfer.dropEffect);
+      try {
+        for( var i = 0; i < e.dataTransfer.types.length; i++ ) {
+          defItem('datatype '+e.dataTransfer.types[i],e.dataTransfer.getData(e.dataTransfer.types[i]));
+        }
+      } catch(f) {
+        defItem('dataTransfer.types','Threw an error when checking for data, so trying the two that IE 9 supports');
+        try {
+          defItem('text',e.dataTransfer.getData('text'));
+          defItem('url',e.dataTransfer.getData('url'));
+        } catch(g) {
+          defItem('Ouch','That threw an error too');
+        }
+      }
+      try {
+        for( var i = 0; i < e.dataTransfer.files.length; i++ ) {
+          defItem('file '+i,e.dataTransfer.files[i].name);
+        }
+      } catch(g) {
+        defItem('files','Threw an error when checking');
+      }
+    }, false);
+    
+  function defItem(dtText,ddText) {
+    var h2 = document.getElementById('dl-head');
+    h2.style.visibility = 'visible';
+    var dt = document.createElement('dt'), 
+        dd = document.createElement('dd');
+        
+    dt.appendChild(document.createTextNode(dtText));
+    dd.appendChild(document.createTextNode(ddText));
+    output.appendChild(dt);
+    output.appendChild(dd);
+  }
+  </script>
+  </body>
+</html>
