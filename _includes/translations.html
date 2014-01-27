@@ -2,7 +2,8 @@
 {% capture translations %}
 	{% for post in {{include.category}} %}
 		{% assign current = page.url | split: '/' | last %}
-		{% if post.url contains current %}
+		{% assign item = post.url | split: '/' | last %}
+		{% if item == current %}
 			{% assign lang = post.categories[1] %}
 			{% unless lang %}
 				{% assign lang = 'en' %}
