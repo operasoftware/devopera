@@ -1,5 +1,5 @@
 ---
-title: クロスブラウザな CSS box-shadow
+title: Кроссбраузерные box-shadow в CSS
 authors:
 - rustam-gaffanov
 tags:
