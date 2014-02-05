@@ -101,7 +101,7 @@ Also, in production-ready code the user should be given the option of seeing the
 
 The code is released with a creative commons license, so please feel free to amend it--and please leave a link or [tweet me][10] if you do.
 
-[10]: http://twitter.com/brucel
+[10]: https://twitter.com/brucel
 
 Also see Daniel Davis’ [multilingual example][11] that allows you to choose between English and Japanese, even while the video is running.
 
@@ -121,4 +121,4 @@ Also see Daniel Davis’ [multilingual example][11] that allows you to choose be
 
 Thanks to [Philip Jagenstedt][15] for coding the JavaScript in the demo, David Storey for invaluable suggestions, and my daughter Marina for standing on her bed to film the video while I commandeered her homework desk.
 
-[15]: http://twitter.com/foolip
+[15]: https://twitter.com/foolip

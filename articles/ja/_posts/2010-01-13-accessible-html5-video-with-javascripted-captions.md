@@ -97,7 +97,7 @@ JavaScript が有効になっている場合は、トランスクリプトを一
 
 コードはクリエイティブ・コモンズライセンスで提供されています。ですから自由に修正して、よろしければ[私にツイート][9]して知らせて下さい。
 
-[9]: http://twitter.com/brucel
+[9]: https://twitter.com/brucel
 
 また、Daniel Davis の[多言語版サンプル][10]もご覧下さい。このサンプルでは、英語と日本語を再生中でも切り替えることができます。
 
@@ -115,4 +115,4 @@ JavaScript が有効になっている場合は、トランスクリプトを一
 
 デモの JavaScript を書いてくれた [Philip Jägenstedt][13] と、価値ある提案をしてくれた David Storey, 学習机の前で広義をする私をベッドの上に立ちながらビデオに収めてくれた娘 Marina に感謝します。
 
-[13]: http://twitter.com/foolip
+[13]: https://twitter.com/foolip

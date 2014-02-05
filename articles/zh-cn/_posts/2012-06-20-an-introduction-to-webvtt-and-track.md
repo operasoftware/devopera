@@ -315,11 +315,11 @@ Internet Explorer 10 支持 [WebVTT 和 `<track>` 元素][7], 但只是在 beta 
 - [MediaElementJS][12] ，作者 [John Dyer][13] — 支持字幕
 
 [8]: http://www.delphiki.com/html5/playr/
-[9]: http://twitter.com/delphiki
+[9]: https://twitter.com/delphiki
 [10]: http://captionatorjs.com/
-[11]: http://twitter.com/cgiffard
+[11]: https://twitter.com/cgiffard
 [12]: http://mediaelementjs.com/
-[13]: http://twitter.com/johndyer
+[13]: https://twitter.com/johndyer
 
 以上所有都支持 HTML5 `<video>`, 但不支持 HTML5 `<audio>`，但它们都很容易改进以适应两者。
 

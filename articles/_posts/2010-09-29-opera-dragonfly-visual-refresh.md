@@ -24,7 +24,7 @@ We’d also like to reveal the [roadmap for our Opera Dragonfly 1.0][2] release.
 
 We hope that you enjoy the direction we are going with Opera Dragonfly, and would love your feedback, both positive and negative. Post your feedback on [Twitter][3] with the #dragonfly hash tag, and feel free to contact me at @dstorey if you have any questions. You can also leave comments and questions on the [Opera Dragonfly forums][4]. For anyone who wishes to contribute to Opera Dragonfly you can head over to the [source code repository on BitBucket][5].
 
-[3]: http://twitter.com/
+[3]: https://twitter.com/
 [4]: http://my.opera.com/community/forums/forum.dml?id=11057
 [5]: https://bitbucket.org/scope/dragonfly-stp-1
 

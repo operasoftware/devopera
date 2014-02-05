@@ -2,7 +2,7 @@
  * Playr
  *
  * @author Julien 'delphiki' Villetorte <gdelphiki@gmail.com>
- * http://twitter.com/delphiki
+ * https://twitter.com/delphiki
  * http://www.delphiki.com/html5/playr
  */
 
@@ -26,7 +26,7 @@ function Playr(v_id, v_el){
 		sound_control:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAH0SURBVDjLxdPPS9tgGAfwgH/ATmPD0w5jMFa3IXOMFImsOKnbmCUTacW1WZM2Mf1ho6OBrohkIdJfWm9aLKhM6GF4Lz3No/+AMC/PYQXBXL1+95oxh1jGhsgOX/LywvN5n/fN+3IAuKuEuzagVFoO27b1/Z+BcrnUx4otx7FPLWsJvYpIM2SS9H4PqNWqfK1W8VKplHlW/G1zs4G9vS9YXPx4CaDkXOFES4Om4gceUK2WsbZWR72+gtXVFezsbKHVamF7ewtm/sMFgBJZhd6pvm4kDndaAo2KOmt5Gfv7X9HpdNBut9FsNmFZFgPrMHKZc4DkjHyi6KC3MZNehTOuGAH5Xx5ybK/Y3f0Mx3Fg2zaKxSIMw2DjT0inNQ84nogcUUQJHIfZquNT3hzx46DBALizg2o01qEoCqLRKERRRDAYhKYlWRK/AJdCMwH2BY28+Qk8fg667wdXKJjY2FiHaeaRzWYQCk1AEASGzSCZjP/ewtik5r6eBD0dM+nRSMb1j4LuPDnkFhZymJ/PsmLdazmV0jxEkqKsK+niIQ69mKUBwdd9OAx3SADdHtC53FyK12dVXlVlPpF4zytK7OgMyucNyHLs8m+8+2zJHRwG3fId9LxIbNU+OR6zWU57AR5y84FKN+71//EqM2iapfv/HtPf5gcdtKR8VW88PgAAAABJRU5ErkJggg==',
 		mute_control:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFsSURBVDjLxZO/SwJhHMYF16b+gP6GZiehwcm7hBORKLXzPT1SIhMUHCKO48TT88emhwchHTiEERQhTrlE1FIhQS1BGRTU5vr0ntgS6BFBDR94eeH5fPk+L68DgOM3OP5MUCjkg7IsPf9YoKoFJw1LiiKPJGkX7wyToCxMFWhayaVpxTHFouqi4ftmU0enc4CTGLEE15T5qYJSSUWtVkW1WkalUkartYd2u43zbBZPPp8lMGeuoKp59Ptn6PV66Ha7MAwDp6KIIcfh1u+3BHMzBXRXmOY+FEWBLMs4FoTx5LtgENuJOGxLtIrS9ToIITADATwyDC69XmzGBYiiYC/I5bJoNOo44vnx5CuWgcftRii0iliMtxek01s4jIRoeBk3dO/URhw+eo7QO0Ii9oIBx+lvLPvxwrKDnfW1JULCD8mkiEwmhWg0PFtAG16kvFIuvtqmU51RPixTRraCicTz/akmohXK8P8+0zQ+AXBHwZp9sfnqAAAAAElFTkSuQmCC'
 	}
-	
+
 	this.setupStarted = false;
 	this.ready = false;
 	this.video_id = v_id;
@@ -45,17 +45,17 @@ function Playr(v_id, v_el){
 	this.subs = [];
 	this.chapters = [];
 	this.subtitlesDelay = 0;
-		
+
 	if(typeof Playr.initialized == "undefined"){
-		
+
 		Playr.prototype.init = function(){
 			if(this.ready || this.setupStarted) return;
 
 			this.setupStarted = true;
-			
+
 			var w = this.video.offsetWidth;
 			var h = this.video.offsetHeight;
-			
+
 			var wrapper = document.createElement('div');
 			var newAttr = document.createAttribute('class');
 			newAttr.nodeValue = 'playr_wrapper';
@@ -118,13 +118,13 @@ function Playr(v_id, v_el){
 			this.loadTrackTags();
 			this.ready = true;
 		};
-		
+
 		/**
 		 * Inits most the the event listeners
-		 */		
+		 */
 		Playr.prototype.initEventListeners = function(){
 			var that = this;
-			
+
 			// video events
 			this.video.addEventListener('click', function(){ that.play(); return false; }, false);
 			this.video.addEventListener('timeupdate', function(){ that.timeCode(); that.displayCaptions(); }, false);
@@ -133,26 +133,26 @@ function Playr(v_id, v_el){
 			this.video.addEventListener('pause', function(){ that.playEvent(); }, false);
 			this.video.addEventListener('volumechange', function(){ that.volumeChangedEvent(); }, false);
 			this.video.addEventListener('progress', function(){ that.progressEvent(); }, false);
-			
+
 			// true fullscreen
 			document.addEventListener("mozfullscreenchange",function(){ if(!document.mozFullScreen && that.isTrueFullscreen){that.fullscreen();} }, false);
 			document.addEventListener("webkitfullscreenchange",function(){ if(!document.webkitIsFullScreen && that.isTrueFullscreen){that.fullscreen();} }, false);
 
 			document.getElementById('playr_play_btn_'+this.video_id).addEventListener('click', function(){ that.play(); }, false);
-			
+
 			// timebar events
 			document.getElementById('playr_timebar_'+this.video_id).addEventListener('mousedown', function(){ that.isHoldingTime = true; }, false);
 			document.getElementById('playr_timebar_'+this.video_id).addEventListener('mouseup', function(e){ that.isHoldingTime = false; that.setPosition(e, true); }, false);
 			document.getElementById('playr_timebar_'+this.video_id).parentNode.addEventListener('mousemove', function(e){ that.noticeTimecode(e); if(that.isHoldingTime){that.setPosition(e, false);}; }, false);
-			
+
 			// volume control events
 			document.getElementById('playr_volumebar_'+this.video_id).addEventListener('mousedown', function(){ that.isHoldingVolume = true; }, false);
 			document.getElementById('playr_volumebar_'+this.video_id).addEventListener('mouseup', function(e){ that.isHoldingVolume = false; that.setVolume(e); }, false);
 			document.getElementById('playr_volumebar_'+this.video_id).addEventListener('mousemove', function(e){ if(that.isHoldingVolume){that.setVolume(e);}; }, false);
 			document.getElementById('playr_mute_btn_'+this.video_id).addEventListener('click', function(){ that.toggleMute(); }, false);
-			
+
 			document.getElementById('playr_fullscreen_btn_'+this.video_id).addEventListener('click', function(){ that.fullscreen(); }, false);
-			
+
 			// focus handling
 			document.getElementById('playr_wrapper_'+this.video_id).addEventListener('focus', function(){ that.focusedElem = 'playr'; }, false);
 			document.getElementById('playr_play_btn_'+this.video_id).addEventListener('focus', function(){ that.focusedElem = 'play_btn'; }, false);
@@ -161,21 +161,21 @@ function Playr(v_id, v_el){
 			document.addEventListener('keydown', function(e){ that.keyboard(e); }, false);
 			window.addEventListener('resize', function(e){ if(that.isFullscreen && !that.isTrueFullscreen) that.updateFullscreen(); }, false);
 		}
-			
+
 		/**
-		 * Toggle play / pause (+ change the play button icon) 
+		 * Toggle play / pause (+ change the play button icon)
 		 * @return false to prevent default
-		 */		
+		 */
 		Playr.prototype.play = function(){
 			if(this.video.paused){
-				this.video.play();			
+				this.video.play();
 			}
 			else{
 				this.video.pause();
 			}
 			return false;
 		};
-		
+
 		/**
 		 * Called when 'play' or 'pause' events are fired
 		 */
@@ -189,7 +189,7 @@ function Playr(v_id, v_el){
 				document.getElementById('playr_play_img_'+this.video_id).alt = 'pause';
 			}
 		}
-		
+
 		/**
 		 * Toggle Mute (+ changes the mute icon)
 		 * @return false to prevent default
@@ -203,7 +203,7 @@ function Playr(v_id, v_el){
 			}
 			return false;
 		};
-		
+
 		/**
 		 * Set the volume (0 < V < 1)
 		 * @param {Event} ev The click event
@@ -219,7 +219,7 @@ function Playr(v_id, v_el){
 				document.getElementById('playr_volume_ctrl_'+this.video_id).setAttribute('aria-valuenow', curVol / 100);
 			}
 		};
-		
+
 		/**
 		 * Called when 'volumechanged' event is fired
 		 */
@@ -227,7 +227,7 @@ function Playr(v_id, v_el){
 			if(this.video.volume <= 1){
 				document.getElementById('playr_volumebar_inner_'+this.video_id).style.height = (this.video.volume * 100).toString()+'%';
 			}
-			
+
 			if(this.video.muted){
 				document.getElementById('playr_mute_icon_'+this.video_id).src = this.base64images.mute_control;
 				document.getElementById('playr_mute_icon_'+this.video_id).alt = 'unmute';
@@ -237,16 +237,16 @@ function Playr(v_id, v_el){
 				document.getElementById('playr_mute_icon_'+this.video_id).alt = 'mute';
 			}
 		};
-		
+
 		/**
 		 * Display the current time code of the video
-		 */		
+		 */
 		Playr.prototype.timeCode = function(){
 			document.getElementById('playr_timebar_'+this.video_id).setAttribute('aria-valuemax', Math.round(this.video.duration * 100) / 100);
 			document.getElementById('playr_timebar_'+this.video_id).setAttribute('aria-valuenow', this.video.currentTime);
 
 			document.getElementById('playr_video_curpos_'+this.video_id).innerHTML = this.parseTimeCode(this.video.currentTime);
-				
+
 			if(!isNaN(this.video.duration) && document.getElementById('playr_video_duration_'+this.video_id).innerHTML == '00:00'){
 				document.getElementById('playr_video_duration_'+this.video_id).innerHTML = this.parseTimeCode(this.video.duration);
 			}
@@ -254,7 +254,7 @@ function Playr(v_id, v_el){
 				document.getElementById('playr_timebar_inner_'+this.video_id).style.width = this.video.currentTime * 100 / this.video.duration + '%' ;
 			}
 		};
-		
+
 		/**
 		 * Convert seconds to MM:SS
 		 * @param {Integer} nb_sec A number of seconds
@@ -274,10 +274,10 @@ function Playr(v_id, v_el){
 			var min = nb_min.toString();
 			if(min.length==1){
 				min = '0'+min;
-			}	
+			}
 			return min+':'+sec;
 		};
-		
+
 		/**
 		 * Find the global coordinates of the mouse
  		 * @param {DOMElement} The clicked element
@@ -289,11 +289,11 @@ function Playr(v_id, v_el){
 				do {
 					x += el.offsetLeft;
 					y += el.offsetTop;
-				}while(el = el.offsetParent);					
+				}while(el = el.offsetParent);
 			}
 			return {x:x,y:y};
 		};
-		
+
 		/**
 		 * Set the current time of the video (by clicking on the timebar)
 		 * @param {Event} ev The click event
@@ -309,20 +309,20 @@ function Playr(v_id, v_el){
 				this.video.currentTime = Math.round(curTime * this.video.duration / 100);
 			}
 		};
-		
+
 		/**
 		 * Updates the progress bar (buffered video)
 		 */
 		Playr.prototype.progressEvent = function(){
 			if(this.video.buffered.length == 0)
 				return;
-			
+
 			var that = this;
 			var buff = {
 				start: that.video.buffered.start(0),
 				end:  that.video.buffered.end(0)
 			}
-			
+
 			if(buff.end == that.video.duration){
 				document.getElementById('playr_timebar_buffer_'+this.video_id).style.width = (document.getElementById('playr_timebar_'+this.video_id).offsetWidth - 2)  + 'px';
 			}
@@ -332,7 +332,7 @@ function Playr(v_id, v_el){
 				document.getElementById('playr_timebar_buffer_'+this.video_id).style.width = cur_width+'px';
 			}
 		};
-		
+
 		/**
 		 * Toggle fullscreen
 		 * @return false to prevent default
@@ -341,21 +341,21 @@ function Playr(v_id, v_el){
 			var vids = document.querySelectorAll('.playr_wrapper');
 			var wrapper = document.getElementById('playr_wrapper_'+this.video_id);
 			var captions = document.getElementById('playr_captions_'+this.video_id);
-			
+
 			if(!this.isFullscreen){
 				for(i = 0; i<vids.length; i++)
 					vids[i].style.visibility = 'hidden';
 				wrapper.style.visibility = 'visible';
-				
-				this.fsStyle = { 
-					height: wrapper.style.height, 
-					width: wrapper.style.width 
+
+				this.fsStyle = {
+					height: wrapper.style.height,
+					width: wrapper.style.width
 				};
-				this.fsVideoStyle = { 
+				this.fsVideoStyle = {
 					height: this.video.offsetHeight,
-					width: this.video.offsetWidth 
+					width: this.video.offsetWidth
 				};
-				
+
 				if(document.documentElement.requestFullScreen){
 					this.isTrueFullscreen = true;
 					document.documentElement.requestFullScreen();
@@ -366,9 +366,9 @@ function Playr(v_id, v_el){
 				}
 				else if(document.documentElement.webkitRequestFullScreen){
 					this.isTrueFullscreen = true;
-					document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+					document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
 				}
-				
+
 				if(this.isTrueFullscreen){
 					wrapper.style.position = 'fixed';
 					wrapper.style.top = 0;
@@ -397,15 +397,15 @@ function Playr(v_id, v_el){
 			}
 			else{
 				if(document.cancelFullScreen){
-					document.cancelFullScreen();  
+					document.cancelFullScreen();
 				}
 				else if(document.mozCancelFullScreen){
-					document.mozCancelFullScreen();  
+					document.mozCancelFullScreen();
 				}
 				else if(document.webkitCancelFullScreen){
 					document.webkitCancelFullScreen();
 				}
-				
+
 				for(i = 0; i<vids.length; i++)
 					vids[i].style.visibility = 'visible';
 				wrapper.style.backgroundColor = 'transparent';
@@ -422,12 +422,12 @@ function Playr(v_id, v_el){
 				this.isFullscreen = false;
 				wrapper.className = wrapper.className.replace(new RegExp('(\\s|^)playr_is_fullscreen(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
 			}
-			
+
 			document.getElementById('playr_video_container_'+this.video_id).style.height = this.video.offsetHeight+'px';
-			
+
 			return false;
 		};
-		
+
 		/**
 		 * If fullscreen, auto-resize the player when the widow is resized
 		 */
@@ -441,7 +441,7 @@ function Playr(v_id, v_el){
 			var factor = Math.round((window.innerHeight - 30) / this.fsVideoStyle.height * 100) / 100;
 			document.getElementById('playr_captions_'+this.video_id).style.fontSize = factor + 'em';
 		};
-		
+
 		/**
 		 * Look up for <track>s
 		 */
@@ -455,7 +455,7 @@ function Playr(v_id, v_el){
 			if(this.track_tags.length > 0)
 				this.loadTrackContent(0);
 		};
-		
+
 		/**
 		 * Get the content of the <track>s' sources (via XMLHttpRequest) and add an entrie to the track menu
 		 * @param {DOMElement} track A <track> node
@@ -472,7 +472,7 @@ function Playr(v_id, v_el){
 						if(kind == null || kind == ''){ kind = 'subtitles'; }
 
 						that.parseTrack(req_track.responseText, kind);
-						
+
 						if(kind == 'subtitles' || kind == 'captions' || kind == 'descriptions'){
 							var label = curTrack.getAttribute('label');
 							var lang = curTrack.getAttribute('srclang');
@@ -498,7 +498,7 @@ function Playr(v_id, v_el){
 			};
 			req_track.send(null);
 		};
-		
+
 		/**
 		 * Set the default track base on srclang <track> attributes and <html> lang attribute
 		 */
@@ -510,7 +510,7 @@ function Playr(v_id, v_el){
 			track_list[0].addEventListener('change', function(){
 				that.setActiveTrack();
 			},false);
-			
+
 			for(i = 0; i < this.track_tags.length; i++){
 				if(this.track_tags[i].getAttribute('kind') == 'subtitles'){
 					if(this.track_tags[i].getAttribute('srclang') == lang && to_check == 0){
@@ -530,10 +530,10 @@ function Playr(v_id, v_el){
 				track_list[0].checked = true;
 			this.setActiveTrack();
 		};
-		
+
 		/**
 		 * Highlights the current track
-		 */		
+		 */
 		Playr.prototype.setActiveTrack = function(){
 			var track_li = document.querySelectorAll('#playr_cc_tracks_'+this.video_id+' li.playr_subtitles_item');
 			var track_inputs = document.querySelectorAll('input[name="playr_current_cc_'+this.video_id+'"]');
@@ -545,8 +545,8 @@ function Playr(v_id, v_el){
 					track_li[i].className = 'playr_subtitles_item';
 			}
 		}
-			
-		/** 
+
+		/**
 		 * Convert MM:SS into seconds
 		 * @param {String} timecode A string with the format: MM:SS
 		 * @return A number of seconds
@@ -555,20 +555,20 @@ function Playr(v_id, v_el){
 			var tab = timecode.split(':');
 			return tab[0]*60*60 + tab[1]*60 + parseFloat(tab[2].replace(',','.'));
 		};
-	
+
 		/**
 		 * Parse WebSRT / SubRip subtitles
 		 * @param {String} track_content The content of the file
-		 * @param {String} track_kind 'subtitles', 'captions'... 
+		 * @param {String} track_kind 'subtitles', 'captions'...
 		 * @return An array of cues' objects
 		 */
 		Playr.prototype.parseTrack = function(track_content, track_kind){
 			if(track_kind == 'subtitles' || track_kind == 'captions' || track_kind == 'descriptions'){ var pattern_identifier = /^([0-9]+)$/; }
 			else if(track_kind == 'chapters'){ var pattern_identifier = /^chapter-([0-9])+$/; }
-			
+
 			var pattern_timecode = /^([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3}) --\> ([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})(.*)$/;
 			var lines = track_content.split(/\r?\n/);
-			
+
 			var entries = new Array();
 			for(i = 0; i<lines.length; i++) {
 				if(identifier = pattern_identifier.exec(lines[i])){
@@ -607,10 +607,10 @@ function Playr(v_id, v_el){
   					break;
   			}
   		};
-		
+
 		/**
 		 * Builds the chapters menu
-		 */		
+		 */
 		Playr.prototype.buildChaptersMenu = function(){
 			var that = this;
 			var track_menu = document.getElementById('playr_cc_tracks_'+this.video_id);
@@ -627,33 +627,33 @@ function Playr(v_id, v_el){
 				c[i].addEventListener('click', function(){ that.goToChapter(this); return false; }, false);
 			}
 		};
-		
+
 		/**
 		 * Jump to the specified chapter
 		 */
 		Playr.prototype.goToChapter = function(c){
 			var jumpto = c.getAttribute('href').split('#')[1];
 			this.video.currentTime = this.tc2sec(jumpto);
-			
+
 			return false;
 		};
-		
+
 		/**
 		 * Display the captions on the video (called on timeupdate)
 		 */
 		Playr.prototype.displayCaptions = function(){
 			var captions_div = document.getElementById('playr_captions_'+this.video_id);
 			var playr_cc_choices = document.querySelectorAll('input[name="playr_current_cc_'+this.video_id+'"]');
-			
+
 			for (var i=0; i < playr_cc_choices.length; i++){
 				if(playr_cc_choices[i].checked){
 					this.current_track = playr_cc_choices[i].value;
 				}
 			}
-			
+
 			if(this.current_track >= 0){
 				for(i=0; i<this.subs[this.current_track].length; i++){
-					if((this.video.currentTime + this.subtitlesDelay) >= this.subs[this.current_track][i].start 
+					if((this.video.currentTime + this.subtitlesDelay) >= this.subs[this.current_track][i].start
 						&& (this.video.currentTime + this.subtitlesDelay) <= this.subs[this.current_track][i].stop){
 
 						var text = this.subs[this.current_track][i].text;
@@ -665,13 +665,13 @@ function Playr(v_id, v_el){
 						var captions_lines_styles = [];
 						var captions_words_styles = [];
 						var captions_letters_styles = [];
-						
+
 						// voice declaration tags
 						var voice_declarations = /<v ([^>]+)>/i;
 						while(test_vd = voice_declarations.exec(text)){
 							text = text.replace(test_vd[0], '<span class="'+test_vd[1].replace(' ', '_')+'">');
 						}
-						
+
 						// classes tags
 						var classes = /<c\.([a-z0-9-_.]+)>/i;
 						while(test_classes = classes.exec(text)){
@@ -679,7 +679,7 @@ function Playr(v_id, v_el){
 							text = text.replace(test_classes[0], '<span class="'+classes_str+'">');
 						}
 						text = text.replace(/(<\/v>|<\/c>)/ig, '</span>');
-						
+
 						// karaoke (timestamps)
 						var timestamps = /<([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})>/;
 						var prefix = false;
@@ -694,7 +694,7 @@ function Playr(v_id, v_el){
 						}
 						if(prefix)
 							text = '<span class="playr_cue_past">' + text;
-						
+
 						// if cue settings
 						if(this.subs[this.current_track][i].settings != ''){
 							var text_align = /(A|align):(start|middle|end)/i;
@@ -702,20 +702,20 @@ function Playr(v_id, v_el){
 							var text_position = /(T|position):([0-9]{0,3})%/i;
 							var vertical_text = /(D|vertical):(vertical-lr|vertical|lr|rl)/i;
 							var line_position = /(L|line):(-?[0-9]{0,3})(%?)/i;
-							
+
 							var test_ta = text_align.exec(this.subs[this.current_track][i].settings);
 							var test_ts = text_size.exec(this.subs[this.current_track][i].settings);
 							var test_tp = text_position.exec(this.subs[this.current_track][i].settings);
 							var test_vt = vertical_text.exec(this.subs[this.current_track][i].settings);
 							var test_lpp = line_position.exec(this.subs[this.current_track][i].settings);
-							
+
 							// if text align specified
 							if(test_ta){
 								if(test_ta[2] == 'start'){ captions_styles.push('text-align:left') }
 								else if(test_ta[2] == 'middle'){ captions_styles.push('text-align:center') }
 								else if(test_ta[2] == 'end'){ captions_styles.push('text-align:right') }
 							}
-							
+
 							// if text position specified
 							if(test_tp && test_tp[2] >= 0 && test_tp[2] < 50){
 								captions_container_styles.push('text-align:left');
@@ -725,13 +725,13 @@ function Playr(v_id, v_el){
 								captions_container_styles.push('text-align:right');
 								captions_styles.push('margin-right:'+(100-test_tp[2])+'%');
 							}
-							
+
 							// if text size specified
-							if(test_ts){ 
+							if(test_ts){
 								var new_font_size = (test_ts[2]/100) * parseInt(this.config.fontSize);
 								captions_styles.push('font-size:'+new_font_size+'pt');
 							}
-							
+
 							// if vertical text specified
 							if(test_vt){
 								captions_letters_styles.push('display:block');
@@ -753,16 +753,16 @@ function Playr(v_id, v_el){
 									captions_lines_styles.push('float:right');
 									captions_styles.push('float:right');
 								}
-								
+
 								captions_lines_styles.push('background-color:rgba(0,0,0,0.75)');
 								captions_styles.push('background:none');
-						
+
 								captions_container_styles.push('top:0');
-								
+
 								text = text.replace(/<br \/>/, '</span><span style="'+captions_lines_styles.join(';')+'">');
 								text = text.replace(/<span>(\r\n|\n\r|\r|\n)<\/span>/g, '');
 							}
-							
+
 							// if line position specified
 							if(test_lpp && test_lpp[2] >= -100 && test_lpp[2] <= 100){
 								if(test_lpp[3] == '%'){
@@ -772,19 +772,19 @@ function Playr(v_id, v_el){
 								}
 							}
 						}
-						
+
 						if(this.isFullscreen){
 							var factor = Math.round((window.innerHeight - 30) / this.fsVideoStyle.height * 100) / 100;
 							captions_styles.push('font-size:' + Math.round(parseInt(this.config.fontSize)*factor) + 'pt');
 						}
 						else{
-							
+
 						}
-						
+
 						captions_wrapper.setAttribute('class', wrapper_classes.join(' '));
 						captions_div.setAttribute('class', captions_container_classes.join(' '));
 						captions_div.setAttribute('style', captions_container_styles.join(';'));
-						
+
 						if(!test_vt){
 							text = text.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1</span><br /><span style="'+captions_lines_styles.join(';')+'">$2');
 						}
@@ -802,7 +802,7 @@ function Playr(v_id, v_el){
 			}
 			return;
 		};
-		
+
 		/**
 		 * Reset the video when the end is reached
 		 */
@@ -812,7 +812,7 @@ function Playr(v_id, v_el){
 			document.getElementById('playr_play_img_'+this.video_id).src = this.base64images.play_control;
 			document.getElementById('playr_play_img_'+this.video_id).alt = 'play';
 		};
-		
+
 		/**
 		 * Display a time code indicator when hovering the timebar
 		 * @param {Event} ev The mouseover event
@@ -825,10 +825,10 @@ function Playr(v_id, v_el){
 			var curTime = Math.round(diffx * 100 / timebar.offsetWidth);
 			if(curTime < 0) curTime = 0;
 			notice.innerHTML = this.parseTimeCode(Math.round(curTime * this.video.duration / 100));
-			
+
 			notice.style.marginLeft = (diffx + 3 - notice.offsetWidth / 2)+'px';
 		};
-		
+
 		/**
 		 * Manage the keyboard events
 		 * @param {Event} ev The keyup event
@@ -845,7 +845,7 @@ function Playr(v_id, v_el){
 				break;
 				case 37: // arrow left
 					if(this.video.currentTime - 5 < 0){
-						this.video.currentTime = 0;	
+						this.video.currentTime = 0;
 					}
 					else{
 						this.video.currentTime -= 5;
@@ -863,13 +863,13 @@ function Playr(v_id, v_el){
 				break;
 				case 39: // arrow right
 					if(this.video.currentTime + 5 > this.video.duration){
-						this.video.currentTime = this.video.duration;	
+						this.video.currentTime = this.video.duration;
 					}
 					else{
 						this.video.currentTime += 5;
 					}
 					ev.preventDefault();
-				break;				
+				break;
 				case 40: // arrow down
 					if(this.video.volume - .1 < 0){
 						this.video.volume = 0;
@@ -903,28 +903,28 @@ function Playr(v_id, v_el){
 				case 70: // f
 					this.fullscreen();
 				break;
-				
+
 			}
 		};
-		
+
 		/*
 		 * Setup the player
 		 */
 		Playr.prototype.setup = function(){
 			var that = this;
-			
+
 			this.video.addEventListener('loadeddata', function(){
 				that.init();
 			}, false);
-			
+
 			this.video.addEventListener('canplay', function(){
 				that.init();
 			}, false);
 		};
-		
+
 		Playr.initialized = true;
 	}
-	
+
 	/**
 	 * Init the player
 	 */

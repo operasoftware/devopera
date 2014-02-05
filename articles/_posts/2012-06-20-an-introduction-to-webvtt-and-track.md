@@ -315,11 +315,11 @@ There are a number of `<track>` polyfills available at the moment, but many of t
 	* [MediaElementJS][12] by [John Dyer][13] — supports subtitles
 
 [8]: http://www.delphiki.com/html5/playr/
-[9]: http://twitter.com/delphiki
+[9]: https://twitter.com/delphiki
 [10]: http://captionatorjs.com/
-[11]: http://twitter.com/cgiffard
+[11]: https://twitter.com/cgiffard
 [12]: http://mediaelementjs.com/
-[13]: http://twitter.com/johndyer
+[13]: https://twitter.com/johndyer
 
 All of these support HTML5 `<video>`, but not HTML5 `<audio>`, but I think that they could be easily adapted to do so in some way.
 

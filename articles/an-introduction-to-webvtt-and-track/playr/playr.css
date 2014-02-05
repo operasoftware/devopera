@@ -2,7 +2,7 @@
  * Playr
  *
  * @author Julien 'delphiki' Villetorte <gdelphiki@gmail.com>
- * http://twitter.com/delphiki
+ * https://twitter.com/delphiki
  * http://www.delphiki.com/html5/playr
  */
 
@@ -339,8 +339,8 @@
 	display:none;
 }
 
-.playr_controls > li:nth-child(5):hover .playr_cc_tracks, 
-.playr_cc_tracks:hover, 
+.playr_controls > li:nth-child(5):hover .playr_cc_tracks,
+.playr_cc_tracks:hover,
 .playr_captions_btn:focus + .playr_cc_tracks{
 	opacity:1;
 	display:block;
