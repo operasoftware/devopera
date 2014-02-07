@@ -1,5 +1,5 @@
 ---
 title: Bruce Lawson
-link: http://twitter.com/brucel
+link: https://twitter.com/brucel
 layout: author
 ---
