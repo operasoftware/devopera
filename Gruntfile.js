@@ -52,6 +52,7 @@ module.exports = function(grunt) {
 					'!.sass-cache/**',
 					'!styles/*',
 					'!Gruntfile.js',
+					'!README.md',
 					'!package.json',
 					'!.git/**'
 				],
