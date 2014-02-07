@@ -14,11 +14,9 @@ Repository for source code of new Dev.Opera
 There are two modes of development available:
 
 1. If you're developing some feature or article, run `grunt watch` and all your changes will be generated automatically every time you save any Jekyll template or Sass file. As quick as possible. To stop watching changes press `Ctrl C`.
-
 	- If you’ve just saved any of `styles/*.scss` files, watcher will compile and copy styles to `_site/styles` folder in a few moments without full build process.
 	- If you’ve saved any of `.md` or `.html` files, compilation could take up to 60 seconds, which is sad but there’s nothing we can do.
 	- Please file an issue if you need the same quick watcher for anything else: scripts, images, etc.
-
 2. If you need to build production version of Dev.Opera, run `grunt` and everything will be not just builded inside `_site` folder, but also compressed and optimized. Just once.
 
 ## Notes
