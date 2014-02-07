@@ -11,6 +11,8 @@ Repository for source code of new Dev.Opera
 5. Run `npm install grunt-cli -g` to install Grunt globally
 6. Run `grunt` to build Dev.Opera inside `_site` folder
 
+Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in [.editorconfig](.editorconfig) file.
+
 There are two modes of development available:
 
 1. If you're developing some feature or article, run `grunt watch` and all your changes will be generated automatically every time you save any Jekyll template or Sass file. As quick as possible. To stop watching changes press `Ctrl C`.
