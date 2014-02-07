@@ -1,5 +1,5 @@
 ---
 title: Chris Mills
-link: http://twitter.com/chrisdavidmills
+link: https://twitter.com/chrisdavidmills
 layout: author
 ---
