@@ -1,0 +1,324 @@
+﻿@charset "utf-8";
+/* Stylesheet for MathML */
+/* Copyright 2011 Opera Software */
+@namespace "http://www.w3.org/1998/Math/MathML";
+math
+	{line-height:1.3em;
+	text-indent:0;}
+math[mode="display"], math[display="block"]
+	{display:block;
+	text-align:center;
+	page-break-inside:avoid;}
+mfrac
+	{display:inline-block;
+	white-space:nowrap;
+	text-align:center;
+	vertical-align:0.5ex;
+	line-height:0;
+	margin:0 2px;}
+mfrac > *
+	{line-height:1.3em;
+	font-size:0.9em;}
+mfrac > *:first-child
+	{border-bottom:solid 1px;
+	display:block;}
+mfrac > * + *
+	{display:inline-block;
+	vertical-align:top;}
+mfrac[linethickness="0"] > *:first-child
+	{border-bottom:none;}
+mfrac[linethickness="2"] > *:first-child, mfrac[linethickness="thick"] > *:first-child
+	{border-bottom:solid medium;}
+mfrac[numalign="left"] > *:first-child, mfrac[denalign="left"] > * + *
+	{text-align:left;}
+mfrac[numalign="right"] > *:first-child, mfrac[denalign="right"] > * + *
+	{text-align:right;}
+msub, msup, msubsup, mmultiscripts
+	{display:inline-table;
+	line-height:0.4em;}
+msubsup, msup, mmultiscripts
+	{margin-top:0.4ex;
+	-o-table-baseline:2;}
+msubsup, msub, mmultiscripts
+	{margin-bottom:0.4ex;}
+msubsup, msup
+	{direction:rtl;}
+msub > *
+	{display:table-row;}
+none
+	{content:"\A0";
+	line-height:0;}
+msubsup > *, msup > *
+	{display:table-row;
+	direction:ltr;
+	text-align:left;}
+mmultiscripts > *
+	{display:none;}
+mmultiscripts > *:first-child, mmultiscripts > mprescripts + *
+	{display:table-row;}
+mmultiscripts > mprescripts + * + *
+	{display:table-header-group;}
+msub > *:first-child:after, msub > * + *:before, 
+msubsup > *:first-child:before, msup > *:first-child:before,
+mmultiscripts > *:first-child:before
+	{display:table-cell;
+	content:"\A0";}
+msubsup > * + * + *, msup > * + *
+	{display:table-header-group;}
+msub > * + *, msup > * + *, msubsup > * + *, munder > * + *, mover > * + *, munderover > * + *,
+mmultiscripts > * + *
+	{font-size:0.7em;}
+munder, munderover, mover
+	{display:inline-table;
+	margin:1px;
+	text-align:center;}
+munder > *, munderover > *, mover > *
+	{display:table-row;}
+mover > * + *, munderover > * + * + *
+	{display:table-header-group;}
+mover, munderover
+	{-o-table-baseline:2;}
+msqrt
+	{display:inline-block;
+	margin:1px 0 1px 1em;
+	border-top:solid 1px;
+	border-left:groove 2px;
+	padding:2px 5px 0 0;}
+msqrt:before
+	{display:inline-block;
+	vertical-align:bottom;
+	content:'';
+	width:1em;
+	height:0.5em;
+	background-repeat:no-repeat;
+	margin:0 3px 0 -1em;}
+msqrt:before, mroot > * + *:after
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20150%20100%22%3E%3Cpath%20d%3D%22M0%2C%2040%20L60%2C%205%20L150%2C%2090%20L150%2C100%20L60%2015%20L0%2C40%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mroot
+	{display:inline-table;
+	direction:rtl;}
+mroot > *
+	{display:table-cell;
+	direction:ltr;
+	text-align:left;}
+mroot > *:first-child
+	{border-top:solid 1px;
+	border-left:groove 2px;
+	padding:2px 5px 0 3px;}
+mroot > * + *
+	{vertical-align:bottom;
+	text-align:right;
+	font-size:0.7em;
+	line-height:1em;}
+mroot > * + *:after
+	{display:block;
+	content:"";
+	width:1.5em;
+	height:0.8em;
+	margin-right:-1px;
+	margin-left:auto;}
+mfenced
+	{display:inline-table;
+	border-collapse:separate;
+	border-spacing:0.2ex 0;
+	white-space:nowrap;
+	margin:1px;}
+mfenced > *:first-child
+	{display:table-row;}
+mfenced > * + *
+	{display:none;}
+mfenced > *:before, mfenced > *:after
+	{display:table-cell;
+	content:"\A0";
+	background-repeat:no-repeat;}
+mfenced > *:before
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20400%22%3E%3Cpath%20d%3D%22M100%2C%20400%20Q5%2C350%205%2C200%20Q5%2C%2050%20100%2C%200%20Q25%2C%2050%2025%2C200%20Q25%2C%20350%20100%2C400%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mfenced > *:after
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20400%22%3E%3Cpath%20d%3D%22M0%2C%20400%20Q95%2C350%2095%2C200%20Q95%2C%2050%200%2C%200%20Q75%2C%2050%2075%2C200%20Q75%2C%20350%200%2C400%22%20fill%3D%22black%22/%3E%3C/svg%3E%0D%0A");}
+mfenced[open="["] > *:before
+	{border-style:solid;
+	border-width:1px 0 1px 1px;
+	background-image:none;}
+mfenced[close="]"] > *:after
+	{border-style:solid;
+	border-width:1px 1px 1px 0;
+	background-image:none;}
+mfenced[open="\2016"] > *:before
+	{border-style:double;
+	border-width:0 0 0 3px;
+	background-image:none;}
+mfenced[close="\2016"] > *:after
+	{border-style:double;
+	border-width:0 3px 0 0;
+	background-image:none;}
+mfenced[open="\27e6"] > *:before
+	{border-style:double;
+	border-width:2px 0 2px 3px;
+	background-image:none;}
+mfenced[close="\27e7"] > *:after
+	{border-style:double;
+	border-width:2px 3px 2px 0;
+	background-image:none;}
+mfenced[open="|"] > *:before
+	{border-style:solid;
+	border-width:0 0 0 1px;
+	background-image:none;}
+mfenced[close="|"] > *:after
+	{border-style:solid;
+	border-width:0 1px 0 0;
+	background-image:none;}
+mfenced[open="\230a"] > *:before
+	{border-style:solid;
+	border-width:0 0 1px 1px;
+	background-image:none;}
+mfenced[close="\230b"] > *:after
+	{border-style:solid;
+	border-width:0 1px 1px 0;
+	background-image:none;}
+mfenced[open="\2308"] > *:before
+	{border-style:solid;
+	border-width:1px 0 0 1px;
+	background-image:none;}
+mfenced[close="\2309"] > *:after
+	{border-style:solid;
+	border-width:1px 1px 0 0;
+	background-image:none;}
+mfenced[open="{"] > *:before
+	{content:"\A0\A0";
+	background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20400%22%3E%3Cpath%20d%3D%22M100%2C%20400%20Q40%2C400%2040%2C250%20Q40%2C200%200%2C200%20Q40%2C200%2040%2C150%20Q40%2C0%20100%2C0%20Q55%2C0%2055%2C150%20Q55%2C%20200%200%2C200%20Q55%2C200%2055%2C250%20Q55%2C400%20100%2C400%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mfenced[close="}"] > *:after
+	{content:"\A0\A0";
+	background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20400%22%3E%3Cpath%20d%3D%22M0%2C%20400%20Q60%2C400%2060%2C250%20Q60%2C200%20100%2C200%20Q60%2C200%2060%2C150%20Q60%2C0%200%2C0%20Q45%2C0%2045%2C150%20Q45%2C%20200%20100%2C200%20Q45%2C200%2045%2C250%20Q45%2C400%200%2C400%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mfenced[open="\27e8"] > *:before, mfenced[open="\2329"] > *:before
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20300%22%3E%3Cpath%20d%3D%22M100%2C%20300%20L5%2C%20150%20L100%2C%200%20L30%2C150%20L100%2C300%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mfenced[close="\27e9"] > *:after, mfenced[close="\232A"] > *:after
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20100%20300%22%3E%3Cpath%20d%3D%22M0%2C%20300%20L95%2C%20150%20L0%2C%200%20L70%2C150%20L0%2C300%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+mfenced[open=""] > *:before, mfenced[close=""] > *:after
+	{content:normal;}
+mover > * + mo[fence="true"], munder > * + mo[fence="true"]
+	{content:"\A0";
+	line-height:1ex;
+	background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20400%20100%22%3E%3Cpath%20d%3D%22M0%2C%20100%20Q0%2C40%20150%2C40%20Q200%2C40%20200%2C0%20Q200%2C40%20250%2C40%20Q400%2C40%20400%2C100%20Q400%2C55%20250%2C55%20Q200%2C55%20200%2C0%20Q200%2C55%20150%2C55%20Q0%2C55%200%2C100%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+munder > * + mo[fence="true"]
+	{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%220%200%20400%20100%22%3E%3Cpath%20d%3D%22M0%2C%200%20Q0%2C60%20150%2C60%20Q200%2C60%20200%2C100%20Q200%2C60%20250%2C60%20Q400%2C60%20400%2C0%20Q400%2C45%20250%2C45%20Q200%2C45%20200%2C100%20Q200%2C45%20150%2C45%20Q0%2C45%200%2C0%22%20fill%3D%22black%22/%3E%3C/svg%3E");}
+menclose
+	{display:inline-block;
+	padding:0 0.4ex;}
+menclose[notation="top"]
+	{border-top:solid thin;}
+menclose[notation="bottom"]
+	{border-bottom:solid thin;}
+menclose[notation="right"]
+	{border-right:solid thin;}
+menclose[notation="left"]
+	{border-left:solid thin;}
+menclose[notation="box"]
+	{border:solid thin;}
+menclose[notation="horizontalstrike"]
+	{text-decoration:line-through;}
+mtable
+	{display:inline-table;
+	line-height:1.5em;
+	text-align:center;
+	vertical-align:middle;}
+mtr
+	{display:table-row;}
+mtd
+	{display:table-cell;
+	padding:0 0.5ex;}
+mtable[columnalign="left"], mtr[columnalign="left"], mtd[columnalign="left"]
+	{text-align:left;}
+mtable[columnalign="right"], mtr[columnalign="right"], mtd[columnalign="right"]
+	{text-align:right;}
+mtable[rowalign="top"] mtd, mtable mtr[rowalign="top"] mtd, math mtable mtr mtd[rowalign="top"]
+	{vertical-align:top}
+mtable[rowalign="bottom"] mtd, mtable mtr[rowalign="bottom"] mtd, math mtable mtr mtd[rowalign="bottom"]
+	{vertical-align:bottom}
+mtable[rowalign="center"] mtd, mtable mtr[rowalign="center"] mtd, math mtable mtr mtd[rowalign="center"]
+	{vertical-align:middle}
+mtable[frame="solid"]
+	{border:solid thin;}
+mtable[frame="dashed"]
+	{border:dashed thin;}
+mtable[rowlines="solid"], mtable[rowlines="dashed"], mtable[columnlines="solid"], mtable[columnlines="dashed"]
+	{border-collapse:collapse;}
+mtable[rowlines="solid"] > mtr + mtr
+	{border-top:solid thin;}
+mtable[rowlines="dashed"] > mtr + mtr
+	{border-top:dashed thin;}
+mtable[columnlines="solid"] > mtr > mtd + mtd
+	{border-left:solid thin;}
+mtable[columnlines="dashed"] > mtr > mtd + mtd
+	{border-left:dashed thin;}
+mspace[linebreak="goodbreak"]:before
+	{content:"\200B";
+	white-space:normal;}
+mspace[linebreak="newline"]:before, mspace[linebreak="indentingnewline"]:before 
+	{content:"\000A";
+	white-space:pre;}
+mspace[width]:before
+	{content:normal;}
+mspace[width="verythinmathspace"]
+	{padding:0 0.05em;}
+mspace[width="thinmathspace"]
+	{padding:0 0.08em;}
+mspace[width="mediummathspace"]
+	{padding:0 0.11em;}
+mspace[width="thickmathspace"]
+	{padding:0 0.14em;}
+mspace[width="verythickmathspace"]
+	{padding:0 0.17em;}
+mglyph[alt]:before
+	{content:attr(alt);}
+mo[largeop="true"]
+	{font-size:1.3em;
+	vertical-align:-0.1ex;}
+mo[form="infix"], * + mo
+	{padding:0 0.3ex;}
+mo[form="prefix"]
+	{padding:0 0 0 0.5ex;}
+mo[form="postfix"]
+	{padding:0 0.5ex 0 0;}
+mo[fence="true"], mo[separator="true"]
+	{padding:0;}
+mi[mathvariant="bold"], mi[mathvariant="bold-italic"], mi[mathvariant="bold-sans-serif"], mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="bold"], mn[mathvariant="bold-italic"], mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="bold"], mo[mathvariant="bold-italic"], mo[mathvariant="bold-sans-serif"], mo[mathvariant="sans-serif-bold-italic"],ms[mathvariant="bold"], ms[mathvariant="bold-italic"], ms[mathvariant="bold-sans-serif"], ms[mathvariant="sans-serif-bold-italic"],mtext[mathvariant="bold"], mtext[mathvariant="bold-italic"], mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="sans-serif-bold-italic"]
+	{font-weight:bold;
+	font-style:normal;}
+mi[mathvariant="monospace"], mn[mathvariant="monospace"],mo[mathvariant="monospace"], ms[mathvariant="monospace"],mtext[mathvariant="monospace"]
+	{font-family:monospace;
+	font-style:normal;}
+mi[mathvariant="sans-serif"], mi[mathvariant="bold-sans-serif"], mi[mathvariant="bold-sans-serif"], mi[mathvariant="sans-serif-italic"], mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif"], mn[mathvariant="bold-sans-serif"], mn[mathvariant="sans-serif-italic"], mn[mathvariant="sans-serif-bold-italic"], mo[mathvariant="sans-serif"], mo[mathvariant="bold-sans-serif"], mo[mathvariant="bold-sans-serif"], mo[mathvariant="sans-serif-italic"], mo[mathvariant="sans-serif-bold-italic"], ms[mathvariant="sans-serif"], ms[mathvariant="bold-sans-serif"], ms[mathvariant="bold-sans-serif"], ms[mathvariant="sans-serif-italic"], ms[mathvariant="sans-serif-bold-italic"], mtext[mathvariant="sans-serif"], mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="bold-sans-serif"], mtext[mathvariant="sans-serif-italic"], mtext[mathvariant="sans-serif-bold-italic"]
+	{font-family:sans-serif;
+	font-style:normal;}
+mi, mi[mathvariant="italic"], mi[mathvariant="bold-italic"],mi[mathvariant="sans-serif-italic"], mi[mathvariant="sans-serif-bold-italic"],mn[mathvariant="italic"], mn[mathvariant="bold-italic"],mn[mathvariant="sans-serif-italic"], mn[mathvariant="sans-serif-bold-italic"],mo[mathvariant="italic"], mo[mathvariant="bold-italic"],mo[mathvariant="sans-serif-italic"], mo[mathvariant="sans-serif-bold-italic"],ms[mathvariant="italic"], ms[mathvariant="bold-italic"],ms[mathvariant="sans-serif-italic"], ms[mathvariant="sans-serif-bold-italic"],mtext[mathvariant="italic"], mtext[mathvariant="bold-italic"],mtext[mathvariant="sans-serif-italic"], mtext[mathvariant="sans-serif-bold-italic"]
+	{font-style:italic;}
+mi[mathvariant="normal"], mn[mathvariant="normal"], mo[mathvariant="normal"], ms[mathvariant="normal"], mtext[mathvariant="normal"]
+	{font-style:normal;}
+ms:before, ms:after 
+	{content:"\0022"}
+ms[lquote]:before 
+	{content:attr(lquote)}
+ms[rquote]:after 
+	{content:attr(rquote)}
+mphantom 
+	{visibility:hidden}
+merror
+	{outline:solid thin red}
+merror:before
+	{content:"Error: "}
+mrow
+	{white-space:nowrap;}
+maction > * + *
+	{display:none;}
+maction[actiontype="tooltip"]:hover > * + *
+	{position:fixed;
+	display:block;
+	top:0;
+	left:0;
+	background-color:InfoBackground;
+	color:InfoText;
+	padding:0.5ex;
+	border:solid 1px;}
+annotation, annotation-xml
+	{display:none;}
+

@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html [<!ATTLIST math xmlns CDATA #FIXED "http://www.w3.org/1998/Math/MathML" display CDATA "block">]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>MathML Stress Tests</title>
+	<style type="text/css">
+math[display="block"]
+	{font-family:"Palatino Linotype", serif;
+	font-size:2em;
+	line-height:normal;
+	white-space:nowrap;
+	text-align:left;
+	margin:1ex 1em 1ex 12%;
+	page-break-inside:avoid;}
+math[display="block"]:before
+	{content:"(" counter(equation) ")";
+	counter-increment:equation;
+	display:block;
+	float:right;}
+h2
+	{font-size:1.1em;
+	font-weight:normal;}
+	</style>
+	</head>
+<body>
+<h2>Superscripts, Subscripts</h2>
+<div>
+<math>
+<mn>2</mn><mo>, </mo><msup><mn>2</mn><mn>3</mn></msup><mo>, </mo><msup><mn>2</mn><mrow><msup><mn>3</mn><mn>4</mn></msup></mrow></msup><mo>, </mo><msup><mn>2</mn><mrow><msup><mn>3</mn><mrow><msup><mn>4</mn><mn>5</mn></msup></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mn>2</mn><mrow><msup><mn>3</mn><mrow><msup><mn>4</mn><mrow><msup><mn>5</mn><mn>6</mn></msup></mrow></msup></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mn>2</mn><mrow><msup><mn>3</mn><mrow><msup><mn>4</mn><mrow><msup><mn>5</mn><mrow><msup><mn>6</mn><mn>7</mn></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mn>2</mn><mrow><msup><mn>3</mn><mrow><msup><mn>4</mn><mrow><msup><mn>5</mn><mrow><msup><mn>6</mn><mrow><msup><mn>7</mn><mn>8</mn></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mn>2</mn><mrow><msup><mn>3</mn><mrow><msup><mn>4</mn><mrow><msup><mn>5</mn><mrow><msup><mn>6</mn><mrow><msup><mn>7</mn><mrow><msup><mn>8</mn><mn>9</mn></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup></mrow></msup>
+</math>
+<math>
+<mi>A</mi><mo>, </mo><msub><mi>A</mi><mi>B</mi></msub><mo>, </mo><msub><mi>A</mi><mrow><msub><mi>B</mi><mi>C</mi></msub></mrow></msub><mo>, </mo><msub><mi>A</mi><mrow><msub><mi>B</mi><mrow><msub><mi>C</mi><mi>D</mi></msub></mrow></msub></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msub><mi>B</mi><mrow><msub><mi>C</mi><mrow><msub><mi>D</mi><mi>E</mi></msub></mrow></msub></mrow></msub></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msub><mi>B</mi><mrow><msub><mi>C</mi><mrow><msub><mi>D</mi><mrow><msub><mi>E</mi><mi>F</mi></msub></mrow></msub></mrow></msub></mrow></msub></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msub><mi>B</mi><mrow><msub><mi>C</mi><mrow><msub><mi>D</mi><mrow><msub><mi>E</mi><mrow><msub><mi>F</mi><mi>G</mi></msub></mrow></msub></mrow></msub></mrow></msub></mrow></msub></mrow></msub>
+</math>
+<math>
+<mi>A</mi><mo>, </mo><msub><mi>A</mi><mi>B</mi></msub><mo>, </mo><msub><mi>A</mi><mrow><msup><mi>B</mi><mi>C</mi></msup></mrow></msub><mo>, </mo><msub><mi>A</mi><mrow><msup><mi>B</mi><mrow><msub><mi>C</mi><mi>D</mi></msub></mrow></msup></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msup><mi>B</mi><mrow><msub><mi>C</mi><mrow><msup><mi>D</mi><mi>E</mi></msup></mrow></msub></mrow></msup></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msup><mi>B</mi><mrow><msub><mi>C</mi><mrow><msup><mi>D</mi><mrow><msub><mi>E</mi><mi>F</mi></msub></mrow></msup></mrow></msub></mrow></msup></mrow></msub><mo>, </mo>
+<msub><mi>A</mi><mrow><msup><mi>B</mi><mrow><msub><mi>C</mi><mrow><msup><mi>D</mi><mrow><msub><mi>E</mi><mrow><msup><mi>F</mi><mi>G</mi></msup></mrow></msub></mrow></msup></mrow></msub></mrow></msup></mrow></msub>
+</math>
+</div>
+
+<h2>Stacked indices</h2>
+<div>
+<math>
+<mi>A</mi><mo>, </mo><msubsup><mi>A</mi><mi>C</mi><mi>B</mi></msubsup><mo>, </mo>
+<msubsup><mi>A</mi><mrow><msubsup><mi>C</mi><mi>G</mi><mi>F</mi></msubsup></mrow><mrow><msubsup><mi>B</mi><mi>E</mi><mi>D</mi></msubsup></mrow></msubsup><mo>, </mo>
+<msubsup><mi>A</mi><mrow><msubsup><mi>C</mi><mrow><msubsup><mi>G</mi><mi>O</mi><mi>N</mi></msubsup></mrow><mrow><msubsup><mi>F</mi><mi>M</mi><mi>L</mi></msubsup></mrow></msubsup></mrow><mrow><msubsup><mi>B</mi><mrow><msubsup><mi>E</mi><mi>K</mi><mi>J</mi></msubsup></mrow><mrow><msubsup><mi>D</mi><mi>I</mi><mi>H</mi></msubsup></mrow></msubsup></mrow></msubsup><mo>, </mo>
+<msubsup><mi>A</mi><mrow><msubsup><mi>C</mi><mrow><msubsup><mi>G</mi><mrow><msubsup><mi>O</mi><mi>E</mi><mi>D</mi></msubsup></mrow><mrow><msubsup><mi>N</mi><mi>C</mi><mi>B</mi></msubsup></mrow></msubsup></mrow><mrow><msubsup><mi>F</mi><mrow><msubsup><mi>M</mi><mi>A</mi><mi>Z</mi></msubsup></mrow><mrow><msubsup><mi>L</mi><mi>Y</mi><mi>X</mi></msubsup></mrow></msubsup></mrow></msubsup></mrow><mrow><msubsup><mi>B</mi><mrow><msubsup><mi>E</mi><mrow><msubsup><mi>K</mi><mi>W</mi><mi>V</mi></msubsup></mrow><mrow><msubsup><mi>J</mi><mi>U</mi><mi>T</mi></msubsup></mrow></msubsup></mrow><mrow><msubsup><mi>D</mi><mrow><msubsup><mi>I</mi><mi>S</mi><mi>R</mi></msubsup></mrow><mrow><msubsup><mi>H</mi><mi>Q</mi><mi>P</mi></msubsup></mrow></msubsup></mrow></msubsup></mrow></msubsup>
+</math>
+</div>
+
+<h2>Fractions</h2>
+<div>
+<math>
+<mi>A</mi><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mrow><mi>C</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mi>E</mi>
+</mfrac>
+</mrow>
+</mfrac><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mrow><mi>C</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mrow><mi>E</mi><mo> + </mo>
+<mfrac>
+<mi>F</mi>
+<mi>G</mi>
+</mfrac></mrow>
+</mfrac></mrow>
+</mfrac>
+</math>
+<math>
+<mi>A</mi><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mi>E</mi>
+</mfrac>
+</mrow>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mrow><mi>D</mi><mo> + </mo>
+<mfrac>
+<mi>F</mi>
+<mi>G</mi>
+</mfrac></mrow>
+<mi>E</mi>
+</mfrac></mrow>
+<mi>C</mi>
+</mfrac>
+</math>
+<math>
+<mfrac>
+<mi>B</mi>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mi>E</mi>
+</mfrac></mrow>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mrow><mi>D</mi><mo> + </mo>
+<mfrac>
+<mi>F</mi>
+<mi>G</mi>
+</mfrac></mrow>
+<mi>E</mi>
+</mfrac></mrow>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mrow><mi>C</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mrow><mi>E</mi><mo> + </mo>
+<mfrac>
+<mi>F</mi>
+<mi>G</mi>
+</mfrac></mrow>
+</mfrac></mrow>
+</mfrac>
+</math>
+
+<math>
+<mi>A</mi><mo> + </mo>
+<mfrac>
+<mi>B</mi>
+<mi>C</mi>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mi>D</mi>
+<mi>E</mi>
+</mfrac></mrow>
+<mrow><mi>C</mi><mo> + </mo>
+<mfrac>
+<mi>F</mi>
+<mi>G</mi>
+</mfrac></mrow>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><mi>B</mi><mo> + </mo>
+<mfrac>
+<mrow><mi>D</mi><mo> + </mo>
+<mfrac>
+<mi>H</mi>
+<mi>I</mi>
+</mfrac></mrow>
+<mrow><mi>E</mi><mo> + </mo>
+<mfrac>
+<mi>J</mi>
+<mi>K</mi>
+</mfrac></mrow>
+</mfrac></mrow>
+<mrow><mi>C</mi><mo> + </mo>
+<mfrac>
+<mrow><mi>F</mi><mo> + </mo>
+<mfrac>
+<mi>L</mi>
+<mi>M</mi>
+</mfrac></mrow>
+<mrow><mi>G</mi><mo> + </mo>
+<mfrac>
+<mi>N</mi>
+<mi>O</mi>
+</mfrac></mrow>
+</mfrac></mrow>
+</mfrac>
+</math>
+</div>
+<h2>Fractions and indices</h2>
+<div>
+<math>
+<msubsup><mi>A</mi><mn>2</mn><mn>1</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>B</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>C</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>B</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>D</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>E</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+<mrow><msubsup><mi>C</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>F</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>G</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+</mfrac><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>B</mi><mn>2</mn><mi>3</mi></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>D</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>H</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>I</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+<mrow><msubsup><mi>E</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>J</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>K</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+</mfrac></mrow>
+<mrow><msubsup><mi>C</mi><mn>2</mn><mi>3</mi></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>F</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>L</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>M</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+<mrow><msubsup><mi>G</mi><mn>2</mn><mn>2</mn></msubsup><mo> + </mo>
+<mfrac>
+<mrow><msubsup><mi>N</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+<mrow><msubsup><mi>O</mi><mn>2</mn><mn>1</mn></msubsup></mrow>
+</mfrac></mrow>
+</mfrac></mrow>
+</mfrac>
+</math>
+
+
+<math>
+<mi>A</mi><mo>, </mo>
+<msup><mi>A</mi><mrow><mn>1</mn><mo> + </mo><mfrac><mi>B</mi><mi>C</mi></mfrac></mrow></msup><mo>, </mo>
+<msup><mi>A</mi><mrow><msup><mi>B</mi><mrow><mn>1</mn><mo> + </mo><mfrac><mi>C</mi><mi>D</mi></mfrac></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mi>A</mi><mrow><msup><mi>B</mi><mrow><msup><mi>C</mi><mrow><mn>1</mn><mo> + </mo><mfrac><mi>D</mi><mi>E</mi></mfrac></mrow></msup></mrow></msup></mrow></msup><mo>, </mo>
+<msup><mi>A</mi><mrow><msup><mi>B</mi><mrow><msup><mi>C</mi><mrow><msup><mi>D</mi><mrow><mn>1</mn><mo> + </mo><mfrac><mi>E</mi><mi>F</mi></mfrac></mrow></msup></mrow></msup></mrow></msup></mrow></msup>
+</math>
+</div>
+<h2>Operator with Under Scripts</h2>
+<div>
+<math>
+<mo largeop="true">⋃</mo><mo>, </mo>
+<munder><mo largeop="true">⋃</mo><mrow><mi>n</mi><mo> > </mo><mi>m</mi><mo> > </mo><mi>k</mi><mo> > </mo><mn>0</mn></mrow></munder><mo>, </mo>
+<munder><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>n</mi><mo> > </mo><mi>m</mi><mo> > </mo><mi>k</mi></mrow></munder></mrow><mrow><mi>k</mi><mo> > </mo><mn>0</mn></mrow></munder><mo>, </mo>
+<munder><mrow><munder><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>n</mi><mo> > </mo><mi>m</mi></mrow></munder></mrow><mrow><mi>m</mi><mo> > </mo><mi>k</mi></mrow></munder></mrow><mrow><mi>k</mi><mo> > </mo><mn>0</mn></mrow></munder><mo>, </mo>
+<munder><mrow><munder><mrow><munder><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>n</mi><mo> > </mo><mi>m</mi></mrow></munder></mrow><mrow><mi>m</mi><mo> > </mo><mi>k</mi></mrow></munder></mrow><mrow><mi>k</mi><mo> > </mo><mn>0</mn></mrow></munder></mrow><mrow><mi>n</mi><mo>, </mo><mi>m</mi><mo>, </mo><mi>k</mi></mrow></munder>
+</math>
+</div>
+<h2>Operator with Under and Over Scripts</h2>
+<div>
+<math>
+<mo largeop="true">⋃</mo><mo>, </mo>
+<munderover><mo largeop="true">⋃</mo><mrow><mi>k</mi><mo> = </mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>s</mi></mrow></munderover><mo>, </mo>
+<munderover><mo largeop="true">⋃</mo><mrow><mi>m</mi><mo>, </mo><mi>n</mi><mo> = </mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>s</mi></mrow></munderover><mo>, </mo>
+<munderover><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>m</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mrow><mi>n</mi><mo> = </mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>s</mi></mrow></munderover><mo>, </mo>
+<munderover><mrow><munder><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>k</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mrow><mi>m</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mrow><mi>n</mi><mo> = </mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>s</mi></mrow></munderover><mo>, </mo>
+<munderover><mrow><munder><mrow><munder><mrow><munder><mo largeop="true">⋃</mo><mrow><mi>k</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mrow><mi>m</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mrow><mi>n</mi><mo> = </mo><mn>1</mn></mrow></munder></mrow><mtext>enough</mtext><mrow><mn>2</mn><mi>s</mi></mrow></munderover>
+</math>
+</div>
+<h2>Under and Over Scripts</h2>
+<div>
+<math>
+<mtext>Base</mtext><mo>, </mo> 
+<munder><mtext>Base</mtext><mtext>under</mtext></munder><mo>, </mo> 
+<mover><mtext>Base</mtext><mtext>over</mtext></mover><mo>, </mo> 
+<munder><mrow><munder><mtext>Base</mtext><mtext>under I</mtext></munder></mrow><mtext>under II</mtext></munder><mo>, </mo> 
+<munder><mrow><munder><mrow><munder><mtext>Base</mtext><mtext>under I</mtext></munder></mrow><mtext>under II</mtext></munder></mrow><mtext>under III</mtext></munder><mo>, </mo> 
+<munderover><mtext>Base</mtext><mtext>under</mtext><mtext>over</mtext></munderover> 
+</math>
+</div>
+
+<h2>Over and Under Scripts with Braces</h2>
+<div>
+<math>
+<mover><mrow><mover>
+<mrow><mtext>Expression</mtext></mrow>
+<mo fence="true">⎴</mo>
+</mover></mrow><mtext>over brace</mtext></mover>
+<munder><mrow><munder>
+<mrow><mtext>Expression</mtext></mrow>
+<mo fence="true">⎵</mo>
+</munder></mrow><mtext>under brace</mtext></munder>
+</math>
+<math>
+<munder>
+<mrow>
+<munder>
+<mrow>
+	<mover>
+	<mrow>
+	<mover>
+	<mtext>Expression</mtext>
+	<mo fence="true">⎴</mo>
+	</mover>
+	</mrow>
+	<mtext>over brace</mtext>
+	</mover>
+	<mover>
+	<mrow>
+	<mover>
+	<mtext>Expression</mtext>
+	<mo fence="true">⎴</mo>
+	</mover>
+	</mrow>
+	<mtext>over brace</mtext>
+	</mover>
+</mrow>
+<mo fence="true">⎵</mo>
+</munder>
+</mrow>
+<mtext>under brace</mtext>
+</munder>
+</math>
+</div>
+
+<h2>Cases</h2>
+<div>
+<math>
+<mi>F</mi><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo><mo> = </mo>
+<mfenced open="{" close="">
+<mrow><mtable>
+<mtr><mtd><msup><mi>sin</mi><mn>4</mn></msup><mo fence="true">(</mo><mn>12</mn><msup><mi>x</mi><mn>2</mn></msup><mo fence="true">)</mo></mtd>
+<mtd><mtext>if </mtext><mi>x</mi><mo> > </mo><mn>0</mn></mtd></mtr>
+<mtr><mtd><msup><mi>sin</mi><mn>3</mn></msup><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mtd><mtd><mtext>otherwise</mtext></mtd></mtr>
+</mtable></mrow>
+</mfenced>
+</math>
+
+<math>
+<mi>G</mi><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo><mo> = </mo>
+<mrow><mfenced open="{" close="">
+<mrow><mtable>
+<mtr><mtd><mn>1</mn><mo> + </mo><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd>
+<mtd><mtext>if </mtext><mi>x</mi><mo> > </mo><mn>1</mn></mtd></mtr>
+<mtr><mtd><mn>1</mn><mo> + </mo><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow></mtd>
+<mtd><mtext>if </mtext><mi>x</mi><mo> &lt; </mo><mn>1</mn></mtd></mtr>
+<mtr><mtd><mn>1</mn><mo> + </mo><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow></mtd><mtd><mtext>otherwise</mtext></mtd></mtr>
+</mtable></mrow>
+</mfenced></mrow>
+</math>
+</div>
+
+<h2>Matrices, Determinants and Vectors</h2>
+<div>
+<math>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><msub><mi>A</mi><mn>11</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>12</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>13</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>14</mn></msub></mtd>
+</mtr>
+<mtr>
+<mtd><msub><mi>A</mi><mn>21</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>22</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>23</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>24</mn></msub></mtd>
+</mtr>
+<mtr>
+<mtd><msub><mi>A</mi><mn>31</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>32</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>33</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>34</mn></msub></mtd>
+</mtr>
+<mtr>
+<mtd><msub><mi>A</mi><mn>41</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>42</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>43</mn></msub></mtd>
+<mtd><msub><mi>A</mi><mn>44</mn></msub></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr><mtd><msub><mi>X</mi><mn>1</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>X</mi><mn>2</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>X</mi><mn>3</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>X</mi><mn>4</mn></msub></mtd></mtr>
+</mtable></mrow></mfenced>
+<mo> = </mo>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr><mtd><msub><mi>B</mi><mn>1</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>B</mi><mn>2</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>B</mi><mn>3</mn></msub></mtd></mtr>
+<mtr><mtd><msub><mi>B</mi><mn>4</mn></msub></mtd></mtr>
+</mtable></mrow></mfenced>
+</math>
+
+<math>
+<mo>det </mo>
+<mfenced open="|" close="|"><mrow><mtable>
+<mtr>
+<mtd><mi>A</mi><mo> + </mo><mi>B</mi></mtd>
+<mtd><mi>C</mi><mo> + </mo><mi>D</mi><mo> + </mo><mi>E</mi></mtd>
+<mtd><mi>F</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>G</mi></mtd>
+<mtd><mi>H</mi><mo> + </mo><mi>I</mi></mtd>
+<mtd><mi>J</mi><mo> + </mo><mi>K</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>L</mi><mo> + </mo><mi>M</mi><mo> + </mo><mi>N</mi></mtd>
+<mtd><mi>O</mi><mo> + </mo><mi>P</mi></mtd>
+<mtd><mi>Q</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</math>
+<math>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mi>A</mi></mtd>
+<mtd><mi>B</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>C</mi></mtd>
+<mtd><mi>D</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</mtd>
+<mtd><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd><mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mi>E</mi></mtd>
+<mtd><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd><mn>0</mn></mtd>
+<mtd><mi>F</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>G</mi></mtd>
+<mtd><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd><mn>0</mn></mtd>
+<mtd><mi>H</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</mtd>
+<mtd>
+<mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mn>0</mn></mtd>
+<mtd><mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mi>K</mi></mtd>
+<mtd><mi>L</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>M</mi></mtd>
+<mtd><mi>N</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</mtd>
+</mtr>
+<mtr>
+<mtd><mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mi>P</mi></mtd>
+<mtd><mi>Q</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>R</mi></mtd>
+<mtd><mi>S</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</mtd>
+<mtd><mn>0</mn></mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</mtd>
+</mtr>
+</mtable></mrow></mfenced>
+</math>
+</div>
+
+<h2>Fences</h2>
+<div>
+<math>
+<mfenced open="(" close=")"><mrow><mfenced open="{" close="}"><mrow><mfenced open="&#x27e8;" close="&#x27e9;"><mrow><mi>B</mi><mo>+</mo><mfrac><mi>N</mi><mi>D</mi></mfrac></mrow></mfenced></mrow></mfenced></mrow></mfenced>
+</math>
+<math>
+<msubsup>
+<mrow><mfenced open="(" close=")"><mrow><mtable>
+<mtr>
+<mtd><mi>A</mi></mtd>
+<mtd><mi>B</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>C</mi></mtd>
+<mtd><mi>D</mi></mtd>
+</mtr>
+</mtable></mrow></mfenced></mrow>
+<mo>0</mo><mn>T</mn>
+</msubsup>
+</math>
+</div>
+
+<h2>Radicals</h2>
+<div>
+<math>
+<msqrt><mi>A</mi><mo> + </mo><mi>B</mi></msqrt><mtext>,</mtext> <msqrt><mi>A</mi><mo> + </mo><msqrt><mi>B</mi></msqrt></msqrt><mtext>,</mtext> <msqrt><mi>A</mi><mo> + </mo><msqrt><mi>B</mi><mo> + </mo><msqrt><mi>C</mi></msqrt></msqrt></msqrt>
+</math>
+</div>
+</body>
+</html>
