@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox, regions and Modernizr example</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css">
+	<link href="flexbox-regions.css" rel="stylesheet" type="text/css">
+	<script src="modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+<h1>CSS3 book</h1>
+</header>
+
+<section class="main">
+
+<nav>
+  <ul>
+    <li><a href="flexbox-regions-modernizr.html#">Home</a></li>
+    <li><a href="flexbox-regions-modernizr.html#">The book</a></li>
+    <li><a href="flexbox-regions-modernizr.html#">The man</a></li>
+    <li><a href="flexbox-regions-modernizr.html#">The myth</a></li>
+    <li><a href="flexbox-regions-modernizr.html#">The legend</a></li>
+  </ul>
+</nav>
+
+<div class="layout">
+
+  <div class="text-container"><!-- --></div>
+  <div class="text-container"><!-- --></div>
+  <div class="image-container">
+      <img src="grim-north.jpg" alt="A map of the North of England">
+  </div>
+  <div class="text-container"><!-- --></div>
+
+</div>
+
+<div class="text-overflow"><!-- --></div>
+
+</section>
+
+<article class="content">
+<h2>Introduction</h2>
+<p>Hello, dear readers, and welcome to my little book of CSS3! Let's curl up in front of a warm fire with a cup of hot cocoa and do a spot of gentle learning. Or how about a fan and an ice cold beverage, if you live somewhere nice and warm and exotic and not at all like the grim (but very friendly) North of England, where I hail from (Figure 1.1).</p>
+
+<p>Or perhaps you are sat at your desk with a beer at 10am on a Monday morning, if your job is particularly stressful? Whatever the context, I am hoping that my book will be prove useful in finding answers to your CSS3-related needs quickly and effectively.</p>
+
+<p>I don't want to bore you with pages and pages of adulation for the CSS spec writers, CSS design philosophy or CSS history, but I'd like to share with you just a brief glimpse of that, some ideas on audience level, plus some of my philosophy and direction for this book. Hopefully this will give you a better insight into not only how I was thinking as I planned and wrote this, and give you a solid grounding for using CSS3 features more effectively in your own real user interfaces.</p>
+
+<p>For the spec pedants out there: yes, some of the stuff I am covering in this book isn't new CSS3 features, but rather was introduced in CSS2. But all of the features introduced in CSS2 are present in the CSS3 modules, and in any case, the point here is to impart some useful knowledge, not to get all hot and bothered about spec versions. For those of you who are disappointed in me, get a life ;-)</p>
+
+</article>
+
+<article class="content">
+
+<h2>Why CSS3?</h2>
+
+<p>CSS3 has actually been around for longer than you'd think. In fact, the earliest parts of CSS3 had work started on them at around the same sort of time as the CSS2 spec was being finished up, around the late 1990s. CSS2 has a lot of very powerful features, and we can do a lot with it, but it was clear all those years ago that, despite this, there were a number of things missing from the spec. This was evidenced by the fact that we were trying to do many things using weird and interesting hacks, or unusual techniques to say the least, often involving lots of nested <code>&lt;div&gt;</code>s or other semantic backstabbery, images, or even proprietary technologies like Flash. Some examples that spring to mind:</p>
+
+<ul>
+  <li>Downloading custom fonts for use on web sites has been available in IE since version 4.</li>
+  <li>Back in the late 1990s/early 2000s a lot of pioneering techniques started to spring up for creating CSS UI features that wouldn't break if the text was resized — the text wouldn't spill messily out of it's containers; instead the design would expand along with it. These techniques were referred to as "Bulletproof CSS".</li>
+  <li>It is very common to use CSS floats to create multiple column layouts, this we all know. But this is somewhat of a hack.</li>
+  <li>Many "dynamic UI features" such as layouts that automatically adapt to different screen widths, and smooth animations and transitions for user feedback, have been traditionally done using JavaScript. There was no way to achieve them using CSS alone until recently, hence the rise of dHTML in the late 1990s (yuck!) and more recently JavaScript libraries.</li>
+</ul>
+</article>
+
+</body>
+</html>

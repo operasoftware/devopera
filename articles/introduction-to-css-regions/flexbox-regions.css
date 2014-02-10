@@ -1,0 +1,265 @@
+/* Import fonts */
+
+@font-face {
+    font-family: 'groovy';
+    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot');
+    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.woff') format('woff'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.ttf') format('truetype'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'neuropol';
+    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot');
+    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.woff') format('woff'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.ttf') format('truetype'),
+         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* basic typography */
+
+html {
+  font-size: 10px;
+  font-family: groovy;
+}
+
+h1,h2,h3,nav {
+  font-family: neuropol;
+}
+
+h1 {
+  font-size: 10rem;
+  background-color: blue;
+  background: -webkit-linear-gradient(top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -moz-linear-gradient(top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -ms-linear-gradient(top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -o-linear-gradient(top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: linear-gradient(to bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  padding: 2rem 0;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8); 
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.3rem;
+  color: blue;
+}
+
+p,li {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+figcaption {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+/* figure */
+
+figure {
+  text-align: center;
+}
+
+figure div {
+  padding: 1rem;
+  display: inline-block;
+  background-color: blue;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -moz-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -ms-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -o-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: linear-gradient(to top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  border-radius: 1rem;
+  max-width: 90%;
+}
+
+figure img {
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,0.4);
+  max-width: 100%;
+}
+
+figcaption {
+  margin-top: 1rem;
+  color: white;
+}
+
+
+/* nav */
+
+nav ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  display: inline-block;
+  font-size: 2rem;
+  width: 15%;
+  background-color: rgb(0,0,255);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -moz-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -ms-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: -o-linear-gradient(bottom, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  background: linear-gradient(to top, rgba(0,0,255,1),rgba(0,0,255,0.3));
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav li a:hover, nav li a:focus {
+  background-color: rgb(0,0,150);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,255,0.8),rgba(0,0,255,0.1));
+  background: -moz-linear-gradient(bottom, rgba(0,0,255,0.8),rgba(0,0,255,0.1));
+  background: -ms-linear-gradient(bottom, rgba(0,0,255,0.8),rgba(0,0,255,0.1));
+  background: -o-linear-gradient(bottom, rgba(0,0,255,0.8),rgba(0,0,255,0.1));
+  background: linear-gradient(to top, rgba(0,0,255,0.8),rgba(0,0,255,0.1));
+}
+
+nav li a:active {
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,0.9);
+}
+
+/* basic layout */
+
+body {
+  max-width: 1400px;
+  min-width: 950px;
+  margin: 0 auto;
+}
+
+section.main {
+  padding: 0 1%;
+}
+
+
+/* positioning and styling for fancy containers */
+
+.layout {
+  height: 600px;
+  position: relative;
+}
+
+.text-container, .text-overflow {
+  background: -webkit-repeating-linear-gradient(top, rgba(150,150,150,0.3) 0px, rgba(150,150,150,0.3) 1px, transparent 2px, transparent 40px), -webkit-linear-gradient(top left, rgba(255,255,255,1), rgba(200,200,200,1));
+  background: -moz-repeating-linear-gradient(top, rgba(150,150,150,0.3) 0px, rgba(150,150,150,0.3) 1px, transparent 2px, transparent 40px), -moz-linear-gradient(top left, rgba(255,255,255,1), rgba(200,200,200,1));
+  background: -ms-repeating-linear-gradient(top, rgba(150,150,150,0.3) 0px, rgba(150,150,150,0.3) 1px, transparent 2px, transparent 40px), -ms-linear-gradient(top left, rgba(255,255,255,1), rgba(200,200,200,1));
+  background: repeating-linear-gradient(to bottom, rgba(150,150,150,0.3) 0px, rgba(150,150,150,0.3) 1px, transparent 2px, transparent 40px), linear-gradient(to bottom right, rgba(255,255,255,1), rgba(200,200,200,1));
+  padding: 2rem;
+  box-shadow: 0.5rem 0.5rem 20px black;
+}
+
+.layout .text-container {
+  position: absolute;
+  width: 25%;
+  height: 300px;
+  z-index: 2;
+}
+
+.layout .image-container {
+  position: absolute;
+}
+
+.layout div:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.layout div:nth-of-type(2) {
+  top: 2rem;
+  left: 30%;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+
+.layout div:nth-of-type(3) {
+  display: block;
+  top: 15rem;
+  left: 50%;
+  border: 1px solid black;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+
+.layout div:nth-of-type(4) {
+  top: 25rem;
+  left: 67.5%;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.text-overflow {
+  height: 700px;
+}
+
+
+/* regions stuff */
+
+.content {
+  -webkit-flow-into: article;
+  -moz-flow-into: article;
+  -ms-flow-into: article;
+  flow-into: article;
+}
+
+.text-container  {
+  -webkit-flow-from: article;
+  -moz-flow-from: article;
+  -ms-flow-from: article;
+  flow-from: article;
+}
+
+.text-overflow {
+  -webkit-flow-from: article; 
+  -moz-flow-from: article; 
+  -ms-flow-from: article; 
+  flow-from: article;  
+}
+
+
+/* fallback code for browsers that don't support regions */
+
+.feature-no-regions .layout, .feature-no-regions .text-overflow {
+  display: none;
+}
+
+.feature-no-regions .content {
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
