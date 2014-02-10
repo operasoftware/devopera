@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html [<!ATTLIST math xmlns CDATA #FIXED "http://www.w3.org/1998/Math/MathML" display CDATA "block">]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>MathML Torture Tests</title>
+	<style type="text/css">
+math[display="block"]
+	{font-family:"Palatino Linotype", serif;
+	font-size:2em;
+	line-height:normal;
+	white-space:nowrap;
+	text-align:left;
+	margin:1ex 1em 1ex 12%;
+	page-break-inside:avoid;}
+math[display="block"]:before
+	{content:"(" counter(equation) ")";
+	counter-increment:equation;
+	display:block;
+	float:right;}
+	</style>
+	</head>
+<body>
+<math><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>
+<math><mfrac><mrow><mi>x</mi><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math>
+<math><mi>x</mi><mo>+</mo><msup><mi>y</mi><mrow><mfrac><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></msup></math>
+<math><mfrac><mi>a</mi><mrow><mi>b</mi><mo>/</mo><mn>2</mn></mrow></mfrac></math>
+<math><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mn>4</mn></msub></mrow></mfrac></mrow></mfrac></mrow></mfrac></mrow></mfrac></math>
+<math><mfenced><mrow><mfrac linethickness="0"><mi>n</mi><mrow><mi>k</mi><mo>/</mo><mn>2</mn></mrow></mfrac></mrow></mfenced></math>
+<math><mfenced><mrow><mfrac linethickness="0"><mi>p</mi><mn>2</mn></mfrac></mrow></mfenced><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mrow><mi>p</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>−</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
+<math><munder><mrow><munder><mo largeop="true">∑</mo><mrow><mn>0</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>m</mi></mrow></munder></mrow><mrow><mn>0</mn><mo>&lt;</mo><mi>j</mi><mo>&lt;</mo><mi>n</mi></mrow></munder><mi>P</mi><mo fence="true">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo fence="true">)</mo></math>
+<math><msup><mi>x</mi><mrow><mn>2</mn><mi>y</mi></mrow></msup></math>
+<math><munderover><mo largeop="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>p</mi></munderover><munderover><mo largeop="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>q</mi></munderover><munderover><mo largeop="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>b</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><msub><mi>c</mi><mrow><mi>k</mi><mi>i</mi></mrow></msub></math>
+<math><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mrow><msqrt><mn>1</mn><mo>+</mo><mi>x</mi></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></math>
+<math><mfenced><mrow><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup></mrow><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup></mrow><mrow><mo>∂</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced><msup><mrow><mo fence="true">|</mo><mo fence="true">(</mo><mi>x</mi><mo>+</mo><mi mathvariant="normal">i</mi><mi>y</mi><mo fence="true">)</mo><mo fence="true">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></math>
+<math><msup><mn>2</mn><mrow><msup><mn>2</mn><mrow><msup><mn>2</mn><mi>x</mi></msup></mrow></msup></mrow></msup></math>
+<math><munderover><mo largeop="true">∫</mo><mn>1</mn><mi>x</mi></munderover><mfrac><mi>dt</mi><mi>t</mi></mfrac></math>
+<math><munder><mo largeop="true">∬</mo><mi>D</mi></munder><mi>dx</mi><mi>dy</mi></math>
+<math><mi>f</mi><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo><mo>=</mo><mfenced open="{" close=""><mrow><mtable><mtr><mtd><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mtd><mtd><mrow><mtext>if </mtext><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn><mo>;</mo></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mtd><mtd><mtext>if </mtext><mn>3</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>4</mn><mo>;</mo></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mtext>elsewhere.</mtext></mtd></mtr></mtable></mrow></mfenced></math>
+<math><mover><mrow><mover><mrow><mi>x</mi><mo>+</mo><mo>⋯</mo><mo>+</mo><mi>x</mi></mrow><mo fence="true">⎴</mo></mover></mrow><mrow><mi>k</mi><mtext> times</mtext></mrow></mover></math>
+<math><msub><mi>y</mi><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></msub></math>
+<math><munder><mo largeop="true">∑</mo><mrow><mi>p</mi><mtext> prime</mtext></mrow></munder><mi>f</mi><mo fence="true">(</mo><mi>p</mi><mo fence="true">)</mo><mo>=</mo><munder><mo largeop="true">∫</mo><mrow><mi>t</mi><mo>></mo><mn>1</mn></mrow></munder><mi>f</mi><mo fence="true">(</mo><mi>t</mi><mo fence="true">)</mo><mi>d</mi><mi>π</mi><mo fence="true">(</mo><mi>t</mi><mo fence="true">)</mo></math>
+<math><mrow><mo>{</mo><munder><mrow><munder><mrow><mover><mrow><mover><mrow><mi>a</mi><mo>,</mo><mo>...</mo><mo>,</mo><mi>a</mi></mrow><mo fence="true">⎴</mo></mover></mrow><mrow><mi>k</mi><mi> a</mi><mtext>'s</mtext></mrow></mover><mo>,</mo><mover><mrow><mover><mrow><mi>b</mi><mo>,</mo><mo>...</mo><mo>,</mo><mi>b</mi></mrow><mo fence="true">⎴</mo></mover></mrow><mrow><mi mathvariant="normal">ℓ</mi><mi> b</mi><mtext>'s</mtext></mrow></mover></mrow><mo fence="true">⎵</mo></munder></mrow><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi><mtext> elements</mtext></mrow></munder><mo>}</mo></mrow></math>
+<math><mfenced open="(" close=")"><mrow><mtable><mtr><mtd><mrow><mfenced open="(" close=")"><mrow><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable></mrow></mfenced></mrow></mtd><mtd><mrow><mfenced open="(" close=")"><mrow><mtable><mtr><mtd><mi>e</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mi>g</mi></mtd><mtd><mi>h</mi></mtd></mtr></mtable></mrow></mfenced></mrow></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mfenced open="(" close=")"><mrow><mtable><mtr><mtd><mi>i</mi></mtd><mtd><mi>j</mi></mtd></mtr><mtr><mtd><mi>k</mi></mtd><mtd><mi>l</mi></mtd></mtr></mtable></mrow></mfenced></mrow></mtd></mtr></mtable></mrow></mfenced></math>
+<math><mo>det</mo><mfenced open="|" close="|"><mrow><mtable><mtr><mtd><mrow><msub><mi>c</mi><mn>0</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>1</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>2</mn></msub></mrow></mtd><mtd><mo>⋯</mo></mtd><mtd><mrow><msub><mi>c</mi><mi>n</mi></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>c</mi><mn>1</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>2</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>3</mn></msub></mrow></mtd><mtd><mo>⋯</mo></mtd><mtd><mrow><msub><mi>c</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>c</mi><mn>2</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>3</mn></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mn>4</mn></msub></mrow></mtd><mtd><mo>⋯</mo></mtd><mtd><mrow><msub><mi>c</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mtd></mtr><mtr><mtd><mo>⋮</mo></mtd><mtd><mo>⋮</mo></mtd><mtd><mo>⋮</mo></mtd><mtd><mi>&#xA0;</mi></mtd><mtd><mo>⋮</mo></mtd></mtr><mtr><mtd><mrow><msub><mi>c</mi><mi>n</mi></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>c</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mtd><mtd><mo>⋯</mo></mtd><mtd><mrow><msub><mi>c</mi><mrow><mn>2</mn><mi>n</mi></mrow></msub></mrow></mtd></mtr></mtable></mrow></mfenced><mo>&gt;</mo><mn>0</mn></math>
+<math><msub><mi>y</mi><mrow><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></math>
+<math><msubsup><mi>x</mi><mn>92</mn><mn>31415</mn></msubsup><mo>+</mo><mi>π</mi></math>
+<math><msubsup><mi>x</mi><mrow><msubsup><mi>y</mi><mi>b</mi><mi>a</mi></msubsup></mrow><mrow><msubsup><mi>z</mi><mi>c</mi><mi>d</mi></msubsup></mrow></msubsup></math>
+<math><msubsup><mi>y</mi><mn>3</mn><mo>‴</mo></msubsup></math>
+</body>
+</html>
