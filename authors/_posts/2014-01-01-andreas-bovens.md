@@ -1,5 +1,5 @@
 ---
 title: Andreas Bovens
-link: http://twitter.com/andreasbovens
+link: https://twitter.com/andreasbovens
 layout: author
 ---

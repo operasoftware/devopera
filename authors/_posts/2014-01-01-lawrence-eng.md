@@ -1,5 +1,5 @@
 ---
 title: Lawrence Eng
-link: http://twitter.com/lawmune
+link: https://twitter.com/lawmune
 layout: author
 ---
