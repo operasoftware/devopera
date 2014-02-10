@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>CSS Counters to replace the start attribute</title>
+<style type="text/css" media="all">
+	    
+		/*the important stuff for this example */
+		ol { counter-reset: list-order; }
+
+        ol:nth-of-type(2) { counter-reset: list-order 3; }
+        
+        ol li { 
+            counter-increment: list-order;
+            list-style-type: none;
+        }
+
+        ol li:before { content: counter(list-order) ". "; }
+		
+		/*basic typography so example doesn't look ugly */
+		body { 
+		    font-size: 12px; 
+		    margin: 4em; 	
+		    max-width: 45em; 
+		    line-height: 1.3em;
+		}
+		
+	    h1 {
+			font-size: 1.333em;
+			line-height: 1.125em;
+			margin: 0 0 1.125em 0;		
+		}
+</style>
+</head>
+<body>
+	<h1>Counters to replace the <code>start</code> attribute</h1>
+    
+    <p>To save using a class, I’ve used a <code>nth-of-type</code> selector for the second list.  You’ll need to use a modern browser for this example to work.  For production web sites use a class name until web browser support catches up.  For this particular example, reseting the counter on the <code>body</code> element would have the same effect, without the counter offset, as the counter doesn't reset when you start a new list.  However, If you wanted a third list to start at 1 again, it wouldn't work using that approach, as it would continue counting from 8.</p>
+    <ol>
+        <li>Gather ingredients</li>
+        <li>Mix ingredients together</li>
+        <li>Place ingredients in a baking dish</li>
+    </ol>
+
+<p class="note">Before you place the ingredients in the baking dish, preheat the oven to 180 degrees centigrade/350 degress farenheit in readiness for the next step</p>
+
+    <ol>
+       <li>Bake in oven for an hour</li>
+       <li>Remove from oven</li>
+       <li>Allow to stand for ten minutes</li>
+       <li>Serve</li>
+    </ol>
+</body>
+</html>

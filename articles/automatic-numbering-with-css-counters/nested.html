@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Nested Counters in action</title>
+<style type="text/css" media="all">
+	    
+		/*the important stuff for this example */
+		ol { 
+		    counter-reset: section;
+		    list-style-type: none;
+		}
+		
+		ol li { counter-increment: section; }
+		ol li:before { content: counters(section, ".") ". "; }
+		
+		/*basic typography so example doesn't look ugly */
+		body { 
+		    font-size: 12px; 
+		    margin: 4em; 	
+		    max-width: 45em; 
+		    line-height: 1.3em;
+		}
+		
+	    h1 {
+			font-size: 1.333em;
+			line-height: 1.125em;
+			margin: 0 0 1.125em 0;		
+		}
+</style>
+</head>
+<body>
+	<h1>Nested counters</h1>
+  
+    <ol>
+        <li>item 1
+            <ol>
+                <li>sub item 1
+                    <ol>
+                        <li>sub-sub item 1</li>
+                        <li>sub-sub item 2</li>
+                        <li>sub-sub item 3</li>
+                    </ol>
+                 </li>
+                 <li>Sub item 2</li>
+             </ol>
+         </li>
+         <li>item 2</li>
+     </ol>
+</body>
+</html>

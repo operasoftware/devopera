@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Styled Counters</title>
+<style type="text/css" media="all">
+	    
+		/*the important stuff for this example */
+		ol { 
+		    counter-reset: answer;
+		    list-style-type: none;
+		}
+		
+		ol li { counter-increment: answer; }
+		
+		ol li:before { content: counter(answer, lower-alpha) ") "; }
+		
+		/*example showing starting from a none-default value and none-default increment */
+		ol#question2 { counter-reset: answer 5; }
+		
+		ol#question2 li { counter-increment: answer -1; }
+		
+		/*basic typography so example doesn't look ugly */
+		body { 
+		    font-size: 12px; 
+		    margin: 4em; 	
+		    max-width: 45em; 
+		    line-height: 1.3em;
+		}
+		
+	    h1 {
+			font-size: 1.333em;
+			line-height: 1.125em;
+			margin: 0 0 1.125em 0;		
+		}
+</style>
+</head>
+<body>
+	<h1>Styling counters</h1>
+  
+    <p>In which city is Opera’s headquarters?</p>
+    <ol id="question1">
+        <li>Stockholm</li>
+        <li>Mountain View</li>
+        <li>Oslo</li>
+        <li>Little Rock</li> 
+    </ol>
+    
+    <p>Which value is <em>not</em> a valid value for the <code>list-style-type</code> property?</p>
+    <ol id="question2">
+        <li>circle</li>
+        <li>square</li>
+        <li>lower-alpha</li>
+        <li>upper-mongolian</li>
+    </ol>
+</body>
+</html>

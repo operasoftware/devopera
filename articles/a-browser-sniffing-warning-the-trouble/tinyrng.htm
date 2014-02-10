@@ -1,0 +1,26 @@
+<!doctype html>
+<title>Range.insertNode() called repeatedly </title>
+<script>
+  onload = function() {
+	var doc = document.implementation.createDocument( '', 'test', null );
+	doc.documentElement.appendChild( doc.createTextNode( ' test' ) );
+	var r=doc.createRange();
+	r.selectNodeContents( doc.documentElement );
+	r.insertNode( doc.createTextNode( ' world') );
+	r.insertNode( doc.createTextNode( 'hello') );
+	var has_range_collapse_bug1 = r.toString() != 'hello world test';
+	// range should cover both what was selected previously and the inserted bits
+
+	var has_range_collapse_bug2 = doc.documentElement.firstChild.data != 'hello';
+	// content should be inserted at start of node, so what we inserted last is .firstChild
+
+	document.getElementsByTagName('pre')[0].appendChild( document.createTextNode(
+		'indication #1 that the bug is present:  ' + has_range_collapse_bug1 + '\n' +
+		'indication #2 that the bug is present:  ' + has_range_collapse_bug2 + '\n\n'
+
+	) );
+	document.getElementsByTagName('pre')[0].appendChild( document.createTextNode( 'Test document output: \n'+(new XMLSerializer()).serializeToString(doc) ) );
+  }
+
+</script>
+<pre></pre>

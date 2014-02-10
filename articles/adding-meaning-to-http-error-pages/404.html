@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"   
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <title>Page Not Found</title>
+    </head>
+    <body>
+        <h1>Page not found</h1>
+                            
+        <p>The page you were trying to reach doesn't exist. To continue on your journey please try one of the following:</p>
+                        
+        <ol>                
+            <li>
+                <!-- You could display the request url here but as always be sure to escape it correctly -->
+                <p>Please check the url (web address) is correct; does it contain any spelling errors or typos?</p>
+                <p>If it does - please correct it in the address bar of your browser and hit enter</p>
+            </li>
+            <li>
+                <!-- Provide a standard search box for your site -->
+                <p>Try searching for the content you were looking for</p>
+
+                <form  method="GET" action="/search/">
+                    <div><!-- Using a div here as we don't want a fieldset and legend for a search box -->
+                        <input name="q" value="">
+                        <input type="submit" name="submit" value="Search">
+                    </div>
+                </form>
+            </li>
+            <!-- if referrer is set you could set up a link to send them back to that - just be sure 
+            to not trust that data and make sure you're not setting up a security hole in your site -->
+            <li>Press the back button on your browser to return to the page you were previously on</li>
+        </ol>
+    </body>
+</html>

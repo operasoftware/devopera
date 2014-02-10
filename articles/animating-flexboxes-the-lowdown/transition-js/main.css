@@ -1,0 +1,103 @@
+html {
+  font-size: 10px;
+  font-family: 'Montaga', serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;  
+}
+
+body {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
+.no-flexbox body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+}
+
+article {  
+  -webkit-flex: 1 0;
+  -moz-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgba(0,0,0,0);
+  
+  background: -webkit-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background: -ms-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background: linear-gradient(to bottom right,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  
+  overflow: hidden;
+  position: relative;
+  
+  padding-top: 5rem;
+}
+
+.no-flexbox article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  width: 200px;
+}
+
+article:nth-child(2n) {
+  background-color: #f00;
+}
+
+article:nth-child(2n+1) {
+  background-color: #aaf;
+}
+
+h2 {
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+/* CSS counter */
+
+body {
+  counter-reset: chapter 0;
+}
+
+article { 
+  counter-increment: chapter;
+}
+
+article:before {
+  font-family: 'Bowlby One', cursive;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  content: "Chapter " counter(chapter);
+  font-size: 2rem;
+  font-size: 1.5vw;
+  color: rgba(0,0,0,0.5);
+}

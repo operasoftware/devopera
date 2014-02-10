@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox animation experiment</title>
+	<style>
+	html {
+	  font-size: 10px;
+	  font-family: sans-serif;
+	}
+	
+	h2 {
+	  font-size: 3.2rem;
+	  display: none;
+	}
+	
+	p {
+	  font-size: 1.4rem;
+	}
+	
+	body {
+	  margin: 0 auto;
+	  
+	  display: -webkit-flex;
+	  display: -moz-flex;
+	  display: flex;
+	}
+	
+	article {  
+	  margin: 0.5rem;
+	  padding: 1rem;
+	  border-radius: 1rem;
+	  color: rgba(0,0,0,0);
+	  
+	  -webkit-flex: 1;
+	  -moz-flex: 1;
+	  -ms-flex: 1;
+	  flex: 1;
+	  
+	  background: -webkit-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+	  background: -moz-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+	  background: -ms-linear-gradient(top left,rgba(0,0,0,0),rgba(0,0,0,0.4));
+	  background: linear-gradient(to bottom right,rgba(0,0,0,0),rgba(0,0,0,0.4));
+	  
+	  overflow: hidden;
+	  height: 550px;
+	  
+	  
+	}	
+	
+	article:nth-child(2n) {
+	  background-color: #f00;
+	}
+	
+	article:nth-child(2n+1) {
+	  background-color: #aaf;
+	}
+	
+	@-webkit-keyframes flex-out {
+	  0% {	  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	}
+
+	@-webkit-keyframes flex-in {
+	  0% {	  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	}
+	
+	@-moz-keyframes flex-out {
+	  0% {	  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	}
+
+	@-moz-keyframes flex-in {
+	  0% {	  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	}
+	
+	@-ms-keyframes flex-out {
+	  0% {	  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	}
+
+	@-ms-keyframes flex-in {
+	  0% {	  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	}
+	
+	@-o-keyframes flex-out {
+	  0% {	  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	}
+
+	@-o-keyframes flex-in {
+	  0% {	  
+	    color: rgba(0,0,0,1);
+	    width: 600px;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	}
+	
+	@keyframes flex-out {
+	  0% {	  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,1);
+	    width: 500px;
+	  }
+	}
+
+	@keyframes flex-in {
+	  0% {	  
+	    color: rgba(0,0,0,1);
+	    width: 500px;
+	  }
+	  
+	  100% {  
+	    color: rgba(0,0,0,0);
+	    width: auto;
+	  }
+	}
+	
+	article.flex-out {
+	  -webkit-animation: flex-out 1s both;
+	  -moz-animation: flex-out 1s both;
+	  -ms-animation: flex-out 1s both;
+	  -o-animation: flex-out 1s both;
+	  animation: flex-out 1s both;
+	}
+	
+	article.flex-in {
+	  -webkit-animation: flex-in 1s both;
+	  -moz-animation: flex-in 1s both;
+	  -ms-animation: flex-in 1s both;
+	  -o-animation: flex-in 1s both;
+	  animation: flex-in 1s both;
+	}
+
+	</style>
+</head>
+<body>
+
+  <article id="1">
+    <h2>Introduction</h2>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat arcu ac enim vulputate id egestas nulla tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque at euismod leo. Nullam quis urna magna, eu cursus ante. Curabitur vel justo sit amet tellus elementum auctor. Nullam ultricies, tortor in auctor accumsan, ipsum neque convallis sem, nec tristique velit lorem pulvinar neque. Sed vel auctor justo. Nulla at leo arcu. Nulla facilisi. Curabitur elementum ante et elit pellentesque in commodo quam sollicitudin. Aenean turpis nunc, gravida vel ornare quis, pharetra fermentum augue.</p>
+
+    <p>Nulla ut elit nec massa commodo tincidunt. Duis condimentum iaculis sem quis consectetur. Phasellus dolor risus, ullamcorper in gravida eu, rutrum eget eros. Morbi tempus rutrum tristique. Proin in sodales nulla. Nunc viverra, tellus sit amet venenatis vehicula, massa lectus mollis erat, nec commodo sem nulla sit amet dolor. Curabitur sollicitudin tortor eu sem iaculis ac egestas erat vestibulum. Maecenas sed diam urna, ac sagittis velit.</p> 
+  </article>
+  
+  
+  <article id="2">
+    <h2>Chapter 1</h2>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat arcu ac enim vulputate id egestas nulla tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque at euismod leo. Nullam quis urna magna, eu cursus ante. Curabitur vel justo sit amet tellus elementum auctor. Nullam ultricies, tortor in auctor accumsan, ipsum neque convallis sem, nec tristique velit lorem pulvinar neque. Sed vel auctor justo. Nulla at leo arcu. Nulla facilisi. Curabitur elementum ante et elit pellentesque in commodo quam sollicitudin. Aenean turpis nunc, gravida vel ornare quis, pharetra fermentum augue.</p>
+
+    <p>Nulla ut elit nec massa commodo tincidunt. Duis condimentum iaculis sem quis consectetur. Phasellus dolor risus, ullamcorper in gravida eu, rutrum eget eros. Morbi tempus rutrum tristique. Proin in sodales nulla. Nunc viverra, tellus sit amet venenatis vehicula, massa lectus mollis erat, nec commodo sem nulla sit amet dolor. Curabitur sollicitudin tortor eu sem iaculis ac egestas erat vestibulum. Maecenas sed diam urna, ac sagittis velit.</p> 
+  </article>
+  
+  <article id="3">
+    <h2>Chapter 2</h2>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat arcu ac enim vulputate id egestas nulla tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque at euismod leo. Nullam quis urna magna, eu cursus ante. Curabitur vel justo sit amet tellus elementum auctor. Nullam ultricies, tortor in auctor accumsan, ipsum neque convallis sem, nec tristique velit lorem pulvinar neque. Sed vel auctor justo. Nulla at leo arcu. Nulla facilisi. Curabitur elementum ante et elit pellentesque in commodo quam sollicitudin. Aenean turpis nunc, gravida vel ornare quis, pharetra fermentum augue.</p>
+
+    <p>Nulla ut elit nec massa commodo tincidunt. Duis condimentum iaculis sem quis consectetur. Phasellus dolor risus, ullamcorper in gravida eu, rutrum eget eros. Morbi tempus rutrum tristique. Proin in sodales nulla. Nunc viverra, tellus sit amet venenatis vehicula, massa lectus mollis erat, nec commodo sem nulla sit amet dolor. Curabitur sollicitudin tortor eu sem iaculis ac egestas erat vestibulum. Maecenas sed diam urna, ac sagittis velit.</p> 
+  </article>
+
+  <article id="4">
+    <h2>Chapter 3</h2>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat arcu ac enim vulputate id egestas nulla tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque at euismod leo. Nullam quis urna magna, eu cursus ante. Curabitur vel justo sit amet tellus elementum auctor. Nullam ultricies, tortor in auctor accumsan, ipsum neque convallis sem, nec tristique velit lorem pulvinar neque. Sed vel auctor justo. Nulla at leo arcu. Nulla facilisi. Curabitur elementum ante et elit pellentesque in commodo quam sollicitudin. Aenean turpis nunc, gravida vel ornare quis, pharetra fermentum augue.</p>
+
+    <p>Nulla ut elit nec massa commodo tincidunt. Duis condimentum iaculis sem quis consectetur. Phasellus dolor risus, ullamcorper in gravida eu, rutrum eget eros. Morbi tempus rutrum tristique. Proin in sodales nulla. Nunc viverra, tellus sit amet venenatis vehicula, massa lectus mollis erat, nec commodo sem nulla sit amet dolor. Curabitur sollicitudin tortor eu sem iaculis ac egestas erat vestibulum. Maecenas sed diam urna, ac sagittis velit.</p> 
+  </article>
+
+  <article id="5">
+    <h2>Chapter 4</h2>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat arcu ac enim vulputate id egestas nulla tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque at euismod leo. Nullam quis urna magna, eu cursus ante. Curabitur vel justo sit amet tellus elementum auctor. Nullam ultricies, tortor in auctor accumsan, ipsum neque convallis sem, nec tristique velit lorem pulvinar neque. Sed vel auctor justo. Nulla at leo arcu. Nulla facilisi. Curabitur elementum ante et elit pellentesque in commodo quam sollicitudin. Aenean turpis nunc, gravida vel ornare quis, pharetra fermentum augue.</p>
+
+    <p>Nulla ut elit nec massa commodo tincidunt. Duis condimentum iaculis sem quis consectetur. Phasellus dolor risus, ullamcorper in gravida eu, rutrum eget eros. Morbi tempus rutrum tristique. Proin in sodales nulla. Nunc viverra, tellus sit amet venenatis vehicula, massa lectus mollis erat, nec commodo sem nulla sit amet dolor. Curabitur sollicitudin tortor eu sem iaculis ac egestas erat vestibulum. Maecenas sed diam urna, ac sagittis velit.</p> 
+  </article>
+
+<script>
+  var articles = document.getElementsByTagName('article');
+  
+  var toggleFlex = function(articleId) {
+    for(j=0;j<=(articles.length-1);j++) {
+      if(articles[j].id == articleId) {
+        if(articles[j].className == "" || articles[j].className == "flex-in") {
+          articles[j].className = "flex-out";
+        } else {
+          articles[j].className = "flex-in";
+        }
+      } else if(articles[j].className == "flex-out") {
+          articles[j].className = "flex-in";
+      }
+    }
+  }
+  
+  for(i=0;i<=(articles.length-1);i++) {
+    articles[i].onclick = function() {
+      var articleId = this.id;
+      toggleFlex(articleId);
+    }
+  }
+</script>
+	
+</body>
+</html>

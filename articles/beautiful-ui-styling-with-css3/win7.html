@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Opera 10.50 Styling Demo</title>
+
+<style>
+body {
+  overflow-x: hidden;
+  color: #334766;
+  padding: 25px 0;
+  text-align: center;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGBAMAAAAS4vJ7AAAAG1BMVEXS4erj7PHf6O3g6O729vby8vLx8fHh6u%2Fz8%2FOBUUhCAAAAIElEQVQIHWNgFFJkMAlJYShzaWMQS3Nh0EhzY1BxSQMAM84Ew1msm%2BsAAAAASUVORK5CYII%3D");
+}
+
+body > * {
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#desktop {
+  background: #2c609b;
+  width: 800px;
+  height: 600px;
+  font: 12px "Segoe UI", Tahoma,sans-serif;
+  position: relative;
+  box-shadow: inset 0 -200px 100px #032b5c, inset -100px 100px 100px #2073b5, inset 100px 200px 100px #1f9bb1;
+  -o-box-shadow: inset 0 -200px 100px #032b5c, inset -100px 100px 100px #2073b5, inset 100px 200px 100px #1f9bb1;
+  -webkit-box-shadow: inset 0 -200px 100px #032b5c, inset -100px 100px 100px #2073b5, inset 100px 200px 100px #1f9bb1;
+  -moz-box-shadow: inset 0 -200px 100px #032b5c, inset -100px 100px 100px #2073b5, inset 100px 200px 100px #1f9bb1;
+  overflow: hidden;
+}
+
+#startmenu {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background: rgba(178,215,255,0.25);
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.25), inset 0 1px #042754, inset 0 2px #5785b0;
+  -o-box-shadow: 0 -2px 20px rgba(0,0,0,0.25), inset 0 1px #042754, inset 0 2px #5785b0;
+  -webkit-box-shadow: 0 -2px 20px rgba(0,0,0,0.25), inset 0 1px #042754, inset 0 2px #5785b0;
+  -moz-box-shadow: 0 -2px 20px rgba(0,0,0,0.25), inset 0 1px #042754, inset 0 2px #5785b0;
+  overflow: hidden;
+}
+
+#startmenu button {
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 2px 2px #00294b;
+}
+
+#startmenu #winflag {
+  float: left;
+  margin: 2px;
+  height: 34px;
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border: none;
+  background: #034a76;
+  box-shadow: 0 0 1px #fff, 0 0 3px #000, 0 0 3px #000, inset 0 1px #fff, inset 0 12px rgba(255,255,255,0.15), inset 0 4px 10px #cef, inset 0 22px 5px #0773b4, inset 0 -5px 10px #0df;
+  -o-box-shadow: 0 0 1px #fff, 0 0 3px #000, 0 0 3px #000, inset 0 1px #fff, inset 0 12px rgba(255,255,255,0.15), inset 0 4px 10px #cef, inset 0 22px 5px #0773b4, inset 0 -5px 10px #0df;
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 3px #000, 0 0 3px #000, inset 0 1px #fff, inset 0 12px rgba(255,255,255,0.15), inset 0 4px 10px #cef, inset 0 22px 5px #0773b4, inset 0 -5px 10px #0df;
+  -moz-box-shadow: 0 0 1px #fff, 0 0 3px #000, 0 0 3px #000, inset 0 1px #fff, inset 0 12px rgba(255,255,255,0.15), inset 0 4px 10px #cef, inset 0 22px 5px #0773b4, inset 0 -5px 10px #0df;
+}
+
+#startmenu .application {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-transition: .3s all;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+
+  height: 38px;
+  width: 52px;
+  border: 1px solid rgba(0,0,0,0.8);
+  border-radius: 4px;
+  background: rgba(14,59,103,0.25);
+  box-shadow: inset 0 0 1px #fff, inset 4px 4px 20px rgba(255,255,255,0.33), inset -2px -2px 10px rgba(255,255,255,0.25);
+  -o-box-shadow: inset 0 0 1px #fff, inset 4px 4px 20px rgba(255,255,255,0.33), inset -2px -2px 10px rgba(255,255,255,0.25);
+  -webkit-box-shadow: inset 0 0 1px #fff, inset 4px 4px 20px rgba(255,255,255,0.33), inset -2px -2px 10px rgba(255,255,255,0.25);
+  -moz-box-shadow: inset 0 0 1px #fff, inset 4px 4px 20px rgba(255,255,255,0.33), inset -2px -2px 10px rgba(255,255,255,0.25);
+  position: relative;
+  bottom: 1px;
+}
+
+#startmenu .application:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+
+.window {  
+  position: absolute;
+  left: 150px;
+  top: 75px;
+  width: 400px;
+  padding: 7px;
+  height: 400px;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: rgba(178,215,255,0.75);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
+  -o-box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
+  -webkit-box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
+  -moz-box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
+  text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+}
+
+.window span {
+  display: block;
+}
+
+.window input {
+  font-size: 1em;
+  display: inline-block;
+  margin: 50px 0 10px 0;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 4px 8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  background: rgba(255,255,255,0.75);
+  width: 44%;
+  box-shadow: 0 0 2px #fff, 0 0 1px #fff, inset 0 0 3px #fff
+  -o-box-shadow: 0 0 2px #fff, 0 0 1px #fff, inset 0 0 3px #fff
+  -webkit-box-shadow: 0 0 2px #fff, 0 0 1px #fff, inset 0 0 3px #fff
+  -moz-box-shadow: 0 0 2px #fff, 0 0 1px #fff, inset 0 0 3px #fff
+}
+
+
+.window input + input {
+  margin-left: 12px;
+}
+
+.window.secondary {
+  left: 300px;
+  top: 125px;
+  opacity: 0.66;
+}
+
+.window.secondary span {margin-bottom: 85px;}
+
+.window .content {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 10px;
+  height: 279px;
+  box-shadow: 0 0 5px #fff, 0 0 1px #fff, inset 0 1px 2px #aaa;
+  -o-box-shadow: 0 0 5px #fff, 0 0 1px #fff, inset 0 1px 2px #aaa;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 1px #fff, inset 0 1px 2px #aaa;
+  -moz-box-shadow: 0 0 5px #fff, 0 0 1px #fff, inset 0 1px 2px #aaa;
+  text-shadow: none; 
+}
+
+</style>
+
+
+<h1>Windows 7 desktop</h1>
+<div id="desktop">
+
+  <div class="window secondary">
+    <span>Background Window</span>
+    <div class="content"></div>
+  </div>
+
+  <div class="window">
+    <span>Foreground Window</span>
+    <input value="I'm a text field."><input value="So am I.">
+    <div class="content">File listing perhaps</div>
+  </div>
+
+  <div id="startmenu">
+  <button id="winflag">Start</button>
+  <button class="application">☁</button>
+  <button class="application">✱</button>
+  <button class="application">☀</button>
+  <button class="application">☯</button>
+  </div>
+</div>
+<p>(Go back to the <a href="http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a> article that this demo is a part of.)</p>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>CSS Counters in action</title>
+<style type="text/css" media="all">
+	    
+		/*the important stuff for this example */
+		body { counter-reset: section; }
+		
+		h2 { 
+		    counter-increment: section;
+		    counter-reset: sub-section;
+		}
+		
+		h2:before, h3:before { content: counter(section) "." counter(sub-section) " "; }
+
+        h3:before {
+            counter-increment: sub-section;
+        }
+		
+		/*basic typography so example doesn't look ugly */
+		body { 
+		    font-size: 12px; 
+		    margin: 4em; 	
+		    max-width: 45em; 
+		    line-height: 1.3em;
+		}
+		
+	    h1 {
+			font-size: 1.333em;
+			line-height: 1.125em;
+			margin: 0 0 1.125em 0;		}
+		h2 {
+			font-size: 1.167em;
+			line-height:1.286em;
+			margin: 1.286em 0 1.286em 0;
+			text-indent: -0.0714em;
+		}
+		h3 {
+			font-size: 1em;
+			margin: 1em 0 0em 0;
+		}
+		
+		p {
+			margin-top: 1.5em;
+			margin-bottom: 0;
+		}
+		p + p {
+			margin-top: 0;
+			text-indent: 1.5em;
+		}
+</style>
+</head>
+<body>
+	<h1>Are you resident in the world’s top liveable city?</h1>
+  
+    <h2>Essential features for a better borough</h2>
+    <p>Phasellus pretium pretium pede. Vestibulum sagittis gravida risus. Sed id ante vel urna pretium vestibulum. Quisque ultricies dictum enim. Fusce sagittis risus elementum lorem. Nulla tincidunt pellentesque urna. Nunc et sapien vitae massa luctus hendrerit. Sed sed sapien. Nulla in neque. Vivamus aliquam est in lorem fringilla vulputate.</p>
+    <p>Curabitur nec lectus ac enim sodales suscipit. In non purus nec sem fringilla luctus. Sed auctor facilisis nisl. In hac habitasse platea dictumst. Curabitur pellentesque nisi vel mauris. Duis condimentum tincidunt erat. Nunc eleifend placerat augue. Mauris fermentum orci. Phasellus sit amet nulla ut eros consectetuer convallis. Pellentesque ligula lectus, tempus in, dictum vel, iaculis ac, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ac metus in ipsum euismod convallis. Maecenas a erat. Nam volutpat tellus sed mi. Proin quis sapien.</p>
+    <h2>Cities that focus on better living</h2>
+    <p>Nullam erat nisl, blandit sed, placerat nec, ultricies quis, est. In facilisis rutrum quam. Curabitur accumsan, turpis ac iaculis vehicula, velit metus gravida enim, sit amet scelerisque erat quam nec velit. Integer interdum magna sed erat. Etiam id tortor. Etiam luctus sem quis enim. Nullam magna. Sed arcu massa, aliquam sit amet, aliquet eget, bibendum vitae, mi. Ut dolor lectus, lacinia sed, eleifend vitae, porta et, dolor. Phasellus auctor mi eget ante. Nullam sagittis. Quisque lobortis. Sed sit amet ante. Nulla eu urna. Suspendisse ultricies, dolor in suscipit consequat, velit diam viverra velit, quis porta turpis libero ut felis.</p>
+    <p>Cras lorem. Nunc ac felis quis ante vestibulum convallis. Etiam non quam ac neque ultrices ultrices. Etiam posuere lacus non magna. Praesent pulvinar. Proin aliquet tempus magna. Proin laoreet tortor eu mauris. Nullam feugiat, eros eget fringilla feugiat, enim nulla venenatis lorem, eu vulputate neque dolor non leo. Duis ut orci. Phasellus venenatis. Integer lacinia.</p>
+    <h3>Fukuoka</h3>
+    <p>Morbi sodales. Sed ligula ante, placerat sit amet, interdum ac, gravida ut, lorem. Maecenas sed justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc semper, quam et molestie varius, sapien urna semper tellus, eget fringilla neque nisi at erat. Nullam justo quam, vehicula in, tristique non, lobortis quis, dui. Pellentesque ut libero. Pellentesque leo quam, condimentum sit amet, placerat ut, blandit scelerisque, augue. Pellentesque sodales lacus id libero. Curabitur arcu augue, faucibus at, consectetuer in, vehicula vitae, urna. Vestibulum pharetra, elit id ullamcorper ultrices, mauris leo congue turpis, et venenatis quam lorem eu arcu. Praesent porta, ligula nec blandit posuere, arcu lorem lacinia nulla, quis tincidunt urna eros condimentum dolor. Vestibulum feugiat consequat nulla. Donec nec metus sed eros placerat sodales. Quisque congue, sem eu bibendum pellentesque, libero risus mattis erat, at porta enim nisi vitae diam. Ut dapibus, leo sit amet lacinia luctus, metus diam faucibus dui, a auctor elit metus nec tortor. Etiam laoreet diam vel lectus mattis euismod.</p>
+    <h3>Vancouver</h3>
+    <p>Sed nunc augue, semper vel, molestie a, imperdiet quis, eros. Cras tempor suscipit lorem. Pellentesque pellentesque varius arcu. Maecenas et turpis nec lorem blandit scelerisque. Donec blandit pede a dui. Etiam non mi id pede bibendum sagittis. Sed libero nisl, viverra sed, gravida eu, egestas et, lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit est rutrum tortor dictum dictum. Ut luctus nisl id neque. Donec dictum ullamcorper risus. Morbi leo mi, elementum sit amet, condimentum nec, rhoncus sit amet, turpis.</p>
+    <h3>Copenhaugen</h3>
+    <p>Suspendisse porttitor, felis convallis tristique fermentum, ipsum neque hendrerit libero, et condimentum lectus augue vel dui. Proin id mauris id libero fermentum imperdiet. Proin varius nisi sed orci. Donec suscipit purus et nibh mattis eleifend. Nam augue. Maecenas suscipit tortor ut mi. Nulla pretium, risus vitae laoreet faucibus, dui lorem iaculis diam, non gravida felis turpis at felis. Sed neque justo, malesuada non, sollicitudin id, dictum quis, ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla id arcu vitae velit fringilla vestibulum. Aliquam ut dui ac neque tincidunt tincidunt. Aenean venenatis mauris et turpis. Aliquam eu leo ut metus lacinia sollicitudin. Mauris euismod, turpis eget vehicula ultrices, orci lectus elementum leo, et eleifend dolor massa vitae odio.</p>
+    <h3>Sydney</h3>
+    <p>Quisque purus magna, convallis ac, auctor at, convallis sit amet, massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur magna nulla, pulvinar quis, pharetra sit amet, porttitor in, turpis. Cras aliquam sem congue mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus ultrices. In feugiat blandit turpis. Vivamus quis odio sed tellus euismod egestas. Suspendisse commodo interdum arcu. Nunc tristique dolor at ante. Curabitur interdum velit et neque. Ut purus lacus, molestie et, aliquet non, scelerisque at, sem. Duis ut eros in pede cursus tincidunt.</p>
+    <h2>Design elements that every house should have</h2>
+    <p>Vivamus ut odio id dolor ultrices volutpat. Ut dictum mi vel massa. Praesent felis urna, volutpat ac, pellentesque sollicitudin, condimentum quis, nisi. Ut ornare. Ut pellentesque hendrerit nulla. Praesent consectetuer, orci ut suscipit tincidunt, massa ante euismod nisi, quis tincidunt libero turpis sit amet massa. Quisque elementum accumsan diam. Donec eget libero vitae risus porta placerat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus placerat ante non ante. Praesent dui orci, laoreet ac, imperdiet ac, lobortis nec, sem. Aenean sapien.</p>
+    <h2>People, products and services to improve your life</h2>
+    <p>Quisque imperdiet. Mauris ante. Mauris ut sapien. Proin vitae dui et mi commodo molestie. Nunc pharetra cursus enim. Curabitur iaculis eros sed sem. Suspendisse et felis sed lectus rhoncus vestibulum. Praesent eget purus eget mauris semper posuere. In vel sem non dolor scelerisque tempus. In nec velit. Sed lorem libero, accumsan ultrices, commodo nec, vestibulum sit amet, arcu.</p>
+    <p>Quisque placerat commodo sem. Duis et magna id turpis tempus porttitor. Maecenas tempor libero vitae lorem. Donec ullamcorper odio condimentum quam. Nam tempor interdum est. Nam pretium dapibus nibh. Suspendisse interdum. Aliquam vel velit. Quisque sed dolor. Phasellus fringilla cursus dolor. Pellentesque sagittis ipsum in eros. Curabitur vestibulum. Mauris venenatis dui convallis magna. Sed accumsan. Suspendisse eleifend. Duis diam ipsum, gravida dapibus, varius sed, iaculis eget, nisi.</p>
+</body>
+</html>

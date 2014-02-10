@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Opera 10.50 Styling Demo</title>
+
+<style>
+body {
+  overflow-x: hidden;
+  color: #334766;
+  padding: 25px 0;
+  text-align: center;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGBAMAAAAS4vJ7AAAAG1BMVEXS4erj7PHf6O3g6O729vby8vLx8fHh6u%2Fz8%2FOBUUhCAAAAIElEQVQIHWNgFFJkMAlJYShzaWMQS3Nh0EhzY1BxSQMAM84Ew1msm%2BsAAAAASUVORK5CYII%3D");
+}
+
+body > * {
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#player {
+  background: #ccc;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: inset 0 -20px 40px #aaa, inset 0 20px 40px #fff, 0 2px 6px rgba(0,0,0,0.5);
+  -o-box-shadow: inset 0 -20px 40px #aaa, inset 0 20px 40px #fff, 0 2px 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 -20px 40px #aaa, inset 0 20px 40px #fff, 0 2px 6px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 -20px 40px #aaa, inset 0 20px 40px #fff, 0 2px 6px rgba(0,0,0,0.5);
+  padding: 0px 20px 15px 10px;
+  width: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #444;
+  text-shadow: 0 1px 1px #fff;
+  font-size: 14px;
+  margin: -0 -20px 10px -10px;
+  padding: 5px 15px;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  background: rgba(0,0,0,0.2);
+  border-bottom: 2px groove rgba(255,255,255,0.75);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+  -o-box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.control { 
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border: 1px solid rgba(0,0,0,0.75);
+  margin: 4px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  background: #ccc;
+  box-shadow: 
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 20px #fff, inset 0 -15px 30px #999, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  text-shadow: 0 1px #fff;
+  -o-box-shadow: 
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 20px #fff, inset 0 -15px 30px #999, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  text-shadow: 0 1px #fff;
+  -webkit-box-shadow: 
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 20px #fff, inset 0 -15px 30px #999, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  text-shadow: 0 1px #fff;
+  -moz-box-shadow: 
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 20px #fff, inset 0 -15px 30px #999, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  text-shadow: 0 1px #fff;
+}
+
+.control:hover {
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  background: #8cf;
+  box-shadow:
+  inset 0 -2px 10px #08f, 0 0 5px #08f, /* Glow */
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.10), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 25px #def, inset 0 -15px 30px #37e, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  color: #048;
+  -o-box-shadow:
+  inset 0 -2px 10px #08f, 0 0 5px #08f, /* Glow */
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.10), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 25px #def, inset 0 -15px 30px #37e, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  color: #048;
+  -webkit-box-shadow:
+  inset 0 -2px 10px #08f, 0 0 5px #08f, /* Glow */
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.10), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 25px #def, inset 0 -15px 30px #37e, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  color: #048;
+  -moz-box-shadow:
+  inset 0 -2px 10px #08f, 0 0 5px #08f, /* Glow */
+  inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.10), /* Inner edge highlights */
+  inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */
+  inset 0 15px 25px #def, inset 0 -15px 30px #37e, /* Gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  color: #048;
+}
+
+.control:active {
+  background-color: #6ad;
+  box-shadow:
+  inset 2px -5px 15px #08f, 0 0 5px #08f, 0 0 7px #08f, /* Glow */
+  inset 2px -1px 5px rgba(255,255,255,0.15), inset 1px 3px 6px rgba(0,0,0,0.15), /* Inner edge highlights */
+  inset 2px -18px 5px rgba(0,0,0,0.15), inset 7px -8px 5px rgba(0,0,0,0.15), inset -3px -8px 5px rgba(0,0,0,0.15), /* Faking a light source */
+  inset 2px 17px 20px #cde, inset 2px -13px 30px #15a, /* Faking gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  -o-box-shadow:
+  inset 2px -5px 15px #08f, 0 0 5px #08f, 0 0 7px #08f, /* Glow */
+  inset 2px -1px 5px rgba(255,255,255,0.15), inset 1px 3px 6px rgba(0,0,0,0.15), /* Inner edge highlights */
+  inset 2px -18px 5px rgba(0,0,0,0.15), inset 7px -8px 5px rgba(0,0,0,0.15), inset -3px -8px 5px rgba(0,0,0,0.15), /* Faking a light source */
+  inset 2px 17px 20px #cde, inset 2px -13px 30px #15a, /* Faking gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  -webkit-box-shadow:
+  inset 2px -5px 15px #08f, 0 0 5px #08f, 0 0 7px #08f, /* Glow */
+  inset 2px -1px 5px rgba(255,255,255,0.15), inset 1px 3px 6px rgba(0,0,0,0.15), /* Inner edge highlights */
+  inset 2px -18px 5px rgba(0,0,0,0.15), inset 7px -8px 5px rgba(0,0,0,0.15), inset -3px -8px 5px rgba(0,0,0,0.15), /* Faking a light source */
+  inset 2px 17px 20px #cde, inset 2px -13px 30px #15a, /* Faking gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+  -moz-box-shadow:
+  inset 2px -5px 15px #08f, 0 0 5px #08f, 0 0 7px #08f, /* Glow */
+  inset 2px -1px 5px rgba(255,255,255,0.15), inset 1px 3px 6px rgba(0,0,0,0.15), /* Inner edge highlights */
+  inset 2px -18px 5px rgba(0,0,0,0.15), inset 7px -8px 5px rgba(0,0,0,0.15), inset -3px -8px 5px rgba(0,0,0,0.15), /* Faking a light source */
+  inset 2px 17px 20px #cde, inset 2px -13px 30px #15a, /* Faking gradients */
+  0 2px 1px #fff; /* Outer drop shadows */
+}
+
+#play {
+  -o-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+
+#play:hover {
+  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+}
+
+#progressbg {
+  display: inline-block;
+  width: 300px;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #333;
+  background-color: #777;
+  box-shadow:
+  inset 0 1px 3px #333,
+  inset 0 -4px 10px #555,
+  0 1px 1px rgba(255,255,255,0.75),
+  0 -1px 5px rgba(0,0,0,0.25);
+  -o-box-shadow:
+  inset 0 1px 3px #333,
+  inset 0 -4px 10px #555,
+  0 1px 1px rgba(255,255,255,0.75),
+  0 -1px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow:
+  inset 0 1px 3px #333,
+  inset 0 -4px 10px #555,
+  0 1px 1px rgba(255,255,255,0.75),
+  0 -1px 5px rgba(0,0,0,0.25);
+  -moz-box-shadow:
+  inset 0 1px 3px #333,
+  inset 0 -4px 10px #555,
+  0 1px 1px rgba(255,255,255,0.75),
+  0 -1px 5px rgba(0,0,0,0.25);
+}
+
+#progressbar {
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: 1px solid transparent;
+  background-color: #06c;
+  box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  1px 0 1px #000;
+  -o-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  1px 0 1px #000;
+  -webkit-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  1px 0 1px #000;
+  -moz-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  1px 0 1px #000;
+}
+
+#progressbg:hover #progressbar  {
+  width: 299px;
+  background: #6af;
+  box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  0 0 5px #28f,
+  1px 0 1px #000;
+  -o-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  0 0 5px #28f,
+  1px 0 1px #000;
+  -webkit-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  0 0 5px #28f,
+  1px 0 1px #000;
+  -moz-box-shadow:
+  inset 0 -8px 1px #26a,
+  inset 0 -4px 10px #048,
+  0 0 5px #28f,
+  1px 0 1px #000;
+}
+
+</style>
+
+
+<h1>Media player UI</h1>
+<div id="player">
+  <h2>Media Player</h2>
+  <button class="control" id="previous">Prev.</button>
+  <button class="control" id="play">Play</button>
+  <button class="control" id="next">Next</button>
+  <div id="progressbg"><div id="progressbar"></div></div>
+</div>
+<p>(Go back to the <a href="http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a> article that this demo is a part of.)</p>
