@@ -2,6 +2,7 @@
 title: Understanding 3D Transforms
 authors:
 - tiffany-brown
+intro: 'In this article we’ll dig in to 3D transforms in detail, looking at the fundamental differences between 3D and 2D transforms, the 3D transforms available, and some demos that show how these work.'
 tags:
 - css
 - css3
