@@ -17,7 +17,7 @@ module Jekyll
 			if site.layouts.key? 'tags'
 				dir = '/tags'
 				site.tags.keys.each do |tag|
-					site.pages << TagIndex.new(site, site.source, File.join(dir, tag.downcase), tag)
+					site.pages << TagIndex.new(site, site.source, File.join(dir, tag.to_s.downcase), tag)
 				end
 			end
 		end
