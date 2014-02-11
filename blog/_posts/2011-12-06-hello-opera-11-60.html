@@ -1,0 +1,72 @@
+---
+title: Hello Opera 11.60!
+authors:
+- brucelawson
+tags:
+- '11.60'
+- Opera
+- blog
+layout: article
+---
+<p>Hurray for our Yuletide release of the last Opera 11 of 2011. <a href="http://www.opera.com/browser/">Opera 11.60</a> is available from today with a swathe of festive features.</p>
+
+<ul>
+<li>
+<h3>HTML5 Parser</h3>
+<p>Opera 11.60 ships with Ragnarök, our HTML5 parser, which means that all conforming browsers contruct the same DOM from the same markup, regardless of how valid or how broken that markup is. This is a huge win for end-users; in our internal testing 20% of site compatibility problems are cured by the new parser.  Bruce Lawson and Zi Bin Cheah discuss this and how it could affect you in the recent <a href="http://my.opera.com/ODIN/blog/2011/11/04/opera-tech-break-html5-with-bruce-and-zi-bin">Opera Tech Break video</a>. </p>
+</li>
+<li>
+<h3>Custom Protocol and Content Handlers</h3>
+<p>We introduce support for HTML5 custom protocol and content handlers, which means you can now tell Opera to open a specific web address when it encounters a specified protocol (eg, <code>mailto</code> or <code>tel</code>) or content type (eg, a particular MIME type). So, in the same way that you can tell your operating system which programs should open files with particular file extensions, you can tell your browser to open specific Web Apps at specific addresses when it encounters certain content.</p><p>Mike Taylor writes in depth on <a href="http://dev.opera.com/articles/view/html5-custom-protocol-and-content-handlers/">what is possible with HTML5 protocol and content handlers</a>.</p>
+</li>
+<li>
+<h3>Full ES5.1 Support</h3>
+<p>Opera 11.60 has full support for the ECMAScript 5.1 specification in addition to a native implementation of ECMAScript typed arrays. Mike Taylor has the lowdown on the <a href="http://my.opera.com/ODIN/blog/2011/09/13/ecmascript-5-for-opera">details of ECMAScript 5.1 support</a>, and has also written a rather useful <a href="http://dev.opera.com/articles/view/introducing-ecmascript-5-1/">Introducing ECMAScript 5.1</a> article for dev.opera.com.</p>
+</li>
+<li>
+<h3>Better support for HTML5 Video</h3>
+<p>HTML5 Video attributes <code>muted</code>, <code>preload</code> and properties <code>buffered</code> and <code>seekable</code> are now supported. </p>
+</li>
+<li>
+<h3>Microdata</h3>
+<p>The <a href="http://dev.opera.com/articles/view/microdata-and-the-microdata-dom-api/">Microdata DOM API</a> is fully supported in Opera 11.60. With this, you can query microdata specified using microdata attributes like <code>itemprop</code>, <code>itemscope</code> via a JavaScript interface.</p>
+</li>
+<li>
+<h3>Image Resampling in CSS</h3>
+<p>Support for CSS4 <code>image-rendering</code> is now available. This property hints to the browser what scaling algorithm to use for background images, canvas elements, or border images. This can speed up some canvas games if a faster scaling algorithm were used. <a href="http://jsfiddle.net/zda24/">Here is an example of image scaling in action</a>.</p>
+</li>
+<li>
+<h3>DOM Event Constructors</h3>
+<p>We also introduce support for DOM Event constructors that are part of the <a href="http://www.w3.org/TR/domcore/" rel="nofollow" target="_blank">DOM Core specification</a>. This brings you a cleaner interface to create synthetic and custom DOM events. Tiffany Brown has more details for you on <a href="http://my.opera.com/ODIN/blog/2011/11/08/dom-event-constructors-in-opera-11-60">how to use DOM Event constructors</a>.</p>
+</li>
+<li>
+<h3>Radial Gradients</h3>
+<p>With radial gradients, you can now enjoy all sorts of gradient deliciousness on your browser. Chris Mills has written more in depth on <a href="http://dev.opera.com/articles/view/css3-radial-gradients/">how to use CSS3 Radial Gradients</a> over at Dev.Opera.</p>
+</li>
+<li>
+<h3>Support for <code>rem</code> unit &amp; <code>box-shadow</code> fix</h3>
+<p>Opera 11.60 supports the <code>rem</code> unit and also render inset box shadows on input text elements (<a href="http://jsfiddle.net/Ap7sM/">here is an example</a>).</p>
+</li>
+<li>
+<h3>Speculative parsing</h3>
+<p>Some pages can seem to take a while to load because everything is put on hold until any scripts have executed. With speculative parsing, the browser can load external resources such as CSS files and images while JavaScript is  executed. Rendering is still done by the main parser but downloading is done separately so pages with many resources get a noticeable speed boost.</p>
+</li>
+
+<li>
+<h3>Onerror handlers</h3>
+<p>You can use <code>script.onerror</code> and <a href="https://developer.mozilla.org/en/DOM/window.onerror"><code>window.onerror</code></a> to program what actions should occur when either a script fails to load or when an error is thrown.</p>
+</li>
+
+
+<li>
+<h3>No more &quot;XML parsing failed&quot; errors</h3>
+<p>There are lots of websites peppering the internet that mysteriously only seem to serve broken XML to Opera (due to broken server-side detection on various servers). Opera 11.60 ceases to show the user XML parsing errors, and instead  attempts to reparse the document as HTML if the document has the MIME type <code>application/xhtml+xml</code>. Andreas Bovens writes more on this <a href="http://my.opera.com/ODIN/blog/2011/09/28/no-more-xml-parsing-failed-errors" rel="nofollow">automatic parsing of incorrect XHML document as HTML</a>. If you want to turn this off, you can do so in the Preferences Editor (opera:config) under:</p>
+<pre><code>opera:config#UserPrefs|AutomaticallyreparseXHTMLwithparsingerrorsasHTML</code></pre>
+</li>
+
+
+
+</ul>
+<p>If you prefer your <a href="http://www.youtube.com/watch?v=4TlPU0QWv6g">changelogs sung as a Christmas Carol</a>, I salute your fine taste.</p>
+<p>It&#39;s not all boring under-the-hood standards stuff, either (but you&#39;re welcome to read the <a href="http://www.opera.com/docs/changelogs/windows/">changelogs</a> if that&#39;s your thing). There are several pretty ornaments dangling from the Yule tree, too. <a href="http://my.opera.com/desktopteam/blog/2011/11/07/mail-goes-two-lined-and-grouped" target="_blank">Mail has put on a lovely dress</a> and gone to the ball in a pumpkin coach. And, making a triumphant return from way-back-when, we welcome back the bookmark star in the address bar, allowing you to easily bookmark a site or add it to the speed-dial.</p>
+<p>We hope you&#39;ll enjoy using Opera 11.60! Of course, we&#39;re already hard at work with the next version, version 12, to be released in 2012. Grab <a href="http://www.opera.com/browser/next/" target="_blank">Opera Next</a> to play with the cutting-edge features of Opera and <a href="http://my.opera.com/dragonfly/blog/whats-new-in-opera-dragonfly-with-opera-next" target="_blank">Opera Dragonfly</a>. Here&#39;s to a happy 2012!</p>

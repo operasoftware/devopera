@@ -1,0 +1,92 @@
+---
+title: Hello Opera 12!
+authors:
+- brucelawson
+tags:
+- Opera
+- blog
+layout: article
+---
+<p>Twelve is a fascinating number, full of symbolism: there are twelve months in a year, twelve signs of the zodiac,  twelve labours of Hercules, twelve cranial nerves in humans and — as every schoolchild knows — the number 12 has a perfect number of divisors, and the sum of its divisors is also a perfect number. 12 is therefore one of the two known mathematical <a href="http://en.wikipedia.org/wiki/Sublime_number">sublime numbers</a>. Talking of sublime — <a href="http://www.opera.com/browser/">hello Opera 12</a>!</p>
+
+<h3>Shiny demos!</h3>
+
+<p>In order to celebrate Opera 12 being released into the wild, we&#39;ve made a website full of <a href="http://www.shinydemos.com/">shiny demos</a> for you to play with. Tatami mats? Got &apos;em. A Hixie Keyboard, madam? Step right up! A 1980s style SVG based inbox attack LED game? Why, of course, sir! A hipster dog riding a penny-farthing and bumping into giant shoes? Like, totally, dude!</p>
+
+<p>Naturally, no browser is blocked, so come one and all, with desktop, tablets or mobile and, if your browser supports all the features, <a href="http://www.shinydemos.com/">see the shiny</a>!</p>
+
+<h3>Hardware acceleration and WebGL support</h3>
+
+<p>We&#39;re aiming to make Opera <strong>entirely hardware accelerated</strong>, from the UI to all page rendering and painting (with support for OpenGL as well as DirectX backends), but for now, both HWA and WebGL are turned off by default. You can enable them by setting <a href="opera:config#UserPrefs|EnableWebGL"><code>opera:config#UserPrefs|EnableWebGL</code></a> and <a href="opera:config#UserPrefs|EnableHardwareAcceleration"><code>opera:config#UserPrefs|EnableHardwareAcceleration</code></a> to 1, then saving and <strong>restarting</strong> the browser.</p>
+
+<p>If you&apos;re interested in trying out a WebGL demo, check out <a href="http://operasoftware.github.com/Emberwind/">Emberwind</a>; if you want to start coding WebGL, have a look at <a href="http://dev.opera.com/articles/tags/webgl">our WebGL articles</a>.</p>
+
+<h3>CSS3 Animations and more animatable properties</h3>
+
+<p>Opera 12 supports <a href="http://dev.opera.com/articles/view/css3-animations/">CSS3 keyframe animations</a>. For the moment, they&apos;re prefixed. The <a href="http://lists.w3.org/Archives/Public/www-style/2012Jun/0105.html">CSS Working Group recently resolved</a> that animations, transitions and transforms may be released unprefixed. We completely agree with this resolution. However, this decision was made too close to the release for us to change the code without risking bugs/ regressions. We&apos;ll very soon remove prefixes for animations, transforms and transitions.</p>
+
+<p>For now, please use -o- prefixes on the relevant CSS properties: <code>-o-animation</code> , <code>-o-animation-delay</code>, <code>-o-animation-direction</code>, <code>-o-animation-duration</code>, <code>-o-animation-fill-mode</code>, 
+<code>-o-animation-iteration-count</code>, <code>-o-animation-name</code>, <code>-o-animation-play-state</code> and
+<code>-o-animation-timing-function</code>. Also note that you also need to prefix the CSS  <code>@keyframes</code> directive, too: <code>@-o-keyframes</code>.</p>
+
+<p>We&#39;ve also expanded our support for animatable properties (animatable using CSS3 transitions as well as CSS3 animations.)</p>
+
+<p>Learn more:</p>
+<ul>
+	<li><a href="http://dev.opera.com/articles/view/css3-animations/">Making a move with CSS3 animations</a></li>
+	<li><a href="http://dev.opera.com/articles/view/css3-transitions-and-2D-transforms/">CSS3 transitions and 2D transforms</a></li>
+	<li><a href="http://dev.opera.com/articles/view/understanding-the-css-transforms-matrix/">Understanding the CSS Transforms Matrix</a></li>
+	<li><a href="http://my.opera.com/ODIN/blog/2012/06/05/animatable-css-properties-in-opera-12">Animatable CSS properties in Opera 12</a></li>
+</ul>
+
+<h3>Generated Content for Paged Media</h3>
+
+<p>The <a href="http://www.w3.org/TR/css3-gcpm/">CSS Generated Content for Paged Media Module</a> is a spec spearheaded by our CTO H&#xE5;kon Wium Lie, and it allows you to create a page-like browsing experience on web pages by adding a few lines of CSS to your content. Opera 12 partially implements the spec, which you can try out using <a href="http://people.opera.com/howcome/2012/reader/">H&#xE5;kon&apos;s examples</a>. </p>
+
+<p>Tip: On touch screen devices, try swiping the pages left and right. On non-touch screens use your mouse&#39;s horizontal scrolling mechanism to move to the next page, or try PageUp/Down.</p>
+
+<h3>Camera support with <code>getUserMedia</code></h3>
+
+<p>Opera Mobile 12, and now Opera 12 desktop, implement camera access with the <code>getUserMedia</code> specification.
+ If you want to get started with building stuff, check out our <a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/"><code>getUserMedia</code> article</a>. For demo fun, check out our <a href="http://shinydemos.com/">Shiny demos</a>.</p>
+
+<h3>CORS</h3>
+
+<p>Opera 12 supports cross-origin resource sharing, also known as CORS. If you want to learn how to use this in your site, check out our Dev.Opera article about it: <a href="http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">DOM access control using cross-origin resource sharing</a>.
+
+<h3>Drag and Drop</h3>
+
+<p>HTML5 includes the Drag and Drop API, which gives us the ability to natively drag, drop, and transfer data to HTML elements, and now this is supported in Opera 12 as well. Read how to use <a href="http://dev.opera.com/articles/view/drag-and-drop/">HTML5 Drag and Drop</a>.</p>
+
+<h3>XMLHttpRequestUpload interface</h3>
+
+<p>Opera 12 implements progress events in <code>XMLHttpRequest</code>, for <code>upload</code>, <code>download</code>, and <code>timeout</code> updates: 
+      <ul>
+        <li><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#the-upload-attribute">The <code>upload</code> attribute</a></li>
+        <li><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#event-xhr-loadstart">The <code>loadstart</code> event</a> (and other <a href="http://dev.w3.org/2006/webapi/progress/#interface-progressevent">progress events</a>)</li>
+        <li><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#the-timeout-attribute">The <code>timeout</code> attribute</a></li>
+      </ul>
+
+ <p>We also have Blob/<code>FormData</code> support for the same.</p>
+
+<h3>Updated Windows &amp; Tabs extension API</h3>
+
+<p>Opera 12 updates the Windows &amp; Tabs API, for which we have published <a href="http://dev.opera.com/articles/view/extensions-api-windows-tabs/">updated documentation</a>. Be sure to read through it if your existing Opera extension relies on it, and feel free to ask questions in the comment section on the API pages.</p>
+
+<h3>Discontinuation of Unite and Widgets</h3>
+
+<p>Previously, we <a href="http://my.opera.com/ODIN/blog/2012/04/24/end-unite-apps-and-widgets">announced that we&apos;re discontinuing Unite and Widgets</a> in Opera 12, but at the same time are going full steam ahead with our <a href="https://addons.opera.com/">extensions platform</a>. For those who want to convert their existing widgets to extensions, we&apos;ve produced an <a href="http://dev.opera.com/articles/view/converting-widgets-to-opera-extensions/">article to help you with the conversion process</a>.</p>
+
+<h3>Themes</h3>
+
+<p>If you want to spice up your browsing experience, with, let&apos;s say, a cookie monster-themed browser UI, be sure to check out our <a href="https://addons.opera.com/en/themes/">new themes catalog</a>. Making themes is super easy, and the nitty-gritty details of Opera 12&apos;s new theming infrastructure are explained in our <a href="http://dev.opera.com/articles/view/operas-lightweight-themes/">Opera&#39;s lightweight themes</a> article.</p>
+
+<h3>Monitor Opera&apos;s CPU use</h3>
+
+<p>Got a tab that&apos;s hogging CPU cycles? Is your machine&#39;s fan whirring so hard that it&apos;s hovering a centimeter above your desk? Identify the culprit with <a href="opera:cpu"><code>opera:cpu</code></a>.
+
+<h3>Enjoy!</h3>
+
+<p>We&apos;re confident your browsing experience will be better than ever with Opera 12. Our <a href="http://www.opera.com/docs/specs/productspecs/">product specs overview page</a> gives an overview of what is supported where in all recent Opera products.</p>
+
+<p>The only other known <a href="http://en.wikipedia.org/wiki/Sublime_number">sublime number</a> is 6086555670238378989670371734243169622657830773351885970528324860512791691264 which, by an amazing co-incidence, is the number of empty coffee cups piled up outside our Core Programming Department&apos;s door. Makes you think, doesn&apos;t it?</p></p></p></p>
