@@ -3,11 +3,11 @@ title: 'UK university tour: Web Standards for the Future'
 authors:
 - brucelawson
 tags:
-- CSS 3
-- SVG
+- css3
+- svg
 - mobile
-- HTML 5
-- Standards
+- html5
+- standards
 - blog
 layout: article
 ---

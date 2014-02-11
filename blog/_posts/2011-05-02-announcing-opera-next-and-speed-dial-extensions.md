@@ -4,7 +4,7 @@ authors:
 - andreasbovens
 tags:
 - opera next
-- speed dial
+- speed-dial
 - extensions
 - opera 11.50
 - blog

@@ -3,7 +3,13 @@ title: Mobile application smackdown - openMIC Bath
 authors:
 - patrickhlauke
 tags:
-- 'html5 css3 mediaqueries svg widgets standards w3c '
+- html5
+- css3
+- mediaqueries
+- svg
+- widgets
+- standards
+- w3c
 - blog
 layout: article
 ---
@@ -36,9 +42,9 @@ Overall, this was a great day. I&#39;m particularly happy with the good discussi
 <p><a href="http://www.danielvaughan.com">Daniel Vaughan</a> asked a question about using Google Web Toolkit to make Widgets. I didn&#39;t know the answer, and he was kind enough to research the answer himself and allow me to post it here.</p>
 <blockquote>
 <p>GWT lets you write Java code and then compiles it to cross-platform optimised JavaScript. Inspired by your talk last week and an employer who has mobile applications high on the agenda I have spent some time investigating how far I can go by creating GWT JavaScript and packaging it up as a widget. I first tried packaging my code as a Nokia WRT widget as I have a Nokia phone but I have also tried packaging as an Opera Widget and both work without problems.</p>
- 
+
 <p>GWT is designed to be deployed to a Java web container such as Tomcat and supports the JavaScript communicating with back end Java services through an RPC mechanism. We are a financial services company with a lot of existing Java at the backend so this is important. As the GWT JavaScript can perform RPC calls to the Java services on the same server this is obviously a problem on mobile as there is no Java web container to run the services in and no way to connect to services on other machines through RPC from JavaScript. However I then looked at calling the services on a remote via
 JSON running into cross site scripting errors but when I changed to using JSONP it worked well and I could get at my backend data.</p>
- 
+
 <p>I am now working on a more comprehensive proof of concept which uses some real backend services and addresses a realistic business problem but I just wanted to let you know that in my experience GWT + Mobile Widgets look promising.</p>
 </blockquote>

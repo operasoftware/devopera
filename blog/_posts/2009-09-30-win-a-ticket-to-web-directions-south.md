@@ -3,12 +3,11 @@ title: Win a ticket to Web Directions South!
 authors:
 - chrismills
 tags:
-- Opera 10
+- opera 10
 - free ticket
 - showcase
 - web standards
 - wds09
-- '2009'
 - web directions south
 - competition
 - blog

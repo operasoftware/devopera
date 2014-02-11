@@ -3,9 +3,9 @@ title: -o- vendor prefixed CSS supported in Opera 10.50 and 10.60
 authors:
 - brucelawson
 tags:
-- CSS
-- CSS 3
-- vendor prefix
+- css
+- css3
+- vendor-prefixes
 - blog
 layout: article
 ---

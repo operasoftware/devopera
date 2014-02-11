@@ -3,13 +3,12 @@ title: Educating the web standards kids - scrunchup and more
 authors:
 - chrismills
 tags:
-- Opera
+- opera
 - scrunchup
 - australia
 - education
 - owea
 - web standards
-- open web education alliance
 - blog
 layout: article
 ---

@@ -3,13 +3,12 @@ title: Singing an Opera at SXSWi 2012
 authors:
 - chrismills
 tags:
-- SXSWi
+- sxswi
 - presentations
 - sxsw
 - panels
 - talks
-- '2012'
-- Opera
+- opera
 - gossip
 - schwag
 - blog

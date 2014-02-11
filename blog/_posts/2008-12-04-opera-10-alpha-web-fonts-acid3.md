@@ -3,12 +3,12 @@ title: 'Opera 10 alpha: Web Fonts, Acid 3 and more'
 authors:
 - brucelawson
 tags:
-- Opera 10
-- CSS 3
-- Web Fonts
-- SVG
-- Dragonfly
-- selectors API
+- opera 10
+- css3
+- web fonts
+- svg
+- dragonfly
+- selectors api
 - blog
 layout: article
 ---

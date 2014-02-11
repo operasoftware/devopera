@@ -3,7 +3,10 @@ title: ARIA highlighting extension
 authors:
 - brucelawson
 tags:
-- Extensions ARIA debugging accessibility
+- extensions
+- aria
+- debugging
+- accessibility
 - blog
 layout: article
 ---

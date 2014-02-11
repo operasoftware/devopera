@@ -3,8 +3,8 @@ title: Implementing HTML5 <details>
 authors:
 - brucelawson
 tags:
-- accessiiblity
-- HTML5
+- accessibility
+- html5
 - internationalisation
 - blog
 layout: article
@@ -16,14 +16,14 @@ layout: article
 <p>Our main aims in implementing <code>&lt;details&gt;</code> are:</p>
 
 <ul>
-<li>The disclosure triangle must be styleable by authors using CSS without complex hacks, either to 
-replace with their own icon, remove it entirely, or  adjust 
+<li>The disclosure triangle must be styleable by authors using CSS without complex hacks, either to
+replace with their own icon, remove it entirely, or  adjust
 other common styles. Ditto with <code>&lt;summary&gt;</code>: we cannot require, nor expect, authors to use XBL to restyle these elements.</li>
 <li>Styles we use internally in the <a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">shadow tree</a> shouldn&#39;t do weird things to author styles or surrounding content. Generally, the way that authors style the element and users interact with it should be simple and not contain any nasty surprises.</li>
-<li>Accessibility:  The summary element must be focussable by default and keyboard 
+<li>Accessibility:  The summary element must be focussable by default and keyboard
 activation must be possible.</li>
-<li>Internationalisation: The disclosure triangle and any applicable margins and padding must 
-render on the opposite side and point the opposite direction for RTL 
+<li>Internationalisation: The disclosure triangle and any applicable margins and padding must
+render on the opposite side and point the opposite direction for RTL
 languages.</li>
 <li>We should reuse as much existing CSS styles as possible to achieve the effects, avoiding unnecessary creation of special properties or values without a good reason.</li>
 </ul>

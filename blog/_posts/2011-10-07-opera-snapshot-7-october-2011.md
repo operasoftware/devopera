@@ -4,11 +4,11 @@ authors:
 - chrismills
 tags:
 - linear gradients
-- Ragnarök
-- Opera
+- ragnarök
+- opera
 - snapshot
 - css3
-- html5 parser
+- html5-parser
 - blog
 layout: article
 ---

@@ -9,7 +9,7 @@ tags:
 - css3
 - HTML5
 - mobile
-- media queries
+- media-queries
 - blog
 layout: article
 ---

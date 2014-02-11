@@ -3,8 +3,7 @@ title: Search Engine Optimisation tool for Opera
 authors:
 - brucelawson
 tags:
-- search engine optimisation
-- SEO
+- seo
 - blog
 layout: article
 ---

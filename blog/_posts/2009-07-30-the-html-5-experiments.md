@@ -3,7 +3,11 @@ title: The HTML 5 experiments
 authors:
 - brucelawson
 tags:
-- html5 video accessibility canvas aria
+- html5
+- video
+- accessibility
+- canvas
+- aria
 - blog
 layout: article
 ---

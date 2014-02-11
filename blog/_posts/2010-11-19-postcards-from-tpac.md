@@ -3,13 +3,13 @@ title: Postcards from TPAC
 authors:
 - brucelawson
 tags:
-- CSS
-- CSS 3
-- HTML5
-- SVG
-- Web Applications
-- W3C
-- Standards
+- css
+- css3
+- html5
+- svg
+- web applications
+- w3c
+- standards
 - blog
 layout: article
 ---
@@ -83,12 +83,12 @@ The current Geolocation API specification is currently in <a href="http://en.wik
 <h4>Layout modules</h4>
 <p>One area that is emerging is template/grid/flexbox layout. Ale
   Mogilevsky from Microsoft presented his &quot;<a href="http://www.interoperabilitybridges.com/css3-grid-align/ ">CSS Grid Alignment Level 3</a> proposal.
-  
-  
-  
+
+
+
   The functionality offered is similar to the <a href="http://www.w3.org/TR/css3-layout/">Template Layout Module</a>.</p>
 <p>I suggested that the working group work out some use cases to compare
-  the various proposals. Flexboxes (<a href="http://dev.w3.org/csswg/css3-flexbox/">http://dev.w3.org/csswg/css3-flexbox/</a> and <a href="http://www.w3.org/TR/css3-flexbox/">http://www.w3.org/TR/css3-flexbox/</a>) 
+  the various proposals. Flexboxes (<a href="http://dev.w3.org/csswg/css3-flexbox/">http://dev.w3.org/csswg/css3-flexbox/</a> and <a href="http://www.w3.org/TR/css3-flexbox/">http://www.w3.org/TR/css3-flexbox/</a>)
   are also relevant for this; ideally
   the more advanced layout models should build on terminology from
   flexboxes.</p>

@@ -5,13 +5,13 @@ authors:
 tags:
 - formats
 - apps
-- HTML5
+- html5
 - multimedia
-- Standards
+- standards
 - accessibility
-- CSS 3
+- css3
 - widgets
-- W3C
+- w3c
 - open web
 - blog
 layout: article
@@ -77,7 +77,7 @@ layout: article
 
 <h4>CSS Media Queries and Viewport for adaptive content</h4>
 <ul>
-<li>Demo: 
+<li>Demo:
 <a rel="nofollow" href="http://people.opera.com/danield/css3/vangogh/">Media Queries: CSS that responds to the screen width</a>
 </li>
 <li>Demo: <a rel="nofollow" href="http://people.opera.com/brucel/demo/background-size.html">CSS background-size </a>

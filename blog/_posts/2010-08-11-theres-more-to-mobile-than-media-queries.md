@@ -6,7 +6,7 @@ tags:
 - css3
 - One Web
 - mobile
-- media queries
+- media-queries
 - blog
 layout: article
 ---

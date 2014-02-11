@@ -3,11 +3,11 @@ title: New Web Standards support in Opera 11.10 beta
 authors:
 - zibin
 tags:
-- multicolumn
+- multi-column
 - gradient
-- WOFF
+- woff
 - webp
-- '11.10'
+- 11.10
 - blog
 layout: article
 ---
@@ -40,7 +40,7 @@ This is a season of plenty. Recently, we already announced an <a href="http://la
 <h4>Speed Dial enhancements</h4>
 
 <p>
-The HTML5 specification says that the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#rel-icon"><code>rel</code> attribute now accepts the <code>icon</code> value</a>, which you can take advantage of for providing custom Speed Dial icons for your pages. You can also further style the icons using the <code>view-mode:minimized</code> media feature in your CSS, the X-Purpose HTTP header, and autoreloading. Read about all of these in more detail in Tiffany&#39;s <a href="http://dev.opera.com/articles/view/opera-speed-dial-enhancements/">Make your site shine in Speed Dial</a> article. 
+The HTML5 specification says that the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#rel-icon"><code>rel</code> attribute now accepts the <code>icon</code> value</a>, which you can take advantage of for providing custom Speed Dial icons for your pages. You can also further style the icons using the <code>view-mode:minimized</code> media feature in your CSS, the X-Purpose HTTP header, and autoreloading. Read about all of these in more detail in Tiffany&#39;s <a href="http://dev.opera.com/articles/view/opera-speed-dial-enhancements/">Make your site shine in Speed Dial</a> article.
 </p>
 
 <h4>Improvements to Opera Extensions</h4>

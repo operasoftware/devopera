@@ -5,8 +5,8 @@ authors:
 tags:
 - presentation
 - accessibility
-- Standards
-- HTML 5
+- standards
+- html5
 - blog
 layout: article
 ---
@@ -16,6 +16,6 @@ layout: article
 
 <p>You can download a copy of my slides <a href="http://files.myopera.com/iheni/blog/opera-us-tour-Henny.zip">Accessibility, standards and HTML 5 (19.1 MB)</a> and view them in Opera show. There are plenty of links and references in the slides that should expand on what&#39;s there including pointers to the <a href="http://www.opera.com/wsc">Opera Web Standards Curriculum</a>.</p>
 
-To see some of the demo&#39;s you will need to <a href="http://labs.opera.com/news/2008/07/18/">download an experimental build of Opera</a> from Opera Labs. This, together with some background and explanation, allows you to test out some of the cool new technologies that browsers are looking to start supporting. 
+To see some of the demo&#39;s you will need to <a href="http://labs.opera.com/news/2008/07/18/">download an experimental build of Opera</a> from Opera Labs. This, together with some background and explanation, allows you to test out some of the cool new technologies that browsers are looking to start supporting.
 
 <p>If you have questions regarding anything that&#39;s covered in the talk then go ahead and leave a comment; I&#39;d love to hear from you.</p>

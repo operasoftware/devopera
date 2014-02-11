@@ -3,7 +3,10 @@ title: HTML5 <video> Artikel und Wettbewerb auf Chip.de
 authors:
 - patrickhlauke
 tags:
-- html5 video competition wettbewerb
+- html5
+- video
+- competition
+- wettbewerb
 - blog
 layout: article
 ---

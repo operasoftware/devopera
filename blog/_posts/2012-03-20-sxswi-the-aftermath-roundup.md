@@ -3,12 +3,11 @@ title: 'SXSWi: the aftermath roundup'
 authors:
 - chrismills
 tags:
-- SXSWi
+- sxswi
 - css3
 - talks
-- HTML5
-- '2012'
-- Opera
+- html5
+- opera
 - podcast
 - games
 - slides

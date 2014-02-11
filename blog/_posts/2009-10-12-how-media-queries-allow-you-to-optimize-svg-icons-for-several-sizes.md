@@ -3,11 +3,11 @@ title: How media queries allow you to optimize SVG icons for several sizes
 authors:
 - andreasbovens
 tags:
-- Opera
+- opera
 - svg open
 - video
-- SVG
-- media queries
+- svg
+- media-queries
 - blog
 layout: article
 ---

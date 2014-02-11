@@ -10,7 +10,6 @@ tags:
 - teaching
 - kids
 - web standards
-- open web education alliance
 - curriculum
 - blog
 layout: article

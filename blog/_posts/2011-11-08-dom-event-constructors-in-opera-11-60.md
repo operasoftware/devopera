@@ -3,8 +3,10 @@ title: DOM Event constructors in Opera 11.60
 authors:
 - webinista
 tags:
-- EventTarget
-- Event constructors DOMCore
+- eventtarget
+- event
+- constructors
+- domcore
 - dom
 - web standards
 - blog

@@ -3,9 +3,8 @@ title: Opera Indonesian tour
 authors:
 - brucelawson
 tags:
-- South East Asia
-- Indonesian
-- Indonesia
+- south east asia
+- indonesia
 - blog
 layout: article
 ---

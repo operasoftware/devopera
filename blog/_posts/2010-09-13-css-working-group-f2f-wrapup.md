@@ -3,10 +3,9 @@ title: 'CSS Working Group F2F: WrapUp'
 authors:
 - mollydotcom
 tags:
-- CSS
-- Opera
-- css2.1
-- W3C
+- css
+- opera
+- w3c
 - css3
 - blog
 layout: article

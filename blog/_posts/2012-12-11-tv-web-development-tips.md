@@ -7,7 +7,7 @@ tags:
 - emulator
 - web
 - tv
-- media queries
+- media-queries
 - blog
 layout: article
 ---

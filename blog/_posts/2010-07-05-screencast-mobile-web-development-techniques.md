@@ -6,7 +6,7 @@ tags:
 - viewport
 - mobile
 - screencast
-- media queries
+- media-queries
 - blog
 layout: article
 ---

@@ -4,16 +4,16 @@ authors:
 - chrismills
 tags:
 - gradients
-- multi-col
+- multi-column
 - opera 11.10
-- WOFF
+- woff
 - webp
 - linux
 - desktop
 - final
 - pc
 - mac
-- speed dial
+- speed-dial
 - extensions
 - blog
 layout: article

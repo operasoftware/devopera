@@ -4,9 +4,9 @@ authors:
 - tagawa
 tags:
 - reference
-- RWD
+- rwd
 - responsive
-- media queries
+- media-queries
 - blog
 layout: article
 ---

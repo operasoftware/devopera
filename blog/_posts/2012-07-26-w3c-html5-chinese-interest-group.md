@@ -5,9 +5,9 @@ authors:
 tags:
 - zh
 - chinese
-- China
-- W3C
-- HTML5
+- china
+- w3c
+- html5
 - cjk
 - blog
 layout: article
@@ -29,7 +29,7 @@ I&#39;d like to break down some of the things we have done in the Chinese IG.
 Translation
 </h3>
 <p>
-We have <a href="http://www.w3.org/html/ig/zh/wiki/翻译">translated these specifications drafts</a>: Media Queries, Web Storage, Vibration API, DeviceOrientation, cssom-view, HTML5 differences from HTML4, DOM4 (90% completion), File API(80％ completion).  
+We have <a href="http://www.w3.org/html/ig/zh/wiki/翻译">translated these specifications drafts</a>: Media Queries, Web Storage, Vibration API, DeviceOrientation, cssom-view, HTML5 differences from HTML4, DOM4 (90% completion), File API(80％ completion).
 </p>
 <p>
 A special shoutout goes to the translators especially Kennyluck, Otakustay, Winter, pingooo, Jinks Zhao, Xiao GuangNiu(牛晓光), Dong Xun Jin(金东勋) and Zhong Jian(中剑).

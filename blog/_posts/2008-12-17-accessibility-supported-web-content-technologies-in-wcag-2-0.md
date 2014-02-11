@@ -3,7 +3,8 @@ title: Accessibility supported web content technologies in WCAG 2.0
 authors:
 - iheni
 tags:
-- WCAG. WAI ARIA
+- wcag
+- wai-aria
 - accessibility
 - blog
 layout: article

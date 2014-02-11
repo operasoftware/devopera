@@ -6,7 +6,7 @@ tags:
 - opera sdk
 - opera tv emulator
 - emulator
-- tv emulator
+- tv-emulator
 - tv
 - SDK
 - blog

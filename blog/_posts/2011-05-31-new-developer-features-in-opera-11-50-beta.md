@@ -5,7 +5,7 @@ authors:
 tags:
 - dataset
 - opera 11.50 beta
-- speed dial extensions
+- speed-dial
 - classlist
 - time
 - video
