@@ -1,4 +1,4 @@
-var redirectMap = require('./url-redirects.json');
+var redirectMap = require('../_data/url-redirects.json');
 var template = require('lodash-template');
 
 var compiled = template('RewriteRule ^articles/view/<%= oldSlug %>/?$ articles/<%= newSlug %> [R=301,L]');
