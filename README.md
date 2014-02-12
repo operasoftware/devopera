@@ -26,3 +26,4 @@ There are two modes of development available:
 - All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.
 - You may require write access for all commands mentioned above. Type `sudo`, space and command if needed.
 - To launch Jekyll server open _another_ console instance or tab and run `jekyll serve`.
+- If you have error running `grunt watch` try increase file number limit by `ulimit -n 10000` command
