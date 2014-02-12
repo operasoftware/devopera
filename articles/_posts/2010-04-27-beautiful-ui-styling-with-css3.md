@@ -585,6 +585,7 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 	<img src="/articles/beautiful-ui-styling-with-css3/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example">
 	<figcaption>Figure 3: A Windows desktop-style UI</figcaption>
 </figure>
+
 [View the Windows desktop example][28] running live.
 
 [28]: /articles/beautiful-ui-styling-with-css3/win7.html
