@@ -14,7 +14,7 @@ tags:
 - blog
 layout: article
 ---
-<p style="float: right; margin: 0 0 0.5em 1em"><a href="http://rollercoaster.io/"><img src="http://files.myopera.com/andreasbovens/blog/rollercoaster-250.jpg" alt="Rollercoaster screenshot" /></a></p>
+<p style="float: right; margin: 0 0 0.5em 1em"><a href="http://rollercoaster.io/"><img src="/blog/introducing-rollercoaster-io/rollercoaster-250.jpg" alt="Rollercoaster screenshot" /></a></p>
 
 <p><a href="http://coastbyopera.com/">Coast by Opera</a> has been out for 2 weeks now. During that time, we&#39;ve been browsing a lot on our iPads and we&#39;ve noticed that there are still relatively few sites that are really optimized for tablet browsing: Coast by Opera gives you a good experience on non-optimized sites as well, but still, things can always be better. So, we started working on a <strong>simple site that highlights pretty, tablet-optimized sites and best design practices</strong>: the result is <a href="http://rollercoaster.io/">Rollercoaster.io</a>.</p>
 

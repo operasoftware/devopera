@@ -12,7 +12,7 @@ intro: "Yes, that's right: 14. We think that the engine switch from Presto to We
 layout: post
 ---
 
-![](screenshot-o14-2.png)
+![](/blog/opera-14-beta-for-android-is-out/screenshot-o14-2.png)
 
 Yes, that's right: **14**. We think that the [engine switch from Presto to WebKit][1] that we announced a few weeks ago is such a big step that we decided to skip the 13 number altogether, and go straight to 14! But there's more than just the engine to talk about: you'll also notice a **total overhaul of the UI** in native code, making it fit well with the latest Android design guidelines. Go get the beta [from Google Play][2] or point your browser to [m.opera.com][3], and give it a spin!
 
