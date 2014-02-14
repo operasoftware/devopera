@@ -9,7 +9,6 @@ tags:
 - bratislava
 - tour
 - vienna
-- blog
 layout: article
 ---
 <p>

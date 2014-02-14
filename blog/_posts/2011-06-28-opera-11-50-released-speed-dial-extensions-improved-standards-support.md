@@ -3,12 +3,11 @@ title: 'Opera 11.50 released: Speed Dial extensions, improved standards support,
 authors:
 - andreas-bovens
 tags:
-- Opera
+- opera
 - swordfish
 - speed-dial
 - extensions
-- Standards
-- blog
+- standards
 layout: article
 ---
 <span class='imgright'><img alt='' src='http://files.myopera.com/andreasbovens/blog/300px-Xiphias_gladius2.jpg' /></span>

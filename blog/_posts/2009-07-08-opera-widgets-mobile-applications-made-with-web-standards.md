@@ -5,7 +5,6 @@ authors:
 tags:
 - widgets
 - mobile
-- blog
 layout: article
 ---
 <p>Another standard that Opera is involved with is the <a href="http://www.w3.org/TR/widgets/" target="_blank">Widgets specification</a>. Widgets are standalone applications that are made with <abbr>HTML</abbr>, <abbr>CSS</abbr> and JavaScript. They are zipped up with an <abbr>XML</abbr> configuration file  that describes their size on the screen, or whether they&#39;re full screen, whether they can connect to the Internet etc. The zipped file is renamed .wgt and then they can be sent to a mobile phone (or Archos tablet, Nintendo Wii, Web TV, or anything else). The device&#39;s Widget Manager then unzips them and installs them automatically.</p>

@@ -3,12 +3,11 @@ title: Google browser sniffing and the Open Web
 authors:
 - david-storey
 tags:
-- bad practices
-- browser sniffing
-- Opera
-- Google
-- Chrome
-- blog
+- bad-practices
+- browser-sniffing
+- opera
+- google
+- chrome
 layout: article
 ---
 <p>As well as being a valuable partner to Opera, with the release of Google Chrome, Google has also become a competitor.  We welcome that as more competitors means more innovation, and less likelihood that the Web will be dominated by one single vendor.</p>

@@ -3,7 +3,7 @@ title: Opera Widgets Go Mobile
 authors:
 - andreas-bovens
 tags:
-- opera-widgets
+- widgets
 - opera-mobile
 - labs
 layout: article

@@ -4,9 +4,8 @@ authors:
 - andreas-bovens
 tags:
 - beta
-- Opera Mini
+- opera-mini
 - android
-- blog
 layout: article
 ---
 <span class='imgright'><img alt='' src='http://files.myopera.com/andreasbovens/blog/OperaMini5-android-pr.jpg' /></span>

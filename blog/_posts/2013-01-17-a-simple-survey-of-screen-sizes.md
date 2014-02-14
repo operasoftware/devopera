@@ -7,7 +7,6 @@ tags:
 - rwd
 - responsive
 - media-queries
-- blog
 layout: article
 ---
 <p>I got a bit frustrated the other day. I&#39;d come across yet another site that was designed for at least a 1280-width screen, meaning it wouldn&#39;t fit on my trusty 1024-width laptop and I had to scroll horizontally. &quot;Yada yada, first world problems&quot;, I hear you say, but considering the small effort it takes to make a web page look good at different widths (and the abundance of <abbr title="Responsive Web Design">RWD</abbr> tutorials out there now), surely it&#39;s worth web designers making such tweaks. Besides, there&#39;s got to be many other users in my position, hasn&#39;t there?</p>

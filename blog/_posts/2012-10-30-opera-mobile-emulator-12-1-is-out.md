@@ -3,11 +3,9 @@ title: Opera Mobile Emulator 12.1 is out
 authors:
 - andreas-bovens
 tags:
-- Opera Mobile Emulator
-- Opera Mobile
+- opera-mobile
 - emulator
 - mobile
-- blog
 layout: article
 ---
 <p>Opera Mobile Emulator is a fine tool for creating and testing responsive web designs, as explained in my recent <a href="http://mobile.smashingmagazine.com/2012/08/30/responsive-designs-opera-mobile-emulator/">Smashing Magazine article</a>. So it&#39;s my pleasure to announce that, today, we&#39;ve released version 12.1 of our <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a> for Mac, Windows and Linux!</p>

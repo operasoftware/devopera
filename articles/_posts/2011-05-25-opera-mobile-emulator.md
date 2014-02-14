@@ -6,9 +6,8 @@ authors:
 - patrick-lauke
 tags:
 - desktop
-- emulator
 - opera-mobile
-- opera-mobile-emulator
+- emulator
 layout: article
 ---
 

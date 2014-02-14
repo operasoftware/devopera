@@ -4,11 +4,10 @@ authors:
 - zi-bin-cheah
 tags:
 - browsers
-- Opera 10.51
+- opera-10
 - peacekeeper
 - sputnik
 - benchmark
-- blog
 layout: article
 ---
 <h3>Fastest Browser</h3>

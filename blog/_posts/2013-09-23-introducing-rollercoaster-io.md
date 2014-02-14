@@ -2,16 +2,16 @@
 title: Introducing Rollercoaster.io
 authors:
 - andreas-bovens
+intro: '[Coast by Opera](http://coastbyopera.com/) has been out for 2 weeks now. During that time, we’ve been browsing a lot on our iPads and we’ve noticed that there are still relatively few sites that are really optimized for tablet browsing: Coast by Opera gives you a good experience on non-optimized sites as well, but still, things can always be better. So, we started working on a **simple site that highlights pretty, tablet-optimized sites and best design practices:** the result is [Rollercoaster.io](http://rollercoaster.io/).'
 tags:
 - coast
-- best practices
+- best-practices
 - tablet
 - rollercoaster
-- coast by opera
+- coast
 - ipad
 - browser
 - design
-- blog
 layout: article
 ---
 <p style="float: right; margin: 0 0 0.5em 1em"><a href="http://rollercoaster.io/"><img src="/blog/introducing-rollercoaster-io/rollercoaster-250.jpg" alt="Rollercoaster screenshot" /></a></p>

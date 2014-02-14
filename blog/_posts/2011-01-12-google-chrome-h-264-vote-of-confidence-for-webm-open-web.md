@@ -4,16 +4,15 @@ authors:
 - patrick-lauke
 tags:
 - webm
-- Ogg
-- Google
+- ogg
+- google
 - video
-- HTML5
-- H.264
-- Ogg Theora
-- VP8
-- open web
-- MP4
-- blog
+- html5
+- h.264
+- ogg-theora
+- vp8
+- open-web
+- mp4
 layout: article
 ---
 <p><a href="http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html">Google&#39;s decision to drop native support for H.264 video in Chrome</a> clearly signals their confidence in the quality and viability of <a href="http://webmproject.org">WebM/VP8</a> as a way to deliver video content online, and their focus on the continued development of open formats.</p>

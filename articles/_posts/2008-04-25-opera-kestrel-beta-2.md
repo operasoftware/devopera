@@ -3,7 +3,7 @@ title: Opera Kestrel Beta 2 is Now Available
 authors:
 - chris-mills
 tags:
-- opera-9.5
+- opera-9
 - labs
 layout: article
 ---

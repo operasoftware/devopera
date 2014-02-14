@@ -1,12 +1,11 @@
 ---
-title: HTML5 Multimedia - Bruce's Frontrow, Krakow, Poland presentation
+title: HTML5 Multimedia — Bruce’s Frontrow, Krakow, Poland presentation
 authors:
 - bruce-lawson
 tags:
 - video
-- HTML5
+- html5
 - multimedia
-- blog
 layout: article
 ---
 <p>Fate (and RyanAir) took me once again to the super country of Poland, where I was honoured to keynote day 2 of the inaugural <a href="http://frontrowconf.com/">Frontrow Conference</a>.</p>

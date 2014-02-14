@@ -3,9 +3,8 @@ title: State of the mobile Web Report
 authors:
 - zi-bin-cheah
 tags:
-- SNS
-- Opera Mini
-- blog
+- sns
+- opera-mini
 layout: article
 ---
 <p>

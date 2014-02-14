@@ -3,17 +3,16 @@ title: Opera Mobile 12, and introducing Opera Mini Next
 authors:
 - bruce-lawson
 tags:
-- Opera Mobile
-- Opera Mini
-- iOS
-- gUM
+- opera-mobile
+- opera-mini
+- ios
+- gum
 - android
 - iphone
 - getusermedia
 - webgl
 - camera
 - ipad
-- blog
 layout: article
 ---
 <p>Mobile analyst Peter Paul Koch <a href="http://www.quirksmode.org/blog/archives/2012/01/browser_stats_f_2.html">recently wrote</a>,

@@ -1,18 +1,17 @@
 ---
-title: Opera 10: We’ve Only Just Begun
+title: 'Opera 10: We’ve Only Just Begun'
 authors:
 - molly-holzschlag
 tags:
-- Opera 10
+- opera-10
 - browsers
 - rgb
 - hsl
-- acid3
+- acid
 - rgba
-- Standards
+- standards
 - ui
 - hsla
-- blog
 layout: article
 ---
 <p>I&#39;m delighted to be able to introduce Opera 10 today to Web developers and designers worldwide, and to take a moment to tell you the reason why I chose Opera not only as my employer, but why Opera 10 has become my own browser of choice.</p>

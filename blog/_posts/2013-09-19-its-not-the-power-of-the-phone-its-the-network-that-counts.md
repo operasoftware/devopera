@@ -1,17 +1,17 @@
 ---
-title: It's not the power of the phone, it's the network that counts
+title: It’s not the power of the phone, it’s the network that counts
 authors:
 - bruce-lawson
+intro: 'The death of the feature phone is widely reported and greatly exaggerated. “Although we see a huge market ‘hype’ around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast” analyst [Faisal Kawoosa said](http://articles.timesofindia.indiatimes.com/2013-04-02/telecom/38216822_1_handset-market-cybermedia-research-smartphone-shipments) in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.'
 tags:
-- Asia
-- Nepal
-- India
-- Bangladesh
-- Opera Mini
-- Indonesia
+- asia
+- nepal
+- india
+- bangladesh
+- opera-mini
+- indonesia
 - android
-- progressive enhancement
-- blog
+- progressive-enhancement
 layout: article
 ---
 <p>The death of the feature phone is widely reported and greatly exaggerated. &quot;Although we see a huge market &#39;hype&#39; around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast&quot; analyst <a href="http://articles.timesofindia.indiatimes.com/2013-04-02/telecom/38216822_1_handset-market-cybermedia-research-smartphone-shipments">Faisal Kawoosa said</a> in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.</p>

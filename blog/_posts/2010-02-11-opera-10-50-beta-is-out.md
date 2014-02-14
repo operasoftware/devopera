@@ -4,13 +4,12 @@ authors:
 - andreas-bovens
 tags:
 - widgets
-- Opera 10.50
-- Opera Dragonfly
+- opera-10
+- dragonfly
 - video
 - css3
-- HTML5
-- Standards
-- blog
+- html5
+- standards
 layout: article
 ---
 <p>Since the Christmas release of a <a href="http://my.opera.com/desktopteam/blog/2009/12/22/from-all-of-us-to-all-of-you">pre-alpha build of Opera 10.50</a>, our developers have been working hard to get the Windows version in beta shape: check out the <strong><a href="http://www.opera.com/browser/next/">Opera 10.50 beta page</a></strong> for all the latest features and enhancements. Personally, I really dig the Aero Peek thumbnail previews that pop up when you hover over the Opera icon in the taskbar. And oh, Opera Unite has landed in the 10.50 branch as well :-)</p>

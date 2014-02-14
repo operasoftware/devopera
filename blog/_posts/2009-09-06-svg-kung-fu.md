@@ -3,9 +3,8 @@ title: SVG Web Fonts kung fu
 authors:
 - zi-bin-cheah
 tags:
-- Web Fonts
-- SVG
-- blog
+- web-fonts
+- svg
 layout: article
 ---
 <p>

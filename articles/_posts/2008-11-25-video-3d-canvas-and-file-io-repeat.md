@@ -6,7 +6,7 @@ tags:
 - video
 - file-io
 - canvas
-- opera-9.62
+- opera-9
 - labs
 layout: article
 ---

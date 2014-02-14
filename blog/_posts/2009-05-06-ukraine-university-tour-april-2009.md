@@ -3,19 +3,17 @@ title: 'Unleashed in the East: Ukraine University tour April 26-30'
 authors:
 - chris-mills
 tags:
-- University
+- university
 - future
 - tour
 - css3
-- HTML5
+- html5
 - kiev
-- Standards
-- Opera
+- standards
+- opera
 - donetsk
-- web
-- Ukraine
+- ukraine
 - kharkov
-- blog
 layout: article
 ---
 <p><h2>Web standards and heavy metal in Ukraine</h2>

@@ -6,13 +6,12 @@ tags:
 - wiki
 - education
 - contribute
-- WSC
-- open standards
-- web education
-- Opera
-- W3C
-- web standards curriculum
-- blog
+- wsc
+- open-standards
+- web-education
+- opera
+- w3c
+- web-standards-curriculum
 layout: article
 ---
 <p>I have been fighting to improve web education for a number of years now - many courses and resources around the world that profess to teach web design/development are woefully out of date, resulting in students completing courses without the real world skills they need to get a job in the web industry. I think that this is the single biggest thing holding us back from making significant improvements to the accessibility, usability and overall quality of the Web, and evolving our industry.</p>

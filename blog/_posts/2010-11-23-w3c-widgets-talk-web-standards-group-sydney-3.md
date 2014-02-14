@@ -5,11 +5,10 @@ authors:
 tags:
 - apps
 - widgets
-- W3C
+- w3c
 - css3
-- HTML5
-- DAP
-- blog
+- html5
+- dap
 layout: article
 ---
 I was delighted to attend the Web Standards Group meetup in Sydney and speak on W3C Widgets. Thanks to sponsors <a href="http://www.elcom.com.au/">Elcom</a> for the beer and calamari, and to all who attended.

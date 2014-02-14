@@ -3,8 +3,7 @@ title: 'What’s new in Opera development snapshots: 4 November 2011 edition'
 authors:
 - divya-manian
 tags:
-- opera snapshot
-- blog
+- snapshot
 layout: article
 ---
   <p>Most of the updates that will feature in Opera 12 are in a new intermediate version <a href="http://my.opera.com/desktopteam/blog/2011/11/04/opera-11-60">Opera 11.60, whose snapshot has just been released</a>.</p>

@@ -3,7 +3,8 @@ title: Interview John Allsopp of Web Directions and Scroll Magazine
 authors:
 - bruce-lawson
 tags:
-- blog
+- web-directions
+- interview
 layout: article
 ---
 <p>When some of the Opera crew went to Australia to sponsor this year&#39;s <a href="http://south08.webdirections.org/">Web Directions South conference</a>, we noticed that the conference programme looked considerably sexier than the average programe.</p>

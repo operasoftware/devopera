@@ -3,7 +3,7 @@ title: Opera TV Store app templates
 authors:
 - daniel-davis
 tags:
-- opera-tv-store
+- store
 - tv
 layout: article
 ---

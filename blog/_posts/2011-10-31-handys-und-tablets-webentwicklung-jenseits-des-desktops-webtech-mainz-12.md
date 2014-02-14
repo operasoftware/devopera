@@ -1,12 +1,11 @@
 ---
-title: Handys und Tablets – Webentwicklung jenseits des Desktops / WebTech Mainz, 12 October 2011
+title: Handys und Tablets — Webentwicklung jenseits des Desktops / WebTech Mainz, 12 October 2011
 authors:
 - patrick-lauke
 tags:
 - presentation
 - video
 - conference
-- blog
 layout: article
 ---
 <p>Auch dieses Jahr verschlug es mich nach Mainz für die <a href="http://webtechcon.de/2011/">WebTech 2011</a>. Das Orga-Team hielt mich schön auf Trab, und spannte mich gleich ein um bei der offiziellen Konferenz-Eröffnung, einer spontan arrangierten Diskussion zum Thema JavaScript, und natürlich als Jurymitglied bei der <a href="http://webtechcon.de/2011/sessions#session-20264">PHPopstars</a> Abendveranstaltung mit dabei zu sein.</p>

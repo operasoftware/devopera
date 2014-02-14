@@ -3,11 +3,10 @@ title: 'Testing times: recession bustin’ accessibility tips'
 authors:
 - henny-swan
 tags:
-- user testing
+- user-testing
 - accessibility
-- WCAG
-- Standards
-- blog
+- wcag
+- standards
 layout: article
 ---
 <p>Web design budgets are always tight but in economic downturns they tend to get slashed even further. One of the first things to get cut back, in my experience, is accessibility and user testing. The short term view seems to be that this is a outlay of cost that could be better used elsewhere and is a &quot;nice to have&quot;.</p>

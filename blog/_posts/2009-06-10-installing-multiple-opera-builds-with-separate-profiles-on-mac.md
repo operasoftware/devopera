@@ -5,8 +5,7 @@ authors:
 tags:
 - install
 - mac
-- Opera
-- blog
+- opera
 layout: article
 ---
 <p><strong>Update 2011-01-28: From Opera 11.01 and onward, the <code>-csp</code> command line hook should be used instead of the <code>PrefsSuffix</code> method described below. See <a href="http://my.opera.com/daniel/blog/2011/01/28/opera-mac-multiinstallation-summary">Daniel Aleksandersen&#39;s multi-installation blog entry</a> for full details.</strong></p>

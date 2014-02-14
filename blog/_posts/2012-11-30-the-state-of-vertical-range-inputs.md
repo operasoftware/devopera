@@ -4,8 +4,8 @@ authors:
 - mike-taylor
 tags:
 - input
-- HTML5
-- blog
+- html5
+- forms
 layout: article
 ---
 <p>Yesterday I found myself needing to write a silly demo to sketch out some code (to be used in a larger project). The idea was to dump a ton of <code>&lt;input type=range&gt;</code> elements on a page, alternate between horizontal and vertical orientations, and manipulate the <code>value</code> property in various magical ways.</p>

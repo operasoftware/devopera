@@ -3,11 +3,10 @@ title: Opera 11.60 Beta is out!
 authors:
 - divya-manian
 tags:
-- Opera 11.60
+- opera-11
 - beta
 - desktop
 - browser
-- blog
 layout: article
 ---
 Our Core developers have been hard at work to bring you the next version of Opera for Desktop. First, go <a href="http://www.opera.com/browser/beta/" target="_blank">download Opera 11.60 Beta</a>. Here are some of the interesting features you can enjoy:

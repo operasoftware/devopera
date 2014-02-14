@@ -3,11 +3,10 @@ title: 'Vodafone Webinar: Designing a High Quality User Experience for Widgets'
 authors:
 - zi-bin-cheah
 tags:
-- vodafone 360
+- vodafone
 - widgets
-- Webinar
+- webinar
 - mobile
-- blog
 layout: article
 ---
 <p>

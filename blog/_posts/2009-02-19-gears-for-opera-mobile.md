@@ -3,10 +3,9 @@ title: Gears for Opera Mobile
 authors:
 - andreas-bovens
 tags:
-- Opera
+- opera-mobile
 - gears
 - mobile
-- blog
 layout: article
 ---
 <p>Over at <a href="http://labs.opera.com/news/2009/02/20/">Opera Labs</a>, we&#39;ve just announced an <a href="http://www.opera.com/mobile/download/">Opera Mobile 9.5 technology preview build</a> with support for <a href="http://gears.google.com/">Gears</a>, which allows you to store data locally in a searchable database, run JavaScript in the background, and integrate web applications with the desktop.</p>

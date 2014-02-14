@@ -3,7 +3,7 @@ title: 'A browser sniffing warning: The trouble with Acid3 and TinyMCE'
 authors:
 - hallvord-steen
 tags:
-- acid3
+- acid
 - sniffing
 - opera-9
 - tinymce

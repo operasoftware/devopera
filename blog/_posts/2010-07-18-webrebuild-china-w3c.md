@@ -4,10 +4,9 @@ authors:
 - zi-bin-cheah
 tags:
 - beijing
-- China
-- W3C
+- china
+- w3c
 - webrebuild
-- blog
 layout: article
 ---
 <p>

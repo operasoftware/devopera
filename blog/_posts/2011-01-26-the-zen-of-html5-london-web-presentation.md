@@ -4,11 +4,10 @@ authors:
 - bruce-lawson
 tags:
 - browsers
-- W3C
-- One Web
-- HTML5
-- Standards
-- blog
+- w3c
+- one-web
+- html5
+- standards
 layout: article
 ---
 <p>Last week, 120 Londoners were locked in a room and made to listen to me talk about HTML5, specifically its origins and design principles.</p>

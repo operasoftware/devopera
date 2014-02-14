@@ -4,11 +4,10 @@ authors:
 - zi-bin-cheah
 tags:
 - bank
-- China
+- china
 - activex
-- EV
-- NPAPI
-- blog
+- ev
+- npapi
 layout: article
 ---
 <p>

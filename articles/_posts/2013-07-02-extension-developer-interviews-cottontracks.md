@@ -2,10 +2,11 @@
 title: 'Extension developer interview: coffee with the cottonTracks team'
 authors:
 - andreas-bovens
+intro: 'We sat down with the developers behind the novel cottonTracks extension, and asked them some questions over a (virtual) coffee. We talked about what the cottonTracks extension is all about, what their development workflow is, what they have learned thus far, and much more.'
 tags:
 - cottontracks
-- extension
-- extension-interview
+- extensions
+- interview
 - opera
 layout: article
 ---

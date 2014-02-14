@@ -3,11 +3,10 @@ title: Opera Mobile 10.1 for S60
 authors:
 - zi-bin-cheah
 tags:
-- mobile10.1
-- Carakan
+- opera-mobile
+- carakan
 - mobile
 - vega
-- blog
 layout: article
 ---
 <p>

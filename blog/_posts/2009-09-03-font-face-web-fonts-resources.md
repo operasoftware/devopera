@@ -3,11 +3,10 @@ title: '@font-face Web Fonts resources'
 authors:
 - bruce-lawson
 tags:
-- Opera 10
-- CSS
+- opera-10
+- css
 - fonts
-- Web Fonts
-- blog
+- web-fonts
 layout: article
 ---
 <p>So you&#39;ve seen the <a href="http://dev.opera.com/articles/view/seven-web-fonts-showcases/">Opera 10 Web Fonts showcases</a> and want to use the technology to expand your site&#39;s typography without using images or JavaScript hacks. A great thing about Web Fonts is that they are inherently accessible; of course, it&#39;s still possible to choose an unreadable typeface or rubbish colour contrast, but the user can deal with that because it&#39;s <em>just text</em>.</p>

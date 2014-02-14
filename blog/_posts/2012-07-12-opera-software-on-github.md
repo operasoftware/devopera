@@ -3,10 +3,9 @@ title: Opera Software on GitHub
 authors:
 - andreas-bovens
 tags:
-- open source
-- Opera
+- open-source
+- opera
 - github
-- blog
 layout: article
 ---
 <img src="http://files.myopera.com/andreasbovens/blog/octocat160.png" alt="GitHub Octocat" style="float:right;" />

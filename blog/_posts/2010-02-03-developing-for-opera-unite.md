@@ -5,7 +5,6 @@ authors:
 tags:
 - yusef
 - unite
-- blog
 layout: article
 ---
 <h3>How are we doing?</h3>

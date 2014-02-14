@@ -3,11 +3,10 @@ title: 'Public consultation on browser standards for public sector Web sites: Op
 authors:
 - bruce-lawson
 tags:
-- browser sniffing
+- browser-sniffing
 - testing
-- One Web
-- progressive enhancement
-- blog
+- one-web
+- progressive-enhancement
 layout: article
 ---
 <h3>UPDATE</h3>

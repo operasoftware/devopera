@@ -3,9 +3,8 @@ title: Harmony - Direction of ECMAScript
 authors:
 - zi-bin-cheah
 tags:
-- JavaScript
-- ECMAScript
-- blog
+- javascript
+- ecmascript
 layout: article
 ---
 <p>

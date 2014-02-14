@@ -3,10 +3,9 @@ title: Opera Mobile 10.1 beta for Android is here
 authors:
 - andreas-bovens
 tags:
-- Opera Mobile
+- opera-mobile
 - viewport
 - android
-- blog
 layout: article
 ---
 <img src="http://files.myopera.com/andreasbovens/blog/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" />

@@ -3,10 +3,9 @@ title: “The Developer Briefcase” and other neat Opera extensions for develop
 authors:
 - shwetank-dixit
 tags:
-- the developer briefcase
+- the-developer-briefcase
 - extensions
 - developers
-- blog
 layout: article
 ---
 <span class='imgright'><img alt='' src='http://files.myopera.com/shwetankdixit/blog/screenshot2.jpg' /></span>

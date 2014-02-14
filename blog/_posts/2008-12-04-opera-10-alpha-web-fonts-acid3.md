@@ -3,13 +3,13 @@ title: 'Opera 10 alpha: Web Fonts, Acid 3 and more'
 authors:
 - bruce-lawson
 tags:
-- opera 10
+- opera-10
 - css3
-- web fonts
+- web-fonts
 - svg
+- acid
 - dragonfly
-- selectors api
-- blog
+- selectors-api
 layout: article
 ---
 <p>Opera 10 alpha has been released. Don&#39;t look too much at the <abbr>UI</abbr>, as this alpha   showcases the all-new  2.2 version of Presto, Opera&#39;s  core rendering engine.</p>

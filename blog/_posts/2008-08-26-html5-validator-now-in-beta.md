@@ -3,10 +3,9 @@ title: HTML5 Validator now in beta
 authors:
 - david-storey
 tags:
-- W3C
-- HTML5
+- w3c
+- html5
 - news
-- blog
 layout: article
 ---
 <p>News just in (<a href="http://twitter.com/karlw3c/statuses/899215102">via Twitter</a>) from Karl Dubost of the W3C.  The <a href="http://qa-dev.w3.org/wmvs/HEAD/">HTML5 validator</a> is now in beta and available on the W3C site.  This will make it much easier to experiment with new HTML5 elements and attributes, and make sure they are valid.  Go check it out.</p>

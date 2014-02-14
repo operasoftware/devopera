@@ -3,15 +3,11 @@ title: Singing an Opera at SXSWi 2012
 authors:
 - chris-mills
 tags:
-- sxswi
 - presentations
 - sxsw
-- panels
-- talks
+- panel
+- talk
 - opera
-- gossip
-- schwag
-- blog
 layout: article
 ---
 <img src="http://files.myopera.com/chrismills/blog/sxswi.jpg" style="border: 10px solid #EFECDD;" />

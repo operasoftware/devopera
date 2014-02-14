@@ -3,14 +3,13 @@ title: 'Opera 10.5 Pre-Alpha build released: the new additions'
 authors:
 - shwetank-dixit
 tags:
-- web storage
+- web-storage
 - border-radius
-- web sql database
-- offline storage
-- Carakan
+- web-sql-database
+- offline-storage
+- carakan
 - css3
-- opera 10.5 pre-alpha
-- blog
+- opera-10
 layout: article
 ---
 <p>Today, we&#39;ve released a <a href="http://labs.opera.com/news/2009/12/22/" target="_blank">pre-alpha version of Opera 10.5</a> on Opera Labs. Download it and give it a spin. Let us know what you think about it too!</p>

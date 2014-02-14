@@ -4,15 +4,10 @@ authors:
 - chris-mills
 tags:
 - browsers
-- SXSWi
-- texas
-- SXSWi09
+- sxsw
 - conference
-- Standards
+- standards
 - education
-- southby
-- web
-- blog
 layout: article
 ---
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>

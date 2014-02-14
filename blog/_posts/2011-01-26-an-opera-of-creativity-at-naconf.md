@@ -3,10 +3,9 @@ title: An Opera of Creativity at NAConf!
 authors:
 - chris-mills
 tags:
-- Opera
+- opera
 - naconf
 - conference
-- blog
 layout: article
 ---
 <p>Report written by Chris Mills and Patrick Lauke</p>

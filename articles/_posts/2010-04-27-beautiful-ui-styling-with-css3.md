@@ -6,7 +6,7 @@ tags:
 - border-radius
 - box-shadow
 - css3
-- open web
+- open-web
 - text-shadow
 - ui
 layout: article

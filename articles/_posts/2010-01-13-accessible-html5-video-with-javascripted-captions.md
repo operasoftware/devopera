@@ -7,7 +7,7 @@ tags:
 - html5
 - multimedia
 - open-web
-- opera-10.50
+- opera-10
 - accessibility
 - video
 layout: article

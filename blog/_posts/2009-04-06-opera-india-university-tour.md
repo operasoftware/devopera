@@ -3,13 +3,10 @@ title: Opera India University Tour
 authors:
 - bruce-lawson
 tags:
-- India
-- HTML5
-- Standards
-- bruce
-- shwetank
-- university tour
-- blog
+- india
+- html5
+- standards
+- university
 layout: article
 ---
 <p>Lasting nearly a month, from Rajasthan to Karnataka, Tamil Nadu to the Ghats of Varanasi, Shwetank and Bruce travelled spreading the message about Open Web Standards.</p> <p>The students who attended were from various streams of study like mathematics, management, and even humanities (we even got a few professionals and some PhD students). However, most were graduate and undergraduate engineering students, particularly computer engineering.</p>

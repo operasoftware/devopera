@@ -3,11 +3,9 @@ title: SVG Tiny 1.2 enters last call
 authors:
 - david-storey
 tags:
-- W3C
-- Tiny
-- SVG
+- w3c
+- svg
 - news
-- blog
 layout: article
 ---
 <p>The <a href="http://www.w3.org/Graphics/SVG/">SVG Working Group</a> has publish the Last Call of the <a href="http://www.w3.org/TR/2008/WD-SVGMobile12-20080915/">SVG Tiny 1.2</a> working draft.  It is welcoming comments until the 13<sup>th</sup> of October.</p>

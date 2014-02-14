@@ -5,7 +5,7 @@ authors:
 tags:
 - event
 - talk
-- blog
+- odevrel
 layout: article
 ---
 <p>The Developer Relations Team is on the road speaking at different events and venues this April, including our first in Bulgaria. Come meet us!</p>

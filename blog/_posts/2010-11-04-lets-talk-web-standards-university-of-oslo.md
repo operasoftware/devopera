@@ -4,12 +4,10 @@ authors:
 - zi-bin-cheah
 tags:
 - norway
-- uio
 - demo
-- Standards
+- standards
 - css3
-- HTML5
-- blog
+- html5
 layout: article
 ---
 <p>

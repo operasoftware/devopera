@@ -7,7 +7,7 @@ tags:
 - audio
 - captions
 - html5
-- polyfills
+- polyfill
 - subtitles
 - text
 - track

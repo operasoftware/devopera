@@ -3,14 +3,13 @@ title: Bruce at SparkUp Poznan‎, Poland
 authors:
 - bruce-lawson
 tags:
-- CSS
-- Opera
+- css
+- opera
 - widgets
 - css3
-- HTML5
+- html5
 - mobile
 - media-queries
-- blog
 layout: article
 ---
 I&#39;ve <a href="http://www.brucelawson.co.uk/2010/poland/">always wanted to visit Poland</a> so was delighted to visit  Poznań‎ last week for the first  <a href="http://www.sparkup.pl/en">SparkUp conference</a> to speak on Web Development 2.0. Slides are below; leave a comment if you need them in a more accessible format.

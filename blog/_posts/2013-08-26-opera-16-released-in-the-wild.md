@@ -5,11 +5,10 @@ authors:
 tags:
 - stable
 - flags
-- Opera
+- opera-16
 - extensions
 - geolocation
 - disconnect
-- blog
 layout: article
 ---
 <p>This morning, we&#39;ve spun out <a href="http://www.opera.com/computer/">Opera 16</a> stable from our <a href="http://www.opera.com/computer/next">Opera Next</a> stream.</p>

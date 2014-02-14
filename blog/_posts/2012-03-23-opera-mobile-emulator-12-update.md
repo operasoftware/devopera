@@ -3,13 +3,11 @@ title: Opera Mobile Emulator 12 update
 authors:
 - andreas-bovens
 tags:
-- mobile first
-- Opera Mobile Emulator
-- Opera Mobile
+- mobile-first
+- opera-mobile
 - emulator
 - debugging
 - mobile
-- blog
 layout: article
 ---
 <img src="http://files.myopera.com/andreasbovens/blog/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />

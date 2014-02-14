@@ -3,7 +3,8 @@ title: Bruce at EuroPython 2010
 authors:
 - bruce-lawson
 tags:
-- blog
+- conference
+- europython
 layout: article
 ---
 <p>I was honoured to give two talk at EuroPython 2010 today (including my first ever keynote!). Here are the resources and useful links.</p>

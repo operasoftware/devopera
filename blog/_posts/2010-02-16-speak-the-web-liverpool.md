@@ -3,13 +3,12 @@ title: The future of web technologies - Speak the Web, Liverpool
 authors:
 - patrick-lauke
 tags:
-- HTML
-- speak the web
-- HTML5
-- web standards
-- JavaScript
-- Standards
-- blog
+- html
+- speak-the-web
+- html5
+- web-standards
+- javascript
+- standards
 layout: article
 ---
 <p>Spent a delightful evening at the <a href="http://www.thisisleaf.co.uk/">Leaf Tea Shop &amp; Bar</a> in Liverpool last night as part of the <a href="http://speaktheweb.org/">Speak the Web</a> series of &quot;gig&quot; style events.</p>
