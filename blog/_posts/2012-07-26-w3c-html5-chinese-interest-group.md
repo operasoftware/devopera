@@ -9,7 +9,6 @@ tags:
 - w3c
 - html5
 - cjk
-- blog
 layout: article
 ---
 <h3>Trip to Seoul</h3>

@@ -3,7 +3,8 @@ title: Scotch on the rocks
 authors:
 - chris-mills
 tags:
-- blog
+- coldfusion
+- conference
 layout: article
 ---
 <p><h2>ColdFusion conference, May 24 2010, London</h2>

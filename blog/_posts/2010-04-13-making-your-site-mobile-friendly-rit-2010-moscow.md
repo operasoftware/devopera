@@ -3,17 +3,14 @@ title: Making your site mobile-friendly  – RIT++ 2010, Moscow
 authors:
 - patrick-lauke
 tags:
-- HTML
-- russian internet technologies
+- html
 - css3
 - iphone
-- Opera Mobile
-- RIT++
-- Opera Mini
-- RIT
+- opera-mobile
+- opera-mini
+- rit
 - mobile
 - ipad
-- blog
 layout: article
 ---
 <p>I had the honour of being invited to speak at this year&#39;s <a href="http://ritconf.ru/">Russian Internet Technologies (RIT) 2010</a> conference in Moscow. Unfortunately, due to the unexpected bureaucratic nightmare involved in getting a Russian business visa, I was unable to attend in person (shame, as Moscow is definitely on my top list of places that I&#39;d love to visit)...but, as a last resort, I did my presentation remotely via Skype screensharing, from the comfort of my own home office.</p>

@@ -4,8 +4,8 @@ authors:
 - andreas-bovens
 tags:
 - adblockplus
-- extension
-- extension-interview
+- extensions
+- interview
 - opera
 layout: article
 ---

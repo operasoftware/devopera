@@ -5,7 +5,6 @@ authors:
 tags:
 - array-extras
 - ecmascript
-- ecmascript-5.1
 - es5
 - function.prototype.bind
 - json

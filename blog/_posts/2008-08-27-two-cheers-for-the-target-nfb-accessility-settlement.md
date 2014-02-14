@@ -3,10 +3,9 @@ title: Two cheers for the Target/NFB accessibility settlement
 authors:
 - bruce-lawson
 tags:
-- NFB
+- nfb
 - accessibility
-- Target
-- blog
+- target
 layout: article
 ---
 <p>The American <a href="http://www.nfb.org/">National Federation for the Blind</a> brought a class action lawsuit against <a href="http://www.target.com/">target.com</a> for inaccessibility of its website (which is, interestingly, &quot;powered by Amazon.com&quot;).</p>

@@ -3,14 +3,13 @@ title: Audio and Video in HTML5 - London Web Standards 20.09.2010
 authors:
 - patrick-lauke
 tags:
-- HTML
+- html
 - video
-- HTML5
-- web standards
-- Standards
+- html5
+- web-standards
+- standards
 - audio
 - multimedia
-- blog
 layout: article
 ---
 <p>Last Monday I popped down to the capital, fighting through an annoying cold I&#39;ve had for a week, to take part in a <a href="http://www.londonwebstandards.org/">London Web Standards</a> evening. To start off the proceedings, Google&#39;s <a href="http://mahemoff.com/">Michael Mahemoff</a> took us on a tour of some of the cool, but often overlooked new features of HTML5, such as application cache, local storage, geolocation. After that I tried to wow the crowd with a few insights into the capabilities offered by <a href="http://www.slideshare.net/redux/audio-and-video-in-html5-london-web-standards-20092010">Audio and Video in HTML5</a>.</p>

@@ -3,14 +3,13 @@ title: A look under the hood of Opera 9.6
 authors:
 - david-storey
 tags:
-- Opera 9.6
-- Estonia
-- India
-- Ukraine
-- Indonesia
+- opera-9
+- estonia
+- india
+- ukraine
+- indonesia
 - release
-- Russia
-- blog
+- russia
 layout: article
 ---
 <p><a href="http://www.opera.com/products/desktop/">Opera 9.6</a> has just be released today.  What can developer expect from this release?  This release focusses on stability, so there has not been wholesale changes like the move from Opera 9.2 and Presto 2, to Opera 9.5 and Presto 2.1.  We’ve taken the existing Presto 2.1 engine and tuned it, and polished the rough edges.  Developers will not have to learn new tricks or find and work around newly introduced bugs.  Instead the stability of the browser has been improved, key bugs have been fixed, security holes have been patched and the performance has improved.  There have also been a couple of additions that we felt were important to add even though the engine is the same core branch.</p>

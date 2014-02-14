@@ -3,9 +3,8 @@ title: New HTML5 features in Opera 11
 authors:
 - bruce-lawson
 tags:
-- opera11
-- HTML5
-- blog
+- opera-11
+- html5
 layout: article
 ---
 <p>With all the excitement of Opera 11&#39;s tab stacking and extensions, you might have thought that we had neglected our HTML5 commitments. You&#39;d be wrong! After all, the browser that began the HTML5 work is unlikely to rest on our laurels. </p>

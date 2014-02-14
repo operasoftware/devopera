@@ -4,9 +4,8 @@ authors:
 - bruce-lawson
 tags:
 - css
-- emulator
 - opera-mobile
-- opera-mobile-emulator
+- emulator
 - prefixes
 - presto
 - webkit

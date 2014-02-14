@@ -3,7 +3,8 @@ title: 'Future of Web Design: HTML5 coding demo'
 authors:
 - bruce-lawson
 tags:
-- blog
+- fowd
+- demo
 layout: article
 ---
 <p>I was privileged to be invited to speak at <a href="http://futureofwebdesign.com/">Future of Web Design</a> last week. I gave a live coding demo rather than slides, so view the source of the (intentionally-ugly) page I built over the 40 minutes.

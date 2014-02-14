@@ -3,13 +3,9 @@ title: Opera TV Emulator released
 authors:
 - patrick-lauke
 tags:
-- opera sdk
-- opera tv emulator
 - emulator
-- tv-emulator
 - tv
-- SDK
-- blog
+- sdk
 layout: article
 ---
 <p>Want to start developing for web-enabled TVs, but worried that you&#39;ll need a roomful of big devices to test and debug your web applications? Fear not: with today&#39;s release of the <a href="http://www.opera.com/business/tv-emulator/">Opera TV Emulator</a> (formerly known as the Opera for Devices Content Development Kit), you can check how your pages will look and work on the latest Opera-based TV browsers...all from the comfort of your desktop machine.</p>

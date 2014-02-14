@@ -3,7 +3,8 @@ title: 'The Opera Mobile Emulator: Mobile Development From the Comfort of Your D
 authors:
 - andreas-bovens
 tags:
-- opera-mobile-emulator
+- opera-mobile
+- emulator
 - labs
 layout: article
 ---

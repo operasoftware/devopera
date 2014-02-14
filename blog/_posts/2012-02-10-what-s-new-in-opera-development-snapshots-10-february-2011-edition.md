@@ -3,8 +3,7 @@ title: 'What’s new in Opera development snapshots: 10 February 2011 edition'
 authors:
 - divya-manian
 tags:
-- opera next
-- blog
+- opera-next
 layout: article
 ---
 <p>The new Opera Next snapshot is out with a whole slew of fixes. Download it from the <a href="http://my.opera.com/desktopteam/blog/2012/02/10/core-dnt-mail-themes">links in the Desktop team&#39;s blog post</a> or wait a while for it to show up on your Opera Next updates. Here are what would be of interest to web developers:</p>

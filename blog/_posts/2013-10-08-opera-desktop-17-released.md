@@ -2,13 +2,13 @@
 title: Opera Desktop 17 released
 authors:
 - bruce-lawson
+intro: '[Opera 17 for desktop is released](http://my.opera.com/desktopteam/blog/opera-17-final), and installs are being autoupdated as you read this. Opera 17 is based on Chromium/Blink 30, which means that [Canvas blend modes](http://codepen.io/adobe/pen/gbzmE) are now supported.'
 tags:
-- extension
-- Opera
-- opera 17
+- extensions
+- opera
+- opera-17
 - canvas
-- apis
-- blog
+- api
 layout: article
 ---
 <p><a href="http://my.opera.com/desktopteam/blog/opera-17-final">Opera 17 for desktop is released</a>, and installs are being autoupdated as you read this.</p>

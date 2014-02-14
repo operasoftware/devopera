@@ -4,8 +4,8 @@ authors:
 - andreas-bovens
 tags:
 - wot
-- extension
-- extension-interview
+- extensions
+- interview
 - opera
 layout: article
 ---

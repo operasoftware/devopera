@@ -3,10 +3,9 @@ title: 'One week of extensions: a quick update'
 authors:
 - andreas-bovens
 tags:
-- Opera
+- opera
 - extensions
 - update
-- blog
 layout: article
 ---
 <p>It&#39;s only been one week since our initial <a href="http://my.opera.com/ODIN/blog/introduction-to-opera-extensions">Labs release of Opera 11 alpha</a> – which comes with support for extensions – and we&#39;re very happy to see that it has generated enormous developer interest, with our <a href="https://addons.labs.opera.com/">Opera extensions catalog</a> steadily growing in size and many more extension submission in the pipeline.</p>

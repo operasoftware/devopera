@@ -3,7 +3,8 @@ title: HTML5 and CSS 3 at Staffordshire University
 authors:
 - bruce-lawson
 tags:
-- blog
+- demo
+- conference
 layout: article
 ---
 <p>I was honoured to return to Staffordshire University to talk about HTML5, CSS 3 and the Web in general. It&#39;s great to talk there, as the staff and students are really clueful. And Fiona Knight gives you lunch.</p>

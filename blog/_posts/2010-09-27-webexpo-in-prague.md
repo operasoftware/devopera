@@ -8,7 +8,6 @@ tags:
 - viewport
 - mobile
 - media-queries
-- blog
 layout: article
 ---
 <p>

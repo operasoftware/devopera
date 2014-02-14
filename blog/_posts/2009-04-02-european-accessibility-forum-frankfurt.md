@@ -8,12 +8,10 @@ tags:
 - accessibility
 - aria
 - education
-- web
 - flash
 - eafra
 - mobile
-- WAI-ARIA
-- blog
+- wai-aria
 layout: article
 ---
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>

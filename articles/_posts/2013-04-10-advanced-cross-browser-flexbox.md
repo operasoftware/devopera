@@ -4,7 +4,7 @@ authors:
 - chris-mills
 tags:
 - advanced
-- cross browser
+- cross-browser
 - flexbox
 - media-queries
 - modernizr

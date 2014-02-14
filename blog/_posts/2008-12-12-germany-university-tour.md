@@ -3,11 +3,10 @@ title: Germany University Tour
 authors:
 - zi-bin-cheah
 tags:
-- University
+- university
 - education
 - tour
-- Germany
-- blog
+- germany
 layout: article
 ---
 <p>After 7 days, 10 universities and a lot of cool discussions during evening meet-ups, Opera&#39;s Geman university tour has comes to an end.</p>

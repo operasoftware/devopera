@@ -3,9 +3,9 @@ title: 'Bruce’s Fronteers presentation: HTML5 Semantics'
 authors:
 - bruce-lawson
 tags:
-- HTML5
+- html5
 - semantics
-- blog
+- presentation
 layout: article
 ---
 <p>Here&#39;s the talk I did for the <a href="http://fronteers.nl/congres/2011">Fronteers conference</a> in Amsterdam. Its full title, playing equivalent Dutch idiom to &quot;hair-splitter&quot; (a common accusation to those of us who care about semantics) is &quot;You too can be a bedwetting antfucker&quot;. So be warned if such a title isn&#39;t worksafe for you.</p>

@@ -3,10 +3,9 @@ title: Opera Mobile 10 and Mini 5 final released
 authors:
 - andreas-bovens
 tags:
-- Opera Mobile 10
+- opera-mobile
 - development
-- Opera Mini 5
-- blog
+- opera-mini
 layout: article
 ---
 <p>Earlier today, we&#39;ve released the final versions of <a href="http://www.opera.com/mobile/">Opera Mobile 10 and Opera Mini 5</a>. Both are totally free, so be sure to download them to your phone!</p>

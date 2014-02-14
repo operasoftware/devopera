@@ -8,10 +8,7 @@ tags:
 - javascript
 - layout
 - multimedia
-- opera–cdk
-- opera-sdk
-- opera-tv-emulator
-- tv-emulator
+- sdk
 - tv
 layout: article
 ---

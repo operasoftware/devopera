@@ -6,7 +6,6 @@ tags:
 - wcag
 - wai-aria
 - accessibility
-- blog
 layout: article
 ---
 <p>A new concept in <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 is <a href="http://www.w3.org/TR/WCAG20/#accessibility-supported">accessibility supported</a> web content technologies. This has confused a few people and also raised the wider question of what technologies are in fact accessibility supported?</p>

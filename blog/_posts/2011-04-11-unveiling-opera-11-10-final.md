@@ -5,7 +5,7 @@ authors:
 tags:
 - gradients
 - multi-column
-- opera 11.10
+- opera-11
 - woff
 - webp
 - linux
@@ -15,7 +15,6 @@ tags:
 - mac
 - speed-dial
 - extensions
-- blog
 layout: article
 ---
 <h3>From beta to final: a heritage of great functionality</h3>

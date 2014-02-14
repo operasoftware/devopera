@@ -3,10 +3,9 @@ title: A lovely <br>eak with the CSS Working Group
 authors:
 - bruce-lawson
 tags:
-- CSS
+- css
 - specifications
-- working group
-- blog
+- csswg
 layout: article
 ---
 <p>Yesterday, Microsoft gave me a free lunch. They did it because I went to Cambridge to observe the <abbr>CSS</abbr> working group&#39;s face-to-face meeting. I was geekily excited to hear them discuss the topic &quot;what is a br element&quot;, and to meet <a href="http://fantasai.inkedblade.net/">fantasai</a>, with whom I&#39;d worked to gather <a href="http://www.webstandards.org/2008/01/18/tell-the-css-wg-what-you-want-from-css3/">web designers&#39; wishes for CSS 3</a> (and who promises faithfully that the feedback  on those wishes is imminent). </p>

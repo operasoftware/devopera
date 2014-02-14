@@ -4,8 +4,7 @@ authors:
 - patrick-lauke
 tags:
 - video
-- HTML5
-- blog
+- html5
 layout: article
 ---
 <video width="620" height="360" controls="controls">

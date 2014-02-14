@@ -3,9 +3,8 @@ title: Looking for Web Openers
 authors:
 - andreas-bovens
 tags:
-- open the web
+- open-the-web
 - job
-- blog
 layout: article
 ---
 <img src="http://static.myopera.com/community/graphics/openweb/logo.png" alt="Open the Web logo" title="Open the Web" style="float: right;" />

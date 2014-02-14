@@ -8,7 +8,6 @@ tags:
 - dev.opera
 - redesign
 - update
-- blog
 layout: article
 ---
 <p>Yesterday, we released a major update to <a href="http://dev.opera.com">Dev.Opera</a>. The most obvious change is of course the visual refresh, but we&#39;ve also rewritten the whole back-end from scratch, so as to make it more flexible and robust.</p>

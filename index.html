@@ -14,12 +14,13 @@ layout: default
 					By {% include author.html object=post %}
 					at <time>{{ post.date | date: '%d %B %Y' }}</time>
 				</p>
+				{% if post.intro %}{{ post.intro | markdownify }}{% endif %}
 			</article>(•)
 		{% endunless %}
 	{% endfor %}
 {% endcapture %}
 {% assign articles = articles | split: '(•)' %}
-{% for article in articles limit:4 %}
+{% for article in articles limit:6 %}
 	{{ article }}
 {% endfor %}
 	</section>
@@ -34,12 +35,13 @@ layout: default
 					By {% include author.html object=post %}
 					at <time>{{ post.date | date: '%d %B %Y' }}</time>
 				</p>
+				{% if post.intro %}{{ post.intro | markdownify }}{% endif %}
 			</article>(•)
 		{% endunless %}
 	{% endfor %}
 {% endcapture %}
 {% assign posts = posts | split: '(•)' %}
-{% for post in posts limit:4 %}
+{% for post in posts limit:6 %}
 	{{ post }}
 {% endfor %}
 	</section>

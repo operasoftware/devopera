@@ -3,10 +3,9 @@ title: Opera 9.63 Chinese Ver. is out (and you can try it too)
 authors:
 - zi-bin-cheah
 tags:
-- China
+- china
 - desktop
-- IBIS
-- blog
+- ibis
 layout: article
 ---
 <p>

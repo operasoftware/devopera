@@ -3,12 +3,9 @@ title: Opera Mobile 11.1 – new features and additions
 authors:
 - patrick-lauke
 tags:
-- Opera Mobile 11.1
-- Opera Mobile
-- Opera Mini
-- Opera Mini 6.1
+- opera-mobile
+- opera-mini
 - viewport
-- blog
 layout: article
 ---
 <div>

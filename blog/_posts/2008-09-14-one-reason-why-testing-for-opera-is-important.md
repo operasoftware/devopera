@@ -4,11 +4,10 @@ authors:
 - david-storey
 tags:
 - operators
-- Opera Mobile
+- opera-mobile
 - marketshare
-- Opera Mini
+- opera-mini
 - mobile
-- blog
 layout: article
 ---
 <p>There are many reasons why it is important to test your web sites in Opera.  I’m just going to focus on one here–the mobile market.  The mobile web has been getting a lot more press recently, and it is a market where Opera is in a very strong position, and is moving from strength to strength.  It the last quarter we announced that Opera Mini alone had over 15.8 million unique users in the month of July, up from 3.5 million in July 2007.  It grew from 850 million web pages viewed to 3.7 <em>billion</em>, a year on year growth of 330%.  This generated 44.5 terabytes of compressed traffic, or 296.6 terabytes if the data wasn&#39;t compressed by the Opera Mini servers.  This growth is only going to get fuelled as Opera signs more deals with operators for pre-installing Opera Mini.  Away from Opera Mini, the first beta of Opera Mobile 9.5 came out recently, and it is already being shipped pre-installed on some popular high end phones.</p>

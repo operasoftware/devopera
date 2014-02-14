@@ -3,9 +3,8 @@ title: Opera China and Web Standards
 authors:
 - zi-bin-cheah
 tags:
-- China
-- Standards
-- blog
+- china
+- standards
 layout: article
 ---
 <p>

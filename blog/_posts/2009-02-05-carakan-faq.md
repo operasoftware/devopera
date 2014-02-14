@@ -3,10 +3,9 @@ title: Carakan F.A.Q.
 authors:
 - bruce-lawson
 tags:
-- Carakan
-- JavaScript
-- ECMAScript
-- blog
+- carakan
+- javascript
+- ecmascript
 layout: article
 ---
 <h3>What is <span lang="id">Carakan</span>?</h3>

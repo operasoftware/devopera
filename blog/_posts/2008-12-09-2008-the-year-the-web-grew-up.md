@@ -3,12 +3,11 @@ title: 2008 - the year the web grew up?
 authors:
 - chris-mills
 tags:
-- CSS3
-- HTML5
+- css3
+- html5
 - evolution
-- SVG
-- Standards
-- blog
+- svg
+- standards
 layout: article
 ---
 <p><p>In his first regular ZDNet article, our very own Mr Bruce Lawson looks at how web standards have been evolving in the last couple of years, and asks &quot;<a href="http://resources.zdnet.co.uk/articles/comment/0,1000002985,39574452,00.htm?r=4" rel="nofollow">is 2008 the year the Web finally grew up?</a>&quot;. ... </p></p><!--more--><p>This sounds like a bold claim, but I think my partner in crime has some wise word here. We are sitting at the tail end of the year that we saw the first official W3C <a href="http://www.w3.org/TR/html5/">working draft of HTML 5</a>, AND the first official W3C <a href="http://www.w3.org/TR/wai-aria-roadmap/">working draft of WAI-ARIA</a>, extensions to HTML that allow us to create web applications in a responsible, accessible way.</p>

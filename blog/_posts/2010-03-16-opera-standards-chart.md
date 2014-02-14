@@ -3,12 +3,11 @@ title: Opera Browser Standards support chart
 authors:
 - zi-bin-cheah
 tags:
-- Opera Mobile 10
+- opera-mobile
 - testing
-- Opera 10.50
-- Opera Mini 5
-- Standards
-- blog
+- opera-10
+- opera-mini
+- standards
 layout: article
 ---
 <p class="note" id="note" style="background-color:#ccc;border-radius:15px;moz-border-radius:15px;webkit-border-radius:15px;padding:5px">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>

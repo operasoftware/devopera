@@ -4,7 +4,7 @@ authors:
 - patrick-lauke
 tags:
 - javascript
-- opera-tv-store
+- store
 - tv
 layout: article
 ---

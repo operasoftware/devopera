@@ -4,11 +4,10 @@ authors:
 - zi-bin-cheah
 tags:
 - nalakuvara
-- Opera
+- opera
 - chinese
 - taiwan
 - custom
-- blog
 layout: article
 ---
 <p>

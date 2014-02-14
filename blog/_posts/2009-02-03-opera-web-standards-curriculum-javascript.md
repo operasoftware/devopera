@@ -3,17 +3,15 @@ title: 'Opera web standards curriculum: JavaScript in town!'
 authors:
 - chris-mills
 tags:
-- CSS
+- css
 - best
 - curriculum
-- Standards
+- standards
 - scripting
 - practices
 - education
-- web
 - learning
-- JavaScript
-- blog
+- javascript
 layout: article
 ---
 <p><h2>Introduction</h2>

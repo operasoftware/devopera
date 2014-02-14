@@ -3,7 +3,7 @@ title: Building applications for the Opera TV Store
 authors:
 - patrick-lauke
 tags:
-- opera-tv-store
+- store
 - tv
 layout: article
 ---

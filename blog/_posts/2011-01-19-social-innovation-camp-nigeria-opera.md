@@ -7,7 +7,6 @@ tags:
 - nigeria
 - mediaqueries
 - viewport
-- blog
 layout: article
 ---
 <p>

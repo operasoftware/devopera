@@ -4,7 +4,7 @@ authors:
 - yenny-otero
 - patrick-lauke
 tags:
-- opera-tv-store
+- store
 - tv
 layout: article
 ---

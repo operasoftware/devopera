@@ -7,8 +7,7 @@ tags:
 - gradient
 - woff
 - webp
-- 11.10
-- blog
+- opera-11
 layout: article
 ---
 <h3>So many new features!</h3>

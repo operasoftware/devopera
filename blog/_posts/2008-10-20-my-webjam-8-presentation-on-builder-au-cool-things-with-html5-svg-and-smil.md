@@ -6,9 +6,8 @@ tags:
 - smil
 - webjam8
 - video
-- HTML5
-- SVG
-- blog
+- html5
+- svg
 layout: article
 ---
 <p>Builder AU has featured my WebJam 8 presentation of a couple of weeks ago in their video section. Here&#39;s an embed (oh the irony) for you to enjoy!</p>

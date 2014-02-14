@@ -3,15 +3,14 @@ title: 'A call for education: How do we educate the web standards kids?'
 authors:
 - chris-mills
 tags:
-- universities
-- wasp interact
+- university
+- wasp-interact
 - schools
 - education
 - teaching
 - kids
-- web standards
+- web-standards
 - curriculum
-- blog
 layout: article
 ---
 <p><p>There have been some exciting developments in web standards education of late. I&#39;ve pretty much got the core of the <a href="http://www.opera.com/wsc/" rel="nofollow">Web Standards Curriculum</a> published, and there are translations on the way. I have also contributed to the <a href="http://interact.webstandards.org" rel="nofollow">WaSP InterAct</a> project, which currently has 11 courses available and promises more in the next year or so. And these initiatives are being brought together along with others under the umbrella of the <a href="http://www.w3.org/2005/Incubator/owea/charter-20090617.html" rel="nofollow">Open Web Education Alliance</a>, which promises to provide a worldwide standard for teaching web design and development that provides educators with all the tools and resources they need to start teaching web standards and best practices in their courses.</p>

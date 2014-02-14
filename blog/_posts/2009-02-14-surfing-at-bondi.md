@@ -3,11 +3,10 @@ title: Surfing at BONDI
 authors:
 - david-storey
 tags:
-- BONDI
+- bondi
 - specifications
-- Devices
+- devices
 - mobile
-- blog
 layout: article
 ---
 <p>Opera recently <a href="http://www.omtp.org/News/Display.aspx?Id=495dc323-7f21-483b-b097-013a7aae6de6">announced</a> that we have joined the <abbr>OMTP</abbr> (Open Mobile Terminal Platform).  One major reason for this was to bring our experience of mobile and device development to the newly announced <a href="http://bondi.omtp.org/default.aspx">BONDI</a> specification.  BONDI is a new specification for standardising how web applications can access device features such as cameras, geolocation, address books and so on, in a safe manner. Previous to BONDI applications that make use of device features, such as Opera Platform and more recently Palm Pre, had to invent their own proprietary API that were not portable between different implementations and providers.  If it becomes adopted, BONDI will improve the interoperability and usefulness of these features across the Web, and offline applications that use web technologies as the interface layer.</p>

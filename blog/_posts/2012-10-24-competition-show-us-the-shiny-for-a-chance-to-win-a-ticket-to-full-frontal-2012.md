@@ -1,10 +1,10 @@
 ---
-title: 'Competition: show us the shiny for a chance to win a ticket to Full Frontal
-  2012 in Brighton, UK'
+title: 'Competition: show us the shiny for a chance to win a ticket to Full Frontal 2012 in Brighton, UK'
 authors:
 - patrick-lauke
 tags:
-- blog
+- full-frontal
+- conference
 layout: article
 ---
 <p>If you&#39;re serious about your JavaScript and fanatical about web app development, you should already be familiar with the <a href="http://2012.full-frontal.org/">Full Frontal</a> conference. Missed your chance to grab a ticket for this year? Don&#39;t fret, we may be able to help...</p>

@@ -3,11 +3,11 @@ title: An introduction to meta viewport and @viewport
 authors:
 - andreas-bovens
 tags:
-- device-pixel-ratio
+- devicepixelratio
 - media-queries
 - mobile
 - opera-mobile
-- target-densitydpi
+- targetdensitydpi
 - viewport
 layout: article
 ---

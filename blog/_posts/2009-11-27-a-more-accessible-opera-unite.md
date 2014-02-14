@@ -4,7 +4,7 @@ authors:
 - henny-swan
 tags:
 - accessibility
-- blog
+- unite
 layout: article
 ---
 <p>This week saw the release of Opera 10.10 final complete with a more accessible <a href="http://unite.opera.com/">Opera Unite</a>. If you&#39;ve not come across Opera Unite before it&#39;s a powerful platform that turns your browser into a server. This means that you can share content you have on your hard drive - photo&#39;s, files, folders, music, hosted websites - without having to uploaded these to a website.</p>

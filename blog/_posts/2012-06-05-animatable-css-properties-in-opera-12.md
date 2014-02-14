@@ -4,12 +4,11 @@ authors:
 - daniel-davis
 tags:
 - beta
-- Opera
-- opera next
+- opera
+- opera-next
 - support
 - css3
-- web standards
-- blog
+- web-standards
 layout: article
 ---
 <p>CSS3 transitions and animations don&#39;t just provide eye-candy for fancy demos &#x2014; they also improve usability and enhance the user experience (when used in the right places). Although still at an experimental stage and not meant for production sites yet, they are being used more and more on the web thanks to better and better browser support.</p>

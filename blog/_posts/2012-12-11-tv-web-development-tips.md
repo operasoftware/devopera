@@ -5,10 +5,8 @@ authors:
 tags:
 - presentation
 - emulator
-- web
 - tv
 - media-queries
-- blog
 layout: article
 ---
 <p><img src="/blog/tv-web-development-tips/Opera-TV-Store-seminar.jpg" alt="An Opera TV Store seminar in Tokyo" style="box-shadow:0 4px 8px rgba(0, 0, 0, 0.5); margin:12px auto;" /></p>

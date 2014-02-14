@@ -3,11 +3,10 @@ title: 5 questions for the Opera Mobile 10 Maemo team
 authors:
 - zi-bin-cheah
 tags:
-- Opera Mobile 10
+- opera-mobile
 - nokia
 - maemo
 - interview
-- blog
 layout: article
 ---
 <p>Göteborg isn&#39;t just a lovely sea port on the coast of Sweden, welcoming visitors with a warm sea breeze and the sound of sea gulls...it&#39;s also home to the group of guys that ported <a href="http://labs.opera.com/news/2010/05/11/">Opera Mobile 10 to the Nokia N900/N800/N810 Maemo platform</a>. They call themselves the <cite>Smooth Sailing Team</cite>: Fredrik Öhrn, Gustav Tiger, Vjaceslavs Klimovs and Anders Höckersten. We caught up with the team following today&#39;s release.</p>

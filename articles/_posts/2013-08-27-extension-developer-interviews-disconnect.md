@@ -5,8 +5,8 @@ authors:
 tags:
 - browser
 - disconnect
-- extension
-- extension-interview
+- extensions
+- interview
 - privacy
 layout: article
 ---

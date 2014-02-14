@@ -3,7 +3,7 @@ title: Opera Turbo
 authors:
 - roberto-mateu
 tags:
-- opera-turbo
+- turbo
 - labs
 layout: article
 ---

@@ -5,9 +5,8 @@ authors:
 tags:
 - accessibility
 - testing
-- Opera Dragonfly
+- dragonfly
 - methodology
-- blog
 layout: article
 ---
 <p>I was fortunate enough to get invited to speak about <strong>Accessibility testing tips and tools</strong> at Sussex University recently courtesy of Dr Graham McAllister.</p>

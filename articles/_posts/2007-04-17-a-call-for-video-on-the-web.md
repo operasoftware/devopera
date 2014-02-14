@@ -5,7 +5,7 @@ authors:
 tags:
 - video
 - open-web
-- opera-9.50
+- opera-9
 - labs
 layout: article
 ---

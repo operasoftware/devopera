@@ -4,11 +4,10 @@ authors:
 - bruce-lawson
 tags:
 - coast
-- Opera
+- opera
 - apps
 - ipad
 - browser
-- blog
 layout: article
 ---
 <p>Today, we&#39;re launching a new iPad product called <a href="http://coastbyopera.com">Coast by Opera</a>. Primarily designed for leisure surfing, the goal is invisible technology; the browser treats websites as apps, using gestures for navigation so that nothing gets in the way of an intuitive, full-screen experience.</p>

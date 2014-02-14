@@ -5,7 +5,7 @@ authors:
 tags:
 - html5
 - html5-parser
-- opera-11.50
+- opera-11
 - labs
 layout: article
 ---

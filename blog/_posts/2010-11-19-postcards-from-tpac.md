@@ -7,10 +7,9 @@ tags:
 - css3
 - html5
 - svg
-- web applications
+- webapps
 - w3c
 - standards
-- blog
 layout: article
 ---
 <p>Every year, the top Standardistas of the world jet off to <a herf="http://www.w3.org/2010/11/TPAC/">TPAC</a>: a glamorous foreign location where they drink Daquiris, dance the rhumba til dawn, build sand castles and talk about standards. It&#39;s like being James Bond, but with a License to Spec rather than kill. </p>

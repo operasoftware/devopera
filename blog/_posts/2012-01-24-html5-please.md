@@ -4,8 +4,7 @@ authors:
 - divya-manian
 tags:
 - css3
-- HTML5
-- blog
+- html5
 layout: article
 ---
 <p><a href="http://html5please.us"><img src="http://cache.gyazo.com/c5d6f648394681c59d93c487b8347cf5.png" alt="" /></a></p>

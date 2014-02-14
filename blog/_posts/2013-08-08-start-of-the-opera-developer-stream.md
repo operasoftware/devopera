@@ -3,10 +3,9 @@ title: Start of the Opera Developer stream
 authors:
 - andreas-bovens
 tags:
-- opera developer
+- opera-developer
 - flags
-- Opera
-- blog
+- opera
 layout: article
 ---
 <p>As announced <a href="http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle">on the Desktop Team Blog</a> a while back, we&#39;ve now switched to a fast release cycle with 3 different streams: Stable, Next and Developer.</p>

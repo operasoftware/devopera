@@ -4,11 +4,10 @@ authors:
 - david-storey
 tags:
 - resolution
-- Opera Mobile
-- Opera Dragonfly
-- Opera Mini
+- opera-mobile
+- dragonfly
+- opera-mini
 - mobile
-- blog
 layout: article
 ---
 <p>Opera has just released its <a href="http://www.opera.com/smw/2010/03/">State of the Mobile Web</a> for the month of March. Part four of this report highlights the global rankings for phones used by Opera Mini users. While all the buzz about the mobile Web focuses on the sexy touch screen smart phone market, only <em>four</em> of the top twenty phones used by Opera Mini users are smart phones.  Only <em>one</em> of these have a touch screen. It is worth pointing out that Opera Mini is the leading global mobile browser by both <a href="http://gs.statcounter.com/#mobile_browser-ww-monthly-200903-201004">StatCounter (26%)</a> and <a href="http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8">Net Applications (0.78% of the full Web market)</a>. Note: I’ve linked to the OS market share report for Net Applications. They only track iPhone as part of this metric. Opera Mini (excluding Opera Mini on iPhone) is tracked as Java ME. You can cross reference this is all Opera Mini as it matches up with their <a href="http://marketshare.hitslink.com/browser-market-share.aspx?qprid=0">browser market share</a> for Opera Mini.</p>
