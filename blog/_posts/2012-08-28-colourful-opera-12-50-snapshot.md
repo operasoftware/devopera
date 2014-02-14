@@ -70,7 +70,7 @@ layout: article
 
 <p>For further information on ICC profiles, I&#39;d recommend this excellent and accessible primer on <a href="http://regex.info/blog/photo-tech/color-spaces-page0">Digital Image Color Spaces</a>, but here&#39;s a simple example.</p>
 
-<div><img src="http://files.myopera.com/patrickhlauke/blog/brucel-ICC.jpg" alt="A photo of Bruce Lawson, with an embedded colour profile - ICC-aware browsers will display this correctly" style="display:inline" /> <img src="http://files.myopera.com/patrickhlauke/blog/brucel-no-ICC.jpg" alt="The same photo of Bruce Lawson, but this time without any embedded ICC profile - this will appear completely colour-shifted in all browsers" style="display:inline" />
+<div><img src="/blog/colourful-opera-12-50-snapshot/brucel-ICC.jpg" alt="A photo of Bruce Lawson, with an embedded colour profile - ICC-aware browsers will display this correctly" style="display:inline" /> <img src="/blog/colourful-opera-12-50-snapshot/brucel-no-ICC.jpg" alt="The same photo of Bruce Lawson, but this time without any embedded ICC profile - this will appear completely colour-shifted in all browsers" style="display:inline" />
 <p class="caption">If Bruce looks blue in both images, your browser doesn&#39;t support ICC profiles.</p>
 </div>
 

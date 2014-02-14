@@ -22,6 +22,6 @@ layout: article
 
 <p>Also note that you can use all the <a href="http://my.opera.com/dragonfly/blog/">recent additions to Opera Dragonfly</a> with Opera Mobile Emulator, by activating Opera Dragonfly&#39;s <a href="http://www.opera.com/dragonfly/documentation/remote/">remote debugging feature</a>, opening <code>opera:debug</code> in Opera Mobile Emulator and clicking the Connect button.</p>
 
-<img src="http://files.myopera.com/andreasbovens/blog/debugging.png" alt="Debugging Opera Mobile Emulator with Opera Dragonfly" style="clear: left;" />
+<img src="/blog/opera-mobile-emulator-12-1-is-out/debugging.png" alt="Debugging Opera Mobile Emulator with Opera Dragonfly" style="clear: left;" />
 
 <p>For a full overview of all input modes, launch arguments, shortcuts and other power user settings, check out our <a href="http://dev.opera.com/articles/view/opera-mobile-emulator/">extensive guide on Dev.Opera</a>.</p>

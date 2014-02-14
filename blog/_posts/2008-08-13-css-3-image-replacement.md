@@ -25,9 +25,9 @@ layout: article
 &lt;h1&gt;Bruce Lawson’s gorgeous blog&lt;/h1&gt;</code></pre>
 
 
-<p>You can see it in action on this <a href="http://files.myopera.com/brucelawson/blog/css3-image-replacement.htm">image replacement test page</a>.</p>
+<p>You can see it in action on this <a href="/blog/css-3-image-replacement/css3-image-replacement.htm">image replacement test page</a>.</p>
 
-<p>It&#39;s interesting to note how the <a href="http://files.myopera.com/brucelawson/blog/css3-image-replacement-styling.htm">browsers  style this differently</a>. To centre the logo, you need to style the <code>h1</code> with <code>text-align:center</code>, as if Opera centres the real text and then replaces it with the image. Safari will only centre the logo with margins, as if it replaces the text with an virtual <code>img</code> tag, which is then impervious to <code>text-align</code>.</p>
+<p>It&#39;s interesting to note how the <a href="/blog/css-3-image-replacement/css3-image-replacement-styling.htm">browsers  style this differently</a>. To centre the logo, you need to style the <code>h1</code> with <code>text-align:center</code>, as if Opera centres the real text and then replaces it with the image. Safari will only centre the logo with margins, as if it replaces the text with an virtual <code>img</code> tag, which is then impervious to <code>text-align</code>.</p>
 
 <h3>What should browsers do if the image can&#39;t be shown?</h3>
 <p>I think, in any circumstance that a browser can&#39;t show an image, it should show the  content of the element in the natural position for that text. That would ensure that this <abbr>CSS</abbr> 3 image replacement technique degrades well when CSS and images are off.</p>
@@ -48,6 +48,6 @@ layout: article
 <p>To me, it&#39;s odd that anyone should want to display nothing instead of the content, let alone make it the default, but at least the new specification allows you to unambiguously tell the browser to display the contents of the element: it&#39;s not allowed to &quot;choose&quot; between the text and a &quot;image not found&quot; icon.</p>
 
 <h3>What <em>do</em>  browsers do?</h3>
-<p>However, browser support is still experimental as the <a href="http://www.w3.org/TR/css3-content/">generated and replaced content module</a> of <abbr>CSS</abbr> 3 is still susceptible to change. My <a href="http://files.myopera.com/brucelawson/blog/css3-image-replacement-nonexist.htm">no-images test page</a> shows that Opera and Safari still have problems following the <abbr>CSS</abbr> 3 spec fully.</p>
+<p>However, browser support is still experimental as the <a href="http://www.w3.org/TR/css3-content/">generated and replaced content module</a> of <abbr>CSS</abbr> 3 is still susceptible to change. My <a href="/blog/css-3-image-replacement/css3-image-replacement-nonexist.htm">no-images test page</a> shows that Opera and Safari still have problems following the <abbr>CSS</abbr> 3 spec fully.</p>
 <h3>Conclusion</h3>
 <p>Once the <abbr>CSS</abbr> 3 spec is finalised and the browser support is solid, a foolproof way of doing image replacement will be available to us that  is accessible to screenreaders and which degrades gracefully with CSS off and with images off.</p>

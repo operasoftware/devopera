@@ -14,7 +14,7 @@ tags:
 - blog
 layout: article
 ---
-<img src="http://files.myopera.com/chrismills/blog/sxswi.jpg" style="border: 10px solid #EFECDD;" />
+<img src="/blog/singing-an-opera-at-sxswi-2012/sxswi.jpg" style="border: 10px solid #EFECDD;" />
 
 <p>As the <a href="http://sxsw.com/interactive">SXSWi 2012</a> festival draws near, it&#39;s our pleasure to talk about what we&#39;re doing at the event. A number of Opera folks are converging on Austin Texas to have fun, say hi to y&#39;all, talk geek, and give some great talks. Come along and catch us presenting the following sessions:</p>
 

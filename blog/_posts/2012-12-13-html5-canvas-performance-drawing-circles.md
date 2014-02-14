@@ -10,7 +10,7 @@ tags:
 - blog
 layout: article
 ---
-<img src="http://files.myopera.com/tagawa/blog/canvas-christmas-tree.jpg" alt="HTML5 canvas baubles on a Christmas tree" style="float:right;margin:0 0 1em 1em;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);" />
+<img src="/blog/html5-canvas-performance-drawing-circles/canvas-christmas-tree.jpg" alt="HTML5 canvas baubles on a Christmas tree" style="float:right;margin:0 0 1em 1em;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);" />
 
 <p>As it&#39;s nearly Christmas, I was playing with HTML5 canvas to draw baubles on a photo of a Christmas tree. Wondering what was the best way to do it, I came across this answer on Stack Overflow about <a href="http://stackoverflow.com/questions/9742830/html5-canvas-glass-circle#answer-9743575">drawing circles with just radial gradients</a>.</p>
 

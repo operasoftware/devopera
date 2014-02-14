@@ -11,7 +11,7 @@ tags:
 - blog
 layout: article
 ---
-<span class='imgright'><img alt='' src='http://files.myopera.com/andreasbovens/blog/300px-Xiphias_gladius2.jpg' /></span>
+<span class='imgright'><img alt='' src='/blog/opera-11-50-released-speed-dial-extensions-improved-standards-support/300px-Xiphias_gladius2.jpg' /></span>
 <p>Today, we&#39;re releasing <a href="http://www.opera.com/browser/">Opera 11.50</a>, aka &quot;Swordfish&quot;. It has a brand new <em>featherweight</em> look-and-feel, and juicy standards bits. Over the last couple of weeks, we&#39;ve introduced this release&#39;s new features in different blog posts — here&#39;s a quick recap, with pointers to updated documentation and more.</p>
 <h3>Speed Dial extensions</h3>
 <p>Back in 2007, we <a href="http://www.opera.com/docs/changelogs/windows/920/">introduced</a> Speed Dial to the world, and over the years, we&#39;ve have gradually improved its looks and functionality. For our Opera 11.10 release a couple of months ago, we also added <a href="http://dev.opera.com/articles/view/opera-speed-dial-enhancements/">hooks for developers</a> to control the way their site looks when rendered in a Speed Dial cell.</p>
