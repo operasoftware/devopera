@@ -1,7 +1,7 @@
 ---
 title: A simple survey of screen sizes
 authors:
-- tagawa
+- daniel-davis
 tags:
 - reference
 - rwd

@@ -1,7 +1,7 @@
 ---
 title: 'UK university tour: Web Standards for the Future'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - css3
 - svg

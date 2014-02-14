@@ -1,7 +1,7 @@
 ---
 title: Germany University Tour
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - University
 - education
@@ -10,7 +10,7 @@ tags:
 - blog
 layout: article
 ---
-<p>After 7 days, 10 universities and a lot of cool discussions during evening meet-ups, Opera&#39;s Geman university tour has comes to an end.</p> 
+<p>After 7 days, 10 universities and a lot of cool discussions during evening meet-ups, Opera&#39;s Geman university tour has comes to an end.</p>
 
 <p>For everybody who attended the seminars and meetups, a BIG DANKE! The Opera team that was present in Germany were <a href="http://people.opera.com/howcome/">Håkon Wium Lie</a>, <a href="http://annevankesteren.nl/">Anne van Kesteren</a>, <a href="http://robertomateu.com/">Roberto Mateu</a> and <a href="http://my.opera.com/goessling/">Bernd Goessling</a>. Here goes the slides.</p>
 

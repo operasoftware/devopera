@@ -1,7 +1,7 @@
 ---
 title: Standards.next presentations
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - browsers
 - event

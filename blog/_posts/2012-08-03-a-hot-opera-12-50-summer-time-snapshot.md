@@ -1,7 +1,7 @@
 ---
 title: A hot Opera 12.50 summer-time snapshot
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

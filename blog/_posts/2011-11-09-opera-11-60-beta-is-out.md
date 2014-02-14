@@ -1,7 +1,7 @@
 ---
 title: Opera 11.60 Beta is out!
 authors:
-- nimbupani
+- divya-manian
 tags:
 - Opera 11.60
 - beta

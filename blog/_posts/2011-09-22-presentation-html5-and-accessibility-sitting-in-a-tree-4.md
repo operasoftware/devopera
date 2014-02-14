@@ -1,7 +1,7 @@
 ---
 title: 'Presentation: HTML5 and Accessibility sitting in a tree'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

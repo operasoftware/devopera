@@ -1,7 +1,7 @@
 ---
 title: '"Making your site mobile-friendly" presentation at M-Days 2011, Frankfurt'
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

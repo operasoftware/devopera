@@ -1,7 +1,7 @@
 ---
 title: Standards.Next CSS3 event coming soon to the big apple
 authors:
-- dstorey
+- david-storey
 tags:
 - css3
 - NYC

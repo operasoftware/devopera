@@ -1,7 +1,7 @@
 ---
 title: 'Opera Widgets: mobile applications made with Web Standards'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - widgets
 - mobile

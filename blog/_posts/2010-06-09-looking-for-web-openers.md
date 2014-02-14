@@ -1,7 +1,7 @@
 ---
 title: Looking for Web Openers
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - open the web
 - job

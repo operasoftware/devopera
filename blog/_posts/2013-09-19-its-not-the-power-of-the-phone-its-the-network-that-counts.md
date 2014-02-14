@@ -1,7 +1,7 @@
 ---
 title: It's not the power of the phone, it's the network that counts
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Asia
 - Nepal

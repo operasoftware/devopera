@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 12, and introducing Opera Mini Next
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Opera Mobile
 - Opera Mini
@@ -31,7 +31,7 @@ layout: article
  <li><a href="http://dev.opera.com/articles/view/introducing-ecmascript-5-1/">ECMAScript 5.1</a> for those who are too damn groovy for JavaScript. </li>
 <li><a href="http://my.opera.com/shwetankdixit/blog/2011/07/06/getusermedia-and-device-orientation-adventures">Orientation Support</a></li>
 <li>For Android only, support for <a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">camera use in the browser</a> using the same, newer, <a href="http://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">getUserMedia syntax</a> as Opera desktop Labs.</li>
- 
+
 <li><a href="http://dev.opera.com/articles/view/css3-radial-gradients/">CSS3 radial gradients</a> and the fabled <a href="http://media.opera.com/media/press/2011/unicorn/"><code>-o-double-rainbow</code></a>.</li>
 <li><a href="http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">CORS (cross-origin resource sharing)</a>.</li>
 <li>For Android only, hardware-accelerated <a href="http://dev.opera.com/articles/view/an-introduction-to-webgl/">WebGL</a>  for all things 3D and web. With WebGL on mobile, it&#39;ll be even easier to make and distribute games that work cross-platform.</li>

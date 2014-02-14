@@ -1,7 +1,7 @@
 ---
 title: ARIA highlighting extension
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - extensions
 - aria

@@ -1,7 +1,7 @@
 ---
 title: jsFoo Bangalore - My slides and thoughts
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - mobile web
 - shwetank
@@ -21,4 +21,4 @@ layout: article
 
 <ul class="bullets"><li><a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">Running your web applications offline with HTML5 AppCache</a></li><li><a href="http://dev.opera.com/articles/view/web-storage/">Web Storage: easier, more powerful client-side data storage</a></li><li><a href="http://dev.opera.com/articles/view/taking-your-web-apps-offline-web-storage-appcache-websql/">Taking your web apps offline: A tale of Web Storage, Application Cache and WebSQL</a></li><li><a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a></li><li><a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li><li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Blog post on Opera Core blog about Opera Mobile labs build with camera and device orientation support</a></li></ul>
 
-The event was full of wicked smart and cool people, and I hope to see this event happening again soon! 
+The event was full of wicked smart and cool people, and I hope to see this event happening again soon!

@@ -1,7 +1,7 @@
 ---
 title: Upcoming Open Web speaking gigs
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - event

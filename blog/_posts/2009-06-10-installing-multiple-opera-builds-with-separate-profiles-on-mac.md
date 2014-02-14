@@ -1,7 +1,7 @@
 ---
 title: Installing multiple Opera instances with separate profiles on Mac
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - install
 - mac

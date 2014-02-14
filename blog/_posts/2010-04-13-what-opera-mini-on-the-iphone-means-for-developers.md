@@ -1,7 +1,7 @@
 ---
 title: What Opera Mini on the iPhone means for developers
 authors:
-- tagawa
+- daniel-davis
 tags:
 - iphone
 - Opera Mini

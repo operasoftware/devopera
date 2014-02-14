@@ -1,7 +1,7 @@
 ---
 title: Bruce at SparkUp Poznan‎, Poland
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - CSS
 - Opera

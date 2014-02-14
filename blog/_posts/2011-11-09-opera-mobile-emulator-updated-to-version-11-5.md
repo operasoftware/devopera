@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile Emulator updated to version 11.5
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - development

@@ -1,7 +1,7 @@
 ---
 title: Die Zukunft der Webstandards – Webinale 2010, Berlin
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - w3c widgets
 - HTML

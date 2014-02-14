@@ -1,7 +1,7 @@
 ---
 title: -o- vendor prefixed CSS supported in Opera 10.50 and 10.60
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - css
 - css3

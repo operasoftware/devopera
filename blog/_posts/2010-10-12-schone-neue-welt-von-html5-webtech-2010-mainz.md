@@ -1,7 +1,7 @@
 ---
 title: Schöne neue Welt von HTML5 - WebTech 2010 Mainz
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - HTML
 - video

@@ -1,7 +1,7 @@
 ---
 title: Opera 10.50 beta is out!
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - widgets
 - Opera 10.50

@@ -1,7 +1,7 @@
 ---
 title: Take our brand survey
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - survey

@@ -1,7 +1,7 @@
 ---
 title: Opera Scope protocol specification released
 authors:
-- dstorey
+- david-storey
 tags:
 - specification
 - Opera Dragonfly

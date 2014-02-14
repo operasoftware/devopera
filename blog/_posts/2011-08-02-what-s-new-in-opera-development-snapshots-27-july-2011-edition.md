@@ -1,7 +1,7 @@
 ---
 title: 'What’s new in Opera development snapshots: 27 July 2011 edition'
 authors:
-- nimbupani
+- divya-manian
 tags:
 - opera next
 - blog
@@ -15,15 +15,15 @@ layout: article
       <p>This release of Opera has full support for <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#microdata-dom-api">Microdata DOM APIs</a>. There is a bug around the implementation on Mac, Linux/FreeBSD versions of this snapshot that we are hoping to fix as soon as we can. </p>
       <p>What this API would allow you to do is to access microdata specified using microdata attributes like <code>itemprop</code>, <code>itemscope</code> via a JavaScript interface. </p>
       <p>Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> also <a href="http://bugzilla.validator.nu/show_bug.cgi?id=671">added a bunch of patches</a> to make <a href="http://validator.nu">validator.nu</a> validate microdata attributes better. </p>
-      <p>Tests written while implementing the APIs will also be shortly submitted to the W3C test suite.</p>      
+      <p>Tests written while implementing the APIs will also be shortly submitted to the W3C test suite.</p>
     </li>
     <li><h3>href of a link element is no longer empty if it is same as document url.</h3>
       <p>Not sure why, but you can legally have such markup <code>&lt;link href=&quot;&lt;same url as where this markup exists&gt;&quot;&gt;</code>. In this specific case, Opera used to return an empty string when queried for the <code>href</code> attribute on the <code>link</code> (here is <a href="http://jsbin.com/esiloz/6/">an example</a>).</p>
-    </li> 
+    </li>
     <li>
       <h3>Change events now fire when clicking on labels associated with an input checkbox</h3>
       <p>This was a regression and this has now been fixed. </p>
-    </li>       
+    </li>
     <li>
       <h3>Inset Box Shadow on input text elements</h3>
       <p>Opera was not rendering inset box shadows on input text elements which has now been fixed (<a href="http://jsfiddle.net/Ap7sM/">here is an example</a>). </p>
@@ -35,7 +35,7 @@ layout: article
     <li>
       <h3>Default widths of input of types url and email</h3>
       <p>The default width of url and email inputs was longer than regular text inputs. So, now your default inputs in a form will look prettier!</p>
-    </li>    
+    </li>
     <li>
       <h3>Computed Value of overflow now returns <code>auto</code> on hidden elements</h3>
       <p>For some reason the computed value for <code>overflow</code> returned on an element hidden with <code>display:none</code> was always <code>visible</code> instead of the default of <code>auto</code> causing weird effects in some design patterns such as <a href="http://jqueryui.com/demos/accordion/#fillspace">jQuery UI&#39;s accordion</a> (note the scrollbar that appears when clicking &quot;Section 4&quot; does not appear on previous versions of Opera).</p>

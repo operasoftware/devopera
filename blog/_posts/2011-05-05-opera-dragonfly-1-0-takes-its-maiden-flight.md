@@ -1,10 +1,9 @@
 ---
 title: Opera Dragonfly 1.0 takes its maiden flight
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera Dragonfly 1.0
-- '#dfl1'
 - blog
 layout: article
 ---

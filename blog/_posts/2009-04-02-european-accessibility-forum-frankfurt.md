@@ -1,7 +1,7 @@
 ---
 title: European Accessibility Forum Frankfurt, Friday 27th March 2009
 authors:
-- chrismills
+- chris-mills
 tags:
 - applications
 - frankfurt

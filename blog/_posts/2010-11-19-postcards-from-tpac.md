@@ -1,7 +1,7 @@
 ---
 title: Postcards from TPAC
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - css
 - css3

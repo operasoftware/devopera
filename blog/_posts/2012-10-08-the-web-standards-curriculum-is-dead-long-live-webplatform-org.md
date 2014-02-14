@@ -1,7 +1,7 @@
 ---
 title: The web standards curriculum is dead; long live webplatform.org!
 authors:
-- chrismills
+- chris-mills
 tags:
 - webplatform.org
 - education

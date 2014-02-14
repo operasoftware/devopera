@@ -1,7 +1,7 @@
 ---
 title: Let's talk Web Standards @ University of Oslo
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - norway
 - uio

@@ -1,7 +1,7 @@
 ---
 title: HTML5 Multimedia - Bruce's Frontrow, Krakow, Poland presentation
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - video
 - HTML5

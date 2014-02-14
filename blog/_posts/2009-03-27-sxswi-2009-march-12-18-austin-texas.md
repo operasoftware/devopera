@@ -1,7 +1,7 @@
 ---
 title: SXSWi 2009, March 12-18, Austin, Texas
 authors:
-- chrismills
+- chris-mills
 tags:
 - browsers
 - SXSWi

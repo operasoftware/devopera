@@ -1,7 +1,7 @@
 ---
 title: DOM Event constructors in Opera 11.60
 authors:
-- webinista
+- tiffany-brown
 tags:
 - eventtarget
 - event

@@ -1,7 +1,7 @@
 ---
 title: SVG Tiny 1.2 enters last call
 authors:
-- dstorey
+- david-storey
 tags:
 - W3C
 - Tiny

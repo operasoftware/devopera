@@ -1,7 +1,7 @@
 ---
 title: W3C Widgets talk @ Web Standards Group, Sydney
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - apps
 - widgets

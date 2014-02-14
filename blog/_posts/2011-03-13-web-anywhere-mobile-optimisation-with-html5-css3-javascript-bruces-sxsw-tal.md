@@ -1,8 +1,7 @@
 ---
-title: 'Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript (Bruce''s SxSW/
-  BigM talk)'
+title: 'Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript (Bruce’s SxSW BigM talk)'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article
@@ -60,7 +59,7 @@ layout: article
 
 <h4>CSS Media Queries and Viewport for adaptive content</h4>
 <ul>
-<li>Demo: 
+<li>Demo:
 <a rel="nofollow" href="http://people.opera.com/danield/css3/vangogh/">Media Queries: CSS that responds to the screen width</a>
 </li>
 <li>Demo: <a rel="nofollow" href="http://people.opera.com/brucel/demo/background-size.html">CSS background-size </a>

@@ -1,12 +1,10 @@
 ---
 title: 2008 - the year the web grew up?
 authors:
-- chrismills
+- chris-mills
 tags:
-- CSS
-- '5'
-- '3'
-- HTML
+- CSS3
+- HTML5
 - evolution
 - SVG
 - Standards

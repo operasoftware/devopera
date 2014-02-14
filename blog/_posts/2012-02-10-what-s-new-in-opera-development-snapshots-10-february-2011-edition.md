@@ -1,7 +1,7 @@
 ---
 title: 'What’s new in Opera development snapshots: 10 February 2011 edition'
 authors:
-- nimbupani
+- divya-manian
 tags:
 - opera next
 - blog

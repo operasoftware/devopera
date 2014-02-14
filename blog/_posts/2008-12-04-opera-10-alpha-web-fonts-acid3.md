@@ -1,7 +1,7 @@
 ---
 title: 'Opera 10 alpha: Web Fonts, Acid 3 and more'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - opera 10
 - css3

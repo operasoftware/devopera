@@ -1,7 +1,7 @@
 ---
 title: Using Opera 10 with the Mac screen reader VoiceOver
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - VoiceOver

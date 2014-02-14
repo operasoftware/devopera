@@ -1,7 +1,7 @@
 ---
 title: Audio and Video in HTML5 - London Web Standards 20.09.2010
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - HTML
 - video

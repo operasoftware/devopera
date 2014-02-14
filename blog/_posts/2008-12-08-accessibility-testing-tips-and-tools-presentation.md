@@ -1,7 +1,7 @@
 ---
 title: Accessibility testing tips and tools presentation
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - testing
@@ -19,4 +19,4 @@ layout: article
 <ul>
 <li><a href="http://files.myopera.com/iheni/blog/TestingAccessibility.ppt.zip">Accessibility testing tips and tools (PPT Zip file 656KB)</a></li>
 <li><a href="http://files.myopera.com/iheni/blog/TestingAccessibility.pdf.zip">Accessibility testing tools and tips (PDF, 500 KB)</a></li></ul>
- 
+

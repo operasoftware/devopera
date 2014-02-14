@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 11.1 – new features and additions
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - Opera Mobile 11.1
 - Opera Mobile

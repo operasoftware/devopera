@@ -1,7 +1,7 @@
 ---
 title: 'Screencast: "Mobile web development techniques"'
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - viewport
 - mobile

@@ -1,7 +1,7 @@
 ---
 title: Opera India University Tour
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - India
 - HTML5

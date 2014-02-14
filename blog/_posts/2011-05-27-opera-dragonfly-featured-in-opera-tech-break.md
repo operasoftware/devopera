@@ -1,7 +1,7 @@
 ---
 title: Opera Dragonfly featured in Opera Tech Break
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - debugger
 - Opera

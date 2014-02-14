@@ -1,7 +1,7 @@
 ---
 title: Automate your application testing with OperaWatir
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Opera
 - testing

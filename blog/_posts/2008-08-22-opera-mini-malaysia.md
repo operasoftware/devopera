@@ -1,7 +1,7 @@
 ---
 title: Opera Mini in Malaysia
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - Malaysia
 - Opera Mini

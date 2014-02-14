@@ -1,7 +1,7 @@
 ---
 title: HTML5 <video> Artikel und Wettbewerb auf Chip.de
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - html5
 - video

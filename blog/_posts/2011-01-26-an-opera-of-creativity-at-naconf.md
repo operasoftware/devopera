@@ -1,7 +1,7 @@
 ---
 title: An Opera of Creativity at NAConf!
 authors:
-- chrismills
+- chris-mills
 tags:
 - Opera
 - naconf

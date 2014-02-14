@@ -1,7 +1,7 @@
 ---
-title: 'Opera 10: We''ve Only Just Begun'
+title: Opera 10: We’ve Only Just Begun
 authors:
-- mollydotcom
+- molly-holzschlag
 tags:
 - Opera 10
 - browsers

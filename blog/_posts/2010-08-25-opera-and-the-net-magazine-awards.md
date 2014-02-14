@@ -1,7 +1,7 @@
 ---
 title: Opera and the .net magazine awards
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

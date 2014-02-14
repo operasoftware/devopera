@@ -1,7 +1,7 @@
 ---
 title: Welcome to the Opera Developer Network
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera
 - development

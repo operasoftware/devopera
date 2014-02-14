@@ -1,7 +1,7 @@
 ---
 title: 'HTML5 Forms: error reporting with wobbly bubbles'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - error reporting
 - validation

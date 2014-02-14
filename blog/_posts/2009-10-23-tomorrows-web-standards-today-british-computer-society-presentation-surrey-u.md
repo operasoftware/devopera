@@ -1,8 +1,7 @@
 ---
-title: Tomorrow's web standards today - British Computer Society presentation, Surrey
-  University
+title: Tomorrow's web standards today - British Computer Society presentation, Surrey University
 authors:
-- iheni
+- henny-swan
 tags:
 - presentation
 - accessibility

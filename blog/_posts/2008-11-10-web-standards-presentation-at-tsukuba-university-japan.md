@@ -1,7 +1,7 @@
 ---
 title: Web Standards presentation at Tsukuba University, Japan
 authors:
-- dstorey
+- david-storey
 tags:
 - presentation
 - University

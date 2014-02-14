@@ -1,7 +1,7 @@
 ---
 title: 'Mouse wheelDelta in Opera: clearing up some confusion'
 authors:
-- tagawa
+- daniel-davis
 tags:
 - Opera
 - JavaScript

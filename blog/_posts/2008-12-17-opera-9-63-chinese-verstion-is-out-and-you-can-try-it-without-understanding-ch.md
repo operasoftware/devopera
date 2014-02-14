@@ -1,7 +1,7 @@
 ---
 title: Opera 9.63 Chinese Ver. is out (and you can try it too)
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - China
 - desktop
@@ -13,7 +13,7 @@ layout: article
 Opera has just launched our Opera Desktop 9.63 Chinese build. True to Opera desktop&#39;s tradition, the China version is also named after a bird:IBIS. IBIS can be downloaded from <a href="http://www.opera.com/download/get.pl?id=31945">Opera download (6.7mb)</a>
 </p>
 <p>
-With the launch of IBIS, Opera has moved from translation to localization. We have listened to our Chinese users, and included many Chinese-friendly features. Through Opera&#39;s Open The Web effort, we have also worked with major Chinese site owners and IBIS is a proof that even more sites now work in Opera. 
+With the launch of IBIS, Opera has moved from translation to localization. We have listened to our Chinese users, and included many Chinese-friendly features. Through Opera&#39;s Open The Web effort, we have also worked with major Chinese site owners and IBIS is a proof that even more sites now work in Opera.
 </p>
 <p>
 Once you launch the browser, you will spot a brand new look and feel. There is a bright red browser skin. Upon firing up a new tab, you will see that the Speed Dial has a hovering effect with precustomized sites.
@@ -22,7 +22,7 @@ Once you launch the browser, you will spot a brand new look and feel. There is a
 This version has better tab management more suited for the Chinese users. Double-clicking a tab will close it and dragging a link to open the tab will open it in the background rather than the foreground.
 </p>
 <p>
-Other features include support for popular Chinese download tool Thunder (you can now right click to download the file into Thunder). Opera mail now comes with China&#39;s favourite email configuration. 
+Other features include support for popular Chinese download tool Thunder (you can now right click to download the file into Thunder). Opera mail now comes with China&#39;s favourite email configuration.
 </p>
 <p>
 For those of us who don&#39;t read Chinese, worry not. You can still install it by choosing English during installation.

@@ -1,7 +1,7 @@
 ---
 title: Animatable CSS properties in Opera 12
 authors:
-- tagawa
+- daniel-davis
 tags:
 - beta
 - Opera

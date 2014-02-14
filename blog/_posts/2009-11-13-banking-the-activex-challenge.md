@@ -1,7 +1,7 @@
 ---
 title: Banking, the ActiveX challenge
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - bank
 - China
@@ -26,7 +26,7 @@ I was invited to speak to a group of developers at the China Bank of Communicati
 <li>The third option is to drop plugins altogether and use a one-time password generator. This crossed my mind with banks in Norway which I am provided with a calculator (I use Nordea Bank). A one-time password calculator will not have the spillover security concerns of ActiveX.</li>
 </ul>
 <p>
-Options above are used to prevent password-snatching while a user is typing in the login credentials - before he or she clicks on the login button which sends the login credentials through a HTTPS secure channel. 
+Options above are used to prevent password-snatching while a user is typing in the login credentials - before he or she clicks on the login button which sends the login credentials through a HTTPS secure channel.
 </p>
 <p>
 On the HTTPS side of things, using <a href="http://en.wikipedia.org/wiki/Extended_Validation_Certificate">Extended Validation (EV)</a> certificates will give bank users better assurance since EV certificates goes through a much more rigorous process before it is given out. Browsers with EV support display more information for EV certificates than for previous SSL certificates. IE8, Firefox, Safari, Google Chrome and Opera support Extended Validation.

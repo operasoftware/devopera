@@ -1,7 +1,7 @@
 ---
 title: 'Future of Web Apps London: HTML5'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - webforms
 - video
@@ -24,11 +24,11 @@ This puts HTML in direct competition with other technologies intended for applic
 <li><a href="http://excanvas.sourceforge.net/">the excanvas library to port <code>canvas</code> to Internet Explorer</a></li>
 <li><a href="http://www.filamentgroup.com/lab/jquery_visualize_plugin_accessible_charts_graphs_from_tables_html5_canvas/">Filament Group&#39;s jQuerty plugin using <code>canvas</code> for graphing data tables</a></li>
 <li><a href="http://raphaeljs.com/">Raphaël JavaScript Library to make <abbr>SVG</abbr> that also works in Internet Explorer</a></li>
-<li><a href="http://code.google.com/p/svgweb/">SVG Web is a JavaScript library which provides SVG support on Internet Explorer</a> (alpha code: not ready for production)</li> 
+<li><a href="http://code.google.com/p/svgweb/">SVG Web is a JavaScript library which provides SVG support on Internet Explorer</a> (alpha code: not ready for production)</li>
 <li><a href="http://people.opera.com/brucel/demo/forms/html5-forms-advanced-demo.html">My <abbr>HTML</abbr>5 forms demo, including range, date, placeholder, regex validation</a> (try in Opera and Chrome)</li>
 <li><a href="http://www.modernizr.com">modernizr</a> - a small <abbr>HTML</abbr>5 capability detection library</li>
 <li><a href="http://www.html5demos.com/"><abbr>HTML</abbr>5demos.com</a> - Remy Sharp&#39;s demos of geolocation, offline storage and web database and many others</li>
-<li><a href="http://people.opera.com/brucel/demo/video-demos.html">Video demos</a></li> 
+<li><a href="http://people.opera.com/brucel/demo/video-demos.html">Video demos</a></li>
 </ul>
 <p>You might also want to check out</p>
 <ul>

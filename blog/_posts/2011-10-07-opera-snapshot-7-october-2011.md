@@ -1,7 +1,7 @@
 ---
-title: 'What’s new in Opera''s snapshots: 7 October 2011'
+title: 'What’s new in Opera’s snapshots: 7 October 2011'
 authors:
-- chrismills
+- chris-mills
 tags:
 - linear gradients
 - ragnarök

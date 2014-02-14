@@ -1,7 +1,7 @@
 ---
 title: Opera Desktop 10.51 is out and fast
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - browsers
 - Opera 10.51

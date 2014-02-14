@@ -1,7 +1,7 @@
 ---
-title: 'Opera accessibility: where we''re at'
+title: Opera accessibility: where we’re at
 authors:
-- iheni
+- henny-swan
 tags:
 - blog
 layout: article

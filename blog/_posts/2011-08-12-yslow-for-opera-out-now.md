@@ -1,7 +1,7 @@
 ---
 title: YSlow for Opera, out now!
 authors:
-- tagawa
+- daniel-davis
 tags:
 - Opera
 - Yahoo!

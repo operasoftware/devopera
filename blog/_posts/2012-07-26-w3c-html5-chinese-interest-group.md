@@ -1,7 +1,7 @@
 ---
 title: W3C HTML5 Chinese Interest Group
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - zh
 - chinese

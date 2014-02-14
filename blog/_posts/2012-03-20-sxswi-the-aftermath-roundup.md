@@ -1,7 +1,7 @@
 ---
 title: 'SXSWi: the aftermath roundup'
 authors:
-- chrismills
+- chris-mills
 tags:
 - sxswi
 - css3

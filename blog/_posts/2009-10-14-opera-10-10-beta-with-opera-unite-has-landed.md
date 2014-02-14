@@ -1,7 +1,7 @@
 ---
 title: Opera 10.10 beta with Opera Unite has landed
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - applications
 - unite

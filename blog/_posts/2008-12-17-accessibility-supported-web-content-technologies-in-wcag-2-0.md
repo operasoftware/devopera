@@ -1,7 +1,7 @@
 ---
 title: Accessibility supported web content technologies in WCAG 2.0
 authors:
-- iheni
+- henny-swan
 tags:
 - wcag
 - wai-aria

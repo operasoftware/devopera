@@ -1,7 +1,7 @@
 ---
 title: State of the mobile Web Report
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - SNS
 - Opera Mini
@@ -35,7 +35,7 @@ The Full Web surfing comprises more than 77% of all traffic. Content on <span ab
 The report shows us more and more people are browsing web pages on their mobile phones making it more important for web developers to build with mobile devices in mind. <a href="http://dev.opera.com/articles/mobile/">Tutorials and best practices when designing for mobile</a> are available.
 </p>
 <p>
-Also, Opera Dragonfly is a developer tool that allows you to remotely debug your web pages for mobile and TV from the comfort of you computer. 
+Also, Opera Dragonfly is a developer tool that allows you to remotely debug your web pages for mobile and TV from the comfort of you computer.
 </p>
 <p>
 More findings in <a href="http://www.opera.com/smw/">State of The Mobile Web</a>.

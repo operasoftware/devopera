@@ -1,7 +1,7 @@
 ---
 title: Google Chrome dropping H.264 – a vote of confidence for WebM and Open Web technologies
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - webm
 - Ogg

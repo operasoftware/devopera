@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 10.1 for S60
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - mobile10.1
 - Carakan

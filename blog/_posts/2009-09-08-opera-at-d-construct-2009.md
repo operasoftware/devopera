@@ -1,7 +1,7 @@
 ---
 title: Opera at d.Construct 2009, September 3-4 2009!
 authors:
-- chrismills
+- chris-mills
 tags:
 - dconstruct
 - opera

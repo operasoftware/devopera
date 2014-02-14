@@ -1,7 +1,7 @@
 ---
 title: 'A call for education: How do we educate the web standards kids?'
 authors:
-- chrismills
+- chris-mills
 tags:
 - universities
 - wasp interact

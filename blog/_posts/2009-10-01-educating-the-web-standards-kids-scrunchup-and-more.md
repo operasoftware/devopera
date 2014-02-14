@@ -1,7 +1,7 @@
 ---
 title: Educating the web standards kids - scrunchup and more
 authors:
-- chrismills
+- chris-mills
 tags:
 - opera
 - scrunchup

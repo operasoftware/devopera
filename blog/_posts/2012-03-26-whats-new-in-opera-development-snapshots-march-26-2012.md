@@ -1,7 +1,7 @@
 ---
-title: 'What''s new in Opera Development snapshots: March 26, 2012'
+title: 'What’s new in Opera Development snapshots: March 26, 2012'
 authors:
-- miketaylr
+- mike-taylor
 tags:
 - operanext
 - blog

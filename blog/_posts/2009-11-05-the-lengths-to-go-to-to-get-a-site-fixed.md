@@ -1,7 +1,7 @@
 ---
 title: The lengths to go to, to get a site fixed!
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - open the web
 - site compatibility

@@ -1,7 +1,7 @@
 ---
 title: New developer features in Opera 11.50 beta
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - dataset
 - opera 11.50 beta

@@ -1,7 +1,7 @@
 ---
 title: WebExpo in Prague
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - webexpo
 - prague

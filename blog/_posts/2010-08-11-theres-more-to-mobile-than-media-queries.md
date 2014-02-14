@@ -1,7 +1,7 @@
 ---
 title: There's more to mobile than media queries
 authors:
-- tagawa
+- daniel-davis
 tags:
 - css3
 - One Web

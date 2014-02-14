@@ -1,7 +1,7 @@
 ---
 title: 'Testing times: recession bustin’ accessibility tips'
 authors:
-- iheni
+- henny-swan
 tags:
 - user testing
 - accessibility

@@ -1,7 +1,7 @@
 ---
 title: First browser to 11 (unless Chrome gets there first)
 authors:
-- dstorey
+- david-storey
 tags:
 - oepra dragonfly
 - dom3

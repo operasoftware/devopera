@@ -1,7 +1,7 @@
 ---
 title: The Opera 9.6 family–nothing left behind
 authors:
-- dstorey
+- david-storey
 tags:
 - beta
 - Devices

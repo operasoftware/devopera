@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 9.5 beta 2, and the X-Widget Challenge
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera Mobile
 - Opera Widgets SDK

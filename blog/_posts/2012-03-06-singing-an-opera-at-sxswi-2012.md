@@ -1,7 +1,7 @@
 ---
 title: Singing an Opera at SXSWi 2012
 authors:
-- chrismills
+- chris-mills
 tags:
 - sxswi
 - presentations

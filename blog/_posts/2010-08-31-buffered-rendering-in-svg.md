@@ -1,7 +1,7 @@
 ---
 title: Buffered rendering in SVG
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - svg open
 - performance
@@ -10,7 +10,7 @@ tags:
 - blog
 layout: article
 ---
-<p>One of the things recently added to Opera is support for the <a href="http://www.w3.org/TR/SVGTiny12/painting.html#BufferedRenderingProperty"><code>buffered-rendering</code> SVG property</a>. SVG content providers can use this property to provide a hint to the implementation about how often an element is modified so it can make better speed vs. memory trade-offs.</p> 
+<p>One of the things recently added to Opera is support for the <a href="http://www.w3.org/TR/SVGTiny12/painting.html#BufferedRenderingProperty"><code>buffered-rendering</code> SVG property</a>. SVG content providers can use this property to provide a hint to the implementation about how often an element is modified so it can make better speed vs. memory trade-offs.</p>
 <p>The attribute values for <code>buffered-rendering</code> are <code>auto</code>, <code>dynamic</code>, and <code>static</code>. From the <a href="http://www.w3.org/TR/SVGTiny12/painting.html#BufferedRenderingProperty">SVG Tiny 1.2</a> recommendation:</p>
 <ul>
 <li><code>auto</code>: Indicates that the user agent is expected to use a reasonable compromise between speed of update and resource allocation.</li>

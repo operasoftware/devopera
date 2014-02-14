@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Device-Stock-UA: a new request header and proposal'
 authors:
-- webinista
+- tiffany-brown
 tags:
 - Opera Mobile
 - Opera Mini

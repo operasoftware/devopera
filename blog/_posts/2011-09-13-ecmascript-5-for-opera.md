@@ -1,7 +1,7 @@
 ---
 title: ECMAScript 5.1 support for Opera (snapshot build)
 authors:
-- miketaylr
+- mike-taylor
 tags:
 - video
 - css3

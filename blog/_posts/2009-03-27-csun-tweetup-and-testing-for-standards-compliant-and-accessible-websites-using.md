@@ -1,8 +1,7 @@
 ---
-title: CSUN Tweetup and "Testing for standards compliant and accessible websites using
-  Opera" slides
+title: CSUN Tweetup and "Testing for standards compliant and accessible websites using Opera" slides
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - testing

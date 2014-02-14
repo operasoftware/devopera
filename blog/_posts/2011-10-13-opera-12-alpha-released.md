@@ -1,7 +1,7 @@
 ---
 title: 'Opera 12 alpha: HTML5 Parser, Radial Gradients and WebGL'
 authors:
-- webinista
+- tiffany-brown
 tags:
 - gradients
 - Opera

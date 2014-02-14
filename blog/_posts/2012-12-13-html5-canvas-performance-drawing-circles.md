@@ -1,7 +1,7 @@
 ---
 title: 'HTML5 canvas performance: Drawing circles'
 authors:
-- tagawa
+- daniel-davis
 tags:
 - performance
 - JavaScript

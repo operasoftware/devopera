@@ -1,7 +1,7 @@
 ---
 title: Widgets updated with Opera 10.50
 authors:
-- tagawa
+- daniel-davis
 tags:
 - widgets
 - blog

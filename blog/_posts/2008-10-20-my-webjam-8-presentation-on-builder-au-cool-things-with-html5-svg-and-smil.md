@@ -1,7 +1,7 @@
 ---
 title: 'My WebJam 8 presentation on Builder AU: Cool things with HTML5, SVG and SMIL'
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - smil
 - webjam8

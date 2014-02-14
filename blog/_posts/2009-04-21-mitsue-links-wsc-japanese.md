@@ -1,8 +1,7 @@
 ---
-title: Collaborating with Mitsue-Links on a Japanese translation of the Web Standards
-  Curriculum
+title: Collaborating with Mitsue-Links on a Japanese translation of the Web Standards Curriculum
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - blog
 layout: article

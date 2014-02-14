@@ -1,7 +1,7 @@
 ---
 title: Unveiling Opera 11.10 final
 authors:
-- chrismills
+- chris-mills
 tags:
 - gradients
 - multi-column

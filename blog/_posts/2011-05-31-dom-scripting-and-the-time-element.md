@@ -1,7 +1,7 @@
 ---
 title: DOM Scripting and the <time> element
 authors:
-- miketaylr
+- mike-taylor
 tags:
 - robots
 - HTML5

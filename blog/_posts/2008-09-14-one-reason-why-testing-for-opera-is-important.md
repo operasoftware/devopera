@@ -1,7 +1,7 @@
 ---
 title: One reason why testing for Opera is important
 authors:
-- dstorey
+- david-storey
 tags:
 - operators
 - Opera Mobile
@@ -69,7 +69,7 @@ The following operators are shipping Opera Mini by default on their range of pho
 
 <h3>Phones with Opera Pre-installed</h3>
 
-<p>Opera Mobile was shipped on 7.8 million phones in the second quarter of this year, including 35 new phone models this year.  Opera Mini has shipped on 78 new phones this year so far.  
+<p>Opera Mobile was shipped on 7.8 million phones in the second quarter of this year, including 35 new phone models this year.  Opera Mini has shipped on 78 new phones this year so far.
 
 <h4>Manufacturers that shipped Opera Mini pre-installed</h4>
 

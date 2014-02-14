@@ -1,7 +1,7 @@
 ---
 title: 'Vodafone Webinar: Designing a High Quality User Experience for Widgets'
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - vodafone 360
 - widgets
@@ -11,7 +11,7 @@ tags:
 layout: article
 ---
 <p>
-If you are a developer with HTML, CSS and JavaScript skills then widgets are your new toys. Widgets are applications built using web technology. They run on a huge range of devices, including mobile phones. 
+If you are a developer with HTML, CSS and JavaScript skills then widgets are your new toys. Widgets are applications built using web technology. They run on a huge range of devices, including mobile phones.
 </p>
 <p>
 According to Vodafone, this session is all about how to design widgets with your users in mind. The panelists will demonstrate how to include user research in your development process, introduce you to available user experience resources especially created for widget developers and explain how to use them effectively.

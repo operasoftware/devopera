@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 10 for Nokia N900 and N800/N810 (Maemo) – Standards support
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - n900
 - nokia

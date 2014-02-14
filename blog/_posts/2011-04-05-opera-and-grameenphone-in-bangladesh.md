@@ -1,7 +1,7 @@
 ---
 title: Opera and Grameenphone in Bangladesh
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Bangladesh
 - Opera Mini

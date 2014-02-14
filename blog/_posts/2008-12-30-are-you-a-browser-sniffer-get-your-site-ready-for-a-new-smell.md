@@ -1,7 +1,7 @@
 ---
 title: Are you a browser sniffer? Get your site ready for a new smell
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera 10
 - browser sniffing

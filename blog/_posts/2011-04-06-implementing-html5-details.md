@@ -1,7 +1,7 @@
 ---
 title: Implementing HTML5 <details>
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - accessibility
 - html5

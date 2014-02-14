@@ -1,7 +1,7 @@
 ---
 title: Autoplay, go away!
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - extension
 - accessibility
@@ -32,7 +32,7 @@ for (var i= els.length - 1; i &gt;= 0; i--)  {
 <p>Of all the HTML5 APIs, the media events are the subtlest and hardest to grasp to people not as brainy as Philip and Simon, with whom I consulted, who came up with the code that powers the extension:</p>
 <pre>
 <code>
-window.addEventListener(&#39;loadstart&#39;, function(e) 
+window.addEventListener(&#39;loadstart&#39;, function(e)
         {e.target.removeAttribute(&#39;autoplay&#39;) }, true);
 </code>
 </pre>

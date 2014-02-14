@@ -1,8 +1,7 @@
 ---
-title: Handys und Tablets – Webentwicklung jenseits des Desktops / WebTech Mainz,
-  12 October 2011
+title: Handys und Tablets – Webentwicklung jenseits des Desktops / WebTech Mainz, 12 October 2011
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - presentation
 - video

@@ -1,7 +1,7 @@
 ---
 title: 'Opera 10.5 Pre-Alpha build released: the new additions'
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - web storage
 - border-radius

@@ -1,7 +1,7 @@
 ---
 title: Taking HTML5 to a new dimension
 authors:
-- tagawa
+- daniel-davis
 tags:
 - HTML5
 - canvas

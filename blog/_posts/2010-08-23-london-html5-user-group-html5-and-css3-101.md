@@ -1,7 +1,7 @@
 ---
 title: 'London HTML5 User Group: HTML5 and CSS3 101'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

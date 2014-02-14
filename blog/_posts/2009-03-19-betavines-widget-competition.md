@@ -1,7 +1,7 @@
 ---
 title: Betavine’s widget competition
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - widgets
 - betavine

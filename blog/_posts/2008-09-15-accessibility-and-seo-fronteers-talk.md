@@ -1,7 +1,7 @@
 ---
 title: 'Accessibility and SEO: Fronteers talk'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - accessibility
 - Google

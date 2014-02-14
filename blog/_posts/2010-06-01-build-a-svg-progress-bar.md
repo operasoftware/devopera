@@ -1,7 +1,7 @@
 ---
 title: Build a SVG progress bar and win prizes
 authors:
-- dstorey
+- david-storey
 tags:
 - Microsoft
 - Web Directions
@@ -10,7 +10,7 @@ tags:
 - blog
 layout: article
 ---
-<p>Opera is a long time sponsor of <a href="http://atmedia.webdirections.org/">Web Directions</a> and supporter of SVG, so when I saw their <a href="http://nobitsherlock.com/">latest contest</a>, I thought it would be of interest to our readers. Our friends at Microsoft have got together with the Web Directions crew, presumably to celebrate SVG in IE9 – and boy is it worth celebrating – to create a contest to make a progress bar using SVG.</p> 
+<p>Opera is a long time sponsor of <a href="http://atmedia.webdirections.org/">Web Directions</a> and supporter of SVG, so when I saw their <a href="http://nobitsherlock.com/">latest contest</a>, I thought it would be of interest to our readers. Our friends at Microsoft have got together with the Web Directions crew, presumably to celebrate SVG in IE9 – and boy is it worth celebrating – to create a contest to make a progress bar using SVG.</p>
 
 <p>The rules are simple: you have to make an accessible progress control (Hint: use WAI-ARIA), using SVG, which works in the latest version (or upcoming in the case of IE) of all major browsers, including Opera. The control should be able to indicate to the user:</p>
 

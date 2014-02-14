@@ -1,7 +1,7 @@
 ---
 title: New Web Standards support in Opera 11.10 beta
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - multi-column
 - gradient

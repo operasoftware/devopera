@@ -1,7 +1,7 @@
 ---
 title: 'Opera User Agent strings: Opera 15 and beyond'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

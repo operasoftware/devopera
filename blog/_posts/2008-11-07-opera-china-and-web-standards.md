@@ -1,7 +1,7 @@
 ---
 title: Opera China and Web Standards
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - China
 - Standards
@@ -24,7 +24,7 @@ Most major browsers have put in lots of effort in web standards. Opera for examp
 </b>
 <blockquote>
 <p>
-Asia is at a disadvantage when it comes to web standards. This is partly because most materials are in English which not everyone is able to understand. Our Beijing colleague also cited the notion of practicality, &quot;since IE has a huge dominance in China, it is reasonable just to code to IE when resources are low&quot;. 
+Asia is at a disadvantage when it comes to web standards. This is partly because most materials are in English which not everyone is able to understand. Our Beijing colleague also cited the notion of practicality, &quot;since IE has a huge dominance in China, it is reasonable just to code to IE when resources are low&quot;.
 </p>
 <p>
 However, this is beginning to change with the emergence of mobile web and alternative mobile browsers such as Google Chrome, Firefox, Safari and Opera.

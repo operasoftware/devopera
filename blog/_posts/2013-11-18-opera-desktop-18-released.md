@@ -1,7 +1,7 @@
 ---
 title: Opera Desktop 18 released
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - getusermedia
 - webRTC
@@ -21,7 +21,7 @@ layout: article
 
 <p><code>getUserMedia</code> is part of <a href="http://www.webrtc.org">WebRTC</a>, a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple Javascript APIs. Try it out by inviting up to seven friends to a video chat room on <a href="http://www.appear.in/">appear.in</a>, a great simple videoconferencing system using WebRTC. What&#39;s particularly nice about (Oslo-based!) <a href="http://www.appear.in/">appear.in</a> is that it&#39;s very webby — no plugins are used (that&#39;s the point of webRTC) and it uses the web&#39;s basic architectural principle: you just share a link to invite friends using Opera, Chrome or Firefox to connect with a simple UI.</p>
 
-<span class='imgcenter'><img alt='' src='http://files.myopera.com/brucelawson/blog/webcam.jpg' /></span> 
+<span class='imgcenter'><img alt='' src='http://files.myopera.com/brucelawson/blog/webcam.jpg' /></span>
 
 (<a href="http://comoyo.github.io/blog/2013/08/05/video-meetings-in-the-browser-using-webrtc-and-angularjs/">Read more about the technology behind appear.in</a>)
 
@@ -47,7 +47,7 @@ layout: article
 
 <h3>Themes, and what&#39;s next</h3>
 
-Opera 18 can be themed. Making themes is very easy — read <a href="http://dev.opera.com/articles/view/themes-in-opera-18-and-higher/">Themes in Opera 18+</a> and upload to <a href="https://addons.opera.com/en/themes/">addons.opera.com/en/themes/</a> to share with the world.</p> 
+Opera 18 can be themed. Making themes is very easy — read <a href="http://dev.opera.com/articles/view/themes-in-opera-18-and-higher/">Themes in Opera 18+</a> and upload to <a href="https://addons.opera.com/en/themes/">addons.opera.com/en/themes/</a> to share with the world.</p>
 
 <p>In the next two weeks, we&#39;ll promote the experimental <a href="http://opera.com/developer">Opera developer stream</a> to feature-complete <a href="http://opera.com/next">Opera.Next</a> so you can try out new standards and features. Keep an eye on the <a href="http://blogs.opera.com/desktop/">Opera desktop team blog</a> for documentation about forthcoming releases and full changelogs.</p>
 

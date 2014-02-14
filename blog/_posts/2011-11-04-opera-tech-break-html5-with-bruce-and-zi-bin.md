@@ -1,7 +1,7 @@
 ---
 title: 'Opera Tech Break: HTML5 with Bruce and Zi Bin'
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - video
 - HTML5

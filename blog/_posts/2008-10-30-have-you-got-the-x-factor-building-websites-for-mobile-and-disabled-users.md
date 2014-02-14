@@ -1,7 +1,7 @@
 ---
 title: Have you got the X Factor? Building websites for mobile and disabled users
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - mobile

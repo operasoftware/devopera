@@ -1,7 +1,7 @@
 ---
 title: Page Visibility API Support in Opera 12.10
 authors:
-- webinista
+- tiffany-brown
 tags:
 - page visibility
 - HTML5
@@ -12,7 +12,7 @@ layout: article
 
 <h2>How it works</h2>
 
-<p>The Page Visibility API adds two attributes &#8212; <code>hidden</code> and <code>visibilityState</code> &#8212; and a <code>visibilitychange</code> event to the <a href="http://www.w3.org/TR/html5/dom.html#document">HTML5 <code>Document</code> interface</a>. When the document&#39;s window or tab isn&#39;t visible, the value of <code>document.hidden</code> will be <code>true</code>, otherwise it will be <code>false</code>.</p> 
+<p>The Page Visibility API adds two attributes &#8212; <code>hidden</code> and <code>visibilityState</code> &#8212; and a <code>visibilitychange</code> event to the <a href="http://www.w3.org/TR/html5/dom.html#document">HTML5 <code>Document</code> interface</a>. When the document&#39;s window or tab isn&#39;t visible, the value of <code>document.hidden</code> will be <code>true</code>, otherwise it will be <code>false</code>.</p>
 
 <p>The <code>document.visibilityState</code> attribute simply reveals the particular state of a document: <code>hidden</code> or <code>visible</code>. Two other values &#8212; <code>prerender</code> and <code>unloaded</code> are outlined in the specification, but not yet supported.</p>
 
@@ -20,7 +20,7 @@ layout: article
 
 <h2>Limitations</h2>
 
-<p>Some parts of this implementation don&#39;t quite work as you might expect. For example, switching from Opera to another application will not fire a <code>visibilitychange</code> event. Neither will minimizing the browser window. </p> 
+<p>Some parts of this implementation don&#39;t quite work as you might expect. For example, switching from Opera to another application will not fire a <code>visibilitychange</code> event. Neither will minimizing the browser window. </p>
 
 <p>Because it&#39;s document-specific, you also can&#39;t use the Page Visibility API to determine which tab or window is active. It is possible to determine whether your document is visible, and therefore active. But it is not possible to determine which of the other tabs or windows currently has focus.</p>
 

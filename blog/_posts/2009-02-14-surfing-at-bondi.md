@@ -1,7 +1,7 @@
 ---
 title: Surfing at BONDI
 authors:
-- dstorey
+- david-storey
 tags:
 - BONDI
 - specifications

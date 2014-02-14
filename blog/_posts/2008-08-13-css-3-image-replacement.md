@@ -1,7 +1,7 @@
 ---
 title: CSS 3 image replacement
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - image
 - CSS

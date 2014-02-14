@@ -1,7 +1,7 @@
 ---
 title: Opera Browser Standards support chart
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - Opera Mobile 10
 - testing

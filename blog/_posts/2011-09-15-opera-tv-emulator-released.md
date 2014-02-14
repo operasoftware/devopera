@@ -1,7 +1,7 @@
 ---
 title: Opera TV Emulator released
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - opera sdk
 - opera tv emulator

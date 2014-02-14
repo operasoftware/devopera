@@ -1,7 +1,7 @@
 ---
 title: Stockholm presentation and links
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article
@@ -88,7 +88,7 @@ The slides for my first presentation are available:
 
 <h4>CSS Media Queries for adaptive content</h4>
 <ul>
-<li>Demo: 
+<li>Demo:
 <a href="http://people.opera.com/danield/css3/vangogh/">Media Queries: CSS that responds to the screen width</a></li>
 <li>Demo: <a href="http://people.opera.com/brucel/demo/background-size.html">CSS background-size </a></li>
 <li>

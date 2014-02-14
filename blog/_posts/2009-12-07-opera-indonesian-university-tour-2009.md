@@ -1,7 +1,7 @@
 ---
 title: Opera Indonesian University Tour 2009
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

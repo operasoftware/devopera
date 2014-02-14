@@ -1,7 +1,7 @@
 ---
 title: Announcing Opera Next and Speed Dial extensions
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - opera next
 - speed-dial

@@ -1,7 +1,7 @@
 ---
 title: Interview with Veerle Pieters of Duoh.com and Scroll magazine
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Belgian
 - print design
@@ -26,11 +26,11 @@ layout: article
 </p>
 </blockquote>
 <p>So is everybody looking at what the Anglo-Saxon world is doing?</p>
- 
+
 <blockquote><p>Most agencies know about the major trends for sure, take Web 2.0 for example. They sure milked that marketing cow dry!  If they describe a project in the press it must have AJAX in it otherwise it ain&#39;t hip! <abbr title="smiley face">:-)</abbr></p></blockquote>
 
 <p>How about mobile in Belgium? Do clients ask for mobile-friendly sites?</p>
- 
+
 <blockquote><p>As far as my experience go, no client of ours has ever asked me this. However there is one Belgian client called <a href="http://www.mobiya.be/">Mobiya</a> who is very active in this segment. It&#39;s an online classified advertising platform purely based on text messaging. We designed the logo and the site; the back- and front-end implementation is done by another party. Maybe they have adapted the site so it works on mobile phones. I&#39;m very not hopeful though, because the backend developers butchered my clean valid templates.</p></blockquote>
 
 <p>Do clients  know about web standards already, or do they want 90s &quot;flash
@@ -66,7 +66,7 @@ design?
 better designer, given that I have no training, no natural ability and very
 little time?
 </p>
-<blockquote><p>Wow—tough question. I would say without time it&#39;s hard, because if you have no training and no natural ability than how will you be able to become better if you don&#39;t have time?</p> 
+<blockquote><p>Wow—tough question. I would say without time it&#39;s hard, because if you have no training and no natural ability than how will you be able to become better if you don&#39;t have time?</p>
 <p>The only thing you can do to become better is learn about the principles of design and that means spending time studying. Then turn these principles into practice : well balanced layout with enough white space, a well balanced color scheme and well balanced typography. The well balanced part is of course the key and to get to this you need to learn the principles. You need to make some time for this I&#39;m afraid. Improvement always means sacrifices for the better good my friend!</p>
 </blockquote>
 <p>Thanks very much for the advice and for your time, Veerle!</p>

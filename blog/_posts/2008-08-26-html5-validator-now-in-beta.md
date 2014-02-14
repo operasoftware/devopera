@@ -1,7 +1,7 @@
 ---
 title: HTML5 Validator now in beta
 authors:
-- dstorey
+- david-storey
 tags:
 - W3C
 - HTML5

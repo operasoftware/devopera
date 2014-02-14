@@ -1,7 +1,7 @@
 ---
 title: HTML5 at  London Web Standards
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - HTML5
 - blog
@@ -20,7 +20,7 @@ layout: article
 <li><a href="http://www.filamentgroup.com/lab/jquery_visualize_plugin_accessible_charts_graphs_from_tables_html5_canvas/">Filament Group&#39;s jQuerty plugin using <code>canvas</code> for graphing data tables</a></li>
 <li><a href="http://raphaeljs.com/">Raphaël JavaScript Library to make <abbr>SVG</abbr> that also works in Internet Explorer</a></li>
 <li>
-<a href="http://code.google.com/p/svgweb/">SVG Web is a JavaScript library which provides SVG support on Internet Explorer</a> (alpha code: not ready for production)</li> 
+<a href="http://code.google.com/p/svgweb/">SVG Web is a JavaScript library which provides SVG support on Internet Explorer</a> (alpha code: not ready for production)</li>
 <li>
 <a href="http://people.opera.com/brucel/demo/html5-forms-LWS-demo.html">My <abbr>HTML</abbr>5 forms demo, including range, date, regex validation</a></li>
 <li>

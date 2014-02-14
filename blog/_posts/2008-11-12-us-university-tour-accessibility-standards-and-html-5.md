@@ -1,7 +1,7 @@
 ---
 title: 'US University Tour: Accessibility, standards and HTML 5'
 authors:
-- iheni
+- henny-swan
 tags:
 - presentation
 - accessibility

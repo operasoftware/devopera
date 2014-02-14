@@ -1,7 +1,7 @@
 ---
-title: 'Video tutorial: Access your phone''s camera with WAC widgets'
+title: 'Video tutorial: Access your phone’s camera with WAC widgets'
 authors:
-- tagawa
+- daniel-davis
 tags:
 - widgets
 - video

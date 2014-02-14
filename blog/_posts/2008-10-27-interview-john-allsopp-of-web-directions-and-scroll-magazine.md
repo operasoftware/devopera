@@ -1,7 +1,7 @@
 ---
 title: Interview John Allsopp of Web Directions and Scroll Magazine
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

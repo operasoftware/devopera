@@ -1,7 +1,7 @@
 ---
-title: 'Bruce''s Fronteers presentation: HTML5 Semantics'
+title: 'Bruce’s Fronteers presentation: HTML5 Semantics'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - HTML5
 - semantics

@@ -1,7 +1,7 @@
 ---
 title: Making your site mobile-friendly  – RIT++ 2010, Moscow
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - HTML
 - russian internet technologies

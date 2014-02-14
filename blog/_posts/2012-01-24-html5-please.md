@@ -1,7 +1,7 @@
 ---
 title: HTML5 Please
 authors:
-- nimbupani
+- divya-manian
 tags:
 - css3
 - HTML5

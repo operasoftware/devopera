@@ -1,7 +1,7 @@
 ---
 title: HTML5 multimedia accessibility at DevCSI Accessibility Hack Day
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - accessibility
 - video
@@ -30,5 +30,5 @@ Some resources
 <li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Accessing device camera from JavaScript</a> - Labs build of Opera/ Android that implements HTML5 <code>getUserMedia</code> with bonus link to the Magic HTML5 Moustache demo</li>
 </ul>
 
-<p>After an evening hacking, <a href="http://twitter.com/scottbw">Scott Wilson</a> put together a <a href="http://dl.dropbox.com/u/4504633/vtt.wgt">webVTT generator W3C Widget</a>. Download it, double click to install (on a system with Opera Desktop or similar Widget manager and run-time installed). Point it at a video, then simply pause the video after a &quot;screenful&quot; of dialogue, enter that subtitle, unpause, rinse and repeat, then hit the VTT tab and copy and paste your VTT file.</p> 
+<p>After an evening hacking, <a href="http://twitter.com/scottbw">Scott Wilson</a> put together a <a href="http://dl.dropbox.com/u/4504633/vtt.wgt">webVTT generator W3C Widget</a>. Download it, double click to install (on a system with Opera Desktop or similar Widget manager and run-time installed). Point it at a video, then simply pause the video after a &quot;screenful&quot; of dialogue, enter that subtitle, unpause, rinse and repeat, then hit the VTT tab and copy and paste your VTT file.</p>
 

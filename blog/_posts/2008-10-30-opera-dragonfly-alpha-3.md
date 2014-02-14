@@ -1,7 +1,7 @@
 ---
 title: Opera Dragonfly alpha 3
 authors:
-- dstorey
+- david-storey
 tags:
 - alpha
 - Opera Dragonfly

@@ -1,7 +1,7 @@
 ---
 title: 'University talk resources, March 2010: HTML5 & CSS3 slides'
 authors:
-- chrismills
+- chris-mills
 tags:
 - chrismills
 - css3

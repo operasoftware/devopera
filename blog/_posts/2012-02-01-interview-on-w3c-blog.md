@@ -1,7 +1,7 @@
 ---
 title: Interview on W3C Blog
 authors:
-- nimbupani
+- divya-manian
 tags:
 - W3C
 - blog

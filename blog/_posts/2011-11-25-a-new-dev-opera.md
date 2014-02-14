@@ -1,7 +1,7 @@
 ---
 title: A new Dev.Opera
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - labs
 - articles

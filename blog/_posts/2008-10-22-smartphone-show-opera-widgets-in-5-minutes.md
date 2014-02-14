@@ -1,7 +1,7 @@
 ---
 title: 'Smartphone show: Opera Widgets in 5 minutes'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Opera Mobile
 - One Web

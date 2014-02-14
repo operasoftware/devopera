@@ -1,7 +1,7 @@
 ---
 title: Introducing Coast by Opera
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - coast
 - Opera
@@ -39,7 +39,7 @@ layout: article
 </pre>
 
 <p>This won&#39;t conflict with any other icons and tiles you already have assigned for Windows 8, Android or iOS. If you don&#39;t supply an 228x228 icon, Coast uses <a href="http://coastbyopera.com/developer">heuristics to derive its icon</a>.</p>
- 
+
 <h3>Web Standards support</h3>
 
 <p>Coast uses Apple&#39;s UIWebView embedded in iOS. This is based on WebKit.</p>

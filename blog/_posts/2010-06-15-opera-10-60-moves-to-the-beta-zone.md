@@ -1,7 +1,7 @@
 ---
 title: Opera 10.60 moves to the beta zone
 authors:
-- chrismills
+- chris-mills
 tags:
 - beta
 - webm

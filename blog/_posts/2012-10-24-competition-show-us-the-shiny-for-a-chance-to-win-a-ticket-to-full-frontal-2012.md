@@ -2,7 +2,7 @@
 title: 'Competition: show us the shiny for a chance to win a ticket to Full Frontal
   2012 in Brighton, UK'
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

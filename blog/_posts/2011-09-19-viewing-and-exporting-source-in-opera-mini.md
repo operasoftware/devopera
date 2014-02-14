@@ -1,7 +1,7 @@
 ---
 title: Viewing and exporting source in Opera Mini
 authors:
-- webinista
+- tiffany-brown
 tags:
 - blog
 layout: article

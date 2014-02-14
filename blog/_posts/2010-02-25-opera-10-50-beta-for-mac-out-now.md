@@ -1,7 +1,7 @@
 ---
 title: 'Good news for Mac users: Opera 10.50 beta for Mac out now!'
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - beta
 - mac

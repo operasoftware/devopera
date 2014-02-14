@@ -1,7 +1,7 @@
 ---
 title: devicePixelRatio in Opera Mobile
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Opera 10.52 final for Mac is out!
 authors:
-- chrismills
+- chris-mills
 tags:
 - Carakan
 - css3

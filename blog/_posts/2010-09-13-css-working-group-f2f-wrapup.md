@@ -1,7 +1,7 @@
 ---
 title: 'CSS Working Group F2F: WrapUp'
 authors:
-- mollydotcom
+- molly-holzschlag
 tags:
 - css
 - opera

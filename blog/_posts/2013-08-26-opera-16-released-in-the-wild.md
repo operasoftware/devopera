@@ -1,7 +1,7 @@
 ---
 title: Opera 16 released in the wild
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - stable
 - flags

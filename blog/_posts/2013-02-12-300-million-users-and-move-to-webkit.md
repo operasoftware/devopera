@@ -1,7 +1,7 @@
 ---
 title: 300 million users and move to WebKit
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - webkit
 - blog

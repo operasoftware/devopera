@@ -1,7 +1,7 @@
 ---
 title: New Opera Dragonfly weekly available
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera Dragonfly
 - weekly

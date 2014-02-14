@@ -1,7 +1,7 @@
 ---
 title: Run Opera Widgets as standalone applications
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - widgets

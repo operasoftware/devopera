@@ -1,7 +1,7 @@
 ---
 title: The HTML 5 experiments
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - html5
 - video

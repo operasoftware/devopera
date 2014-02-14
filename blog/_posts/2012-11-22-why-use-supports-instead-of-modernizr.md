@@ -1,7 +1,7 @@
 ---
 title: Why use @supports instead of Modernizr?
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - polyfill
 - modernizr

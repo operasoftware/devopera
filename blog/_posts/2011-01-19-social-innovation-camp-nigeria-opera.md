@@ -1,7 +1,7 @@
 ---
 title: Social Innovation Camp Nigeria + University of Lagos
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - africa
 - nigeria
@@ -23,7 +23,7 @@ The winner of the competition ended up being <a href="http://sicampnigeria.org/e
 Let&#39;s talk numbers: <a href="http://www.quirksmode.org/blog/archives/2011/01/mobile_browser_1.html">PPK&#39;s recent article on mobile browser stats</a> for instance shows that Nigerians depend heavily on mobile, and one out of four website visits come from a mobile browser. Given its size of 150 million people, it is the biggest African country. People have adopted mobile internet in a big way, Opera Mini pageviews have grown over 400% Y2Y, and so is the number of unique users, which has grown over 300%. All these have put Nigeria as the 8th biggest user of Opera Mini. Based on <a href="http://gs.statcounter.com/#mobile_browser-NG-monthly-201012-201101">Statcounter&#39;s numbers</a>, Opera has about 80% of the Nigerian mobile browser share. Designing for the mobile web is a natural thing to do for Nigerian web developers. I shared my views on approaches to designing for the mobile web, using viewport and media queries, among other things.
 </p>
 <p>
-Talking to university students is always fun, we had the opportunity to discuss some exciting technologies taking shape in the web standards world. About 200 students from the University of Lagos turned up for the event. 
+Talking to university students is always fun, we had the opportunity to discuss some exciting technologies taking shape in the web standards world. About 200 students from the University of Lagos turned up for the event.
 </p>
 <p>
 Below are my slides on Mobile Web design approaches and Nigeria&#39;s state of the Mobile Web.

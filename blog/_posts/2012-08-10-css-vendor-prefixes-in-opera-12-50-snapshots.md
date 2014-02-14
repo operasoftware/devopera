@@ -1,7 +1,7 @@
 ---
 title: CSS vendor prefixes in Opera 12.50 snapshots
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - webkit
 - gradients

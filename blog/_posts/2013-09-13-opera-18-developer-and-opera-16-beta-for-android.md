@@ -1,7 +1,7 @@
 ---
 title: Opera 18 Developer and Opera 16 Beta for Android
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - opera developer

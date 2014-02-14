@@ -1,7 +1,7 @@
 ---
 title: Changes to the behavior of innerHTML in XML documents
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

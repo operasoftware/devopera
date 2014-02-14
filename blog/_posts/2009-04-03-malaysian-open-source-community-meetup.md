@@ -1,7 +1,7 @@
 ---
 title: Malaysian Open Source Community Meetup
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - FOSS
 - presentation

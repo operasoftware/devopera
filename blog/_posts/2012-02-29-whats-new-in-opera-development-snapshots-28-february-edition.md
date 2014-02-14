@@ -1,7 +1,7 @@
 ---
-title: 'What''s new in Opera development snapshots: 28 February edition'
+title: What’s new in Opera development snapshots: 28 February edition
 authors:
-- nimbupani
+- divya-manian
 tags:
 - opera next
 - blog
@@ -13,7 +13,7 @@ layout: article
 
 <ul>
 <li><p>We now have better precision handling of fixed point values used for lengths and font-sizes. This has been a significant issue with Opera as many units were rounded off. Vadim has a neat <a href="http://jsfiddle.net/pepelsbey/NEhya/">demo of how this works in reality</a>. Check it in Opera Next and marvel at the precision!</p></li>
-<li><p>Updating media query implementation to match the latest drafts of the specs, and to pass all the W3C Media Queries tests. 
+<li><p>Updating media query implementation to match the latest drafts of the specs, and to pass all the W3C Media Queries tests.
 Now you can use <a href="http://dev.w3.org/csswg/css3-values/#resolution">dpi, dpcm and dppx</a> as unit values for the resolution media query feature. <a href="http://jsfiddle.net/Vzbm7/">Here is an example</a>. This also fixes issues with Opera applying rules that are within invalid/incorrect media queries. </p></li>
 </ul><h2>CSS</h2>
 

@@ -1,7 +1,7 @@
 ---
-title: '''The Developer Briefcase'' and other neat Opera extensions for developers'
+title: “The Developer Briefcase” and other neat Opera extensions for developers
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - the developer briefcase
 - extensions
@@ -9,7 +9,7 @@ tags:
 - blog
 layout: article
 ---
-<span class='imgright'><img alt='' src='http://files.myopera.com/shwetankdixit/blog/screenshot2.jpg' /></span> 
+<span class='imgright'><img alt='' src='http://files.myopera.com/shwetankdixit/blog/screenshot2.jpg' /></span>
 
 <p><a href="http://www.opera.com/dragonfly/" target="_blank">Opera Dragonfly</a> is THE developer tool to use in Opera, but in addition to its built-in feature set there are quite a few browser extensions that can make debugging and development even easier.</p>
 

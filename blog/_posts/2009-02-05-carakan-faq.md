@@ -1,7 +1,7 @@
 ---
 title: Carakan F.A.Q.
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Carakan
 - JavaScript

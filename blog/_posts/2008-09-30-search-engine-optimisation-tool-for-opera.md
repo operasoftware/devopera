@@ -1,7 +1,7 @@
 ---
 title: Search Engine Optimisation tool for Opera
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - seo
 - blog

@@ -1,7 +1,7 @@
 ---
 title: 'What’s new in Opera development snapshots: 28 November 2011 edition'
 authors:
-- nimbupani
+- divya-manian
 tags:
 - cors
 - opera next

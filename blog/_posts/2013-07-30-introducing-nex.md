@@ -1,7 +1,7 @@
 ---
 title: Introducing NEX - standards-oriented browser add-ons
 authors:
-- richtr
+- rich-tibbett
 tags:
 - chromium
 - nex

@@ -1,8 +1,7 @@
 ---
-title: The once and future web – Keynote presentation at Front Row Conference, Kraków,
-  Poland 20 October 2011
+title: The once and future web – Keynote presentation at Front Row Conference, Kraków, Poland 20 October 2011
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - presentation
 - web standards

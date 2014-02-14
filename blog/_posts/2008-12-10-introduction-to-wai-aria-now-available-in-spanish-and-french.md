@@ -1,7 +1,7 @@
 ---
 title: Introduction to WAI ARIA now available in Spanish and French
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - translations

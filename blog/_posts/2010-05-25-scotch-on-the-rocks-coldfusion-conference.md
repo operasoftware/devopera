@@ -1,7 +1,7 @@
 ---
 title: Scotch on the rocks
 authors:
-- chrismills
+- chris-mills
 tags:
 - blog
 layout: article

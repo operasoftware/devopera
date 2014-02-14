@@ -1,7 +1,7 @@
 ---
 title: A colourful Opera 12.50 snapshot
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - blog
 layout: article

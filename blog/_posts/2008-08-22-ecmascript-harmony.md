@@ -1,7 +1,7 @@
 ---
 title: Harmony - Direction of ECMAScript
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - JavaScript
 - ECMAScript

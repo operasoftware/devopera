@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 10 and its remote debugging party trick
 authors:
-- tagawa
+- daniel-davis
 tags:
 - Opera Dragonfly
 - mobile

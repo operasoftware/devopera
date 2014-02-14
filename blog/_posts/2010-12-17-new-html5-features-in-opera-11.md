@@ -1,7 +1,7 @@
 ---
 title: New HTML5 features in Opera 11
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - opera11
 - HTML5

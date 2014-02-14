@@ -1,7 +1,7 @@
 ---
 title: Over the Air - presentation on universal access devices
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - universal access

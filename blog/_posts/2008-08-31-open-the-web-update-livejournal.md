@@ -1,7 +1,7 @@
 ---
 title: 'Open the Web update: LiveJournal'
 authors:
-- dstorey
+- david-storey
 tags:
 - OtW
 - news

@@ -1,7 +1,7 @@
 ---
 title: WDS08, WebJam 8 and WSG meetup
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - wsg
 - Opera 9.6

@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile Emulator 12 update
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - mobile first
 - Opera Mobile Emulator

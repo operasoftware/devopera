@@ -1,7 +1,7 @@
 ---
 title: Opera Dragonfly 1.1 unleashed
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - Opera Dragonfly
 - Opera Dragonfly 1.1

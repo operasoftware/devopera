@@ -1,7 +1,7 @@
 ---
 title: 'What’s new in Opera development snapshots: 4 November 2011 edition'
 authors:
-- nimbupani
+- divya-manian
 tags:
 - opera snapshot
 - blog
@@ -37,7 +37,7 @@ layout: article
 
     <li><h3>Text Selection Cursor at last!</h3>
       <p>This used to annoy me to no end. Finally, like all other browsers, Opera will render text selection cursor when selecting text. Try it!</p>
-    </li> 
+    </li>
     <li>
       <h3>Correct offsetLeft value in edge cases</h3>
       <p>When checking offsetLeft, Opera used to assume text-align: left is always set on the parent so it would obtain the wrong value. This is no longer the case.</p>
@@ -46,7 +46,7 @@ layout: article
       <h3>Transition Updates</h3>
       <p><code>visibility</code> property is typically used in conjunction with another property to show/hide elements. Now the behaviour matches that of Webkit implementations which is much easier for authors to work with. Here is <a href="http://jsfiddle.net/kizu/A7QX9/">an example of this</a>. </p>
       <p>A windows bug with transistions and transforms has also been fixed. </p>
-    </li>       
+    </li>
     <li>
       <h3>Better Selectors and selector serialisation</h3>
       <p><code>:root:not(:only-child)</code> did not match <code>:root</code>. But now it does. </p>

@@ -1,7 +1,7 @@
 ---
 title: getUserMedia and Device Orientation adventures
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
 - getusermedia
 - device orientation
@@ -34,14 +34,14 @@ layout: article
 <pre>var video_element = document.querySelector(&#39;video&#39;);
 ...
 function v_success(stream){
- 	video_element.src = stream; 
+ 	video_element.src = stream;
 }</pre>
 
 <p>Its that simple! Now you have a the output of your camera  inside the page. But we want to do more. We want to create a button, which upon click, takes a snapshot of the camera stream, and outputs it to a canvas element, thereby taking our picture.</p>
 
 <p>Lets get the button and add a click event handler:</p>
 
-<pre>var button = document.querySelector(&#39;#button&#39;); 
+<pre>var button = document.querySelector(&#39;#button&#39;);
 button.addEventListener(&#39;click&#39;,snapshot, false);</pre>
 
 <p>So when the button is clicked, the <code>snapshot()</code> function is called. Here we take the video, and use it to draw the current snapshot of the video onto the canvas using the <code>drawImage()</code> method.</p>

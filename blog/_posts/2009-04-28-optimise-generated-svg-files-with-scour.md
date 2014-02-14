@@ -1,7 +1,7 @@
 ---
 title: Optimise generated SVG files with Scour
 authors:
-- dstorey
+- david-storey
 tags:
 - scour
 - optimisation

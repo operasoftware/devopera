@@ -1,7 +1,7 @@
 ---
 title: CSS box-shadow experiments
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

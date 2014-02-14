@@ -1,7 +1,7 @@
 ---
 title: What’s new in Opera's development snapshots
 authors:
-- nimbupani
+- divya-manian
 tags:
 - opera next
 - blog
@@ -12,7 +12,7 @@ layout: article
   <ul>
     <li>
       <h3>Checkbox Indeterminate State</h3>
-      <p>The indeterminate state is used to express an indeterminate state of on an input checkbox. Here is how it would look <img height="18" src="http://gyazo.com/85c80c8807c883861cc4af5384764ccb.png" /> (and a <a href="http://jsfiddle.net/nimbu/KbR7c/">demo</a>). There is an associated <code>:indeterminate</code> pseudo-class that can be used for styling (<a href="http://jsfiddle.net/nimbu/KbR7c/">you can use it in this manner</a>).</p>      
+      <p>The indeterminate state is used to express an indeterminate state of on an input checkbox. Here is how it would look <img height="18" src="http://gyazo.com/85c80c8807c883861cc4af5384764ccb.png" /> (and a <a href="http://jsfiddle.net/nimbu/KbR7c/">demo</a>). There is an associated <code>:indeterminate</code> pseudo-class that can be used for styling (<a href="http://jsfiddle.net/nimbu/KbR7c/">you can use it in this manner</a>).</p>
     </li>
     <li>
       <h3>input type=email no longer rejects non-ascii domains</h3>
@@ -28,11 +28,11 @@ layout: article
     <li><h3>Setting <code>window.location.href</code> to <code>&quot;&quot;</code> will reload page</h3>
       <p>This seems to be sadly a common pattern among several sites to cause a page reload. Ideally, you should avoid this. But if your site was broken in Opera because of this, it will work now (like <a href="http://www.marmoladarestauracja.pl/">Marmolada Restauracja Kraków</a>). </p>
     </li>
-    <li>   
+    <li>
       <p>More compliance with the <a href="http://aryeh.name/spec/base64.html">atob and btoa specifications</a>.</p>
     </li>
     <li>
       <p>A few web font regressions in 11.10 and 11.50 have been fixed. </p>
-    </li>    
+    </li>
   </ul>
   <p>If you find any bugs with any of these fixes, please file them with the <a href="https://bugs.opera.com/wizard/">bug wizard</a>!</p>

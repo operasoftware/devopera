@@ -1,7 +1,7 @@
 ---
 title: Mobile application smackdown - openMIC Bath
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - html5
 - css3

@@ -1,7 +1,7 @@
 ---
 title: 'Opera web standards curriculum: JavaScript in town!'
 authors:
-- chrismills
+- chris-mills
 tags:
 - CSS
 - best

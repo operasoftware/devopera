@@ -1,7 +1,7 @@
 ---
 title: The future of web technologies - Speak the Web, Liverpool
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - HTML
 - speak the web

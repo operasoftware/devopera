@@ -1,7 +1,7 @@
 ---
 title: Opera Desktop 17 released
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - extension
 - Opera

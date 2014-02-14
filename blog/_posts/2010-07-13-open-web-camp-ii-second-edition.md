@@ -1,7 +1,7 @@
 ---
 title: 'Open Web Camp II: Second Edition'
 authors:
-- mollydotcom
+- molly-holzschlag
 tags:
 - OtW
 - open the web

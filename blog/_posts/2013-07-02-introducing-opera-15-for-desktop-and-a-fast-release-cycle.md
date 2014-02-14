@@ -1,7 +1,7 @@
 ---
 title: Introducing Opera 15 for Computers, and a fast release cycle
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - chromium
 - Opera 15
@@ -109,7 +109,7 @@ layout: article
 <h3>Anorak corner</h3>
 
 <p>As Opera 15 has a brand new rendering engine, we thought we&#39;d explain what the product is made of. Web content is handled by Chromium/Blink, combined with the V8 JavaScript engine. On top of that, we have implemented our own UI features from scratch:</p>
-<ul> 
+<ul>
 <li>native UI</li>
 <li>Speed Dials</li>
 <li>Stash</li>
@@ -124,7 +124,7 @@ layout: article
 <li>O-menu (Windows)</li>
 <li>native context menus</li>
 </ul>
- 
+
 <p>We&#39;ve also modified the following Chromium features:</p>
 
 <ul>
@@ -135,7 +135,7 @@ layout: article
 <li>address field suggestions</li>
 <li>crash logging</li>
 </ul>
- 
+
 <h3>Chromium / Blink commits</h3>
 
 <p>Our engineers have also been busy committing features and fixes to Blink, and upstreaming various changes to Chromium. <a href="http://operasoftware.github.io/upstreamtools/">This page</a> gives an overview of changes we&#39;ve made thus far — we plan to further update and enhance it, so add it to your Github watches.</p>

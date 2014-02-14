@@ -1,7 +1,7 @@
 ---
 title: Opera Indonesian tour
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - south east asia
 - indonesia

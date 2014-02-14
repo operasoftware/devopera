@@ -1,7 +1,7 @@
 ---
 title: Leeds University talk (Patrick and Bruce)
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - formats
 - apps

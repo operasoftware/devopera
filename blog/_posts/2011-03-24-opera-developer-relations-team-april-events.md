@@ -1,7 +1,7 @@
 ---
 title: Opera Developer Relations Team April events
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - event
 - talk

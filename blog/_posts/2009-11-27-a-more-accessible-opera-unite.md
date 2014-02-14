@@ -1,7 +1,7 @@
 ---
 title: A more accessible Opera Unite
 authors:
-- iheni
+- henny-swan
 tags:
 - accessibility
 - blog

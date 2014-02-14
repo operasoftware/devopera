@@ -1,7 +1,7 @@
 ---
 title: A quick look at what's in Opera 12 beta for developers
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - blog
 layout: article

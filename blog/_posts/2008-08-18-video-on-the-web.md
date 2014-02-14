@@ -1,7 +1,7 @@
 ---
 title: The future of video on the Web
 authors:
-- dstorey
+- david-storey
 tags:
 - video
 - W3C

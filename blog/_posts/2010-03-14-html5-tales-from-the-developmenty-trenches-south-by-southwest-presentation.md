@@ -1,7 +1,7 @@
 ---
 title: 'HTML5 Tales from the Development Trenches: South by SouthWest presentation'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - sxsw
 - HTML5

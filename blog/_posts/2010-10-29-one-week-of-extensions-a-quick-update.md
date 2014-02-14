@@ -1,7 +1,7 @@
 ---
 title: 'One week of extensions: a quick update'
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - extensions

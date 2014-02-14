@@ -1,7 +1,7 @@
 ---
 title: The Mobilism mobile browser panel
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - panel
 - mobilism

@@ -1,7 +1,7 @@
 ---
 title: 'Unleashed in the East: Ukraine University tour April 26-30'
 authors:
-- chrismills
+- chris-mills
 tags:
 - University
 - future

@@ -1,7 +1,7 @@
 ---
 title: Developing for Opera Unite
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - yusef
 - unite
@@ -49,7 +49,7 @@ var isOwner = data.visitor.isOwner; // Tells us if the person is the owner of th
 
 <h3>What&#39;s next?</h3>
 <p>
-Looking forward, we would love to see more Opera Unite applications. If you want to win prizes while building a great application, you might want to check out our <a href="http://unite.opera.com/develop/contest/">Opera Unite Weekly Application challenge</a>. 
+Looking forward, we would love to see more Opera Unite applications. If you want to win prizes while building a great application, you might want to check out our <a href="http://unite.opera.com/develop/contest/">Opera Unite Weekly Application challenge</a>.
 </p>
 <p>
 For more on Yusef, check out Shwetank Dixit&#39;s <a href="http://dev.opera.com/articles/view/rapid-unite-app-development-with-yusef/">Rapid application development using the Opera Unite Yusef library</a> or the original article about <a href="http://dev.opera.com/articles/view/yusef-the-unite-server-framework/">Yusef - Opera Unite Server Framework</a>.

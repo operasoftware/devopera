@@ -1,7 +1,7 @@
 ---
 title: Why is Opera Mini booming in Indonesia?
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - Indonesia
 - mini
@@ -9,7 +9,7 @@ tags:
 layout: article
 ---
 <p>
-It&#39;s not just Opera Mini, but the whole Mobile Web. 
+It&#39;s not just Opera Mini, but the whole Mobile Web.
 </p>
 
 <p>
@@ -17,7 +17,7 @@ As shown by <a href="http://www.opera.com/smw/" target="_blank">State of the Mob
 </p>
 
 <p>
-So why is the Mobile Web booming? 
+So why is the Mobile Web booming?
 <p />
 
 <ol>
@@ -36,7 +36,7 @@ So why is the Mobile Web booming?
 </ol>
 
 <p>
-I&#39;ve presented the case in <a href="http://files.myopera.com/onlyputri/files/diskusipanel.jpg" target="_blank">The New Wave of Mobile Internet</a>, Universitas Krisdwipayana and the <a href="http://freshyourmind.com/" target="_blank">FreSh</a> forum. 
+I&#39;ve presented the case in <a href="http://files.myopera.com/onlyputri/files/diskusipanel.jpg" target="_blank">The New Wave of Mobile Internet</a>, Universitas Krisdwipayana and the <a href="http://freshyourmind.com/" target="_blank">FreSh</a> forum.
 </p>
 <p>
 Here are the slides for <a href="http://files.myopera.com/zibin/blog/IndonesiaPresentationJune2009_ZiBinCheah_GeneralVer.pdf" target="_blank">the mobile browser trends and the boom in Indonesia</a>.

@@ -1,7 +1,7 @@
 ---
 title: Breaking Development Conference - scratching its own itch
 authors:
-- tagawa
+- daniel-davis
 tags:
 - mobile
 - event

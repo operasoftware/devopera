@@ -1,7 +1,7 @@
 ---
 title: Canvas and SVG - which should I use when?
 authors:
-- tagawa
+- daniel-davis
 tags:
 - HTML5
 - canvas

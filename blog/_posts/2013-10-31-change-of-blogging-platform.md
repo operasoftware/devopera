@@ -1,7 +1,7 @@
 ---
 title: Change of blogging platform
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 - my.Opera

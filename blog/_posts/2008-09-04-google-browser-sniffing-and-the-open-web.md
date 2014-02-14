@@ -1,7 +1,7 @@
 ---
 title: Google browser sniffing and the Open Web
 authors:
-- dstorey
+- david-storey
 tags:
 - bad practices
 - browser sniffing
@@ -29,7 +29,7 @@ layout: article
 <ul>
     <li>Google Notebook</li>
     <li>Google Groups</li>
-    <li>Google Spreadsheets (they have promised to remove the block but this is not live yet</li> 
+    <li>Google Spreadsheets (they have promised to remove the block but this is not live yet</li>
     <li>Google Presentations</li>
      <li>Google Picasa</li>
      <li>Google Sites</li>

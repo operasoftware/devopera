@@ -1,7 +1,7 @@
 ---
 title: SXSW 2013 Proposals
 authors:
-- miketaylr
+- mike-taylor
 tags:
 - sxsw
 - mobile

@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile Emulator 12.1 is out
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera Mobile Emulator
 - Opera Mobile

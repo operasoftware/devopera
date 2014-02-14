@@ -1,7 +1,7 @@
 ---
 title: Keyboard accessibility presentation at Future of Web Design Tour 2009 in Glasgow
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - presentation
 - fowd

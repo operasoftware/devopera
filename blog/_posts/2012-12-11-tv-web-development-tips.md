@@ -1,7 +1,7 @@
 ---
 title: A few tips on TV web development
 authors:
-- tagawa
+- daniel-davis
 tags:
 - presentation
 - emulator

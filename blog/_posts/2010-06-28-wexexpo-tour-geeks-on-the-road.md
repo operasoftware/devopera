@@ -1,7 +1,7 @@
 ---
 title: WebExpo Tour - Geeks on the road
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - prague
 - webexpo
@@ -13,7 +13,7 @@ tags:
 layout: article
 ---
 <p>
-The week before, Opera had the pleasure of joining a bunch of geeks on tour in Central Europe. We started the tour in Bratislava and drove to Budapest the next day. On the third and final day, we wrapped up the event in Vienna. It was pure fun traveling and speaking in different cities. 
+The week before, Opera had the pleasure of joining a bunch of geeks on tour in Central Europe. We started the tour in Bratislava and drove to Budapest the next day. On the third and final day, we wrapped up the event in Vienna. It was pure fun traveling and speaking in different cities.
 </p>
 <p>We had the pleasure presenting alongside other interesting speakers, amongst them was the host <a href="http://webexpo.net/">Václav Stoupa</a>, <a href="http://twitter.com/browser">Lukáš Plíhal</a> on creativity, David and <a href="http://twitter.com/tomikvitek">Tomáš Vítek</a> on the Nette PHP framework and <a href="http://cz.linkedin.com/in/tazzy">Tomáš Pergler</a> about SCRUM. My fellow evangelist Shwetank Dixit gave an introduction to Standards and HTML5 and I continued with CSS3 and a final call-to-action to start using HTML5 and CSS3.
 </p>

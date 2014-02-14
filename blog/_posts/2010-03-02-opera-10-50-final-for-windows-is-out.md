@@ -1,7 +1,7 @@
 ---
 title: Opera 10.50 final for Windows is out!
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera 10.50
 - Carakan

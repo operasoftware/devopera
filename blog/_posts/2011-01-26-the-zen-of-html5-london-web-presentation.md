@@ -1,7 +1,7 @@
 ---
 title: 'The Zen of HTML5: London Web presentation'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - browsers
 - W3C

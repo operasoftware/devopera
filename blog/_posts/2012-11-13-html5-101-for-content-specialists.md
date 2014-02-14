@@ -1,7 +1,7 @@
 ---
 title: HTML5 101 for Content Specialists
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

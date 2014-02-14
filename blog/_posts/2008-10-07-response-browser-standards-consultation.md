@@ -1,8 +1,7 @@
 ---
-title: 'Public consultation on browser standards for public sector Web sites: Opera''s
-  response'
+title: 'Public consultation on browser standards for public sector Web sites: Opera’s response'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - browser sniffing
 - testing

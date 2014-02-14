@@ -1,7 +1,7 @@
 ---
 title: 'Standards.Next: Cognition and accessibility'
 authors:
-- iheni
+- henny-swan
 tags:
 - blog
 layout: article
@@ -12,7 +12,7 @@ layout: article
 
 <ul>
 <li><a href="http://hiantonia.wordpress.com/">Antonia Hyde</a> - freelance web designer specialising in cognition and accessibility including icons, audio, video and web apps. Antonia was also the driver behind <a href="http://icant.co.uk/easy-youtube/">Easy YouTube</a> which she worked on with Christian Heilmann.</li>
-<li><a href="http://fineartdavid.com/">David Owens</a> - front-end developer and web standards advocate David will share his findings from carrying out some user testing with people with cognitive disabilities and how this influenced design decisions. 
+<li><a href="http://fineartdavid.com/">David Owens</a> - front-end developer and web standards advocate David will share his findings from carrying out some user testing with people with cognitive disabilities and how this influenced design decisions.
 <li><a href="http://www.jkg3.com/">Jamie Knight</a> - Jamie has first hand knowledge as a web designer himself with autism. He&#39;ll be telling us what works and doesn&#39;t work and why.</li>
 </li></ul>
 

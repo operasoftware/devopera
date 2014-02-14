@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 10 and Mini 5 final released
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera Mobile 10
 - development

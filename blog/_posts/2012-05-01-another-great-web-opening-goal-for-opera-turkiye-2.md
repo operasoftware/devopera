@@ -1,7 +1,7 @@
 ---
 title: A web-opening goal for Opera Türkiye and clearfix fixed
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - blog
 layout: article

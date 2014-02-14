@@ -1,7 +1,7 @@
 ---
 title: Custom Protocol and Content Handlers in Opera 11.60
 authors:
-- miketaylr
+- mike-taylor
 tags:
 - HTML5
 - cheeseburgers
@@ -31,10 +31,10 @@ layout: article
 
 <p>In a user-agent that supports this, the user will be prompted to allow this registration to happen. Here is how this currently looks in Opera 11.60 alpha:</p>
 
-<span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/0registerprotocol.png' /></span> 
+<span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/0registerprotocol.png' /></span>
 
 
-<p>Once that&#8217;s taken care of, all &#8220;tel:&#8221; links will have the opportunity to be handled by this &#8220;Telephony&#8221; app. For example: clicking on <a href="tel:5551234">tel: 555-1234</a> brings up a dialog asking if you would like to open the link with the just-registered application, or the default. </p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/contentchoice.png' /></span> 
+<p>Once that&#8217;s taken care of, all &#8220;tel:&#8221; links will have the opportunity to be handled by this &#8220;Telephony&#8221; app. For example: clicking on <a href="tel:5551234">tel: 555-1234</a> brings up a dialog asking if you would like to open the link with the just-registered application, or the default. </p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/contentchoice.png' /></span>
 
 <p>The browser then navigates to <a href="http://miketaylr.com/pres/capjs/demo/?tel%3A5551234" target="_blank">http://miketaylr.com/pres/capjs/demo/?tel%3A5551234</a>. A <a href="http://miketaylr.com/pres/capjs/demo/app.js">script</a> can then parse the URL and operate on the &#8220;tel%3A5551234&#8221; content (in this case, just put the phone number in the phone&#8217;s LED).</p>
 
@@ -51,10 +51,10 @@ layout: article
 );
 </code></pre></p>
 
-<p>Just like <code>registerProtocolHandler</code>, the user will be prompted to allow the content-type registration to happen.</p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/0registercontent.png' /></span> 
+<p>Just like <code>registerProtocolHandler</code>, the user will be prompted to allow the content-type registration to happen.</p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/0registercontent.png' /></span>
 
 
-<p>In this example, we have a custom <code>text/x-cheeseburger</code> content-type parser (see the <a href="http://miketaylr.com/pres/capjs/?full#cheeseburger-syntax">syntax diagram</a>) to operate on our .cheeseburger files. When we download a resource with the <code>text/x-cheeseburger</code> content-type, our browser will ask us to allow it to open it with our custom handler.</p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/opencontent.png' /></span> 
+<p>In this example, we have a custom <code>text/x-cheeseburger</code> content-type parser (see the <a href="http://miketaylr.com/pres/capjs/?full#cheeseburger-syntax">syntax diagram</a>) to operate on our .cheeseburger files. When we download a resource with the <code>text/x-cheeseburger</code> content-type, our browser will ask us to allow it to open it with our custom handler.</p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/opencontent.png' /></span>
 
 <p>Again, just like <code>registerProtocolHandler</code>, the application is opened with the &#8220;%s&#8221; placeholder replaced by the URL of resource to be handled. In this case, <a href="http://miketaylr.com/code/cb.html?cb=http%3A%2F%2Fmiketaylr.com%2Fpres%2Fcapjs%2Fdemo%2Fsingle.cheeseburger" target="_blank">http://miketaylr.com/code/cb.html?cb=http%3A%2F%2Fmiketaylr.com%2Fpres%2Fcapjs%2Fdemo%2Fsingle.cheeseburger</a>. Now <a href="http://miketaylr.com/code/cb.js">our script</a> can fetch the contents and present it in a colorful way.</p><span class='img'><img alt='' src='http://files.myopera.com/miketaylr/blog/0cb.png' /></span>
 

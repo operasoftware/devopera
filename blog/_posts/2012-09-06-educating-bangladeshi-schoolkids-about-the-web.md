@@ -1,7 +1,7 @@
 ---
 title: Educating Bangladeshi schoolkids about the Web
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - economy
 - Bangladesh

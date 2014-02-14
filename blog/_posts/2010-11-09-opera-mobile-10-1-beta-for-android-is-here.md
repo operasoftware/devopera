@@ -1,7 +1,7 @@
 ---
 title: Opera Mobile 10.1 beta for Android is here
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera Mobile
 - viewport
@@ -9,7 +9,7 @@ tags:
 - blog
 layout: article
 ---
-<img src="http://files.myopera.com/andreasbovens/blog/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" /> 
+<img src="http://files.myopera.com/andreasbovens/blog/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" />
 <p>We&#39;ve just released our first version of Opera Mobile for Android — you can get it from <a href="http://m.opera.com/">m.opera.com</a>. It comes packed with features and standards support, with more things under way. A quick overview.</p>
 <h3>Pinch zoom and text wrap</h3>
 <p>Unlike earlier Opera Mobile versions for other platforms, this release has support for pinch zoom, and a handy automatic text-wrap feature to go with it. The latter allows us to preserve the layout of the page upon initial display, while focusing on readability upon zooming in: no need to scroll from left to right to read long sentences. Be sure to play around with the various text-wrap settings (default is &quot;on tap&quot;), and let us know what works best for you.</p>

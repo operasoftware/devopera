@@ -1,7 +1,7 @@
 ---
 title: Opera Software on GitHub
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - open source
 - Opera

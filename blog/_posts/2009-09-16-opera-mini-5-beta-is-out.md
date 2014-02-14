@@ -1,7 +1,7 @@
 ---
 title: Opera Mini 5 beta is out
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - opera mini 5 beta
 - mobile

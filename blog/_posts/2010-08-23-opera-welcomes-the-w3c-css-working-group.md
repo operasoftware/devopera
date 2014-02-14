@@ -1,7 +1,7 @@
 ---
 title: Opera Welcomes the W3C CSS Working Group
 authors:
-- mollydotcom
+- molly-holzschlag
 tags:
 - webkit
 - CSS

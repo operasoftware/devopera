@@ -1,7 +1,7 @@
 ---
 title: Opera MAMA - a sneak peek at headings, images and summary
 authors:
-- iheni
+- henny-swan
 tags:
 - structure
 - images
@@ -12,7 +12,7 @@ tags:
 - blog
 layout: article
 ---
-<p><a href="http://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty  analysis. 
+<p><a href="http://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty  analysis.
 
 The results are based on 4,225,113 URLs tested from over 250 countries; more about the <a href="http://dev.opera.com/articles/view/mama-methodology/">methodology</a> can be found in Dev Opera. It&#39;s worth noting that the numbers do not all add up as URLs may fulfill a number of the criteria. Therefore, percentages are guidelines only.</p>
 
@@ -30,7 +30,7 @@ The results are based on 4,225,113 URLs tested from over 250 countries; more abo
 <p>WebAim&#39;s <a href="http://www.webaim.org/projects/screenreadersurvey/#headings">screen reader survey findings for headings</a> found that 52% of respondents relied on headings to navigate around pages. I think this is a woefully low number but is perhaps an understandable given less than half of the websites tested had any headings at all.</p>
 
 
-<p>Constantly debated is the use - or rather misuse - of <a href="http://www.iheni.com/html-5-to-the-h1-debate-rescue/">multiple <code>H1</code>s</a> in a page, so much so there is even a website dedicated to the <a href="http://www.h1debate.com/"><code>H1</code> debate</a>. Should a page have just have one heading describing the unique page content or can it have two and include the website name as a second <code>H1</code>?</p> 
+<p>Constantly debated is the use - or rather misuse - of <a href="http://www.iheni.com/html-5-to-the-h1-debate-rescue/">multiple <code>H1</code>s</a> in a page, so much so there is even a website dedicated to the <a href="http://www.h1debate.com/"><code>H1</code> debate</a>. Should a page have just have one heading describing the unique page content or can it have two and include the website name as a second <code>H1</code>?</p>
 
 <p>I&#39;m not a fan of multiple <code>H1</code>s as it interrupts the logical page structure for screen reader users who rely on headings to get a mental overview of the <em>page content</em> and navigate it. Coding the website name as <code>H1</code> also duplicates unnecessary information - a user can easily find out what site they are on by reading the page <code>title</code>, logo or other branded elements as well as copy.</p>
 

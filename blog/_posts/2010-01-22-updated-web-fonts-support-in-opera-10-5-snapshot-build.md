@@ -1,7 +1,7 @@
 ---
 title: Updated Web Fonts support in Opera 10.5 snapshot build
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - opera 10.5
 - Web Fonts

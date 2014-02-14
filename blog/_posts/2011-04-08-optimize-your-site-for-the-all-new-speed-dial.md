@@ -1,7 +1,7 @@
 ---
 title: Optimize your site for the all new Speed Dial
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - view-mode
 - barracuda

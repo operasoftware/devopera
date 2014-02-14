@@ -1,7 +1,7 @@
 ---
 title: Two cheers for the Target/NFB accessibility settlement
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - NFB
 - accessibility

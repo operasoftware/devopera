@@ -1,7 +1,7 @@
 ---
 title: 5 questions for the Opera Mobile 10 Maemo team
 authors:
-- zibin
+- zi-bin-cheah
 tags:
 - Opera Mobile 10
 - nokia

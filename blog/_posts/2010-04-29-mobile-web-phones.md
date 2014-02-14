@@ -1,7 +1,7 @@
 ---
 title: Which phones are people using to browse the mobile Web?
 authors:
-- dstorey
+- david-storey
 tags:
 - resolution
 - Opera Mobile
@@ -15,7 +15,7 @@ layout: article
 
 <p>As well as the importance of Opera Mini, it is also worth bearing in mind that <a href="http://gs.statcounter.com/#mobile_os-ww-monthly-200903-201004">two of the top three mobile operating systems</a> are primarily keypad or QWERTY based non-touch screen platforms. BlackBerry (top selling smart phone platform in the US) only has one touch screen model (the Storm), and most Symbian S60 devices (top selling platform smart phone in Europe) currently on the market today are keypad or BlackBerry-style portrait QWERTY phones. Touch screen phones get all the lust and press attention, but if you design your site for only those phones (or only iPhone and perhaps Android if it is luck), you are missing out on a large part of the market, and a lot of potential revenue. Not testing on feature phones or keypad/QWERTY based smart phones is like only caring about Ferrari, Maserati or BMW drivers, but forgetting about Fords, Renaults or Chevrolet drivers.</p>
 
-<p>If you’ve decided it is important to test on a wide range of devices, which should you look into? A quick first step is to download the <a href="http://www.opera.com/developer/tools/">Opera Mobile emulator</a>. This will give you an idea of how your page will render in Opera Mobile. It isn&#39;t a substitute for testing on a real device, but it gives you a good first idea before taking it to the device for periodical and final testing. The default mode is touch screen, but you can change this from the command line with the <kbd>-notouch</kbd> flag. 
+<p>If you’ve decided it is important to test on a wide range of devices, which should you look into? A quick first step is to download the <a href="http://www.opera.com/developer/tools/">Opera Mobile emulator</a>. This will give you an idea of how your page will render in Opera Mobile. It isn&#39;t a substitute for testing on a real device, but it gives you a good first idea before taking it to the device for periodical and final testing. The default mode is touch screen, but you can change this from the command line with the <kbd>-notouch</kbd> flag.
 The article <a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop">Opera Mobile 10 and the Opera Widgets Mobile Emulator on your desktop</a> steps you through this and how to use it with <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> for debugging your pages. Although Opera Mini uses the same Opera Presto rendering engine, there are some differences due to the client/server approach, so it is important to test for Opera Mini too. The following table shows the top twenty mobiles used by Opera Mini users, along with the important characteristics:</p>
 
 
@@ -33,8 +33,8 @@ The article <a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-
     <tr><td>Nokia 5310 XpressMusic</td><td>240 x 320 pixels (QVGA)</td><td>2.1 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
      <tr><td>Nokia 3110 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition</td></tr>
  <tr><td>Nokia N73</td><td>240 x 320 pixels (QVGA)</td><td>2.4 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S60 3rd edition</td></tr>
-     <tr><td>Nokia 2330 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr> 
-     <tr><td>Nokia 5800 XpressMusic</td><td>360 x 640 pixels (nHD)</td><td>3.2 inches</td><td>3G 3.6 Mbps</td><td>Touch</td><td>S60 5th Edition 
+     <tr><td>Nokia 2330 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
+     <tr><td>Nokia 5800 XpressMusic</td><td>360 x 640 pixels (nHD)</td><td>3.2 inches</td><td>3G 3.6 Mbps</td><td>Touch</td><td>S60 5th Edition
 </td></tr>
       <tr><td>Nokia 6700 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.2 inches</td><td>3G 10 Mbps</td><td>Keypad</td><td>S40 6th edition</td></tr>
      <tr><td>Nokia 3120 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 5th edition</td></tr>

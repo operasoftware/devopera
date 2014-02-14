@@ -1,7 +1,7 @@
 ---
 title: No more "XML parsing failed" errors
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - Opera
 - xml

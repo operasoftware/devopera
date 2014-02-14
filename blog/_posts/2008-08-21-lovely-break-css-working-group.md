@@ -1,7 +1,7 @@
 ---
 title: A lovely <br>eak with the CSS Working Group
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - CSS
 - specifications
@@ -25,7 +25,7 @@ layout: article
 <blockquote cite="http://www.w3.org/Style/2004/css-charter-long">
     <p>CSS is the Web&#39;s primary style sheet language for specifying the rendering of text documents, in particular those expressed in HTML and XML-based formats. It can also be used to specify portions of the rendering of certain non-text formats, such as SMIL (multimedia) and SVG (vector graphics).</p>
     <cite><a href="http://www.w3.org/Style/2004/css-charter-long">CSS Working Group charter</a></cite></blockquote>
-<p>Eventually, consensus was reached,  expressing it in a way that nobody liked but everyone can live with:  page-break applies to block-level elements and may 
+<p>Eventually, consensus was reached,  expressing it in a way that nobody liked but everyone can live with:  page-break applies to block-level elements and may
     also be applied to &quot;other elements&quot;. Whether this means that I could develop my brand new Bruce-browser by reading the amended CSS 2.1 spec and interoperably implement <code>br</code> is doubtful (so I&#39;ll abandon that plan and carry on with Opera, after all!). </p>
 <p>The <a href="http://krijnhoetmer.nl/irc-logs/css/20080820">whole conversation is minuted</a> on the <abbr>IRC</abbr> logs. One thing that that impressed me, and which doesn&#39;t come over in the minutes, is how much the participants  care about users, web authors and designers. On issues where there  are several solutions and none is technically  superior, the group asked Molly and Jason Cranford Teague (the designers in attendance that day) to <a href="http://krijnhoetmer.nl/irc-logs/css/20080820#l-276">make the call</a>.</p>
 <p>My thanks to all of them for agreeing to my request to observe. Fantasai is even groovier in real life than online. There are even <a href="http://www.flickr.com/photos/57639831@N00/tags/csswg/">photos</a> to prove they&#39;re all real people!</p>

@@ -1,7 +1,7 @@
 ---
 title: Introducing Rollercoaster.io
 authors:
-- andreasbovens
+- andreas-bovens
 tags:
 - coast
 - best practices

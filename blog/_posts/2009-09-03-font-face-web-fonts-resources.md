@@ -1,7 +1,7 @@
 ---
 title: '@font-face Web Fonts resources'
 authors:
-- brucelawson
+- bruce-lawson
 tags:
 - Opera 10
 - CSS

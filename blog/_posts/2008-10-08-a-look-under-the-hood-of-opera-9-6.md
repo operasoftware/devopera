@@ -1,7 +1,7 @@
 ---
 title: A look under the hood of Opera 9.6
 authors:
-- dstorey
+- david-storey
 tags:
 - Opera 9.6
 - Estonia

@@ -1,7 +1,7 @@
 ---
 title: Win a ticket to Web Directions South!
 authors:
-- chrismills
+- chris-mills
 tags:
 - opera 10
 - free ticket
