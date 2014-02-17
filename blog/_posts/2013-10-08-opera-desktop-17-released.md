@@ -9,6 +9,7 @@ tags:
 - opera-17
 - canvas
 - api
+- odin
 layout: article
 ---
 <p><a href="http://my.opera.com/desktopteam/blog/opera-17-final">Opera 17 for desktop is released</a>, and installs are being autoupdated as you read this.</p>

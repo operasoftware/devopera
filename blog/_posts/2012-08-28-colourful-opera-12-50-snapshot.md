@@ -4,6 +4,7 @@ authors:
 - patrick-lauke
 tags:
 - opera-12
+- odin
 layout: article
 ---
 <p>As work steadily continues on our next stable release, this week&#39;s <a href="http://my.opera.com/desktopteam/blog/2012/08/28/core">Opera 12.50 snapshot</a> provides a colourful mixed bag of new features and improvements. As ever, we&#39;ve cherry-picked the ones we find most interesting for developers.</p>

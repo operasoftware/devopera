@@ -8,6 +8,7 @@ tags:
 - video
 - html5
 - audio
+- odin
 layout: article
 ---
 <p>HTML5 has an <a href="http://dev.w3.org/html5/spec/video.html#attr-media-autoplay"><code>autoplay</code> attribute</a> on the <code>audio</code> and <code>video</code> elements. Ostensibly, this is a problem for those who work in shared offices and who aren’t expecting sound to blare out when following a link, and would be a huge problem for people who rely on sound for understanding the Web, such as those using a screenreader, because the sound in a video would drown out all other content on the page.</p>

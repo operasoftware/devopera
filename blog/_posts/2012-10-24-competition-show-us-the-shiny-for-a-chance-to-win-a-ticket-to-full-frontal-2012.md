@@ -5,6 +5,7 @@ authors:
 tags:
 - full-frontal
 - conference
+- odin
 layout: article
 ---
 <p>If you&#39;re serious about your JavaScript and fanatical about web app development, you should already be familiar with the <a href="http://2012.full-frontal.org/">Full Frontal</a> conference. Missed your chance to grab a ticket for this year? Don&#39;t fret, we may be able to help...</p>

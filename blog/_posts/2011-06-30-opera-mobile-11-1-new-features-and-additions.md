@@ -6,6 +6,7 @@ tags:
 - opera-mobile
 - opera-mini
 - viewport
+- odin
 layout: article
 ---
 <div>

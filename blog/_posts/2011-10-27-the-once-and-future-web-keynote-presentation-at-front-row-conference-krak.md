@@ -6,6 +6,7 @@ tags:
 - presentation
 - web-standards
 - keynote
+- odin
 layout: article
 ---
 <p>Although I&#39;m usually more comfortable diving into a specific subject and hiding behind slides of HTML and JavaScript code, I had the pleasure of changing gears a bit, taking a step back and turning a philosophical, introspective eye on the recent state of web development technologies in my keynote presentation on <a href="http://www.slideshare.net/redux/the-once-and-future-web-front-row-conference-krakow-20102011">The once and future web</a> at the <a href="http://frontrowconf.com/">Front Row Conference</a> in Kraków last week.</p>

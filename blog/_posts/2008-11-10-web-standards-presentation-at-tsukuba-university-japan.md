@@ -7,6 +7,7 @@ tags:
 - university
 - tsukuba
 - web-standards
+- odin
 layout: article
 ---
 <p>Last Wednesday, Opera held a Web Seminar at <a href="http://www.tsukuba.ac.jp">Tsukuba University</a> in Japan.  This is one of the best technical universities in Japan, and fittingly has the slogan <q>Innovation for the Future</q>.  Design wise it has a really nice Japanese-style flower symbol for its logo.  In the short time I’ve been in Japan I’ve noticed that Japan is very strong with symbolism, with many great examples on Shinto shrines throughout Tokyo.</p>

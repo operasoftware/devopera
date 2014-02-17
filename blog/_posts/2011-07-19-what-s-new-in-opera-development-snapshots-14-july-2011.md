@@ -5,6 +5,7 @@ authors:
 tags:
 - opera-next
 - carakan
+- odin
 layout: article
 ---
 <p>Woo, <a href="http://my.opera.com/desktopteam/blog/2011/07/14/javascript-on-a-diet">we got some dramatic big updates this time</a>! Let&#39;s see what&#39;s new.</p>

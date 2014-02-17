@@ -6,6 +6,7 @@ tags:
 - the-developer-briefcase
 - extensions
 - developers
+- odin
 layout: article
 ---
 <span class='imgright'><img alt='' src='/blog/the-developer-briefcase-and-other-neat-opera-extensions-for-developers/screenshot2.jpg' /></span>

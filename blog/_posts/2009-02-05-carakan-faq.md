@@ -6,6 +6,7 @@ tags:
 - carakan
 - javascript
 - ecmascript
+- odin
 layout: article
 ---
 <h3>What is <span lang="id">Carakan</span>?</h3>

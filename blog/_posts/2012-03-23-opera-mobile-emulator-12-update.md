@@ -8,6 +8,7 @@ tags:
 - emulator
 - debugging
 - mobile
+- odin
 layout: article
 ---
 <img src="/blog/opera-mobile-emulator-12-update/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />

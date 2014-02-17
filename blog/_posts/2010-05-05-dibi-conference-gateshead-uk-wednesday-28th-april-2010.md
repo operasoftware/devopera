@@ -9,6 +9,7 @@ tags:
 - web-design
 - web-standards
 - conference
+- odin
 layout: article
 ---
 <p><p>The dawn of another Great conference! On Tuesday 27th April 2010 I piled into a car with Dan Donald, Jake Smith, and Erin Ryan and set off to Gateshead to attend the first DIBI conference, a new conference for designers and developers put on by Codeworks and other local people.</p> ... </p><!--more-->	<p>After a fun journey up, we arrived at the house of Phil Sherry and Li, had a few beers and a really nice home-made curry, and then set off to the opening party. After quite a lot of beer, we found our way home and went to bed. It was nice to meet up with so many of the Newcastle posse, like Paul Timney and Oli Wood.</p>

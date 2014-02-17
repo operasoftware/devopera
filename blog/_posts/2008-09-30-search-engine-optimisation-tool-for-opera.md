@@ -4,6 +4,7 @@ authors:
 - bruce-lawson
 tags:
 - seo
+- odin
 layout: article
 ---
 <p><a href="http://w-shadow.com/blog/2008/09/05/seo-for-opera/">W-shadow writes</a>,</p>

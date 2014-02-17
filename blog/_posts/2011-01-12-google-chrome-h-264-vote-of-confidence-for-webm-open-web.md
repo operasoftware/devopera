@@ -13,6 +13,7 @@ tags:
 - vp8
 - open-web
 - mp4
+- odin
 layout: article
 ---
 <p><a href="http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html">Google&#39;s decision to drop native support for H.264 video in Chrome</a> clearly signals their confidence in the quality and viability of <a href="http://webmproject.org">WebM/VP8</a> as a way to deliver video content online, and their focus on the continued development of open formats.</p>

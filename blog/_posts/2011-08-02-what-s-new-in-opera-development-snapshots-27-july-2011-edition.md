@@ -4,6 +4,7 @@ authors:
 - divya-manian
 tags:
 - opera-next
+- odin
 layout: article
 ---
 <p>The biggest news for this <a href="http://my.opera.com/desktopteam/blog/2011/07/27/latency-microdata-qresync">snapshot</a> is the first practical implementation of the Microdata API in a browser.</p>

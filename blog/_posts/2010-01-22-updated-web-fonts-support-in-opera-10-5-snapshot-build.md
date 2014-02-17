@@ -6,6 +6,7 @@ tags:
 - opera-10
 - web-fonts
 - font-face
+- odin
 layout: article
 ---
 <p>Back when Opera 10 came out on September 1st last year, <a href="http://dev.opera.com/articles/view/the-opera-10-experience/#webfontsissue">we wrote</a> that, while Opera had <code>@font-face</code> support, specifying different weights and styles for a single font-family name was not working: only the last font specified (typically an italic/bold variant) would be applied, thereby overriding other weights and styles of that font family.</p>

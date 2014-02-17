@@ -7,6 +7,7 @@ tags:
 - testing
 - conference
 - standards
+- odin
 layout: article
 ---
 <p>I was at <a href="http://www.csunconference.org/index.cfm?EID=80000144">CSUN</a> last week, the technology and persons with disabilities conference held in Los Angeles. It&#39;s one of my favorite conferences as you get a chance to talk with some of the great and the good of the web development world and talk about all things accessibility.</p>

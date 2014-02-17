@@ -14,6 +14,7 @@ tags:
 - donetsk
 - ukraine
 - kharkov
+- odin
 layout: article
 ---
 <p><h2>Web standards and heavy metal in Ukraine</h2>

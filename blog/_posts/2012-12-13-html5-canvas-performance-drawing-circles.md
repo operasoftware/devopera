@@ -7,6 +7,7 @@ tags:
 - javascript
 - html5
 - canvas
+- odin
 layout: article
 ---
 <img src="/blog/html5-canvas-performance-drawing-circles/canvas-christmas-tree.jpg" alt="HTML5 canvas baubles on a Christmas tree" style="float:right;margin:0 0 1em 1em;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);" />

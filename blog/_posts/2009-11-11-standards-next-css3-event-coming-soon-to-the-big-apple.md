@@ -8,6 +8,7 @@ tags:
 - standards.next
 - events
 - html5
+- odin
 layout: article
 ---
 <p>With two successful Standards.Next events behind us, we are taking the show on the road to the Big Apple for an event focusing on CSS3. As always, the event is free and anyone can attend. <a href="http://www.standards-next.org">Standards.Next CSS3</a> will take place on the 20<sup>th</sup> November at the <a href="http://en.wikipedia.org/wiki/Time-Life_Building">Time-Life building</a> in New York City.  Time &amp; Life Inc. have generously let us use one of there rooms for the day. Space will be limited so please register your interest on the <a href="http://upcoming.yahoo.com/event/4878729/">events Upcoming page</a>. If we reach capacity people will be admitted on a first come, first served basis, so please turn up early if you want to absolutely guarantee a spot. We hope to have space for everyone though.</p>

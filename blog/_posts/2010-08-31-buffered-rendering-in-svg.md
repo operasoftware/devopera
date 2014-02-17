@@ -6,6 +6,7 @@ tags:
 - svg-open
 - performance
 - svg
+- odin
 layout: article
 ---
 <p>One of the things recently added to Opera is support for the <a href="http://www.w3.org/TR/SVGTiny12/painting.html#BufferedRenderingProperty"><code>buffered-rendering</code> SVG property</a>. SVG content providers can use this property to provide a hint to the implementation about how often an element is modified so it can make better speed vs. memory trade-offs.</p>

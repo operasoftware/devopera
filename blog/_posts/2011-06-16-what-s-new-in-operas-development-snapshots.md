@@ -4,6 +4,7 @@ authors:
 - divya-manian
 tags:
 - opera-next
+- odin
 layout: article
 ---
 <p>We just <a href="http://my.opera.com/desktopteam/blog/2011/06/14/happy-tuesday">released a new development snapshot</a>, and it contains a mind-boggling array of new features and fixes. </p>

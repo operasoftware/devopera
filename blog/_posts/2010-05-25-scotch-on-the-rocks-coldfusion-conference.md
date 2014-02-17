@@ -5,6 +5,7 @@ authors:
 tags:
 - coldfusion
 - conference
+- odin
 layout: article
 ---
 <p><h2>ColdFusion conference, May 24 2010, London</h2>

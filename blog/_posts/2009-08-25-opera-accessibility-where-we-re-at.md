@@ -4,6 +4,7 @@ authors:
 - henny-swan
 tags:
 - accessibility
+- odin
 layout: article
 ---
 <p>It wont be long until I&#39;ve been at Opera a year during which time I&#39;ve been exploring Opera&#39;s more obvious and less obvious accessibility features. As we look forwards at how we enhance the browser for better accessibility support for both users and developers creating accessible standards compliant websites, I thought I&#39;d share with you some of my favorite bits.</p>

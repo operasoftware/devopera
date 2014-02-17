@@ -7,6 +7,7 @@ tags:
 - carakan
 - mobile
 - vega
+- odin
 layout: article
 ---
 <p>

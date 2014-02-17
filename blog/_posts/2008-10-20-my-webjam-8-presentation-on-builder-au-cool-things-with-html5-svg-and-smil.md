@@ -8,6 +8,7 @@ tags:
 - video
 - html5
 - svg
+- odin
 layout: article
 ---
 <p>Builder AU has featured my WebJam 8 presentation of a couple of weeks ago in their video section. Here&#39;s an embed (oh the irony) for you to enjoy!</p>

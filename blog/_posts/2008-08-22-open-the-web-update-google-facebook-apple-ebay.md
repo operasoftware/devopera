@@ -5,6 +5,7 @@ authors:
 tags:
 - otw
 - news
+- odin
 layout: article
 ---
 <p>A number of high profile sites have been fixed or are in the process of being fixed this week and last.    Many users noticed that <a href="http://www.orkut.com/">Orkut</a> broke in Opera Mini.  We were snowed under with bug reports on this issue.  The issue was with a malformed <code>meta</code> refresh that was sent to Opera Mini.  We’ve been in touch with the Orkut team and they’ve kindly fixed the issue.  Orkut especially has many Opera Mini users, as we both share two markets that we are both very strong in–Brazil and India.  All those users can get back to having a mobile social life now.</p><p>On the subject of Google, Google Docs removed the block on Opera a while ago, but the Spreadsheets and Presentation components still blocked Opera at the door.  We’ve been talking to the Spreadsheets team, and that block should be removed shortly.  Now we just need to get Google Presentations working and the suite will fully support Opera.</p>

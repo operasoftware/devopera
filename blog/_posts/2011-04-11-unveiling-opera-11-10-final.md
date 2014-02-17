@@ -15,6 +15,7 @@ tags:
 - mac
 - speed-dial
 - extensions
+- odin
 layout: article
 ---
 <h3>From beta to final: a heritage of great functionality</h3>

@@ -12,6 +12,7 @@ tags:
 - education
 - learning
 - javascript
+- odin
 layout: article
 ---
 <p><h2>Introduction</h2>

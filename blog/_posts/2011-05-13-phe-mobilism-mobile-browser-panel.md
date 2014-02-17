@@ -7,6 +7,7 @@ tags:
 - mobilism
 - opera
 - mobile
+- odin
 layout: article
 ---
 <p><span class='imgright'><img alt='' src='/blog/phe-mobilism-mobile-browser-panel/mobilism2.png' /></span> Yesterday afternoon, I had the pleasure to represent Opera in the <a href="http://mobilism.nl/2011/news/april-26">mobile browser panel</a> at the <a href="http://mobilism.nl/">Mobilism</a> conference in Amsterdam. The panel was moderated by <a href="http://adactio.com/">Jeremy Keith</a> and <a href="http://www.ustream.tv/recorded/14650462">livestreamed and recorded on Ustream</a>.</p>

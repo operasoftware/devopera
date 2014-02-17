@@ -9,6 +9,7 @@ tags:
 - classlist
 - time
 - video
+- odin
 layout: article
 ---
 <p>This morning, we&#39;ve released <a href="http://www.opera.com/browser/next/">Opera 11.50 beta</a> through our Next channel, and it comes with a number of interesting developer bits. Let&#39;s have a look.</p>

@@ -7,6 +7,7 @@ tags:
 - development
 - emulator
 - mobile
+- odin
 layout: article
 ---
 <p>I&#39;m happy to announce that we have updated the <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a> to version 11.5, to match the most recent version of <a href="http://www.opera.com/mobile/">Opera Mobile</a> available on <a href="https://market.android.com/details?id=com.opera.browser">Android</a>, S60 and MeeGo devices.</p>

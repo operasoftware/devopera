@@ -17,6 +17,7 @@ tags:
 - audio
 - stuff
 - developer-tools
+- odin
 layout: article
 ---
 <p>The <a href="http://sxsw.com/interactive">SXSWi 2012</a> festival is over, and the merry men and women of Opera have returned to their castles, caves and dungeons. We didn&#39;t have much of a chance during our visit to Austin to write intermediate reports and post interviews, as we were far too busy meeting great people, spreading the good word of Opera, and rocking out. So in lieu of what was promised in <a href="http://my.opera.com/ODIN/blog/2012/03/06/singing-an-opera-at-sxswi-2012">my previous post about SXSWi</a>, here is a summary of our talks including links to slides and other resources associated with them, and some highlights.</p>

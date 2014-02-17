@@ -6,6 +6,7 @@ tags:
 - presentation
 - video
 - conference
+- odin
 layout: article
 ---
 <p>Auch dieses Jahr verschlug es mich nach Mainz für die <a href="http://webtechcon.de/2011/">WebTech 2011</a>. Das Orga-Team hielt mich schön auf Trab, und spannte mich gleich ein um bei der offiziellen Konferenz-Eröffnung, einer spontan arrangierten Diskussion zum Thema JavaScript, und natürlich als Jurymitglied bei der <a href="http://webtechcon.de/2011/sessions#session-20264">PHPopstars</a> Abendveranstaltung mit dabei zu sein.</p>

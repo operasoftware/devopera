@@ -5,6 +5,7 @@ authors:
 tags:
 - javascript
 - ecmascript
+- odin
 layout: article
 ---
 <p>

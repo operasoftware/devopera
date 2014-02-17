@@ -6,6 +6,7 @@ tags:
 - accessibility
 - voiceover
 - screenreader
+- odin
 layout: article
 ---
 <p>Support for the Mac native screen reader <a href="http://www.apple.com/accessibility/voiceover/">VoiceOver</a> was added to Opera in version 9.5. This is a quick overview explaining what you can access using VoiceOver with Opera. I&#39;m hoping it will be of use to people with screen readers and developers debugging content alike.</p>

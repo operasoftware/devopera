@@ -4,6 +4,7 @@ authors:
 - bruce-lawson
 tags:
 - presentation
+- odin
 layout: article
 ---
 I was lucky enough to be invited to Stockholm, where I gave two presentations at a Geek Meet organised by <a href="http://www.robertnyman.com/">Robert Nyman</a> and hosted by those nice folks at <a href="http://www.creuna.se/">Creuna</a>. (Here&#39;s <a href="http://vimeo.com/15151605">a video</a> that shows just how much effort went into it.)

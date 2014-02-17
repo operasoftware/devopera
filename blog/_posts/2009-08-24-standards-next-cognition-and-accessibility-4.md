@@ -5,6 +5,7 @@ authors:
 tags:
 - standards.next
 - accessibility
+- odin
 layout: article
 ---
 <p>Not long now until Bruce and I will be running our next <a href="http://www.standards-next.org">Standards.Next</a> meetup this time covering cognition and accessible web design.</p>

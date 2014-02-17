@@ -8,6 +8,7 @@ tags:
 - standards
 - css3
 - html5
+- odin
 layout: article
 ---
 <p>

@@ -9,6 +9,7 @@ tags:
 - extensions
 - geolocation
 - disconnect
+- odin
 layout: article
 ---
 <p>This morning, we&#39;ve spun out <a href="http://www.opera.com/computer/">Opera 16</a> stable from our <a href="http://www.opera.com/computer/next">Opera Next</a> stream.</p>

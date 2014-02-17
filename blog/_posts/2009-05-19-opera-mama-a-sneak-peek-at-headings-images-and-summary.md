@@ -9,6 +9,7 @@ tags:
 - headings
 - summary
 - standards
+- odin
 layout: article
 ---
 <p><a href="http://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty  analysis.

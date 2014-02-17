@@ -5,6 +5,7 @@ authors:
 tags:
 - indonesia
 - university
+- odin
 layout: article
 ---
 <p>Zi Bin and I had a wonderful two weeks touring Indonesian Universities with Putri. We visited 10 Universities in five cities and spoke to 2500 students.<p>

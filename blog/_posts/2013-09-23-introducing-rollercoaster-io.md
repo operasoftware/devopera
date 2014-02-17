@@ -12,6 +12,7 @@ tags:
 - ipad
 - browser
 - design
+- odin
 layout: article
 ---
 <p style="float: right; margin: 0 0 0.5em 1em"><a href="http://rollercoaster.io/"><img src="/blog/introducing-rollercoaster-io/rollercoaster-250.jpg" alt="Rollercoaster screenshot" /></a></p>

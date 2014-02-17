@@ -9,6 +9,7 @@ tags:
 - testing
 - dragonfly
 - mobile
+- odin
 layout: article
 ---
 <p>I presented at <a href="http://overtheair.org/">Over the Air</a> last week, a two day hack focusing on widgets and the mobile web. It was a great end to an already busy stretch of conferences with a day of presentations followed by an all night hack and presentations the next day.</p>

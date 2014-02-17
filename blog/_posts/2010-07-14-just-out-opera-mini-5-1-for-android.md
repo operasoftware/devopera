@@ -6,6 +6,7 @@ tags:
 - opera-mini
 - mobile
 - android
+- odin
 layout: article
 ---
 <a href="/blog/just-out-opera-mini-5-1-for-android/device2.png"><img src="/blog/just-out-opera-mini-5-1-for-android/device2.png" alt="Opera Mini 5.1 screenshot" style="float: right; margin: 0 0 1em 1em; width: 240px; height: 400px;" /></a>

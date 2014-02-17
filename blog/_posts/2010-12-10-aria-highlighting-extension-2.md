@@ -7,6 +7,7 @@ tags:
 - aria
 - debugging
 - accessibility
+- odin
 layout: article
 ---
 <p>I was mucking around with  <a href="http://dev.opera.com/articles/extensions/">Opera Extensions</a>, largely to get a grip on how they work, and decided to make an extension that exposes ARIA information in a page, as I was travelling Australia and <a href="http://wipa.org.au/html5/">talking HTML5 and ARIA</a> with ARIA-expert <a href="http://www.paciellogroup.com/blog/">Steve Faulkner</a>.</p>

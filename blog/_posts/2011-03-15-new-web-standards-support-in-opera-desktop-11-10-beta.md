@@ -8,6 +8,7 @@ tags:
 - woff
 - webp
 - opera-11
+- odin
 layout: article
 ---
 <h3>So many new features!</h3>

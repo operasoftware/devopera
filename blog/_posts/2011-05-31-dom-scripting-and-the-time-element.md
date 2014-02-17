@@ -7,6 +7,7 @@ tags:
 - html5
 - dom
 - javascript
+- odin
 layout: article
 ---
 <p>We&#39;ve created a fun demonstration (well, at least it was fun to Andreas and me last night at 1AM) of how to make use of the <code>&lt;time&gt;</code> element via DOM scripting. Behold our <a href="http://people.opera.com/miket/2011/5/time.html">mighty date robot</a>.</p>

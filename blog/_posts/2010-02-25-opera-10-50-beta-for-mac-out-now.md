@@ -8,6 +8,7 @@ tags:
 - widgets
 - opera-10
 - video
+- odin
 layout: article
 ---
 <p>Opera 10.50 beta for mac is out now. <a href="http://www.opera.com/browser/next/" target="_blank">Download it now</a> and take it for a spin!</p>

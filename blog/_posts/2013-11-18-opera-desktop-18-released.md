@@ -9,6 +9,7 @@ tags:
 - opera-18
 - themes
 - extensions
+- odin
 layout: article
 ---
 <p><a href="http://www.opera.com/computer">Opera Desktop 18 for Mac and Windows</a> is out, based on Chromium 31. (<a href="http://www.opera.com/computer">See features and download</a>)</p>

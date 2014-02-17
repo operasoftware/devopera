@@ -9,6 +9,7 @@ tags:
 - extensions
 - opera-11
 - release
+- odin
 layout: article
 ---
 <p>Opera has always been known for its adaptability, and wealth of options for customisation. You can modify the UI with custom icons, buttons and menu options; you can write user stylesheets and User JavaScript to add custom styles and behaviour to any site you access; you can also create <a href="http://widgets.opera.com/">Opera Widgets</a> and <a href="http://unite.opera.com/applications/">Unite applications</a> to provide standalone native applications written using open standards, and much, much more.</p>

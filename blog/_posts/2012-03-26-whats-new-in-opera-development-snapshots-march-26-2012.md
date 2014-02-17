@@ -4,6 +4,7 @@ authors:
 - mike-taylor
 tags:
 - opera-next
+- odin
 layout: article
 ---
 Pssst! Yes, you. You like CSS? Interested in some HTML5? Want some hot ECMAScript? Then, my friend, you want to look at this latest Opera desktop snapshot in which our core rendering engine, Presto,  <a href="http://my.opera.com/desktopteam/blog/2012/03/26/html5-css-64bit">gets a huge upgrade</a>.

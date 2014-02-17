@@ -7,6 +7,7 @@ tags:
 - bangladesh
 - mobile
 - mini
+- odin
 layout: article
 ---
 <object width="500" height="281"><param name="movie" value="http://www.youtube.com/v/_x7GBOsl1OU?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/_x7GBOsl1OU?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" type="application/x-shockwave-flash" width="500" height="281" allowfullscreen="true" allowscriptaccess="never" /></object>

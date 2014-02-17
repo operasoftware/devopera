@@ -4,6 +4,7 @@ authors:
 - david-storey
 tags:
 - dragonfly
+- odin
 layout: article
 ---
 <p>The Opera Dragonfly team is proud to announce that <a href="http://www.opera.com/dragonfly/">Opera Dragonfly 1.0</a> launched this morning. At the want of not repeating myself, you can find out all the details on the <a href="http://my.opera.com/dragonfly/blog/opera-dragonfly-1-0-emerges">Opera Dragonfly blog</a>.</p>

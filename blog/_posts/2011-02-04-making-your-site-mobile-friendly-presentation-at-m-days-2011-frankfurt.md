@@ -5,6 +5,7 @@ authors:
 tags:
 - mobile
 - presentation
+- odin
 layout: article
 ---
 Business-oriented conferences – where the air is blue with words like &quot;synergy&quot; and &quot;monetisation&quot;, but said in a serious, non-ironic way – are not my scene. So generally I wouldn&#39;t go to events like the recent <a href="http://m-days.de">M-Days</a> fair in Frankfurt. However, tireless grass-roots organiser <a href="http://www.dmr-solutions.com">Darren Cooper</a> managed to set up a &quot;community stage&quot; side event, aimed specifically at developers and designers. I had to pleasure to once again evangelise about tips, tricks and ideas around mobile web development with a slightly expanded version of my &quot;Making your site mobile-friendly&quot; talk (aka &quot;<a href="http://www.slideshare.net/redux/webseiten-fr-mobile-gerte-mdays-frankfurt-27012011">Webseiten für mobile Geräte</a>&quot;, in German)

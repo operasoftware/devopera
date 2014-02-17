@@ -5,6 +5,7 @@ authors:
 tags:
 - video
 - html5
+- odin
 layout: article
 ---
 <video width="620" height="360" controls="controls">

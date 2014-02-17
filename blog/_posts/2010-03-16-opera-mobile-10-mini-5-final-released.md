@@ -6,6 +6,7 @@ tags:
 - opera-mobile
 - development
 - opera-mini
+- odin
 layout: article
 ---
 <p>Earlier today, we&#39;ve released the final versions of <a href="http://www.opera.com/mobile/">Opera Mobile 10 and Opera Mini 5</a>. Both are totally free, so be sure to download them to your phone!</p>

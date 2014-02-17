@@ -5,6 +5,7 @@ authors:
 tags:
 - html
 - talk
+- odin
 layout: article
 ---
 <p>I was privileged to be invited to speak at the inaugural <a href="http://speaktheweb.org/">Speak The Web</a> &quot;gig&quot; conference, in Sheffield on Monday 8 February. I demoed lots of <abbr>HTML</abbr>5, especially video.</p>

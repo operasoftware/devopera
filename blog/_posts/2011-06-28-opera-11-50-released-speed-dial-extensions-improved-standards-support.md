@@ -8,6 +8,7 @@ tags:
 - speed-dial
 - extensions
 - standards
+- odin
 layout: article
 ---
 <span class='imgright'><img alt='' src='/blog/opera-11-50-released-speed-dial-extensions-improved-standards-support/300px-Xiphias_gladius2.jpg' /></span>

@@ -8,6 +8,7 @@ tags:
 - peacekeeper
 - sputnik
 - benchmark
+- odin
 layout: article
 ---
 <h3>Fastest Browser</h3>

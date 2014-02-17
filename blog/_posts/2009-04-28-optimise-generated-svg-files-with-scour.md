@@ -6,6 +6,7 @@ tags:
 - scour
 - optimisation
 - svg
+- odin
 layout: article
 ---
 <p>One of the issues with <abbr>SVG</abbr> is that to make any complex image involving things like paths, you really need to generate the initial file using a vector graphics editor.  Even with formats such as <abbr>HTML</abbr>, automatically generated mark-up is most often sub par compared to hand crafted mark-up.  This is no different with <abbr>SVG</abbr>, with each editor adding its own extra attributes for meta data, or adding a lot of default values that are not needed.  It is often best to strip out this extra cruft to make the mark up leaner, save file size, speed up rendering and make it easier to script and update the image.  I’ve done this by hand previously, and it is a slow process.  Now however their is an easier way.  Jeff Schiller has produced <a href="https://launchpad.net/scour">Scour</a>, which is an open source script to scrub automatically generated SVG files to optimise their size.  It is currently in early days of development, so there are bugs, but it is already immensely useful.</p>

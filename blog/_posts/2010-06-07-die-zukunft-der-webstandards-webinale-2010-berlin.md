@@ -12,6 +12,7 @@ tags:
 - conference
 - widgets
 - canvas
+- odin
 layout: article
 ---
 <p>Last week I had the pleasure of attending – and speaking at – the <a href="http://createordie.de/webinale2010/">Webinale 2010</a> in Berlin, a giant conference with 4 concurrent tracks, running in parallel to the <a href="http://it-republik.de/php/phpconference2010se/">International PHP 2010</a> conference. The great and the good of the German web scene were in attendance, so it was fun to meet up again with some of my fellow <a href="http://www.webkrauts.de">Webkrauts</a> and to make some new friends.</p>

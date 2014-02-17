@@ -8,6 +8,7 @@ tags:
 - web-standards
 - wds09
 - web-directions-south
+- odin
 layout: article
 ---
 <p>One of the most exciting conferences of the year is almost upon us,

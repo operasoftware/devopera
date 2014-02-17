@@ -8,6 +8,7 @@ tags:
 - vega
 - release
 - standards
+- odin
 layout: article
 ---
 <p>This morning, we&#39;ve released the much anticipated <a href="http://www.opera.com/browser/">final version of Opera 10.50</a> for Windows — work on Mac and Linux versions is still ongoing, so <a href="http://my.opera.com/desktopteam/blog/">stay tuned</a>.</p>

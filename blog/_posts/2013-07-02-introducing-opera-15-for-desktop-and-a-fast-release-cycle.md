@@ -6,6 +6,7 @@ tags:
 - chromium
 - opera-15
 - blink
+- odin
 layout: article
 ---
 <p>Here it is — <a href="http://www.opera.com/computer">Opera 15 for computers</a>: your fast, secure browser that doesn&#39;t get in your way. Here&#39;s a quick video introduction.</p>

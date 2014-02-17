@@ -6,6 +6,7 @@ tags:
 - opera-mobile
 - viewport
 - android
+- odin
 layout: article
 ---
 <img src="/blog/opera-mobile-10-1-beta-for-android-is-here/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" />

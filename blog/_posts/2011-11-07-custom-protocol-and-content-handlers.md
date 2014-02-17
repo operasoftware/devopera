@@ -6,6 +6,7 @@ tags:
 - html5
 - protocols
 - opera-11
+- odin
 layout: article
 ---
 <h2 id="custom_protocol_and_content_handlers_in_opera_1160_beta">Custom Protocol and Content Handlers in Opera 11.60 beta</h2>

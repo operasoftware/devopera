@@ -8,6 +8,7 @@ tags:
 - html5
 - svg
 - mobile
+- odin
 layout: article
 ---
 <p>I had the pleasure of speaking to a really savvy crowd at Surrey University last night on &quot;Tomorrow&#39;s web standards today&quot;.  It was a fun session with lots of really good questions at the end - just the way I like it.</p>

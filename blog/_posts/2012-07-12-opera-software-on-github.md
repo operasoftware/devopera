@@ -6,6 +6,7 @@ tags:
 - open-source
 - opera
 - github
+- odin
 layout: article
 ---
 <img src="/blog/opera-software-on-github/octocat160.png" alt="GitHub Octocat" style="float:right;" />

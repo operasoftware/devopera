@@ -12,6 +12,7 @@ tags:
 - indonesia
 - android
 - progressive-enhancement
+- odin
 layout: article
 ---
 <p>The death of the feature phone is widely reported and greatly exaggerated. &quot;Although we see a huge market &#39;hype&#39; around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast&quot; analyst <a href="http://articles.timesofindia.indiatimes.com/2013-04-02/telecom/38216822_1_handset-market-cybermedia-research-smartphone-shipments">Faisal Kawoosa said</a> in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.</p>

@@ -8,6 +8,7 @@ tags:
 - mobile
 - html5
 - standards
+- odin
 layout: article
 ---
 <p>Last week I was privileged to talk to students at several <abbr>UK</abbr> universities and present on Web Standards, why they&#39;re vital for cross-device development, accessibility and keeping the Web genuinely <strong>world</strong>-wide, as well as give a preview of some emerging standards like <abbr>HTML</abbr> 5. Thanks to all who came to listen, asked questions and came for a beer afterwards, and to all the lecturers who invited and welcomed us.</p>

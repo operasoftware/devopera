@@ -5,6 +5,7 @@ authors:
 tags:
 - open-the-web
 - job
+- odin
 layout: article
 ---
 <img src="/blog/looking-for-web-openers/logo.png" alt="Open the Web logo" title="Open the Web" style="float: right;" />

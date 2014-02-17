@@ -13,6 +13,7 @@ tags:
 - webgl
 - camera
 - ipad
+- odin
 layout: article
 ---
 <p>Mobile analyst Peter Paul Koch <a href="http://www.quirksmode.org/blog/archives/2012/01/browser_stats_f_2.html">recently wrote</a>,

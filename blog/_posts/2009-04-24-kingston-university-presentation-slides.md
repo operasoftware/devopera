@@ -4,6 +4,7 @@ authors:
 - bruce-lawson
 tags:
 - presentation
+- odin
 layout: article
 ---
 <p>Chris Mills and I were honoured to present on Open Web Standards and the Mobile Web at Kingston University, London.</p>

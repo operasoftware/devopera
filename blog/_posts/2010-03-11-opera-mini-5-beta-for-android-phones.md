@@ -6,6 +6,7 @@ tags:
 - beta
 - opera-mini
 - android
+- odin
 layout: article
 ---
 <span class='imgright'><img alt='' src='/blog/opera-mini-5-beta-for-android-phones/OperaMini5-android-pr.jpg' /></span>

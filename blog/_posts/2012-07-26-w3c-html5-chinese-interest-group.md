@@ -9,6 +9,7 @@ tags:
 - w3c
 - html5
 - cjk
+- odin
 layout: article
 ---
 <h3>Trip to Seoul</h3>

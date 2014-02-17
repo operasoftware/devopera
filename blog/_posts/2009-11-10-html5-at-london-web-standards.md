@@ -5,6 +5,7 @@ authors:
 tags:
 - html5
 - london-web-standards
+- odin
 layout: article
 ---
 <p>I was privileged to be invited to come and present at London Web Standards, and honoured that the tickets sold out within 45 minutes of being available. So, no pressure then ...</p>

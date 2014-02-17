@@ -9,6 +9,7 @@ tags:
 - web-standards
 - javascript
 - standards
+- odin
 layout: article
 ---
 <p>Spent a delightful evening at the <a href="http://www.thisisleaf.co.uk/">Leaf Tea Shop &amp; Bar</a> in Liverpool last night as part of the <a href="http://speaktheweb.org/">Speak the Web</a> series of &quot;gig&quot; style events.</p>

@@ -8,6 +8,7 @@ tags:
 - video
 - svg
 - media-queries
+- odin
 layout: article
 ---
 One thing that seems to come up from time to time when talking about <abbr title="Scalable Vector Graphics">SVG</abbr> is the apparent lack of a mechanism to make certain size specific adjustments. Typical use case is icon design, where you want to make sure the outline of the icon you&#39;re creating is always 1px, regardless of the icon being 16, 32 or 64 pixels in size.

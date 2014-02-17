@@ -9,6 +9,7 @@ tags:
 - camera
 - opera-mobile
 - android
+- odin
 layout: article
 ---
 <p>Opera a while back had released an <a href="http://people.opera.com/richt/release/build/Opera_Mobile_11_LABS_device_orientation_preview_20110323.apk" target="_blank">experimental android build</a>, with support for getUserMedia and Device Orientation support. The stuff is really really cool, and is one of the major things which will help close the gap between the capabilities of native and web applications on mobile. See the <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" target="_blank">post on the core concerns blog about these new addtions</a> for more information and demos.</p>

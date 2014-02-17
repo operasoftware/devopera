@@ -5,6 +5,7 @@ authors:
 tags:
 - widgets
 - svg
+- odin
 layout: article
 ---
 <p>Who says that widgets can only be used for small, trivial apps? Certainly not Developer Relations&#39; own Vadim Makeev, who took the open source, web-based, JavaScript-driven <a href="http://code.google.com/p/svg-edit/">SVG-edit</a> project and turned it into an amazing standalone widget that can hold its own against traditional desktop applications.</p>

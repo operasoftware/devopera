@@ -6,6 +6,7 @@ tags:
 - opera-mobile
 - one-web
 - widgets
+- odin
 layout: article
 ---
 <p>Yesterday at the  <a href="http://www.smartphoneshow.com/">Smartphone Show 2008</a> I did a five-minute presentation about Opera Widgets (and the <a href="/ODIN/blog/opera-mobile-9-5-beta-2-and-the-x-widget-challenge">$10,000 prizes in our challenge to find the best new widget)</a>.</p>

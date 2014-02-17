@@ -5,6 +5,7 @@ authors:
 tags:
 - accessibility
 - mobile
+- odin
 layout: article
 ---
 <p>Last weekend saw the first ever online conference for web professionals <a href="http://www.headconference.com/">&lt;head&gt;</a>. Spread over three days roughly 80 speakers from different timezones hung out with delegates in virtual rooms speaking on just about any topic you can think of that is web related.</p>

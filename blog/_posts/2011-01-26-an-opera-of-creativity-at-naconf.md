@@ -6,6 +6,7 @@ tags:
 - opera
 - naconf
 - conference
+- odin
 layout: article
 ---
 <p>Report written by Chris Mills and Patrick Lauke</p>

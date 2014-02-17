@@ -7,6 +7,7 @@ tags:
 - beta
 - desktop
 - browser
+- odin
 layout: article
 ---
 Our Core developers have been hard at work to bring you the next version of Opera for Desktop. First, go <a href="http://www.opera.com/browser/beta/" target="_blank">download Opera 11.60 Beta</a>. Here are some of the interesting features you can enjoy:

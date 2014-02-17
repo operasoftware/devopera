@@ -8,6 +8,7 @@ tags:
 - opera
 - testing
 - robohydra
+- odin
 layout: article
 ---
 <p>We&#39;d like you to meet <a href="http://robohydra.org/" target="_blank">RoboHydra</a> - a web server designed to help you test any kind of HTTP-based client. RoboHydra is easy to configure to return the responses you want, mimicking any server behaviour needed to test your clients.</p>

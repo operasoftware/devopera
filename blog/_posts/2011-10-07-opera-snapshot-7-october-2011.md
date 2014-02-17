@@ -9,6 +9,7 @@ tags:
 - snapshot
 - css3
 - html5-parser
+- odin
 layout: article
 ---
 <p>Today ushers in another interesting developer snapshot release of Opera desktop! As per usual, if you are using <a href="http://www.opera.com/browser/next/">Opera Next</a> you should already have this update — if not, <a href="http://my.opera.com/desktopteam/blog/2011/10/07/ragnarok-css3-radial-gradients">download the snapshot</a> separately.</p>

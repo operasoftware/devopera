@@ -7,6 +7,7 @@ tags:
 - testing
 - one-web
 - progressive-enhancement
+- odin
 layout: article
 ---
 <h3>UPDATE</h3>
