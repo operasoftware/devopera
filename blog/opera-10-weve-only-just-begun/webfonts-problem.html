@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Webfonts problem</title>
+<style>
+/* typeface: Graublau Sans www.fonts.info */
+@font-face {
+    font-family: "GraublauWeb";
+    font-weight: normal;
+    src: url(GraublauWeb.otf);
+}
+
+@font-face {
+    font-family: "GraublauWeb";
+    font-weight: bold;
+    src: url(GraublauWebBold.otf);
+}
+
+body { 
+	padding: 2em;
+	font-family: Arial, sans-serif;
+}
+blockquote {
+	font-family: "GraublauWeb", sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+<p>In this example, we explicitly set the normal and bold version of the font family. As you see, this currently fails in Opera 10 due to a bug (which we're eagerly working on already) — the last <code>@font-face</code> block for a particular <code>font-family</code> overrides any previous definitions for the same family. In this case, the last <code>@font-face</code> block defines a bold font, rendering the whole element it is applied on in bold. Luckily, there is a <a href="http://devfiles.myopera.com/articles/751/webfonts-workaround.html">workaround</a> for this (temporary) problem.<p>
+<blockquote>
+<h1>What does this mean in the real world?</h1>
+
+<p>There are many beautiful and <strong>interesting fonts</strong> that can improve aesthetics and increase visual variety on the web. Just as I am sometimes stunned by beautiful book designs, I want to be <strong>overwhelmed by beautiful web pages</strong>. And, I don't want those beautiful pages to be made up of	background images.</p>
+</blockquote>
+<p><small><a href="">Håkon Wium Lie - <cite>CSS @ Ten: The Next Big Thing</cite></a></small></p>
+</body>
+</html>

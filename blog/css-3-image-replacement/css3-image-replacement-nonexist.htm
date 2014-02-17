@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>What should browsers do when {content: url} can't find the image?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+p.nonexistant {content:url(http:/www.brucelawson.co.uk/punk-images/XXXbruce-logo.jpg);}
+p.malformed {content:url(a b 3 45 );}
+p.exists {content:url(http://www.brucelawson.co.uk/images/bl9.jpg);}
+p.baby {content:url(http://www.brucelawson.co.uk/images/bl29.jpg);} 
+
+
+</style>
+</head>
+
+<body>
+<p>This is  test page for <a href="http://my.opera.com/ODIN/blog/css-3-image-replacement"><cite>CSS 3 image replacement</cite></a>.</p>
+<h1>What do browsers do when content: url can&rsquo;t render an image?</h1>
+<p>Situations in which the browser can't get an image:</p>
+<ol><li><h2>The image doesn't exist on the server (bad path or no such file:</h2>
+<p class="nonexistant"><strong>This text is replaced by non-existent image</strong></p>
+<p>In Opera and Safari, this shows a broken image icon, as if an <code>img</code> tag had a non-existant <code>src</code> attribute.</p>
+</li>
+<li><h2>The <abbr>URL</abbr> specified is malformed</h2>
+<p>If the address of the image is malformed, Opera and Safari ignore the CSS rule and therefore it doesn't try to replace it, so the content of the element is not replaced.</p>
+<p>The test below attempts to replace the paragraph with a malformed <abbr>URL</abbr>:</p>
+<p class="malformed"><strong>This text is replaced by a badly formed URL <code>{content:url(a b 3 45 );}</code></strong></p>
+</li>
+<li>
+    <h2>The user has switched off images, perhaps to save bandwidth</h2>
+	<p class="baby"><strong>This lovely baby should be fine.</strong></p>
+	<p>In both Opera, this lovely baby picture of me shows a "broken image" icon. In Safari, it shows nothing at all.</p>
+</li>
+</ol>
+</body>
+</html>

@@ -14,8 +14,8 @@ layout: article
 <p>The slides are made using Web Standards, and were shown using Projection Mode in Opera (just unzip, fire up index.html, then hit View&gt;Full screen to see full screen slides).</p>
 
 <ul>
-<li><a href="http://files.myopera.com/brucelawson/blog/Web-Standards-for-The-Future-India.zip">Bruce&#39;s slides: Web Standards for the Future (4.7 <abbr>MB</abbr>)</a></li>
-<li><a href="http://files.myopera.com/shwetankdixit/files/UnivTourIndia09_Shwetank.zip">Shwetank&#39;s slides: The Open Web, Mobile Web Trends, and the Opera Campus Crew Program (6.8 <abbr>MB</abbr>)</a></li>
+<li><a href="/blog/opera-india-university-tour/Web-Standards-for-The-Future-India.zip">Bruce&#39;s slides: Web Standards for the Future (4.7 <abbr>MB</abbr>)</a></li>
+<li><a href="/blog/opera-india-university-tour/UnivTourIndia09_Shwetank.zip">Shwetank&#39;s slides: The Open Web, Mobile Web Trends, and the Opera Campus Crew Program (6.8 <abbr>MB</abbr>)</a></li>
 </ul>
 
 <p>Shwetank has blogged some of the venues with lovely big pictures:</p>

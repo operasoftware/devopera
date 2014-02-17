@@ -17,7 +17,7 @@ layout: article
 <p>Here&#39;s the <a href="http://vimeo.com/31380928">video of the presentation</a>.</p>
 <p>Links referenced in the presentation:</p>
 <ul>
-<li><a href="http://devfiles.myopera.com/articles/572/classlist-url.htm">Top class names</a></li><li><a href="http://devfiles.myopera.com/articles/572/idlist-url.htm">Top ids</a></li>
-<li><a href="http://my.opera.com/tagawa/blog/the-html5-ruby-element-in-words-of-one-syllable-or-less">The HTML5 &lt;ruby&gt; element in words of one syllable or less</a></li>
+<li><a href="/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/classlist-url.htm">Top class names</a></li><li><a href="/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/idlist-url.htm">Top ids</a></li>
+<li><a href="http://daniemon.com/blog/the-html5-ruby-element/">The HTML5 &lt;ruby&gt; element in words of one syllable or less</a></li>
 <li><a href="">html5′s new &lt;bdi&gt; element</a></li>
 </ul>

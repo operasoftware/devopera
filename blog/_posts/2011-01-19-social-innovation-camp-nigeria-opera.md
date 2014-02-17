@@ -10,7 +10,7 @@ tags:
 layout: article
 ---
 <p>
-<img src="http://files.myopera.com/zibin/albums/597611/socialinnovationcamp.jpg" />
+<img src="/blog/social-innovation-camp-nigeria-opera/socialinnovationcamp.jpg" />
 </p>
 <p>
 What a great way to start 2011: the Opera Developer Relations team finally set foot on African soil! It was also my first trip to Africa and the reason for it was <a href="http://sicampnigeria.org/">Social Innovation Camp Nigeria</a>. The event was organized by <a href="http://twitter.com/tunbosunt">Bosun Tijani</a> and <a href="http://twitter.com/longesson">Femi Longe</a>. Its objective is to give Nigerians an outlet to develop their entrepreneurship and code for a social benefit. This event, the first of its kind, helped to create 6 innovative ideas in a sort of hackathon, in which participants coded and created prototypes over the course of three days, with Opera participating as a sponsor.

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey of Screen Dimensions</title>
+        <link rel="stylesheet" href="normalize.min.css">
+        <style type="text/css">
+        body {
+            color:#444;
+            font-family:'Helvetica Neue', 'Free Sans', 'Deja Vu Sans', Arial, Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+            line-height:1.2;
+        }
+        h1 {
+            font-size:1.5em;
+            text-align:center;
+        }
+        svg {
+            box-shadow:0 2px 4px rgba(0, 0, 0, 0.5);
+            display:block;
+            margin:1em;
+        }
+        p {
+            margin:1em;
+        }
+        .axis path,
+        .axis line {
+            fill:none;
+            stroke:#444;
+            shape-rendering:crispEdges;
+        }
+        .axis text {
+            font-size:12px;
+        }
+        
+        @media screen and (max-width:600px) {
+            body {
+                margin:0;
+                padding:0;
+            }
+            svg {
+                margin:1em 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Screen Dimensions for a sample of technical &amp; non-technical users</h1>
+        
+        <div id="charts"></div>
+        
+        <p>Download the raw data as XML files here:</p>
+        <ul>
+            <li><a href="screen-dimensions_techie.xml">Technical user data</a></li>
+            <li><a href="screen-dimensions_non-techie.xml">Non-technical user data</a></li>
+        </ul>
+        
+        <script type="text/javascript" src="d3.v3.min.js"></script>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript">
+        function drawScatter(type) {
+            'use strict';
+            var dataset = screenData[type].values;
+            var maxR = d3.max(dataset, function(d) {return d[2];});
+            var maxX = 4000;
+            var maxY = 2000;
+
+            var tickValues = [400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000];
+
+            // Width and height
+            var w = (window.innerWidth < 600) ? window.innerWidth : 600;
+            var h = w / (maxX / maxY); // Fix the ratio of the graph
+            var padding = 10;
+
+            // Create scale functions
+            var xScale = d3.scale.linear()
+                                 .domain([0, maxX])
+                                 .range([padding, w - padding * 2]);
+
+            var yScale = d3.scale.linear()
+                                 .domain([0, maxY])
+                                 .range([h - padding, padding]);
+
+            var rScale = d3.scale.linear()
+                                 .domain([0, maxR])
+                                 .range([1, w / 12]);
+
+            //Define X axis
+            var xAxis = d3.svg.axis()
+                              .scale(xScale)
+                              .orient("top")
+                              .tickValues(tickValues);
+
+            //Define Y axis
+            var yAxis = d3.svg.axis()
+                              .scale(yScale)
+                              .orient("right")
+                              .tickValues(tickValues);
+
+            // Create SVG element and append to page
+            var scatter = d3.select("#charts")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            // Create circles
+            scatter.selectAll("circle")
+                .data(dataset)
+                .enter()
+                .append("circle")
+                .attr("cx", function(d) {
+                    return xScale(d[0]);
+                })
+                .attr("cy", function(d) {
+                    return yScale(d[1]);
+                })
+                .attr("r", function(d) {
+                    return rScale(d[2]);
+                })
+                .attr('fill', screenData[type].color)
+                .append("title").text(function(d) {
+                    return d[0] + "x" + d[1];
+                });
+
+            // Create X axis
+            scatter.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + (h - padding) + ")")
+                .call(xAxis);
+
+            // Create Y axis
+            scatter.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(" + padding + ",0)")
+                .call(yAxis);
+
+            // Add graph title
+            scatter.append("svg:text")
+                .attr("x", w / 4)
+                .attr("y", 18)
+                .attr('font-size', 16)
+                .attr('font-family', 'arial')
+                .text(screenData[type].title);
+        }
+
+        drawScatter('techie');
+        drawScatter('nontechie');
+        </script>
+    </body>
+</html>

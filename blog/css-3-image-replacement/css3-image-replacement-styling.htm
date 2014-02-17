@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Testing setting content property to do perfect image replacement</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+h1 {content:url(http://www.brucelawson.co.uk/punk-images/bruce-logo.jpg);
+margin:0 auto; text-align:center; outline:1px dotted red;}
+ul {float:left;  list-style:none; margin:1em 20px 4em 10px;}
+a#home {content:url(http://www.brucelawson.co.uk/punk-images/nav_home.jpg)} 
+a#music {content:url(http://www.brucelawson.co.uk/punk-images/music.jpg)} 
+a#about {content:url(http://www.brucelawson.co.uk/punk-images/about.jpg)} 
+a#photos {content:url(http://www.brucelawson.co.uk/punk-images/photos.jpg)} 
+a#writing {content:url(http://www.brucelawson.co.uk/punk-images/writing.jpg)} 
+
+</style>
+</head>
+
+<body>
+<h1>Bruce Lawson</h1>
+ <ul>
+        <li><a id="home" href="/index.php/">Home</a></li>
+        <li><a id="music"  href="/index.php/category/my-music/">Bruce's music</a></li>
+        <li><a id="about"  href="/index.php/about/"> who is this wanker? </a></li>
+        <li><a id="photos" href="/plogger/"> snapshots</a></li>
+        <li><a id="writing" 
+ href="/index.php/writing/">writing stuff</a></li>
+</ul>
+<p>This is  test page for <a href="http://my.opera.com/ODIN/blog/css-3-image-replacement"><cite>CSS 3 image replacement</cite></a>.</p>
+<p>This page uses <abbr>CSS</abbr> 3 to replace text with images (<a href="css3-image-replacement.htm">explanation</a>). The logo above is centered in both Opera and Safari. Safari  fails to honour the <code>text-align:center</code> on the h1. but respects <code>margin:0 auto</code>. Opera does not, so both text-align and centering with margins are used on this page.The outline shows that the box for the h1 is the full width of the page in Opera (as the image is centered within it) whereas the box is "shrinkwrapped" to the image in Safari.</p>
+<code>
+<pre>
+h1 {content:url(http://www.brucelawson.co.uk/punk-images/bruce-logo.jpg);
+    margin:0 auto; text-align:center; outline:1px dotted red;}
+&hellip;
+&lt;h1&gt;Bruce Lawson&lt;/h1&gt;
+</pre>
+</code>
+</body>
+</html>

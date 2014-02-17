@@ -35,8 +35,8 @@ So why is the Mobile Web booming?
 </ol>
 
 <p>
-I&#39;ve presented the case in <a href="http://files.myopera.com/onlyputri/files/diskusipanel.jpg" target="_blank">The New Wave of Mobile Internet</a>, Universitas Krisdwipayana and the <a href="http://freshyourmind.com/" target="_blank">FreSh</a> forum.
+I&#39;ve presented the case in <a href="/blog/why-opera-mini-is-booming-in-indonesia/diskusipanel.jpg" target="_blank">The New Wave of Mobile Internet</a>, Universitas Krisdwipayana and the <a href="http://freshyourmind.com/" target="_blank">FreSh</a> forum.
 </p>
 <p>
-Here are the slides for <a href="http://files.myopera.com/zibin/blog/IndonesiaPresentationJune2009_ZiBinCheah_GeneralVer.pdf" target="_blank">the mobile browser trends and the boom in Indonesia</a>.
+Here are the slides for <a href="/blog/why-opera-mini-is-booming-in-indonesia/IndonesiaPresentationJune2009_ZiBinCheah_GeneralVer.pdf" target="_blank">the mobile browser trends and the boom in Indonesia</a>.
 </p></p>

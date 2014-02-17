@@ -10,7 +10,7 @@ layout: article
 ---
 <p>Yesterday I found myself needing to write a silly demo to sketch out some code (to be used in a larger project). The idea was to dump a ton of <code>&lt;input type=range&gt;</code> elements on a page, alternate between horizontal and vertical orientations, and manipulate the <code>value</code> property in various magical ways.</p>
 
-<span class='imgcenter'><img alt='' src='http://files.myopera.com/miketaylr/blog/rangesss.png' /></span>
+<span class='imgcenter'><img alt='' src='/blog/the-state-of-vertical-range-inputs/rangesss.png' /></span>
 
 <p>The default rendering of <code>type=range</code> is a horizontal slider widget. To see it yourself quickly, put the following in your browser URL bar: <code><pre>data:text/html, &lt;input type=&quot;range&quot;&gt;</pre></code></p>
 

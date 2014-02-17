@@ -19,6 +19,6 @@ layout: article
 
 <p>You can get a copy of my slides below. They&#39;re written in HTML and can be viewed in any browser but are best viewed in Opera using Opera Show. They&#39;re written in such a way that they can be used as a stand alone tutorial so feel free to share them amongst friends or colleagues.</p>
 
-<a href="http://files.myopera.com/iheni/blog/Testing%20with%20Opera.zip">Testing with Opera - 1.8MB zip</a>
+<a href="/blog/sun-tweetup-and-testing-for-standards-compliant-and-accessible-websites-using/Testing%20with%20Opera.zip">Testing with Opera - 1.8MB zip</a>
 
 <p>If you have any questions, comments or feedback then let me know, I&#39;d love to hear from you.</p>

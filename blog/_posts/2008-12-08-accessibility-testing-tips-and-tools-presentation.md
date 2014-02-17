@@ -16,6 +16,6 @@ layout: article
 <p>I thought I&#39;d post my slides here for you to have a look through. They give an overview of testing methodologies as well as point to some tools and some examples of how to test images, heading structure, keyboard accessibility and so on. I&#39;ve added in links and references where possible so that it can work as a stand alone tutorial but if you do have a question let me know.</p>
 
 <ul>
-<li><a href="http://files.myopera.com/iheni/blog/TestingAccessibility.ppt.zip">Accessibility testing tips and tools (PPT Zip file 656KB)</a></li>
-<li><a href="http://files.myopera.com/iheni/blog/TestingAccessibility.pdf.zip">Accessibility testing tools and tips (PDF, 500 KB)</a></li></ul>
+<li><a href="/blog/accessibility-testing-tips-and-tools-presentation/TestingAccessibility.ppt.zip">Accessibility testing tips and tools (PPT Zip file 656KB)</a></li>
+<li><a href="/blog/accessibility-testing-tips-and-tools-presentation/TestingAccessibility.pdf.zip">Accessibility testing tools and tips (PDF, 500 KB)</a></li></ul>
 

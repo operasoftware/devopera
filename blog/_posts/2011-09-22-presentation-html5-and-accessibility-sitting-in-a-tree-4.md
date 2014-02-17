@@ -18,8 +18,8 @@ layout: article
 <ul>
 <li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a>: tutorial from first principles by Bruce and Patrick Lauke</li>
 <li>Patrick Lauke&#39;s <a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">All HTML5 + CSS3 video player</a> and bonus <a href="http://people.opera.com/patrickl/experiments/webm/fancy-swap/">Fancy Swap video player</a> (both Creative Commons Attribution 3.0 - licensed, so take them and go!)</li>
-<li><a href="http://devfiles.myopera.com/articles/572/classlist-url.htm">Top 20 class names on HTML elements</a></li>
-<li><a href="http://devfiles.myopera.com/articles/572/idlist-url.htm">Top 20 id names on HTML elements</a></li>
+<li><a href="/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/classlist-url.htm">Top 20 class names on HTML elements</a></li>
+<li><a href="/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/idlist-url.htm">Top 20 id names on HTML elements</a></li>
 <li><a href="http://people.opera.com/brucel/demo/html5-forms-demo.html">HTML5 forms demo</a></li>
 <li><a href="http://icant.co.uk/easy-youtube/">Easy YouTube</a> (using YouTube&#39;s bolt-on API to make a simpler interface)</li>
 <li><a href="http://camendesign.com/code/video_for_everybody">Video for Everybody</a></li>

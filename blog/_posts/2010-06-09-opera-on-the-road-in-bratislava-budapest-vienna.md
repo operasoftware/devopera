@@ -15,7 +15,7 @@ Next week, we&#39;ll be joining the <a href="http://webexpotour.net/">WebExpo To
 </p>
 <p>
 <a href="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Bratislava,+Slovakia&amp;daddr=Budapest,+Hungary+to:Vienna,+Austria&amp;hl=en&amp;geocode=&amp;mra=ls&amp;sll=37.0625,-95.677068&amp;sspn=33.764224,73.828125&amp;ie=UTF8&amp;z=8">
-<img style="box-shadow: 2px 2px 15px #000;" src="http://files.myopera.com/zibin/blog/webexpo_tour.png" alt="WebExpo Tour map" />
+<img style="box-shadow: 2px 2px 15px #000;" src="/blog/opera-on-the-road-in-bratislava-budapest-vienna/webexpo_tour.png" alt="WebExpo Tour map" />
 </a>
 </p>
 <p>

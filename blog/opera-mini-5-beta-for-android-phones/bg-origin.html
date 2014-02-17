@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<!-- embedded and inline styles and scripts used for demo purposes and are not a best practice in actual site design and application development -->
+<style type="text/css">
+/* GENERIC RULES */
+body {
+	background:#eef;
+    color:#333;
+    font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;
+    font-size:0.9em;
+    margin:20px;
+    padding:0;
+}
+a:link, a:visited {
+	color:#0082e0;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+	
+/* BACKGROUND-ORIGIN RULES */
+#outerbox_bo1 {
+    background:#030406 url(ISS_200_reversed.jpg) top left no-repeat;
+    background-origin:padding-box;
+    border:double 20px #abc;
+    color:#def;
+    margin:10px 0;
+    padding:120px 10px 10px 10px;
+    width:180px;
+}
+#outerbox_bo2 {
+    background:#030406 url(ISS_200_reversed.jpg) top left no-repeat;
+    background-origin:border-box;
+    border:double 20px #abc;
+    color:#def;
+    margin:10px 20px;
+    padding:120px 10px 10px 10px;
+    width:140px;
+}
+#outerbox_bo3 {
+    background:#030406 url(ISS_200_reversed.jpg) top left no-repeat;
+    background-origin:content-box;
+    border:double 10px #abc;
+    color:#def;
+    margin:10px 0;
+    padding:10px 10px 120px 10px;
+    width:200px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width:241px), screen and (min-device-width:241px) {
+	#outerbox_bo1, #outerbox_bo2, #outerbox_bo3 {
+		float:left;
+	}
+	section p {
+		clear:both;		
+	}
+}
+@media screen and (max-width:240px), screen and (max-device-width:240px) {
+	body {
+        margin:0;
+		width:240px;
+	}
+    p {
+        margin:10px;
+    }
+    h1 {
+        font-size:1.4em;
+        margin:10px;
+    }
+    h2 {
+        font-size:1.2em;
+        margin:10px;
+    }
+}
+</style>
+<title>CSS3 Showcase - Demonstrating background-origin</title>
+</head>
+<body>
+<header>
+	<h1>Demonstrating background-origin</h1>
+</header>
+
+<section>
+	<div id="outerbox_bo1">
+		background-origin:<br />padding-box;
+	</div>
+	<div id="outerbox_bo2">
+		background-origin:<br />border-box;
+	</div>
+	<div id="outerbox_bo3">
+		background-origin:<br />content-box;
+	</div>
+
+	<p>When you position a background image, background-origin allows you to specify your starting point. The default <code>padding-box</code> positions the background image relative to the outer edge of the padding (inner edge of the border), whereas <code>border-box</code> positions the background image relative to the outer edge of the border. There is also the value <code>content-box</code> which, not surprisingly, positions the background image relative to the outer edge of the content (inner edge of the padding).</p>
+</section>
+
+<footer>
+	<p>Photo credits</p>
+	<ul>
+	<li>International Space Station: <a href="http://en.wikipedia.org/wiki/File:ISS_March_2009.jpg">http://en.wikipedia.org/wiki/File:ISS_March_2009.jpg</a></li>
+	</ul>
+</footer>
+</body>
+</html>

@@ -17,4 +17,4 @@ layout: article
 
 <p>Afterwards we headed off for a blogging dinner, which included many of the who&#39;s who of the Japanese blogging circuit, including people from Sony, Adobe Dreamweaver, MS and Mozilla, to a guy that dresses up as a storm trooper (I kid you not) and has Anime characters on his business card.  Disappointingly he wasn&#39;t dressed that way for this dinner.</p>
 
-<p>Download Tsukuba slides: <a href="http://files.myopera.com/dstorey/files/JapanPresentation.pdf">Open the Web, by David Storey</a>. [PDF]</p>
+<p>Download Tsukuba slides: <a href="/blog/web-standards-presentation-at-tsukuba-university-japan/JapanPresentation.pdf">Open the Web, by David Storey</a>. [PDF]</p>
