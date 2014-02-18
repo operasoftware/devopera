@@ -2,6 +2,7 @@
 title: 'The Freelancing Business Part 3: Scheduling Your Projects'
 authors:
 - r-blank
+intro: 'In this - the third article of his series on the business of software development - R Blank lifts the lid on scheduling with a detailed look at creating task- and resource- based project plans, buffering in case unexpected surprises crop up, and more.'
 tags:
 - freelance
 - business
