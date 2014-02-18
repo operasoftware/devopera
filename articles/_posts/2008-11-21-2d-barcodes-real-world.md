@@ -2,6 +2,7 @@
 title: 'Barcodes: Connecting the Real-World to the Virtual'
 authors:
 - brian-suda
+intro: 'Barcodes are becoming vastly more interesting in recent times, with 2D barcodes allowing you to represent anything from URLs to invoices, which in turn allows us to connect physical images to applications in all kinds of interesting ways. In this article Brian Suda discusses the history of barcodes, what’s available today for creating and reading barcodes, and real-world use cases.'
 tags:
 - barcode
 - qr-code
