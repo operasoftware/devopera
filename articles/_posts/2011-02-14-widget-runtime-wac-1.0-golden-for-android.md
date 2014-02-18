@@ -2,6 +2,7 @@
 title: 'Widget Runtime: WAC-1.0-Compliant Golden for Android'
 authors:
 - pavel-fokin
+intro: 'It’s been a long trip, but we’ve finally arrived — today our lasting intensive work on a WAC-1.0-compliant runtime is finished, and we are proudly presenting the final Golden build that we are also demonstrating at the Mobile World Congress event!'
 tags:
 - wac
 - widgets
