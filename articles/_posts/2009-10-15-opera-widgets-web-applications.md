@@ -2,6 +2,7 @@
 title: Powered by Opera Widgets, Web Applications Take Center Stage
 authors:
 - lawrence-eng
+intro: 'Today, we are bringing Opera Widgets for desktop to center stage, empowering application developers so they can take full advantage of the Web and its associated technologies to build full-fledged desktop applications.'
 tags:
 - widgets
 - webapps
