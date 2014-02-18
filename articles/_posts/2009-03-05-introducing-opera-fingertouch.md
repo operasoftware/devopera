@@ -2,6 +2,7 @@
 title: Introducing Opera Fingertouch
 authors:
 - chris-mills
+intro: 'Today we introduce _Fingertouch_, a technology designed to make interacting with the Web easier and simpler on touchscreen devices. Opera Fingertouch provides visual feedback when you hit a Web link, and assists you when you come across multiple links or other selectable elements in close proximity to one another.'
 tags:
 - fingertouch
 - opera-mobile
