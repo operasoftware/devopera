@@ -2,6 +2,7 @@
 title: Blob Sallad — Canvas Tag and JavaScript Physics Simulation Experiment
 authors:
 - bjorn-lindberg
+intro: 'Blob Sallad is a fun little experiment put together to show some of the capabilities of the HTML5 canvas element, when combined with some JavaScript physics simulation. You can play with it at [blobsallad.se](http://blobsallad.se/), and read about how it works in this exclusive double-length article, written by its creator, Björn Lindberg.'
 tags:
 - canvas
 - html5
