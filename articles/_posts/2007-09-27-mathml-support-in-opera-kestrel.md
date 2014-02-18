@@ -2,6 +2,7 @@
 title: Can Kestrels do Math? MathML support in Opera Kestrel
 authors:
 - charles-mccathienevile
+intro: 'Traditionally, Mathematical formulas have been hard to represent using good old fashioned CSS and HTML, but a solution does exist. First, MathML, a specialised Markup language tailored specially for dealing with Math on web pages, has been around for a while. Second, the W3C has recently created a working draft called [the MathML for CSS profile](http://www.w3.org/TR/mathml-for-css/) which deals with displaying MathML using CSS. In this article, Charles McCathieNevile shows you how you can test drive this technology early using Opera Kestrel.'
 tags:
 - html
 - mathml
