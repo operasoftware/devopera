@@ -2,6 +2,7 @@
 title: Automatic Numbering With CSS Counters
 authors:
 - david-storey
+intro: 'In this article David Storey looks at how to use CSS counters to provide robust sequential numbering for reoccuring HTML elements such as list items or paragraphs.'
 tags:
 - counters
 - css
