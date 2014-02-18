@@ -2,6 +2,7 @@
 title: 'The Freelancing Business Part 2: Budgeting Your Projects'
 authors:
 - r-blank
+intro: 'This is the second in a series of articles written by R Blank giving practical advice on the business side of freelancing, including project management, contracts, budgeting and more. In this part he discusses budgeting, hot root vegetables and why working with new tech is similar to being a test pilot.'
 tags:
 - freelance
 - business
