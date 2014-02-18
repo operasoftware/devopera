@@ -2,6 +2,7 @@
 title: The CSS3 object-fit and object-position properties
 authors:
 - chris-mills
+intro: 'An introduction to the new `object-fit` and `object-position` CSS3 properties from the CSS Image Values and Replaced Content module working draft.'
 tags:
 - css3
 - open-web
