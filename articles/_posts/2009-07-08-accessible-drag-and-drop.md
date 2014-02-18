@@ -2,6 +2,7 @@
 title: Accessible drag and drop using WAI-ARIA
 authors:
 - gez-lemon
+intro: 'There is increasing interest in, and importance being laid upon, making modern dynamic web applications more accessible. New specifications such as WAI-ARIA and HTML5 provide the means by which to do this; in this article Gez Lemon presents a solution for implementing accessible drag and drop functionality using JavaScript and WAI-ARIA. Some discussion of HTML5 drag-and-drop features is also included for good measure.'
 tags:
 - accessibility
 - drag-and-drop
