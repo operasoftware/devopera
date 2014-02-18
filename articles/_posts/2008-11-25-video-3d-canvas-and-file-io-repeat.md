@@ -2,6 +2,7 @@
 title: 'Video, 3D Canvas and File I/O: Repeat!'
 authors:
 - chris-mills
+intro: 'We’ve done it again! This article gives you the low down on our _all new_ Opera desktop build with support for the HTML5 `<video>` element, 3D canvas, and the File I/O API. Find out what it contains, and download builds for Windows, Mac and UNIX!'
 tags:
 - video
 - file-io
