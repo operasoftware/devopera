@@ -2,6 +2,7 @@
 title: 'Technology Preview: Gears-Enabled Opera Mobile 9.5'
 authors:
 - andreas-bovens
+intro: 'We’re happy to announce our Opera Mobile 9.5 technology preview with support for [Gears](http://gears.google.com/), a Google open source project that enables more powerful web applications. Besides this Opera Mobile 9.5 technology preview, Gears is currently available for Firefox 1.5+, IE 6.0+, Internet Explorer Mobile 4.01+, Safari 3.1.1, and Android.'
 tags:
 - gears
 - opera-mobile
