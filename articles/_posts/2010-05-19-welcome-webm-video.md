@@ -1,7 +1,8 @@
 ---
-title: Welcome, WebM <video>!
+title: Welcome, WebM `<video>`!
 authors:
 - hakon-wium-lie
+intro: 'The big news today is that WebM will join the list of open and freely usable Web formats, and video will finally become a first-class citizen of the Web. We’re proud to add support for WebM into a Labs build.'
 tags:
 - webm
 - video
