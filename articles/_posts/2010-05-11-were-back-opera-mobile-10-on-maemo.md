@@ -2,6 +2,7 @@
 title: We’re back! Opera Mobile 10 on Maemo
 authors:
 - fredrik-ohrn
+intro: 'We’re proud to present the first preview build of Opera Mobile 10 for Nokia N900 and N800/N810.'
 tags:
 - maemo
 - opera-mobile
