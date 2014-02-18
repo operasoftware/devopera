@@ -1,7 +1,8 @@
 ---
-title: Cross-browser CSS box-shadows
+title: Cross-browser CSS `box-shadow`s
 authors:
 - rustam-gaffanov
+intro: 'CSS3 box-shadow is a very useful property — creating drop shadows programmatically can save web designers a lot of time in image editing software. However we have a problem if we need to replicate those shadows in Internet Explorer, which does not support this property. In this article, we present a cross-browser solution that uses box-shadow in supporting browsers, and IE filters to fake the drop shadows in IE.'
 tags:
 - box-shadow
 - css
