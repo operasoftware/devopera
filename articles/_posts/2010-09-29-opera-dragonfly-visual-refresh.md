@@ -2,13 +2,14 @@
 title: Opera Dragonfly Visual Refresh
 authors:
 - david-storey
+intro: 'The Opera Dragonfly team is hard at work on the first stable release. Just as dragonflies metamorphose from ugly larvae into beautiful dragonflies, we are in the process of redefining our user interface.'
 tags:
 - dragonfly
 - labs
 layout: article
 ---
 
-The Opera Dragonfly team is hard at work on the first stable release. Just as dragonflies metamorphose from ugly larva into beautiful dragonflies, we are in the process of redefining our user interface.
+The Opera Dragonfly team is hard at work on the first stable release. Just as dragonflies metamorphose from ugly larvae into beautiful dragonflies, we are in the process of redefining our user interface.
 
 One of the key goals of the UI redesign is to make our features more discoverable. Features such as CSS editing and auto-completion have been implemented for quite a while now, but many users miss them. We want to optimize the workflow for common tasks, and make the UI more visual attractive.
 
