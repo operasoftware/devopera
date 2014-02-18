@@ -2,6 +2,7 @@
 title: Introducing Opera Face Gestures
 authors:
 - roberto-mateu
+intro: 'Today we introduce Face Gestures, a revolutionary technology designed to make interacting with your browser easier and simpler on computers with cameras. Face Gestures lets you perform frequent browsing operations with natural and easy-to-make face gestures.'
 tags:
 - april-1st
 - gestures
