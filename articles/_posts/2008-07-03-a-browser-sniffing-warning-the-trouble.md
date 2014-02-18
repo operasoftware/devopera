@@ -2,6 +2,7 @@
 title: 'A browser sniffing warning: The trouble with Acid3 and TinyMCE'
 authors:
 - hallvord-steen
+intro: 'In this article Hallvord Steen provides a warning about browser sniffing and why it is such a bad thing, by examining a recent bug discovered in Opera relating to compatibility with the TinyMCE editor. He also suggests a fix to this problem, involving “bug detection”, a useful technique that can be applied to many other situations.'
 tags:
 - acid
 - sniffing
