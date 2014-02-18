@@ -4,6 +4,7 @@ authors:
 - zi-bin-cheah
 - vadim-makeev
 - david-storey
+intro: 'Opera 10.50+ comes with support for the CSS3 Backgrounds and Borders specification. Amongst them are `border-radius`, `border-image`, multiple backgrounds and `box-shadow`. Opera 10.60+ updates this support with `box-decoration-break` and an updated `background` shorthand. We’ll showcase all these and more through examples and explanations.'
 tags:
 - css3
 - border-radius
