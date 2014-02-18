@@ -2,6 +2,7 @@
 title: An introduction to meta viewport and @viewport
 authors:
 - andreas-bovens
+intro: 'Support for the viewport `<meta>` tag in Opera’s mobile products has been around for quite some time — in Opera Mobile 11, we have made our viewport implementation more robust, added support for new mechanisms to deal with different screen densities, and included an implementation of our own `@viewport` rule proposal. So, what better time than now to give you an introduction to the various viewport related mechanisms you can use to optimize your site for mobile.'
 tags:
 - devicepixelratio
 - media-queries
@@ -14,7 +15,7 @@ layout: article
 
 ## Introduction
 
-Support for the viewport meta tag in Opera’s mobile products has been around for quite some time, and from Opera Mobile 11 onward, we have made our viewport implementation more robust, added support for new mechanisms to deal with different screen densities, and included an implementation of our own [CSS @viewport rule proposal][1]. In addition, Opera Mini 6 and later now also comes with basic support for the viewport meta tag.
+Support for the viewport meta tag in Opera’s mobile products has been around for quite some time, and from Opera Mobile 11 onward, we have made our viewport implementation more robust, added support for new mechanisms to deal with different screen densities, and included an implementation of our own [CSS `@viewport` rule proposal][1]. In addition, Opera Mini 6 and later now also comes with basic support for the viewport meta tag.
 
 [1]: http://dev.w3.org/csswg/css-device-adapt/#the-viewport-rule
 
@@ -22,7 +23,7 @@ Update 27 May 2012: There is experimental [support for -ms-viewport in Internet 
 
 [2]: http://msdn.microsoft.com/en-us/library/ie/hh708740(v=vs.85).aspx
 
-So, what better time than now to give you an introduction to the various viewport related mechanisms you can use to optimize your site for mobile? Let’s get started!
+So, what better time than now to give you an introduction to the various viewport-related mechanisms you can use to optimize your site for mobile? Let’s get started!
 
 ## Web page handling by mobile browsers
 
