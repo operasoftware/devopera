@@ -2,6 +2,7 @@
 title: 'The Freelancing Business Part 1: Pricing Your Work'
 authors:
 - r-blank
+intro: 'This is the first in a series of articles written by R Blank giving practical advice on the business side of freelancing, including project management, contracts, budgeting and more. In this part he discusses pricing.'
 tags:
 - freelance
 - business
