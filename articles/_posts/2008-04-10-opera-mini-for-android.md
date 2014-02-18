@@ -2,6 +2,7 @@
 title: Origin of Opera Mini for Android
 authors:
 - chris-mills
+intro: 'This article takes a look at one of Opera’s latest and greatest projects - the creation of an Opera Mini version that will run on Google’s Android open mobile development platform. Over the course of the article, we’ll explain why we created it, how, challenges we faced, and how you can try it out for yourself. We’d like to encourage you to try it out, and give us as much feedback as you possibly can. Enjoy!'
 tags:
 - opera-mini
 - android
