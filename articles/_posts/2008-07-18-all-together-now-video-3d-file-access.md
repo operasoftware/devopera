@@ -2,6 +2,7 @@
 title: 'All together now: Video, 3D, File access'
 authors:
 - charles-mccathienevile
+intro: 'It’s here, the newest singing, dancing labs build (so far…). This time we basically have the latest desktop build plus video, 3D canvas, and File I/O. And this time we have Windows, Linux and Mac builds — so all you Mac fans, you can now have an Opera of your own in Ogg Theora.'
 tags:
 - carakan
 - performance
