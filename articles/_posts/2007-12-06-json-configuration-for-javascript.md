@@ -2,6 +2,7 @@
 title: JSON Configuration for JavaScript
 authors:
 - gareth-rushgrove
+intro: 'If you’re working in a web development team with developers alongside designers, and you want to give the designers an easy way to change the variable parts of the application without the risk of breaking things, an external configuration file is a great idea, and JSON (JavaScript Object Notation) is a perfect format in which to store this data. In this article, Gareth Rushgrove shows you how.'
 tags:
 - ajax
 - javascript
