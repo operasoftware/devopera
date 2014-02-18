@@ -2,6 +2,7 @@
 title: 'The Opera Mobile Emulator: Mobile Development From the Comfort of Your Desktop'
 authors:
 - andreas-bovens
+intro: 'A bit more than a month after the release of Opera Mobile 10 for Windows Mobile and Symbian smartphones, we are happy to announce a special developer version of Opera Mobile 10 for Windows, Mac and Linux.'
 tags:
 - opera-mobile
 - emulator
