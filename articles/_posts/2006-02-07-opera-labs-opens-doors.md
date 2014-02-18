@@ -2,6 +2,7 @@
 title: Opera Labs Opens Doors
 authors:
 - hakon-wium-lie
+intro: 'Welcome to Opera Labs, a behind-the-scenes look at the latest technology and products from Opera Software.'
 tags:
 - labs
 layout: article
