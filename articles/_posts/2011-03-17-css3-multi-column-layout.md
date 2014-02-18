@@ -2,6 +2,7 @@
 title: CSS3 Multi-Column Layout
 authors:
 - molly-holzschlag
+intro: 'Multiple column design that allows text to flow naturally from column to column depending on width and other parameters has proven invaluable in print design, crossing languages, cultures and a range of media. The good news is that now it is coming to web design, courtesy of the CSS3 Multi-column Layout Module. In this article we show you how to get to grips with it.'
 tags:
 - multi-column
 - layout
