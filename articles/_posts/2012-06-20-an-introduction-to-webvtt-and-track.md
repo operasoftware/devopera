@@ -1,7 +1,8 @@
 ---
-title: An Introduction to WebVTT and <track>
+title: An Introduction to WebVTT and `<track>`
 authors:
 - ian-devlin
+intro: 'The HTML5 specification includes two features for improving media accessibility — the WebVTT format, for marking up external text tracks such as subtitles and captions, and the `<track>` element, for applying those text tracks alongside HTML5 `<video>` and `<audio>`. This article provides a detailed introduction to both features, showing how you can make use of them in your projects today.'
 tags:
 - accessibility
 - audio
