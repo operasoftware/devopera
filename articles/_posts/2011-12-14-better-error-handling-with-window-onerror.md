@@ -2,6 +2,7 @@
 title: Better Error Handling With window.onerror
 authors:
 - karl-dubost
+intro: 'In this article we will look at when and how to use `window.onerror`, a new programmatic error handling mechanism available in JavaScript, including some examples to get you started.'
 tags:
 - ajax
 - dom
