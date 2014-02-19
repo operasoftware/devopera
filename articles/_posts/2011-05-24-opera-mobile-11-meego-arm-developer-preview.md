@@ -2,6 +2,7 @@
 title: Opera Mobile 11 MeeGo ARM Developer Preview
 authors:
 - phillip-gronvold
+intro: 'Opera Software continues our support of the MeeGo open source initiative with the release of a developer preview of Opera Mobile 11 for ARM-based devices.'
 tags:
 - meego
 - arm
@@ -10,7 +11,7 @@ tags:
 layout: article
 ---
 
-Opera Software continues [our support][1] of the MeeGo open source initiative) with the release of a developer preview of Opera Mobile 11 for ARM-based devices.
+Opera Software continues [our support][1] of the MeeGo open source initiative with the release of a developer preview of Opera Mobile 11 for ARM-based devices.
 
 [1]: http://labs.opera.com/news/2011/03/22/
 
