@@ -3,6 +3,7 @@ title: 'Raw WebGL 101 — Part 1: Getting Started'
 authors:
 - erik-moller
 - chris-mills
+intro: 'WebGL allows you to create real 3D content and render it in a web browser. This article series provides a gentle introduction to writing raw WebGL, rendering 3D creations without relying on libraries. In this part we aim to get you set up and started, concluding by running through a simple example.'
 tags:
 - webgl
 - canvas
