@@ -2,6 +2,7 @@
 title: Understanding the CSS Transforms Matrix
 authors:
 - tiffany-brown
+intro: 'In this article we explain how transform matrices work — these involve some rather complicated math, but they are not so hard to understand when you sit down and check out a few examples! Once you understand how to put together matrices, you can use them inside the CSS `transform: matrix();` and `transform: matrix3d();` functions to apply transform effects to your web pages.'
 tags:
 - css
 - coordinates
