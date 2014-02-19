@@ -4,6 +4,7 @@ authors:
 - chris-mills
 - andreas-bovens
 - patrick-lauke
+intro: 'This article introduces the Opera Mobile Emulator for Windows, Linux and Mac, covering the Profile Selector, command line hooks, input modes and more.'
 tags:
 - desktop
 - opera-mobile
