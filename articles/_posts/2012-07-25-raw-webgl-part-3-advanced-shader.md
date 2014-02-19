@@ -3,6 +3,7 @@ title: 'Raw WebGL 101 — Part 3: Advanced Shader'
 authors:
 - erik-moller
 - chris-mills
+intro: 'In this — the third part of Erik’s raw WebGL series — we will walk you through the creation of a more advanced shader example, culminating in a rather colourful fractal.'
 tags:
 - webgl
 - canvas
