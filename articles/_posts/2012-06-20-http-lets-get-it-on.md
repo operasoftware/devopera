@@ -2,6 +2,7 @@
 title: 'HTTP: Let’s GET it on!'
 authors:
 - karl-dubost
+intro: 'The second part of a series of HTTP tutorials written by Karl Dubost. This article explores how HTTP is used to communicate between clients and servers.'
 tags:
 - client
 - http
