@@ -3,6 +3,7 @@ title: Design considerations for Opera TV Store applications
 authors:
 - yenny-otero
 - patrick-lauke
+intro: 'Although Opera TV Store applications are, in essence, nothing more than web pages, there are certain design considerations related to the TV context in general, and the Opera TV Store model in particular, that developers need to take into consideration.'
 tags:
 - store
 - tv
