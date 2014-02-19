@@ -3,6 +3,7 @@ title: 'Raw WebGL 101 — Part 2: A Simple Shader'
 authors:
 - erik-moller
 - chris-mills
+intro: 'This article picks up where the previous article in the series left off, looking at creating a simple shader to apply a gradient to a sample shape and offset it.'
 tags:
 - webgl
 - canvas
