@@ -2,6 +2,7 @@
 title: Better Performance With requestAnimationFrame
 authors:
 - luz-caballero
+intro: 'This article discusses how you can (and should) improve the performance of your animations, using the `requestAnimationFrame` API instead of the old `setInterval`/`setTimeout` methods, and how `requestAnimationFrame` is used.'
 tags:
 - animation
 - javascript
