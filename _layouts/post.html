@@ -8,7 +8,7 @@ layout: default
 		{% assign lang = 'en' %}
 	{% endunless %}
 	<article role="main" class="main__content" lang="{{ lang }}">
-		<h1>{{ page.title | escape }}</h1>
+		<h1>{{ page.title | markdownline }}</h1>
 		<p>
 			By {% include author.html object=page %}
 			at <time>{{ page.date | date: '%d %B %Y' }}</time>

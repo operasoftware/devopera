@@ -22,7 +22,7 @@ layout: default
 {% include translations.html category=site.categories.articles %}
 			</div>
 			<div class="article__content">
-				<h1 class="article__title">{{ page.title | escape }}</h1>
+				<h1 class="article__title">{{ page.title | markdownline }}</h1>
 				<div class="content">
 {{ content }}
 				</div>
