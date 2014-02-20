@@ -3,34 +3,13 @@ layout: default
 ---
 
 <main class="main">
-	<section class="main-articles">
-		<h2><a href="/articles/">Articles</a></h2>
-{% capture articles %}
-	{% for post in site.categories.articles %}
-		{% unless post.categories[1] %}
-			<article class="content">
-				<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
-				<p>
-					By {% include author.html object=post %}
-					at <time>{{ post.date | date: '%d %B %Y' }}</time>
-				</p>
-				{% if post.intro %}{{ post.intro | markdownify }}{% endif %}
-			</article>(•)
-		{% endunless %}
-	{% endfor %}
-{% endcapture %}
-{% assign articles = articles | split: '(•)' %}
-{% for article in articles limit:6 %}
-	{{ article }}
-{% endfor %}
-	</section>
-	<section class="main-blog">
-		<h2><a href="/blog/">Blog</a></h2>
+	<section class="main__blog">
+		<h2 class="main__title"><a href="/blog/">Blog</a></h2>
 {% capture posts %}
 	{% for post in site.categories.blog %}
 		{% unless post.categories[1] %}
-			<article class="content">
-				<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
+			<article class="teaser">
+				<h3 class="teaser__title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
 				<p>
 					By {% include author.html object=post %}
 					at <time>{{ post.date | date: '%d %B %Y' }}</time>
@@ -41,8 +20,45 @@ layout: default
 	{% endfor %}
 {% endcapture %}
 {% assign posts = posts | split: '(•)' %}
+		<div class="main__blog-wrapper">
+			<div class="main__blog-column">
 {% for post in posts limit:6 %}
 	{{ post }}
+	{% if forloop.index == 3 %}
+			</div>
+			<div class="main__blog-column">
+	{% endif %}
 {% endfor %}
+			</div>
+		</div>
+	</section>
+	<section class="main__articles">
+		<h2 class="main__title"><a href="/articles/">Articles</a></h2>
+{% capture articles %}
+	{% for post in site.categories.articles %}
+		{% unless post.categories[1] %}
+			<article class="teaser">
+				<h3 class="teaser__title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
+				<p class="teaser__meta">
+					By {% include author.html object=post %}
+					at <time>{{ post.date | date: '%d %B %Y' }}</time>
+				</p>
+				{% if post.intro %}{{ post.intro | markdownify }}{% endif %}
+			</article>(•)
+		{% endunless %}
+	{% endfor %}
+{% endcapture %}
+{% assign articles = articles | split: '(•)' %}
+		<div class="main__articles-wrapper">
+			<div class="main__articles-column">
+{% for article in articles limit:12 %}
+	{{ article }}
+	{% if forloop.index == 6 %}
+			</div>
+			<div class="main__articles-column">
+	{% endif %}
+{% endfor %}
+			</div>
+		</div>
 	</section>
 </main>

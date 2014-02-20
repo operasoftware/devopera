@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="header" role="banner">
-		<div class="header-title">
+		<div class="header__title">
 			<h1>
 {% if page.url == '/index.html' %}
 				Dev.<span>Opera</span>
@@ -21,13 +21,12 @@
 {% endif %}
 			</h1>
 		</div>
-		<nav class="header-menu">
+		<nav class="header__menu">
 			{% include menu.html items='blog|articles|extensions' %}
 		</nav>
-		<form class="header-search" action="/search/" method="get">
+		<form class="header__search" action="/search/" method="get">
 			<fieldset>
-				<input type="text" name="q" placeholder="Search Dev.Opera">
-				<input type="hidden" name="site" value="dev.opera.com">
+				<input type="search" name="q" placeholder="Search Dev.Opera">
 			</fieldset>
 		</form>
 	</header>
