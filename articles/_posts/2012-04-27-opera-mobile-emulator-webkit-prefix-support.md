@@ -2,6 +2,7 @@
 title: Opera Mobile Emulator Build With Experimental WebKit Prefix Support
 authors:
 - bruce-lawson
+intro: 'Through our site compatibility work, we have experienced that many site authors only use `-webkit-` prefixed CSS, thereby ignoring other vendor prefixes and not even including an unprefixed equivalent. This leads to a reduced user experience on non-WebKit browsers, as they don’t receive the same shiny effects, even although they support them. To tackle this problem, we are releasing an experimental Opera Mobile Emulator build with experimental support for selected `-webkit-` prefixes.'
 tags:
 - css
 - opera-mobile

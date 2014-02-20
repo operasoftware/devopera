@@ -2,6 +2,7 @@
 title: Opera Widgets Go Mobile
 authors:
 - andreas-bovens
+intro: 'Over the last couple of months, we’ve been working hard to improve our Mobile Widgets Manager — we basically rebuilt it from scratch, using the cross-platform UI framework that is also used in Opera Mobile and Opera Mini.'
 tags:
 - widgets
 - opera-mobile

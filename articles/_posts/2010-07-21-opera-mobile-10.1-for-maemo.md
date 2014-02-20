@@ -2,6 +2,7 @@
 title: Opera Mobile 10.1 Labs Release for Maemo
 authors:
 - anders-hockersten
+intro: 'Last week, we released the first beta of Opera Mobile 10.1 for S60. Those with Maemo devices don’t need to feel left out though: we have been working hard at keeping the Maemo code in step with the other Opera Mobile releases, and we are proud to present another labs release for the Nokia N900 and N810/N800 – Opera Mobile 10.1 beta.'
 tags:
 - opera-mobile
 - maemo

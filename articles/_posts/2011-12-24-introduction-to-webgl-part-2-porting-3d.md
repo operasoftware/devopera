@@ -2,6 +2,7 @@
 title: 'An Introduction to WebGL — Part 2: Porting 3D Graphics'
 authors:
 - luz-caballero
+intro: 'This article explores importing existing 3D models into WebGL — a much easier way to go than creating them from scratch in WebGL! The steps include exporting models from 3D packages (including Blender, SketchUp and Shade) into `.obj` format, converting them from there into JSON, then rendering them from there using the Three.js WebGL library.'
 tags:
 - 3d
 - javascript

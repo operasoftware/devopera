@@ -2,6 +2,7 @@
 title: Opera Mobile 12 for Android Ice Cream Sandwich MIPS Tablet
 authors:
 - chris-mills
+intro: 'Opera is proud to unveil a labs build of Opera Mobile 12, for devices built on MIPS architecture, which has already been run successfully on top of Android Ice Cream Sandwich.'
 tags:
 - android
 - ics

@@ -1,7 +1,8 @@
 ---
-title: 'HTML 5 Compliance: The Next Step'
+title: 'HTML5 Compliance: The Next Step'
 authors:
 - bruce-lawson
+intro: 'Making its debut in a Labs build this week is [Ragnarök](http://en.wikipedia.org/wiki/Ragnarök), our implementation of the HTML5 parsing algorithm. We’d love you to try to break this and give us feedback, so please grab a copy to install on your machine…'
 tags:
 - html5
 - html5-parser

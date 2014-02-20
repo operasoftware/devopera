@@ -3,28 +3,35 @@ layout: default
 ---
 
 <main class="main">
-	<article role="main" class="main-content">
-		<h1>
-			{{ page.title }}
+	<article role="main" class="main__content">
+		<div class="author">
+			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}" class="author__picture">
+			<div class="author__info">
+				<h1 class="author__title">
+				{{ page.title }}
 {% if page.link %}
 	{% if page.link contains 'twitter.com' %}
-			<a href="{{ page.link }}">@{{ page.link | split: '/' | last }}</a>
+					<a href="{{ page.link }}">@{{ page.link | split: '/' | last }}</a>
 	{% else %}
-			<a href="{{ page.link }}">{{ page.link | replace: 'http://' | replace: 'https://' |  replace: 'www.' }}</a>
+					<a href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' |  remove: 'www.' }}</a>
 	{% endif %}
 {% endif %}
-		</h1>
-		<img src="{{ page.url }}.jpg">
-		<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
-		<ul>
+				</h1>
+				{{ content }}
+			</div>
+			<div class="author__related">
+				<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
+				<ul>
 {% assign author = page.id | split: '/' | last %}
 {% for post in site.posts %}
 	{% if post.authors contains author %}
 		{% unless post.categories[1] %}
-			<li><a href="{{ post.url }}">{{ post.title | escape }}</a></li>
+					<li><a href="{{ post.url }}">{{ post.title | markdownline }}</a></li>
 		{% endunless %}
 	{% endif %}
 {% endfor %}
-		</ul>
+				</ul>
+			</div>
+		</div>
 	</article>
 </main>

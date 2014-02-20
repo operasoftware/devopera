@@ -2,6 +2,7 @@
 title: Accessible HTML5 Video with JavaScripted captions
 authors:
 - bruce-lawson
+intro: 'The HTML5 `<video>` element provides a fantastic way to embed video into web pages without relying on plugins, and it is now supported in Opera, Firefox and Chrome, so things are looking up. One burning question however is “how do we provide alternative content for users that either can’t see, or can’t hear the video?” In this article, Bruce Lawson looks at the issue and suggests a solution.'
 tags:
 - captions
 - html5

@@ -2,6 +2,7 @@
 title: 100% Ragnarök’n’roll
 authors:
 - bruce-lawson
+intro: 'In February, we released a first Labs build of Ragnarök, Opera’s HTML5 parser. This is a second build, with reduced memory usage, enhanced performance and lots of bug fixes.'
 tags:
 - html5
 - opera-12

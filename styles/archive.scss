@@ -1,0 +1,18 @@
+// Archive
+// -------------------------------
+.archive {
+	@extend %grid;
+	@extend %grid--rev;
+	}
+	.archive__column {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--one-half;
+		@extend %desk--one-third;
+		}
+	.archive__aside {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--one-whole;
+		@extend %desk--one-quarter;
+		}

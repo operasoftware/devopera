@@ -2,6 +2,7 @@
 title: HTTP — An Application-Level Protocol
 authors:
 - karl-dubost
+intro: 'This is the first of a series of articles to teach HTTP basics, and how we can use it more effectively. In this article we will look at where HTTP cog fits in the Internet machine. HTTP is an application-level protocol on top of the TCP/IP, a communication protocol.'
 tags:
 - client
 - http

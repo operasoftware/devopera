@@ -2,6 +2,7 @@
 title: 'HTTP: Response Codes'
 authors:
 - karl-dubost
+intro: 'This article takes you in detail through HTTP response codes: how they work, what their purpose is, and what the most common ones mean.'
 tags:
 - client
 - http

@@ -2,6 +2,7 @@
 title: Opera Mobile 12 for x86 Architectures
 authors:
 - chris-mills
+intro: 'Opera is proud to unveil a labs build of Opera Mobile 12, for devices built on Intel x86 architectures, which has already been run successfully on top of Android Ice Cream Sandwich.'
 tags:
 - android
 - intel

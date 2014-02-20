@@ -3,6 +3,7 @@ title: Introduction to HTML5 video
 authors:
 - patrick-lauke
 - bruce-lawson
+intro: 'This article gives you an introduction to `<video>` and some of its associated APIs. We look at why native video support in browsers is important, give an overview of the element’s markup, and outline the most important ways in which video can be controlled via JavaScript.'
 tags:
 - accessibility
 - canvas

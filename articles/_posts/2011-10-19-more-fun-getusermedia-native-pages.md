@@ -1,7 +1,8 @@
 ---
-title: More Fun Using the Web, With getUserMedia and Native Pages
+title: More Fun Using the Web, With `getUserMedia` and Native Pages
 authors:
 - thomas-ford
+intro: 'This time we are making available a very exciting build indeed, with support for both the `getUserMedia` method, enabling us to make use of video input from a user’s web cam, and native pages — codenamed Opera Reader — an innovative new set of CSS constructs that allow you to split pages up into paged media.'
 tags:
 - getusermedia
 - opera-mobile

@@ -2,6 +2,7 @@
 title: Better Performance With requestAnimationFrame
 authors:
 - luz-caballero
+intro: 'This article discusses how you can (and should) improve the performance of your animations, using the `requestAnimationFrame` API instead of the old `setInterval`/`setTimeout` methods, and how `requestAnimationFrame` is used.'
 tags:
 - animation
 - javascript
@@ -39,10 +40,8 @@ But even in cases where your callback functions don't take longer than the timer
 
 <figure id="figure2">
 	<img src="/articles/better-performance-with-requestanimationframe/figure2.png" alt="diagram showing frames in an animation being skipped, but everything still being drawn">
-	<figcaption></figcaption>
+	<figcaption>Figure 2: Skipped frames can lead to higher CPU usage and battery consumption, and sometimes even choppy animations</figcaption>
 </figure>
-
-Figure 2: Skipped frames can lead to higher CPU usage and battery consumption, and sometimes even choppy animations.
 
 These downsides are even more dangerous when these methods are used to implement looping animations, for example in games or crazy experiments like my [hipster dog][7], as looping animations _guarantee_ to endlessly enqueue new callback functions in such scenarios. If you want to read more about the history of looping animations on the web, how animation loops behave when using `setTimeout` and `setInterval`, and how `requestAnimationFrame` has changed the way we code, I recommend you read [Better JavaScript animations with requestAnimationFrame][8] by Nicholas Zakas, which deals with the subject in depth.
 

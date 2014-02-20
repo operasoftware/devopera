@@ -2,6 +2,7 @@
 title: CSS3 Radial Gradients
 authors:
 - chris-mills
+intro: 'This article covers the basics of CSS3 radial gradients, a great CSS feature that allows for much more flexible design work.'
 tags:
 - gradients
 - css3

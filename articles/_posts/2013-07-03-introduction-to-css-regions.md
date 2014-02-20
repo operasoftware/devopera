@@ -2,6 +2,7 @@
 title: An Introduction to CSS Regions
 authors:
 - chris-mills
+intro: 'CSS regions is a nascent CSS feature that provides a way for us to completely decouple our content from our layout, flowing specified content containers into layout containers to give us a lot of flexible power. This article provides a basic introduction to using regions and serving fallbacks to non-supporting browsers.'
 tags:
 - css3
 - layout

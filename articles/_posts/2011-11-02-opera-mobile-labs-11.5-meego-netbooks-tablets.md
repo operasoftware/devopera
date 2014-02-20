@@ -2,6 +2,7 @@
 title: Opera Mobile Labs 11.5 for MeeGo Netbooks and Tablets
 authors:
 - mostyn-bramley
+intro: 'Since releasing Opera Mobile 11.5 for Android earlier this month, we have been working on an updated Labs release for MeeGo netbooks and tablets running Intel Atom processors.'
 tags:
 - atom
 - intel

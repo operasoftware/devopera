@@ -2,6 +2,7 @@
 title: An Introduction to WebGL — Part 1
 authors:
 - luz-caballero
+intro: 'This is the first in our series of articles about WebGL. The objective of this series is to provide the information and resources you’ll need to get started learning WebGL. In this piece, we will discuss how WebGL works, what you need to create WebGL applications, and what a simple example looks like.'
 tags:
 - 3d
 - javascript

@@ -2,6 +2,7 @@
 title: An Introduction to Datasets
 authors:
 - divya-manian
+intro: 'HTML5 includes a means to set custom attributes on elements using the `data-` prefix. Called “data attributes”, they can be scripted to define and store data as well as increase options for attribute selection when styling with CSS.'
 tags:
 - dataset
 - html5

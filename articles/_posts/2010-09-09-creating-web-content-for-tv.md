@@ -2,6 +2,7 @@
 title: Creating web content for TV
 authors:
 - patrick-lauke
+intro: 'This guide is aimed at web developers wishing to optimize their web sites and applications for better compatibility with web-enabled/connected televisions, with a particular emphasis on the Opera Device SDK and its functionality.'
 tags:
 - css
 - emulator

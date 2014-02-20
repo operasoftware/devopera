@@ -2,6 +2,7 @@
 title: Advanced cross-browser Flexbox
 authors:
 - chris-mills
+intro: 'The CSS Flexible box module level 3 brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. In this article Chris Mills goes beyond the basics, showing some more interesting uses of flexbox, and how Modernizr can be employed to serve different styles to browsers with differing levels of flexbox support to provide the best level of cross browser support available.'
 tags:
 - advanced
 - cross-browser

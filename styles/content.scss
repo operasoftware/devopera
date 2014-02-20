@@ -4,68 +4,40 @@
 	// Headings
 	h2, h3, h4 {
 		clear:both;
-		padding:16px 0;
-		font-weight:bold;
+		margin:16px 0;
 		font-size:24px;
 		}
 	// Paragraph
 	p {
-		padding:0 0 16px;
+		margin:0 0 16px;
 		}
 	// Quote
 	blockquote {
 		font-style:italic;
 		}
+	// Pictures
+	figure {
+		margin:0 0 16px;
+		img, svg, object {
+			margin:0 0 12px;
+			width:100%;
+			max-width:100%;
+			}
+		figcaption {
+			font-style:italic;
+			font-size:12px;
+			}
+		}
 	// Lists
 	ol, ul {
-		clear:both;
-		padding:0 0 8px 32px;
-		counter-reset:list;
-		li {
-			padding:0 0 8px;
-			}
-		ol, ul {
-			padding:0 0 0 20px;
-			}
-		}
-	ol {
-		counter-reset:list;
-		> li {
-			&:before {
-				position:absolute;
-				margin-left:-1em;
-				font-weight:bold;
-				counter-increment:list;
-				content:counter(list)'.';
-				}
-			}
-		}
-	ul {
-		> li {
-			&:before {
-				position:absolute;
-				margin-left:-1em;
-				content:'\25CF';
-				}
-			}
+		margin:0 0 16px;
 		}
 	// Code
 	pre {
-		overflow:hidden;
-		clear:both;
-		padding:0 0 16px 32px;
-		text-overflow:ellipsis;
+		margin:0 0 16px;
+		white-space:pre-wrap;
 		}
 	// Inline
-	a {
-		border-bottom:1px solid;
-		&:link {
-			border-color:mix($link, white, 20%);
-			}
-		&:visited {
-			border-color:mix($visited, white, 20%);
-			}
-		}
 	b, strong {
 		font-weight:bold;
 		}
@@ -75,8 +47,5 @@
 	code, kbd, pre, samp {
 		font-size:1em;
 		font-family:PT Mono, monospace;
-		}
-	q {
-		quotes:'\201C' '\201D' '\2018' '\2019';
 		}
 	}

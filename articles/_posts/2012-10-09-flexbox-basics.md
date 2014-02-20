@@ -2,6 +2,7 @@
 title: Flexbox — fast track to layout nirvana?
 authors:
 - chris-mills
+intro: 'This article provides a basic introduction to Flexbox, the gifted new kid on the block with respect to CSS layouts. Here we’ll show you how the most exciting new features of Flexbox work.'
 tags:
 - css
 - flexbox
