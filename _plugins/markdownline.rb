@@ -3,7 +3,7 @@ module Jekyll
 		def markdownline(input)
 			site = @context.registers[:site]
 			converter = site.getConverterImpl(Jekyll::Converters::Markdown)
-			converter.convert(input).gsub('<p>', '').gsub('</p>', '')
+			converter.convert(input).gsub(/\<\/?p\>/, '')
 		end
 	end
 end
