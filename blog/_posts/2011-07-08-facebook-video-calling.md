@@ -9,4 +9,16 @@ tags:
 - odin
 layout: article
 ---
-This week, <a href="http://www.facebook.com">Facebook</a> unveiled its new <a href="http://www.facebook.com/videocalling">Video Calling</a> feature. Unfortunately, Opera is currently not supported.<br/><br/><span class='imgcenter'><img alt='' src='/blog/facebook-video-calling/fb-video.png' /></span> <br/><br/>The reason for Facebook&#39;s block seems to be a problem with our version of Opera on OS X. Facebook&#39;s plug-in installs itself as <code>FacebookVideoCalling.webplugin</code> on Mac,  but our browser only recognises plug-ins with a <code>.plugin</code> extension. This causes their plug-in detection scripts to think the installation failed, triggering a renewed installation process.<br/><br/>Our fearless engineers are working to fix this issue in Opera code as soon as possible, and we&#39;re also in talks with Facebook to find a quick resolution to the problem.
+
+This week, [Facebook][1] unveiled its new [Video Calling][2] feature. Unfortunately, Opera is currently not supported.
+
+[1]: http://www.facebook.com
+[2]: http://www.facebook.com/videocalling
+
+<figure>
+	<img src="/blog/facebook-video-calling/fb-video.png">
+</figure>
+
+The reason for Facebook’s block seems to be a problem with our version of Opera on OS X. Facebook’s plug-in installs itself as `FacebookVideoCalling.webplugin` on Mac, but our browser only recognises plug-ins with a `.plugin` extension. This causes their plug-in detection scripts to think the installation failed, triggering a renewed installation process.
+
+Our fearless engineers are working to fix this issue in Opera code as soon as possible, and we’re also in talks with Facebook to find a quick resolution to the problem.

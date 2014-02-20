@@ -7,3 +7,13 @@
 		@extend %grid__item;
 		}
 	}
+.footer--index {
+	p {
+		@extend %push--desk--one-third;
+		}
+	}
+.footer--page {
+	p {
+		@extend %push--desk--one-quarter;
+		}
+	}

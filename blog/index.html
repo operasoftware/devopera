@@ -4,14 +4,14 @@ layout: default
 ---
 
 <main class="main">
-	<article role="main" class="main-content">
-		<h1>{{ page.title }}</h1>
+	<article role="main" class="main__content">
+		<!-- <h1>{{ page.title }}</h1> -->
 		<section class="archive">
 {% capture blog %}
 	{% for post in site.categories.blog %}
 		{% unless post.categories[1] %}
-			<article class="content">
-				<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
+			<article class="teaser">
+				<h3 class="teaser__title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
 				<p>
 					By {% include author.html object=post %}
 					at <time>{{ post.date | date: '%d %B %Y' }}</time>
@@ -22,13 +22,17 @@ layout: default
 {% endcapture %}
 {% assign blog = blog | split: '(•)' %}
 {% assign middle = blog.size | divided_by:2 %}
-			<div class="archive-first">
+			<div class="archive__column">
 {% for post in blog %}
 	{{ post }}
-	{% if middle == forloop.index %}
-			</div><div class="archive-second">
+	{% if forloop.index == middle %}
+			</div>
+			<div class="archive__column">
 	{% endif %}
 {% endfor %}
+			</div>
+			<div class="archive__aside">
+				Something
 			</div>
 		</section>
 	</article>
