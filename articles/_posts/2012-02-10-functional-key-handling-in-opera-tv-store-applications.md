@@ -74,7 +74,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 								VK_RIGHT
 						</td>
 						<td>
-								Always available*
+								Always present in remote controllers*
 						</td>
 				</tr>
 				<tr>
@@ -85,7 +85,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 								VK_DOWN
 						</td>
 						<td>
-								Always available*
+								Always present in remote controllers*
 						</td>
 				</tr>
 				<tr>
@@ -96,7 +96,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 								VK_LEFT
 						</td>
 						<td>
-								Always available*
+								Always present in remote controllers*
 						</td>
 				</tr>
 				<tr>
@@ -107,7 +107,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 								VK_ENTER
 						</td>
 						<td>
-								Always available*
+								Always present in remote controllers*
 						</td>
 				</tr>
 				<tr>
@@ -129,7 +129,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 								VK_BACK_SPACE
 						</td>
 						<td>
-								Always available
+								Always present in remote controllers
 						</td>
 				</tr>
 				<tr>
