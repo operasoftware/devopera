@@ -3,28 +3,36 @@
 .main {
 	@extend %grid;
 	}
-	.main-articles {
+	.main__title {
+		}
+	.main__blog {
 		@extend %grid__item;
-		@extend %lap--one-half;
+		@extend %one-whole;
 		@extend %desk--one-third;
 		}
-	.main-blog {
+		.main__blog-wrapper {
+			@extend %grid;
+			}
+			.main__blog-column {
+				@extend %grid__item;
+				@extend %one-whole;
+				@extend %lap--one-half;
+				}
+	.main__articles {
 		@extend %grid__item;
-		@extend %lap--one-half;
-		@extend %desk--one-third;
+		@extend %one-whole;
+		@extend %desk--two-thirds;
 		}
-	.main-content {
+		.main__articles-wrapper {
+			@extend %grid;
+			}
+			.main__articles-column {
+				@extend %grid__item;
+				@extend %one-whole;
+				@extend %lap--one-half;
+				@extend %desk--one-half;
+				}
+	.main__content {
 		@extend %grid__item;
-		}
-
-// Archive
-// -------------------------------
-.archive {
-	@extend %grid;
-	}
-	.archive-first,
-	.archive-second {
-		@extend %grid__item;
-		@extend %lap--one-half;
-		@extend %desk--one-half;
+		@extend %one-whole;
 		}

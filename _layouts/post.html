@@ -7,7 +7,7 @@ layout: default
 	{% unless lang %}
 		{% assign lang = 'en' %}
 	{% endunless %}
-	<article role="main" class="main-content" lang="{{ lang }}">
+	<article role="main" class="main__content" lang="{{ lang }}">
 		<h1>{{ page.title | escape }}</h1>
 		<p>
 			By {% include author.html object=page %}

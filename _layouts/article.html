@@ -7,18 +7,26 @@ layout: default
 	{% unless lang %}
 		{% assign lang = 'en' %}
 	{% endunless %}
-	<article role="main" class="main-content" lang="{{ lang }}">
-		<h1>{{ page.title | escape }}</h1>
-		<p>
-			By {% include author.html object=page %}
-			at <time>{{ page.date | date: '%d %B %Y' }}</time>
-		</p>
-		<p>Tags:
+	<article role="main" lang="{{ lang }}" class="main__content">
+		<div class="article">
+			<div class="article__info">
+				<p>
+					By {% include author.html object=page %}
+					at <time>{{ page.date | date: '%d %B %Y' }}</time>
+				</p>
+				<p>Tags:
 {% for tag in page.tags %}
-			<a href="/tags/{{ tag }}">{{ tag }}</a>
+					<a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
-		</p>
+				</p>
 {% include translations.html category=site.categories.articles %}
+			</div>
+			<div class="article__content">
+				<h1 class="article__title">{{ page.title | escape }}</h1>
+				<div class="content">
 {{ content }}
+				</div>
+			</div>
+		</div>
 	</article>
 </main>

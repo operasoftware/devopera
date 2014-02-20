@@ -1,0 +1,19 @@
+// Author
+// -------------------------------
+.author {
+	@extend %grid;
+	}
+	.author__picture {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--one-half;
+		@extend %desk--one-third;
+		}
+	.author__info {
+		@extend %grid__item;
+		@extend %one-whole;
+		}
+	.author__related {
+		@extend %grid__item;
+		@extend %one-whole;
+		}

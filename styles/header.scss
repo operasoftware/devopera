@@ -4,13 +4,13 @@
 	padding:36px 0;
 	@extend %grid;
 	}
-	.header-title {
+	.header__title {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--one-third;
 		@extend %desk--three-twelfths;
 		}
-	.header-menu {
+	.header__menu {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--one-half;
@@ -25,7 +25,7 @@
 				}
 			}
 		}
-	.header-search {
+	.header__search {
 		@extend %grid__item;
 		@extend %desk--three-twelfths;
 		}
