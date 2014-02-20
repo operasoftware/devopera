@@ -3,6 +3,7 @@ title: 'Raw WebGL 101 — Part 4: Textures'
 authors:
 - erik-moller
 - chris-mills
+intro: 'In this fourth part of Erik’s raw WebGL tutorial series, we will turn our attention to importing textures from an image file into the canvas.'
 tags:
 - webgl
 - canvas
