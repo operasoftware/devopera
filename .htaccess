@@ -754,3 +754,6 @@ RewriteRule ^articles/view/labs-widget-runtime-wac-1-0-compliant-golden-for-andr
 RewriteRule ^articles/view/labs-widget-runtime-wac-1-0-supporting-beta-2-for-android/?$ articles/widget-runtime-wac-1.0-beta-2-for-android [R=301,L]
 RewriteRule ^articles/view/labs-widgets-runtime-wac-1-0-supporting-alpha-for-android/?$ articles/widget-runtime-wac-1.0-alpha-for-android [R=301,L]
 RewriteRule ^articles/view/labs-widgets-runtime-wac-1-0-supporting-beta-for-android/?$ articles/widget-runtime-wac-1.0-beta-for-android [R=301,L]
+
+# Redirect all `/articles/view/*` to `/articles/*`
+RewriteRule ^articles/view/(.+)$ articles/$1 [R=301,L]
