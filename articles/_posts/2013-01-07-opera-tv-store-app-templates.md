@@ -2,6 +2,7 @@
 title: Opera TV Store app templates
 authors:
 - daniel-davis
+intro: 'Since the launch of the Opera TV Store, we’ve seen a variety of apps published by creators and enjoyed by users. The fact that our TV apps are built using web standards means that web developers can use their existing skills to create content for the TV platform. Developing for TV can still feel unfamiliar, however, so to make it easier we’ve created a couple of templates for common types of apps that content creators can freely use.'
 tags:
 - store
 - tv
