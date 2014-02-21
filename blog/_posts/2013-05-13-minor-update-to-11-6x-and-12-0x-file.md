@@ -1,7 +1,7 @@
 ---
 title: Minor update to 11.6x and 12.0x file
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

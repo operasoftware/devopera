@@ -1,7 +1,7 @@
 ---
 title: More experiments
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

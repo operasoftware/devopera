@@ -1,7 +1,7 @@
 ---
 title: Y!Mail, Presto bugs
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

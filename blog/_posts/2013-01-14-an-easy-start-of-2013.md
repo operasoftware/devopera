@@ -1,7 +1,7 @@
 ---
 title: An easy start of 2013
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

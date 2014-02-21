@@ -1,7 +1,7 @@
 ---
 title: Workarounds for Google Calendar, Twitter focus
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 - browserjs update

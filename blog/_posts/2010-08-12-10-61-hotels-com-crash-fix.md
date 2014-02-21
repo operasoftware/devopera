@@ -1,7 +1,7 @@
 ---
 title: 10.61 hotels.com crash fix
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

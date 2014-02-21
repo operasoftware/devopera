@@ -1,7 +1,7 @@
 ---
 title: 10.50 browser.js update
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

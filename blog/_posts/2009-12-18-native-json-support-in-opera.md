@@ -2,7 +2,7 @@
 layout: post
 title: Native JSON support in Opera
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - opera
 - JSON

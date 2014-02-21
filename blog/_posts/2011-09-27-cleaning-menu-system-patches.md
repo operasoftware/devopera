@@ -1,7 +1,7 @@
 ---
 title: Cleaning menu system patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

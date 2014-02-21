@@ -1,7 +1,7 @@
 ---
 title: To attach or to detach, is that the question?
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

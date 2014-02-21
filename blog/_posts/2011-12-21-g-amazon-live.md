@@ -1,7 +1,7 @@
 ---
 title: G+, Amazon, Live
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: G+, GMail, Facebook
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: New year, new patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

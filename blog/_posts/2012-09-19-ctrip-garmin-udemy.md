@@ -1,7 +1,7 @@
 ---
 title: Ctrip, Garmin, udemy
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

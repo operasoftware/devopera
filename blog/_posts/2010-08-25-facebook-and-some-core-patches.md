@@ -1,7 +1,7 @@
 ---
 title: Facebook and some Core patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: YouTube fullscreen, Google Docs Tab
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

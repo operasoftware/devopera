@@ -1,7 +1,7 @@
 ---
 title: GMaps, AOL, CNNTurk
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

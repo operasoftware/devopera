@@ -1,7 +1,7 @@
 ---
 title: USAToday, TomTom, FlyTap, Gspreadsheets
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

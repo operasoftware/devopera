@@ -1,7 +1,7 @@
 ---
 title: Unbreak Dojo 1.7
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 - ouch

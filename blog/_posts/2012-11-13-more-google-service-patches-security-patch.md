@@ -1,7 +1,7 @@
 ---
 title: More Google service patches, security patch
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

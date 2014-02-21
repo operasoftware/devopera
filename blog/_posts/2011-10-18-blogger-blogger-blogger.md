@@ -1,7 +1,7 @@
 ---
 title: Blogger, blogger, blogger
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

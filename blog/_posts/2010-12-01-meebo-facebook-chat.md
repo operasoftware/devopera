@@ -1,7 +1,7 @@
 ---
 title: Meebo, Facebook chat
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

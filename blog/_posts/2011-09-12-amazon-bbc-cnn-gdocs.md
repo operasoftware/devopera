@@ -1,7 +1,7 @@
 ---
 title: Amazon, BBC, CNN, ++
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

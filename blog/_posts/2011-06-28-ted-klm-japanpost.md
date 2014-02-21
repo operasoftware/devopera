@@ -1,7 +1,7 @@
 ---
 title: TED, KLM, JapanPost
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

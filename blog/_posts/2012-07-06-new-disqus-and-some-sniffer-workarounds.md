@@ -1,7 +1,7 @@
 ---
 title: New Disqus and some sniffer workarounds.
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

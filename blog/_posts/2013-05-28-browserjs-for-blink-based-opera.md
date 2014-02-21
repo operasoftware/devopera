@@ -1,7 +1,7 @@
 ---
 title: BrowserJS for Blink-based Opera
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Pinterest, working around broken sniffers
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Another small browser.js update
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

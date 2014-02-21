@@ -1,7 +1,7 @@
 ---
 title: Summer cleaning
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Watch browser.js change on GitHub!
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 - github

@@ -1,7 +1,7 @@
 ---
 title: c|net, GMail, ebay
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

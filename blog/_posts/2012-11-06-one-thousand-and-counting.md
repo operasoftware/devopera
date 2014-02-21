@@ -1,7 +1,7 @@
 ---
 title: One thousand and counting
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Facebook, GDocs, Apple, Shopping.com, Sears
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

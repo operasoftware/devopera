@@ -2,7 +2,7 @@
 layout: post
 title: Opera's site patching
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - site patching
 - browser.js

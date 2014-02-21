@@ -1,7 +1,7 @@
 ---
 title: Docs and Maps
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: SwedBank, Santander bank
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

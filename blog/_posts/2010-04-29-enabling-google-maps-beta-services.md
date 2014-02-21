@@ -1,7 +1,7 @@
 ---
 title: Enabling Google Maps beta services
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article
