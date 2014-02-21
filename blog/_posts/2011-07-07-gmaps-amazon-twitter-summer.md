@@ -1,7 +1,7 @@
 ---
 title: GMaps, Amazon, Twitter, summer
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

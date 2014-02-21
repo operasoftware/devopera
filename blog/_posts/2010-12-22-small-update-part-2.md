@@ -1,7 +1,7 @@
 ---
 title: Small update, part 2
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Amazon, Twitter
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

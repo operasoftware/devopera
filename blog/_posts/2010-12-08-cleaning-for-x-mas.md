@@ -1,7 +1,7 @@
 ---
 title: Cleaning for x-mas
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Google Documents, etc.
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

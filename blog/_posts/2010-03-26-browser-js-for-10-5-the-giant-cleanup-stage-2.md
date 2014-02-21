@@ -1,7 +1,7 @@
 ---
 title: 'browser.js for 10.5: the giant cleanup - stage 2'
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

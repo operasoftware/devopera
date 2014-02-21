@@ -1,7 +1,7 @@
 ---
 title: jQuery.jsonp
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

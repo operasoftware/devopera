@@ -1,7 +1,7 @@
 ---
 title: required or not required
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

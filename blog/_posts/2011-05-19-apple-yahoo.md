@@ -1,7 +1,7 @@
 ---
 title: Apple, Yahoo!
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Marlin sync
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

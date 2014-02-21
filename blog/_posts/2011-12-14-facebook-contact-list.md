@@ -1,7 +1,7 @@
 ---
 title: Facebook contact list
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

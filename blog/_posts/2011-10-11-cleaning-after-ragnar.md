@@ -1,7 +1,7 @@
 ---
 title: Cleaning after Ragnarök
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

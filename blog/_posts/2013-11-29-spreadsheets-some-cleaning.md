@@ -1,7 +1,7 @@
 ---
 title: Spreadsheets, some cleaning.
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

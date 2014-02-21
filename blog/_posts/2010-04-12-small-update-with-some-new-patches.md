@@ -1,7 +1,7 @@
 ---
 title: Small update with some new patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

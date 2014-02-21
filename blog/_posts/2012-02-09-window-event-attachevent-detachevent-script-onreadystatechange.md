@@ -1,7 +1,7 @@
 ---
 title: window.event, attachEvent, detachEvent, script.onreadystatechange
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

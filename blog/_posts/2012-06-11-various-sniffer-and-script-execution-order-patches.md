@@ -1,7 +1,7 @@
 ---
 title: Various sniffer and script execution order patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

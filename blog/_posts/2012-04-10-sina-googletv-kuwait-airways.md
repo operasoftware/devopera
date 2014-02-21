@@ -1,7 +1,7 @@
 ---
 title: Sina, GoogleTV, Kuwait Airways
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

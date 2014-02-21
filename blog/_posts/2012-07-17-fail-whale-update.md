@@ -1,7 +1,7 @@
 ---
 title: Fail whale update
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 layout: article

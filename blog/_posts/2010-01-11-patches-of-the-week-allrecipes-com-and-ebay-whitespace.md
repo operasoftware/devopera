@@ -1,7 +1,7 @@
 ---
 title: 'patches of the week: allrecipes.com and eBay whitespace'
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 layout: article

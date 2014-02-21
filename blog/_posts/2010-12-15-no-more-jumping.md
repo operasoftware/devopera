@@ -1,7 +1,7 @@
 ---
 title: Less jumping
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

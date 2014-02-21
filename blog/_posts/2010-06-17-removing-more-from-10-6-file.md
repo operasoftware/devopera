@@ -1,7 +1,7 @@
 ---
 title: Removing more from 10.6 file
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

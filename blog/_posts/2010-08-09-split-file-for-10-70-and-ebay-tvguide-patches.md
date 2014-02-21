@@ -1,7 +1,7 @@
 ---
 title: Split file for 10.70 and eBay, TVGuide patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

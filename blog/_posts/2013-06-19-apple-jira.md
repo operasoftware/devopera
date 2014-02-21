@@ -1,7 +1,7 @@
 ---
 title: Apple, Jira
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

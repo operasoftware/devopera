@@ -1,7 +1,7 @@
 ---
 title: Google sign-on
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

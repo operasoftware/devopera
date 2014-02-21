@@ -1,7 +1,7 @@
 ---
 title: Google Maps dragging
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

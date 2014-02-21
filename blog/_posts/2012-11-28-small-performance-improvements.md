@@ -1,7 +1,7 @@
 ---
 title: Small performance improvements
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: New Java plug-in support and object parsing
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 - java

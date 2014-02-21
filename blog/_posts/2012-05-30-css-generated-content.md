@@ -1,7 +1,7 @@
 ---
 title: CSS generated content
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

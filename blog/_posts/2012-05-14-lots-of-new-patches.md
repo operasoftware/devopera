@@ -1,7 +1,7 @@
 ---
 title: Lots of new patches
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

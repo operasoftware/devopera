@@ -1,7 +1,7 @@
 ---
 title: Skydrive upload improvement, ebay shipping labels printing
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

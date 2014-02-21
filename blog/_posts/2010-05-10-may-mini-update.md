@@ -1,7 +1,7 @@
 ---
 title: May mini update
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Hungary, here we come
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - sitepatching
 layout: article

@@ -1,7 +1,7 @@
 ---
 title: Ready to Wave?
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

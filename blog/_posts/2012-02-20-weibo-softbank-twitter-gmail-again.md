@@ -1,7 +1,7 @@
 ---
 title: Weibo, SoftBank, Twitter, GMail again
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

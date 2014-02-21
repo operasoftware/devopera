@@ -1,7 +1,7 @@
 ---
 title: New Hangouts workaround
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article

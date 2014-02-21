@@ -1,7 +1,7 @@
 ---
 title: Y!Finance, Gdocs, Comcast, FBI, Tuenti
 authors:
-- olak
+- ola-kleiven
 tags:
 - sitepatching
 layout: article
