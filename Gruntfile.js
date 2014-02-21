@@ -65,6 +65,18 @@ module.exports = function(grunt) {
 					'_site/styles/screen.css' : 'styles/screen.css'
 				}
 			}
+		},
+		rsync: {
+			options: {
+				args: ['--delete', '-avz'],
+				exclude: ['.DS_Store'],
+				recursive: true
+			},
+			deploy: {
+				src: '_site/',
+				dest: '/var/www/html/',
+				host: 'dev.opera.com'
+			}
 		}
 	});
 
@@ -75,6 +87,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-rsync');
 
 	grunt.registerTask('default', [
 		'sass',
@@ -83,5 +96,7 @@ module.exports = function(grunt) {
 		'htmlmin',
 		'imagemin'
 	]);
+
+	grunt.registerTask('deploy', ['default', 'rsync']);
 
 };
