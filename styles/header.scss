@@ -36,6 +36,7 @@
 	font-size:20px;
 	}
 	.logo__wrapper {
+		&:link,
 		&:visited {
 			color:#000;
 			}
