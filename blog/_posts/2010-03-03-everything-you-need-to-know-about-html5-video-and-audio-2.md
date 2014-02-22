@@ -1,20 +1,19 @@
 ---
-layout: post
-title: Everything you need to know about HTML5 video and audio
+title: Everything You Need to Know About HTML5 Video and Audio
 authors:
-- zcorpan
+- simon-pieters
 tags:
 - html5
 - theora
-- JavaScript
-- W3C
+- javascript
+- w3c
 - video
-- core qa
+- core-qa
 - gstreamer
 - vorbis
 - canvas
 - coreblog
-layout: article
+layout: post
 ---
 <p><p>Hi, I&#39;m Simon Pieters, and I&#39;m working with Quality Assurance for HTML5 <code>video</code> and <code>audio</code> at Opera.
 </p><p>Opera 10.50 has now been released on Windows, and it supports the HTML5 <code>video</code> and <code>audio</code> elements. But how do you use them? <a href="http://dev.opera.com/articles/view/introduction-html5-video/" rel="nofollow">Introduction to HTML5 video</a> covers a general introduction but doesn&#39;t go into the details; <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/" rel="nofollow">Accessible HTML5 Video with JavaScripted captions</a> shows how captions can be implemented until the spec gains proper support for captions; and <a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video" rel="nofollow">(re-)Introducing &lt;video&gt;</a> has some information on Opera&#39;s implementation. I recommend reading all three!
@@ -445,7 +444,7 @@ video.ontimeupdate = updateUI;</pre>
   seekbar.max = video.startTime + video.duration;
 }</pre>
 <p>For a streaming video, <code>duration</code> is Infinity, so instead we need to set the <code>max</code> attribute to the latest time that has been buffered, and since <code>startTime</code> can change over time, we need to set the <code>min</code> attribute over time as well.
-</p><p>For getting the latest time that has been buffered, we need the <code>buffered</code> IDL attribute. It returns a <code>TimeRanges</code> object which has a <code>length</code> attribute, a <code>start()</code> method and an <code>end()</code> method. In normal cases, there will only be one range — the browser starts downloading from time 0, and the downloaded range extends to however much is currently available. However, if the user seeks forward, the browser can stop the current download and start a new request for a later part of the video. In this case, there would be two ranges of buffered data. 
+</p><p>For getting the latest time that has been buffered, we need the <code>buffered</code> IDL attribute. It returns a <code>TimeRanges</code> object which has a <code>length</code> attribute, a <code>start()</code> method and an <code>end()</code> method. In normal cases, there will only be one range — the browser starts downloading from time 0, and the downloaded range extends to however much is currently available. However, if the user seeks forward, the browser can stop the current download and start a new request for a later part of the video. In this case, there would be two ranges of buffered data.
 
 </p><p>The <code>TimeRanges</code> object&#39;s <code>length</code> IDL attribute returns how many ranges there are. The <code>start()</code> method takes an argument <i>index</i>, where 0 represents the index of the first range, 1 represents the index of the second range, and so forth. It returns the start time of the range with the given index. The <code>end()</code> method similarly returns the end time of the range with the given index.
 </p><p>So to find out the latest position of buffered data, we read the end time of the last range in <code>buffered</code>:

@@ -1,5 +1,5 @@
 ---
-title: 'Opera TV Emulator: Getting started'
+title: 'Opera TV Emulator: Getting Started'
 authors:
 - odevrel
 intro: 'This article goes through the installation process of the Opera TV Emulator, and covers basic usage with keyboard and mouse as well as via the web remote. It also touches on the various media formats that are supported by default and explains how to install the H.264 decoder.'

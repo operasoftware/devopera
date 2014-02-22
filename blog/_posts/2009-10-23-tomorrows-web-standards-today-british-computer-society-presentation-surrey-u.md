@@ -1,5 +1,5 @@
 ---
-title: Tomorrow's web standards today - British Computer Society presentation, Surrey University
+title: Tomorrow’s Web Standards Today — British Computer Society Presentation, Surrey University
 authors:
 - henny-swan
 tags:
@@ -9,7 +9,7 @@ tags:
 - svg
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>I had the pleasure of speaking to a really savvy crowd at Surrey University last night on &quot;Tomorrow&#39;s web standards today&quot;.  It was a fun session with lots of really good questions at the end - just the way I like it.</p>
 

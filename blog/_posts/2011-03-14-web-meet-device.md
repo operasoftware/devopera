@@ -1,17 +1,16 @@
 ---
-layout: post
-title: Web, meet the <device> element (and orientation events)
+title: Web, Meet the `<device>` Element (And Orientation Events)
 authors:
-- richtr
+- rich-tibbett
 tags:
 - orientation
-- W3C
+- w3c
 - whatwg
 - device
 - mobile
 - html
 - coreblog
-layout: article
+layout: post
 ---
 <p>Recently we&#39;ve been prototyping on Opera Mobile for Android to add support for both the HTML <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#devices" rel="nofollow" target="_blank">&lt;device&gt;</a> element and the W3C&#39;s proposed <a href="http://dev.w3.org/geo/api/spec-source-orientation.html" rel="nofollow" target="_blank">orientation events</a> specification.<br/><br/>In our first internal build, web developers are able to access, display and interact in real-time with a user&#39;s web camera using native HTML features. ... </p><!--more--><strong><span style="color: red">This information is out of date. For the latest information, please refer here: <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" target="_blank">http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview</a></span></strong>
 
@@ -78,7 +77,7 @@ window.addEventListener(&#39;deviceorientation&#39;, function(evt) {
 &lt;/script&gt;</pre>
 <span style="font-size: 160%">Next steps</span>
 
-We&#39;re still at the very beginning of the long road to ubiquitous web standards support for accessing the user&#39;s web camera and microphone in the browser. In the coming weeks and months we plan to continue developing and releasing updates related to these technologies. 
+We&#39;re still at the very beginning of the long road to ubiquitous web standards support for accessing the user&#39;s web camera and microphone in the browser. In the coming weeks and months we plan to continue developing and releasing updates related to these technologies.
 
 We plan to:
 

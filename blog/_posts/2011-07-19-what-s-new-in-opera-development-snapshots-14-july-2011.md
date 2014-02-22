@@ -1,12 +1,12 @@
 ---
-title: 'What’s new in Opera development snapshots: 14 July 2011'
+title: 'What’s New in Opera Development Snapshots: 14 July 2011'
 authors:
 - divya-manian
 tags:
 - opera-next
 - carakan
 - odin
-layout: article
+layout: post
 ---
 <p>Woo, <a href="http://my.opera.com/desktopteam/blog/2011/07/14/javascript-on-a-diet">we got some dramatic big updates this time</a>! Let&#39;s see what&#39;s new.</p>
 <p>As usual, your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.9.<b>181</b> Version/12.00&quot; under <i>Browser Identification</i>).</p>

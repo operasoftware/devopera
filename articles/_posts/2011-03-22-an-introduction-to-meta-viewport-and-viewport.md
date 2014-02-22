@@ -1,5 +1,5 @@
 ---
-title: An introduction to meta viewport and @viewport
+title: An Introduction to Meta Viewport and `@viewport`
 authors:
 - andreas-bovens
 intro: 'Support for the viewport `<meta>` tag in Opera’s mobile products has been around for quite some time — in Opera Mobile 11, we have made our viewport implementation more robust, added support for new mechanisms to deal with different screen densities, and included an implementation of our own `@viewport` rule proposal. So, what better time than now to give you an introduction to the various viewport related mechanisms you can use to optimize your site for mobile.'

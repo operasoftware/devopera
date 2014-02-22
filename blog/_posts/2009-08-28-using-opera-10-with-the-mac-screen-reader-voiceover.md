@@ -1,5 +1,5 @@
 ---
-title: Using Opera 10 with the Mac screen reader VoiceOver
+title: Using Opera 10 With the Mac Screen Reader VoiceOver
 authors:
 - henny-swan
 tags:
@@ -7,7 +7,7 @@ tags:
 - voiceover
 - screenreader
 - odin
-layout: article
+layout: post
 ---
 <p>Support for the Mac native screen reader <a href="http://www.apple.com/accessibility/voiceover/">VoiceOver</a> was added to Opera in version 9.5. This is a quick overview explaining what you can access using VoiceOver with Opera. I&#39;m hoping it will be of use to people with screen readers and developers debugging content alike.</p>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Unleashed in the East: Ukraine University tour April 26-30'
+title: 'Unleashed in the East: Ukraine University Tour April 26-30'
 authors:
 - chris-mills
 tags:
@@ -15,7 +15,7 @@ tags:
 - ukraine
 - kharkov
 - odin
-layout: article
+layout: post
 ---
 <p><h2>Web standards and heavy metal in Ukraine</h2>
 

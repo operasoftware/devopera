@@ -1,5 +1,5 @@
 ---
-title: Over the Air - presentation on universal access devices
+title: Over the Air — Presentation on Universal Access Devices
 authors:
 - henny-swan
 tags:
@@ -10,7 +10,7 @@ tags:
 - dragonfly
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>I presented at <a href="http://overtheair.org/">Over the Air</a> last week, a two day hack focusing on widgets and the mobile web. It was a great end to an already busy stretch of conferences with a day of presentations followed by an all night hack and presentations the next day.</p>
 

@@ -1,5 +1,5 @@
 ---
-title: WebVTT 及 HTML5 <track> 元素简介
+title: WebVTT 及 HTML5 `<track>` 元素简介
 authors:
 - ian-devlin
 tags:
@@ -7,7 +7,7 @@ tags:
 - audio
 - captions
 - html5
-- polyfills
+- polyfill
 - subtitles
 - text
 - track

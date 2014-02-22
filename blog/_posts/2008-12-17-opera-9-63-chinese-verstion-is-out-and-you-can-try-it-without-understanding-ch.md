@@ -1,5 +1,5 @@
 ---
-title: Opera 9.63 Chinese Ver. is out (and you can try it too)
+title: Opera 9.63 Chinese Ver. Is Out (And You Can try It Too)
 authors:
 - zi-bin-cheah
 tags:
@@ -7,7 +7,7 @@ tags:
 - desktop
 - ibis
 - odin
-layout: article
+layout: post
 ---
 <p>
 Opera has just launched our Opera Desktop 9.63 Chinese build. True to Opera desktop&#39;s tradition, the China version is also named after a bird:IBIS. IBIS can be downloaded from <a href="http://www.opera.com/download/get.pl?id=31945">Opera download (6.7mb)</a>

@@ -1,5 +1,5 @@
 ---
-title: 'Opera 11.50 released: Speed Dial extensions, improved standards support, and more'
+title: 'Opera 11.50 Released: Speed Dial Extensions, Improved Standards Support, and More'
 authors:
 - andreas-bovens
 tags:
@@ -9,7 +9,7 @@ tags:
 - extensions
 - standards
 - odin
-layout: article
+layout: post
 ---
 <span class='imgright'><img alt='' src='/blog/opera-11-50-released-speed-dial-extensions-improved-standards-support/300px-Xiphias_gladius2.jpg' /></span>
 <p>Today, we&#39;re releasing <a href="http://www.opera.com/browser/">Opera 11.50</a>, aka &quot;Swordfish&quot;. It has a brand new <em>featherweight</em> look-and-feel, and juicy standards bits. Over the last couple of weeks, we&#39;ve introduced this release&#39;s new features in different blog posts — here&#39;s a quick recap, with pointers to updated documentation and more.</p>

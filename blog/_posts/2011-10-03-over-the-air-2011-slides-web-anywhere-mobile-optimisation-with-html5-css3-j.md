@@ -1,5 +1,5 @@
 ---
-title: 'Over the Air 2011 slides — Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript'
+title: 'Over the Air 2011 Slides — Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript'
 authors:
 - bruce-lawson
 tags:
@@ -8,7 +8,7 @@ tags:
 - one-web
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>I spoke at Over The Air last year and - gasp! - was invited back.</p>
 

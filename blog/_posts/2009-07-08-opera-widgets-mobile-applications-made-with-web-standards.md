@@ -1,12 +1,12 @@
 ---
-title: 'Opera Widgets: mobile applications made with Web Standards'
+title: 'Opera Widgets: Mobile Applications Made With Web Standards'
 authors:
 - bruce-lawson
 tags:
 - widgets
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>Another standard that Opera is involved with is the <a href="http://www.w3.org/TR/widgets/" target="_blank">Widgets specification</a>. Widgets are standalone applications that are made with <abbr>HTML</abbr>, <abbr>CSS</abbr> and JavaScript. They are zipped up with an <abbr>XML</abbr> configuration file  that describes their size on the screen, or whether they&#39;re full screen, whether they can connect to the Internet etc. The zipped file is renamed .wgt and then they can be sent to a mobile phone (or Archos tablet, Nintendo Wii, Web TV, or anything else). The device&#39;s Widget Manager then unzips them and installs them automatically.</p>
 <p>What&#39;s great about this is that it allows developer to make web-enabled applications that can look like native apps, but which are made with Web Standards. And, because they&#39;re made with Standards, they work anywhere that can support a full web browser.</p>

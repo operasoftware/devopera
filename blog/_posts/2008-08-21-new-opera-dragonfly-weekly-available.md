@@ -1,5 +1,5 @@
 ---
-title: New Opera Dragonfly weekly available
+title: New Opera Dragonfly Weekly Available
 authors:
 - david-storey
 tags:
@@ -7,6 +7,6 @@ tags:
 - weekly
 - release
 - odin
-layout: article
+layout: post
 ---
 <p>The Opera Dragonfly team has just released their latest weekly.  Head over to the <a href="http://my.opera.com/dragonfly">Opera Dragonfly blog</a> For more information.  The focus on the weekly release is localisation support.</p>

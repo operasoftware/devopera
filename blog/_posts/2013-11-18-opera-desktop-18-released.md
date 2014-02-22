@@ -1,5 +1,5 @@
 ---
-title: Opera Desktop 18 released
+title: Opera Desktop 18 Released
 authors:
 - bruce-lawson
 intro: '[Opera Desktop 18 for Mac and Windows](http://www.opera.com/computer) is out, based on Chromium 31. ([See features and download](http://www.opera.com/computer))'
@@ -10,7 +10,7 @@ tags:
 - themes
 - extensions
 - odin
-layout: article
+layout: post
 ---
 
 [Opera Desktop 18 for Mac and Windows][1] is out, based on Chromium 31. ([See features and download][1])

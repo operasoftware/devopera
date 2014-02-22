@@ -1,13 +1,12 @@
 ---
-layout: post
-title: Opera's site patching
+title: Opera’s Site Patching
 authors:
 - hallvord-steen
 tags:
-- site patching
+- site-patching
 - browser.js
 - coreblog
-layout: article
+layout: post
 ---
 <p><em>You know the complexity of web technology is getting out of hand when every website needs some special treatment</em>. Imagine driving a car if you had to change the engine slightly or replace wheels every time you turned a corner and entered a new street? Browser development is a lot like that these days.</p>
 

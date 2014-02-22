@@ -1,5 +1,5 @@
 ---
-title: 'Opera Mobile 12.1: with SPDY, WebSockets, Flexbox and more'
+title: 'Opera Mobile 12.1: With SPDY, WebSockets, Flexbox and More'
 authors:
 - andreas-bovens
 tags:
@@ -9,7 +9,7 @@ tags:
 - spdy
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>Today marks the release of <a href="https://play.google.com/store/apps/details?id=com.opera.browser">Opera Mobile 12.1 for Android phones</a> — from Android 1.6 (Donut) to 4.1 (Jelly Bean), we&#39;ve got you covered with a mean and lean browsing machine!</p>
 

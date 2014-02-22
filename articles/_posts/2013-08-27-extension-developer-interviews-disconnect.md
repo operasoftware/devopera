@@ -1,5 +1,5 @@
 ---
-title: 'Extension developer interview: coffee with the Disconnect team'
+title: 'Extension Developer Interview: Coffee With the Disconnect Team'
 authors:
 - andreas-bovens
 intro: 'We sat down with Brian from Disconnect, and asked him about his team, extension development tools and UX processes, where the service’s revenue comes from, and much more.'

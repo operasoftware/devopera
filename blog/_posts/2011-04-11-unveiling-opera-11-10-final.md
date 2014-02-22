@@ -1,5 +1,5 @@
 ---
-title: Unveiling Opera 11.10 final
+title: Unveiling Opera 11.10 Final
 authors:
 - chris-mills
 tags:
@@ -16,7 +16,7 @@ tags:
 - speed-dial
 - extensions
 - odin
-layout: article
+layout: post
 ---
 <h3>From beta to final: a heritage of great functionality</h3>
 

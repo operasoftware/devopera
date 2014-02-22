@@ -1,11 +1,11 @@
 ---
-title: WCAG 2.0 is  official — but is that all you need to make a site accessible?
+title: WCAG 2.0 Is  Official — but Is That All You Need to Make a Site Accessible?
 authors:
 - henny-swan
 tags:
 - wcag
 - odin
-layout: article
+layout: post
 ---
 <p>The Web Accessibility Initiative&#39;s (WAI) <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a> was finally made a World Wide Web Consortium (W3C) Recommendation (web standard) yesterday, almost 10 years after WCAG 1.0 was first published.</p>
 

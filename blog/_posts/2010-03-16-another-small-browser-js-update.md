@@ -1,10 +1,10 @@
 ---
-title: Another small browser.js update
+title: Another Small Browser.js Update
 authors:
 - ola-kleiven
 tags:
 - sitepatching
-layout: article
+layout: post
 ---
 A few more updates to browser.js. This log covers the update from March 1. file to March 16. file.<br/><br/><span style="font-size: 140%">New patches</span><br/><a href="http://www.imdb.com" target="_blank">IMDB.com</a> - videos not working. Carakan is slightly too strict in security checking here. This patch should be short lived.<br/><br/><a href="http://blogger.com/" target="_blank">blogger.com</a> - work around side effect of spoofing, improves HTML view.<br/><br/><span style="font-size: 140%">Changed patches</span><br/><a href="http://cajamadrid.es/" target="_blank">cajamadrid.es</a> - work around site bug that hides login form (and work around the core bug that now prevents the previous patch from doing what it&#39;s supposed to). First reported <a href="http://my.opera.com/community/forums/topic.dml?id=249032" target="_blank">here</a>, thanks .<br/><br/>HVMenu - minor change to fix an old version, spotted in <a href="http://list.opera.com/pipermail/opera-users/2010-March/029264.html" target="_blank">a message to the opera-users mailing list</a>. Here&#39;s a quirk story for you: back in the dark ages of medieval DHTML effects when this script was written, the author wanted to listen to the onload event. Here&#39;s what he did, somewhat snipped:<br/><pre>var Par=parent.frames[0]&amp;&amp;FirstLineFrame!=SecLineFrame?parent:window;
 var Doc=Par.document;

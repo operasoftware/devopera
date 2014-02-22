@@ -1,5 +1,5 @@
 ---
-title: 'Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript (Bruce’s SxSW BigM talk)'
+title: 'Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript (Bruce’s SxSW BigM Talk)'
 authors:
 - bruce-lawson
 tags:
@@ -7,7 +7,7 @@ tags:
 - presentation
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <div style="width:425px" id="__ss_7249887"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/brucelawson/web-anywhere-mobile-optimisation-with-html5-css3-javascript" title="Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript">Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript</a></strong> <object id="__sse7249887" width="425" height="355"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-web-anywhere-sxsw-110313095126-phpapp01&amp;stripped_title=web-anywhere-mobile-optimisation-with-html5-css3-javascript&amp;userName=brucelawson" /> <param name="allowFullScreen" value="true" /> <param name="allowScriptAccess" value="never" /> <embed name="__sse7249887" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-web-anywhere-sxsw-110313095126-phpapp01&amp;stripped_title=web-anywhere-mobile-optimisation-with-html5-css3-javascript&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /> </object> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/brucelawson">brucelawson</a> </div> </div>
 

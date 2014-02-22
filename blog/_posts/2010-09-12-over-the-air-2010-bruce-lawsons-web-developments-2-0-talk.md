@@ -1,12 +1,12 @@
 ---
-title: 'Over The Air 2010: Bruce Lawson’s Web Development 2.0 talk'
+title: 'Over the Air 2010: Bruce Lawson’s Web Development 2.0 Talk'
 authors:
 - bruce-lawson
 tags:
 - presentation
 - conference
 - odin
-layout: article
+layout: post
 ---
 <div style="width:425px" id="__ss_5172939"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/brucelawson/bruce-lawsonovertheair" title="Bruce lawson-over-the-air">Bruce lawson-over-the-air</a></strong><object id="__sse5172939" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-over-the-air-100910084935-phpapp02&amp;rel=0&amp;stripped_title=bruce-lawsonovertheair" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="never" /><embed name="__sse5172939" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-over-the-air-100910084935-phpapp02&amp;rel=0&amp;stripped_title=bruce-lawsonovertheair" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /></object></div>
 

@@ -1,5 +1,5 @@
 ---
-title: Introducing Opera 15 for Computers, and a fast release cycle
+title: Introducing Opera 15 for Computers, and a Fast Release Cycle
 authors:
 - bruce-lawson
 tags:
@@ -7,7 +7,7 @@ tags:
 - opera-15
 - blink
 - odin
-layout: article
+layout: post
 ---
 <p>Here it is — <a href="http://www.opera.com/computer">Opera 15 for computers</a>: your fast, secure browser that doesn&#39;t get in your way. Here&#39;s a quick video introduction.</p>
 

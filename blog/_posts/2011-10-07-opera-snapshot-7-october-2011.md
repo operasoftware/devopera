@@ -1,5 +1,5 @@
 ---
-title: 'What’s new in Opera’s snapshots: 7 October 2011'
+title: 'What’s New in Opera’s Snapshots: 7 October 2011'
 authors:
 - chris-mills
 tags:
@@ -10,7 +10,7 @@ tags:
 - css3
 - html5-parser
 - odin
-layout: article
+layout: post
 ---
 <p>Today ushers in another interesting developer snapshot release of Opera desktop! As per usual, if you are using <a href="http://www.opera.com/browser/next/">Opera Next</a> you should already have this update — if not, <a href="http://my.opera.com/desktopteam/blog/2011/10/07/ragnarok-css3-radial-gradients">download the snapshot</a> separately.</p>
 

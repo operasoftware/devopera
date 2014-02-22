@@ -1,5 +1,5 @@
 ---
-title: Postcards from TPAC
+title: Postcards From TPAC
 authors:
 - bruce-lawson
 tags:
@@ -11,7 +11,7 @@ tags:
 - w3c
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>Every year, the top Standardistas of the world jet off to <a herf="http://www.w3.org/2010/11/TPAC/">TPAC</a>: a glamorous foreign location where they drink Daquiris, dance the rhumba til dawn, build sand castles and talk about standards. It&#39;s like being James Bond, but with a License to Spec rather than kill. </p>
 <p>Various Opera staffers email reports of their trip to an internal mailing list. As an experiment, we&#39;re reproducing them here. These are the impressions of each named reporter, at the time of writing. Their opinions might change subsequently, and their opinions are not necessarily shared by other reporters or Opera as a company. These are emphatically <em>not</em> official minutes (those will be published by the W3C), nor commitments by Opera to support any specific technology. With those caveats in mind, enjoy these Postcards from TPAC. </p>

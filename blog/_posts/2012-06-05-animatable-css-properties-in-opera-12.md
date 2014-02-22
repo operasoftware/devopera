@@ -1,5 +1,5 @@
 ---
-title: Animatable CSS properties in Opera 12
+title: Animatable CSS Properties in Opera 12
 authors:
 - daniel-davis
 tags:
@@ -10,7 +10,7 @@ tags:
 - css3
 - web-standards
 - odin
-layout: article
+layout: post
 ---
 <p>CSS3 transitions and animations don&#39;t just provide eye-candy for fancy demos &#x2014; they also improve usability and enhance the user experience (when used in the right places). Although still at an experimental stage and not meant for production sites yet, they are being used more and more on the web thanks to better and better browser support.</p>
 <p>At Opera, our core developers, locked away in a basement somewhere in Norway with only brown cheese to survive on, have been working hard to make our support even better. <a href="http://www.opera.com/browser/next/">Opera 12, currently in beta</a>, introduces keyframe animation support as well as an increase in the number of properties you can animate.</p>

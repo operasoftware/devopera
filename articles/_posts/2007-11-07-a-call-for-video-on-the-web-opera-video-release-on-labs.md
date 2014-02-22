@@ -1,5 +1,5 @@
 ---
-title: A call for video on the web — Opera `<video>` release on Labs
+title: A Call for Video on the Web — Opera `<video>` Release on Labs
 authors:
 - odevrel
 intro: 'To really make a splash on the Web, video needs an open solution that can easily be integrated into web pages without the need for proprietary plugins. The HTML5 `<video>` element and Ogg Theora can provide this, and Opera is proud to announce an experimental build that suppports it. So read this article, and download and play with it today.'

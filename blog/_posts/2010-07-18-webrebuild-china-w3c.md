@@ -8,7 +8,7 @@ tags:
 - w3c
 - webrebuild
 - odin
-layout: article
+layout: post
 ---
 <p>
 北航举办的<a href="http://webrebuild.org/y/beijing/2/">WebRebuild/W3C中国前端活动</a>昨天已圆满结束。非常荣幸受邀参加这一次活动，又有机会见证中国前端技术的蓬勃发展。

@@ -1,5 +1,5 @@
 ---
-title: Design considerations for Opera TV Store applications
+title: Design Considerations for Opera TV Store Applications
 authors:
 - yenny-otero
 - patrick-lauke

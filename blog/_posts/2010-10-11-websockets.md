@@ -1,13 +1,12 @@
 ---
-layout: post
 title: WebSockets in Opera
 authors:
-- zcorpan
+- simon-pieters
 tags:
 - websockets
 - testsuite
 - coreblog
-layout: article
+layout: post
 ---
 <h3>Introduction</h3>
 

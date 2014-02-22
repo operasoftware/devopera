@@ -1,5 +1,5 @@
 ---
-title: Making your site mobile-friendly  – RIT++ 2010, Moscow
+title: Making Your Site Mobile-Friendly — RIT++ 2010, Moscow
 authors:
 - patrick-lauke
 tags:
@@ -12,7 +12,7 @@ tags:
 - mobile
 - ipad
 - odin
-layout: article
+layout: post
 ---
 <p>I had the honour of being invited to speak at this year&#39;s <a href="http://ritconf.ru/">Russian Internet Technologies (RIT) 2010</a> conference in Moscow. Unfortunately, due to the unexpected bureaucratic nightmare involved in getting a Russian business visa, I was unable to attend in person (shame, as Moscow is definitely on my top list of places that I&#39;d love to visit)...but, as a last resort, I did my presentation remotely via Skype screensharing, from the comfort of my own home office.</p>
 <p>My talk <a href="http://www.slideshare.net/redux/making-your-site-mobilefriendly-rit"><cite>Making your site mobile-friendly</cite></a> was an expanded version of an Ignite Manchester talk I did last month. I have to say that presenting to camera (and then later just talking into a microphone while looking at my own slides) without being able to see the audience is...unusual. As a presenter, you definitely miss the immediate feedback you get from observing your audience. To top it off, I was being translated simultaneously into Russian, so I had to curb my usual machinegun-style barrage of words. In all, though, it was an enjoyable experience (despite Skype crashing on me right in the middle of the talk) and I hope the attendees got something positive out of it. Until next year, when I&#39;ll hopefully be able to be there live...</p>

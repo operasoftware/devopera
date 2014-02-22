@@ -1,5 +1,5 @@
 ---
-title: 'US University Tour: Accessibility, standards and HTML 5'
+title: 'US University Tour: Accessibility, Standards and HTML 5'
 authors:
 - henny-swan
 tags:
@@ -8,7 +8,7 @@ tags:
 - standards
 - html5
 - odin
-layout: article
+layout: post
 ---
 <p>Last week I was fortunate enough to join the second week of the <a href="http://www.opera.com/education/tours/">Opera Education University Tour</a> in the States talking at universities in and around LA and San Diago including University of California Irvine, University of California Los Angeles, University of Southern California and University of California San Diago. My talk focused on web accessibility and standards plus innovations in HTML 5 with my colleague, Philip Gronvold, talking about <a href="http://widgets.opera.com/">Opera widgets</a> and mobile. It was a lot of fun to meet so many bright students, mostly computer scientists, who while not learning web design directly all shared a passion for it and found the time to study outside of class.</p>
 

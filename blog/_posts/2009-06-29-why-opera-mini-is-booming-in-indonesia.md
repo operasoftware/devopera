@@ -1,12 +1,12 @@
 ---
-title: Why is Opera Mini booming in Indonesia?
+title: Why Is Opera Mini Booming in Indonesia?
 authors:
 - zi-bin-cheah
 tags:
 - indonesia
 - opera-mini
 - odin
-layout: article
+layout: post
 ---
 <p>
 It&#39;s not just Opera Mini, but the whole Mobile Web.

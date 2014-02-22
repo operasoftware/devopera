@@ -1,10 +1,10 @@
 ---
-title: One thousand and counting
+title: One Thousand and Counting
 authors:
 - ola-kleiven
 tags:
 - sitepatching
-layout: article
+layout: post
 ---
 Edit: released updated file with some GMail patches.<br/>Edit2: extra variable check in PATCH-1008.<br/><br/>A small milestone reached with PATCH-1000 today. The patch database predates this numbering though and is up to about 1570 entries. Adding the entries in override_downloaded.ini we are probably closing in on 2000 site patches over the years.<br/><br/><span style="font-size: 140%">Added patches</span><br/><br/>PATCH-1008, GMail: new composer recipient autocomplete arrow navigation. For 12.10 only as Opera fixed keyboard event handling we need to workaround the browser sniffing.<br/><br/>PATCH-1007, downg.com: decrease font-size to avoid wrapping.<br/><br/>PATCH-1000, ozakiverse.com - sniffing inverses wheelDelta. <br/><br/>For Opera 9 in June 2006 we added support for the mousewheel event. Unfortunately with a bug inversing the wheelDelta value. This was fixed for Opera 9.20 in April 2007. However we still encounter this<br/><pre>
 if (window.opera) { delta = -delta; }

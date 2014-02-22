@@ -1,5 +1,5 @@
 ---
-title: Opera Kestrel Beta 2 is Now Available
+title: Opera Kestrel Beta 2 Is Now Available
 authors:
 - chris-mills
 intro: 'This week we released an exciting new beta release of Kestrel, the new Opera desktop browser - beta 2, to be exact.'

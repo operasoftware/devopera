@@ -1,5 +1,5 @@
 ---
-title: 'Public consultation on browser standards for public sector Web sites: Opera’s response'
+title: 'Public Consultation on Browser Standards for Public Sector Web Sites: Opera’s Response'
 authors:
 - bruce-lawson
 tags:
@@ -8,7 +8,7 @@ tags:
 - one-web
 - progressive-enhancement
 - odin
-layout: article
+layout: post
 ---
 <h3>UPDATE</h3>
 <p>19 January 2009: This post contains  a formal response to a superseded consultation document. The <a href="http://www.coi.gov.uk/guidance.php?page=213">revised browser testing guidelines</a> are now available. The remainder of this post is  <strong> for historical purposes only</strong>.</p>

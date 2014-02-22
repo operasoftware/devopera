@@ -1,12 +1,12 @@
 ---
-title: SVG Web Fonts kung fu
+title: SVG Web Fonts Kung Fu
 authors:
 - zi-bin-cheah
 tags:
 - web-fonts
 - svg
 - odin
-layout: article
+layout: post
 ---
 <p>
 In conjuction with Opera 10, we have introduced <a href="http://dev.opera.com/articles/view/seven-web-fonts-showcases/" target="_blank">seven Web Fonts showcases</a> and other cool stuff in the <a href="http://dev.opera.com/articles/view/the-opera-10-experience/" target="_blank"> Opera 10 experience</a>.

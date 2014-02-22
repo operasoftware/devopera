@@ -1,5 +1,5 @@
 ---
-title: Win a ticket to Web Directions South!
+title: Win a Ticket to Web Directions South!
 authors:
 - chris-mills
 tags:
@@ -9,7 +9,7 @@ tags:
 - wds09
 - web-directions-south
 - odin
-layout: article
+layout: post
 ---
 <p>One of the most exciting conferences of the year is almost upon us,
 web friends. The <a href="http://south09.webdirections.org/" target="_blank">Web Directions South conference</a> in Sydney Australia, part of <a href="http://webweek.com.au/" target="_blank">Australian Web Week</a>, is running from October 6-9 and promises a

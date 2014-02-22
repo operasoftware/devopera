@@ -13,7 +13,7 @@ tags:
 - ui
 - hsla
 - odin
-layout: article
+layout: post
 ---
 <p>I&#39;m delighted to be able to introduce Opera 10 today to Web developers and designers worldwide, and to take a moment to tell you the reason why I chose Opera not only as my employer, but why Opera 10 has become my own browser of choice.</p>
 

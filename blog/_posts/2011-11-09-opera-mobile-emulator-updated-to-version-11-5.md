@@ -1,5 +1,5 @@
 ---
-title: Opera Mobile Emulator updated to version 11.5
+title: Opera Mobile Emulator Updated to Version 11.5
 authors:
 - andreas-bovens
 tags:
@@ -8,7 +8,7 @@ tags:
 - emulator
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>I&#39;m happy to announce that we have updated the <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a> to version 11.5, to match the most recent version of <a href="http://www.opera.com/mobile/">Opera Mobile</a> available on <a href="https://market.android.com/details?id=com.opera.browser">Android</a>, S60 and MeeGo devices.</p>
 <div><img src="/blog/opera-mobile-emulator-updated-to-version-11-5/opera-mobile-emulator.jpg" alt="The Opera Mobile Emulator in action, showing multiple instances of Opera Mobile with different screen sizes and input mechanisms" /></div>

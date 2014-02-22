@@ -6,7 +6,7 @@ tags:
 - css3
 - html5
 - odin
-layout: article
+layout: post
 ---
 <p><a href="http://html5please.us"><img src="http://cache.gyazo.com/c5d6f648394681c59d93c487b8347cf5.png" alt="" /></a></p>
   <p> Several months ago, <a href="http://paulirish.com">Paul Irish</a> and I got an idea to create a service that would give out recommendations on which HTML5 features to use and how to use them. Finally, yesterday, we pushed that site live: <a href="http://html5please.com">html5please.us</a>.</p>

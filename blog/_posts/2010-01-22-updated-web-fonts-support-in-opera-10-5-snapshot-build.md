@@ -1,5 +1,5 @@
 ---
-title: Updated Web Fonts support in Opera 10.5 snapshot build
+title: Updated Web Fonts Support in Opera 10.5 Snapshot Build
 authors:
 - andreas-bovens
 tags:
@@ -7,7 +7,7 @@ tags:
 - web-fonts
 - font-face
 - odin
-layout: article
+layout: post
 ---
 <p>Back when Opera 10 came out on September 1st last year, <a href="http://dev.opera.com/articles/view/the-opera-10-experience/#webfontsissue">we wrote</a> that, while Opera had <code>@font-face</code> support, specifying different weights and styles for a single font-family name was not working: only the last font specified (typically an italic/bold variant) would be applied, thereby overriding other weights and styles of that font family.</p>
 <p>Fixing this issue took us a bit longer than originally expected (ahem), but I&#39;m happy to announce that a much improved Web Fonts implementation has landed in the <a href="http://my.opera.com/desktopteam/blog/continued-stabilization">latest Opera 10.5 snapshot</a>!</p>

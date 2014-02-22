@@ -1,5 +1,5 @@
 ---
-title: A first peek at Opera 15 for Computers
+title: A First Peek at Opera 15 for Computers
 authors:
 - bruce-lawson
 tags:

@@ -6,7 +6,7 @@ tags:
 - yusef
 - unite
 - odin
-layout: article
+layout: post
 ---
 <h3>How are we doing?</h3>
 <p>

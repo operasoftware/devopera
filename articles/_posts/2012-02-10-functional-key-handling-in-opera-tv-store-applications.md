@@ -1,5 +1,5 @@
 ---
-title: Functional key handling in Opera TV Store applications
+title: Functional Key Handling in Opera TV Store Applications
 authors:
 - patrick-lauke
 intro: 'The Opera TV Store is designed to use the standard four-way directional keys on a remote control for spatial navigation. Authors may also choose to handle the navigation of their application themselves by intercepting key presses from the remote control, using a series of built-in global constants for each functional key.'

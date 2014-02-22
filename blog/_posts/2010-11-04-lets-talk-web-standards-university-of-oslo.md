@@ -1,5 +1,5 @@
 ---
-title: Let's talk Web Standards @ University of Oslo
+title: Let’s Talk Web Standards @ University of Oslo
 authors:
 - zi-bin-cheah
 tags:
@@ -9,7 +9,7 @@ tags:
 - css3
 - html5
 - odin
-layout: article
+layout: post
 ---
 <p>
 I was invited for an evening of informal sharing with the good people from University of Oslo. Despite frequenting this campus many times in 2008, little did I know that the Faculty of Computer Science have such a huge reputation. This place is widely regarded as the founding place of Object Oriented concept when Ole-Johan Dahl and Kristen Nygaard invented Simula here.

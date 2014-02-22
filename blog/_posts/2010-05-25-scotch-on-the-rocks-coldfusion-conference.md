@@ -1,12 +1,12 @@
 ---
-title: Scotch on the rocks
+title: Scotch on the Rocks
 authors:
 - chris-mills
 tags:
 - coldfusion
 - conference
 - odin
-layout: article
+layout: post
 ---
 <p><h2>ColdFusion conference, May 24 2010, London</h2>
 

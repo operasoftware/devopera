@@ -1,5 +1,5 @@
 ---
-title: Beautiful UI styling with CSS3 `text-shadow`, `box-shadow`, and `border-radius`
+title: Beautiful UI Styling With CSS3 `text-shadow`, `box-shadow`, and `border-radius`
 authors:
 - henrik-helmers
 intro: 'CSS3 shadows and rounded corners are easy to understand at a basic level, but what if you want to start using them in more advanced UI styling, such as textured buttons and semi-transparent glass effects? In this article Opera designer Jan Henrik Helmers hows you how to create these UI features and more, using CSS3 features, and no images whatsoever.'

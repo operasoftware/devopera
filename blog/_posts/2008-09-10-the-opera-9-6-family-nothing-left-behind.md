@@ -1,5 +1,5 @@
 ---
-title: The Opera 9.6 family–nothing left behind
+title: 'The Opera 9.6 Family: Nothing Left Behind'
 authors:
 - david-storey
 tags:
@@ -8,7 +8,7 @@ tags:
 - obml
 - sdk
 - odin
-layout: article
+layout: post
 ---
 <p>Opera has had a couple of releases today, to coincide with the dawn of the Opera 9.6 era.  The first release is the <a href="http://www.opera.com/products/desktop/next/">beta of Opera 9.6 for desktop</a>, and the other is a B2B-focused <a href="http://www.opera.com/pressreleases/en/2008/09/10/">Opera Devices 9.6 SDK</a>.  Both are on the Kestrel branch and thus use the Presto 2.1 rendering engine, just like Opera 9.5.</p>
 

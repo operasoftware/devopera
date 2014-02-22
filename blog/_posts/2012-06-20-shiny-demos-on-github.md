@@ -6,7 +6,7 @@ tags:
 - shiny-demos
 - github
 - odin
-layout: article
+layout: post
 ---
 <p>Coding is great, and reading web specifications is a joy like no other, but all work and no play can make Jack a dull boy, so it&#39;s important that we don&#39;t overlook The Shiny.</p>
 

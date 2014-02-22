@@ -9,7 +9,7 @@ tags:
 - vienna
 - tour
 - odin
-layout: article
+layout: post
 ---
 <p>
 Next week, we&#39;ll be joining the <a href="http://webexpotour.net/">WebExpo Tour</a> visiting three great cities in Central Europe: Bratislava, Budapest and Vienna.

@@ -1,5 +1,5 @@
 ---
-title: 'Open the Web update: LiveJournal'
+title: 'Open the Web Update: LiveJournal'
 authors:
 - david-storey
 tags:
@@ -8,7 +8,7 @@ tags:
 - livejornal
 - russia
 - odin
-layout: article
+layout: post
 ---
 <p>I’ve recently returned from Russia and the <a href="http://icamp.ru/home.php">iCamp</a> conference, where I meet, amongst others <a href="http://www.sup.com/en/">SUP</a>.  You may know them as the Russian company that purchased LiveJournal.  They were a company I really wanted to talk to as we’ve had many reports that the rich text editor on LJ doesn’t work in our browser.  This was a big issue for both ourselves and SUP as Opera is the number 2 browser in Russia, behind IE.  Live Journal is also very popular in Russia and other former Soviet states.</p>
 

@@ -1,5 +1,5 @@
 ---
-title: Opera Mobile 10 and Mini 5 final released
+title: Opera Mobile 10 and Mini 5 Final Released
 authors:
 - andreas-bovens
 tags:
@@ -7,7 +7,7 @@ tags:
 - development
 - opera-mini
 - odin
-layout: article
+layout: post
 ---
 <p>Earlier today, we&#39;ve released the final versions of <a href="http://www.opera.com/mobile/">Opera Mobile 10 and Opera Mini 5</a>. Both are totally free, so be sure to download them to your phone!</p>
 <p>Opera Mobile 10 is available for Windows Mobile and Nokia smartphones, and Opera Mini 5 will work on any phone with Java, as well as on BlackBerry phones. For Android and Windows Mobile, we even have native (beta) versions of Mini. Just visit <a href="http://m.opera.com">m.opera.com</a> and you&#39;ll get the available download options for your device.</p>

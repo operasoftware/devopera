@@ -1,5 +1,5 @@
 ---
-title: Opera 16 released in the wild
+title: Opera 16 Released in the Wild
 authors:
 - andreas-bovens
 tags:
@@ -10,7 +10,7 @@ tags:
 - geolocation
 - disconnect
 - odin
-layout: article
+layout: post
 ---
 <p>This morning, we&#39;ve spun out <a href="http://www.opera.com/computer/">Opera 16</a> stable from our <a href="http://www.opera.com/computer/next">Opera Next</a> stream.</p>
 <p>Some of the bigger changes include advanced settings in <a href="opera:flags">opera:flags</a>, auto-fill support for forms, Geolocation support, start page options (e.g. you can disable Discover content preloading), and an engine update to Chromium 29 (Opera 15 was on Chromium 28).</p>

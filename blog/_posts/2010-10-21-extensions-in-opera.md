@@ -1,13 +1,12 @@
 ---
-layout: post
 title: Extensions in Opera
 authors:
-- nafmo
+- peter-krefting
 tags:
-- Opera 11
+- opera-11
 - extensions
 - coreblog
-layout: article
+layout: post
 ---
 <p><p>
 An
@@ -98,7 +97,7 @@ of our internal development version, which is our primary testing
 platform here in the Core department.
 It is a bit clunky, but by implementing support for Browser Extensions,
 we have been able to test the feature from the ground up.
-It also means that we have been able to play with them even before the 
+It also means that we have been able to play with them even before the
 <a href="http://my.opera.com/desktopteam/blog/">Desktop team</a>
 guys  got their hands on it.
 
@@ -167,8 +166,8 @@ You will need to embed a script not unlike the one above inside either the
 (previously empty) <code>index.html</code> file, or a file linked from it.
 Once you have done that, you create the ZIP file, rename it, and install
 it as above.
-For more details, please see the 
-<a href="http://labs.opera.com/extensions-api/">API documentation</a>. 
+For more details, please see the
+<a href="http://labs.opera.com/extensions-api/">API documentation</a>.
 
 <p>
 To make Browser Extensions available to others, you can put them on a

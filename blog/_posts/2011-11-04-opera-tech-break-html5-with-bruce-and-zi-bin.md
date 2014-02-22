@@ -1,12 +1,12 @@
 ---
-title: 'Opera Tech Break: HTML5 with Bruce and Zi Bin'
+title: 'Opera Tech Break: HTML5 With Bruce and Zi Bin'
 authors:
 - patrick-lauke
 tags:
 - video
 - html5
 - odin
-layout: article
+layout: post
 ---
 <video width="620" height="360" controls="controls">
    <source src="http://people.opera.com/espenao/movie/techbreak-html5.mp4" type="video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;" />

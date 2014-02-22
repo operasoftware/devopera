@@ -1,13 +1,12 @@
 ---
-layout: post
-title: Native JSON support in Opera
+title: Native JSON Support in Opera
 authors:
 - hallvord-steen
 tags:
 - opera
-- JSON
+- json
 - coreblog
-layout: article
+layout: post
 ---
 A while ago I was asked to do quality assurance on our upcoming <a href="http://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a> implementation. We support the JSON grammar and API specified in ECMAScript edition 5, <a href="http://www.ecmascript.org/docs/tc39-2009-043.pdf" target="_blank">ES5</a>. ES5 was still being edited and changed while we were implementing and testing, but with the patient help of members of the ES-discuss list I got a <a href="http://testsuites.opera.com/JSON/" target="_blank">test suite</a> written and aligned with the upcoming spec. Stanislav - our JSON-implementor - had to be patient with me as tests were continually changing their pass conditions. For example, one day we were testing for the presence of a certain method, then the next day its absence!
 

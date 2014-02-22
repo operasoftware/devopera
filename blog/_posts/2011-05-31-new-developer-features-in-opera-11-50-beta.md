@@ -1,5 +1,5 @@
 ---
-title: New developer features in Opera 11.50 beta
+title: New Developer Features in Opera 11.50 Beta
 authors:
 - andreas-bovens
 tags:
@@ -10,7 +10,7 @@ tags:
 - time
 - video
 - odin
-layout: article
+layout: post
 ---
 <p>This morning, we&#39;ve released <a href="http://www.opera.com/browser/next/">Opera 11.50 beta</a> through our Next channel, and it comes with a number of interesting developer bits. Let&#39;s have a look.</p>
 <h3><code>classList</code> goodness</h3>

@@ -1,15 +1,14 @@
 ---
-layout: post
-title: Automated regression testing of the browser core
+title: Automated Regression Testing of the Browser Core
 authors:
-- wilhelmja
+- wilhelm-andersen
 tags:
-- test automation
+- test-automation
 - core
 - spartan
 - testing
 - coreblog
-layout: article
+layout: post
 ---
 <p>The cornerstone of all testing done on the core of the Opera browser is our automated regression testing system, named SPARTAN. The system consists of a central server and about 50 test machines running our 120 000 automated tests on all core reference builds. The purpose of this system is to help us discover any new bugs we introduce as early as possible, so that we can fix them <em>before</em> they cause any trouble for our users.</p>
 
@@ -70,6 +69,6 @@ have reintroduced an old crash, and must fix it.</dd>
 <p>All in all, we currently run about 120 000 tests on each configuration in each build, but this number changes daily. We continuously write new test cases for bugs or test suites for new or old features, and we also copy any publicly available test suites we find useful. Right now we are also working on automating many of our previously manual tests, including memory tests.</p>
 
 <h4>Step three: Human intervention</h4>
-<p>Once the machines are done with their part of the job with any particular build, they will send an email to a human who will continue the work. SPARTAN will generate a report of changes between this build and the previous build. In most builds there are some tests that go from FAIL to PASS because we have fixed something. But there are also often regressions—tests that go from PASS to FAIL—because we accidentally broke something while fixing something else. This is expected, and is the reason for why we do regression testing. We know there will always be regressions, and need to find them as quickly as possible in order to fix them before they can cause any trouble for users or customers.</p><span class='img'><img alt='' src='/blog/automated-testing-of-the-browser-core/regressions.png' /></span> 
+<p>Once the machines are done with their part of the job with any particular build, they will send an email to a human who will continue the work. SPARTAN will generate a report of changes between this build and the previous build. In most builds there are some tests that go from FAIL to PASS because we have fixed something. But there are also often regressions—tests that go from PASS to FAIL—because we accidentally broke something while fixing something else. This is expected, and is the reason for why we do regression testing. We know there will always be regressions, and need to find them as quickly as possible in order to fix them before they can cause any trouble for users or customers.</p><span class='img'><img alt='' src='/blog/automated-testing-of-the-browser-core/regressions.png' /></span>
 
 <p>The human tester will analyze each regressed test. If a hundred different tests started failing at the same time, they could all have broke because of one regression, or there could be several different ones. For each unique regression identified the human tester will report a new bug and assign it to the developer responsible for the code that broke. Once a fix is ready, we will run all our tests again.</p>

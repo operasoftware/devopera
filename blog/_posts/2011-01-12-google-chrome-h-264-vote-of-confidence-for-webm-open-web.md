@@ -1,5 +1,5 @@
 ---
-title: Google Chrome dropping H.264 – a vote of confidence for WebM and Open Web technologies
+title: Google Chrome Dropping H.264 — a Vote of Confidence for WebM and Open Web Technologies
 authors:
 - patrick-lauke
 tags:
@@ -14,7 +14,7 @@ tags:
 - open-web
 - mp4
 - odin
-layout: article
+layout: post
 ---
 <p><a href="http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html">Google&#39;s decision to drop native support for H.264 video in Chrome</a> clearly signals their confidence in the quality and viability of <a href="http://webmproject.org">WebM/VP8</a> as a way to deliver video content online, and their focus on the continued development of open formats.</p>
 <p>Opera has always championed the Open Web – a platform that is accessible to all, without the restrictions of patents and royalties. We <a href="http://dev.w3.org/html5/spec/introduction.html#history-1">started the work that eventually became HTML5</a>. When <a href="http://people.opera.com/howcome/2007/video/">Opera first proposed the creation of a native video element</a>, we called for a free and open video codec.</p>

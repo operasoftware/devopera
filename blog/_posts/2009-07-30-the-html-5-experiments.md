@@ -1,5 +1,5 @@
 ---
-title: The HTML 5 experiments
+title: The HTML 5 Experiments
 authors:
 - bruce-lawson
 tags:
@@ -9,7 +9,7 @@ tags:
 - canvas
 - aria
 - odin
-layout: article
+layout: post
 ---
 <p>I spoke at Open Source Conference (OSCON) on using <abbr>HTML</abbr> 5 today. A kind audience member videoed the  talk.</p>
 

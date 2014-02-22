@@ -1,5 +1,5 @@
 ---
-title: Creating Pseudo 3D Games with HTML 5 Canvas and Raycasting — Part 2
+title: Creating Pseudo 3D Games With HTML 5 Canvas and Raycasting — Part 2
 authors:
 - jacob-seidelin
 intro: 'In this, the second part of Jacob Seidelin’s series on creating games using HTML 5, JavaScript, canvas and raycasting, he takes the game put together in Part 1, and adds better collision detection, performance improvements, scenery and enemies to chase you!'

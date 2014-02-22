@@ -1,12 +1,12 @@
 ---
-title: 'What’s new in Opera development snapshots: 28 November 2011 edition'
+title: 'What’s New in Opera Development Snapshots: 28 November 2011 Edition'
 authors:
 - divya-manian
 tags:
 - cors
 - opera-next
 - odin
-layout: article
+layout: post
 ---
 <p>A new snapshot of Opera 12 has been released. You can get details on <a href="http://my.opera.com/desktopteam/blog/2011/11/28/glyphs-and-plugins">where to download that Opera Next snapshot at the Desktop Team blog</a>. So, lets see what is new.</p>
 <ul>

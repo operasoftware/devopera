@@ -8,7 +8,7 @@ tags:
 - tour
 - germany
 - odin
-layout: article
+layout: post
 ---
 <p>After 7 days, 10 universities and a lot of cool discussions during evening meet-ups, Opera&#39;s Geman university tour has comes to an end.</p>
 

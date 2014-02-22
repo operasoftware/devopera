@@ -1,14 +1,13 @@
 ---
-layout: post
-title: Test automation with OperaWatir
+title: Test Automation With OperaWatir
 authors:
-- wilhelmja
+- wilhelm-andersen
 tags:
-- core qa
+- core-qa
 - test automation
 - watir
 - coreblog
-layout: article
+layout: post
 ---
 <p>To make sure new versions of our browser core are of sufficient quality before making their way into any of our products, we run more than 100,000 automated tests on a number of different reference configurations every time we have a new build.
 

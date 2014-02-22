@@ -1,16 +1,15 @@
 ---
-layout: post
-title: Ragnarök — viking browser with HTML5 parser!
+title: Ragnarök — Viking Browser With HTML5 Parser!
 authors:
-- jamaHutto
+- stig-halvorsen
 tags:
-- Opera 11
+- opera-11
 - html5
 - core
 - webstandards
 - opera
 - coreblog
-layout: article
+layout: post
 ---
 <p>Making its debut in a Labs build this week is <a href="http://en.wikipedia.org/wiki/Ragnar%f6k">Ragnar&#xF6;k</a>, our implementation of the HTML5 Parsing algorithm. We&#39;d love you to try to break this and give us feedback, so please grab a copy to install on your machine from one of the download links below.</p>
 

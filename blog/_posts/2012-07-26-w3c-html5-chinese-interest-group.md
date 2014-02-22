@@ -10,7 +10,7 @@ tags:
 - html5
 - cjk
 - odin
-layout: article
+layout: post
 ---
 <h3>Trip to Seoul</h3>
 <p>

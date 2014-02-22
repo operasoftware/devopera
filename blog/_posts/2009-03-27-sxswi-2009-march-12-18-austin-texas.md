@@ -9,7 +9,7 @@ tags:
 - standards
 - education
 - odin
-layout: article
+layout: post
 ---
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>
 

@@ -1,5 +1,5 @@
 ---
-title: Opera 14 beta for Android is out
+title: Opera 14 Beta for Android Is Out
 authors:
 - andreas-bovens
 tags:

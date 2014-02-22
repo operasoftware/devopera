@@ -1,5 +1,5 @@
 ---
-title: Accessibility supported web content technologies in WCAG 2.0
+title: Accessibility Supported Web Content Technologies in WCAG 2.0
 authors:
 - henny-swan
 tags:
@@ -7,7 +7,7 @@ tags:
 - wai-aria
 - accessibility
 - odin
-layout: article
+layout: post
 ---
 <p>A new concept in <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 is <a href="http://www.w3.org/TR/WCAG20/#accessibility-supported">accessibility supported</a> web content technologies. This has confused a few people and also raised the wider question of what technologies are in fact accessibility supported?</p>
 

@@ -4,7 +4,7 @@ authors:
 - mike-taylor
 intro: 'HTML5 includes the Drag and Drop API, which gives us the ability to natively drag, drop, and transfer data to HTML elements. Up until now, JavaScript libraries have commonly been used to achieve something similar. What libraries such as jQuery UI or Dojo can’t do, however, is interact with other windows, frames, and applications (to and from the file system) or access a rich drag data store.'
 tags:
-- draganddrop
+- drag-and-drop
 - html5
 - javascript
 - server

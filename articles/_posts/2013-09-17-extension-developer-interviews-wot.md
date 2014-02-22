@@ -1,5 +1,5 @@
 ---
-title: 'Extension developer interview: coffee with the WOT team'
+title: 'Extension Developer Interview: Coffee With the WOT Team'
 authors:
 - andreas-bovens
 intro: 'We sat down with Ulla from Web of Trust, and asked her what makes WOT special, how the service makes money, which extension development tools the WOT developers use, and much more.'

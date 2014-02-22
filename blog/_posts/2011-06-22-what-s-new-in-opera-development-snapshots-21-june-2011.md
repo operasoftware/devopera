@@ -1,11 +1,11 @@
 ---
-title: 'What’s new in Opera development snapshots: 21 June 2011'
+title: 'What’s New in Opera Development Snapshots: 21 June 2011'
 authors:
 - divya-manian
 tags:
 - opera-next
 - odin
-layout: article
+layout: post
 ---
   <p>Another Tuesday, <a href="http://my.opera.com/desktopteam/blog/2011/06/21/another-happy-tuesday">snapshot</a> (&amp; <a href="http://my.opera.com/desktopteam/blog/2011/06/20/presto-2-9">more</a>). Let&#39;s see what&#39;s new.</p>
   <p>As usual, your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.<b>9</b>.<b>168</b> Version/11.50&quot; under <i>Browser Identification</i>).</p>

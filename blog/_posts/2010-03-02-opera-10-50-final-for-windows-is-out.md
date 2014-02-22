@@ -1,5 +1,5 @@
 ---
-title: Opera 10.50 final for Windows is out!
+title: Opera 10.50 Final for Windows Is Out!
 authors:
 - andreas-bovens
 tags:
@@ -9,7 +9,7 @@ tags:
 - release
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>This morning, we&#39;ve released the much anticipated <a href="http://www.opera.com/browser/">final version of Opera 10.50</a> for Windows — work on Mac and Linux versions is still ongoing, so <a href="http://my.opera.com/desktopteam/blog/">stay tuned</a>.</p>
 <p>Over the last couple of weeks, we&#39;ve gradually lifted the veil on new features and standards support, but here are a couple of highlights:</p>

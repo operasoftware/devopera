@@ -1,11 +1,11 @@
 ---
-title: 'What’s new in Opera development snapshots: 28 September 2011 edition'
+title: 'What’s New in Opera Development Snapshots: 28 September 2011 Edition'
 authors:
 - divya-manian
 tags:
 - opera-next
 - odin
-layout: article
+layout: post
 ---
 <p>The biggest news for this <a href="http://my.opera.com/desktopteam/blog/2011/09/28/core-bookmark-star">snapshot</a> is that your users will no longer see an XML screen of death and instead it will be rendered to the error console.</p>
 <p>As usual, your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.9.<b>211</b> Version/12.00&quot; under <i>Browser Identification</i>) (or you can download it from the blogpost linked above).</p>

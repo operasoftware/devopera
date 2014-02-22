@@ -1,12 +1,12 @@
 ---
-title: New HTML5 features in Opera 11
+title: New HTML5 Features in Opera 11
 authors:
 - bruce-lawson
 tags:
 - opera-11
 - html5
 - odin
-layout: article
+layout: post
 ---
 <p>With all the excitement of Opera 11&#39;s tab stacking and extensions, you might have thought that we had neglected our HTML5 commitments. You&#39;d be wrong! After all, the browser that began the HTML5 work is unlikely to rest on our laurels. </p>
 <p>From <a href="http://www.opera.com/docs/">Frank&#39;s splendid documentation</a>, the <a href="http://www.opera.com/docs/changelogs/windows/1100/">Opera 11 changelog</a> tells us that support has been added for the following:</p>

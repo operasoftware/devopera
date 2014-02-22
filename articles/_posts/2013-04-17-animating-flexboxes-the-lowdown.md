@@ -1,5 +1,5 @@
 ---
-title: 'Animating Flexboxes: the Lowdown'
+title: 'Animating Flexboxes: The Lowdown'
 authors:
 - chris-mills
 intro: 'In this article, Chris Mills explores what can be achieved by using animations and transitions — along with a little JavaScript — in conjunction with Flexbox.'

@@ -1,12 +1,12 @@
 ---
-title: クロスブラウザな CSS box-shadow
+title: クロスブラウザな CSS `box-shadow`
 authors:
 - rustam-gaffanov
 tags:
 - box-shadow
 - css
 - css3
-- ie-support
+- ie
 layout: article
 ---
 

@@ -3,13 +3,13 @@ title: Singing an Opera at SXSWi 2012
 authors:
 - chris-mills
 tags:
-- presentations
+- presentation
 - sxsw
 - panel
 - talk
 - opera
 - odin
-layout: article
+layout: post
 ---
 <img src="/blog/singing-an-opera-at-sxswi-2012/sxswi.jpg" style="border: 10px solid #EFECDD;" />
 
