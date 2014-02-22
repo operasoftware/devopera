@@ -1,12 +1,12 @@
 {% assign items = include.items | split: '|' %}
-<ul>
+<ul class="menu">
 {% for item in items %}
-	<li>
+	<li class="menu__item">
 	{% assign url = page.url | remove: 'index.html' | replace: '/','' %}
 	{% if url == item %}
 		{{ item | capitalize }}
 	{% else %}
-		<a href="/{{ item }}/">{{ item | capitalize }}</a>
+		<a href="/{{ item }}/" class="menu__link">{{ item | capitalize }}</a>
 	{% endif %}
 	</li>
 {% endfor %}

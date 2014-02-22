@@ -1,31 +1,113 @@
+// -------------------------------
 // Header
 // -------------------------------
 .header {
 	padding:36px 0;
 	@extend %grid;
 	}
-	.header__title {
+	.header__logo {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--one-third;
 		@extend %desk--three-twelfths;
+		margin:0 0 24px;
 		}
 	.header__menu {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--one-half;
 		@extend %desk--six-twelfths;
-		ul {
-			@extend %grid;
-			li {
-				@extend %grid__item;
-				@extend %palm--one-whole;
-				@extend %lap--one-third;
-				@extend %desk--one-third;
-				}
-			}
+		margin:0 0 24px;
 		}
 	.header__search {
 		@extend %grid__item;
+		@extend %lap--one-third;
 		@extend %desk--three-twelfths;
+		@extend %push--lap--one-third;
+		}
+
+// -------------------------------
+// Logo
+// -------------------------------
+.logo {
+	padding-left:48px;
+	letter-spacing:-1px;
+	font-weight:bold;
+	font-size:20px;
+	}
+	.logo__wrapper {
+		&:visited {
+			color:#000;
+			}
+		&:before {
+			position:absolute;
+			margin:-12px 0 0 -53px;
+			width:48px;
+			height:48px;
+			background:url(/images/logo.png) no-repeat;
+			@include retina {
+				background-image:url(/images/logo@2x.png);
+				background-size:48px;
+				}
+			content:'';
+			}
+		}
+	.logo__thinner {
+		font-weight:100;
+		}
+
+// -------------------------------
+// Menu
+// -------------------------------
+.menu {
+	@extend %grid;
+	font-size:20px;
+	}
+	.menu__item {
+		@extend %grid__item;
+		@extend %palm--one-whole;
+		@extend %lap--one-third;
+		@extend %desk--one-third;
+		}
+	.menu__link {
+		margin-left:-5px;
+		padding:5px 5px 2px;
+		border-radius:4px;
+		&:hover,
+		&:focus {
+			background:mix($blue, #FFF, 8%);
+			}
+		&:visited {
+			color:$blue;
+			}
+		}
+
+// -------------------------------
+// Search
+// -------------------------------
+.search {
+	}
+	.search__field {
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		padding:0 0 0 11px;
+		width:100%;
+		height:22px;
+		border:none;
+		border-radius:22px;
+		background:linear-gradient(
+			to bottom,
+			mix(#000, #FFF, 4%),
+			mix(#000, #FFF, 3%));
+		box-shadow:
+			inset 0 2px 3px rgba(#000, 0.18),
+			inset 0 0 0 1px rgba(#000, 0.22);
+		font-size:12px;
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-decoration {
+			-webkit-appearance:none;
+			}
+		&:focus {
+			outline:none;
+			}
 		}
