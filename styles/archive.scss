@@ -1,15 +1,25 @@
+// -------------------------------
 // Archive
 // -------------------------------
 .archive {
 	@extend %grid;
 	@extend %grid--rev;
 	}
-	.archive__column {
+	.archive__main {
 		@extend %grid__item;
 		@extend %one-whole;
-		@extend %lap--one-half;
-		@extend %desk--one-third;
+		@extend %lap--one-whole;
+		@extend %desk--two-thirds;
 		}
+		.archive__wrapper {
+			@extend %grid;
+			}
+			.archive__column {
+				@extend %grid__item;
+				@extend %one-whole;
+				@extend %lap--one-half;
+				@extend %desk--one-half;
+				}
 	.archive__aside {
 		@extend %grid__item;
 		@extend %one-whole;

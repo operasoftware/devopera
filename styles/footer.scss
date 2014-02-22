@@ -1,10 +1,16 @@
+// -------------------------------
 // Footer
 // -------------------------------
 .footer {
 	padding:36px 0;
+	color:$grey;
+	font-size:14px;
 	@extend %grid;
 	p {
 		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--three-quarters;
+		@extend %desk--seven-twelfths;
 		}
 	}
 .footer--index {
