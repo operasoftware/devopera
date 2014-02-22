@@ -1,5 +1,5 @@
 ---
-title: 'Extension developer interview: coffee with the Adblock Plus team'
+title: 'Extension Developer Interview: Coffee With the Adblock Plus Team'
 authors:
 - andreas-bovens
 intro: 'We sat down with Ben from Adblock Plus, and asked him all about the product, how it started, how it’s different, how the company behind it makes money, whether ad blocking is hurting the internet or not, and more.'

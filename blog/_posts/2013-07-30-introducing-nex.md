@@ -1,5 +1,5 @@
 ---
-title: Introducing NEX — standards-oriented browser add-ons
+title: Introducing NEX — Standards-Oriented Browser Add-Ons
 authors:
 - rich-tibbett
 tags:
@@ -7,7 +7,7 @@ tags:
 - nex
 - extensions
 - odin
-layout: article
+layout: post
 ---
 <p><em>Here we introduce NEX -  a vendor-neutral packaging format for browser add-ons that we have initially implemented on top of the Chromium .crx format in Opera. We intend to further develop this as an open add-ons format through international standards bodies. Initially we intend to consolidate the differences between add-on execution environments themselves considering their current similarities. As a secondary objective we then aim to kick-start meaningful discussion around shared system and device-level APIs with a view to making browser add-ons first-class citizens of the web core.</em></p>
 

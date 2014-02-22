@@ -6,7 +6,7 @@ tags:
 - china
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>
 Together with my colleague Henny Swan I&#39;ve been working in the China Beijing office for the last few weeks which has been really interesting both in terms of getting to know the country and also the state of web standards in China. I thought it would be useful to share some of the thoughts and conversations I had with people around the importance of creating standards compliant web page.

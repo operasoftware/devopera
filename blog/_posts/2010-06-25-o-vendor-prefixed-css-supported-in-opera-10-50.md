@@ -1,5 +1,5 @@
 ---
-title: -o- vendor prefixed CSS supported in Opera 10.50 and 10.60
+title: Vendor Prefixed CSS Supported in Opera 10.50 and 10.60
 authors:
 - bruce-lawson
 tags:
@@ -7,7 +7,7 @@ tags:
 - css3
 - prefixes
 - odin
-layout: article
+layout: post
 ---
 <p>The CSS specification allows for <a href="http://www.w3.org/TR/CSS2/syndata.html#vendor-keywords">vendor-specific extensions</a>. These are usually (but not exclusively) used for experimental additions to the CSS specification that have not yet reached Candidate Recommendation stage. The following are used in Opera 10.5x and Opera 10.60:</p>
 

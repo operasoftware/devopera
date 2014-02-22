@@ -1,5 +1,5 @@
 ---
-title: HTML5 <video> Artikel und Wettbewerb auf Chip.de
+title: HTML5 `<video>` Artikel Und Wettbewerb Auf Chip.de
 authors:
 - patrick-lauke
 tags:
@@ -7,7 +7,7 @@ tags:
 - video
 - wettbewerb
 - odin
-layout: article
+layout: post
 ---
 <p>Wer schon heute mit den neuen multimedialen Möglichkeiten von HTML5 experimentieren will, sollte mal einen Blick auf meinen vor kurzem auf <a href="http://chip.de">Chip.de</a> erschienenen Artikel <a href="http://www.chip.de/artikel/Workshop-Das-HTML5-video-Element_43464179.html"><cite>Das HTML5 &lt;video&gt;-Element</cite></a> werfen (eine erweiterte Version von <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a>).</p>
 

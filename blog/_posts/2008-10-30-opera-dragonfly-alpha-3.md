@@ -1,5 +1,5 @@
 ---
-title: Opera Dragonfly alpha 3
+title: Opera Dragonfly Alpha 3
 authors:
 - david-storey
 tags:
@@ -7,7 +7,7 @@ tags:
 - dragonfly
 - developer-tools
 - odin
-layout: article
+layout: post
 ---
 <p> Today saw the release of <a href="http://www.opera.com/products/dragonfly">Opera Dragonfly alpha 3</a>.  As it is based on web technology, you don&#39;t have to do anything—it will just update itself the next time you load it.  Key new features are DOM editing, localisation, and improved breadcrumb trail.  Full details can be found at the <a href="http://my.opera.com/dragonfly/blog/introducing-opera-dragonfly-alpha-3">Opera Dragonfly blog</a>. </p>
 <h3>object not found error?</h3>

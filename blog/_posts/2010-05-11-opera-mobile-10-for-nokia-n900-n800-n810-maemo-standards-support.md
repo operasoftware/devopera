@@ -1,5 +1,5 @@
 ---
-title: Opera Mobile 10 for Nokia N900 and N800/N810 (Maemo) – Standards support
+title: Opera Mobile 10 for Nokia N900 and N800/N810 (Maemo) — Standards Support
 authors:
 - zi-bin-cheah
 tags:
@@ -11,7 +11,7 @@ tags:
 - standards
 - testing
 - odin
-layout: article
+layout: post
 ---
 <p class="note" id="note" style="background-color:#ccc;border-radius:15px;moz-border-radius:15px;webkit-border-radius:15px;padding:5px">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 

@@ -1,5 +1,5 @@
 ---
-title: What’s a browser Security Issue, anyway?
+title: What’s a Browser Security Issue, Anyway?
 authors:
 - yngve-pettersen
 intro: 'A large number of people are looking for security problems and vulnerabilities in Opera and other applications. Some people don’t like this, but I think it is actually fine. When done responsibly this can increase security for the application and is thus of great benefit to the users. However, when done irresponsibly, the activity can cause needless alarm and waste the time of the application vendors AND the end users.'

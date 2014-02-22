@@ -1,5 +1,5 @@
 ---
-title: Find me! Geolocation-enabled Opera build
+title: Find Me! Geolocation-Enabled Opera Build
 authors:
 - chris-mills
 intro: 'Another great Opera technology release is with us! We are delighted to release the first build of Opera with Geolocation API support. You can use this to expose the browser’s geographical position, and make use of it in your applications.'

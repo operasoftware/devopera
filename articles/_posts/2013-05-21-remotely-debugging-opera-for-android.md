@@ -1,5 +1,5 @@
 ---
-title: Remotely debugging Opera for Android
+title: Remotely Debugging Opera for Android
 authors:
 - bruce-lawson
 - chris-mills

@@ -6,7 +6,7 @@ tags:
 - web-directions
 - interview
 - odin
-layout: article
+layout: post
 ---
 <p>When some of the Opera crew went to Australia to sponsor this year&#39;s <a href="http://south08.webdirections.org/">Web Directions South conference</a>, we noticed that the conference programme looked considerably sexier than the average programe.</p>
 <p>Conference organiser <a href="http://johnfallsopp.com/">John Allsopp</a> said,</p>

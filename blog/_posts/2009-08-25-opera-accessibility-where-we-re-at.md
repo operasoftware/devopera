@@ -1,11 +1,11 @@
 ---
-title: 'Opera accessibility: where we’re at'
+title: 'Opera Accessibility: Where We’re At'
 authors:
 - henny-swan
 tags:
 - accessibility
 - odin
-layout: article
+layout: post
 ---
 <p>It wont be long until I&#39;ve been at Opera a year during which time I&#39;ve been exploring Opera&#39;s more obvious and less obvious accessibility features. As we look forwards at how we enhance the browser for better accessibility support for both users and developers creating accessible standards compliant websites, I thought I&#39;d share with you some of my favorite bits.</p>
 <p>This is not intended as a comprehensive overview of accessibility features - this can be found in the <a href="http://www.opera.com/support/">Opera Support section</a> - but rather an overview of what I&#39;ve learnt and really come to appreciate within Opera.</p>

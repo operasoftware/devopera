@@ -1,5 +1,5 @@
 ---
-title: The State of Vertical Range Inputs (as of Nov 2012)
+title: The State of Vertical Range Inputs (As of Nov 2012)
 authors:
 - mike-taylor
 tags:
@@ -7,7 +7,7 @@ tags:
 - html5
 - forms
 - odin
-layout: article
+layout: post
 ---
 
 Yesterday I found myself needing to write a silly demo to sketch out some code (to be used in a larger project). The idea was to dump a ton of `<input type=range>` elements on a page, alternate between horizontal and vertical orientations, and manipulate the `value` property in various magical ways.

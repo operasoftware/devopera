@@ -1,5 +1,5 @@
 ---
-title: 'Widget Runtime: WAC 1.0-supporting Beta for Android'
+title: 'Widget Runtime: WAC 1.0-Supporting Beta for Android'
 authors:
 - pavel-fokin
 intro: 'Today we are rolling out the next bugfix release of our Android widget runtime with WAC 1.0 APIs support.'

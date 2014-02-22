@@ -1,12 +1,12 @@
 ---
-title: Кроссбраузерные box-shadow в CSS
+title: Кроссбраузерные `box-shadow` в CSS
 authors:
 - rustam-gaffanov
 tags:
 - box-shadow
 - css
 - css3
-- ie-support
+- ie
 layout: article
 ---
 

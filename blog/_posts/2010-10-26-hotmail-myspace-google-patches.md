@@ -1,10 +1,10 @@
 ---
-title: Hotmail, MySpace, Google patches
+title: Hotmail, MySpace, Google Patches
 authors:
 - ola-kleiven
 tags:
 - sitepatching
-layout: article
+layout: post
 ---
 Only additions this week
 

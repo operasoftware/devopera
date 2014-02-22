@@ -4,7 +4,7 @@ authors:
 - ola-kleiven
 tags:
 - sitepatching
-layout: article
+layout: post
 ---
 We don&#39;t have a file for you this time, but want to highlight the latest 11.62 snapshot over at <a href="http://my.opera.com/desktopteam/blog/2012/02/09/another-11-62-snapshot" target="_blank">Desktopteam blog</a><br/><br/>This build has backported two recent Core changes of some compatibility impact, namely CORE-10115 and CORE-24242. <br/><br/><span style="font-size: 140%">Hiding</span><br/><br/>CORE-10115 performs the same trick we (and other browsers) have had in place for document.all for quite some time, hide it from detection, on window.event and {window,Node}.{attach,detach}Event<br/><br/>These properties were implemented in Opera for IE compat many years ago and have been a pain ever since, as many script do things like<br/><br/><pre>
 if(window.attachEvent){

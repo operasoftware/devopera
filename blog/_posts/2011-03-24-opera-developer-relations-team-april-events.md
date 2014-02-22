@@ -1,5 +1,5 @@
 ---
-title: Opera Developer Relations Team April events
+title: Opera Developer Relations Team April Events
 authors:
 - zi-bin-cheah
 tags:
@@ -7,7 +7,7 @@ tags:
 - talk
 - odevrel
 - odin
-layout: article
+layout: post
 ---
 <p>The Developer Relations Team is on the road speaking at different events and venues this April, including our first in Bulgaria. Come meet us!</p>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Widget Runtime: WAC 1.0-supporting Alpha for Android'
+title: 'Widget Runtime: WAC 1.0-Supporting Alpha for Android'
 authors:
 - pavel-fokin
 intro: 'Howdy folks, in these short days of the year – “vintersolverv” in Norwegian – Opera Software has prepared something to lighten things up: the alpha release of our mobile widget manager for Android with support for WAC 1.0 APIs!'

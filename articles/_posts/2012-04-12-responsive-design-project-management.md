@@ -1,5 +1,5 @@
 ---
-title: 'Responsive Web Design: a Project-Management Perspective'
+title: 'Responsive Web Design: A Project-Management Perspective'
 authors:
 - rudy-rigot
 - sophie-taboni

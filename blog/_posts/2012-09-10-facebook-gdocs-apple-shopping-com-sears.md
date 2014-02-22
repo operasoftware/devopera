@@ -4,7 +4,7 @@ authors:
 - ola-kleiven
 tags:
 - sitepatching
-layout: article
+layout: post
 ---
 <span style="font-size: 140%">Added patches</span><br/><br/>PATCH-852, facebook: avoid unwanted chat box scroll. Small regression from a Core fix causes chat box to jump. 12.50 only.<br/><br/>PATCH-851, Fix event object detection in old DynAPI code.<br/><br/>PATCH-850, ieee.org - postpone insertion of JSONP data source until we&#39;ve parsed the element the data is meant to be inserted into. Core issue.<br/><br/>PATCH-847, sears.com - fix moving product thumbnail images. Core issue with collapsing margins on hover.<br/><br/>PATCH-846, apple.com/jobs: don&#39;t reload from within unload handler.<br/><pre>
 window.onunload = function(){ location.reload(true);};

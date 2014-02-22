@@ -1,19 +1,18 @@
 ---
-layout: post
 title: WebGL and Hardware Acceleration
 authors:
-- timjoh
+- tim-johansson
 tags:
 - webgl
-- hardware acceleration
+- hardware-acceleration
 - 3d
 - opera
 - canvas
 - coreblog
-layout: article
+layout: post
 ---
-<p>A long time ago, in an office far far away...Opera released a custom build showing an implementation of a <a href="http://my.opera.com/timjoh/blog/2007/11/13/taking-the-canvas-to-another-dimension" rel="nofollow">3D canvas context</a>. Now, more than 3 years later, we are releasing the first public build with a standards-based 3D canvas implementation using <a href="http://www.khronos.org/webgl" rel="nofollow">WebGL</a> for Windows.</p> <img src="/blog/webgl-and-hardware-acceleration-2/opera11webgl.png" alt="A WebGL demo running in the Opera 11 preview with WebGL and Hardware Acceleration for Windows" height="300" style="float:right; margin: 10px 0 10px 10px;" />		
-		
+<p>A long time ago, in an office far far away...Opera released a custom build showing an implementation of a <a href="http://my.opera.com/timjoh/blog/2007/11/13/taking-the-canvas-to-another-dimension" rel="nofollow">3D canvas context</a>. Now, more than 3 years later, we are releasing the first public build with a standards-based 3D canvas implementation using <a href="http://www.khronos.org/webgl" rel="nofollow">WebGL</a> for Windows.</p> <img src="/blog/webgl-and-hardware-acceleration-2/opera11webgl.png" alt="A WebGL demo running in the Opera 11 preview with WebGL and Hardware Acceleration for Windows" height="300" style="float:right; margin: 10px 0 10px 10px;" />
+
 <p>WebGL is a standard developed by the <a href="http://www.khronos.org">Khronos group</a>, where Opera is an active member participating in the standardization process. We have been working on a WebGL implementation since early 2009, when the standardization process started. The specification has been changing quite frequently over the past few years, but now it is starting to mature and stabilise, which makes this the perfect time to release a public preview of our current WebGL implementation.</p>
 <p>For those of you who have never heard of WebGL, it is a context to the <code>canvas</code> element which gives you hardware-accelerated 3D rendering in JavaScript. The API is based on OpenGL ES 2.0, which means that it is possible to run WebGL on many different devices, such as desktop computers, mobile phones and TVs. The <a href="http://khronos.org/webgl/wiki/Main_Page">WebGL public wiki</a> contains more information about the standard, including tutorials and lots of demos – so it is a good place to go if you want to see our WebGL implementation in action.</p>
 

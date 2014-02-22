@@ -1,18 +1,17 @@
 ---
-layout: post
-title: Native webcam support and orientation events - technology preview
+title: Native Webcam Support and Orientation Events — Technology Preview
 authors:
-- richtr
+- rich-tibbett
 tags:
-- getUserMedia
+- getusermedia
 - mobile
 - html
 - whatwg
-- W3C
+- w3c
 - orientation
 - device
 - coreblog
-layout: article
+layout: post
 ---
 <p><strong>UPDATE:</strong> We have released newer experimental builds with webcam support for both Opera Desktop on Mac/Linux/Windows and Opera Mobile on Android. You can get more information and download these builds <a href="http://dev.opera.com/articles/view/labs-more-fun-using-the-web-with-getusermedia-and-native-pages/" rel="nofollow" target="_blank">here</a>.<br/><br/>---<br/><br/>Last week we wrote a blog post discussing our internal prototyping of <a href="http://my.opera.com/core/blog/2011/03/14/web-meet-device" rel="nofollow" target="_blank">web camera streaming in the browser</a>. On the very same day, the proposed standard interface on which that was built <a href="http://html5.org/tools/web-apps-tracker?from=5944&amp;to=5945" rel="nofollow" target="_blank">changed considerably</a>. <br/><br/>This week we are pleased to announce the release an updated preview build of <a href="http://www.opera.com/mobile/" rel="nofollow" target="_blank">Opera Mobile for Android</a> enabling web developers to access and interact natively with a device&#39;s webcam via JavaScript. This build has been entirely re-based on the new standards proposal introduced last week so it&#39;s goodbye to the <span style="font-family: courier new">&lt;device&gt;</span> element and a big warm hello to the <span style="font-family: courier new">getUserMedia</span> JavaScript API. ... </p><!--more--><p>In addition to web camera streaming, Opera is also previewing support for the draft <a href="http://dev.w3.org/geo/api/spec-source-orientation.html" target="_blank">W3C Orientation Events</a> specification. These capabilities open up some exciting possibilities for the future of the web itself.</p>
 
@@ -33,7 +32,7 @@ layout: article
 &lt;h1&gt;Simple web camera display demo&lt;/h1&gt;
 &lt;video autoplay&gt;&lt;/video&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
-var video = document.getElementsByTagName(&#39;video&#39;)[0], 
+var video = document.getElementsByTagName(&#39;video&#39;)[0],
        heading = document.getElementsByTagName(&#39;h1&#39;)[0];
 
 if(navigator.getUserMedia) {
@@ -42,11 +41,11 @@ if(navigator.getUserMedia) {
     video.src = stream;
   }
   function errorCallback( error ) {
-    heading.textContent = 
+    heading.textContent =
         &quot;An error occurred: [CODE &quot; + error.code + &quot;]&quot;;
   }
 } else {
-  heading.textContent = 
+  heading.textContent =
       &quot;Native web camera streaming is not supported in this browser!&quot;;
 }
 &lt;/script&gt;
@@ -54,7 +53,7 @@ if(navigator.getUserMedia) {
 
 <p>The code above will render as follows:</p>
 
-<span class='imgcenter'><img alt='' src='/blog/webcam-orientation-preview/coreconcerns-device1.png' /></span> 
+<span class='imgcenter'><img alt='' src='/blog/webcam-orientation-preview/coreconcerns-device1.png' /></span>
 <p>More simple live web camera demos are available <a href="http://people.opera.com/richt/release/demos/device" target="_blank">here</a>.</p>
 
 <span style="font-size: 120%">Opera&#39;s implementation</span>
@@ -85,7 +84,7 @@ function update(evt){
   var y2 = 240 - Math.round(10.0 * Math.cos(alpha - Math.PI/2));
   var x3 = 240 + Math.round(10.0 * Math.sin(alpha + Math.PI/2));
   var y3 = 240 - Math.round(10.0 * Math.cos(alpha + Math.PI/2));
-  
+
   ctx.beginPath();
   ctx.moveTo(x1,y1);
   ctx.lineTo(x2,y2);
@@ -99,7 +98,7 @@ function update(evt){
 window.addEventListener(&#39;deviceorientation&#39;, update, true);
 &lt;/script&gt;</pre><span style="font-size: 90%">(<a href="http://people.opera.com/richt/release/demos/orientation/basic/orientation_compass.html" target="_blank">live demo</a>)</span>
 
-<p>The code above will render as follows:</p><span class='imgcenter'><img alt='' src='/blog/webcam-orientation-preview/coreconcerns-device2.png' /></span> 
+<p>The code above will render as follows:</p><span class='imgcenter'><img alt='' src='/blog/webcam-orientation-preview/coreconcerns-device2.png' /></span>
 <p>We have also created a few other <a href="http://people.opera.com/richt/release/demos/orientation" target="_blank">live orientation demos</a> that you should check out.</p>
 
 <span style="font-size: 160%">Next steps</span>

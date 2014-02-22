@@ -1,5 +1,5 @@
 ---
-title: 'Good news for Mac users: Opera 10.50 beta for Mac out now!'
+title: 'Good News for Mac Users: Opera 10.50 Beta for Mac Out Now!'
 authors:
 - shwetank-dixit
 tags:
@@ -9,7 +9,7 @@ tags:
 - opera-10
 - video
 - odin
-layout: article
+layout: post
 ---
 <p>Opera 10.50 beta for mac is out now. <a href="http://www.opera.com/browser/next/" target="_blank">Download it now</a> and take it for a spin!</p>
 <p>There is a bunch of cool new stuff and improvements over the pre-alpha build we had released earlier.</p>

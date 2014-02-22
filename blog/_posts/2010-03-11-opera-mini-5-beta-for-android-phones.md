@@ -1,5 +1,5 @@
 ---
-title: Opera Mini 5 beta for Android phones
+title: Opera Mini 5 Beta for Android Phones
 authors:
 - andreas-bovens
 tags:
@@ -7,7 +7,7 @@ tags:
 - opera-mini
 - android
 - odin
-layout: article
+layout: post
 ---
 <span class='imgright'><img alt='' src='/blog/opera-mini-5-beta-for-android-phones/OperaMini5-android-pr.jpg' /></span>
 <p><strong>01-06-2010: Minor update to reflect UA string change</strong></p>

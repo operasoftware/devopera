@@ -1,5 +1,5 @@
 ---
-title: 'UK university tour: Web Standards for the Future'
+title: 'UK University Tour: Web Standards for the Future'
 authors:
 - bruce-lawson
 tags:
@@ -9,7 +9,7 @@ tags:
 - html5
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>Last week I was privileged to talk to students at several <abbr>UK</abbr> universities and present on Web Standards, why they&#39;re vital for cross-device development, accessibility and keeping the Web genuinely <strong>world</strong>-wide, as well as give a preview of some emerging standards like <abbr>HTML</abbr> 5. Thanks to all who came to listen, asked questions and came for a beer afterwards, and to all the lecturers who invited and welcomed us.</p>
 <p>A zip of the Opera Show presentation <a href="/blog/uk-university-tour-web-standards-for-the-future/opera-uk-tour.zip">&quot;Web Standards for the Future&quot; (ZIP 4.6 MB)</a> is available for your viewing pleasure, although to see the examples of the <code>video</code> element, you&#39;ll need the &quot;All Together Now&quot;  preview <a href="http://labs.opera.com/downloads/">video build of Opera</a>.</p>

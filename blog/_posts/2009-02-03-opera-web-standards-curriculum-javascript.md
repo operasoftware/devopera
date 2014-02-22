@@ -1,5 +1,5 @@
 ---
-title: 'Opera web standards curriculum: JavaScript in town!'
+title: 'Opera Web Standards Curriculum: JavaScript in Town!'
 authors:
 - chris-mills
 tags:
@@ -13,7 +13,7 @@ tags:
 - learning
 - javascript
 - odin
-layout: article
+layout: post
 ---
 <p><h2>Introduction</h2>
 

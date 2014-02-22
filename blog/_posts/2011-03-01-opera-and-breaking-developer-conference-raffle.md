@@ -11,7 +11,7 @@ tags:
 - web-standards
 - conference
 - odin
-layout: article
+layout: post
 ---
 <p>Our good friends organizing the <a href="http://www.breakingdc.com/">Breaking Development Conference</a> and Opera Software are happy to give you a chance to win a full pass to the event. Breaking Development will be held in Dallas, Texas 11-12 April, 2011, and consists of some of the best mobile web designers and developers around.</p>
 

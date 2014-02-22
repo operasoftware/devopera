@@ -1,5 +1,5 @@
 ---
-title: A treat for Nokia N9 users — an official Opera Mobile 11.5 Labs release
+title: A Treat for Nokia N9 Users — an Official Opera Mobile 11.5 Labs Release
 authors:
 - mostyn-bramley
 intro: 'Since our previous releases of Opera Mobile for MeeGo, we have noticed that a lot of our users have been hanging out for an official Opera Mobile build for the Nokia N9 and N950 Harmattan phones. Well, today is your lucky day – we’re happy to announce that a Labs release of Opera Mobile 11.5 for Harmattan is available for download now.'

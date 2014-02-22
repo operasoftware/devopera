@@ -1,15 +1,15 @@
 ---
-title: New Web Standards support in Opera 11.10 beta
+title: New Web Standards Support in Opera 11.10 Beta
 authors:
 - zi-bin-cheah
 tags:
 - multi-column
-- gradient
+- gradients
 - woff
 - webp
 - opera-11
 - odin
-layout: article
+layout: post
 ---
 <h3>So many new features!</h3>
 

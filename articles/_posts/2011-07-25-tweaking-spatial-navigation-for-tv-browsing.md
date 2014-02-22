@@ -1,5 +1,5 @@
 ---
-title: Tweaking spatial navigation for TV browsing
+title: Tweaking Spatial Navigation for TV Browsing
 authors:
 - daniel-davis
 intro: 'Opera’s spatial navigation is the most common navigation mechanism on web-enabled TVs and devices. It offers an intuitive way for users to navigate web pages. Using a sprinkling of CSS3, developers can take full control over the exact order in which elements receive focus, to further enhance the browsing experience.'

@@ -1,5 +1,5 @@
 ---
-title: Opera Desktop 10.51 is out and fast
+title: Opera Desktop 10.51 Is Out and Fast
 authors:
 - zi-bin-cheah
 tags:
@@ -9,7 +9,7 @@ tags:
 - sputnik
 - benchmark
 - odin
-layout: article
+layout: post
 ---
 <h3>Fastest Browser</h3>
 <p>

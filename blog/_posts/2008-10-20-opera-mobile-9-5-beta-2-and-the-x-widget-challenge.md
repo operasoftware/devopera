@@ -1,5 +1,5 @@
 ---
-title: Opera Mobile 9.5 beta 2, and the X-Widget Challenge
+title: Opera Mobile 9.5 Beta 2, and the X-Widget Challenge
 authors:
 - david-storey
 tags:
@@ -9,7 +9,7 @@ tags:
 - dragonfly
 - x-device
 - odin
-layout: article
+layout: post
 ---
 <p>Opera today announced that the <a href="http://www.opera.com/pressreleases/en/2008/10/20/">second beta of Opera Mobile 9.5 for Windows Mobile</a> has now been released.  This is joined by the first beta of Opera Mobile 9.5 for Symbian UIQ.  The notable absence is Opera Mobile for Symbian S60, which will be released some time in 2009.</p>
 

@@ -6,7 +6,7 @@ tags:
 - conference
 - europython
 - odin
-layout: article
+layout: post
 ---
 <p>I was honoured to give two talk at EuroPython 2010 today (including my first ever keynote!). Here are the resources and useful links.</p>
 <h3>Keynote: Open Standards: democratising and future-proofing the Web</h3>

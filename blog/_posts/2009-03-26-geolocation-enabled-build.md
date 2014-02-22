@@ -1,14 +1,13 @@
 ---
-layout: post
-title: Geolocation-enabled build
+title: Geolocation-Enabled Build
 authors:
-- maxfroumentin
+- max-froumentin
 tags:
 - geolocation
-- W3C
+- w3c
 - opera
 - coreblog
-layout: article
+layout: post
 ---
 <p>We are delighted to release the <a href="http://snapshot.opera.com/windows/opera_wingogi_geo.zip">first build of Opera with geolocation support</a>.  The geolocation Working Group of the W3C has recently relased the <a href="http://www.w3.org/TR/2008/WD-geolocation-API-20081222/">first Working Draft of the geolocation API specification</a>, and we are now releasing the first Labs build with support for the API.</p>
 

@@ -1,11 +1,11 @@
 ---
-title: 'What’s new in Opera Development snapshots: March 26, 2012'
+title: 'What’s New in Opera Development Snapshots: March 26, 2012'
 authors:
 - mike-taylor
 tags:
 - opera-next
 - odin
-layout: article
+layout: post
 ---
 Pssst! Yes, you. You like CSS? Interested in some HTML5? Want some hot ECMAScript? Then, my friend, you want to look at this latest Opera desktop snapshot in which our core rendering engine, Presto,  <a href="http://my.opera.com/desktopteam/blog/2012/03/26/html5-css-64bit">gets a huge upgrade</a>.
 

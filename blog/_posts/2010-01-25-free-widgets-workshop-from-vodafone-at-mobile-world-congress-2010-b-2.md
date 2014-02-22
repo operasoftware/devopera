@@ -1,12 +1,12 @@
 ---
-title: Free Widgets workshop from Vodafone at Mobile World Congress 2010, Barcelona
+title: Free Widgets Workshop From Vodafone at Mobile World Congress 2010, Barcelona
 authors:
 - bruce-lawson
 tags:
 - widgets
 - mwc
 - odin
-layout: article
+layout: post
 ---
 <p>One of the most exciting technologies to arrive in the mobile arena lately is Widgets. If you don&#39;t know the name, think <em>applications</em> that live on your mobile device, that can look like native applications but are run using a browser rendering engine (with no browser chrome) and which are made using the Open Web technologies HTML, CSS, JavaScript and SVG.</p>
 <p>On Monday, February 15, during Mobile World Congress 2010, Barcelona, Vodafone will host the 360 Developer Conference. This is a chance to learn how to make Widgets and how you can be rewarded for them by selling them through Vodafone&#39;s app store.</p>

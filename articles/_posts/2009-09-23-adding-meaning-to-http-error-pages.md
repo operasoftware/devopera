@@ -1,5 +1,5 @@
 ---
-title: Adding meaning to your HTTP error pages!
+title: Adding Meaning to Your HTTP Error Pages!
 authors:
 - stuart-colville
 intro: 'The default HTTP error pages served up by a web server such as Apache will not be very helpful to your site’s visitors, should they ever be unlucky enough to stray across them. In this article, Stuart Colville shows you how to add custom error pages to your web site, and design them so that they draw your site visitors back into your site, for example to related articles.'

@@ -7,7 +7,7 @@ tags:
 - opera
 - github
 - odin
-layout: article
+layout: post
 ---
 <img src="/blog/opera-software-on-github/octocat160.png" alt="GitHub Octocat" style="float:right;" />
 

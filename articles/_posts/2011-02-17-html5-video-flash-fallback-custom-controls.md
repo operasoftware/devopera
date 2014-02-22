@@ -1,5 +1,5 @@
 ---
-title: Simple HTML5 Video Player with Flash fallback and Custom Controls
+title: Simple HTML5 Video Player With Flash Fallback and Custom Controls
 authors:
 - bruce-lawson
 - vadim-makeev

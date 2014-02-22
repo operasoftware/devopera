@@ -5,10 +5,10 @@ authors:
 tags:
 - africa
 - nigeria
-- mediaqueries
+- media-queries
 - viewport
 - odin
-layout: article
+layout: post
 ---
 <p>
 <img src="/blog/social-innovation-camp-nigeria-opera/socialinnovationcamp.jpg" />

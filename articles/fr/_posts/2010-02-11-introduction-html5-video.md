@@ -10,7 +10,7 @@ tags:
 - html5
 - multimedia
 - open-web
-- opera-10.50
+- opera-10
 - video
 layout: article
 ---

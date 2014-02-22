@@ -1,5 +1,5 @@
 ---
-title: 'HTML5 Forms: error reporting with wobbly bubbles'
+title: 'HTML5 Forms: Error Reporting With Wobbly Bubbles'
 authors:
 - bruce-lawson
 tags:
@@ -8,7 +8,7 @@ tags:
 - html5
 - forms
 - odin
-layout: article
+layout: post
 ---
 <p>On Wednesday night, at <a href="http://standards-next.org/2010/09/html5-from-the-ground-up/">standards.next in Manchester</a>, Patrick Lauke and I were glad to be able to demonstrate HTML5 Forms validation in Opera with a visually much more appealing method of reporting errors. It was appreciated by attendees and we received requests from people who couldn&#39;t attend to see a sneak peek.</p>
 

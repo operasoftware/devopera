@@ -1,9 +1,9 @@
 ---
-title: Viewport メタタグと @viewport 規則
+title: Viewport メタタグと `@viewport` 規則
 authors:
 - andreas-bovens
 tags:
-- device-pixel-ratio
+- devicepixelratio
 - media-queries
 - mobile
 - opera-mobile

@@ -13,7 +13,7 @@ tags:
 - mobile
 - wai-aria
 - odin
-layout: article
+layout: post
 ---
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>
 

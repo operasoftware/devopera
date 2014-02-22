@@ -1,5 +1,5 @@
 ---
-title: Opera Mobile 11.1 – new features and additions
+title: Opera Mobile 11.1 — New Features and Additions
 authors:
 - patrick-lauke
 tags:
@@ -7,7 +7,7 @@ tags:
 - opera-mini
 - viewport
 - odin
-layout: article
+layout: post
 ---
 <div>
   <img src="/blog/opera-mobile-11-1-new-features-and-additions/fig1.png" style="float: right; margin: 0 0 3px 10px;" alt="The new Opera Mobile 11.1" />

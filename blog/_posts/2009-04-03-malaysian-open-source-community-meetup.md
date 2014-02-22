@@ -8,7 +8,7 @@ tags:
 - standards
 - malaysia
 - odin
-layout: article
+layout: post
 ---
 <p>Opera is not an open source company, but we contribute to the community in other ways, such as releasing Opera Dragonfly under a BSD licence. The thought of sharing with the open source community what we are doing crossed my mind. The opportunity came when Azizat, the coordinator or the <a href="http://planet.foss.org.my">MYOSS</a>, contacted me. Finally, I got the chance to talk (to the open source guys) about another kind of openess: Open Standards.</p>
 

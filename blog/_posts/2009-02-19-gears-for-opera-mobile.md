@@ -7,7 +7,7 @@ tags:
 - gears
 - mobile
 - odin
-layout: article
+layout: post
 ---
 <p>Over at <a href="http://labs.opera.com/news/2009/02/20/">Opera Labs</a>, we&#39;ve just announced an <a href="http://www.opera.com/mobile/download/">Opera Mobile 9.5 technology preview build</a> with support for <a href="http://gears.google.com/">Gears</a>, which allows you to store data locally in a searchable database, run JavaScript in the background, and integrate web applications with the desktop.</p>
 <img src="/blog/gears-for-opera-mobile/logo_153x43.gif" alt="Gears" title="Gears" style="float: left; margin: 3px 10px 1px 0;" /> <p>You can find the technological nitty-gritty, including installation instructions in <a href="http://labs.opera.com/news/2009/02/20/">the Opera Labs article</a>.</p>

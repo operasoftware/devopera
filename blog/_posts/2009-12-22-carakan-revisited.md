@@ -1,10 +1,13 @@
 ---
-layout: post
 title: Carakan Revisited
 authors:
-- JensL
+- jens-lindstrom
+tags:
+- javascript
+- ecmascript
+- carakan
 - coreblog
-layout: article
+layout: post
 ---
 <p>A little more than a year has passed since we launched the Carakan project, aimed at drastically improving Opera&#39;s ECMAScript execution performance, and it&#39;s finally time for the first <a href="http://labs.opera.com/news/2009/12/22/" target="_blank">labs release</a> of Opera with the Carakan ECMAScript
 engine.</p>

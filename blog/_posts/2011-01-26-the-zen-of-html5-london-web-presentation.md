@@ -1,5 +1,5 @@
 ---
-title: 'The Zen of HTML5: London Web presentation'
+title: 'The Zen of HTML5: London Web Presentation'
 authors:
 - bruce-lawson
 tags:
@@ -9,7 +9,7 @@ tags:
 - html5
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>Last week, 120 Londoners were locked in a room and made to listen to me talk about HTML5, specifically its origins and design principles.</p>
 

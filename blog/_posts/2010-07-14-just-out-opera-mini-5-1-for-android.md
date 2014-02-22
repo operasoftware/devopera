@@ -1,5 +1,5 @@
 ---
-title: 'Just out: Opera Mini 5.1 for Android'
+title: 'Just Out: Opera Mini 5.1 for Android'
 authors:
 - andreas-bovens
 tags:
@@ -7,7 +7,7 @@ tags:
 - mobile
 - android
 - odin
-layout: article
+layout: post
 ---
 <a href="/blog/just-out-opera-mini-5-1-for-android/device2.png"><img src="/blog/just-out-opera-mini-5-1-for-android/device2.png" alt="Opera Mini 5.1 screenshot" style="float: right; margin: 0 0 1em 1em; width: 240px; height: 400px;" /></a>
 

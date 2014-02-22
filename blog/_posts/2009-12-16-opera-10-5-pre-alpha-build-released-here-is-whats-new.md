@@ -1,5 +1,5 @@
 ---
-title: 'Opera 10.5 Pre-Alpha build released: the new additions'
+title: 'Opera 10.5 Pre-Alpha Build Released: The New Additions'
 authors:
 - shwetank-dixit
 tags:
@@ -11,7 +11,7 @@ tags:
 - css3
 - opera-10
 - odin
-layout: article
+layout: post
 ---
 <p>Today, we&#39;ve released a <a href="http://labs.opera.com/news/2009/12/22/" target="_blank">pre-alpha version of Opera 10.5</a> on Opera Labs. Download it and give it a spin. Let us know what you think about it too!</p>
 <p>Let&#39;s give you the lowdown on what&#39;s new in this build. Hang on tight, there&#39;s a lot of new stuff here!</p>

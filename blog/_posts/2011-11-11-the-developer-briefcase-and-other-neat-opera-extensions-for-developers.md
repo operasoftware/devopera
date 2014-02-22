@@ -1,5 +1,5 @@
 ---
-title: “The Developer Briefcase” and other neat Opera extensions for developers
+title: “The Developer Briefcase” and Other Neat Opera Extensions for Developers
 authors:
 - shwetank-dixit
 tags:
@@ -7,7 +7,7 @@ tags:
 - extensions
 - developers
 - odin
-layout: article
+layout: post
 ---
 <span class='imgright'><img alt='' src='/blog/the-developer-briefcase-and-other-neat-opera-extensions-for-developers/screenshot2.jpg' /></span>
 

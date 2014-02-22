@@ -1,5 +1,5 @@
 ---
-title: CSUN Tweetup and "Testing for standards compliant and accessible websites using Opera" slides
+title: CSUN Tweetup and “Testing for Standards Compliant and Accessible Websites Using Opera” Slides
 authors:
 - henny-swan
 tags:
@@ -8,7 +8,7 @@ tags:
 - conference
 - standards
 - odin
-layout: article
+layout: post
 ---
 <p>I was at <a href="http://www.csunconference.org/index.cfm?EID=80000144">CSUN</a> last week, the technology and persons with disabilities conference held in Los Angeles. It&#39;s one of my favorite conferences as you get a chance to talk with some of the great and the good of the web development world and talk about all things accessibility.</p>
 

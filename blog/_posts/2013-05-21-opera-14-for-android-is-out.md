@@ -1,5 +1,5 @@
 ---
-title: Opera 14 for Android is out!
+title: Opera 14 for Android Is Out!
 authors:
 - andreas-bovens
 tags:

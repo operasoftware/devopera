@@ -8,7 +8,7 @@ tags:
 - mobile
 - vega
 - odin
-layout: article
+layout: post
 ---
 <p>
 This is a truly busy summer (or winter, depending where you are). Following the release of <a href="http://my.opera.com/ODIN/blog/just-out-opera-mini-5-1-for-android"> Opera Mini 5.1 for Android</a>, <a href="http://www.opera.com/mobile/">Opera Mobile 10.1 Beta for S60</a> is coming to town, and with it we want to share with you some exciting new features.

@@ -1,5 +1,5 @@
 ---
-title: 'The W3C device orientation API: detecting orientation and acceleration'
+title: 'The W3C Device Orientation API: Detecting Orientation and Acceleration'
 authors:
 - shwetank-dixit
 intro: 'Using the W3C’s device orientation API, we can determine the orientation of the device as well as gather information about its movement. This information is valuable in certain types of applications, such as games that require the user to tilt the device in some way. In this article we’ll look at the basics of how device orientation works, along with some simple examples.'

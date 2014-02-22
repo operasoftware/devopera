@@ -1,5 +1,5 @@
 ---
-title: W3C Widgets talk @ Web Standards Group, Sydney
+title: W3C Widgets Talk @ Web Standards Group, Sydney
 authors:
 - bruce-lawson
 tags:
@@ -10,7 +10,7 @@ tags:
 - html5
 - dap
 - odin
-layout: article
+layout: post
 ---
 I was delighted to attend the Web Standards Group meetup in Sydney and speak on W3C Widgets. Thanks to sponsors <a href="http://www.elcom.com.au/">Elcom</a> for the beer and calamari, and to all who attended.
 

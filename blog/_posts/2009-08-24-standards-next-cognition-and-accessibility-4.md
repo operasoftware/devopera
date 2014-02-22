@@ -1,12 +1,12 @@
 ---
-title: 'Standards.Next: Cognition and accessibility'
+title: 'Standards.Next: Cognition and Accessibility'
 authors:
 - henny-swan
 tags:
 - standards.next
 - accessibility
 - odin
-layout: article
+layout: post
 ---
 <p>Not long now until Bruce and I will be running our next <a href="http://www.standards-next.org">Standards.Next</a> meetup this time covering cognition and accessible web design.</p>
 

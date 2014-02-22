@@ -7,7 +7,7 @@ tags:
 - naconf
 - conference
 - odin
-layout: article
+layout: post
 ---
 <p>Report written by Chris Mills and Patrick Lauke</p>
 

@@ -1,5 +1,5 @@
 ---
-title: Building applications for the Opera TV Store
+title: Building Applications for the Opera TV Store
 authors:
 - patrick-lauke
 intro: 'The Opera TV Store is a moderated, hosted catalogue of TV-specific web applications. Developers can submit and share their apps through this portal. This article outlines the Opera TV Store architecture and lists the requirements and acceptance criteria for submitting applications.'

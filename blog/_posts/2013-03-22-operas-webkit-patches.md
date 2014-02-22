@@ -1,5 +1,5 @@
 ---
-title: Opera’s WebKit patches
+title: Opera’s WebKit Patches
 authors:
 - bruce-lawson
 tags:

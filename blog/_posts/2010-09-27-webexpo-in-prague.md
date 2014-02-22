@@ -9,7 +9,7 @@ tags:
 - mobile
 - media-queries
 - odin
-layout: article
+layout: post
 ---
 <p>
 Having <a href="http://my.opera.com/ODIN/blog/opera-on-the-road-in-bratislava-budapest-vienna">toured central Europe with the WebExpo guys</a> in the summer, I was eager to join the actual <a href="http://webexpo.net">WebExpo event in Prague</a> this year. With a thousand registrants, this year&#39;s WebExpo covers a myriad of topics - from development, design, agile to startup sessions.

@@ -1,5 +1,5 @@
 ---
-title: Accessibility testing tips and tools presentation
+title: Accessibility Testing Tips and Tools Presentation
 authors:
 - henny-swan
 tags:
@@ -8,7 +8,7 @@ tags:
 - dragonfly
 - methodology
 - odin
-layout: article
+layout: post
 ---
 <p>I was fortunate enough to get invited to speak about <strong>Accessibility testing tips and tools</strong> at Sussex University recently courtesy of Dr Graham McAllister.</p>
 

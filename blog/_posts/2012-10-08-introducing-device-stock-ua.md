@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Device-Stock-UA: a new request header and proposal'
+title: 'Introducing Device-Stock-UA: A New Request Header and Proposal'
 authors:
 - tiffany-brown
 tags:
@@ -7,7 +7,7 @@ tags:
 - opera-mini
 - http
 - odin
-layout: article
+layout: post
 ---
 <p>Our latest releases of <a href="http://www.opera.com/mobile/">Opera Mobile and Opera Mini</a> will include a new header: <b>Device-Stock-UA</b>. The value of this header matches that of the stock user agent bundled with the operating system on which Opera Mobile or Mini is running. Below is an example of what this header might look like on an Android device (a T-Mobile myTouch4G). </p>
 

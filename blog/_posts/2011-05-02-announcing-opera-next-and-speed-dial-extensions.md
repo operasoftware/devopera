@@ -1,5 +1,5 @@
 ---
-title: Announcing Opera Next and Speed Dial extensions
+title: Announcing Opera Next and Speed Dial Extensions
 authors:
 - andreas-bovens
 tags:
@@ -8,7 +8,7 @@ tags:
 - extensions
 - opera-11
 - odin
-layout: article
+layout: post
 ---
 <p>This morning, we&#39;ve released an <a href="http://www.opera.com/browser/next/">alpha of Opera 11.50</a>, which introduces Speed Dial extensions, and is the first build of what we call the <strong>Opera Next</strong> release cycle.</p>
 <h3>Opera Next</h3>

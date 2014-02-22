@@ -1,12 +1,12 @@
 ---
-title: State of the mobile Web Report
+title: State of the Mobile Web Report
 authors:
 - zi-bin-cheah
 tags:
 - sns
 - opera-mini
 - odin
-layout: article
+layout: post
 ---
 <p>
 Opera publishes a monthly report called <a href="http://www.opera.com/smw/">State of The Mobile Web</a>. It tells the world how the mobile web is shaping up by analyzing key metric data from Opera Mini usage across the globe.

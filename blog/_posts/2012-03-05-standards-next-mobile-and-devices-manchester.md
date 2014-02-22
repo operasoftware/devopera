@@ -1,12 +1,12 @@
 ---
-title: Standards.Next — “Mobile and devices”, Manchester
+title: Standards.Next — “Mobile and Devices”, Manchester
 authors:
 - bruce-lawson
 tags:
 - standards.next
 - conference
 - odin
-layout: article
+layout: post
 ---
 <p>Saturday 3 March saw our biggest-ever <a href="http://www.standards-next.org">standards.next</a> event, organised by Chris Mills of Opera and <a href="http://twitter.com/eskins" target="_blank">Richard Eskins</a> of the <a href="http://www2.hlss.mmu.ac.uk/information-communications/" target="_blank">Department of Information and Communications</a> at  <a href="http://www.mmu.ac.uk/" target="_blank">Manchester Metropolitan University</a>.</p>
 
