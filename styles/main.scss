@@ -9,19 +9,13 @@
 	.main__blog {
 		@extend %grid__item;
 		@extend %one-whole;
+		@extend %lap--one-half;
 		@extend %desk--one-third;
 		}
-		.main__blog-wrapper {
-			@extend %grid;
-			}
-			.main__blog-column {
-				@extend %grid__item;
-				@extend %one-whole;
-				@extend %lap--one-half;
-				}
 	.main__articles {
 		@extend %grid__item;
 		@extend %one-whole;
+		@extend %lap--one-half;
 		@extend %desk--two-thirds;
 		}
 		.main__articles-wrapper {
@@ -30,7 +24,6 @@
 			.main__articles-column {
 				@extend %grid__item;
 				@extend %one-whole;
-				@extend %lap--one-half;
 				@extend %desk--one-half;
 				}
 	.main__content {

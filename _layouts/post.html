@@ -11,7 +11,7 @@ layout: default
 		<h1>{{ page.title | markdownline }}</h1>
 		<p>
 			By {% include author.html object=page %}
-			at <time>{{ page.date | date: '%d %B %Y' }}</time>
+			at <time>{{ page.date | date: '%-d %B %Y' }}</time>
 		</p>
 		<p>Tags:
 {% for tag in page.tags %}

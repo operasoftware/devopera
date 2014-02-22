@@ -1,0 +1,26 @@
+// -------------------------------
+// Teaser
+// -------------------------------
+.teaser {
+	margin:0 0 12px;
+	padding:0 0 14px;
+	border-bottom:1px solid #DDD;
+	}
+	.teaser__title {
+		margin:0 0 6px;
+		font-weight:bold;
+		font-size:18px;
+		a {
+			color:#000;
+			}
+		}
+	.teaser__picture {
+
+		}
+	.teaser__meta {
+		color:$grey;
+		font-size:12px;
+		}
+	.teaser__intro {
+		margin:12px 0 0;
+		}
