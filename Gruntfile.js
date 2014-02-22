@@ -73,9 +73,11 @@ module.exports = function(grunt) {
 				recursive: true
 			},
 			deploy: {
-				src: '_site/',
-				dest: '/var/www/html/',
-				host: 'dev.opera.com'
+				options: {
+					src: '_site/',
+					dest: '/var/www/html/',
+					host: '54.213.240.91'
+				}
 			}
 		}
 	});
@@ -97,6 +99,6 @@ module.exports = function(grunt) {
 		'imagemin'
 	]);
 
-	grunt.registerTask('deploy', ['default', 'rsync']);
+	grunt.registerTask('deploy', ['rsync']);
 
 };
