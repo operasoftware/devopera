@@ -2,23 +2,29 @@
 layout: default
 ---
 
+{% assign lang = page.categories[1] %}
+{% unless lang %}
+	{% assign lang = 'en' %}
+{% endunless %}
+
 <main class="main">
-	{% assign lang = page.categories[1] %}
-	{% unless lang %}
-		{% assign lang = 'en' %}
-	{% endunless %}
-	<article role="main" class="main__content" lang="{{ lang }}">
-		<h1>{{ page.title | markdownline }}</h1>
-		<p>
-			By {% include author.html object=page %}
-			at <time>{{ page.date | date: '%-d %B %Y' }}</time>
-		</p>
-		<p>Tags:
+	<article role="main" lang="{{ lang }}" class="main__content">
+		<div class="article">
+			<div class="article__info">
+				<p><time>{{ page.date | date: '%-d %B %Y' }}</time> by {% include author.html object=page %} in <a href="/{{ page.categories[0] }}/">{{ page.categories[0] | capitalize }}</a></p>
+				<p>Tags:
 {% for tag in page.tags %}
-			<a href="/tags/{{ tag }}">{{ tag }}</a>
+					<a href="/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
-		</p>
-{% include translations.html category=site.categories.blog %}
+				</p>
+{% include translations.html category=site.categories.articles %}
+			</div>
+			<div class="article__content">
+				<h1 class="article__title">{{ page.title | markdownline }}</h1>
+				<div class="content">
 {{ content }}
+				</div>
+			</div>
+		</div>
 	</article>
 </main>
