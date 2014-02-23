@@ -2,18 +2,16 @@
 layout: default
 ---
 
+{% assign lang = page.categories[1] %}
+{% unless lang %}
+	{% assign lang = 'en' %}
+{% endunless %}
+
 <main class="main">
-	{% assign lang = page.categories[1] %}
-	{% unless lang %}
-		{% assign lang = 'en' %}
-	{% endunless %}
 	<article role="main" lang="{{ lang }}" class="main__content">
 		<div class="article">
 			<div class="article__info">
-				<p>
-					By {% include author.html object=page %}
-					at <time>{{ page.date | date: '%-d %B %Y' }}</time>
-				</p>
+				<p><time>{{ page.date | date: '%-d %B %Y' }}</time> by {% include author.html object=page %} in <a href="/{{ page.categories[0] }}/">{{ page.categories[0] | capitalize }}</a></p>
 				<p>Tags:
 {% for tag in page.tags %}
 					<a href="/tags/{{ tag }}">{{ tag }}</a>
