@@ -9,9 +9,13 @@ layout: default
 
 <main class="main">
 	<article role="main" lang="{{ lang }}" class="main__content">
-		<div class="article">
-			<div class="article__info">
-				<p><time>{{ page.date | date: '%-d %B %Y' }}</time> by {% include author.html object=page %} in <a href="/{{ page.categories[0] }}/">{{ page.categories[0] | capitalize }}</a></p>
+		<div class="entry">
+			<div class="entry__info">
+				<p class="meta">
+					<time class="meta__time">{{ page.date | date: '%-d %B %Y' }}</time>
+					by <span class="meta__author">{% include author-name.html object=page %}</span>
+					in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
+				</p>
 				<p>Tags:
 {% for tag in page.tags %}
 					<a href="/tags/{{ tag }}">{{ tag }}</a>
@@ -19,8 +23,8 @@ layout: default
 				</p>
 {% include translations.html category=site.categories.articles %}
 			</div>
-			<div class="article__content">
-				<h1 class="article__title">{{ page.title | markdownline }}</h1>
+			<div class="entry__content">
+				<h1 class="entry__title">{{ page.title | markdownline }}</h1>
 				<div class="content">
 {{ content }}
 				</div>

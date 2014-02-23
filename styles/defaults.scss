@@ -27,6 +27,9 @@ $visited:#6040A0;
 		clear:both;
 		}
 	}
+@mixin hover {
+	transition:color 0.3s;
+	}
 @mixin offscreen {
 	position:absolute;
 	clip:rect(0 0 0 0);

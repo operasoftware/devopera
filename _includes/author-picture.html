@@ -1,0 +1,6 @@
+{% for authors in site.categories.authors %}
+	{% assign author = authors.id | split: '/' | last %}
+	{% if {{include.object}}.authors contains author %}
+		<img src="/authors/{{ authors.url | split: '/' | last }}.jpg" alt="{{ authors.title }}" class="{{include.class}}">
+	{% endif %}
+{% endfor %}
