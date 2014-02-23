@@ -1,5 +1,5 @@
 ---
-title: `getUserMedia` and Device Orientation Adventures
+title: '`getUserMedia` and Device Orientation Adventures'
 authors:
 - shwetank-dixit
 tags:
