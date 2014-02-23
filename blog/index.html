@@ -8,7 +8,10 @@ layout: default
 		{% unless post.categories[1] %}
 			<article class="teaser">
 				<h2 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h2>
-				<p class="teaser__meta"><time>{{ post.date | date: '%-d %B %Y' }}</time> by {% include author.html object=post %}</p>
+				<p class="meta meta--teaser">
+					<time class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
+					by <span class="meta__author">{% include author-name.html object=post %}</span>
+				</p>
 {% if post.intro %}
 				<p class="teaser__intro">{{ post.intro | markdownline }}</p>
 {% endif %}
