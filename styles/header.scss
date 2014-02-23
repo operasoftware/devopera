@@ -69,17 +69,19 @@
 		@extend %palm--one-whole;
 		@extend %lap--one-third;
 		@extend %desk--one-third;
+		color:#888;
 		}
 	.menu__link {
 		margin-left:-5px;
 		padding:5px 5px 2px;
 		border-radius:4px;
+		&:link,
+		&:visited {
+			color:$green;
+			}
 		&:hover,
 		&:focus {
-			background:mix($blue, #FFF, 8%);
-			}
-		&:visited {
-			color:$blue;
+			color:lighten($green, 5%);
 			}
 		}
 
