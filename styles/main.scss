@@ -5,6 +5,7 @@
 	@extend %grid;
 	}
 	.main__title {
+		@include offscreen;
 		}
 	.main__blog {
 		@extend %grid__item;

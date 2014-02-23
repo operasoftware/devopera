@@ -15,11 +15,16 @@
 			}
 		}
 	.teaser__picture {
-
 		}
 	.teaser__meta {
 		color:$grey;
 		font-size:12px;
+		}
+	.teaser__category {
+		&:link,
+		&:visited {
+			color:$green;
+			}
 		}
 	.teaser__intro {
 		margin:12px 0 0;
