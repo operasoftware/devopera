@@ -22,7 +22,9 @@
 			<div></div>
 		</div>
 	</div>
+{% if page.categories contains 'articles' or page.categories contains 'blog' %}
 	<script src="/scripts/highlight.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+{% endif %}
 </body>
 </html>
