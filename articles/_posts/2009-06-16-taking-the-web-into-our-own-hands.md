@@ -6,6 +6,7 @@ intro: 'This article explains what is Opera Unite, discusses “the Internet’s
 tags:
 - unite
 - labs
+license: os-asa
 layout: article
 ---
 

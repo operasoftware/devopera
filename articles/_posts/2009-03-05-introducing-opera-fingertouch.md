@@ -7,6 +7,7 @@ tags:
 - fingertouch
 - opera-mobile
 - labs
+license: os-asa
 layout: article
 ---
 

@@ -6,6 +6,7 @@ intro: 'Another great Opera technology release is with us! We are delighted to r
 tags:
 - geolocation
 - labs
+license: cc-by-3.0
 layout: article
 ---
 

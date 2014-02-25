@@ -6,6 +6,7 @@ intro: 'We are launching our time-limited test phase for Opera Turbo, a server-s
 tags:
 - turbo
 - labs
+license: os-asa
 layout: article
 ---
 

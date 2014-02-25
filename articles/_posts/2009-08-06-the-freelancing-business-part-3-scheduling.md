@@ -6,6 +6,7 @@ intro: 'In this - the third article of his series on the business of software de
 tags:
 - freelance
 - business
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 
