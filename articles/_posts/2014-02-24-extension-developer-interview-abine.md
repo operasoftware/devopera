@@ -31,7 +31,7 @@ DoNotTrackMe protects your online privacy. Whereas some privacy extensions just 
 We’re based in Boston, and currently there are about 20 people in our office plus at least one dog.
 
 <figure>
-	<img src="/articles/extension-developer-interview-coffee-with-the-abine-team/team.jpg" alt="Abine team">
+	<img src="/articles/extension-developer-interview-abine/team.jpg" alt="Abine team">
 	<figcaption>The Abine team</figcaption>
 </figure>
 
