@@ -1,7 +1,7 @@
 ---
 title: 100,000 Milestone, and changes to the licence
 authors:
-- dstorey
+- david-storey
 tags:
 - users
 - license

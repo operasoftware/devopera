@@ -1,7 +1,7 @@
 ---
 title: Experimental build with integrated style profiler preview
 authors:
-- hzr
+- david-hasather
 tags:
 - performance
 - dragonfly

@@ -1,11 +1,10 @@
 ---
 title: Watches, Network overrides and more
 authors:
-- dstorey
+- david-storey
 tags:
-- HTTP
-- Opera Dragonfly
-- Watches
+- http
+- watches
 - dragonfly
 layout: post
 ---

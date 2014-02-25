@@ -1,10 +1,9 @@
 ---
 title: Expandable Objects in the Console, and more
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
+- developer-tools
 - dragonfly
 layout: post
 ---

@@ -1,7 +1,7 @@
 ---
 title: How to get started contributing to Opera Dragonfly development
 authors:
-- hallvors
+- hallvord-steen
 tags:
 - mercurial
 - development

@@ -1,7 +1,7 @@
 ---
 title: Full of resources
 authors:
-- p01
+- mathieu-henri
 tags:
 - experimental
 - resource inspector

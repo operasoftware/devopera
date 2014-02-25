@@ -1,7 +1,8 @@
 ---
 title: New stable release with return value inspection
 authors:
-- hzr
+- david-hasather
+tags:
 - dragonfly
 layout: post
 ---

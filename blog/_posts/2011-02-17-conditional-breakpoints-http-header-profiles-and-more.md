@@ -1,10 +1,9 @@
 ---
 title: Conditional Breakpoints, HTTP header profiles and more
 authors:
-- dstorey
+- david-storey
 tags:
-- Conditional Breakpoints
-- Opera Dragonfly
+- conditional-breakpoints
 - dragonfly
 layout: post
 ---

@@ -1,11 +1,10 @@
 ---
 title: Improved element highlight lands in Opera Mobile 10 Beta
 authors:
-- dstorey
+- david-storey
 tags:
-- Opera Mobile 10
+- opera-mobile-10
 - highlight
-- Opera Dragonfly
 - dragonfly
 layout: post
 ---

@@ -1,11 +1,10 @@
 ---
 title: Opera Dragonfly 1.1 RC6 is ready
 authors:
-- danfoooo
+- daniel-herzog
 tags:
-- developer tools
-- Opera Dragonfly 1.1
-- Release Candidate
+- developer-tools
+- release-candidate
 - dragonfly
 layout: post
 ---

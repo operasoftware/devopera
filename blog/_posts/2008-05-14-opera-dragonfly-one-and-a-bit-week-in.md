@@ -1,10 +1,9 @@
 ---
 title: Opera Dragonfly, One (and a bit) week in
 authors:
-- dstorey
+- david-storey
 tags:
-- Roadmap
-- Opera Dragonfly
+- roadmap
 - debugger
 - dragonfly
 layout: post

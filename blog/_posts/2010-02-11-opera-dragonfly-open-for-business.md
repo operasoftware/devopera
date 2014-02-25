@@ -1,13 +1,12 @@
 ---
 title: Opera Dragonfly open for business
 authors:
-- dstorey
+- david-storey
 tags:
-- Scope
-- open source
-- Opera Dragonfly
-- STP-1
+- scope
+- opensource
 - dragonfly
+- stp1
 layout: post
 ---
 <p>Since the inception of <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a>, we planned for it to become an open source project. It has always been released under an open source <a href="http://dev.opera.com/licenses/bsd/">BSD licence</a>, but the source repositories were on Opera servers. Starting today, Opera Dragonfly is a fully open source project, hosted on <a href="http://bitbucket.org/scope/dragonfly-stp-1">BitBucket</a>. Since the previous version of Opera Dragonfly, a lot of work has gone on behind the scenes replacing the existing architecture with a modern version of the Scope Protocol – STP-1. Opera Dragonfly has been rewritten to use this faster and more efficient version of Scope. Now that we believe that the underlying protocol is stable and performant, and a public desktop build has been released with this included, it is time to put Opera Dragonfly on a public Mercurial repository.</p>

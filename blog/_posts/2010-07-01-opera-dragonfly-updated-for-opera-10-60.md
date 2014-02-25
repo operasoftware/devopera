@@ -1,12 +1,11 @@
 ---
 title: Opera Dragonfly updated for Opera 10.60
 authors:
-- dstorey
+- david-storey
 tags:
 - performane
 - offline
-- HTML5
-- Opera Dragonfly
+- html5
 - dragonfly
 layout: post
 ---

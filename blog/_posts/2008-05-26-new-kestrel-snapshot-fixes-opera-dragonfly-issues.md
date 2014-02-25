@@ -1,14 +1,13 @@
 ---
 title: New Kestrel snapshot fixes Opera Dragonfly issues
 authors:
-- dstorey
+- david-storey
 tags:
-- Kestrel
-- Accessibility
-- ARIA
-- CSS3
-- Opera Dragonfly
-- SVG
+- kestrel
+- accessibility
+- aria
+- css3
+- svg
 - dragonfly
 layout: post
 ---

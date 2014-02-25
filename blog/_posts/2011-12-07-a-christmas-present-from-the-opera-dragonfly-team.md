@@ -1,12 +1,12 @@
 ---
 title: A Christmas Present from the Opera Dragonfly Team!
 authors:
-- nimbupani
+- divya-manian
 tags:
 - experimental
-- network inspector
-- CSS
-- opera next
+- network-inspector
+- css
+- opera-next
 - dragonfly
 layout: post
 ---

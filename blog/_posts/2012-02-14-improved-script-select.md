@@ -1,9 +1,9 @@
 ---
 title: Improved script selection
 authors:
-- aleto
+- christian-krebs
 tags:
-- scripts panel
+- scripts-panel
 - dragonfly
 layout: post
 ---
