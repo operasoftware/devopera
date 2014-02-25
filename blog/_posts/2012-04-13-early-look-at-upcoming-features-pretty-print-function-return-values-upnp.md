@@ -1,5 +1,5 @@
 ---
-title: Early look at upcoming features: “pretty print”, function return values, UPnP
+title: 'Early look at upcoming features: “pretty print”, function return values, UPnP'
 authors:
 - patrick-lauke
 tags:
