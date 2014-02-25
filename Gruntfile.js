@@ -68,7 +68,13 @@ module.exports = function(grunt) {
 		},
 		rsync: {
 			options: {
-				args: ['--delete', '-rtzv', '-O'],
+				args: [
+					'--delete', // delete extraneous files on the receiving side
+					'--times', // preserve modification times…
+					'--omit-dir-times', // …except for directories
+					'--compress', // compress data during the transfer
+					'--verbose' // increase verbosity
+				],
 				exclude: ['.DS_Store'],
 				recursive: true
 			},
