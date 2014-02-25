@@ -6,6 +6,7 @@ intro: 'Barcodes are becoming vastly more interesting in recent times, with 2D b
 tags:
 - barcode
 - qr-code
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

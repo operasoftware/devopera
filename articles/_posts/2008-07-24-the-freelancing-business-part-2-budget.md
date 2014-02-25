@@ -6,6 +6,7 @@ intro: 'This is the second in a series of articles written by R Blank giving pra
 tags:
 - freelance
 - business
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

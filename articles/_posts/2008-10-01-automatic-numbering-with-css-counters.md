@@ -7,6 +7,7 @@ tags:
 - counters
 - css
 - ie
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 
