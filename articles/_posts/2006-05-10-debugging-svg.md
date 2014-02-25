@@ -8,6 +8,7 @@ tags:
 - debugging
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 
