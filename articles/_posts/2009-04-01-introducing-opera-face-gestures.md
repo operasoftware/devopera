@@ -8,6 +8,7 @@ tags:
 - gestures
 - opera-10
 - labs
+license: os-asa
 layout: article
 ---
 

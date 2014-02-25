@@ -8,6 +8,7 @@ tags:
 - canvas
 - html5
 - raycasting
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

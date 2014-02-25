@@ -9,6 +9,7 @@ tags:
 - canvas
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 

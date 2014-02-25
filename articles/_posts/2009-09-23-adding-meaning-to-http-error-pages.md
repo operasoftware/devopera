@@ -7,6 +7,7 @@ tags:
 - apache
 - http
 - python
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

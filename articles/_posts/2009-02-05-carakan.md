@@ -10,6 +10,7 @@ tags:
 - javascript
 - opera-10
 - labs
+license: os-asa
 layout: article
 ---
 
