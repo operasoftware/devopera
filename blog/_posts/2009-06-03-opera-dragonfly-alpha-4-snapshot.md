@@ -7,7 +7,7 @@ tags:
 - network inspector
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We’ve recently released a snapshot of Opera Dragonfly alpha 4, to coincide with <a href="http://www.opera.com/browser/next/">Opera 10 beta</a>.  One of the biggest usability issues with Opera Dragonfly has been that it did not select the active tab or window.  This meant that the user had to follow a number of steps before they could start debugging.  This was among the top user requests and has now been fixed for Opera 10 and Opera Dragonfly alpha 4.</p>
 
@@ -17,4 +17,4 @@ layout: article
 
 <p>Although the new features and layout changes will be the most notable changes, there has been a huge amount of bug fixes since the last snapshot as we work towards making Opera Dragonfly more stable and closer to Beta quality.  You can see all the changes by going to the <a href="https://dragonfly.opera.com/app/core-2-2/logs/1090.89585c66ad64.log">change log</a>.</p>
 
-<p>I hope you enjoy the new release of Opera Dragonfly and Opera 10, as we work toward the next release and improving the product further.</p> 
+<p>I hope you enjoy the new release of Opera Dragonfly and Opera 10, as we work toward the next release and improving the product further.</p>

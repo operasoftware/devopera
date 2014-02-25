@@ -7,7 +7,7 @@ tags:
 - command line
 - Opera 11
 - dragonfly
-layout: article
+layout: post
 ---
 <p>With <a href="http://www.opera.com/browser/next/">Opera 11 in Beta</a>, we are in the process of getting Opera Dragonfly updated for the final release. We now have a release candidate ready on the cutting-edge branch. Once Opera 11 is released, this branch will be pushed to the default path and will become the next alpha release of Opera Dragonfly.</p>
 
@@ -44,7 +44,7 @@ layout: article
    <li>Various UI optimisations</li>
 </ul>
 
-<p>The experimental branch is just that. It has features that are in progress, so may be incomplete (such as missing icons or not function as expected) and <strong>may break at any time</strong>. 
+<p>The experimental branch is just that. It has features that are in progress, so may be incomplete (such as missing icons or not function as expected) and <strong>may break at any time</strong>.
 
 <h3 id="enable">Enabling special builds</h3>
 
@@ -61,5 +61,5 @@ layout: article
 <h3>Change log</h3>
 
 <p>To see all changes please see the <a href="http://people.opera.com/dstorey/dfl/2563.4ea4a7f20f8f.log">Change log for Opera Dragonfly Alpha for Opera 11</a>.</p>
- 
+
 </p>

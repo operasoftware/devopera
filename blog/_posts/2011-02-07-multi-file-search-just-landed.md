@@ -6,7 +6,7 @@ tags:
 - search
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We took another step towards the final Opera Dragonfly 1.0 release today, with multi-file search landing on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a>. This is still work in progress, and so will feature bugs and rough edges.</p>
 

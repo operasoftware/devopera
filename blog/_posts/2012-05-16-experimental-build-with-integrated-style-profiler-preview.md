@@ -5,7 +5,7 @@ authors:
 tags:
 - performance
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Back in November, we released a standalone build of <a href="http://my.opera.com/dragonfly/blog/style-profiler-preview">Opera Dragonfly&#39;s style profiler</a>. In today&#39;s release on the experimental path, the profiler is now integrated  next to the other Opera Dragonfly tabs and tools.</p>
 

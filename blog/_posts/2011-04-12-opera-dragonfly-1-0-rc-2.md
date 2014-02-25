@@ -5,7 +5,7 @@ authors:
 tags:
 - Opera Dragonfly 1.0
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/opera-dragonfly-1-0-rc-2/test1.png" alt="" />
 
@@ -29,4 +29,4 @@ layout: article
 
 <p>The final release if Opera Dragonfly 1.0 gives us a strong base on while to build. We feel it is a competitive release with many of the features expected in modern debuggers, such as watches and conditional breakpoints. We will build upon these strong foundations to add many innovative features above what we have already implemented. We will also work towards optimising and polishing existing features to improve their consistency, ease of use and functionality. We hope to make each tool in Opera Dragonfly the best in the business. Now that a stable foundation is in place we should be able to have shorter release cycles, improving each feature in turn.</p>
 
-<p>We hope you enjoy Opera Dragonfly 1.0 once it is released and that it helps you in your day to day development needs.</p> 
+<p>We hope you enjoy Opera Dragonfly 1.0 once it is released and that it helps you in your day to day development needs.</p>

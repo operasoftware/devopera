@@ -3,7 +3,7 @@ title: Opera Dragonfly source now on GitHub
 authors:
 - patrickhlauke
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Effective from today, <a href="http://www.opera.com/dragonfly">Opera Dragonfly</a>&#39;s source code has officially moved from our old <a href="https://bitbucket.org/scope/" title="Opera Dragonfly&#39;s Bitbucket repository">Bitbucket repository</a> to a shiny new home over in the <a href="https://github.com/operasoftware">Opera Software account on GitHub</a>. This move aims to harmonise and gather Opera&#39;s various open source projects into a single, sensible location.</p>
 

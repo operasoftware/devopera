@@ -7,7 +7,7 @@ tags:
 - alpha 2
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Following the Release Candidate last week, <a href="http://www.opera.com/products/dragonfly">Opera Dragonfly alpha 2</a> has now gone live.  People using the default URL for Opera Dragonfly will automatically upgraded to this new version.  As always, you can access Opera Dragonfly alpha 2 by clicking on Tools -&gt; Advanced -&gt; Developer Tools in Opera 9.5’s menu bar.</p>
 

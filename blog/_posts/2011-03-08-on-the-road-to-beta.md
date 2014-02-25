@@ -5,7 +5,7 @@ authors:
 tags:
 - Opera Dragonfly beta
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/on-the-road-to-beta/closer-to-beta.png" alt="" />
 

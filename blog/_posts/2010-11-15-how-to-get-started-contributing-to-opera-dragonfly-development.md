@@ -8,7 +8,7 @@ tags:
 - bitbucket
 - hacking
 - dragonfly
-layout: article
+layout: post
 ---
 <span class='imgright'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-logo.png' /></span> <p>The web developer tool <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> is open source, and it&#39;s written in JavaScript. It&#39;s available from <a href="https://bitbucket.org/scope/dragonfly-stp-1/">a public repository on Bitbucket</a> so that everyone who would like to can contribute. Sounds easy? It&#39;s meant to be.. but how, exactly, do you get started?</p>
 
@@ -30,7 +30,7 @@ cutting edge <a href="https://bitbucket.org/scope/dragonfly-stp-1-experimental">
 	<li>Copy the &#39;hg clone&#39; command from the Bitbucket site, paste it in the command line window and press enter</li>
 </ol>
 </li>
-</ol><span class='imgcenter'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-hg-cmdline.png' /></span> 
+</ol><span class='imgcenter'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-hg-cmdline.png' /></span>
 <p>Mercurial now copies Opera Dragonfly to your computer so that you can play around and make changes.</p>
 
 <h2>Using and editing your local copy</h2>
@@ -56,5 +56,5 @@ username = hallvors
 </li>
 <li>Go to the command line / terminal, change to correct folder and type <br /><code>hg commit -m&quot;quick description of the changes&quot;</code></li>
 <li>Followed by <br /><code>hg push</code><br /> and your Bitbucket password when prompted.</li>
-</ol><span class='imgright'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-pull-req.png' /></span> 
+</ol><span class='imgright'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-pull-req.png' /></span>
 <p>Success! The change should now show up as a revision on your Bitbucket repository, where you can share it with others - for example by going to the official repository to use the &quot;Pull request&quot; button. Good luck and thanks in advance for any contributions!</p>

@@ -6,7 +6,7 @@ tags:
 - experimental
 - opera next
 - dragonfly
-layout: article
+layout: post
 ---
         <h3>New Release Model</h3>
         <p>You might have seen the flurry of updates in Opera Dragonfly – we now have <a href="http://my.opera.com/dragonfly/blog/css-shorthands">CSS shorthands</a> and also a <a href="http://my.opera.com/dragonfly/blog/style-profiler-preview">style profiler</a>! To make all this possible, we have also altered our release model.

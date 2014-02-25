@@ -7,7 +7,7 @@ tags:
 - Opera Dragonfly
 - alpha 3
 - dragonfly
-layout: article
+layout: post
 ---
 <p><em>[UPDATE] Added Bulgarian, Tamil, Telugu, Turkish and Ukrainian, which I accidently missed from the list.</em></p>
 

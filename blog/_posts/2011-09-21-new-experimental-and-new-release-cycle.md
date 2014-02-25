@@ -5,7 +5,7 @@ authors:
 tags:
 - experimental
 - dragonfly
-layout: article
+layout: post
 ---
 <p>With the big launch of Opera Dragonfly 1.1 out of the way, we’ve decided it’s time to make some changes to our release cycle. From now on releases will be more focused on improvements to individual components, e.g. the DOM inspector or the UI framework. As soon as a feature for a certain component has been implemented, it will be put on the experimental path for some initial testing.</p>
 

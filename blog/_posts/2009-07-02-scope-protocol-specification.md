@@ -7,7 +7,7 @@ tags:
 - testing
 - automation
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Today we are happy to release the <a href="http://dragonfly.opera.com/app/scope-interface/">specification</a> for the Scope
 protocol. This is the protocol used for communication between
@@ -16,7 +16,7 @@ Opera Dragonfly. It is also used here at Opera for
 <a href="http://my.opera.com/core/blog/2009/03/06/test-automation-with-operawatir">automated testing</a>.</p>
 
 <p>Since the release of Opera Dragonfly, we have tried to keep the
-project open source. The <a href="http://dragonfly.opera.com/app/zips/">source</a> and its 
+project open source. The <a href="http://dragonfly.opera.com/app/zips/">source</a> and its
 <a href="http://dragonfly.opera.com/app/jsDoc/">documentation</a> is available under BSD licence, but it is difficult to
 expand it or create something different without the protocol
 specification. This release wants to rectify that.</p>

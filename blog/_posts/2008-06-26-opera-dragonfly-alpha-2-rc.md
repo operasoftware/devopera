@@ -7,7 +7,7 @@ tags:
 - developer tools
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We&#39;ve just released the Release Candidate for <a href="http://www.opera.com/products/dragonfly">Opera Dragonfly alpha 2</a>.  New features added since the initial alpha include auto-complete for the Command Line (including object inspection), docked window mode, CSS editing including auto-complete, and a downloadable debug menu. There has also been many bug fixes and stability improvements.</p>
 

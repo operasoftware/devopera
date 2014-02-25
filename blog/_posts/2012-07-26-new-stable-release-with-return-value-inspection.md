@@ -3,7 +3,7 @@ title: New stable release with return value inspection
 authors:
 - hzr
 - dragonfly
-layout: article
+layout: post
 ---
 <p>When debugging a program, it is often useful to know the value that was returned from the last function call. If the value is assigned to a variable it&#39;s easy to inspect, but sometimes you might have something like this without a reference to the value returned:</p>
 <p><pre><code>mul(add(1, 2), add(3, 4));</code></pre></p>

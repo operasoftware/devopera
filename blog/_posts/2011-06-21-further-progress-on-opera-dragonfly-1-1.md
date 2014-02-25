@@ -6,7 +6,7 @@ tags:
 - developer tools
 - Opera Dragonfly 1.1
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We have made some refinements to the first preview of Opera Dragonfly 1.1, which we released on the experimental branch today. These include polishing the new search feature, and further updates to the Error Log.</p>
 
@@ -26,4 +26,4 @@ layout: article
 
 <p>Support for opening the CSS file at the correct line number from the Style Inspector style rule  will come very soon. We will hopefully have another build this week with this enabled.</p>
 
- 
+

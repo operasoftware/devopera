@@ -6,7 +6,7 @@ tags:
 - users
 - license
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We’re happy to announce that Opera Dragonfly has reached the <a href="http://www.opera.com/press/releases/2010/05/04_2/">100,000 active <em>daily</em> users</a> milestone. While it pales in comparison to our browser usage–where Opera Mini and Opera desktop both hit 50 Million active <em>monthly</em> users recently–it is an impressive amount of Web developers who test in Opera each day. With the help of those developers, we can improve Opera’s Web site compatibility, and create a better experience for our users. A big thank you to all our Opera Dragonfly users so far. We hope to rapidly increase this figure as Opera Dragonfly matures.</p>
 

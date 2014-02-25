@@ -3,7 +3,7 @@ title: Profiler lands on default path
 authors:
 - hzr
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Today we&#39;re releasing the profiler that&#39;s been in beta testing for some time now.</p>
 

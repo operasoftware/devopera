@@ -7,7 +7,7 @@ tags:
 - Opera Dragonfly
 - Opera 11
 - dragonfly
-layout: article
+layout: post
 ---
 <p>With today’s <a href="http://www.opera.com/browser/">release of Opera 11</a>, we have pushed the <a href="http://my.opera.com/dragonfly/blog/2010/12/03/getting-opera-dragonfly-ready-for-opera-11">corresponding Opera Dragonfly version</a> to the default path. This means Opera 11 users will get this version automatically.</p>
 

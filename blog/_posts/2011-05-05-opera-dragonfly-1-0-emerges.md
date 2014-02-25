@@ -6,7 +6,7 @@ tags:
 - '#dfl1'
 - Opera Dragonfly 1.0
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/opera-dragonfly-1-0-emerges/dfl10.png" alt="" />
 

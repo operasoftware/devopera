@@ -3,7 +3,7 @@ title: Experimental build with event listener inspection and function source too
 authors:
 - aleto
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Our latest experimental build introduces the ability to inspect JavaScript event listeners from inside the DOM view.</p>
 
