@@ -10,7 +10,7 @@ tags:
 - Opera Dragonfly
 - SVG
 - dragonfly
-layout: article
+layout: post
 ---
 <p>The weekly snapshot of <a href="http://my.opera.com/desktopteam/blog/2008/05/23/a-lighter-ev">Opera Kestrel</a> included a few fixes to bugs that caused issues in Opera Dragonfly.  The most prominent one of these is that persistent cache should now work in Opera Dragonfly, enabling offline mode to work as it was designed.  This should make Opera Dragonfly much more useful.</p>
 

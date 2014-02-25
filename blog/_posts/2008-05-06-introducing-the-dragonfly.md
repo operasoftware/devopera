@@ -5,7 +5,7 @@ authors:
 tags:
 - roadmap
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/introducing-the-dragonfly/1dragonfly.gif" width="640" height="309" alt="Opera Dragonfly" />
 

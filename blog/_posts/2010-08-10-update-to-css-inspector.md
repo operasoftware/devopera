@@ -9,7 +9,7 @@ tags:
 - Firebug
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <p>The previous release of Opera Dragonfly to coincide with Opera 10.60 added one of the most requested features: offline support via App Cache. Now we are launching the second release for the 10.6x branch with another highly requested feature. This time we have added support for disabling and enabling CSS declarations.</p>
 

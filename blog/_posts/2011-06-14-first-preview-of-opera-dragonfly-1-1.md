@@ -5,7 +5,7 @@ authors:
 tags:
 - Opera Dragonfly 1.1
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Since Opera Dragonfly 1.0 was released we have been hard at work preparing the first point release. We are hoping to deliver this before the Oslo summer vacation period. The first fruits of this labour are available on the experimental path. If you are using Opera Next you will automatically get this version. If you are using the stable Opera version you will have to switch to this version manually. I recommend that you use <a href="http://my.opera.com/desktopteam/blog/2011/06/14/happy-tuesday">a recent Opera 11.50 build</a> to be able to test out the new features.</p>
 
@@ -31,7 +31,7 @@ layout: article
 
 <h5>Pseudo classes</h5>
 
-<p>Previously pseudo classes only showed in the style inspector if it matched when selecting the element. For example <code>:hover</code> would only show if you hovered the element when clicking in the page. It would not show if you clicked on the same element in the DOM view (and thus the element was not hovered). Now there is a drop down button in the styles section (currently without icon – this will be fixed for final) where you can enable which pseudo classes you want to see. If the option is enabled you will see the style rules that use that pseudo class. These can be disabled to avoid cluttering the view. The <code>::selection</code> pseudo element can also be found in this menu, as it is somewhat special, as it can wrap many (partial) elements.</p> 
+<p>Previously pseudo classes only showed in the style inspector if it matched when selecting the element. For example <code>:hover</code> would only show if you hovered the element when clicking in the page. It would not show if you clicked on the same element in the DOM view (and thus the element was not hovered). Now there is a drop down button in the styles section (currently without icon – this will be fixed for final) where you can enable which pseudo classes you want to see. If the option is enabled you will see the style rules that use that pseudo class. These can be disabled to avoid cluttering the view. The <code>::selection</code> pseudo element can also be found in this menu, as it is somewhat special, as it can wrap many (partial) elements.</p>
 
 <h5>Pseudo elements</h5>
 
@@ -55,7 +55,7 @@ layout: article
 
 <h3>Change log</h3>
 
-<p>All the bug fixes and feature commits can be found in the <a href="http://dragonfly.opera.com/app/stp-1/experimental/logs/4527.61da8f1362ff.log">commit log</a>.  
+<p>All the bug fixes and feature commits can be found in the <a href="http://dragonfly.opera.com/app/stp-1/experimental/logs/4527.61da8f1362ff.log">commit log</a>.
 
 <h3>More to come</h3>
 

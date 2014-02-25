@@ -7,7 +7,7 @@ tags:
 - Opera Dragonfly 1.1
 - CSS line numbers
 - dragonfly
-layout: article
+layout: post
 ---
 <p>Another new build has been pushed to experimental today. This has a number of bug fixes and new features, including one many people have been waiting for.</p>
 

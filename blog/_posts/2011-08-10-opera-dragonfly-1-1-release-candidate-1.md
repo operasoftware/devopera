@@ -7,7 +7,7 @@ tags:
 - Opera Dragonfly 1.1
 - Release Candidate
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We have just released the release candidate of Opera Dragonfly 1.1 on the cutting-edge (coming soon) and <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental paths</a>. This will be the build that will be pushed to the default path unless we find any P1 bugs during the final testing and cooling down phase. Work will then switch to feature development on Opera Dragonfly 1.2, including features such as a profiler and collapsing to shorthands in the CSS Inspector.</p>
 
@@ -29,26 +29,26 @@ layout: article
 	<li>Search via regex, <abbr>CSS</abbr> selectors, XPath, and text</li>
 	<li>Link back from a style declaration to its declaration in the <abbr>CSS</abbr> source file</li>
 	<li>Show style declarations for pseudo-classes and pseudo-elements</li>
-	<li>SVG presentational attributes in Style Inspector</li> 
+	<li>SVG presentational attributes in Style Inspector</li>
 </ul>
 
 <h4>Storage Inpsector 1.1</h4>
-				
+
 <ul>
 	<li>Upgrade Local Storage, Session Storage and Widgets Preferences to the new Cookie UI</li>
 </ul>
-			
+
 <h4>Console 1.1</h4>
-				
+
 <ul>
 	<li>Full panel Console</li>
 	<li>Auto-complete for JS/DOM built-ins</li>
 	<li>Inline expandable Objects</li>
 	<li>Highlight console.warn, info and error</li>
 </ul>
-			
+
 <h4>Error Log 1.1</h4>
-				
+
 <ul>
 	<li>UI redesign taking up less real estate</li>
 	<li>Show resource type in overview instead of severity level</li>
@@ -59,23 +59,23 @@ layout: article
 	<li>Remove console.* entries (with option to add back)</li>
 	<li>Show errors from before DFL was open (Opera 12 only)</li>
 </ul>
-			
+
 <h4>Network Inspector 1.1</h4>
-				
+
 <ul>
 	<li>Inspect POST data</li>
 	<li>Performance improvements</li>
 </ul>
-			
+
 <h4>Resource Inspector 1.1</h4>
-				
+
 <ul>
 	<li>Link up line numbers with Error Log and CSS Inspector</li>
 	<li>Search</li>
 </ul>
-			
+
 <h4>Utilities 1.1</h4>
-				
+
 <ul>
 	<li>2D Screen Ruler</li>
 </ul>

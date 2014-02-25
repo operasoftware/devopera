@@ -7,7 +7,7 @@ tags:
 - release
 - Opera Dragonfly 1.1
 - dragonfly
-layout: article
+layout: post
 ---
 <p>After a number of release candidates we launched Opera Dragonfly 1.1 today. Around 3 and a half months ago we launched version 1.0 to <a href="http://www.sitepoint.com/opera-dragonfly-1-browser-development-tool/">critical</a> <a href="http://www.webmonkey.com/2011/05/opera-dragonfly-a-worthy-addition-your-web-development-toolkit/">acclaim</a>. We’ve not rested on our laurels since then and have been hard at work responding to feedback, squashing over 200 bugs, adding new features, perfecting existing ones, and polishing the user interface. We believe we now have an even better product, and we’re excited to get it out the door. We look forward to the feedback from web developers and hope it makes their experience developing for Opera smoother.</p>
 
@@ -42,7 +42,7 @@ layout: article
 
 <h4>Storage Inspector</h4>
 
-The Local Storage, Session Storage and Widgets Preferences panels have been upgraded to the UI used for cookies in Opera Dragonfly 1.0. This is something we ran out of time to implement in the previous version and should make the new version much more consistent. 
+The Local Storage, Session Storage and Widgets Preferences panels have been upgraded to the UI used for cookies in Opera Dragonfly 1.0. This is something we ran out of time to implement in the previous version and should make the new version much more consistent.
 
 <h4>Error Log</h4>
 
@@ -61,11 +61,11 @@ The old Error Log has been ripped out and replaced with a shiny upgraded version
      <li>Errors are shown from before Opera Dragonfly was open (Opera 12 only)</li>
 </ul>
 
-<p>For those of you still using the native Error Console you might want to try using the Opera Dragonfly version, especially once Opera 12 comes out later this year when Opera Dragonfly will be able to access the errors from before it was opened.</p> 
+<p>For those of you still using the native Error Console you might want to try using the Opera Dragonfly version, especially once Opera 12 comes out later this year when Opera Dragonfly will be able to access the errors from before it was opened.</p>
 
 <h4>Console</h4>
 
-<img src="/blog/opera-dragonfly-1-1/Screen%20Shot%202011-08-31%20at%2020.59.42.png" alt="" /> 
+<img src="/blog/opera-dragonfly-1-1/Screen%20Shot%202011-08-31%20at%2020.59.42.png" alt="" />
 
 <p>In Opera Dragonfly 1.1 we have added a new full panel version of the Console. This complements the HUD version that is available when pressing <kbd>Esc</kbd>. This version is most useful when working full time in the console, while the HUD is useful when switching quickly between it and another tool.</p>
 

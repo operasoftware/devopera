@@ -6,7 +6,7 @@ tags:
 - network
 - colors
 - dragonfly
-layout: article
+layout: post
 ---
 <p>
 Lots of changes in the Network inspector have now made it into an experimental build. The main purpose of the makeover is to give more insight on what happens on the Network side of Opera, with powerful new filtering and search functionality.

@@ -5,13 +5,13 @@ authors:
 tags:
 - performance
 - dragonfly
-layout: article
+layout: post
 ---
 <p>CSS selector matching is often neglected when it comes to performance of web documents and applications. For small documents, the performance impact is negligible, but for documents with a large DOM (like the Opera Dragonfly application itself), a single &quot;bad&quot; selector can have a serious impact.
 
 <p>CSS selector matching refers to the process where a browser tries to match a selector against an element in the DOM. In terms of performance, some selectors are better than others. For instance, an ID selector is better than the universal selector (<code>*</code>), because the former only matches one element (and is cached). Matching elements in a big DOM against many unspecific selectors might cause your page to render significantly slower because of the number of elements affected.
 
-<p>We <a href="http://my.opera.com/desktopteam/blog/2011/11/08/small-update-in-11-60" target="_blank">recently introduced support for style profiling in Core</a>, and this is the first preview of its implementation in Opera Dragonfly. 
+<p>We <a href="http://my.opera.com/desktopteam/blog/2011/11/08/small-update-in-11-60" target="_blank">recently introduced support for style profiling in Core</a>, and this is the first preview of its implementation in Opera Dragonfly.
 
 <p>Opera takes several actions from the time it loads a document to when it is rendered on screen: markup, stylesheets and scripts are parsed, scripts are executed, parts of the page are painted on screen. All of these events that occur while rendering are presented in a timeline in this profiler. Our focus has been on providing detailed information about CSS selectors. Clicking the &quot;Style recalculation&quot; header, or one of the individual style recalculation events in the timeline, will give you a list of the most expensive selectors.
 

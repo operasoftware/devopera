@@ -9,7 +9,7 @@ tags:
 - syntax highlighting
 - tokenizer
 - dragonfly
-layout: article
+layout: post
 ---
 <p>We are currently working on new <a href="http://en.wikipedia.org/wiki/Lexical_analysis">tokenizers</a> and <a href="http://en.wikipedia.org/wiki/Syntax_highlighting">syntax highlighting</a> for the source views in the <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> Resource Service. One of the core requirements for this is performance. Everything in Opera Dragonfly is done client side with JavaScript; if you want to debug something as complex as GMail, with many large scripts the tokenizer and highlighter has to be lightning fast to give a useable experience.  This was a considerable challenge when we started Opera Dragonfly. If we tokenised and highlighted an entire script at once it would take multiple seconds for large files. Instead, we took an approach and would split the script into chunks and highlight what was visible in the script view. With this approach in place, syntax highlighting was almost instant.</p>
 
@@ -79,6 +79,6 @@ layout: article
 
 <p>Another point to note is that there is a very noticeable slow down when enabling the Opera Dragonfly style sheet. These are the kinds of bottle necks we are identifying and working on to improve responsiveness and handling of large files. In this case it is likely that using more performant selectors such as ID and class selectors will give a good performance increase. The more complex the selector the more lookup and resolving the browser has to perform.</p>
 
-<p>As we work on polishing and refining Opera Dragonfly for its big 1.0 release, we thought it would be useful to share with you findings such as these. We’ll be sure to pass on any useful knowledge that we gain in this process. We also plan for the tokenizers and syntax highlighting scripts to work standalone from Opera Dragonfly, so they can be incorporated in any projects that need highly performant source highlighting. We are currently working on markup (HTML and XML) and CSS tokenizers to join our current JavaScript tokenizer. We hope 3<sup>rd</sup> parties will find them as useful as we do.</p> 
+<p>As we work on polishing and refining Opera Dragonfly for its big 1.0 release, we thought it would be useful to share with you findings such as these. We’ll be sure to pass on any useful knowledge that we gain in this process. We also plan for the tokenizers and syntax highlighting scripts to work standalone from Opera Dragonfly, so they can be incorporated in any projects that need highly performant source highlighting. We are currently working on markup (HTML and XML) and CSS tokenizers to join our current JavaScript tokenizer. We hope 3<sup>rd</sup> parties will find them as useful as we do.</p>
 
 <p>You can follow the progress and check out the source at our <a href="https://bitbucket.org/scope/dragonfly-stp-1"> Opera Dragonfly BitBucket repository</a>.</p>

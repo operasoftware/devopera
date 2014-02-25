@@ -5,7 +5,7 @@ authors:
 tags:
 - Opera Dragonfly 1.0
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/opera-dragonfly-1-0-rc/Screen%20shot%202011-05-03%20at%2016.18.20.png" alt="" />
 

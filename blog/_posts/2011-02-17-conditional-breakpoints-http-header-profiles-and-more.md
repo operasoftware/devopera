@@ -6,7 +6,7 @@ tags:
 - Conditional Breakpoints
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/conditional-breakpoints-http-header-profiles-and-more/conditional.png" alt="" />
 

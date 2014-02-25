@@ -6,7 +6,7 @@ tags:
 - developer tools
 - Opera Dragonfly 1.1
 - dragonfly
-layout: article
+layout: post
 ---
 <p>On the day that <a href="http://my.opera.com/chooseopera/blog/2011/06/28/new-opera-version-available-updated-design-speed-dial-extensions-and-a-lot-mor">Opera 11.50</a> was released, we have released another build of Opera Dragonfly 1.1 to the experimental branch. This continues the work with a lot of <a href="https://dragonfly.opera.com/app/stp-1/experimental/logs/4601.b3a9baf012fa.log">bug fixes</a> and a few new features.</p>
 
@@ -20,7 +20,7 @@ layout: article
 
 <p>As well as the full panel mode, there have also been some improvements. The main one is that auto-complete (by pressing <kbd>tab</kbd>) now works for built-in JavaScript/DOM objects and functions. This should make the auto-complete a lot more useful. We will also add inline expandable objects in a future build of 1.1.</p>
 
-<p>Related to the full panel console, we’ve also remove console.* messages from the Error Log. This now only show up in the Console. If you like this implementation, or feel like you miss it from the Error Log then also let us know in the comments. Along with that change we have continued to work on implementing the new style Error Log.</p> 
+<p>Related to the full panel console, we’ve also remove console.* messages from the Error Log. This now only show up in the Console. If you like this implementation, or feel like you miss it from the Error Log then also let us know in the comments. Along with that change we have continued to work on implementing the new style Error Log.</p>
 
 <h3>SVG  presentational attributes</h3>
 
@@ -39,4 +39,4 @@ layout: article
 <img src="/blog/more-steps-along-the-road-to-opera-dragonfly/Screen%20shot%202011-06-28%20at%2019.43.39.png" alt="" />
 
 <p>For the full changes take a look at the <a href="https://dragonfly.opera.com/app/stp-1/experimental/logs/4601.b3a9baf012fa.log">change log</a>. We hope you enjoy the new features and increased stability. Let us know what you think in the comments or on <a href="http://www.twitter.com/">Twitter</a>.</p>
- 
+

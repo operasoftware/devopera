@@ -6,7 +6,7 @@ tags:
 - developer tools
 - Opera Dragonfly 1.1
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/expandable-objects-in-the-console-and-more/Screen%20shot%202011-07-07%20at%2002.16.30.png" alt="" />
 

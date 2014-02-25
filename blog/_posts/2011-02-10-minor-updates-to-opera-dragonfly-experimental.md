@@ -6,7 +6,7 @@ tags:
 - syntax highlight
 - Opera Dragonfly
 - dragonfly
-layout: article
+layout: post
 ---
 <img src="/blog/minor-updates-to-opera-dragonfly-experimental/minor-update.png" alt="" />
 
