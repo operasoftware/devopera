@@ -1,7 +1,7 @@
 ---
 title: New experimental with Console fixes and UI tweaks
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
 - experimental
 - dragonfly

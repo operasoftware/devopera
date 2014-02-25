@@ -1,10 +1,9 @@
 ---
 title: More steps along the road to Opera Dragonfly 1.1
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
+- developer-tools
 - dragonfly
 layout: post
 ---

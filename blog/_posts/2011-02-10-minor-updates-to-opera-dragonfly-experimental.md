@@ -1,10 +1,9 @@
 ---
 title: Minor updates to Opera Dragonfly Experimental
 authors:
-- dstorey
+- david-storey
 tags:
-- syntax highlight
-- Opera Dragonfly
+- syntax-highlight
 - dragonfly
 layout: post
 ---

@@ -1,10 +1,10 @@
 ---
-title: 'Early look at upcoming features: "pretty print", function return values, UPnP'
+title: 'Early look at upcoming features: “pretty print”, function return values, UPnP'
 authors:
-- patrickhlauke
+- patrick-lauke
 tags:
-- pretty print
-- remote debugging
+- pretty-print
+- remote-debugging
 - gogi
 - experimental
 - upnp

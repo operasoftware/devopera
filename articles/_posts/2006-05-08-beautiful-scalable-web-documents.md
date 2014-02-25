@@ -8,6 +8,7 @@ tags:
 - open-web
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Latest stable release with recent enhancements
 authors:
-- patrickhlauke
+- patrick-lauke
+tags:
 - dragonfly
 layout: post
 ---

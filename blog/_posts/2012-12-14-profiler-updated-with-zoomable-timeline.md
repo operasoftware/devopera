@@ -1,7 +1,8 @@
 ---
 title: Profiler updated with zoomable timeline
 authors:
-- hzr
+- david-hasather
+tags:
 - dragonfly
 layout: post
 ---

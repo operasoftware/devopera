@@ -1,11 +1,11 @@
 ---
 title: Getting Opera Dragonfly ready for Opera 11
 authors:
-- dstorey
+- david-storey
 tags:
 - alpha
-- command line
-- Opera 11
+- command-line
+- opera-11
 - dragonfly
 layout: post
 ---

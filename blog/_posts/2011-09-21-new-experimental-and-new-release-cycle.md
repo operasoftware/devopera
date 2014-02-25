@@ -1,7 +1,7 @@
 ---
 title: New fast release cycle and a fresh experimental build
 authors:
-- hzr
+- david-hasather
 tags:
 - experimental
 - dragonfly

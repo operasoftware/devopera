@@ -1,7 +1,8 @@
 ---
 title: Profiler lands on default path
 authors:
-- hzr
+- david-hasather
+tags:
 - dragonfly
 layout: post
 ---

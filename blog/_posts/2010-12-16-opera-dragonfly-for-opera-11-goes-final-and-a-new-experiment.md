@@ -1,11 +1,10 @@
 ---
 title: Opera Dragonfly for Opera 11 goes final, and a new experiment
 authors:
-- dstorey
+- david-storey
 tags:
 - experimental
-- Opera Dragonfly
-- Opera 11
+- opera-11
 - dragonfly
 layout: post
 ---

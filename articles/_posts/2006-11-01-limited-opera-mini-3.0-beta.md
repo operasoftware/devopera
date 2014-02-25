@@ -6,6 +6,7 @@ intro: 'This is your chance to make Opera Mini even better and try out brand new
 tags:
 - opera-mini
 - labs
+license: os-asa
 layout: article
 ---
 

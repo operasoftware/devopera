@@ -1,9 +1,9 @@
 ---
 title: CSS shorthands!
 authors:
-- hzr
+- david-hasather
 tags:
-- CSS
+- css
 - shorthands
 - weekly
 - dragonfly

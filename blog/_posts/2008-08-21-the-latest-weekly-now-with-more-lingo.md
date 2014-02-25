@@ -1,10 +1,9 @@
 ---
 title: The latest weekly, now with more lingo
 authors:
-- dstorey
+- david-storey
 tags:
 - localisation
-- Opera Dragonfly
 - localization
 - dragonfly
 layout: post

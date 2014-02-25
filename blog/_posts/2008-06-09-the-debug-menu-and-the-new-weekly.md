@@ -1,12 +1,11 @@
 ---
-title: The 'Debug Menu' and the new weekly
+title: The “Debug Menu” and the new weekly
 authors:
-- shwetankdixit
+- shwetank-dixit
 tags:
-- debug menu
-- Opera Dragonfly
-- weekly
+- debug-menu
 - dragonfly
+- weekly
 layout: post
 ---
 Today we are releasing the ‘Debug Menu’ targeted at all you web developers out there. This menu is meant to complement Opera Dragonfly and provide web developers with a better experience with performing common tasks.<br/><br/>The goal of the debug menu is to bring developer specific functionality <i>already present</i> in the browser in one place, further enhanced with some extra features and reference materials.<br/><br/>Extra features include:<br/><ul class="bullets"><li> Open Opera Dragonfly (you might find this easier, instead of going to tools-&gt;advanced-&gt;developer tools every time you want to open Opera Dragonfly)</li><li> Validate HTML5</li><li> Validate CSS2.1 and CSS3</li><li> Get an Accessibility and Section 508 report.</li><li> Check for broken links.</li><li> Check how your page will display in Opera Mini</li><li> Check the rendering mode of your page</li><li> Reload all images (without reloading the page).</li><li> Check Alexa rank and Compete.com traffic analysis</li><li> Documentation on HTML4.01, CSS2.1, XPath, XSLT and Unicode.</li><li> Check WHOIS information</li></ul><br/><strong>How to install</strong><br/>Just <a href="http://people.opera.com/shwetankd/debugmenu/DebugMenu.ini" target="_blank">click here</a> to download the Menu.<br/><br/><strong>Requirements</strong><br/>It should be used in Opera 9.5. You can download Opera 9.5 from <a href="http://www.opera.com/download/" target="_blank">here</a>.<br/><br/><strong>Customize and build on it</strong><br/><br/>Check out the links below on how to make your own .ini file for a custom menu. You can use the same information to edit this .ini file and add/remove/change the settings.<br/><br/><a href="http://operawiki.info/EditingINIFiles" target="_blank">http://operawiki.info/EditingINIFiles</a><br/><a href="http://operawiki.info/AdvancedToolbarINIGuide" target="_blank">http://operawiki.info/AdvancedToolbarINIGuide</a><br/><br/>You are not limited by just this Menu. You can download other toolbars, menus and setups as well, that are made by Opera fans.<br/><br/>Have fun with the menu!<br/><br/><strong>Newest Opera Dragonfly Weekly now live</strong><br/>You can download <a href="http://dragonfly.opera.com/app/weekly/zips/protocol-3/Opera-Dragonfly-08-06-09-15-30.zip" target="_blank">build 08-06-09-15-30</a>. Bug fixing was the major focus of this weekly release, and here is <a href="https://dragonfly.opera.com/app/weekly/zips/protocol-3/changelog-08-06-09-15-30.txt" target="_blank">changelog</a> detailing all the fixes.<br/><br/>One of the major changes is that now Opera Dragonfly can remember its state. Attached or detached.<br/><br/>As mentioned in previous posts as well, automatically updated weekly builds can be found at <a href="https://dragonfly.opera.com/app/weekly/" target="_blank">https://dragonfly.opera.com/app/weekly/</a>. Update the URL by going to Opera:Config -&gt; Developer Tools -&gt; Developer Tools URL . This way you can always automatically get the latest updates.<br/><br/>

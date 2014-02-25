@@ -1,11 +1,10 @@
 ---
 title: Opera Dragonfly 1.1 release candidate 1
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
-- Release Candidate
+- developer-tools
+- release-candidate
 - dragonfly
 layout: post
 ---

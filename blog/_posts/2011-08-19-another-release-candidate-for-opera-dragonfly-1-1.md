@@ -1,11 +1,10 @@
 ---
 title: Another release candidate for Opera Dragonfly 1.1
 authors:
-- dstorey
+- david-storey
 tags:
 - experimental
-- Opera Dragonfly 1.1
-- Release Candidate
+- release-candidate
 - dragonfly
 layout: post
 ---

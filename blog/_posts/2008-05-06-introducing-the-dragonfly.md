@@ -1,7 +1,7 @@
 ---
 title: Hello World - Introducing Opera Dragonfly
 authors:
-- Think
+- jan-standal
 tags:
 - roadmap
 - dragonfly

@@ -1,9 +1,8 @@
 ---
 title: On the road to Beta…
 authors:
-- dstorey
+- david-storey
 tags:
-- Opera Dragonfly beta
 - dragonfly
 layout: post
 ---

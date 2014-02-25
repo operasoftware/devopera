@@ -1,10 +1,9 @@
 ---
 title: Another experimental preview to test
 authors:
-- dstorey
+- david-storey
 tags:
 - experimental
-- Opera Dragonfly
 - dragonfly
 layout: post
 ---

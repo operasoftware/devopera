@@ -1,10 +1,9 @@
 ---
 title: Latest weekly now live
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly
+- developer-tools
 - weekly
 - dragonfly
 layout: post

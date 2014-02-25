@@ -1,9 +1,8 @@
 ---
 title: Opera Dragonfly 1.0 RC
 authors:
-- dstorey
+- david-storey
 tags:
-- Opera Dragonfly 1.0
 - dragonfly
 layout: post
 ---

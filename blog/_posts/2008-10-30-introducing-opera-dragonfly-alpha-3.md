@@ -1,12 +1,10 @@
 ---
 title: Introducing Opera Dragonfly alpha 3
 authors:
-- dstorey
+- david-storey
 tags:
-- DOM
-- alpha 3
-- developer tools
-- Opera Dragonfly
+- dom
+- developer-tools
 - dragonfly
 layout: post
 ---

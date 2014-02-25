@@ -6,6 +6,7 @@ intro: 'The latest technology preview of Opera 9 is available today. We’ve add
 tags:
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 

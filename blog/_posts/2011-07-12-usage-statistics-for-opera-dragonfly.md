@@ -1,12 +1,11 @@
 ---
 title: Usage statistics for Opera Dragonfly
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
-- usage tracker
+- developer-tools
 - dragonfly
+- usage-tracker
 layout: post
 ---
 <p>It is important for any nontrivial project to be able to have reliable usage statistics. Opera Dragonfly is no exception to this. Usage stats are important to be able to help judge the success of a product, and to be able to monitor if there are sudden rises or drops in the user based, due to things like new releases, reviews, advertisements and promotions, and so on.</p>

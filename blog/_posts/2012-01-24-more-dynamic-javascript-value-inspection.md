@@ -1,7 +1,7 @@
 ---
 title: More dynamic JavaScript value inspection
 authors:
-- aleto
+- christian-krebs
 tag:
 - inspect
 - dragonfly

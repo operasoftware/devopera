@@ -1,10 +1,9 @@
 ---
 title: Multi-file search just landed
 authors:
-- dstorey
+- david-storey
 tags:
 - search
-- Opera Dragonfly
 - dragonfly
 layout: post
 ---

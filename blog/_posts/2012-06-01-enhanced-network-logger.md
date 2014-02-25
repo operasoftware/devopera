@@ -1,7 +1,8 @@
 ---
 title: Enhanced Network Logger
 authors:
-- danfoooo
+- daniel-herzog
+tags:
 - dragonfly
 layout: post
 ---

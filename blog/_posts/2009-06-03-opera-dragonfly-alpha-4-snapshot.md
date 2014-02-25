@@ -1,11 +1,9 @@
 ---
 title: Opera Dragonfly alpha 4 snapshot
 authors:
-- dstorey
+- david-storey
 tags:
-- alpha 4
-- network inspector
-- Opera Dragonfly
+- network-inspector
 - dragonfly
 layout: post
 ---
