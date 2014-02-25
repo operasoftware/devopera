@@ -8,6 +8,7 @@ tags:
 - sniffing
 - opera-9
 - tinymce
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

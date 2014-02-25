@@ -8,6 +8,7 @@ tags:
 - javascript
 - json
 - yui
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

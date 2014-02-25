@@ -8,6 +8,7 @@ tags:
 - html5
 - javascript
 - physics
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 

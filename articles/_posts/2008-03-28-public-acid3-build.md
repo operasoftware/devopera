@@ -6,6 +6,7 @@ intro: 'Two days ago Opera reached a 100/100 pass rate on [the Acid3 test](http:
 tags:
 - acid
 - labs
+license: os-asa
 layout: article
 ---
 

@@ -6,6 +6,7 @@ intro: 'Opera has just released a public version of it new specification for Fil
 tags:
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 

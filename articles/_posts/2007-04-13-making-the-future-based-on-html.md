@@ -8,6 +8,7 @@ tags:
 - htmlwg
 - whatwg
 - labs
+license: os-asa
 layout: article
 ---
 

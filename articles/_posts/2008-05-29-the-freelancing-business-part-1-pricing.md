@@ -6,6 +6,7 @@ intro: 'This is the first in a series of articles written by R Blank giving prac
 tags:
 - freelance
 - business
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 
