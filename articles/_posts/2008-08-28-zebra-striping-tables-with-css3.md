@@ -3,6 +3,7 @@ title: Zebra Striping Tables With CSS3
 authors:
 - christopher-schmitt
 intro: 'In this article Christopher Schmitt gives a succinct overview of how to use the nth-child CSS3 property to easily create zebra-striped HTML tables.'
+license: cc-by-nc-sa-2.5
 layout: article
 ---
 <h2>Introduction</h2>

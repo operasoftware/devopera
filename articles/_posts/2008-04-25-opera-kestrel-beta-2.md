@@ -6,6 +6,7 @@ intro: 'This week we released an exciting new beta release of Kestrel, the new O
 tags:
 - opera-9
 - labs
+license: os-asa
 layout: article
 ---
 

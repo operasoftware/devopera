@@ -7,6 +7,7 @@ tags:
 - opera-mini
 - android
 - labs
+license: os-asa
 layout: article
 ---
 
