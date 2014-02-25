@@ -1,6 +1,7 @@
 title: Dev.Opera
 markdown: kramdown
 kramdown:
+  input: GFM
   auto_ids: true
   transliterated_header_ids: true
 permalink: /:categories/:title/
