@@ -1,11 +1,10 @@
 ---
 title: Opera Dragonfly 1.1 just launched
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
+- developer-tools
 - release
-- Opera Dragonfly 1.1
 - dragonfly
 layout: post
 ---

@@ -1,13 +1,12 @@
 ---
 title: Update to CSS Inspector
 authors:
-- dstorey
+- david-storey
 tags:
-- Network
-- Colour
-- CSS
-- Firebug
-- Opera Dragonfly
+- network
+- colour
+- css
+- firebug
 - dragonfly
 layout: post
 ---

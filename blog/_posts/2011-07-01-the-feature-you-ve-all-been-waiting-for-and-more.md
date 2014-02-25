@@ -1,11 +1,9 @@
 ---
 title: The feature you’ve all been waiting for and more
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
-- CSS line numbers
+- developer-tools
 - dragonfly
 layout: post
 ---

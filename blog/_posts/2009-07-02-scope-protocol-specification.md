@@ -1,7 +1,7 @@
 ---
 title: 'Scope Protocol release: how the fat lady sings'
 authors:
-- OpJohannes
+- johannes-hoff
 tags:
 - scope
 - testing

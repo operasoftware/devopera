@@ -1,11 +1,9 @@
 ---
 title: Opera Dragonfly alpha 2 out now
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- alpha 2
-- Opera Dragonfly
+- developer-tools
 - dragonfly
 layout: post
 ---

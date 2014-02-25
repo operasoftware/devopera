@@ -1,10 +1,10 @@
 ---
 title: Running Opera Dragonfly offline
 authors:
-- danfoooo
+- daniel-herzog
 tags:
 - performance
-- developer tools
+- developer-tools
 - offline
 - dragonfly
 layout: post

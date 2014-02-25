@@ -1,10 +1,8 @@
 ---
 title: Opera Dragonfly 1.0 emerges from its exuviae
 authors:
-- dstorey
+- david-storey
 tags:
-- '#dfl1'
-- Opera Dragonfly 1.0
 - dragonfly
 layout: post
 ---

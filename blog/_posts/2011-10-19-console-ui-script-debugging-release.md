@@ -1,10 +1,10 @@
 ---
 title: Console + UI + Script debugging release
 authors:
-- danfoooo
+- daniel-herzog
 tags:
 - console
-- UI
+- ui
 - dragonfly
 layout: post
 ---

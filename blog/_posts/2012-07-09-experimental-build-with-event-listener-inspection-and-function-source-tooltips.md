@@ -1,7 +1,8 @@
 ---
 title: Experimental build with event listener inspection and function source tooltips
 authors:
-- aleto
+- christian-krebs
+tags:
 - dragonfly
 layout: post
 ---

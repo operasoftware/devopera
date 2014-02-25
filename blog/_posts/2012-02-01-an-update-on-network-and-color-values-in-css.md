@@ -1,7 +1,7 @@
 ---
 title: An update on Network and color values in CSS
 authors:
-- danfoooo
+- daniel-herzog
 tags:
 - network
 - colors

@@ -1,11 +1,9 @@
 ---
 title: Opera Dragonfly alpha 3, update 2
 authors:
-- dstorey
+- david-storey
 tags:
 - localisation
-- Opera Dragonfly
-- alpha 3
 - dragonfly
 layout: post
 ---

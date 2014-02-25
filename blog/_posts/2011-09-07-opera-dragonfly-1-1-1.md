@@ -1,7 +1,7 @@
 ---
 title: Opera Dragonfly 1.1.1
 authors:
-- hzr
+- david-hasather
 tags:
 - release
 - dragonfly

@@ -1,12 +1,11 @@
 ---
 title: Opera Dragonfly alpha for Presto 2.5
 authors:
-- dstorey
+- david-storey
 tags:
-- STP/1
-- Opera 10.5
-- Presto 2.5
-- Opera Dragonfly
+- stp1
+- opera-10.5
+- presto
 - dragonfly
 layout: post
 ---

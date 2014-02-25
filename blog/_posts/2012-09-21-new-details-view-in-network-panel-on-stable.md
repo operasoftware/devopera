@@ -1,7 +1,8 @@
 ---
 title: New details view in the network panel on stable
 authors:
-- danfoooo
+- daniel-herzog
+tags:
 - dragonfly
 layout: post
 ---

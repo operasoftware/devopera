@@ -1,7 +1,7 @@
 ---
 title: Resource Inspector Reloaded
 authors:
-- p01
+- mathieu-henri
 tags:
 - resource inspector
 - dragonfly

@@ -1,9 +1,8 @@
 ---
 title: First preview of Opera Dragonfly 1.1
 authors:
-- dstorey
+- david-storey
 tags:
-- Opera Dragonfly 1.1
 - dragonfly
 layout: post
 ---

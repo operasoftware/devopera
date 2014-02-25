@@ -1,7 +1,8 @@
 ---
 title: Opera Dragonfly source now on GitHub
 authors:
-- patrickhlauke
+- patrick-lauke
+tags:
 - dragonfly
 layout: post
 ---

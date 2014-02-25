@@ -1,7 +1,8 @@
 ---
 title: New stable release with improved color picker
 authors:
-- hzr
+- david-hasather
+tags:
 - dragonfly
 layout: post
 ---

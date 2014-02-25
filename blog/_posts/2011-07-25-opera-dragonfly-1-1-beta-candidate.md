@@ -1,10 +1,9 @@
 ---
 title: Opera Dragonfly 1.1 Beta
 authors:
-- dstorey
+- david-storey
 tags:
-- developer tools
-- Opera Dragonfly 1.1
+- developer-tools
 - beta
 - dragonfly
 layout: post

@@ -3,7 +3,6 @@ title: Opera Dragonfly Alpha 3
 authors:
 - david-storey
 tags:
-- alpha
 - dragonfly
 - developer-tools
 - odin

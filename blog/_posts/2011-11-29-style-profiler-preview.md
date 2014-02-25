@@ -1,7 +1,7 @@
 ---
 title: Style profiler preview
 authors:
-- hzr
+- david-hasather
 tags:
 - performance
 - dragonfly

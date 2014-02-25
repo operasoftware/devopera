@@ -1,10 +1,9 @@
 ---
 title: Opera Dragonfly developer survey
 authors:
-- dstorey
+- david-storey
 tags:
 - survey
-- Opera Dragonfly
 - dragonfly
 layout: post
 ---

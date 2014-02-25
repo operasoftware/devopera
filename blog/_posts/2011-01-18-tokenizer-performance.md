@@ -1,12 +1,11 @@
 ---
 title: Tokenizer performance
 authors:
-- dstorey
+- david-storey
 tags:
-- Carakan
+- carakan
 - performance
-- Opera Dragonfly
-- syntax highlighting
+- syntax-highlighting
 - tokenizer
 - dragonfly
 layout: post
