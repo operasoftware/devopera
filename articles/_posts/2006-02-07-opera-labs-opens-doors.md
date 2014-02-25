@@ -5,6 +5,7 @@ authors:
 intro: 'Welcome to Opera Labs, a behind-the-scenes look at the latest technology and products from Opera Software.'
 tags:
 - labs
+license: os-asa
 layout: article
 ---
 

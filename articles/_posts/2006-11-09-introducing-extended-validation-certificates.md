@@ -7,6 +7,7 @@ tags:
 - security
 - certificates
 - labs
+license: os-asa
 layout: article
 ---
 

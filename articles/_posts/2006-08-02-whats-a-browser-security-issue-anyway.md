@@ -6,6 +6,7 @@ intro: 'A large number of people are looking for security problems and vulnerabi
 tags:
 - security
 - labs
+license: os-asa
 layout: article
 ---
 
