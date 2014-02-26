@@ -12,4 +12,3 @@ exclude:
 - 'package.json'
 - 'README.md'
 - '*.scss'
-# limit_posts: 150
