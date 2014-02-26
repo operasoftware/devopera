@@ -17,7 +17,12 @@ module.exports = function(grunt) {
 			}
 		},
 		jekyll: {
-			build: {}
+			full: {},
+			limit: {
+				options: {
+					limit_posts: 150
+				}
+			}
 		},
 		htmlmin: {
 			site: {
@@ -44,7 +49,7 @@ module.exports = function(grunt) {
 				files: 'styles/*.scss',
 				tasks: ['sass', 'autoprefixer', 'copy']
 			},
-			jekyll: {
+			limit: {
 				files: [
 					'**',
 					'!_site/**',
@@ -56,7 +61,7 @@ module.exports = function(grunt) {
 					'!package.json',
 					'!.git/**'
 				],
-				tasks: ['jekyll', 'htmlmin']
+				tasks: ['jekyll:limit', 'htmlmin']
 			}
 		},
 		copy: {
@@ -100,7 +105,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'sass',
 		'autoprefixer',
-		'jekyll',
+		'jekyll:full',
 		'htmlmin',
 		'imagemin'
 	]);
