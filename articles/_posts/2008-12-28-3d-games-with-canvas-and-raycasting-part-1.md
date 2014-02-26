@@ -242,7 +242,7 @@ If this doesn’t make much sense, I strongly suggest taking a break and reading
 
 [14]: http://www.permadi.com/tutorial/raycast/
 
-Consider a 320x240 game screen rendering a 120° FOV. If we cast out a ray at every 2 pixels, we’ll be needing 160 rays, 80 rays on each side of the player’s direction. In this way, the screen is divided in vertical strips of 2 pixels width. For this demo we’ll be using a FOV of 60° and a resolution of 4 pixels per strip, but these numbers are easy to change.
+Consider a 320x240 game screen rendering a 120° Field of Vision (FOV). If we cast out a ray at every 2 pixels, we’ll be needing 160 rays, 80 rays on each side of the player’s direction. In this way, the screen is divided in vertical strips of 2 pixels width. For this demo we’ll be using a FOV of 60° and a resolution of 4 pixels per strip, but these numbers are easy to change.
 
 At each game cycle, we loop through these strips, calculate the direction based on the player’s rotation and cast a ray to find the nearest wall to render. The angle of the ray is determined by calculating the angle of the line from the player to the point on the screen or view.
 
@@ -501,5 +501,3 @@ And that’s about it; see Figure 6 for the final result! Well, not really — t
 [Next article: Creating Pseudo 3D Games with HTML 5 Canvas and Raycasting — Part 2][24]
 
 [24]: /articles/3d-games-with-canvas-and-raycasting-part-2/
-
-*[FOV]: Field of Vision

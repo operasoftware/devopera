@@ -274,5 +274,3 @@ At the time of writing the [yahoo.com][10] 404 page uses a meta-refresh to send 
 ## Summary {#summary}
 
 In this article we’ve covered ways to build smart error pages that are designed to guide the user back into the site by showing them relevant content when something goes wrong. Doing this attempts to engage your audience and maximises the time they spend on your site without having them navigate back to a search results page.
-
-*[SEO]: Search Engine Optimisation

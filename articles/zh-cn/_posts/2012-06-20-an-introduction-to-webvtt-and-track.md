@@ -378,12 +378,3 @@ WebVTT 和 HTML5 `<track>` 元素使得网络作者更容易推广其视频／�
 尽管浏览器的支持还是新兴的，但一些 Javascript 可以让我们的媒体文件更容易访问，而浏览器对 WebVTT 的支持也会增加。
 
 可访问性是网络作者在为用户提供媒体内容时所需要考虑的。更多用户更多欢乐，不是吗？
-
-*[WebVTT]: Web Video Text Tracks
-*[URL]: Universal Resource Locator
-*[字节顺序标记（BOM）]: Byte Order Mark
-*[HTML]: HyperText Markup Language
-*[HTML5]: HyperText Markup Language 5
-*[WebSRT]: Web Subtitle Resource Tracks
-*[CSS]: Cascading StyleSheets
-*[UTF-8]: Unicode Transformation Format-8

@@ -371,8 +371,3 @@ This is because IE 6 and below don’t support `:hover ` and `:focus ` pseudo-cl
 [27]: http://www.quirksmode.org/js/dragdrop.html
 [28]: http://en.wikipedia.org/wiki/Drag-and-drop
 [29]: http://html5doctor.com/native-drag-and-drop/
-
-*[ARIA]: Accessible Rich Internet Applications
-*[CSS]: Cascading Style Sheets
-*[WAI]: Web Accessibility Initiative
-*[DOM]: Document Object Model
