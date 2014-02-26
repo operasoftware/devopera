@@ -150,5 +150,3 @@ The biggest hurdles to adoption of 2D barcodes are not technical issues; these a
 [14]: http://en.wikipedia.org/wiki/Barcode
 [15]: http://www.p8tch.com/
 [16]: http://www.readwriteweb.com/archives/the_scannable_world_barcodes_scanning_in_the_real_world.php
-
-*[QR code]: Quick response

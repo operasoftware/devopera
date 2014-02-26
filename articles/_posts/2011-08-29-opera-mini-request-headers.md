@@ -13,13 +13,11 @@ layout: article
 
 <p>The User-Agent header contains the browser <abbr title="User Agent">UA</abbr> string information, divided up into tokens. To start with, here is an example of an User-Agent header:</p>
 
-<pre><code>User-Agent: Opera/9.80 (J2ME/MIDP; Opera Mini/6.1.25378/25.692; U; en)
-Presto/2.5.25 Version/10.54</code></pre>
+    User-Agent: Opera/9.80 (J2ME/MIDP; Opera Mini/6.1.25378/25.692; U; en) Presto/2.5.25 Version/10.54
 
 This is broken up into tokens, as follows:
 
-<pre><code>User-Agent: Opera/9.80 ($PLATFORM_NAME$; $PRODUCT_NAME$/$CLIENT_VERSION$/
-$SERVER_VERSION$;U; $LOCALE$) $PRESTO_VERSION$ $EQUIV_DESKTOP_VERSION$</code></pre>
+    User-Agent: Opera/9.80 ($PLATFORM_NAME$; $PRODUCT_NAME$/$CLIENT_VERSION$/ $SERVER_VERSION$;U; $LOCALE$) $PRESTO_VERSION$ $EQUIV_DESKTOP_VERSION$
 
 <p>The tokens are as follows:</p>
 
@@ -69,11 +67,11 @@ $SERVER_VERSION$;U; $LOCALE$) $PRESTO_VERSION$ $EQUIV_DESKTOP_VERSION$</code></p
 
 <h3>Format</h3>
 
-<pre>X-OperaMini-Features: <feature> *[ , <feature> ]</pre>
+    X-OperaMini-Features: <feature> *[ , <feature> ]
 
 <h3>Example</h3>
 
-<pre>X-OperaMini-Features: advanced, camera, folding, secure</pre>
+    X-OperaMini-Features: advanced, camera, folding, secure
 
 <h3>Possible values</h3>
 
@@ -112,12 +110,11 @@ $SERVER_VERSION$;U; $LOCALE$) $PRESTO_VERSION$ $EQUIV_DESKTOP_VERSION$</code></p
 
 <h3>Format</h3>
 
-<pre>X-OperaMini-Phone-UA: &lt;user-agent&gt;</pre>
+    X-OperaMini-Phone-UA: <user-agent>
 
 <h3>Example</h3>
 
-<pre>X-OperaMini-Phone-UA: SonyEricssonK750i/R1AA Browser/
-SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1</pre>
+    X-OperaMini-Phone-UA: SonyEricssonK750i/R1AA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1
 
 <h2 id="x-operamini-phone">X-OperaMini-Phone</h2>
 
@@ -127,11 +124,11 @@ SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1</pre>
 
 <h3>Format</h3>
 
-<pre>X-OperaMini-Phone: <manufacturer> # <model></pre>
+    X-OperaMini-Phone: <manufacturer> # <model>
 
 <h3>Example</h3>
 
-<pre>X-OperaMini-Phone: SonyEricsson # K750i</pre>
+    X-OperaMini-Phone: SonyEricsson # K750i
 
 <h2 id="x-forwarded-for">X-Forwarded-For</h2>
 
@@ -139,11 +136,11 @@ SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1</pre>
 
 <h3>Format</h3>
 
-<pre>X-Forwarded-For: &lt;IP address&gt; *[ , &lt;IP address&gt; ]</pre>
+    X-Forwarded-For: &lt;IP address&gt; *[ , &lt;IP address&gt; ]
 
 <h3>Example</h3>
 
-<pre>X-Forwarded-For: 127.0.0.1, 192.168.0.100, 195.189.143.147, 130.236.236.80</pre>
+    X-Forwarded-For: 127.0.0.1, 192.168.0.100, 195.189.143.147, 130.236.236.80
 
 <p>In this case, 195.189.143.147 is the IP address that connects to the Mini proxy, as it is the first item in the list which is not an internal IP address.</p>
 
@@ -153,8 +150,8 @@ SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1</pre>
 
 <h3>Format</h3>
 
-<pre>Accept-Language: &lt;language tag&gt; [;q=&lt;quality value&gt;], ...</pre>
+    Accept-Language: <language tag> [;q=<quality value>], ...
 
 <h3>Example</h3>
 
-<pre>Accept-Language: no-bok, no-nyn, en;q=0.8, fr;q=0.4</pre>
+    Accept-Language: no-bok, no-nyn, en;q=0.8, fr;q=0.4

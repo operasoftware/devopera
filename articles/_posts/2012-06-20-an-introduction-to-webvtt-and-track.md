@@ -377,12 +377,3 @@ The introduction of WebVTT and the HTML5 `<track>` element makes it much easier 
 Whilst browser support is still nascent, a number of JavaScript polyfills allow us to make our media more accessible now, in a way that will be understood by browsers once support for WebVTT increases.
 
 Accessibility is something that we, as web authors, should be thinking about when serving media content to our users. The more users who can access our content the better, right?
-
-*[WebVTT]: Web Video Text Tracks
-*[UTF-8]: Unicode Transformation Format-8
-*[URL]: Universal Resource Locator
-*[HTML]: HyperText Markup Language
-*[BOM]: Byte Order Mark
-*[WebSRT]: Web Subtitle Resource Tracks
-*[CSS]: Cascading StyleSheets
-*[HTML5]: HyperText Markup Language 5
