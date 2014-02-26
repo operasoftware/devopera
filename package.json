@@ -10,6 +10,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-jekyll": "~0.4.1",
     "lodash-template": "~1.0.0",
-    "grunt-rsync": "~0.3.0"
+    "grunt-rsync": "~0.3.0",
+    "load-grunt-tasks": "~0.4.0"
   }
 }

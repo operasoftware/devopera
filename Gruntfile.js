@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+	require('load-grunt-tasks')(grunt);
+
 	grunt.initConfig({
 		sass: {
 			compile: {
@@ -93,16 +95,14 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-jekyll');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-rsync');
+	grunt.registerTask('default', function() {
+		grunt.log.subhead('Please use following commangs');
+		grunt.log.writeln('• grunt watch  — for quick dev build');
+		grunt.log.writeln('• grunt build  — for full site build');
+		grunt.log.writeln('• grunt deploy — for build & deploy');
+	});
 
-	grunt.registerTask('default', [
+	grunt.registerTask('build', [
 		'sass',
 		'autoprefixer',
 		'jekyll:full',
@@ -110,6 +110,6 @@ module.exports = function(grunt) {
 		'imagemin'
 	]);
 
-	grunt.registerTask('deploy', ['rsync']);
+	grunt.registerTask('deploy', ['build', 'rsync']);
 
 };
