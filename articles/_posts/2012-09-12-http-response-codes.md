@@ -151,7 +151,7 @@ Note: There are other ways to handle this as well: through httpd.conf, through d
 
 ### Redirecting with nginx
 
-Nginx is another frequently used server, more specifically for CDNs. The above example rewritten for nginx would look like so:
+Nginx is another frequently used server, more specifically for Content Delivery Networks. The above example rewritten for nginx would look like so:
 
 	server {
 		listen 80;
@@ -180,5 +180,3 @@ And that brings us to the end of our study of HTTP status codes. I encourage you
 - Servers send HTTP status codes to provide quick information on the response sent by the client.
 - HTTP status codes have consequences on caching, and handling of URIs on the client side.
 - There are different families of HTTP status codes.
-
-*[CDN]: Content Delivery Network

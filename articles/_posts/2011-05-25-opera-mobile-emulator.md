@@ -65,7 +65,7 @@ The _User Interface_ section of the Profile Selector contains a dropdown menu wi
 
 This option allows you to set a custom User Agent before launching an Opera Mobile instance. Available options are _Default_ (`Opera Mobi` on Win/Mac/Linux), _Android_ (`Opera Mobi` on Android), _MeeGo_ (`Opera Mobi` on MeeGo), _Desktop_ (Opera Desktop).
 
-When running in tablet mode, the UA string is slightly different: `Opera Mobi` is replaced with `Opera Tablet`, so as to avoid that sites that use browser-sniffing send a mobile/small-screen optimised version to a large-screen tablet device.
+When running in tablet mode, the User Agent string is slightly different: `Opera Mobi` is replaced with `Opera Tablet`, so as to avoid that sites that use browser-sniffing send a mobile/small-screen optimised version to a large-screen tablet device.
 
 If you need to set a totally custom UA string, then this can be done as well: launch Opera Mobile with any UA string setting, open `opera:config`, search for the _Custom User-Agent_ property in the _User Prefs_ section, give it your preferred UA string value and save. To revert to the default value, simply click the _Default_ or _Reset_ button.
 
@@ -178,6 +178,3 @@ Opera Mobile Emulator 12.1 is also able to talk to our browser automation librar
 We hope that with this release of the [Opera Mobile Emulator][16] we’ve made it even easier to develop, optimize and debug on mobile and tablets. Happy developing!
 
 [16]: http://www.opera.com/developer/tools/mobile/
-
-*[UA]: User Agent
-*[UI]: User Interface
