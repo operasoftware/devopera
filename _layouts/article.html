@@ -14,7 +14,7 @@ layout: default
 				<p class="meta">
 					{% include author-picture.html object=page class='meta__picture' %}
 					<time datetime="{{ page.date | date: '%Y-%m-%d' }}" class="meta__time">{{ page.date | date: '%-d %B %Y' }}</time>
-					by <span class="meta__author">{% include author-name.html object=page %}</span>
+					by <span class="meta__author">{% include author-name.html object=page link=true %}</span>
 					in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
 				</p>
 				<p>Tags:
