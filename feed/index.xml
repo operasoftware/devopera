@@ -1,0 +1,40 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Dev.Opera</title>
+	<link href="http://dev.opera.com/"/>
+	<link type="application/atom+xml" rel="self" href="http://dev.opera.com/feed/"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://dev.opera.com/</id>
+	<author>
+		<name>Dev.Opera editors</name>
+		<email></email>
+	</author>
+
+{% capture entries %}
+	{% for post in site.posts %}
+		{% if post.categories contains 'articles' or post.categories contains 'blog' %}
+	<entry>
+		<id>http://dev.opera.com{{ post.url }}</id>
+		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
+		<title>{{ post.title | markdownline }}</title>
+		<published>{{ post.date | date_to_xmlschema }}</published>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<author>
+			<name>{% include author-name.html object=post %}</name>
+		</author>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>(•)
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% assign entries = entries | split: '(•)' %}
+{% for entry in entries limit:25 %}
+	{{ entry }}
+{% endfor %}
+
+</feed>
