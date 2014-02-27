@@ -3,10 +3,11 @@
 {% for item in items %}
 	<li class="menu__item">
 	{% assign url = page.url | remove: 'index.html' | replace: '/','' %}
-	{% if url == item %}
-		{{ item | capitalize }}
+	{% assign slug = item | downcase %}
+	{% if url == slug %}
+		{{ item }}
 	{% else %}
-		<a href="/{{ item }}/" class="menu__link">{{ item | capitalize }}</a>
+		<a href="/{{ slug }}/" class="menu__link">{{ item }}</a>
 	{% endif %}
 	</li>
 {% endfor %}
