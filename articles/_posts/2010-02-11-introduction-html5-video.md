@@ -14,6 +14,7 @@ tags:
 - opera-10
 - video
 cover: png
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 

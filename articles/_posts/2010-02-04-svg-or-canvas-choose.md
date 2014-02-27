@@ -3,6 +3,7 @@ title: SVG or Canvas? СHoosing Between the Two
 authors:
 - mihai-sucan
 intro: 'In this article Mihai Sucan explores the differences between SVG and Canvas and presents a few examples to help you decide which one is best for the functionality you are trying to implement.'
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 <p class="note"><strong>Article update, 16th June 2010</strong>: Notes added to say that Microsoft have announced support for SVG and Canvas in IE9.</p>
