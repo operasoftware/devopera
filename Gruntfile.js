@@ -39,6 +39,9 @@ module.exports = function(grunt) {
 			}
 		},
 		imagemin: {
+			options: {
+				cache: false
+			},
 			site: {
 				expand: true,
 				cwd: '_site/',
