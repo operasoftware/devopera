@@ -49,17 +49,10 @@ layout: default
 	<section class="main__articles">
 		<h2 class="main__title"><a href="/articles/">Articles</a></h2>
 		<div class="main__articles-wrapper">
-			<div class="main__articles-column">
 {% assign articles = articles | split: '(•)' %}
-{% for article in articles limit:15 %}
+{% for article in articles limit:12 %}
 	{{ article }}
-	{% assign column = forloop.index | modulo:5 %}
-	{% unless column != 0 or forloop.last  %}
-			</div>
-			<div class="main__articles-column">
-	{% endunless %}
 {% endfor %}
-			</div>
 		</div>
 	</section>
 </main>

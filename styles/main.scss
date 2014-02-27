@@ -10,23 +10,23 @@
 	.main__blog {
 		@extend %grid__item;
 		@extend %one-whole;
-		@extend %lap--one-half;
+		@extend %lap--one-third;
 		@extend %desk--one-quarter;
 		}
 	.main__articles {
 		@extend %grid__item;
 		@extend %one-whole;
-		@extend %lap--one-half;
+		@extend %lap--two-thirds;
 		@extend %desk--three-quarters;
-		}
-		.main__articles-wrapper {
-			@extend %grid;
+		column-count:3;
+		column-gap:24px;
+		@media (max-width:1023px) {
+			column-count:2;
 			}
-			.main__articles-column {
-				@extend %grid__item;
-				@extend %one-whole;
-				@extend %desk--one-third;
-				}
+		@media (max-width:800px) {
+			column-count:1;
+			}
+		}
 	.main__content {
 		@extend %grid__item;
 		@extend %one-whole;
