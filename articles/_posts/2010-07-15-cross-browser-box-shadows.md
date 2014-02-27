@@ -8,6 +8,7 @@ tags:
 - css
 - css3
 - ie
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 
