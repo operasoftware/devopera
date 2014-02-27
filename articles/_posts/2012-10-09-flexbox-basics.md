@@ -8,6 +8,7 @@ tags:
 - flexbox
 - layout
 - responsive
+cover: png
 layout: article
 ---
 

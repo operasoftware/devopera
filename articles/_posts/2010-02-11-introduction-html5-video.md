@@ -13,6 +13,7 @@ tags:
 - open-web
 - opera-10
 - video
+cover: png
 layout: article
 ---
 

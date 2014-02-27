@@ -3,8 +3,10 @@ title: Opera Mini and JavaScript
 authors:
 - tiffany-brown
 intro: 'Opera Mini is one of the world’s foremost mobile browsers, which runs on pretty much any device, even low-powered ones. It is a proxy-based browser, which has many advantages, including reducing the size of pages downloaded onto the user’s phone by up to 90%. On the downside, JavaScript can behave in unexpected ways when requested by Opera Mini. In this article we’ll discuss exactly what this means for your development work, in detail.'
+cover: png
 layout: article
 ---
+
 <p class="note">DEPRECATED: This article is deprecated, and a newer article with updated information is available at <a href="http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a>. You should read this one if you want updated information.</p>
 
 <h2>Introduction</h2>
