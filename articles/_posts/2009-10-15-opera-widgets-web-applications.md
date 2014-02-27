@@ -7,6 +7,7 @@ tags:
 - widgets
 - webapps
 - labs
+license: os-asa
 layout: article
 ---
 

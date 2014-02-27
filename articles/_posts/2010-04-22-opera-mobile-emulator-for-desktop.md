@@ -7,6 +7,7 @@ tags:
 - opera-mobile
 - emulator
 - labs
+license: os-asa
 layout: article
 ---
 

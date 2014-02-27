@@ -7,6 +7,7 @@ tags:
 - widgets
 - opera-mobile
 - labs
+license: os-asa
 layout: article
 ---
 
