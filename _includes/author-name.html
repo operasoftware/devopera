@@ -1,8 +1,3 @@
-{% for authors in site.categories.authors %}
-	{% assign author = authors.id | split: '/' | last %}
-	{% if {{include.object}}.authors contains author %}
-		{% if include.link %}<a href="{{ authors.url }}">{% endif %}
-			{{ authors.title }}
-		{% if include.link %}</a>{% endif %}
-	{% endif %}
-{% endfor %}
+{% capture authors %}{% for authors in site.categories.authors %}{% assign author = authors.id | split: '/' | last %}{% if {{include.object}}.authors contains author %}, {% if include.link %}<a href="{{ authors.url }}">{% endif %}{{ authors.title }}{% if include.link %}</a>{% endif %}{% endif %}{% endfor %}{% endcapture authors %}
+
+{{ authors | replace_first: ', ' }}
