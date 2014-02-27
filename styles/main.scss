@@ -11,13 +11,13 @@
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--one-half;
-		@extend %desk--one-third;
+		@extend %desk--one-quarter;
 		}
 	.main__articles {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--one-half;
-		@extend %desk--two-thirds;
+		@extend %desk--three-quarters;
 		}
 		.main__articles-wrapper {
 			@extend %grid;
@@ -25,7 +25,7 @@
 			.main__articles-column {
 				@extend %grid__item;
 				@extend %one-whole;
-				@extend %desk--one-half;
+				@extend %desk--one-third;
 				}
 	.main__content {
 		@extend %grid__item;

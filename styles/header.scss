@@ -61,19 +61,14 @@
 // Menu
 // -------------------------------
 .menu {
-	@extend %grid;
+	// @extend %grid;
 	font-size:20px;
 	}
 	.menu__item {
-		@extend %grid__item;
-		@extend %palm--one-whole;
-		@extend %lap--one-third;
-		@extend %desk--one-third;
+		display:inline-block;
+		margin-right:48px;
 		}
 	.menu__link {
-		margin-left:-5px;
-		padding:5px 5px 2px;
-		border-radius:4px;
 		&:link,
 		&:visited {
 			color:$green;
