@@ -4,6 +4,7 @@ authors:
 - daniel-davis
 - rich-tibbett
 intro: 'The Network Service Discovery API enables web pages to communicate with devices advertising themselves on the network via different discovery protocols in a peer-to-peer configuration. Now you can use JavaScript to find a UPnP server locally, browse its content and send that content to a UPnP client. This article, with links to experimental builds, shows you how.'
+cover: png
 layout: article
 ---
 <ul>
@@ -21,7 +22,7 @@ layout: article
 
 <h2 id="intro">Introduction</h2>
 
-<p><object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/dujaAWwGVB4?version=3&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/dujaAWwGVB4?version=3&rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+<p><object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/dujaAWwGVB4?version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/dujaAWwGVB4?version=3&amp;rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
 
 <p><a href="http://blog.nielsen.com/nielsenwire/online_mobile/three-screen-report-media-consumption-and-multi-tasking-continue-to-increase/">According to Nielsen</a>, as of 2009 nearly 60% people in the US used their TV and internet simultaneously for an average of 2.5 hours per person per month. That's around 128 million people and just over 19 billion minutes of simultaneous viewing per month! It's not surprising, then, that we've seen a surge of interest in multi-screen development recently. As part of this, we've submitted a draft specification to the W3C entitled <a href="http://www.w3.org/TR/2012/WD-discovery-api-20121004/">Network Service Discovery API</a> which aims to ease discovering and sharing data between devices.</p>
 
@@ -34,10 +35,10 @@ layout: article
 <p>We have implemented this API in an <a href="http://dev.opera.com/labs">Opera Labs</a> build for desktop, available for you to download and experiment with. You can download the build most suited for your platform here:</p>
 
 <ul>
-<li>Opera desktop for Windows: <a href="http://www.opera.com/download/get.pl?id=35124&sub=true&nothanks=yes&location=360">32 bit</a> | <a href="http://www.opera.com/download/get.pl?id=35125&sub=true&nothanks=yes&location=360">64 bit</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=35126&sub=true&nothanks=yes&location=360">Opera desktop for Mac</a></li>
-<li>Opera desktop for Linux: <a href="http://www.opera.com/download/get.pl?id=35121&sub=true&nothanks=yes&location=360">i386 (deb)</a> | <a href="http://www.opera.com/download/get.pl?id=35120&sub=true&nothanks=yes&location=360">amd64 (deb)</a> | <a href="http://www.opera.com/download/get.pl?id=35123&sub=true&nothanks=yes&location=360">i386 (RPM)</a> | <a href="http://www.opera.com/download/get.pl?id=35122&sub=true&nothanks=yes&location=360">x86_64 (RPM)</a> | <a href="http://www.opera.com/download/get.pl?id=35118&sub=true&nothanks=yes&location=360">i386 (.xz)</a> | <a href="http://www.opera.com/download/get.pl?id=35119&sub=true&nothanks=yes&location=360">x86_64 (.xz)</a></li>
-<li>Opera desktop for FreeBSD: <a href="http://www.opera.com/download/get.pl?id=35117&sub=true&nothanks=yes&location=360">i386</a> | <a href="http://www.opera.com/download/get.pl?id=35116&sub=true&nothanks=yes&location=360">amd64</a></li>
+<li>Opera desktop for Windows: <a href="http://www.opera.com/download/get.pl?id=35124&amp;sub=true&amp;nothanks=yes&amp;location=360">32 bit</a> | <a href="http://www.opera.com/download/get.pl?id=35125&amp;sub=true&amp;nothanks=yes&amp;location=360">64 bit</a></li>
+<li><a href="http://www.opera.com/download/get.pl?id=35126&amp;sub=true&amp;nothanks=yes&amp;location=360">Opera desktop for Mac</a></li>
+<li>Opera desktop for Linux: <a href="http://www.opera.com/download/get.pl?id=35121&amp;sub=true&amp;nothanks=yes&amp;location=360">i386 (deb)</a> | <a href="http://www.opera.com/download/get.pl?id=35120&amp;sub=true&amp;nothanks=yes&amp;location=360">amd64 (deb)</a> | <a href="http://www.opera.com/download/get.pl?id=35123&amp;sub=true&amp;nothanks=yes&amp;location=360">i386 (RPM)</a> | <a href="http://www.opera.com/download/get.pl?id=35122&amp;sub=true&amp;nothanks=yes&amp;location=360">x86_64 (RPM)</a> | <a href="http://www.opera.com/download/get.pl?id=35118&amp;sub=true&amp;nothanks=yes&amp;location=360">i386 (.xz)</a> | <a href="http://www.opera.com/download/get.pl?id=35119&amp;sub=true&amp;nothanks=yes&amp;location=360">x86_64 (.xz)</a></li>
+<li>Opera desktop for FreeBSD: <a href="http://www.opera.com/download/get.pl?id=35117&amp;sub=true&amp;nothanks=yes&amp;location=360">i386</a> | <a href="http://www.opera.com/download/get.pl?id=35116&amp;sub=true&amp;nothanks=yes&amp;location=360">amd64</a></li>
 </ul>
 
     <div class="note">

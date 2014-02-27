@@ -8,6 +8,7 @@ tags:
 - http
 - protocol
 - server
+cover: png
 layout: article
 ---
 
