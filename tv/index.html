@@ -1,0 +1,48 @@
+---
+title: TV
+layout: default
+---
+
+{% capture blog %}
+	{% for post in site.categories.tv %}
+		{% unless post.categories[1] %}
+			<article class="teaser">
+				<h2 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h2>
+				<p class="meta meta--teaser">
+					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
+					by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
+				</p>
+{% if post.intro %}
+				<p class="teaser__intro">{{ post.intro | markdownline }}</p>
+{% endif %}
+			</article>(•)
+		{% endunless %}
+	{% endfor %}
+{% endcapture %}
+
+{% assign blog = blog | split: '(•)' %}
+{% assign middle = blog.size | divided_by:2 %}
+
+<main class="main">
+	<article role="main" class="main__content">
+		<h1 class="main__title">{{ page.title }}</h1>
+		<div class="archive">
+			<section class="archive__main">
+				<div class="archive__wrapper">
+					<div class="archive__column">
+{% for post in blog %}
+	{{ post }}
+	{% if forloop.index == middle %}
+					</div>
+					<div class="archive__column">
+	{% endif %}
+{% endfor %}
+					</div>
+				</div>
+			</section>
+			<section class="archive__aside">
+				Aside Content
+			</section>
+		</div>
+	</article>
+</main>
