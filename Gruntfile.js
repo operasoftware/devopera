@@ -113,6 +113,6 @@ module.exports = function(grunt) {
 		'imagemin'
 	]);
 
-	grunt.registerTask('deploy', ['build', 'rsync']);
+	grunt.registerTask('deploy', ['rsync']);
 
 };
