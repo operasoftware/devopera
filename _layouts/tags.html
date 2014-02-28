@@ -8,7 +8,7 @@ layout: default
 			{% if tag == page.tag %}
 				{% unless post.categories[1] %}
 					<article class="teaser">
-						<h2 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h2>
+						<h2 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h2>
 						<p class="meta meta--teaser">
 							<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
 							by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
@@ -27,7 +27,7 @@ layout: default
 {% assign tag = tag | split: '(•)' %}
 {% assign middle = tag.size | divided_by:2 %}
 
-<main class="main">
+<main>
 	<article role="main" class="main__content">
 		<h1 class="main__title">Entries with “{{ page.tag }}”</h1>
 		<div class="archive">

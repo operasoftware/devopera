@@ -1,0 +1,24 @@
+// -------------------------------
+// Meta
+// -------------------------------
+.meta {
+	color:$grey;
+	}
+	.meta__picture {
+		width:128px;
+		height:128px;
+		border-radius:50%;
+		}
+	.meta__category {
+		color:$green;
+		&:hover,
+		&:focus {
+			color:lighten($green, 6%);
+			}
+		}
+.meta--teaser {
+	font-size:12px;
+	}
+.meta--entry {
+
+	}

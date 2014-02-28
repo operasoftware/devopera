@@ -12,7 +12,8 @@ body {
 a {
 	text-decoration:none;
 	color:$link;
-	&:visited {
-		color:$visited;
+	&:hover,
+	&:focus {
+		color:lighten($blue, 10%);
 		}
 	}

@@ -2,12 +2,11 @@
 layout: default
 ---
 
-<main class="main">
-	<article role="main" class="main__content">
-		<div class="author">
-			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}" class="author__picture">
-			<div class="author__info">
-				<h1 class="author__title">
+<main>
+	<article role="main" class="layout-author">
+		<div class="layout-author__content">
+			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
+			<h1>
 				{{ page.title }}
 {% if page.link %}
 	{% if page.link contains 'twitter.com' %}
@@ -16,22 +15,19 @@ layout: default
 					<a href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' |  remove: 'www.' }}</a>
 	{% endif %}
 {% endif %}
-				</h1>
-				{{ content }}
-			</div>
-			<div class="author__related">
-				<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
-				<ul>
+			</h1>
+{{ content }}
+			<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
+			<ul>
 {% assign author = page.id | split: '/' | last %}
 {% for post in site.posts %}
 	{% if post.authors contains author %}
 		{% unless post.categories[1] %}
-					<li><a href="{{ post.url }}">{{ post.title | markdownline }}</a></li>
+				<li><a href="{{ post.url }}">{{ post.title | markdownline }}</a></li>
 		{% endunless %}
 	{% endif %}
 {% endfor %}
-				</ul>
-			</div>
+			</ul>
 		</div>
 	</article>
 </main>

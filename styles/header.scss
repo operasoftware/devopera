@@ -15,7 +15,7 @@
 	.header__menu {
 		@extend %grid__item;
 		@extend %palm--one-whole;
-		@extend %lap--one-half;
+		@extend %lap--two-thirds;
 		@extend %desk--six-twelfths;
 		margin:0 0 24px;
 		}
@@ -61,22 +61,20 @@
 // Menu
 // -------------------------------
 .menu {
-	// @extend %grid;
 	font-size:20px;
 	}
 	.menu__item {
 		display:inline-block;
 		margin-right:48px;
+		color:$grey;
 		}
 	.menu__link {
-		&:link,
-		&:visited {
-			color:$green;
-			}
+		color:#000;
 		&:hover,
 		&:focus {
-			color:lighten($green, 5%);
+			color:$blue;
 			}
+		@include hover;
 		}
 
 // -------------------------------

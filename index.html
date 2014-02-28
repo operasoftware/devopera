@@ -6,7 +6,7 @@ layout: default
 	{% for post in site.categories.blog %}
 		{% unless post.categories[1] %}
 			<article class="teaser">
-				<h3 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h3>
+				<h3 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
 				<p class="meta meta--teaser">
 					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
 					by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
@@ -24,7 +24,7 @@ layout: default
 	{% for post in site.categories.articles %}
 		{% unless post.categories[1] %}
 			<article class="teaser">
-				<h3 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h3>
+				<h3 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
 				<p class="meta meta--teaser">
 					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
 					by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
@@ -38,17 +38,17 @@ layout: default
 	{% endfor %}
 {% endcapture %}
 
-<main class="main">
-	<section class="main__blog">
-		<h2 class="main__title"><a href="/blog/">Blog</a></h2>
+<main class="layout-main">
+	<section class="layout-main__blog">
+		<h2 class="layout-main__title"><a href="/blog/">Blog</a></h2>
 {% assign posts = posts | split: '(•)' %}
 {% for post in posts limit:6 %}
 	{{ post }}
 {% endfor %}
 	</section>
-	<section class="main__articles">
-		<h2 class="main__title"><a href="/articles/">Articles</a></h2>
-		<div class="main__articles-wrapper">
+	<section class="layout-main__articles">
+		<h2 class="layout-main__title"><a href="/articles/">Articles</a></h2>
+		<div class="columns columns--main">
 {% assign articles = articles | split: '(•)' %}
 {% for article in articles limit:12 %}
 	{{ article }}
