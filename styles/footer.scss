@@ -11,15 +11,6 @@
 		@extend %one-whole;
 		@extend %lap--three-quarters;
 		@extend %desk--seven-twelfths;
-		}
-	}
-.footer--index {
-	p {
-		@extend %push--desk--one-third;
-		}
-	}
-.footer--page {
-	p {
 		@extend %push--desk--one-quarter;
 		}
 	}

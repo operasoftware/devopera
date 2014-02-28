@@ -1,10 +1,5 @@
-{% if page.url == '/index.html' %}
-	{% assign modifier = ' footer--index' %}
-{% else %}
-	{% assign modifier = ' footer--page' %}
-{% endif %}
-	<footer class="footer{{ modifier }}">
-		<p>Copyright © 2014 Opera Software ASA. All rights reserved</p>
+	<footer class="footer">
+		<p>Copyright © {{ site.time | date: '%Y' }} Opera Software ASA. All rights reserved</p>
 	</footer>
 	<div id="grid">
 		<div>
