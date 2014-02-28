@@ -11,14 +11,10 @@
 		margin:0 0 8px;
 		font-weight:lighter;
 		font-size:18px;
-		a {
-			color:#000;
-			@include hover;
-			&:hover,
-			&:focus {
-				color:$blue;
-				}
-			}
+		}
+	.teaser__link {
+		color:#000;
+		@include hover;
 		}
 	.teaser__picture {
 		}

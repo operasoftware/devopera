@@ -1,0 +1,18 @@
+// -------------------------------
+// Columns
+// -------------------------------
+.columns {
+	column-gap:24px;
+	}
+.columns--main {
+	column-count:3;
+	@media (max-width:1023px) {
+		column-count:2;
+		}
+	@media (max-width:800px) {
+		column-count:1;
+		}
+	}
+.columns--archive {
+	column-count:2;
+	}

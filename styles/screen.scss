@@ -6,13 +6,15 @@
 @import 'defaults';
 @import 'reset';
 @import 'global';
-@import 'header';
-@import 'main';
-@import 'teaser';
-@import 'author';
-@import 'archive';
-@import 'entry';
-@import 'content';
-@import 'footer';
+
 @import 'grids';
 @import 'grid';
+
+@import 'header';
+@import 'layout';
+@import 'content';
+@import 'footer';
+
+@import 'columns';
+@import 'teaser';
+@import 'meta';

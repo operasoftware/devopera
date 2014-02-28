@@ -3,11 +3,11 @@ title: TV
 layout: default
 ---
 
-{% capture blog %}
+{% capture articles %}
 	{% for post in site.categories.tv %}
 		{% unless post.categories[1] %}
 			<article class="teaser">
-				<h2 class="teaser__title"><a href="{{ post.url }}">{{ post.title | markdownline }}</a></h2>
+				<h2 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h2>
 				<p class="meta meta--teaser">
 					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
 					by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
@@ -20,29 +20,20 @@ layout: default
 	{% endfor %}
 {% endcapture %}
 
-{% assign blog = blog | split: '(•)' %}
-{% assign middle = blog.size | divided_by:2 %}
+{% assign articles = articles | split: '(•)' %}
 
-<main class="main">
-	<article role="main" class="main__content">
-		<h1 class="main__title">{{ page.title }}</h1>
-		<div class="archive">
-			<section class="archive__main">
-				<div class="archive__wrapper">
-					<div class="archive__column">
-{% for post in blog %}
-	{{ post }}
-	{% if forloop.index == middle %}
-					</div>
-					<div class="archive__column">
-	{% endif %}
+<main>
+	<article role="main" class="layout-archive">
+		<h1 class="layout-archive__title">{{ page.title }}</h1>
+		<section class="layout-archive__content">
+			<div class="columns columns--archive">
+{% for article in articles %}
+	{{ article }}
 {% endfor %}
-					</div>
-				</div>
-			</section>
-			<section class="archive__aside">
-				Aside Content
-			</section>
-		</div>
+			</div>
+		</section>
+		<section class="layout-archive__aside">
+			Aside Content
+		</section>
 	</article>
 </main>
