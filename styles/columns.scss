@@ -15,4 +15,7 @@
 	}
 .columns--archive {
 	column-count:2;
+	@media (max-width:800px) {
+		column-count:1;
+		}
 	}
