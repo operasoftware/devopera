@@ -8,6 +8,7 @@ tags:
 - html5-parser
 - opera-11
 - labs
+license: os-asa
 layout: article
 ---
 

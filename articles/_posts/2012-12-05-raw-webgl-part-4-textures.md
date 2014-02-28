@@ -8,6 +8,7 @@ tags:
 - webgl
 - canvas
 - 3d
+license: cc-by-3.0
 layout: article
 ---
 

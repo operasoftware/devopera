@@ -6,6 +6,7 @@ intro: 'With Opera switching from Presto to Chromium and a complete UI remake, o
 tags:
 - extensions
 - opera-15
+license: cc-by-3.0
 layout: article
 ---
 

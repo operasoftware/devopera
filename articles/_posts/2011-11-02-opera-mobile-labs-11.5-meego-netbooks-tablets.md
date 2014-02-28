@@ -9,6 +9,7 @@ tags:
 - meego
 - opera-mobile
 - labs
+license: cc-by-3.0
 layout: article
 ---
 

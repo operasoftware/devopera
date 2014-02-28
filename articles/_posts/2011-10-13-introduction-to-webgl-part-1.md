@@ -7,6 +7,7 @@ tags:
 - 3d
 - javascript
 - webgl
+license: cc-by-3.0
 layout: article
 ---
 

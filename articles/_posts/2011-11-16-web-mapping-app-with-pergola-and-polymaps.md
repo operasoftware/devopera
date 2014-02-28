@@ -3,6 +3,7 @@ title: Building a Web Mapping Application With Pergola and Polymaps
 authors:
 - domenico-strazzullo
 intro: 'Mapping applications are very popular, and it is easy to embed a simple map on a page using something like the Google Maps API. In this article we are going to show how to build a fully fledged SVG-based, windowed mapping application using the Pergola framework and its libraries, with the Polymaps library plugged in, and tiles imported from Bing.'
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 <h2>Introduction</h2>
