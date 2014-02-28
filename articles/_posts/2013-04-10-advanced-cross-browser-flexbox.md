@@ -10,6 +10,7 @@ tags:
 - media-queries
 - modernizr
 - multi-line
+license: cc-by-3.0
 layout: article
 ---
 

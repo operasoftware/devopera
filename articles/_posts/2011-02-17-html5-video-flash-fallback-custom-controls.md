@@ -4,6 +4,7 @@ authors:
 - bruce-lawson
 - vadim-makeev
 intro: 'Want to put video onto your web page? HTML5 enables us to do this as easily as placing images with an `<img>` element – and in this tutorial, we’ll show you how the magic is done.'
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 <p class="note">Article adapted from original published in <a href="http://www.netmag.co.uk/">.net magazine</a> July 2010 issue. Thanks to Dan Oliver and team!</p>

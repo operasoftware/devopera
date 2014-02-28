@@ -3,6 +3,7 @@ title: Getting to Know Mutation Observers
 authors:
 - tiffany-brown
 intro: 'In this article, Tiffany Brown has a look at mutation observers, how they are different from mutation events, and how you can use them in your web applications.'
+license: cc-by-3.0
 layout: article
 ---
 <p>As you develop more complex JavaScript-heavy applications or roll-your-own framework, you may find that you need to know when the DOM node tree has changed. You may want to know when a view has been loaded or unloaded. Or perhaps you are profiling an application, and want to measure how many nodes are affected by a DOM operation.</p>

@@ -3,6 +3,7 @@ title: A Labs Release to Get Your SPDY Senses Tingling
 authors:
 - chris-mills
 intro: 'Opera is proud to present an experimental labs release that includes support for SPDY, Google’s new networking protocol that enables performance increases across the web. Please try it out, and let us know what you think!'
+license: cc-by-3.0
 layout: article
 ---
 <p>For many years now, we have relied on the marriage of the TCP and HTTP protocols for handling data request/response communication, and transporting the resulting data packets to where they need to go. In short, they are how we get things done on the Web. But they are not perfect. Websites are a lot bigger and more complicated than they used to be when these protocols were first designed. HTTP in particular has problems with latency, because:</p>

@@ -3,6 +3,7 @@ title: Playing With HTML5 Video & `getUserMedia` Support
 authors:
 - daniel-davis
 intro: 'Building on the famous exploding video demo by Sean Christmann, we’re going to see how we can explode the video stream from a camera. With a few performance tweaks, this works surprisingly well both in desktop browser and on mobile devices.'
+license: cc-by-nc-sa-3.0
 layout: article
 ---
 <img src="html5-exploding-camera.jpg" width="400" height="300" alt="Use getUserMedia to make your head explode." style="float:right;padding-left: 10px;"/>

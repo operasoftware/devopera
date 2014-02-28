@@ -6,6 +6,7 @@ intro: 'The Opera Dragonfly team is hard at work on the first stable release. Ju
 tags:
 - dragonfly
 - labs
+license: os-asa
 layout: article
 ---
 

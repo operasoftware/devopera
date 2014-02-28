@@ -8,6 +8,7 @@ tags:
 - layout
 - modernizr
 - regions
+license: cc-by-3.0
 layout: article
 ---
 

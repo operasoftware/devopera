@@ -4,6 +4,7 @@ authors:
 - remy-bach
 - rob-miller
 intro: 'This article shows how to handle client-side error logging, a very useful practice that helps you better understand and discover issues that your users are having.'
+license: cc-by-3.0
 layout: article
 ---
 <h2>Introduction</h2>
