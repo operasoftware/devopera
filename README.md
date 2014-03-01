@@ -4,7 +4,7 @@ Repository for source code of new Dev.Opera
 
 ## How to setup environment
 
-1. Install Jekyll, Sass and all needed gems by running `gem install jekyll sass kramdown stringex`.
+1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll kramdown stringex && sudo gem install sass --pre`.
 2. Download and install [Node.js](http://nodejs.org) with default installer options.
 3. Clone project by running `git clone git@github.com:operasoftware/devopera.git`
 4. Run `npm install` inside `devopera` folder
