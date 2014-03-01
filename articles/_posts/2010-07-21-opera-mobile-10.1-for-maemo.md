@@ -7,6 +7,7 @@ tags:
 - opera-mobile
 - maemo
 - labs
+license: os-asa
 layout: article
 ---
 

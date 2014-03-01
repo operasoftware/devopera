@@ -9,6 +9,7 @@ tags:
 - requestanimationframe
 - setinterval
 - settimeout
+license: cc-by-3.0
 layout: article
 ---
 

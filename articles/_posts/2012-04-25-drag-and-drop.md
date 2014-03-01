@@ -8,6 +8,7 @@ tags:
 - html5
 - javascript
 - server
+license: cc-by-3.0
 layout: article
 ---
 

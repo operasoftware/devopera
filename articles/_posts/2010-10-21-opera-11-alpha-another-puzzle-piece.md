@@ -7,6 +7,7 @@ tags:
 - opera-11
 - extensions
 - labs
+license: os-asa
 layout: article
 ---
 

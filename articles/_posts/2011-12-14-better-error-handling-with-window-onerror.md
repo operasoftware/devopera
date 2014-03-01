@@ -8,6 +8,7 @@ tags:
 - dom
 - javascript
 - security
+license: cc-by-3.0
 layout: article
 ---
 

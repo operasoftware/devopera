@@ -9,6 +9,7 @@ tags:
 - opera-12
 - plugins
 - security
+license: cc-by-3.0
 layout: article
 ---
 

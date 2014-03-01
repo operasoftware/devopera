@@ -3,6 +3,7 @@ title: 'Love Your Devices: Adaptive Web Design With Media Queries, Viewport and 
 authors:
 - chris-mills
 intro: 'In this article Chris Mills takes a look at techniques and technologies that we can adopt to create adaptive (or responsive) web sites, including percentage units, media queries and viewport. He also discusses some recent happenings in the area, such as considerations for display on tablet browsers, object-fit, and the `@viewport` CSS rule.'
+license: cc-by-3.0
 layout: article
 ---
 <h2>Introduction</h2>
