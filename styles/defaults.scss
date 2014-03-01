@@ -1,13 +1,13 @@
 // -------------------------------
 // Colors
 // -------------------------------
-$red:#CC0F16;
-$green:#00A700;
-$blue:#1096D5;
-$grey:#A2A4A3;
+$red:#CC0F16 !default;
+$green:#00A700 !default;
+$blue:#1096D5 !default;
+$grey:#A2A4A3 !default;
 
-$link:$blue;
-$visited:#6040A0;
+$link:$blue !default;
+$visited:#6040A0 !default;
 
 // -------------------------------
 // Mixins

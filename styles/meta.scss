@@ -3,22 +3,24 @@
 // -------------------------------
 .meta {
 	color:$grey;
-	}
-	.meta__picture {
+	// Elements
+	&__picture {
 		width:128px;
 		height:128px;
 		border-radius:50%;
 		}
-	.meta__category {
+	&__category {
 		color:$green;
 		&:hover,
 		&:focus {
 			color:lighten($green, 6%);
 			}
 		}
-.meta--teaser {
-	font-size:12px;
-	}
-.meta--entry {
+	// Modyfiers
+	&--teaser {
+		font-size:12px;
+		}
+	&--entry {
 
+		}
 	}

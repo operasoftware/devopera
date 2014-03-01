@@ -6,18 +6,19 @@
 	padding:0 0 14px;
 	border-bottom:1px solid #DDD;
 	break-inside:avoid;
-	}
-	.teaser__title {
+	// Elements
+	&__title {
 		margin:0 0 8px;
 		font-weight:lighter;
 		font-size:18px;
 		}
-	.teaser__link {
+	&__link {
 		color:#000;
 		@include hover;
 		}
-	.teaser__picture {
+	&__picture {
 		}
-	.teaser__intro {
+	&__intro {
 		margin:12px 0 0;
 		}
+	}
