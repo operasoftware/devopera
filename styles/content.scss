@@ -2,6 +2,13 @@
 // Content
 // -------------------------------
 .content {
+	// Title
+	&__title {
+		margin:0 0 36px;
+		line-height:1;
+		font-weight:lighter;
+		font-size:36px;
+		}
 	// Headings
 	h2, h3, h4 {
 		clear:both;
@@ -49,14 +56,4 @@
 		font-size:1em;
 		font-family:PT Mono, monospace, monospace;
 		}
-	}
-
-// -------------------------------
-// Title
-// -------------------------------
-.content__title {
-	margin:0 0 36px;
-	line-height:1;
-	font-weight:lighter;
-	font-size:36px;
 	}

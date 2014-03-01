@@ -4,27 +4,28 @@
 .header {
 	padding:36px 0;
 	@extend %grid;
-	}
-	.header__logo {
+	// Elements
+	&__logo {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--one-third;
 		@extend %desk--three-twelfths;
 		margin:0 0 24px;
 		}
-	.header__menu {
+	&__menu {
 		@extend %grid__item;
 		@extend %palm--one-whole;
 		@extend %lap--two-thirds;
 		@extend %desk--six-twelfths;
 		margin:0 0 24px;
 		}
-	.header__search {
+	&__search {
 		@extend %grid__item;
 		@extend %lap--five-twelfths;
 		@extend %desk--three-twelfths;
 		@extend %push--lap--one-third;
 		}
+	}
 
 // -------------------------------
 // Logo
@@ -34,8 +35,8 @@
 	letter-spacing:-1px;
 	font-weight:bold;
 	font-size:20px;
-	}
-	.logo__wrapper {
+	// Elements
+	&__wrapper {
 		&:link,
 		&:visited {
 			color:#000;
@@ -53,9 +54,10 @@
 			content:'';
 			}
 		}
-	.logo__thinner {
+	&__thinner {
 		font-weight:100;
 		}
+	}
 
 // -------------------------------
 // Menu
@@ -67,8 +69,8 @@
 		}
 	white-space:nowrap;
 	font-size:20px;
-	}
-	.menu__item {
+	// Elements
+	&__item {
 		display:inline-block;
 		margin-left:48px;
 		@media (max-width:800px) {
@@ -76,7 +78,7 @@
 			}
 		color:$grey;
 		}
-	.menu__link {
+	&__link {
 		color:#000;
 		&:hover,
 		&:focus {
@@ -84,13 +86,14 @@
 			}
 		@include hover;
 		}
+	}
 
 // -------------------------------
 // Search
 // -------------------------------
 .search {
-	}
-	.search__field {
+	// Elements
+	&__field {
 		-webkit-appearance:none;
 		-moz-appearance:none;
 	    margin-left:-9px;
@@ -102,7 +105,7 @@
 		border-radius:22px;
 		background:linear-gradient(
 			to bottom,
-			mix(#000, #FFF, 4%),
+			mix(#000, #FFF, 5%),
 			mix(#000, #FFF, 2%));
 		box-shadow:
 			inset 0 0 0 1px rgba(#000, 0.1);
@@ -118,3 +121,4 @@
 				inset 0 0 0 1px rgba(#000, 0.22);
 			}
 		}
+	}

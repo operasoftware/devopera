@@ -3,22 +3,23 @@
 // -------------------------------
 .layout-main {
 	@extend %grid;
-	}
-	.layout-main__blog {
+	// Elements
+	&__blog {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--one-third;
 		@extend %desk--one-quarter;
 		}
-	.layout-main__articles {
+	&__articles {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--two-thirds;
 		@extend %desk--three-quarters;
 		}
-	.layout-main__title {
+	&__title {
 		@include offscreen;
 		}
+	}
 
 // -------------------------------
 // Archive
@@ -26,50 +27,53 @@
 .layout-archive {
 	@extend %grid;
 	@extend %grid--rev;
-	}
-	.layout-archive__aside {
+	// Elements
+	&__aside {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--one-quarter;
 		@extend %desk--one-quarter;
 		}
-	.layout-archive__content {
+	&__content {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--two-thirds;
 		@extend %desk--two-thirds;
 		}
-	.layout-archive__title {
+	&__title {
 		@include offscreen;
 		}
+	}
 
 // -------------------------------
 // Entry
 // -------------------------------
 .layout-entry {
 	@extend %grid;
-	}
-	.layout-entry__aside {
+	// Elements
+	&__aside {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--one-quarter;
 		@extend %desk--one-quarter;
 		}
-	.layout-entry__content {
+	&__content {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--three-quarters;
 		@extend %desk--two-thirds;
 		}
+	}
 
 // -------------------------------
 // Author
 // -------------------------------
 .layout-author {
 	@extend %grid;
-	}
-	.layout-author__content {
+	// Elements
+	&__content {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %push--desk--one-quarter;
 		}
+	}
