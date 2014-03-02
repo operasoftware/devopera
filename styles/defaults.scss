@@ -4,10 +4,8 @@
 $red:#CC0F16 !default;
 $green:#00A700 !default;
 $blue:#1096D5 !default;
+$violet:#6040A0 !default;
 $grey:#A2A4A3 !default;
-
-$link:$blue !default;
-$visited:#6040A0 !default;
 
 // -------------------------------
 // Mixins
@@ -26,9 +24,6 @@ $visited:#6040A0 !default;
 	&:after {
 		clear:both;
 		}
-	}
-@mixin hover {
-	transition:color 0.3s;
 	}
 @mixin offscreen {
 	position:absolute;

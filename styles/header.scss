@@ -79,12 +79,8 @@
 		color:$grey;
 		}
 	&__link {
-		color:#000;
-		&:hover,
-		&:focus {
-			color:$blue;
-			}
-		@include hover;
+		@extend %link--black;
+		@extend %link--hover
 		}
 	}
 

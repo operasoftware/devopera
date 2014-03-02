@@ -4,17 +4,18 @@
 .meta {
 	color:$grey;
 	// Elements
+	&__time {
+		}
+	&__author {
+		@extend %link--blue;
+		}
+	&__category {
+		@extend %link--green;
+		}
 	&__picture {
 		width:128px;
 		height:128px;
 		border-radius:50%;
-		}
-	&__category {
-		color:$green;
-		&:hover,
-		&:focus {
-			color:lighten($green, 6%);
-			}
 		}
 	// Modyfiers
 	&--teaser {
