@@ -13,12 +13,16 @@
 		font-size:18px;
 		}
 	&__link {
-		color:#000;
-		@include hover;
+		@extend %link--black;
+		@extend %link--black-visited;
+		@extend %link--hover;
 		}
 	&__picture {
 		}
 	&__intro {
 		margin:12px 0 0;
+		a {
+			@extend %link--blue;
+			}
 		}
 	}

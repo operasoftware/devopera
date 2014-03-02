@@ -1,0 +1,45 @@
+// -------------------------------
+// Links
+// -------------------------------
+%link--hover {
+	transition:color 0.3s;
+	}
+%link--blue {
+	color:$blue;
+	&:hover,
+	&:focus {
+		color:lighten($blue, 10%);
+		}
+	}
+%link--green {
+	color:$green;
+	&:hover,
+	&:focus {
+		color:lighten($green, 6%);
+		}
+	}
+%link--black {
+	color:#000;
+	&:hover,
+	&:focus {
+		color:$blue;
+		}
+	}
+%link--black-visited {
+	&:visited {
+		color:lighten(#000, 45%);
+		&:hover {
+			color:$blue;
+			}
+		}
+	}
+%link--content {
+	color:$blue;
+	&:visited {
+		color:$violet;
+		}
+	&:hover,
+	&:focus {
+		color:lighten($blue, 10%);
+		}
+	}

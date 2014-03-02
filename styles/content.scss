@@ -46,6 +46,9 @@
 		white-space:pre-wrap;
 		}
 	// Inline
+	a {
+		@extend %link--content;
+		}
 	b, strong {
 		font-weight:bold;
 		}
