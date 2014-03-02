@@ -1,0 +1,21 @@
+{% assign category = include.category %}
+{% assign object = include.object %}
+
+{% if category or object %}
+	<p class="tags">
+	{% if object %}
+		Entry tags:
+		{% for tag in object.tags %}
+			<a href="/tags/{{ tag }}" class="tag__link">{{ tag }}</a>
+		{% endfor %}
+	{% endif %}
+	{% if category %}
+		Category tags:
+		{% for entry in category %}
+			{% for tag in entry.tags %}
+				<a href="/tags/{{ tag }}" class="tag__link">{{ tag }}</a>
+			{% endfor %}
+		{% endfor %}
+	{% endif %}
+	</p>
+{% endif %}

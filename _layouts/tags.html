@@ -11,7 +11,7 @@ layout: default
 						<h2 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h2>
 						<p class="meta meta--teaser">
 							<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
-							by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
+							by {% include author-name.html object=post link=true class='meta__author' %}
 							in <a href="/{{ post.categories[0] }}/" class="meta__category">{{ post.categories[0] | capitalize }}</a>
 						</p>
 {% if post.intro %}
@@ -25,28 +25,18 @@ layout: default
 {% endcapture %}
 
 {% assign tag = tag | split: '(•)' %}
-{% assign middle = tag.size | divided_by:2 %}
 
 <main>
-	<article role="main" class="main__content">
-		<h1 class="main__title">Entries with “{{ page.tag }}”</h1>
-		<div class="archive">
-			<section class="archive__main">
-				<div class="archive__wrapper">
-					<div class="archive__column">
+	<article role="main" class="layout-archive">
+		<section class="layout-archive__content">
+			<div class="columns columns--archive">
 {% for post in tag %}
 	{{ post }}
-	{% if forloop.index == middle %}
-					</div>
-					<div class="archive__column">
-	{% endif %}
 {% endfor %}
-					</div>
-				</div>
-			</section>
-			<section class="archive__aside">
-				Aside Content
-			</section>
-		</div>
+			</div>
+		</section>
+		<section class="layout-archive__aside">
+			<h1>Entries with “{{ page.tag }}” tag</h1>
+		</section>
 	</article>
 </main>

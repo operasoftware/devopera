@@ -13,14 +13,10 @@ layout: default
 			<p class="meta">
 				{% include author-picture.html object=page class='meta__picture' %}
 				<time datetime="{{ page.date | date: '%Y-%m-%d' }}" class="meta__time">{{ page.date | date: '%-d %B %Y' }}</time>
-				by <span class="meta__author">{% include author-name.html object=page link=true %}</span>
+				by {% include author-name.html object=page link=true class='meta__author' %}
 				in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
 			</p>
-			<p>Tags:
-{% for tag in page.tags %}
-				<a href="/tags/{{ tag }}">{{ tag }}</a>
-{% endfor %}
-			</p>
+{% include tags.html object=page %}
 {% include translations.html category=site.categories.articles %}
 		</div>
 		<div class="layout-entry__content">
