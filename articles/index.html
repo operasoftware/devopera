@@ -10,7 +10,7 @@ layout: default
 				<h2 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h2>
 				<p class="meta meta--teaser">
 					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
-					by <span class="meta__author">{% include author-name.html object=post link=true %}</span>
+					by {% include author-name.html object=post link=true class='meta__author' %}
 				</p>
 {% if post.intro %}
 				<p class="teaser__intro">{{ post.intro | markdownline }}</p>
@@ -33,7 +33,7 @@ layout: default
 			</div>
 		</section>
 		<section class="layout-archive__aside">
-			Aside Content
+			{% include tags.html category=site.categories.articles %}
 		</section>
 	</article>
 </main>
