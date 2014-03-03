@@ -6,6 +6,7 @@ intro: 'The Opera TV Store is a moderated, hosted catalogue of TV-specific web a
 tags:
 - store
 - tv
+license: cc-by-3.0
 layout: article
 ---
 

@@ -6,6 +6,7 @@ intro: 'Since the launch of the Opera TV Store, we’ve seen a variety of apps p
 tags:
 - store
 - tv
+license: cc-by-3.0
 layout: article
 ---
 
