@@ -92,7 +92,7 @@ ul
 	padding: 0.5em;
 	background: #000;
 	color: #fff;
-	margin-bottom: 1em;	
+	margin-bottom: 1em;
 }
 
 ul.instructions
@@ -103,7 +103,7 @@ ul.instructions
 	padding: 0.5em;
 	background: #fff;
 	color: #000;
-	margin-bottom: 1em;	
+	margin-bottom: 1em;
 }
 
 ul#popup
@@ -136,7 +136,7 @@ ul#popup li.focus, ul#popup li.hover
 ul.highlight
 {
 	background: #c00;
-	color: #000;	
+	color: #000;
 }
 
 li.draggable
