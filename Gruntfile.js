@@ -38,17 +38,6 @@ module.exports = function(grunt) {
 				dest: '_site/'
 			}
 		},
-		imagemin: {
-			options: {
-				cache: false
-			},
-			site: {
-				expand: true,
-				cwd: '_site/',
-				src: '**/*.{png,jpg,gif}',
-				dest: '_site/'
-			}
-		},
 		watch: {
 			styles: {
 				files: 'styles/*.scss',
@@ -109,8 +98,7 @@ module.exports = function(grunt) {
 		'sass',
 		'autoprefixer',
 		'jekyll:full',
-		'htmlmin',
-		'imagemin'
+		'htmlmin'
 	]);
 
 	grunt.registerTask('deploy', ['rsync']);
