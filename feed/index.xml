@@ -16,7 +16,7 @@ layout: none
 
 {% capture entries %}
 	{% for post in site.posts %}
-		{% if post.categories contains 'articles' or post.categories contains 'blog' %}
+		{% if post.categories contains 'blog' or post.categories contains 'articles' or post.categories contains 'tv' %}
 	<entry>
 		<id>http://dev.opera.com{{ post.url }}</id>
 		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
