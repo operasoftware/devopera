@@ -37,6 +37,9 @@
 	color:$blue;
 	&:visited {
 		color:$violet;
+		&:hover {
+			color:lighten($violet, 13%);
+			}
 		}
 	&:hover,
 	&:focus {
