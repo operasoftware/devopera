@@ -33,7 +33,9 @@ layout: default
 			</div>
 		</section>
 		<section class="layout-archive__aside">
-			{% include tags.html category=site.categories.blog %}
+			<p class="tags">
+				Posts by tags: {% include tags.html category=site.categories.blog %}
+			</p>
 		</section>
 	</article>
 </main>

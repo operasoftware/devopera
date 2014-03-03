@@ -16,16 +16,18 @@ layout: default
 				by {% include author-name.html object=page link=true class='meta__author' %}
 				in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
 			</p>
-			{% include tags.html object=page %}
+			<p class="tags">
+				Article tags: {% include tags.html object=page %}
+			</p>
 			{% include translations.html category=site.categories.articles %}
+			<p class="license">
+				This article is licensed under {{ site.data.licenses[page.license] | markdownline }} license.
+			</p>
 		</div>
 		<div class="layout-entry__content">
 			<div class="content">
 				<h1 class="content__title">{{ page.title | markdownline }}</h1>
 				{{ content }}
-				<p class="content__license">
-					This article is licensed under {{ site.data.licenses[page.license] | markdownline }} license.
-				</p>
 			</div>
 		</div>
 	</article>
