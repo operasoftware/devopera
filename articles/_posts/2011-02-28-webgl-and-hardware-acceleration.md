@@ -6,6 +6,7 @@ intro: 'A long time ago, in an office far far away… Opera released a custom bu
 tags:
 - webgl
 - labs
+license: os-asa
 layout: article
 ---
 
