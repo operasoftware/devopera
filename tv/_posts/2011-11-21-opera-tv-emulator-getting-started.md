@@ -6,6 +6,7 @@ intro: 'This article goes through the installation process of the Opera TV Emula
 tags:
 - emulator
 - tv
+license: cc-by-3.0
 layout: article
 ---
 

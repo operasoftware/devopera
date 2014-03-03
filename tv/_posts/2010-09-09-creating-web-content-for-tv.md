@@ -11,6 +11,7 @@ tags:
 - multimedia
 - sdk
 - tv
+license: cc-by-3.0
 layout: article
 ---
 
