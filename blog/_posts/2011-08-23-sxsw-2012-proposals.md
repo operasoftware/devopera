@@ -7,8 +7,10 @@ tags:
 - sxsw
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The PanelPicker for SXSW 2012 is open. Next Friday is the deadline to choose the panels you would like to see. Here are the proposals from Opera employees:</p>
 
 <ul>

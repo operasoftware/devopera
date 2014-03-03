@@ -10,8 +10,10 @@ tags:
 - tour
 - vienna
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 The week before, Opera had the pleasure of joining a bunch of geeks on tour in Central Europe. We started the tour in Bratislava and drove to Budapest the next day. On the third and final day, we wrapped up the event in Vienna. It was pure fun traveling and speaking in different cities.
 </p>

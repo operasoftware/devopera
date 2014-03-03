@@ -6,8 +6,10 @@ tags:
 - cors
 - opera-next
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>A new snapshot of Opera 12 has been released. You can get details on <a href="http://my.opera.com/desktopteam/blog/2011/11/28/glyphs-and-plugins">where to download that Opera Next snapshot at the Desktop Team blog</a>. So, lets see what is new.</p>
 <ul>
 <li>

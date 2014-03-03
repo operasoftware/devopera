@@ -6,8 +6,10 @@ tags:
 - yusef
 - unite
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>How are we doing?</h3>
 <p>
 Yusef is used by developers to build their Opera Unite application. It is essentially a collection of libraries to help speed up application development.

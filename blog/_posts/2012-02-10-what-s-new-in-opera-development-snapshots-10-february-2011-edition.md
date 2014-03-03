@@ -5,8 +5,10 @@ authors:
 tags:
 - opera-next
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The new Opera Next snapshot is out with a whole slew of fixes. Download it from the <a href="http://my.opera.com/desktopteam/blog/2012/02/10/core-dnt-mail-themes">links in the Desktop team&#39;s blog post</a> or wait a while for it to show up on your Opera Next updates. Here are what would be of interest to web developers:</p>
 
 <h3>New Features</h3>

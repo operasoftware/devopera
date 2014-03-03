@@ -6,8 +6,10 @@ tags:
 - opera-11
 - extensions
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p><p>
 An
 <a href="http://www.opera.com/browser/next/" rel="nofollow">alpha of Opera 11 for desktop</a>

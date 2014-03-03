@@ -7,8 +7,10 @@ tags:
 - opera-mini
 - android
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <span class='imgright'><img alt='' src='/blog/opera-mini-5-beta-for-android-phones/OperaMini5-android-pr.jpg' /></span>
 <p><strong>01-06-2010: Minor update to reflect UA string change</strong></p>
 <p>Hot on the heels of our native <a href="http://www.opera.com/press/releases/2010/03/04/">Opera Mini client for Windows Mobile phones</a>, we have now released a <a href="http://m.opera.com/next">beta of Opera Mini 5 for Android</a>. I&#39;ve been using Opera Mini for the last couple of days on a <a href="http://www.google.com/phone">Nexus One</a>, and must say the browsing speed and experience are quite amazing.</p>

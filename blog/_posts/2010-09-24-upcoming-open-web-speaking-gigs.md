@@ -8,8 +8,10 @@ tags:
 - talk
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>It&#39;s Autumn and the conference season is in full swing! As the Opera Developer Relations team has quite a number of Open Web talks planned for the next couple of months, we thought we&#39;d give you an overview of what&#39;s coming up. Maybe we&#39;ll see you at one of these events!</p>
 <table id="events">
   <tr>

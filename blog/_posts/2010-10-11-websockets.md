@@ -6,8 +6,10 @@ tags:
 - websockets
 - testsuite
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>Introduction</h3>
 
 <p>Opera has just <a href="http://my.opera.com/desktopteam/blog/2010/10/11/websockets">released a public build</a> with support for WebSockets. WebSockets will be supported in the final release of Opera 10.70. <a href="http://en.wikipedia.org/wiki/WebSockets">WebSockets</a> provide a way to communicate between script in a Web page and the server in <a href="http://en.wikipedia.org/wiki/Duplex_(telecommunications)#Full-duplex">full-duplex</a> mode with low <a href="http://en.wikipedia.org/wiki/Latency_(engineering)#Packet-switched_networks">latency</a>.</p>

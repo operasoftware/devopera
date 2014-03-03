@@ -8,8 +8,10 @@ tags:
 - mobile
 - mini
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <object width="500" height="281"><param name="movie" value="http://www.youtube.com/v/_x7GBOsl1OU?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/_x7GBOsl1OU?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" type="application/x-shockwave-flash" width="500" height="281" allowfullscreen="true" allowscriptaccess="never" /></object>
 
 <p>I&#39;ve written before about our <a href="http://my.opera.com/ODIN/blog/opera-and-grameenphone-in-bangladesh">Bangladeshi version of Opera Mini</a>, in which we partnered with Grameenphone which is <a href="http://www.grameenphone.com/about-us/corporate-information/ownership-structure" target="_blank">owned</a> by Telenor and a non-profit sister concern of <a href="http://www.grameen-info.org/index.php?option=com_content&amp;task=view&amp;id=26&amp;Itemid=175">Grameen Bank</a> - a Nobel Prize-winning Bangladeshi institution that gives microloans to the rural poor (mostly women) to help them out of poverty. (95% of the bank is owned by its borrowers, of whom 97% are women.)</p>

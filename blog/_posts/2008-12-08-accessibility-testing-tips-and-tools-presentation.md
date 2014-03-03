@@ -8,8 +8,10 @@ tags:
 - dragonfly
 - methodology
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was fortunate enough to get invited to speak about <strong>Accessibility testing tips and tools</strong> at Sussex University recently courtesy of Dr Graham McAllister.</p>
 
 <p>I met with a great bunch of students who were all really enthusiastic not just about accessible web design but also accessible gaming and virtual worlds. I even managed to sit in to the end of a presentation given by a couple of guys on <a href="http://edwardanstead.wordpress.com/2008/12/07/hccs-advanced-topics-week-8/">accessible gaming</a> which was really interesting - ever heard of <a href="http://edition.cnn.com/2008/TECH/02/08/wiihabilitation.ap/index.html">Wii-hab</a> anyone? Eye-opening stuff. I also had a long chat with <a href="http://sarahlewthwaite.typepad.com/">Sarah Lewthwaite</a> who introduced her research into Facebook and accessibility in a lecture that followed mine</p>

@@ -16,8 +16,10 @@ tags:
 - speed-dial
 - extensions
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>From beta to final: a heritage of great functionality</h3>
 
 <p>Today marks the unveiling of the final release of <a href="http://www.opera.com/browser/">Opera 11.10 desktop for PC, Mac and Linux</a>, less than a month after our <a href="http://my.opera.com/ODIN/blog/new-web-standards-support-in-opera-desktop-11-10-beta">desktop 11.10 beta release</a>. This release already had some great new feature additions, such as <a href="http://dev.opera.com/articles/view/css3-multi-column-layout/">CSS3 Multi-column Layout</a>, <a href="http://dev.opera.com/articles/view/css3-linear-gradients/">CSS3 linear gradients</a>, WebP, <a href="http://dev.opera.com/articles/view/opera-speed-dial-enhancements/">speed dial enhancements</a>, <a href="http://dev.opera.com/articles/view/site-blocking-with-operas-url-filter-api/">the URL Filter API for extensions</a> and <a href="http://dev.opera.com/articles/view/introducing-woff-web-open-font-format/">Web Open Font Format</a>.</p>

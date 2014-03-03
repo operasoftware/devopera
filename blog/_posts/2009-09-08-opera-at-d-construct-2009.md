@@ -7,8 +7,10 @@ tags:
 - opera
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><p>Another great Brighton experience! Even a trip down to Brighton with no conference attached to it would be fantastically inspiring and jolly good fun, but to have another successful d.Construct to attend as well was a fabulous bonus. I&#39;m always impressed that Andy and co always manage to think of a progressive, innovative theme, as many conferences these days seem to be stuck with a sizeable proportion of talks that you&#39;ve heard once a year for the last five years. The d.Construct theme this year was <q><strong>Designing for tomorrow</strong></q>, covering futuristic interfaces, design principles, and
 suchlike. The talks definitely managed to stay original, although a couple of them were rather buzzword heavy!</p> ... </p><!--more--><h2>Prelude</h2>
 

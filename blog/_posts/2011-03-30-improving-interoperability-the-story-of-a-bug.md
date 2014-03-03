@@ -8,8 +8,10 @@ tags:
 - web standards
 - interoperability
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Open The Web is an initiative from Opera to encourage Web developers to use Web standards for ensuring interoperability across Web browsers (and Web clients as large). We publish <a href="http://dev.opera.com/">articles</a>. We participate in <a href="http://my.opera.com/ODIN/blog/2011/03/24/opera-developer-relations-team-april-events">conferences</a>. We contact Web sites owners that have interoperability issues. Opera users kindly report issues through <a href="https://bugs.opera.com/wizard/">Opera Bug Report Wizard</a>. We sometimes group similar issues in a work package.</p>
 
 <p>My favorite package has been &#8220;HTML served as XHTML package&#8221; (OTW-6223). Some Web sites (including high profile Web sites) send to some Web clients HTML content with the mime type <code>application/xhtml+xml</code>. The parsing rules for XHTML and HTML are different. When sending <code>application/xhtml+xml</code>, site owners have to be sure that their content is, at least, well-formed XML. I have written about this issue in <a href="http://my.opera.com/karlcow/blog/2011/03/03/wrong-to-be-right-with-xhtml">Wrong To Be Right</a>. We noticed that the issue was often happening with sites using Microsoft IIS and ASP.net.</p>
@@ -42,5 +44,5 @@ layout: post
 
 <p><strong>Respect to Rohan Singh</strong>, really. It will also help us contact and eventually fix other sites exhibiting the same behavior such as: <a href="http://home.mcafee.com/Root/stdLandingPage.aspx">McAfee</a>, <a href="http://www.excalibur.com">Excalibur</a>, <a href="http://www.mgmgrand.com/">MGM Grand</a>, <a href="http://www.spanair.com/web/">SpanAir</a>, <a href="http://www.adidas.com/us/micoach/">Adidas</a>, etc.</p>
 
-<p>If you are a site owner, <a href="http://twitter.com/odevrel">please contact us</a> and/or fix it. 
+<p>If you are a site owner, <a href="http://twitter.com/odevrel">please contact us</a> and/or fix it.
 If you are a Web user having this issue, please use the <a href="https://bugs.opera.com/wizard/">Opera Bug Report Wizard</a> to notify us.</p>

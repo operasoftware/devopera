@@ -8,8 +8,10 @@ tags:
 - media-queries
 - viewport
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 <img src="/blog/social-innovation-camp-nigeria-opera/socialinnovationcamp.jpg" />
 </p>

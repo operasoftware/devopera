@@ -7,8 +7,10 @@ tags:
 - test automation
 - watir
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>To make sure new versions of our browser core are of sufficient quality before making their way into any of our products, we run more than 100,000 automated tests on a number of different reference configurations every time we have a new build.
 
 <p>We run automated visual tests, JavaScript tests, selftests, performance tests, stability tests, memory tests and a lot more. One thing we have been missing, however, is automated tests for the things that require some sort of user interaction--clicking links, filling out forms, interacting with complex Web applications.

@@ -9,8 +9,10 @@ tags:
 - design
 - accessibility
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Since before the dawn of time, designers have wanted sexy fonts or images for headings, links and buttons on web pages. The adoption of <a href="http://www.alistapart.com/articles/cssatten"><code>@font-face</code></a> for CSS to use any font a designer specifies will take away some of the use cases. The time-honoured method of using <code>img</code> in the source code, and using the <code>alt</code> attribute to as a text alternative still works, of course, and very nice it is too, but some designers prefer to use CSS to replace text with an image.</p>
 
 <p>There is a variety of <a href="http://www.mezzoblue.com/tests/revised-image-replacement/">image replacement techniques</a>, but they all add a background image and then hide the text, usually by moving off the screen. They all suffer from restrictions: they can only be used with opaque images, or against flat colour, or they need extra <code>span</code>s for style hooks. There&#39;s also the problem of people who surf with images off, which is quite common for those using phones whose web use is metered. They don&#39;t see the image, but don&#39;t see the text either.</p>

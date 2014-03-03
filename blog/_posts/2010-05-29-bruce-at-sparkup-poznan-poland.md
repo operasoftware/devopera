@@ -11,6 +11,7 @@ tags:
 - mobile
 - media-queries
 - odin
+license: cc-by-3.0
 layout: post
 ---
 I&#39;ve <a href="http://www.brucelawson.co.uk/2010/poland/">always wanted to visit Poland</a> so was delighted to visit  Poznań‎ last week for the first  <a href="http://www.sparkup.pl/en">SparkUp conference</a> to speak on Web Development 2.0. Slides are below; leave a comment if you need them in a more accessible format.

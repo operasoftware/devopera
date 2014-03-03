@@ -5,8 +5,10 @@ authors:
 tags:
 - roadmap
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/introducing-the-dragonfly/1dragonfly.gif" width="640" height="309" alt="Opera Dragonfly" />
 
 <p>Today we released the first alpha of our new web developer tool. The objective for this first alpha release is to get feedback and of course allow you to start using it. You should expect it to be buggy and even missing some key features, but that is what alpha means.</p>

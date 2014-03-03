@@ -6,8 +6,10 @@ tags:
 - html
 - talk
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was privileged to be invited to speak at the inaugural <a href="http://speaktheweb.org/">Speak The Web</a> &quot;gig&quot; conference, in Sheffield on Monday 8 February. I demoed lots of <abbr>HTML</abbr>5, especially video.</p>
 <p>The presentation is available on Slideshare:</p>
 <embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=cfakepathsheffield-speak-the-web-100212051836-phpapp02&amp;rel=0&amp;stripped_title=speak-the-web-the-html5-experiments" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" />

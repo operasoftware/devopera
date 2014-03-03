@@ -9,8 +9,10 @@ tags:
 - opera-mini
 - standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p class="note" id="note" style="background-color:#ccc;border-radius:15px;moz-border-radius:15px;webkit-border-radius:15px;padding:5px">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 
 <p>Knowing the capabilities of each platform makes a huge difference in creating a great user experience across all platforms and devices. Many of you might be wondering about the capabilities supported on Opera Desktop, Mobile and Mini and how they differ from one another in that regard. We thought it would be nice to provide you with a comparative list of standards support across our three browsers.</p>

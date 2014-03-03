@@ -5,8 +5,10 @@ authors:
 tags:
 - opera-next
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The biggest news for this <a href="http://my.opera.com/desktopteam/blog/2011/07/27/latency-microdata-qresync">snapshot</a> is the first practical implementation of the Microdata API in a browser.</p>
 <p>As usual, your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.9.<b>186</b> Version/12.00&quot; under <i>Browser Identification</i>).</p>
 <ul>

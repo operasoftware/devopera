@@ -7,8 +7,10 @@ tags:
 - javascript
 - ecmascript
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>What is <span lang="id">Carakan</span>?</h3>
 <p><span lang="id">Carakan</span> is Opera&#39;s new JavaScript engine. It&#39;s still in development, but is already 2.5 times faster than our Opera 10 alpha engine (which itself is 30% faster on real websites than previous versions of Opera). Some aspects are between 5 and 50 times faster!</p>
 <h3>Why are we developing it?</h3>

@@ -5,8 +5,10 @@ authors:
 tags:
 - wcag
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The Web Accessibility Initiative&#39;s (WAI) <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a> was finally made a World Wide Web Consortium (W3C) Recommendation (web standard) yesterday, almost 10 years after WCAG 1.0 was first published.</p>
 
 <p>For those that have been following their progress little in the WCAG 2.0 specification has changed over the last few months but a lot of work has gone into improving the organisation of the supporting documents making them seem like much more like a <a href="http://www.w3.org/WAI/intro/wcag.php">WCAG 2.0 resource suit</a> rather than simply a repository specifications and technical documents as it was before. You&#39;ll find WCAG 2.0 documents now grouped into technical, educational and documents to help you transition.</p>

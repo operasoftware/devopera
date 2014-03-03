@@ -10,8 +10,10 @@ tags:
 - user scenario
 - web agency
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The web helps us manage interactions and exchange messages. In many cases, these interactions happen from machine to machine. Sometimes we (humans) become the machine. If you have been working in a web agency, you know that. How many hours did you spend testing a website? Browsing each page one by one to check if everything was working accordingly to the notebook. How many times did you have to repeat the same process for checking the Web site for each release, each version of the back-end before pushing the site on production?</p>
 
 <p>Today, <a href="http://dev.opera.com/author/47773442">Stuart Knightley</a> published an article on <a href="http://dev.opera.com/articles/view/opera-watir-tutorial/">how to use OperaWatir</a>. <a href="http://www.opera.com/developer/tools/operawatir/">OperaWatir</a> is a tool to control the Opera browser with <a href="http://www.ruby-lang.org/">Ruby</a> scripts. Opera has been using OperaWatir for <a href="http://my.opera.com/core/blog/2009/03/06/test-automation-with-operawatir">testing the implementation</a> of our browser engine on many different platforms. This tool can be used in other contexts.</p>

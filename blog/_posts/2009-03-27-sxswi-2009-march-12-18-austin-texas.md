@@ -9,8 +9,10 @@ tags:
 - standards
 - education
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>
 
 <p>SXSWi 2009 rather unsurprisingly proved to be another week of incredible conversations, sharing joys with old friends and new friends, and putting together great ideas for future work (and play). As I sit on the second leg of my journey home, feeling slightly sad that it seemed to go by so quick, I&#39;ve decided to write an article to tell you about my experiences during this week. It&#39;ll be a shorter, more concise article than usual, as my SXSWi reports usually spiral out of control towards minor novel status, and I suspect that few people read them ;-)</p>

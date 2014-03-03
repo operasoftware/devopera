@@ -5,8 +5,10 @@ authors:
 tags:
 - operadriver
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>A bit of background</h3>
 
 <p>Back in early 2009, when I started working on OperaWatir, WebDriver was announced, and it looked very interesting with its really compact API. I started talking with <a href="http://twitter.com/#!/shs96c">Simon Stewart</a>, &quot;the WebDriver guy&quot; and decided it would be great if we could support both the (Ruby-based) Watir and (Java-based) WebDriver APIs. <a href="http://jruby.org/">JRuby</a>, a Java implementation of the Ruby programming language, allowed us to connect the two, using <a href="http://www.opera.com/developer/tools/operadriver/">OperaDriver</a> as the back-end for <a href="http://www.opera.com/developer/tools/operawatir/">OperaWatir</a>.</p>

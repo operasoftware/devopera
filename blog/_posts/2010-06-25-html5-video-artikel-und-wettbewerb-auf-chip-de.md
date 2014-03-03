@@ -7,8 +7,10 @@ tags:
 - video
 - wettbewerb
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Wer schon heute mit den neuen multimedialen Möglichkeiten von HTML5 experimentieren will, sollte mal einen Blick auf meinen vor kurzem auf <a href="http://chip.de">Chip.de</a> erschienenen Artikel <a href="http://www.chip.de/artikel/Workshop-Das-HTML5-video-Element_43464179.html"><cite>Das HTML5 &lt;video&gt;-Element</cite></a> werfen (eine erweiterte Version von <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a>).</p>
 
 <p><a href="http://forum.chip.de/html-css-javascript/html5-video-wettbewerb-mitmachen-flip-minohd-videokamera-gewinnen-1397961.html"><img src="/blog/html5-video-artikel-und-wettbewerb-auf-chip-de/html5-video-wettbewerb.png" alt="HTML5 &amp;lt;video&amp;gt; Wettbewerb – Mitmachen und Flip MinoHD Videokamera gewinnen! HTML5  &amp;lt;video&amp;gt; ausprobieren und mit der kreativsten Umsetzung eine Flip MinoHD gewinnen! Sponsored by Opera Software" /></a></p>

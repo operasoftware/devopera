@@ -6,8 +6,10 @@ tags:
 - html5
 - london-web-standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was privileged to be invited to come and present at London Web Standards, and honoured that the tickets sold out within 45 minutes of being available. So, no pressure then ...</p>
 
 <p>Assisted by the lovely Henny who advanced my slides and alt-tabbed from slideshow to demo, I sneezed and snuffled my way through a presentation called <a href="http://people.opera.com/brucel/talks/2009/LondonWebStandards-html5.pdf"><abbr>HTML</abbr>5 and Friends (<abbr>PDF</abbr>, 723K)</a>.</p>

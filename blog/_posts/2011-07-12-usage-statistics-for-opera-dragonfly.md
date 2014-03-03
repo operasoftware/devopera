@@ -6,8 +6,10 @@ tags:
 - developer-tools
 - dragonfly
 - usage-tracker
+license: cc-by-3.0
 layout: post
 ---
+
 <p>It is important for any nontrivial project to be able to have reliable usage statistics. Opera Dragonfly is no exception to this. Usage stats are important to be able to help judge the success of a product, and to be able to monitor if there are sudden rises or drops in the user based, due to things like new releases, reviews, advertisements and promotions, and so on.</p>
 
 <p>Since switching to AppCache we have not been able to get fully reliable usage figures. It is also not clear if a user just opens Opera Dragonfly once (perhaps accidentally) or is a regular user that relies on it for their day to day job. We would like to improve this situation, so we can serve our users better, measure our user base, and improve the product. To do this we have implemented a simple opt-out usage tracker for this experimental release.</p>

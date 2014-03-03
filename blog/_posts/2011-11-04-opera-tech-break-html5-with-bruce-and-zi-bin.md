@@ -6,8 +6,10 @@ tags:
 - video
 - html5
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <video width="620" height="360" controls="controls">
    <source src="http://people.opera.com/espenao/movie/techbreak-html5.mp4" type="video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;" />
    <source src="http://people.opera.com/espenao/movie/techbreak-html5.webm" type="video/webm; codecs=&quot;vp8.0, vorbis&quot;" />

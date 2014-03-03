@@ -10,8 +10,10 @@ tags:
 - dragonfly
 - mobile
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I presented at <a href="http://overtheair.org/">Over the Air</a> last week, a two day hack focusing on widgets and the mobile web. It was a great end to an already busy stretch of conferences with a day of presentations followed by an all night hack and presentations the next day.</p>
 
 <p>It was all about widgets and a heavy emphasis on web standards and the buzz was around who could build the best widget in a number of categories ranging from best Doctor Who hack to location aware hack. You can check out the <a href="http://overtheair.org/blog/competition/">competition winners</a> on the Over the Air blog.</p>

@@ -6,8 +6,10 @@ tags:
 - developer-tools
 - beta
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We released a candidate for the beta release of Opera Dragonfly 1.1 on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a> today. If all goes well this will move over to the cutting-edge branch in the near future.</p>
 
 <p>The main focus for this build was to fix the most critical bugs left in Opera Dragonfly 1.1. We have also implemented a few new features and updates. This build more or less contains the full feature set for Opera Dragonfly 1.1. We are now entering the release testing phase, and will fix any critical bugs we find before the final stable release.</p>

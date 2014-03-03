@@ -5,8 +5,10 @@ authors:
 tags:
 - developer-tools
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/expandable-objects-in-the-console-and-more/Screen%20shot%202011-07-07%20at%2002.16.30.png" alt="" />
 
 <p>We’ve made further progress on the feature set for Opera Dragonfly 1.1, and continue to fix bugs. Have fun playing with the latest features, and let us know your feedback in the comments. If you are not using the experimental branch you can follow the instruction from <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">a previous blog post</a>.</p>

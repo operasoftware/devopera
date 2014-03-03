@@ -8,8 +8,10 @@ tags:
 - operawatir
 - watir
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <div style="width: 48%; float: right; margin: 0 0 2em 2em;"><img src="/blog/operawatir-pre-release/800px-Full_Opera_by_night.jpg" alt="" /> <p style="font-size: 85%; margin: 0; padding: 0 .5em">The <a href="http://operaen.no/">Norwegian Opera &amp; Ballet House</a> in Bjørvika, Oslo.  Notice the water.</p> <p style="text-align: right; font-size: 85%; margin: 0; padding: 0 .5em">Photo: Rafał Konieczny, CC by-sa</p></div>
 
 <p>

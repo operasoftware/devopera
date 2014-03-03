@@ -7,8 +7,10 @@ tags:
 - mobile
 - android
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <a href="/blog/just-out-opera-mini-5-1-for-android/device2.png"><img src="/blog/just-out-opera-mini-5-1-for-android/device2.png" alt="Opera Mini 5.1 screenshot" style="float: right; margin: 0 0 1em 1em; width: 240px; height: 400px;" /></a>
 
 <p>I&#39;m happy to announce that we&#39;ve just released Opera Mini 5.1 final for Android (<a href="http://www.youtube.com/watch?v=AJTaKch7OIU">video</a>). That&#39;s right, we&#39;ve skipped the final for 5, and jumped straight to 5.1, bringing it in line with last week&#39;s <a href="http://www.opera.com/press/releases/2010/07/08/">Opera Mini update</a>.</p>

@@ -13,8 +13,10 @@ tags:
 - mobile
 - wai-aria
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>
 
 <p>When Martin Kliehm invited me to come over to speak at this conference about educational initiatives, I was very intrigued — I am a big advocate of accessibility because I am passionate about the web as a universal communication and education medium. But I am certainly not as knowledgeable about accessibility as my peers - Henny and Bruce. And I am not really that familiar with the accessibility crowd.</p>

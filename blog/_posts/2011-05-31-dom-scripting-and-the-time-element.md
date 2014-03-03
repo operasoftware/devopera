@@ -8,8 +8,10 @@ tags:
 - dom
 - javascript
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We&#39;ve created a fun demonstration (well, at least it was fun to Andreas and me last night at 1AM) of how to make use of the <code>&lt;time&gt;</code> element via DOM scripting. Behold our <a href="http://people.opera.com/miket/2011/5/time.html">mighty date robot</a>.</p>
 
 <p>When a date is selected from the robot&#39;s date picker, a new <code>&lt;time&gt;</code> element is dynamically created and inserted into the &quot;date log&quot;. Let&#39;s take a closer look at how that&#39;s accomplished in the <code>makeTime</code> function expression:</p>

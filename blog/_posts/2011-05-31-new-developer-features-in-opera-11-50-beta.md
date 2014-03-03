@@ -10,8 +10,10 @@ tags:
 - time
 - video
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>This morning, we&#39;ve released <a href="http://www.opera.com/browser/next/">Opera 11.50 beta</a> through our Next channel, and it comes with a number of interesting developer bits. Let&#39;s have a look.</p>
 <h3><code>classList</code> goodness</h3>
 <p>Using <code>classList</code>, you can easily add, remove, or toggle a class on an element, without the need for complex regex or libraries. The code to toggle a class is as simple as this:</p>

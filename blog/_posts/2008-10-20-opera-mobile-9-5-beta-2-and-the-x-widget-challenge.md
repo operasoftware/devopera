@@ -9,8 +9,10 @@ tags:
 - dragonfly
 - x-device
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Opera today announced that the <a href="http://www.opera.com/pressreleases/en/2008/10/20/">second beta of Opera Mobile 9.5 for Windows Mobile</a> has now been released.  This is joined by the first beta of Opera Mobile 9.5 for Symbian UIQ.  The notable absence is Opera Mobile for Symbian S60, which will be released some time in 2009.</p>
 
 <p>The release includes a number of bug and stability fixes, to improve the overall user experience.  The key feature of the launch is <a href="http://www.opera.com/b2b/solutions/widgets/">Opera Widgets</a>, which allows Widgets to move into new areas.  Opera Widgets are already supported on the desktop, Nintendo Wii and Archos media players.  Opera Widgets allow you to create web applications using regular web technology such as (X)HTML, CSS, DOM, JavaScript and SVG.  They can be anything from single-purpose small applications, to something as complex as web mail or a word processor.  This allows developers that are well versed in web technologies to be able to create cross device and cross platform applications using their existing skill set. As Widgets use the same rendering-engine as Opera 9.5—Presto 2.1—you can use the full set of standards supported by the Opera platform, without worrying about legacy browser support.  This opens up the possibility of use of CSS 3, HTML 5 and SVG.  Opera Widgets will be aligned to the<a href="http://www.w3.org/TR/widgets/"> W3C Widgets 1.0 specification</a>, so developing for Opera Widgets avoids any single-vendor lock-in.  When other browsers or user-agents support Widgets 1.0, your Widgets will also work on their platforms, as so long as they support the same specifications as you used to make your widgets.</p>

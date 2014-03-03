@@ -9,8 +9,10 @@ tags:
 - responsive
 - meta
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last week, <a href="http://socialdriver.com/2012/07/20-best-responsive-websites/">Social Driver</a> listed 20 sites that are supposedly best-in-class when it comes to responsive design techniques. I had a look at the viewport meta tags used in these sites and have posted them as a <a href="https://gist.github.com/3130253">gist</a>.</p>
 
 <h3>Findings</h3>

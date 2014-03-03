@@ -8,8 +8,10 @@ tags:
 - debugging
 - accessibility
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was mucking around with  <a href="http://dev.opera.com/articles/extensions/">Opera Extensions</a>, largely to get a grip on how they work, and decided to make an extension that exposes ARIA information in a page, as I was travelling Australia and <a href="http://wipa.org.au/html5/">talking HTML5 and ARIA</a> with ARIA-expert <a href="http://www.paciellogroup.com/blog/">Steve Faulkner</a>.</p>
 
 <p><del>Here&#39;s a very early alpha 1 version of the <a href="http://people.opera.com/brucel/dev/oex/aria-alpha1.oex">ARIA debugging Opera extension</a>. It&#39;s not pretty, and it&#39;s not well-architected (the beta is better), but you can get an idea of the basic functionality. I&#39;m looking for comments on the functionality it offers rather than how it accomplishes it or the aesthetics of the logo, buttons etc.</del></p>

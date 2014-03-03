@@ -7,8 +7,10 @@ tags:
 - protocols
 - opera-11
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h2 id="custom_protocol_and_content_handlers_in_opera_1160_beta">Custom Protocol and Content Handlers in Opera 11.60 beta</h2>
 
 <p>The Opera 11.60 alpha snapshot introduces support for <a href="http://www.whatwg.org/specs/web-apps/current-work/#custom-handlers">HTML5 custom scheme and content handlers</a>.</p>

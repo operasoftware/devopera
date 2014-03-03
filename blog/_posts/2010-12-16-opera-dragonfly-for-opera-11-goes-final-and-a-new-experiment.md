@@ -6,8 +6,10 @@ tags:
 - experimental
 - opera-11
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>With today’s <a href="http://www.opera.com/browser/">release of Opera 11</a>, we have pushed the <a href="http://my.opera.com/dragonfly/blog/2010/12/03/getting-opera-dragonfly-ready-for-opera-11">corresponding Opera Dragonfly version</a> to the default path. This means Opera 11 users will get this version automatically.</p>
 
 <p>Will this release out of the way, full Opera Dragonfly resources can be spent working towards the first stable release in the new year. We have pushed the current state of this work to the /experimental/ path (check the previous blog post for details on how to enable this) for you to try out. As well as work in progress, it includes a couple of experiments to try to gauge what the correct behaviour should be.</p>

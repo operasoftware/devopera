@@ -11,8 +11,10 @@ tags:
 - audio
 - multimedia
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last Monday I popped down to the capital, fighting through an annoying cold I&#39;ve had for a week, to take part in a <a href="http://www.londonwebstandards.org/">London Web Standards</a> evening. To start off the proceedings, Google&#39;s <a href="http://mahemoff.com/">Michael Mahemoff</a> took us on a tour of some of the cool, but often overlooked new features of HTML5, such as application cache, local storage, geolocation. After that I tried to wow the crowd with a few insights into the capabilities offered by <a href="http://www.slideshare.net/redux/audio-and-video-in-html5-london-web-standards-20092010">Audio and Video in HTML5</a>.</p>
 <object id="__sse5257450" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lws20-09-2010-100922063706-phpapp02&amp;stripped_title=audio-and-video-in-html5-london-web-standards-20092010&amp;userName=redux" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="never" /><embed name="__sse5257450" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lws20-09-2010-100922063706-phpapp02&amp;stripped_title=audio-and-video-in-html5-london-web-standards-20092010&amp;userName=redux" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /></object>
 <p>And here are the examples I showed:</p>

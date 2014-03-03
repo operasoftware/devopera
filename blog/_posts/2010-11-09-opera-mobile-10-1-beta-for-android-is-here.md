@@ -7,8 +7,10 @@ tags:
 - viewport
 - android
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/opera-mobile-10-1-beta-for-android-is-here/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" />
 <p>We&#39;ve just released our first version of Opera Mobile for Android — you can get it from <a href="http://m.opera.com/">m.opera.com</a>. It comes packed with features and standards support, with more things under way. A quick overview.</p>
 <h3>Pinch zoom and text wrap</h3>

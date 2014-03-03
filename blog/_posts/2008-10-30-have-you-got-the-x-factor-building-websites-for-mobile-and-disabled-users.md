@@ -6,8 +6,10 @@ tags:
 - accessibility
 - mobile
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last weekend saw the first ever online conference for web professionals <a href="http://www.headconference.com/">&lt;head&gt;</a>. Spread over three days roughly 80 speakers from different timezones hung out with delegates in virtual rooms speaking on just about any topic you can think of that is web related.</p>
 
 <p>I was all too happy to talk about the cross overs between designing web pages for people with disabilities and people browsing on mobiles and other devices. This is something I&#39;ve long been intrested in and one of the reasons why I joined Opera as one web really should fit all. In the talk I look at standards and how these underpin the web making it work for anyone anywhere as well as give some practical examples of shared issues and websites. What can&#39;t be stressed enough is that if you&#39;re already building web pages with accessibility in mind then you&#39;re a long way to accomodating mobile users and vice versa. What&#39;s more you can also use <a href="http://www.opera.com/products/dragonfly/">Opera Dragonfly</a> to check web pages as well as remotely debug pages for mobile access. It&#39;s a win, win.</p>

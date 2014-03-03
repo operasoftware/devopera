@@ -9,8 +9,10 @@ tags:
 - css3
 - svg
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The weekly snapshot of <a href="http://my.opera.com/desktopteam/blog/2008/05/23/a-lighter-ev">Opera Kestrel</a> included a few fixes to bugs that caused issues in Opera Dragonfly.  The most prominent one of these is that persistent cache should now work in Opera Dragonfly, enabling offline mode to work as it was designed.  This should make Opera Dragonfly much more useful.</p>
 
 <p>Another bug that has been fixed, and should be coming soon, is that Opera Dragonfly will be useable even when JavaScript is turned off.  Once this fix lands, it will be possible to debug how your web page or application works without JavaScript</p>

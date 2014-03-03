@@ -7,8 +7,10 @@ tags:
 - specifications
 - csswg
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Yesterday, Microsoft gave me a free lunch. They did it because I went to Cambridge to observe the <abbr>CSS</abbr> working group&#39;s face-to-face meeting. I was geekily excited to hear them discuss the topic &quot;what is a br element&quot;, and to meet <a href="http://fantasai.inkedblade.net/">fantasai</a>, with whom I&#39;d worked to gather <a href="http://www.webstandards.org/2008/01/18/tell-the-css-wg-what-you-want-from-css3/">web designers&#39; wishes for CSS 3</a> (and who promises faithfully that the feedback  on those wishes is imminent). </p>
 <p>The &quot;what is a break&quot; debate didn&#39;t disappoint. Is it, as Håkon suggested, <code>{content:&#39;\A&#39;; white-space:pre;}</code>? But what about the fact that a single break has no height, but two (or multiple) breaks do? So should we add the rule <code>br+br {content:&#39;\A&#39;; white-space:pre; height:1 em;}</code>?</p>
 <p>Someone else pointed out that the break element was more than just a presentational effect, and it has semantics - for example, when used to <a href="http://www.brucelawson.co.uk/2005/what-i-want-from-css-3/">mark up poetry</a> or code. So is it best described by defining a new value <code>display:break;</code>?</p>

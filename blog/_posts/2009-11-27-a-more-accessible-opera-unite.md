@@ -6,8 +6,10 @@ tags:
 - accessibility
 - unite
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>This week saw the release of Opera 10.10 final complete with a more accessible <a href="http://unite.opera.com/">Opera Unite</a>. If you&#39;ve not come across Opera Unite before it&#39;s a powerful platform that turns your browser into a server. This means that you can share content you have on your hard drive - photo&#39;s, files, folders, music, hosted websites - without having to uploaded these to a website.</p>
 
 <p>There are benefits for all users but for those who struggle with the accessibility of social networks where they&#39;d normally share photo&#39;s, files and information Opera Unite offers a fast, accessible and usable alternative. With this release we&#39;ve added in some accessibility enhancements that we believe will benefit not just disabled but all users:</p>

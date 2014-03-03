@@ -5,8 +5,10 @@ authors:
 tags:
 - survey
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We are always looking for ways to improve the quality of Opera Dragonfly and our developer tools offerings. As part of this process we have produced a survey to understand the needs, wants and work flow of the developer community. We will use the results of this survey to hone our product offering and as feedback into the roadmap process. We want to make sure we understand the issues developers are having with Opera Dragonfly, and what features developers and designers can not live without.</p>
 
 <p>The survey is currently available in <a href="http://spreadsheets.google.com/viewform?hl=en&amp;formkey=dHY2dkhCeC1IcjBOM3JnaHBTTVd5S0E6MQ#gid=0">English</a> and <a href="http://spreadsheets.google.com/viewform?hl=ja&amp;formkey=dC0wbFJaWDlZWDFDX3FVV3hQM1FmeWc6MA#gid=0">Japanese</a>, and is currently being translated to a number of major languages.</p>

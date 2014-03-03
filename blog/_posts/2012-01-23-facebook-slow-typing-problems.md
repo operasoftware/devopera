@@ -6,6 +6,7 @@ tags:
 - sitepatching
 - browser.js
 - facebook
+license: cc-by-3.0
 layout: post
 ---
 Today&#39;s Facebook update caused some issues for Opera, some of their changed CSS made Opera work a lot harder while Facebook is updating itself. The main impact of this was that typing became very slow. Ouch.<br/><br/>Removing this CSS makes it work: <br/><br/><pre> .uiButtonGroupOverlay &gt; :first-child .uiButton{border-top-left-radius:3px;border-bottom-left-radius:3px}

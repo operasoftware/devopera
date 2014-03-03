@@ -6,8 +6,10 @@ tags:
 - opera-12
 - beta
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>This morning, we&#39;ve released <a href="http://www.opera.com/browser/next/">Opera 12 beta</a> and as always, a new release comes with improved standards support and other developer features — a quick overview of the shiny:</p>
 
 <h3>Hardware acceleration and WebGL support</h3>

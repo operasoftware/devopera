@@ -10,8 +10,10 @@ tags:
 - dnt
 - implementation
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>On the Opera Desktop Team blog, there is a <a href="http://my.opera.com/desktopteam/blog/2012/02/10/core-dnt-mail-themes">new <strong>experimental</strong> build</a> available which includes support for the &quot;Do Not Track&quot; feature. Last year, in April 2011, the W3C invited the industry and the user alike to participate in a <a href="http://www.w3.org/2011/track-privacy/">workshop on Web Tracking and User Privacy</a>. A few months later, after a very successful workshop, a working group started the <a href="http://www.w3.org/2011/tracking-protection/">work on Web tracking</a> with essentially three items in its <a href="http://www.w3.org/2011/tracking-protection/charter">charter</a>: </p>
 
 <ul>
@@ -40,5 +42,5 @@ layout: post
 
 <p>This work is very important for Opera for two reasons. We are both a browser implementer and a service provider. The recently released build will help us to understand the interactions and the issues it might create when a user is activating the <code>DNT: 1</code> header. We would like to see how implementable the Working Group suggestions are on the server side too. Our social network, <a href="http://my.opera.com/">My.Opera</a>, and the very <a href="http://www.opera.com/mobile/">useful Opera Mini</a> browser have to be tested against the specification.</p>
 
-<span class='imgcenter'><img alt='' src='/blog/implementing-do-no-track-opera/dnt-wg-europe.jpg' /></span> 
+<span class='imgcenter'><img alt='' src='/blog/implementing-do-no-track-opera/dnt-wg-europe.jpg' /></span>
 Last Working Group Meeting in Brussels in January 2012

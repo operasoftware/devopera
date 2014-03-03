@@ -7,8 +7,10 @@ tags:
 - Selectors-API
 - W3C
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The <a href="http://www.w3.org/TR/selectors-api/">Selectors API specification</a>, currently being worked on within the <a href="http://www.w3.org/2006/webapi/">WebAPI working group</a> at the W3C, defines DOM APIs designed to make it possible to select elements within the document using Selectors. This simple, yet powerful API has the potential to make working with the DOM faster and easier.  If you’re familiar with CSS, you will be familiar with Selectors and these APIs should be easy to learn.</p>
 
 <p>For example, to select all the <code>em</code> and <code>strong</code> elements within the document, you can use this.</p>

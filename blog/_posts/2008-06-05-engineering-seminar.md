@@ -7,8 +7,10 @@ tags:
 - svg
 - canvas
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>My name is Tim Johansson, I am a core technology developer at Opera.
 I work in the core graphics team which is responsible for all the
 rendering (of web pages, SVG and &lt;canvas&gt;) and image decoding in Opera.</p>

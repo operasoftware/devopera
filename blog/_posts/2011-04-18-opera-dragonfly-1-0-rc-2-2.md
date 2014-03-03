@@ -4,8 +4,10 @@ authors:
 - david-storey
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We’ve released a new Release Candidate today for Opera Dragonfly 1.0. This build fixes all the P1 bugs we found in the first release candidate. This build just lacks the full translations for the languages that Opera Dragonfly supports. Once the translations are in place it will become the Opera Dragonfly 1.0 release unless any show stopper bugs are found.</p>
 
 <p>The list of bugs fixed since RC1 include:</p>

@@ -4,8 +4,10 @@ authors:
 - david-storey
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Since Opera Dragonfly 1.0 was released we have been hard at work preparing the first point release. We are hoping to deliver this before the Oslo summer vacation period. The first fruits of this labour are available on the experimental path. If you are using Opera Next you will automatically get this version. If you are using the stable Opera version you will have to switch to this version manually. I recommend that you use <a href="http://my.opera.com/desktopteam/blog/2011/06/14/happy-tuesday">a recent Opera 11.50 build</a> to be able to test out the new features.</p>
 
 <h3>New features and improvements</h3>

@@ -8,8 +8,10 @@ tags:
 - tv
 - media-queries
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><img src="/blog/tv-web-development-tips/Opera-TV-Store-seminar.jpg" alt="An Opera TV Store seminar in Tokyo" style="box-shadow:0 4px 8px rgba(0, 0, 0, 0.5); margin:12px auto;" /></p>
 
 <p>Over the past few days I&#39;ve been lucky enough to give a couple of talks on web development for TV. It seems there&#39;s growing interest and enthusiasm in this area, which I&#39;m pleased to see, because although it can be frustrating, web on TV also offers opportunities for innovation and interesting technical challenges.</p>

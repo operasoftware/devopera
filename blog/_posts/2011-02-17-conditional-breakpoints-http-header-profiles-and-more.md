@@ -5,8 +5,10 @@ authors:
 tags:
 - conditional-breakpoints
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/conditional-breakpoints-http-header-profiles-and-more/conditional.png" alt="" />
 
 <p>We have another build for you on the experimental branch of Opera Dragonfly. This build contains all of the features we are targeting for the Opera Dragonfly 1.0 release. We now move to the polishing and bug fixing phase. Critical bugs will be fixed, and the UI and features will be polished to look and feel consistently across the application. Extra features will only be considered if they are critical to improve the usability, or we magically find time before the final release date (i.e. don’t count on it). New feature development will start up again once Opera Dragonfly 1.0 is released.</p>

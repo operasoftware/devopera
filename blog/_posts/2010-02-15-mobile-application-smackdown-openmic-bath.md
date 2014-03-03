@@ -11,6 +11,7 @@ tags:
 - standards
 - w3c
 - odin
+license: cc-by-3.0
 layout: post
 ---
 Last week I attended the <a href="http://openmicamp.ning.com/">openMIC Mobile Innovation Camp</a> in Bath. My co-conspirator Bruce Lawson presented on top tips for mobile web development in the morning, while I ran a barcamp session in the afternoon around the subject of native applications, web applications and widgets.

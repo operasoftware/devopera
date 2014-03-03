@@ -4,8 +4,10 @@ authors:
 - david-hasather
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today we&#39;re releasing the profiler that&#39;s been in beta testing for some time now.</p>
 
 <p>The profiler lets you record all events that happen on a web page, for example script compilation and reflow. When recording is stopped these events will be presented in a timeline where you can see how long each event took.</p>

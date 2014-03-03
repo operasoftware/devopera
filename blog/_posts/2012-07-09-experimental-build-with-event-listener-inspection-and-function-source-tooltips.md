@@ -4,8 +4,10 @@ authors:
 - christian-krebs
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Our latest experimental build introduces the ability to inspect JavaScript event listeners from inside the DOM view.</p>
 
 <p class="note">As these new features rely on functionality that&#39;s only recently been added to our browser core, they&#39;re currently only available if you&#39;re running <a href="http://www.opera.com/browser/next/">Opera Next</a>.</p>

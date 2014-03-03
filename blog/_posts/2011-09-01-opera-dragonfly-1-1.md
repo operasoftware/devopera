@@ -6,8 +6,10 @@ tags:
 - developer-tools
 - release
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>After a number of release candidates we launched Opera Dragonfly 1.1 today. Around 3 and a half months ago we launched version 1.0 to <a href="http://www.sitepoint.com/opera-dragonfly-1-browser-development-tool/">critical</a> <a href="http://www.webmonkey.com/2011/05/opera-dragonfly-a-worthy-addition-your-web-development-toolkit/">acclaim</a>. We’ve not rested on our laurels since then and have been hard at work responding to feedback, squashing over 200 bugs, adding new features, perfecting existing ones, and polishing the user interface. We believe we now have an even better product, and we’re excited to get it out the door. We look forward to the feedback from web developers and hope it makes their experience developing for Opera smoother.</p>
 
 <img src="/blog/opera-dragonfly-1-1/Screen%20Shot%202011-08-31%20at%2020.37.50.png" alt="" />

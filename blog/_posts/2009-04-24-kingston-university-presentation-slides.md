@@ -5,8 +5,10 @@ authors:
 tags:
 - presentation
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Chris Mills and I were honoured to present on Open Web Standards and the Mobile Web at Kingston University, London.</p>
 
 <p>The slides are made using Web Standards, and were shown using Projection Mode in Opera (just unzip, fire up index.html, then hit View &gt; Full screen to see full screen slides).</p>

@@ -8,8 +8,10 @@ tags:
 - one-web
 - mobile
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I spoke at Over The Air last year and - gasp! - was invited back.</p>
 
 <p>The beautiful grounds, gloriously sunny day and fabulously geeky setting of Bletchley Park, the site of secret British codebreaking activities during WWII and birthplace of the modern computer, augured well for what was a superb event. My hearty congratulations and thanks to the organisers.</p>

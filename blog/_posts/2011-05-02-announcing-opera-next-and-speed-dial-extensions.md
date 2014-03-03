@@ -8,8 +8,10 @@ tags:
 - extensions
 - opera-11
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>This morning, we&#39;ve released an <a href="http://www.opera.com/browser/next/">alpha of Opera 11.50</a>, which introduces Speed Dial extensions, and is the first build of what we call the <strong>Opera Next</strong> release cycle.</p>
 <h3>Opera Next</h3>
 <span class='imgright'><img alt='' src='/blog/announcing-opera-next-and-speed-dial-extensions/shiny.png' /></span><p>Opera Next is an easy way for Opera fans, early adopters and developers to opt in to Opera snapshot builds, alphas, betas, RCs and even final builds without overwriting their main Opera installation. Unlike the regular download of Opera, which auto-updates only to final releases, <strong>Opera Next will auto-update every time there is a new build available</strong> on the <a href="http://my.opera.com/desktopteam/blog/">Desktop team blog</a>.</p>

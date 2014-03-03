@@ -6,8 +6,10 @@ tags:
 - standards.next
 - accessibility
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Not long now until Bruce and I will be running our next <a href="http://www.standards-next.org">Standards.Next</a> meetup this time covering cognition and accessible web design.</p>
 
 <p>We had such a blast with the <a href="http://my.opera.com/ODIN/blog/2009/07/01/standards-next-presentations">HTML5 meetup</a> that we to thought we do it again this time focusing on accessible web design for people with cognitive problems. This has always been such an unknown area and one of the most difficult groups of people to design for so we&#39;re lucky to have a really talented and knowledgeable line up including:</p>

@@ -5,8 +5,10 @@ authors:
 tags:
 - network-inspector
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We’ve recently released a snapshot of Opera Dragonfly alpha 4, to coincide with <a href="http://www.opera.com/browser/next/">Opera 10 beta</a>.  One of the biggest usability issues with Opera Dragonfly has been that it did not select the active tab or window.  This meant that the user had to follow a number of steps before they could start debugging.  This was among the top user requests and has now been fixed for Opera 10 and Opera Dragonfly alpha 4.</p>
 
 <p>Along with detecting the active tab, the UI has been improved to make it more intuitive and compact.  In the detached mode all the tabs, windows, panels and widgets that are open (the debugging contexts) are available from a drop down at the top of the Opera Dragonfly window.  In attached mode, where space is more of a premium, the same functionality has been added as a dragonfly button to the left of the detach button.  The settings have been moved to a tab on the main Opera Dragonfly tab bar.  You will notice that the Error Console layout has improved quite a bit, and shows collapsed by default.  This allows you to have a quick overview of all the errors, unless you have so many errors that they scroll out of the viewport, but you are not creating that many errors, right? While the UI has improved since Alpha 3, you&#39;ll notice that the look and feel doesn&#39;t yet match the beautiful new skin created by Jon Hicks for Opera 10. Once the final Opera 10 skin has been finished we hope to start work on making Opera Dragonfly consistent with the skin.</p>

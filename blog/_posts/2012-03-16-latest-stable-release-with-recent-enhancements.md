@@ -4,8 +4,10 @@ authors:
 - patrick-lauke
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today&#39;s release on the stable branch of Opera Dragonfly includes many of the recent enhancements and fixes from our experimental builds.</p>
 
 <p>Apart from a boatload of small tweaks and bug fixes, some of the top new features and additions include:</p>

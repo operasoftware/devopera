@@ -9,8 +9,10 @@ tags:
 - ev
 - npapi
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 I was invited to speak to a group of developers at the China Bank of Communications. It was an opportunity to get to know how the IT side of the banking sector works, and to ask them &quot;Why ActiveX?&quot;</p>
 

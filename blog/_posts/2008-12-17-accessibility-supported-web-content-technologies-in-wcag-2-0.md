@@ -7,8 +7,10 @@ tags:
 - wai-aria
 - accessibility
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>A new concept in <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 is <a href="http://www.w3.org/TR/WCAG20/#accessibility-supported">accessibility supported</a> web content technologies. This has confused a few people and also raised the wider question of what technologies are in fact accessibility supported?</p>
 
 <p>Under WCAG 2.0 the idea is to use web technologies (HTML, AJAX, Flash, DOM Scripting) that support accessibility. By supporting accessibility this means assistive technologies (screen readers, screen magnifiers, refreshable braille displays, voice input) are able to programatically determine the meaning of content that the user is accessing i.e. the web content works with the browser and the assistive technology. A real world example of this is how before <abbr title="Microsoft Active Accessibility">MSAA</abbr> support was added to Flash (a web content technology) screen readers were unable to access Flash at all whereas now, with MSAA added, they can. So where previously Flash didn&#39;t support accessibility now it does.</p>

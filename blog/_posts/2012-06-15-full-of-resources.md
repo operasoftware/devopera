@@ -6,8 +6,10 @@ tags:
 - experimental
 - resource inspector
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Many changes in the Resource Inspector have landed into an Experimental build of  Opera Dragonfly. The main goal of this update is to give a more natural and focused access to the resources of your page or application.
 <p>The resources are no longer displayed in a flat table but organized in a structured tree representing the document, children documents and their various groups of resources such as markup, stylesheets, scripts, images, and so on.
 <p><span class='imgcenter'><img alt='' src='/blog/full-of-resources/0search.png' /></span>

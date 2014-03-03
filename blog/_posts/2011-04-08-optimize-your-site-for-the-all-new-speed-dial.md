@@ -9,8 +9,10 @@ tags:
 - speed-dial
 - minimized
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>With our Desktop team in <a href="http://my.opera.com/desktopteam/blog/">full acceleration mode</a> towards a final release of Opera 11.10, it&#39;s a good time to look at how you can make your site stand out in the revamped Speed Dial.</p>
 <p>In the video below, my colleague Arnstein gives a quick tour of some of the small tweaks you can do to make your content shine.</p>
 <object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/GeHYPLS-K2I?fs=1&amp;amp;hl=en_US" />

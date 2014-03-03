@@ -7,8 +7,10 @@ tags:
 - developer-tools
 - offline
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Opera Dragonfly uses <a href="http://www.whatwg.org/specs/web-apps/current-work/#applicationcache">HTML5 Application Cache</a> (commonly known as AppCache) to store itself on your machine. The biggest advantage is probably that Opera Dragonfly still works while you are completely offline, updating itself to the newest version available when you go back online. In addition, this also reduces start-up time: Opera Dragonfly will execute from cache as soon as it&#39;s invoked, while any newer version will only be downloaded once the tool is already running.</p>
 
 <p>However, there are a few situations in which this use of AppCache won&#39;t work, and Opera Dragonfly will need to first be downloaded via a live web connection before being usable:</p>

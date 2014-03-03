@@ -13,8 +13,10 @@ tags:
 - audio
 - fonzie
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Für Frühaufsteher gab es heute Morgen an der <a href="http://webtechcon.de">WebTech 2010</a> hier in Mainz meinen Talk <a href="http://www.slideshare.net/redux/schne-neue-welt-von-html5-webtech-2010-mainz-12102010">Schöne neue Welt von HTML5</a> – ein schneller Überblick zur Geschichte von HTML5, neue Syntax and Semantik, Formulare und natürlich die multimedialen &quot;Fonzie-features&quot; <code>video</code>, <code>audio</code> und <code>canvas</code>.</p>
 
 <object id="__sse5420720" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=webtech12-10-2010-101012011915-phpapp02&amp;stripped_title=schne-neue-welt-von-html5-webtech-2010-mainz-12102010&amp;userName=redux" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="never" /><embed name="__sse5420720" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=webtech12-10-2010-101012011915-phpapp02&amp;stripped_title=schne-neue-welt-von-html5-webtech-2010-mainz-12102010&amp;userName=redux" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /></object>

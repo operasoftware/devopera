@@ -7,8 +7,10 @@ tags:
 - html5
 - internationalisation
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>At Opera HQ, we&#39;re implementing the HTML5 <code>&lt;details&gt;</code> element. It&#39;s a groovy interactive element that functions as &quot;a disclosure widget from which the user can obtain additional information or controls&quot;.</p><p>Most browsers will implement it as an expando box: when the user clicks on some browser-generated icon (such as a a triangle or down arrow) or the word &quot;details&quot; - which can be replaced by an author supplying their own rubric in a child <code>&lt;summary&gt;</code> element - the element will slide open revealing some further details inside. These could be a full description of an image or graph; a description of a complex table structure; advanced options for a search form; or just about anything else, and wouldn&#39;t need JavaScript to function.</p>
 
 <p>It is vital that browsers implement HTML interoperably. So Opera&#39;s Lachlan Hunt has written to the WHATWG (the group speccing HTML5 with the W3C) to detail how Opera is implementing it, in the hope of getting feedback from developers, other browser vendors and (we hope) encouraging vendors to share information and implement similarly.</p>

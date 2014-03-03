@@ -10,8 +10,10 @@ tags:
 - summary
 - standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty  analysis.
 
 The results are based on 4,225,113 URLs tested from over 250 countries; more about the <a href="http://dev.opera.com/articles/view/mama-methodology/">methodology</a> can be found in Dev Opera. It&#39;s worth noting that the numbers do not all add up as URLs may fulfill a number of the criteria. Therefore, percentages are guidelines only.</p>

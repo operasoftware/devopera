@@ -10,8 +10,10 @@ tags:
 - canvas
 - api
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://my.opera.com/desktopteam/blog/opera-17-final">Opera 17 for desktop is released</a>, and installs are being autoupdated as you read this.</p>
 
 <p>Opera 17 is based on Chromium/Blink 30, which means that <a href="http://codepen.io/adobe/pen/gbzmE">Canvas blend modes</a> are now supported.</p>

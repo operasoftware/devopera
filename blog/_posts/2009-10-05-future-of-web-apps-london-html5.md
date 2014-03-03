@@ -10,8 +10,10 @@ tags:
 - html5
 - svg
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was privileged to be invited to speak on <abbr>HTML</abbr>5 at <a href="http://events.carsonified.com/fowa/2009/london/schedule">Future of Web Apps London last week</a>. My talk was called <a href="http://people.opera.com/brucel/talks/2009/Bruce-Lawson-Opera-FOWA-HTML5.pdf"><abbr>HTML</abbr>5: The Future of Web Applications (<abbr>PDF</abbr> 636K)</a>. It&#39;s a newly written talk that concentrates on the apps side of the language, rather than the markup side that I usually show. That seemed appropriate given the apps-focus of the show, and the <a href="http://lists.w3.org/Archives/Public/public-html/2009Jan/0215.html"><abbr>HTML</abbr>5 editor&#39;s assertion</a> that <abbr>HTML</abbr>5 is</p>
 <blockquote cite="http://lists.w3.org/Archives/Public/public-html/2009Jan/0215.html">extending the language to better support Web applications, since that is one of the directions the Web is going in and is one of the areas least well served by HTML so far.
 This puts HTML in direct competition with other technologies intended for applications deployed over the Web, in particular Flash and Silverlight.</blockquote>

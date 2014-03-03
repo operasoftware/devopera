@@ -10,8 +10,10 @@ tags:
 - error
 - handling
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Through our <a href="http://my.opera.com/community/openweb/info/">Open The Web effort</a>, Opera&#39;s Developer Relations team contacts websites that don&#39;t work as expected when viewed in Opera, and we suggest changes to their source code that fix the problem. </p>
 
 <p>One of the more common problems we&#39;ve encountered are sites that somehow serve broken XML to Opera. You can see this on <a href="http://www.sharebuilder.com/">http://www.sharebuilder.com/</a>, <a href="http://allhiphop.com/">http://allhiphop.com/</a>, <a href="http://www.excalibur.com/">http://www.excalibur.com/</a>, <a href="http://home.mcafee.com/Default.aspx">http://home.mcafee.com/Default.aspx</a>, just to name a few.</p>

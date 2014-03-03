@@ -6,8 +6,10 @@ tags:
 - indonesia
 - opera-mini
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 It&#39;s not just Opera Mini, but the whole Mobile Web.
 </p>

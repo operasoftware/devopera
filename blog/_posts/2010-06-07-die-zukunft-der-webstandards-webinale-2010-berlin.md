@@ -13,8 +13,10 @@ tags:
 - widgets
 - canvas
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last week I had the pleasure of attending – and speaking at – the <a href="http://createordie.de/webinale2010/">Webinale 2010</a> in Berlin, a giant conference with 4 concurrent tracks, running in parallel to the <a href="http://it-republik.de/php/phpconference2010se/">International PHP 2010</a> conference. The great and the good of the German web scene were in attendance, so it was fun to meet up again with some of my fellow <a href="http://www.webkrauts.de">Webkrauts</a> and to make some new friends.</p>
 
 <p>My presentation <a href="http://www.slideshare.net/redux/die-zukunft-der-webstandards-webinale-31052010" lang="de"><cite>Die Zukunft der Webstandards</cite></a> was well attended, but I realised very early on in the talk that I had crammed far too much into my slides...which meant I had to cut the session a bit short. The feedback I received afterwards was all positive, but lesson learned: trying to put &quot;everything you need to know about HTML5&quot; into one single presentation is optimistic, at best.</p>

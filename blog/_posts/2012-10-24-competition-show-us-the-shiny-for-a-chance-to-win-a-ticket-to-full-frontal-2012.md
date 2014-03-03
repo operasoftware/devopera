@@ -6,8 +6,10 @@ tags:
 - full-frontal
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>If you&#39;re serious about your JavaScript and fanatical about web app development, you should already be familiar with the <a href="http://2012.full-frontal.org/">Full Frontal</a> conference. Missed your chance to grab a ticket for this year? Don&#39;t fret, we may be able to help...</p>
 
 <p>Due to some scheduling clashes, we&#39;ve got a spare ticket for the conference, as well as a place on <a href="http://2012.full-frontal.org/#mobile">Remy Sharp&#39;s &quot;Mobile Web Apps&quot; workshop</a>...in all, two days of intense JS and web app knowledge (8-9 November).</p>

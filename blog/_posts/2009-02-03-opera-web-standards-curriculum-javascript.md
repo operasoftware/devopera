@@ -13,8 +13,10 @@ tags:
 - learning
 - javascript
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><h2>Introduction</h2>
 
 <p>We&#39;ve sure got a treat for you this week! You&#39;ll be pleased to hear that the final batch of the Opera web standards curriculum core articles is now published. This includes the last of the CSS - an impressively deep study of site planning, templates, layouts and headers, columns and footers - and the entirety of the JavaScript articles.</p>
