@@ -3,7 +3,7 @@ title: OperaDriver, Test Web Pages Without Efforts
 authors:
 - karlcow
 tags:
-- web testing
+- web-testing
 - selenium
 - testing
 - operadriver

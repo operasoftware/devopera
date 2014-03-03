@@ -3,13 +3,13 @@ title: Being Strict About HTTP Link Header
 authors:
 - karlcow
 tags:
-- user interaction
-- UX
+- user-interaction
+- ux
 - daisycms
 - browser
 - http
 - interoperability
-- Opera
+- opera
 - link
 - bug
 - odin

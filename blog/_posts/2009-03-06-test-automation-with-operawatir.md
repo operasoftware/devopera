@@ -4,7 +4,7 @@ authors:
 - wilhelm-andersen
 tags:
 - core-qa
-- test automation
+- test-automation
 - watir
 - coreblog
 license: cc-by-3.0

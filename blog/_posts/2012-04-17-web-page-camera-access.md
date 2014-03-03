@@ -3,10 +3,9 @@ title: Camera access from a web page in Opera Next
 authors:
 - karlcow
 tags:
-- Opera
+- opera
 - getusermedia
 - operanext
-- gUM
 - camera
 - webapi
 - odin

@@ -1,14 +1,14 @@
 ---
-title: Be lazy, stay creative, automate the web
+title: Be Lazy, Stay Creative, Automate The Web
 authors:
 - karlcow
 tags:
 - operawatir
-- quality assurance
-- web automation
+- quality-assurance
+- web-automation
 - testing
-- user scenario
-- web agency
+- user-scenario
+- web-agency
 - odin
 license: cc-by-3.0
 layout: post

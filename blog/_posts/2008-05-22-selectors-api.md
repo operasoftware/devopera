@@ -3,9 +3,9 @@ title: Selectors API
 authors:
 - lachlan-hunt
 tags:
-- JavaScript
-- Selectors-API
-- W3C
+- javascript
+- selectors-api
+- w3c
 - coreblog
 license: cc-by-3.0
 layout: post

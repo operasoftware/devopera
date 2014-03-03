@@ -1,9 +1,9 @@
 ---
-title: SXSW 2012 - 10 proposals
+title: SXSW 2012 — 10 proposals
 authors:
 - karlcow
 tags:
-- Opera
+- opera
 - sxsw
 - conference
 - odin

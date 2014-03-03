@@ -1,11 +1,11 @@
 ---
-title: Improving Interoperability - the Story of a Bug
+title: Improving Interoperability — the Story of a Bug
 authors:
 - karlcow
 tags:
-- Opera
-- open the web
-- web standards
+- opera
+- open-the-web
+- web-standards
 - interoperability
 - odin
 license: cc-by-3.0

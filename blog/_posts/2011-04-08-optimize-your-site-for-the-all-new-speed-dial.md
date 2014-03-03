@@ -5,7 +5,7 @@ authors:
 tags:
 - view-mode
 - barracuda
-- Opera
+- opera
 - speed-dial
 - minimized
 - odin
