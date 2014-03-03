@@ -7,6 +7,7 @@ tags:
 - opera-11
 - gradients
 - css3
+license: cc-by-3.0
 layout: article
 ---
 

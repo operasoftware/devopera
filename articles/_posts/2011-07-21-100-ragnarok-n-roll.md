@@ -7,6 +7,7 @@ tags:
 - html5
 - opera-12
 - labs
+license: os-asa
 layout: article
 ---
 
