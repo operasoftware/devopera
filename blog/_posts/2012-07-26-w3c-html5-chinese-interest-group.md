@@ -3,7 +3,6 @@ title: W3C HTML5 Chinese Interest Group
 authors:
 - zi-bin-cheah
 tags:
-- zh
 - chinese
 - china
 - w3c

@@ -1,10 +1,10 @@
 ---
-title: Full of resources
+title: Full of Resources
 authors:
 - mathieu-henri
 tags:
 - experimental
-- resource inspector
+- resource-inspector
 - dragonfly
 license: cc-by-3.0
 layout: post

@@ -1,11 +1,11 @@
 ---
-title: The Fun Of Being Together - Developer Relations Team Meetup in Oslo
+title: The Fun Of Being Together — Developer Relations Team Meetup in Oslo
 authors:
 - karlcow
 tags:
 - team
-- Opera
-- open the web
+- opera
+- open-the-web
 - developer
 - community
 - oslo

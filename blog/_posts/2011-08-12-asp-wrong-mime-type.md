@@ -1,16 +1,16 @@
 ---
-title: ASP.NET sites - Served With The Wrong Mime-Type
+title: ASP.NET sites — Served With The Wrong Mime-Type
 authors:
 - karlcow
 tags:
 - iis
 - asp
-- Microsoft
+- microsoft
 - server
-- open the web
+- open-the-web
 - http
 - interoperability
-- mime type
+- mime-type
 - bug
 - odin
 license: cc-by-3.0

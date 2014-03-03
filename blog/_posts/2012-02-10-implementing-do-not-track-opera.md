@@ -3,10 +3,10 @@ title: Implementing Do Not Track and the work at W3C
 authors:
 - karlcow
 tags:
-- Opera
-- working group
+- opera
+- working-group
 - ads
-- W3C
+- w3c
 - dnt
 - implementation
 - odin

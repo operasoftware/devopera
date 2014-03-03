@@ -1,11 +1,11 @@
 ---
-title: Tokenizer performance
+title: Tokenizer Performance
 authors:
 - david-storey
 tags:
 - carakan
 - performance
-- syntax-highlighting
+- syntax-highlight
 - tokenizer
 - dragonfly
 license: cc-by-3.0
