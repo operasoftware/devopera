@@ -10,9 +10,9 @@
 			{% endunless %}
 			{% if page.url != post.url %}
 				{% assign translated = true %}
-				<a href="{{ post.url }}">{{ site.data.lang[lang] }}</a>
+				<a href="{{ post.url }}">{{ site.data.langs[lang] }}</a>
 			{% else %}
-				{{ site.data.lang[lang] }}
+				{{ site.data.langs[lang] }}
 			{% endif %}
 		{% endif %}
 	{% endfor %}
