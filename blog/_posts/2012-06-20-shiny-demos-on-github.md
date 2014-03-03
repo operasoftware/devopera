@@ -6,8 +6,10 @@ tags:
 - shiny-demos
 - github
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Coding is great, and reading web specifications is a joy like no other, but all work and no play can make Jack a dull boy, so it&#39;s important that we don&#39;t overlook The Shiny.</p>
 
 <p>That&#39;s why at Opera we made <a href="http://shinydemos.com/">Shiny Demos</a>, a collection of demos that show off the latest web specs in an <i>Ooooo!</i> sort of way. Rock pianos, Andy Warhol, Hixie Keyboards, border radius art, and even Hipster Dogs are all represented.</p>

@@ -6,8 +6,10 @@ tags:
 - dotnetmagazine
 - awards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We&#39;re jolly pleased that <a href="http://www.netmag.co.uk/" target="_blank">.net magazine</a> (or Practical Web Design outside the UK) has nominated Opera product for four of their <a href="http://www.thenetawards.com/" target="_blank">annual awards</a>, all nominated by the magazine&#39;s readers.</p>
 
 <h3>Innovation of the Year</h3>

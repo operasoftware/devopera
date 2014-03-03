@@ -9,8 +9,10 @@ tags:
 - canvas
 - aria
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I spoke at Open Source Conference (OSCON) on using <abbr>HTML</abbr> 5 today. A kind audience member videoed the  talk.</p>
 
 <p>The <a href="http://my.opera.com/chooseopera/blog/2009/07/29/bruce-lawson-from-opera-the-html-5-experiments">45 minute video, slides (with links to the demoes) are all available</a> (I&#39;m linking to another Opera page in order to keep comments together).</p>

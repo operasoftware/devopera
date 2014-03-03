@@ -10,8 +10,10 @@ tags:
 - camera
 - webapi
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>In 1969, we were told that <a href="http://photoshopcandy.com/wp-content/uploads/2010/03/tv-phone.jpg" target="_blank">someday, you&#39;ll be a star</a>, and after great efforts from the open web community, that time has come! <strong>Access to the camera from a web page</strong> through JavaScript (<a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html">getUserMedia</a>) is possible. Grab the latest Opera Next version <a href="http://my.opera.com/desktopteam/blog/2012/04/17/camera-getusermedia-support">from the desktop team blog</a>!</p>
 <p>Let&#39;s rewind a bit. On <a href="http://dev.opera.com/articles/view/labs-more-fun-using-the-web-with-getusermedia-and-native-pages/">October 2011</a> and <a href="http://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">January 2012</a>, we released desktop Labs builds for testing getUserMedia. Your <a href="http://my.opera.com/desktopteam/blog/2011/10/19/new-opera-labs-release-with-getusermedia-and-opera-reader" target="_blank">feedback</a> has been valuable and helped fixed issues.</p>
 <p>The first time you access a web page that requests access to the camera, you will get a notification requesting you to authorize it. It&#39;s time to rush to the bathroom, fix your hair, make up, change your shirt and smile. If you are not satisfied, you can deny right away.</p>
@@ -28,7 +30,7 @@ layout: post
  function success(stream) {
   // ... use &#39;stream&#39; ...
   }
- 
+
   function error(){
   //display fallback content
   }

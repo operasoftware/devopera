@@ -8,8 +8,10 @@ tags:
 - spartan
 - testing
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The cornerstone of all testing done on the core of the Opera browser is our automated regression testing system, named SPARTAN. The system consists of a central server and about 50 test machines running our 120 000 automated tests on all core reference builds. The purpose of this system is to help us discover any new bugs we introduce as early as possible, so that we can fix them <em>before</em> they cause any trouble for our users.</p>
 
 <span class='img'><img alt='' src='/blog/automated-testing-of-the-browser-core/spartan.png' /></span>

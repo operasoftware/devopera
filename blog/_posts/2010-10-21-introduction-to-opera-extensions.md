@@ -10,8 +10,10 @@ tags:
 - opera-11
 - release
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Opera has always been known for its adaptability, and wealth of options for customisation. You can modify the UI with custom icons, buttons and menu options; you can write user stylesheets and User JavaScript to add custom styles and behaviour to any site you access; you can also create <a href="http://widgets.opera.com/">Opera Widgets</a> and <a href="http://unite.opera.com/applications/">Unite applications</a> to provide standalone native applications written using open standards, and much, much more.</p>
 
 <p>We&#39;ve also spent a long time looking at how to make a more powerful secure extension framework. We want to be certain our framework doesn&#39;t impact the browser&#39;s performance, and allows for the long tail of user requirements and developer needs. New in Opera 11 alpha, we&#39;ve added our own extensions. Opera extensions are packages that add extra functionality to Opera Desktop. Examples include Mapsearch, which allows you to select any address and plot it straight onto a Google Map, and <a href="http://dev.opera.com/articles/view/building-your-first-opera-extension/">Slashdotty</a>, which allows anyone to show and hide blocks in the Slashdot UI, not just registered members.</p>

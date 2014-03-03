@@ -6,8 +6,10 @@ tags:
 - open-the-web
 - job
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/looking-for-web-openers/logo.png" alt="Open the Web logo" title="Open the Web" style="float: right;" />
 <p>At Opera Software, we believe that the Web should stay open and free to all users, regardless of which browser they are using. Therefore we are fighting for One Web, open Web standards, and we are looking for an
 enthusiastic, passionate individual to join the Developer Relations team!</p>

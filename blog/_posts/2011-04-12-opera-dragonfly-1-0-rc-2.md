@@ -4,8 +4,10 @@ authors:
 - david-storey
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/opera-dragonfly-1-0-rc-2/test1.png" alt="" />
 
 <p>The final release of Opera Dragonfly 1.0 is edging ever closer. We pushed the Release Candidate (RC) to the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a> today (well really yesterday, but who is counting a few hours?).</p>

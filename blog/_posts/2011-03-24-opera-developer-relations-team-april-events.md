@@ -7,8 +7,10 @@ tags:
 - talk
 - odevrel
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The Developer Relations Team is on the road speaking at different events and venues this April, including our first in Bulgaria. Come meet us!</p>
 
 <table id="apriltalklist">

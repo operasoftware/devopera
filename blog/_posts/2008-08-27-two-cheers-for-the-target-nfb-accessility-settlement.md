@@ -7,8 +7,10 @@ tags:
 - accessibility
 - target
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The American <a href="http://www.nfb.org/">National Federation for the Blind</a> brought a class action lawsuit against <a href="http://www.target.com/">target.com</a> for inaccessibility of its website (which is, interestingly, &quot;powered by Amazon.com&quot;).</p>
 
 <p>After lots of to-and-fro, news came today that Target have settled, paying $6million into a fund from which those affected by its inaccessiiblity (blind people in California) can claim.</p>

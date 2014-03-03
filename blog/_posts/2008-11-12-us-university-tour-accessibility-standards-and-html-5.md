@@ -8,8 +8,10 @@ tags:
 - standards
 - html5
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last week I was fortunate enough to join the second week of the <a href="http://www.opera.com/education/tours/">Opera Education University Tour</a> in the States talking at universities in and around LA and San Diago including University of California Irvine, University of California Los Angeles, University of Southern California and University of California San Diago. My talk focused on web accessibility and standards plus innovations in HTML 5 with my colleague, Philip Gronvold, talking about <a href="http://widgets.opera.com/">Opera widgets</a> and mobile. It was a lot of fun to meet so many bright students, mostly computer scientists, who while not learning web design directly all shared a passion for it and found the time to study outside of class.</p>
 
 <p>A highlight for me was meeting students at USC who were recently involved in <a href="http://www.ss12.info">SS12</a>, a weekend code-a-thon challenge to create innovative and accessible applications run by a group called <a href="http://www.projectpossibility.org/">Project Possibility</a>. I learnt about how they had hacked Meebo to make it accessible, Axsjax maps and accessible multi-IM clients. It reminded me of the work that the <a href="http://scriptingenabled.org/">Scripting Enabled</a> community are doing hacking social networks and scripts to make them more accessible (check out my blog for a write up about the <a href="http://www.iheni.com/scripting-enabled-accessibility-gets-a-swift-kick-up-the-backside/">Scripting Enabled London event</a>). Exciting stuff and I hope to talk to these guys more in the future.</p>

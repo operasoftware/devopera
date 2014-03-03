@@ -5,8 +5,10 @@ authors:
 tags:
 - performance
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>CSS selector matching is often neglected when it comes to performance of web documents and applications. For small documents, the performance impact is negligible, but for documents with a large DOM (like the Opera Dragonfly application itself), a single &quot;bad&quot; selector can have a serious impact.
 
 <p>CSS selector matching refers to the process where a browser tries to match a selector against an element in the DOM. In terms of performance, some selectors are better than others. For instance, an ID selector is better than the universal selector (<code>*</code>), because the former only matches one element (and is cached). Matching elements in a big DOM against many unspecific selectors might cause your page to render significantly slower because of the number of elements affected.

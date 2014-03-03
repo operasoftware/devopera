@@ -15,8 +15,10 @@ tags:
 - ukraine
 - kharkov
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><h2>Web standards and heavy metal in Ukraine</h2>
 
 <p>I have to start this report by saying that there&#39;s nothing more eye opening than doing a tour in a CIS country - the turnouts (we had almost 800 students over the three universities we visited), the reaction, and the amount of Opera love was fabulous. It is also very interesting to experience a culture so different to my own, and to be around so many people that not only do not speak the same language as me, but don&#39;t even use the same alphabet. It felt very humbling, and further brought home to me the importance of internationalisation on the web, in attitude as well as technology support.</p>

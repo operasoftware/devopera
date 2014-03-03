@@ -9,8 +9,10 @@ tags:
 - sputnik
 - benchmark
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>Fastest Browser</h3>
 <p>
 <a href="http://www.opera.com/browser/">Opera 10.51 final for Windows is out now </a> and is truly the fastest browser on earth.

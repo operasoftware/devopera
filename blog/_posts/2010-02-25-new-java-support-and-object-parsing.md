@@ -10,8 +10,10 @@ tags:
 - classid
 - plugins
 - embed
+license: cc-by-3.0
 layout: post
 ---
+
 <p>10.50 introduces support for <a href="https://jdk6.dev.java.net/plugin2/" rel="nofollow" target="_blank">Java plugin2</a> and at the same time changes parsing of object tags to be in line with <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#the-object-element" rel="nofollow" target="_blank">HTML5</a><br/><br/>This topic isn&#39;t strictly about sitepatching but will change site compatibility. Mostly for the better but there could be unexpected side effects on sites that expect certain behavior - thus becoming targets for site patching. More on that later.<br/><br/>Let&#39;s take the last first, object parsing. Assume the following quite typical markup (simplified):<br/><br/><pre>
 &lt;object classid=&quot;clsid:CAFEEFAC-0016-0000-FFFF-ABCDEFFEDCBA&quot;&gt;
  &lt;param name=&quot;code&quot; value=&quot;foo.class&quot;&gt;

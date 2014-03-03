@@ -6,8 +6,10 @@ tags:
 - javascript
 - ecmascript
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 The long and tiresome tussles between advocates of ECMAScript 3.1 and ECMAScript 4 have finally concluded, ushering in a new era of Harmony.
 </p>

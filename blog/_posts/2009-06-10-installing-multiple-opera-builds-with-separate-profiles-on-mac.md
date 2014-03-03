@@ -7,8 +7,10 @@ tags:
 - mac
 - opera
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><strong>Update 2011-01-28: From Opera 11.01 and onward, the <code>-csp</code> command line hook should be used instead of the <code>PrefsSuffix</code> method described below. See <a href="http://my.opera.com/daniel/blog/2011/01/28/opera-mac-multiinstallation-summary">Daniel Aleksandersen&#39;s multi-installation blog entry</a> for full details.</strong></p>
 
 <p>If you&#39;re an avid <a href="http://my.opera.com/desktopteam/blog/">Opera snapshot</a> downloader, you&#39;ve probably bumped into a situation where you want to install an Opera build with a clean profile, rather than having it reuse an already existing profile.</p>

@@ -8,8 +8,10 @@ tags:
 - screencast
 - media-queries
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>On June 17, I did a workshop about mobile web development and Opera&#39;s developer tools at the <a href="http://mobile20.eu/2010/06/24/mobile-2-0-europe-2010-presentations-overview/">Mobile 2.0 conference</a> in Barcelona. During the talk, I introduced three different strategies to tackle the mobile challenge:</p>
 <ol>
 <li>Do nothing (or at least not too much)</li>

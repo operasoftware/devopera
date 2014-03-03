@@ -7,8 +7,10 @@ tags:
 - semantics
 - presentation
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Here&#39;s the talk I did for the <a href="http://fronteers.nl/congres/2011">Fronteers conference</a> in Amsterdam. Its full title, playing equivalent Dutch idiom to &quot;hair-splitter&quot; (a common accusation to those of us who care about semantics) is &quot;You too can be a bedwetting antfucker&quot;. So be warned if such a title isn&#39;t worksafe for you.</p>
 
 <object id="__sse9588237" width="425" height="355"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-fronteers-antfucker-111007023547-phpapp02&amp;stripped_title=you-too-can-be-a-bedwetting-antfucker-bruce-lawson-opera-fronteers-2011&amp;userName=brucelawson" /> <param name="allowFullScreen" value="true" /> <param name="allowScriptAccess" value="never" /> <embed name="__sse9588237" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-fronteers-antfucker-111007023547-phpapp02&amp;stripped_title=you-too-can-be-a-bedwetting-antfucker-bruce-lawson-opera-fronteers-2011&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /> </object>

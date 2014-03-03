@@ -10,8 +10,10 @@ tags:
 - html5
 - cjk
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>Trip to Seoul</h3>
 <p>
 The folks in W3C Korea organized a <a href="http://www.w3c.or.kr/Events/html5_asia/">HTML5 Asia Day</a> last week. The CJK community gathered to discuss some of the common issues and interest we share. One might wonder why there are only three locale/language-oriented interest group in W3C, namely China, Japan and Korea or collectively called CJK. There are good reasons for it, given that this area constitute a big part of the Internet users and hence also web developer community. Despite the size, there is a lack of participation. CJK is therefore created to encourage more people from this area to participate in W3C.

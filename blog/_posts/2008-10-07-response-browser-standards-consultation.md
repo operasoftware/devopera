@@ -8,8 +8,10 @@ tags:
 - one-web
 - progressive-enhancement
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <h3>UPDATE</h3>
 <p>19 January 2009: This post contains  a formal response to a superseded consultation document. The <a href="http://www.coi.gov.uk/guidance.php?page=213">revised browser testing guidelines</a> are now available. The remainder of this post is  <strong> for historical purposes only</strong>.</p>
 <h3>Introduction</h3>

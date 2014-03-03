@@ -7,8 +7,10 @@ tags:
 - tv
 - sdk
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Want to start developing for web-enabled TVs, but worried that you&#39;ll need a roomful of big devices to test and debug your web applications? Fear not: with today&#39;s release of the <a href="http://www.opera.com/business/tv-emulator/">Opera TV Emulator</a> (formerly known as the Opera for Devices Content Development Kit), you can check how your pages will look and work on the latest Opera-based TV browsers...all from the comfort of your desktop machine.</p>
 
 <p>Compared to the CDK versions (which only worked in Linux), the new Opera TV Emulator is available as a pre-packaged <a href="http://virtualbox.org">VirtualBox</a> image. This ensures a stable and consistent reference working environment, pre-configured to resemble those found on an actual device, and allows developers to easily test their sites under Windows, Linux and Mac OS X.</p>

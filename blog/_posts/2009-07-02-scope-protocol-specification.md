@@ -7,8 +7,10 @@ tags:
 - testing
 - automation
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today we are happy to release the <a href="http://dragonfly.opera.com/app/scope-interface/">specification</a> for the Scope
 protocol. This is the protocol used for communication between
 the Opera browser and

@@ -6,8 +6,10 @@ tags:
 - south-east-asia
 - indonesia
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>After 8 days, <a href="http://my.opera.com/universitytours/blog/index.dml/tag/indonesia">11 universities</a> and 9 kilograms of Nasi Goreng per person, the first Opera university tour of Indonesia is finished.</p>
 
 <p>Here are <a href="/blog/opera-indonesian-tour/indonesia-Bruce.pdf">Bruce&#39;s slides: Web Standards for the Future, (PDF 550K)</a>. Note that I was tweaking and changing the slides depending on the University&#39;s focus, so here&#39;s the &quot;full&quot; version that includes everything. No university got all of these. The format is accessible <abbr>PDF</abbr> to make it small, as I&#39;ve experienced Indonesian bandwidth speeds..! If you need another format, drop me a line. You&#39;re welcome to share these with your friends or classmates - I hope they make sense. If not…well, you&#39;ll have to invite me back again!</p>

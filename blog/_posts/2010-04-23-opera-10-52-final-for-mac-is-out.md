@@ -10,8 +10,10 @@ tags:
 - javascript
 - vega
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Hello everybody! I think I can speak for all Mac users when I say that I am really glad to see the final version of <a href="http://www.opera.com/browser">Opera 10.52 for Mac</a> released. The final version has been titled Opera 10.52, skipping a couple of point releases to make sure the final version is of the highest quality possible, and ensuring that, once again, the Mac and Win versions are aligned.</p>
 
 <p>This version has been a long time in the works because it has undergone a complete rewrite into Cocoa, to further improve performance and give it a more native Mac feel with more Mac-like dialog boxes, trackpad gestures such as drag two fingers to scroll and pinch to zoom, and support for the Growl notification system.</p>

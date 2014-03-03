@@ -5,8 +5,10 @@ authors:
 tags:
 - opera-next
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We just <a href="http://my.opera.com/desktopteam/blog/2011/06/14/happy-tuesday">released a new development snapshot</a>, and it contains a mind-boggling array of new features and fixes. </p>
 <p>I wanted to point out a few updates that would be interesting to web developers that are available in that build. Do note that your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.8.<b>165</b> Version/11.50&quot; under <i>Browser Identification</i>). If you were one of the early birds who installed Opera Next on your macs, note that you would have to install it again as the auto-updater on the first release did not work correctly. </p>
 <ul>

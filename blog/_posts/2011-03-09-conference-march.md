@@ -8,16 +8,18 @@ tags:
 - conference
 - blog
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The Developer Relations Team is on the road speaking at different events and venues. Come to meet them.</p>
 
-<p><a href="http://sxsw.com/">SXSW</a> (in Austin, Texas, USA) will have the lion share of Opera people this month. There will be an <a href="http://sxsw.com/interactive/trade_show/exhibitors?action=exhib_show&amp;amp;id=S11-3500">Opera Booth</a>, some speakers and a few attendees : Lars Erick Bolstad, 
-Tiffany Brown, 
-<a href="http://dev.opera.com/author/2334476">Molly Holzschlag</a>, 
-<a href="http://dev.opera.com/author/1991992">Patrick H. Lauke</a>, 
-<a href="http://dev.opera.com/author/1146592">Bruce Lawson</a>, 
-<a href="http://dev.opera.com/author/162910">Charles McCathieNeville</a>, 
+<p><a href="http://sxsw.com/">SXSW</a> (in Austin, Texas, USA) will have the lion share of Opera people this month. There will be an <a href="http://sxsw.com/interactive/trade_show/exhibitors?action=exhib_show&amp;amp;id=S11-3500">Opera Booth</a>, some speakers and a few attendees : Lars Erick Bolstad,
+Tiffany Brown,
+<a href="http://dev.opera.com/author/2334476">Molly Holzschlag</a>,
+<a href="http://dev.opera.com/author/1991992">Patrick H. Lauke</a>,
+<a href="http://dev.opera.com/author/1146592">Bruce Lawson</a>,
+<a href="http://dev.opera.com/author/162910">Charles McCathieNeville</a>,
 <a href="http://dev.opera.com/author/241852">David Storey</a></p>
 
 <p><a href="http://confoo.ca/en">ConFoo</a> (Montreal, Canada) is an impressive Web developer conference which runs for the second time. <a href="http://dev.opera.com/author/2064912">Karl Dubost</a> will be speaking there. </p>

@@ -4,8 +4,10 @@ authors:
 - david-storey
 tags:
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/opera-dragonfly-1-0-rc/Screen%20shot%202011-05-03%20at%2016.18.20.png" alt="" />
 
 <p>We have recently pushed out what we hope will be the final release candidate of Opera Dragonfly 1.0 on the experimental branch. Unless a major show stopper is found during release testing, this will be the build that will replace the alpha version on the default path. The <a href="http://www.flickr.com/photos/bogbumper/3801309850/">green nymph</a> will be no more, and in its place will be the <a href="http://www.flickr.com/photos/pensive-reflections/3819969246/">beautiful grown up Dragonfly</a>.</p>

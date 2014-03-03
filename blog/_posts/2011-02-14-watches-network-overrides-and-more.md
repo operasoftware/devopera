@@ -6,8 +6,10 @@ tags:
 - http
 - watches
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We have two more features for you as we move ever closer to Opera Dragonfly 1.0 release.</p>
 
 <h3>Watch expressions</h3>

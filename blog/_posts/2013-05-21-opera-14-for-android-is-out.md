@@ -10,6 +10,7 @@ tags:
 - android
 - off-road
 intro: 'Opera 14 for Android is built on top of Chromium 26, with a total overhaul of the UI in native code, making it fit well with the latest Android design guidelines. Go get the build from Google Play or point your browser to m.opera.com, and give it a spin!'
+license: cc-by-3.0
 layout: post
 ---
 

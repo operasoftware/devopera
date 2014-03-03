@@ -8,8 +8,10 @@ tags:
 - html5
 - forms
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>On Wednesday night, at <a href="http://standards-next.org/2010/09/html5-from-the-ground-up/">standards.next in Manchester</a>, Patrick Lauke and I were glad to be able to demonstrate HTML5 Forms validation in Opera with a visually much more appealing method of reporting errors. It was appreciated by attendees and we received requests from people who couldn&#39;t attend to see a sneak peek.</p>
 
 <p>As we&#39;ve spoken at conferences over the last couple of years, we heard designers&#39; complaints about the blinking form fields and red boxes with error messages (and felt the pain ourselves!) so worked with Emil in our Swedish office to make the out-of-the-box look and feel more acceptable.</p>

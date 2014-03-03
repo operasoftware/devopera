@@ -7,8 +7,10 @@ tags:
 - opera-mini
 - http
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Our latest releases of <a href="http://www.opera.com/mobile/">Opera Mobile and Opera Mini</a> will include a new header: <b>Device-Stock-UA</b>. The value of this header matches that of the stock user agent bundled with the operating system on which Opera Mobile or Mini is running. Below is an example of what this header might look like on an Android device (a T-Mobile myTouch4G). </p>
 
 <pre>Device-Stock-UA: Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; myTouch4G Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1</pre>

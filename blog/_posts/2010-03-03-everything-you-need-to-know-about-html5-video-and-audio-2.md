@@ -13,8 +13,10 @@ tags:
 - vorbis
 - canvas
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p><p>Hi, I&#39;m Simon Pieters, and I&#39;m working with Quality Assurance for HTML5 <code>video</code> and <code>audio</code> at Opera.
 </p><p>Opera 10.50 has now been released on Windows, and it supports the HTML5 <code>video</code> and <code>audio</code> elements. But how do you use them? <a href="http://dev.opera.com/articles/view/introduction-html5-video/" rel="nofollow">Introduction to HTML5 video</a> covers a general introduction but doesn&#39;t go into the details; <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/" rel="nofollow">Accessible HTML5 Video with JavaScripted captions</a> shows how captions can be implemented until the spec gains proper support for captions; and <a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video" rel="nofollow">(re-)Introducing &lt;video&gt;</a> has some information on Opera&#39;s implementation. I recommend reading all three!
 

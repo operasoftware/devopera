@@ -14,8 +14,10 @@ tags:
 - open-web
 - mp4
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html">Google&#39;s decision to drop native support for H.264 video in Chrome</a> clearly signals their confidence in the quality and viability of <a href="http://webmproject.org">WebM/VP8</a> as a way to deliver video content online, and their focus on the continued development of open formats.</p>
 <p>Opera has always championed the Open Web – a platform that is accessible to all, without the restrictions of patents and royalties. We <a href="http://dev.w3.org/html5/spec/introduction.html#history-1">started the work that eventually became HTML5</a>. When <a href="http://people.opera.com/howcome/2007/video/">Opera first proposed the creation of a native video element</a>, we called for a free and open video codec.</p>
 <p>Our first implementations relied on <a href="http://www.theora.org/">Ogg Theora</a> - the most realistic alternative to other royalty-encumbered codecs at the time. We welcomed the introduction of WebM as a better-performing and open alternative – Håkon Wium Lie (CTO at Opera) was on stage at the <a href="http://www.google.com/events/io/2010">Google I/O conference in May 2010</a>, where WebM was first unveiled and released – royalty free – to the open web community, demonstrating a <a href="http://labs.opera.com/news/2010/05/19/">beta version of our desktop browser with WebM support</a>. And with Opera 10.60 (released in July 2010), we were <a href="http://dev.opera.com/articles/view/opera-supports-webm-video/">the first browser to include support for native WebM video</a> in a stable (non-beta) release.</p>

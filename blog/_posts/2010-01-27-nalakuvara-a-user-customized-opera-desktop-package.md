@@ -9,8 +9,10 @@ tags:
 - taiwan
 - custom
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 A great feature of Opera Desktop is customization. Through the many different settings, you can pimp your surf. Some users have gone to great lengths configuring Opera as a defacto browser for residents of their country, or speakers of their language. Today we introduce one of them.
 </p>

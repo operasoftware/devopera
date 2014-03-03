@@ -5,8 +5,10 @@ authors:
 tags:
 - localisation
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p><em>[UPDATE] Added Bulgarian, Tamil, Telugu, Turkish and Ukrainian, which I accidently missed from the list.</em></p>
 
 <p>We have just released a further update to the alpha 3 branch of Opera Dragonfly.  This is mainly a bug fix release, with numerous stability enhancements.  Check out the <a href="https://dragonfly.opera.com/app/logs/588.381efda984fa.log">change logs</a> for full details of the included fixes.</p>

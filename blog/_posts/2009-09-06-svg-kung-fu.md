@@ -6,8 +6,10 @@ tags:
 - web-fonts
 - svg
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 In conjuction with Opera 10, we have introduced <a href="http://dev.opera.com/articles/view/seven-web-fonts-showcases/" target="_blank">seven Web Fonts showcases</a> and other cool stuff in the <a href="http://dev.opera.com/articles/view/the-opera-10-experience/" target="_blank"> Opera 10 experience</a>.
 </p>

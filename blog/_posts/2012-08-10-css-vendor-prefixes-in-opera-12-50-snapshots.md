@@ -9,8 +9,10 @@ tags:
 - prefixes
 - opera-12
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Vendor prefixes have been useful, but they have arguably caused as many problems as they&#39;ve solved, both in CSS and <a href="http://lists.w3.org/Archives/Public/public-webapps/2012JulSep/0392.html">DOM APIs</a>. So, in the run up to Opera 12.50, we&#39;re removing as many <code>-o-</code> prefixes from stable CSS properties as we can.</p>
 
 <p>Last week, Patrick mentioned the <a href="http://my.opera.com/ODIN/blog/2012/08/03/a-hot-opera-12-50-summer-time-snapshot">removal of prefixes from Transitions, Animations and Transforms</a>.</p>

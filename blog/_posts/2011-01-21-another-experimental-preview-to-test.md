@@ -5,8 +5,10 @@ authors:
 tags:
 - experimental
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Progress towards Opera Dragonfly 1.0 marches on, and we have a new build on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental path</a> for you to try. This build comes with a number of changes:</p>
 
 <h3>Opera Dragonfly Framework</h3>

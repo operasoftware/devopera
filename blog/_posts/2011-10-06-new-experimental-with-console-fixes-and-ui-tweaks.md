@@ -5,8 +5,10 @@ authors:
 tags:
 - experimental
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We have a new build up on the experimental branch.</p>
 <pre><code><a>https://dragonfly.opera.com/app/experimental/</a></code></pre>
 <p>The main focus this time has been to improve some of the performance and functionality aspects of the Console.</p>

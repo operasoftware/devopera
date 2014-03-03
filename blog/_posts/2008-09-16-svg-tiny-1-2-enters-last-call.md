@@ -7,8 +7,10 @@ tags:
 - svg
 - news
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The <a href="http://www.w3.org/Graphics/SVG/">SVG Working Group</a> has publish the Last Call of the <a href="http://www.w3.org/TR/2008/WD-SVGMobile12-20080915/">SVG Tiny 1.2</a> working draft.  It is welcoming comments until the 13<sup>th</sup> of October.</p>
 
 <blockquote cite="http://www.w3.org/News/2008#item158"><p>Its goal is to provide the ability to create a whole range of graphical content, from static images to animations to interactive Web applications.</p></blockquote>

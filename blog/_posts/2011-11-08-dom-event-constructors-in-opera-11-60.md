@@ -10,8 +10,10 @@ tags:
 - dom
 - web-standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>As mentioned in Divya&#39;s post about <a href="http://my.opera.com/ODIN/blog/2011/11/07/what-s-new-in-opera-development-snapshots-4-november-2011-edition">what&#39;s new in Opera 11.60</a>, Opera now supports the <a href="http://www.w3.org/TR/domcore/#events" target="_blank"><abbr title="Document Object Model">DOM</abbr> Event constructor syntax</a>. It offers a simpler way to create synthetic and custom <abbr title="Document Object Model">DOM</abbr> events.</p>
 
 <p>Why might you use a synthetic event or a custom event? Synthetic events can be useful for automated testing, or for developing user interfaces that change conditionally based on user input. Custom events work particularly well for game development, where you may, for example, dispatch a <code>shoot</code> event when the user presses the space key.</p>

@@ -13,8 +13,10 @@ tags:
 - android
 - progressive-enhancement
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The death of the feature phone is widely reported and greatly exaggerated. &quot;Although we see a huge market &#39;hype&#39; around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast&quot; analyst <a href="http://articles.timesofindia.indiatimes.com/2013-04-02/telecom/38216822_1_handset-market-cybermedia-research-smartphone-shipments">Faisal Kawoosa said</a> in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.</p>
 
 <p>But we find that owning smartphones doesn&#39;t alter one vital facet of web access in developing economies: the network. In countries like India, we see slow networks covering huge geographical areas and difficult terrain. That&#39;s why, even on high-powered devices, people still rely on data compression from browsers such as Opera Mini. Today <a href="http://business.opera.com/press/releases/mobile/2013-09-19_2">we announced</a> that over 100 Android devices shipping in India, Bangladesh and Nepal are pre-installed with Opera Mini.</p>

@@ -11,8 +11,10 @@ tags:
 - extensions
 - prefixes
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://www.opera.com/browser/next/">Opera 12.10 beta</a> streamlines and speeds up browsing for end-users, makes images more beautiful, and includes functionality that allows web developers to add user-friendly features to their pages and extensions.</p>
 <p>Previously, snapshots were versioned as &quot;Opera 12.50&quot;, but we&#39;ve reduced the version number to Opera 12.10.</p>
 

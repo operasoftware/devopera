@@ -10,8 +10,10 @@ tags:
 - mobile
 - html
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Recently we&#39;ve been prototyping on Opera Mobile for Android to add support for both the HTML <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#devices" rel="nofollow" target="_blank">&lt;device&gt;</a> element and the W3C&#39;s proposed <a href="http://dev.w3.org/geo/api/spec-source-orientation.html" rel="nofollow" target="_blank">orientation events</a> specification.<br/><br/>In our first internal build, web developers are able to access, display and interact in real-time with a user&#39;s web camera using native HTML features. ... </p><!--more--><strong><span style="color: red">This information is out of date. For the latest information, please refer here: <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" target="_blank">http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview</a></span></strong>
 
 <span style="font-size: 160%">The &lt;device&gt; element</span>

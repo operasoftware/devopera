@@ -11,8 +11,10 @@ tags:
 - dragonfly
 - selectors-api
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Opera 10 alpha has been released. Don&#39;t look too much at the <abbr>UI</abbr>, as this alpha   showcases the all-new  2.2 version of Presto, Opera&#39;s  core rendering engine.</p>
 
 <p>The developer relations team (David-not-Dave, Mills, Henny, Andreas, Zi Bin, Shwetank and me) have travelled Iceland to Indonesia, Capetown to Cardiff, Mumbai to Moscow via Massachusetts, gathering user requests and feedback, and we then engaged in frenzied bouts of snow-wrestling with the Presto developers to get those requests included.</p>

@@ -11,8 +11,10 @@ tags:
 - release
 - russia
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://www.opera.com/products/desktop/">Opera 9.6</a> has just be released today.  What can developer expect from this release?  This release focusses on stability, so there has not been wholesale changes like the move from Opera 9.2 and Presto 2, to Opera 9.5 and Presto 2.1.  We’ve taken the existing Presto 2.1 engine and tuned it, and polished the rough edges.  Developers will not have to learn new tricks or find and work around newly introduced bugs.  Instead the stability of the browser has been improved, key bugs have been fixed, security holes have been patched and the performance has improved.  There have also been a couple of additions that we felt were important to add even though the engine is the same core branch.</p>
 
 <p>The first thing to note is that a core rendering engine version has been added to the User Agent string.  This was done to help developers that need to detect the same version of the rendering engine across all Opera products, which may not have matching product version numbers.  This is particularly important for when working around bugs or for library developers.  Due to the tuning of the engine, the version is now Presto 2.1.1, and it can be detected by checking for <q>Presto/2.1.1</q> at the end of the UA string.  The version number will obviously increase for future versions.</p>

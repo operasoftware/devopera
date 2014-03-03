@@ -6,8 +6,10 @@ tags:
 - dom
 - developer-tools
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We’ve got a couple of announcments related to <a href="http://www.opera.com/products/dragonfly">Opera Dragonfly</a> today.  The first piece of news is that Opera Dragonfly alpha 3 has just been released.  The main focus of this release has been fixing reported bugs, to make the user experience more pleasant.  We’ve also added localisation support—which was introduced in the previous weekly release.  The German translation is ready, and we are working on other locales, that will be pushed live as they are completed and QA&#39;d.  We hope this will make Opera Dragonfly more useful in the none-English speaking world.  Obviously markets where Opera is more popular have high priority, such as Russian and Indonesian.</p>
 
 <p>One of the key new features of Opera Dragonfly alpha 3 is DOM editing support.  There is two modes.  The first mode allows you to edit, add and delete attributes and text nodes in real time. You can activate this by double clicking on a attribute, value or text node.  The second mode allows you to do free form editing, such as adding new DOM node.  You can activate this by double clicking on the opening or closing tag of a element.  This will turn the entire element and its children into a free form text field.  There is currently a known issue with the first mode, where focus doesn&#39;t leave the editing mode when pressing the enter/return key.  This will be silently updated as soon as it is fixed.</p>

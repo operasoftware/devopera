@@ -11,8 +11,10 @@ tags:
 - standards
 - testing
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p class="note" id="note" style="background-color:#ccc;border-radius:15px;moz-border-radius:15px;webkit-border-radius:15px;padding:5px">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 
 <p>We&#39;re proud to announce that today we released a preview build of <a href="http://labs.opera.com/news/2010/05/11/">Opera Mobile 10 for Nokia N900 and N800/N810</a>.</p>

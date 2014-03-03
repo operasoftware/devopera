@@ -11,8 +11,10 @@ tags:
 - vorbis
 - theora
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today the desktop team released a <a href="http://my.opera.com/desktopteam/blog/happy-new-year" target="_blank">new years pre-alpha of Opera 10.50</a> which includes the first public preview of our new HTML5 &lt;video&gt; implementation. It was Opera that first <a href="http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2007-February/009702.html" target="_blank">proposed</a> &lt;video&gt; and made the first <a href="http://people.opera.com/howcome/2007/video/" target="_blank">proof-of-concept build</a> way back in 2007. In this post I will talk about what we&#39;ve done since then, the decisions we&#39;ve made and where we hope to go next.</p>
 
 <h3>Codecs</h3>

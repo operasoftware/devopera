@@ -9,8 +9,10 @@ tags:
 - spdy
 - standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today marks the release of <a href="https://play.google.com/store/apps/details?id=com.opera.browser">Opera Mobile 12.1 for Android phones</a> — from Android 1.6 (Donut) to 4.1 (Jelly Bean), we&#39;ve got you covered with a mean and lean browsing machine!</p>
 
 <p>This is mostly an engine upgrade, so you won&#39;t notice any particular new UI features or the like. However, there&#39;s lots of new stuff under the hood. Let&#39;s have a look!</p>

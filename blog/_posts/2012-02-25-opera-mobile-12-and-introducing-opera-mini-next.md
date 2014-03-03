@@ -14,8 +14,10 @@ tags:
 - camera
 - ipad
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Mobile analyst Peter Paul Koch <a href="http://www.quirksmode.org/blog/archives/2012/01/browser_stats_f_2.html">recently wrote</a>,
 
 

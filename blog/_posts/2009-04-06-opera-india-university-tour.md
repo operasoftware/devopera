@@ -8,8 +8,10 @@ tags:
 - standards
 - university
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Lasting nearly a month, from Rajasthan to Karnataka, Tamil Nadu to the Ghats of Varanasi, Shwetank and Bruce travelled spreading the message about Open Web Standards.</p> <p>The students who attended were from various streams of study like mathematics, management, and even humanities (we even got a few professionals and some PhD students). However, most were graduate and undergraduate engineering students, particularly computer engineering.</p>
 
 <p>The slides are made using Web Standards, and were shown using Projection Mode in Opera (just unzip, fire up index.html, then hit View&gt;Full screen to see full screen slides).</p>

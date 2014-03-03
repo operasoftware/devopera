@@ -14,8 +14,10 @@ tags:
 - w3c
 - open-web
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>The delightful Helen Kennedy, Senior Lecturer in New Media, Institute of Communications Studies at the University of Leeds invited Patrick and Bruce to harangue her students about Open Web Standards, HTML5, CSS and the like. Here are the slides and some supporting links.</p>
 
 <div style="width:425px" id="__ss_7860079"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/brucelawson/why-open-web-standards-are-cool-and-will-save-the-world-or-the-web-at-least-7860079" title="Why Open Web Standards are cool and will save the world. Or the Web, at least.">Why Open Web Standards are cool and will save the world. Or the Web, at least.</a></strong><object id="__sse7860079" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-open-web-standards-leeds-110506071041-phpapp01&amp;stripped_title=why-open-web-standards-are-cool-and-will-save-the-world-or-the-web-at-least-7860079&amp;userName=brucelawson" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="never" /><embed name="__sse7860079" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-open-web-standards-leeds-110506071041-phpapp01&amp;stripped_title=why-open-web-standards-are-cool-and-will-save-the-world-or-the-web-at-least-7860079&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /></object>

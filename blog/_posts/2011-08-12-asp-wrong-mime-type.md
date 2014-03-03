@@ -13,8 +13,10 @@ tags:
 - mime type
 - bug
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>You remember the article I had written about <a href="http://my.opera.com/ODIN/blog/2011/03/30/improving-interoperability-the-story-of-a-bug">Starbucks solving an error on their server</a>. They were serving HTML with the wrong mime-type to Opera only because of user agent sniffing. They fixed it. They are definitely not the only ones. Other Web sites have exactly the same bad behavior. You may see that there is a pattern. The servers and libraries used are almost always the same.</p>
 
 <p>All these sites and the ones previously solved are into the package OTW-6223. I&#39;m trying to contact each of these sites one by one. It is time consuming with not always a success at the end. Not everyone is as diligent as <a href="http://www.rohanradio.com/">Rohan Singh</a> (still big respect for him).</p>

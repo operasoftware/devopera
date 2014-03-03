@@ -9,8 +9,10 @@ tags:
 - redesign
 - update
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Yesterday, we released a major update to <a href="http://dev.opera.com">Dev.Opera</a>. The most obvious change is of course the visual refresh, but we&#39;ve also rewritten the whole back-end from scratch, so as to make it more flexible and robust.</p>
 <p><a href="http://dev.opera.com/"><img src="/blog/a-new-dev-opera/devopera620.png" alt="new Dev.Opera" /></a></p>
 

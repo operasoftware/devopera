@@ -7,8 +7,10 @@ tags:
 - extensions
 - developers
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <span class='imgright'><img alt='' src='/blog/the-developer-briefcase-and-other-neat-opera-extensions-for-developers/screenshot2.jpg' /></span>
 
 <p><a href="http://www.opera.com/dragonfly/" target="_blank">Opera Dragonfly</a> is THE developer tool to use in Opera, but in addition to its built-in feature set there are quite a few browser extensions that can make debugging and development even easier.</p>

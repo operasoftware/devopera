@@ -7,8 +7,10 @@ tags:
 - flags
 - opera
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>As announced <a href="http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle">on the Desktop Team Blog</a> a while back, we&#39;ve now switched to a fast release cycle with 3 different streams: Stable, Next and Developer.</p>
 
 <img src="/blog/start-of-the-opera-developer-stream/0opera-developer.png" alt="Opera Developer logo" style="float: right; margin: 0 0 5px 5px;" />

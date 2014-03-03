@@ -10,8 +10,10 @@ tags:
 - geolocation
 - disconnect
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>This morning, we&#39;ve spun out <a href="http://www.opera.com/computer/">Opera 16</a> stable from our <a href="http://www.opera.com/computer/next">Opera Next</a> stream.</p>
 <p>Some of the bigger changes include advanced settings in <a href="opera:flags">opera:flags</a>, auto-fill support for forms, Geolocation support, start page options (e.g. you can disable Discover content preloading), and an engine update to Chromium 29 (Opera 15 was on Chromium 28).</p>
 <p>On the extensions front, we now support the <code>chrome.cookies</code> and <a href="http://dev.opera.com/extension-docs/tut_history.html"><code>chrome.history</code></a> APIs, and you can now use geolocation and, if really necessary, even NPAPI plugins in your extensions. Of course, all of these additions are documented in our <a href="http://dev.opera.com/extension-docs/">Opera extensions documentation</a>, and we&#39;ve added <a href="http://dev.opera.com/extension-docs/tut_extension_samples.html">more extension templates and samples</a> as well for you to build your extensions on.</p>

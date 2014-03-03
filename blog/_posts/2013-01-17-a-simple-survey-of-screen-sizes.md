@@ -8,8 +8,10 @@ tags:
 - responsive
 - media-queries
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I got a bit frustrated the other day. I&#39;d come across yet another site that was designed for at least a 1280-width screen, meaning it wouldn&#39;t fit on my trusty 1024-width laptop and I had to scroll horizontally. &quot;Yada yada, first world problems&quot;, I hear you say, but considering the small effort it takes to make a web page look good at different widths (and the abundance of <abbr title="Responsive Web Design">RWD</abbr> tutorials out there now), surely it&#39;s worth web designers making such tweaks. Besides, there&#39;s got to be many other users in my position, hasn&#39;t there?</p>
 
 <p>I decided to find out, so I took a sample of around 5,000 unique visitors to my demo pages at <a href="http://people.opera.com/danield/">people.opera.com/danield</a> and noted their screen sizes based on the JavaScript <code>screen.width</code> and <code>screen.height</code> properties. Of course, this audience is going to be pretty techie and not representative of the world at large, so I did the same sampling at the same time on a long-running personal site of mine aimed at new dads &#x2014; a pretty non-techie audience.</p>

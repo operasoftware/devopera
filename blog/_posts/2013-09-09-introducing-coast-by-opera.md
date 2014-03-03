@@ -9,8 +9,10 @@ tags:
 - ipad
 - browser
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Today, we&#39;re launching a new iPad product called <a href="http://coastbyopera.com">Coast by Opera</a>. Primarily designed for leisure surfing, the goal is invisible technology; the browser treats websites as apps, using gestures for navigation so that nothing gets in the way of an intuitive, full-screen experience.</p>
 
 <p>Since Mosaic, browsers have sported back buttons, menus, icons (many of which have barely changed in 20 years). Coast dispenses with most of these; &quot;back&quot; is a left swipe; adding to speed dial is a single drag of a site&#39;s icon; reload is a drag downwards. The only buttons that remain are a home button and a &quot;recent sites&quot; button.</p>

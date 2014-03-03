@@ -8,8 +8,10 @@ tags:
 - syntax-highlighting
 - tokenizer
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We are currently working on new <a href="http://en.wikipedia.org/wiki/Lexical_analysis">tokenizers</a> and <a href="http://en.wikipedia.org/wiki/Syntax_highlighting">syntax highlighting</a> for the source views in the <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> Resource Service. One of the core requirements for this is performance. Everything in Opera Dragonfly is done client side with JavaScript; if you want to debug something as complex as GMail, with many large scripts the tokenizer and highlighter has to be lightning fast to give a useable experience.  This was a considerable challenge when we started Opera Dragonfly. If we tokenised and highlighted an entire script at once it would take multiple seconds for large files. Instead, we took an approach and would split the script into chunks and highlight what was visible in the script view. With this approach in place, syntax highlighting was almost instant.</p>
 
 <p>That was back then in 2008; long before Carakan (Opera’s modern JIT based JavaScript engine) had even started development. A JavaScript performance race has waged since then. JavaScript is only one factor in performance (although the most visible PR wise), and other subsystems in Opera have also improved performance immensely in the same time period.  Examples of this include layout, painting (Opera included Vega at the same time as Carakan) and DOM performance. Opera Dragonfly is a perfect example of a complex modern application which benefits from these improvements. Benchmarks are all well and nice, but how much does Opera Dragonfly benefit from such improvements? We’ve produced a test to judge performance when performing tokenising and syntax highlighting on the large files we may encounter when debugging complex pages. The improvements are quite amazing.</p>

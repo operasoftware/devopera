@@ -8,8 +8,10 @@ tags:
 - audio
 - news
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Audio and video has been a part of the Web since the early days.  Just like the browser wars, with the <q>made for IE</q> or <q>made for Netscape</q> badges, it wasn’t uncommon to see badges asking you to download Real player or Window Media Player.  Real were early leaders but lost that lead, with the BBC seemingly one of the last bastions of Real media content.  The format war wasn’t won however, and it wasn’t until YouTube and its Flash movie  player hit the big time that video consumption and publishing really exploded on the Web.</p>
 
 <p>While many major sites have switched from their previous solutions to a YouTube-style Flash solution, a number of issues remain that stop audio and video being a first-class citizen on the Web.  One of the key aspects of the Web is linking, and with current video players there is no way to link to fragments of video content.  There is also the problem of open codecs and requiring plug-ins to include audio and video on a page.  One reason why it is important not to rely on plug-ins is that single-vendor solutions may not be available on every platform that a browser is available.  This is becoming a bigger issue as the Web becomes more popular away from the desktop.</p>

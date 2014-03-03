@@ -8,8 +8,10 @@ tags:
 - tsukuba
 - web-standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Last Wednesday, Opera held a Web Seminar at <a href="http://www.tsukuba.ac.jp">Tsukuba University</a> in Japan.  This is one of the best technical universities in Japan, and fittingly has the slogan <q>Innovation for the Future</q>.  Design wise it has a really nice Japanese-style flower symbol for its logo.  In the short time I’ve been in Japan I’ve noticed that Japan is very strong with symbolism, with many great examples on Shinto shrines throughout Tokyo.</p>
 
 <p>From the developer relations team,  Andreas and myself presented along with Keiki and Go from the Japanese marketing team.  My presentation was in three main parts; the value of Web Standards, Open the Web and innovation in standards.  Andreas followed my 40 minute talk with demos of many of the new features in Opera’s rendering engine, Opera Dragonfly and cross-device design.  We did a live demo of using Opera Dragonfly to remote debug, including the new DOM editing functionality.  We were also able to show off the new Nintendo DSi that we managed to beat the queues to get our hands on a couple of days before.</p>

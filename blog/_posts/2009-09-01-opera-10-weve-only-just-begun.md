@@ -13,8 +13,10 @@ tags:
 - ui
 - hsla
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I&#39;m delighted to be able to introduce Opera 10 today to Web developers and designers worldwide, and to take a moment to tell you the reason why I chose Opera not only as my employer, but why Opera 10 has become my own browser of choice.</p>
 
 <p>Opera Software is a lucky company. We&#39;ve grown up with the Web, we&#39;ve been an integrated aspect of its evolution. And at the version 10 mark, we&#39;ve gained strength – but more importantly, we&#39;re finding wisdom. We are confidently able to look at a longer-term vision of making our software truly the best experience on any device.</p>

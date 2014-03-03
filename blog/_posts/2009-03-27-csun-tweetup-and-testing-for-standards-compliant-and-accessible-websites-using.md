@@ -8,8 +8,10 @@ tags:
 - conference
 - standards
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was at <a href="http://www.csunconference.org/index.cfm?EID=80000144">CSUN</a> last week, the technology and persons with disabilities conference held in Los Angeles. It&#39;s one of my favorite conferences as you get a chance to talk with some of the great and the good of the web development world and talk about all things accessibility.</p>
 
 <p>I had a fantastic few days kicked off by a <a href="http://www.csuntweetup.com">Tweetup</a> sponsored by the Opera Developer Network together with WebAim, The Paciello Group and Infoaxia. We had over 120 Twitterer&#39;s there who kept up the Twittering throughout the conference. You can catch up on what people were talking about by tracking <a href="http://www.tweetscan.com/index.php?s=%23csun09">#csun09</a>. We&#39;ll also be posting podcasts of lightning talks that people gave. My favorite was from Glenda Sims on the new WaSP <a href="http://interact.webstandards.org/">Interact education Framework</a>, a web standards curriculum for both educators and learners alike that the <a href="http://www.opera.com/wsc">Opera Web Standards Curriculum</a> is part of.</p>

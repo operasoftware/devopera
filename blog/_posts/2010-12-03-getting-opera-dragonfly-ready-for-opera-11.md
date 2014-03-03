@@ -7,8 +7,10 @@ tags:
 - command-line
 - opera-11
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>With <a href="http://www.opera.com/browser/next/">Opera 11 in Beta</a>, we are in the process of getting Opera Dragonfly updated for the final release. We now have a release candidate ready on the cutting-edge branch. Once Opera 11 is released, this branch will be pushed to the default path and will become the next alpha release of Opera Dragonfly.</p>
 
 <h3>Key features</h3>

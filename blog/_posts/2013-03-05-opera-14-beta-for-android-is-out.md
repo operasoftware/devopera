@@ -9,6 +9,7 @@ tags:
 - mobile
 - android
 intro: 'Yes, that’s right: 14. We think that the engine switch from Presto to WebKit that we announced a few weeks ago is such a big step that we decided to skip the 13 number altogether, and go straight to 14! But there’s more than just the engine to talk about: you’ll also notice a total overhaul of the UI in native code, making it fit well with the latest Android design guidelines. Go get the beta from Google Play or point your browser to [m.opera.com](http://m.opera.com), and give it a spin!'
+license: cc-by-3.0
 layout: post
 ---
 

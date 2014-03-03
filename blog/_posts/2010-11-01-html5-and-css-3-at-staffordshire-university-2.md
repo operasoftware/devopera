@@ -6,8 +6,10 @@ tags:
 - demo
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>I was honoured to return to Staffordshire University to talk about HTML5, CSS 3 and the Web in general. It&#39;s great to talk there, as the staff and students are really clueful. And Fiona Knight gives you lunch.</p>
 
 <div style="width:425px" id="__ss_5633542"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/brucelawson/html5-and-css-3" title="HTML5 and CSS 3">HTML5 and CSS 3</a></strong><object id="__sse5633542" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-staffs-uni-html5-css3-101101091248-phpapp02&amp;stripped_title=html5-and-css-3&amp;userName=brucelawson" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="never" /><embed name="__sse5633542" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-staffs-uni-html5-css3-101101091248-phpapp02&amp;stripped_title=html5-and-css-3&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /></object></div>

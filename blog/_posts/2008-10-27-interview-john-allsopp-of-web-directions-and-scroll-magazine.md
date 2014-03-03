@@ -6,8 +6,10 @@ tags:
 - web-directions
 - interview
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>When some of the Opera crew went to Australia to sponsor this year&#39;s <a href="http://south08.webdirections.org/">Web Directions South conference</a>, we noticed that the conference programme looked considerably sexier than the average programe.</p>
 <p>Conference organiser <a href="http://johnfallsopp.com/">John Allsopp</a> said,</p>
 <blockquote>This year the programme is magazine style - so much bigger than in the past. It&#39;s also full color, and very nicely designed. In fact, it&#39;s not just magazine style, it&#39;s the first edition of <a href="http://scrollmagazine.com/">Scroll</a> , a magazine for web designers and developers - but think more like a coffee table book than a magazine.</blockquote>

@@ -9,8 +9,10 @@ tags:
 - webstandards
 - unite
 - coreblog
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Winter is coming to Norway (and Poland and Sweden, but allegedly finishing in Melbourne). Although the long darkness apparently means there is little else to do, we have also been busy over the summer.<br/><br/>As well as <a href="http://my.opera.com/core/blog/eventsource" rel="nofollow" target="_blank">updated Server Sent Events</a> and <a href="http://my.opera.com/core/blog/websockets" rel="nofollow" target="_blank">implementing Web Sockets</a> we&#39;ve made some other big steps in Core. The biggest news, of course, is extensions, but there&#39;s more to customisation than downloading an extension:<br/><br/>We will be publishing some more detailed information on the extension framework here very soon. But while you&#39;re waiting, a little more info on extensions, and a couple of other ways we have extended the platform since summer. ... </p><!--more--><h3>Extensions</h3>
 
 <p>One of the most common requests we have for Opera is to add an extension framework. Opera is a highly customisable browser, and natively includes function that other browsers offer through popular extensions, such as <a href="http://dragonfly.opera.com" target="_blank">Dragonfly</a> (the debugging tool for local or remote device debugging), the content blocker, mouse gestures, and many more. We continue to build tools to help people be more productive. But we have also spent a long time looking at how to make a more powerful secure extension framework which doesn&#39;t impact performance too much, to allow for the very long tail of user requirements and desires. After this week&#39;s <a href="http://www.opera.com/unw" target="_blank">press announcement and extensions demos</a>, everyone is eagerly watching <a href="http://labs.opera.com" target="_blank">labs.opera.com</a> to see when the first release appears.

@@ -6,8 +6,10 @@ tags:
 - developer-tools
 - weekly
 - dragonfly
+license: cc-by-3.0
 layout: post
 ---
+
 <p>We have just released our first weekly build of Opera Dragonfly today.  These are development snap shots and are not guaranteed to be stable, or even work at all.  The weekly builds are released to get feedback and testing of the latest changes.  If you&#39;d like to report issues please go to the <a href="http://www.opera.com/products/dragonfly/feedback/">Opera Dragonfly feedback page</a>. </p>
 
 <p>Weekly snap shots will appear on the URL <a href="https://dragonfly.opera.com/app/weekly">https://dragonfly.opera.com/app/weekly</a> and should automatically update when a new version comes out.  The snapshots can be downloaded at <a href="http://dragonfly.opera.com/app/weekly/zips/">http://dragonfly.opera.com/app/weekly/zips/</a>.  The regular shipped url will update when official releases are updated.</p>

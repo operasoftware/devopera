@@ -8,8 +8,10 @@ tags:
 - webinar
 - mobile
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>
 If you are a developer with HTML, CSS and JavaScript skills then widgets are your new toys. Widgets are applications built using web technology. They run on a huge range of devices, including mobile phones.
 </p>

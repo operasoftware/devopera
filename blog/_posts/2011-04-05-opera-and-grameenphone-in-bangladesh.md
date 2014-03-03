@@ -6,8 +6,10 @@ tags:
 - bangladesh
 - opera-mini
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>At Opera we believe passionately that everyone has a right to the Web.  I&#39;m personally really pleased that we&#39;ve announced a partnership with <a href="http://www.grameenphone.com/">Grameenphone</a> in Bangladesh to release a <a href="http://www.opera.com/press/releases/2011/04/05/">co-branded version of Opera Mini</a>, because I visited to Bangladesh 17 years ago and really enjoyed myself.</p>
 
 <p>And we&#39;re partnering with the good guys too: 34% of Grameenphone is <a href="http://www.grameenphone.com/about-us/corporate-information/ownership-structure">owned</a>  by a non-profit sister concern of <a href="http://www.grameen-info.org/index.php?option=com_content&amp;task=view&amp;id=26&amp;Itemid=175">Grameen Bank</a>, a Nobel Prize-winning Bangladeshi institution that gives microloans to the rural poor (mostly women) to help them out of poverty. 95% of the bank is owned by its borrowers, of whom 97%  are women.</p>

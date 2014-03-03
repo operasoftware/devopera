@@ -9,8 +9,10 @@ tags:
 - debugging
 - mobile
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <img src="/blog/opera-mobile-emulator-12-update/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />
 <p>A few weeks after our <a href="http://www.opera.com/mobile/">Opera Mobile 12</a> release for Android and Symbian, we&#39;re happy to announce that there now also is a corresponding <strong>update of the <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a></strong>!</p>
 

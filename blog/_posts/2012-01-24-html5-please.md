@@ -6,8 +6,10 @@ tags:
 - css3
 - html5
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p><a href="http://html5please.us"><img src="http://cache.gyazo.com/c5d6f648394681c59d93c487b8347cf5.png" alt="" /></a></p>
   <p> Several months ago, <a href="http://paulirish.com">Paul Irish</a> and I got an idea to create a service that would give out recommendations on which HTML5 features to use and how to use them. Finally, yesterday, we pushed that site live: <a href="http://html5please.com">html5please.us</a>.</p>
   <p>The pressing problem for web developers has been to know which features are good to use, which are not. Most likely, they spend hours working on sites using some new features, only to be burnt in the process using features that are not performance-friendly, having incomplete support or using the wrong polyfill. </p>

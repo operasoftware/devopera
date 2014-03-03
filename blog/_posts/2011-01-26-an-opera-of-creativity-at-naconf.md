@@ -7,8 +7,10 @@ tags:
 - naconf
 - conference
 - odin
+license: cc-by-3.0
 layout: post
 ---
+
 <p>Report written by Chris Mills and Patrick Lauke</p>
 
 <p>On Wednesday 19th January 2011, we descended on Nottingham UK to
