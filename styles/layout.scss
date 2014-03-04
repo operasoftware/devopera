@@ -65,6 +65,23 @@
 		}
 	}
 
+
+// -------------------------------
+// Search
+// -------------------------------
+.layout-search {
+	@extend %grid;
+	// Elements
+	&__content {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--three-quarters;
+		@extend %desk--two-thirds;
+		@extend %push--lap--one-quarter;
+		@extend %push--desk--one-quarter;
+		}
+	}
+
 // -------------------------------
 // Author
 // -------------------------------
@@ -74,6 +91,9 @@
 	&__content {
 		@extend %grid__item;
 		@extend %one-whole;
+		@extend %lap--three-quarters;
+		@extend %desk--two-thirds;
+		@extend %push--lap--one-quarter;
 		@extend %push--desk--one-quarter;
 		}
 	}

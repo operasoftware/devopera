@@ -4,18 +4,13 @@ layout: default
 ---
 
 <main>
-	<article role="main" class="main__content">
-		<h1>{{ page.title }}</h1>
-		<script>
-			(function() {
-				var cx = '014507440424235360470:xolxdnngk7w';
-				var gcse = document.createElement('script');
-				gcse.async = true;
-				gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(gcse, s);
-			})();
-		</script>
-		<div class="gcse-searchresults-only" data-linkTarget="_self"></div>
+	<article role="main" class="layout-search">
+		<section class="layout-search__content">
+			<h1>{{ page.title }}</h1>
+			<script>(function(){var cx='014507440424235360470:xolxdnngk7w';var gcse=document.createElement('script');gcse.async=true;gcse.src='//www.google.com/cse/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script>
+			<div class="search">
+				<div class="gcse-searchresults-only" data-linkTarget="_self"></div>
+			</div>
+		</section>
 	</article>
 </main>
