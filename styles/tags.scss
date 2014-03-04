@@ -1,0 +1,13 @@
+// -------------------------------
+// Tags
+// -------------------------------
+.tags {
+	font-size:13px;
+	&__caption {
+		color:#000;
+		}
+	&__link {
+		@extend %link--blue;
+		white-space:nowrap;
+		}
+	}

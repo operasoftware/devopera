@@ -17,7 +17,7 @@ layout: default
 				in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
 			</p>
 			<p class="tags">
-				Post tags: {% include tags.html object=page %}
+				<span class="tags__caption">Post tags:</span> {% include tags.html object=page %}
 			</p>
 			{% include translations.html category=site.categories.articles %}
 			<p class="license">
