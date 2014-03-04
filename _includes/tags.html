@@ -6,5 +6,5 @@
 {% assign tags = tags | keep_unique | sort %}
 
 {% for tag in tags %}
-	<a href="/tags/{{ tag }}/" class="tag__link">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+	<a href="/tags/{{ tag }}/" class="tags__link">{{ tag }}</a>
 {% endfor %}
