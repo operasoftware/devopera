@@ -52,6 +52,7 @@ module.exports = function(grunt) {
 					'!styles/*',
 					'!Gruntfile.js',
 					'!README.md',
+					'!LICENSE.md',
 					'!package.json',
 					'!.git/**'
 				],
