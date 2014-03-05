@@ -8,6 +8,7 @@ tags:
 - extensions
 - interview
 - opera
+cover: png
 license: cc-by-3.0
 layout: article
 ---

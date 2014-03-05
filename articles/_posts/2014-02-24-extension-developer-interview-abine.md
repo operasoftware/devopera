@@ -9,6 +9,7 @@ tags:
 - extensions
 - interview
 - privacy
+cover: png
 license: cc-by-3.0
 layout: article
 ---
