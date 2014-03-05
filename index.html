@@ -20,11 +20,18 @@ layout: default
 	{% endfor %}
 {% endcapture %}
 
+{% assign posts = posts | split: '(•)' %}
+
 {% capture articles %}
 	{% for post in site.categories.articles %}
 		{% unless post.categories[1] %}
-			<article class="teaser">
-				<h3 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
+			<article class="teaser{% if post.featured %} teaser--featured{% endif %}">
+				<h3 class="teaser__title{% if post.featured %} teaser__title--featured{% endif %}"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
+{% if post.cover %}
+				<a href="{{ post.url }}">
+					<img src="{{ post.url }}cover.{{ post.cover }}" alt="{{ post.title | markdownline | strip_html }}" class="teaser__cover">
+				</a>
+{% endif %}
 				<p class="meta meta--teaser">
 					<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
 					by {% include author-name.html object=post link=true class='meta__author' %}
@@ -38,20 +45,27 @@ layout: default
 	{% endfor %}
 {% endcapture %}
 
+{% assign articles = articles | split: '(•)' %}
+
 <main class="layout-main">
 	<section class="layout-main__blog">
 		<h2 class="layout-main__title"><a href="/blog/">Blog</a></h2>
-{% assign posts = posts | split: '(•)' %}
 {% for post in posts limit:6 %}
 	{{ post }}
 {% endfor %}
 	</section>
 	<section class="layout-main__articles">
 		<h2 class="layout-main__title"><a href="/articles/">Articles</a></h2>
+{% for article in articles %}
+	{% if article contains 'teaser--featured' %}
+		{{ article }}
+	{% endif %}
+{% endfor %}
 		<div class="columns columns--main">
-{% assign articles = articles | split: '(•)' %}
 {% for article in articles limit:12 %}
-	{{ article }}
+	{% unless article contains 'teaser--featured' %}
+		{{ article }}
+	{% endunless %}
 {% endfor %}
 		</div>
 	</section>
