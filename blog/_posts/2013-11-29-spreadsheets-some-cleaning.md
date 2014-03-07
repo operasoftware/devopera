@@ -25,7 +25,7 @@ PATCH-1155 — vine.co overlay no longer breaks click-to-play
 ## Removed from PrestOpera
 
 - PATCH-1084 — forcechange.com generated content. Site changed.
-- PATCH-988 — uye.memurlar.net now redirects and doesn&#39;t show the<br/>original issue
+- PATCH-988 — uye.memurlar.net now redirects and doesn’t show the original issue
 - PATCH-895 — directbus.com.mx no longer resolves
 - PATCH-738 — passport2.hp.com sniffing. Site changed.
 - PATCH-523 — journalism.org iframe resize. Site changed.
