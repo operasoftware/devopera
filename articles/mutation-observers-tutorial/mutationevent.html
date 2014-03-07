@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<title>Getting to Know Mutation Observers: The problem with mutation events</title>
+	<link rel="stylesheet" href="http://devfiles.myopera.com/articles/12102/mutationobserver.css">
+</head>
+<body>
+<header>
+	<h1>The problem with mutation events</h1>
+	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+</header>
+
+<article>
+	<p>In this example, we are creating 2500 paragraphs, and appending them to a document fragment. Then we'll append that document fragment to a <code>div</code> element. Each element added fires a new <code>DOMNodeInserted</code> event, which causes our event handler to be invoked.</p>
+
+	<p>Our <code>DOMNodeInserted</code> event handler was invoked <b class="numevents">0</b> times.</p>
+	<p><button>Run demo</button></p>
+</article>
+
+<div id="demo"></div>
+
+<script src="http://devfiles.myopera.com/articles/12102/modemo.js"></script>
+<script>
+(function(d){
+	var demo = d.getElementById('demo');
+	eventcount = 0;
+	onnodeinsert = function(){
+		eventcount++;
+		var numevents = d.querySelector('.numevents');
+		numevents.textContent = eventcount;	
+	}
+	demo.addEventListener('DOMNodeInserted',onnodeinsert,false);
+})(document);
+</script>
+
+</body>
+</html>

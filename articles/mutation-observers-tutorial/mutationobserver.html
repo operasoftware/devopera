@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<title>Why mutation observers are better than mutation events</title>
+	<link rel="stylesheet" href="http://devfiles.myopera.com/articles/12102/mutationobserver.css">
+</head>
+<body>
+<header>
+	<h1>Why mutation observers are better than mutation events</h1>
+	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+</header>
+
+<article>
+	<p>In this example, we are creating 2500 paragraphs, and appending them to a document fragment. Then we'll append that document fragment to a <code>div</code> element. Rather than listen for <a href="mutationobserver-mutationevent.html">mutation events</a>, we'll use a mutation observer.</p>
+	<p>Our mutation observer callback function was invoked <b class="numevents">0</b> time(s). </p>
+	<p><button>Run demo</button></p>
+</article>
+
+<div id="demo"></div>
+
+<script src="http://devfiles.myopera.com/articles/12102/modemo.js"></script>
+<script>
+(function(d){
+	eventcount = 0;
+	var mocallback = function(mr){
+		eventcount++;
+		d.querySelector('.numevents').textContent = eventcount;
+	}, 
+	mo = new MutationObserver(mocallback),
+	demo = d.querySelector('#demo');	
+	mo.observe(demo,{'childList':true});
+})(document);
+</script>
+
+</body>
+</html>

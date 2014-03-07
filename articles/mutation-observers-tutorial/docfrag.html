@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<title>Observing a document fragment</title>
+	<link rel="stylesheet" href="http://devfiles.myopera.com/articles/12102/mutationobserver.css">
+</head>
+<body>
+<header>
+	<h1>Observing the addition of nodes to a document fragment.</h1>
+	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+</header>
+
+<article>
+	<p>In this example, we're going to watch for updates to a document fragment. Using a document fragment is a way of batching DOM additions into one update. Clicking the <b>Add paragraphs</b> button will append the document fragment. Clicking the <b>Add to body</b> button will add the document fragment to the document's body.</p>
+	
+	<p><b class="numevents">0</b> mutation(s) occurred.</p>
+	
+	<p>
+	 <button type="button">Add paragraphs</button>
+	 <button type="button">Add to body</button>
+	</p>
+</article>
+
+<div id="demo"></div>
+
+<script>
+(function(d){
+	var thismany = 1000,
+	btn = d.querySelectorAll('button'),
+	demo = d.getElementById('demo'),
+	docfrag = d.createDocumentFragment()
+	clickhandler = function(){
+		var i = 0, 
+		n = thismany,
+		p,
+		sentence = 'Lorem ipsum dolar sit amet consecutum.';
+		
+		while( i < n ){
+			p = (p !== undefined) ? p = p.cloneNode(true) : p = d.createElement('p');
+			if(!p.textContent){ p.textContent = sentence; }
+			docfrag.appendChild(p);
+			i++;
+		}		
+		
+	}
+	btn[0].addEventListener('click',clickhandler,false);	
+	btn[1].addEventListener('click',function(){
+		demo.appendChild(docfrag);
+	},false);
+	
+	var mocallback = function(mr){
+		d.querySelector('.numevents').textContent = mr.length;
+		mo.takeRecords();
+	}, 
+	mo = new MutationObserver(mocallback);	
+	mo.observe(docfrag,{'childList':true,'subtree':true});
+})(document);
+</script>
+
+</body>
+</html>
