@@ -13,7 +13,7 @@ tags:
 - open-web
 - opera-10
 - video
-cover: png
+cover: jpg
 license: cc-by-nc-sa-3.0
 layout: article
 ---
