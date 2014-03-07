@@ -6,6 +6,7 @@ intro: 'Due to the major architectural changes we’ve been going through recent
 tags:
 - themes
 - opera
+cover: jpg
 license: cc-by-3.0
 layout: article
 ---
