@@ -14,18 +14,29 @@ license: cc-by-3.0
 layout: post
 ---
 
-<p><a href="http://my.opera.com/desktopteam/blog/opera-17-final">Opera 17 for desktop is released</a>, and installs are being autoupdated as you read this.</p>
+[Opera 17 for desktop is released][1], and installs are being autoupdated as you read this.
 
-<p>Opera 17 is based on Chromium/Blink 30, which means that <a href="http://codepen.io/adobe/pen/gbzmE">Canvas blend modes</a> are now supported.</p>
+[1]: http://my.opera.com/desktopteam/blog/opera-17-final
 
-<p>In addition, we&#39;ve added support for a number of new extension APIs, which you now can safely use in your extensions:</p>
+Opera 17 is based on Chromium/Blink 30, which means that [Canvas blend modes][2] are now supported.
 
-<ul>
-<li>chrome.bookmarks: <a href="http://dev.opera.com/extension-docs/bookmarks.html">API docs</a>, <a href="http://dev.opera.com/extension-docs/tut_bookmarks.html">tutorial</a></li>
-<li>chrome.commands: <a href="http://dev.opera.com/extension-docs/commands.html">API docs</a>, <a href="http://dev.opera.com/extension-docs/tut_commands.html">tutorial</a></li>
-<li>chrome.webNavigation: <a href="http://dev.opera.com/extension-docs/webNavigation.html">API docs</a>, <a href="http://dev.opera.com/extension-docs/tut_webnavigation.html">tutorial</a></li>
-</ul>
+[2]: http://codepen.io/adobe/pen/gbzmE
 
-<p>Consumer highlights are the ability to add custom searches, configure startup options, pinned tabs and (behind opera:flags) a new Quick Access Bar to house bookmarklets and bookmarks, powered by the chrome.bookmarks API.</p>
+In addition, we’ve added support for a number of new extension APIs, which you now can safely use in your extensions:
 
-<p>If you are interested in experimenting with features that are in the pipeline for future versions of the product, we recommend following our <a href="http://www.opera.com/developer">Opera Developer stream</a>.</p>
+* `chrome.bookmarks`: [API docs][3], [tutorial][4]
+* `chrome.commands`: [API docs][5], [tutorial][6]
+* `chrome.webNavigation`: [API docs][7], [tutorial][8]
+
+[3]: http://dev.opera.com/extension-docs/bookmarks.html
+[4]: http://dev.opera.com/extension-docs/tut_bookmarks.html
+[5]: http://dev.opera.com/extension-docs/commands.html
+[6]: http://dev.opera.com/extension-docs/tut_commands.html
+[7]: http://dev.opera.com/extension-docs/webNavigation.html
+[8]: http://dev.opera.com/extension-docs/tut_webnavigation.html
+
+Consumer highlights are the ability to add custom searches, configure startup options, pinned tabs and (behind opera:flags) a new Quick Access Bar to house bookmarklets and bookmarks, powered by the chrome.bookmarks API.
+
+If you are interested in experimenting with features that are in the pipeline for future versions of the product, we recommend following our [Opera Developer stream][9].
+
+[9]: http://www.opera.com/developer
