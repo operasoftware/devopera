@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Media Capture for mobile devices</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="reset.css" type="text/css">
+	<link rel="stylesheet" href="media.css" type="text/css">
+	<script type="text/javascript" src="media.js"></script>
+</head>
+<body onload="init()">
+	<h1>HTML Media Capture - new specs</h1>
+
+	<p>Capture a photo using camera</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="image/*" capture>
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<p>Capture a video using camcorder</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="video/*" capture>
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<p>Capture an audio using voice recorder</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="audio/*" capture>
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<h1>HTML Media Capture - old specs</h1>
+
+	<p>Capture a photo using camera</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="image/*" capture="camera">
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<p>Capture a video using camcorder</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" accept="video/*" capture="camcorder">
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<p>Capture an audio using voice recorder</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept="audio/*" capture="microphone">
+		<input type="submit" name="upload" value="Upload">
+	</form>
+
+	<h1>Media Capture and Streams</h1>
+
+	<p>Tap the "Capture" button to get user media, then tap the "Snapshot!" button to take a screenshot</p>
+
+	<div>
+		<div>
+			<video id="getUserMedia" width="100" height="75" autoplay></video>
+			<canvas id="canvas" width="100" height="75"></canvas>
+			<img id="snapshot" width="100" height="75" src="" alt="snapshot">
+		</div>
+		<div style="clear:both"></div>
+		<form action="javascript:;" method="post">
+			<button id="captureButton">Capture</button>
+			<button id="stopButton">Stop</button>
+			<button id="snapshotButton">Snapshot!</button>
+		</form>
+	</div>
+
+</body>
+</html>
