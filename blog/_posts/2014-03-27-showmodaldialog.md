@@ -27,7 +27,13 @@ Both documents can communicate with each other through an awkward API that is sp
 
 Another gotcha is that `window.dialogArguments` only works between same-origin documents, even if [Cross-Origin Resource Sharing](http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/) is enabled on your server.
 
-`showModalDialog()` was introduced in Internet Explorer 4 as a proprietary feature. Other browsers later added support for the feature to avoid compatibility issues.
+## Why was `showModalDialog()` ever standardized?
+
+`showModalDialog()` was introduced in Internet Explorer 4 as a proprietary feature. Other browsers later added support for the feature to avoid compatibility issues. Only after that, `showModalDialog()` was added to the HTML standard, following the “Support Existing Content” design principle. All this happened years ago.
+
+Recent [compatibility data](http://www.chromestatus.com/metrics/feature/timeline/popularity/195) shows that `showModalDialog()` usage has declined so greatly that the feature can now be removed without significantly breaking the Web.
+
+The moral of the story: even standardized features can still be deemed broken and removed at a future date if compatibility analysis changes.
 
 ## What’s so bad about `showModalDialog`?
 
