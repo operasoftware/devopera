@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', function() {
-		grunt.log.subhead('Please use following commangs');
+		grunt.log.subhead('Please use one of the following commands:');
 		grunt.log.writeln('• grunt watch  — for quick dev build');
 		grunt.log.writeln('• grunt build  — for full site build');
 		grunt.log.writeln('• grunt deploy — for deploying build');
