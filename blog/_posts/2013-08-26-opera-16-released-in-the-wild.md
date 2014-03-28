@@ -14,11 +14,30 @@ license: cc-by-3.0
 layout: post
 ---
 
-<p>This morning, we&#39;ve spun out <a href="http://www.opera.com/computer/">Opera 16</a> stable from our <a href="http://www.opera.com/computer/next">Opera Next</a> stream.</p>
-<p>Some of the bigger changes include advanced settings in <a href="opera:flags">opera:flags</a>, auto-fill support for forms, Geolocation support, start page options (e.g. you can disable Discover content preloading), and an engine update to Chromium 29 (Opera 15 was on Chromium 28).</p>
-<p>On the extensions front, we now support the <code>chrome.cookies</code> and <a href="http://dev.opera.com/extension-docs/tut_history.html"><code>chrome.history</code></a> APIs, and you can now use geolocation and, if really necessary, even NPAPI plugins in your extensions. Of course, all of these additions are documented in our <a href="http://dev.opera.com/extension-docs/">Opera extensions documentation</a>, and we&#39;ve added <a href="http://dev.opera.com/extension-docs/tut_extension_samples.html">more extension templates and samples</a> as well for you to build your extensions on.</p>
-<p>Also worth mentioning is that there is now no longer a limitation of 6 extension buttons in the browser UI, which was an issue for people with many extensions installed.</p>
-<p>To celebrate this release and the milestone of 300 extensions for Opera 15 and higher in <a href="https://addons.opera.com/">our catalog</a>, we&#39;ve published an <a href="http://dev.opera.com/articles/view/extension-developer-interviews-disconnect/">interview with Brian Kennish from Disconnect</a>, in which he sheds a light on the thinking behind the <a href="https://addons.opera.com/en/extensions/details/disconnect/?display=en">Disconnect extension</a>, the team&#39;s UX process, what tools they use, what&#39;s coming up next, and more.</p>
-<p><a href="http://www.opera.com/computer/">Give it a spin</a> and let us know what you think! And if you&#39;re curious about what&#39;s in the pipeline, check out our <a href="http://www.opera.com/developer/">Developer stream</a>, which contains a lot of the features you&#39;ll find in upcoming Opera versions.</p>
+This morning, we’ve spun out [Opera 16][1] stable from our [Opera Next][2] stream.
 
+[1]: http://www.opera.com/computer/
+[2]: http://www.opera.com/computer/next
 
+Some of the bigger changes include advanced settings in [opera:flags][3], auto-fill support for forms, Geolocation support, start page options (e.g. you can disable Discover content preloading), and an engine update to Chromium 29 (Opera 15 was on Chromium 28).
+
+[3]: opera:flags
+
+On the extensions front, we now support the `chrome.cookies` and [`chrome.history`][4] APIs, and you can now use geolocation and, if really necessary, even NPAPI plugins in your extensions. Of course, all of these additions are documented in our [Opera extensions documentation][5], and we’ve added [more extension templates and samples][6] as well for you to build your extensions on.
+
+[4]: http://dev.opera.com/extension-docs/tut_history.html
+[5]: http://dev.opera.com/extension-docs/
+[6]: http://dev.opera.com/extension-docs/tut_extension_samples.html
+
+Also worth mentioning is that there is now no longer a limitation of 6 extension buttons in the browser UI, which was an issue for people with many extensions installed.
+
+To celebrate this release and the milestone of 300 extensions for Opera 15 and higher in [our catalog][7], we’ve published an [interview with Brian Kennish from Disconnect][8], in which he sheds a light on the thinking behind the [Disconnect extension][9], the team’s UX process, what tools they use, what’s coming up next, and more.
+
+[7]: https://addons.opera.com/
+[8]: http://dev.opera.com/articles/extension-developer-interviews-disconnect/
+[9]: https://addons.opera.com/en/extensions/details/disconnect/?display=en
+
+[Give it a spin][10] and let us know what you think! And if you’re curious about what’s in the pipeline, check out our [Developer stream][11], which contains a lot of the features you’ll find in upcoming Opera versions.
+
+[10]: http://www.opera.com/computer/
+[11]: http://www.opera.com/developer/

@@ -18,7 +18,7 @@ PATCH-1155 — vine.co overlay no longer breaks click-to-play
 
 ## Added to PrestOpera
 
-- PATCH-1162 — Google spreadsheets sniffing prevents editing.<br/>Workaround is to append a string to location.search.
+- PATCH-1162 — Google spreadsheets sniffing prevents editing. Workaround is to append a string to `location.search`.
 - PATCH-1159 — Mobile Youtube text align. Presto bug.
 - PATCH-1158 — deploy.com sniffer
 
