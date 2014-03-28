@@ -59,7 +59,7 @@ An [even better](http://uxmovement.com/forms/why-modal-windows-have-killed-popup
 
 However, to make a dialog truly ‘modal’, any clicks and attempts to focus an element outside of the dialog should be ignored. Once again, this is something that can be accomplished using JavaScript and CSS. If you don’t want to write all the code for this yourself, use something like [jQuery UI’s dialog widget](http://jqueryui.com/dialog/).
 
-The HTML spec defines [a `<dialog>` element](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element) which would be extremely useful in such situations. No browser supports this yet at the time of writing. However, Opera and Chrome have an experimental implementation of this element and its JavaScript APIs. Enable the “experimental Web platform features” flag via `opera://flags/#enable-experimental-web-platform-features` or `chrome://flags/#enable-experimental-web-platform-features` and then [check out this demo](http://demo.agektmr.com/dialog/#showmodal).</p>
+The HTML spec defines [a `<dialog>` element](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element) which would be extremely useful in such situations. No browser supports this yet at the time of writing. However, Opera and Chrome have an experimental implementation of this element and its JavaScript APIs. Enable the “experimental Web platform features” flag via `opera://flags/#enable-experimental-web-platform-features` or `chrome://flags/#enable-experimental-web-platform-features` and then [check out this demo](http://demo.agektmr.com/dialog/#showmodal).
 
 ## When is `showModalDialog` being removed?
 
