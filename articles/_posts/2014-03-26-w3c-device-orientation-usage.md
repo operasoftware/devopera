@@ -14,7 +14,6 @@ tags:
 - screen-orientation
 - tait-bryan-angles
 - virtual-reality
-cover: png
 license: cc-by-3.0
 layout: article
 ---
