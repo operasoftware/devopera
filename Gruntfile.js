@@ -69,7 +69,11 @@ module.exports = function(grunt) {
 		rsync: {
 			options: {
 				args: [
-					'--delete', // delete extraneous files on the receiving side
+					// Note: the next line is commented out to avoid deleting the
+					// `extension-docs` directory, which is generated from a separate
+					// repository at the moment. As soon as the extension docs are merged
+					// with the main `devopera` repository, we should re-enable it.
+					//'--delete', // delete extraneous files on the receiving side
 					'--times', // preserve modification times…
 					'--omit-dir-times', // …except for directories
 					'--compress', // compress data during the transfer
