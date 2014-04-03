@@ -3,7 +3,7 @@ title: Remotely Debugging Opera for Android
 authors:
 - bruce-lawson
 - chris-mills
-intro: 'Now that Opera for Android is out, you’ll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+. Because current and future Opera for Android releases are based on Chromium, we can’t use the current Opera desktop releases to connect to them (wait for Chromium-based Opera desktop releases for that). So here’s how to connect Opera for Android to another Chromium-based desktop browser for remote debugging.'
+intro: 'Now that Opera for Android is out, you’ll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+. Here's how to connect Opera for Android to Chromium-based desktop browsers for remote debugging.'
 tags:
 - android
 - opera-14
@@ -16,7 +16,7 @@ layout: article
 
 Now that Opera for Android is out, you'll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+ (`<input type=color>`, `@supports`, etc,).
 
-Because current and future Opera for Android releases are based on Chromium, we can't use Presto-based Opera desktop releases to connect to them (wait for Chromium-based Opera desktop releases for that). So here's how to connect Opera for Android to another Chromium-based desktop browser for remote debugging.
+Here's how to connect Opera for Android to Chromium-based desktop browsers for remote debugging.
 
 ## Preparing your desktop
 
@@ -36,7 +36,7 @@ Windows users may need to [install Device drivers][2]. Linux and Mac users shoul
 
 ### Install a Chromium-based browser
 
-You'll need a Chromium-based desktop browser. Until Chromium-based Opera desktop releases are available, we suggest Google Chrome, Chromium, or the Yandex browser.
+You'll need a Chromium-based desktop browser. Use Opera 15+, Google Chrome, Chromium, or the Yandex browser.
 
 ### Preparing your device
 
@@ -110,7 +110,7 @@ and the changes are immediately visible on your device:
 
 ## What about Opera Dragonfly?
 
-The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, hence using the Web Inspector for now.
+The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, because the protocols are radically different.
 
 
 Cover image by [sleepingcatbeads][14].
