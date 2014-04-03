@@ -11,4 +11,5 @@ exclude:
 - 'Gruntfile.js'
 - 'package.json'
 - 'README.md'
-- '*.scss'
+- 'LICENSE.md'
+- 'styles/*.scss'
