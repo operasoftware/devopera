@@ -110,9 +110,8 @@ and the changes are immediately visible on your device:
 
 ## What about Opera Dragonfly?
 
-The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, hence using the Web Inspector for now. If you'd like to work on future incarnations of Opera Dragonfly, [we're hiring][13]!
+The current version of Opera Dragonfly (which is Presto-based) won't work with Chromium, hence using the Web Inspector for now.
 
-[13]: http://business.opera.com/company/jobs/opening/372/
 
 Cover image by [sleepingcatbeads][14].
 
