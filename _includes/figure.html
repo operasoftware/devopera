@@ -1,0 +1,7 @@
+{% assign pictures = include.pictures | split: '|' %}
+<figure class="figure">
+{% for picture in pictures %}{% assign split = picture | split: '@' %}{% if split.size > 1 %}{% assign file = split | first %}{% assign size = split | last %}{% else %}{% assign file = picture %}{% endif %}<img src="{{ include.path }}/{{ file }}" alt="" class="figure__media {% if size %}figure__media--{{ size }}{% endif %}">{% endfor %}
+{% if include.caption %}
+	<figcaption class="figure__caption">{{ include.caption | markdownline }}</figcaption>
+{% endif %}
+</figure>
