@@ -88,12 +88,16 @@
 .layout-author {
 	@extend %grid;
 	// Elements
+	&__aside {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--one-quarter;
+		@extend %desk--one-quarter;
+		}
 	&__content {
 		@extend %grid__item;
 		@extend %one-whole;
 		@extend %lap--three-quarters;
 		@extend %desk--two-thirds;
-		@extend %push--lap--one-quarter;
-		@extend %push--desk--one-quarter;
 		}
 	}
