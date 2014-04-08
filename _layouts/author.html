@@ -4,10 +4,12 @@ layout: default
 
 <main>
 	<article role="main" class="layout-author">
-		<div class="layout-author__content">
+		<div class="layout-author__aside">
 			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
+		</div>
+		<div class="layout-author__content">
 			<h1>
-				{{ page.title }}
+					{{ page.title | markdownline }}
 {% if page.link %}
 	{% if page.link contains 'twitter.com' %}
 					<a href="{{ page.link }}">@{{ page.link | split: '/' | last }}</a>
@@ -16,7 +18,9 @@ layout: default
 	{% endif %}
 {% endif %}
 			</h1>
-{{ content }}
+
+			{{ content }}
+
 			<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
 			<ul>
 {% assign author = page.id | split: '/' | last %}
