@@ -8,7 +8,7 @@ tags:
 - http
 - protocol
 - server
-cover: png
+cover: jpg
 license: cc-by-3.0
 layout: article
 ---
