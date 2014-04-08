@@ -7,15 +7,16 @@ tags:
 - wot
 - extensions
 - interview
+- extinterview
 - opera
-cover: png
+cover: jpg
 license: cc-by-3.0
 layout: article
 ---
 
 This is the third article in a [series of interviews][1] with Opera extension developers. We want to shed a light on what drives them, what their workflow is like, which tools they use, what their plans for future extension versions are, and so on. For this interview, we sat down with Ulla Särkikangas from [Web of Trust][2], which is the company behind the popular [WOT extension][3], and asked her some questions over a (virtual) coffee.
 
-[1]: http://dev.opera.com/articles/tags/extension%20interview
+[1]: /tags/extinterview/
 [2]: http://www.mywot.com
 [3]: https://addons.opera.com/en/extensions/details/wot/
 
