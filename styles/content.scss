@@ -23,19 +23,6 @@
 	blockquote {
 		font-style:italic;
 		}
-	// Pictures
-	figure {
-		margin:0 0 16px;
-		img, svg, object {
-			margin:0 0 12px;
-			width:100%;
-			max-width:100%;
-			}
-		figcaption {
-			font-style:italic;
-			font-size:12px;
-			}
-		}
 	// Lists
 	ol, ul {
 		margin:0 0 16px;
@@ -56,7 +43,38 @@
 		font-style:italic;
 		}
 	code, kbd, pre, samp {
+		tab-size:4;
 		font-size:1em;
 		font-family:PT Mono, monospace, monospace;
+		}
+	}
+
+// Figure
+.figure {
+	margin-bottom:4px;
+	@extend %grid;
+	// Media
+	&__media {
+		max-width:100%;
+		margin-bottom:12px;
+		@extend %grid__item;
+		&--half {
+			@extend %lap--one-half;
+			@extend %desk--one-half;
+			}
+		&--quarter {
+			@extend %lap--one-quarter;
+			@extend %desk--one-quarter;
+			}
+		}
+	// Caption
+	&__caption {
+		font-style:italic;
+		font-size:12px;
+		@extend %grid__item;
+		@extend %one-whole;
+		&--center {
+			text-align:center;
+			}
 		}
 	}

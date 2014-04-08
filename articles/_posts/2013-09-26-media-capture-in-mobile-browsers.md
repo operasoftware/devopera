@@ -3,6 +3,13 @@ title: Media Capture in Mobile Browsers
 authors:
 - francesco-iovine
 intro: 'Media Capture is one of the most interesting features in web applications, especially for mobile devices. Surprisingly capturing media on the spot is quite a new thing for browsers in general, until recently always being delegated to browser plugins such as Flash or Silverlight. In this article we will explore how to use the Media Capture APIs, their compatibility across mobile browsers and the current state of the W3C specifications that define them.'
+tags:
+- devices
+- getusermedia
+- html5
+- javascript
+- mobile
+- w3c
 cover: png
 license: cc-by-3.0
 layout: article
@@ -76,13 +83,7 @@ I have written a simple [HTML Media Capture demo][7], which can be used to test 
 
 [7]: /articles/media-capture-in-mobile-browsers/demo/
 
-<figure>
-	<a href="/articles/media-capture-in-mobile-browsers/1.png"><img src="/articles/media-capture-in-mobile-browsers/1--thumb.png"></a>
-	<a href="/articles/media-capture-in-mobile-browsers/2.png"><img src="/articles/media-capture-in-mobile-browsers/2--thumb.png"></a>
-	<a href="/articles/media-capture-in-mobile-browsers/3.png"><img src="/articles/media-capture-in-mobile-browsers/3--thumb.png"></a>
-	<a href="/articles/media-capture-in-mobile-browsers/4.png"><img src="/articles/media-capture-in-mobile-browsers/4--thumb.png"></a>
-	<a href="/articles/media-capture-in-mobile-browsers/5.png"><img src="/articles/media-capture-in-mobile-browsers/5--thumb.png"></a>
-</figure>
+{% include figure.html path=page.id pictures='1--thumb.png@quarter|2--thumb.png@quarter|3--thumb.png@quarter|4--thumb.png@quarter|5--thumb.png@quarter' %}
 
 Here are some considerations, which I would hope to see changed in the future:
 
