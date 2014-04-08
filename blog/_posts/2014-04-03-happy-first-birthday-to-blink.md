@@ -2,7 +2,7 @@
 title: Happy first birthday to Blink
 authors:
 - bruce-lawson
-intro: 'Twelve months ago today, I stayed up past my bedtime to blog about the new rendering engine, Blink, being forked from WebKit. As it's Blink's first birthday, let's take a brief look at where we've got to.'
+intro: 'Twelve months ago today, I stayed up past my bedtime to blog about the new rendering engine, Blink, being forked from WebKit. As it’s Blink’s first birthday, let’s take a brief look at where we’ve got to.'
 tags:
 - blink
 license: cc-by-3.0

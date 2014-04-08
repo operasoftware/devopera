@@ -3,7 +3,7 @@ title: Remotely Debugging Opera for Android
 authors:
 - bruce-lawson
 - chris-mills
-intro: 'Now that Opera for Android is out, you’ll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+. Here's how to connect Opera for Android to Chromium-based desktop browsers for remote debugging.'
+intro: 'Now that Opera for Android is out, you’ll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+. Here’s how to connect Opera for Android to Chromium-based desktop browsers for remote debugging.'
 tags:
 - android
 - opera-14
