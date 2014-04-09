@@ -4,6 +4,7 @@
 %link--hover {
 	transition:color 0.3s;
 	}
+// Blue
 %link--blue {
 	color:$blue;
 	&:hover,
@@ -11,6 +12,7 @@
 		color:lighten($blue, 10%);
 		}
 	}
+// Green
 %link--green {
 	color:$green;
 	&:hover,
@@ -18,6 +20,15 @@
 		color:lighten($green, 6%);
 		}
 	}
+// Grey
+%link--grey {
+	color:$grey;
+	&:hover,
+	&:focus {
+		color:$blue;
+		}
+	}
+// Black
 %link--black {
 	color:#000;
 	&:hover,
@@ -33,6 +44,7 @@
 			}
 		}
 	}
+// Content
 %link--content {
 	color:$blue;
 	&:visited {
