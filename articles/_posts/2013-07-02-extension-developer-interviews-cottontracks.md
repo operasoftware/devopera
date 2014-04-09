@@ -7,14 +7,16 @@ tags:
 - cottontracks
 - extensions
 - interview
+- extinterview
 - opera
 cover: png
 license: cc-by-3.0
 layout: article
 ---
 
-This is the first article in what will be a series of interviews with Opera extension developers. We want to shed a light on what drives them, what their workflow is like, which tools they use, what their plans for future extension versions are, and so on. For this interview, we sat down with Hadrien Raffalli, who is co-founder of [cottonTracks][1], the company behind the novel [cottonTracks extension][2], and asked him some questions over a (virtual) coffee.
+This is the first article in what will be a series of [interviews][0] with Opera extension developers. We want to shed a light on what drives them, what their workflow is like, which tools they use, what their plans for future extension versions are, and so on. For this interview, we sat down with Hadrien Raffalli, who is co-founder of [cottonTracks][1], the company behind the novel [cottonTracks extension][2], and asked him some questions over a (virtual) coffee.
 
+[0]: /tags/extinterview/
 [1]: http://cottontracks.com
 [2]: https://addons.opera.com/en/extensions/details/cottontracks/?display=en
 
