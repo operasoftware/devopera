@@ -11,7 +11,7 @@ If you find a problem with the site, want to add a feature, submit an article, e
 
 ## Article suggestions & contributions
 
-If you have an idea for an article, file an issue with an `article idea` label, where we can discuss further details. If you prefer email, that is fine as well: contact andreasb@opera.com.
+If you have an idea for an article, file an issue with an `article idea` label, where we can discuss further details. If you prefer email, that is fine as well: contact andreasbATopera.com.
 
 We use pull requests for article submissions. If you’re not familiar with how this works, check out GitHub’s [Fork A Repo](https://help.github.com/articles/fork-a-repo) and [Using Pull Requests](https://help.github.com/articles/using-pull-requests) guides.
 
@@ -31,4 +31,4 @@ Just as for article submissions, we use pull requests for code improvements. If 
 
 ## Contact us
 
-If you have any questions about the publishing process, please ask [@odevrel](https://twitter.com/odevrel) or contact andreasb@opera.com.
+If you have any questions about the publishing process, please ask [@odevrel](https://twitter.com/odevrel) or contact andreasbATopera.com.
