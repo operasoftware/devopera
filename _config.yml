@@ -12,4 +12,4 @@ exclude:
 - 'package.json'
 - 'README.md'
 - 'LICENSE.md'
-- 'styles/*.scss'
+- '*.scss'
