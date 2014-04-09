@@ -10,7 +10,6 @@ tags:
 - javascript
 - mobile
 - w3c
-cover: png
 license: cc-by-3.0
 layout: article
 ---
