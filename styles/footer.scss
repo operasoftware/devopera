@@ -16,4 +16,20 @@
 	a {
 		@extend %link--grey;
 		}
+	&__contribute {
+		padding-left:20px;
+		&:before {
+			position:absolute;
+			margin:0 0 0 -20px;
+			width:18px;
+			height:18px;
+			background:#A2A4A3 url(/images/github.svg) no-repeat;
+			content:'';
+			}
+		&:hover {
+			&:before {
+				background-color:$blue;
+				}
+			}
+		}
 	}
