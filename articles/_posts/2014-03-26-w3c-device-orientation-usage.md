@@ -52,31 +52,31 @@ A full description of the coordinate system is provided in our [previous article
 
 [3]: http://dev.opera.com/articles/view/w3c-device-orientation-api/
 
-<figure class="figure figure--auto" id="figure-1">
-	<img src="/articles/w3c-device-orientation-usage/device-axes.png" alt="Explanation of coordinate system">
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/device-axes.png" class="figure__media" alt="Explanation of coordinate system">
 	<figcaption class="figure__caption">Figure 1: A diagram of the coordinate system used by device orientation</figcaption>
 </figure>
 
 Device orientation defines three types of rotation, which are are follows:
 
-- **Alpha:** The amount of rotation around the Z axis is known as alpha. The range is from 0 to 360 degrees and the current orientation in this axis is denoted with z.
+**Alpha:** The amount of rotation around the Z axis is known as alpha. The range is from 0 to 360 degrees and the current orientation in this axis is denoted with z.
 
-<figure class="figure figure--auto" id="figure-2">
-	<img src="/articles/w3c-device-orientation-usage/device-alpha.png" alt="Device rotated around the Z axis">
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/device-alpha.png" class="figure__media" alt="Device rotated around the Z axis">
 	<figcaption class="figure__caption">Figure 2: Device rotated z degrees around the Z axis</figcaption>
 </figure>
 
-- **Beta:** The amount of rotation around the X-axis is known as beta. The range is from -180 to 180 degrees and the current orientation in this axis is denoted with x.
+**Beta:** The amount of rotation around the X-axis is known as beta. The range is from -180 to 180 degrees and the current orientation in this axis is denoted with x.
 
-<figure class="figure figure--auto" id="figure-3">
-	<img src="/articles/w3c-device-orientation-usage/device-beta.png" alt="Device rotated around the X axis">
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/device-beta.png" class="figure__media" alt="Device rotated around the X axis">
 	<figcaption class="figure__caption">Figure 3: Device rotated x degrees around the X axis</figcaption>
 </figure>
 
-- **Gamma:** The amount of rotation around the Y-Axis is known as gamma. The range is from -90 to 90 degrees and the current orientation in this axis is denoted with y.
+**Gamma:** The amount of rotation around the Y-Axis is known as gamma. The range is from -90 to 90 degrees and the current orientation in this axis is denoted with y.
 
-<figure class="figure figure--auto" id="figure-4">
-	<img src="/articles/w3c-device-orientation-usage/device-gamma.png" alt="Device rotated around the Y axis">
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/device-gamma.png" class="figure__media" alt="Device rotated around the Y axis">
 	<figcaption class="figure__caption">Figure 4: Device rotated y degrees around the Y axis</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Tait-Bryan angles, and Euler angles in general, give us a good way to visualize 
 
 [10]: https://en.wikipedia.org/wiki/Gimbal_lock
 
-If we imagine each of the rotation planes described above as a single circular rotation plane - a [gimbal][11] - then each of the three rotation planes work together to define device orientation movement.
+If we imagine each of the rotation planes described above as a single circular rotation plane — a [gimbal][11] — then each of the three rotation planes work together to define device orientation movement.
 
 [11]: https://en.wikipedia.org/wiki/Gimbal
 
@@ -177,36 +177,36 @@ Based on the practical considerations we discussed above, we need to follow thre
 
 In order to rotate the device by β degrees around the X axis we can use the following _component rotation matrix_:
 
-<figure class="figure figure--auto" class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation3.png" alt="X = [1 0 0; 0 cos(beta) -sin(beta); 0 sin(beta) cos(beta)]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation3.png" alt="X = [1 0 0; 0 cos(beta) -sin(beta); 0 sin(beta) cos(beta)]" class="figure__media">
 </figure>
 
 In order to rotate the device by γ degrees around the Y axis we can use the following _component rotation matrix_:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation4.png" alt="Y = [cos(gamma) 0 sin(gamma); 0 1 0; -sin(gamma) 0 cos(gamma)]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation4.png" alt="Y = [cos(gamma) 0 sin(gamma); 0 1 0; -sin(gamma) 0 cos(gamma)]" class="figure__media">
 </figure>
 
 In order to rotate the device by α degrees around the Z axis we can use the following _component rotation matrix_:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation2.png" alt="Z = [cos(alpha) -sin(alpha) 0; sin(alpha) cos(alpha) 0; 0 0 1]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation2.png" alt="Z = [cos(alpha) -sin(alpha) 0; sin(alpha) cos(alpha) 0; 0 0 1]" class="figure__media">
 </figure>
 
 The _combined rotation matrix_ can then be constructed by multiplying each of the _component rotation matrices_ above in any of the Tait-Bryan rotation order combinations we described previously in this article. For example, we can represent a _combined rotation matrix_ R when using a device rotation order of _z-x-y_ as follows:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation9.png" alt="R = ZXY">
+<figure class="figure">
+	<img src="{{ page.id }}/equation9.png" alt="R = ZXY" class="figure__media">
 </figure>
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation13.png" alt="R = [[cos(alpha), -sin(alpha), 0], [sin(alpha), cos(alpha), 0],[ 0, 0, 1 ]].[[1, 0, 0], [0, cos(beta), -sin(beta)], [0, sin(beta), cos(beta)]].[[cos(gamma), 0, sin(gamma)], [0, 1, 0], [-sin(gamma), 0, cos(gamma)]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation13.png" alt="R = [[cos(alpha), -sin(alpha), 0], [sin(alpha), cos(alpha), 0],[ 0, 0, 1 ]].[[1, 0, 0], [0, cos(beta), -sin(beta)], [0, sin(beta), cos(beta)]].[[cos(gamma), 0, sin(gamma)], [0, 1, 0], [-sin(gamma), 0, cos(gamma)]]" class="figure__media">
 </figure>
 
 Multiplying each Z, X and Y _component rotation matrix_ together we arrive at the following _combined rotation matrix_ R:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation13a.png" alt="R = [[cos(alpha) cos(gamma)-sin(alpha) sin(beta) sin(gamma), -cos(beta) sin(alpha), cos(gamma) sin(alpha) sin(beta)+cos(alpha) sin(gamma)], [cos(gamma) sin(alpha)+cos(alpha) sin(beta) sin(gamma), cos(alpha) cos(beta), sin(alpha) sin(gamma)-cos(alpha) cos(gamma) sin(beta)], [-cos(beta) sin(gamma), sin(beta), cos(beta) cos(gamma)]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation13a.png" alt="R = [[cos(alpha) cos(gamma)-sin(alpha) sin(beta) sin(gamma), -cos(beta) sin(alpha), cos(gamma) sin(alpha) sin(beta)+cos(alpha) sin(gamma)], [cos(gamma) sin(alpha)+cos(alpha) sin(beta) sin(gamma), cos(alpha) cos(beta), sin(alpha) sin(gamma)-cos(alpha) cos(gamma) sin(beta)], [-cos(beta) sin(gamma), sin(beta), cos(beta) cos(gamma)]]" class="figure__media">
 </figure>
 
 Let’s add this to our codebase as follows:
@@ -256,14 +256,14 @@ As we discussed in the practical considerations section above, any orientation r
 
 To obtain our screen-adjusted rotation matrix (Rs) we need to multiple the rotation matrix (R) we constructed in step 1 above by a Z-axis based transformation representing the current screen orientation angle (θ) offset from 0:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation19.png" alt="R_s = R.r_s">
+<figure class="figure">
+	<img src="{{ page.id }}/equation19.png" alt="R_s = R.r_s" class="figure__media">
 </figure>
 
 We construct our screen orientation transformation matrix (rs) as follows where θ is the value of `currentScreenOrientation` we collected above in our application code:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation20.png" alt="r_s = [[cos(theta_s), - sin(theta_s), 0], [ sin(theta_s), cos(theta_s), 0], [0, 0, 1]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation20.png" alt="r_s = [[cos(theta_s), - sin(theta_s), 0], [ sin(theta_s), cos(theta_s), 0], [0, 0, 1]]" class="figure__media">
 </figure>
 
 The construction of our screen orientation transform matrix (rs) can be represented in JavaScript as follows:
@@ -294,14 +294,14 @@ In our example we will again transform our rotation matrix for a virtual reality
 
 To obtain our world-adjusted rotation matrix (Rw) we need to multiple the screen-adjusted rotation matrix (Rs) we constructed in step 2 above by an X-axis based transformation (θ) of 90 degrees (converted to radians):
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation21.png" alt="R_w = R_s.r_w">
+<figure class="figure">
+	<img src="{{ page.id }}/equation21.png" alt="R_w = R_s.r_w" class="figure__media">
 </figure>
 
 We construct our world orientation transformation matrix (rw) as follows:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation22.png" alt="r_w = [1 0 0; 0 cos(theta) -sin(theta); 0 sin(theta) cos(theta)]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation22.png" alt="r_w = [1 0 0; 0 cos(theta) -sin(theta); 0 sin(theta) cos(theta)]" class="figure__media">
 </figure>
 
 The construction of our world orientation transform matrix (rw) can be represented in JavaScript as follows:
@@ -391,8 +391,8 @@ Based on the practical considerations we explained above, we need to follow thre
 
 We can convert the Tait-Bryan alpha (α), beta (β) and gamma (γ) representation in to a Unit Quaternion (q) using the following formula:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation14.png" alt="q = [[q_w], [q_x], [q_y], [q_z]] = [[cos(beta)cos(gamma)cos(alpha) - sin(beta)sin(gamma)sin(alpha)], [sin(beta)cos(gamma)cos(alpha) - cos(beta)sin(gamma)sin(alpha)], [cos(beta)sin(gamma)cos(alpha) + sin(beta)cos(gamma)sin(alpha)], [cos(beta)cos(gamma)sin(alpha) + sin(beta)sin(gamma)cos(alpha)]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation14.png" alt="q = [[q_w], [q_x], [q_y], [q_z]] = [[cos(beta)cos(gamma)cos(alpha) - sin(beta)sin(gamma)sin(alpha)], [sin(beta)cos(gamma)cos(alpha) - cos(beta)sin(gamma)sin(alpha)], [cos(beta)sin(gamma)cos(alpha) + sin(beta)cos(gamma)sin(alpha)], [cos(beta)cos(gamma)sin(alpha) + sin(beta)sin(gamma)cos(alpha)]]" class="figure__media">
 </figure>
 
 This can be represented in JavaScript as follows:
@@ -429,14 +429,14 @@ As we discussed in the practical considerations section above, any orientation r
 
 To obtain our screen-adjusted quaternion (q's) we need to multiple the quaternion (q) we constructed in step 1 above by a Z-axis based transformation quaternion (qs) representing the current screen orientation angle (θ) offset from 0 degrees:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation24.png" alt="q'_s = q.q_s">
+<figure class="figure">
+	<img src="{{ page.id }}/equation24.png" alt="q'_s = q.q_s" class="figure__media">
 </figure>
 
 We construct our quaternion transformation (qs) as follows where θ is the value of `currentScreenOrientation` we collected above in our application code:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation25.png" alt="q_s = [[ cos((-theta_s)/2) ], [0], [0], [ sin((-theta_s)/2) ]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation25.png" alt="q_s = [[ cos((-theta_s)/2) ], [0], [0], [ sin((-theta_s)/2) ]]" class="figure__media">
 </figure>
 
 The construction of our quaternion transform (qs) can be represented in JavaScript as follows:
@@ -467,14 +467,14 @@ In our example we will again transform our quaternion for a virtual reality and 
 
 To obtain our world-adjusted quaternion (q'w) we need to multiple the screen-adjusted quaternion (q's) we constructed in step 2 above by an X-axis based quaternion transformation (θ) of 90 degrees (converted to radians):
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation26.png" alt="q'_w = q'_s.q_w">
+<figure class="figure">
+	<img src="{{ page.id }}/equation26.png" alt="q'_w = q'_s.q_w" class="figure__media">
 </figure>
 
 We construct our world orientation transformation quaternion (qw) as follows:
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/equation27.png" alt="q_s = [[ cos((-90)/2) ], [sin((-90)/2)], [0], [0]]">
+<figure class="figure">
+	<img src="{{ page.id }}/equation27.png" alt="q_s = [[ cos((-90)/2) ], [sin((-90)/2)], [0], [0]]" class="figure__media">
 </figure>
 
 The construction of our world orientation transform quaternion (qw) can be represented in JavaScript as follows:
@@ -551,12 +551,12 @@ Here are a couple of screenshots from our demo virtual reality viewer running in
 
 [37]: https://play.google.com/store/apps/details?id=com.opera.browser
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/virtualreality_1.png" alt="Virtual Reality Web Application - Screenshot 1">
+<figure class="figure">
+	<img src="{{ page.id }}/virtualreality_1.png" alt="Virtual Reality Web Application — Screenshot 1" class="figure__media">
 </figure>
 
-<figure class="figure figure--auto">
-	<img src="/articles/w3c-device-orientation-usage/virtualreality_2.png" alt="Virtual Reality Web Application - Screenshot 2">
+<figure class="figure">
+	<img src="{{ page.id }}/virtualreality_2.png" alt="Virtual Reality Web Application — Screenshot 2" class="figure__media">
 </figure>
 
 You can find a live version of this virtual reality demonstration [here][40] (best viewed on mobile) and the source code can be found [on Github][41].
@@ -572,9 +572,9 @@ Since the publication of our [previous article][42] in this series the cross-bro
 
 At the time of writing the above provided rotation transformations works correctly on most Android and iOS-based browsers with a few important caveats that web developers need to keep in mind:
 
-- The functions provided above expect `deviceOrientationData.alpha`, `deviceOrientationData.beta` and `deviceOrientationData.gamma` data values provided from the `deviceorientation` event to be defined and not null. Web developers should check that each property is provided and is not null otherwise the calculations will not work correctly and the developers should provide some alternative fallback functionality (e.g. manual orientation controls).
-- The `window.orientation` API is not currently supported in Gecko-based browsers (e.g. Firefox). There is [a proposal][43] to add screen orientation change detection (in degrees from the default screen orientation position) to the [W3C Screen Orientation API][44] but at the time of writing this is not available.
-- iOS-based browsers currently return `deviceOrientationData.alpha` as an arbitrary non-compass-based value. Therefore, in iOS-based browsers if you need _world-accurate_ values you will need to replace the `deviceOrientationData.alpha` value stored with `(360 - deviceOrientationData.webkitCompassHeading)`. See [this bug][45] for further details.
+1. The functions provided above expect `deviceOrientationData.alpha`, `deviceOrientationData.beta` and `deviceOrientationData.gamma` data values provided from the `deviceorientation` event to be defined and not null. Web developers should check that each property is provided and is not null otherwise the calculations will not work correctly and the developers should provide some alternative fallback functionality (e.g. manual orientation controls).
+2. The `window.orientation` API is not currently supported in Gecko-based browsers (e.g. Firefox). There is [a proposal][43] to add screen orientation change detection (in degrees from the default screen orientation position) to the [W3C Screen Orientation API][44] but at the time of writing this is not available.
+3. iOS-based browsers currently return `deviceOrientationData.alpha` as an arbitrary non-compass-based value. Therefore, in iOS-based browsers if you need _world-accurate_ values you will need to replace the `deviceOrientationData.alpha` value stored with `(360 - deviceOrientationData.webkitCompassHeading)`. See [this bug][45] for further details.
 
 [43]: https://www.w3.org/Bugs/Public/show_bug.cgi?id=23072
 [44]: https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html
