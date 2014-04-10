@@ -18,9 +18,9 @@ layout: article
 
 On a recent plane flight, I starting noodling around with combining flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using modernizr you can feed legacy properties to older browsers that support the 2009 legacy flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no flexbox support at all — like a simple tabbed interface perhaps.
 
-<figure id="figure-1">
-	<img src="/articles/animating-flexboxes-the-lowdown/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it">
-	<figcaption markdown="span">Figure 1: A simple accordion interface created with flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="/articles/animating-flexboxes-the-lowdown/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 1: A simple accordion interface created with flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
 </figure>
 
 [2]: /articles/animating-flexboxes-the-lowdown/transition-js/
@@ -72,9 +72,9 @@ I happily saw that it worked fine (In Opera and Chrome anyway, other browsers do
 
 Following on from this I created a better looking example, and continued to play (see Figure 2).
 
-<figure id="figure-2">
-	<img src="/articles/animating-flexboxes-the-lowdown/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it">
-	<figcaption markdown="span">Figure 2: A simple accordion interface created with flexbox and transitions [run the transitions example][5]</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="/articles/animating-flexboxes-the-lowdown/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 2: A simple accordion interface created with flexbox and transitions [run the transitions example][5]</figcaption>
 </figure>
 
 [5]: /articles/animating-flexboxes-the-lowdown/transition.html

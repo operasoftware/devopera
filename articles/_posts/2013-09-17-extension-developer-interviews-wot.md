@@ -34,9 +34,9 @@ Today, WOT is the world’s leading crowdsourced website reputation service with
 
 The WOT office is located in Helsinki, Finland. Currently we have around 10 employees.
 
-<figure>
-	<img src="/articles/extension-developer-interviews-wot/team.jpg" alt="The WOT team">
-	<figcaption markdown="span">The WOT team</figcaption>
+<figure class="figure">
+	<img src="/articles/extension-developer-interviews-wot/team.jpg" alt="The WOT team" class="figure__media">
+	<figcaption class="figure__caption">The WOT team</figcaption>
 </figure>
 
 **How did you come up with the idea for WOT?**

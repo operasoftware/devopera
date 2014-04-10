@@ -33,9 +33,9 @@ DoNotTrackMe protects your online privacy. Whereas some privacy extensions just 
 
 We’re based in Boston, and currently there are about 20 people in our office plus at least one dog.
 
-<figure>
-	<img src="/articles/extension-developer-interview-abine/team.jpg" alt="Abine team">
-	<figcaption>The Abine team</figcaption>
+<figure class="figure">
+	<img src="/articles/extension-developer-interview-abine/team.jpg" alt="Abine team" class="figure__media">
+	<figcaption class="figure__caption">The Abine team</figcaption>
 </figure>
 
 **How did Abine come up with the idea behind DoNotTrackMe? How did it start?**

@@ -26,9 +26,9 @@ Hadrien: [cottonTracks][3] is essentially an improved, searchable and contextual
 
 [3]: https://addons.opera.com/en/extensions/details/cottontracks/?display=en
 
-<figure>
-	<img src="/articles/extension-developer-interviews-cottontracks/team.jpg" alt="The cottonTracks crew">
-	<figcaption>The cottonTracks crew</figcaption>
+<figure class="figure">
+	<img src="/articles/extension-developer-interviews-cottontracks/team.jpg" alt="The cottonTracks crew" class="figure__media">
+	<figcaption class="figure__caption">The cottonTracks crew</figcaption>
 </figure>
 
 **How many people work on cottonTracks? Where are you based?**
