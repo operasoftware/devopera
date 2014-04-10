@@ -43,7 +43,7 @@ What’s more, because they _are not_ events, they don’t come with the impleme
 
 Let’s consider an example. In the code below, we’re appending 2500 paragraphs to a document fragment, and then adding that fragment as a child of an article element.
 
-<figure id="figure-1">
+<figure class="figure" id="figure-1">
 <div markdown="block">
 	var docFrag = document.createDocumentFragment(),
 		thismany = 2500,
@@ -61,7 +61,7 @@ Let’s consider an example. In the code below, we’re appending 2500 paragraph
 
 	a.appendChild(docFrag);
 </div>
-	<figcaption>Figure 1: Adding 2500 paragraph nodes to a document using a document fragment</figcaption>
+	<figcaption class="figure__caption">Figure 1: Adding 2500 paragraph nodes to a document using a document fragment</figcaption>
 </figure>
 
 Even though we’re adding 2500 paragraphs nodes, we’ve batched them into one DOM update by using a document fragment. Still, this bit of code generates 2500 `DOMNodeInserted` events, one for each paragraph. Our [DOMNodeInserted event handler][3] is invoked 2500 times. With a mutation observer, on the other hand, our callback is [invoked once][4]. One mutation observer can record multiple DOM operations.
@@ -73,18 +73,18 @@ Even though we’re adding 2500 paragraphs nodes, we’ve batched them into one 
 
 Support for isn’t available everywhere just yet. Opera 15+, Firefox 14+ and Chrome 26+ support the `MutationObserver` interface. Internet Explorer 11 will also have support when it’s released, as will Safari 6.1. Safari 6.0 and Chrome versions 18 through 25 also support `MutationObserver`, but with a WebKit prefix (`WebKitMutationObserver`). You can detect support with the code shown below.
 
-<figure id="figure-2">
+<figure class="figure" id="figure-2">
 <div markdown="block">
 	var canObserveMutation = 'MutationObserver' in window;
 </div>
-	<figcaption>Figure 2: Detecting mutation observer support</figcaption>
+	<figcaption class="figure__caption">Figure 2: Detecting mutation observer support</figcaption>
 </figure>
 
 ## So how do I use `MutationObserver`?
 
 The good news is that mutation observers are easy to use. First create an observer object using the MutationObserver constructor as shown in Figure 3. The constructor requires a single parameter, a callback function.
 
-<figure id="figure-3">
+<figure class="figure" id="figure-3">
 <div markdown="block">
 	var observer, callback;
 	callback = function(recordqueue){
@@ -92,7 +92,7 @@ The good news is that mutation observers are easy to use. First create an observ
 	}
 	observer = new MutationObserver(callback);
 </div>
-	<figcaption>Figure 3: Creating a mutation observer</figcaption>
+	<figcaption class="figure__caption">Figure 3: Creating a mutation observer</figcaption>
 </figure>
 
 Our callback function will receive an array of `MutationRecord` objects as an argument. Each `MutationRecord` object summarizes a change to the node tree. We’ll discuss mutation records in more detail later.
@@ -101,7 +101,7 @@ Next, you’ll need to define a node to observe, and determine what kinds of DOM
 
 [5]: http://dev.w3.org/2006/webapi/WebIDL/#dfn-dictionary
 
-<figure id="figure-4">
+<figure class="figure" id="figure-4">
 <div markdown="block">
 	var options = {
 		'childList': true,
@@ -111,7 +111,7 @@ Next, you’ll need to define a node to observe, and determine what kinds of DOM
 
 	observer.observe(article, options);
 </div>
-	<figcaption>Figure 4: Determining which node and mutation types to track</figcaption>
+	<figcaption class="figure__caption">Figure 4: Determining which node and mutation types to track</figcaption>
 </figure>
 
 The options parameter may include the following properties and values.
@@ -149,7 +149,7 @@ Now that we’ve covered the syntax of mutation observers and mutation records, 
 
 Observing the addition or removal of child nodes is pretty straightforward. We’ll create a new object and pass a callback. We’ll also observe our document’s body, and all changes to its children. Figure 5 shows how.
 
-<figure id="figure-5">
+<figure class="figure" id="figure-5">
 <div markdown="block">
 	var callback = function(allmutations) {
 
@@ -175,7 +175,7 @@ Observing the addition or removal of child nodes is pretty straightforward. We�
 	}
 	mo.observe(document.body, options);
 </div>
-	<figcaption>Figure 5: How to observe the addition or removal of child nodes to a document</figcaption>
+	<figcaption class="figure__caption">Figure 5: How to observe the addition or removal of child nodes to a document</figcaption>
 </figure>
 
 Notice that we’ve included the `subtree` option, and set it to `true`. Doing so captures when [children are appended][6] to the document body (example: `document.body.appendChild(el)`), _and_ when they are appended to a child of the body (`document.getElementById('my_element').appendChild(el)`). If, instead, `subtree` was `false` or missing, the observer would only keep track of elements appended to the body.
@@ -192,7 +192,7 @@ Observing changes to attributes works much the same way. The main difference is 
 
 [8]: /articles/mutation-observers-tutorial/attributes.html
 
-<figure id="figure-6">
+<figure class="figure" id="figure-6">
 <div markdown="block">
 	var callback = function(allmutations){
 		// Since allmutations is an array,
@@ -214,7 +214,7 @@ Observing changes to attributes works much the same way. The main difference is 
 
 	mo.observe(element, options);
 </div>
-	<figcaption>Figure 6: How to observe the changes attribute values</figcaption>
+	<figcaption class="figure__caption">Figure 6: How to observe the changes attribute values</figcaption>
 </figure>
 
 The example above will capture all changes to any attribute of our target element, including deletions. As you can see [in the demo][9], each time the value of an attribute changes, a new mutation record gets added to the queue. But what if we only wanted to observe changes to _particular_ attributes?
@@ -225,7 +225,7 @@ The example above will capture all changes to any attribute of our target elemen
 
 We can limit the which attributes we’d like to observe by adding the `attributeFilter` property to our options (Figure 7). The value of `attributeFilter` must be a comma-separated list of attributes to track, enclosed in square brackets (`[` and `]`).
 
-<figure id="figure-7">
+<figure class="figure" id="figure-7">
 <div markdown="block">
 	var options = {
 		'attributes': true,
@@ -236,7 +236,7 @@ We can limit the which attributes we’d like to observe by adding the `attribut
 
 	mo.observe(element, options);
 </div>
-	<figcaption>Figure 7: Filtering which attributes we observe</figcaption>
+	<figcaption class="figure__caption">Figure 7: Filtering which attributes we observe</figcaption>
 </figure>
 
 Setting that property means that a mutation record wil be generated _only_ for changes to the value of the class attribute ([view a demo][10]).

@@ -30,9 +30,9 @@ I’ve created a [test theme][3] for you to play with. Just download and unzip i
 
 [3]: /articles/themes-in-opera-18-and-higher/yellow_sf.zip
 
-<figure>
-	<img src="/articles/themes-in-opera-18-and-higher/yellow_sf.jpg" alt="Screenshot of Opera 18 with Yellow SF theme">
-	<figcaption markdown="span">Yellow SF theme applied on Opera 18</figcaption>
+<figure class="figure">
+	<img src="/articles/themes-in-opera-18-and-higher/yellow_sf.jpg" alt="Screenshot of Opera 18 with Yellow SF theme" class="figure__media">
+	<figcaption class="figure__caption">Yellow SF theme applied on Opera 18</figcaption>
 </figure>
 
 ## Images
