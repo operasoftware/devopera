@@ -13,6 +13,8 @@
 		@extend %link--green;
 		}
 	&__picture {
+		display:block;
+		margin:0 0 16px;
 		width:128px;
 		height:128px;
 		border-radius:50%;
