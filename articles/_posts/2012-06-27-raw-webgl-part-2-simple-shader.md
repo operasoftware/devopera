@@ -27,9 +27,9 @@ In this article, we will carry on where we left off, going further with the same
 
 To build up this example step by step, start with the [Minimal draw code][4] from the last article and follow the steps below. You can also [view the minimal draw example][5] to see what the code so far does, and [view the minimal shader example][6] to see what the end result from this tutorial will be.
 
-[4]: /articles/raw-webgl-part-2-simple-shader/minimal-draw.zip
-[5]: /articles/raw-webgl-part-2-simple-shader/minimal-draw.html
-[6]: /articles/raw-webgl-part-2-simple-shader/minimal-shader.html
+[4]: {{ page.id }}/minimal-draw.zip
+[5]: {{ page.id }}/minimal-draw.html
+[6]: {{ page.id }}/minimal-shader.html
 
 First of all, make a copy of the [minimal-draw.html][5] file, and save it as _minimal-shader.html_ (or something else of your choosing). In this tutorial we are going to forget about triangles, and instead draw a rectangle that will cover the canvas. To show what we will draw, replace the ASCII triangle we currently have in our code with a square, like this:
 
@@ -51,9 +51,9 @@ Next, we take our `gl.drawArrays` line (the bottom line of script) and change it
 
 These changes will result in our exciting green triangle being changed into an even more exciting green rectangle — see Figure 1!
 
-<figure id="figure">
-	<img src="/articles/raw-webgl-part-2-simple-shader/figure1.png" alt="A WebGL-rendered green rectangle">
-	<figcaption>Figure 1: An exciting green rectangle, rendered using WebGL</figcaption>
+<figure class="figure" id="figure">
+	<img src="{{ page.id }}/figure1.png" alt="A WebGL-rendered green rectangle" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: An exciting green rectangle, rendered using WebGL</figcaption>
 </figure>
 
 ## Making our example more flexible
@@ -111,9 +111,9 @@ This makes our program use the information from the shaders.
 
 Now try testing your code — you should end up with an altogether more colourful rectangle, as shown in Figure 2:
 
-<figure id="figure-2">
-	<img src="/articles/raw-webgl-part-2-simple-shader/figure2.png" alt="A WebGL-rendered rectangle with a colourful gradient">
-	<figcaption>Figure 2: Our rectangle now has a much more exciting look to it</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/figure2.png" alt="A WebGL-rendered rectangle with a colourful gradient" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: Our rectangle now has a much more exciting look to it</figcaption>
 </figure>
 
 ## Offsetting the texture coordinates
@@ -140,9 +140,9 @@ The `offsetUniform` identifies which variable from inside the shaders the values
 
 This should now offset the gradient and give us an altogether more yellowy look, as seen in Figure 3:
 
-<figure id="figure-3">
-	<img src="/articles/raw-webgl-part-2-simple-shader/figure3.png" alt="A WebGL-rendered rectangle with a colourful gradient, the texture offset for a more colourful effect">
-	<figcaption>Figure 3: Offsetting the gradient texture gives us a nicer, more yellowy effect</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/figure3.png" alt="A WebGL-rendered rectangle with a colourful gradient, the texture offset for a more colourful effect" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: Offsetting the gradient texture gives us a nicer, more yellowy effect</figcaption>
 </figure>
 
 ## Reusing code

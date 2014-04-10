@@ -26,13 +26,13 @@ The [CSS Flexible box module level 3][1] — or Flexbox for short — brings wit
 The example I have built for this article looks like Figure 1:
 
 <figure class="figure">
-	<img src="/articles/advanced-cross-browser-flexbox/figure1.jpg" alt="An image of the final layout example" class="figure__media">
+	<img src="{{ page.id }}/figure1.jpg" alt="An image of the final layout example" class="figure__media">
 	<figcaption class="figure__caption">Figure 1: An image of the final layout example</figcaption>
 </figure>
 
 This has multiple levels of flexboxes contained within it. You can [view the example live][4] if you wish, and read on to explore the code in more detail.
 
-[4]: /articles/advanced-cross-browser-flexbox/case-study/
+[4]: {{ page.id }}/case-study/
 
 ## The overall layout
 
@@ -163,9 +163,9 @@ Next comes the magic moment. At this point the list items are looking a bit over
 Here I am giving the list items some breathing room with `margin`, giving them a `min-width`, and setting `flex` to `auto`. This is a special value of flex that allows flex children to respect `min-width` type values and remain a constant size when no excess space is available, but expand to fill any excess space when it does because available. See what happens when you expand and contract the page (illustrated in Figure 2)?
 
 <figure class="figure">
-	<img src="/articles/advanced-cross-browser-flexbox/figure2-1.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
-	<img src="/articles/advanced-cross-browser-flexbox/figure2-2.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
-	<img src="/articles/advanced-cross-browser-flexbox/figure2-3.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
+	<img src="{{ page.id }}/figure2-1.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
+	<img src="{{ page.id }}/figure2-2.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
+	<img src="{{ page.id }}/figure2-3.jpg" alt="A navigation menu laid out differently depending on the width of the screen, done just using Flexbox" class="figure__media">
 	<figcaption class="figure__caption">Figure 2: Magical expanding and contracting Flexy menu!</figcaption>
 </figure>
 
@@ -222,9 +222,9 @@ I have also flexed the 2nd `<article>`, and laid out the paragraphs inside like 
 Here I am setting them to have a fixed `flex-basis` value, so they will change the number per line as the width increases and decreases (See Figure 3 — again, no media queries required), and have made both the items and the item content sit in the middle, horizontally and vertically.
 
 <figure class="figure">
-	<img src="/articles/advanced-cross-browser-flexbox/figure3-1.jpg" alt="Different images show in the image box at different widths: at its widest, a 3x2 is shown" class="figure__media">
-	<img src="/articles/advanced-cross-browser-flexbox/figure3-2.jpg" alt="Different images show in the image box at different widths: at intermediate widths, a 2x3 is shown" class="figure__media">
-	<img src="/articles/advanced-cross-browser-flexbox/figure3-3.jpg" alt="Different images show in the image box at different widths: at its narrowest, a 1x6 is shown" class="figure__media">
+	<img src="{{ page.id }}/figure3-1.jpg" alt="Different images show in the image box at different widths: at its widest, a 3x2 is shown" class="figure__media">
+	<img src="{{ page.id }}/figure3-2.jpg" alt="Different images show in the image box at different widths: at intermediate widths, a 2x3 is shown" class="figure__media">
+	<img src="{{ page.id }}/figure3-3.jpg" alt="Different images show in the image box at different widths: at its narrowest, a 1x6 is shown" class="figure__media">
 	<figcaption class="figure__caption">Figure 3: A nice responsive image box, without media queries</figcaption>
 </figure>
 

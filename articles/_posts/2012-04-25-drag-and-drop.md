@@ -146,7 +146,7 @@ Now we’ve explored all the theory, let’s put it into practice and look at so
 
 To see the below examples in action, have a look at our [Drag and Drop demo][8].
 
-[8]: /articles/drag-and-drop/demo.html
+[8]: {{ page.id }}/demo.html
 
 ### A simple drag source
 
@@ -226,9 +226,9 @@ In Opera’s implementation, if a file from the file system is dragged into a pa
 
 [10]: http://fontdragr.com/
 
-<figure id="figure-1">
-	<img src="/articles/drag-and-drop/promt.png" alt="Screenshot showing the dialog that prompts the user to allow a page to interact with a dropped file from the filesystem">
-	<figcaption>Figure 1: Our dialog box, which prompts the user to allow a page to interact with a dropped file from the filesystem</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/promt.png" alt="Screenshot showing the dialog that prompts the user to allow a page to interact with a dropped file from the filesystem" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Our dialog box, which prompts the user to allow a page to interact with a dropped file from the filesystem</figcaption>
 </figure>
 
 ### Exposing event origin

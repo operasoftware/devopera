@@ -28,7 +28,7 @@ Brian: [Disconnect][4] is a browser extension that lets you visualize and block 
 [4]: https://addons.opera.com/en/extensions/details/disconnect/
 
 <figure class="figure">
-	<img src="/articles/extension-developer-interviews-disconnect/team.jpg" alt="The Disconnect team" class="figure__media">
+	<img src="{{ page.id }}/team.jpg" alt="The Disconnect team" class="figure__media">
 	<figcaption class="figure__caption">The Disconnect team</figcaption>
 </figure>
 

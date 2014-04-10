@@ -17,8 +17,8 @@ Back in 2005, Nokia released the Nokia N770. The included web browser was develo
 
 This Maemo version of Opera Mobile 10 was created as a hobby project by a small team of developers in their spare time. In total, about 6 man-weeks were spent on creating the release. It’s worth pointing out that this is not an officially-supported release. As such, it has not undergone our usual quality assurance processes, and at times may not feel as polished or complete as an official release. This also means that there may never be a “final” release of Opera Mobile 10 for Maemo devices, since it’s just that much more fun to add shiny new features rather than fixing boring old bugs.
 
-<figure>
-	<img src="/articles/were-back-opera-mobile-10-on-maemo/n900-n800-maemo.png" alt="Opera Mobile running on N900 and N800">
+<figure class="figure">
+	<img src="{{ page.id }}/n900-n800-maemo.png" alt="Opera Mobile running on N900 and N800" class="figure__media">
 </figure>
 
 The preview build contains the same features available in Opera Mobile 10 for Symbian and Windows Mobile smartphones. These include fast and economical browsing with Opera Turbo, bookmark and Speed Dial sync with other Opera products, and of course multiple tabs. For more information, see our rundown of [Opera Mobile 10 features][2].

@@ -19,11 +19,11 @@ layout: article
 On a recent plane flight, I starting noodling around with combining flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using modernizr you can feed legacy properties to older browsers that support the 2009 legacy flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no flexbox support at all — like a simple tabbed interface perhaps.
 
 <figure class="figure" id="figure-1">
-	<img src="/articles/animating-flexboxes-the-lowdown/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
+	<img src="{{ page.id }}/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
 	<figcaption class="figure__caption" markdown="span">Figure 1: A simple accordion interface created with flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
 </figure>
 
-[2]: /articles/animating-flexboxes-the-lowdown/transition-js/
+[2]: {{ page.id }}/transition-js/
 
 Let’s explore!
 
@@ -66,18 +66,18 @@ The CSS I used was as follows:
 
 I happily saw that it worked fine (In Opera and Chrome anyway, other browsers don’t support modern flexbox) — on hover, the `<article>`s smoothly increase in size, with their siblings shrinking to accommodate ([run the initial test example][3]).
 
-[3]: /articles/animating-flexboxes-the-lowdown/example.html
+[3]: {{ page.id }}/example.html
 
 ## A better looking transition flexbox example
 
 Following on from this I created a better looking example, and continued to play (see Figure 2).
 
 <figure class="figure" id="figure-2">
-	<img src="/articles/animating-flexboxes-the-lowdown/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it" class="figure__media">
+	<img src="{{ page.id }}/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it" class="figure__media">
 	<figcaption class="figure__caption" markdown="span">Figure 2: A simple accordion interface created with flexbox and transitions [run the transitions example][5]</figcaption>
 </figure>
 
-[5]: /articles/animating-flexboxes-the-lowdown/transition.html
+[5]: {{ page.id }}/transition.html
 
 The HTML structure is basically the same, except that I’ve added in more content, increased the number of `<article>` from three to five, and removed the `<section>` — `<body>` is now the outer container. I have used the following CSS to give me the same effect as before (plus a load of styling that I’ve omitted for brevity):
 
@@ -117,7 +117,7 @@ The next thing I tried was creating a similar example, but using animations appl
 
 My code base for this example ([try the flexbox animation example live][6]) is very similar to the previous example, except that there are no transitions, and I have defined the following animations to control the width increases/decreases:
 
-[6]: /articles/animating-flexboxes-the-lowdown/animation-js.html
+[6]: {{ page.id }}/animation-js.html
 
 	@keyframes flex-out {
 		0% {
@@ -195,7 +195,7 @@ I thought a bit more about this, and decided to try the JavaScript toggling tech
 
 [Try the final example live][7].
 
-[7]: /articles/animating-flexboxes-the-lowdown/transition-js/
+[7]: {{ page.id }}/transition-js/
 
 The first thing I did was to add Modernizr to my page, and some Google fonts:
 
@@ -359,4 +359,4 @@ I have then added the visual headings back in using a CSS counter and absolutely
 
 This article has been fun to write, and I hope I have created an interesting technique that has at least given you food for thought! It is worth noting that you can achieve a similar effect using floated elements and focus states, like in this [float demo][9]. However, this is most inflexible — it relies on knowing the exact number of chapters you are going to have, and setting the percentages to suit. With the Flexbox method, it should work regardless of the number of child containers, and without needing to worry about exact measurements.
 
-[9]: /articles/animating-flexboxes-the-lowdown/float-test.html
+[9]: {{ page.id }}/float-test.html

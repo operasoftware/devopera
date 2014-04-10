@@ -66,8 +66,8 @@ Let’s consider an example. In the code below, we’re appending 2500 paragraph
 
 Even though we’re adding 2500 paragraphs nodes, we’ve batched them into one DOM update by using a document fragment. Still, this bit of code generates 2500 `DOMNodeInserted` events, one for each paragraph. Our [DOMNodeInserted event handler][3] is invoked 2500 times. With a mutation observer, on the other hand, our callback is [invoked once][4]. One mutation observer can record multiple DOM operations.
 
-[3]: /articles/mutation-observers-tutorial/mutationevent.html
-[4]: /articles/mutation-observers-tutorial/mutationobserver.html
+[3]: {{ page.id }}/mutationevent.html
+[4]: {{ page.id }}/mutationobserver.html
 
 ## Okay, but can I use them now?
 
@@ -180,17 +180,17 @@ Observing the addition or removal of child nodes is pretty straightforward. We�
 
 Notice that we’ve included the `subtree` option, and set it to `true`. Doing so captures when [children are appended][6] to the document body (example: `document.body.appendChild(el)`), _and_ when they are appended to a child of the body (`document.getElementById('my_element').appendChild(el)`). If, instead, `subtree` was `false` or missing, the observer would only keep track of elements appended to the body.
 
-[6]: /articles/mutation-observers-tutorial/addchildren.html
+[6]: {{ page.id }}/addchildren.html
 
 It’s also possible to observe mutations to [document fragments][7]. Just pass the fragment as the first parameter to the `observe` method.
 
-[7]: /articles/mutation-observers-tutorial/docfrag.html
+[7]: {{ page.id }}/docfrag.html
 
 ## Observing changes to attributes
 
 Observing changes to attributes works much the same way. The main difference is that you must add `'attributes': true` to the options dictionary. If you also want to record the previous attribute value, set the `attributeOldValue` option to `true` ([view a demo][8]).
 
-[8]: /articles/mutation-observers-tutorial/attributes.html
+[8]: {{ page.id }}/attributes.html
 
 <figure class="figure" id="figure-6">
 <div markdown="block">
@@ -219,7 +219,7 @@ Observing changes to attributes works much the same way. The main difference is 
 
 The example above will capture all changes to any attribute of our target element, including deletions. As you can see [in the demo][9], each time the value of an attribute changes, a new mutation record gets added to the queue. But what if we only wanted to observe changes to _particular_ attributes?
 
-[9]: /articles/mutation-observers-tutorial/attributes.html
+[9]: {{ page.id }}/attributes.html
 
 ### Filtering which attributes are observed
 
@@ -241,7 +241,7 @@ We can limit the which attributes we’d like to observe by adding the `attribut
 
 Setting that property means that a mutation record wil be generated _only_ for changes to the value of the class attribute ([view a demo][10]).
 
-[10]: /articles/mutation-observers-tutorial/attributes-filtered.html
+[10]: {{ page.id }}/attributes-filtered.html
 
 ## Learn More
 

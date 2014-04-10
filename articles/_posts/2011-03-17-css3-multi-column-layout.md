@@ -28,7 +28,7 @@ Note: There are exceptions. A `<table>` element or any replaced block-level elem
 
 Review Listing 1, in which I’ve set up a header, a division, and several paragraphs of text.
 
-<figure id="listing-1">
+<figure class="figure" id="listing-1">
 <div markdown="block">
 	<h2>Excerpt from the Saga Of Hakon Herdebreid </h2>
 
@@ -40,7 +40,7 @@ Review Listing 1, in which I’ve set up a header, a division, and several parag
 		<p>The summer after (A.D. 1158) Hakon came with his men, and proceeded to Konungahella with a numerous and handsome troop. Gregorius was then in the town, and summoned the bondes and townspeople to a great Thing, at which he desired their aid; but he thought the people did not hear him with much favour, so he did not much trust them.</p>
 	</div>
 </div>
-	<figcaption>Listing 1: Some elements and content used to create a simple multicol element</figcaption>
+	<figcaption class="figure__caption">Listing 1: Some elements and content used to create a simple multicol element</figcaption>
 </figure>
 
 Without any author styles applied, the `div` and its child elements will simply remain in the normal flow. But now I’m going to turn the `div` to have multi-column layout by simply specifying either of these properties:
@@ -64,9 +64,9 @@ You could specify them both, but the [pseudo-algorithm][2] used to calculate the
 
 Figure 1 shows the result, as rendered by Opera 11.10.
 
-<figure id="figure-1">
-	<img src="/articles/css3-multi-column-layout/multicol-1.jpg" alt="Defining an element as a multicol element">
-	<figcaption>Figure 1: Creating a multicol element</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/multicol-1.jpg" alt="Defining an element as a multicol element" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Creating a multicol element</figcaption>
 </figure>
 
 Now all the content in the `div` flows from column to column. Each column acts as a containing block for their content. This means any floated element within that column would be aligned to that column box.
@@ -92,9 +92,9 @@ Here are the styles I’ve added:
 
 Now I’ve got a series of distinct columns, which can be seen in Figure 2. You’ll note I removed the guiding outlines for the main elements.
 
-<figure id="figure-2">
-	<img src="/articles/css3-multi-column-layout/multicol-2.jpg" alt="Adding gaps and rules to a multicol element">
-	<figcaption>Figure 2: Adding gaps and rule styles to the element to demonstrate the structure</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/multicol-2.jpg" alt="Adding gaps and rules to a multicol element" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: Adding gaps and rule styles to the element to demonstrate the structure</figcaption>
 </figure>
 
 ## Controlling breaks in element flow
@@ -122,7 +122,7 @@ There are two values for `column-span`:
 
 In Listing 2, I’ve simply moved the `h2` into the element with multi-column layout and added a rule to the CSS, `h2 { column-span: all; }` in order to have it span across all the columns.
 
-<figure id="listing-2">
+<figure class="figure" id="listing-2">
 <div markdown="block">
 	<div>
 		<h2>Excerpt from the Saga Of Hakon Herdebreid </h2>
@@ -134,14 +134,14 @@ In Listing 2, I’ve simply moved the `h2` into the element with multi-column la
 		<p>The summer after (A.D. 1158) Hakon came with his men, and proceeded to Konungahella with a numerous and handsome troop. Gregorius was then in the town, and summoned the bondes and townspeople to a great Thing, at which he desired their aid; but he thought the people did not hear him with much favour, so he did not much trust them.</p>
 	</div>
 </div>
-	<figcaption>Listing 2: Creating a spanning element in multicol layout</figcaption>
+	<figcaption class="figure__caption">Listing 2: Creating a spanning element in multicol layout</figcaption>
 </figure>
 
 Once you’ve applied a `column-span` to an element, that element then becomes what is referred to as a _spanning element_. You can see the effect in Figure 3.
 
-<figure id="figure-3">
-	<img src="/articles/css3-multi-column-layout/multicol-3.jpg" alt="Creating a spanning element inside a multicol element">
-	<figcaption>Figure 3: Creating a spanning element</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/multicol-3.jpg" alt="Creating a spanning element inside a multicol element" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: Creating a spanning element</figcaption>
 </figure>
 
 ## Balancing Columns

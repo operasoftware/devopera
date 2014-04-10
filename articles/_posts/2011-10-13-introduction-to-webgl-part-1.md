@@ -56,9 +56,9 @@ Also, having a good graphics card will likely improve WebGL performance on your 
 
 WebGL allows developers to put real-time interactive 3D graphics in the browser. WebGL can be applied to interactive music videos, games, data visualization, art, 3D design environments, 3D modeling of space, 3D modeling of objects, plotting mathematical functions, or creating physical simulations.
 
-<figure id="figure-1">
-	<img src="/articles/introduction-to-webgl-part-1/webgl.jpg">
-	<figcaption markdown="span">Figure 1: [Interactive music videos][15], [Games][17], [Data visualization][19], [Art][21], [3D design environments][23], [3D modelling of space][25], [3D modelling of objects and textures][27], [Plotting mathematical functions][29], [Creating physical simulations][31]</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/webgl.jpg" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 1: [Interactive music videos][15], [Games][17], [Data visualization][19], [Art][21], [3D design environments][23], [3D modelling of space][25], [3D modelling of objects and textures][27], [Plotting mathematical functions][29], [Creating physical simulations][31]</figcaption>
 </figure>
 
 [15]: http://inear.se/beanstalk
@@ -89,8 +89,8 @@ Note that this section is adapted from [Joe Groff’s explanation of the graphic
 
 [33]: http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-1:-The-Graphics-Pipeline.html
 
-<figure>
-	<img src="/articles/introduction-to-webgl-part-1/rendering-pipeline.jpg">
+<figure class="figure">
+	<img src="{{ page.id }}/rendering-pipeline.jpg" class="figure__media">
 </figure>
 
 The process starts with the creation of the vertex arrays. These are arrays that contain vertex attributes like the location of the vertex in the 3D space and information about the vertex’ texture, colour or how it will be affected by lighting (vertex normal). These arrays and the information they contain are created in JavaScript in one or more of these ways: processing files that describe a 3D model (for example .obj files), procedurally creating the data from scratch, or using a library that provides vertex arrays for geometrical shapes.

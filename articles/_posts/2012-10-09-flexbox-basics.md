@@ -41,14 +41,14 @@ This article uses the latest Flexbox syntax, currently supported in Opera Mobile
 
 To get the flex party started, lets consider a simple example to show how easy Flexbox layout is. We will look at a “fat footer” type construct with three child elements, each of which contains fairly typical footer content. Let’s go for contact details, important global links, and copyright notice. We want to display these in a horizontal line across the footer, centred vertically, and we want the global links to span twice as much width as the other two children. Today we’d typically do this by floating the child elements, setting a width on them, and adjusting alignment using varying amounts of padding, etc. This is often fiddly and imprecise, without setting fixed values on all the dimensions, which can make things inflexible. But Flexbox can help us out here.
 
-<figure>
-	<img src="/articles/flexbox-basics/example.png" alt="A simple single column layout with a fat footer, containing three child containers laid out horizontally">
-	<figcaption markdown="span">Figure 1: My flexible example. Things are all pretty simple, apart from the footer, which has a flexible layout consisting of three boxes</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/example.png" alt="A simple single column layout with a fat footer, containing three child containers laid out horizontally" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: My flexible example. Things are all pretty simple, apart from the footer, which has a flexible layout consisting of three boxes</figcaption>
 </figure>
 
 Note: to see my finished example, look at my [Flexible fat footer][6] page (Figure 1) — you’ll see that I’ve made a funky little design with a column of content and a footer at the bottom, which stays put via some `position: fixed` magic. The layout is flexible, with the main content column sized as a percentage of the page width, and the footer child elements resize in proportion to that main column. You’ll also notice that I’ve used a few media queries to shift the layout for smaller screen widths.
 
-[6]: /articles/flexbox-basics/flexbox-example.html
+[6]: {{ page.id }}/flexbox-example.html
 
 ## Getting started with Flexbox
 
@@ -73,9 +73,9 @@ Note: `flex-flow` is actually a shorthand property, for the two properties `flex
 
 One concept you should get used to when working with Flexbox is that of main axis and cross axis, which work kind of like the X and Y axes, but with differences. The main axis always runs in the direction the flex flow is set to, so horizontal if your flex children are laid out in a row, and vertical if they are laid out in a column. The cross axis runs perpendicular to the main axis. These are illustrated in Figure 2.
 
-<figure>
-	<img src="/articles/flexbox-basics/axis.png" alt="An illustration of the main axis and cross axis of a Flexbox: the main axis always runs in the direction of the row or column, and the cross axis runs perpendicular to that">
-	<figcaption markdown="span">Figure 2: An illustration of the main axis and cross axis of a Flexbox</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/axis.png" alt="An illustration of the main axis and cross axis of a Flexbox: the main axis always runs in the direction of the row or column, and the cross axis runs perpendicular to that" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: An illustration of the main axis and cross axis of a Flexbox</figcaption>
 </figure>
 
 ### Setting alignment of your Flexbox children
@@ -101,12 +101,12 @@ These are all pretty self explanatory; to see them in action, go and play with t
 
 And there we have it — all my items will now always fill up the entire height of their parent container, regardless of how much the width and height adjusts as the viewport size changes. This is simply awesome — how many times in the past have you wanted to give a set of columns an equal height even when they contain a different amount of content, and had to mess around with inflexible solutions like setting an equal `height` on them, or using faux-columns?
 
-<figure>
-	<img src="/articles/flexbox-basics/align-items_flex-start.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different">
-	<img src="/articles/flexbox-basics/align-items_center.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different">
-	<img src="/articles/flexbox-basics/align-items_flex-end.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different">
-	<img src="/articles/flexbox-basics/align-items_stretch.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different">
-	<figcaption markdown="span">Figure 3: Showing how the different values of `align-items` affect child containers. From top to bottom — `flex-start`, `center`, `flex-end`, and `stretch`</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/align-items_flex-start.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different" class="figure__media">
+	<img src="{{ page.id }}/align-items_center.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different" class="figure__media">
+	<img src="{{ page.id }}/align-items_flex-end.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different" class="figure__media">
+	<img src="{{ page.id }}/align-items_stretch.png" alt="Showing how the different values of align-items affect child containers — their alignment vertically is different" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 3: Showing how the different values of `align-items` affect child containers. From top to bottom — `flex-start`, `center`, `flex-end`, and `stretch`</figcaption>
 </figure>
 
 Note: there is also a property called `align-self`, which allows you to set `align-items` behaviour on individual flex children. These will override `align-items` when set.
@@ -115,7 +115,7 @@ Note: there is also a property called `align-self`, which allows you to set `ali
 
 The other main property in this category that will get used a lot is `justify-content`, which specified how items are arranged along the main axis, in terms of what happens to the excess whitespace between the children. This property doesn’t have any effect when you’ve set your children and their margins to take up all the available space across the main axis, as is the case in my main example. Therefore I’ve created another example to demonstrate usage of `justify-content` — please take a look at the [fixed-width Flexbox example][12].
 
-[12]: /articles/flexbox-basics/flexbox-example-fixed-width.html
+[12]: {{ page.id }}/flexbox-example-fixed-width.html
 
 In this example I’ve set the different Flexbox children to take up a set percentage of the width of the main axis:
 
@@ -149,13 +149,13 @@ This value works rather nicely — sharing out all the space in-between the chil
 
 Figure 4 shows the effect of different settings of `justify-content`:
 
-<figure>
-	<img src="/articles/flexbox-basics/justify-content_flex-start.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected">
-	<img src="/articles/flexbox-basics/justify-content_center.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected">
-	<img src="/articles/flexbox-basics/justify-content_flex-end.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected">
-	<img src="/articles/flexbox-basics/justify-content_space-between.jpg" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected">
-	<img src="/articles/flexbox-basics/justify-content_space-around.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected">
-	<figcaption markdown="span">Figure 4: Showing how the different values of `justify-content` affect child containers. From top to bottom — `flex-start`, `center`, `flex-end`, `space-between` and `space-around`</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/justify-content_flex-start.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected" class="figure__media">
+	<img src="{{ page.id }}/justify-content_center.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected" class="figure_media">
+	<img src="{{ page.id }}/justify-content_flex-end.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected" class="figure__media">
+	<img src="{{ page.id }}/justify-content_space-between.jpg" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected" class="figure__media">
+	<img src="{{ page.id }}/justify-content_space-around.png" alt="Showing how the different values of justify-content affect child containers — their position horizontally is affected" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 4: Showing how the different values of `justify-content` affect child containers. From top to bottom — `flex-start`, `center`, `flex-end`, `space-between` and `space-around`</figcaption>
 </figure>
 
 #### `align-content` for aligning multi-line Flexboxes
@@ -172,11 +172,11 @@ You can also specify how spare space between multiple lines of Flexbox children 
 
 Traditionally it has always been a pain to change the order in which elements are displayed without messing around with the source order. Not with Flexbox. Flexbox allows you to set the `order` property on child elements to state how soon they will appear in the Flexbox row or column. This property takes a integer value — called an ordinal group — and the higher the ordinal group, the later the child will appear. So for example, going back to my [Flexible fat footer][18] example, the box of links is the second child element by default, as shown in Figure 5.
 
-[18]: /articles/flexbox-basics/flexbox-example.html
+[18]: {{ page.id }}/flexbox-example.html
 
-<figure>
-	<img src="/articles/flexbox-basics/order-0.png" alt="The default order of the footer children in this example is contact, links, copyright">
-	<figcaption markdown="span">Figure 5: The default order of the footer children — contact, links, copyright</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/order-0.png" alt="The default order of the footer children in this example is contact, links, copyright" class="figure__media">
+	<figcaption class="figure__caption">Figure 5: The default order of the footer children — contact, links, copyright</figcaption>
 </figure>
 
 By default, all the Flexbox children are in ordinal group 0. We can easily change this order by giving the children different ordinal group values. Higher values will appear later in the list of flex children; the order of children in the same ordinal group will always be governed by source order. So in my example, I’ve made the links appear last by setting their ordinal group to 1 (see Figure 6 for the result):
@@ -185,9 +185,9 @@ By default, all the Flexbox children are in ordinal group 0. We can easily chang
 		order: 1;
 	}
 
-<figure>
-	<img src="/articles/flexbox-basics/order-1.png" alt="The new order of the footer children in this example is contact, copyright, links">
-	<figcaption markdown="span">Figure 6: The `order` property has given us a new order for the footer children</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/order-1.png" alt="The new order of the footer children in this example is contact, copyright, links" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 6: The `order` property has given us a new order for the footer children</figcaption>
 </figure>
 
 Note: You can use negative `order` values.
@@ -283,11 +283,11 @@ Note: the `flex` property is shorthand — you can use the `flex-grow`, `flex-sh
 
 One thing that has worked to really good effect on my example is combining a multiline Flexbox (`flex-flow: row wrap`) with a preferred flex length for the child elements (e.g. `flex: 1 0 7rem`), and media queries. At narrower viewport widths, the preferred width cannot be reached without overflowing the parent element, therefore the Flexbox children will wrap onto multiple lines to keep things looking smooth, as shown in Figure 7.
 
-<figure>
-	<img src="/articles/flexbox-basics/example_wide.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths">
-	<img src="/articles/flexbox-basics/example_medium.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths">
-	<img src="/articles/flexbox-basics/example_narrow.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths">
-	<figcaption markdown="span">Figure 7: Some simple Flexbox application has given us a useful responsive layout</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/example_wide.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths" class="figure__media">
+	<img src="{{ page.id }}/example_medium.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths" class="figure__media">
+	<img src="{{ page.id }}/example_narrow.png" alt="Some simple Flexbox application has given us a useful responsive layout — the image shows a one, two and three row layout, at different viewport widths" class="figure__media">
+	<figcaption class="figure__caption">Figure 7: Some simple Flexbox application has given us a useful responsive layout</figcaption>
 </figure>
 
 #### flex: auto and flex:initial
@@ -295,7 +295,7 @@ One thing that has worked to really good effect on my example is combining a mul
 Flex has some other useful values, described in the part of the spec titled [Common values of `flex`][24]. Two of the most useful are `auto` and initial. Setting `flex: auto` on a child element of a flexible box (equivalent to `flex: 1 1 auto`) will make it fully flexible and size it according to any `width`/`height` or `min`/`max`-`width`/`height` properties it has set; it will expand to take up a proportion of any free space available, but then shrink to fit its contents when there is no extra free space. This can have some interesting effects when combined with a `min-width`, say. Take a look at my [Flex auto][25] example. In this example, the parent container is set to `flex-flow: row`, and the third child container is set to `flex: auto`, and has a `min-width`. It therefore expands to fill any excess space on the line, no matter where the toolbar is multiple line or not, and then shrinks neatly as it gets smaller, allowing the child buttons to rearrange themselves to suit.
 
 [24]: http://dev.w3.org/csswg/css3-flexbox/#flex-common
-[25]: /articles/flexbox-basics/flex-auto-test.html
+[25]: {{ page.id }}/flex-auto-test.html
 
 Try changing the `flex: auto` value to `flex: initial` (equivalent to `flex: 0 1 auto`) and you’ll see that the third child container no longer increases in size when there is excess space, but it still shrinks if needed.
 

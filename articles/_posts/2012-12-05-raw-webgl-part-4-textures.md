@@ -23,7 +23,7 @@ This article is a transcript of [time 56:50 to 1:03:20][1] in Erik Möller’s [
 
 Note: [You can run the finished texture example][3] from this article to see what you are aiming towards.
 
-[3]: /articles/raw-webgl-part-4-textures/texturing.html
+[3]: {{ page.id }}/texturing.html
 
 ## Preparing to use textures in WebGL
 
@@ -34,7 +34,7 @@ We’re going to build this example on top of the [previous lesson][4]’s simpl
 
 We’ll also need an image to use as texture, so copy this [Opera logo PNG][6] file into a place in your working directory.
 
-[6]: /articles/raw-webgl-part-4-textures/opera.png
+[6]: {{ page.id }}/opera.png
 
 Now we’re going to remove the offset as we’re not going to be using it here. To do so, first go into the vertex shader `<script>` element and remove the following line:
 
@@ -133,7 +133,7 @@ Mag filter is used when you’re stretching an image over a larger area than the
 Also, change your canvas size to something a bit bigger so you can see what is going on more clearly. I chose 900×900. Now try testing your code — you should be presented with something that looks like Figure 1.
 
 <figure id="figure-1">
-	<img src="/articles/raw-webgl-part-4-textures/figure1.jpg" alt="A series of Opera company logos rendered inside a canvas using WebGL">
+	<img src="{{ page.id }}/figure1.jpg" alt="A series of Opera company logos rendered inside a canvas using WebGL">
 	<figcaption markdown="span">Figure 1: A series of Opera company logos rendered inside a `<canvas>` using WebGL</figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ You’ll notice that currently the rendering looks a bit pixellated, because we 
 This will give a much smoother result, as shown in Figure 2.
 
 <figure id="figure-2">
-	<img src="/articles/raw-webgl-part-4-textures/figure2.jpg" alt="A series of Opera company logos rendered inside a canvas using WebGL that look smooth and not pixellated">
+	<img src="{{ page.id }}/figure2.jpg" alt="A series of Opera company logos rendered inside a canvas using WebGL that look smooth and not pixellated">
 	<figcaption>Figure 2: The linear filter gives a much smoother result</figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ Let’s explore how wrap modes work. We’re drawing a quad that covers the enti
 This will give us the display shown in Figure 3.
 
 <figure id="figure-3">
-	<img src="/articles/raw-webgl-part-4-textures/figure3.jpg" alt="A single Opera logo rendered on a canvas">
+	<img src="{{ page.id }}/figure3.jpg" alt="A single Opera logo rendered on a canvas">
 	<figcaption>Figure 3: Our four Opera logos have been reduced down to one</figcaption>
 </figure>
 

@@ -13,9 +13,9 @@ license: cc-by-3.0
 layout: article
 ---
 
-<figure id="figure-1">
-	<img src="/articles/opera-mobile-emulator/opera-emulator.jpg" alt="Opera Mobile Emulator">
-	<figcaption>Figure 1: Opera Mobile Emulator running on Mac</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/opera-emulator.jpg" alt="Opera Mobile Emulator" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Opera Mobile Emulator running on Mac</figcaption>
 </figure>
 
 ## Introduction
@@ -38,9 +38,9 @@ The Profile Selector comes preconfigured with a series of popular phone and tabl
 
 If you want to create a new profile, select the _Custom_ option from the profile list and set the relevant options for _Resolution_, _Pixel Density_, _User Interface_, _User Agent String_, _Window Scale_, and _Arguments_. When you’re all set, select the _Add_ button under the profile selection box, choose a name for the new profile, and save it to the list. Note that you can also tweak existing profiles via the _Save/save as…_ button appearing below the selected profile, or delete them using the _Remove_ button.
 
-<figure id="figure-2">
-	<img src="/articles/opera-mobile-emulator/launcher.jpg" alt="The Opera Mobile Emulator’s Profile Selector">
-	<figcaption>Figure 2: The Opera Mobile Emulator’s Profile Selector</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/launcher.jpg" alt="The Opera Mobile Emulator’s Profile Selector" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: The Opera Mobile Emulator’s Profile Selector</figcaption>
 </figure>
 
 ### Resolution
@@ -57,9 +57,9 @@ The _User Interface_ section of the Profile Selector contains a dropdown menu wi
 
 [4]: http://dev.opera.com/articles/view/opera-mobile-emulator/#inputmodes
 
-<figure id="figure-3">
-	<img src="/articles/opera-mobile-emulator/multiple-instances.jpg" alt="Multiple instances of Opera Mobile Emulator">
-	<figcaption>Figure 3: Multiple instances of the Opera Mobile Emulator with different screen sizes, orientations, and UIs</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/multiple-instances.jpg" alt="Multiple instances of Opera Mobile Emulator" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: Multiple instances of the Opera Mobile Emulator with different screen sizes, orientations, and UIs</figcaption>
 </figure>
 
 ### User Agent String
@@ -142,9 +142,9 @@ In general usage, Opera Mobile Emulator offers the same functionality available 
 [6]: http://www.opera.com/browser/turbo/
 [7]: http://www.opera.com/link/
 
-<figure id="figure-4">
-	<img src="/articles/opera-mobile-emulator/settings.jpg" alt="Settings, Privacy and opera:config">
-	<figcaption>Figure 4: Changing settings in the Opera Mobile Emulator</figcaption>
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/settings.jpg" alt="Settings, Privacy and opera:config" class="figure__media">
+	<figcaption class="figure__caption">Figure 4: Changing settings in the Opera Mobile Emulator</figcaption>
 </figure>
 
 As with [Opera Mobile][9] running on devices, the _Settings_ (Figure 4) give quick access to toggle various features and, under _Privacy_, to clear the history, passwords, cookies, cache and shared locations.
@@ -159,9 +159,9 @@ Using [Opera Dragonfly][10]’s remote debugging functionality, you can analyze 
 
 [10]: http://www.opera.com/dragonfly/
 
-<figure id="figure-5">
-	<img src="/articles/opera-mobile-emulator/debugging.jpg" alt="Opera Dragonfly debugging a Web page in Opera Mobile Emulator">
-	<figcaption>Figure 5: Remote debugging with Opera Dragonfly</figcaption>
+<figure class="figure" id="figure-5">
+	<img src="{{ page.id }}/debugging.jpg" alt="Opera Dragonfly debugging a Web page in Opera Mobile Emulator" class="figure__media">
+	<figcaption class="figure__caption">Figure 5: Remote debugging with Opera Dragonfly</figcaption>
 </figure>
 
 Setting this up is a simple three-step process, which is explained in great detail in our [Opera Dragonfly documentation][12].

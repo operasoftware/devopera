@@ -21,7 +21,7 @@ This tutorial series, created by Erik Möller in video format (with Chris Mills 
 This article gets you started with the basics, and forms a transcription of the material covered in Erik’s [WebGL video tutorial][1] from the beginning to time 22:25. You can [download the code for this tutorial][2] in a single zip file.
 
 [1]: http://www.youtube.com/watch?v=me3BviH3nZc
-[2]: /articles/raw-webgl-part-1-getting-started/code.zip
+[2]: {{ page.id }}/code.zip
 
 - [Watch Erik’s entire WebGL video tutorial][3] for free on Youtube. Over 2 and a half hours of WebGL tuition!
 - [Access the full WebGL 101 code example set][4] and links to see the examples running live, at Github
@@ -45,7 +45,7 @@ To get started with WebGL, and this article series, you should have:
 
 Let’s begin by creating a new HTML file and saving it with a suitable name ([minimal.html][7] in the code download.)
 
-[7]: /articles/raw-webgl-part-1-getting-started/minimal.html
+[7]: {{ page.id }}/minimal.html
 
 First of all, enter a basic HTML5 template into it, like so, containing a simple `<canvas>` and a `<script>` element. Give your canvas an `id`, so we reference it via JavaScript:
 
@@ -75,9 +75,9 @@ Next, we will use two WebGL-specific methods:
 
 If you save and run this page, it should give you a blank canvas, with a default colour of blue, like you specified above — see Figure 1.
 
-<figure id="figure-1">
-	<img src="/articles/raw-webgl-part-1-getting-started/figure1.png" alt="A very simple WebGL output">
-	<figcaption>Figure 1: A very simple WebGL output</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/figure1.png" alt="A very simple WebGL output" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: A very simple WebGL output</figcaption>
 </figure>
 
 Note: The canvas has been created with dimensions of 300×150 pixels — this is the default if you don’t specify your own width and height.
@@ -90,11 +90,11 @@ Note: WebGL code will seem rather complicated to many of you: being based on Ope
 
 With this basic setup under our belt, let’s go forward and start by drawing an actual shape. The finished result from this section can be found as [minimal-draw.html][10] in the code download. To create 3D content, WebGL uses the ES2.0 programmable pipeline, shown in Figure 2. We will refer to this multiple times throughout the walkthrough below.
 
-[10]: /articles/raw-webgl-part-1-getting-started/minimal-draw.html
+[10]: {{ page.id }}/minimal-draw.html
 
-<figure>
-	<img src="/articles/raw-webgl-part-1-getting-started/pipeline.jpg" alt="A diagram of the ES2.0 programmable pipeline WebGL uses">
-	<figcaption markdown="span">Figure 2: The ES2.0 programmable pipeline ([view an SVG version][12])</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/pipeline.jpg" alt="A diagram of the ES2.0 programmable pipeline WebGL uses" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 2: The ES2.0 programmable pipeline ([view an SVG version][12])</figcaption>
 </figure>
 
 [12]: http://emoller.github.com/WebGL101/documents/programmable-pipeline.html
@@ -212,9 +212,9 @@ This function accepts two inputs — a string and a type, and returns a shader o
 
 Save and run the code, and you should now have your very own green triangle, as seen in Figure 3 - woo hoo!
 
-<figure id="figure-3">
-	<img src="/articles/raw-webgl-part-1-getting-started/figure3.png" alt="A WebGL green triangle">
-	<figcaption>Figure 3: A WebGL green triangle of your very own</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/figure3.png" alt="A WebGL green triangle" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: A WebGL green triangle of your very own</figcaption>
 </figure>
 
 To get here, we used the following logical process: bear in mind that the data and program are kept separate throughout.
@@ -228,7 +228,7 @@ To get here, we used the following logical process: bear in mind that the data a
 
 The above is all well and good, but in the course of our work we’ll want to create a lot more shaders and programs. Let’s make ourselves a utility library that we can reuse! Create a new JavaScript file and call it something suitable. Delete the last two functions you created out of your HTML file, and put them in your JavaScript file. It’s called [webgl-utils.js][15] in the code download.
 
-[15]: /articles/raw-webgl-part-1-getting-started/webgl-utils.js
+[15]: {{ page.id }}/webgl-utils.js
 
 Now reference your utility script from your HTML file, like so:
 

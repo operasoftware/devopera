@@ -36,7 +36,7 @@ Note: [Radial gradients][3] are covered in the article [CSS3 radial gradients][4
 
 I have included some simple examples for you to play with in my [linear gradients demo][5]. Download this example and play with different values as you read through the sections below.
 
-[5]: /articles/css3-linear-gradients/demo.html
+[5]: {{ page.id }}/demo.html
 
 To create a basic linear gradient, you need to provide a start point and an end point, like so:
 
@@ -47,9 +47,9 @@ To create a basic linear gradient, you need to provide a start point and an end 
 
 This creates a simple gradient that goes from a darker grey at the top of the element the gradient is applied to, down to a lighter grey at the bottom, as seen in Figure 1. Here I’m applying it to a simple article element, but you can apply it to any block level element you like.
 
-<figure id="figure-1">
-	<img src="/articles/css3-linear-gradients/example.png" alt="A really basic CSS3 linear gradient">
-	<figcaption>Figure 1: A really basic CSS3 linear gradient</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/example.png" alt="A really basic CSS3 linear gradient" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: A really basic CSS3 linear gradient</figcaption>
 </figure>
 
 So why is the gradient applied as a background image and not a background colour, which might seem more appropriate? This is because of flexibility and familiarity. We always used to apply gradients using CSS background images, plus now you can use CSS multiple backgrounds to layer multiple images on top of gradients, if you like.
@@ -68,9 +68,9 @@ In the first example, we didn’t specify any kind of direction or angle, and th
 
 So the angle goes at the start of the gradient information, separated by the colours by a comma. You can make the gradient go across the block from the top, bottom, left or right, by changing the keywords appropriately as seen in Figure 2.
 
-<figure id="figure-2">
-	<img src="/articles/css3-linear-gradients/angles.png" alt="Altering the angle keyword between to bottom, to top, to right, and to left, respectively">
-	<figcaption markdown="span">Figure 2: altering the angle keyword between `to bottom`, `to top`, `to right`, and `to left`, respectively</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/angles.png" alt="Altering the angle keyword between to bottom, to top, to right, and to left, respectively" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Figure 2: altering the angle keyword between `to bottom`, `to top`, `to right`, and `to left`, respectively</figcaption>
 </figure>
 
 You can also use values of `to top left`, `to top right`, `to bottom left` and `to bottom right`: these make the gradient start from that corner, and run towards the opposite corner of the box.
@@ -121,9 +121,9 @@ So here we have one colour stop at 0%, and one at 100% of the way across the blo
 
 Here we are starting with a really light red, then going to a darker red at 50%, an even darker one at 75%, and then then a slightly lighter one at 100%. This gives us the result shown in Figure 3.
 
-<figure id="figure-3">
-	<img src="/articles/css3-linear-gradients/multiple-stops.png" alt="A linear CSS gradient with multple colour stops">
-	<figcaption markdown="span">Figure 3: A linear CSS gradient with multiple colour stops</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/multiple-stops.png" alt="A linear CSS gradient with multple colour stops" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: A linear CSS gradient with multiple colour stops</figcaption>
 </figure>
 
 Doing it with percentages is really cool, and shows how versatile CSS gradients are. The conditions in the code will always be true, even if you have a liquid layout where the box the gradient is applied to changes width or height as the browser window is resized.
@@ -148,9 +148,9 @@ This means the colour stops will always occur 100 and 200 pixels from the start 
 
 and you’ll get something like Figure 4.
 
-<figure id="figure-4">
-	<img src="/articles/css3-linear-gradients/colour-stops.png" alt="Moving the start and end colour stops">
-	<figcaption markdown="span">Figure 4: Moving the start and end colour stops</figcaption>
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/colour-stops.png" alt="Moving the start and end colour stops" class="figure__media">
+	<figcaption class="figure__caption">Figure 4: Moving the start and end colour stops</figcaption>
 </figure>
 
 ### Transparency gradients
@@ -165,9 +165,9 @@ One really cool technique to consider is varying the alpha channel value of the 
 
 Here we are using RGBA colours, with an alpha channel value of `1` at the start of the gradient, and `0.5` at the end. I’ve not touched the red, green and blue values, but I’ve ended up with a really cool effect as shown in Figure 5.
 
-<figure id="figure-5">
-	<img src="/articles/css3-linear-gradients/transparency.png" alt="Varying transparency along a gradient to give a cool semi-seethrough effect">
-	<figcaption markdown="span">Figure 5: Varying transparency along a gradient to give a cool semi-seethrough effect</figcaption>
+<figure class="figure" id="figure-5">
+	<img src="{{ page.id }}/transparency.png" alt="Varying transparency along a gradient to give a cool semi-seethrough effect" class="figure__media">
+	<figcaption class="figure__caption">Figure 5: Varying transparency along a gradient to give a cool semi-seethrough effect</figcaption>
 </figure>
 
 ## Repeating linear gradients
@@ -183,9 +183,9 @@ Instead of `linear-gradient`, you can use `repeating-linear-gradient`: this take
 
 Here we are starting at a bright full red, moving to a darker red after 20 pixels, then moving back to the full red at 40 pixels. Then, because it is a repeating gradient, it keeps repeating this pattern until the end of the block. The above example looks something like Figure 6.
 
-<figure id="figure-6">
-	<img src="/articles/css3-linear-gradients/repeating.png" alt="A repeating gradient example">
-	<figcaption markdown="span">Figure 6: A repeating gradient example</figcaption>
+<figure class="figure" id="figure-6">
+	<img src="{{ page.id }}/repeating.png" alt="A repeating gradient example" class="figure__media">
+	<figcaption class="figure__caption">Figure 6: A repeating gradient example</figcaption>
 </figure>
 
 ## Browser support, and old syntax
@@ -209,9 +209,9 @@ My Opera team mate Vadim Makeev over in St. Petersburg has created a really cool
 
 [12]: http://people.opera.com/pepelsbey/experiments/apple-menu/
 
-<figure id="figure-7">
-	<img src="/articles/css3-linear-gradients/apple-menu.png" alt="Cool push buttons created using CSS dropshadows and gradients">
-	<figcaption markdown="span">Figure 7: Cool push buttons created using CSS drop shadows and gradients</figcaption>
+<figure class="figure" id="figure-7">
+	<img src="{{ page.id }}/apple-menu.png" alt="Cool push buttons created using CSS dropshadows and gradients" class="figure__media">
+	<figcaption class="figure__caption">Figure 7: Cool push buttons created using CSS drop shadows and gradients</figcaption>
 </figure>
 
 The explanation he includes below the example makes it very easy to see how it’s done, and this just shows what cool things we can now produce with nothing but a little bit of CSS sparkle.

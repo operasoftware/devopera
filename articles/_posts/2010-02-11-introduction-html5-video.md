@@ -90,9 +90,9 @@ For Web browsers that do not currently support `<video>`, it’s possible to inc
 		Download my awesome video in <a href=myVideo.webm>WebM</a> or <a href=myVideo.mp4>MP4</a> format
 	</video>
 
-<figure>
-	<img src="/articles/introduction-html5-video/opera-standard-video-controls.jpg" alt="Default video element with standard Opera controls">
-	<figcaption markdown="span">A `<video>` element with native browser controls in Opera</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/opera-standard-video-controls.jpg" alt="Default video element with standard Opera controls" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">A `<video>` element with native browser controls in Opera</figcaption>
 </figure>
 
 There are more attributes we’re not covering in our examples. They are:
@@ -152,14 +152,14 @@ With the native `<video>` element, it’s the browser itself that is taking care
 
 Now video is part of the Open Web set of technologies, we can use CSS to style the element reliably. As a simple demonstration of what can now be achieved, we’ll apply [CSS transitions to a video][17] to change its dimensions once we `:hover` or `:focus` on it. (Read our [CSS3 transitions and 2D transforms tutorial][18].)
 
-[17]: /articles/introduction-html5-video/transitions/
+[17]: {{ page.id }}/transitions/
 [18]: http://dev.opera.com/articles/css3-transitions-and-2d-transforms/
 
 #### Combining video and canvas
 
 As the browser is taking care of laying out and rendering video, we can easily overlap and combine other elements on top of it. In this example, a [`<canvas>` is superimposed over the video][19]. (Warning: this video has potentially upsetting images of a handsome Opera employee and his children being menaced by a gigantic mouse pointer.)
 
-[19]: /articles/introduction-html5-video/video-canvas/
+[19]: {{ page.id }}/video-canvas/
 
 Note that the `<canvas>` does not completely cover the video. We’ve made the canvas 40 pixels shorter than the video height, so that the area of the video where the controls appear is not covered. This ensures that, if the user mouses over the bottom of the video, there is enough of the `<video>` element poking out behind the canvas to receive the `hover` event and cause it to expose the controls. Keyboard access to the controls should work regardless of covering elements, however keyboard support currently varies across browsers.
 
@@ -233,15 +233,15 @@ Now we have all the basic building blocks needed to create a simple controller. 
 
 [Example 1: basic video controls with JavaScript][21].
 
-[21]: /articles/introduction-html5-video/basic-controls/
+[21]: {{ page.id }}/basic-controls/
 
 This certainly won’t win any design awards, and the page doesn’t really degrade gracefully…if a user happens to come along without JavaScript enabled, they’ll see a bunch of `<button>`s that don’t do anything. However, all it now takes is a bit of CSS and JavaScript finessing (first testing for actual video support in the browser, generating the controls themselves programmatically, styling everything up to look a lot more refined). For a – still fairly straightforward – example of what can be achieved, have a look at this example [Example 2: fancy video controls with JavaScript][22].
 
-[22]: /articles/introduction-html5-video/fancy-controls/
+[22]: {{ page.id }}/fancy-controls/
 
-<figure>
-	<img src="/articles/introduction-html5-video/fancy-javascript-controls.jpg" alt="Custom video controls">
-	<figcaption markdown="span">Custom `<video>` controls, using nothing more than HTML, CSS and JavaScript</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/fancy-javascript-controls.jpg" alt="Custom video controls" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Custom `<video>` controls, using nothing more than HTML, CSS and JavaScript</figcaption>
 </figure>
 
 The JavaScript has become a lot more verbose, and would benefit from a bit of a clean-up and refactoring but it hopefully gives a glimpse of the new powerful possibilities that HTML5 video opens up: with just a bit of web standards knowledge, it’s now easy for web developers to create custom video controls that perfectly complement their site designs, without the need to create bespoke Flash video players.
@@ -337,18 +337,18 @@ Looking past the slightly strange return values of this method, we can see how, 
 
 [Example 3: basic video swap][24].
 
-[24]: /articles/introduction-html5-video/basic-swap/
+[24]: {{ page.id }}/basic-swap/
 
 If we now combine this approach (and keep in mind that this is only a very simplified example – there are many more elegant ways to solve this particular problem) with our more visually appealing custom controller, we already have the basis for a rather nifty video player…all put together with nothing more than pure web standards and the power of the new HTML5 native video support.
 
-<figure>
-	<img src="/articles/introduction-html5-video/fancy-swap.jpg" alt="A basic video gallery">
-	<figcaption markdown="span">A basic video gallery/playlist using the `<video>` element</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/fancy-swap.jpg" alt="A basic video gallery" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">A basic video gallery/playlist using the `<video>` element</figcaption>
 </figure>
 
 [Example 4: fancy video swap][26].
 
-[26]: /articles/introduction-html5-video/fancy-swap/
+[26]: {{ page.id }}/fancy-swap/
 
 Does this spell the end for plugin-based video solutions of old? In the short term, it may still be a bit too early to start throwing out our Flash players. There is still a sizeable number of users out there who don’t have a browser capable of displaying native video, and the issue around different formats and codec is still causing a few headaches for those who rightly wish to take advantage of HTML5 `<video>` in **all** modern browsers. But now, for the first time, we as developers have an alternative tool at our disposal. And having choice is always a good thing.
 

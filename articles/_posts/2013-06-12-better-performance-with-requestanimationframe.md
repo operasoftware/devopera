@@ -34,14 +34,14 @@ As much as I don't want to be dismissive of these old-school methods, they do ha
 Second, not only do timers continue to run for invisible animations, but when their time is up they also _always_ enqueue their callback functions. Let me explain why this can sometimes pose a problem — say you didn't do your job particularly well and for some reason the callback function takes more time to finish than you have set up your timers for. Once the timers are up they will enqueue yet *another* callback function, even though the previous one hasn't finished running. As this process repeats itself over time, you can quickly enqueue a virtually infinite amount of timer code, causing the browser to stall. Figure 1 provides an illustration of this.
 
 <figure class="figure" id="figure1">
-	<img src="/articles/better-performance-with-requestanimationframe/figure1.png" alt="diagram showing multiple callback functions being queued up" class="figure__media">
+	<img src="{{ page.id }}/figure1.png" alt="diagram showing multiple callback functions being queued up" class="figure__media">
 	<figcaption class="figure__caption">Figure 1: If your callback functions take longer than your timers, enqueuing of multiple callback functions can choke up the browser.</figcaption>
 </figure>
 
 But even in cases where your callback functions don't take longer than the timers, `setTimeout` and `setInterval` still aren't optimal. Both can only redraw animations at a fixed rate, so to make sure the animation is smooth, we tend to err on the side of caution and choose a frequency slightly higher than the display refresh rate. This, however, causes unnecessary drawing, as some frames are drawn before the display refresh rate is ready to paint the animation outcome and are therefore just discarded. Figure 2 illustrates this problem.
 
 <figure class="figure" id="figure2">
-	<img src="/articles/better-performance-with-requestanimationframe/figure2.png" alt="diagram showing frames in an animation being skipped, but everything still being drawn" class="figure__media">
+	<img src="{{ page.id }}/figure2.png" alt="diagram showing frames in an animation being skipped, but everything still being drawn" class="figure__media">
 	<figcaption class="figure__caption">Figure 2: Skipped frames can lead to higher CPU usage and battery consumption, and sometimes even choppy animations</figcaption>
 </figure>
 
