@@ -45,9 +45,9 @@ As a recap, the syntax of linear gradients is fairly simple:
 
 Inside the brackets you first include a setting for the gradient to go in (`to bottom right` means “start at the top left of the element, and travel diagonally towards the bottom right”), then you include a series of colour stops for the gradient to flow smoothly in between (you can specify these in percentages or fixed measurement units). The above line creates a gradient that looks like the following image:
 
-<figure id="figure-1">
-	<img src="/articles/css3-radial-gradients/gradients2.png" alt="Simple linear gradient example">
-	<figcaption>Figure 1: A simple linear gradient example</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/gradients2.png" alt="Simple linear gradient example" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: A simple linear gradient example</figcaption>
 </figure>
 
 Note that the newest versions of Opera, Firefox and IE all support the current syntax of linear gradients, without prefixes, while WebKit-based browsers still require the old syntax. For compatibility with older browser versions and -Webkit- versions, you should consider including vendor prefixes versions of the property, all including the older syntax. This is basically the same, except:
@@ -90,9 +90,9 @@ So for example the full cross browser syntax would look like this:
 
 Will create a gentle blue gradient radiating from the center of the element it is applied to, kind of like this:
 
-<figure id="figure-2">
-	<img src="/articles/css3-radial-gradients/gradients3.png" alt="Simple radial gradient example">
-	<figcaption>Figure 2: A simple radial gradient example</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/gradients3.png" alt="Simple radial gradient example" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: A simple radial gradient example</figcaption>
 </figure>
 
 Now let’s explore the three syntax areas — size and shape, position, and colour stops.
@@ -103,32 +103,32 @@ The position the gradient radiates from is determined by specifying the position
 
 - `circle at left top` means “place the gradient centre in the top left corner”.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/position1.png" alt="Placing the gradient center at the top left hand corner of the element">
+<figure class="figure">
+	<img src="{{ page.id }}/position1.png" alt="Placing the gradient center at the top left hand corner of the element" class="figure__media">
 </figure>
 
 - `circle at 20% 70%` means “place the gradient centre 20% across the element and 70% of the way down”.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/position2.png" alt="Placing the gradient center 20% across and 70% down the element">
+<figure class="figure">
+	<img src="{{ page.id }}/position2.png" alt="Placing the gradient center 20% across and 70% down the element" class="figure__media">
 </figure>
 
 - `circle at 70px 80px` means “place the gradient centre 70 pixels across the element and 80 pixels down”.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/position3.png" alt="Placing the gradient center 70 pixels across and 80 pixels down">
+<figure class="figure">
+	<img src="{{ page.id }}/position3.png" alt="Placing the gradient center 70 pixels across and 80 pixels down" class="figure__media">
 </figure>
 
 - `circle at 0%` means “place the gradient centre on the left hand edge of the element, centred vertically”. If you only specify a single value, that value is taken as the horizontal value, and the vertical value is set to `50%` (or `center`).
 
-<figure>
-	<img src="/articles/css3-radial-gradients/position4.png" alt="Placing the gradient center all the way left and 50% down, only using one value">
+<figure class="figure">
+	<img src="{{ page.id }}/position4.png" alt="Placing the gradient center all the way left and 50% down, only using one value" class="figure__media">
 </figure>
 
 - If you set no value at all for the gradient position, it is assumed to be in the center of the element, ie `center center` or `50% 50%`.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/gradients3.png" alt="Specifying no values for position makes it default to the enter of the element">
+<figure class="figure">
+	<img src="{{ page.id }}/gradients3.png" alt="Specifying no values for position makes it default to the enter of the element" class="figure__media">
 </figure>
 
 ### size and shape
@@ -141,14 +141,14 @@ When using explicit sizes, the two values you set are the horizontal and vertica
 
 - `40px circle` means “make the gradient circular, and give it a **radius** of 40px”.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/size1.png" alt="A circular radial gradient with radius set to 40 pixels">
+<figure class="figure">
+	<img src="{{ page.id }}/size1.png" alt="A circular radial gradient with radius set to 40 pixels" class="figure__media">
 </figure>
 
 - `2em 4em ellipse` means “make the gradient an ellipse, and give it a minor radius of `2em`, and a major radius of `4em`”.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/size2.png" alt="An elliptical radial gradient with minor radius width set to 2em, and major radius height set to 4em">
+<figure class="figure">
+	<img src="{{ page.id }}/size2.png" alt="An elliptical radial gradient with minor radius width set to 2em, and major radius height set to 4em" class="figure__media">
 </figure>
 
 Note that if you don’t set a value at all, the setting defaults to `ellipse cover` (see next section).
@@ -159,30 +159,30 @@ When using implicit sizes, you use a number of different keywords that specify w
 
 - `closest-side circle at 35% 25%` positions the gradient so that its edge just touches the side of the element nearest to its centre. In the case of an ellipse, it would position it so that its edge just touches the horizontal and vertical sides of the element nearest to its center. You can use the keyword `contain` in place of `closest-side`.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/circle-closest-side.png" alt="Closest-side makes the circle stretch to touch the side of the element closest to it">
-	<img src="/articles/css3-radial-gradients/ellipse-closest-side.png" alt="Closest-side makes the ellipse stretch to touch the sides of the element closest to it">
+<figure class="figure">
+	<img src="{{ page.id }}/circle-closest-side.png" alt="Closest-side makes the circle stretch to touch the side of the element closest to it" class="figure__media">
+	<img src="{{ page.id }}/ellipse-closest-side.png" alt="Closest-side makes the ellipse stretch to touch the sides of the element closest to it" class="figure__media">
 </figure>
 
 - `closest-corner circle at 35% 25%` positions the gradient so that its edge just touches the corner of the element nearest to its centre. In the case of an ellipse, the effect is pretty much the same.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/circle-closest-corner.png" alt="Closest-corner makes the circle stretch to touch the corner of the element closest to it">
-	<img src="/articles/css3-radial-gradients/ellipse-closest-corner.png" alt="Closest-corner makes the ellipse stretch to touch the corner of the element closest to it">
+<figure class="figure">
+	<img src="{{ page.id }}/circle-closest-corner.png" alt="Closest-corner makes the circle stretch to touch the corner of the element closest to it" class="figure__media">
+	<img src="{{ page.id }}/ellipse-closest-corner.png" alt="Closest-corner makes the ellipse stretch to touch the corner of the element closest to it" class="figure__media">
 </figure>
 
 - `farthest-side circle at 35% 25%` positions the gradient so that its edge just touches the side of the element farthest away from its centre. In the case of an ellipse, its edge just touches the horizontal and vertical sides of the element farthest way from its center. The following are `circle farthest-side` and `ellipse farthest-side`:
 
-<figure>
-	<img src="/articles/css3-radial-gradients/circle-farthest-side.png" alt="Farthest-side makes the circle stretch to touch the side of the element farthest from it">
-	<img src="/articles/css3-radial-gradients/ellipse-farthest-side.png" alt="Farthest-side makes the ellipse stretch to touch the sides of the element farthest from it">
+<figure class="figure">
+	<img src="{{ page.id }}/circle-farthest-side.png" alt="Farthest-side makes the circle stretch to touch the side of the element farthest from it" class="figure__media">
+	<img src="{{ page.id }}/ellipse-farthest-side.png" alt="Farthest-side makes the ellipse stretch to touch the sides of the element farthest from it" class="figure__media">
 </figure>
 
 - `farthest-corner circle at 35% 25%` positions the gradient so that its edge just touches the corner of the element farthest from its centre, in the case of a circle and ellipse. You can use the keyword `cover` in place of `farthest-corner`.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/circle-farthest-corner.png" alt="Farthest-corner makes the circle stretch to touch the corner of the element farthest from it">
-	<img src="/articles/css3-radial-gradients/ellipse-farthest-corner.png" alt="Farthest-corner makes the ellipse stretch to touch the corner of the element farthest from it">
+<figure class="figure">
+	<img src="{{ page.id }}/circle-farthest-corner.png" alt="Farthest-corner makes the circle stretch to touch the corner of the element farthest from it" class="figure__media">
+	<img src="{{ page.id }}/ellipse-farthest-corner.png" alt="Farthest-corner makes the ellipse stretch to touch the corner of the element farthest from it" class="figure__media">
 </figure>
 
 ### Colour stops
@@ -191,20 +191,20 @@ In the last section of the radial gradient syntax, you specify at least two colo
 
 - `#ff0000, #000000`: The simplest setting for colour stops is to just use two colours. When no position unit is specified, the browser assumes that the first colour is at 0% (right in the center), and the second one is at 100% (right on the edge)
 
-<figure>
-	<img src="/articles/css3-radial-gradients/colour-stop1.png" alt="Simple colour stop settings with two colours and no position units set: the default is first colour stop at 0%, second one at 100%">
+<figure class="figure">
+	<img src="{{ page.id }}/colour-stop1.png" alt="Simple colour stop settings with two colours and no position units set: the default is first colour stop at 0%, second one at 100%" class="figure__media">
 </figure>
 
 - `rgb(255,0,0), rgb(150,150,150) 50%, rgb(0,0,0)`: Here we have three colour stops, with the colours set using RGB. The first colour is again at 0%, and the last one is at 100%, but we’ve also got a different color stop at 50%.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/colour-stop2.png" alt="Three colour stops, with the middle one set at 50%">
+<figure class="figure">
+	<img src="{{ page.id }}/colour-stop2.png" alt="Three colour stops, with the middle one set at 50%" class="figure__media">
 </figure>
 
 - `rgb(255,0,0) 20px, rgb(150,150,150) 40px, rgb(0,200,0) 60px, rgb(0,0,0) 80px`: Four colour stops, this time positioned along the gradient using pixel values. You’ll notice that if you don’t position the first and last colour stops at the start and end of the gradient, the space before the first one will adopt its colour, and the space after the last one will adopt the same colour as it too.
 
-<figure>
-	<img src="/articles/css3-radial-gradients/colour-stop3.png" alt="Four colour stops, positioned using pixel values, with the beginning and end colour stops not at the start and end of the gradient">
+<figure class="figure">
+	<img src="{{ page.id }}/colour-stop3.png" alt="Four colour stops, positioned using pixel values, with the beginning and end colour stops not at the start and end of the gradient" class="figure__media">
 </figure>
 
 And so on and so on. You can have as many colour stops as you like.
@@ -213,11 +213,11 @@ And so on and so on. You can have as many colour stops as you like.
 
 To show some real usage of radial gradients, let’s have a look at a little button panel I whipped up: [view the live example][26].
 
-[26]: /articles/css3-radial-gradients/radial-gradient.html
+[26]: {{ page.id }}/radial-gradient.html
 
-<figure id="figure-3">
-	<img src="/articles/css3-radial-gradients/radial-gradient.png" alt="A panel of pop up buttons made with radial gradients">
-	<figcaption>Figure 3: A panel of buttons — no images in sight</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/radial-gradient.png" alt="A panel of pop up buttons made with radial gradients" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: A panel of buttons — no images in sight</figcaption>
 </figure>
 
 Each button is a link, with block display, width and height set, border-radius set to make it round, and a simple linear gradient used to give it depth. Since Opera, Firefox and IE all support the newest radial gradient syntax without prefixes in their newest version, I only really need to include a prefixed property for WebKit-based browsers, but I’ve included the whole lot, for extra backwards compatibility:
@@ -239,7 +239,7 @@ When the buttons are focused on, they are depressed slightly. When they are clic
 
 In the same manner as linear gradients, you can create repeating radial gradients by using the relevant repeat property, in this case `repeating-radial-gradient`. This simply takes the pattern you have set for your radial gradient, and just repeats it as far as the element it is applied to extends. This cross-browser example comes from my [live repeating radial gradients demo][30]:
 
-[30]: /articles/css3-radial-gradients/repeating-radial-gradient.html
+[30]: {{ page.id }}/repeating-radial-gradient.html
 
 	background:-webkit-repeating-radial-gradient(center, 30px 30px, #009, #0000FA 50%, #009);
 	background:-moz-repeating-radial-gradient(center, 30px 30px, #009, #0000FA 50%, #009);
@@ -247,9 +247,9 @@ In the same manner as linear gradients, you can create repeating radial gradient
 	background:-o-repeating-radial-gradient(center, 30px 30px, #009, #0000FA 50%, #009);
 	background:repeating-radial-gradient(30px circle, #009, #0000FA 50%, #009);
 
-<figure id="figure-4">
-	<img src="/articles/css3-radial-gradients/repeating-examples.png" alt="Repeating radial gradient examples">
-	<figcaption>Figure 4: Repeating radial gradient examples</figcaption>
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/repeating-examples.png" alt="Repeating radial gradient examples" class="figure__media">
+	<figcaption class="figure__caption">Figure 4: Repeating radial gradient examples</figcaption>
 </figure>
 
 ## Summary

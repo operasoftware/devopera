@@ -19,8 +19,8 @@ layout: article
 
 ## A stroll through the streets
 
-<figure>
-	<img src="/articles/http-response-codes/map.jpg">
+<figure class="figure">
+	<img src="{{ page.id }}/map.jpg" class="figure__media">
 </figure>
 
 One morning, I took a walk to go to a coffee shop and read a book. To my surprise, when I arrived there, the shop was closed. A message on the door said that during this week a festival was being held, so the coffee would be served **temporary** in their food truck — “The 307” — near the river. I went there and enjoyed the coffee.
@@ -52,8 +52,8 @@ Note that the short explanation sentence is completely optional and should be ig
 
 ### 200, ok — everything is fine!
 
-<figure>
-	<img src="/articles/http-response-codes/coffee.png">
+<figure class="figure">
+	<img src="{{ page.id }}/coffee.png" class="figure__media">
 </figure>
 
 Each time someone wants to visit Opera’s home page, a client requests a `http://www.opera.com/` by sending this kind of message:
@@ -72,8 +72,8 @@ If understood, the server will respond to the request with a message starting wi
 
 ### 307, moved temporarily elsewhere
 
-<figure>
-	<img src="/articles/http-response-codes/food-truck.png">
+<figure class="figure">
+	<img src="{{ page.id }}/food-truck.png" class="figure__media">
 </figure>
 
 The server could respond to the client with a message stating that the content has been temporary moved to a new location. This is useful when you want to redirect a client to a specific page for a little while. For example, imagine a Web address giving the weather forecast for Taipei, and there has lately a very strong typhoon. It would be a good idea to inform users specifically about the typhoon, until it has passed. The request might look like this:
@@ -93,8 +93,8 @@ Even though such redirects are not seen by the user in most browsers, it would b
 
 ### 301, address changed permanently
 
-<figure>
-	<img src="/articles/http-response-codes/book.png">
+<figure class="figure">
+	<img src="{{ page.id }}/book.png" class="figure__media">
 </figure>
 
 When managing information on a Web site, sometimes we really need to inform the client (and its users) that a web page has changed address permanently. In a company, sometimes business units are reorganised, through mergers or a change of priorities. Let’s say that in a technology company the electromechanical unit has been absorbed completely by the electronics division. A client requesting
@@ -114,8 +114,8 @@ There are also two direct benefits of redirecting old URIs to the new ones. You 
 
 ### 410, this is the end — my only friend, the end
 
-<figure>
-	<img src="/articles/http-response-codes/closed.png">
+<figure class="figure">
+	<img src="{{ page.id }}/closed.png" class="figure__media">
 </figure>
 
 Sometimes a Web site needs to say to the client that the information that existed at this precise URI is gone forever. There might be good reasons to do that. We all know that cool URIs don’t break; `410 Gone` is the appropriate way of “breaking them”. More exactly it is a way to tell users that the content previously available at this URI has been intentionally deleted. The server is informing clients accessing the resource that they should **not remember** the URI. In a system that has bookmarks or a history log, it is a way to tell the client (and its user) that this can be safely erased. Imagine the case of a social network, and requesting a specific user’s page:
@@ -129,8 +129,8 @@ The person no longer wants to be part of your social network and has decided to 
 
 ### 500, I have a bad feeling about this
 
-<figure>
-	<img src="/articles/http-response-codes/collapsed-house.png">
+<figure class="figure">
+	<img src="{{ page.id }}/collapsed-house.png" class="figure__media">
 </figure>
 
 Sometimes the server is unable to answer the request without knowing why. HTTP doesn’t deal at all with the way the web sites are working, for example how the data are stored in a database, or how the server-side code retrieves and manipulates that data. The server might have delivered the request to some internal software but not got an appropriate answer. So the server notifies the client and its user that there is something wrong happening that it is not sure about with a response like this:

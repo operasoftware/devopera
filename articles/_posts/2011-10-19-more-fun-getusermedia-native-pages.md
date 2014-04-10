@@ -37,8 +37,8 @@ Browsers have adopted the scroll metaphor, offering scrollbars for navigating up
 
 We’ve more recently seen a step in the right direction, with a proliferation of e-reader devices (such as the Amazon Kindle) with “next page” and “previous page” buttons allowing users to read e-books in a more “book like” fashion. But the Kindle is a walled garden: wouldn’t it be beneficial to have an open technology that allows us to present any content we choose in this manner?
 
-<figure>
-	<img src="/articles/more-fun-getusermedia-native-pages/codex.jpg" alt="A codex">
+<figure class="figure">
+	<img src="{{ page.id }}/codex.jpg" alt="A codex" class="figure__media">
 </figure>
 
 To this end, we are very excited to give you a first look at how a browser can split content into native pages. This proof of concept implements CSS3 extensions to split content into pages that can be “turned” in a natural manner through gestures rather than point and click, control the positioning/floating of figures in multi-column layouts more precisely and provide a consistent navigation system for such content that is independent of your documents. The new CSS3 features that enable this are detailed in the [CSS Generated Content for Paged Media module][7].
@@ -82,8 +82,8 @@ We’ve also added support for `getUserMedia`, an HTML5 API method that allows y
 		return;
 	}
 
-<figure>
-	<img src="/articles/more-fun-getusermedia-native-pages/exploding-camera.jpg" alt="HTML5 exploding camera demo">
+<figure class="figure">
+	<img src="{{ page.id }}/exploding-camera.jpg" alt="HTML5 exploding camera demo" class="figure__media">
 </figure>
 
 For more information about this, including demos, hurry along and have a read of [Playing with HTML5 video and getUserMedia support][10] by Daniel Davis.

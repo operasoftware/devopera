@@ -124,7 +124,7 @@ First up, I’ll set a basic core colour for the button, and give it rounded cor
 
 The result of this code is as follows:
 
-<figure>
+<figure class="figure">
 	<button id="demo-1">Test</button>
 	<style>
 		#demo-1 {
@@ -158,7 +158,7 @@ Next I’ll add two box shadows to the button, to make it look 3D: raised up, an
 
 Here’s the result of this addition:
 
-<figure>
+<figure class="figure">
 	<button id="demo-2">Test</button>
 	<style>
 		#demo-2 {
@@ -203,7 +203,7 @@ Finally, I’ll give the button text a more fitting colour, and give it a lighte
 
 Here is our final result:
 
-<figure>
+<figure class="figure">
 	<button id="demo-3">Test</button>
 	<style>
 		#demo-3 {
@@ -251,7 +251,7 @@ Here is our final result:
 
 The result is as follows:
 
-<figure>
+<figure class="figure">
 	<button id="demo-4">Test</button>
 	<style>
 		#demo-4 {
@@ -302,7 +302,7 @@ The result is as follows:
 
 This looks like so:
 
-<figure>
+<figure class="figure">
 	<button id="demo-5">Test</button>
 	<style>
 		#demo-5 {
@@ -353,7 +353,7 @@ This looks like so:
 
 This gives us the following result:
 
-<figure>
+<figure class="figure">
 	<button id="demo-6">Test</button>
 	<style>
 		#demo-6 {
@@ -406,7 +406,7 @@ This is a blue box with some cyan highlights and a light drop shadow.
 
 Here is the result:
 
-<figure>
+<figure class="figure">
 	<div id="demo-7"></div>
 	<style>
 		#demo-7 {
@@ -451,7 +451,7 @@ In this case, the effect is obtained with creative use of an inner shadow.
 
 This gives us the following effect:
 
-<figure>
+<figure class="figure">
 	<div id="demo-8"></div>
 	<style>
 		#demo-8 {
@@ -507,7 +507,7 @@ Here I’ve applied rgba colours to the shadows, so most of this box is semi-tra
 
 Here’s the result:
 
-<figure>
+<figure class="figure">
 	<div id="demo-9">
 		<div></div>
 	</div>
@@ -516,7 +516,7 @@ Here’s the result:
 			position:relative;
 			width:200px;
 			height:200px;
-			background-image:url(/articles/beautiful-ui-styling-with-css3/ru.png);
+			background-image:url({{ page.id }}/ru.png);
 			}
 			#demo-9 div {
 				position:absolute;
@@ -561,36 +561,36 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 ### Media player {#mediaplayer}
 
-<figure id="figure-1">
-	<img src="/articles/beautiful-ui-styling-with-css3/media-player.png" alt="A screenshot of a CSS3 media player UI example">
-	<figcaption>Figure 1: The media player example</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/media-player.png" alt="A screenshot of a CSS3 media player UI example" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: The media player example</figcaption>
 </figure>
 
 [View the media player][24] running live.
 
-[24]: /articles/beautiful-ui-styling-with-css3/media-ui.html
+[24]: {{ page.id }}/media-ui.html
 
 ### A certain phone home screen {#phone}
 
-<figure id="figure-2">
-	<img src="/articles/beautiful-ui-styling-with-css3/phone-home-screen.png" alt="A screenshot of a CSS3 mobile phone UI example">
-	<figcaption>Figure 2: A rather nice phone UI created using just CSS3</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/phone-home-screen.png" alt="A screenshot of a CSS3 mobile phone UI example" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: A rather nice phone UI created using just CSS3</figcaption>
 </figure>
 
 [View the phone UI example][26] running live.
 
-[26]: /articles/beautiful-ui-styling-with-css3/phone.html
+[26]: {{ page.id }}/phone.html
 
 ### A Windows desktop {#windowsdesktop}
 
-<figure id="figure-3">
-	<img src="/articles/beautiful-ui-styling-with-css3/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example">
-	<figcaption>Figure 3: A Windows desktop-style UI</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: A Windows desktop-style UI</figcaption>
 </figure>
 
 [View the Windows desktop example][28] running live.
 
-[28]: /articles/beautiful-ui-styling-with-css3/win7.html
+[28]: {{ page.id }}/win7.html
 
 ## Summary {#summary}
 

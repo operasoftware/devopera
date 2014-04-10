@@ -14,9 +14,9 @@ layout: article
 
 ## Introduction
 
-<figure id="figure-1">
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/image-0.jpg" alt="Three dimensional castle model">
-	<figcaption>Figure 1: An image of the finished example for this article</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/image-0.jpg" alt="Three dimensional castle model" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: An image of the finished example for this article</figcaption>
 </figure>
 
 In the [first part of our WebGL series][2], we walked through a very simple introduction to WebGL, explaining what it is and how it can be used, and dissected a simple code example. From here on in, we will start looking at WebGL in more detail, focussing on individual tasks and techniques. This time, we’ll look at drawing more complicated models in 3D graphics editing applications, and porting them to WebGL.
@@ -36,7 +36,7 @@ The porting process described in this article involves drawing your model in [Go
 
 You can see an image of the end result in Figure 1: also [view the live demo here][7]. To see this demo you’ll need a browser that supports WebGL: a good choice is [the latest version of Opera][8]!
 
-[7]: /articles/introduction-to-webgl-part-2-porting-3d/demo/
+[7]: {{ page.id }}/demo/
 [8]: http://www.opera.com/browser/next/
 
 **Note:** We have started with the Wavefront OBJ format because the process of porting OBJ files into WebGL (without using professional graphics editing software) is more stable than that involved with the alternative Collada DAE format. We will cover using DAE files (and animations) with WebGL in a later article.
@@ -74,9 +74,9 @@ Once you have your model, you need to export it to Wavefront OBJ. If you only wa
 - Export texture maps
 - Swap YZ coordinates (Y is up)
 
-<figure id="figure-2">
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/image-1.jpg" alt="SketchUp Pro Export Options dialog box">
-	<figcaption>Figure 2: The SketchUp Pro Export Options dialog box, showing the options we need</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/image-1.jpg" alt="SketchUp Pro Export Options dialog box" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: The SketchUp Pro Export Options dialog box, showing the options we need</figcaption>
 </figure>
 
 If you selected a particular object to export in the previous step, choose “export only current selection” to avoid exporting everything else (of course, export everything if you wish.)
@@ -124,16 +124,16 @@ One thing to bear in mind when using Blender is that textures may not managed au
 
 1. On the _UV view_ (where you draw textures), save the texture as an image file once you’ve finished designing it — see Figure 3 for a visual representation.
 
-<figure id="figure-3">
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/save-texture-blender.jpg" alt="UV view save texture as image screenshot">
-	<figcaption>Figure 3: The Blender UV view “save texture as image” option</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/save-texture-blender.jpg" alt="UV view save texture as image screenshot" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: The Blender UV view “save texture as image” option</figcaption>
 </figure>
 
 2. Once you have saved the image, apply the image as a texture checking it in the _in the Textures tab, found in the Default view_, as seen in Figure 4.
 
-<figure>
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/apply-texture-blender.jpg" alt="Default view, Textures tab apply image as texture screenshot">
-	<figcaption>Figure 4: The Blender Default view, Textures tab “apply image as texture” options</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/apply-texture-blender.jpg" alt="Default view, Textures tab apply image as texture screenshot" class="figure__media">
+	<figcaption class="figure__caption">Figure 4: The Blender Default view, Textures tab “apply image as texture” options</figcaption>
 </figure>
 
 3. When you export to OBJ and get your OBJ and MTL files, your MTL file will then already point to the right image files, and the only thing you’ll need to do is include these image files in a subdirectory inside your working directory when carrying out the later steps.
@@ -169,9 +169,9 @@ You can find some [information about what these options mean in the Blender wiki
 
 [35]: http://wiki.blender.org/index.php/Extensions:2.5/Py/Scripts/Import-Export/Wavefront_OBJ
 
-<figure id="figure-5">
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/export-blender.png" alt="Blender Export OBJ dialog box">
-	<figcaption>Figure 5: The Blender “Export OBJ” dialog box</figcaption>
+<figure class="figure" id="figure-5">
+	<img src="{{ page.id }}/export-blender.png" alt="Blender Export OBJ dialog box" class="figure__media">
+	<figcaption class="figure__caption">Figure 5: The Blender “Export OBJ” dialog box</figcaption>
 </figure>
 
 If everything goes well, you should now have an OBJ file and an MTL file to go with all the image files that make up your textures.
@@ -197,9 +197,9 @@ To create an OBJ version of a model in Shade, open it up, then select _File > Ex
 - Create texture folder
 - OS (choose your OS)
 
-<figure id="figure-6">
-	<img src="/articles/introduction-to-webgl-part-2-porting-3d/export-shade.png" alt="Shade Export dialog box">
-	<figcaption>Figure 6: The Shade “Export” dialog box</figcaption>
+<figure class="figure" id="figure-6">
+	<img src="{{ page.id }}/export-shade.png" alt="Shade Export dialog box" class="figure__media">
+	<figcaption class="figure__caption">Figure 6: The Shade “Export” dialog box</figcaption>
 </figure>
 
 As you can see, Shade offers the possibility of exporting materials by creating a texture folder so the images for the textures are exported automatically. Here, we’ve selected to export all objects as _Output_, but you can choose to export only selected items if that’s what you want. All the other choices are necessary for compatibility with the next steps of the process of rendering them in WebGL.
@@ -231,7 +231,7 @@ Once you run the script successfully, you will get a JS file containing the JSON
 
 Once the model is done, it’s time to finally write some code. In this code we’ll include only the basic WebGL features that you need to render your design and rotate it in order to inspect the end result. You can take this example and experiment, adding your own model, making changes to the basic stuff that’s there already, or even adding a few things of your own design. The code we’re going to use is adapted from the Three.js example webgl_objconvert_test.html (which you can find in the examples folder when you download Three.js). You can find [my finished WebGL example here][44]. There are [getting started with Three.js tutorials][45] available, as well as a [Three.js API reference][46].
 
-[44]: /articles/introduction-to-webgl-part-2-porting-3d/demo/
+[44]: {{ page.id }}/demo/
 [45]: http://www.aerotwist.com/lab/getting-started-with-three-js/
 [46]: https://github.com/mrdoob/three.js/wiki/API-Reference
 
@@ -389,7 +389,7 @@ And finally, we’ll add the `animate()` function, which animates and renders th
 
 I hope this article convinced you that you don’t need to be a WebGL expert to include cool 3D models on your website. Now you know how to convert your own 3D models using SketchUp, Blender, or Shade (or any other 3D graphics software that lets you save to OBJ) and render them in WebGL using Three.js. If you’ve not followed the walkthrough and built your own, [access the live demo code here][61] and start trying your own ideas. Here are some links you may find useful:
 
-[61]: /articles/introduction-to-webgl-part-2-porting-3d/example/
+[61]: {{ page.id }}/example/
 
 - [Get SketchUp and SketchUp Pro][62]
 - [SketchUp tutorials][63]

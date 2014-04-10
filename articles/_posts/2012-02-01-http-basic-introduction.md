@@ -34,9 +34,9 @@ Before looking at the specifics, let’s consider a basic communication scenario
 
 When two people meet, they engage using a communication protocol: for example, in Japan, a person will make a specific gesture with the body. One such gesture is a bow, which is the **syntax** used for the interaction. In Japanese customs, the gesture of the bow (among others) is associated with the **semantics** of greeting someone. Finally, when one person bows to another person, a sequence of events has been established between the two in a specific **timing**.
 
-<figure>
-	<img src="/articles/http-basic-introduction/communication.png" alt="Protocol of communications">
-	<figcaption>Protocol of communications</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/communication.png" alt="Protocol of communications" class="figure__media">
+	<figcaption class="figure__caption">Protocol of communications</figcaption>
 </figure>
 
 An online communication protocol contains the same elements. The syntax will be the sequence of characters such as keywords we use for writing the protocols. The semantics is the meaning associated with each of these keywords and finally the timing is the order in which two or more entities exchange these keywords.
@@ -106,9 +106,9 @@ Now it is time for the server to answer. You should see the terminal window fill
 
 Here the server is saying: “I speak `HTTP` version 1.1. Your request was successful, so I have responded with the code `200`.” The `OK` string is optional and meant for explaining what this code means to humans — in this case, everything is OK and our message has been accepted. A series of `HTTP headers` are then sent to describe what the message is, and how it should be understood. Finally, the contents of the page located at the root of the site is included, beginning with `<!DOCTYPE html>`. The list of HTTP verbs and codes will be explained in the next few articles.
 
-<figure>
-	<img src="/articles/http-basic-introduction/request-response.jpg" alt="HTTP request and response">
-	<figcaption>HTTP request and response</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/request-response.jpg" alt="HTTP request and response" class="figure__media">
+	<figcaption class="figure__caption">HTTP request and response</figcaption>
 </figure>
 
 ## Summary

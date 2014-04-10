@@ -78,16 +78,16 @@ Finally we’ll create an HTML page that calls these two scripts:
 
 When accessed by a [browser that supports `window.onerror`](#browser), a pop-up will appear displaying the type of error, the line number where the error occurs and in which file — see Figure 1. This is very useful for debugging.
 
-<figure id="figure-1">
-	<img src="/articles/better-error-handling-with-window-onerror/error-message.jpg" alt="Error message in Opera">
-	<figcaption>Figure 1: Our simple error massage shown in Opera</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/error-message.jpg" alt="Error message in Opera" class="figure__media">
+	<figcaption class="figure__media">Figure 1: Our simple error massage shown in Opera</figcaption>
 </figure>
 
 `onerror` has been attached to `window` for historical reasons. It could be defined anywhere and would still be working the same way. Script errors might occur in places that have no relation to the document tree at all, such as `setTimeout('oops()', 10)`.
 
 [Try the simple error example][6].
 
-[6]: /articles/better-error-handling-with-window-onerror/simple-error.html
+[6]: {{ page.id }}/simple-error.html
 
 You could also have used a very simple `onerror` on the document `<body>`:
 
@@ -118,7 +118,7 @@ If you prefer having a fancier style for the error message than the usual common
 
 [Try the fancy error example][7]. You should try playing with the styling on the `fancyerror` and `errmsg` classes to see what you can come up with.
 
-[7]: /articles/better-error-handling-with-window-onerror/simple-error-2.html
+[7]: {{ page.id }}/simple-error-2.html
 
 ## Suppressing errors: a dangerous feature?
 

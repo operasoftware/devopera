@@ -17,7 +17,7 @@ With that said, my team has recently started employing scrolling animation with 
 [2]: https://github.com/Prinzhorn/skrollr
 
 <figure class="figure">
-	<img src="/articles/game-style-parallax-scrolling-zombie-edition/wd-screen-resized.png" alt="Main Zombie Graphic" class="figure__media">
+	<img src="{{ page.id }}/wd-screen-resized.png" alt="Main Zombie Graphic" class="figure__media">
 	<figcaption class="figure__caption">Main Zombie Graphic</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Simply defined, Skrollr is a plugin that allows you to create precise scroll-bas
 
 First, you’ll need to download a few source files. I’ve provided some images from the Walking Dead project, as well as the needed JavaScript files, and an HTML skeleton. [Grab those bad boys][5] and we’ll get rolling.
 
-[5]: /articles/game-style-parallax-scrolling-zombie-edition/skeleton.zip
+[5]: {{ page.id }}/skeleton.zip
 
 ## Phase 1 — Parallaxing Background
 
@@ -86,7 +86,7 @@ We’ll be doing more here later, so I’d keep this in a separate file… but y
 
 Viola! [We have parallax!][6]
 
-[6]: /articles/game-style-parallax-scrolling-zombie-edition/after-phase-1.zip
+[6]: {{ page.id }}/after-phase-1.zip
 
 ## Phase 2 — Foreground Elements
 
@@ -184,14 +184,14 @@ For now, our character will just look like he’s ice-skating through the scene,
 
 You can [check out the progress we have achieved so far][7]. It’s pretty nice, but we need to add more polish.
 
-[7]: /articles/game-style-parallax-scrolling-zombie-edition/after-phase-2.zip
+[7]: {{ page.id }}/after-phase-2.zip
 
 ## Phase 3 — Walk Cycle (& Zombification)
 
 Now it’s time to give our character some life. I’ve provided a .png sprite with all of the necessary frames for our character’s walk cycle, first as a human, and then as a zombie. We’re going to write some JavaScript to cycle through these frames in our background image, based on the user’s scrolling. We’ll have it work forwards and backwards, which should give the piece a very game-like feel.
 
 <figure class="figure">
-	<img src="/articles/game-style-parallax-scrolling-zombie-edition/zombifysprites-resized.jpg" alt="Sprite showing zombification" class="figure__media">
+	<img src="{{ page.id }}/zombifysprites-resized.jpg" alt="Sprite showing zombification" class="figure__media">
 	<figcaption class="figure__caption">Sprite showing zombification</figcaption>
 </figure>
 
@@ -270,7 +270,7 @@ It may not be entirely true to _The Walking Dead_, but in this project the mode 
 
 And that, my friends, is it. We now have a [game-style parallax scrolling piece][9]. Congrats! If you want to see a more polished version of it in the wild, then [check out our Walking Dead demo][10].
 
-[9]: /articles/game-style-parallax-scrolling-zombie-edition/finished.zip
+[9]: {{ page.id }}/finished.zip
 [10]: http://www.cabletv.com/the-walking-dead
 
 ## Conclusion

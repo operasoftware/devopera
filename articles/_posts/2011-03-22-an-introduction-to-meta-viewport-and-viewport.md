@@ -28,9 +28,9 @@ So, what better time than now to give you an introduction to the various viewpor
 
 ## Web page handling by mobile browsers
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes_small.jpg" alt="New York Times Art page screenshot"></a>
-	<figcaption markdown="span">Figure 1: The New York Times website is scaled down so as to fit nicely in the available screen space</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/nytimes.jpg"><img src="{{ page.id }}/nytimes_small.jpg" alt="New York Times Art page screenshot" class="figure__media"></a>
+	<figcaption class="figure__caption">Figure 1: The New York Times website is scaled down so as to fit nicely in the available screen space</figcaption>
 </figure>
 
 Recent generations of mobile browsers can render full web pages without a problem and scale them so they fit nicely inside the phone browser’s visible screen area or viewport — the user then can zoom in on areas of interest and pan around on the page using touch, keypad, trackball or other input, depending on the phone model.
@@ -78,9 +78,9 @@ or alternatively,
 
 This setting will make the browser render the page on a canvas with a width of 320px, and then fit the result as neatly as possible inside the available screen area. If that area is 360px wide (see Figure 2), the content will be scaled up by a factor of 1.125; if it’s 240px wide, expect it to become smaller by a factor of 0.75.
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width_small.jpg.jpg" alt="Screenshots of pages using a viewport width of 320px"></a>
-	<figcaption markdown="span">Figure 2: [page with a viewport width of 320px][8] on a 360×600px screen in portrait and landscape orientation</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/specific-width"><img src="{{ page.id }}/specific-width_small.jpg.jpg" alt="Screenshots of pages using a viewport width of 320px" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 2: [page with a viewport width of 320px][8] on a 360×600px screen in portrait and landscape orientation</figcaption>
 </figure>
 
 [8]: http://people.opera.com/andreasb/viewport/ex01.html
@@ -103,9 +103,9 @@ By using this setting, you basically tell the browser _“No scaling needed, tha
 
 When using this setting, you’ll want to use various liquid layout techniques and media queries, so as to make sure your site looks nice and adapts itself to varying screen sizes. We’ll look at how to combine viewport with media queries a bit later on.
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-width.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-width_small.jpg" alt="Screenshots of pages using a viewport width of device-width"></a>
-	<figcaption markdown="span">Figure 3: [page with a viewport width of `device-width`][11] on a 360×600px screen in portrait and landscape orientation</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/device-width.jpg"><img src="{{ page.id }}/device-width_small.jpg" alt="Screenshots of pages using a viewport width of device-width" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 3: [page with a viewport width of `device-width`][11] on a 360×600px screen in portrait and landscape orientation</figcaption>
 </figure>
 
 [11]: http://people.opera.com/andreasb/viewport/ex02.html
@@ -131,9 +131,9 @@ or alternatively,
 
 ### Initial scale
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale_small.jpg" alt="Screenshot of page with an initial scale of 2"></a>
-	<figcaption markdown="span">Figure 4: [page with an initial scale of 2][14]</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/initial-scale.jpg"><img src="{{ page.id }}/initial-scale_small.jpg" alt="Screenshot of page with an initial scale of 2" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 4: [page with an initial scale of 2][14]</figcaption>
 </figure>
 
 [14]: http://people.opera.com/andreasb/viewport/ex03.html
@@ -207,9 +207,9 @@ or in CSS,
 
 This will give the page a viewport equal to the screen’s width — it will scale up the page content accordingly — and trigger our media query to be applied on devices that are as wide or narrower than 360px. Opera Mobile running on the Nokia 5800 (which is 360px wide in portrait mode) will thus show the images at 96% of their container, just like Safari on the 2nd gen iPod Touch (which is 320px wide). A screen with a 480px width however will not apply the media query (see Figure 5).
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries_small.jpg" alt="Screenshot of pages with media query not actived and activated"></a>
-	<figcaption markdown="span">Figure 5: in [this viewport example][18], the media query does not affect the 480px wide browser window on the left, but it is triggered on the 320px one on the right: this nicely illustrates how you can do layout adaptation for different screen sizes and form factors</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/media-queries.jpg"><img src="{{ page.id }}/media-queries_small.jpg" alt="Screenshot of pages with media query not actived and activated" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 5: in [this viewport example][18], the media query does not affect the 480px wide browser window on the left, but it is triggered on the 320px one on the right: this nicely illustrates how you can do layout adaptation for different screen sizes and form factors</figcaption>
 </figure>
 
 [18]: http://people.opera.com/andreasb/viewport/ex04.html
@@ -252,9 +252,9 @@ In case you want to take this further and do targeted fine tuning for particular
 
 Note that Opera only accepts ratios as `device-pixel-ratio` values (e.g. 3/2). The default Android browser on the other hand prefers numbers (e.g. 1.5). As this feature requires a vendor prefix at this point, it is just a matter of specifying the right value for each rendering engine.
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio_small.jpg" alt="Screenshot of pages with and without device-pixel-ratio media query"></a>
-	<figcaption markdown="span">Figure 6: two HTC Desire screenshots, with on the left, [our earlier example][23] with just `width=device-width` — note the magnified and somewhat pixelated background; on the right, [an example with added `device-pixel-ratio` goodness][24], which results in much nicer, DPI-aware background image tiling</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/device-pixel-ratio.jpg"><img src="{{ page.id }}/device-pixel-ratio_small.jpg" alt="Screenshot of pages with and without device-pixel-ratio media query" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 6: two HTC Desire screenshots, with on the left, [our earlier example][23] with just `width=device-width` — note the magnified and somewhat pixelated background; on the right, [an example with added `device-pixel-ratio` goodness][24], which results in much nicer, DPI-aware background image tiling</figcaption>
 </figure>
 
 [23]: http://people.opera.com/andreasb/viewport/ex02.html
@@ -272,9 +272,9 @@ However, there might be scenarios where you really need pixel-level control, suc
 
 Opera Mobile does not come with support for `target-densitydpi` via @viewport, so your only option is to set it via a meta viewport tag for the time being.
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi_small.jpg" alt="Screenshot of pages with and without target-densitydpi set"></a>
-	<figcaption markdown="span">Figure 7: two HTC Desire screenshots, with on the left, [our earlier example][27] with just `width=device-width` — note the default scaling of 150%; on the right, [an example with `target-densitydpi` set to `device-dpi`][28], which results in all scaling to be turned off</figcaption>
+<figure class="figure">
+	<a href="{{ page.id }}/target-densitydpi.jpg"><img src="{{ page.id }}/target-densitydpi_small.jpg" alt="Screenshot of pages with and without target-densitydpi set" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">Figure 7: two HTC Desire screenshots, with on the left, [our earlier example][27] with just `width=device-width` — note the default scaling of 150%; on the right, [an example with `target-densitydpi` set to `device-dpi`][28], which results in all scaling to be turned off</figcaption>
 </figure>
 
 [27]: http://people.opera.com/andreasb/viewport/ex02.html

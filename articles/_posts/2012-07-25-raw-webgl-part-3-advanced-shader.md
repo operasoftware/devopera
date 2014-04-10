@@ -25,8 +25,8 @@ This article is a transcript of [time 32:36 to 56:50][1] in Erik Möller’s [We
 
 You can see the final result of this article in [fragment-shader.html][3]. To follow the step by step tutorial below, download [minimal-shader.html][4] and use it as a starting point.
 
-[3]: /articles/raw-webgl-part-3-advanced-shader/fragment-shader.html
-[4]: /articles/raw-webgl-part-3-advanced-shader/minimal-shader.html
+[3]: {{ page.id }}/fragment-shader.html
+[4]: {{ page.id }}/minimal-shader.html
 
 First of all, change the size of the canvas to 900×900 pixels:
 
@@ -75,9 +75,9 @@ Next, onto the line where we specify the values for our uniforms. We need to cha
 
 Here we have referenced our new uniform, and replaced the offset values with simple references to the `<canvas>` width and height. Checking the example as it stands, you’ll see that we have basically got back to where we started, but using the built-in `gl_FragCoord` instead of passing the texture coordinates from the vertex shader; see Figure 1.
 
-<figure id="figure-1">
-	<img src="/articles/raw-webgl-part-3-advanced-shader/figure1.png" alt="A canvas generated gradient going from green at the top left to red at the bottom right, with a large black square at the bottom left">
-	<figcaption>Figure 1: Our new shader is functional</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/figure1.png" alt="A canvas generated gradient going from green at the top left to red at the bottom right, with a large black square at the bottom left" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Our new shader is functional</figcaption>
 </figure>
 
 ### Preparing our fragment shader
@@ -146,9 +146,9 @@ Here we are saying that if the result of the calculations is less than 8, we kee
 
 Now let’s try it out in the browser and see what happened. If you made all the updates correctly, you should be presented with a rather nice fractal, as seen in Figure 2!
 
-<figure id="figure-2">
-	<img src="/articles/raw-webgl-part-3-advanced-shader/figure2.png" alt="A canvas generated fractal">
-	<figcaption>Figure 2: We have generated a rather nice fractal</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/figure2.png" alt="A canvas generated fractal" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: We have generated a rather nice fractal</figcaption>
 </figure>
 
 ### Continuous colouring
@@ -159,9 +159,9 @@ What we have got so far is quite nice, but the background is rather banded: it w
 
 This will be a bit slow and can be optimized later on, but it’s ok for now as a proof of concept. Save and reload, and you’ll now see that the colouring is a lot smoother, as seen in Figure 3.
 
-<figure id="figure-3">
-	<img src="/articles/raw-webgl-part-3-advanced-shader/figure3.png" alt="A canvas generated fractal with smoother colouring in the background">
-	<figcaption>Figure 3: The background colour is now a smooth gradient!</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/figure3.png" alt="A canvas generated fractal with smoother colouring in the background" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: The background colour is now a smooth gradient!</figcaption>
 </figure>
 
 ### Further colour improvements
@@ -182,9 +182,9 @@ We’ll use these values to colour our fractal background a bit more interesting
 
 This will give us the much more colourful look seen in Figure 4.
 
-<figure id="figure-4">
-	<img src="/articles/raw-webgl-part-3-advanced-shader/figure4.png" alt="A canvas generated fractal with a beautiful coloured background gradient">
-	<figcaption>Figure 4: This is much prettier</figcaption>
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/figure4.png" alt="A canvas generated fractal with a beautiful coloured background gradient" class="figure__media">
+	<figcaption class="figure__media">Figure 4: This is much prettier</figcaption>
 </figure>
 
 Let’s just fiddle with the colour values a bit more to see what we can get. Go back to the `calc()` function, and just above the `return` line, add the following so that we’ll actually end up inverting the values, and dividing them by 2.0:
@@ -194,9 +194,9 @@ Let’s just fiddle with the colour values a bit more to see what we can get. Go
 
 See Figure 5 for the rather halo-like result!
 
-<figure id="figure-5">
-	<img src="/articles/raw-webgl-part-3-advanced-shader/figure5.png" alt="A canvas generated fractal with inverted colours">
-	<figcaption>Figure 5: Inverted colours give our fractal a halo-type effect</figcaption>
+<figure class="figure" id="figure-5">
+	<img src="{{ page.id }}/figure5.png" alt="A canvas generated fractal with inverted colours" class="figure__media">
+	<figcaption class="figure__caption">Figure 5: Inverted colours give our fractal a halo-type effect</figcaption>
 </figure>
 
 ### Offsetting and scaling our fractal

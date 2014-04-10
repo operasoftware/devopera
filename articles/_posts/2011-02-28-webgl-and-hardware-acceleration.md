@@ -16,8 +16,8 @@ layout: article
 
 A long time ago, in an office far far away… Opera released a custom build showing an implementation of a [3D canvas context][2]. Now, more than 3 years later, we are releasing the first public build with a standards-based 3D Canvas implementation using [WebGL][3] for Windows.
 
-<figure>
-	<img src="/articles/webgl-and-hardware-acceleration/webgl.png" alt="A WebGL demo running in the Opera 11 preview with WebGL and Hardware Acceleration for Windows">
+<figure class="figure">
+	<img src="{{ page.id }}/webgl.png" alt="A WebGL demo running in the Opera 11 preview with WebGL and Hardware Acceleration for Windows" class="figure__media">
 </figure>
 
 [2]: http://my.opera.com/timjoh/blog/2007/11/13/taking-the-canvas-to-another-dimension
@@ -43,8 +43,8 @@ Our hardware acceleration is a bit different from what other browsers have imple
 
 ## OpenGL
 
-<figure>
-	<img src="/articles/webgl-and-hardware-acceleration/opengl.png" alt="opera:about showing the new Vega backend entry">
+<figure class="figure">
+	<img src="{{ page.id }}/opengl.png" alt="opera:about showing the new Vega backend entry" class="figure__media">
 </figure>
 
 This build only has an OpenGL backend. That means your system must have an OpenGL 2.x compatible graphics card and related drivers for hardware acceleration and WebGL to work. In future builds we will also add a Direct3D backend, which will reduce the requirements on drivers and should work out of the box on most modern systems.

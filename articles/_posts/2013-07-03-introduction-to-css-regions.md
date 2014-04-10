@@ -30,10 +30,10 @@ To give feedback on Regions, [contact the CSS working group via their mailing li
 
 To demonstrate how regions work, let’s look at an example. You can [test the regions example live][4], or see what it looks like in Figure 1.
 
-[4]: /articles/introduction-to-css-regions/regions-modernizr.html
+[4]: {{ page.id }}/regions-modernizr.html
 
 <figure class="figure" id="figure-1">
-	<img src="/articles/introduction-to-css-regions/regions-1.png" alt="A css regions example showing a complicated layout with content flowed into different boxes" class="figure__media">
+	<img src="{{ page.id }}/regions-1.png" alt="A css regions example showing a complicated layout with content flowed into different boxes" class="figure__media">
 	<figcaption class="figure__caption">Figure 1: A complicated layout achieved using CSS regions</figcaption>
 </figure>
 
@@ -223,7 +223,7 @@ Next I can add in some alternative styling to provide a simplified layout to bro
 Here I’ve simply hidden the layout containers using `display: none;`, and then provided the two articles with a float, width and padding, so that non-supporting browsers will be left with something usable that doesn’t look too terrible (see Figure 2). You are of course welcome to produce something far more interesting!
 
 <figure class="figure" id="figure-2">
-	<img src="/articles/introduction-to-css-regions/regions-2.png" alt="A simple two column layout provided as a fallback for browsers that don’t support CSS regions" class="figure__media">
+	<img src="{{ page.id }}/regions-2.png" alt="A simple two column layout provided as a fallback for browsers that don’t support CSS regions" class="figure__media">
 	<figcaption class="figure__caption">Figure 2: A simple two column layout, provided as a fallback for browsers that don’t support CSS regions, via Modernizr</figcaption>
 </figure>
 
