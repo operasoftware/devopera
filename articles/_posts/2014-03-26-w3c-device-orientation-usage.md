@@ -8,7 +8,7 @@ tags:
 - augmented-reality
 - deviceorientation
 - euler-angles
-- orientationchange,
+- orientationchange
 - quaternion
 - rotation-matrix
 - screen-orientation
