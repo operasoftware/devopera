@@ -239,7 +239,7 @@ We can limit the which attributes we’d like to observe by adding the `attribut
 	<figcaption class="figure__caption">Figure 7: Filtering which attributes we observe</figcaption>
 </figure>
 
-Setting that property means that a mutation record wil be generated _only_ for changes to the value of the class attribute ([view a demo][10]).
+Setting that property means that a mutation record will be generated _only_ for changes to the value of the class attribute ([view a demo][10]).
 
 [10]: {{ page.id }}/attributes-filtered.html
 

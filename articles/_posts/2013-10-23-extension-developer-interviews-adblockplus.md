@@ -39,7 +39,7 @@ Adblock Plus is an open source project that Wladimir Palant created in 2006. The
 
 In 2011 Wladimir met Till Faida, a guy who had conducted research on Adblock Plus in college and had experience in online marketing. They agreed that Internet advertising was broken, but felt that there should be a compromise available for sites that depend on advertising. That agreement was the foundation for our Acceptable Ads initiative, which established strict criteria for a new type of non-annoying ad that Adblock Plus would show to its users — at least those who did not opt out. Once a site has applied to Acceptable Ads, their proposed ads go to our community for discussion. If no legitimate objection comes, their ads are whitelisted.
 
-The key to Acceptable Ads and our stance in general is that it’s a compromise that still leaves all control in users’ hands.
+The key to Acceptable Ads and our stance in general is that it’s a compromise that still leaves all control in the users’ hands.
 
 **How is Adblock Plus different from other adblocking solutions?**
 
