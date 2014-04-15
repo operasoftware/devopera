@@ -102,7 +102,7 @@ When we apply a transform, our drawing surface becomes a containing block. This 
 	</body>
 	</html>
 
-<p class="note">Note: In this article, we are using un-prefixed versions of relevant properties. <a href="http://caniuse.com/#search=transforms">Some current browsers, however, and some older browser versions, still require a prefix</a>.</p>
+<p class="note">Note: In this article, we are using unprefixed versions of relevant properties. <a href="http://caniuse.com/#search=transforms">Some current browsers, however, and some older browser versions, still require a prefix</a>.</p>
 
 You've probably noticed that we applied our `perspective` property to `#stage` rather than to its child elements. That's because `perspective` sets the stage, so to speak, for the transforms applied to its children ([Figure 3](#perspective1)). Without the `perspective` property, your transforms may appear flat and two-dimensional ([view perspective demo](perspective.html)).
 

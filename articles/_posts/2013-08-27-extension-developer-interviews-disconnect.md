@@ -46,7 +46,7 @@ I wanted a way to use social networks myself without trading away my browsing hi
 
 **How is Disconnect different from other privacy enhancing extensions with similar functionality?**
 
-Brian: Our goal is to ship the perfect balance of privacy, security, and usability. Disconnect has a visually rich interface that collapses what’s often a laundry list of tracking requests into expandable categories, that charts the time and bandwidth you’ve saved and the requests you’ve secured, and that comes with a Visualize page option to represent tracking graphically. Disconnect also upgrades your connections to popular sites to SSL whenever possible to [prevent eavesdropping][8] over non-secure networks and Disconnect’s method of filtering is optimized for speed to accelerate the web as much as possible, 27% in [our benchmarks][9].
+Brian: Our goal is to ship the perfect balance of privacy, security, and usability. Disconnect has a visually rich interface that collapses what’s often a laundry list of tracking requests into expandable categories, that charts the time and bandwidth you've saved and the requests you’ve secured, and that comes with a Visualize page option to represent tracking graphically. Disconnect also upgrades your connections to popular sites to SSL whenever possible to [prevent eavesdropping][8] over non-secure networks and Disconnect’s method of filtering is optimized for speed to accelerate the web as much as possible, 27% in [our benchmarks][9].
 
 [8]: https://www.disconnect.me/moresecure
 [9]: https://www.disconnect.me/faster

@@ -39,11 +39,11 @@ The moral of the story: even standardized features can still be deemed broken an
 
 There are multiple reasons to remove `showModalDialog` from the Web platform. [Ian Hickson does a great job summarizing them](https://groups.google.com/a/chromium.org/d/msg/blink-dev/xh9fPX0ijqk/8oPryGUsGPMJ):
 
-> This API is a really poorly designed API. It causes a popup to show, which is extremely awkward on e.g. mobile platforms; it causes the event loop to nest, which is extremely problematic for multiple reasons, including having serious security implications; it makes modal UI dependent on network traffic, which is very undesireable; exactly how it works in a multi-process multi-tab UI is highly unintuitive (which windows should it disable while it’s up?); it is the only API that can cause JavaScript execution to appear in the stack below core functionality like pumping OS events; and, the straw that broke the camel’s back for the Chrome team, it has huge implications for how complicated implementing mutation observers will be.
+> This API is a really poorly designed API. It causes a popup to show, which is extremely awkward on e.g. mobile platforms; it causes the event loop to nest, which is extremely problematic for multiple reasons, including having serious security implications; it makes modal UI dependent on network traffic, which is very undesirable; exactly how it works in a multi-process multi-tab UI is highly unintuitive (which windows should it disable while it’s up?); it is the only API that can cause JavaScript execution to appear in the stack below core functionality like pumping OS events; and, the straw that broke the camel’s back for the Chrome team, it has huge implications for how complicated implementing mutation observers will be.
 >
 > This API single-handedly makes completely unrelated parts of the platform significantly more complicated to implement, which leads to more bugs, which makes everything worse for everyone.
 >
-> And to top it all off, it’s not even a particuarly good UI. We have much better solutions in the works […]
+> And to top it all off, it’s not even a particularly good UI. We have much better solutions in the works […]
 
 Most importantly, `showModalDialog` is not extremely popular — it can likely be removed without breaking the Web significantly.
 

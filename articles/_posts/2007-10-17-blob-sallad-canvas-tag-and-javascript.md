@@ -130,9 +130,9 @@ Let’s talk about walls for a while — what do you do when the point mass hits
 			currentPosition.setY(top);
 			collide = true;
 		}
-		else if(currentPosition.getY() > buttom)
+		else if(currentPosition.getY() > bottom)
 		{
-			currentPosition.setY(buttom);
+			currentPosition.setY(bottom);
 			collide = true;
 		}
 		return collide;
@@ -198,7 +198,7 @@ The `satisfyConstrains` function is used to move `p1` and `p2` a bit further awa
 
 This loop solves the system of equations but in an iterative manner, often called relaxation. The exact number of iterations in the loop is a matter of tweaking. The more iterations, the stiffer an object built this way tends to be. Blobs are not that stiff, so I typically loop over the constraints three to four times. You might wonder why this works, and it took me some time to realize why. It has something to do with the degree of freedom the point masses have when choosing new positions — the solver can typically place them in a position where they don’t get in the way of each other (or stated in another way, where it is unlikely that satisfying one constraint will violate another.)
 
-If you, however, try to place the object in a small compartment that can’t contain it you will notice strange effects. Also, if you build large objects such as blobs containing say 40 or more point masses they may start moving around in an unpredictable manner. Consider our example blob A below — when solving the first constraint it will push around its’ point masses which will make the second constraint move a bit and so on. This creates a “wave” starting from the first constraint and going through all the constraints back to the first. As the complexity of your models increase the likelihood of one constraint violating another increase, thus creating this “wave” of going through the model. A simple trick to get around this can be to solve all constraints in a spacial random order, as shown in blob B in Figure 1. This is not exactly fool proof but it can work.
+If you, however, try to place the object in a small compartment that can’t contain it you will notice strange effects. Also, if you build large objects such as blobs containing say 40 or more point masses they may start moving around in an unpredictable manner. Consider our example blob A below — when solving the first constraint it will push around its point masses which will make the second constraint move a bit and so on. This creates a “wave” starting from the first constraint and going through all the constraints back to the first. As the complexity of your models increase the likelihood of one constraint violating another increase, thus creating this “wave” of going through the model. A simple trick to get around this can be to solve all constraints in a spacial random order, as shown in blob B in Figure 1. This is not exactly fool proof but it can work.
 
 <figure id="figure-1">
 	<img src="/articles/blob-sallad-canvas-tag-and-javascript/image-5.png" alt="Solving vector constraints in a random order">
@@ -227,7 +227,7 @@ It is not quiet perfect, but using 40 point masses just to get a nice curvy outl
 
 ### Transformation matrices
 
-One interesting aspect of the canvas API is the ability to draw things in a local coordinate system and then get everything scaled and rotated as an effect of an applied transformation matrix. Confused? Consider the following code snippet used for drawing a blobs’ mouth when it is closed.
+One interesting aspect of the canvas API is the ability to draw things in a local coordinate system and then get everything scaled and rotated as an effect of an applied transformation matrix. Confused? Consider the following code snippet used for drawing a blob’s mouth when it is closed.
 
 	function drawHappyFace1(ctx, scaleFactor)
 	{
@@ -402,7 +402,7 @@ When moving the point mass, I extend the code like this.
 
 ### Mouse interaction
 
-The mouse interaction is a bit more complicated. To find the current position of the mouse I have to add a mouse listener, as sene below (note that I stripped out some error checking in the example below to make it less confusing for now.) When writing a mouse listener you will have to add some tests since all browsers do not behave in the same way (see the Blob Sallad source code for a working example.) First we want to know if someone clicked the mouse.
+The mouse interaction is a bit more complicated. To find the current position of the mouse I have to add a mouse listener, as seen below (note that I stripped out some error checking in the example below to make it less confusing for now.) When writing a mouse listener you will have to add some tests since all browsers do not behave in the same way (see the Blob Sallad source code for a working example.) First we want to know if someone clicked the mouse.
 
 	function getMouseCoords(event)
 	{
@@ -442,7 +442,7 @@ When someone presses the mouse I figure out if a blob is being selected by calli
 		return selectOffset;
 	}
 
-First I loop through all the blobs in the blob collective and check to see if any blobs’ middle point mass is closer to the mouse pointer than its radius; if so, the blob is selected. If a blob is selected I let the blob collective remember which one. The select offset is the distance from the middle point mass to the mouse pointer. I use the select offset later when moving the mouse around to avoid making the blob jump to the mouse position, which leads to the next part, what happens when moving the mouse.
+First I loop through all the blobs in the blob collective and check to see if any blob’s middle point mass is closer to the mouse pointer than its radius; if so, the blob is selected. If a blob is selected I let the blob collective remember which one. The select offset is the distance from the middle point mass to the mouse pointer. I use the select offset later when moving the mouse around to avoid making the blob jump to the mouse position, which leads to the next part, what happens when moving the mouse.
 
 	document.onmousemove = function(event)
 	{
