@@ -77,7 +77,8 @@ module.exports = function(grunt) {
 					'--times', // preserve modification times…
 					'--omit-dir-times', // …except for directories
 					'--compress', // compress data during the transfer
-					'--verbose' // increase verbosity
+					'--verbose', // increase verbosity
+					'--chmod=ug=rwX,o=rX' // `chmod` new files
 				],
 				exclude: ['.DS_Store'],
 				recursive: true
