@@ -1,13 +1,13 @@
 var redirectMap = require('../_data/url-redirects.json');
 var template = require('lodash-template');
 
-var compiled = template('RewriteRule ^articles/view/<%= oldSlug %>/?$ articles/<%= newSlug %> [R=301,L]');
+var compiled = template('RewriteRule ^articles/view/<%= oldSlug %>/?$ <%= newLocation %> [R=301,L]');
 
 var result = Object.keys(redirectMap).map(function(oldSlug) {
-	var newSlug = redirectMap[oldSlug];
+	var newLocation = redirectMap[oldSlug];
 	return compiled({
 		'oldSlug': oldSlug,
-		'newSlug': newSlug
+		'newLocation': newLocation
 	});
 }).join('\n');
 
