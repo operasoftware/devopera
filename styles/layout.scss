@@ -101,3 +101,19 @@
 		@extend %desk--two-thirds;
 		}
 	}
+
+// -------------------------------
+// Page
+// -------------------------------
+.layout-page {
+	@extend %grid;
+	// Elements
+	&__content {
+		@extend %grid__item;
+		@extend %one-whole;
+		@extend %lap--three-quarters;
+		@extend %desk--two-thirds;
+		@extend %push--lap--one-quarter;
+		@extend %push--desk--one-quarter;
+		}
+	}
