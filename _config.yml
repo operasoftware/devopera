@@ -12,4 +12,5 @@ exclude:
 - 'package.json'
 - 'README.md'
 - 'LICENSE.md'
+- 'Contributing.md'
 - '*.scss'
