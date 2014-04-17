@@ -53,9 +53,9 @@ Hadrien: We work using agile methodology (scrum) to define the workflow of new f
 
 Hadrien: We are impressed by the amount of data produced. Since bookmarking is usually manual, you only do it a couple of times a day with traditional solutions, but with cottonTracks, automation makes it possible to retain all the content you wish you had bookmarked. From a usability perspective, our users are asking for a simpler navigation flow and a decent sharing experience.
 
-<figure>
-	<img src="{{ page.id }}/screenshot.jpg" alt="cottonTracks in action">
-	<figcaption>cottonTracks showing cards for some music and dance queries I did recently — history on steroids, really!</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/screenshot.jpg" alt="cottonTracks in action" class="figure__media">
+	<figcaption class="figure__caption">cottonTracks showing cards for some music and dance queries I did recently — history on steroids, really!</figcaption>
 </figure>
 
 **Which tool has been particularly useful when developing cottonTracks?**
