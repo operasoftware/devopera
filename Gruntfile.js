@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 			}
 		},
 		htmlmin: {
-			site: {
+			html: {
 				options: {
 					removeComments: true,
 					collapseWhitespace: true
@@ -36,6 +36,15 @@ module.exports = function(grunt) {
 				cwd: '_site/',
 				src: '**/*.html',
 				dest: '_site/'
+			},
+			xml: {
+				options: {
+					collapseWhitespace: true,
+					keepClosingSlash: true
+				},
+				files: {
+					'_site/feed/index.xml': '_site/feed/index.xml'
+				}
 			}
 		},
 		watch: {
