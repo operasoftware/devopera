@@ -80,7 +80,9 @@ module.exports = function(grunt) {
 				src: '.htaccess',
 				dest: '_site/',
 				replacements: [{
-					from: 'RewriteEngine On\n\n', to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
+					// Redirect all traffic to http://dev.opera.com/*
+					from: 'RewriteEngine On\n\n',
+					to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
 				}]
 			}
 		},
