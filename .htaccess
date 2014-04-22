@@ -14,10 +14,9 @@ ErrorDocument 404 /errors/404.html
 RewriteBase /
 
 # Redirect all traffic to `http://dev.opera.com/*`.
-# Note: uncomment this as soon as the new website goes live.
-#RewriteEngine On
-#RewriteCond %{HTTP_HOST} !^dev\.opera\.com [NC]
-#RewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^dev\.opera\.com [NC]
+RewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]
 
 # Redirect old feed URLs to the new location.
 RewriteRule ^feeds feed/ [R=301,L]
