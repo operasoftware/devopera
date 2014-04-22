@@ -8,6 +8,7 @@ layout: default
 			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
 		</div>
 		<div class="layout-author__content">
+		<div class="content">
 			<h1>
 					{{ page.title | markdownline }}
 {% if page.link %}
@@ -32,6 +33,7 @@ layout: default
 	{% endif %}
 {% endfor %}
 			</ul>
+		</div>
 		</div>
 	</article>
 </main>
