@@ -75,6 +75,15 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		replace: {
+			remote: {
+				src: '.htaccess',
+				dest: '_site/',
+				replacements: [{
+					from: 'RewriteEngine On\n\n', to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
+				}]
+			}
+		},
 		rsync: {
 			options: {
 				args: [
@@ -116,6 +125,6 @@ module.exports = function(grunt) {
 		'htmlmin'
 	]);
 
-	grunt.registerTask('deploy', ['rsync']);
+	grunt.registerTask('deploy', ['replace', 'rsync']);
 
 };
