@@ -2,7 +2,7 @@
 
 We’re looking forward to your [Dev.Opera](http://dev.opera.com/) contributions!
 
-- We pay a rate of $350 for a **2000 word article,** so ideally you should try to stick to that word count. Multiple part articles will be considered as well.
+- We pay a rate of $350 for a **2000 word article,** so ideally you should try to stick to that word count. Note that we only pay this rate if the article is actually published on Dev.Opera. Also note that we don't pay this rate for article translations.
 - We’re also happy to take in **code improvements** to the templates, styles and scripts powering Dev.Opera.
 
 ## Before you start
@@ -25,7 +25,7 @@ There is no need to add YAML front matter (the bit of meta data on top of existi
 
 ## Code improvements
 
-If you want to file a bug report, or have an idea for an improvement to the site, [https://github.com/operasoftware/devopera/issues/new](file an issue) with the appropriate label, where we can discuss further details.
+If you want to file a bug report, or have an idea for an improvement to the site, [file an issue](https://github.com/operasoftware/devopera/issues/new) with the appropriate label, where we can discuss further details.
 
 Just as for article submissions, we use pull requests for code improvements. If you’re not familiar with how this works, check out GitHub’s [Fork A Repo](https://help.github.com/articles/fork-a-repo) and [Using Pull Requests](https://help.github.com/articles/using-pull-requests) guides.
 
