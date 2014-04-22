@@ -7,7 +7,7 @@ tags:
 - acid
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Two days ago Opera reached a 100/100 pass rate on [the Acid3 test][1] for the first time and we published a screenshot on the [Desktop team blog][2] to back up the claim. I am pleased to announce the first public build with a 100/100 pass rate and pixel-perfect rendering! The build can be downloaded here: [Windows][3], [Linux][4].

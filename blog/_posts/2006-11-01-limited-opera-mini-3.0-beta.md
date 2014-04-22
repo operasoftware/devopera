@@ -7,7 +7,7 @@ tags:
 - opera-mini
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 This is your chance to make Opera Mini even better and try out brand new features. During a limited time, on a first-come-first-served basis, we offer you the chance of trying out a preview of Opera Mini 3.0.

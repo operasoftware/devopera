@@ -8,7 +8,7 @@ tags:
 - extensions
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Today we’re proud to announce the first Opera 11 alpha, an early snapshot of our upcoming Opera 11 release. In Opera 11 alpha our attention is first and foremost on one of the most anticipated features of Opera 11: extensions. More exciting functionality will be announced as we get closer the our final release of Opera 11.

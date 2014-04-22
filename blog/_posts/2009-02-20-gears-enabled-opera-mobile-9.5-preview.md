@@ -8,7 +8,7 @@ tags:
 - opera-mobile
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 ## This article is obsolete

@@ -9,7 +9,7 @@ tags:
 - opera-10
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 At Opera we are always working on new ways to make your browsing faster. Eight years ago we introduced Mouse Gestures as a way to speed up your interaction with the browser and focus on what’s important: the content you’re looking at. We didn’t stop there, in 2005 we introduced Voice Navigation on the desktop and more recently we have worked with Nintendo to create a browser that takes full advantage of the “Wiimote” and later, the touchscreen in the DSi.

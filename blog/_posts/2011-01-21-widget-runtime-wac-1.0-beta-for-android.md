@@ -9,7 +9,7 @@ tags:
 - android
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Hi, guys! Happy New Year! We are pleased to start it with the Beta release of our WAC 1.0-supporting runtime for Android.

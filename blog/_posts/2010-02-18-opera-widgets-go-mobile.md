@@ -8,7 +8,7 @@ tags:
 - opera-mobile
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 **Update April 22, 2010:** updated builds for S60 and Windows Mobile with various  UI  and performance improvements, as well as many bug fixes. Also check out [our latest Labs post][1] announcing the Opera Widgets Mobile Emulator and Opera Mobile developer tools for Mac and PC.

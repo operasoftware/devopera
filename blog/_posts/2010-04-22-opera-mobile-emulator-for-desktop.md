@@ -8,7 +8,7 @@ tags:
 - emulator
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 A bit more than a month after the release of [Opera Mobile 10][1] for Windows Mobile and Symbian smartphones, we are happy to announce a special developer version of [Opera Mobile 10 for Windows, Mac and Linux][2].

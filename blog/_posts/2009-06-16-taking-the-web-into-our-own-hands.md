@@ -7,7 +7,7 @@ tags:
 - unite
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 My name is [Lawrence Eng][1], and, as a product analyst for Opera Software, my job is to understand our users and what they need, so we can serve them better. Today, I will share my thoughts on Opera Unite, a new Opera technology that I’m extremely excited about. I’ve been an avid Opera user since 2001 and have seen the numerous innovations Opera has introduced to dramatically improve the experience of Web browsing. Of all the new features we’ve introduced over the years, none of them have filled me with as much anticipation as Opera Unite. This technology is a radical first step towards addressing what I call “the Internet’s unfulfilled promise”, which is about our ability to connect with each other and participate meaningfully online—on our own terms, and without losing control of our data.

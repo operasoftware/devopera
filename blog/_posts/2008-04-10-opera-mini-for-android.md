@@ -8,7 +8,7 @@ tags:
 - android
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 ## 12th January 2012: This article is obsolete

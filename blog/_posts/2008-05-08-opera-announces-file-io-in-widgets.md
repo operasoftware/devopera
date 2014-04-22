@@ -7,7 +7,7 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Web applications have historically had very little access to data stored on the device they are running on — this model is secure, but limits the power of developers trying to create cutting edge “hybrid” applications that draw functionality in from both the desktop and the Web.

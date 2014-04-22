@@ -7,7 +7,7 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 This week we released an exciting new beta release of Kestrel, the new Opera desktop browser — Beta 2, to be exact. It’s got some exciting new additions, such as support for full CSS3 selectors and HSL, support for MathML, further speed optimizations, support for HTML5’s `getElementsByClassName`, and improved synchronization of bookmarks, Speed Dial sites, and other settings through Opera Link.

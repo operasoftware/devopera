@@ -9,7 +9,7 @@ tags:
 - opera-mobile
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Opera Software continues [our support][1] of the MeeGo open source initiative with the release of a developer preview of Opera Mobile 11 for ARM-based devices.

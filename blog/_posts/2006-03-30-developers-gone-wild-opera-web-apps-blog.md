@@ -8,7 +8,7 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Opera has been hard at work creating a browser that acts as a platform for Web applications. Our first step in realizing this new world was taken with the launch of Opera Platform, the first mobile AJAX framework. Then we turned our attention to the desktop browser. In Opera 9 Technology Preview 2, we added support for Opera Widgets. Opera Widgets extend and expand the browser’s functionality in dramatic ways.

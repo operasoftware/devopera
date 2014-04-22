@@ -9,7 +9,7 @@ tags:
 - android
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Hi guys,

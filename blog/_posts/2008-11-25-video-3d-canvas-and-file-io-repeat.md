@@ -10,7 +10,7 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 We’ve done it again - we’ve made a new build available of Opera with support for video, file I/O and 3D canvas. If you enjoyed the [builds][1] we released last time, then you should upgrade - you’ll enjoy the increased stability of this build, along with other things like low-bandwidth mail mode, and various security upgrades (These new builds are based on the Opera 9.62 stable release).

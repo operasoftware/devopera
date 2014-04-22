@@ -9,7 +9,7 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 Opera 9 has a lot of new features to help developing content. Here is an example of debugging SVG.

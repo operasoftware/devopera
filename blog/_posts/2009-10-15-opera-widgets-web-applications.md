@@ -8,7 +8,7 @@ tags:
 - webapps
 - labs
 license: os-asa
-layout: article
+layout: post
 ---
 
 When asked what we do, our CEO Jon S. von Tetzchner frequently replies that we are a browser company first and foremost. Putting our browser in all kinds of devices is our passion; through our products, millions of people around the world have full access to the Web. But the browser is more than just a window to the Web, and the Web itself is more than just content to be read, viewed, or heard.

@@ -8,7 +8,7 @@ tags:
 - mathml
 - opera-9
 license: cc-by-nc-sa-2.5
-layout: article
+layout: post
 ---
 
 ## Introduction
