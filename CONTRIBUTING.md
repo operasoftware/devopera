@@ -2,7 +2,7 @@
 
 We’re looking forward to your [Dev.Opera](http://dev.opera.com/) contributions!
 
-- We pay a rate of $350 for a **2000 word article,** so ideally you should try to stick to that word count. Multiple part articles will be considered as well.
+- We pay a rate of $350 for a **2000 word article,** so ideally you should try to stick to that word count. Note that we only pay this rate if the article is actually published on Dev.Opera. Also note that we don't pay this rate for article translations.
 - We’re also happy to take in **code improvements** to the templates, styles and scripts powering Dev.Opera.
 
 ## Before you start

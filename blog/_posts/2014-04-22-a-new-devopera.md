@@ -21,11 +21,11 @@ And [1200+ commits](https://github.com/operasoftware/devopera/graphs/contributor
 - [Google CSE](https://www.google.com/cse/) powered search
 - a straightforward [contribution process](https://github.com/operasoftware/devopera/blob/master/CONTRIBUTING.md)
 
-For the occasion, we've also merged our ODIN, Core, Sitepatching and Dragonfly blog content into Dev.Opera's new [blog section](http://dev.opera.com/blog/), and we've done a whole lot of spring cleaning, incl. archiving old content. If you're missing something, check [our static backup](https://github.com/operasoftware/devopera-static-backup/tree/master/http/dev.opera.com/articles/view) and let us know if you think it should be reinstated.
+For the occasion, we've also merged our ODIN, Core, Sitepatching and Dragonfly blog content into Dev.Opera's new [blog section](http://dev.opera.com/blog/), and we've done a whole lot of spring cleaning, including archiving old content. If you're missing something, check [our static backup](https://github.com/operasoftware/devopera-static-backup/tree/master/http/dev.opera.com/articles/view) and let us know if you think it should be reinstated.
 
 For the time being, the [new Opera extension docs](http://dev.opera.com/extensions/) still use their own templates and layout, but the plan is to integrate those as well into the new site.
 
 If you have comments, [ping us on Twitter](https://twitter.com/odevrel) or [file a bug](https://github.com/operasoftware/devopera/issues/new). 
-If you want to help out or write for us (we pay $350 for a 2000 word article!), it's as simple as [doing a pull request](https://github.com/operasoftware/devopera/blob/master/CONTRIBUTING.md). 
+If you want to help out or write for us, it's as simple as [doing a pull request](https://github.com/operasoftware/devopera/blob/master/CONTRIBUTING.md). 
 
 So, stay tuned: we're having some nice articles and updates in the pipeline the coming weeks and months!
