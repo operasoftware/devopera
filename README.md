@@ -1,6 +1,6 @@
 # Dev.Opera
 
-We've rebuilt [Dev.Opera](http://dev.opera.com/) as a static site, powered by Jekyll, Sass and Grunt. In this repository, you find all the source files and content to build the site, [make improvements](Contributing.md#code-improvements), and [submit new articles](Contributing.md#article-suggestions--contributions).
+We've rebuilt [Dev.Opera](http://dev.opera.com/) as a static site, powered by Jekyll, Sass and Grunt. In this repository, you find all the source files and content to build the site, [make improvements](CONTRIBUTING.md#code-improvements), and [submit new articles](CONTRIBUTING.md#article-suggestions--contributions).
 
 ## Environment setup
 
