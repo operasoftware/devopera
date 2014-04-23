@@ -6,6 +6,7 @@ intro: 'Browsers based on the Opera Device SDK are generally designed to use the
 license: cc-by-3.0
 layout: article
 ---
+
 <div class="note">
 <p>This article offers advice for generic browsers based on the Opera Device SDK. For specific information about the Opera TV Store – which introduces further functionality, as well as additional requirements to authors – please refer to this separate article: <a href="http://dev.opera.com/articles/view/functional-key-handling-in-opera-tv-store-applications/"><cite>Functional key handling in Opera TV Store applications</cite></a>.</p>
 </div>

@@ -29,9 +29,9 @@ layout: article
 
 ## Introduction
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/tvstore.png" alt="The Opera TV Store">
-	<figcaption markdown="span">The Opera TV Store dashboard</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/tvstore.png" alt="The Opera TV Store" class="figure__media">
+	<figcaption class="figure__caption">The Opera TV Store dashboard</figcaption>
 </figure>
 
 The Opera TV Store offers a platform for delivering HTML5-based applications to customers on TV.
@@ -51,7 +51,7 @@ This is a summary of our recommendations for an optimised TV Store application e
 - Avoid the need for the user to enter text.
 - Make an application feel more responsive by giving quick feedback to the user actions.
 
-[17]: http://dev.opera.com/articles/view/design-considerations-for-opera-tv-store-applications/#resolution_overscan
+[17]: #resolution_overscan
 
 ## Potential of the TV context
 
@@ -79,9 +79,9 @@ Some more laws of simplicity:
 
 ## User distance
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/10feetUx2.png" alt="10-feet UX">
-	<figcaption markdown="span">10-feet user experience: A user sits 10 feet away from the TV</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/10feetUx2.png" alt="10-feet UX" class="figure__media">
+	<figcaption class="figure__caption">10-feet user experience: A user sits 10 feet away from the TV</figcaption>
 </figure>
 
 TV interfaces are also known as 10-foot user interfaces because 10 feet (3m) is the aproximate distance that users will sit from the TV. For designers, this means that the "big screen" cannot really be considered "big" but that you have to keep the same considerations that you have when making a mobile application:
@@ -94,9 +94,9 @@ TV interfaces are also known as 10-foot user interfaces because 10 feet (3m) is 
 - Light content on a darker background is usually easier to read/view on a TV.
 - Do not be tempted to think that a bigger screen means that you can include more content. Less is more. Only include relevant content, and keep the amount of content on each screen to a minimum.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/comparisonTvMobile.png" alt="TV viewer">
-	<figcaption markdown="span">A TV in the distance is not much bigger than a close mobile screen</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/comparisonTvMobile.png" alt="TV viewer" class="figure__media">
+	<figcaption class="figure__caption">A TV in the distance is not much bigger than a close mobile screen</figcaption>
 </figure>
 
 Although TVs are similar in perceived size to a mobile device, it is not enough to take the design of a mobile application and expect it to always work well on a TV:
@@ -106,9 +106,9 @@ Although TVs are similar in perceived size to a mobile device, it is not enough 
 
 ## Resolution and overscan
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/overscan.png" alt="TV viewer">
-	<figcaption markdown="span">If you don’t consider the overscan, part of your application will be out of the screen</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/overscan.png" alt="TV viewer" class="figure__media">
+	<figcaption class="figure__caption">If you don’t consider the overscan, part of your application will be out of the screen</figcaption>
 </figure>
 
 The Opera TV Store runs at a resolution of 1280×720px. However, due to overscan, you should ensure that your application works and displays correctly at a size of 1216×684px.
@@ -130,28 +130,28 @@ The layout of a TV application should be simple:
 
 To design the layout for your application, we recommend to have a maximum of two groups of items on the screen: the menu and the content. You can also have the menu in its own screen and dedicate your entire screen to the content.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-justContent.png" alt="TV app with only content">
-	<figcaption markdown="span">Example of a TV app where the menu is on a separate screen</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/layout-justContent.png" alt="TV app with only content" class="figure__media">
+	<figcaption class="figure__caption">Example of a TV app where the menu is on a separate screen</figcaption>
 </figure>
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-horizontal.png" alt="TV app horizontal">
-	<figcaption markdown="span">Example of a TV app with horizontal layout</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/layout-horizontal.png" alt="TV app horizontal" class="figure__media">
+	<figcaption class="figure__caption">Example of a TV app with horizontal layout</figcaption>
 </figure>
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-vertical.png" alt="TV app vertical">
-	<figcaption markdown="span">Example of a TV app with vertical layout</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/layout-vertical.png" alt="TV app vertical" class="figure__media">
+	<figcaption class="figure__caption">Example of a TV app with vertical layout</figcaption>
 </figure>
 
 ## Navigation/Controls
 
 TV users are usually limited to a simple four-way spatial navigation (UP, RIGHT, DOWN, LEFT) with a regular remote.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/remote.jpg" alt="TV remote">
-	<figcaption markdown="span">Everything should be accessible with the directional keys, OK and Exit (also labelled BACK on certain remotes)</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/remote.jpg" alt="TV remote" class="figure__media">
+	<figcaption class="figure__caption">Everything should be accessible with the directional keys, OK and Exit (also labelled BACK on certain remotes)</figcaption>
 </figure>
 
 Although all-purpose web browsers on connected TVs may support a combination of spatial navigation and the use of a virtual mouse pointer, only spatial navigation is supported in the Opera TV Store.
@@ -170,16 +170,16 @@ As a last point, remember that the TV remote already has rather convenient volum
 
 The BACK key on the remote control works just like it does in a desktop browser. Users will be familiar with this key and expect it to bring them to the previous screen of the application. If needed, you can still provide a visible back button in the application.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/back.png" alt="TV app navigation flow">
-	<figcaption markdown="span">Navigation between screens using the BACK key</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/back.png" alt="TV app navigation flow" class="figure__media">
+	<figcaption class="figure__caption">Navigation between screens using the BACK key</figcaption>
 </figure>
 
 The ultimate goal of the BACK key is to take you out of the application. If possible, the application should save the current state and quit but, if this is not possible theBACK key should bring forward a dialog asking if the application should continue or quit.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/quitGame.png" alt="TV app menu">
-	<figcaption markdown="span">BACK key pressed when playing a game that cannot be stopped</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/quitGame.png" alt="TV app menu" class="figure__media">
+	<figcaption class="figure__caption">BACK key pressed when playing a game that cannot be stopped</figcaption>
 </figure>
 
 ### Shortcuts
@@ -188,18 +188,18 @@ We recommend that all functionality is accessible with normal navigation using t
 
 Color-key shortcuts are good to have in situations when you have an action that you are likely to do often but that might require many clicks to get to. This, however, also means that it is not always best to use all of the color keys, as users are more likely to remember one or two of them but not all four. Keeping all four shortcuts might mean the users don’t learn any of them. How many you use will depend on each application.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/shortcuts.png" alt="TV app with shortcut key legend">
-	<figcaption markdown="span">Example of the placement for a shortcut key legend</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/shortcuts.png" alt="TV app with shortcut key legend" class="figure__media">
+	<figcaption class="figure__caption">Example of the placement for a shortcut key legend</figcaption>
 </figure>
 
 ## Text input
 
 Historically, TVs have required very little interaction other than changing channels or volume settings. Even if remotes are becoming more advanced, they are still relatively primitive and are rarely optimized for text input.
 
-<figure>
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/remote2.jpg" alt="TV Remote">
-	<figcaption markdown="span">A remote control uncomfortably close to the TV</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/remote2.jpg" alt="TV Remote" class="figure__media">
+	<figcaption class="figure__caption">A remote control uncomfortably close to the TV</figcaption>
 </figure>
 
 Some TVs are shipped with external keyboards, but users are most likely to just be using the remote control. We recommend designing your application in such a way that avoids the need for text input as much as possible. Here are a few suggestions:
@@ -240,8 +240,8 @@ Last but not least, take a few seconds to read our documents about app submissio
 - [Design considerations for Opera TV store applications][30]
 - [Opera TV store acceptance criteria][31]
 
-[29]: http://dev.opera.com/articles/view/functional-key-handling-in-opera-tv-store-applications/
-[30]: http://dev.opera.com/articles/view/design-considerations-for-opera-tv-store-applications/
+[29]: http://dev.opera.com/articles/functional-key-handling-in-opera-tv-store-applications/
+[30]: http://dev.opera.com/articles/design-considerations-for-opera-tv-store-applications/
 [31]: https://publish.tvstore.opera.com/guidelines/#acceptance-criteria
 
 Adhering to these guidelines will make store acceptance of your app a lot easier and quicker.

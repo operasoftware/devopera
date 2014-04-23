@@ -42,362 +42,362 @@ For maximum control, authors may also choose to handle the navigation of their a
 ## List of available functional buttons {#functional-buttons}
 
 <table>
-		<thead>
-				<tr>
-						<th>
-								Hardware key
-						</th>
-						<th>
-								Key code constant
-						</th>
-						<th>
-								Availability in devices
-						</th>
-				</tr>
-		</thead>
-		<tbody>
-				<tr>
-						<td>
-								↑
-						</td>
-						<td>
-								VK_UP
-						</td>
-						<td>
-								Always present in remote controllers*
-						</td>
-				</tr>
-				<tr>
-						<td>
-								→
-						</td>
-						<td>
-								VK_RIGHT
-						</td>
-						<td>
-								Always present in remote controllers*
-						</td>
-				</tr>
-				<tr>
-						<td>
-								↓
-						</td>
-						<td>
-								VK_DOWN
-						</td>
-						<td>
-								Always present in remote controllers*
-						</td>
-				</tr>
-				<tr>
-						<td>
-								←
-						</td>
-						<td>
-								VK_LEFT
-						</td>
-						<td>
-								Always present in remote controllers*
-						</td>
-				</tr>
-				<tr>
-						<td>
-								Confirm/Select/OK
-						</td>
-						<td>
-								VK_ENTER
-						</td>
-						<td>
-								Always present in remote controllers*
-						</td>
-				</tr>
-				<tr>
-						<td>
-								Exit
-						</td>
-						<td>
-								N/A
-						</td>
-						<td>
-								Usually present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								Back/Return
-						</td>
-						<td>
-								VK_BACK_SPACE
-						</td>
-						<td>
-								Always present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								BLUE
-						</td>
-						<td>
-								VK_BLUE
-						</td>
-						<td>
-								Usually present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								RED
-						</td>
-						<td>
-								VK_RED
-						</td>
-						<td>
-								Usually present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								GREEN
-						</td>
-						<td>
-								VK_GREEN
-						</td>
-						<td>
-								Usually present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								YELLOW
-						</td>
-						<td>
-								VK_YELLOW
-						</td>
-						<td>
-								Usually present in remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								Menu
-						</td>
-						<td>
-								VK_MENU
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								0
-						</td>
-						<td>
-								VK_0
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								1
-						</td>
-						<td>
-								VK_1
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								2
-						</td>
-						<td>
-								VK_2
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								3
-						</td>
-						<td>
-								VK_3
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								4
-						</td>
-						<td>
-								VK_4
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								5
-						</td>
-						<td>
-								VK_5
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								6
-						</td>
-						<td>
-								VK_6
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								7
-						</td>
-						<td>
-								VK_7
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								8
-						</td>
-						<td>
-								VK_8
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								9
-						</td>
-						<td>
-								VK_9
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								PLAY
-						</td>
-						<td>
-								VK_PLAY
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								PAUSE
-						</td>
-						<td>
-								VK_PAUSE
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								STOP
-						</td>
-						<td>
-								VK_STOP
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								NEXT
-						</td>
-						<td>
-								VK_TRACK_NEXT
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								PREV
-						</td>
-						<td>
-								VK_TRACK_PREV
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								FF (Fast-Forward)
-						</td>
-						<td>
-								VK_FAST_FWD
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								REWIND
-						</td>
-						<td>
-								VK_REWIND
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								SUBTITLE
-						</td>
-						<td>
-								VK_SUBTITLE
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-				<tr>
-						<td>
-								INFORMATION
-						</td>
-						<td>
-								VK_INFO
-						</td>
-						<td>
-								Not available in some remote controllers
-						</td>
-				</tr>
-		</tbody>
+<thead>
+<tr>
+	<th>
+		Hardware key
+	</th>
+	<th>
+		Key code constant
+	</th>
+	<th>
+		Availability in devices
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		↑
+	</td>
+	<td>
+		VK_UP
+	</td>
+	<td>
+		Always present in remote controllers*
+	</td>
+</tr>
+<tr>
+	<td>
+		→
+	</td>
+	<td>
+		VK_RIGHT
+	</td>
+	<td>
+		Always present in remote controllers*
+	</td>
+</tr>
+<tr>
+	<td>
+		↓
+	</td>
+	<td>
+		VK_DOWN
+	</td>
+	<td>
+		Always present in remote controllers*
+	</td>
+</tr>
+<tr>
+	<td>
+		←
+	</td>
+	<td>
+		VK_LEFT
+	</td>
+	<td>
+		Always present in remote controllers*
+	</td>
+</tr>
+<tr>
+	<td>
+		Confirm/Select/OK
+	</td>
+	<td>
+		VK_ENTER
+	</td>
+	<td>
+		Always present in remote controllers*
+	</td>
+</tr>
+<tr>
+	<td>
+		Exit
+	</td>
+	<td>
+		N/A
+	</td>
+	<td>
+		Usually present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		Back/Return
+	</td>
+	<td>
+		VK_BACK_SPACE
+	</td>
+	<td>
+		Always present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		BLUE
+	</td>
+	<td>
+		VK_BLUE
+	</td>
+	<td>
+		Usually present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		RED
+	</td>
+	<td>
+		VK_RED
+	</td>
+	<td>
+		Usually present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		GREEN
+	</td>
+	<td>
+		VK_GREEN
+	</td>
+	<td>
+		Usually present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		YELLOW
+	</td>
+	<td>
+		VK_YELLOW
+	</td>
+	<td>
+		Usually present in remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		Menu
+	</td>
+	<td>
+		VK_MENU
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		0
+	</td>
+	<td>
+		VK_0
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		1
+	</td>
+	<td>
+		VK_1
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		2
+	</td>
+	<td>
+		VK_2
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		3
+	</td>
+	<td>
+		VK_3
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		4
+	</td>
+	<td>
+		VK_4
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		5
+	</td>
+	<td>
+		VK_5
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		6
+	</td>
+	<td>
+		VK_6
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		7
+	</td>
+	<td>
+		VK_7
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		8
+	</td>
+	<td>
+		VK_8
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		9
+	</td>
+	<td>
+		VK_9
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		PLAY
+	</td>
+	<td>
+		VK_PLAY
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		PAUSE
+	</td>
+	<td>
+		VK_PAUSE
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		STOP
+	</td>
+	<td>
+		VK_STOP
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		NEXT
+	</td>
+	<td>
+		VK_TRACK_NEXT
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		PREV
+	</td>
+	<td>
+		VK_TRACK_PREV
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		FF (Fast-Forward)
+	</td>
+	<td>
+		VK_FAST_FWD
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		REWIND
+	</td>
+	<td>
+		VK_REWIND
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		SUBTITLE
+	</td>
+	<td>
+		VK_SUBTITLE
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+<tr>
+	<td>
+		INFORMATION
+	</td>
+	<td>
+		VK_INFO
+	</td>
+	<td>
+		Not available in some remote controllers
+	</td>
+</tr>
+</tbody>
 </table>
 
 **Note:** `CONFIRM`, `EXIT` and directional buttons are mandatory for device manufacturers to implement, so they are always available for the end user via the remote control of any device that the Opera TV Store is integrated with. The `EXIT` key is handled by the Opera TV Store browser itself, to ensure that each application can be closed. For this reason `VK_EXIT` will not be sent to the application. Not all keys from the table above are always present in various remote controllers (see Availability column). It is important to take this into account when designing an app. For example, it should be possible to play and pause video, even if the PLAY or PAUSE buttons are not available.

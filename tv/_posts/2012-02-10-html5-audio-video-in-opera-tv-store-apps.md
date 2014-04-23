@@ -6,6 +6,7 @@ intro: 'The Opera TV Store browser comes with built-in support for the HTML5 `<a
 license: cc-by-3.0
 layout: article
 ---
+
 <div class="note">
 <p>Update history:</p>
 <ul>

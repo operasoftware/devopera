@@ -69,7 +69,7 @@ You should now see the remote control image. The buttons on the remote control w
 
 [7]: /articles/opera-tv-emulator-developer-tools/#settings
 
-![Remote control button functions](/articles/opera-tv-emulator-getting-started/remote.png)
+![Remote control button functions](/tv/opera-tv-emulator-getting-started/remote.png)
 
 ## Developing web projects with the Opera TV Emulator {#developing}
 

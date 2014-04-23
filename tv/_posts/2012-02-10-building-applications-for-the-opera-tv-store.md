@@ -32,16 +32,16 @@ Update history:
 
 The Opera TV Store is a moderated, hosted catalogue of TV-specific web applications. Developers can submit and share their apps through this portal. It presents end users with a storefront (itself a web-based application) which allows them quick and easy access to the applications.
 
-<figure>
-	<img src="/articles/building-applications-for-the-opera-tv-store/sample-views.png" alt="Sample Opera TV Store and an application">
-	<figcaption markdown="span">Sample Opera TV Store and a sample weather application</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/sample-views.png" alt="Sample Opera TV Store and an application" class="figure__media">
+	<figcaption class="figure__caption">Sample Opera TV Store and a sample weather application</figcaption>
 </figure>
 
 Applications in the Opera TV Store will be presented as static thumbnail images in a dashboard. Users are able to browse the TV Store catalogue and "install" applications, adding them to their dashboard. Selecting an application launches it in full-screen mode.
 
-<figure>
-	<img src="/articles/building-applications-for-the-opera-tv-store/architecture.png" alt="Opera TV Store architecture diagram">
-	<figcaption markdown="span">A simple overview of the Opera TV Store architecture</figcaption>
+<figure class="figure">
+	<img src="{{ page.id }}/architecture.png" alt="Opera TV Store architecture diagram" class="figure__media">
+	<figcaption class="figure__caption">A simple overview of the Opera TV Store architecture</figcaption>
 </figure>
 
 The full-screen web applications themselves are not hosted directly on Opera's servers. The Opera TV Store only acts as a directory, with references to the actual URLs of the applications.
