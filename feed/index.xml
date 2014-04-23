@@ -34,7 +34,7 @@ layout: none
 
 {% assign entries = entries | split: '(•)' %}
 {% for entry in entries limit:25 %}
-	{{ entry }}
+	{{ entry | replace: '=&quot;/','=&quot;http://dev.opera.com/' }}
 {% endfor %}
 
 </feed>
