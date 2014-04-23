@@ -15,6 +15,7 @@ Today, we’re happy to release a new, totally fresh version of Dev.Opera.
 Before we started the refactoring process, we decided we wanted to go for a site that puts good article content in the spotlight (without too much visual noise in the margins), is lightweight with great performance, and makes use of GitHub’s pull request feature for new article submissions and site updates.
 
 And [1200+ commits](https://github.com/operasoftware/devopera/graphs/contributors) later, this is what we ended up with:
+
 - flat-file content management with [Jekyll](http://jekyllrb.com/)
 - [Sass](http://sass-lang.com) for styles
 - [highlight.js](http://highlightjs.org/) for code snippet highlighting
