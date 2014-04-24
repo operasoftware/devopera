@@ -69,7 +69,7 @@
 // Figure
 .figure {
 	margin-bottom:16px;
-	// Media
+	// Align
 	&--left {
 		float:left;
 		}
@@ -79,6 +79,7 @@
 	// Media
 	&__media {
 		display:inline-block;
+		max-width:100%;
 		}
 	// Caption
 	&__caption {
