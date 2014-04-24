@@ -140,3 +140,5 @@ RewriteRule ^articles/view/tweaking-spatial-navigation-for-tv-browsing/?$ tv/twe
 
 # Redirect all `/articles/view/*` to `/articles/*`
 RewriteRule ^articles/view/(.+)$ articles/$1 [R=301,L]
+# Redirect all `/articles/tags/*` to `/tags/*`
+RewriteRule ^articles/tags/(.+)$ tags/$1 [R=301,L]
