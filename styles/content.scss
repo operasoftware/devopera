@@ -70,6 +70,13 @@
 .figure {
 	margin-bottom:16px;
 	// Media
+	&--left {
+		float:left;
+		}
+	&--right {
+		float:right;
+		}
+	// Media
 	&__media {
 		display:inline-block;
 		}
