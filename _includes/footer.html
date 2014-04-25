@@ -1,24 +1,6 @@
 	<footer class="footer">
 		<p>Copyright © 2006–{{ site.time | date: '%Y' }} Opera Software ASA. Some rights reserved. <a href="https://github.com/operasoftware/devopera/blob/master/CONTRIBUTING.md" class="footer__contribute">Contribute</a>.</p>
 	</footer>
-{% comment %}
-	<div id="grid">
-		<div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-{% endcomment %}
 {% if page.categories contains 'articles' or page.categories contains 'blog' %}
 	<script src="/scripts/highlight.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
