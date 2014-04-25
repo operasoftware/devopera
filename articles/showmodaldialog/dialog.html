@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title>`showModalDialog` example</title>
+<style>html, input, button { font: 1em/1.5 sans-serif; }</style>
+<h1><code>showModalDialog</code> example</h1>
+<p>This modal dialog received the following data from the page that spawned it:</p>
+<pre><code id=data>{}</code></pre>
+<form id=form>
+	<label>Value to be sent back to the main page: <input id=input autofocus></label>
+	<input type=submit>
+</form>
+<script>
+	data.textContent = JSON.stringify(window.dialogArguments);
+	form.onsubmit = function(event) {
+		window.returnValue = input.value;
+		window.close();
+		event.preventDefault();
+	};
+</script>
