@@ -2,13 +2,14 @@
 title: Removing `showModalDialog` from the Web platform
 authors:
 - mathias-bynens
+intro: 'The Blink team is looking to remove support for the `showModalDialog()` API. This post explains what `showModalDialog` is, why it’s being removed, and what the consequences are for web developers.'
 tags:
 - javascript
 license: cc-by-3.0
 layout: post
 ---
 
-The Blink team is looking to [remove support for the `showModalDialog()` API](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/xh9fPX0ijqk). Following the initial announcement, there’s been a lot of [confusion](https://groups.google.com/a/chromium.org/d/msg/blink-dev/xh9fPX0ijqk/fr2CTDPKcE0J). This post explains what `showModalDialog` is, why it’s being removed, and what the consequences are for web developers.
+The Blink team is looking to [remove support for the `showModalDialog()` API](https://groups.google.com/a/chromium.org/d/msg/blink-dev/xh9fPX0ijqk/ixHZCOH6GLgJ). Following the initial announcement, there’s been a lot of [confusion](https://groups.google.com/a/chromium.org/d/msg/blink-dev/xh9fPX0ijqk/fr2CTDPKcE0J). This post explains what `showModalDialog` is, why it’s being removed, and what the consequences are for web developers.
 
 ## What is `showModalDialog`?
 
