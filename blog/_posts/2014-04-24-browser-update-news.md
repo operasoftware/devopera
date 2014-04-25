@@ -22,7 +22,7 @@ What better way to celebrate the new redesigned Dev.Opera than with a round-up o
 
 Since Opera Coast was released for iPad last year, people have been asking us when it’ll be available for iPhone. Ta-da! [Coast 3 is in the App Store](https://itunes.apple.com/app/opera-coast/id674024845) today.
 
-Homescreen, recent sites and search has been redesigned for iPhone, while both iPhone and iPad versions have speed, security and stability enhancements, a new design for context menus (long press in web pages) and a more discoverable design for the sharing menu in the recent sites.
+Homescreen, recent sites and search have been redesigned for iPhone, while both iPhone and iPad versions have speed, security and stability enhancements, a new design for context menus (long press in web pages) and a more discoverable design for the sharing menu in the recent sites.
 
 The idea is to close the UX gap between native apps and the web on iOS devices. As [Time said in its review](http://time.com/74803/opera-coast/), “As before, Coast is polished, fun and fluid — and on the iPhone, you can pretty much navigate the whole experience with your thumb. It’s fascinating to see what a web browser looks like when all the cruft that browsers have built up over the years gets stripped away in one fell swoop.”
 
@@ -34,9 +34,9 @@ Our Chromium-based mobile browser has been upgraded to version 21. It sports a [
 
 Get [Opera 21 for Android on Google Play](https://play.google.com/store/apps/details?id=com.opera.browser&referrer=utm_source%3Dopera_mobile_blog%26utm_medium%3Dtextlink%26utm_content%3Dgplaylink_vsoperacom%26utm_campaign%3Dandroid_social), or [download directly](http://www.opera.com/download/get/?partner=www&product=android).
 
-## Opera Mini 8 for for Java and BlackBerry
+## Opera Mini 8 for Java and BlackBerry
 
-[Opera Mini 8 for for Java and BlackBerry](http://blogs.opera.com/mobile/2014/03/opera-mini-for-java-and-blackberry/) has been redesigned and now has Private Browsing, Night Mode, keyboard access to tabs and a revamped data savings overview.
+[Opera Mini 8 for Java and BlackBerry](http://blogs.opera.com/mobile/2014/03/opera-mini-for-java-and-blackberry/) has been redesigned and now has Private Browsing, Night Mode, keyboard access to tabs and a revamped data savings overview.
 
 [Opera Mini for Android](http://blogs.opera.com/mobile/2014/03/opera-mini-android-update-support-high-resolution-screens/) has been tweaked to better support high-resolution screens and RTL languages.
 
