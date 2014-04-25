@@ -65,29 +65,3 @@
 		font-family:PT Mono, monospace, monospace;
 		}
 	}
-
-// Figure
-.figure {
-	margin-bottom:16px;
-	// Align
-	&--left {
-		float:left;
-		}
-	&--right {
-		float:right;
-		}
-	// Media
-	&__media {
-		display:inline-block;
-		max-width:100%;
-		}
-	// Caption
-	&__caption {
-		margin-top:8px;
-		font-style:italic;
-		font-size:12px;
-		&--center {
-			text-align:center;
-			}
-		}
-	}
