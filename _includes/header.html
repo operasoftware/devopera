@@ -11,6 +11,9 @@
 	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
 {% endif %}
 	<link rel="stylesheet" href="/styles/screen.css">
+{% if page.url == '/index.html' %}
+	<link href="/feed/" rel="alternate" type="application/atom+xml">
+{% endif %}
 </head>
 <body>
 	{% include analytics.html %}
