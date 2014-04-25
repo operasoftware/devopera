@@ -66,7 +66,7 @@ This header contains a comma-separated list of features supported by the phone. 
 
 ### Format
 
-	X-OperaMini-Features: *[ ,  ]
+	X-OperaMini-Features: <feature> *[ , <feature> ]
 
 ### Example
 
@@ -84,7 +84,7 @@ This header contains a comma-separated list of features supported by the phone. 
 - `secure`: The connection between Mini's client and proxy server is encrypted. All versions of Mini support SSL encryption between proxy server and web server, but only 3.0 and later supports client to proxy encryption.
 - `skindownload` (Opera Mini 4 only): The Opera Mini version can download new skins
 - `touch`: The device is a touchscreen device.
-- `viewport`: The Opera Mini version supports viewport, which allows web developers to specify optimized rendering information for mobile browsers. For more information on this feature, read [An introduction to meta viewport and @viewport][2]by Andreas Bovens.
+- `viewport`: The Opera Mini version supports viewport, which allows web developers to specify optimized rendering information for mobile browsers. For more information on this feature, read [An introduction to meta viewport and @viewport][2] by Andreas Bovens.
 
 [1]: http://www.operamini.com/help/faq/
 [2]: http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/
