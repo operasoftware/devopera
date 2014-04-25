@@ -76,7 +76,6 @@ RewriteRule ^articles/view/an-introduction-to-css-regions/?$ articles/introducti
 RewriteRule ^articles/view/an-introduction-to-datasets/?$ articles/introduction-to-datasets [R=301,L]
 RewriteRule ^articles/view/extension-developer-interview-coffee-with-the-abine-team/?$ articles/extension-developer-interview-abine [R=301,L]
 RewriteRule ^articles/view/a-call-for-video-on-the-web-opera-vid/?$ blog/a-call-for-video-on-the-web [R=301,L]
-RewriteRule ^articles/view/showmodaldialog/?$ blog/showmodaldialog [R=301,L]
 RewriteRule ^articles/view/labs-100-ragnarok-n-roll/?$ blog/100-ragnarok-n-roll [R=301,L]
 RewriteRule ^articles/view/labs-a-call-for-video-on-the-web/?$ blog/a-call-for-video-on-the-web [R=301,L]
 RewriteRule ^articles/view/labs-all-together-now-video-3d-file-access/?$ blog/all-together-now-video-3d-file-access [R=301,L]
