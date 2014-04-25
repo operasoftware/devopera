@@ -9,13 +9,14 @@ layout: article
 
 ## Introduction
 
-Opera Mini uses a number of custom, unregistered HTTP headers. Most of these are specific to Mini, and are sent in addition to the regular HTTP headers sent by Opera on any platform. The purpose of these headers is to give site owners information about the user's handset and its capabilities/features.
+Opera Mini uses a number of custom, unregistered HTTP headers. Most of these are specific to Mini, and are sent in addition to the regular HTTP headers sent by Opera on any platform. The purpose of these headers is to give site owners information about the user’s handset and its capabilities/features.
 
 ## User-Agent
 
 The User-Agent header contains the browser UA string information, divided up into tokens. To start with, here is an example of an User-Agent header:
 
 	User-Agent: Opera/9.80 (J2ME/MIDP; Opera Mini/6.1.25378/25.692; U; en) Presto/2.5.25 Version/10.54
+
 This is broken up into tokens, as follows:
 
 	User-Agent: Opera/9.80 ($PLATFORM_NAME$; $PRODUCT_NAME$/$CLIENT_VERSION$/ $SERVER_VERSION$;U; $LOCALE$) $PRESTO_VERSION$ $EQUIV_DESKTOP_VERSION$
@@ -81,7 +82,7 @@ This header contains a comma-separated list of features supported by the phone. 
 - `file_system` (Opera Mini 4 and later): File system support detected. The user will be able to save files on the device that are not handled natively by Opera Mini, and upload files when Mini encounters a file input element (`<input type="file">`).
 - `folding`: Content folding is supported and enabled.
 - `routing`: Means that the client is able to send traffic to different transcoders based on client side rules. This is used in different operator integrations like zero rated traffic to specific domains.
-- `secure`: The connection between Mini's client and proxy server is encrypted. All versions of Mini support SSL encryption between proxy server and web server, but only 3.0 and later supports client to proxy encryption.
+- `secure`: The connection between Mini’s client and proxy server is encrypted. All versions of Mini support SSL encryption between proxy server and web server, but only 3.0 and later supports client to proxy encryption.
 - `skindownload` (Opera Mini 4 only): The Opera Mini version can download new skins
 - `touch`: The device is a touchscreen device.
 - `viewport`: The Opera Mini version supports viewport, which allows web developers to specify optimized rendering information for mobile browsers. For more information on this feature, read [An introduction to meta viewport and @viewport][2] by Andreas Bovens.
@@ -97,7 +98,7 @@ Note that this header is only present if we have some reasonable evidence that o
 
 ### Format
 
-	X-OperaMini-Phone-UA:
+	X-OperaMini-Phone-UA: <user-agent>
 
 ### Example
 
@@ -111,7 +112,7 @@ Note that this header is only present if we have some reasonable evidence that o
 
 ### Format
 
-	X-OperaMini-Phone: #
+	X-OperaMini-Phone: <manufacturer> # <model>
 
 ### Example
 
@@ -133,11 +134,11 @@ In this case, 195.189.143.147 is the IP address that connects to the Mini proxy,
 
 ## Accept-Language
 
-`Accept-Language` specifies what language(s) the browser would prefer the response to be written in. You can specify multiple languages in a comma-delimited list using standard language tags, and each language can be given a quality value that indicates the user's ability in those languages (this value defaults to 1 if not specified, which is the highest - the values range from 0 to 1.) For example, the actual example given at the bottom of this section means "I'd prefer to be sent old (bokmal) or new Norwegian, but I am also pretty good at English...I'll also try French if you've not got the other two languages available, but I'm not very good at that." If `Accept-Language` is not specified, then the server should assume that all languages are acceptable to the user.
+`Accept-Language` specifies what language(s) the browser would prefer the response to be written in. You can specify multiple languages in a comma-delimited list using standard language tags, and each language can be given a quality value that indicates the user’s ability in those languages (this value defaults to 1 if not specified, which is the highest - the values range from 0 to 1.) For example, the actual example given at the bottom of this section means “I’d prefer to be sent old (bokmal) or new Norwegian, but I am also pretty good at English… I’ll also try French if you’ve not got the other two languages available, but I’m not very good at that.” If `Accept-Language` is not specified, then the server should assume that all languages are acceptable to the user.
 
 ### Format
 
-	Accept-Language: [;q=], ...
+	Accept-Language: <language tag> [;q=<quality value>], …
 
 ### Example
 
