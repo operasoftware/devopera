@@ -75,6 +75,7 @@ RewriteRule ^articles/view/64-bit-opera-and-out-of-process-plug-ins/?$ articles/
 RewriteRule ^articles/view/an-introduction-to-css-regions/?$ articles/introduction-to-css-regions [R=301,L]
 RewriteRule ^articles/view/an-introduction-to-datasets/?$ articles/introduction-to-datasets [R=301,L]
 RewriteRule ^articles/view/extension-developer-interview-coffee-with-the-abine-team/?$ articles/extension-developer-interview-abine [R=301,L]
+RewriteRule ^articles/view/opera-20/?$ blog/opera-20 [R=301,L]
 RewriteRule ^articles/view/a-call-for-video-on-the-web-opera-vid/?$ blog/a-call-for-video-on-the-web [R=301,L]
 RewriteRule ^articles/view/labs-100-ragnarok-n-roll/?$ blog/100-ragnarok-n-roll [R=301,L]
 RewriteRule ^articles/view/labs-a-call-for-video-on-the-web/?$ blog/a-call-for-video-on-the-web [R=301,L]
@@ -137,6 +138,9 @@ RewriteRule ^articles/view/opera-tv-emulator-getting-started/?$ tv/opera-tv-emul
 RewriteRule ^articles/view/opera-tv-store-app-templates/?$ tv/opera-tv-store-app-templates [R=301,L]
 RewriteRule ^articles/view/testing-your-app-inside-the-opera-tv-store/?$ tv/testing-your-app-inside-opera-tv-store [R=301,L]
 RewriteRule ^articles/view/tweaking-spatial-navigation-for-tv-browsing/?$ tv/tweaking-spatial-navigation-for-tv-browsing [R=301,L]
+# End generated rewrite rules.
+
+RewriteRule ^blog/opera-19-released blog/opera-19 [R=301,L]
 
 # Redirect all `/articles/view/*` to `/articles/*`
 RewriteRule ^articles/view/(.+)$ articles/$1 [R=301,L]
