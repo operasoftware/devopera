@@ -47,7 +47,7 @@ Well designed icons in general are simple, recognisable and intuitive. Also reme
 	<figcaption class="figure__caption">Three icons: A die representing a pictogram, a heart with waves going through it representing an ideogram — pulse or heartbeat, and an abstract design with letters inside it representing an abstract icon</figcaption>
 </figure>
 
-Next, use established, recognised conventions where possible. Think of well-known icons for “information”, “play” and “shopping cart”, for example. Using such conventions will immediately make your icon more intuitive and recognisable. The Noun project (http://thenounproject.com/) is a great place for researching icon styles and conventions.
+Next, use established, recognised conventions where possible. Think of well-known icons for “information”, “play” and “shopping cart”, for example. Using such conventions will immediately make your icon more intuitive and recognisable. [The Noun project](http://thenounproject.com/) is a great place for researching icon styles and conventions.
 
 Another general tip is to just make your TV app icons fun! Most apps on TV are pure entertainment, so formal, system icons may look out of place.
 
@@ -171,13 +171,13 @@ You should also consider getting inspiration for your app graphics from other so
 
 ### Inspiration
 
-- http://thenounproject.com/
-- http://www.dribbble.com/
-- http://www.iconfinder.net/
-- http://www.behance.net/
+- [thenounproject.com](http://thenounproject.com/)
+- [dribbble.com](http://www.dribbble.com/)
+- [iconfinder.net](http://www.iconfinder.net/)
+- [behance.net](http://www.behance.net/)
 
 ### Tutorials
 
-- http://http://psd.tutsplus.com/
-- http://vector.tutsplus.com/
-- http://www.smashingmagazine.com/
+- [psd.tutsplus.com](http://psd.tutsplus.com/)
+- [vector.tutsplus.com](http://vector.tutsplus.com/)
+- [smashingmagazine.com](http://www.smashingmagazine.com/)
