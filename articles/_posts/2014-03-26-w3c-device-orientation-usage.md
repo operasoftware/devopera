@@ -80,7 +80,7 @@ Device orientation defines three types of rotation, which are are follows:
 	<figcaption class="figure__caption">Figure 4: Device rotated y degrees around the Y axis</figcaption>
 </figure>
 
-As we also know, the values provided back to us are in the form of [Tait-Bryan angles][8]. Tait-Bryan angles are special forms of Euler angles that require 3 rotations around each of the 3 axis. Normal Euler angles that require 3 rotations around only 2 axis (where one axis of rotation is repeated). The full set of Tait-Bryan rotations we could potentially use to describe the rotation of a device is therefore as follows:
+The values provided back to us from the Device Orientation API are in the form of [Tait-Bryan angles][8]. Tait-Bryan angles are special forms of Euler angles that require 3 rotations around each of the 3 axis. Normal Euler angles require 3 rotations around only 2 axis (where one axis of rotation is repeated). The full set of Tait-Bryan rotations we could potentially use to describe the rotation of a device is therefore as follows:
 
 [8]: https://en.wikipedia.org/wiki/Euler_angles
 
@@ -110,7 +110,7 @@ If we imagine each of the rotation planes described above as a single circular r
 
 As two of our gimbals start approaching the same parallel direction they start to have difficulty knowing which way to turn and they start spinning. When this occurs, we effectively lose one degree of freedom in our 3-axis modelling of device orientation. This creates a situation where we can no longer accurately model device rotation as the axis’ approach the extremes of their gimbal rotation.
 
-Fortunately, other device orientation representations exist that can remove the effects of gimbal lock. In order to remove gimbal lock as an issue we need to represent device rotations in an alternative rotation system such as matrix-based or quaternion-based device orientation representations. We will run through both matrix and quaternion rotation representations in a subsequent section.
+Fortunately, other device orientation representations exist that can remove the effects of gimbal lock. In order to remove gimbal lock as an issue we need to represent device rotations in an alternative rotation system such as matrix-based or quaternion-based device orientation representations. We will run through both of these alternate orientation representations in a subsequent section.
 
 ## Practical considerations for using device orientation in web applications {#practicalconsiderations}
 
@@ -154,7 +154,7 @@ To do this we will need to make adjustments to our accumulated rotational repres
 
 In the [limitations of using Euler angles][13] section above we discussed how Euler angles tend to introduce gimbal lock in to our rotational coordinate system. Let’s take the device orientation data and convert it to one of the two alternative representations below to avoid this issue entirely.
 
-[13]:
+[13]: #eulerlimitations
 
 You can decide to use either a Rotation Matrix or a Quaternions representation for your needs. For the sake of completion, we will cover both methods below.
 
