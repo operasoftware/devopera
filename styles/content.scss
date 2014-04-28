@@ -15,7 +15,7 @@
 		margin:32px 0 16px;
 		}
 	h2 {
-		font-size:24px;	
+		font-size:24px;
 		}
 	h3 {
 		font-size:22px;
@@ -53,6 +53,22 @@
 			counter-increment:list;
 			content:counter(list)'.\00A0\00A0';
 			}
+	// Tables
+	table {
+		margin:0 0 16px;
+		width:100%;
+		border-collapse:collapse;
+		border-spacing:0;
+		th, td {
+			padding:8px;
+			border:1px solid $grey;
+			}
+		th {
+			background:lighten($grey, 25%);
+			text-align:left;
+			font-weight:bold;
+			}
+		}
 	// Code
 	pre {
 		margin:0 0 16px;
