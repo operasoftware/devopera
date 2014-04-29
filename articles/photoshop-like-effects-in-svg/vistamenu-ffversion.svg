@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 335" text-rendering="geometricPrecision">
+	<defs>
+		<linearGradient id="lowergrad" x1="0" y1="1" x2="0" y2="0">
+			<stop stop-color="#000000" offset="0"/>
+			<stop stop-color="#0c0c0c" offset="1"/>
+		</linearGradient>
+		<linearGradient id="uppergrad" x1="0" y1="1" x2="0" y2="0">
+			<stop stop-color="#35393d" offset="0"/>
+			<stop stop-color="#787b7d" offset="1"/>
+		</linearGradient>
+		<linearGradient id="upperdivider" x1="0" y1="1" x2="0" y2="0">
+			<stop stop-color="#676a6d" offset="0"/>
+			<stop stop-color="#afb1b2" offset="1"/>
+		</linearGradient>
+		<linearGradient id="textgrad" x1="0" y1="1" x2="0" y2="0">
+			<stop stop-color="#afb1b2" offset="0"/>
+			<stop stop-color="white" offset="0.5"/>
+		</linearGradient>
+
+		<g id="divider">
+			<line y1="290" y2="310" stroke-width="2" stroke="url(#upperdivider)"/>
+			<line y1="310" y2="330" stroke-width="2" stroke="#43474b"/>
+		</g>
+
+		<filter id="blur" x="-50%" y="-40%" height="170%">
+			<feGaussianBlur stdDeviation="5"/>
+		</filter>
+		<filter id="bigblur" y="-50%">
+			<feGaussianBlur stdDeviation="10"/>
+		</filter>
+		<filter id="smallblur" height="140%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+			<feOffset dx="2" dy="2"/>
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+
+		<filter id="dropshadow" x="0" y="30%" width="60%" height="54%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+			<feComponentTransfer>
+			 <feFuncA type="linear" slope="0.5"/>
+			</feComponentTransfer>
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+
+		<clipPath id="clip">
+			<rect id="blurrect" rx="20" width="55%" height="40%" x="-10%" y="40%"/>
+		</clipPath>
+		<clipPath id="cliphover">
+			<rect id="hoverrect" x="199" y="285" width="102" height="50"/>
+		</clipPath>
+
+		<clipPath id="abovebarclip">
+			<rect height="285" width="100%"/>
+		</clipPath>
+
+		<filter id="blurpane">
+			<feImage xlink:href="#blurrect" result="clip"/>
+			<feGaussianBlur stdDeviation="2" in="SourceGraphic" result="blur"/>
+			<feComposite operator="in" in="blur" in2="clip"/>
+			<feComposite mode="over" in="blur" in2="SourceGraphic" result="final"/>
+		</filter>
+
+		<script>
+			function setHover(val)
+			{
+				document.getElementById("hover").style.display="inline";
+				document.getElementById("hover").cx.baseVal.value=val+50;
+				document.getElementById("hoverrect").x.baseVal.value = val-1;
+			}
+			function hideHover()
+			{
+				document.getElementById("hover").style.display="none";
+			}
+		</script>
+
+		<style type="text/css">
+			.links { 	font-family: Arial, sans-serif;
+						font-size: 16px;
+						text-anchor: middle;
+						fill: white;
+						text-rendering: optimizeLegibility; }
+
+			#hover {	fill:#5c94c5;
+						filter:url(#bigblur);
+						clip-path:url(#cliphover); }
+		</style>
+	</defs>
+
+  <image image-rendering="optimizeSpeed" xlink:href="image.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+  <g filter="url(#dropshadow)">
+    <g clip-path="url(#clip)">
+      <image image-rendering="optimizeSpeed" xlink:href="image.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter="url(#blurpane)"/>
+    </g>
+  </g>
+
+  <text id="header" font-family="Arial" font-weight="900" font-size="40" x="20" y="200" fill="url(#textgrad)" filter="url(#smallblur)">SVG Filters</text>
+  <text id="subheader" font-family="Arial" font-size="20" font-style="italic" x="20" y="230" fill="url(#textgrad)" filter="url(#smallblur)">A peek at Web 3.0...</text>
+
+  <g id="bar" fill-opacity="0.9" shape-rendering="optimizeSpeed">
+    <rect id="upperbar" y="285" width="600" height="25" fill="url(#uppergrad)"/>
+    <rect id="lowerbar" y="310" width="600" height="25" fill="url(#lowergrad)"/>
+    <line stroke-width="2" stroke="#9fa2a4" x1="0" y1="287" x2="600" y2="287"/>
+    <line stroke-width="2" stroke="#484b4d" x1="0" y1="285" x2="600" y2="285"/>
+
+    <use xlink:href="#divider" x="100"/>
+    <use xlink:href="#divider" x="200"/>
+    <use xlink:href="#divider" x="300"/>
+    <use xlink:href="#divider" x="400"/>
+    <use xlink:href="#divider" x="500"/>
+  </g>
+
+  <ellipse id="hover" cx="250" cy="340" rx="100" ry="30" style="display: none;"/>
+
+<text class="links" x="150" y="316.5">Blog</text>
+<text class="links" x="250" y="316.5">About</text>
+<text class="links" x="350" y="316.5">Tutorials</text>
+<text class="links" x="450" y="316.5">Contact</text>
+
+  <!-- catch the mouse-events -->
+  <g pointer-events="fill" fill="none">
+    <rect width="100%" height="100%" onmouseover="hideHover()"/>
+    <rect x="100" y="285" width="100" height="50" onmouseover="setHover(this.x.baseVal.value)"/>
+    <rect x="200" y="285" width="100" height="50" onmouseover="setHover(this.x.baseVal.value)"/>
+    <rect x="300" y="285" width="100" height="50" onmouseover="setHover(this.x.baseVal.value)"/>
+    <rect x="400" y="285" width="100" height="50" onmouseover="setHover(this.x.baseVal.value)"/>
+  </g>
+</svg>
