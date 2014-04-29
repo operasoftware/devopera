@@ -50,6 +50,7 @@
 // -------------------------------
 .layout-entry {
 	@extend %grid;
+	@extend %grid--rev;
 	// Elements
 	&__aside {
 		@extend %grid__item;
