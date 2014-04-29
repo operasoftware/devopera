@@ -3,13 +3,15 @@ title: How to Do Photoshop-Like Effects in SVG
 authors:
 - erik-dahlstrom
 intro: 'Wanna add some polish to your site, the standards way? In this article Erik shows how you can save time and money on creating graphics and effects programmatically using SVG instead of doing them all manually using Photoshop.'
+tags:
+- svg
 license: cc-by-nc-sa-2.5
 layout: article
 ---
 
 ## Introduction
 
-![Filter image]({{ page.id }}/filters0.jpg)
+![Filter image]({{ page.id }}/filters.jpg)
 
 I came across this nice [Photoshop tutorial][2] the other day. Looking at this, and the other tutorials available there made me want to try to recreate the same effects, not using Photoshop however, just SVG. Read on for my take on the above tutorial. To better follow the steps in my article I recommend reading these side by side.
 
@@ -38,15 +40,17 @@ Next, create some rectangles and a couple of gradients by adding the following i
 		<stop stop-color="#000000" offset="0"/>
 		<stop stop-color="#0c0c0c" offset="1"/>
 	</linearGradient>
-		<linearGradient id="uppergrad" x1="0" y1="1" x2="0" y2="0">
-			<stop stop-color="#35393d" offset="0"/>
-			<stop stop-color="#787b7d" offset="1"/>
+	<linearGradient id="uppergrad" x1="0" y1="1" x2="0" y2="0">
+		<stop stop-color="#35393d" offset="0"/>
+		<stop stop-color="#787b7d" offset="1"/>
 	</linearGradient>
 	<g id="bar" fill-opacity="0.9" shape-rendering="optimizeSpeed">
-		<rect id="upperbar" y="285" width="600" height="25"
+		<rect id="upperbar" y="285"
+			width="600" height="25"
 			fill="url(#uppergrad)"/>
-		<rect id="lowerbar" y="310" width="600" height="25"
-		fill="url(#lowergrad)"/>
+		<rect id="lowerbar" y="310"
+			width="600" height="25"
+			fill="url(#lowergrad)"/>
 	</g>
 
 The linear gradients gradiate between the first color and the second color at a 90 degree angle. 90 degree angles (sometimes called straight angles) are easily translated into a vector from point `(x1, y1)` to point `(x2, y2)`, where the value `1` maps to 100% of the boundingbox of the shape that gets painted with the gradient, and the value `0` maps of course to 0% of the same. I’ve added the gradient stops with the colors we want, and set the offsets. The offset is where the color will be mapped onto the gradient vector specified with `x1`, `y1`, `x2` and `y2`.
