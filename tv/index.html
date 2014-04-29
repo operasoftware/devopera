@@ -35,9 +35,9 @@ layout: default
 		<section class="layout-archive__aside">
 			<article class="teaser teaser--links">
 				<ul>
-					<li><a href="http://www.operasoftware.com/products/tv-store">Opera TV Store</a></li>
-					<li><a href="https://forums.opera.com/categories/en-opera-tv-store">Opera TV Store forums</a></li>
-					<li><a href="http://www.operasoftware.com/products/tv-emulator">Opera TV Emulator</a></li>
+{% for item in site.data.links-tv %}
+					<li><a href="{{ item.link }}">{{ item.text }}</a></li>
+{% endfor %}
 				</ul>
 			</article>
 			<p class="tags">
