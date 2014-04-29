@@ -1,7 +1,21 @@
-cc-by-3.0: '[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/)'
-cc-by-nc-nd-2.5: '[Creative Commons Attribution, Non Commercial — No Derivs 2.5 Generic](http://creativecommons.org/licenses/by-nc-nd/2.5/)'
-cc-by-nc-sa-2.5: '[Creative Commons Attribution, Non Commercial — Share Alike 2.5 Generic](http://creativecommons.org/licenses/by-nc-sa/2.5/)'
-cc-by-nc-nd-3.0: '[Creative Commons Attribution, Non Commercial — NoDerivs 3.0 Unported](http://creativecommons.org/licenses/by-nc-nd/3.0/)'
-cc-by-nc-sa-3.0: '[Creative Commons Attribution, Non Commercial — ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-nc-sa/3.0/)'
-cc-bsd: '[Creative Commons BSD](http://creativecommons.org/licenses/BSD/)'
-os-asa: '[Opera Software ASA](http://opera.com/)'
+cc-by-3.0:
+  text: Creative Commons Attribution 3.0 Unported
+  link: http://creativecommons.org/licenses/by/3.0/
+cc-by-nc-nd-2.5:
+  text: Creative Commons Attribution, Non Commercial — No Derivs 2.5 Generic
+  link: http://creativecommons.org/licenses/by-nc-nd/2.5/
+cc-by-nc-sa-2.5:
+  text: Creative Commons Attribution, Non Commercial — Share Alike 2.5 Generic
+  link: http://creativecommons.org/licenses/by-nc-sa/2.5/
+cc-by-nc-nd-3.0:
+  text: Creative Commons Attribution, Non Commercial — NoDerivs 3.0 Unported
+  link: http://creativecommons.org/licenses/by-nc-nd/3.0/
+cc-by-nc-sa-3.0:
+  text: Creative Commons Attribution, Non Commercial — ShareAlike 3.0 Unported
+  link: http://creativecommons.org/licenses/by-nc-sa/3.0/
+cc-bsd:
+  text: Creative Commons BSD
+  link: http://creativecommons.org/licenses/BSD/
+os-asa:
+  text: Opera Software ASA
+  link: http://opera.com/

@@ -21,7 +21,7 @@ layout: default
 			</p>
 			{% include translations.html category=site.categories.articles %}
 			<p class="license" rel="license">
-				<small>This article is licensed under a {{ site.data.licenses[page.license] | markdownline }} license.</small>
+				{% include license.html license=page.license %}
 			</p>
 		</div>
 		<div class="layout-entry__content">

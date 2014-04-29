@@ -19,9 +19,9 @@ layout: default
 			<p class="tags">
 				<span class="tags__caption">Post tags:</span> {% include tags.html object=page %}
 			</p>
-			{% include translations.html category=site.categories.articles %}
+			{% include translations.html category=site.categories.blog %}
 			<p class="license" rel="license">
-				<small>This post is licensed under a {{ site.data.licenses[page.license] | markdownline }} license.</small>
+				{% include license.html license=page.license %}
 			</p>
 		</div>
 		<div class="layout-entry__content">
