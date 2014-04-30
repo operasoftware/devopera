@@ -52,7 +52,7 @@ layout: default
 		<article class="teaser teaser--links">
 			<ul>
 {% for item in site.data.links-main %}
-				<li><a href="{{ item.link }}">{{ item.text }}</a></li>
+				<li><a href="{{ item.link | escape }}">{{ item.text }}</a></li>
 {% endfor %}
 			</ul>
 		</article>
