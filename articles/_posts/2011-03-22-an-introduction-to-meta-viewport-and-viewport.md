@@ -79,7 +79,7 @@ or alternatively,
 This setting will make the browser render the page on a canvas with a width of 320px, and then fit the result as neatly as possible inside the available screen area. If that area is 360px wide (see Figure 2), the content will be scaled up by a factor of 1.125; if it’s 240px wide, expect it to become smaller by a factor of 0.75.
 
 <figure class="figure">
-	<a href="{{ page.id }}/specific-width"><img src="{{ page.id }}/specific-width_small.jpg.jpg" alt="Screenshots of pages using a viewport width of 320px" class="figure__media"></a>
+	<a href="{{ page.id }}/specific-width"><img src="{{ page.id }}/specific-width_small.jpg" alt="Screenshots of pages using a viewport width of 320px" class="figure__media"></a>
 	<figcaption class="figure__caption" markdown="span">Figure 2: [page with a viewport width of 320px][8] on a 360×600px screen in portrait and landscape orientation</figcaption>
 </figure>
 
