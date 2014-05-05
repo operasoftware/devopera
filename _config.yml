@@ -1,6 +1,7 @@
 title: Dev.Opera
 url: http://dev.opera.com/
 permalink: /:categories/:title/
+future: false
 
 markdown: kramdown
 kramdown:
