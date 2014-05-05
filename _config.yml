@@ -1,10 +1,12 @@
 title: Dev.Opera
 url: http://dev.opera.com/
+permalink: /:categories/:title/
+
 markdown: kramdown
 kramdown:
   auto_ids: true
   transliterated_header_ids: true
-permalink: /:categories/:title/
+
 include:
 - '.htaccess'
 exclude:
