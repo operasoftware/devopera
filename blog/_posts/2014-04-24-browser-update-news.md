@@ -17,7 +17,7 @@ What better way to celebrate the new redesigned Dev.Opera than with a round-up o
 ## Opera Coast for iPhone released!
 
 <figure class="figure figure--right">
-	<img src="{{ page.id }}/screenshot-iphonesearch-angled-white.jpg" alt="Opera Coast on iPhone" width="200" class="figure__media">
+	<img src="{{ page.id }}/screenshot-iphonesearch-angled-white.jpg" alt="Opera Coast on iPhone" class="figure__media">
 </figure>
 
 Since Opera Coast was released for iPad last year, people have been asking us when it’ll be available for iPhone. Ta-da! [Coast 3 is in the App Store](https://itunes.apple.com/app/opera-coast/id674024845) today.
