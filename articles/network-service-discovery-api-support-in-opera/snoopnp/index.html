@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="description" content="UPnP inspector using the W3C Network Service Discover API. View and edit XML requests and responses between UPnP devices.">
+    <link rel="stylesheet" href="css/snoopnp.css">
+    <title>SnooPnP: Inspect your UPnP traffic</title>
+</head>
+<body>
+<h1>SnooPnP: Inspect your UPnP traffic</h1>
+
+<div id="discovery">
+    <div class="control">
+        <label for="sel_services">Services:</label>
+        <select id="sel_services"></select>
+        <button id="btn_refresh" disabled><img src="img/refresh.png">Refresh</button>
+    </div>
+
+    <textarea id="output"></textarea>
+</div>
+
+<div id="communication">
+    <div class="control">
+        <label for="sel_actions">Actions:</label>
+        <select id="sel_actions"></select>
+        <button id="btn_request" disabled><img src="img/send.png">Send request</button>
+    </div>
+
+    <div id="display">
+        <textarea id="request"></textarea><textarea id="response"></textarea>
+    </div>
+</div>
+
+<script src="js/markupmin.min.js"></script>
+<script src="js/markup_beauty.min.js"></script>
+<script src="js/snoopnp.js"></script>
+</body>
+</html>

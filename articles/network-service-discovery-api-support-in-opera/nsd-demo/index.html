@@ -1,0 +1,1387 @@
+<html>
+<head>
+    <title>Network Service Discovery Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Demo of the Network Service Discover API using UPnP. Match a renderer with a server to play media files on remote devices.">
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <!-- not needed? <script src="js/jgrowl/jquery.jgrowl_minimized.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.gritter.css" />
+
+    <script id="tmpl-container-server" type="text/html">
+    <div class="container-element container-server">
+        <div class="item-ico"><img src="img/server_ico.png" /></div>
+        <div class="item-middle">
+            <div class="item-name">${name}</div>
+            <div class="item-caption">${type}</div>
+        </div>
+        <div class="arrow-right" style="margin: 17px 0 0 0;"></div>
+    </div>
+    </script>
+    <script id="tmpl-container-item" type="text/html">
+    <div class="container-element container-item">
+        <div class="item-ico"><img src="http://dev.opera.com/static/articles/2012/nsd-demo/img/${ico}" /></div>
+        <div class="item-name">${name}</div>
+        <div class="arrow-right"></div>
+    </div>
+    </script>
+    <!--script id="tmpl-container-folder" type="text/html">
+    <div class="container-element">
+        <div class="container-item">
+            <div class="item-ico"><img src="img/${ico}" /></div>
+            <div class="item-name">${name}</div>
+        </div>
+    </div>
+    </script-->
+    <script type="text/javascript" src="upnp.js"></script>
+    <script type="text/javascript">
+
+/* Configuration */
+var rendererPollingInterval = 250;      // Renderer polling interval for trackPosition and volume while playing
+var rendererListUpdateInterval = 5000;  // How often the state information in the renderer server list is updated.
+                                        // Since part of this is done synchronously, you might want to use a longer
+                                        // interval if you anticipate many renderer services on your network.
+/* End configuration */
+
+var displayed_item_count_half_servers = 2;		// means that there will be (displayed_item_count_half * 2) + 1 items on the screen at a time. (5 in this case)
+var displayed_item_count_half_items = 2;
+var displayed_item_count_half = displayed_item_count_half_servers;
+
+var selected_element = null;				// 0 indexed
+var center_element = displayed_item_count_half_servers;				// 0 indexed
+
+var elements_are_servers = true;
+var currentFolder = null;
+var currentServer = null;
+var elements = null;
+var playMode = false;
+var show_preview = false;
+var image_preview_timeout = null;
+var scroll_hide_timeout = null;
+var ui_hide_timeout = null;
+
+var video_media = null;
+var audio_media = null;
+
+var browsing = true;
+
+var newServerToBrowse = null;
+
+var serverPickingMode = null;
+var renderingTarget = null;
+var rendererTimeUpdateInterval = null;
+var mediaErrorIds = [];
+var controllingRenderer = false;
+var renderingTargetSendPlayWhenDoneTransitioning = false;
+
+function try_add_server(server)
+{
+	var exists_already = false;
+	$( "#box .container-element" ).each(function(i, obj){
+		if ($(obj).data('server') == server)
+			exists_already = true;
+	});
+	
+    // Check that the server type and the current server view matches
+    if ((server.type.indexOf('AVTransport') != -1 &&
+         serverPickingMode != 'renderer') ||
+        (server.type.indexOf('ContentDirectory') != -1 &&
+         serverPickingMode != 'server'))
+        return;
+
+	if (exists_already == false)
+	{
+        var type = (server.type.indexOf('ContentDirectory') != -1 ? 'Digital Media Server' : 'Remote Renderer');
+
+		var tmpl = $( "#tmpl-container-server" ).tmpl( {
+			name: shrt( server.name, 30 ),
+            type: shrt( type, 40 )
+		} );
+		tmpl.data('server', server);
+		tmpl.appendTo( "#box" );
+		select_element(selected_element, false);
+
+        if (type === 'Remote Renderer') {
+            updateRendererInformation();
+        }
+	}
+
+	if( serverPickingMode === 'server' && upnp.servers.length > 0 )
+		$( "#no-servers-available" ).fadeOut( 300, function() { $( "#container" ).fadeIn( 300 ); } );
+}
+
+// This should probably be done using events instead
+function updateRendererInformation() {
+    $('.container-server').each(function(i, e) {
+        var server = $(e).data('server');
+        if (server && server.type.indexOf('AVTransport') !== -1) {
+            var curItem = server.getCurrentItem();
+            if (curItem) {
+                if (curItem.title) {
+                    if (server.playState === server.PLAYSTATE_PLAYING)
+                        $('.item-caption', e).text(shrt('Playing: ' + curItem.title, 50));
+                    else if (server.playState === server.PLAYSTATE_PAUSED)
+                        $('.item-caption', e).text(shrt('Paused: ' + curItem.title, 50));
+                    else
+                        $('.item-caption', e).text(shrt('Loaded item: ' + curItem.title, 50));
+                }
+                else
+                    $('.item-caption', e).text('Unknown item loaded');
+            }
+            else
+                $('.item-caption', e).text('Nothing loaded');
+        }
+    });
+}
+
+function try_remove_server(server)
+{
+	$( "#box .container-element" ).each(function(i, obj){
+		if ($(obj).data('server') == server)
+			$(obj).remove();
+	});
+	select_element(selected_element, false);
+	
+	if( serverPickingMode === 'server' && upnp.servers.length < 1 )
+		$( "#no-servers-available" ).fadeIn( 300 );
+}
+
+$( function() {
+	$("#screen-ui").hide();
+	$("#scroll_box").hide();
+	$("#playable-video").hide();
+	$("#playable-audio").hide();
+	$("#audio-speaker-ico").hide();
+	$("#play-arrows").hide();
+    $('#remote-control-header').hide();
+	$("#loading_image").fadeIn(100);
+
+	setTimeout( function(){
+		browsing = false;
+        showRenderers();
+		var serverOnlineCallback = function(server){
+			if (elements_are_servers) {
+				try_add_server(server);
+            }
+			else {
+				var ser_nam = shrt( server.name, 36 );
+				var text;
+                if (server.type.indexOf('ContentDirectory') != -1) {
+				    newServerToBrowse = server;
+                    type = 'server';
+                    text = shrt( ser_nam, 50 ) + "<br />" + "Press <img src='img/blue_button.png' style=\"text-align: middle;\" /> to browse the new server.";
+                }
+                else {
+                    type = 'renderer',
+                    text = shrt( ser_nam, 50 ) + "<br />" + "Go back and select the server as renderer to use it.";
+                }
+				$.gritter.add( { title: 'New ' + type + ' detected!', text: text, time: 5000, after_close: function(){ newServerToBrowse = null; } } );
+			}
+		};
+        upnp.addEventListener( 'ServerOnline', serverOnlineCallback );
+        upnp.addEventListener( 'RendererOnline', serverOnlineCallback);
+
+		var serverOfflineCallback = function(server){
+			if (elements_are_servers)
+				try_remove_server(server);
+
+            if( server === renderingTarget )
+            {
+                enterBrowseMode(true);
+                currentServer = null;
+                currentFolder = null;
+                showRenderers();
+            }
+			if( server == currentServer )
+			{
+				enterBrowseMode(true);
+				currentServer = null;
+				currentFolder = null;
+				if( upnp.servers.length == 0 ) {
+					elements_are_servers = true;
+					elements = null;
+					selected_element = 0;
+					currentFolder = null;
+					$( "#back" ).fadeOut( 200 );
+					$( "#container" ).fadeOut( 300, function(){
+						$( "#box" ).empty();
+						$( "#no-servers-available" ).fadeIn( 300 ); 
+					} );
+				} else {
+					showServers();
+				}
+			}
+		};
+        upnp.addEventListener( 'ServerOffline', serverOfflineCallback );
+        upnp.addEventListener( 'RendererOffline', serverOfflineCallback ); 
+	}, 2000 );
+
+    $('video, audio').bind('error', function() {
+        var error;
+        switch (this.error.code) {
+            case this.error.MEDIA_ERR_ABORTED:
+                error = 'Playback was aborted.';
+                break;
+            case this.error.MEDIA_ERR_DECODE:
+                error = 'Error decoding.';
+                break;
+            case this.error.MEDIA_ERR_NETWORK:
+                error = 'Network error.';
+                break;
+            case this.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                error = 'The media type is not supported.';
+                break;
+            default:
+                error = 'Unknown problem.';
+                break;
+        }
+        mediaError(error);
+    } );
+    $('video, audio').bind('volumechange', function() {
+        setVolumeIcon(this.volume);
+//        $('#media-control-volume-value').css('height', this.volume * 50);
+    });
+    $('video, audio').bind('durationchange', function() {
+        $( "#media-control-seek-times-max" ).get(0).innerHTML = niceTime( this.duration );
+    });
+});
+
+function setVolumeIcon(volume) {
+    var volumeImage;
+    if (volume < 0.01)
+        volumeImage = 0;
+    else if (volume < 0.34)
+        volumeImage = 1;
+    else if (volume < 0.67)
+        volumeImage = 2;
+    else
+        volumeImage = 3;
+    
+    $('#media-control-volume').css('background-image', 'url(img/volume_' + volumeImage + '.png)');
+}
+
+function shrt( title, count ) { return ( title.length <= count ) ? title : title.substring( 0, count-3 ) + "..."; }
+
+var can_press = true;
+function KeyCheck(e) {
+	if (false == can_press)
+	{
+		console.log("prevented key down: " + e.keyCode);
+		return;
+	}
+	can_press = false;
+	setTimeout(function(){
+		can_press = true;
+	//}, 200);
+	}, 100);
+	var KeyID = e.keyCode;
+	
+	if ( KeyID == 37 || KeyID == 38 || KeyID == 39 || KeyID == 40 ||
+		KeyID == 13 || KeyID == 11 ||
+		KeyID == 27 || KeyID == 8 || KeyID == 82 || KeyID == 66)
+		e.preventDefault();
+	
+	if (playMode)
+	{
+		if (KeyID == 38 || KeyID === 76) // Arrow up or volume +
+			movePlayUp();
+		else if (KeyID == 37)
+		{
+			if (selected_element == 0)
+				showUiOverlay();
+			movePlayLeft();
+		}
+		else if (KeyID == 39)
+		{
+			if (selected_element == $( "#box .container-element" ).length - 1)
+				showUiOverlay();
+			movePlayRight();
+		}
+		else if (KeyID == 40 || KeyID === 77) // Arrow down or volume -
+			movePlayDown();
+		else
+			showUiOverlay();
+	}
+	else
+	{
+		if (KeyID == 38)
+			moveUp();
+		else if (KeyID == 37)
+			moveLeft();
+		else if (KeyID == 39)
+			moveRight();
+		else if (KeyID == 40)
+			moveDown();
+	}
+	
+	if (KeyID == 13 || KeyID == 11)
+		onEnterPressed();
+	if (KeyID == 27 || KeyID == 8 || KeyID == 82 || KeyID == 66)
+		onBackPressed();
+	if ( KeyID == 69 || KeyID == 61509 )
+		onBrowseServer();
+}
+
+$(document).ready(function() {
+    $(this).keydown(KeyCheck);
+} );
+
+function showRenderers() {
+    renderingTarget = null;
+    serverPickingMode = 'renderer';
+	$("#loading_image").fadeOut(300);
+	
+	$( "#back" ).stop().fadeOut( 200 );
+	$( "#container" ).stop().fadeOut( 300, function(){
+		$( "#box" ).empty();
+        $( "#box" ).append($('<h1>')
+                                .addClass('container-header')
+                                .text('Select Renderer'));
+        $( "#box" ).append($('<div>')
+                                .attr('id', 'description-text')
+                                .text('Press ENTER to take control of the renderer, or RIGHT ARROW to select it.'));
+
+        // Add local as special renderer
+        var tmpl = $( "#tmpl-container-server" ).tmpl( {
+            name: shrt( "Local", 30 ),
+            type: shrt( "Local renderer", 40 )
+        } );
+        tmpl.data('server', upnp.renderers[i]);
+        tmpl.appendTo( "#box" );
+
+		for( var i = 0; i < upnp.renderers.length; i++ ) {
+			var tmpl = $( "#tmpl-container-server" ).tmpl( {
+				name: shrt( upnp.renderers[ i ].name, 30 ),
+                type: shrt( "Remote renderer", 40 )
+			} );
+			tmpl.data('server', upnp.renderers[i]);
+			tmpl.appendTo( "#box" );
+		}
+		selected_element = null;
+		displayed_item_count_half = displayed_item_count_half_servers;
+		center_element = displayed_item_count_half;
+		elements = null;
+		elements_are_servers = true;
+		select_element(0, true);
+
+        updateRendererInformation();
+        setInterval(updateRendererInformation, rendererListUpdateInterval);
+	
+        // The no servers available message is disabled for renderers, since there's
+        // always the local renderer.
+        $( "#no-servers-available" ).fadeOut( 200, function() {
+            $( "#container" ).fadeIn( 300 );
+        } );
+	} );
+
+}
+function showServers() {
+    serverPickingMode = 'server';
+	$("#loading_image").fadeOut(300);
+	
+	$( "#back" ).fadeOut( 200 );
+	$( "#container" ).fadeOut( 300, function(){
+		$( "#box" ).empty();
+        $( "#box" ).append($('<h1>').addClass('container-header').text('Select Media Server'));
+		for( var i = 0; i < upnp.servers.length; i++ ) {
+			var tmpl = $( "#tmpl-container-server" ).tmpl( {
+				name: shrt( upnp.servers[ i ].name, 30 ),
+                type: shrt( 'Digital Media Server', 40 )
+			} );
+			tmpl.data('server', upnp.servers[i]);
+			tmpl.appendTo( "#box" );
+		}
+		selected_element = null;
+		displayed_item_count_half = displayed_item_count_half_servers;
+		center_element = displayed_item_count_half;
+		elements = null;
+		elements_are_servers = true;
+		select_element(0, true);
+		
+		if( upnp.servers.length > 0 ) {
+			$( "#no-servers-available" ).fadeOut( 200, function() {
+				$( "#container" ).fadeIn( 300 );
+			} );
+		}
+        else {
+			$( "#container" ).fadeOut( 200, function() {
+				$( "#no-servers-available" ).fadeIn( 300 );
+			} );
+        }
+	} );
+}
+function onBrowseServer() {
+    if( newServerToBrowse ) {
+        currentServer = newServerToBrowse;
+        currentFolder = null;
+        showElements();
+    }
+}
+function showElements( ) {
+	currentServer.onBrowseCompleted = serverBrowseCompleted;
+	browsing = true;
+    currentServer.browse( currentFolder, 0, 100000 );
+	$("#loading_image").fadeIn( 150 );
+} 
+function serverBrowseCompleted( itemz ) {
+	if (browsing == false)
+		return;
+	browsing = false;
+	$("#loading_image").fadeOut( 50 );
+	if (itemz.length == 0)
+	{
+        if (currentFolder)
+    		currentFolder = currentFolder.parent;
+        else {
+            // Failed to browse server root
+            currentFolder = null;
+            currentServer = null;
+            selected_element = null;
+            select_element(0, true);
+        }
+		return;
+	}
+	
+	elements = itemz;
+	$( "#back" ).fadeOut( 300 );
+	$( "#container" ).fadeOut( 300, function(){
+		$( "#box" ).empty();
+		for( var i = 0; i < itemz.length; i++ ) {
+			var tmpl = $( "#tmpl-container-item" ).tmpl( {
+				name: shrt( itemz[ i ].title, 30 ),
+				ico: getClassNameThumbnail( itemz[i].className ) 
+			} );
+			if( isPlayable( itemz[i] ) )
+				$( ".arrow-right", tmpl ).css( "display", "none" );
+			tmpl.appendTo( "#box" );
+		}
+		selected_element = null;
+		displayed_item_count_half = displayed_item_count_half_items;
+		center_element = displayed_item_count_half;
+		elements_are_servers = false;
+		select_element(0, true);
+		$( "#container" ).fadeIn( 300 );
+		
+		var fldr_name = "";
+		if( currentFolder )
+			fldr_name = currentFolder.title;
+		else if ( currentServer )
+			fldr_name = currentServer.name;
+
+		$( "#back-name" ).text( shrt( fldr_name, 35 ) );
+
+		var el_count = 0;
+		if( elements.length < displayed_item_count_half_items*2 + 1 )
+			el_count = elements.length/2;
+		else
+			el_count = displayed_item_count_half_items;
+		$( "#back" ).css( "top", 245 - el_count*67 ); //item_padding_height should be here
+		$( "#back" ).fadeIn( 300 );
+	} );
+}
+
+function try_preview(item) {
+	clearTimeout(image_preview_timeout);
+	if( elements[selected_element] && isPhoto(elements[selected_element].className) )
+	{
+		show_preview = true;
+		function show_preview_now(){
+			if (selected_element == null)
+				return;
+			$("#loading_image").fadeIn( 150 );
+			$("#photo-details-text").text(elements[selected_element].title);
+            clearMediaErrors();
+            if (!renderingTarget) {
+                var photoTimeout = setTimeout(function() {
+                    mediaError('Failed to load photo.');
+    				$("#loading_image").fadeOut( 50 );
+                }, 3500);
+            }
+			$('<img/>').attr('src', elements[ selected_element ].contentURL).load(function() {	// cache the image in browser first
+                clearTimeout(photoTimeout);
+				$( "#playable-area" ).fadeOut( 400, function(){
+					if (show_preview)
+					{
+						$( "#playable-area" ).css( 'background-image', 'url( "' + elements[ selected_element ].contentURL + '")' );
+						$( "#playable-area" ).fadeIn( 400 );
+					}
+					$("#loading_image").fadeOut( 50 );
+				} );
+			});
+            if (renderingTarget) {
+                renderingTarget.setItem(elements[selected_element].contentURL, elements[selected_element].metaDataXmlText);
+            }
+		}
+		if (playMode)
+			show_preview_now();
+		else
+			image_preview_timeout = setTimeout(show_preview_now, 600);
+	}
+	else
+	{
+		show_preview = false;
+		$( "#loading_image" ).fadeOut( 50 );
+		$( "#playable-area" ).fadeOut( 400 );
+		
+		if (playMode)
+			enterBrowseMode(false);
+	}
+}
+
+function select_element(element_id, initial) {
+	var element_count = $( "#box .container-element" ).length;
+	
+	var center_diff = Math.abs(element_id - center_element);
+	if (center_diff <= displayed_item_count_half - 1)
+	{
+		// we don't need to move the center_element in this case
+	}
+	else //if (element_id - center_element <= displayed_item_count_half - 1)
+	{
+		center_element += (element_id - center_element) / Math.abs(element_id - center_element);
+	}
+	center_element = Math.max( center_element, displayed_item_count_half );
+	center_element = Math.min( center_element, element_count - displayed_item_count_half - 1 );
+	if (element_count < displayed_item_count_half*2 + 1)
+		center_element = element_count / 2;
+	
+	selected_element = element_id;
+	
+	$( "#box .container-element" ).each(function(i, obj){
+		$(obj).removeClass( 'marked' );
+	});
+	$( "#box .container-element:eq(" + (element_id) + ")" ).addClass( 'marked' );
+	
+	var box_width = $("#container").width();
+	var box_height = $("#container").height();
+	
+	$("#box .container-element").each(function(i, obj){
+		if (false == initial)
+			$(obj).css("-o-transition", "all 0.2s ease-out");
+		
+		var distance = i - center_element;
+		var distance_selection = i - selected_element;
+		
+		var item_width = 700;
+		var item_height = 40;
+		var item_padding_height = 67;
+		if (elements_are_servers)
+		{
+			item_height = 60;
+			item_padding_height = 100;
+		}
+		if (distance_selection == 0)
+		{
+			item_width += 20;
+			item_height += 5;
+		}
+		if (Math.abs(distance) > displayed_item_count_half)
+			obj.style.opacity = 0;
+		else
+			obj.style.opacity = 0.8;
+		
+		var distance_y = distance * item_padding_height;
+		var centerX = box_width / 2;
+		var centerY = box_height / 2 + distance_y;
+		
+		//obj.style.height =
+		obj.style.height = item_height;
+		obj.style.width = item_width;
+		obj.style.top = centerY - item_height/2;
+		obj.style.left = centerX - item_width/2;
+	});
+	
+	if (elements)
+		try_preview(elements[selected_element]);
+		
+	clearTimeout(scroll_hide_timeout);
+	if (element_count > (displayed_item_count_half*2+1))
+	{
+		$("#scroll_box").stop().fadeIn( 300 );
+		var extra_element_count = element_count - (displayed_item_count_half*2+1);
+		var scroll_total_height = $("#scroll_box").height();
+		var scroll_height = scroll_total_height * ((displayed_item_count_half*2+1) / element_count);
+		var per_item_scroll = (scroll_total_height - scroll_height) / extra_element_count;
+		$("#scroll_indicator").css('top', ((center_element - displayed_item_count_half)*per_item_scroll) + 'px');
+		$("#scroll_indicator").css('height', (scroll_total_height * ((displayed_item_count_half*2+1) / element_count)) + 'px');
+		
+		scroll_hide_timeout = setTimeout(function(){
+			$("#scroll_box").stop().fadeOut( 1600 );
+		}, 3000);
+	}
+	else
+	{
+		$("#scroll_box").stop().hide( );
+	}
+	
+	if (selected_element == 0)
+		$("#play-arrow-left").hide();
+	else
+		$("#play-arrow-left").show();
+	if (selected_element == element_count-1)
+		$("#play-arrow-right").hide();
+	else
+		$("#play-arrow-right").show();
+}
+
+function moveDown() {
+	if( browsing ) return;
+	var howManyChildren = $( "#box .container-element" ).length;
+	if (selected_element === null) selected_element = -1;
+	if ( howManyChildren <= 1 || selected_element >= howManyChildren - 1 ) return;
+	if ( selected_element < howManyChildren - 1 )
+		select_element(selected_element + 1, false);
+}
+function moveUp() {
+	if( browsing ) return;
+	var howManyChildren = $( "#box .container-element" ).length;
+	if (selected_element === null) selected_element = -1;
+	if ( howManyChildren <= 1 ) return;
+	if ( selected_element >= 1 )
+		select_element(selected_element - 1, false);
+}
+function moveLeft() {
+	if( currentServer === null ) { showRenderers(); return; }
+	if( browsing ) return;
+	selected_element = null;
+	if( currentFolder != null ) {
+		currentFolder = currentFolder.parent;
+		showElements();
+	} else {
+		currentServer = null;
+		showServers();
+	}
+}
+function moveRight() {
+	if( selected_element === null  ) return;
+	if( browsing ) return;
+    if( serverPickingMode === 'renderer' ) {
+        // selected_element > 0 are remote targets, 0 is local
+        if (selected_element > 0) {
+            setRenderingTarget(upnp.renderers[selected_element - 1]);
+        }
+        else {
+            setRenderingTarget(null); // local
+        }
+        showServers();
+    }
+    else {
+    	if( currentServer === null ) {
+    		currentServer = upnp.servers[selected_element];
+    	} else {
+    		if( !isContainer( elements[ selected_element ] ) ) return;
+    		currentFolder = elements[selected_element];
+    	}
+    	selected_element = null;
+    	showElements();	
+    }
+}
+
+function movePlayUp() {
+    var target = renderingTarget || video_media || audio_media;
+    if (target)
+        target.volume = Math.min(Math.max(target.volume + 0.15, 0.0), 1.0);
+}
+function movePlayDown() {
+    var target = renderingTarget || video_media || audio_media;
+    if (target)
+        target.volume = Math.min(Math.max(target.volume - 0.15, 0.0), 1.0);
+}
+
+function movePlayRight() {
+    if ($('#media-control').is(':visible')) {
+        if (renderingTarget)
+            renderingTarget.trackPosition += 15;
+        else {
+            var target = video_media || audio_media;
+            if (target)
+                target.currentTime = Math.min(Math.max(target.currentTime + 15, 0), target.duration);
+        }
+    }
+    else
+        moveDown();
+}
+function movePlayLeft() {
+    if ($('#media-control').is(':visible')) {
+        if (renderingTarget)
+            renderingTarget.trackPosition -= 15;
+        else {
+            var target = video_media || audio_media;
+            if (target)
+                target.currentTime = Math.min(Math.max(target.currentTime - 15, 0), target.duration);
+        }
+    }
+    else
+        moveUp();
+}
+
+function isContainer( item ) {
+	if( item.type == 1 ) return true;
+}
+function isPlayable( item ) {
+	if( item.type == 0 ) return true;
+}
+function getItemsType ( type ) {
+
+}
+function isPhoto( className ) {
+	return className.toLowerCase().indexOf("photo") != -1 || className.toLowerCase().indexOf("image") != -1;
+}
+function isVideo( className ) {
+	return className.toLowerCase().indexOf("video") != -1 || className.toLowerCase().indexOf("movie") != -1;
+}
+function isAudio( className ) {
+	return isVideo(className) == false && (className.toLowerCase().indexOf("audio") != -1 || className.toLowerCase().indexOf("music") != -1);
+}
+function getClassNameThumbnail( className ) {
+	if (isPhoto(className))
+		return "photo_ico.png";
+	else if (isVideo(className))
+		return "video_ico.png";
+	else if (isAudio(className))
+		return "audio_ico.png";
+	else //if (className == "object.container.storageFolder")
+		return "folder_ico.png";
+}
+function onBackPressed() {
+    $('#remote-control-header').hide();
+
+    // Remove old error messages
+    clearMediaErrors();
+    $("#loading_image").fadeOut( 50 );
+
+	if (playMode)
+	{
+    	enterBrowseMode(false);
+//        if ( controllingRenderer ) {
+//            controllingRenderer = false;
+            currentServer = null;
+            currentFolder = null;
+        //    selected_element = null;
+		select_element(0, false);
+//            showServers();
+            $("#playable-area").fadeOut(400);
+            $("#back").hide();
+            browsing = false;
+//        }
+
+		if ( video_media )
+			video_media.pause();
+		if ( audio_media )
+			audio_media.pause();
+
+		video_media = null;
+		audio_media = null;
+	}
+	else
+	{
+		currentServer = null;
+		currentFolder = null;
+		selected_element = null;
+        showRenderers();
+		$("#playable-area").fadeOut(400);
+		browsing = false;
+	}
+}
+function showUiOverlay() {
+	clearTimeout(ui_hide_timeout);
+	ui_hide_timeout = setTimeout(function(){
+		$("#screen-ui").fadeOut(600);
+	}, 2000);
+	$("#screen-ui").fadeIn(200);
+}
+
+
+function stopTrackingRemoteRendererTime() {
+    clearInterval(rendererTimeUpdateInterval);
+    rendererTimeUpdateInterval = null;
+}
+
+function startTrackingRemoteRendererTime() {
+    if (rendererTimeUpdateInterval)
+        return;
+
+    rendererTimeUpdateInterval = setInterval(function() {
+        if(!$("#media-control").is(':visible'))
+            stopTrackingRemoteRendererTime();
+
+        var playState = renderingTarget.playState;
+        switch (playState) {
+            case renderingTarget.PLAYSTATE_PLAYING:
+            case renderingTarget.PLAYSTATE_PAUSED:
+            case renderingTarget.PLAYSTATE_TRANSITIONING:
+                var maxDivProgressBarWidth = 537;
+                var currentTime = renderingTarget.trackPosition;
+                var duration = renderingTarget.trackDuration;
+                if (currentTime !== null && duration !== null) {
+                    $( "#media-control-seek-times-max" ).get( 0 ).innerHTML = niceTime( duration );
+                    $( "#media-control-seek-progress" ).css( 'width', maxDivProgressBarWidth * (currentTime / duration) );
+                    $( "#media-control-seek-times-elapsed" ).get( 0 ).innerHTML =  niceTime ( currentTime );
+                }
+                if (renderingTarget.volume !== null) {
+                    setVolumeIcon(renderingTarget.volume);
+                }
+                break;
+        }
+    }, rendererPollingInterval);
+}
+
+function setRenderingTarget(newRenderingTarget) {
+    if (newRenderingTarget !== renderingTarget) {
+        if (renderingTarget)
+            renderingTarget.removeEventListener('StateChanged', stateChangedCallback)
+
+        renderingTarget = newRenderingTarget;
+        if (renderingTarget)
+            renderingTarget.addEventListener('StateChanged', stateChangedCallback)
+    }
+}
+
+function setPlayPauseButtonByPlayState(playState) {
+    switch (playState) {
+        case renderingTarget.PLAYSTATE_PLAYING:
+            $( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+            break;
+        case renderingTarget.PLAYSTATE_PAUSED:
+        case renderingTarget.PLAYSTATE_STOPPED:
+        case renderingTarget.PLAYSTATE_MEDIA_READY:
+            $( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/play.png" />';
+            break;
+        case renderingTarget.PLAYSTATE_TRANSITIONING:
+        default:
+            $( "#media-control-ico" ).get( 0 ).innerHTML = '';
+            break;
+    }
+}
+
+function updateMediaInfo(currentItem) {
+    var title;
+    var extra;
+    if (isVideo(currentItem.className)) {
+        var resolution = (currentItem.resolution ? 'Resolution: ' + currentItem.resolution : '');
+//        var audioCh = (currentItem.nrAudioChannels ? 'Audio channels: ' + currentItem.nrAudioChannels : '');
+        title = currentItem.title;
+        extra = resolution;
+    }
+    else if (isAudio(currentItem.className)) {
+        var creator = (currentItem.creator ? currentItem.creator + ' - ' : '');
+        var bitrate = (currentItem.bitrate ? 'Bitrate: ' + Math.round( (currentItem.bitrate * 8) / 1024) + ' kbps' : '');
+        title = creator + currentItem.title;
+        extra = bitrate;
+    }
+    $( "#media-details-file-name" ).text( shrt( title, 26 ) );
+    $( "#media-details-media-name" )
+        .empty()
+        .append( $('<div>').text( shrt( extra , 26) ) );
+}
+
+function stateChangedCallback(playState) {
+    console.log('stateChangedCallback to state ' + playState + ' for ' + this.name);
+    if (renderingTargetSendPlayWhenDoneTransitioning === true) {
+        var currentItem = renderingTarget.getCurrentItem();
+        updateMediaInfo(currentItem);
+        if (playState === renderingTarget.PLAYSTATE_PAUSED || playState === renderingTarget.PLAYSTATE_STOPPED) {
+            renderingTargetSendPlayWhenDoneTransitioning = false;
+            console.log('Sending play to rendering target');
+            renderingTarget.play();
+        }
+        else if (playState === renderingTarget.PLAYSTATE_PLAYING) {
+            renderingTargetSendPlayWhenDoneTransitioning = false;
+            console.log('Remote target already playing, won\'t send play again');
+        }
+        else if (playState === renderingTarget.PLAYSTATE_NO_MEDIA) {
+            renderingTargetSendPlayWhenDoneTransitioning = false;
+            onBackPressed();
+            $.gritter.add({
+                title: 'Error Playing Item', 
+                text: renderingTarget.lastError || 'Unknown error.',
+                time: 10000,
+            });
+        }
+    }
+
+    setPlayPauseButtonByPlayState(playState);
+}
+
+function showRenderingTargetControls(resuming, className) {
+    var playState = renderingTarget.playState;
+    switch (playState) {
+        case renderingTarget.PLAYSTATE_PLAYING:
+        case renderingTarget.PLAYSTATE_PAUSED:
+        case renderingTarget.PLAYSTATE_STOPPED:
+        default:
+            var currentItem = renderingTarget.getCurrentItem();
+            className = className || currentItem.className;
+            if (resuming) {
+                if (currentItem.simple === true) {
+                    $.gritter.add({
+                        title: 'Unkown Item', 
+                        text: 'Not enough information from the renderer. Assuming audio/video.', 
+                        time: 6000,
+                    });
+                }
+                else if (currentItem === null || currentItem.title === "") {
+                    $.gritter.add({
+                        title: 'No Current Item', 
+                        text: 'No item loaded on renderer, pick an item to play.', 
+                        time: 6000,
+                    });
+                }
+            }
+
+            if( isPhoto( className ) ) {
+                $( "#photo-details" ).stop().fadeIn( 300 );
+                $( "#play-arrows" ).stop().fadeIn( 300 );
+                //$( "#close" ).fadeIn( 300 );
+                $( "#container" ).stop().fadeOut( 300 );
+                $( "#back" ).stop().fadeOut( 300 );
+                playMode = true;
+                $( "#playable-area" ).css('background-size', 'contain');
+            }
+            else if ( isVideo( className ) ||
+                      isAudio( className ) ) {
+                $( "#container" ).stop().fadeOut( 300 );
+                $( "#back" ).stop().fadeOut( 300 );
+                $( "#playable-area" ).stop().fadeIn(200).css('opacity', '1').css('diplay','block').show(); // Force display
+                $( "#media-control" ).stop().fadeIn( 200 );
+                $( "#playable-area" ).css( 'background-image', '' );
+                updateMediaInfo(currentItem);
+                $( "#media-details" ).stop().show();
+                $( "#audio-speaker-ico" ).stop().fadeIn(300);
+                $( "#media-control-seek-times-max" ).get( 0 ).innerHTML = "";
+                $( "#media-control-seek-progress" ).css( 'width', 0 );
+                $( "#media-control-seek-times-elapsed" ).get( 0 ).innerHTML = "";
+                //$( "#media-control-volume-value" ).css( 'height', 0);
+                setVolumeIcon(0);
+                setPlayPauseButtonByPlayState(playState);
+                playMode = true;
+            }
+
+            if (playMode) {
+                $( "#remote-control-header" ).show().find('span').text(renderingTarget.name);
+
+                showUiOverlay();
+                startTrackingRemoteRendererTime();
+            }
+
+            break;
+    }
+}
+
+function onEnterPressed() {
+	if( playMode ) {
+        if ( renderingTarget ) {
+            if ( renderingTarget.playState === renderingTarget.PLAYSTATE_PAUSED || 
+                      renderingTarget.playState === renderingTarget.PLAYSTATE_MEDIA_READY || 
+                      renderingTarget.playState === renderingTarget.PLAYSTATE_STOPPED ) {
+				renderingTarget.play();
+//				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+            }
+            else {
+				renderingTarget.pause();
+//				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/play.png" />';
+            }
+        }
+		if ( video_media )
+		{
+			if( video_media.paused ) {
+				video_media.play();
+				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+			} else {
+				video_media.pause();
+				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/play.png" />';
+			}
+		}
+		if ( audio_media )
+		{
+			if( audio_media.paused ) {
+				audio_media.play();
+				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+			} else {
+				audio_media.pause();
+				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/play.png" />';
+			}
+		}
+
+	} else {
+		if( elements && isPlayable(elements[selected_element]) ) {
+            // Remote renderer
+            if (renderingTarget) {
+                renderingTargetSendPlayWhenDoneTransitioning = true;
+                renderingTarget.setItem( elements[selected_element].contentURL, elements[selected_element].metaDataXmlText );
+                showRenderingTargetControls(false, elements[selected_element].className);
+            }
+
+            // Local renderer
+            else {
+                if( isPhoto( elements[ selected_element ].className ) ) {
+                    $( "#photo-details" ).fadeIn( 300 );
+                    $( "#play-arrows" ).fadeIn( 300 );
+                    //$( "#close" ).fadeIn( 300 );
+                    $( "#container" ).fadeOut( 300 );
+                    $( "#back" ).fadeOut( 300 );
+                    playMode = true;
+                    $( "#playable-area" ).css('background-size', 'contain');
+                }
+                else if ( isVideo( elements[selected_element].className ) )
+                {
+                    $( "#container" ).fadeOut( 300 );
+                    $( "#back" ).fadeOut( 300 );
+                    $( "#playable-video" ).stop().show();
+                    $( "#playable-area" ).stop().css('opacity', '1').css('diplay','block').show();
+                    $( "#media-control" ).fadeIn( 300 );
+                    //$( "#close" ).fadeIn( 300 );
+                    $( "#playable-area" ).css( 'background-image', '' );
+                    $("#playable-video-tag").attr("src", elements[selected_element].contentURL);
+                    updateMediaInfo(elements[selected_element]);
+                    $( "#media-details" ).stop().show();
+                        
+                    video_media = $( "#playable-video-tag" ).get( 0 );
+                    $( "#media-control-seek-times-max" ).get( 0 ).innerHTML = "";
+                    video_media.addEventListener( 'canplay', function() {
+                        if (video_media)
+                        {
+                            video_media.addEventListener( 'timeupdate', function() {
+                                if (video_media)
+                                {
+                                    var maxDivProgressBarWidth = 537;
+                                    $( "#media-control-seek-progress" ).css( 'width', maxDivProgressBarWidth * (video_media.currentTime / video_media.duration) );
+                                    $( "#media-control-seek-times-elapsed" ).get( 0 ).innerHTML =  niceTime ( video_media.currentTime );
+                                }
+                            } );
+                            setVolumeIcon(video_media.volume);
+                            video_media.pause();
+                            video_media.play();
+                        }
+                    } );
+                    video_media.play();
+                    $( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+                    
+                    playMode = true;
+                }
+                else if( isAudio( elements[selected_element].className ) ) {
+                    $( "#container" ).fadeOut( 300 );
+                    $( "#back" ).fadeOut( 300 );
+                    $( "#playable-audio" ).show();
+                    $( "#playable-area" ).stop().css('opacity', '1').css('diplay','block').show();
+                    $( "#media-control" ).fadeIn( 200 );
+                    //$( "#close" ).fadeIn( 300 );
+                    $( "#playable-area" ).css( 'background-image', '' );
+                    $( "#playable-audio-tag" ).attr( "src", elements[selected_element].contentURL );
+                    
+                    updateMediaInfo(elements[selected_element]);
+                    $( "#media-details" ).stop().show();
+                    
+                    
+                    $( "#audio-speaker-ico" ).fadeIn(300);
+
+                    audio_media = $( "#playable-audio-tag" ).get( 0 );
+                    $( "#media-control-seek-times-max" ).get( 0 ).innerHTML = "";
+                    audio_media.addEventListener( 'canplay', function() {
+                        if (audio_media)
+                        {
+                            audio_media.addEventListener( 'timeupdate', function() {
+                                if ( audio_media )
+                                {
+                                    var maxDivProgressBarWidth = 537;
+                                    $( "#media-control-seek-progress" ).css( 'width', maxDivProgressBarWidth * (audio_media.currentTime / audio_media.duration) );
+                                    $( "#media-control-seek-times-elapsed" ).get( 0 ).innerHTML =  niceTime ( audio_media.currentTime );
+                                }
+                            } );
+                            setVolumeIcon(audio_media.volume);
+                            audio_media.pause();
+                            audio_media.play();
+                        }
+                    } );
+                    audio_media.play();
+                    $( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
+
+                    playMode = true;
+                }
+                else
+                    moveRight();
+                
+                if (playMode)
+                {	// switched to the play mode
+                    showUiOverlay();
+                }
+            }
+		}
+        // Taking control over renderer, with unknown content and state
+        else if ( serverPickingMode === 'renderer' && selected_element > 0 ) {
+            var server = upnp.renderers[selected_element - 1];
+            var item = server.getCurrentItem();
+            if (item && item.contentURL !== "") {
+                controllingRenderer = true;
+                setRenderingTarget(upnp.renderers[selected_element - 1]);
+                showRenderingTargetControls(true);
+            }
+            else {
+				$.gritter.add( { 
+                    title: 'Cannot Take Control', 
+                    text: 'The renderer does not have an item loaded. Pick something to play and try again.',
+                    time: 6000,
+                    class_name: 'opaque'
+                } );
+            }
+        }
+	}
+}
+function enterBrowseMode(hidePreview) {
+	playMode = false;
+	if (hidePreview)
+	{
+		$( "#playable-area" ).fadeOut( 400, function(){
+			$( "#playable-area" ).css( 'background-image', '' );
+		} );
+	}
+
+	$( "#photo-details" ).fadeOut( 300 );
+	$( "#media-details" ).fadeOut( 300 );
+	//$( "#close" ).fadeOut( 300 );
+	$( "#play-arrows" ).fadeOut( 300 );
+	$( "#audio-speaker-ico" ).hide();
+	$( "#playable-video" ).hide();
+	$( "#playable-audio" ).hide();
+	$( "#media-control" ).hide();
+	$( "#container" ).fadeIn( 300 );
+	$( "#back" ).fadeIn( 300 );
+	$( "#playable-area" ).css('background-size', 'cover');
+	$( "#media-control-seek-progress" ).css( 'width', '0px' );
+}
+
+
+function niceTime( secs ) {
+
+	var hours = Math.floor( secs / ( 60 * 60 ) );
+
+	var divisor_for_minutes = secs % ( 60 * 60 );
+	var minutes = Math.floor( divisor_for_minutes / 60 );
+	if( minutes < 10 ) minutes = '0' + minutes;
+ 
+	var divisor_for_seconds = divisor_for_minutes % 60;
+	var seconds = Math.floor( divisor_for_seconds );
+	if( seconds < 10 ) seconds = '0' + seconds;
+	var timex = "";
+	if ( secs < 3600 )
+		timex = minutes + ":" + seconds;
+	else
+		timex = hours + ":" + minutes + ":" + seconds;
+
+	return timex;
+}
+function clearMediaErrors() {
+    var i,
+        l,
+        localMediaErrorIds = mediaErrorIds;
+
+    mediaErrorIds = [];
+
+    for (i=0,l=localMediaErrorIds.length; i<l; i++) {
+        $.gritter.remove(localMediaErrorIds[i], {
+            fade: true,
+            speed: 'fast'
+        });
+    }
+}
+function mediaError(msg) {
+    if (!playMode)
+        return;
+
+    var mediaErrorId = $.gritter.add({
+        title: 'Problem With Playback!', 
+        text: msg, 
+        sticky: true, 
+        class_name: 'media-error',
+        after_close: function(){ } 
+    });
+    mediaErrorIds.push(mediaErrorId);
+}
+    </script>
+    <style type="text/css">
+body {  background-color: #505050; margin: 0; padding: 0; background-image: url( img/bg.png ) no-repeat; }
+.opaque { opacity: 1.0; }
+/* original size: 730x90 */
+#remote-control-header {
+    display:none;
+}
+#description-text { 
+    text-align: center;
+	padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+	font-family: sans-serif;
+    font-weight: normal;
+	font-size: 18px;
+	color: #fff;
+}
+.container-header { 
+    text-align: center;
+	padding: 12px 0 0 0;
+    margin: 0 auto;
+    max-width: 800px;
+	font-family: sans-serif;
+    font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+}
+.container-element { 
+	position: absolute;
+	background: #272727;
+	padding: 0px;
+	font-family: sans-serif;
+	font-size: 26px;
+	color: #fff;
+}
+.container-server { padding: 15px 15px 15px 15px; }
+.container-item { padding: 10px 15px 10px 15px; opacity: 0.8; }
+.container-server:hover { background: #e31b1b; }
+.container-item:hover { background: #e31b1b; }
+.marked {
+	background: #e31b1b;
+}
+
+.vanished { width: 0px; height: 0px; }
+.invisible { display: none; }
+.item-name { width: 530px; height: 30px; font-family: sans-serif; font-size: 26px; color: #fff; margin-top: 5px; float: left; }
+.item-caption { width: 530px; height: 20px; font-family: sans-serif; font-size: 16px; color: #9d9d9d; padding: 3px 0 0 0; }
+.item-ico { width: 50px; margin: 0 20px 0 10px; padding: 4px 0 0 40px; float: left; }
+.item-middle { width: 540px; height: 60px; padding: 3px 0 0 0; float: left; }
+.arrow-right { float: left; width: 22px; height: 30px; margin: 10px 5px 0 5px; background-image: url( 'img/arrow_right.png' ); background-repeat: no-repeat; }
+
+#box {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	position:relative;
+}
+#container { width: 100%; height: 100%; }
+#playable-area { width: 100%; height: 100%; position: absolute; left:0; top:0; z-index: -1; margin: 0; padding: 0; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+#photo-details { position: absolute; bottom: 20px; left: 270px; width: 700px; height: 50px; padding: 20px; background: #272727; z-index: 0; opacity: 0.8; display: none; }
+#media-details { position: absolute; top: 20px; left: 20px; width: 400px; height: 50px; padding: 20px 20px 20px 30px; background: #272727; z-index: 0; opacity: 0.8; display: none; }
+#play-arrow-left { position: absolute; top: 300px; left: 0px; width: 12px; height: 20px; padding: 25px 27px 25px 27px; z-index: 0; background: #272727; opacity: 0.8; }
+#play-arrow-right { position: absolute; top: 300px; right: 0px; width: 12px; height: 20px; padding: 25px 27px 25px 27px; z-index: 0; background: #272727; opacity: 0.8; }
+#loading_image { position: absolute; left: 620px; bottom: 10px; z-index: 100; }
+#playable-video { position: relative; }
+#playable-audio { position: relative; }
+#media-control{ position: absolute; bottom: 20px; left: 237px; width: 805px; height: 90px; padding: 0px; background: #272727; z-index: 0; opacity: 0.8; display: none; }
+#media-control-ico{ width: 33px; height: 39px; padding: 26px 40px 25px 40px; background: red; float: left; }
+#media-control-volume{ width: 39px; height: 40px; padding: 25px 33px 25px 33px; float: right; background-position: 25px center; background-repeat: no-repeat;}
+#media-control-seek-container{ width: 537px; height: 40px; padding: 0px; float: left; }
+#media-control-seek-times-container{ width: 537px; height: 25px; margin: 25px 20px 5px 20px; }
+#media-control-seek-bar{ width: 537px; height: 10px; margin: 5px 20px 10px 20px; background: #111; }
+#media-control-seek-progress{ width: 0px; height: 10px; margin: 0px; padding: 0px; background: white; }
+#media-control-seek-times-elapsed{ width: 300px; float: left; font-family: sans-serif; font-size: 13px; color: white; }
+#media-control-seek-times-max{ width: 233px; float: left; text-align: right; font-family: sans-serif; font-size: 13px; color: white; }
+#audio-speaker-ico{ position:absolute; left:523px; top:244px; }
+/*#close { position: absolute; right: 20px; top: 20px; width: 60px; height: 60px; padding: 15px; background: #272727; z-index: 0; opacity: 0.8; display: none; }*/
+#no-servers-available{ position: absolute; top: 300px; left: 270px; width: 700px; height: 60px; padding: 18px; background: #272727; }
+#back { position: absolute; top: 160px; left: 350px; width: 650px; height: 50px; padding: 20px; display: none; opacity: 0.6; text-shadow: #222 2px 2px 2px; }
+
+/*#new-server { position: absolute; top: 20px; right: 20px; width: 340px; height: 50px; padding: 15px 20px 15px 30px; background: #272727; z-index: 0; opacity: 0.5; display: none; }*/
+
+#logo { position: absolute; top: 20px; left: 20px; width: 152px; height: 61px; background-image: url( 'img/logo_opera.png' ); background-repeat: no-repeat; z-index: 0; }
+
+#scroll_box {
+	background-color: #1D1F1F;
+	position: absolute;
+	top: 200px;
+	left: 1060px;
+	width: 10px;
+	height: 327px;
+}
+#scroll_indicator_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#scroll_indicator {
+	background-color: #909191;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	
+	-o-transition: all 0.2s ease-out;
+}
+.opaque .gritter-item {
+    opacity: 1.0;
+}
+.media-error .gritter-item {
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div id="logo"></div>
+    
+    <div id="back">
+        <div style="margin: 11px 35px 0 5px; float: left;"><img src="img/arrow_back.png" /></div>
+        <div id="back-name" class="item-name" style="padding: 0px;"></div>
+    </div>
+    
+    <div id="no-servers-available">
+        <div class="item-ico"><img src="img/icon_nodevices.png" /></div>
+        <div class="item-name" style="margin-top: 13px;">Searching for servers...</div>
+    </div>
+    
+    <div id="playable-area">
+        <h1 id="remote-control-header" class="container-header">Controlling Remote Renderer "<span></span>"</h1>
+        <div id="playable-video">
+            <video id="playable-video-tag" width="1280" height="720">
+            </video>
+        </div>
+
+        <div id="playable-audio">
+            <audio id="playable-audio-tag" width="1" height="1">
+            </audio>
+            <img id="audio-speaker-ico" src="img/speaker.png" />
+        </div>
+
+        <div id="media-control">
+            <div id="media-control-ico">
+    <!--			<img src="img/play.png" />-->
+            </div>
+            <div id="media-control-seek-container">
+                <div id="media-control-seek-times-container">
+                    <div id="media-control-seek-times-elapsed">00:00</div><div id="media-control-seek-times-max">5:45</div>
+                </div>
+                <div id="media-control-seek-bar">
+                    <div id="media-control-seek-progress"></div>
+                </div>
+            </div>
+            <div id="media-control-volume"></div>
+        </div>
+    </div>
+    
+    <!--div id="close"><div style="text-align: center;"><img src="img/close_ico.png" /></div><div style="text-align: center; padding: 10px 5px 0px 5px; color: #9d9d9d; font-family: sans-serif; font-size: 16px;">Close</div></div-->
+    
+    <div id="screen-ui">
+        <div id="photo-details"><div class="item-ico"><img src="img/photo_ico.png" /></div><div class="item-name" id="photo-details-text">Photo details</div></div>
+        <div id="media-details"><div id="media-details-file-name" class="item-name"></div><div id="media-details-media-name" class="item-caption"></div></div>
+        <!--div id="new-server"><div class="item-name" style="margin-top: 0px;">New server detected</div><div id="new-server-name" class="item-caption"></div></div-->
+        <div id="play-arrows">
+            <div id="play-arrow-left"><img src="img/arrow_left.png" /></div>
+            <div id="play-arrow-right"><img src="img/arrow_right.png" /></div>
+        </div>
+    </div>
+    
+    <div id="container">
+        <div id="box">
+        </div><!-- end of div box -->
+        <div id="scroll_box">
+            <div id="scroll_indicator_container">
+                <div id="scroll_indicator"></div>
+            </div>
+        </div>
+    </div><!-- end of div container -->
+    
+    <img id="loading_image" src="img/load.gif" />
+</body>
+</html>
