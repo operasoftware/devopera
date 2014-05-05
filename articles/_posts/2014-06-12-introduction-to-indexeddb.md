@@ -24,7 +24,7 @@ A **key-value object store** means that each record is an object, as opposed to 
 In a key-value object store, each record is a self-contained object. It may, but usually doesn’t have a relationship to records in another object store. Each record may even differ radically from other objects _in the same store_.
 
 <figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/indexeddb-inconsistentfields.png" alt="Objects in the same store do not need to have all of the same properties" class="figure__media">
+	<img src="{{ page.id }}/inconsistentfields.png" alt="Objects in the same store do not need to have all of the same properties" class="figure__media">
 	<figcaption class="figure__caption">Figure 1: Objects in the same store do not need to have all of the same properties</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ First, let’s create the form that we’ll use to add new tasks to our database
 The HTML above (plus some CSS) produces a form that looks a bit like the example in Figure 2.
 
 <figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/indexeddb-form.png" alt="Our task manager form" class="figure__media">
+	<img src="{{ page.id }}/form.png" alt="Our task manager form" class="figure__media">
 	<figcaption class="figure__caption">Figure 2: Our task manager form</figcaption>
 </figure>
 
@@ -387,7 +387,7 @@ Here we’ve only defined an `oncomplete` handler for the `transaction` object, 
 As with other kinds of databases, deleting a record does not reset the value of the key generator. In Figure 3, you can see that we have only 16 records in our database. However, the most recent entry has a key of 30.
 
 <figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/indexeddb-keydontreset.png" alt="The key generator isn’t reset when records are deleted from the database" class="figure__media">
+	<img src="{{ page.id }}/keydontreset.png" alt="The key generator isn’t reset when records are deleted from the database" class="figure__media">
 	<figcaption class="figure__caption">Figure 3: The key generator isn’t reset when records are deleted from the database</figcaption>
 </figure>
 
@@ -492,7 +492,7 @@ Here we’ve added indexes to our `task`, `priority`, `status`, `start`, `due` a
 Only those objects containing the indexed property will be entered in the index store.
 
 <figure class="figure" id="figure-4">
-	<img src="{{ page.id }}/indexeddb-index.png" alt="A look at the by_task index table in Opera" class="figure__media">
+	<img src="{{ page.id }}/index.png" alt="A look at the by_task index table in Opera" class="figure__media">
 	<figcaption class="figure__caption">Figure 4: A look at the <code>by_task</code> index table in Opera</figcaption>
 </figure>
 
@@ -559,7 +559,7 @@ Unfortunately, IndexedDB lacks the kind of full-text searching that you would fi
 Figure 6 shows the results of such a search.
 
 <figure class="figure" id="figure-5">
-	<img src="{{ page.id }}/indexeddb-search.png" alt="Filtering tasks with a regular expression search" class="figure__media">
+	<img src="{{ page.id }}/search.png" alt="Filtering tasks with a regular expression search" class="figure__media">
 	<figcaption class="figure__caption">Figure 5: Filtering tasks with a regular expression search</figcaption>
 </figure>
 
