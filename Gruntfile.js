@@ -127,6 +127,13 @@ module.exports = function(grunt) {
 		'htmlmin'
 	]);
 
+	grunt.registerTask('build:limit', [
+		'sass',
+		'autoprefixer',
+		'jekyll:limit',
+		'htmlmin'
+	]);
+
 	grunt.registerTask('deploy', ['replace', 'rsync']);
 
 };
