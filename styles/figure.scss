@@ -4,11 +4,18 @@
 .figure {
 	margin-bottom:16px;
 	// Align
+	&--left,
+	&--right {
+		margin-top:4px;
+		max-width:33%;
+		}
 	&--left {
 		float:left;
+		margin-right:24px;
 		}
 	&--right {
 		float:right;
+		margin-left:24px;
 		}
 	// Media
 	&__media {
@@ -18,6 +25,7 @@
 	// Caption
 	&__caption {
 		margin-top:8px;
+		color:#777;
 		font-style:italic;
 		font-size:12px;
 		&--center {

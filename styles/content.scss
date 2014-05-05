@@ -2,17 +2,21 @@
 // Content
 // -------------------------------
 .content {
-	// Title
-	&__title {
+	// Headings
+	h1, h2, h3, h4 {
+		clear:both;
+		code {
+			font-family:inherit;
+			}
+		}
+	h2, h3, h4 {
+		margin:32px 0 16px;
+		}
+	h1 {
 		margin:0 0 36px;
 		line-height:1;
 		font-weight:lighter;
 		font-size:36px;
-		}
-	// Headings
-	h2, h3, h4 {
-		clear:both;
-		margin:32px 0 16px;
 		}
 	h2 {
 		font-size:24px;
@@ -21,8 +25,8 @@
 		font-size:22px;
 		}
 	h4 {
+		font-weight:bold;
 		font-size:18px;
-		font-weight: bold;
 		}
 	// Paragraph
 	p {
@@ -30,6 +34,9 @@
 		}
 	// Quote
 	blockquote {
+		position:relative;
+		margin-left:24px;
+		color:#777;
 		font-style:italic;
 		}
 	// Lists
@@ -86,7 +93,7 @@
 		}
 	code, kbd, pre, samp {
 		tab-size:4;
-		font-size:1em;
+		font-size:0.95em;
 		font-family:PT Mono, monospace, monospace;
 		}
 	}
