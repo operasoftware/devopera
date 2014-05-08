@@ -15,18 +15,7 @@ license: cc-by-3.0
 layout: article
 ---
 
-## Table of contents:
-
-1. [Introduction](#introduction)
-2. [Browser Support](#browser-support)
-3. [The Strict Mode of ES5](#strict-mode)
-4. [JSON](#json)
-5. [Object Additions](#object-additions)
-6. [Array Extras](#array-extras)
-7. [Function.prototype.bind](#function-bind)
-8. [Additional References](#further-reading)
-
-## Introduction {#introduction}
+## Introduction
 
 ECMAScript 5.1 (or just ES5) is the latest revision of the ECMAScript standard -- the specification that JavaScript is based on. Similar in spirit to the HTML5 specification process, ES5 standardizes existing JavaScript implementations in conjunction with additions to the language and native ECMAScript objects. ES5 also introduces a strict variant of the language known as “strict mode”.
 
@@ -36,7 +25,7 @@ In this article we’ll introduce some of the most useful changes and additions.
 [10]: http://www.ecmascript.org/
 [11]: http://es5.github.com/
 
-## Browser Support {#browser-support}
+## Browser Support
 
 With the release of Opera 11.60, all of the five major browsers now support ES5, save for [implementation bugs][12]. Unless otherwise stated, everything mentioned in this article can be used in the following browser versions (or higher):
 
@@ -58,7 +47,7 @@ For information on support in older browsers, see Juriy Zaytsev’s excellent [E
 
 [15]: http://kangax.github.com/es5-compat-table/
 
-## The Strict Mode of ES5 {#strict-mode}
+## The Strict Mode of ES5
 
 Strict mode is a way for authors to opt-in a more restrictive variant of the language -- providing additional reliability for authors and safety for users. Enabling strict mode is done by adding the `use strict` directive at the top of a JavaScript file or function. Since the `use strict` directive is just a string, it will be safely ignored by older browsers.
 
@@ -83,7 +72,7 @@ Many things that cause surprising or buggy behavior at runtime in a script will 
 
 [16]: http://msdn.microsoft.com/en-us/library/br230269(v=vs.94).aspx
 
-## JSON {#json}
+## JSON
 
 ES5 specifies a global `JSON` object for serializing (`JSON.stringify`) and deserializing (`JSON.parse`) objects into the JSON format.
 
@@ -162,7 +151,7 @@ If the replacer function returns `undefined`, the key/value pair will not be inc
 		"second":14
 	}'
 
-## Object Additions {#object-additions}
+## Object Additions
 
 The following methods are added to the `Object` constructor:
 
@@ -202,7 +191,7 @@ For our `cat` object, its `name` cannot be changed, but will appear in a `for-in
 
 In a future article we’ll explore all of the Object additions in more detail.
 
-## Array Extras {#array-extras}
+## Array Extras
 
 The following methods are additions to the Array `prototype` object:
 
@@ -234,7 +223,7 @@ In ES3, the only reliable way to determine if a value is an array was by using [
 
 	Object.prototype.toString.apply(value) === '[object Array]'
 
-## `Function.prototype.bind(thisArg [, arg1 [, arg2, …]])` {#function-bind}
+## `Function.prototype.bind(thisArg [, arg1 [, arg2, …]])`
 
 `Function.prototype.bind` returns a new function object with its _this_ value bound to the `thisArg` argument. Essentially, this allows you to execute a function within the scope of some other object.
 
@@ -253,7 +242,7 @@ In ES3, the only reliable way to determine if a value is an array was by using [
 
 In this example, we can call the `location` function within the context of the Maru object. As `locate` is a property of the global object, its `this` value is the global object (`window`). In this case, we’re looking for a cat, not a `Location` object, so we can create a new method `locateMaru` with the `this` value bound to always be `kitty`.
 
-## Additional References {#further-reading}
+## Additional References
 
 - [ECMAScript 5 Objects and Properties][20] by John Resig
 - [Understanding JavaScript Function Invocation and “this”][21] by Yehuda Katz

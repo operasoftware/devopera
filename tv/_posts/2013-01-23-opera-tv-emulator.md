@@ -23,21 +23,7 @@ The Opera TV Emulator allows web developer to test HTML5 and CE-HTML content for
 [3]: http://www.opera.com/business/tv/store/
 [4]: https://www.virtualbox.org/
 
-- [Installation](#install)
-- [The Opera TV Emulator start page](#start-page)
-- [Installing the H.264 codec](#h264-codec)
-- [Navigation](#navigation)
-	- [Keyboard](#keyboard)
-	- [Web-based remote](#web-remote)
-- [Accessing local files](#local)
-	- [Running a local server](#local-server)
-	- [Shared folders](#shared-folders)
-- [Debugging with Opera Dragonfly](#debugging)
-- [Settings](#settings)
-- [Closing the emulator](#closing)
-- [Support](#support)
-
-## Installation {#install}
+## Installation
 
 The Opera TV Emulator is provided as a preconfigured [Oracle VirtualBox][5] machine and disk image. This ensures a test environment for web developers that is as close to a real device as possible. To use the emulator:
 
@@ -62,7 +48,7 @@ Some Linux distributions already ship with an open source version of VirtualBox.
 
 [9]: https://www.virtualbox.org/
 
-## The Opera TV Emulator start page {#start-page}
+## The Opera TV Emulator start page
 
 The Opera TV Emulator is, in essence, a self-contained generic web browser, equivalent to what you would find on devices running the [Opera Devices SDK][10]. In addition, the emulator contains specific functionality that is only present in [Opera TV Store][11] client application.
 
@@ -79,7 +65,7 @@ The emulator’s start page — itself just a web page — provides a direct lin
 [13]: http://demo.tvstore.opera.com
 [14]: http://dev.opera.com/articles/view/testing-your-app-inside-the-opera-tv-store/
 
-## Installing the H.264 codec {#h264-codec}
+## Installing the H.264 codec
 
 For legal reasons, the Opera TV Emulator does not come with any H.264 codec preinstalled. As this codec is widely used for TV applications, you will need to install it the first time you run the emulator.
 
@@ -94,11 +80,11 @@ For information about the specific multimedia formats that can be used, please r
 
 [16]: http://dev.opera.com/articles/view/html5-audio-video-support-in-opera-tv-store-applications/
 
-## Navigation {#navigation}
+## Navigation
 
 Although the Opera TV Emulator can be used with a mouse, this will not provide the same user experience as the real TV browser and Opera TV Store client. Instead of using on-screen mouse pointers, users navigate by using directional keys on their remote controls to select different focusable page elements (buttons, links, etc). For a more accurate emulation, there are two alternative control mechanisms that simulate a real device’s remote control interface:
 
-### Keyboard {#keyboard}
+### Keyboard
 
 The emulator uses the following keyboard controls:
 
@@ -111,7 +97,7 @@ The emulator uses the following keyboard controls:
 - F10 restart the browser
 - ESC close current tab, open a fresh `about:blank` tab
 
-### Web-based remote {#web-remote}
+### Web-based remote
 
 In addition to basic keyboard controls, the Opera TV Emulator also provides a more comprehensive web-based remote control that also simulates the colored keys (red, green, yellow, blue) and a set of media controls (play/pause, stop, rewind, fast-forward).
 
@@ -129,11 +115,11 @@ When the emulator is running, the Oracle VirtualBox machine is configured to exp
 
 In order to use the web-based remote control, please ensure that no other application is currently running on your development machine using port `5555`. If this is not possible, you can change the port number used by the VirtualBox machine by going to the Network section in the machine’s settings and modifying the Port Forwarding host port.
 
-## Accessing local files {#local}
+## Accessing local files
 
 The Opera TV Emulator runs as a completely separate Linux-based system on your development machine. To access files hosted on your development machine for testing, there are two options:
 
-### Running a local server {#local-server}
+### Running a local server
 
 If you have a server (such as the [Apache HTTP Server][19]) running on your development machine, note that it is not possible to access it from within the emulator by just using the standard `http://localhost` address, as `localhost` in this context refers to the emulator’s environment itself.
 
@@ -146,7 +132,7 @@ If you have a server (such as the [Apache HTTP Server][19]) running on your deve
 
 Instead, you should use the IP address of your development machine — the emulator will then establish a connection to your server from within the virtual machine.
 
-### Shared folders {#shared-folders}
+### Shared folders
 
 <figure class="figure">
 	<img src="{{ page.id }}/shared-folder.png" alt="VirtualBox’s setup for Shared Folders" class="figure__media">
@@ -166,7 +152,7 @@ Particularly for static files that do not require any server-side functionality,
 
 Your shared folder will be available under `file://localhost/mydata/sf_[name of your folder]` the next time you start the emulator.
 
-## Debugging with Opera Dragonfly {#debugging}
+## Debugging with Opera Dragonfly
 
 <figure class="figure">
 	<img src="{{ page.id }}/remote-debug-setup.png" alt="A standard debugging setup: Opera TV Emulator, a browser showing the web-based remote control, and an undocked Opera Dragonfly window set to remotely debug the emulator" class="figure__media">
@@ -198,7 +184,7 @@ For more information, please refer to the [Opera Dragonfly documentation][27].
 
 [27]: http://www.opera.com/dragonfly/documentation/
 
-## Settings {#settings}
+## Settings
 
 The Opera TV Emulator offers a few customisation options that can be configured via the Settings button on the web remote control.
 
@@ -238,7 +224,7 @@ The Opera TV Emulator offers a few customisation options that can be configured 
 
 To immediately apply changes, choose Apply — this will store the settings and restart the emulator. Using Save will store the new settings, but these will only take effect the next time the emulator is restarted.
 
-## Closing the emulator {#closing}
+## Closing the emulator
 
 <figure class="figure">
 	<img src="{{ page.id }}/shutdown.png" alt="VirtualBox’s “Close Virtual Machine” dialog, with the “Send the shutdown signal” option checked" class="figure__media">
@@ -247,7 +233,7 @@ To immediately apply changes, choose Apply — this will store the settings and 
 
 When closing the emulator, please choose the Send the shutdown signal option. This will ensure that the Linux environment in the emulator is properly powered down.
 
-## Support {#support}
+## Support
 
 Opera Software does not provide any official support for the Opera TV Emulator. However, a number of communication channels are available:
 

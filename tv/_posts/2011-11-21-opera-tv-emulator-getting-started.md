@@ -10,12 +10,7 @@ license: cc-by-3.0
 layout: article
 ---
 
-- [Installation & launch](#install)
-- [Using the Opera TV Emulator](#using)
-- [Developing web projects with the Opera TV Emulator](#developing)
-- [Supported media formats](#media)
-
-## Installation & launch {#install}
+## Installation & launch
 
 The Opera TV Emulator is provided via a Linux system image that should be launched using an [Oracle VirtualBox][1] virtual machine. This ensures a test environment for web developers that is as close to a real device system as possible. VirtualBox works on the most common operating systems, such as Windows, Linux and Mac OS X.
 
@@ -42,7 +37,7 @@ There are two ways to launch the Opera TV Emulator; you can double-click the `TV
 
 If you plan to use the Opera TV Emulator regularly and want a quick way to launch it, you can create a shortcut to your `TVEmulator.vbox` file and place it on your desktop or in your applications menu.
 
-## Using the Opera TV Emulator {#using}
+## Using the Opera TV Emulator
 
 ### With a keyboard and mouse
 
@@ -71,7 +66,7 @@ You should now see the remote control image. The buttons on the remote control w
 
 ![Remote control button functions](/tv/opera-tv-emulator-getting-started/remote.png)
 
-## Developing web projects with the Opera TV Emulator {#developing}
+## Developing web projects with the Opera TV Emulator
 
 With the Opera TV Emulator you can test any Web pages stored on your local computer. Firstly, you should share your working folder with the TV Emulator Linux system:
 
@@ -85,7 +80,7 @@ With the Opera TV Emulator you can test any Web pages stored on your local compu
 
 To access your project files, type the following link in the TV Emulator: `file://localhost/mydata/sf_foldername`, where `foldername` is the name of the folder you set to be shared.
 
-## Supported media formats {#media}
+## Supported media formats
 
 The following audio/video media formats are supported by the Opera TV Emulator:
 

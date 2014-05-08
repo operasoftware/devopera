@@ -7,19 +7,7 @@ license: cc-by-nc-sa-2.5
 layout: article
 ---
 
-## Table of contents
-
-- [Introduction](#introduction)
-- [Getting started with the HTML](#gettingstartedwiththehtml)
-- [Canvas interaction](#canvasinteraction)
-	- [Testing the Canvas interaction](#testingthecanvasinteraction)
-	- [Implementing events](#implementingevents)
-	- [Adding drawing tools](#addingdrawingtools)
-		- [Rectangle](#rectangle)
-		- [Line](#line)
-- [What’s next](#whatsnext)
-
-## Introduction {#introduction}
+## Introduction
 
 My previous [HTML5 Canvas tutorial][1] provided you with insight into the numerous use cases for Canvas in web applications. In this article we will explore how you can write your own Canvas-based painting application.
 
@@ -39,7 +27,7 @@ To make it easier to follow along with the code walkthrough presented below, you
 
 [4]: {{ page.id }}/tutorial.zip
 
-## Getting started with the HTML {#gettingstartedwiththehtml}
+## Getting started with the HTML
 
 We shall begin with a minimal HTML document:
 
@@ -68,11 +56,11 @@ As you can see, we only have the bare bones of an HTML document here, with a `<c
 
 The fallback content you provide should be as helpful as possible. You should not just say something like “this web application is unsupported by your browser” — that would be basically useless. Tell the user what he/she can do to get your application to work (eg use a different web browser), or provide alternative solutions, like a file upload input which allows the user to upload a painting created offline. Even better would be to detect Canvas support and then serve the application as is to browsers that support it, and the upload solution to browsers that don’t, automatically. Naturally, the fallback content depends on the context in which the painting application appears.
 
-## Canvas interaction {#canvasinteraction}
+## Canvas interaction
 
 Now we have the `<canvas>` element in place, the next step is to make the element somehow interact with the mouse. We shall first test our interaction, and then go on to start adding in the functions we want our application to perform.
 
-### Testing the Canvas interaction {#testingthecanvasinteraction}
+### Testing the Canvas interaction
 
 For testing purposes we shall first try to paint something under the mouse. We can do that by attaching a `mousemove` event handler to the `<canvas>` element. Here’s the gist of the [mousemove example script][5]:
 
@@ -115,7 +103,7 @@ For testing purposes we shall first try to paint something under the mouse. We c
 
 This code turned out to be a success: we are just starting to see how dynamic and cool Canvas can be. We use the `event.layer* / offset*` properties to determine the mouse position relative to the `<canvas>` element. That’s all we need to start drawing.
 
-### Implementing events {#implementingevents}
+### Implementing events
 
 Let’s take this script one step further. It’s best to have a single event handler that only determines the coordinates relative to the `<canvas>` element. The implementation of each drawing tool should be split into independent functions. Lastly, drawing tools need to interact with the user for events like `mousedown` and `mouseup` as well, not just when moving the mouse (`mousemove`). Therefore, multiple event listeners will be added to the script.
 
@@ -194,7 +182,7 @@ The script has been split into multiple functions. Now the Canvas has three even
 
 With the above changes made, we are ready to kick things off. The drawing pencil works fine now, with the added start and end functions. All the pencil-related functions are grouped together in a single function object. Currently we only have the `tool_pencil` object present, instanced as tool, but we can easily add more objects.
 
-### Adding drawing tools {#addingdrawingtools}
+### Adding drawing tools
 
 Let’s add some more drawing tools, by adding more tool objects. Each new tool needs to implement some of the available events.
 
@@ -250,7 +238,7 @@ The benefit of the above code is that any tool can have its own instance logic, 
 
 Now we’ve set up a solid groundwork for the tools and looked at the pencil implementation, let’s now look at implementing some of the other individual tools.
 
-#### Rectangle {#rectangle}
+#### Rectangle
 
 You are now in for a surprise. Let’s implement the rectangle tool and then [test the code][9]. Here’s the [updated script][10]:
 
@@ -383,7 +371,7 @@ The last part needing a minor update is the HTML document’s CSS:
 
 The CSS above rules are needed to properly position the temporary `<canvas>` element on top of the original one.
 
-#### Line {#line}
+#### Line
 
 With everything in place, adding new tools becomes easier and easier. The [JavaScript implementation including the line tool][14] looks like this:
 
@@ -428,7 +416,7 @@ That’s it! [Try the line-drawing example for yourself][15].
 
 The line tool is very similar to the rectangle tool. The `mousedown()` function stores the starting point, which is then used in `mousemove()` for drawing the actual line.
 
-## What’s next? {#whatsnext}
+## What’s next?
 
 The above should give you a fairly good understanding of what it takes to _start_ developing an online paint application. Besides just drawing on the Canvas you need to take into consideration other aspects as well, such as:
 

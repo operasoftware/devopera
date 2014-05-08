@@ -12,21 +12,6 @@ license: cc-by-nc-sa-3.0
 layout: article
 ---
 
-1. Introduction
-2. [Keeping perspective](#perspective)
-	- [`perspective`](#perspectiveprop)
-	- [`perspective-origin`](#perspectiveorigin)
-3. [Two-sides to a transformed object](#twosides)
-	- [backface-visibility](#backfacevisibility)
-	- [transform-style](#transstyle)
-4. [The transform functions](#transformfuncs)
-	- [perspective()](#perspectivefunction)
-	- [matrix3d()](#matrix3d)
-	- [`translate3d()` `translateZ()`](#translating)
-	- [`scale3d()` and `scaleZ()`](#scaling)
-	- [ `rotate3d()`, `rotateX()` and `rotateY()`](#rotating)
-5. [Learn More](#learnmore)
-
 ## Introduction
 
 Opera 15 adds a lot of goodies under its hood, including [three-dimensional CSS transforms][14] ([2D transforms][15] have been available since Opera 10.50). In this article we'll dig in to 3D transforms in detail, looking at the fundamental differences between 3D and 2D transforms, the 3D transforms available, and some demos that show how these work.
@@ -34,7 +19,7 @@ Opera 15 adds a lot of goodies under its hood, including [three-dimensional CSS 
 [14]: http://www.w3.org/TR/css3-transforms/
 [15]: http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
 
-## Keeping perspective {#perspective}
+## Keeping perspective
 
 What separates 3D transforms from 2D transforms is perspective (see Figure 1): creating the illusion of depth and space on a two-dimensional screen by translating points along or around a z-axis.
 
@@ -75,7 +60,7 @@ Transforms may not be rendered for a couple of reasons. Usually it's because the
 
 [23]: http://en.wikipedia.org/wiki/Invertible_matrix
 
-### The perspective property {#perspectiveprop}
+### The perspective property
 
 When we apply a transform, our drawing surface becomes a containing block. This can be the `<body>` element, a `<div>` element, or any other block-level element. Consider the following HTML and CSS.
 
@@ -117,7 +102,7 @@ Setting the value of the `perspective` property to something other than `none` c
 
 [30]: http://www.w3.org/TR/CSS2/zindex.html
 
-### The perspective-origin property {#perspectiveorigin}
+### The perspective-origin property
 
 If we use our drawing analogy, we can think of the `perspective-origin` property as the position of the vanishing point on our drawing surface. Some examples of the property and valid values are as follows:
 
@@ -144,7 +129,7 @@ Like `perspective`, the `perspective-origin` property must be applied to the par
 
 It's also possible to affect perspective using the [`perspective()` transform function](#perspectivefunction) on an element. We'll cover that later, in the section on transform functions.
 
-### Two-sides to a transformed object: `backface-visibility` and `transform-style` {#twosides}
+### Two-sides to a transformed object: `backface-visibility` and `transform-style`
 
 In all of the examples above, we've looked at what amounts to a single plane. So what do we do when we want to mimic both sides of an object, for example a playing card demo? This is where the `transform-style` and `backface-visibility` properties come into play.
 
@@ -169,7 +154,7 @@ Think about a playing card. It has two sides, one of which you can see at any gi
 
 Here we have our main container — `<div id="deck">` — and our _card_ container, `<div class="card">`. Nested within our card container are the faces of the card, `<div class="back">` and `<div class="front">`.
 
-#### Showing or hiding a face with `backface-visibility` {#backfacevisibility}
+#### Showing or hiding a face with `backface-visibility`
 
 As mentioned above, at any given time a real playing card has a face you can see and a face you can't. The face you can't see is known as its _back face._ With 3D transforms, we can control the visibility of this back face using the `backface-visibility` property. Valid values are `visible` and `hidden`. Back faces are visible by default.
 
@@ -180,7 +165,7 @@ As mentioned above, at any given time a real playing card has a face you can see
 
 In [Figure 5](#backfacevis) above, the background color for both cards is transparent. The only difference between the two is that the card on the left has a `backface-visibility` value of `visible`, while the card on the right has a `backface-visibility` value of `hidden` ([view the `backface-visibility` demo](backface.html)).
 
-#### Setting a transform-style {#transstyle}
+#### Setting a transform-style
 
 As with a paper drawing, three-dimensional transforms map three dimensions of coordinates into the two dimensions of a screen. By default, transformed objects behave as a single plane. To mimic depth and dimension, we need to explicitly change that behavior, with the the `transform-style` property. Valid values for the `transform-style` property are `flat` and `preserve-3d`. The default is `flat`.
 
@@ -206,7 +191,7 @@ Using `transform-style: preserve-3d` also establishes a stacking context but in 
 
 If your transform isn't rendering correctly, despite using `transform-style: preserve-3d`, one of these properties is probably the culprit.
 
-## The transform functions {#transformfuncs}
+## The transform functions
 
 Two dimensional transforms allow developers to manipulate an object along the x and y axes or planes. Three dimensional transforms add the ability to manipulate objects along the z axis (or in the z direction). As with 2D transforms, 3D transforms are set using the `transform` property. Its value must be one or more functions and their arguments. Some examples follow.
 
@@ -214,7 +199,7 @@ Two dimensional transforms allow developers to manipulate an object along the x 
 - `transform: translateZ(-200px) scale3d(2,.5,9) rotateZ(-45deg)`
 - `transform: perspective(200px) rotate3d(-82,100,40,0.785rad);`
 
-## The `perspective()` function {#perspectivefunction}
+## The `perspective()` function
 
 The `perspective()` function represents the distance of the z-plane (z = 0) from the viewer. Its argument must have a length such as pixels or ems, and a value greater than zero. Using it causes points to be scaled in the X and Y directions based on their Z values (see [Figure 8](#perspectivefunc)). Lower values create a more exaggerated perspective effect, while higher values result in a more subtle effect. Try the [perspective function demo](perspective-func.html) to get a sense of how it works.
 
@@ -225,7 +210,7 @@ The `perspective()` function represents the distance of the z-plane (z = 0) from
 
 By using the `perspective()` function, you're creating a **perspective projection matrix**. What's a matrix? Keep reading.
 
-### Matrices, vectors, and matrix3d() {#matrix3d}
+### Matrices, vectors, and matrix3d()
 
 In mathematics, a **matrix** is a rectangle of values. An example of a 4-by-4 matrix is shown in [Figure 9](#matrix).
 
@@ -281,7 +266,7 @@ Since using `matrix3d()` can make your CSS more obtuse than necessary, it's best
 
 [57]: http://dev.opera.com/articles/css3-transitions-and-2d-transforms/
 
-### Translating objects with `translateZ()` and `translate3d()` {#translating}
+### Translating objects with `translateZ()` and `translate3d()`
 
 Translation transforms offset the rendering position of an object by the distance provided. You may already be familiar with the `translateX()`, `translateY()`, and `translate()` functions. These functions translate objects along the x-axis, y-axis, or both in the case of `translate()`. With 3D transforms, we now have two more translation functions at our disposal: `translateZ()` and `translate3d()`.
 
@@ -289,7 +274,7 @@ As its name suggests, `translateZ()` causes an object to be offset by the specif
 
 `translate3d()` works similarly, but accepts three arguments: an x-offset, a y-offset, and a z-offset value. It's a more succinct way to translate an object along all three axes. A transform value of `translate3d(200px,300px,-400px)`, for example, is the equivalent of `transform: translateX(200px) translateY(300px) translateZ(-400px)`.
 
-### Scaling objects with `scale3d()` and `scaleZ()` {#scaling}
+### Scaling objects with `scale3d()` and `scaleZ()`
 
 We can scale objects in the x (width) or y (height) dimensions using the `scaleX()`, `scaleY()` or `scale()` functions. With support for 3D transforms, we can also scale in the z (distance) dimension using `scaleZ()` or in all three dimensions at once using `scale3d()`. I'll focus on transformations along the z-axis in this section. Be aware, however, that `transform: scale3d(2,1,3)` is equivalent to `transform: scale(2,1) scaleZ(3)` and `transform: matrix3d(2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1)`.
 
@@ -320,7 +305,7 @@ Now, if we multiply this new matrix transform by the coordinates of a point loca
 
 As with two-dimensional scaling, positive numbers greater than 1 increase the value of the z-coordinate. Positive numbers that are greater than zero but less than 1 will decrease them. Negative values for scaling along the z axis will cause the object to appear flipped or inverted. You can get a sense of how these values interact in the [3d scaling demo](scale3d.html).
 
-### Rotating objects with `rotateX()`, `rotateY()` and `rotateZ()` and `rotate3d()` {#rotating}
+### Rotating objects with `rotateX()`, `rotateY()` and `rotateZ()` and `rotate3d()`
 
 As these function names suggest, `rotateX()`, `rotateY()` and `rotateZ()` rotate an object around the x, y or z axis. Rotations using `rotateX()` spin elements around a horizontal axis ([Figure 15](#rotatex)), while those using `rotateY()` spin elements around a vertical axis.
 
@@ -363,7 +348,7 @@ Compare that to the matrix of `rotate3d(1,100,1,45deg)`, shown below.
 
 As you can see, the largest difference between the two matrices are the fifth and tenth parameters. They're 10 times greater in the first matrix than the second, but the values are still small. As a result, when the matrix is applied, the effect is slightly, not wildly different. By manipulating each value in the [`rotate3d()` demo](rotate3d.html), you can get a better sense of how they interplay.
 
-## Learn More {#learnmore}
+## Learn More
 
 I hope I've cleared up how three-dimensional transforms work without throwing too much linear algebra and geometry at you. Understanding the underlying math goes a long way toward understanding how transforms work and where they might go wrong. I found the following resources helpful.
 

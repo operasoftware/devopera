@@ -49,7 +49,7 @@ In order to test this out, we have prepared Opera Mobile Emulator Labs builds wi
 [9]: http://www.opera.com/download/get.pl?id=34629&sub=true&nothanks=yes&location=360
 [10]: http://www.opera.com/download/get.pl?id=34628&sub=true&nothanks=yes&location=360
 
-## Which prefixes are affected? {#whichones}
+## Which prefixes are affected?
 
 Two different types of prefixes are supported:
 

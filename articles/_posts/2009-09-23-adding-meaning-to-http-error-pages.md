@@ -34,7 +34,7 @@ The contents of this article are as follows:
 	- [Avoid mystery timed redirects](#mystery-redirects)
 - [Summary](#summary)
 
-## Typical HTTP error codes {#error-codes}
+## Typical HTTP error codes
 
 For the purpose of this article we’re going to focus on creating pages for handling the following [HTTP status codes][1]:
 
@@ -44,7 +44,7 @@ For the purpose of this article we’re going to focus on creating pages for han
 - **410:** A `410 GONE` status is similar to the 404 page, except that it’s saying that the content has been deliberately removed. For example, you should return this status if a news article had to be removed for legal reasons.
 - **500:** A `500 Server Error` page is shown when the server has a serious problem. Typical causes of 500 errors would be misconfiguration of the web server or a fatal error in server-side code. This page should always be static, because — depending on the cause of the error — you cannot guarantee that execution of server-side scripting (such as calling separate include files or a redirection to another page) will be possible.
 
-## Creating a custom error page {#custom-errors}
+## Creating a custom error page
 
 On any site it’s a good idea to create a design for your error pages so that the error pages fit into the overall design. If you don’t configure custom error pages, users will only see the default error page for the particular web server or framework you are using.
 
@@ -149,13 +149,13 @@ Restart Apache.
 
 There are a few caveats when configuring the `ErrorDocument` directive in Apache. If you specify a full URL for an error document, Apache will redirect the client to that location and the client will see the redirect status code rather than the original error page status code. This is something to be avoided as it’s extremely important to make sure error pages are served with the correct status code — not doing so can confuse search engine robots.
 
-## Making a smarter error page {#smarter-errors}
+## Making a smarter error page
 
 So, if you follow the example above for all your different error codes, you’ll end up with a beautiful set of custom error pages that look a lot nicer than the defaults and that describe what the error really means to the user in a friendly way. Having done this, how can we make our error pages even better?
 
 First let’s look at making our error pages smarter for our users. Say a site visitor has come to our site looking for a particular piece of information and has hit the 404 page — what can we do to retain them?
 
-### Search engine referrers {#referrers}
+### Search engine referrers
 
 A [referrer][5] is a header sent by the browser which tells a server the previous site the user was visiting. Like any data sent by the browser, we can’t trust it completely — but it can still be used to attempt to deduce some information about where a user has come from.
 
@@ -198,14 +198,14 @@ Last, note that in Python 3.0 The entire [`urlparse` module][6] is moving to `ur
 
 If a user has come to our site from the results page of a search engine, we can look at the referrer and work out what search terms they had entered. We can then use those terms to search our site and provide a set of alternative content that matches those results. For instance, you could feed those terms into your own search function and surface some relevant pages that might be of interest.
 
-### A word on security {#security}
+### A word on security
 
 As with any other external source, it’s important to take care when making use of any data sent in a referrer, as you cannot trust this data — a referrer header can easily be forged. If you are displaying anything on your site based on the referrer, it’s important to ensure that it’s correctly escaped to [avoid XSS vectors][7]. If you are using referrer data to run queries against a database, you should also ensure that you correctly filter the data to avoid the possibility of an [SQL injection attack][8].
 
 [7]: http://en.wikipedia.org/wiki/Cross-site_scripting
 [8]: http://en.wikipedia.org/wiki/Sql_injection
 
-### Providing useful routes back into your site {#routes-back}
+### Providing useful routes back into your site
 
 If a visitor didn’t land on your error page from a search engine’s results page, you have less to go on in terms of knowing what the the user was looking for. But never fear — there’s still plenty of approaches that can be used to engage the user.
 
@@ -231,7 +231,7 @@ So in this case we could feed our search with the following keywords:
 
 And present links to some likely matches on our 404 page, so that the user will almost certainly be brought back into looking around the site.
 
-### Handling content removal {#content-removal}
+### Handling content removal
 
 As briefly mentioned above, sometimes it’s necessary to explicitly remove content from a site, and a `410 GONE` status should be served.
 
@@ -239,25 +239,25 @@ Ideally your content management system will not actually delete content when it�
 
 As an example, you might have published an article about a celebrity wedding, which has then had to be removed due to legal reasons. The URL has now become a `410 GONE` error page, but your server-side code can still use its knowledge of what used to be displayed on that addess and feed a search with any stored tags or other metadata, so that you can at least provide a list of related content for the uses.
 
-### Bending the rules for SEO {#bending-rules}
+### Bending the rules for SEO
 
 Sometime it’s necessary to bend the rules and make what should be a 404 or 410 page a `200 OK`. This is a technique used for SEO purposes when there’s lots of inbound links pointing a page that has been removed. In those special cases it can be useful to retain inbound traffic by essentially promoting a specialised error page in place of the previous content.
 
-## Pitfalls to avoid {#pitfalls}
+## Pitfalls to avoid
 
 Here’s a number of potential pitfalls to avoid when building smarter error pages.
 
-### Monitor error page resources carefully {#monitoring}
+### Monitor error page resources carefully
 
 If you’re adding searches fed by keywords extracted from referrers and historical metadata you want to keep a close eye on those pages, as delivering a smart error page will obviously use more resources than serving up a static page. To limit the resource hit, it’s worth thinking about caching search results for a limited time — that way, if you get a lot of errors in a short time due to a bad internal link, the load on the server is controlled.
 
-### Ensure the correct HTTP status code is served {#http-statuses}
+### Ensure the correct HTTP status code is served
 
 A common mistake is to set up a custom error page, but to end up serving it with a `200 OK` status code. This can be an issue if a search engine indexes your site, sees the `200 OK` responses for what should be 404 or 410 error codes, and ends up indexing your actual error page. This will lead to listings for your company appearing with the error page content in the search results pages, instead of more meaningful content.
 
 Another thing to avoid is redirecting to an error page. If something is wrong you really should be serving the correct status code at the exact URL that was requested, not changing the URL.
 
-### Set up redirects for URLs that have changed {#redirects}
+### Set up redirects for URLs that have changed
 
 In an ideal world all URLs would be permanent. However, in the real world there will always come a time where a URL has to be moved for some reason or another.
 
@@ -265,12 +265,12 @@ If a 404 error is occurring because you’ve moved a page to a different URL the
 
 Ideally, your content management tool should be automatically keeping track of pages you move and set up relevant `301 Moved Permanently` redirect locations accordingly.
 
-### Avoid mystery timed redirects {#mystery-redirects}
+### Avoid mystery timed redirects
 
 At the time of writing the [yahoo.com][10] 404 page uses a meta-refresh to send users to their homepage after 10 seconds, but they also provide a search box on their 404! This means that you could be in the middle of typing a new search when you are redirected to the homepage without any prior warning — an annoying “feature” to avoid.
 
 [10]: http://yahoo.com
 
-## Summary {#summary}
+## Summary
 
 In this article we’ve covered ways to build smart error pages that are designed to guide the user back into the site by showing them relevant content when something goes wrong. Doing this attempts to engage your audience and maximises the time they spend on your site without having them navigate back to a search results page.

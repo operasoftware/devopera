@@ -15,18 +15,7 @@ license: cc-by-3.0
 layout: article
 ---
 
-## İçindekiler Listesi:
-
-1. [Giriş](#introduction)
-2. [Tarayıcı Desteği](#browser-support)
-3. [ES5’ın Katı Modu](#strict-mode)
-4. [JSON](#json)
-5. [Nesne Eklemeleri](#object-additions)
-6. [Dizilere İlaveler](#array-extras)
-7. [Function.prototype.bind](#function-bind)
-8. [Ek Referanslar](#further-reading)
-
-## Giriş {#introduction}
+## Giriş
 
 ECMAScript 5.1 (yada sadece ES5) ECMAScript standardının — önergede JavaScript temel alınmıştır — en son gözden geçirimidir. HTML5 önergesinin sürecine benzer şekilde, ES5 varolan JavaScript kullanımlarını, dile ve ECMAScript nesnelerine olan eklemeleri standart bir şekle sokar. ES5 “strict mode” olan bilinen bu dilin bir strict türevini de tanıtır.
 
@@ -36,7 +25,7 @@ Bu makalede dile ait en yararlı değişiklikleri ve eklemeleri tanıtacağız. 
 [10]: http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf
 [11]: http://es5.github.com/
 
-## Tarayıcı Desteği {#browser-support}
+## Tarayıcı Desteği
 
 Opera 11.60’ın sürülmesiyle beraber, beş büyük tarayıcı ES5 desteklemektedir, [uygulamaya dayalı hatalar][12] için kaydedin. Aksine bir şey ifade edilmezse, bu makalede bahsedilen her şey aşağıdaki tarayıcı sürümleri(ve daha yüksek sürümleri) ile beraber kullanılabilmektedir:
 
@@ -58,7 +47,7 @@ Daha eski tarayıcılara bu destek için, Juriy Zaytsev’in mükemmel [ECMAScri
 
 [15]: http://kangax.github.com/es5-compat-table/
 
-## ES5’ın Katı Modu {#strict-mode}
+## ES5’ın Katı Modu
 
 Katı mod, geliştirici için dilin daha tutucu bir çeşidini kullanmasını sağlar — geliştiriciler için ek güvenilirlik ve kullanıcılar için ek güvenlik sağlar. Katı mod, Javascript dosyasının ya da fonksiyonunun başına `use strict` yönergesi yerleştirilerek etkinleştirilebilir. `use strict` yönergesi sadece bir katar olduğu için eski tarayıcılar tarafından güvenli bir şekilde yok sayılacaktır.
 
@@ -83,7 +72,7 @@ Katı mod kullanırken pek çok şey sürpriz bir şekilde ya da sorunlu bir dav
 
 [16]: http://msdn.microsoft.com/en-us/library/br230269(v=vs.94).aspx
 
-## JSON {#json}
+## JSON
 
 ES5 bir nesneyi JSON biçimine dönüştürme (`JSON.stringify`) ve bu biçimden eski haline geri dönüştürme (`JSON.parse`) için genel bir `JSON` nesnesi tanımlar.
 
@@ -162,7 +151,7 @@ Eğer yer değiştirici fonksiyon `undefined` değeri geri döndürürse , anaht
 		"ikinci":14
 	}'
 
-## Nesne Eklemeleri {#object-additions}
+## Nesne Eklemeleri
 
 `Object` constructor aşağıdaki yöntemler eklendi:
 
@@ -202,7 +191,7 @@ Bu eklemelerin yararlarından biri nesnenin özellikleri üzerindeki denetimi ar
 
 İleride, bir makalede nesne eklemelerinin tümünü ayrıntılarıyla keşfedeceğiz.
 
-## Dizilere İlaveler {#array-extras}
+## Dizilere İlaveler
 
 Aşağıdaki yöntemler dizi `prototype` nesnesine eklenmiştir:
 
@@ -234,7 +223,7 @@ In ES3’te değerin bir dizi olup olmadığını belirlemenin tek güvenilir yo
 
 	Object.prototype.toString.apply(value) === '[object Array]'
 
-## `Function.prototype.bind(thisArg [, arg1 [, arg2, …]])` {#function-bind}
+## `Function.prototype.bind(thisArg [, arg1 [, arg2, …]])`
 
 `Function.prototype.bind` _this_ değeri`thisArg` parametresine bağlanan yeni bir fonksiyon nesnesi geri döndürür. Bu, temel olarak, diğer nesnenin bir faaliyet alanındayken bir fonksiyon çalıştırmanıza olarak sağlar.
 
@@ -253,7 +242,7 @@ In ES3’te değerin bir dizi olup olmadığını belirlemenin tek güvenilir yo
 
 Bu örnekte `location` fonksiyonunu Maru nesnesinin içeriğindeyken çağırıyoruz. `locate` global nesnenin bir özelliği olduğu için, onun `this` değeri global nesnedir(`window`). Bu durumda, bir kediye bakıyoruz, `Location` nesnesine değil. Öyleyse `this` değeri her zaman `kitty` olan `locateMaru`adında yeni bir yöntem oluşturabiliriz.
 
-## Ek Referanslar {#further-reading}
+## Ek Referanslar
 
 - John Resig tarafından [ECMAScript 5 Nesnesi ve Özellikleri][20]
 - Yehuda Katz tarafından [JavaScript Fonksiyon Yürüymesini ve “this” i Kavrama][21]

@@ -29,36 +29,11 @@ This guide is aimed at web developers wishing to optimize their web sites and ap
 
 [1]: http://www.opera.com/business/solutions/devices/
 
-- [The Opera SDK and Opera TV Emulator](#sdk-emulator)
-- [Standards support on web-enabled TVs](#standards)
-- [Designing for context and form factor](#context-form-factor)
-- [Adaptive layouts](#adaptive-layouts)
-	- [Fluid layouts](#fluid)
-	- [CSS2.1 Media Types](#media-types)
-	- [CSS3 Media Queries](#media-queries)
-- [Safe areas](#safe-areas)
-- [Single-window browsing](#single-window)
-- [Scrolling](#scrolling)
-- [Use of text](#text)
-- [Graphical elements](#graphics)
-- [Colour](#colour)
-- [User interfaces and controls](#ui-controls)
-	- [Spatial navigation](#spatnav)
-	- [Indicating focus](#focus)
-	- [Indicating `:active` element](#active)
-- [Performance considerations](#performance)
-	- [Processors and hardware acceleration](#processors-hw-acceleration)
-	- [JavaScript](#javascript)
-	- [Layering and opacity](#layering-opacity)
-	- [Animations](#animations)
-- [Caching and content optimisation](#caching-optimisation)
-- [Multimedia](#multimedia)
-
 For discussions on creating web content for TV, visit our [Opera TV Content Development Discussions forum][26].
 
 [26]: http://my.opera.com/community/forums/forum.dml?id=40112
 
-## The Opera SDK and Opera TV Emulator {#sdk-emulator}
+## The Opera SDK and Opera TV Emulator
 
 The Opera for Devices Software Development Kit (SDK) is aimed at device manufacturers wishing to provide a customized browser and widget manager for use on their devices. It is compatible with pretty much any device that could conveniently require web access, with existing implementations ranging from web-enabled TV sets and set-top boxes to tablet PCs and connected picture frames.
 
@@ -74,7 +49,7 @@ Download the [Opera TV Emulator][28].
 
 It’s worth noting that, even though the emulator can facilitate testing and debugging, developers should — if possible — still test their content on actual devices, as certain features and specific constraints (such as the speed of the device’s processor and available memory) can vary from device to device.
 
-## Standards support on web-enabled TVs {#standards}
+## Standards support on web-enabled TVs
 
 When building web sites and applications accessed through a web-enabled TVs regular web browser, developers can take full advantage of the web standards supported by the browser on the device. For Opera’s suite of products (desktop, mobile and devices), the specific features that are supported depend on the Presto engine version running at the heart of each browser. At the time of writing, the Opera SDK deliveries are based on Presto 2.6 — the same engine found in the current desktop and mobile releases. This allows developers to take advantage of some of the latest standards:
 
@@ -90,7 +65,7 @@ Developers can find which Presto version is present in a particular Opera browse
 	Opera/9.80 (Windows NT 6.0; U; en-GB) **Presto/2.6**.33 Version/10.61
 
 
-## Designing for context and form factor {#context-form-factor}
+## Designing for context and form factor
 
 Although actual usage may vary, there are some general considerations with regards to context when talking about web content on TV.
 
@@ -98,7 +73,7 @@ Consumption of content (including web content) on TV, because of its traditional
 
 Primary activity often revolves around quick information look-up (for instance, cast and crew details for a particular movie, weather reports, TV listings) and quick access to services. Web content for TV should therefore be optimised — in terms of overall presentation, navigation and functionality — and task-focused, giving quick and clear access to all relevant features and information.
 
-## Adaptive layouts {#adaptive-layouts}
+## Adaptive layouts
 
 TVs usually run at the following resolutions:
 
@@ -118,11 +93,11 @@ However, a more sustainable and maintainable solution would be to ensure that co
 
 There are a few technologies that can be employed for these types of adaptive layouts:
 
-### Fluid layouts {#fluid}
+### Fluid layouts
 
 Using percentage-based values to define the width and height of layout containers. This can further be combined with `max-width`, `min-width`, `max-height` and `min-height` in pixel values, to provide some upper and lower limits to the fluidity of the containers.
 
-### CSS2.1 Media Types {#media-types}
+### CSS2.1 Media Types
 
 CSS2.1 allows for the definition of styling blocks that only apply to specific classes of device. This technique is most commonly used to provide separate styling for screen and print, negating the need for creating separate printer-friendly pages. CSS2.1 also allows the definition of styles specifically for TVs.
 
@@ -138,7 +113,7 @@ or within a single stylesheet, by defining separate `@media` sections:
 	@media screen { /* styles for normal on-screen presentation */ }
 	@media tv { /* tv specific styles */ }
 
-### CSS3 Media Queries {#media-queries}
+### CSS3 Media Queries
 
 While CSS2.1 Media Types classify devices into very broad categories (`screen`, `print`, `tv`, etc.), and rely on devices actually identifying themselves as such, CSS3 extends this concept by allowing developers to define specific conditions under which styles should be applied, providing far more granular control over how a layout is to be rendered under different conditions. For example, it is possible to create layouts that change depending on various factors, including the device’s screen width, screen height, resolution and color depth.
 
@@ -154,21 +129,21 @@ or using `@media` sections in the stylesheet:
 	@media screen and (min-width: 1280px) and (max-width: 1920px) { /* HD-Ready styles */ }
 	@media screen and (max-width: 1280px) { /* smaller than HD-Ready styles * }
 
-## Safe areas {#safe-areas}
+## Safe areas
 
 Traditionally, TV sets were not able to display the full width and height of their nominal resolution, resulting in content positioned in the edges of the screen to be cut off or not displayed at all. Although this problem has been mitigated or – on some high end devices – resolved on modern digital TV sets, developers are still advised to only place important content and controls in the “safe area”, leaving a margin of approximately 5% along each edge of the viewport.
 
-## Single-window browsing {#single-window}
+## Single-window browsing
 
 Although some devices will include the ability for browsers to open separate tabs, together with an interface for end users to switch between them, the large majority of web-enabled TVs will only run in single-window mode. Any calls to open a new window (be it through JavaScript, or simpler techniques such as providing a `target` attribute on links) will only affect the current window. Developers need to be particularly aware of this if their sites and applications currently use separate windows to provide contextual help or in more complex situations (such as web-based email clients) where child windows use JavaScript to communicate back to their parent windows in order to keep state or provide the bulk of commonly-used functions. In these cases, web applications will need to be reworked to only use a single window.
 
-## Scrolling {#scrolling}
+## Scrolling
 
 Ideally, developers should aim to present all content contained within their TV-optimised sites and applications on the screen, without the need for the user to scroll. If this is not possible, content should at least fit the width of the screen, requiring the user to just scroll vertically.
 
 Using iframes or containers styled with `overflow: auto;` will work as expected in the Opera SDK, and users will be able to scroll these — as well as the entire page, if needed — using the default spatial navigation method of their web-enabled device. However, it may be more user-friendly to create customised controls and interface elements (such as content carousels) instead of relying on the browser’s default scrollbar mechanism.
 
-## Use of text {#text}
+## Use of text
 
 Although TVs run at resolutions that are comparable to desktop and notebook devices, users are traditionally positioned further away from the screen (typically a few meters). It’s important to keep this in mind when deciding on the size of text and graphical elements.
 
@@ -180,19 +155,19 @@ To increase the readability of text on a TV screen, developers should:
 
 The number of fonts available on devices is usually limited — much more so than on desktop computers. Typically, only widely available Linux fonts such as Bitstream Vera (serif, sans-serif and monospaced) are present. End users are not able to install any fonts beyond those that came pre-installed with their device. However, the Opera SDK browser offers support for CSS3 web fonts (including fonts served through third-party services like Typekit or the Google Font API).
 
-## Graphical elements {#graphics}
+## Graphical elements
 
 For graphical elements, it is best to make the design bold and “chunky”, particularly for interface elements such as buttons. Overly fine detail such as single pixel borders should be avoided, as these can be particularly problematic on devices running on interlaced resolutions (such as SDTV and 1080i). This does not mean that subtlety and texture should be avoided altogether, but distinguishing features need to be clearly visible even when viewed at a distance.
 
 When combining graphical elements with adaptive layout techniques, it may be useful to employ Scalable Vector Graphics (SVG), which can be resized and transformed without distortion or pixelation. However, complex SVG elements (involving a large number of vectors and layered, semi-transparent sections) do require more processing power to calculate and render, so their usefulness needs to be balanced against their performance impact.
 
-## Colour {#colour}
+## Colour
 
 Certain colour combinations can be problematic when displayed on a TV screen. Even on high-end devices pure white, orange and red, as well as extreme contrasts, can lead to distortion and interference of the image and should be avoided.
 
 In addition, the dynamic range of TV screens may not be the same as traditional computer monitors. Subtle gradients and low contrast colours may result in colour bands or indistinguishable combinations.
 
-## User interfaces and controls {#ui-controls}
+## User interfaces and controls
 
 TVs are “low interaction” devices. When designing interfaces, developers should ensure that they are clear and uncluttered, and that controls are pared down to the minimum necessary.
 
@@ -202,7 +177,7 @@ Devices will also provide users with a way to enter regular text — for instanc
 
 Some devices may offer the option of providing an on-screen pointer, which is moved with the cursor keys or motion sensors in the remote control, as is the case on the Nintendo Wii. On-screen controls should generally be large, with ample padding, to provide a large hit area that facilitates user activation without the need for too much accuracy in moving the pointer.
 
-### Spatial navigation {#spatnav}
+### Spatial navigation
 
 As is the case on desktop, the Opera browser uses spatial navigation. While on the desktop this mode requires the use of SHIFT+cursor keys, on TV spatial navigation is mapped directly to the directional keys on the remote.
 
@@ -219,7 +194,7 @@ Although spatial navigation works “out-of-the-box” in most situations, devel
 [30]: http://www.w3.org/TR/css3-ui/#nav-dir
 [31]: http://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/
 
-### Indicating focus {#focus}
+### Indicating focus
 
 By default, Opera will place an outline around the element that currently has focus. If the design of the specific content does require it, though, this standard outline can be partially suppressed.
 
@@ -249,7 +224,7 @@ the style selector should be modified to also cover `:focus`, like so:
 
 	a:focus, a:hover { /* styles apply to hovering AND keyboard/spatial navigation focus */ }
 
-### Indicating `:active` element {#active}
+### Indicating `:active` element
 
 As is common across all browsers at the time of writing, keyboard navigation (including Opera’s spatial navigation, as used in the Opera Devices SDK) does not trigger any `:active` styles that may be defined. For this reason, additional style rules such as
 
@@ -261,9 +236,9 @@ will not have any effect. If your application relies on giving the user feedback
 
 and the use of additional JavaScript that sets/unsets the `.active` class on the `click` event.
 
-## Performance considerations {#performance}
+## Performance considerations
 
-### Processors and hardware acceleration {#processors-hw-acceleration}
+### Processors and hardware acceleration
 
 Typical web-enabled TV sets have modest hardware specifications compared to desktop computers. The main processor power of a TV comes somewhere between high-end smart phones and low end laptops.
 
@@ -275,15 +250,15 @@ TVs often come with specialised chipsets that can provide hardware acceleration 
 
 It is possible to accelerate most processor intensive features of the Opera SDK — including Vega and Carakan itself — but in general developers should not rely on any particular feature being hardware-accelerated, and instead be mindful of the processing power on web-enabled TVs being comparatively modest.
 
-### JavaScript {#javascript}
+### JavaScript
 
 Because of the comparatively low spec processors found on most common TVs, developers should avoid overly heavy and complex JavaScript. For general visual/GUI effects such as carousels, slideshows and expanding/contracting boxes, custom-written and optimised scripts are usually preferable to large multi-purpose frameworks. Also, in light of cache restrictions and content optimisation, it is recommended to use “lazy loading” techniques to only call scripts when needed.
 
-### Layering and opacity {#layering-opacity}
+### Layering and opacity
 
 The act of displaying images on a webpage (blitting images onto the viewport) is generally hardware-accelerated on most devices. However, complex layouts — for example with overlapping, semi-transparent graphics and layered blocks with reduced opacity that blend together — require large amounts of additional processing power to calculate the actual value of each pixel that needs to be displayed on screen. These can adversely impact overall performance of pages — particularly scrolling and animations — and should be used sparingly.
 
-### Animations {#animations}
+### Animations
 
 One of the strengths of many JavaScript frameworks is the ability to easily script complex visual effects and animations.
 
@@ -291,7 +266,7 @@ However, if these are simply “eye candy” effects — often given in response
 
 Generally however, such effects should be kept to a minimum, as any form of animation can be expensive in terms of performance, potentially rendering sites and applications slow and unresponsive.
 
-## Caching and content optimisation {#caching-optimisation}
+## Caching and content optimisation
 
 Most web-enabled TVs don’t have a hard drive or solid state drive to cache web content (although some DVRs will, these are generally used to record videos, and are not generally available for use by the browser). In these circumstances the browser will run in diskless mode, using only the available RAM to cache any downloaded web content.
 
@@ -301,7 +276,7 @@ Because of this fairly low limit on the available cache, it is not safe to assum
 
 In addition to this regular cache, browsers on devices will also have a fairly limited amount of memory available to store the decoded pages — the browser’s internal representation of a web page, which includes assets such as the DOM, JavaScript objects, and all uncompressed images. Once the limit for the decoded pages’ memory has been reached, the browser will generally stop rendering and loading the current page until the cache is freed again. How this happens is up to individual manufacturers — for instance, users may be alerted through a pop-up that loading has stopped and that the browser is unable to continue rendering the page. After confirmation, the page and its associated cache can then be purged. For this reason, developers should be careful when using large numbers of images and JavaScript resources, as this can potentially cause out-of-memory issues on lower-end devices.
 
-## Multimedia {#multimedia}
+## Multimedia
 
 Starting with Presto 2.5, Opera comes with built-in support for the HTML5 `<audio>` and `<video>` elements, allowing developers to include multimedia content in their web sites without plugins. However, the specifics of which codecs are supported on devices can vary considerably, as this depends on the underlying platform and integration work carried out by device manufacturers. Current devices are often optimised for hardware-accelerated playback of MP4/H.264 content in the `<video>` element. Other codecs (such as MPEG2 for video or MP3 for audio) may be available, but this cannot be guaranteed on all web-enabled TVs.
 
