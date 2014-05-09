@@ -6,6 +6,7 @@ intro: 'IndexedDB offers a powerful way to store and retrieve data in the browse
 tags:
 - javascript
 - indexeddb
+license: cc-by-3.0
 layout: article
 ---
 
