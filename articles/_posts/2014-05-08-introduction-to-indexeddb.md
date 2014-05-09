@@ -35,7 +35,7 @@ IndexedDB also has a much larger data capacity than `localStorage` — no less t
 
 ## Current browser support
 
-Unfortunately, IndexedDB yet isn’t available in all major browsers. Opera 15+, Chrome 24+, Firefox 15+, and Internet Explorer 10+ support it. Older versions of Chrome and Firefox support experimental, vendor-prefixed versions of the API. We won’t cover those here.
+Unfortunately, IndexedDB isn’t available in all major browsers yet. Opera 15+, Chrome 24+, Firefox 15+, and Internet Explorer 10+ support it. Older versions of Chrome and Firefox support experimental, vendor-prefixed versions of the API. We won’t cover those here.
 
 Safari doesn’t support IndexedDB at all, nor do Presto-based versions of Opera (≤ 12). Instead they support the older [Web SQL specification][2]. [IndexedDBShim][3] smooths out most, but not all of these differences. For browsers that support neither, the best alternative is still to use a server-side database.
 
@@ -138,7 +138,7 @@ The optional second argument is the version number of our database. Since this i
 
 Without a version number argument, `open` will create the database if it doesn’t exist, and set its version to 1. If the database does exist, `open` will create a connection to it.
 
-Version numbers must be an _integer_ greater than zero. Float values will just be converted to integers; 2.5 will become 2 and 0.8 will become 0 (which causes an error). The maximum allowed value of a version number is 253 or 9,007,199,254,740,992. This maximum also applies to generated keys.
+Version numbers must be an _integer_ greater than zero. Float values will just be converted to integers; 2.5 will become 2 and 0.8 will become 0 (which causes an error). The maximum allowed value of a version number is 2<sup>53</sup> or 9,007,199,254,740,992. This maximum also applies to generated keys.
 
 **NOTE:** In Opera, you can inspect IndexedDB object stores, keys and values in the _Resources_ panel of Opera’s Developer tools (Developer → Web Inspector).
 
