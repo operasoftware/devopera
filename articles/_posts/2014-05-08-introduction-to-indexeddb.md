@@ -46,7 +46,7 @@ Safari doesn’t support IndexedDB at all, nor do Presto-based versions of Opera
 
 To test for IndexedDB support, do the following.
 
-	var hasIDB = (typeof window.indexedDB === 'undefined');
+	var hasIDB = typeof window.indexedDB != 'undefined';
 
 Or use [Modernizr][4].
 
