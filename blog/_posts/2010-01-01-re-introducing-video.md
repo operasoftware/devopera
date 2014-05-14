@@ -34,7 +34,7 @@ While the core codec support remains the same, almost everything else has change
 
 <figure class="figure" id="figure-1">
 	<img src="{{ page.id }}/html5-video-spec-length.png" alt="HTML5 video section then and now (rotated 90°; scale 1:73)" class="figure__media">
-	<figcaption class="figure__caption">HTML5 <code>&lt;video></code> section then and now (rotated 90°; scale 1:73)</figcaption>
+	<figcaption class="figure__caption" markdown="span">HTML5 `<video>` section then and now (rotated 90°; scale 1:73)</figcaption>
 </figure>
 
 As this is a pre-alpha, there are also some parts that are not finished. Most importantly, we don't support seeking at all yet. As a side effect we don't have the duration of files until we have played through to the end, so the seekbar isn't very useful right now. This is at the top of our list of things to fix before a final release. We are also working on improving bandwidth management so that we will be able to honor (the absence of) the `autobuffer` attribute.
