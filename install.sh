@@ -13,12 +13,12 @@ echo "Done installing the gems."
 
 
 # Check and install node.js
-hash node 2>/dev/null ||
+type node 2>/dev/null ||
 echo "Installing node.js."
 
 # Debian and like OSs.
 [ $OSTYPE = linux-gnu ] &&
-hash apt-get 2>/dev/null &&
+type apt-get 2>/dev/null &&
 apt-get install g++ curl libssl-dev apache2-utils \
 git-core
 
