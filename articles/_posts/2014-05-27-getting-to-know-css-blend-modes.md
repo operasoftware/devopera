@@ -1,5 +1,16 @@
-#Getting to know CSS Blend Modes
-**By Shwetank Dixit, Opera Software**
+---
+title: 'Getting to know CSS Blend Modes'
+authors:
+- shwetank-dixit
+intro: 'CSS Blend Modes provide a way to specify how one layer will interact or 'blend' with the one underneath. Until now, this was the domain of photo editing applications, but now they are available on the web using CSS itself!'
+tags:
+- blendmodes
+- css
+- masking
+cover: jpg
+license: cc-by-3.0
+layout: article
+---
 
 CSS Blend Modes provide a way to specify how one layer will interact or 'blend' with the one underneath. Until now, this was the domain of photo editing applications, but now they are available on the web using CSS itself!
 
