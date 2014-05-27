@@ -176,7 +176,7 @@ or
 
 	mix-blend-mode: overlay
 
-and so on. Note that this works with any kind of element. If you apply `mix-blend-mode` to an element, then it will mix its colors with any element which it is overlapping. Check out a page I made which showcases [two images blending with each other](demos/demo_blendmodes_mixblend.html)!
+and so on. Note that this works with any kind of element. If you apply `mix-blend-mode` to an element, then it will mix its colors with any element which it is overlapping. Check out a page I made which showcases [two images blending with each other]({{ page.id }}/demo_blendmodes_mixblend.html)!
 
 ## Using the `isolation` property
 
