@@ -1,0 +1,346 @@
+<html>
+<head>
+	<title>Blend Modes</title>
+	<script src="http://use.edgefonts.net/open-sans-condensed;advent-pro.js"></script>
+<style type="text/css">
+
+body {
+	font-family: open-sans-condensed, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #2ecc71;
+	color: #fff;
+}
+
+#container {
+	 	background-repeat: no-repeat;
+	 	padding: 3% 2% 3% 3%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin: 0 auto;
+		margin-bottom: 2%;
+		width: 620px;
+		border: 1px solid #16a085;
+		border-radius: 5px;
+}
+
+header {
+		text-align: center;
+}
+
+header > h1 {
+ 	font-size: 3.0em;
+ 	display: inline-block;
+ 	line-height: 0.0;
+ 
+ }
+
+header > h2 {
+	display: inline-block;
+	margin-left: 1.0em;
+	line-height: 0.0;
+}
+
+h2 > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#blend {
+	position: relative;
+	min-height: 275px;
+}
+
+#blend img{
+	position: absolute;
+	border-radius: 10px; 
+	display: block;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate(50%);
+	-moz-transform: translate(50%);
+	-ms-transform: translate(50%);
+	transform: translate(50%);
+}
+
+#top {
+	z-index: 1;
+	-webkit-transition: -webkit-transform  .25s ease-in;
+	-moz-transition: -moz-transform  .25s ease-in;
+	-ms-transition: -ms-transform  .25s ease-in;
+	transition: transform  .25s ease-in;
+}
+
+#bottom{
+	z-index: -1;
+	-webkit-transition: -webkit-transform  .25s ease-in;
+	-moz-transition: -moz-transform  .25s ease-in;
+	-ms-transition: -ms-transform  .25s ease-in;
+	transition: transform  .25s ease-in;
+}
+
+#top:hover {
+	mix-blend-mode: normal !important;
+	-webkit-transition: -webkit-transform  .25s ease-in;
+	-moz-transition: -moz-transform  .25s ease-in;
+	-ms-transition: -ms-transform  .25s ease-in;
+	transition: transform  .25s ease-in;
+}
+
+#bottom:hover {
+	mix-blend-mode: normal !important;
+	-webkit-transform: translate(-7%);
+	-moz-transform: translate(-7%);
+	-ms-transform: translate(-7%);
+	transform: translate(-7%);
+}
+
+footer {
+	clear: both;
+	margin: 5% 0% 0% 1%;
+	line-height: 1.8;
+}
+
+footer a, footer a:visited {
+	background-color: /*#ecf0f1*/ #fff;
+	padding: 2px;
+	border-radius: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2ecc71;
+	text-shadow: 1px 1px 1px #fff;
+	margin-bottom: 5px;
+	font-size: 0.9em;
+}
+
+#sum {
+	width: 100%;
+}
+
+.option {
+	display: inline-block;
+	height: 24px;
+  	width: 24px;
+
+}
+
+button {
+	background-color: #2ecc71;
+	text-decoration: none;
+	border: 1px solid #eee;
+	font-size: 1.2em;
+	border-radius: 4px;
+	color: #eee;
+}
+
+.selected {
+	background-color: #16a085;
+	color: #fff !important;
+}
+
+#explaination {
+	margin: 2% 1% 0% 0%;
+	min-height: 5px;
+	background-color: #fff;
+	color: /*#2ecc71*/ #16AA9D;
+	border-radius: 3px;
+	padding: 5px;
+	opacity: 0.9;
+}
+
+#explaination > h2 {
+	line-height: 0.3;
+}
+
+code {
+	background-color: #333;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+#warning {
+	background-color: #e74c3c;
+	color: #fff;
+	font-size: 1.4em;
+	padding: 1%;
+	box-shadow: 2px 2px 5px #ccc;
+	display: none;
+}
+
+#warning p, ul {
+	margin: -2px;
+}
+
+#warning li {
+	font-size: 0.9em;
+}
+
+#warning span {
+	text-transform: capitalize;
+	padding: 0px 2px 0px 2px;
+	background-color: #fff;
+	color: red;
+}
+</style>
+<script src="modernizr-custom.js"></script>
+</head>
+<body>
+<aside id="warning"></aside>
+<header><h1>CSS Blend Modes Demo</h1></header>
+
+<div id="container">
+	<div id="blend">
+		<img src="images/boy_300.png" id="top">
+		<img src="images/girl_300.png" id="bottom">
+	</div>
+	<input type="checkbox" id="switchcpic" value="switch">Use second picture pair (Select <em>Screen</em> mode for best effect)</input><br>
+		<div id="sum">
+            <button id="normal">Normal</button>
+            <button id="multiply">Multiply</button>
+            <button id="screen">Screen</button>
+            <button id="overlay">Overlay</button>
+            <button id="darken">Darken</button>
+            <button id="lighten">Lighten</button>
+            <button id="color-dodge">Color-Dodge</button>
+            <button id="color-burn">Color Burn</button>
+            <button id="hard-light">Hard-Light</button>
+            <button id="soft-light">Soft-Light</button>
+            <button id="difference">Difference</button>
+            <button id="exclusion">Exclusion</button>
+            <button id="hue">Hue</button>
+            <button id="saturation">Saturation</button>
+            <button id="color">Color</button>
+            <button id="luminosity">Luminosity</button>
+		</div>
+		<div id="explaination">
+			
+		</div>
+		<footer>Photos by <a href="https://www.flickr.com/photos/saad/19654343">Saad Akthar</a>, <a href="https://www.flickr.com/photos/araswami/2605623669">Swaminathan</a> and <a href="https://www.flickr.com/photos/tabor-roeder/5569818223/">Phil Roeder</a> are available under creative commons. <a href="https://www.flickr.com/photos/66348631@N08/13225893233/in/pool-childrenofindia">Ganesh kumar Murugesan's picture</a> is used with due permission. Made by <a href="http://twitter.com/shwetank">@shwetank</a>.</footer>
+</div>
+<script>
+	var topImage = document.querySelector("#top");
+	var bottomImage = document.querySelector("#bottom");
+	var  allOptions = document.querySelectorAll("button");
+	var explaination = document.querySelector("#explaination");
+	var switchpic = document.querySelector("#switchcpic");
+
+	var text = {
+	"normal" : "This mode simply selects the source color (upper layer). In effect, no blending is applied in this mode", 
+	"overlay" : "This applies 'multiply' mode on the darker pixels and 'screen' mode on the lighter pixels.",
+	"multiply" : "The color from the source layer is multiplied with the color from the background layer to form the final effect on that pixel.",
+	"screen" : "This is the opposite of 'multiply'. The compliments of the source and the backdrop layers are multiplied, and then its compliment is taken to form the final color of the pixel.",
+	"darken" : "This mode applies whichever color tone is darker between the source and the backdrop colors.",
+	"lighten" : "This mode is the opposite of 'Darken'. It applies whichever color tone is lighter between the source and the backdrop colors.",
+	"color-dodge": "This brightens the backdrop color, resulting in a very high contrast kind of image.",
+	"color-burn" : "This darkens the backdrop color, and increases the contrast between the source and the backdrop color.",
+	"hard-light" : "This is the opposite of 'Overlay'. It applies 'multiply' on the lighter pixels and 'screen' on the darker ones.",
+	"soft-light" : "This applies 'multiply' on darker values and 'screen' on lighter values. This is similar to 'Overlay', but works slightly differently.",
+	"difference" : "Substracts the darker of the two colors from the lighter color, forming a kind of 'photo negative' effect. Black is not affected, white is inverted absolutely, and the rest of colors are affected based on their brightness levels.",
+	"exclusion" : "Produces a lower-contrast version of the effect produced by 'Difference' mode.",
+	"hue" : "Applies saturation and luminosity of the backdrop color but with the hue of the source color.",
+	"saturation": "Produces a color with the saturation of the source color, and blends the hue and luminosity of the background color.",
+	"color" : "Produces a color with the hue and saturation of the source color, and luminosity of the background color",
+	"luminosity": "Produces a color with the luminosity of the source color, and blends the hue and saturation of the background color."
+	}
+
+	for (var i=0; i< allOptions.length; i++) {
+		allOptions[i].addEventListener('click', applyEffect, false);
+	}
+
+	function applyEffect() {
+		topImage.style.mixBlendMode = ""+this.id+"";
+		var content = this.id+"";		
+		explaination.innerHTML = "<h2>Blend Mode: <em>"+this.id+"</em></h2><p>"+text[content]+"</p>";
+
+		if (this.classList.contains("selected")) {
+			this.className = "";
+			topImage.style.mixBlendMode = "normal";
+			explaination.innerHTML = "Click on an effect name to read how it works.";
+
+		} else {
+		for (var i=0; i< allOptions.length; i++){
+			allOptions[i].classList.remove("selected");
+		}
+		this.classList.add("selected");
+		}
+	}
+
+	switchpic.onchange = function(){
+		var option = this.checked;
+		if (option == true){
+			topImage.src = "images/boy_glasses_m1.jpg";
+			bottomImage.src = "images/raindrops_m1.jpg";
+			topImage.style.mixBlendMode = "screen";
+			var screenButton =  document.querySelector("#screen");
+			explaination.innerHTML = "<h2>Blend Mode: <em>screen</em></h2><p>"+text["screen"]+"</p>";
+			for (var i=0; i< allOptions.length; i++){
+				allOptions[i].classList.remove("selected");
+			}
+			screenButton.classList.add("selected");
+		}
+		else {
+			topImage.src = "images/boy_300.png";
+			bottomImage.src = "images/girl_300.png";
+			topImage.style.mixBlendMode = "lighten";
+			var lightenButton =  document.querySelector("#lighten");
+			explaination.innerHTML = "<h2>Blend Mode: <em>lighten</em></h2><p>"+text["lighten"]+"</p>";
+			for (var i=0; i< allOptions.length; i++){
+				allOptions[i].classList.remove("selected");
+			}
+			lightenButton.classList.add("selected");
+		}
+	}
+
+
+
+	topImage.onmouseover = function() {
+		topImage.style["-webkit-transform"] = "translate(110%)";
+		topImage.style.MozTransform = "translate(110%)";
+		topImage.style.msTransform = "translate(110%)";
+		topImage.style.transform = "translate(110%)";
+		bottomImage.style["-webkit-transform"] = "translate(-7%)";
+		bottomImage.style.MozTransform = "translate(-7%)";
+		bottomImage.style.msTransform = "translate(-7%)";
+		bottomImage.style.transform = "translate(-7%)";
+	}
+
+	topImage.onmouseout = function() {
+		topImage.style["-webkit-transform"] = "translate(50%)";
+		topImage.style.MozTransform = "translate(50%)";
+		topImage.style.msTransform = "translate(50%)";
+		topImage.style.transform = "translate(50%)";
+		bottomImage.style["-webkit-transform"] = "translate(50%)";
+		bottomImage.style.MozTransform = "translate(50%)";
+		bottomImage.style.msTransform = "translate(50%)";
+		bottomImage.style.transform = "translate(50%)";
+	}
+
+	function init() {
+		topImage.style.mixBlendMode = "lighten";
+		document.querySelector("#lighten").classList.add("selected");
+
+		explaination.innerHTML = "<h2>Blend Mode: <em>lighten</em></h2><p>"+text["lighten"]+"</p>";
+
+	}
+
+	function detect(){
+		
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
+    	
+		var aside = document.querySelector("#warning");
+
+		if (!supportsMixBlendMode){  
+			aside.style.display="block";
+			aside.innerHTML = "<p>Looks like your browser does not fully support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li></ul>";
+			} 
+		
+	}
+
+
+	detect();
+	init();
+</script>
+</body>
+</html>

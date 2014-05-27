@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blend modes with background &lt;div&gt;</title>
+<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>         
+<style>
+  body {
+    font-family: open-sans-condensed, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+
+  h1, h2, footer, p, input {
+    margin-left: 2%;
+  }
+
+  p {
+    line-height: 1.0;
+  }
+
+  a, a:hover, a:visited, a:link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  a {
+    border-bottom: 1px dotted #333;
+  }
+
+  #inputwrapper {
+    font-size: 1.3em;
+  }
+
+  #wrapper {
+    margin-bottom: 10px;
+  }
+
+  #photos {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -ms-column-count: 3;
+    -ms-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    width: 900px;
+    margin-left: 2%;
+  }
+
+  .pic {
+    display: inline-block; 
+    /*width: 100%;*/
+    padding:0;
+    margin-bottom: 3px;
+    overflow: hidden;
+    isolation: isolate;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    transition: background-color 2s;
+  }
+
+  .pic:nth-of-type(1) {
+    width: 427px !important;
+    background-color: #1abc9c;
+  }
+
+
+
+  .pic:nth-of-type(1) > img {
+    mix-blend-mode: overlay;
+    margin-left: -120px;
+  }
+
+
+  .pic:nth-of-type(2) {
+    background-color: red;
+  }
+
+  .pic:nth-of-type(2) > img {
+    mix-blend-mode: darken;
+  }  
+
+  .pic:nth-of-type(3) {
+    background-color: #3498db;
+  }
+
+  .pic:nth-of-type(3) > img {
+    opacity: 0.75;
+    mix-blend-mode: color-burn;
+    margin-left: -275px;
+  }
+
+  .pic:nth-of-type(3) > img:hover {
+    opacity: 1.0;
+  }
+
+  .pic:nth-of-type(4) {
+    background-color: #8e44ad;
+  }
+
+  .pic:nth-of-type(4) > img {
+    mix-blend-mode: screen;
+    margin-left: -190px;
+    opacity: 0.9;
+  }
+
+  .pic:nth-of-type(5) {
+    background-color: #f1c40f;
+  }
+
+  .pic:nth-of-type(5) > img {
+    mix-blend-mode: hard-light;
+    margin-left: -155px;
+    opacity: 0.9;
+  }
+
+   .pic:hover {
+    background-color: transparent;
+  }
+
+  .text {
+    font-weight: normal;
+    border: 1px solid #888;
+    padding: 10px;
+    border: 4px solid black;
+  }
+  pre {
+    padding-left: 5px;
+    font-size: 0.95em;
+    color: #000;
+    mix-blend-mode: darken;
+  }
+
+  #explanation code {
+    font-family: open-sans-condensed, sans-serif;
+    font-size: 1.0em;
+    font-style: normal;
+  }
+
+  #explanation > h2 {
+    line-height: 0.75;
+  }
+
+  #warning > code {
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+  #warning {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 1%;
+  box-shadow: 2px 2px 5px #ccc;
+  display: none;
+}
+
+#warning p, ul {
+  margin: -2px;
+}
+
+#warning li {
+  font-size: 0.9em;
+}
+
+#warning span {
+  text-transform: capitalize;
+  padding: 0px 2px 0px 2px;
+  background-color: #fff;
+  color: red;
+}
+</style>
+<script src="modernizr-custom.js"></script> 
+</head>
+<body>
+<aside id="warning"></aside>
+    <h1>CSS Blend Modes - Image blending with with <code>mix-blend-mode</code> and <code>isolation</code></h1>
+    <div id="inputwrapper"><input type="checkbox" id="switch" value="switch">Remove <code>isolation</code> from the &lt;div&gt; contating the pictures (Hover over images to see the how the elements blend with the layers underneath).</input></div><br>    
+    <div id="wrapper">  
+      <div id="photos">
+        <div class="pic"><img src="images/kid1.jpg" id="blondie" /><code><pre>mix-blend-mode: overlay;</pre></code></div>
+        <div class="pic"><img src="images/boy_glasses_m2.jpg" /><code><pre>mix-blend-mode: darken;</pre></code></div>
+        <div class="pic"><img src="images/slum1.jpg" /><code><pre>mix-blend-mode: color-burn;</pre></code></div>
+        <div class="pic"><img src="images/kid2.jpg" /><code><pre>mix-blend-mode: screen;</pre></code></div>
+        <div class="pic"><img src="images/kid3.jpg" /><code><pre>mix-blend-mode: hard-light;</pre></code></div>
+        <div class="text">
+        <div id="explanation">
+        <h2>Explanation</h2>
+        <p>Beneath each &lt;img&gt; element is a &lt;div&gt;, with a particular background color. On hover, the <code>background-color</code> is transistioned to 'transparent'. When <code>isolation</code> is set to <code>isolate</code>(default here) then the mix-blend-mode doesn't have any color to mix the image's color with, so we get the proper image.</p>
+        <p>When <code>isolation</code> is set to <code>auto</code>, then all elements are in the same stacking context, and on hover, the mix-blend-mode find the layer underneath (the white color) to blend with.</p>
+        <h2>Credits</h2>
+        <ul>
+          <li><a href="https://www.flickr.com/photos/limaoscarjuliet/3921970684">Pawel Loj</a></li>
+          <li><a href="https://www.flickr.com/photos/araswami/2605623669">Swaminathan</a></li>
+          <li><a href="https://www.flickr.com/photos/meanestindian/2199221246">Meena Kadri</a></li>
+          <li><a href="https://www.flickr.com/photos/atbaker/5830511589">Adam Baker</a></li>
+          <li><a href="https://www.flickr.com/photos/geezaweezer/5868698183">Geraint Rowland</a></li>
+        </ul>
+        <p>Demo by <a href="https://twitter.com/shwetank">@shwetank</a>. Thanks to <a href="https://twitter.com/rcabanier">Rik Cabanier</a> for some nice improvements. All credited photos are available under creative commons.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    var switchOption = document.querySelector("#switch");
+    var pics = document.querySelectorAll(".pic");
+
+    switchOption.onchange = function (){
+      var status = this.checked;
+      if (status == true){
+        for (var i=0; i< pics.length; i++){
+          pics[i].style.isolation = "auto";
+        }
+      } else {
+        for (var i=0; i< pics.length; i++){
+          pics[i].style.isolation = "isolate";
+        }
+      }
+    }
+
+
+    function detect(){
+    var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
+    var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+    var supportsIsolation = Modernizr.testProp('isolation');
+    
+    var aside = document.querySelector("#warning");
+
+    if (!supportsMixBlendMode || !supportsIsolation){  
+      aside.style.display="block";
+      aside.innerHTML = "<p>Looks like your browser does not support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>isolation</code> supported by this browser?: <span>"+supportsIsolation+"</span></li></ul>";
+    } 
+
+  }
+
+  detect();
+    </script>
+    </body>
+</html>
