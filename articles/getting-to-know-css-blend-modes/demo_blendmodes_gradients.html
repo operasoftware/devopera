@@ -1,0 +1,203 @@
+<html>
+<head>
+	<title>Blend modes with gradients</title>
+	<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
+<style type="text/css">
+
+body {
+	font-family: open-sans-condensed, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+#container {
+	background-repeat: no-repeat;
+	padding: 3% 1% 3% 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	width: 80%;
+}
+
+header {
+	text-align: center;
+}
+
+header > h1 {
+ 	font-size: 3.0em;
+ 	display: inline-block;
+ 	line-height: 0.0;
+ 	font-weight: lighter;
+ }
+
+header > h2 {
+	display: inline-block;
+	margin-left: 1.0em;
+	line-height: 0.0;
+}
+
+h2 > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#blend {
+	position: relative;
+	min-height: 355px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+}
+
+p, a {
+	font-size: 1.15em;
+}
+
+a, a:visited, a:hover, a:link {	
+	border-bottom: 1px dotted #333;
+	text-decoration: none;
+	color: #333;
+}
+
+#blend > .mainimage{
+	border-radius: 10px; 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: calc(55% - 300px);
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.top {
+	z-index: 1;
+	mix-blend-mode: multiply;
+}
+
+.bottom{
+	z-index: -1;
+	min-width: 500px;
+	min-height: 333px;
+}
+
+.top:hover {
+	mix-blend-mode: normal !important;
+}
+
+#gradient {
+	background: -webkit-radial-gradient(50% 50%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
+	background: -moz-radial-gradient(50% 50%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
+	}
+
+footer {
+	clear: both;
+}
+
+
+#sum {
+	width: 100%;
+}
+
+#sum p {
+	margin-left: 1%;
+}
+
+code {
+	background-color: #333;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+#warning {
+	background-color: #e74c3c;
+	color: #fff;
+	font-size: 1.4em;
+	padding: 1%;
+	box-shadow: 2px 2px 5px #ccc;
+	display: none;
+}
+
+#warning p, ul {
+	margin: -2px;
+}
+
+#warning li {
+	font-size: 0.9em;
+}
+
+#warning span {
+	text-transform: capitalize;
+	padding: 0px 2px 0px 2px;
+	background-color: #fff;
+	color: red;
+}
+
+</style>
+<script src="modernizr-custom.js"></script>
+</head>
+<body>
+<aside id="warning"></aside>
+<header><h1>CSS Blend Modes demo with gradients</h1></header>
+<div id="blend">
+		<img src="images/alona_m.jpg" class="top mainimage" />
+		<div class="bottom mainimage" id="gradient"></div>
+	</div>
+
+<div id="container">
+
+		<div id="sum">
+		<p>Hover over the image to see the image as it would appear normally.</p>
+		<input type="checkbox" id="gradientoption" value="linear">Switch to linear gradient background</input><br>
+		<h2>Explanation</h2>
+		<p>There is a &lt;div&gt; under the picture, on which a radial gradient (or linear, if you switch to it) is applied. That radial gradient is a transparent ( <code>RGBa (0,0,0,0)</code> ) to black one, and the linear gradient is from a yellowish color to a transparent one.</p>
+		<p>On the picture which is entirely over the &lt;div&gt;, we apply <code>mix-blend-mode: multiply;</code>, to apply the above effect.</p>
+		
+		<footer>
+		<h2>Credits</h2>
+            <p>Photo by <a href="https://www.flickr.com/photos/liberato/199164956">Ricardo Liberato</a>. Demo By <a href="http://twitter.com/shwetank">@shwetank</a></p>
+		</footer>
+		</div>
+</div>
+
+<script>
+	var gradientOption = document.querySelector("#gradientoption");
+	var myDiv = document.querySelector("#gradient");
+
+	gradientoption.onchange = function(){
+		var option = this.checked;
+		if (option == true){
+			myDiv.style.background = "-webkit-linear-gradient(left, rgba(241,196,15,1) 0%,rgba(224,227,229,0) 100%)";
+			myDiv.style.background = "-moz-linear-gradient(left, rgba(241,196,15,1) 0%,rgba(224,227,229,0) 100%)";
+			myDiv.style.background = "-ms-linear-gradient(left, rgba(241,196,15,1) 0%,rgba(224,227,229,0) 100%)";
+			myDiv.style.background = "linear-gradient(left, rgba(241,196,15,1) 0%,rgba(224,227,229,0) 100%)";
+		}
+		else {
+			myDiv.style.background = "-webkit-radial-gradient(50% 50%, circle, rgba(0,0,0,0), rgba(0,0,0,1))";
+			myDiv.style.background = "-moz-radial-gradient(50% 50%, circle, rgba(0,0,0,0), rgba(0,0,0,1))";
+			myDiv.style.background = "-ms-radial-gradient(50% 50%, circle, rgba(0,0,0,0), rgba(0,0,0,1))";
+			myDiv.style.background = "radial-gradient(50% 50%, circle, rgba(0,0,0,0), rgba(0,0,0,1))";
+		}
+	}
+
+	function detect(){
+		
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
+    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+		var aside = document.querySelector("#warning");
+
+		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){  
+			aside.style.display="block";
+			aside.innerHTML = "<p>Looks like your browser does not support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>background-blend-mode</code> supported by this browser?: <span>"+supportsBackgroundBlendMode+"</span></li></ul>";
+			} 
+		
+	}
+
+	detect();
+</script>	
+</body>
+</html>

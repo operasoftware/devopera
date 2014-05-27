@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blend modes with &lt;canvas&gt;</title>
+<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
+<script src="http://use.edgefonts.net/paytone-one.js"></script> 
+
+<style>
+  body {
+    font-family: open-sans-condensed, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+
+  h1, footer {
+    margin: 1% 0% 1% 1%;
+  }
+
+  footer {
+    margin-bottom: 1%;
+  }
+
+  canvas {
+    outline: 1px solid #888;
+    box-shadow: 3px 3px 3px #ccc;
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  a, a:visited, a:hover, a:link { 
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+code {
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+#warning {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 1%;
+  box-shadow: 2px 2px 5px #ccc;
+  display: none;
+}
+
+#warning p, ul {
+  margin: -2px;
+}
+
+#warning li {
+  font-size: 0.9em;
+}
+
+#warning span {
+  text-transform: capitalize;
+  padding: 0px 2px 0px 2px;
+  background-color: #fff;
+  color: red;
+}
+
+</style>
+</head>
+<body>
+<aside id="warning"></aside>
+    <h1>CSS Blend Modes - Blending inside &lt;canvas&gt;</h1>
+    <div id="container">
+      <canvas id="thecanvas" width="500" height="500">
+        Seems like your browser does not support &lt;canvas&gt;. 
+      </canvas>
+
+      <canvas id="anothercanvas" width="500" height="500">
+        Seems like your browser does not support &lt;canvas&gt;. 
+      </canvas>
+
+    </div>
+    <footer><strong>Credits</strong>: Inspiration from <a href="http://creattica.com/typography/essay-typeface/101953">http://creattica.com/typography/essay-typeface/101953</a>. Made by <a href="htpps://twitter.com/shwetank">@shwetank</a></footer>
+    <script>
+    var canvas = document.querySelector("#thecanvas");
+    var anothercanvas = document.querySelector("#anothercanvas");
+
+    var context = canvas.getContext("2d");
+    var ctx = anothercanvas.getContext("2d");
+
+
+    function demo1() {
+      context.fillStyle = "#303030";
+      context.fillRect(0,0, 800, 600);
+
+      context.fillStyle = "#0fff9a";
+      context.beginPath();
+      context.moveTo(0,0);
+      context.lineTo(500, 0);
+      context.lineTo(0, 500);
+      context.fill();
+
+      context.globalCompositeOperation = "exclusion";
+
+      context.font = '38pt paytone-one';
+      context.fillText("This text is using", 65, 230);
+
+      context.font = '38pt paytone-one';
+      context.fillText("CSS blend modes", 62, 262);
+
+      context.font = '13pt paytone-one';
+      context.fillText("Check out the article about it on dev.opera.com", 78, 285);
+  }
+
+  function demo2 (){
+    ctx.fillStyle = "#303030";
+    ctx.fillRect(0,0,500, 500);
+
+    ctx.font = "50pt paytone-one";
+    ctx.fillStyle = "#ff0033";
+    ctx.fillText("Blend Modes", 40, 100);
+
+    ctx.globalCompositeOperation = "exclusion";
+
+    ctx.font = "130pt paytone-one";
+    ctx.fillStyle = "#0fff9a";
+    ctx.fillText("are", 120, 180);
+
+    ctx.font = "75pt paytone-one";
+    ctx.fillStyle = "#ff0033";
+    ctx.fillText("awesome", 10, 210);
+
+    ctx.globalCompositeOperation = "screen";
+    ctx.font = "15pt paytone-one";
+    ctx.fillStyle = "#0063c9";
+    ctx.fillText("normal", 414, 250);
+    ctx.fillText("multiply", 400, 265);
+    ctx.fillText("screen", 430, 280);
+    ctx.fillText("overlay", 413, 295);
+    ctx.fillText("darken", 417, 310);
+    ctx.fillText("lighten", 415, 330);
+    ctx.fillText("color-dodge", 367, 345);
+    ctx.fillText("color-burn", 385, 360);
+    ctx.fillText("hue", 455, 375);
+    ctx.fillText("saturation", 383, 390);
+    ctx.fillText("color", 442, 405);
+    ctx.fillText("luminosity", 380, 420);
+    ctx.fillText("hard-light", 385, 435);
+    ctx.fillText("soft-light", 395, 450);
+    ctx.fillText("exclusion", 400, 465);
+    ctx.fillText("difference", 390, 482);
+  }
+  
+
+  function detect(){
+    var supportsGlobalCompositeOperation = context.globalCompositeOperation;
+    var aside = document.querySelector("#warning");
+
+    if (!supportsGlobalCompositeOperation ){  
+      aside.style.display="block";
+      aside.innerHTML = "<p>Looks like your browser does not support <code>globalCompositeOperation</code> in &lt;canvas&gt;. Please run this demo in a browser which does.</p>";
+    } 
+
+  }
+
+
+  detect();
+  demo1();
+  demo2();
+    </script>
+    </body>
+</html>
