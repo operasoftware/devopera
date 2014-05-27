@@ -260,8 +260,8 @@ The specification also allows you to add blends via CSS inside SVG documents.
 			}
 		</style>
 		<rect x="10" y="10" width="100" height="100" rx="15" ry="15" fill="#ff0000"/>
-    	<rect x="40" y="40" width="100" height="100" rx="15" ry="15" fill="green"/>
-    </svg>
+		<rect x="40" y="40" width="100" height="100" rx="15" ry="15" fill="green"/>
+	</svg>
 
 Of course, in SVG you can also use `feImage` and `feBlend` to add Blend Modes, but most would agree that it’s preferable to add it via CSS as mentioned above, as it is much more convenient.
 
@@ -279,31 +279,31 @@ It is important to use Blend Modes using feature detection. You can detect both 
 
 	if ('CSS' in window && 'supports' in window.CSS) {
 		var supportsMixBlendMode = window.CSS.supports('mix-blend-mode', 'multiply');
-	    var supportsBackgroundBlendMode = window.CSS.supports('background-blend-mode', 'multiply');
-	    var supportsIsolation = window.CSS.supports('isolation', 'isolate');
-    	…
-    }
+		var supportsBackgroundBlendMode = window.CSS.supports('background-blend-mode', 'multiply');
+		var supportsIsolation = window.CSS.supports('isolation', 'isolate');
+		…
+	}
 
 This will return `true` if it detects support for it, and `false` otherwise.
 
 However, the most robust solution is to use [Modernizr](http://modernizr.com)’s [`testProp()`](http://modernizr.com/docs/#testprop) functionality to test for the feature, like so:
 
 	var mixBlendModeSupport = Modernizr.testProp('mixBlendMode');
-    var backgroundBlendModeSupport = Modernizr.testProp('backgroundBlendMode');
-    var isolationSupport = Modernizr.testProp('isolation');
+	var backgroundBlendModeSupport = Modernizr.testProp('backgroundBlendMode');
+	var isolationSupport = Modernizr.testProp('isolation');
 
 It will return `true` if the browser has support for it, and `false` otherwise.
 
 It is also possible to use the `@supports` feature for it, like so:
 
 	@supports(mix-blend-mode: screen) {
-  		…
+		…
 	}
 
 If you want to determine support for both `mix-blend-mode` and `background-blend-mode` properties, you could write:
 
 	@supports((mix-blend-mode: screen) and (background-blend-mode: screen)) {
-  		…
+		…
 	}
 
 ## Conclusion
