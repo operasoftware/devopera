@@ -14,6 +14,7 @@ exclude:
 - 'node_modules'
 - 'Gruntfile.js'
 - 'package.json'
+- 'install.sh'
 - 'README.md'
 - 'LICENSE.md'
 - 'CONTRIBUTING.md'
