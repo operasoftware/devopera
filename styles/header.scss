@@ -76,6 +76,9 @@
 		@media (max-width:800px) {
 			margin-left:24px;
 			}
+		@media (max-width:520px) {
+			font-size:17px;
+			}
 		color:$grey;
 		}
 	&__link {
