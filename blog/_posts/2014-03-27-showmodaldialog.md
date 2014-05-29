@@ -64,6 +64,6 @@ The HTML spec defines [a `<dialog>` element](http://www.whatwg.org/specs/web-app
 
 ## When is `showModalDialog` being removed?
 
-The latest plan is to land the `showModalDialog` removal in Chromium 36. This means the feature will be gone in Opera 23 and Chrome 36, both of which should be released around the end of July.
+The latest plan is to land the `showModalDialog` removal in Chromium 37. This means the feature will be gone in Opera 24 and Chrome 37, both of which should be released in September.
 
 Mozilla is [looking to remove `showModalDialog` as well](https://bugzilla.mozilla.org/show_bug.cgi?id=981796), but it’s unsure when this will happen exactly. Probably not before Firefox 32.
