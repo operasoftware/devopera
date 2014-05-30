@@ -61,7 +61,7 @@ With the `dataset` attribute, you do not need to use any kind of looping to get 
 
 `dataset` is not your typical object in JavaScript; it is a [`DOMStringMap` object][3]. `DOMStringMap` is a new interface that is available in HTML5 for a set of name-value pairs.
 
-[3]: http://www.w3.org/TR/html5/common-dom-interfaces.html#domstringmap-0
+[3]: http://www.w3.org/TR/2011/WD-html5-20110525/common-dom-interfaces.html#domstringmap-0
 
 ## Manipulating a dataset
 
