@@ -132,7 +132,7 @@ There are many WebGL libraries. What most do is build on top of WebGL to create 
 
 [39]: https://github.com/mrdoob/three.js#readme
 [40]: https://github.com/mrdoob/three.js
-[41]: http://www.aerotwist.com/lab/getting-started-with-three-js/
+[41]: http://aerotwist.com/tutorials/getting-started-with-three-js/
 [42]: https://github.com/mrdoob/three.js/wiki/API-Reference
 [43]: http://webchat.freenode.net/?channels=three.js
 [44]: http://senchalabs.github.com/philogl/

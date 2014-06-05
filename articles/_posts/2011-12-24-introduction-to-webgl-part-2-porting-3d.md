@@ -232,7 +232,7 @@ Once you run the script successfully, you will get a JS file containing the JSON
 Once the model is done, it’s time to finally write some code. In this code we’ll include only the basic WebGL features that you need to render your design and rotate it in order to inspect the end result. You can take this example and experiment, adding your own model, making changes to the basic stuff that’s there already, or even adding a few things of your own design. The code we’re going to use is adapted from the Three.js example webgl_objconvert_test.html (which you can find in the examples folder when you download Three.js). You can find [my finished WebGL example here][44]. There are [getting started with Three.js tutorials][45] available, as well as a [Three.js API reference][46].
 
 [44]: {{ page.id }}/demo/
-[45]: http://www.aerotwist.com/lab/getting-started-with-three-js/
+[45]: http://aerotwist.com/tutorials/getting-started-with-three-js/
 [46]: https://github.com/mrdoob/three.js/wiki/API-Reference
 
 The very first thing you need to do is to download Three.js from the [Three.js Github repo][47]. When you unarchive Three.js you’ll find, inside the main folder, among other things, a folder called _examples_. Here you can find some Three.js demos (you may want to check them out later for more sample code and ideas). We’ll start our own new file here _in the examples folder_ and then follow the next steps.
@@ -413,6 +413,6 @@ I hope this article convinced you that you don’t need to be a WebGL expert to 
 [69]: https://github.com/mrdoob/three.js/blob/master/utils/exporters/obj/convert_obj_three.py
 [70]: https://github.com/mrdoob/three.js/downloads
 [71]: https://github.com/mrdoob/three.js/wiki/API-Reference
-[72]: http://www.aerotwist.com/lab/getting-started-with-three-js/
+[72]: http://aerotwist.com/tutorials/getting-started-with-three-js/
 
 Keep an eye on Dev.Opera for the next part of this tutorial!

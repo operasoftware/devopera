@@ -19,7 +19,7 @@ layout: post
 <tr><td><a href="http://www.eventbrite.com/event/1487845185">Talking standards</a></td><td>Belfast, Northern Ireland</td><td>April 6th</td><td>
     <a href="http://www.eventbrite.com/event/1487845185">The web standards gentleman&#39;s guide to HTML5 and CSS3</a></td><td><a href="http://dev.opera.com/author/974138" title="Chris Mills">Chris Mills</a></td></tr>
 <tr><td><a href="http://www.qconbeijing.com/track_11.html">QCon</a></td><td>Beijing, China</td><td>April 10th</td><td>
-    <a href="http://http://www.qconbeijing.com/Speaker.aspx?Id=63">HTML5 Open Platform</a></td><td><a href="http://dev.opera.com/author/1766230" title="Zi Bin Cheah">Zi Bin</a></td></tr>
+    <a href="http://www.qconbeijing.com/Speaker.aspx?Id=63">HTML5 Open Platform</a></td><td><a href="http://dev.opera.com/author/1766230" title="Zi Bin Cheah">Zi Bin</a></td></tr>
 <tr><td><a href="http://www.w3ctech.com/2011/html5">W3CTech</a></td><td>Shanghai, China</td><td>April 16-17th</td><td>
     <a href="http://www.w3ctech.com/2011/html5/guest">HTML5 Open Platform</a></td><td><a href="http://dev.opera.com/author/1766230" title="Zi Bin Cheah">Zi Bin</a></td></tr>
 <tr><td>Birth of third child</td><td>Manchester</td><td>April 23rd</td><td>My daughter arrives in this world!</td><td><a href="http://dev.opera.com/author/974138" title="Chris Mills">Chris Mills</a></td></tr>
