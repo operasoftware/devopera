@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Geolocation API</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		BODY {
+			background:#333;
+			color:#000;
+			font:13px/1.3 'Helvetica Neue','Helvetica','Arial',sans-serif;
+			}
+		#map {
+			position:absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			background:#333 50% 50% no-repeat;
+			}
+		#map.loader {
+			background-image:url(http://devfiles.myopera.com/articles/1231/spinner.gif);
+			}
+		#map.error {
+			background-image:url(http://devfiles.myopera.com/articles/1231/error.png);
+			}
+		#map.warning {
+			background-image:url(http://devfiles.myopera.com/articles/1231/warning.png);
+			}
+	</style>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+		function initialize() {
+			var element = document.getElementById( 'map' )
+			if ( navigator.geolocation ){
+				navigator.geolocation.getCurrentPosition(
+					function( position ) {
+						element.className = '';
+						loadMap(
+							element,
+							position.coords.latitude,
+							position.coords.longitude
+						);
+					},
+					function() {
+						element.className = 'error';
+					}
+				);
+			} else {  
+				element.className = 'warning';
+			}
+		}
+
+		function loadMap( element, lat, lon ) {
+			var coordinates = new google.maps.LatLng( lat, lon );
+			var options = {
+				zoom: 15,
+				center: coordinates,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(
+				element,
+				options
+			);
+			var marker = new google.maps.Marker({
+				position: coordinates, 
+				map: map,
+				title: 'You are here'
+			});
+		}
+
+		window.onload = initialize;
+	</script>
+</head>
+<body>
+	<div id="map" class="loader"></div>
+</body>
+</html>

@@ -26,7 +26,7 @@ layout: article
 
 <h2>How will visitors to your site approve or deny sharing of their location information?</h2>
 
-<p><img src="/articles/view/how-to-use-the-w3c-geolocation-api/1st_geo_screenshot_Linux.jpg" alt="Image of browser requesting user permission for sharing of location information" /></p>
+<p><img src="{{ page.id }}/1st_geo_screenshot_Linux.jpg" alt="Image of browser requesting user permission for sharing of location information" /></p>
 <p class="comment">Figure 1: A browser alerting the user that an application is trying to access their location data via the Geolocation API and asking for their permission to access it.</p>
 
 <p>Whenever you access a page that includes Geolocation code, a small notification will appear at top of the page asking whether you want to share your location information with the application or not (see Figure 1). If you do, then the information will be shared; you can also choose to select <q>remember my choice for this site</q> so that in future you won&apos;t be asked again and the application will automatically go with the choice you made the first time. Similarly, you can block your location information, giving you as the user a case-by-case choice in terms of your privacy.</p>
@@ -60,7 +60,7 @@ if (navigator.geolocation) {
     alert('Error!');
 }</code></pre>
 
-<p>Here is the <a href="/articles/view/how-to-use-the-w3c-geolocation-api/basic_geolocation_example.htm">resulting example page</a>.</p>
+<p>Here is the <a href="{{ page.id }}/basic_geolocation_example.htm">resulting example page</a>.</p>
 
 <p>If you want to keep watching the user's position and update the function accordingly, you can use the <code>navigator.geolocation.watchPosition()</code> function. It accepts the same parameters and works in more or less the same way as <code>getCurrentPosition()</code>. In both <code>getCurrentPosisition()</code> and <code>watchPosition()</code>, only the first parameter is necessary. The second parameter, which handles the error callback, is optional. In addition to that there is a third optional parameter &mdash; an object containing attributes that define:</p>
 
@@ -150,7 +150,7 @@ function errorFunction(pos) {
 
 <p>Figure 2 shows the <a href="http://people.opera.com/shwetankd/external/demos/demo_geo_googlemap.htm">resulting Geolocation example</a>. It will ask you for permission to share your location and then display a Google Map of your location.</p>
 
-<p><img src="/articles/view/how-to-use-the-w3c-geolocation-api/geoscreenshot4.jpg" alt="Screenshot of the article mentioned above" /></p>
+<p><img src="{{ page.id }}/geoscreenshot4.jpg" alt="Screenshot of the article mentioned above" /></p>
 <p class="comment">Figure 2: Screenshot of the page, which shows your co-ordinates and a map centered on those co-ordinates.</p>
 <p class="note">In the above screenshot, you may notice a small icon representing geolocation on the right side of the address bar. This icon will be on any page in which geolocation is being used. If you deny geolocation privileges to a page which requests it, then this icon will not appear on the address bar of that tab. Click on the icon to access further settings related to geolocation, such as denying a page access to your location.</p>
 
@@ -159,11 +159,11 @@ function errorFunction(pos) {
 
 <h3>Demo Pages</h3>
 <ul>
-<li>The first example in the article shows how to <a href="/articles/view/how-to-use-the-w3c-geolocation-api/basic_geolocation_example.htm">use the functions to get a longitude/latitude pair</a>.</li>
+<li>The first example in the article shows how to <a href="{{ page.id }}/basic_geolocation_example.htm">use the functions to get a longitude/latitude pair</a>.</li>
 <li>The second example in the article <a href="http://people.opera.com/shwetankd/external/demos/demo_geo_googlemap.htm">determines your location and uses a Google Map to display your city</a>.</li>
-<li><a href="http://dev.opera.com/author/163437">Vadim Makeev</a> has created a <a href="GeolocationAPI.htm">simple example that zooms in and displays your exact location</a>, using the Geolocation API, Google Maps API v3, and Simple JS (accuracy as always will depend on how much geo data is available for your area).</li>
+<li><a href="http://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a> has created a <a href="{{ page.id }}/GeolocationAPI.htm">simple example that zooms in and displays your exact location</a>, using the Geolocation API, Google Maps API v3, and Simple JS (accuracy as always will depend on how much geo data is available for your area).</li>
 <li>A more <a href="http://experimenting.in/other/demo_geo_twitter_mashup.htm">complicated Geolocation demo</a> which finds out the name of your location, displays a map of it, lists the tweets mentioning your location and also any meetups happening in the next few days around that location. Uses data from <a href="http://geonames.org">GeoNames.org</a>, <a href="http://maps.google.com">Google Maps</a>, <a href="http://www.twitter.com">Twitter</a> and <a href="http://www.meetup.com">Meetup.com</a>.</li>
-<li>A <a href="http://people.opera.com/pepelsbey/experiments/geo/">Geolocation demo in Russian</a>, also by <a href="http://dev.opera.com/author/163437">Vadim Makeev</a>, uses <a href="http://maps.yandex.ru">Yandex Maps</a> and <a href="http://www.twitter.com">Twitter</a> and works in a similar way to the previous example.</li>
+<li>A <a href="http://people.opera.com/pepelsbey/experiments/geo/">Geolocation demo in Russian</a>, also by <a href="http://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a>, uses <a href="http://maps.yandex.ru">Yandex Maps</a> and <a href="http://www.twitter.com">Twitter</a> and works in a similar way to the previous example.</li>
 </ul>
 
 <h3>Read more...</h3>

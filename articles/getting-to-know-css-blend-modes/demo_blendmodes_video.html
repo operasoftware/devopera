@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Blend modes with background &lt;video&gt;</title>
-<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
-<script src="http://use.edgefonts.net/paytone-one.js"></script> 
+<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>
+<script src="http://use.edgefonts.net/paytone-one.js"></script>
 
 <style>
   body {
@@ -24,7 +24,7 @@
   }
 
   img {
-      margin-left: 2%; 
+      margin-left: 2%;
   }
 
   #myvideo {
@@ -42,7 +42,7 @@
       mix-blend-mode: darken;
   }
 
-  a, a:visited, a:hover, a:link { 
+  a, a:visited, a:hover, a:link {
     background-color: #333;
     color: #fff;
     border-radius: 2px;
@@ -62,7 +62,7 @@
   color: #fff;
   border-radius: 2px;
   padding: 2px;
-} 
+}
 
   #warning {
   background-color: #e74c3c;
@@ -88,14 +88,14 @@
   color: red;
 }
 </style>
-<script src="modernizr-latest.js"></script> 
+<script src="modernizr-latest.js"></script>
 </head>
 <body>
 <aside id="warning"></aside>
     <h1>CSS Blend Modes - Blending with &lt;video&gt;</h1>
     <h2>To see this demo properly, your browser needs support for CSS Blend Modes.</h2>
     <div id="container">
-      
+
       <div id="firstdemo">
       <h3>Video blended with an Image</h3>
       <img src="images/alona_m.jpg" id="myimage" />
@@ -106,18 +106,18 @@
       </video>
       </div>
     </div>
-    <footer>Credit: <a href="https://www.flickr.com/photos/liberato/199164956">Ricardo Liberato</a>. Made by <a href="htpps://twitter.com/shwetank">@shwetank</a></footer>
+    <footer>Credit: <a href="https://www.flickr.com/photos/liberato/199164956">Ricardo Liberato</a>. Made by <a href="https://twitter.com/shwetank">@shwetank</a></footer>
     <script>
       function detect(){
-    var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
-    var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+    var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+    var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode');
 
     var aside = document.querySelector("#warning");
-    
-    if (!supportsMixBlendMode || !supportsBackgroundBlendMode){  
+
+    if (!supportsMixBlendMode || !supportsBackgroundBlendMode){
       aside.style.display="block";
       aside.innerHTML = "<p>This demo needs support for CSS Blend Modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>background-blend-mode</code> supported by this browser?: <span>"+supportsBackgroundBlendMode+"</span></li></ul>";
-    } 
+    }
 
   }
 
