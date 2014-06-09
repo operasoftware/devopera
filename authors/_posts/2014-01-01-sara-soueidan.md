@@ -1,6 +1,6 @@
 ---
 title: Sara Soueidan
-link: http://sarasoueidan.com/
+link: https://twitter.com/sarasoueidan
 layout: author
 ---
 
