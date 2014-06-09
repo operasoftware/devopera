@@ -1,8 +1,8 @@
 ---
-title: Everything You Need To Know About The CSS `will-change` Property
+title: Everything You Need to Know About the CSS `will-change` Property
 authors:
 - sara-soueidan
-intro: 'CSS will-change is a new property that allows you to let a browser know ahead of time that an element may change, so that it can make any preparatory optimisations. Sara Soueidan shows you how to put an end to cargo-cult hacks, and speed up your animations.'
+intro: 'CSS `will-change` is a new property that allows you to let a browser know ahead of time that an element may change, so that it can make any preparatory optimisations. Sara Soueidan shows you how to put an end to cargo-cult hacks, and speed up your animations.'
 tags:
 - css
 - javascript
@@ -20,7 +20,7 @@ In a nutshell, *Hardware acceleration* means that the **Graphics Processing Unit
 
 As their names show, both the CPU and the GPU are processing units. The CPU is located on the computer’s motherboard; it processes almost everything and is known as the brain of the computer. The GPU is located on the graphics card of the computer, and is responsible for processing and rendering graphics. Moreover, a GPU is designed specifically for performing the complex mathematical and geometric calculations that are necessary for graphics rendering. Hence, offloading operations onto the GPU can yield massive performance gains and can also reduce CPU contention on mobile devices.
 
-Hardware acceleration (a.k.a GPU acceleration) relies on a *layering model* used by the browser as it renders a page. When certain operations (such as 3D transforms) are performed on an element on a page, that element is moved to its own “layer”, where it can render independently from the rest of the page and be *composited in* (drawn onto the screen) later. This isolates the rendering of the content so that the rest of the page doesn’t have to be rerendered if the element’s transform is the only thing that changes between frames, and often provides significant speed benefits. It is worth mentioning here that only 3D transforms qualify for their own layer; 2D transforms don’t.
+Hardware acceleration (a.k.a. GPU acceleration) relies on a *layering model* used by the browser as it renders a page. When certain operations (such as 3D transforms) are performed on an element on a page, that element is moved to its own “layer”, where it can render independently from the rest of the page and be *composited in* (drawn onto the screen) later. This isolates the rendering of the content so that the rest of the page doesn’t have to be rerendered if the element’s transform is the only thing that changes between frames, and often provides significant speed benefits. It is worth mentioning here that only 3D transforms qualify for their own layer; 2D transforms don’t.
 
 CSS animations, transforms and transitions are not automatically GPU accelerated, and instead execute from the browser’s slower software rendering engine. However, some browsers provide [hardware acceleration by means of certain properties](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/) to provide better rendering performance. For example, the `opacity` property is one of the few CSS properties that can be properly accelerated because the GPU can manipulate it easily. Basically, any layer where you want to fade the opacity over a CSS transition or animation, the browser is actually smart enough to throw it onto the GPU and do the manipulation over there and it’s going to be very fast. Of all CSS things, opacity is one of the most performant and you’re not going to have problems using it. Other common hardware-accelerated operations are CSS 3D transforms.
 
@@ -70,7 +70,7 @@ As powerful and great as `will-change` is, it’s not any different from any oth
 
 As with any performance hints, `will-change` has its side effects that aren’t directly detectable (after all, it is just a way to talk to the browser behind the scenes), so it may be tricky to use. Here are some things to keep in mine when you use this property, to make sure you get the best out of it while avoiding the harm that can come from misusing it.
 
-###Don’t Use `will-change` To Declare Changes To Too Many Properties Or Elements
+### Don’t Use `will-change` to Declare Changes to Too Many Properties or Elements
 
 As I mentioned earlier, it might be very tempting to just tell the browser to optimize for changes that may occur to *all* properties on *all* elements; so adding the following rule to our style sheet might make some sense at first:
 
@@ -86,7 +86,7 @@ You see, the browser **does already try to optimize for everything** as much as 
 
 In other words, putting the browser on guard for changes that may or may not occur is a bad idea, and will do more harm that good. **Don’t do it.**
 
-### Give The Browser Enough Time To Work
+### Give the Browser Enough Time to Work
 
 The `will-change` property is named like that for an obvious reason: informing the browser about changes that **will** occur, not changes that **are** occuring. Using `will-change`, we’re asking the browser to make certain optimizations for the changes we’re declaring, and in order for that to happen, the browser needs some time to actually make these optimizations, so that when the changes occur, the optimizations can be applied without any delays.
 
@@ -97,7 +97,7 @@ Setting `will-change` on an element immediately before it changes has little to 
 		animation: my-anim 2s linear infinite alternate;
 	}
 
-will tell the browser to make optimizations for a change that is already taking place, and that’s useless and kind of negates the whole concept behind `will-change`. Instead, you should find a way to to predict at least slightly ahead of time that something will change, and set `will-change` *then*.
+…tells the browser to make optimizations for a change that is already taking place, and that’s useless and kind of negates the whole concept behind `will-change`. Instead, you should find a way to to predict at least slightly ahead of time that something will change, and set `will-change` *then*.
 
 For example, if an element will change when it is clicked, then setting up `will-change` when that element is hovered gives the browser enough time to optimize for that change. The time between hovering the element and actually clicking it by the user is enough for the browser to set up the optimizations, because human reaction time is relatively slow, so this will give the browser around 200ms time window before the change actually happens, and this is enough for it to set up the optimizations.
 
@@ -128,13 +128,13 @@ But what if you expect the change to happen **on hover**, not on click? The abov
 
 However, hovering the ancestor does not always indicate that the element will be interacted with for sure, so you could do something like set `will-change` when a view becomes active in your application, or if the element is within the visible part of the viewport, which increases the chances of the element being interacted with.
 
-###Remove `will-change` After The Changes Are Done
+### Remove `will-change` After the Changes Are Done
 
 The optimizations that the browser makes for changes that are about to occur are usually costly and, as we mentioned earlier, can take up much of the machine’s resources. The usual browser behavior for optimizations that it makes is to remove these optimzations and revert back to normal behavior as soon as it can. However, `will-change` **overrides this behavior** maintaining the optimizations for much longer than the browser would otherwise do.
 
 As such, you should always remember to *remove* `will-change` after the element is done changing, so the browser can recover whatever resources the optimizations are claiming.
 
-It’s not possible to remove `will-change` if it is declared in the style sheet, which is why it is almost always recommended that you set and unset it using Javascript. By scripting, you can declare your changes to the browser, and then remove `will-change` after the changes are done, by listening to when these changes have finished. For example, just like we did in the style rules in the previous section, you could listen for when the element (or its ancestor) is hovered, and then set `will-change` on `mouseenter`. If your element is being animated, you can listen for when the animation has ended using the DOM event `animationEnd`, and then remove `will-change` once `animationEnd` is fired.
+It’s not possible to remove `will-change` if it is declared in the style sheet, which is why it is almost always recommended that you set and unset it using JavaScript. By scripting, you can declare your changes to the browser, and then remove `will-change` after the changes are done, by listening to when these changes have finished. For example, just like we did in the style rules in the previous section, you could listen for when the element (or its ancestor) is hovered, and then set `will-change` on `mouseenter`. If your element is being animated, you can listen for when the animation has ended using the DOM event `animationEnd`, and then remove `will-change` once `animationEnd` is fired.
 
 	// Rough generic example
 	// Get the element that is going to be animated on click, for example
@@ -152,11 +152,11 @@ It’s not possible to remove `will-change` if it is declared in the style sheet
 		this.style.willChange = 'auto';
 	}
 
-Craig Buckler has written [an article](http://www.sitepoint.com/css3-animation-javascript-event-handlers/) about capturing CSS animation events in Javascript that you should check out if you’re not familiar with this. There’s also an article about [controlling CSS animations and transitions](http://css-tricks.com/controlling-css-animations-transitions-javascript/) on CSS-Tricks that’s also worth checking out.
+Craig Buckler has written [an article](http://www.sitepoint.com/css3-animation-javascript-event-handlers/) about capturing CSS animation events in JavaScript that you should check out if you’re not familiar with this. There’s also an article about [controlling CSS animations and transitions](http://css-tricks.com/controlling-css-animations-transitions-javascript/) on CSS-Tricks that’s also worth checking out.
 
-### Use `will-change` Sparingly In Style Sheets
+### Use `will-change` Sparingly in Style Sheets
 
-As we’ve seen in the previous section, `will-change` can be used to hint the browser about changes that are just about to occur to an element within a few milliseconds. This is one of the use cases where declaring `will-change` in a style sheet is okay. Although it’s recommended to set and unset `will-change` using Javascript, there are some situations where setting it in the style sheet (and keeping it) is appropriate.
+As we’ve seen in the previous section, `will-change` can be used to hint the browser about changes that are just about to occur to an element within a few milliseconds. This is one of the use cases where declaring `will-change` in a style sheet is okay. Although it’s recommended to set and unset `will-change` using JavaScript, there are some situations where setting it in the style sheet (and keeping it) is appropriate.
 
 One example is setting `will-change` on a small number of elements that are likely to be interacted with by the user over and over again, and that should respond to the user’s interaction in a snappy manner. The limited number of elements means that the optimizations made by the browser won’t be overused and therefore won’t hurt as much. For example, transforming a sidebar by sliding it out when the user requests it. The following rule would be appropriate:
 
@@ -198,7 +198,8 @@ At the time of writing of this article, only Webkit and Firefox nightly builds h
 ## Final Words
 
 The `will-change` property is a will help us write hack-free performance-optimized code, and emphasize the importance of speed and performance to our CSS operations. But, as with all things, with great power comes great reponsibility, and `will-change` is one of those properties that should not be yaken lightly and should be used wisely. At this point, I’m going to quote Tab Atkins Jr., the `will-change` [specification](http://dev.w3.org/csswg/css-will-change/) editor:
->Set `will-change` to the properties you’ll actually change, on the elements that are actually changing. And remove it when they stop.
+
+> Set `will-change` to the properties you’ll actually change, on the elements that are actually changing. And remove it when they stop.
 
 Thank you for reading!
 
