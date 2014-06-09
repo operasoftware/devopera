@@ -1,5 +1,5 @@
-# Note: <https://github.com/h5bp/server-configs-apache/blob/master/.htaccess> is
-# used on the server as `/var/www/conf/1-h5bp-server-config.conf`. Those
+# Note: <https://github.com/h5bp/server-configs-apache/blob/master/src/.htaccess>
+# is used on the server as `/var/www/conf/1-h5bp-server-config.conf`. Those
 # settings are only loaded when Apache starts, not once for each request.
 #
 # This file, on the other hand, should only be used for Dev.Opera-specific
