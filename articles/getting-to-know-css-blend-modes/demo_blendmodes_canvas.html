@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Blend modes with &lt;canvas&gt;</title>
-<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
-<script src="http://use.edgefonts.net/paytone-one.js"></script> 
+<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>
+<script src="http://use.edgefonts.net/paytone-one.js"></script>
 
 <style>
   body {
@@ -29,7 +29,7 @@
     margin-bottom: 2%;
   }
 
-  a, a:visited, a:hover, a:link { 
+  a, a:visited, a:hover, a:link {
   background-color: #333;
   color: #fff;
   border-radius: 2px;
@@ -74,15 +74,15 @@ code {
     <h1>CSS Blend Modes - Blending inside &lt;canvas&gt;</h1>
     <div id="container">
       <canvas id="thecanvas" width="500" height="500">
-        Seems like your browser does not support &lt;canvas&gt;. 
+        Seems like your browser does not support &lt;canvas&gt;.
       </canvas>
 
       <canvas id="anothercanvas" width="500" height="500">
-        Seems like your browser does not support &lt;canvas&gt;. 
+        Seems like your browser does not support &lt;canvas&gt;.
       </canvas>
 
     </div>
-    <footer><strong>Credits</strong>: Inspiration from <a href="http://creattica.com/typography/essay-typeface/101953">http://creattica.com/typography/essay-typeface/101953</a>. Made by <a href="htpps://twitter.com/shwetank">@shwetank</a></footer>
+    <footer><strong>Credits</strong>: Inspiration from <a href="http://creattica.com/typography/essay-typeface/101953">http://creattica.com/typography/essay-typeface/101953</a>. Made by <a href="https://twitter.com/shwetank">@shwetank</a></footer>
     <script>
     var canvas = document.querySelector("#thecanvas");
     var anothercanvas = document.querySelector("#anothercanvas");
@@ -152,16 +152,16 @@ code {
     ctx.fillText("exclusion", 400, 465);
     ctx.fillText("difference", 390, 482);
   }
-  
+
 
   function detect(){
     var supportsGlobalCompositeOperation = context.globalCompositeOperation;
     var aside = document.querySelector("#warning");
 
-    if (!supportsGlobalCompositeOperation ){  
+    if (!supportsGlobalCompositeOperation ){
       aside.style.display="block";
       aside.innerHTML = "<p>Looks like your browser does not support <code>globalCompositeOperation</code> in &lt;canvas&gt;. Please run this demo in a browser which does.</p>";
-    } 
+    }
 
   }
 
