@@ -6,6 +6,7 @@
 	h1, h2, h3, h4 {
 		clear:both;
 		code {
+			padding:0;
 			font-size:inherit;
 			font-family:inherit;
 			}
@@ -32,6 +33,22 @@
 	// Paragraph
 	p {
 		margin:0 0 16px;
+		}
+	// Inline
+	a {
+		@extend %link--content;
+		}
+	b, strong {
+		font-weight:bold;
+		}
+	i, em, dfn {
+		font-style:italic;
+		}
+	code, kbd, pre, samp {
+		padding:0 0.2em;
+		tab-size:4;
+		font-size:0.95em;
+		font-family:PT Mono, monospace, monospace;
 		}
 	// Quote
 	blockquote {
@@ -79,23 +96,11 @@
 		}
 	// Code
 	pre {
-		margin:0 0 16px;
+		margin:0 0 16px 24px;
 		white-space:pre-wrap;
-		}
-	// Inline
-	a {
-		@extend %link--content;
-		}
-	b, strong {
-		font-weight:bold;
-		}
-	i, em, dfn {
-		font-style:italic;
-		}
-	code, kbd, pre, samp {
-		tab-size:4;
-		word-break:break-all;
-		font-size:0.95em;
-		font-family:PT Mono, monospace, monospace;
+		code {
+			padding:0;
+			background:none;
+			}
 		}
 	}
