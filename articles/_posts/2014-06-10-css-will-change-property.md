@@ -26,7 +26,7 @@ CSS animations, transforms and transitions are not automatically GPU accelerated
 
 ## The Old: The `translateZ()` (or `translate3d()`) Hack
 
-For quite some time now, we’ve been using what has been known as the `translateZ()` (or `translate3d()`) hack (sometimes also called the null transform hack) to **trick the browser** into pushing our animations and transforms into hardware acceleration. We’ve been doing that by adding a simple 3D transformation to an element that is *not* be transforming in three-dimensional space. For example, an element that’s animated in two-dimensional space can be hardware-accelerated by adding this simple rule to it:
+For quite some time now, we’ve been using what has been known as the `translateZ()` (or `translate3d()`) hack (sometimes also called the null transform hack) to **trick the browser** into pushing our animations and transforms into hardware acceleration. We’ve been doing that by adding a simple 3D transformation to an element that will *not* be transforming in three-dimensional space. For example, an element that’s animated in two-dimensional space can be hardware-accelerated by adding this simple rule to it:
 
 	transform: translate3d(0, 0, 0);
 
