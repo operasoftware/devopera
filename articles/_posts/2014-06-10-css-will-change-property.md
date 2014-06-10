@@ -6,7 +6,7 @@ intro: 'CSS `will-change` is a new property that allows you to let a browser kno
 tags:
 - css
 - javascript
-license: cc-by-nc-sa-2.5
+license: cc-by-3.0
 layout: article
 ---
 
@@ -80,9 +80,7 @@ As I mentioned earlier, it might be very tempting to just tell the browser to op
 		will-change: all;
 	}
 
-As good as this looks (I know it looked good and made sense to me at first), this is in fact very harmful, and more so invalid. Not only is the all keyword an invalid value for `will-change` (we’ll cover the list of valid and invalid values later in the article), but such a blanket rule wouldn’t be useful because the browser does already try to optimize for everything as much as it can.
-
-You see, the browser **does already try to optimize for everything** as much as it can (remember `opacity` and 3D transforms?), so explicitly telling it to do that doesn’t really change anything or help in any way. As a matter of fact, doing this has the capacity to do a lot of harm, because some of the stronger optimizations that are likely to be tied to `will-change` end up using a lot of a machine’s resources, and when overused like this can cause the page to slow down or even crash.
+As good as this looks (I know it looked good and made sense to me at first), this is in fact very harmful, and more so invalid. Not only is the all keyword an invalid value for `will-change` (we’ll cover the list of valid and invalid values later in the article), but such a blanket rule wouldn’t be useful. You see, the browser **does already try to optimize for everything** as much as it can (remember `opacity` and 3D transforms?), so explicitly telling it to do that doesn’t really change anything or help in any way. As a matter of fact, doing this has the capacity to do a lot of harm, because some of the stronger optimizations that are likely to be tied to `will-change` end up using a lot of a machine’s resources, and when overused like this can cause the page to slow down or even crash.
 
 In other words, putting the browser on guard for changes that may or may not occur is a bad idea, and will do more harm that good. **Don’t do it.**
 
@@ -90,7 +88,7 @@ In other words, putting the browser on guard for changes that may or may not occ
 
 The `will-change` property is named like that for an obvious reason: informing the browser about changes that **will** occur, not changes that **are** occuring. Using `will-change`, we’re asking the browser to make certain optimizations for the changes we’re declaring, and in order for that to happen, the browser needs some time to actually make these optimizations, so that when the changes occur, the optimizations can be applied without any delays.
 
-Setting `will-change` on an element immediately before it changes has little to no effect (It might actually be worse than not setting it at all. You could incur the cost of a new layer when what you’re animating wouldn’t have previously qualified for a new layer!). For example, if a change is going to happen on hover, then this:
+Setting `will-change` on an element immediately before it changes has little to no effect. (It might actually be worse than not setting it at all. You could incur the cost of a new layer when what you’re animating wouldn’t have previously qualified for a new layer!) For example, if a change is going to happen on hover, then this:
 
 	.element:hover {
 		will-change: animation;
@@ -193,11 +191,11 @@ As mentioned before, some properties will have no effect when specified in `will
 
 ## Browser Support
 
-At the time of writing of this article, only Webkit and Firefox nightly builds have implemented the `will-change` property. There is also [an intent to ship in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
+At the time of writing of this article, only WebKit and Firefox Nightly builds have implemented the `will-change` property. There is also [an intent to ship in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
 
 ## Final Words
 
-The `will-change` property is a will help us write hack-free performance-optimized code, and emphasize the importance of speed and performance to our CSS operations. But, as with all things, with great power comes great reponsibility, and `will-change` is one of those properties that should not be yaken lightly and should be used wisely. At this point, I’m going to quote Tab Atkins Jr., the `will-change` [specification](http://dev.w3.org/csswg/css-will-change/) editor:
+The `will-change` property is a will help us write hack-free performance-optimized code, and emphasize the importance of speed and performance to our CSS operations. But, as with all things, with great power comes great reponsibility, and `will-change` is one of those properties that should not be taken lightly and should be used wisely. At this point, I’m going to quote Tab Atkins Jr., the `will-change` [specification](http://dev.w3.org/csswg/css-will-change/) editor:
 
 > Set `will-change` to the properties you’ll actually change, on the elements that are actually changing. And remove it when they stop.
 
