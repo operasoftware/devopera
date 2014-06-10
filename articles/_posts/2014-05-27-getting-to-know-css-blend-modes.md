@@ -240,7 +240,7 @@ A lot of times you might want to further control the image by tweaking the opaci
 For example:
 
 	var canvas = document.querySelector('canvas');
-	var context = getContext('2d');
+	var context = canvas.getContext('2d');
 	// Everything drawn on this context will now have
 	// a “screen” blend mode applied to it.
 	context.globalCompositeOperation = 'screen';
@@ -269,7 +269,7 @@ Of course, in SVG you can also use `feImage` and `feBlend` to add Blend Modes, b
 
 Chromium-based browsers have the most support for CSS Blend Modes at the moment (they have support for both `background-blend-mode` as well as `mix-blend-mode`). To enable support for CSS Blend Modes in Opera, type _opera:flags_ in the address bar and enable the option: _Enable experimental Web Platform features_. For Chrome, you need to enable the same option by going to _chrome://flags_.
 
-Firefox right now does not have support for the `isolation` property, but you can still play with the other properties by searching for them in `about:config` and enabling it there. Safari and Internet Explorer do not have support for these properties thus far.
+Firefox right now does not have support for the `isolation` property, but you can still play with the other properties by searching for them in `about:config` and enabling it there. Safari is slated to have support for blend modes in the next release coming along with OS X Yosemite, and you can already play with it by downloading the latest nightlies. Internet Explorer does not have support for these properties thus far.
 
 Until browser support has improved, it is advisable to use CSS Blend Modes in production as an enhancement to existing designs and not as a critical part of the design. However, for demonstration purposes, it’s best that you view the linked demos in a browser which has support for both `background-blend-mode` and `mix-blend-mode`. The Adobe Web Platform Team maintains a [page detailing blend mode support for various browsers](http://html.adobe.com/webplatform/graphics/blendmodes/browser-support/) which is quite detailed.
 
