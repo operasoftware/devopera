@@ -28,7 +28,7 @@ CSS animations, transforms and transitions are not automatically GPU accelerated
 
 For quite some time now, we’ve been using what has been known as the `translateZ()` (or `translate3d()`) hack (sometimes also called the null transform hack) to **trick the browser** into pushing our animations and transforms into hardware acceleration. We’ve been doing that by adding a simple 3D transformation to an element that is *not* be transforming in three-dimensional space. For example, an element that’s animated in two-dimensional space can be hardware-accelerated by adding this simple rule to it:
 
-	transform: translate3d(0, 0, 0, 0);
+	transform: translate3d(0, 0, 0);
 
 Hardware-accelerating an operation results in the creation of what is known as a compositor layer that is uploaded to and composited by the GPU. However, force-hacking layer creation may not always be the solution to certain performance bottlenecks on a page. Layer creation techniques can boost page speed, but they come with a cost: they take up memory in system RAM and on the GPU (particularly limited on mobile devices) and having lots of them can have a bad impact (especially on mobile devices), so they must be used wisely and you need to make sure that hardware-accelerating your operation will really help the performance of your page, and that a performance bootleneck is not being caused by another operation on your page.
 
