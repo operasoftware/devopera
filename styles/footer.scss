@@ -17,11 +17,10 @@
 		@extend %link--grey;
 		}
 	&__contribute {
-		margin-left:6px;
-		padding-left:20px;
+		padding-left:22px;
 		&:before {
 			position:absolute;
-			margin:0 0 0 -20px;
+			margin:1px 0 0 -20px;
 			width:18px;
 			height:18px;
 			background:#A2A4A3 url(/images/github.svg) no-repeat;
