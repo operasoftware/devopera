@@ -170,7 +170,7 @@ Another example is using `will-change` on an element that changes nearly constan
 
 ### `will-change` Property Values
 
-The `will-change` property takes one of four possible values: `auto`, `scroll-position`, `content`, and `<custom-ident>`.
+The `will-change` property takes one of four possible values: `auto`, `scroll-position`, `contents`, and `<custom-ident>`.
 
 The `<custom-ident>` value is used to specify the name(s) of one or more properties that you expect to change. Multiple properties are comma-separated. The following are examples of valid `will-change` declarations with specified property names:
 
