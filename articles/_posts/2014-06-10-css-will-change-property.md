@@ -191,7 +191,7 @@ As mentioned before, some properties will have no effect when specified in `will
 
 ## Browser Support
 
-At the time of writing of this article, only WebKit and Firefox Nightly builds have implemented the `will-change` property. There is also [an intent to ship in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
+At the time of writing of this article, only WebKit and Firefox Nightly builds have implemented the `will-change` property. There is [an intent to ship it in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
 
 ## Final Words
 
