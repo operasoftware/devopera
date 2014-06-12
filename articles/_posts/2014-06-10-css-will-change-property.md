@@ -68,7 +68,7 @@ Knowing what `will-change` does, it can be very tempting to think: “Just have 
 
 As powerful and great as `will-change` is, it’s not any different from any other kind of power, so, as with other sources of power, there comes responsibility. `will-change` should be used wisely, otherwise it will end up resulting in performance hits that could actually crash your page.
 
-As with any performance hints, `will-change` has its side effects that aren’t directly detectable (after all, it is just a way to talk to the browser behind the scenes), so it may be tricky to use. Here are some things to keep in mine when you use this property, to make sure you get the best out of it while avoiding the harm that can come from misusing it.
+As with any performance hints, `will-change` has its side effects that aren’t directly detectable (after all, it is just a way to talk to the browser behind the scenes), so it may be tricky to use. Here are some things to keep in mind when you use this property, to make sure you get the best out of it while avoiding the harm that can come from misusing it.
 
 ### Don’t Use `will-change` to Declare Changes to Too Many Properties or Elements
 
