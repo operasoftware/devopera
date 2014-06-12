@@ -193,7 +193,7 @@ As mentioned before, some properties will have no effect when specified in `will
 
 ## Browser Support
 
-At the time of writing of this article, only Chrome Canary and Firefox Nightly support the `will-change` property. There is also [an intent to ship in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
+At the time of writing of this article, only Chrome Canary, Firefox Nightly, and Opera Developer v23+ support the `will-change` property. There is also [an intent to ship in Blink](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
 
 ## Final Words
 
