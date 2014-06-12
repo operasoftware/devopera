@@ -214,7 +214,7 @@ Let’s add this to our codebase as follows:
     var degtorad = Math.PI / 180; // Degree-to-Radian conversion
 
     function getBaseRotationMatrix( alpha, beta, gamma ) {
-    	var _x = beta  ? beta- degtorad : 0; // beta value
+    	var _x = beta  ? beta  * degtorad : 0; // beta value
     	var _y = gamma ? gamma * degtorad : 0; // gamma value
     	var _z = alpha ? alpha * degtorad : 0; // alpha value
 
