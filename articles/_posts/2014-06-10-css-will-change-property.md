@@ -16,7 +16,7 @@ If you’ve ever noticed “that flicker” in WebKit-based browsers while perfo
 
 ## The CPU, GPU, and Hardware Acceleration
 
-In a nutshell, *Hardware acceleration* means that the **Graphics Processing Unit** (GPU) will assist your browser in rendering a page by doing some of the heavy lifting, instead of throwing it all onto the **Central Processing Unit** (CPU) to do. When a CSS operation is hardware-accelerated, it usually gets a speed boost as the page rendering gets faster.
+In a nutshell, *Hardware Acceleration* means that the **Graphics Processing Unit** (GPU) will assist your browser in rendering a page by doing some of the heavy lifting, instead of throwing it all onto the **Central Processing Unit** (CPU) to do. When a CSS operation is hardware-accelerated, it usually gets a speed boost as the page rendering gets faster.
 
 As their names show, both the CPU and the GPU are processing units. The CPU is located on the computer’s motherboard; it processes almost everything and is known as the brain of the computer. The GPU is located on the graphics card of the computer, and is responsible for processing and rendering graphics. Moreover, a GPU is designed specifically for performing the complex mathematical and geometric calculations that are necessary for graphics rendering. Hence, offloading operations onto the GPU can yield massive performance gains and can also reduce CPU contention on mobile devices.
 
