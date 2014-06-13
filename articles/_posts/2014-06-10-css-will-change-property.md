@@ -144,7 +144,9 @@ It’s not possible to remove `will-change` if it is declared in the style sheet
 	el.addEventListener('animationEnd', removeHint);
 
 	function hintBrowser() {
-		this.style.willChange = 'transform, opacity';// the optimizable properties that are going to change in the animation's keyframes block
+		// The optimizable properties that are going to change
+		// in the animation's keyframes block
+		this.style.willChange = 'transform, opacity';
 	}
 
 	function removeHint() {
