@@ -42,8 +42,7 @@
     - eventsource
     - web-sockets
   - dom
-  - es5
-  - es6
+  - ecmascript
   - jquery
   - offline:
     - appcache
