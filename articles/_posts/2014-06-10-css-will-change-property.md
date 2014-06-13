@@ -178,7 +178,7 @@ The `will-change` property takes one of four possible values: `auto`, `scroll-po
 The `<custom-ident>` value is used to specify the name(s) of one or more properties that you expect to change. Multiple properties are comma-separated. The following are examples of valid `will-change` declarations with specified property names:
 
 	will-change: transform;
-	will-change: transform, opacity
+	will-change: transform, opacity;
 	will-change: top, left, bottom, right;
 
 The `<custom-ident>` value excludes the keywords `will-change`, `none`, `all`, `auto`, `scroll-position`, and `contents`, in addition to the keywords normally excluded from [`<custom-ident>`](http://dev.w3.org/csswg/css-values-3/#identifier-value). So, as we mentioned in the beginning of the article, the `will-change: all` declaration is invalid and will thus be ignored by the browser.
