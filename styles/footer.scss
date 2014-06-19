@@ -17,13 +17,16 @@
 		@extend %link--grey;
 		}
 	&__contribute {
-		padding-left:22px;
+		white-space:nowrap;
 		&:before {
-			position:absolute;
-			margin:1px 0 0 -20px;
+			position:relative;
+			top:-2px;
+			display:inline-block;
+			margin-right:0.15em;
 			width:18px;
 			height:18px;
-			background:#A2A4A3 url(/images/github.svg) no-repeat;
+			background:#A2A4A3 url(/images/github.svg) 50% no-repeat;
+			vertical-align:middle;
 			content:'';
 			}
 		&:hover {
