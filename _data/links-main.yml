@@ -8,8 +8,8 @@
   link: http://lanyrd.com/opera
 - text: WebPlatform.org
   link: http://webplatform.org/
-- text: Can I use… compatibility tables
-  link: http://caniuse.com/
+- text: Opera on Can I use…
+  link: http://caniuse.com/#agents=opera,op_mini,op_mob&statuses=All
 - text: Opera’s upstreamed commits
   link: http://operasoftware.github.io/upstreamtools/
 - text: Chromium dashboard
@@ -22,5 +22,5 @@
   link: http://www.operasoftware.com/products/tv-emulator
 - text: Opera Mini Simulator
   link: http://www.opera.com/developer/opera-mini-simulator
-- text: Web dev extensions
+- text: Extensions for developers
   link: https://addons.opera.com/en/extensions/category/web-development/?order=popular&language=en

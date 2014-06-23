@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>MathML formulae</title>
+</head>
+<body>
+
+<h1>The mathML formulae</h1>
+
+<p>The width of the field the camera captures is relative to how far away any object is, more precisely:</p>
+
+<math>
+  <mi>tan</mi><mo>(</mo><mi>fov</mi><mo>/</mo><mi>2</mi><mo>)</mo>
+  <mo>=</mo>
+  <mfrac>
+    <mrow><msub><mi>viewwidth</mi><mi>cm</mi></msub><mo>/</mo><mi>2</mi></mrow>
+    <mrow><msub><mi>distance</mi><mi>cm</mi></msub></mrow>
+  </mfrac>
+</math>
+
+<p>which gives us:</p>
+
+<math>
+  <mrow><msub><mi>distance</mi><mi>cm</mi></msub></mrow>
+  <mo>=</mo> 
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mrow><msub><mi>viewwidth</mi><mi>cm</mi></msub><mo>/</mo><mn>2</mn></mrow>
+      <mo>)</mo>
+    </mrow>
+    <mrow><mi>tan</mi><mo>(</mo><mi>fov</mi><mo>/</mo><mi>2</mi><mo>)</mo></mrow>
+  </mfrac>
+</math>
+
+<p>So what's the view width at the point where the face is? We know that the proportion of the screen the face will fill is given by:</p>
+
+<math>
+  <mrow><mi>proportion</mi></mrow>
+  <mo>=</mo> 
+  <mfrac>
+    <mrow><msub><mi>facewidth</mi><mi>cm</mi></msub></mrow>
+    <mrow><msub><mi>viewwidth</mi><mi>cm</mi></msub></mrow>
+  </mfrac>
+</math>
+
+<p>However, this is the same for pixels, so:</p>
+
+<math>
+  <mrow><mi>proportion</mi></mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow><msub><mi>facewidth</mi><mi>px</mi></msub></mrow>
+    <mrow><msub><mi>viewwidth</mi><mi>px</mi></msub></mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow><msub><mi>facewidth</mi><mi>cm</mi></msub></mrow>
+    <mrow><msub><mi>viewwidth</mi><mi>cm</mi></msub></mrow>
+  </mfrac>
+</math>
+
+<p>And this gives us:</p>
+
+<math>
+  <mrow>
+    <msub><mi>viewwidth</mi><mi>cm</mi></msub>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <msub><mi>facewidth</mi><mi>cm</mi></msub>
+      <mo>*</mo>
+      <msub><mi>viewwidth</mi><mi>px</mi></msub>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <msub><mi>facewidth</mi><mi>px</mi></msub>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>Inserting this, we get:</p>
+
+<math>
+<msub><mi>distance</mi><mi>cm</mi></msub>
+<mo>=</mo>
+<mfrac>
+  <mrow><mo>(</mo><msub><mi>facewidth</mi><mi>cm</mi></msub><mo>*</mo><msub><mi>viewwidth</mi><mi>px</mi></msub><mo>)</mo></mrow>
+  <mrow><mo>(</mo><msub><mi>facewidth</mi><mi>px</mi></msub><mo>*</mo> <mn>2</mn> <mo>*</mo> <mi>tan</mi><mo>(</mo><mi>fov</mi><mo>/</mo><mn>2</mn><mo>)</mo><mo>)</mo></mrow>
+</mfrac>
+</math>
+
+<p>In our case <math><msub><mi>viewwidth</mi><mi>px</mi></msub></math> is the width of the canvas, <math><msub><mi>facewidth</mi><mi>px</mi></msub></math> is the width of the face on the canvas, and we assume <math><msub><mi>facewidth</mi><mi>cm</mi></msub></math> is around 17 cm.</p>
+	
+</body>
+</html>

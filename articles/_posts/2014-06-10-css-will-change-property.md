@@ -48,7 +48,7 @@ Using `will-change`, hinting to the browser about an upcoming transformation can
 
 You can also declare to the browser your intention to change an element’s scroll position (the element’s position in the visible scroll window and how much of it is visible within that window), its contents, or one or more of its CSS property values by specifying the name of the properties you’re expecting to change. If you expect or plan to change mutliple values/aspects of an element, you can provide a list of comma-separated values. For example, if you’re expecting the element to be animated and moved (its position changed), you can declare that to the browser like so:
 
-	will-change: animation, position;
+	will-change: transform, opacity;
 
 Specifying what exactly you want to change allows the browser to make better decisions about the optimizations that it needs to make for these particular changes. This is obviously a better way to achieve a speed boost without resorting to hacks and forcing the browser into layer creations that may or may not be necessary or useful.
 
@@ -91,8 +91,9 @@ The `will-change` property is named like that for an obvious reason: informing t
 Setting `will-change` on an element immediately before it changes has little to no effect. (It might actually be worse than not setting it at all. You could incur the cost of a new layer when what you’re animating wouldn’t have previously qualified for a new layer!) For example, if a change is going to happen on hover, then this:
 
 	.element:hover {
-		will-change: animation;
-		animation: my-anim 2s linear infinite alternate;
+		will-change: transform;
+		transition: transform 2s;
+		transform: rotate(30deg) scale(1.5);
 	}
 
 …tells the browser to make optimizations for a change that is already taking place, and that’s useless and kind of negates the whole concept behind `will-change`. Instead, you should find a way to to predict at least slightly ahead of time that something will change, and set `will-change` *then*.
@@ -143,7 +144,9 @@ It’s not possible to remove `will-change` if it is declared in the style sheet
 	el.addEventListener('animationEnd', removeHint);
 
 	function hintBrowser() {
-		this.style.willChange = 'animation';
+		// The optimizable properties that are going to change
+		// in the animation's keyframes block
+		this.style.willChange = 'transform, opacity';
 	}
 
 	function removeHint() {
@@ -175,9 +178,8 @@ The `will-change` property takes one of four possible values: `auto`, `scroll-po
 The `<custom-ident>` value is used to specify the name(s) of one or more properties that you expect to change. Multiple properties are comma-separated. The following are examples of valid `will-change` declarations with specified property names:
 
 	will-change: transform;
-	will-change: animation, position;
-	will-change: top, left, bottom;
 	will-change: opacity;
+	will-change: top, left, bottom, right;
 
 The `<custom-ident>` value excludes the keywords `will-change`, `none`, `all`, `auto`, `scroll-position`, and `contents`, in addition to the keywords normally excluded from [`<custom-ident>`](http://dev.w3.org/csswg/css-values-3/#identifier-value). So, as we mentioned in the beginning of the article, the `will-change: all` declaration is invalid and will thus be ignored by the browser.
 
