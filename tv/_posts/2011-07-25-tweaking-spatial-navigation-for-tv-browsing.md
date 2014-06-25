@@ -53,7 +53,7 @@ Note: Often you will want to control the look of the spatial navigation highligh
 
 Here’s an [example of spatial and CSS navigation][4]. It shows two identical groups of photos--try using just the left and right arrows to move from photo to photo. The first group relies on the browser’s spatial navigation algorithm whereas the second group uses CSS navigation, enabling the user to scroll through the photos with ease.
 
-[4]: /articles/tweaking-spatial-navigation-for-tv-browsing/example.html
+[4]: /tv/tweaking-spatial-navigation-for-tv-browsing/example.html
 
 ## Conclusion
 
