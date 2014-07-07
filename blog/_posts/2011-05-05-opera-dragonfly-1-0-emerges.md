@@ -8,7 +8,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/opera-dragonfly-1-0-emerges/dfl10.png" alt="" />
+<img src="{{ page.id }}/dfl10.png" alt="" />
 
 <p>This fine spring morning, Opera Dragonfly’s metamorphosis was completed. Emerging from the beta phase, we’re proud to launch <a href="http://www.opera.com/dragonfly">Opera Dragonfly 1.0</a> onto the world. Over the coming days, weeks, and months, we hope you’ll become increasingly familiar with each other. Opera Dragonfly 1.0 is the development tool we’ve always wanted to build. It is still young, and will grow as we nurture it and teach it new tricks in the coming versions, but it already packs a punch.</p>
 

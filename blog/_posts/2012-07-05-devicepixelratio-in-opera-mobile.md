@@ -26,7 +26,7 @@ layout: post
 </tbody>
 </table>
 <p>Now, the Galaxy Nexus has a nominal resolution of 316dpi, so it should actually end up with a <code>devicePixelRatio</code> of <code>2</code>...but perhaps the OS is reporting it as 320dpi, triggering the slightly higher ratio.</p>
-<img src="/blog/devicepixelratio-in-opera-mobile/opera-mobile-zoom-settings.png" alt="Opera Mobile&#39;s Zoom settings" />
+<img src="{{ page.id }}/opera-mobile-zoom-settings.png" alt="Opera Mobile&#39;s Zoom settings" />
 <p>One aspect that seems to be unique to Opera Mobile, however, is that users can change the <code>devicePixelRatio</code> through the <em>Zoom</em> preference in the browser&#39;s <em>Settings</em>.</p>
 <p>On regular (non-mobile-optimised) sites, this setting affects how closely the browser zooms into the page when double-tapping. At the same time, though, changing this setting also changes the <code>devicePixelRatio</code>, to make this preference more effective on mobile-optimised sites. For instance, setting the preference to 175% globally sets the <code>devicePixelRatio</code> to 1.75. This will obviously have an effect on sites that use viewport <code>meta</code> to set things like <code>width=device-width</code> and sites that use pixel-ratio-specific Media Queries, as the reported values will now be different.</p>
 <p>Note that this global <em>Zoom</em> setting is different from a user&#39;s normal zoom/pinch-zoom action – in those situations, <code>devicePixelRatio</code> doesn&#39;t change.</p>

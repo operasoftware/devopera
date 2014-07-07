@@ -172,7 +172,7 @@ We use OmniPlan for our project plans, but all of the major project management t
 You can also generate bitmap snapshots of the Gantt chart of the project plan, as indicated in Figure 1.
 
 <figure id="figure-1">
-	<a href="/articles/the-freelancing-business-part-3-scheduling-your-projects/gantt.html"><img src="/articles/the-freelancing-business-part-3-scheduling-your-projects/gantt.gif" alt="Gantt chart"></a>
+	<a href="{{ page.id }}/gantt.html"><img src="{{ page.id }}/gantt.gif" alt="Gantt chart"></a>
 	<figcaption>Figure 1: A Gantt chart of our sample project (click the image for a much larger version)</figcaption>
 </figure>
 

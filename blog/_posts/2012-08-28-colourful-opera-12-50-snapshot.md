@@ -73,9 +73,9 @@ layout: post
 
 <p>For further information on ICC profiles, I&#39;d recommend this excellent and accessible primer on <a href="http://regex.info/blog/photo-tech/color-spaces-page0">Digital Image Color Spaces</a>, but here&#39;s a simple example.</p>
 
-<div><img src="/blog/colourful-opera-12-50-snapshot/brucel-ICC.jpg" alt="A photo of Bruce Lawson, with an embedded colour profile - ICC-aware browsers will display this correctly" style="display:inline" /> <img src="/blog/colourful-opera-12-50-snapshot/brucel-no-ICC.jpg" alt="The same photo of Bruce Lawson, but this time without any embedded ICC profile - this will appear completely colour-shifted in all browsers" style="display:inline" />
+<img src="{{ page.id }}/brucel-ICC.jpg" alt="A photo of Bruce Lawson, with an embedded colour profile - ICC-aware browsers will display this correctly" style="display:inline" />
+<img src="{{ page.id }}/brucel-no-ICC.jpg" alt="The same photo of Bruce Lawson, but this time without any embedded ICC profile - this will appear completely colour-shifted in all browsers" style="display:inline" />
 <p class="caption">If Bruce looks blue in both images, your browser doesn&#39;t support ICC profiles.</p>
-</div>
 
 <p>Both of these images are exactly the same, in terms of their raw image data. They were created using an exaggerated custom colour profile, to more clearly illustrate the point. The first image contains an embedded ICC profile, which signals to colour-managed programs how to interpret the data, while the second image doesn&#39;t. In browsers that don&#39;t support colour profiles, both images will be displayed without any colour correction (resulting in the funky colour shift), while ICC-aware browsers will correct and display the first image based on its embedded ICC profile.</p>
 

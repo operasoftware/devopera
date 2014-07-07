@@ -48,7 +48,7 @@ experimental builds of Opera that include support for a 3D canvas context,
 and an add-on that allows 3D canvas support in Firefox:</p>
 
 <ul>
-<li><a href="/articles/view/labs-video-3d-canvas-and-file-i-o-repeat/">Download an Opera
+<li><a href="/articles/video-3d-canvas-and-file-io-repeat/">Download an Opera
 build featuring 3D canvas, HTML video and File I/O support.</a></li>
 <li><a
 href="http://my.opera.com/timjoh/blog/2007/11/13/taking-the-canvas-to-another-dimension">Find
@@ -452,6 +452,6 @@ know more!</p>
 
 <h2 id="readmore">Read more...</h2>
 <ul>
-<li><a href="/articles/view/html5-canvas-painting/">Creating an HTML5 canvas painting application</a></li>
-<li><a href="/articles/view/svg-or-canvas-choosing-between-the-two/">SVG or Canvas? Сhoosing between the two</a></li>
+<li><a href="/articles/html5-canvas-painting/">Creating an HTML5 canvas painting application</a></li>
+<li><a href="/articles/svg-or-canvas-choose/">SVG or Canvas? Сhoosing between the two</a></li>
 </ul>

@@ -18,7 +18,7 @@ layout: post
 
 <h4>Search in Resource Inspector</h4>
 
-<img src="/blog/opera-dragonfly-1-1-beta-candidate/Screen%20shot%202011-07-25%20at%2022.01.06.png" alt=" " />
+<img src="{{ page.id }}/Screen%20shot%202011-07-25%20at%2022.01.06.png" alt=" " />
 
 <p>It is now possible to search in the Resource Inspector. This will make it much easier to find issues in the original source. This joins the go to CSS line number feature we added previously to make the Resource Inspector much more robust in this release.</p>
 
@@ -40,6 +40,6 @@ layout: post
 
 <h4>Updated style</h4>
 
-<img src="/blog/opera-dragonfly-1-1-beta-candidate/Screen%20shot%202011-07-25%20at%2022.11.15.png" alt="" />
+<img src="{{ page.id }}/Screen%20shot%202011-07-25%20at%2022.11.15.png" alt="" />
 
 <p>Some of the icons have been optimised in the application toolbar, and the styling of the expanders in the side panels has been improved. The toolbars under the expanders should now look like they belong to the expander instead of appearing as if they&#39;re visually higher. The Error Log styling has also been updated to match the Resource Inspector and have a more subtle hover style.  The button style in the overlay dialogues have been updated to a new style. The Network Inspector timeline markers have also been improved.</p>

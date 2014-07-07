@@ -14,7 +14,7 @@ layout: post
 <h3>Debug what you submit in the console</h3>
 <p>Before, when you placed a <b><code>debugger;</code></b> statement in the body of for example function a, you didn&#39;t hit that statement when you called <b><code>a()</code></b> from Opera Dragonfly&#39;s console. The reason was that it would have made things difficult in the interface. If you - while stopped - submitted <b><code>a()</code></b> again, it would get pretty hard to reflect this state in the user interface. The solution now is to let you debug anything that you type in the console, but once you&#39;re stopped, Dragonfly goes back to the old behavior so you won&#39;t be stopped again.<p>
 <p>That means you can now submit something like <pre><code>(function(my_arg){debugger;})(&quot;let&#39;s have an argument&quot;)</code></pre> and you&#39;ll be stopped right away to see your arguments.</p>
-<img src="/blog/console-ui-script-debugging-release/instant_debug_in_opera_dragonfly.png" width="620" height="335" alt="Instant debugging from the console in Opera Dragonfly" />
+<img src="{{ page.id }}/instant_debug_in_opera_dragonfly.png" width="620" height="335" alt="Instant debugging from the console in Opera Dragonfly" />
 <h3>Stepping improvements</h3>
 <p>When clicking through that not too exciting callstack above you won&#39;t notice, but updates in this view are now smooth. The view is not scrolled when stepping from line to line unless it has too. This was contributed by Rafał Chłodnicki, many thanks!</p>
 <h3>Bugfixes</h3>

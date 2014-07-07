@@ -13,7 +13,7 @@ layout: post
 
 <h3>Opera Dragonfly Framework</h3>
 
-<img src="/blog/another-experimental-preview-to-test/framework.png" />
+<img src="{{ page.id }}/framework.png" />
 
 <h4>Hybrid layout</h4>
 
@@ -46,7 +46,7 @@ layout: post
 
 <h3>Storage Inspector</h3>
 
-<img src="/blog/another-experimental-preview-to-test/cookies.png" />
+<img src="{{ page.id }}/cookies.png" />
 
 There is an entirely new Cookie Inspector which is available for Opera 11 and above. This has a number of improvements over the old service, including:
 
@@ -76,7 +76,7 @@ There is an entirely new Cookie Inspector which is available for Opera 11 and ab
 
 <h3>Resource Inspector</h3>
 
-<img src="/blog/another-experimental-preview-to-test/resources.png" />
+<img src="{{ page.id }}/resources.png" />
 
 <p>A number of updates have been made to the brand new Resource Inspector. These include:</p>
 

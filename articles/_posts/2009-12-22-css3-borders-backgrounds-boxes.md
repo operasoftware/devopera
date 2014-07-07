@@ -103,7 +103,7 @@ For example, a background image positioned 10 pixels from the left and top will 
 			width:125px;
 			height:125px;
 			border:10px dashed #354658;
-			background:#B6B9B9 url(/articles/css3-borders-backgrounds-boxes/opera-logo.png) no-repeat scroll;
+			background:#B6B9B9 url({{ page.id }}/opera-logo.png) no-repeat scroll;
 			background-origin:border-box;
 			color:#354658;
 			font-weight:bold;
@@ -123,7 +123,7 @@ For example, a background image positioned 10 pixels from the left and top will 
 			width:125px;
 			height:125px;
 			border:10px dashed #354658;
-			background:#B6B9B9 url(/articles/css3-borders-backgrounds-boxes/opera-logo.png) no-repeat scroll;
+			background:#B6B9B9 url({{ page.id }}/opera-logo.png) no-repeat scroll;
 			background-origin:padding-box;
 			color:#354658;
 			font-weight:bold;
@@ -143,7 +143,7 @@ For example, a background image positioned 10 pixels from the left and top will 
 			width:125px;
 			height:125px;
 			border:10px dashed #354658;
-			background:#B6B9B9 url(/articles/css3-borders-backgrounds-boxes/opera-logo.png) no-repeat 10px 10px scroll;
+			background:#B6B9B9 url({{ page.id }}/opera-logo.png) no-repeat 10px 10px scroll;
 			background-clip:padding-box;
 			background-origin:border-box;
 			color:#354658;
@@ -164,7 +164,7 @@ For example, a background image positioned 10 pixels from the left and top will 
 			width:125px;
 			height:125px;
 			border:10px dashed #354658;
-			background:#B6B9B9 url(/articles/css3-borders-backgrounds-boxes/opera-logo.png) no-repeat 10px 10px scroll;
+			background:#B6B9B9 url({{ page.id }}/opera-logo.png) no-repeat 10px 10px scroll;
 			background-clip:padding-box;
 			background-origin:padding-box;
 			color:#354658;
@@ -193,9 +193,9 @@ CSS3 allows multiple backgrounds on a single element. This is done by defining m
 In the first example, we show you how to merge three background images into one using the `background` property.
 
 <figure class="figure" id="figure-7">
-	<img src="/articles/css3-borders-backgrounds-boxes/driedrose.png" alt="Dried rose">
-	<img src="/articles/css3-borders-backgrounds-boxes/rose.png" alt="Rose">
-	<img src="/articles/css3-borders-backgrounds-boxes/fieldsky.jpg" alt="Field and sky scenery">
+	<img src="{{ page.id }}/driedrose.png" alt="Dried rose">
+	<img src="{{ page.id }}/rose.png" alt="Rose">
+	<img src="{{ page.id }}/fieldsky.jpg" alt="Field and sky scenery">
 	<figcaption class="figure__caption">Figure 7: Three individual background images</figcaption>
 </figure>
 
@@ -210,7 +210,7 @@ You can view the [multiple background image example here][19]. The results can b
 [19]: http://people.opera.com/zibin/background/multiple_background_image.html
 
 <figure class="figure" id="figure-8">
-	<img src="/articles/css3-borders-backgrounds-boxes/multiple-background.jpg" class="figure__media">
+	<img src="{{ page.id }}/multiple-background.jpg" class="figure__media">
 	<figcaption class="figure__caption">Figure 8: Screenshot of a combined background image using multiple background images</figcaption>
 </figure>
 
@@ -229,7 +229,7 @@ In this second example we show you how to create the [sliding doors technique][2
 [22]: http://people.opera.com/patrickl/experiments/css3/sliding-doors/
 
 <figure class="figure" id="figure-9">
-	<img src="/articles/css3-borders-backgrounds-boxes/multiple-background-slidingdoor.png" class="figure__media">
+	<img src="{{ page.id }}/multiple-background-slidingdoor.png" class="figure__media">
 	<figcaption class="figure__caption">Figure 9: Screenshot of the sliding doors technique using multiple background images</figcaption>
 </figure>
 
@@ -246,7 +246,7 @@ See [Vadim Makeevâ€™s `background-attachment` demo][24]. He has created three se
 [24]: http://people.opera.com/pepelsbey/experiments/bga/
 
 <figure class="figure" id="figure-10">
-	<img src="/articles/css3-borders-backgrounds-boxes/background-attachment.png" class="figure__media">
+	<img src="{{ page.id }}/background-attachment.png" class="figure__media">
 	<figcaption class="figure__caption" markdown="span">Figure 10: Screenshot of our `background-attachment` example</figcaption>
 </figure>
 
@@ -265,13 +265,13 @@ There are a few things to be aware of when using the new background shorthand. I
 In the following demo the `background` shorthand has been used to specify three images to illustrate the CSS box model. All values have been specified, even if they are the same as the default, to show how they can be defined. Each image has a different `background-origin` to place the image in the border box, padding box and content box respectively.
 
 <figure class="figure" id="figure-11">
-	<img src="/articles/css3-borders-backgrounds-boxes/background-screenshot.png" class="figure__media">
+	<img src="{{ page.id }}/background-screenshot.png" class="figure__media">
 	<figcaption class="figure__caption" markdown="span">Figure 11: Screenshot of the box model example created using the `background` shorthand, including various CSS3 properties</figcaption>
 </figure>
 
 See the [background shorthand demo][29] in action.
 
-[29]: /articles/css3-borders-backgrounds-boxes/background-shorthand/
+[29]: {{ page.id }}/background-shorthand/
 
 The `background` shorthand used is as follows:
 
@@ -388,7 +388,7 @@ If you like a kick in your tea, add some `box-shadow`, [transforms, transitions]
 [33]: http://people.opera.com/pepelsbey/experiments/bsh/
 
 <figure class="figure" id="figure-17">
-	<img src="/articles/css3-borders-backgrounds-boxes/box-shadow-tea.png">
+	<img src="{{ page.id }}/box-shadow-tea.png">
 	<figcaption class="figure__caption" markdown="span">Figure 17: Teacup using `box-shadow` and other CSS3 effects</figcaption>
 </figure>
 
@@ -405,20 +405,20 @@ The [`box-decoration-break` property][36] allows you to define how these boxes b
 [36]: http://www.w3.org/TR/css3-background/#the-box-decoration-break
 
 <figure class="figure" id="figure-18">
-	<img src="/articles/css3-borders-backgrounds-boxes/box-decoration-slice.png">
+	<img src="{{ page.id }}/box-decoration-slice.png">
 	<figcaption class="figure__caption" markdown="span">Figure 18: A screenshot showing `box-decoration-break:slice` applied to inline elements. This is default behaviour</figcaption>
 </figure>
 
 The `clone` value applies the `padding`, `border`, `border-radius`, `-o-border-image` and `box-shadow` to each box independently. This means that where the box breaks, such as at the start and end of a line, the `border`, `border-radius` and so on will be drawn, so that it looks like each box is its own element. If a background image is applied and set to `no-repeat`, it will be drawn once for each box See figure 14 for a visual demonstration of inline blocks with `box-decoration-break:clone` applied.
 
 <figure class="figure" id="figure-19">
-	<img src="/articles/css3-borders-backgrounds-boxes/box-decoration-clone.png">
+	<img src="{{ page.id }}/box-decoration-clone.png">
 	<figcaption class="figure__caption" markdown="span">Figure 19: A screenshot showing `box-decoration-break:clone` applied to inline elements. Note how the `border-radius` and `box-shadow` is applied at the end and start of the line</figcaption>
 </figure>
 
 Check out the [box-decoration-break demo][39] in Opera 10.60 or above to see this in action.
 
-[39]: /articles/css3-borders-backgrounds-boxes/box-decoration-break/
+[39]: {{ page.id }}/box-decoration-break/
 
 ## `border-radius`
 
@@ -552,7 +552,7 @@ Letâ€™s dive into some examples.
 			border:3px solid #FFFFFF;
 			border-radius:30px;
 			background-color:#CCC;
-			background:url(/articles/css3-borders-backgrounds-boxes/japanese-tile.jpg);
+			background:url({{ page.id }}/japanese-tile.jpg);
 			color:#FFFFFF;
 			}
 	</style>
@@ -581,8 +581,8 @@ Using the `-o-border-image` property, you can use an image to act as an elementâ
 			padding:20px;
 			border:10px;
 			background:#0E0E0E;
-			-o-border-image:url(/articles/css3-borders-backgrounds-boxes/molecule.png) 50 repeat;
-			border-image:url(/articles/css3-borders-backgrounds-boxes/molecule.png) 50 repeat;
+			-o-border-image:url({{ page.id }}/molecule.png) 50 repeat;
+			border-image:url({{ page.id }}/molecule.png) 50 repeat;
 			}
 	</style>
 	<figcaption class="figure__caption" markdown="span">Figure 27: Border Image with `repeat`</figcaption>
@@ -597,8 +597,8 @@ Using the `-o-border-image` property, you can use an image to act as an elementâ
 			padding:20px;
 			border:10px;
 			background:#0E0E0E;
-			-o-border-image:url(/articles/css3-borders-backgrounds-boxes/molecule.png) 50 stretch;
-			border-image:url(/articles/css3-borders-backgrounds-boxes/molecule.png) 50 stretch;
+			-o-border-image:url({{ page.id }}/molecule.png) 50 stretch;
+			border-image:url({{ page.id }}/molecule.png) 50 stretch;
 			}
 	</style>
 	<figcaption class="figure__caption" markdown="span">Figure 28: Border Image `stretch`</figcaption>
@@ -611,12 +611,12 @@ The `stretch` and `repeat` values are fairly self-explanatory. The `round` value
 [43]: http://people.opera.com/pepelsbey/experiments/bdi/
 
 <figure class="figure" id="figure-29">
-	<img src="/articles/css3-borders-backgrounds-boxes/border-image-stretch.png">
+	<img src="{{ page.id }}/border-image-stretch.png">
 	<figcaption class="figure__caption" markdown="span">Figure 29: `-o-border-image:stretch` screenshot</figcaption>
 </figure>
 
 <figure class="figure" id="figure-30">
-	<img src="/articles/css3-borders-backgrounds-boxes/border-image-repeat.png">
+	<img src="{{ page.id }}/border-image-repeat.png">
 	<figcaption class="figure__caption" markdown="span">Figure 30: `-o-border-image:repeat` screenshot</figcaption>
 </figure>
 

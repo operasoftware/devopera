@@ -28,8 +28,8 @@ The event streaming approach instead opens a persistent connection to the server
 
 ### Opera Web Chat
 
-<figure>
-	<img src="/articles/event-streaming-to-web-browsers/screenshot.jpg" alt="Opera Web Chat Screenshot">
+<figure class="figure">
+	<img src="{{ page.id }}/screenshot.jpg" alt="Opera Web Chat Screenshot" class="figure__media">
 </figure>
 
 To provide you with a starting point on how to build your own event streaming application, we have built [Opera Web Chat][5]. This is a web based chatroom offering some of the features from the built in to the Opera IRC client. Currently the chat only offers one single chatroom. (A screenshot is available [here][4].)

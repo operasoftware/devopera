@@ -398,6 +398,6 @@ setInterval(function () {
 
 <h2 is="readmore">Read more...</h2>
 <ul>
-<li><a href="/articles/view/html-5-canvas-the-basics/">HTML5 canvas - the basics</a></li>
-<li><a href="/articles/view/how-to-do-photoshop-like-effects-in-svg/">How to do Photoshop-like effects in SVG</a></li>
+<li><a href="/articles/html5-canvas-basics/">HTML5 canvas - the basics</a></li>
+<li><a href="/articles/photoshop-like-effects-in-svg/">How to do Photoshop-like effects in SVG</a></li>
 </ul>

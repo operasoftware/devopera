@@ -30,14 +30,14 @@ layout: post
 
 <p>Just like in Opera for Android, we&#39;ve merged bookmarks into Speed Dial, which give you a visual overview of your favorite pages. When you migrate from Opera 12 to Opera 15, you&#39;re offered the option of converting your bookmarks to Speed Dial entries — just click on the orange Bookmark Importer to get started. Note that you can now group Speed Dial entries together into folders, just by dragging one on top of the other — if you want, you can name the folder via a simple right-click.</p>
 
-<img src="/blog/introducing-opera-15-for-desktop-and-a-fast-release-cycle/sd.png" alt="Speed Dial" />
+<img src="{{ page.id }}/sd.png" alt="Speed Dial" />
 
 <p>To add a page or extension to Speed Dial, simply click on the big plus sign. You can also do this while you&#39;re browsing, of course: just click the &quot;Add to Speed Dial&quot; icon in the top right  corner of the address bar, and the page in question will be added to Speed Dial.</p>
 
 <p>If you want to save all your open tabs into one Speed Dial folder (you&#39;ve been doing some research, or looking at holidays), simply right-click anywhere in in the tab bar and choose &quot;Save tabs as Speed Dial group&quot;. To re-open them all, simply right-click on the Speed Dial folder and choose Open all.</p>
 <p>If you have a lot of Speed Dial entries, you can click the search icon in the top right corner. Start typing in the field that appears, and your bookmarked sites will be filtered in real-time.</p>
 
-<img src="/blog/introducing-opera-15-for-desktop-and-a-fast-release-cycle/add-to-sd.png" alt="Add to Speed Dial button" />
+<img src="{{ page.id }}/add-to-sd.png" alt="Add to Speed Dial button" />
 
 <h3>Bookmarks and bookmarklets</h3>
 
@@ -56,7 +56,7 @@ layout: post
 
 <p>Do you sometimes find yourself browsing the web, and coming across pages you want to save for later — e.g. a list of favorite gadgets on Amazon, or a selection of hotels on a booking site? This always posed a problem in the past, and many were using their tab bar to hold tabs for later use. With Opera 15, you can <strong>Stash</strong> a page, and return to it when you have time.</p>
 
-<img src="/blog/introducing-opera-15-for-desktop-and-a-fast-release-cycle/stash.png" alt="Stash" />
+<img src="{{ page.id }}/stash.png" alt="Stash" />
 
 <p>Simply hit the heart icon when you&#39;re on a page you like and whenever you want to return to it, open your Stash from the start page (open a new tab or click the Start Page icon to the left of the address field). When a page has already been added to your Stash, the address field icon will be highlighted to reflect that. You can click the highlighted icon to remove the page from your Stash.</p>
 
@@ -66,7 +66,7 @@ layout: post
 
 <p>Discover is another new feature to Opera for Android and Opera 15 for Computers, which helps you find interesting content to jump straight into browsing. Click the cog to change settings - select your language and location, and select subjects depending on your interests. For launch there are 13 categories in 32 languages.</p>
 
-<img src="/blog/introducing-opera-15-for-desktop-and-a-fast-release-cycle/discover.png" alt="Discover" />
+<img src="{{ page.id }}/discover.png" alt="Discover" />
 
 <h3>Combined address and search field</h3>
 
@@ -93,7 +93,7 @@ layout: post
 
 <p>If you&#39;re a Chromium extensions developer, be sure to submit your extensions to <a href="http://addons.opera.com/extensions/">our extensions catalog</a>! Extension developers like Pinterest, Pocket, Wunderlist, Evernote, Feedly, Disconnect, LastPass, WOT, Ghostery, cottonTracks, and over a 100 more have already done this, and you can find their extensions <a href="https://addons.opera.com/en/extensions/">in our extensions catalog</a>.</p>
 
-<img src="/blog/introducing-opera-15-for-desktop-and-a-fast-release-cycle/extensions.png" alt="Extensions catalog" />
+<img src="{{ page.id }}/extensions.png" alt="Extensions catalog" />
 
 <p>If you&#39;re new to Chromium extension development, we&#39;ve prepared a <a href="http://dev.opera.com/extension-docs/">fresh set of extension dev tutorials</a> and have included relevant API documentation as well. We&#39;ve also built a <a href="https://github.com/operasoftware/oex2nex">conversion utility</a> into the developer interface of <a href="http://addons.opera.com/extensions/">our extensions catalog</a> to make the transition from the old to the new format as smooth as possible. <a href="http://dev.opera.com/extension-docs/tut_conversion.html">This guide</a> walks you through the process step-by-step.</p>
 

@@ -13,7 +13,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/opera-mobile-emulator-12-update/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />
+<img src="{{ page.id }}/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />
 <p>A few weeks after our <a href="http://www.opera.com/mobile/">Opera Mobile 12</a> release for Android and Symbian, we&#39;re happy to announce that there now also is a corresponding <strong>update of the <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a></strong>!</p>
 
 <p>If you haven&#39;t used it yet, the Opera Mobile Emulator is a version of Opera Mobile that runs on your Windows, Mac or Linux machine, and this <em>without</em> having to install any complex SDKs or the like. Upon launch, you&#39;ll get a handy <a href="http://dev.opera.com/articles/view/opera-mobile-emulator/#profiles">Profile panel</a> with various size, pixel density, orientation and UI options, from which you can spawn different Opera Mobile instances for developing or testing your site — or for simply browsing the web! Using Opera Dragonfly&#39;s <a href="http://www.opera.com/dragonfly/documentation/remote/">remote debugging capabilities</a>, you can also inspect the inner workings of your site on mobile, and finetune your CSS and JavaScript.</p>

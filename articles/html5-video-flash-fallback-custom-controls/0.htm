@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<title>video</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		BODY {
+			margin:0;
+			padding:50px;
+			background:#444;
+			}
+	</style>
+</head>
+<body>
+	<video controls poster="video.jpg" width="854" height="480">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <object type="application/x-shockwave-flash" data="http://devfiles.myopera.com/articles/4791/player.swf"
+width="854" height="504">
+    <param name="allowfullscreen" value="true">
+    <param name="allowscriptaccess" value="always">
+    <param name="flashvars" value="file=video.mp4">
+    <!--[if IE]><!--><param name="movie" value="player.swf">
+    <!--<![endif]-->
+    <img src="http://devfiles.myopera.com/articles/4791/video.jpg" width="854" height="480" alt="Video">
+    <p>Your browser can’t play HTML5 video. <a href="http://devfiles.myopera.com/articles/4791/video.webm">
+Download it</a> instead.</p>
+  </object>
+</video>
+</body>
+</html>

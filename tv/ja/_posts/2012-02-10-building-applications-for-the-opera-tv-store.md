@@ -23,16 +23,16 @@ layout: article
 
 Opera TV Store は、Opera が審査を行い提供する、テレビ専用の Web アプリケーションのカタログです。開発者はこのポータルを通して、開発したアプリケーションの提出と共有を行えます。ポータルはストアフロント（Web ベースのアプリケーション）によりエンドユーザーにアプリケーションを提示し、ユーザーはアプリケーションに素早く簡単にアクセスすることができます。
 
-<figure>
-	<img src="/articles/building-applications-for-the-opera-tv-store/sample-views.png" alt="Opera TV Store およびアプリケーションのサンプル">
-	<figcaption markdown="span">Opera TV Store および天気予報アプリケーションのサンプル</figcaption>
+<figure class="figure">
+	<img src="/articles/building-applications-for-the-opera-tv-store/sample-views.png" alt="Opera TV Store およびアプリケーションのサンプル" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Opera TV Store および天気予報アプリケーションのサンプル</figcaption>
 </figure>
 
 Opera TV Store のアプリケーションはダッシュボードでは静的なサムネイル画像として表示されます。ユーザーは TV Store カタログをブラウズして、好きなアプリケーションをインストールし、ダッシュボードに追加することができます。アプリケーションを選択すると、フルスクリーンモードで表示されます。
 
-<figure>
-	<img src="/articles/building-applications-for-the-opera-tv-store/architecture.png" alt="Opera TV Store アーキテクチャダイアログ">
-	<figcaption markdown="span">Opera TV Store のアーキテクチャの概要</figcaption>
+<figure class="figure">
+	<img src="/articles/building-applications-for-the-opera-tv-store/architecture.png" alt="Opera TV Store アーキテクチャダイアログ" class="figure__media">
+	<figcaption class="figure__caption" markdown="span">Opera TV Store のアーキテクチャの概要</figcaption>
 </figure>
 
 フルスクリーンで表示された Web アプリケーションは Opera のサーバーにより直接提供されているわけではありません。Opera TV Store は、アプリケーションの URL が参照可能なディレクトリとしてのみ機能します。
