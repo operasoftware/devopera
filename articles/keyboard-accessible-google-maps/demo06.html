@@ -1,0 +1,43 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Keyboard-accessible Google Maps demo 6</title>
+<style type="text/css">
+#map_canvas { width: 450px; height: 350px; }
+</style>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAffjRxiCDfjY9XxtJxhUHEBQZwQw-Vh87AunMLiUQo0NuA4hcpxRjSn2c7FSYcILPiwWdv8biu04ptg" type="text/javascript"></script>
+<script type="text/javascript">
+function initialize() {
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		GEvent.addDomListener(map, "load", GKeyboardPatch(map));
+		map.setCenter(new GLatLng(53.480998, -2.236748), 15);
+		map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+		map.enableScrollWheelZoom();
+		map.enableContinuousZoom();
+		new GKeyboardHandler(map);
+	}
+}
+
+function GKeyboardPatch(map) {
+	var button;
+	var divs = map.getContainer().getElementsByTagName('DIV');
+	for (var i = 0; i < divs.length; i++) {
+		if (divs[i].getAttribute('log')) {
+			button = document.createElement("BUTTON");
+			button.setAttribute('value',divs[i].getAttribute('title'));
+			divs[i].appendChild(button);
+		}
+	}
+}
+</script>
+</head>
+<body onload="initialize()" onunload="GUnload()">
+
+<div id="map_canvas">
+<img src="http://maps.google.com/staticmap?center=53.480998,-2.236748&amp;zoom=15&amp;size=450x350&amp;key=ABQIAAAAYMK-4AniH4pKnbaWCYsM6RTOV-l5jDeCrYdkls9OJIEgdPTXThRvrMqsLkqgASD4oxpxLd2AKQQQAg" width="450" height="350" alt="Map of Manchester, UK" />
+</div>
+</body>
+</html>

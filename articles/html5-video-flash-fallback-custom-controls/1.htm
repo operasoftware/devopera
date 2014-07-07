@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<title>video</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		BODY {
+			margin:0;
+			padding:50px;
+			background:#444;
+			}
+		
+		/* Video */
+		.video VIDEO {
+			display:block;
+			}
+	</style>
+	<script type="text/javascript">
+		function init() {
+			// 1. Getting all video containers on the page
+			var videos = document.querySelectorAll( 'div.video' ),
+				videosLength = videos.length;
+			// 2. Getting every single video instance
+			for( var i=0; i < videosLength; i++ ) {
+				var root = videos[i];
+					// 3. Getting and creating all needed elements
+					video = root.querySelector( 'video' ),
+					play = document.createElement( 'button' ),
+					mute = document.createElement( 'button' );
+				// 4. Turning off native video controls
+				video.controls = false;
+				// 5. Customizing Play button behaviour
+				play.innerText = play.title = 'Play';
+				play.onclick = function() {
+					if( video.paused ) {
+						video.play();
+						play.innerText = play.title = 'Pause';
+					} else {
+						video.pause();
+						play.innerText = play.title = 'Play';
+					}
+				}
+				// 6. Customizing Mute button behaviour
+				mute.innerText = mute.title = 'Mute';
+				mute.onclick = function() {
+					if( video.muted ) {
+						video.muted = false;
+						mute.innerText = mute.title = 'Mute';
+					} else {
+						video.muted = true;
+						mute.innerText = mute.title = 'Unmute';
+					}
+				}
+				// 7. Adding custom controls to the video container
+				root.appendChild( play );
+				root.appendChild( mute );
+			}
+		}
+		// 8. Initializing function on page load
+		window.onload = init;
+	</script>
+</head>
+<body>
+	<div class="video">
+		<video controls poster="video.jpg" width="854" height="480">
+			<source src="video.mp4" type="video/mp4">
+			<source src="video.webm" type="video/webm">
+			<object type="application/x-shockwave-flash" data="http://devfiles.myopera.com/articles/4791/player.swf" width="854" height="504">
+				<param name="allowfullscreen" value="true">
+				<param name="allowscriptaccess" value="always">
+				<param name="flashvars" value="file=video.mp4">
+				<!--[if IE]><param name="movie" value="player.swf"><![endif]-->
+				<img src="http://devfiles.myopera.com/articles/4791/video.jpg" width="854" height="480">
+			</object>
+		</video>
+	</div>
+</body>
+</html>
