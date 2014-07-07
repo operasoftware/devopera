@@ -40,8 +40,8 @@ We’ll use jQuery for easier DOM manipulation, and jQuery UI for the slider con
 As professional web designers, we want to create a video player that looks consistent across browsers. Each browser however provides its own different look and feel for the player, from the minimal approach of Firefox and Chrome, to the more shiny controls of Opera and Safari (see Figure 1 for the controls in each browser). If we want our controls to look the same across all browsers, and integrate with our own design, we’ll have to create our own controls from scratch. This is not as hard as it seems.
 
 <figure class="figure">
-	<img src="{{ page.id }}/native-video-controls.jpg" alt="Native browser video controls">
-	<figcaption>Figure 1: Native browser video controls across different browsers</figcaption>
+	<img src="{{ page.id }}/native-video-controls.jpg" alt="Native browser video controls" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Native browser video controls across different browsers</figcaption>
 </figure>
 
 All media elements in HTML5 support the [media elements API][4], which we can access using JavaScript and use to easily wire up functions such as play, pause, etc. to any buttons we create. Because the native video player plays nicely with other open web technologies, we can create our controls using HTML, CSS, SVG or whatever else we like.
@@ -363,8 +363,8 @@ When the volume button is hovered, its height increases via the specified transi
 With basic CSS knowledge and some new CSS3 properties, we’ve already created a nice interface for our player, it looks like Figure 2:
 
 <figure class="figure">
-	<img src="{{ page.id }}/dark-player-shot.jpg" alt="Video player screenshot">
-	<figcaption>Figure 1: Native browser video controls across different browsers</figcaption>
+	<img src="{{ page.id }}/dark-player-shot.jpg" alt="Video player screenshot" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Native browser video controls across different browsers</figcaption>
 </figure>
 
 ## Theming the player {#sec5}
@@ -382,8 +382,8 @@ We can specify both of there options or only one, when calling the jQuery plugin
 In the above example code we are calling the plugin with the `smalldark` child theme specified. This will apply our default parent theme, and then apply our child theme over the top of it, overwriting a small portion of the rules set by the parent theme. See Figure 3 for the Smalldark theme in action.
 
 <figure class="figure">
-	<img src="{{ page.id }}/smalldark-child-theme.jpg" alt="Smalldark child theme">
-	<figcaption>Figure 3: the Smalldark child theme in action</figcaption>
+	<img src="{{ page.id }}/smalldark-child-theme.jpg" alt="Smalldark child theme" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: the Smalldark child theme in action</figcaption>
 </figure>
 
 You can [check out the final video player example live][9] to see both themes in action.

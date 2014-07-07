@@ -53,8 +53,8 @@ The latest versions of popular web browsers all support both `<audio>` and `<vid
 - Safari 5 and Chrome 6 can’t access the player via the keyboard.
 
 <figure class="figure">
-	<img src="{{ page.id }}/opera-video-controls.png" alt="Native Browser Video controls in Opera 10">
-	<figcaption>Figure 1: Native browser video controls in Opera 10.63, with the volume button focused</figcaption>
+	<img src="{{ page.id }}/opera-video-controls.png" alt="Native Browser Video controls in Opera 10" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Native browser video controls in Opera 10.63, with the volume button focused</figcaption>
 </figure>
 
 ## A custom, accessible HTML5 video player {#custom}
@@ -102,8 +102,8 @@ Instead of meaningless `<div>`s for the sliders, we are using HTML5 native slide
 You can also see a new attribute beside the usuals suspects. `aria-controls` is part of the WAI-ARIA spec, and specifies which element is being controlled. You can specify an element’s ID or a list of IDs. Our value right now is `video1`, but in actual production we’d use the video’s ID or generate a unique one in case one is not provided. The basic markup looks like Figure 2.
 
 <figure class="figure">
-	<img src="{{ page.id }}/barebones-video-controls.png" alt="Video player controls, with the new markup">
-	<figcaption>Figure 2: Custom video player controls, with the new markup</figcaption>
+	<img src="{{ page.id }}/barebones-video-controls.png" alt="Video player controls, with the new markup" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: Custom video player controls, with the new markup</figcaption>
 </figure>
 
 If you’re completely new to WAI-ARIA I strongly recommend reading the [Introduction to WAI ARIA article][6] on Dev.Opera.
