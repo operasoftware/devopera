@@ -59,7 +59,7 @@
 		}
 	// Lists
 	ol, ul {
-		margin:0 0 8px;
+		margin:0 0 16px 24px;
 		counter-reset:list;
 		// Nested
 		ol, ul {
@@ -70,14 +70,13 @@
 			margin-bottom:8px;
 			}
 		}
-		// Bullets
-		ul > li:before {
-			content:'\2022\00A0\00A0';
-			}
-		ol > li:before {
-			counter-increment:list;
-			content:counter(list)'.\00A0\00A0';
-			}
+	ul > li:before {
+		content:'\2022\00A0\00A0';
+		}
+	ol > li:before {
+		counter-increment:list;
+		content:counter(list)'.\00A0\00A0';
+		}
 	// Tables
 	table {
 		margin:0 0 16px;
