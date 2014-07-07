@@ -16,7 +16,7 @@ layout: article
 
 ## Introduction
 
-On a recent plane flight, I starting noodling around with combining flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using modernizr you can feed legacy properties to older browsers that support the 2009 legacy flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no flexbox support at all — like a simple tabbed interface perhaps.
+On a recent plane flight, I starting noodling around with combining flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using Modernizr you can feed legacy properties to older browsers that support the 2009 legacy flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no flexbox support at all — like a simple tabbed interface perhaps.
 
 <figure class="figure" id="figure-1">
 	<img src="{{ page.id }}/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
@@ -190,7 +190,7 @@ I thought a bit more about this, and decided to try the JavaScript toggling tech
 
 - Made the boxes fill the whole of the screen width **and** height
 - Added the headings back in, fixing the layout problem they were creating and keeping them accessible in the process
-- Used Modernizr to make the examples work in older browsers that support the legacy Flexbox syntax
+- Used Modernizr to make the examples work in older browsers that support the legacy flexbox syntax
 - Made it keyboard accessible
 
 [Try the final example live][7].
@@ -272,11 +272,11 @@ Next, the full CSS for the `<html>`, `<body>` and `<article>` ended up looking l
 
 The transitions are defined here, but this time I have no `article:hover` rule to dictate what happens on mouse over. In addition, I have used Modernizr’s class names to apply legacy flex properties to `<body>` and `<section>` only for browsers that don’t support modern flexbox but do support flexbox legacy, and I’ve added in IE-specific flex properties (e.g. `display: -ms-flexbox; -ms-box-orient: horizontal;`) to the main rules so that IE10 will now support the example. This will now work in Safari, Firefox and IE10 as well.
 
-Note: Read the [Intelligent fallbacks for flexbox][8] section of my previous Flexbox article for more detailed information on the current state of Flexbox browser support, and the legacy syntax required for cross browser support.
+Note: Read the [Intelligent fallbacks for flexbox][8] section of my previous flexbox article for more detailed information on the current state of flexbox browser support, and the legacy syntax required for cross browser support.
 
 [8]: /articles/advanced-cross-browser-flexbox/#fallbacks
 
-Also note the `width` and `height` of `100%` and `margin:0` on the `<html>` element, and `height:inherit` and `margin:0` on the `<body>`. This forces the contents to fill up the viewport, whatever width and height it is, which works well with the Flexbox inside it.
+Also note the `width` and `height` of `100%` and `margin:0` on the `<html>` element, and `height:inherit` and `margin:0` on the `<body>`. This forces the contents to fill up the viewport, whatever width and height it is, which works well with the flexbox inside it.
 
 Now let’s look at the JavaScript:
 
@@ -357,6 +357,6 @@ I have then added the visual headings back in using a CSS counter and absolutely
 
 ## Summary
 
-This article has been fun to write, and I hope I have created an interesting technique that has at least given you food for thought! It is worth noting that you can achieve a similar effect using floated elements and focus states, like in this [float demo][9]. However, this is most inflexible — it relies on knowing the exact number of chapters you are going to have, and setting the percentages to suit. With the Flexbox method, it should work regardless of the number of child containers, and without needing to worry about exact measurements.
+This article has been fun to write, and I hope I have created an interesting technique that has at least given you food for thought! It is worth noting that you can achieve a similar effect using floated elements and focus states, like in this [float demo][9]. However, this is most inflexible — it relies on knowing the exact number of chapters you are going to have, and setting the percentages to suit. With the flexbox method, it should work regardless of the number of child containers, and without needing to worry about exact measurements.
 
 [9]: {{ page.id }}/float-test.html

@@ -102,7 +102,7 @@ var data = localStorage.getItem(1);
 <p>To illustrate Web Storage in action, I have created a simple example that uses both Local Storage and Session Storage. Check out the <a href="http://people.opera.com/shwetankd/external/demos/webstorage_demo.htm">Web Storage demo page</a> to see this in action. The demo will ask you to enter two strings, one for Session Storage, the other for Local Storage. You can then open the Storage Inspector in Opera Dragonfly to access the Web Storage. You'll also notice that once you close and page, and then open it again, the data you typed in for Local Storage is preserved, whereas for Session Storage, this is not the case.</p>
 
 <h2>Using the Storage event</h2>
-<p>The specification also provides for the <a href="http://dev.w3.org/html5/webstorage/#the-storage-event">storage event</a> to be fired whenever the storage area changes. This provides various usefull attributes such as:</p>
+<p>The specification also provides for the <a href="http://dev.w3.org/html5/webstorage/#the-storage-event">storage event</a> to be fired whenever the storage area changes. This provides various useful attributes such as:</p>
 
 <ul>
 <li><strong>storageArea</strong>: Tells which kind of storage it is (Session or Local)</li>

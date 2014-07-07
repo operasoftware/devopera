@@ -16,7 +16,7 @@ layout: article
 
 ## Introduction
 
-The [CSS Flexible box module level 3][1] — or Flexbox for short — brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. I dealt with the basics of Flexbox in my article [Flexbox: fast track to layout nirvana?][2] In this article I will go a bit further, looking at a more advanced example, and using Modernizr to serve different styles to browsers with differing levels of flexbox support, providing the best level of cross browser support currently available.
+The [CSS Flexible box module level 3][1] — or flexbox for short — brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. I dealt with the basics of Flexbox in my article [Flexbox: fast track to layout nirvana?][2] In this article I will go a bit further, looking at a more advanced example, and using Modernizr to serve different styles to browsers with differing levels of flexbox support, providing the best level of cross browser support currently available.
 
 [1]: http://www.w3.org/TR/css3-flexbox/
 [2]: /articles/flexbox-basics/
@@ -325,7 +325,7 @@ Then we’ve got the following in place, for browsers that don’t even support 
 		float: left;
 	}
 
-Note: A good way to generate cross browser Flexbox code, and learn about the syntax different browsers use, is to use the [Flexy Boxes][15] tool.
+Note: A good way to generate cross browser flexbox code, and learn about the syntax different browsers use, is to use the [Flexy Boxes][15] tool.
 
 [15]: http://the-echoplex.net/flexyboxes/
 
