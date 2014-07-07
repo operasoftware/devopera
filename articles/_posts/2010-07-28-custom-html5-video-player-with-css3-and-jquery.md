@@ -74,23 +74,24 @@ After creating the markup we’ll have to tie our elements to the media elements
 [6]: http://dev.opera.com/articles/view/programming-the-real-basics/
 
 	$.fn.gVideo = function(options) {
-		// Build main options before element iteration
+		// build main options before element iteration
 		var defaults = {
 			theme: 'simpledark',
 			childtheme: ''
 		};
 		var options = $.extend(defaults, options);
-		// Iterate and reformat each matched element
+		// iterate and reformat each matched element
 		return this.each(function() {
 			var $gVideo = $(this);
-
-			// Create HTML structure
+			// create HTML structure
 			// main wrapper
 			var $video_wrap = $('<div></div>').addClass('ghinda-video-player').addClass(options.theme).addClass(options.childtheme);
-			// Controls wraper
+			// controls wraper
 			var $video_controls = $('<div class="ghinda-video-controls"><a class="ghinda-video-play" title="Play/Pause"></a><div class="ghinda-video-seek"></div><div class="ghinda-video-timer">00:00</div><div class="ghinda-volume-box"><div class="ghinda-volume-slider"></div><a class="ghinda-volume-button" title="Mute/Unmute"></a></div></div>');
 			$gVideo.wrap($video_wrap);
 			$gVideo.after($video_controls);
+		});
+	};
 
 Here we are using jQuery to create the video player markup dynamically (but not the video player itself), and removing the `controls` attribute once the script loads. That’s because in cases where the user has JavaScript disabled, these controls will be useless, and he/she won’t even get the native browser controls to the video element. It makes a lot more sense to start with the `controls` attribute present in case the script fails to load, and then removing it so the player will use our custom controls only after the script successfully loads.
 
