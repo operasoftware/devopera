@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<title>A more accessible HTML5 video player on Dev.Opera.com</title>
+	<!-- Styles for the demos -->
+	<style>
+		body {
+			background-color: #ccc;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		article {
+			display: block;
+			overflow: hidden;
+			width: 840px;
+			padding: 10px;
+			margin: 0px auto;
+			background-color: #fff;
+		}
+		a {
+			color: #004CFF;
+		}
+		a:focus, a:hover {
+			color: #009DFF;
+		}
+		section {
+		  display: block;
+		  padding-bottom: 10px;
+		  margin-bottom: 10px;
+		  border-bottom: 1px dotted #777;
+		}
+		figure {
+			display: block;
+			margin-bottom: 5px;
+			padding: 5px;
+			clear: both;
+			background-color: #EDF3F4;
+			border: 1px dotted #BCDEE2;
+		}
+		figcaption {
+			display: block;
+			clear: both;
+			padding: 10px;
+			
+			color: #333;
+			font-size: 80%;
+		}		
+		pre {
+			padding: 10px;
+			overflow: auto;
+			background-color: #333;
+			
+			color: #fff;
+		}
+		footer {
+			color: #777;
+			font-size: 70%;
+		}
+	</style>
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+	
+	<!-- Acorn Media Player specific -->
+	<link href="acornmediaplayer.base.css" rel="stylesheet" type="text/css">
+	<script src="jquery.acornmediaplayer.js"></script>	
+	<!-- Themes -->
+	<link href="acorn.access.css" rel="stylesheet" type="text/css">	
+	<link href="acorn.barebones.css" rel="stylesheet" type="text/css">
+	<!-- Call the plugin --> 
+	<script>
+		jQuery(function() {
+			// demo1
+			jQuery('#demo1').acornMediaPlayer();
+			// demo2
+			jQuery('#demo2').acornMediaPlayer({
+				theme: 'access accesslight'
+			});
+			// demo3
+			jQuery('#demo3').acornMediaPlayer({
+				theme: 'barebones',
+				nativeSliders: 'true',
+				volumeSliders: 'horizontal'
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	<article>
+
+		<h1>
+			Demos for <a href="http://dev.opera.com/articles/view/more-accessible-html5-video-player/">A more accessible HTML5 &lt;video&gt; player</a> on <a href="http://dev.opera.com">Dev.Opera</a>
+		</h1>
+		
+		<section>
+			<h2>Defaults</h2>
+			<figure>
+				<video controls="controls" width="826" height="352" id="demo1" preload="metadata" aria-describedby="demo1-description">					
+					<source src="sintel_movie_340x144.mp4" type="video/mp4">
+					<source src="sintel_movie_340x144.webm" type="video/webm">
+					<source src="sintel_movie_340x144.ogv" type="video/ogg">
+					You can download Sintel at <a href="www.sintel.org">www.sintel.org</a>.
+				</video>
+				<figcaption id="demo1-description">
+					<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film. </p>
+					<p>
+						<strong>Notice: </strong>
+						I <strong>strongly</strong> recommend that you download and watch this film in high quality from the official website. The version you can see here is only for demoing the media player.
+					</p>
+					<p><a href="www.sintel.org">www.sintel.org</a></p>
+				</figcaption>
+			</figure>
+			
+			<p>
+				Calling the plugin with the default options. 
+			</p>			
+			<pre><code>$('#demo1').acornMediaPlayer();</code></pre>			
+		</section>
+				
+		<section>
+			<h2><code>accesslight</code> Child Theme with captions and trascript</h2>
+			<figure>
+				<video controls="controls" width="826" height="352" id="demo2" preload="metadata" aria-describedby="demo2-description">				
+					<source src="sintel_movie_340x144.mp4" type="video/mp4">
+					<source src="sintel_movie_340x144.webm" type="video/webm">
+					<source src="sintel_movie_340x144.ogv" type="video/ogg">
+					
+					<track src="sintel_en.srt" kind="subtitles" srclang="en" label="English" />
+					<track src="sintel_de.srt" kind="subtitles" srclang="de" label="Deutsch" />
+					<track src="sintel_es.srt" kind="subtitles" srclang="es" label="Español" />
+					<track src="sintel_fr.srt" kind="subtitles" srclang="fr" label="Français" />
+					<track src="sintel_it.srt" kind="subtitles" srclang="it" label="Italiano" />
+					<track src="sintel_nl.srt" kind="subtitles" srclang="nl" label="Nederlands" />
+					<track src="sintel_pl.srt" kind="subtitles" srclang="pl" label="Polski" />
+					<track src="sintel_pt.srt" kind="subtitles" srclang="pt" label="Português" />
+					
+					You can download Sintel at <a href="www.sintel.org">www.sintel.org</a>.
+				</video>
+				<figcaption id="demo2-description">
+					<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film. </p>
+					<p>
+						<strong>Notice: </strong>
+						I <strong>strongly</strong> recommend that you download and watch this film in high quality from the official website. The version you can see here is only for demoing the media player.
+					</p>
+					<p><a href="www.sintel.org">www.sintel.org</a></p>
+				</figcaption>
+			</figure>
+			<p>Captions included using multiple track elements. </p>
+<pre><code>&lt;track src=&quot;media/sintel_en.srt&quot; kind=&quot;subtitles&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;</code></pre>
+			<p>Plugin called with the <code>themes</code> options. </p>
+<pre><code>jQuery('#demo2').acornMediaPlayer({
+	theme: 'access accesslight'
+});</code></pre>
+		</section>
+		
+		<section>
+			<h2><code>barebones</code> Child Theme</h2>
+			<figure>
+				<video controls="controls" width="826" height="352" id="demo3" preload="metadata" aria-describedby="demo3-description">
+					<source src="sintel_movie_340x144.mp4" type="video/mp4">
+					<source src="sintel_movie_340x144.webm" type="video/webm">
+					<source src="sintel_movie_340x144.ogv" type="video/ogg">
+					
+					You can download Sintel at <a href="www.sintel.org">www.sintel.org</a>.
+				</video>
+				<figcaption id="demo3-description">
+					<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film. </p>
+					<p>
+						<strong>Notice: </strong>
+						I <strong>strongly</strong> recommend that you download and watch this film in high quality from the official website. The version you can see here is only for demoing the media player.
+					</p>
+					<p><a href="www.sintel.org">www.sintel.org</a></p>
+				</figcaption>
+			</figure>
+			<p>Plugin called with all available options. </p>
+<pre><code>jQuery('#demo3').acornMediaPlayer({
+	theme: 'barebones',
+	nativeSliders: 'true',
+	volumeSliders: 'horizontal'
+});</code></pre>
+		</section>		
+	
+		<footer>
+			<p>More details, documentation and the rest on the GitHub page for <a href="http://github.com/ghinda/acornmediaplayer">Acorn Media Player</a>.</p>
+			<p>Acorn Media Player is a project by <a href="http://www.ghinda.net">Cristian I. Colceriu</a>. </p>
+			<p>Sintel is &copy; copyright the Blender Foundation | <a href="www.sintel.org">www.sintel.org</a>, licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license. </p>
+		</footer>
+	</article>
+	
+</body>
+</html>
