@@ -27,8 +27,8 @@ layout: post
 
 <p>Downloads:</p>
 <ul>
-  <li><a href="/blog/university-talk-resources-march-2010-html5-css3-slides/HTML5andCSS3.pdf">HTML5 and CSS3 slides</a></li>
-  <li><a href="/blog/university-talk-resources-march-2010-html5-css3-slides/CSS3_HTML5_examples.zip">HTML5 and CSS3 examples</a> (3mb; video files removed to cut down file size - you&#39;ll have to provide your own!)</li>
+  <li><a href="{{ page.id }}/HTML5andCSS3.pdf">HTML5 and CSS3 slides</a></li>
+  <li><a href="{{ page.id }}/CSS3_HTML5_examples.zip">HTML5 and CSS3 examples</a> (3mb; video files removed to cut down file size - you&#39;ll have to provide your own!)</li>
 </ul>
 
 <p>I will also be promoting my new book along the way — <a href="http://interactwithwebstandards.com/">InterAct with Web Standards: A Holistic Approach to Web Design</a> — coauthored along with a number of my friends and colleagues in the WaSP Edu Task Force. With this book we are aiming to provide the ultimate teaching/learning guide for web design basics, and discuss the bigger picture — so many books just yarn on about HTML and/or CSS in isolation, but we also cover using the Web to learn more effectively, information architecture, accessibility, and more. Check it out asap!</p>

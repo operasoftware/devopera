@@ -8,7 +8,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/on-the-road-to-beta/closer-to-beta.png" alt="" />
+<img src="{{ page.id }}/closer-to-beta.png" alt="" />
 
 <p>With <a href="http://sxsw.com/interactive">SxSW</a> around the corner, The Opera Dragonfly team is hard at work preparing for the beta release. We have just updated the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a> with a new build, which includes a number of bug fixes. One of the main reasons for this release is to test out the new minification procedure.</p>
 

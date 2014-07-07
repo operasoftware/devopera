@@ -16,7 +16,7 @@ layout: post
 
 <p>The first is the Watches feature in the JavaScript Debugger. A watch can monitor a user defined variable or expression while the web page runs. The expression will be evaluated and the result will be shown. As you step through the code it will show the result at that moment in time. A watch expression can be as simple as a variable name, or as complex as any valid JavaScript expressions.</p>
 
-<img src="/blog/watches-network-overrides-and-more/watches.png" alt="" />
+<img src="{{ page.id }}/watches.png" alt="" />
 
 <p>To test this feature out, load this <a href="http://people.opera.com/dstorey/dfl/test-watches.html">Watches test file</a> in Opera. Switch to the <q>state</q> tab of the JavaScript debugger and add the following expressions to the Watches panel:
 
@@ -33,7 +33,7 @@ layout: post
 
 <h3>Globally override HTTP headers</h3>
 
-<img src="/blog/watches-network-overrides-and-more/iphonevsoperami.png" alt="" />
+<img src="{{ page.id }}/iphonevsoperami.png" alt="" />
 
 <p>It is now possible to globally override any HTTP header in Opera Dragonfly. Switch to the Network Inspector and then the Network options tab. There you can find an option to enable global network overrides. In the image above I&#39;ve compared the result when overriding the user-agent header to Opera Mini on iPhone on the left and Safari on iPhone on the right. This shows the results of browser sniffing. In the first Opera gets a basic mobile site, and in the second it gets an advanced mobile app with features such as Google Instant. The global overrides apply to all network requests for the current session. As you can imagine, this is very useful for testing mobile optimised sites, or testing if pesky sites that block Opera actually work when the discrimination is bypassed.</p>
 

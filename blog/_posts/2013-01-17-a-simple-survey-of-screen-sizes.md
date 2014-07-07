@@ -20,9 +20,9 @@ layout: post
 
 <p>The scatter plots below show the screen dimensions for each group of users &#x2014; vertical scale is screen height and horizontal scale is screen width.</p>
 
-<p><a href="/blog/a-simple-survey-of-screen-sizes/screen-dimensions.html"><img src="/blog/a-simple-survey-of-screen-sizes/screen-dimensions.png" alt="Scatter plots showing screen dimensions for a sample of technical and non-technical users." /></a></p>
+<p><a href="{{ page.id }}/screen-dimensions.html"><img src="{{ page.id }}/screen-dimensions.png" alt="Scatter plots showing screen dimensions for a sample of technical and non-technical users." /></a></p>
 
-<p><em>Click the image to see the <a href="/blog/a-simple-survey-of-screen-sizes/screen-dimensions.html">original graphs and their raw data</a>.</em></p>
+<p><em>Click the image to see the <a href="{{ page.id }}/screen-dimensions.html">original graphs and their raw data</a>.</em></p>
 
 <h4>Top 3 screen sizes</h4>
 

@@ -32,8 +32,8 @@ Note that we don’t have an Opera 14 build ready for tablets yet: we’re still
 
 ## A whole new engine
 
-<figure>
-	<img src="/blog/opera-14-for-android-is-out/opera-audio-handling-300.png">
+<figure class="figure">
+	<img src="{{ page.id }}/opera-audio-handling-300.png" class="figure__media">
 </figure>
 
 Opera 14 is based on Chromium 26, which does not include [Blink][5] just yet. However, as we plan to stay closely in sync with the Chromium development cycle, doing frequent updates, you can expect it in a future release. In the meantime, we’ve added/enabled some extra standardsy goodness already for you to use:
@@ -61,9 +61,9 @@ We’ve also adjusted our UA string, so as to avoid old sniffing traps: it’s s
 
 When opening Opera for Android, you’re greeted by our overhauled **Speed Dial**, which now combines favorite sites with bookmarks into one view. You can group bookmarks in one level-deep sets by dragging and dropping them on top of each other. A swipe away to the left (rather than hidden away in a submenu somewhere), you find your browsing **History**, and towards the right, there is our new **Discover** page, which helps you find interesting online content to jump straight into browsing — ideal to kill those 10 minutes waiting for the bus to arrive.
 
-<figure>
-	<img src="/blog/opera-14-for-android-is-out/top3.png">
-	<img src="/blog/opera-14-for-android-is-out/bottom3.png">
+<figure class="figure">
+	<img src="{{ page.id }}/top3.png" class="figure__media">
+	<img src="{{ page.id }}/bottom3.png" class="figure__media">
 </figure>
 
 You can of course also query for sites from the redesigned navigation bar on top. And we’ve made some adjustments here since the beta release: in the Settings menu, you find an option to move the navigation bar to the bottom. It costs you a bit of screen real estate, but makes for a more relaxed single-handed browsing experience.
@@ -88,8 +88,8 @@ Keep in mind that users can set their own preference of Off-Road-specific image 
 
 ## Automatic text wrap
 
-<figure>
-	<img src="/blog/opera-14-for-android-is-out/text-wrap.png">
+<figure class="figure">
+	<img src="{{ page.id }}/text-wrap.png" class="figure__media">
 </figure>
 
 By default, Opera for Android uses the same text autosizing (aka FontBoosting) mechanism that can be found in Chrome for Android. E.g. if you visit [this desktop-specific Wikipedia page about artichokes][14], you see that some of the text is displayed bigger, making it readable without having to zoom in. However, as FontBoosting is only applied selectively and interferes with author-defined text size differences, we’ve made it possible to turn this off in Settings, and choose for automatic text wrap instead. Turning on text wrap instructs Opera for Android to wrap lines no matter how much you zoom into a page so there’s no need for horizontal scrolling.

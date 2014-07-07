@@ -21,7 +21,7 @@ layout: post
 Opera 10.50 has already proven to provide users with a super-quick experience. Based on Peacekeeper&#39;s benchmark results, <a href="http://service.futuremark.com/peacekeeper/results.action?key=2tLP">Opera 10.51 for Windows takes the clear lead with a 27% increase in speed</a> from our most recent version.
 </p>
 <p>
-<img src="/blog/opera-desktop-10-51-is-out-and-fast/peacekeeper_speed.png" alt="peacekeeper benchmark shows Opera 10.51 being the fastest" />
+<img src="{{ page.id }}/peacekeeper_speed.png" alt="peacekeeper benchmark shows Opera 10.51 being the fastest" />
 </p>
 <i>Figure: Peacekeeper browser speed benchmark</i>
 <p>
@@ -32,7 +32,7 @@ In this release, we have pushed to get as many fixes into 10.51, largely due to 
 For the curious minds, the machine specification that hit the highest benchmark score across all tested browsers is shown below.
 </p>
 <p>
-<img src="/blog/opera-desktop-10-51-is-out-and-fast/fastest.png" alt="machine specifications that has the highest score" />
+<img src="{{ page.id }}/fastest.png" alt="machine specifications that has the highest score" />
 </p>
 <i>Figure: Opera 10.51 benchmarked, fastest machine specification [as of 20th March 2010]</i>
 
@@ -43,7 +43,7 @@ For the curious minds, the machine specification that hit the highest benchmark 
 Sputnik - a new JavaScript conformance test suite produced by Google Labs, shows that <a href="http://sputnik.googlelabs.com/compare">Opera passes more tests that adhere to the ECMA-262 specification</a> than other browsers compared.
 </p>
 <p>
-<img src="/blog/opera-desktop-10-51-is-out-and-fast/sputnik_javascript_test.png" />
+<img src="{{ page.id }}/sputnik_javascript_test.png" />
 </p>
 <i>Figure: Sputnik JavaScript conformance test</i>
 <h3>How about Unix and Mac?</h3>

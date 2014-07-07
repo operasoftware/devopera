@@ -20,6 +20,6 @@ layout: post
 
 <p>Here are <a href="http://annevankesteren.nl/2008/university-tours-germany-html5">Anne&#39;s slides on HTML 5</a>. You can watch these slides in the same manner as Håkon&#39;s. If you fancy trying out the video demos, you will need <a href="http://labs.opera.com/downloads/">Opera&#39;s experimental video build</a>.</p>
 
-<p>Roberto&#39;s talk is about <a href="/blog/germany-university-tour/GER%20tours%20slides.pdf">Web Browser Industry PDF 850kb</a>. This presentation includes trends in the browser industry, Opera&#39;s products and some use case examples.</p>
+<p>Roberto&#39;s talk is about <a href="{{ page.id }}/GER%20tours%20slides.pdf">Web Browser Industry PDF 850kb</a>. This presentation includes trends in the browser industry, Opera&#39;s products and some use case examples.</p>
 
 <p>For a summary of the whole tour, check out our <a href="http://my.opera.com/universitytours/blog/">Opera University Tour blog</a>.</p>

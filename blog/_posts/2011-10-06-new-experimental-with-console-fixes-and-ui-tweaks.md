@@ -18,6 +18,6 @@ layout: post
 <p>We have also added the ability to trigger breakpoints directly from the Console. If you have a breakpoint set in <code>f()</code>, you can now trigger it by calling the method from the Console&#39;s command line:</p>
 <pre><code>&gt;&gt;&gt; f()</code></pre>
 <p>But not all new improvements are hidden under the hood. This experimental release also features a few UI tweaks.</p>
-<img src="/blog/new-experimental-with-console-fixes-and-ui-tweaks/dragonfly-experimental-october-UI-tweaks.png" alt="A small comparison of the old and new Opera Dragonfly button design and grouping" />
+<img src="{{ page.id }}/dragonfly-experimental-october-UI-tweaks.png" alt="A small comparison of the old and new Opera Dragonfly button design and grouping" />
 <p>Overall, the grey icons have now been made a tad lighter, buttons have been given a bit more padding, and related buttons are now grouped together. This should give a much clearer, more pleasant debugging experience.</p>
 <p>There are lots more little bug fixes and changes in this release - see the <a href="http://dragonfly.opera.com/app/stp-1/experimental/logs/">changelogs</a>.</p>

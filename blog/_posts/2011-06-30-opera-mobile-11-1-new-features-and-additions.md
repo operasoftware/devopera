@@ -12,7 +12,7 @@ layout: post
 ---
 
 <div>
-  <img src="/blog/opera-mobile-11-1-new-features-and-additions/fig1.png" style="float: right; margin: 0 0 3px 10px;" alt="The new Opera Mobile 11.1" />
+  <img src="{{ page.id }}/fig1.png" style="float: right; margin: 0 0 3px 10px;" alt="The new Opera Mobile 11.1" />
 </div>
 
 <p>Today we had not one, but two product releases: <a href="http://www.opera.com/mobile/">Opera Mini 6.1</a> (for Android, Blackberry, J2ME and Symbian) and <a href="http://www.opera.com/mobile/">Opera Mobile 11.1</a> (for Android and Symbian). You can get them directly from <a href="http://m.opera.com">m.opera.com</a>.</p>
@@ -57,7 +57,7 @@ layout: post
 <p>on a <code>480px</code> wide screen (on VGA, WVGA, XVGA devices), 160% zoom resulted in a viewport width of <code>480px / 1.6 = 300px</code>. However, many mobile-optimised sites – despite using <code>device-width</code> in their <code>viewport</code> definition – still seem to assume a width of <code>320px</code> (the default iPhone width) in their layouts. This resulted in an annoying <code>20px</code> horizontal scroll. In Opera Mobile 11.1 we&#39;ve changed the default zoom on high-DPI devices to 150%, which gives us increased compatibility with these badly coded sites.</p>
 
 <div>
-  <img src="/blog/opera-mobile-11-1-new-features-and-additions/fig2.png" alt="The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly." />
+  <img src="{{ page.id }}/fig2.png" alt="The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly." />
   <p class="caption">Figure 2: The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly.</p>
 </div>
 

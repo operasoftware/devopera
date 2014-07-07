@@ -11,7 +11,7 @@ layout: post
 
 <p>We took another step towards the final Opera Dragonfly 1.0 release today, with multi-file search landing on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a>. This is still work in progress, and so will feature bugs and rough edges.</p>
 
-<img src="/blog/multi-file-search-just-landed/mult-file-search.png" />
+<img src="{{ page.id }}/mult-file-search.png" />
 
 <p>Multi-file search is currently only implemented in the Scripts mode. The search field in the JavaScript debugger and DOM Inspector has been switched to a search button. When this is activated a search toolbar is shown, similar to the one used in the desktop browser. Pressing the <q>more</q> button in the Scripts mode enables advanced search, which allows for the search term to be searched for in all script files. Clicking on the line in the search window will take you to the corresponding line in the source view.</p>
 

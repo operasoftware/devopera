@@ -255,6 +255,6 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <h2 id="readmore">Read more...</h2>
 <ul>
-<li><a href="/articles/view/understanding-the-css-transforms-matrix/">Understanding the CSS Transforms Matrix</a></li>
-<li><a href="/articles/view/css3-animations/">Making a move with CSS3 animations</a></li>
+<li><a href="/articles/understanding-the-css-transforms-matrix/">Understanding the CSS Transforms Matrix</a></li>
+<li><a href="/articles/css3-animations/">Making a move with CSS3 animations</a></li>
 </ul>

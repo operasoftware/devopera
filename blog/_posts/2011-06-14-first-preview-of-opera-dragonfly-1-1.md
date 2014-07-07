@@ -38,7 +38,7 @@ layout: post
 
 <p>Pseudo elements could not be seen at all previously. Styles such as <code>before</code> and <code>after</code>, or <code>first-letter</code> were not visible at all, meaning debugging was a pain. Now the pseudo element will be displayed in the DOM and the matching rules will show in the style inspector when the pseudo element is selected. This is a really nice feature that I’ve wanted for quite a while, so I’m excited it is now included. As an example, try selected the drop cap in the second column of my <a href="http://people.opera.com/dstorey/newspaper-finished.html">Web Fonts Newspaper example</a>. You should see something like the following:</p>
 
-<img src="/blog/first-preview-of-opera-dragonfly-1-1/Screen%20shot%202011-06-14%20at%2022.02.40.png" alt="" />
+<img src="{{ page.id }}/Screen%20shot%202011-06-14%20at%2022.02.40.png" alt="" />
 
 <h4>Upgraded Web Storage and Widget Preferences panels</h4>
 
@@ -48,7 +48,7 @@ layout: post
 
 <p>The Error Log has been given a facelift to optimise the layout. Each entry is tidier and takes up less space than the old version. The Console has been improved to avoid showing <code>console.log</code> messages twice, and to give visual emphasis to <code>warn</code>, <code>info</code> and <code>error</code>. The line numbers are also now shown in a more consistent manor with the rest of the application.</p>
 
-<img src="/blog/irst-preview-of-opera-dragonfly-1-1/Screen%20shot%202011-06-14%20at%2022.37.37.png" alt="" />
+<img src="{{ page.id }}/Screen%20shot%202011-06-14%20at%2022.37.37.png" alt="" />
 
 <h3>Bug, bugs and more bugs</h3>
 

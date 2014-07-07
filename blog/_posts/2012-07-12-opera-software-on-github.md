@@ -11,7 +11,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/opera-software-on-github/octocat160.png" alt="GitHub Octocat" style="float:right;" />
+<img src="{{ page.id }}/octocat160.png" alt="GitHub Octocat" style="float:right;" />
 
 <p>At Opera, we&#39;ve been using GitHub for quite a while for a number of projects, including but not limited to <a href="https://github.com/operasoftware/operadriver/">OperaDriver</a>, <a href="https://github.com/operasoftware/shinydemos">Shiny Demos</a>, <a href="http://operasoftware.github.com/">RoboHydra</a>, <a href="https://github.com/operasoftware/Emberwind">Emberwind</a>, <a href="https://github.com/operasoftware/browserjs">Browser JS</a> and since last week, also the <a href="https://github.com/operasoftware/dragonfly">Opera Dragonfly</a> project.</p>
 
