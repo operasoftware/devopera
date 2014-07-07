@@ -30,7 +30,7 @@ Today we start our time limited test phase for Opera Turbo, please read below to
 When turned on, Opera Turbo will display the average compression rate. Hover your mouse over the Opera Turbo icon to see a tooltip with the amount of bandwidth saved as long as it has been enabled.
 
 <figure>
-	<img src="/articles/opera-turbo/hover.gif">
+	<img src="{{ page.id }}/hover.gif">
 </figure>
 
 ##  Throttle your bandwidth to see the big difference

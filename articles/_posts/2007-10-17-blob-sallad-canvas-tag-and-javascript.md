@@ -201,7 +201,7 @@ This loop solves the system of equations but in an iterative manner, often calle
 If you, however, try to place the object in a small compartment that can’t contain it you will notice strange effects. Also, if you build large objects such as blobs containing say 40 or more point masses they may start moving around in an unpredictable manner. Consider our example blob A below — when solving the first constraint it will push around its point masses which will make the second constraint move a bit and so on. This creates a “wave” starting from the first constraint and going through all the constraints back to the first. As the complexity of your models increase the likelihood of one constraint violating another increase, thus creating this “wave” of going through the model. A simple trick to get around this can be to solve all constraints in a spacial random order, as shown in blob B in Figure 1. This is not exactly fool proof but it can work.
 
 <figure id="figure-1">
-	<img src="/articles/blob-sallad-canvas-tag-and-javascript/image-5.png" alt="Solving vector constraints in a random order">
+	<img src="{{ page.id }}/image-5.png" alt="Solving vector constraints in a random order">
 	<figcaption>Figure 1: Solving vector constraints in a random order</figcaption>
 </figure>
 
@@ -212,14 +212,14 @@ However, if such cheap tricks fail you consider solving everything at once using
 The blobs in Blob Sallad are made of eight point masses as an outer hull, and one point mass in the middle. The point masses of the blob are linked to each other using the constraints described above to make sure the blob will not collapse under it’s own weight, as demonstrated in Figure 2.
 
 <figure id="figure-2">
-	<img src="/articles/blob-sallad-canvas-tag-and-javascript/image-4.png" alt="Image showing all of a blobs point masses linked to one another">
+	<img src="{{ page.id }}/image-4.png" alt="Image showing all of a blobs point masses linked to one another">
 	<figcaption>Figure 2: All the point masses of a blob are linked to one another</figcaption>
 </figure>
 
 In this set up the blobs looked a bit jagged, so in order to make them more rounded I used Bezier curves in the canvas API to figure out a smooth path around the blob, as shown on the right hand side of Figure 3.
 
 <figure id="figure-3">
-	<img src="/articles/blob-sallad-canvas-tag-and-javascript/image-2.png" alt="Bezier curves give a smoother curve round the blob">
+	<img src="{{ page.id }}/image-2.png" alt="Bezier curves give a smoother curve round the blob">
 	<figcaption>Figure 3: As shown on the right hand side, Bezier curves give a smoother curve round the perimeter of the blobs</figcaption>
 </figure>
 
@@ -274,7 +274,7 @@ The observant reader might have noticed that the parameter `scaleFactor` could h
 The blobs have three different possible kinds of eye. Open, closed and yihaa! eyes, as shown in Figure 4.
 
 <figure id="figure-4">
-	<img src="/articles/blob-sallad-canvas-tag-and-javascript/image-3.png" alt="The 3 different kinds of eyes that blobs have — open, closed, and yihaa!">
+	<img src="{{ page.id }}/image-3.png" alt="The 3 different kinds of eyes that blobs have — open, closed, and yihaa!">
 	<figcaption>Figure 4: The 3 different kinds of eyes that blobs have — open, closed, and yihaa!</figcaption>
 </figure>
 

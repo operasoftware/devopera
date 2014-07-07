@@ -35,7 +35,7 @@ QR codes are the most robust of the current 2D barcode formats. They have wide a
 Since you can encode just about any data, you can begin to use it for applications such as inventory control or unique ids for database look-ups, and beyond. Figure 1 is an example of what a QR code looks like.
 
 <figure id="figure-1">
-	<img src="/articles/2d-barcodes-real-world/example.png" alt="Example QR code">
+	<img src="{{ page.id }}/example.png" alt="Example QR code">
 	<figcaption>Figure 1: Example QR Code</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ You can recognize a QR code by the 3 large squares in the corners. These are reg
 QR codes can also encode more data than other barcode formats, over 4000 ASCII chars. The more data that gets encoded, the larger the barcode grows. Figure 2 is a barcode representing 500 characters.
 
 <figure id="figure-2">
-	<img src="/articles/2d-barcodes-real-world/big.png" alt="Example QR Code with 500 chars encoded">
+	<img src="{{ page.id }}/big.png" alt="Example QR Code with 500 chars encoded">
 	<figcaption>Figure 2: Example QR Code with 500 chars encoded</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ This URL generates a QR Code, but we still haven’t passed it any data to encod
 The resulting QR code looks like Figure 3.
 
 <figure id="figure-3">
-	<img src="/articles/2d-barcodes-real-world/small.png" alt="My first QR code">
+	<img src="{{ page.id }}/small.png" alt="My first QR code">
 	<figcaption>Figure 3: My First QR Code</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ There are various free applications for reading the different types of 2D barcod
 Using the Barcode reading software is easy. You simply launch the application, point it at the barcode (see Figure 4) and the information is decoded.
 
 <figure id="figure-4">
-	<img src="/articles/2d-barcodes-real-world/notebook.jpg" alt="QR Code on the back of my notebook">
+	<img src="{{ page.id }}/notebook.jpg" alt="QR Code on the back of my notebook">
 	<figcaption>Figure 4: QR Code on the back of my notebook</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ Previously, traditional barcodes all had to go through some sort of central auth
 After plain text, the next example to encode is a URL.
 
 <figure id="figure-5">
-	<img src="/articles/2d-barcodes-real-world/url.png" alt="An encoded URL in a QR code">
+	<img src="{{ page.id }}/url.png" alt="An encoded URL in a QR code">
 	<figcaption>Figure 5: URL to Hello World Article on Wikipedia</figcaption>
 </figure>
 
@@ -117,21 +117,21 @@ If you decode this barcode you will get the URL [http://en.wikipedia.org/wiki/He
 Your phone is much more versatile than just accessing URLs. Your desktop web browser knows several different protocols – `http`, `https` and `mailto` to name a few. Your phone, on the other hand, knows about these and some others, namely the `tel` and `sms` protocols. In much the same way that you link to an email address with `mailto:userexample.com`, you can link to a telephone number with `tel:123.456.7890`. The former will launch your email client so you can send a message, and the latter will launch the dialer on the phone so you can make a call. The protocol `sms:123.456.7890` works in a pretty similar fashion. Now you can begin to encode barcodes that act as links to dial out.
 
 <figure id="figure-6">
-	<img src="/articles/2d-barcodes-real-world/phone-number.png" alt="A QR code to dial a number">
+	<img src="{{ page.id }}/phone-number.png" alt="A QR code to dial a number">
 	<figcaption>Figure 6: A QR code to dial a number</figcaption>
 </figure>
 
 This is just the beginning — it is possible to encode more than just URLs and links. You can encode data files as well, such as vCards. This allows people to simply take a photo of your 2D barcode to import all your contact information into their address book (as seen in Figure 7). No more mis-typing or mis-spellings!
 
 <figure id="figure-7">
-	<img src="/articles/2d-barcodes-real-world/business-cards.jpg" alt="A QR code for a vCard on the back of business cards">
+	<img src="{{ page.id }}/business-cards.jpg" alt="A QR code for a vCard on the back of business cards">
 	<figcaption>Figure 7: A QR code for a vCard on the back of business cards</figcaption>
 </figure>
 
 It is also possible to encode binary data as well. Imagine the concert poster of the near future (or see Figure 8 to preview it): A large retro 2-color poster with the band name & photo. At the bottom there is a series of 2D barcodes. The first is a link to a calendar file. You follow the link and it adds the concert dates into your phone’s calendar so you don’t forget about it and double book that evening. Another 2D barcode is a 30 second mp3 clip of the band that you can check out to get a preview of the band. The 3rd 2D barcode links you to a site selling tickets to the event. You take a picture of the barcode and it decodes to some long cryptic URL specific to the ticket vendor’s outdated eCommerce system. You launch the browser with the URL and order some tickets for this Friday night. Instead of typing in your credit card number, you simply get the price of the tickets added to next month’s phone bill.
 
 <figure id="figure-8">
-	<img src="/articles/2d-barcodes-real-world/poster.jpg" alt="The gig poster of the near future">
+	<img src="{{ page.id }}/poster.jpg" alt="The gig poster of the near future">
 	<figcaption>Figure 8: The gig poster of the near future</figcaption>
 </figure>
 

@@ -83,7 +83,7 @@ Opera has not yet implemented complete support for what is needed for Extended V
 - Some of the necessary functionality have been tested in an internal demo version (see screenshot), based on a weekly release from March 2006.
 
 <figure>
-	<img src="/articles/introducing-extended-validation-certificates/opera.gif" alt="Opera">
+	<img src="{{ page.id }}/opera.gif" alt="Opera">
 </figure>
 
 There is a lot more that needs to be implemented before we can release a version with support for EV, but we will do so When It’s Ready.

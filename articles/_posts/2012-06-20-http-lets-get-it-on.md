@@ -70,7 +70,7 @@ On the Web, a lot more information (HTTP headers) is sent by the client to the s
 [4]: http://my.opera.com/dragonfly/blog/
 
 <figure class="figure">
-	<img src="/articles/http-lets-get-it-on/network.png" alt="Opera Dragonfly Network Tab" class="figure__media">
+	<img src="{{ page.id }}/network.png" alt="Opera Dragonfly Network Tab" class="figure__media">
 	<figcaption class="figure__caption">Opera Dragonfly Network Tab</figcaption>
 </figure>
 
