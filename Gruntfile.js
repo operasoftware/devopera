@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 				},
 				expand: true,
 				cwd: '_site/',
-				src: '**/*.html',
+				src: '**/index.html',
 				dest: '_site/'
 			},
 			xml: {
