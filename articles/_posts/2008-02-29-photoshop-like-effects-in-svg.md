@@ -11,7 +11,9 @@ layout: article
 
 ## Introduction
 
-![Filter image]({{ page.id }}/filters.jpg)
+<figure class="figure">
+	<img src="{{ page.id }}/filters.jpg" alt="Filter image" class="figure__media">
+</figure>
 
 I came across this nice [Photoshop tutorial][2] the other day. Looking at this, and the other tutorials available there made me want to try to recreate the same effects, not using Photoshop however, just SVG. Read on for my take on the above tutorial. To better follow the steps in my article I recommend reading these side by side.
 
@@ -55,7 +57,7 @@ Next, create some rectangles and a couple of gradients by adding the following i
 
 The linear gradients gradiate between the first color and the second color at a 90 degree angle. 90 degree angles (sometimes called straight angles) are easily translated into a vector from point `(x1, y1)` to point `(x2, y2)`, where the value `1` maps to 100% of the boundingbox of the shape that gets painted with the gradient, and the value `0` maps of course to 0% of the same. I’ve added the gradient stops with the colors we want, and set the offsets. The offset is where the color will be mapped onto the gradient vector specified with `x1`, `y1`, `x2` and `y2`.
 
-In case you didn’t follow the above, here is a little more explaination — any angle can be written as the vector (x1,y1) to (x2,y2) (the angle is the angle of that vector). When you create a gradient the default is that the boundingbox of the shape that the gradient is applied to is used. In other words, the attributes x1,x2,y1,y2 are mapped onto the bounding box that gradient is used on as follows: (x,y)=(0,0) means the upper left corner, (x,y)=(1,1) means the bottom right corner. The gradient vector is the line between the start point (x1,y1) and the end point (x2,y2).
+In case you didn’t follow the above, here is a little more explaination — any angle can be written as the vector `(x1,y1)` to `(x2,y2)` (the angle is the angle of that vector). When you create a gradient the default is that the boundingbox of the shape that the gradient is applied to is used. In other words, the attributes `x1,x2,y1,y2` are mapped onto the bounding box that gradient is used on as follows: `(x,y)=(0,0)` means the upper left corner, `(x,y)=(1,1)` means the bottom right corner. The gradient vector is the line between the start point `(x1,y1)` and the end point `(x2,y2)`.
 
 The `g` element groups the rects together and provides a `shape-rendering` property to disable anti-aliasing so that the edges stay crisp. I’ve also added the 90% opacity to the `g` layer. Then for each of the rects I’ve assigned a fill. Note that for better performance you should use `fill-opacity` instead of `opacity`.
 
@@ -244,12 +246,12 @@ Since this is SVG you can play with the result easily, and add dynamic effects. 
 
 	<script>
 		function setHover(val) {
-			document.getElementById("hover").style.display="inline";
-			document.getElementById("hover").cx.baseVal.value=val+50;
-			document.getElementById("hoverrect").x.baseVal.value = val-1;
+			document.getElementById('hover').style.display = 'inline';
+			document.getElementById('hover').cx.baseVal.value = val + 50;
+			document.getElementById('hoverrect').x.baseVal.value = val - 1;
 		}
 		function hideHover() {
-			document.getElementById("hover").style.display="none";
+			document.getElementById('hover').style.display = 'none';
 		}
 	</script>
 

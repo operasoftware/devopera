@@ -2,7 +2,7 @@
 title: A Call for Video on the Web — Opera `<video>` Release on Labs
 authors:
 - odevrel
-intro: 'To really make a splash on the Web, video needs an open solution that can easily be integrated into web pages without the need for proprietary plugins. The HTML5 `<video>` element and Ogg Theora can provide this, and Opera is proud to announce an experimental build that suppports it. So read this article, and download and play with it today.'
+intro: 'To really make a splash on the Web, video needs an open solution that can easily be integrated into web pages without the need for proprietary plugins. The HTML5 `<video>` element and Ogg Theora can provide this, and Opera is proud to announce an experimental build that supports it. So read this article, and download and play with it today.'
 tags:
 - video
 - html5
@@ -21,7 +21,7 @@ In short, we need a `<video>` element in HTML, and we must also agree on a basel
 
 ## The good news
 
-The `<video>` element has already been proposed in the [HTML5 working draft][1], and here at Opera, we have created an experimental build of our browser for Windows, Mac and Linux with (amongst other things*) support for the `<video>` element/Ogg Theora built in. Even better is that we have made it downloadable for you to play with:
+The `<video>` element has already been proposed in the [HTML5 working draft][1], and here at Opera, we have created an experimental build of our browser for Windows, Mac and Linux with (amongst other things) support for the `<video>` element/Ogg Theora built in. Even better is that we have made it downloadable for you to play with:
 
 [1]: http://www.whatwg.org/specs/web-apps/current-work/#video
 
@@ -37,7 +37,7 @@ The `<video>` element has already been proposed in the [HTML5 working draft][1],
 
 We have included several examples for you to check out below.
 
-* This build of Opera also supports video in SVG, File I/O and the 3d `<canvas>` — these topics deserve their own articles, which we hope to publish soon, although some of the examples below [include SVG](#video).
+This build of Opera also supports video in SVG, File I/O and the 3d `<canvas>` — these topics deserve their own articles, which we hope to publish soon, although some of the examples below include SVG.
 
 The Opera video build is currently at a very experimental stage, so not widely supported as of yet. But this is a start — We’re inviting you to start playing with it and passing the message on to others about how powerful this is!
 
@@ -72,7 +72,6 @@ Here are some pages using the video element:
 [11]: http://people.opera.com/howcome/2007/video/wikipedia/octopus.html
 
 Here are some pages using the video element in SVG:
-{: #video}
 
 - [clip-move][12]
 - [video-reflect][13]

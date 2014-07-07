@@ -29,8 +29,7 @@ To start with, I simply add a `canvas` tag to my HTML document and gave it a con
 
 In order to draw on the canvas you use JavaScript, for example:
 
-	function drawSomething()
-	{
+	function drawSomething() {
 		var canvas = document.getElementById('blobs');
 		var ctx = canvas.getContext('2d');
 
@@ -51,8 +50,7 @@ The first two lines in the `drawSomething` function will find the `canvas` objec
 
 You will probably want to animate things before long as well. The easiest way to do this is to set up a time-out function in JavaScript. For example:
 
-	function mainLoop()
-	{
+	function mainLoop() {
 		drawSomething();
 		updateAnimation();
 		setTimeout('mainLoop()', 30);
@@ -70,13 +68,12 @@ A point mass is an object in two-dimensional space that has properties such as m
 
 The following code will move a point mass when I add a force to it. The variable `dt` is the time step — the exact value depends on in how large steps you want the animation to update. A larger `dt` will result in an animation taking larger steps; a smaller `dt` will make the animation go slower but smoother. As a rule of thumb, use a fairly small value, such as 0.05. Values larger than 1.0 will most likely make things go crazy and “explode”.
 
-	function movePointmass(pointmass, dt)
-	{
+	function movePointmass(pointmass, dt) {
 		var t, a, c, dtdt;
 
 		dtdt = dt * dt;
 
-		// move in x-dimension
+		// Move in x-dimension
 		a = pointmass.force.getX() / pointmass.mass;
 		c = pointmass.currentPosition.getX();
 		t = (2.0 - pointmass.friction) *
@@ -86,7 +83,7 @@ The following code will move a point mass when I add a force to it. The variable
 		pointmass.previousPosition.setX(c);
 		pointmass.currentPosition.setX(t);
 
-		// move in y-dimension
+		// Move in y-dimension
 		a = pointmass.force.getY() / pointmass.mass;
 		c = pointmass.currentPosition.getY();
 		t = (2.0 - pointmass.friction) *
@@ -106,8 +103,7 @@ In the example above, the variable `a` keeps track of how much a force will infl
 
 Let’s talk about walls for a while — what do you do when the point mass hits a wall? It’s very simple. Let’s assume that I have a point mass confined to a small room measuring 1 x 1 distance units. I pass the current position of a point mass as a parameter to the `BumpIntoWall` function and, if the point mass is on the outside of the walls, I simply project it to the inside. The method is crude, as I don’t take the point masses’ incoming trajectory into account, but if you update in small enough steps (choose a small `dt`,) the effect is passable. I really don’t care if the simulation is accurate as long as it looks plausible. After all, JavaScript isn’t that fast, so I’d rather save some rendering speed and spend resources doing other things.
 
-	function BumpIntoWall(currentPosition)
-	{
+	function BumpIntoWall(currentPosition) {
 		var collide = false;
 		var i;
 		var left = 0.0;
@@ -115,23 +111,17 @@ Let’s talk about walls for a while — what do you do when the point mass hits
 		var top = 0.0;
 		var bottom = 1.0;
 
-		if(currentPosition.getX() < left)
-		{
+		if(currentPosition.getX() < left) {
 			currentPosition.setX(left);
 			collide = true;
-		}
-		else if(currentPosition.getX() > right)
-		{
+		} else if(currentPosition.getX() > right) {
 			currentPosition.setX(right);
 			collide = true;
 		}
-		if(currentPosition.getY() < top)
-		{
+		if(currentPosition.getY() < top) {
 			currentPosition.setY(top);
 			collide = true;
-		}
-		else if(currentPosition.getY() > bottom)
-		{
+		} else if(currentPosition.getY() > bottom) {
 			currentPosition.setY(bottom);
 			collide = true;
 		}
@@ -150,8 +140,7 @@ For an interactive example, check out [http://blobsallad.se/article/example2.htm
 
 When the masses get closer to each other than the red bars they wont go any further, as is the case when they hit the blue bars. How do we know when two point masses actually get too close or to far from each other? The following code assumes that you understand some basic vector algebra, but I’ll try my best to explain this somewhat simplified version of the satisfy constraints function used in Blob Sallad. I removed some parts of the code that would make things unnecessarily confusing at this stage. Assume that we have a constraint with two point masses, `pointMassA` and `pointMassB`.
 
-	function satisfyConstrains()
-	{
+	function satisfyConstrains() {
 		var delta = new Vector();
 		delta.set(pointMassB);
 		delta.sub(pointMassA);
@@ -159,8 +148,7 @@ When the masses get closer to each other than the red bars they wont go any furt
 		var dotprod = delta.dotProd(delta);
 
 		var k = shortConst * shortConst;
-		if(dotprod < k)
-		{
+		if(dotprod < k) {
 			var scaleFactor;
 			scaleFactor = k / (dotprod + k) - 0.5;
 			delta.scale(scaleFactor);
@@ -169,8 +157,7 @@ When the masses get closer to each other than the red bars they wont go any furt
 		}
 
 		k = longConst * longConst;
-		if(dotprod > k)
-		{
+		if(dotprod > k) {
 			var scaleFactor;
 			scaleFactor = k / (dotprod + k) - 0.5;
 			delta.scale(scaleFactor);
@@ -189,8 +176,7 @@ As you might have guessed already one point mass can be shared by many constrain
 
 The `satisfyConstrains` function is used to move `p1` and `p2` a bit further away from each other if they get too close. Satisfying `c1` might violate constraint `c2` because we moved `p2` around. Satisfying `c2` would then in turn violate `c3`, and satisfying `c3` would violate `c1` and so on. It looks like we have an endless loop of constraints violating each other going on. In order to solve this in a mathematical manner we have to solve a system of equations solving all constraints simultaneously. It turns out we don’t have to worry that much though, as the following loop will do the trick:
 
-	for(var i = 0; i < 4; i++)
-	{
+	for(var i = 0; i < 4; i++) {
 		c1.satisfyConstrains();
 		c2.satisfyConstrains();
 		c3.satisfyConstrains();
@@ -200,9 +186,9 @@ This loop solves the system of equations but in an iterative manner, often calle
 
 If you, however, try to place the object in a small compartment that can’t contain it you will notice strange effects. Also, if you build large objects such as blobs containing say 40 or more point masses they may start moving around in an unpredictable manner. Consider our example blob A below — when solving the first constraint it will push around its point masses which will make the second constraint move a bit and so on. This creates a “wave” starting from the first constraint and going through all the constraints back to the first. As the complexity of your models increase the likelihood of one constraint violating another increase, thus creating this “wave” of going through the model. A simple trick to get around this can be to solve all constraints in a spacial random order, as shown in blob B in Figure 1. This is not exactly fool proof but it can work.
 
-<figure id="figure-1">
-	<img src="{{ page.id }}/image-5.png" alt="Solving vector constraints in a random order">
-	<figcaption>Figure 1: Solving vector constraints in a random order</figcaption>
+<figure class="figure" id="figure-1">
+	<img src="{{ page.id }}/image-5.png" alt="Solving vector constraints in a random order" class="figure__media">
+	<figcaption class="figure__caption">Figure 1: Solving vector constraints in a random order</figcaption>
 </figure>
 
 However, if such cheap tricks fail you consider solving everything at once using an equations solver. The previously mentioned Wikipedia article about Verlet integration discusses this in some detail.
@@ -211,16 +197,16 @@ However, if such cheap tricks fail you consider solving everything at once using
 
 The blobs in Blob Sallad are made of eight point masses as an outer hull, and one point mass in the middle. The point masses of the blob are linked to each other using the constraints described above to make sure the blob will not collapse under it’s own weight, as demonstrated in Figure 2.
 
-<figure id="figure-2">
-	<img src="{{ page.id }}/image-4.png" alt="Image showing all of a blobs point masses linked to one another">
-	<figcaption>Figure 2: All the point masses of a blob are linked to one another</figcaption>
+<figure class="figure" id="figure-2">
+	<img src="{{ page.id }}/image-4.png" alt="Image showing all of a blobs point masses linked to one another" class="figure__media">
+	<figcaption class="figure__caption">Figure 2: All the point masses of a blob are linked to one another</figcaption>
 </figure>
 
 In this set up the blobs looked a bit jagged, so in order to make them more rounded I used Bezier curves in the canvas API to figure out a smooth path around the blob, as shown on the right hand side of Figure 3.
 
-<figure id="figure-3">
-	<img src="{{ page.id }}/image-2.png" alt="Bezier curves give a smoother curve round the blob">
-	<figcaption>Figure 3: As shown on the right hand side, Bezier curves give a smoother curve round the perimeter of the blobs</figcaption>
+<figure class="figure" id="figure-3">
+	<img src="{{ page.id }}/image-2.png" alt="Bezier curves give a smoother curve round the blob" class="figure__media">
+	<figcaption class="figure__caption">Figure 3: As shown on the right hand side, Bezier curves give a smoother curve round the perimeter of the blobs</figcaption>
 </figure>
 
 It is not quiet perfect, but using 40 point masses just to get a nice curvy outline isn’t an option given the limited computing resources available.
@@ -229,8 +215,7 @@ It is not quiet perfect, but using 40 point masses just to get a nice curvy outl
 
 One interesting aspect of the canvas API is the ability to draw things in a local coordinate system and then get everything scaled and rotated as an effect of an applied transformation matrix. Confused? Consider the following code snippet used for drawing a blob’s mouth when it is closed.
 
-	function drawHappyFace1(ctx, scaleFactor)
-	{
+	function drawHappyFace1(ctx, scaleFactor) {
 		ctx.lineWidth = 2;
 		ctx.strokeStyle = '#000000';
 		ctx.fillStyle = '#000000';
@@ -241,23 +226,22 @@ One interesting aspect of the canvas API is the ability to draw things in a loca
 
 This code simply draws a semi-circle using the `arc` command. The parameters are x-coordinate, y-coordinate, radius, start degree and end degree. If I just called this function for every blob all their mouths would reside at the same place, namely at the x- and y-coordinate origin (0.0, 0.0). Therefore, before calling this function I need to make the canvas API aware of our current position and somehow make it draw stuff there instead. This is done using the `save`, `restore`, `rotate`, `translate` and `scale` commands.
 
-	function drawFace(scaleFactor)
-	{
-		// save the current transposition matrix
+	function drawFace(scaleFactor) {
+		// Save the current transposition matrix
 		ctx.save();
 
-		// move origo to the middle of the blob
+		// Move origo to the middle of the blob
 		ctx.translate(middleX, middleY);
 
-		// rotate everything draw from here on any degrees
+		// Rotate everything draw from here on any degrees
 		ang = figureOutBlobRotation();
 		ctx.rotate(ang);
 
-		// draw the happy face number one
+		// Draw the happy face number one
 		drawHappyFace1(ctx, scaleFactor);
 
-		// make everything go back to the point as it was
-		// when calling save
+		// Make everything go back to the point
+		// as it was when calling save
 		ctx.restore();
 	}
 
@@ -273,9 +257,9 @@ The observant reader might have noticed that the parameter `scaleFactor` could h
 
 The blobs have three different possible kinds of eye. Open, closed and yihaa! eyes, as shown in Figure 4.
 
-<figure id="figure-4">
-	<img src="{{ page.id }}/image-3.png" alt="The 3 different kinds of eyes that blobs have — open, closed, and yihaa!">
-	<figcaption>Figure 4: The 3 different kinds of eyes that blobs have — open, closed, and yihaa!</figcaption>
+<figure class="figure" id="figure-4">
+	<img src="{{ page.id }}/image-3.png" alt="The 3 different kinds of eyes that blobs have — open, closed, and yihaa!" class="figure__media">
+	<figcaption class="figure__caption">Figure 4: The 3 different kinds of eyes that blobs have — open, closed, and yihaa!</figcaption>
 </figure>
 
 It’s really a matter of switching eye state once in a while. This code snippet is called every frame to randomize between open and closed eyes.
@@ -289,8 +273,7 @@ It’s really a matter of switching eye state once in a while. This code snippet
 
 What are the yihaa! eyes then? When using the arrow keys to move the blobs around really fast they change eye style, and blobs love it when you smash then into walls, really they do! Basically, if the blob moves at a certain velocity it gets the yihaa! eyes. To figure the speed of the blob you can use the current and previous position of the middle point mass. Remembering the previous discussion about point masses, consider the following code.
 
-	function getVelocity()
-	{
+	function getVelocity() {
 		var cXpX, cYpY;
 
 		cXpX = currentPosition.getX() - previousPosition.getX();
@@ -301,12 +284,13 @@ What are the yihaa! eyes then? When using the arrow keys to move the blobs aroun
 
 The previous code snippet could be extended to this.
 
-	if(getVelocity() > 0.004)
+	if(getVelocity() > 0.004) {
 		eyeStyle = 3; // the yihaa! eyes
-	else if(eyeStyle == 1 && Math.random() < 0.025)
+	} else if(eyeStyle == 1 && Math.random() < 0.025){
 		eyeStyle = 2; // closed eyes
-	else if(eyeStyle == 2 && Math.random() < 0.3)
+	} else if(eyeStyle == 2 && Math.random() < 0.3){
 		eyeStyle = 1; // open eyes
+	}
 
 	drawEyes(eyeStyle);
 
@@ -316,8 +300,7 @@ If you are familiar with physics you might notice that we actually do not comput
 
 The last part is to make many blobs. A container class called a blob collective holds the blobs, and follows some rules. Blobs can’t get too close to each other, and in order to make them stay away from each other each blob has a constraint set up between its middle point mass and all the other blob’s middle points. This constraint is a special case of the constraints discussed previously, which will allow two point masses to get as far from each other as they want but not too close. The following code will do the job.
 
-	function satisfyBlobToBlobConstrains()
-	{
+	function satisfyBlobToBlobConstrains() {
 		var delta = new Vector();
 		delta.set(pointMassB);
 		delta.sub(pointMassA);
@@ -325,8 +308,7 @@ The last part is to make many blobs. A container class called a blob collective 
 		var dotprod = delta.dotProd(delta);
 
 		var k = shortConst * shortConst;
-		if(dotprod < k)
-		{
+		if(dotprod < k) {
 			var scaleFactor;
 			scaleFactor = k / (dotprod + k) - 0.5;
 			delta.scale(scaleFactor);
@@ -345,30 +327,29 @@ In the same fashion, when joining two blobs I find the smallest one available an
 
 To make the blobs move around using the arrow keys is rather easy. First I figure out if an arrow key was pressed.
 
-	document.onkeydown = function(event)
-	{
+	document.onkeydown = function(event) {
 		var keyCode;
 
-		if(event == null)
+		if(event == null) {
 			keyCode = window.event.keyCode;
-		else
+		} else {
 			keyCode = event.keyCode;
+		}
 
-		switch(keyCode)
-		{
-			// left
+		switch(keyCode) {
+			// Left
 			case 37:
 				addForceToAllBlobs(new Vector(-50.0, 0.0));
 				break;
-			// up
+			// Up
 			case 38:
 				addForceToAllBlobs(new Vector(0.0, -50.0));
 				break;
-			// right
+			// Right
 			case 39:
 				addForceToAllBlobs(new Vector(50.0, 0.0));
 				break;
-			// down
+			// Down
 			case 40:
 				addForceToAllBlobs(new Vector(0.0, 50.0));
 				break;
@@ -386,12 +367,11 @@ An important note on gravity and forces. As you might know two objects independe
 The variable `a` is the acceleration of the point mass, in this case in the x-direction. Clearly the mass of the point mass has something to with this. Heavier point masses will not be as influenced by a force as lighter ones. But this is in clear violation of how gravity works. In my case this still works since I have been a lazy programmer and just made all the point masses weigh the same, namely one weight unit. But you might want to actually have point masses of different weights and still have working gravity. To solve this you can either multiply the gravity force for each point mass with the weight of the point mass.
 
 	pointmass.addForceX(gravity.getX() * pointmass.mass);
-		pointmass.addForceY(gravity.getY() * pointmass.mass);
+	pointmass.addForceY(gravity.getY() * pointmass.mass);
 
 Or you can implement an independent `addAcceleration` method, which would have to be considered when moving the point mass.
 
-	function addAcceleration(acc)
-	{
+	function addAcceleration(acc) {
 		this.acceleration.Add(acc);
 	}
 
@@ -404,35 +384,29 @@ When moving the point mass, I extend the code like this.
 
 The mouse interaction is a bit more complicated. To find the current position of the mouse I have to add a mouse listener, as seen below (note that I stripped out some error checking in the example below to make it less confusing for now.) When writing a mouse listener you will have to add some tests since all browsers do not behave in the same way (see the Blob Sallad source code for a working example.) First we want to know if someone clicked the mouse.
 
-	function getMouseCoords(event)
-	{
+	function getMouseCoords(event) {
 		return {x : event.pageX, y : event.pageY};
 	}
-		document.onmousedown = function(event)
-	{
+	document.onmousedown = function(event) {
 		var mouseCoords;
-
 		mouseCoords = getMouseCoords(event);
 		selectOffset = selectBlob(mouseCoords.x, mouseCoords.y);
 	}
 
 When someone presses the mouse I figure out if a blob is being selected by calling `selectBlob`, which is a part of the blob collective class. What I want to do is check if I actually clicked on a blob.
 
-	function selectBlob(x, y)
-	{
+	function selectBlob(x, y) {
 		var i, minDist = 10000.0;
 		var otherPointMass;
 		var selectedBlob;
 		var selectOffset = null;
 
-		for(i = 0; i < numBlobs; i++)
-		{
+		for(i = 0; i < numBlobs; i++) {
 			otherPointMass = getBlob(i).getMiddlePointMass();
 			aXbX = x - otherPointMass.getXPos();
 			aYbY = y - otherPointMass.getYPos();
 			dist = aXbX * aXbX + aYbY * aYbY;
-			if(dist < minDist)
-			{
+			if(dist < minDist) {
 				minDist = dist;
 				if(dist < getblob(i).getRadius() * 0.5)
 				selectOffset = { x : aXbX, y : aYbY };
@@ -444,8 +418,7 @@ When someone presses the mouse I figure out if a blob is being selected by calli
 
 First I loop through all the blobs in the blob collective and check to see if any blob’s middle point mass is closer to the mouse pointer than its radius; if so, the blob is selected. If a blob is selected I let the blob collective remember which one. The select offset is the distance from the middle point mass to the mouse pointer. I use the select offset later when moving the mouse around to avoid making the blob jump to the mouse position, which leads to the next part, what happens when moving the mouse.
 
-	document.onmousemove = function(event)
-	{
+	document.onmousemove = function(event) {
 		var mouseCoords;
 
 		mouseCoords = getMouseCoords(event);
@@ -458,8 +431,7 @@ First I loop through all the blobs in the blob collective and check to see if an
 
 In this part I get the mouse position and subtract the select offset. This is to stop the blob “jumping” to the position of the mouse. Then I call the function `moveSelectedBlobTo`.
 
-	function moveSelectedBlobTo(x, y)
-	{
+	function moveSelectedBlobTo(x, y) {
 		if(selectedBlob == null)
 		return;
 
@@ -469,8 +441,7 @@ In this part I get the mouse position and subtract the select offset. This is to
 		x -= blobPos.getX(x);
 		y -= blobPos.getY(y);
 
-		for(i = 0; i < selectedBlob.pointMasses.length; i++)
-		{
+		for(i = 0; i < selectedBlob.pointMasses.length; i++) {
 			blobPos = selectedBlob.pointMasses[i].getPos();
 			blobPos.addX(x);
 			blobPos.addY(y);
@@ -482,8 +453,7 @@ In this part I get the mouse position and subtract the select offset. This is to
 
 This is pretty straightforward — I have simply added the offset of the mouse to every point mass of the blob. An interesting aspect of this is that you do not have to bother with the velocity of the point mass since that is, again, an implicit result of moving the point mass around in this fashion. As a last measure I have registered the following function, which is triggered when releasing the mouse.
 
-	document.onmouseup = function(event)
-	{
+	document.onmouseup = function(event) {
 		unselectBlob();
 		savedMouseCoords = null;
 		selectOffset = null;
