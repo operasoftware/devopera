@@ -16,11 +16,11 @@ layout: article
 
 ## Introduction
 
-On a recent plane flight, I starting noodling around with combining flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using Modernizr you can feed legacy properties to older browsers that support the 2009 legacy flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no flexbox support at all — like a simple tabbed interface perhaps.
+On a recent plane flight, I starting noodling around with combining Flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using Modernizr you can feed legacy properties to older browsers that support the 2009 legacy Flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no Flexbox support at all — like a simple tabbed interface perhaps.
 
 <figure class="figure" id="figure-1">
 	<img src="{{ page.id }}/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 1: A simple accordion interface created with flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
+	<figcaption class="figure__caption" markdown="span">Figure 1: A simple accordion interface created with Flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
 </figure>
 
 [2]: {{ page.id }}/transition-js/
@@ -64,17 +64,17 @@ The CSS I used was as follows:
 		flex:2;
 		}
 
-I happily saw that it worked fine (In Opera and Chrome anyway, other browsers don’t support modern flexbox) — on hover, the `<article>`s smoothly increase in size, with their siblings shrinking to accommodate ([run the initial test example][3]).
+I happily saw that it worked fine (In Opera and Chrome anyway, other browsers don’t support modern Flexbox) — on hover, the `<article>`s smoothly increase in size, with their siblings shrinking to accommodate ([run the initial test example][3]).
 
 [3]: {{ page.id }}/example.html
 
-## A better looking transition flexbox example
+## A better looking transition Flexbox example
 
 Following on from this I created a better looking example, and continued to play (see Figure 2).
 
 <figure class="figure" id="figure-2">
 	<img src="{{ page.id }}/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 2: A simple accordion interface created with flexbox and transitions [run the transitions example][5]</figcaption>
+	<figcaption class="figure__caption" markdown="span">Figure 2: A simple accordion interface created with Flexbox and transitions [run the transitions example][5]</figcaption>
 </figure>
 
 [5]: {{ page.id }}/transition.html
@@ -111,11 +111,11 @@ The HTML structure is basically the same, except that I’ve added in more conte
 
 Note that I’ve hidden the headings for now, as they were creating a weird problem with the flex animation not working at lower viewport widths, refusing to expand beyond the width of the headings. Don’t worry: I’ll throw in a fix for this later on in the article!
 
-## An animation flexbox example
+## An animation Flexbox example
 
 The next thing I tried was creating a similar example, but using animations applied to the `<article>` using JavaScript: it is surely better to allow the user to expand and contract content by clicking, rather than being at the mercy of hover states!
 
-My code base for this example ([try the flexbox animation example live][6]) is very similar to the previous example, except that there are no transitions, and I have defined the following animations to control the width increases/decreases:
+My code base for this example ([try the Flexbox animation example live][6]) is very similar to the previous example, except that there are no transitions, and I have defined the following animations to control the width increases/decreases:
 
 [6]: {{ page.id }}/animation-js.html
 
@@ -190,7 +190,7 @@ I thought a bit more about this, and decided to try the JavaScript toggling tech
 
 - Made the boxes fill the whole of the screen width **and** height
 - Added the headings back in, fixing the layout problem they were creating and keeping them accessible in the process
-- Used Modernizr to make the examples work in older browsers that support the legacy flexbox syntax
+- Used Modernizr to make the examples work in older browsers that support the legacy Flexbox syntax
 - Made it keyboard accessible
 
 [Try the final example live][7].
@@ -270,13 +270,13 @@ Next, the full CSS for the `<html>`, `<body>` and `<article>` ended up looking l
 		width:200px;
 		}
 
-The transitions are defined here, but this time I have no `article:hover` rule to dictate what happens on mouse over. In addition, I have used Modernizr’s class names to apply legacy flex properties to `<body>` and `<section>` only for browsers that don’t support modern flexbox but do support flexbox legacy, and I’ve added in IE-specific flex properties (e.g. `display: -ms-flexbox; -ms-box-orient: horizontal;`) to the main rules so that IE10 will now support the example. This will now work in Safari, Firefox and IE10 as well.
+The transitions are defined here, but this time I have no `article:hover` rule to dictate what happens on mouse over. In addition, I have used Modernizr’s class names to apply legacy flex properties to `<body>` and `<section>` only for browsers that don’t support modern Flexbox but do support Flexbox legacy, and I’ve added in IE-specific flex properties (e.g. `display: -ms-flexbox; -ms-box-orient: horizontal;`) to the main rules so that IE10 will now support the example. This will now work in Safari, Firefox and IE10 as well.
 
-Note: Read the [Intelligent fallbacks for flexbox][8] section of my previous flexbox article for more detailed information on the current state of flexbox browser support, and the legacy syntax required for cross browser support.
+Note: Read the [Intelligent fallbacks for Flexbox][8] section of my previous Flexbox article for more detailed information on the current state of Flexbox browser support, and the legacy syntax required for cross browser support.
 
 [8]: /articles/advanced-cross-browser-flexbox/#fallbacks
 
-Also note the `width` and `height` of `100%` and `margin:0` on the `<html>` element, and `height:inherit` and `margin:0` on the `<body>`. This forces the contents to fill up the viewport, whatever width and height it is, which works well with the flexbox inside it.
+Also note the `width` and `height` of `100%` and `margin:0` on the `<html>` element, and `height:inherit` and `margin:0` on the `<body>`. This forces the contents to fill up the viewport, whatever width and height it is, which works well with the Flexbox inside it.
 
 Now let’s look at the JavaScript:
 
@@ -311,7 +311,7 @@ Now let’s look at the JavaScript:
 
 This is very similar to before. I’m looping through all the `<article>`, but this time I’m adding an `onfocus` handler to them, not `onclick`. This means that the article can be keyboard accessible, so long as the `<article>`s can receive focus. I have handled that by adding an attribute of `tabindex="0"` to all of them. The one problem is that now you can’t close a chapter again by clicking on it when it is open. You can can only close a chapter by clicking on a different chapter. I’ve left this as a problem for another day.
 
-In the `toggleFlex()` function, I am looping through all of the `<article>`, and checking which one is being clicked by checking its ID value. The one that is clicked is opened up and the text inside made visible by giving it a different flex basis value (or a different width in the case of legacy flexbox browsers, as they don’t have flex basis available, and I couldn’t get this to work in any other way) and high text opacity, plus it is given a `className` to set up a toggle:
+In the `toggleFlex()` function, I am looping through all of the `<article>`, and checking which one is being clicked by checking its ID value. The one that is clicked is opened up and the text inside made visible by giving it a different flex basis value (or a different width in the case of legacy Flexbox browsers, as they don’t have flex basis available, and I couldn’t get this to work in any other way) and high text opacity, plus it is given a `className` to set up a toggle:
 
 	if(Modernizr.flexbox) {
 		articles[j].className = 'flex-out';
@@ -357,6 +357,6 @@ I have then added the visual headings back in using a CSS counter and absolutely
 
 ## Summary
 
-This article has been fun to write, and I hope I have created an interesting technique that has at least given you food for thought! It is worth noting that you can achieve a similar effect using floated elements and focus states, like in this [float demo][9]. However, this is most inflexible — it relies on knowing the exact number of chapters you are going to have, and setting the percentages to suit. With the flexbox method, it should work regardless of the number of child containers, and without needing to worry about exact measurements.
+This article has been fun to write, and I hope I have created an interesting technique that has at least given you food for thought! It is worth noting that you can achieve a similar effect using floated elements and focus states, like in this [float demo][9]. However, this is most inflexible — it relies on knowing the exact number of chapters you are going to have, and setting the percentages to suit. With the Flexbox method, it should work regardless of the number of child containers, and without needing to worry about exact measurements.
 
 [9]: {{ page.id }}/float-test.html
