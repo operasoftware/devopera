@@ -14,30 +14,19 @@ layout: none
 		<email></email>
 	</author>
 
-{% capture entries %}
-	{% for post in site.posts %}
-		{% capture url_sections %}{{ post.id | split: '/' | size }}{% endcapture %}
-		{% unless url_sections == '4' %}
-			{% if post.categories contains 'articles' %}
-	<entry>
-		<id>http://dev.opera.com{{ post.url }}</id>
-		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
-		<title>{{ post.title | markdownline }}</title>
-		<published>{{ post.date | date_to_xmlschema }}</published>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<author>
-			<name>{% include author-name.html object=post %}</name>
-		</author>
-		<content type="html">{{ post.content | xml_escape }}</content>
-	</entry>(•)
-			{% endif %}
-		{% endunless %}
-	{% endfor %}
-{% endcapture %}
-
-{% assign entries = entries | split: '(•)' %}
+{% assign entries = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
 {% for entry in entries limit:25 %}
-	{{ entry | replace: '=&quot;/','=&quot;http://dev.opera.com/' }}
+	<entry>
+		<id>http://dev.opera.com{{ entry.url }}</id>
+		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ entry.url }}"/>
+		<title>{{ entry.title | markdownline }}</title>
+		<published>{{ entry.date | date_to_xmlschema }}</published>
+		<updated>{{ entry.date | date_to_xmlschema }}</updated>
+		<author>
+			<name>{% include author-name.html object=entry %}</name>
+		</author>
+		<content type="html">{{ entry.content | replace: '="/','="http://dev.opera.com/' | xml_escape }}</content>
+	</entry>
 {% endfor %}
 
 </feed>
