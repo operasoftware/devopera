@@ -1,0 +1,43 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Dev.Opera Articles</title>
+	<link href="http://dev.opera.com/"/>
+	<link type="application/atom+xml" rel="self" href="http://dev.opera.com/feed/"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://dev.opera.com/</id>
+	<author>
+		<name>Dev.Opera editors</name>
+		<email></email>
+	</author>
+
+{% capture entries %}
+	{% for post in site.posts %}
+		{% capture url_sections %}{{ post.id | split: '/' | size }}{% endcapture %}
+		{% unless url_sections == '4' %}
+			{% if post.categories contains 'articles' %}
+	<entry>
+		<id>http://dev.opera.com{{ post.url }}</id>
+		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
+		<title>{{ post.title | markdownline }}</title>
+		<published>{{ post.date | date_to_xmlschema }}</published>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<author>
+			<name>{% include author-name.html object=post %}</name>
+		</author>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>(•)
+			{% endif %}
+		{% endunless %}
+	{% endfor %}
+{% endcapture %}
+
+{% assign entries = entries | split: '(•)' %}
+{% for entry in entries limit:25 %}
+	{{ entry | replace: '=&quot;/','=&quot;http://dev.opera.com/' }}
+{% endfor %}
+
+</feed>
