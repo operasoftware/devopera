@@ -11,6 +11,7 @@ tags:
 - json
 - object-additions
 - strict-mode
+language: tr
 license: cc-by-3.0
 layout: article
 ---

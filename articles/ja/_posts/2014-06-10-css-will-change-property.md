@@ -5,6 +5,7 @@ authors:
 tags:
 - css
 - javascript
+language: ja
 translator: POSTD
 source: http://postd.cc/css-will-change-property/
 license: cc-by-3.0
