@@ -2,10 +2,10 @@
 title: CSS `will-change`プロパティについて知っておくべきこと
 authors:
 - sara-soueidan
-intro: 'CSS `will-change` is a new property that allows you to let a browser know ahead of time that an element may change, so that it can make any preparatory optimisations. Sara Soueidan shows you how to put an end to cargo-cult hacks, and speed up your animations.'
 tags:
 - css
 - javascript
+language: ja
 translator: POSTD
 source: http://postd.cc/css-will-change-property/
 license: cc-by-3.0

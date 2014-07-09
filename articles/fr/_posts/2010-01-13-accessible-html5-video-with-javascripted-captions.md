@@ -10,6 +10,7 @@ tags:
 - opera-10
 - accessibility
 - video
+language: fr
 license: cc-by-nc-sa-3.0
 layout: article
 ---

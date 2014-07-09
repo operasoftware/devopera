@@ -37,15 +37,6 @@ module.exports = function(grunt) {
 				cwd: '_site/',
 				src: '**/index.html',
 				dest: '_site/'
-			},
-			xml: {
-				options: {
-					collapseWhitespace: true,
-					keepClosingSlash: true
-				},
-				files: {
-					'_site/feed/index.xml': '_site/feed/index.xml'
-				}
 			}
 		},
 		watch: {
