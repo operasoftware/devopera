@@ -16,7 +16,9 @@ layout: none
 
 {% capture entries %}
 	{% for post in site.posts %}
-		{% if post.categories contains 'blog' or post.categories contains 'articles' or post.categories contains 'tv' %}
+		{% capture url_sections %}{{ post.id | split: '/' | size }}{% endcapture %}
+		{% unless url_sections == '4' %}
+			{% if post.categories contains 'blog' or post.categories contains 'articles' or post.categories contains 'tv' %}
 	<entry>
 		<id>http://dev.opera.com{{ post.url }}</id>
 		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
@@ -28,7 +30,8 @@ layout: none
 		</author>
 		<content type="html">{{ post.content | xml_escape }}</content>
 	</entry>(•)
-		{% endif %}
+			{% endif %}
+		{% endunless %}
 	{% endfor %}
 {% endcapture %}
 
