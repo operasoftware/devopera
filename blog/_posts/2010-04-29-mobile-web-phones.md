@@ -10,7 +10,6 @@ tags:
 - mobile
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera has just released its <a href="http://www.opera.com/smw/2010/03/">State of the Mobile Web</a> for the month of March. Part four of this report highlights the global rankings for phones used by Opera Mini users. While all the buzz about the mobile Web focuses on the sexy touch screen smart phone market, only <em>four</em> of the top twenty phones used by Opera Mini users are smart phones.  Only <em>one</em> of these have a touch screen. It is worth pointing out that Opera Mini is the leading global mobile browser by both <a href="http://gs.statcounter.com/#mobile_browser-ww-monthly-200903-201004">StatCounter (26%)</a> and <a href="http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8">Net Applications (0.78% of the full Web market)</a>. Note: I’ve linked to the OS market share report for Net Applications. They only track iPhone as part of this metric. Opera Mini (excluding Opera Mini on iPhone) is tracked as Java ME. You can cross reference this is all Opera Mini as it matches up with their <a href="http://marketshare.hitslink.com/browser-market-share.aspx?qprid=0">browser market share</a> for Opera Mini.</p>
@@ -22,35 +21,35 @@ The article <a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-
 
 
 <table>
-            <caption>Opera Mini top 20 global handsets</caption>
-    <thead>
-        <tr><th>Model</th><th>Screen Resolution</th><th>Screen Size</th><th>Network</th><th>Input</th><th>OS</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Nokia 5130 XpressMusic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
-        <tr><td>Nokia 6300</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition
+						<caption>Opera Mini top 20 global handsets</caption>
+		<thead>
+				<tr><th>Model</th><th>Screen Resolution</th><th>Screen Size</th><th>Network</th><th>Input</th><th>OS</th></tr>
+		</thead>
+		<tbody>
+				<tr><td>Nokia 5130 XpressMusic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
+				<tr><td>Nokia 6300</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition
 </td></tr>
-    <tr><td>Nokia 2700 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
-    <tr><td>Nokia N70</td><td>176 x 208 pixels</td><td>2.1 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S60 2nd edition</td></tr>
-    <tr><td>Nokia 5310 XpressMusic</td><td>240 x 320 pixels (QVGA)</td><td>2.1 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
-     <tr><td>Nokia 3110 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition</td></tr>
+		<tr><td>Nokia 2700 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
+		<tr><td>Nokia N70</td><td>176 x 208 pixels</td><td>2.1 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S60 2nd edition</td></tr>
+		<tr><td>Nokia 5310 XpressMusic</td><td>240 x 320 pixels (QVGA)</td><td>2.1 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
+		 <tr><td>Nokia 3110 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition</td></tr>
  <tr><td>Nokia N73</td><td>240 x 320 pixels (QVGA)</td><td>2.4 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S60 3rd edition</td></tr>
-     <tr><td>Nokia 2330 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
-     <tr><td>Nokia 5800 XpressMusic</td><td>360 x 640 pixels (nHD)</td><td>3.2 inches</td><td>3G 3.6 Mbps</td><td>Touch</td><td>S60 5th Edition
+		 <tr><td>Nokia 2330 classic</td><td>128 x 160 pixels</td><td>1.8 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 5th edition</td></tr>
+		 <tr><td>Nokia 5800 XpressMusic</td><td>360 x 640 pixels (nHD)</td><td>3.2 inches</td><td>3G 3.6 Mbps</td><td>Touch</td><td>S60 5th Edition
 </td></tr>
-      <tr><td>Nokia 6700 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.2 inches</td><td>3G 10 Mbps</td><td>Keypad</td><td>S40 6th edition</td></tr>
-     <tr><td>Nokia 3120 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 5th edition</td></tr>
-    <tr><td>Nokia E63</td><td>320 x 240 pixels (QVGA)</td><td>2.36 inches</td><td>3G 384 kbps</td><td>QWERTY</td><td>S60 3rd edition
+			<tr><td>Nokia 6700 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.2 inches</td><td>3G 10 Mbps</td><td>Keypad</td><td>S40 6th edition</td></tr>
+		 <tr><td>Nokia 3120 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 5th edition</td></tr>
+		<tr><td>Nokia E63</td><td>320 x 240 pixels (QVGA)</td><td>2.36 inches</td><td>3G 384 kbps</td><td>QWERTY</td><td>S60 3rd edition
 </td></tr>
-   <tr><td>Nokia 6233</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 3rd edition</td></tr>
-     <tr><td>Sony Ericsson K750i</td><td>176 x 220 pixels</td><td>1.8 inches</td><td>GPRS</td><td>Keypad</td><td>Sony Ericsson JP-5</td></tr>
-     <tr><td>Nokia 6120 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 3.6 Mbps</td><td>Keypad</td><td>S60 3rd edition</td></tr>
-     <tr><td>Nokia 6500 slide</td><td>240 x 320 pixels (QVGA)</td><td>2.2 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 4th edition</td></tr>
-     <tr><td>Nokia E71</td><td>320 x 240 pixels (QVGA)</td><td>2.36 inches</td><td>3G 3.6 Mbps</td><td>QWERTY</td><td>S60 3rd edition</td></tr>
-     <tr><td>Sony Ericsson K800i</td><td>240 x 320 pixels (QVGA)</td><td>2 inches</td><td>GPRS</td><td>Keypad</td><td>Sony Ericsson JP-7</td></tr>
-      <tr><td>Nokia 5300</td><td>240 x 320 pixels (QVGA)</td><td>2.1 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition</td></tr>
-      <tr><td>Sony Ericsson K550i</td><td>176 x 220 pixels</td><td>1.9 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>Sony Ericsson JP-7</td></tr>
-    </tbody>
+	 <tr><td>Nokia 6233</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 3rd edition</td></tr>
+		 <tr><td>Sony Ericsson K750i</td><td>176 x 220 pixels</td><td>1.8 inches</td><td>GPRS</td><td>Keypad</td><td>Sony Ericsson JP-5</td></tr>
+		 <tr><td>Nokia 6120 classic</td><td>240 x 320 pixels (QVGA)</td><td>2.0 inches</td><td>3G 3.6 Mbps</td><td>Keypad</td><td>S60 3rd edition</td></tr>
+		 <tr><td>Nokia 6500 slide</td><td>240 x 320 pixels (QVGA)</td><td>2.2 inches</td><td>3G 384 kbps</td><td>Keypad</td><td>S40 4th edition</td></tr>
+		 <tr><td>Nokia E71</td><td>320 x 240 pixels (QVGA)</td><td>2.36 inches</td><td>3G 3.6 Mbps</td><td>QWERTY</td><td>S60 3rd edition</td></tr>
+		 <tr><td>Sony Ericsson K800i</td><td>240 x 320 pixels (QVGA)</td><td>2 inches</td><td>GPRS</td><td>Keypad</td><td>Sony Ericsson JP-7</td></tr>
+			<tr><td>Nokia 5300</td><td>240 x 320 pixels (QVGA)</td><td>2.1 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>S40 3rd edition</td></tr>
+			<tr><td>Sony Ericsson K550i</td><td>176 x 220 pixels</td><td>1.9 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>Sony Ericsson JP-7</td></tr>
+		</tbody>
 </table>
 
 
@@ -69,13 +68,13 @@ The article <a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-
 <p>All together there are the following common resolutions that are worth testing for on real devices or the emulators in portrait and landscape:</p>
 
 <ul>
-  <li>240 x 320 pixels (QVGA) and 240 x 400 pixels (WQVGA) e.g. Nokia 5310 XpressMusic/Nokia E72</li>
-  <li>176 x 220 pixels (Java Platform phones) and  176 x 208 pixels (S60 1st and 2nd edition) e.g. Nokia N70</li>
-  <li>128 x 160 pixels (~QQVGA) e.g. Nokia 3110 classic </li>
-  <li>360 x 640 pixels (nHD) e.g. Nokia 5800 XpressMusic</li>
-  <li>480 x 360 pixels (newer BlackBerry) e.g. BlackBerry Bold</li>
-  <li>320 x 480 pixels (HVGA) e.g. HTC Legend/Apple iPhone</li>
-  <li>480 x 800/854 pixels (WVGA) e.g. HTC Desire/Motorola Droid</li>
+	<li>240 x 320 pixels (QVGA) and 240 x 400 pixels (WQVGA) e.g. Nokia 5310 XpressMusic/Nokia E72</li>
+	<li>176 x 220 pixels (Java Platform phones) and  176 x 208 pixels (S60 1st and 2nd edition) e.g. Nokia N70</li>
+	<li>128 x 160 pixels (~QQVGA) e.g. Nokia 3110 classic </li>
+	<li>360 x 640 pixels (nHD) e.g. Nokia 5800 XpressMusic</li>
+	<li>480 x 360 pixels (newer BlackBerry) e.g. BlackBerry Bold</li>
+	<li>320 x 480 pixels (HVGA) e.g. HTC Legend/Apple iPhone</li>
+	<li>480 x 800/854 pixels (WVGA) e.g. HTC Desire/Motorola Droid</li>
 </ul>
 
 <p>Any phone that is capable of running Opera Mobile (currently Windows Mobile, S60 and Android) can also be debugged using the remote debugging feature of Opera Dragonfly.  If you have suggestions on recommended phones for testing then leave a comment, or send me a message @dstorey on Twitter.</p>

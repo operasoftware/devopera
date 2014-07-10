@@ -4,7 +4,6 @@ authors:
 - rachel-mccollin
 intro: 'This article presents a case study that specifically details solutions to some responsive design problems encountered when developing sites with WordPress, including responsive images, responsive video, and site planning.'
 license: cc-by-3.0
-layout: article
 ---
 <p>Responsive web design is maturing.</p>
 

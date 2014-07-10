@@ -8,7 +8,6 @@ tags:
 - ecmascript
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>What is <span lang="id">Carakan</span>?</h3>

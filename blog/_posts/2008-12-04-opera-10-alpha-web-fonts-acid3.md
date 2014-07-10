@@ -12,7 +12,6 @@ tags:
 - selectors-api
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera 10 alpha has been released. Don&#39;t look too much at the <abbr>UI</abbr>, as this alpha   showcases the all-new  2.2 version of Presto, Opera&#39;s  core rendering engine.</p>

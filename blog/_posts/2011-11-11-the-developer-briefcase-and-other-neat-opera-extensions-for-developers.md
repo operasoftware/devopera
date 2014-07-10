@@ -8,7 +8,6 @@ tags:
 - developers
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <span class='imgright'><img alt='' src='/blog/the-developer-briefcase-and-other-neat-opera-extensions-for-developers/screenshot2.jpg' /></span>

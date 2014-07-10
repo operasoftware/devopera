@@ -7,7 +7,6 @@ tags:
 - mwc
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>One of the most exciting technologies to arrive in the mobile arena lately is Widgets. If you don&#39;t know the name, think <em>applications</em> that live on your mobile device, that can look like native applications but are run using a browser rendering engine (with no browser chrome) and which are made using the Open Web technologies HTML, CSS, JavaScript and SVG.</p>

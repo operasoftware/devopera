@@ -10,7 +10,6 @@ tags:
 - unite
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Winter is coming to Norway (and Poland and Sweden, but allegedly finishing in Melbourne). Although the long darkness apparently means there is little else to do, we have also been busy over the summer.<br/><br/>As well as <a href="http://my.opera.com/core/blog/eventsource" rel="nofollow" target="_blank">updated Server Sent Events</a> and <a href="http://my.opera.com/core/blog/websockets" rel="nofollow" target="_blank">implementing Web Sockets</a> we&#39;ve made some other big steps in Core. The biggest news, of course, is extensions, but there&#39;s more to customisation than downloading an extension:<br/><br/>We will be publishing some more detailed information on the extension framework here very soon. But while you&#39;re waiting, a little more info on extensions, and a couple of other ways we have extended the platform since summer. ... </p><!--more--><h3>Extensions</h3>

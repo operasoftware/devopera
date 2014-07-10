@@ -9,7 +9,6 @@ tags:
 - devices
 - tv
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 One of the biggest challenges designing content for TVs is navigation. Not only are there several different methods that can be used to navigate a page, but none of them provide the perfect blend of convenience and practicality, at least not yet. At the time of writing, a user could be controlling their TV browsing session with any of the following devices:

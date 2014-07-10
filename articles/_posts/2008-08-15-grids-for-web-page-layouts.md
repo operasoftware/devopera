@@ -4,7 +4,6 @@ authors:
 - craig-grannell
 intro: 'In this article, Craig Grannell builds on his previous article to take us through the basics of actually laying out pages on a grid. It’s packed with essential tips.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -41,24 +40,24 @@ layout: article
 <p>The basic page structure can therefore be marked up as follows:</p>
 
 <pre>&lt;div id="wrapper"&gt;
-  &lt;div id="masthead"&gt;&lt;/div&gt;
-  &lt;div id="contentArea"&gt;&lt;/div&gt;
-  &lt;div id="sidebar"&gt;&lt;/div&gt;
+	&lt;div id="masthead"&gt;&lt;/div&gt;
+	&lt;div id="contentArea"&gt;&lt;/div&gt;
+	&lt;div id="sidebar"&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
 
 <p>Within those areas, you can then place nested divs, with <code>class</code> values that relate to the number of grid columns they span. In the following example, there are three rows of content blocks: the first row has four two-column blocks, the second has a six-column block and a two-column block, and the third has two four-column blocks.</p>
 
 <pre>&lt;div id="contentArea"&gt;
-  &lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
-  &lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
-  &lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
-  &lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
+	&lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
+	&lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
+	&lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
+	&lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
 
-  &lt;div class="sixCol"&gt;6-Col&lt;/div&gt;
-  &lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
+	&lt;div class="sixCol"&gt;6-Col&lt;/div&gt;
+	&lt;div class="twoCol"&gt;2-Col&lt;/div&gt;
 
-  &lt;div class="fourCol"&gt;4-Col&lt;/div&gt;
-  &lt;div class="fourCol"&gt;4-Col&lt;/div&gt;
+	&lt;div class="fourCol"&gt;4-Col&lt;/div&gt;
+	&lt;div class="fourCol"&gt;4-Col&lt;/div&gt;
 &lt;/div&gt;</pre>
 
 <p>Purists might argue that these values aren&#8217;t semantic. However, since it&#8217;s perfectly acceptable to use multiple <code>class</code> values, it makes sense to keep the column values separate and to add further styles to specific elements by way of a section-specific <code>class</code> value:</p>
@@ -80,20 +79,20 @@ layout: article
 <p>Thus, for the internal boxes shown in Figure 3, we end up with CSS such as the following:</p>
 
 <pre>.twoCol, .fourCol, .sixCol {
-  margin-right: 17px;
-  float: left;
+	margin-right: 17px;
+	float: left;
 }
 
 .twoCol {
-  width: 143px;
+	width: 143px;
 }
 
 .fourCol {
-  width: 303px;
+	width: 303px;
 }
 
 .sixCol {
-  width: 463px;
+	width: 463px;
 }</pre>
 
 <p>Note the grouped selector that adds a <code>margin-right</code> setting to every box type, to ensure it has a correct gutter at its right-hand side, and that subsequent content is therefore positioned correctly. (In the example screen-grabs, colors and bottom margins have also been added for clarity.)</p>
@@ -101,22 +100,22 @@ layout: article
 <p>For containing divs, we need a different method. Although the sidebar width should technically be as per the four-column box, if we set it like this, its internal content won&#8217;t be wide enough to house two two-column boxes and their <code>margin-right</code> values, so they&#8217;d sit one under the other. Therefore, the <code>width</code> settings for containing boxes must incorporate the right-most gutter. The math for this is simple: 80px multiplied by the number of grid columns the relevant element spans:</p>
 
 <pre>#wrapper {
-  width: 960px;
-  margin: 0 auto;
+	width: 960px;
+	margin: 0 auto;
 }
 
 #masthead {
-  width: 960px;
+	width: 960px;
 }
 
 #contentArea {
-  float: left;
-  width: 640px;
+	float: left;
+	width: 640px;
 }
 
 #sidebar {
-  float: left;
-  width: 320px;
+	float: left;
+	width: 320px;
 }</pre>
 
 <p>(Note that for Internet Explorer 6 and below to behave, <code>overflow: hidden;</code> may need to be added to the <code>#contentArea</code> and <code>#sidebar</code> rules via CSS attached using a <a href="http://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">conditional comment</a>.)</p>
@@ -131,7 +130,7 @@ layout: article
 <p>To get around this, surround each &#8220;row&#8221; of boxes/content blocks in a clearing div as follows:</p>
 
 <pre>&lt;div class="rowContainer"&gt;
-  [a row of boxes]
+	[a row of boxes]
 &lt;/div&gt;</pre>
 
 <p>Then, set the CSS for <code>.rowContainer</code> to <code>clear: left;</code>. This will fix flow issues in all major browsers.  (Note that future CSS will enable you to solve this problem without clearing divs, perhaps via the use of <code>display: table</code>. However, with support in current versions of Internet Explorer unavailable, manual clearing is needed for the time being.)</p>

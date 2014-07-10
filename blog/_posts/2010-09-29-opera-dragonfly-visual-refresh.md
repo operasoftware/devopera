@@ -7,7 +7,6 @@ tags:
 - dragonfly
 - labs
 license: os-asa
-layout: post
 ---
 
 The Opera Dragonfly team is hard at work on the first stable release. Just as dragonflies metamorphose from ugly larvae into beautiful dragonflies, we are in the process of redefining our user interface.

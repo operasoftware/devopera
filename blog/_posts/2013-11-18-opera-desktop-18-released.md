@@ -11,7 +11,6 @@ tags:
 - extensions
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 [Opera Desktop 18 for Mac and Windows][1] is out, based on Chromium 31. ([See features and download][1])

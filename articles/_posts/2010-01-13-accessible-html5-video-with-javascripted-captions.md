@@ -12,7 +12,6 @@ tags:
 - accessibility
 - video
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 NOTE, September 22nd 2011: There is a new and shiny way to add subtitles to HTML5 video using the new [`<track>`][1] element, but this isn’t yet implemented. The hacky technique discussed below works now, but it isn’t the "right" way to do it.

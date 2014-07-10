@@ -10,7 +10,6 @@ tags:
 - chrome
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>As well as being a valuable partner to Opera, with the release of Google Chrome, Google has also become a competitor.  We welcome that as more competitors means more innovation, and less likelihood that the Web will be dominated by one single vendor.</p>

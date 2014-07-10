@@ -7,7 +7,6 @@ tags:
 - conference
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I was honoured to return to Staffordshire University to talk about HTML5, CSS 3 and the Web in general. It&#39;s great to talk there, as the staff and students are really clueful. And Fiona Knight gives you lunch.</p>

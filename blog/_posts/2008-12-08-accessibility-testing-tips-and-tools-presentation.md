@@ -9,7 +9,6 @@ tags:
 - methodology
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I was fortunate enough to get invited to speak about <strong>Accessibility testing tips and tools</strong> at Sussex University recently courtesy of Dr Graham McAllister.</p>

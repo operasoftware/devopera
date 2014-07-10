@@ -8,7 +8,6 @@ tags:
 - university
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I am about to embark on somewhat of a mission. Of education. In March I am visiting a number of universities to give talks on HTML5 and CSS3, along with slotting SXSWi somewhere in the middle of it all to talk about cross-device accessibility and web standards education (and maybe have a beer or two).</p>

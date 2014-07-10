@@ -10,7 +10,6 @@ tags:
 - aria
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I spoke at Open Source Conference (OSCON) on using <abbr>HTML</abbr> 5 today. A kind audience member videoed the  talk.</p>

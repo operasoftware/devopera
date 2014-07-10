@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 - PATCH-657, skydrive: disable new upload code (thanks to burnout426) due to various Opera bugs as discussed in comments for previous post. Note that this should make it possible to upload/download files, but editing is still very much broken — due to browser sniffing. This patch is for 11.6x only, in the hopes that we’ll get our act together and fix the issues properly in 12.

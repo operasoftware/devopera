@@ -9,7 +9,6 @@ tags:
 - svg
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera is a long time sponsor of <a href="http://atmedia.webdirections.org/">Web Directions</a> and supporter of SVG, so when I saw their <a href="http://nobitsherlock.com/">latest contest</a>, I thought it would be of interest to our readers. Our friends at Microsoft have got together with the Web Directions crew, presumably to celebrate SVG in IE9 – and boy is it worth celebrating – to create a contest to make a progress bar using SVG.</p>

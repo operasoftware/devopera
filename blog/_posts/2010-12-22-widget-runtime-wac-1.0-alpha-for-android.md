@@ -9,7 +9,6 @@ tags:
 - android
 - labs
 license: os-asa
-layout: post
 ---
 
 Howdy folks, in these short days of the year — “vintersolverv” in Norwegian — Opera Software has prepared something to lighten things up: the alpha release of our mobile widget manager for Android with support for WAC 1.0 APIs!

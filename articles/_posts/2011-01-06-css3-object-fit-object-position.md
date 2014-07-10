@@ -8,7 +8,6 @@ tags:
 - open-web
 - opera-11
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 ## Introduction

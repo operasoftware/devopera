@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Our latest experimental build introduces the ability to inspect JavaScript event listeners from inside the DOM view.</p>

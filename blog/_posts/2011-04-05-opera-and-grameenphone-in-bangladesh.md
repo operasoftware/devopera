@@ -7,7 +7,6 @@ tags:
 - opera-mini
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>At Opera we believe passionately that everyone has a right to the Web.  I&#39;m personally really pleased that we&#39;ve announced a partnership with <a href="http://www.grameenphone.com/">Grameenphone</a> in Bangladesh to release a <a href="http://www.opera.com/press/releases/2011/04/05/">co-branded version of Opera Mini</a>, because I visited to Bangladesh 17 years ago and really enjoyed myself.</p>

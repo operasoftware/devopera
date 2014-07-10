@@ -10,7 +10,6 @@ tags:
 - accessibility
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Since before the dawn of time, designers have wanted sexy fonts or images for headings, links and buttons on web pages. The adoption of <a href="http://www.alistapart.com/articles/cssatten"><code>@font-face</code></a> for CSS to use any font a designer specifies will take away some of the use cases. The time-honoured method of using <code>img</code> in the source code, and using the <code>alt</code> attribute to as a text alternative still works, of course, and very nice it is too, but some designers prefer to use CSS to replace text with an image.</p>

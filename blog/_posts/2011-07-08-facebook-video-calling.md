@@ -8,7 +8,6 @@ tags:
 - site-compatibility
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 This week, [Facebook][1] unveiled its new [Video Calling][2] feature. Unfortunately, Opera is currently not supported.

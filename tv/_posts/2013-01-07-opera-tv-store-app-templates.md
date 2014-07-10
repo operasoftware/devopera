@@ -7,7 +7,6 @@ tags:
 - store
 - tv
 license: cc-by-3.0
-layout: article
 ---
 
 ## Introduction

@@ -7,7 +7,6 @@ tags:
 - my.opera
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 As announced on the [Choose Opera][1] blog, we’re closing the my.Opera blogging platform in five months’ time. This change also affects the ODIN blog. (If you use My.Opera to host any personal blogs or photos, be sure to read the post on how to export your data.)

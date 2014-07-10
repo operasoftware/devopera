@@ -4,7 +4,6 @@ authors:
 - esteban-velazquez
 intro: 'In the first article in this series, we looked at the basics of Robohydra, the flexible test server tool for testing client-server interactions. In this — the second article — we are taking this knowledge further, looking at more complex examples that utilize Robohydra as a mock server to send customized test responses back to your client applications.'
 license: os-asa
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -66,28 +65,28 @@ example</a>, and see the format we have to imitate (reformatted for readability)
 <p>Armed with this information, we can write a first version of the plugin for the first head: save the following code as <code>MemePanel/robohydra/plugins/memepanelmock/index.js</code>:</p>
 
 <pre><code class="javascript">var heads               = require('robohydra').heads,
-    RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
+	RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
 
 exports.getBodyParts = function(config) {
-    return {
-        heads: [
-            new RoboHydraHeadStatic({
-                path: '/Generators_Search',
-                content: {
-                    success:true,
-                    result: [
-                        {generatorID:45,
-                         displayName:"Judgmental Developer Bruce Lawson",
-                         urlName:"Fake-Bruce-Lawson-Meme",
-                         totalVotesScore:9001,
-                         imageUrl:"Bruce-Lawson-Template.jpg",
-                         instancesCount:9999999,
-                         ranking:1}
-                    ]
-                }
-            })
-        ]
-    };
+	return {
+		heads: [
+			new RoboHydraHeadStatic({
+				path: '/Generators_Search',
+				content: {
+					success:true,
+					result: [
+						{generatorID:45,
+						 displayName:"Judgmental Developer Bruce Lawson",
+						 urlName:"Fake-Bruce-Lawson-Meme",
+						 totalVotesScore:9001,
+						 imageUrl:"Bruce-Lawson-Template.jpg",
+						 instancesCount:9999999,
+						 ranking:1}
+					]
+				}
+			})
+		]
+	};
 };</code></pre>
 
 <p>Note that, as we're passing a JavaScript object as the value of the
@@ -100,7 +99,7 @@ plugin.</p>
 <p>Create a file called <code>memepanel.conf</code> inside the <code>MemePanel</code> directory with the following contents:</p>
 
 <pre><code class="javascript">{"plugins": [{"name": "logger",        "config": {}},
-             {"name": "memepanelmock", "config": {}}]}</code></pre>
+			 {"name": "memepanelmock", "config": {}}]}</code></pre>
 
 <p>If you start RoboHydra now with the command <code>node_modules/.bin/robohydra memepanel.conf</code>, you will have a server running our mock search service. It will also write a useful log file in <code>robohydra.log</code> that we can inspect to see the traffic between client and server.</p>
 
@@ -132,47 +131,47 @@ plugin.</p>
 <p>Now we'll create a new head to handle the <code>/Instance_Create</code> path. Modify <code>MemePanel/robohydra/plugins/memepanelmock/index.js</code> to look like this:</p>
 
 <pre><code class="javascript">var heads               = require('robohydra').heads,
-    RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
+	RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
 
 exports.getBodyParts = function(config) {
-    return {
-        heads: [
-            new RoboHydraHeadStatic({
-                path: '/Generators_Search',
-                content: {
-                    success:true,
-                    result: [
-                        {generatorID:45,
-                         displayName:"Judgmental Developer Bruce Lawson",
-                         urlName:"Fake-Bruce-Lawson-Meme",
-                         totalVotesScore:9001,
-                         imageUrl:"Bruce-Lawson-Template.jpg",
-                         instancesCount:9999999,
-                         ranking:1}
-                    ]
-                }
-            }),
+	return {
+		heads: [
+			new RoboHydraHeadStatic({
+				path: '/Generators_Search',
+				content: {
+					success:true,
+					result: [
+						{generatorID:45,
+						 displayName:"Judgmental Developer Bruce Lawson",
+						 urlName:"Fake-Bruce-Lawson-Meme",
+						 totalVotesScore:9001,
+						 imageUrl:"Bruce-Lawson-Template.jpg",
+						 instancesCount:9999999,
+						 ranking:1}
+					]
+				}
+			}),
 
-            new RoboHydraHeadStatic({
-                path: '/Instance_Create',
-                content: {
-                    success: true,
-                    result: {
-                        generatorID: 45,
-                        displayName: "Judgmental Developer Bruce Lawson",
-                        urlName: "Fake-Bruce-Lawson-Meme",
-                        totalVotesScore: 0,
-                        imageUrl: "Bruce-Lawson-Template.jpg",
-                        instanceID: 22415018,
-                        text0: "are you saying...",
-                        text1: "you don't use robohydra?",
-                        instanceImageUrl: "Bruce-Lawson-Final.jpg",
-                        instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
-                    }
-                }
-            })
-        ]
-    };
+			new RoboHydraHeadStatic({
+				path: '/Instance_Create',
+				content: {
+					success: true,
+					result: {
+						generatorID: 45,
+						displayName: "Judgmental Developer Bruce Lawson",
+						urlName: "Fake-Bruce-Lawson-Meme",
+						totalVotesScore: 0,
+						imageUrl: "Bruce-Lawson-Template.jpg",
+						instanceID: 22415018,
+						text0: "are you saying...",
+						text1: "you don't use robohydra?",
+						instanceImageUrl: "Bruce-Lawson-Final.jpg",
+						instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+					}
+				}
+			})
+		]
+	};
 };</code></pre>
 
 <p>We now have everything in place, so we can restart RoboHydra and check
@@ -197,71 +196,71 @@ saying..." / "you don't use RoboHydra?".</li>
 <p>Let's move the two heads we have created so far to a test called <code>simple</code>, and create a second test called <code>serverDown</code> for the "Server down" scenario. The code for the plugin would end up like this:</p>
 
 <pre><code class="javascript">var heads               = require('robohydra').heads,
-    RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
+	RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
 
 exports.getBodyParts = function(config) {
-    return {
-        heads: [
-            new RoboHydraHeadStatic({
-                name: 'defaultEmptySearch',
-                path: '/Generators_Search',
-                content: {
-                    success:true,
-                    result: []
-                }
-            })
-        ],
-        tests: {
-            simple: {
-                heads: [
-                    new RoboHydraHeadStatic({
-                        path: '/Generators_Search',
-                        content: {
-                            success:true,
-                            result: [
-                                {generatorID:45,
-                                 displayName:"Judgmental Developer Bruce Lawson",
-                                 urlName:"Fake-Bruce-Lawson-Meme",
-                                 totalVotesScore:9001,
-                                 imageUrl:"Bruce-Lawson-Template.jpg",
-                                 instancesCount:9999999,
-                                 ranking:1}
-                            ]
-                        }
-                    }),
+	return {
+		heads: [
+			new RoboHydraHeadStatic({
+				name: 'defaultEmptySearch',
+				path: '/Generators_Search',
+				content: {
+					success:true,
+					result: []
+				}
+			})
+		],
+		tests: {
+			simple: {
+				heads: [
+					new RoboHydraHeadStatic({
+						path: '/Generators_Search',
+						content: {
+							success:true,
+							result: [
+								{generatorID:45,
+								 displayName:"Judgmental Developer Bruce Lawson",
+								 urlName:"Fake-Bruce-Lawson-Meme",
+								 totalVotesScore:9001,
+								 imageUrl:"Bruce-Lawson-Template.jpg",
+								 instancesCount:9999999,
+								 ranking:1}
+							]
+						}
+					}),
 
-                    new RoboHydraHeadStatic({
-                        path: '/Instance_Create',
-                        content: {
-                            success: true,
-                            result: {
-                                generatorID: 45,
-                                displayName: "Judgmental Developer Bruce Lawson",
-                                urlName: "Fake-Bruce-Lawson-Meme",
-                                totalVotesScore: 0,
-                                imageUrl: "Bruce-Lawson-Template.jpg",
-                                instanceID: 22415018,
-                                text0: "are you saying...",
-                                text1: "you don't use robohydra?",
-                                instanceImageUrl: "Bruce-Lawson-Final.jpg",
-                                instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
-                            }
-                        }
-                    })
-                ]
-            },
+					new RoboHydraHeadStatic({
+						path: '/Instance_Create',
+						content: {
+							success: true,
+							result: {
+								generatorID: 45,
+								displayName: "Judgmental Developer Bruce Lawson",
+								urlName: "Fake-Bruce-Lawson-Meme",
+								totalVotesScore: 0,
+								imageUrl: "Bruce-Lawson-Template.jpg",
+								instanceID: 22415018,
+								text0: "are you saying...",
+								text1: "you don't use robohydra?",
+								instanceImageUrl: "Bruce-Lawson-Final.jpg",
+								instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+							}
+						}
+					})
+				]
+			},
 
-            serverDown: {
-                heads: [
-                    new RoboHydraHeadStatic({
-                        path: '/.*',
-                        content: "Unhandled exception of some kind (fake)",
-                        statusCode: 500
-                    })
-                ]
-            }
-        }
-    };
+			serverDown: {
+				heads: [
+					new RoboHydraHeadStatic({
+						path: '/.*',
+						content: "Unhandled exception of some kind (fake)",
+						statusCode: 500
+					})
+				]
+			}
+		}
+	};
 };</code></pre>
 
 <p>Go ahead and replace the contents of <code>MemePanel/robohydra/plugins/memepanelmock/index.js</code> with the above code, and restart the RoboHydra server again.</p>
@@ -277,23 +276,23 @@ exports.getBodyParts = function(config) {
 <p>To use assertions, we have to introduce a new kind of head: the <code>RoboHydraHead</code>. This head doesn't have specific behaviour already coded, but instead receives a JavaScript function that will decide what will happen when a request comes. This is the most powerful and flexible RoboHydra head, and in fact all other heads are based on this. As an example, the following code performs the same function as the previous head we created:</p>
 
 <pre><code class="javascript">new RoboHydraHead({
-    path: '/.*',
-    handler: function(req, res) {
-        res.statusCode = 500;
-        res.send("Unhandled exception of some kind (fake)");
-    }
+	path: '/.*',
+	handler: function(req, res) {
+		res.statusCode = 500;
+		res.send("Unhandled exception of some kind (fake)");
+	}
 })</code></pre>
 
 <p>But you could, of course, specify whatever code you want, and use any Node modules you have installed. For example, you could wait for five seconds before sending a reply, to imitate what happens when there's a proxy error:</p>
 
 <pre><code class="javascript">new RoboHydraHead({
-    path: '/.*',
-    handler: function(req, res) {
-        setTimeout(function() {
-            res.statusCode = 502;
-            res.send("Proxy Error (fake, RoboHydra-generated message)");
-        }, 5000);
-    }
+	path: '/.*',
+	handler: function(req, res) {
+		setTimeout(function() {
+			res.statusCode = 502;
+			res.send("Proxy Error (fake, RoboHydra-generated message)");
+		}, 5000);
+	}
 })</code></pre>
 
 <p>In particular, to use assertions you have to accept a second argument in the <code>getBodyParts</code> function, <code>modules</code>. That parameter contains a property <code>assert</code>, which in turn contains several useful assertion functions. Let's create a new test to check the search term encoding.</p>
@@ -301,93 +300,93 @@ exports.getBodyParts = function(config) {
 <p>Modify <code>MemePanel/robohydra/plugins/memepanelmock/index.js</code> to look like this:</p>
 
 <pre><code class="javascript">var heads               = require('robohydra').heads,
-    RoboHydraHead       = heads.RoboHydraHead,
-    RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
+	RoboHydraHead       = heads.RoboHydraHead,
+	RoboHydraHeadStatic = heads.RoboHydraHeadStatic;
 
 exports.getBodyParts = function(config, modules) {
-    var assert = modules.assert;
+	var assert = modules.assert;
 
-    return {
-        heads: [
-            new RoboHydraHeadStatic({
-                name: 'defaultEmptySearch',
-                path: '/Generators_Search',
-                content: {
-                    success:true,
-                    result: []
-                }
-            })
-        ],
-        tests: {
-            simple: {
-                heads: [
-                    new RoboHydraHeadStatic({
-                        path: '/Generators_Search',
-                        content: {
-                            success:true,
-                            result: [
-                                {generatorID:45,
-                                 displayName:"Judgmental Developer Bruce Lawson",
-                                 urlName:"Fake-Bruce-Lawson-Meme",
-                                 totalVotesScore:9001,
-                                 imageUrl:"Bruce-Lawson-Template.jpg",
-                                 instancesCount:9999999,
-                                 ranking:1}
-                            ]
-                        }
-                    }),
+	return {
+		heads: [
+			new RoboHydraHeadStatic({
+				name: 'defaultEmptySearch',
+				path: '/Generators_Search',
+				content: {
+					success:true,
+					result: []
+				}
+			})
+		],
+		tests: {
+			simple: {
+				heads: [
+					new RoboHydraHeadStatic({
+						path: '/Generators_Search',
+						content: {
+							success:true,
+							result: [
+								{generatorID:45,
+								 displayName:"Judgmental Developer Bruce Lawson",
+								 urlName:"Fake-Bruce-Lawson-Meme",
+								 totalVotesScore:9001,
+								 imageUrl:"Bruce-Lawson-Template.jpg",
+								 instancesCount:9999999,
+								 ranking:1}
+							]
+						}
+					}),
 
-                    new RoboHydraHeadStatic({
-                        path: '/Instance_Create',
-                        content: {
-                            success: true,
-                            result: {
-                                generatorID: 45,
-                                displayName: "Judgmental Developer Bruce Lawson",
-                                urlName: "Fake-Bruce-Lawson-Meme",
-                                totalVotesScore: 0,
-                                imageUrl: "Bruce-Lawson-Template.jpg",
-                                instanceID: 22415018,
-                                text0: "are you saying...",
-                                text1: "you don't use robohydra?",
-                                instanceImageUrl: "Bruce-Lawson-Final.jpg",
-                                instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
-                            }
-                        }
-                    })
-                ]
-            },
+					new RoboHydraHeadStatic({
+						path: '/Instance_Create',
+						content: {
+							success: true,
+							result: {
+								generatorID: 45,
+								displayName: "Judgmental Developer Bruce Lawson",
+								urlName: "Fake-Bruce-Lawson-Meme",
+								totalVotesScore: 0,
+								imageUrl: "Bruce-Lawson-Template.jpg",
+								instanceID: 22415018,
+								text0: "are you saying...",
+								text1: "you don't use robohydra?",
+								instanceImageUrl: "Bruce-Lawson-Final.jpg",
+								instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+							}
+						}
+					})
+				]
+			},
 
-            serverDown: {
-                heads: [
-                    new RoboHydraHeadStatic({
-                        path: '/.*',
-                        content: "Unhandled exception of some kind (fake)",
-                        statusCode: 500
-                    })
-                ]
-            },
+			serverDown: {
+				heads: [
+					new RoboHydraHeadStatic({
+						path: '/.*',
+						content: "Unhandled exception of some kind (fake)",
+						statusCode: 500
+					})
+				]
+			},
 
-            searchTermEncoding: {
-                instructions: "Open the extension, search for 'velázquez'",
+			searchTermEncoding: {
+				instructions: "Open the extension, search for 'velázquez'",
 
-                heads: [
-                    new RoboHydraHead({
-                        path: '/.*',
-                        handler: function(req, res) {
-                            assert.equal(req.queryParams.q,
-                                         "velázquez",
-                                         "Should encode search terms correctly");
-                            res.send(JSON.stringify({
-                                success: true,
-                                result: []
-                            }));
-                        }
-                    })
-                ]
-            }
-        }
-    };
+				heads: [
+					new RoboHydraHead({
+						path: '/.*',
+						handler: function(req, res) {
+							assert.equal(req.queryParams.q,
+										 "velázquez",
+										 "Should encode search terms correctly");
+							res.send(JSON.stringify({
+								success: true,
+								result: []
+							}));
+						}
+					})
+				]
+			}
+		}
+	};
 };</code></pre>
 
 <p>Note how the new test has a property we have not seen before, <code>instructions</code>. If this property exists, RoboHydra will show that text when starting the corresponding test. That allows you to give instructions to the user, in case it's a human being executing these tests by hand, or you just want to document what is expected from the client.</p>

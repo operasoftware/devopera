@@ -10,7 +10,6 @@ tags:
 - server
 cover: jpg
 license: cc-by-3.0
-layout: article
 ---
 
 [In the last article][1], we concluded by saying that HTTP manages the interactions between a client and a server, and explained the notion of HTTP headers. There will be a lot more to say about these later on in this article series: they influence interactions and performance. In the meantime, let’s look at an equally important and related aspect of these interactions: HTTP Response codes.

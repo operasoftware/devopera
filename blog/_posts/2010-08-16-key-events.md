@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 Hallvord has been busy trying to figure out Google Docs, with fruitful results.
 

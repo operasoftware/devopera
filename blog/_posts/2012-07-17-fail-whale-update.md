@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Oops, we [broke Twitter][1]. A good reason to get a new Browser.js update out.

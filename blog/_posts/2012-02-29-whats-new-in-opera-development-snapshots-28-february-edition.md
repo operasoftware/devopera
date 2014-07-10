@@ -6,7 +6,6 @@ tags:
 - opera-next
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>There is a new Opera Next out! Download it from the links in the <a href="http://my.opera.com/desktopteam/blog/2012/02/28/precision-engine">Desktop team&#39;s blog post</a> or wait a while for it to show up on your Opera Next updates (Browser Identification section should show <code>Presto/2.10.<b>269</b></code> in <a href="opera:about"><code>opera:about</code></a>).</p>

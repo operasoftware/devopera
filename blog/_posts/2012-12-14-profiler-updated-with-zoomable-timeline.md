@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today we&#39;re releasing an update to the profiler, which now offers variable zooming capabilities. Above the main timeline, there is now a mini-timeline where all events are shown. To zoom in on a specific location, just click and drag to select an area in the mini-timeline. When an area has been selected, it can be moved by grabbing the selected area, or resized by dragging one of the edges. You can also resize or move by using the mouse wheel or the arrow keys.</p>

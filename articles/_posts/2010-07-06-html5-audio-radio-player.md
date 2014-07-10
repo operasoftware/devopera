@@ -4,7 +4,6 @@ authors:
 - trygve-lie
 intro: 'In this article Trygve Lie takes you through the basics of the HTML5 `<audio>` element, then uses jQuery and jPlayer to build a cross-browser radio player based on `<audio>` with a Flash fallback. As a final step, he converts the player into an Opera Widget for added cross-device appeal.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -32,14 +31,14 @@ layout: article
 </p>
 
 <pre><code>&lt;audio controls preload&gt;
-    &lt;source src="http://yourserver/rockandroll.ogg" /&gt;
+	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
 &lt;/audio&gt;</code></pre>
 
 <p>This is useful because you can use multiple <code>&lt;source&gt;</code> elements to point to different audio formats. As you'll see later, different browsers support different formats, so ideally you should provide something that any browser can play. For example:</p>
 
 <pre><code>&lt;audio controls preload&gt;
-    &lt;source src="http://yourserver/rockandroll.ogg" /&gt;
-    &lt;source src="http://yourserver/rockandroll.mp3" /&gt;
+	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
+	&lt;source src="http://yourserver/rockandroll.mp3" /&gt;
 &lt;/audio&gt;</code></pre>
 
 <p class="note">Note: to convert between Ogg and MP3 formats, there are a variety of free applications available, such as <a href="http://www.freerip.com/">Free Rip</a> for Windows, and <a href="http://mp3.about.com/gi/o.htm?zi=1/XJ&zTi=1&sdn=mp3&cdn=gadgets&tm=12&f=10&su=p284.13.342.ip_p504.6.342.ip_&tt=3&bt=0&bts=0&zu=http%3A//www.nch.com.au/switch/index.html">Audio MP3 converter</a> for Mac.</p>
@@ -97,39 +96,39 @@ var audio = new Audio('test.ogg');
 // Get the play button and append an audio play method to onclick
 var play = document.getElementById('play');
 play.addEventListener('click', function(){
-    audio.play();
+	audio.play();
 }, false);
 
 // Get the pause button and append an audio pause method to onclick
 var pause = document.getElementById('pause');
 pause.addEventListener('click', function(){
-    audio.pause();
+	audio.pause();
 }, false);
 
 // Get the HTML5 range input element and append audio volume adjustment to onchange
 var volume = document.getElementById('volume');
 volume.addEventListener('change', function(){
-    audio.volume = parseFloat(this.value / 10);
+	audio.volume = parseFloat(this.value / 10);
 }, false);
 
 // Get where one are in playback and push the time to an element
 audio.addEventListener("timeupdate", function() {
-    var duration = document.getElementById('duration');
-    var s = parseInt(audio.currentTime % 60);
-    var m = parseInt((audio.currentTime / 60) % 60);
-    duration.innerHTML = m + '.' + s + 'sec';
+	var duration = document.getElementById('duration');
+	var s = parseInt(audio.currentTime % 60);
+	var m = parseInt((audio.currentTime / 60) % 60);
+	duration.innerHTML = m + '.' + s + 'sec';
 }, false);</code></pre>
 
 <p>The above script is applied to the following HTML:</p>
 
 <pre><code>&lt;div&gt;
-    &lt;input id="play" type="button" value="Play" /&gt;
-    &lt;input id="pause" type="button" value="Pause" /&gt;
-    &lt;span id="duration"&gt; &lt;/span&gt;
+	&lt;input id="play" type="button" value="Play" /&gt;
+	&lt;input id="pause" type="button" value="Pause" /&gt;
+	&lt;span id="duration"&gt; &lt;/span&gt;
 &lt;/div&gt;
 &lt;div&gt;
-    Volume:
-    &lt;input id="volume" type="range" min="0" max="10" value="5" /&gt;
+	Volume:
+	&lt;input id="volume" type="range" min="0" max="10" value="5" /&gt;
 &lt;/div&gt;</code></pre>
 
 <p><a href="/articles/view/html5-audio-radio-player/index.html">See the simple audio player in action</a>.</p>
@@ -142,54 +141,54 @@ audio.addEventListener("timeupdate", function() {
 The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;video&gt;</code> element in HTML5. There have been a lot of debates and disagreements as to which video format to use (read our <a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> for more details), and audio has undergone the same kinds of discussions. Currently the support for audio codecs across the major browsers is as follows:</p>
 
 <table>
-    <thead>
-    <tr>
-        <th scope="col">Browser</th>
-        <th scope="col" style="width:20%;">(Ogg) Vorbis</th>
-        <th scope="col">Mp3</th>
-        <th scope="col">Wave</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">Opera 10.50</th>
-        <td style="width:20%;">x</td>
-        <td></td>
-        <td>x</td>
-    </tr>
-    <tr>
-        <th scope="row">Firefox 3.5</th>
-        <td style="width:20%;">x</td>
-        <td></td>
-        <td>x</td>
-    </tr>
-    <tr>
-        <th scope="row">Safari 4</th>
-        <td style="width:20%;"></td>
-        <td>x</td>
-        <td>x</td>
-    </tr>
-    <tr>
-        <th scope="row">Chrome 3</th>
-        <td style="width:20%;">x</td>
-        <td>x</td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row">IE 8</th>
-        <td style="width:20%;"></td>
-        <td></td>
-        <td></td>
-    </tr>
-    </tbody>
+	<thead>
+	<tr>
+		<th scope="col">Browser</th>
+		<th scope="col" style="width:20%;">(Ogg) Vorbis</th>
+		<th scope="col">Mp3</th>
+		<th scope="col">Wave</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th scope="row">Opera 10.50</th>
+		<td style="width:20%;">x</td>
+		<td></td>
+		<td>x</td>
+	</tr>
+	<tr>
+		<th scope="row">Firefox 3.5</th>
+		<td style="width:20%;">x</td>
+		<td></td>
+		<td>x</td>
+	</tr>
+	<tr>
+		<th scope="row">Safari 4</th>
+		<td style="width:20%;"></td>
+		<td>x</td>
+		<td>x</td>
+	</tr>
+	<tr>
+		<th scope="row">Chrome 3</th>
+		<td style="width:20%;">x</td>
+		<td>x</td>
+		<td></td>
+	</tr>
+	<tr>
+		<th scope="row">IE 8</th>
+		<td style="width:20%;"></td>
+		<td></td>
+		<td></td>
+	</tr>
+	</tbody>
 </table>
 
 <p>To support several browsers we need to provide the same audio content in different formats. As we mentioned before, you can reference the different formats using multiple <code>&lt;source&gt;</code> elements placed inside the <code>&lt;audio&gt;</code> element:</p>
 
 <pre><code>&lt;audio controls preload&gt;
-    &lt;source src="http://yourserver/rockandroll.ogg" /&gt;
-    &lt;source src="http://yourserver/rockandroll.mp3" /&gt;
-    &lt;!-- A fallback solution - Flash would do --&gt;
+	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
+	&lt;source src="http://yourserver/rockandroll.mp3" /&gt;
+	&lt;!-- A fallback solution - Flash would do --&gt;
 &lt;/audio&gt;</code></pre>
 
 <p>A fallback solution for browsers that don't support the <code>&lt;audio&gt;</code> element can (and should) be included within the opening and closing audio tags. For instance, this could be a Flash player, referencing the same MP3 file we point to in the second <code>&lt;source&gt;</code> element.</p>
@@ -215,28 +214,28 @@ The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;vide
 <p>First, we'll make a small JSON feed containing information about our streams. We're including some general information about the radio station and each radio channel — the URLs of the streams, the channels' names, and a URL pointing to a logo associated with each channel:</p>
 
 <pre><code>{
-    "station" : {
-        "name" : "NRK",
-        "fullname" : "Norsk Rikskringkasting AS",
-        "website" : "http://www.nrk.no/",
-        "defaultChannel" : "P1",
-        "channels" : [
+	"station" : {
+		"name" : "NRK",
+		"fullname" : "Norsk Rikskringkasting AS",
+		"website" : "http://www.nrk.no/",
+		"defaultChannel" : "P1",
+		"channels" : [
 
-            {
-                "name" : "P1",
-                "channel" : "NRK P1",
-                "website" : "http://www.nrk.no/p1/",
-                "schedule" : "",
-                "logo" : "http://yoursite/gfx/nrk_p1.png",
-                "streams" : {
-                        "type" : "middle",
-                        "ogg" : "http://radio.hiof.no/nrk-p1-128.ogg",
-                        "mp3" : "http://radio.hiof.no/nrk-p1-128"
-                }
-            }
+			{
+				"name" : "P1",
+				"channel" : "NRK P1",
+				"website" : "http://www.nrk.no/p1/",
+				"schedule" : "",
+				"logo" : "http://yoursite/gfx/nrk_p1.png",
+				"streams" : {
+						"type" : "middle",
+						"ogg" : "http://radio.hiof.no/nrk-p1-128.ogg",
+						"mp3" : "http://radio.hiof.no/nrk-p1-128"
+				}
+			}
 
-        ]
-    }
+		]
+	}
 }</code></pre>
 
 <p>
@@ -249,40 +248,40 @@ By putting the information about the radio station and streams in this JSON feed
 
 <pre><code>&lt;div id="radio-player" class="radio-default"&gt;
 
-    &lt;!-- Audio placeholder used by jPlayer --&gt;
-    &lt;div id="player"&gt; &lt;/div&gt;
+	&lt;!-- Audio placeholder used by jPlayer --&gt;
+	&lt;div id="player"&gt; &lt;/div&gt;
 
-    &lt;!-- Container for channel picker --&gt;
-    &lt;div id="channelPicker"&gt;
-        &lt;a tabindex="8" accesskey="l" id="paginationLeft" class="inactive"&gt;&lt;span&gt;Left&lt;/span&gt;&lt;/a&gt;
-        &lt;div id="channels"&gt; &lt;/div&gt;
-        &lt;a tabindex="9" accesskey="r" id="paginationRight" class="active"&gt;&lt;span&gt;Right&lt;/span&gt;&lt;/a&gt;
-    &lt;/div&gt;
+	&lt;!-- Container for channel picker --&gt;
+	&lt;div id="channelPicker"&gt;
+		&lt;a tabindex="8" accesskey="l" id="paginationLeft" class="inactive"&gt;&lt;span&gt;Left&lt;/span&gt;&lt;/a&gt;
+		&lt;div id="channels"&gt; &lt;/div&gt;
+		&lt;a tabindex="9" accesskey="r" id="paginationRight" class="active"&gt;&lt;span&gt;Right&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
 
-    &lt;!-- Container for display --&gt;
-    &lt;div id="display"&gt;
-        &lt;a id="currentChannel"&gt;&lt;img src="gfx/default/default-station.png" /&gt;&lt;/a&gt;
-        &lt;span id="duration"&gt; &lt;/span&gt;
-        &lt;span id="quality"&gt; &lt;/span&gt;
-    &lt;/div&gt;
+	&lt;!-- Container for display --&gt;
+	&lt;div id="display"&gt;
+		&lt;a id="currentChannel"&gt;&lt;img src="gfx/default/default-station.png" /&gt;&lt;/a&gt;
+		&lt;span id="duration"&gt; &lt;/span&gt;
+		&lt;span id="quality"&gt; &lt;/span&gt;
+	&lt;/div&gt;
 
-    &lt;!-- Containers for admin functions --&gt;
-    &lt;a tabindex="7" accesskey="c" id="displayChannelPicker" title="Channels"&gt;&lt;span&gt;Channels&lt;/span&gt;&lt;/a&gt;
-    &lt;a id="config"&gt;Config&lt;/a&gt;
+	&lt;!-- Containers for admin functions --&gt;
+	&lt;a tabindex="7" accesskey="c" id="displayChannelPicker" title="Channels"&gt;&lt;span&gt;Channels&lt;/span&gt;&lt;/a&gt;
+	&lt;a id="config"&gt;Config&lt;/a&gt;
 
-    &lt;!-- Containers for jPlayer actions --&gt;
-    &lt;a tabindex="3" accesskey="d" id="volumeMin" title="Mute"&gt;&lt;span&gt;Mute Volume&lt;/span&gt;&lt;/a&gt;
-    &lt;a id="volume"&gt;&lt;span&gt;Adjust Volume&lt;/span&gt;&lt;/a&gt;
-    &lt;a tabindex="4" accesskey="u" id="volumeMax" title="Max"&gt;&lt;span&gt;Max Volume&lt;/span&gt;&lt;/a&gt;
-    &lt;a tabindex="1" accesskey="p" id="play" title="Play"&gt;&lt;span&gt;Play&lt;/span&gt;&lt;/a&gt;
-    &lt;a id="pause" title="Pause"&gt;&lt;span&gt;Pause&lt;/span&gt;&lt;/a&gt;
-    &lt;a tabindex="2" accesskey="s" id="stop" title="Stop"&gt;&lt;span&gt;Stop&lt;/span&gt;&lt;/a&gt;
+	&lt;!-- Containers for jPlayer actions --&gt;
+	&lt;a tabindex="3" accesskey="d" id="volumeMin" title="Mute"&gt;&lt;span&gt;Mute Volume&lt;/span&gt;&lt;/a&gt;
+	&lt;a id="volume"&gt;&lt;span&gt;Adjust Volume&lt;/span&gt;&lt;/a&gt;
+	&lt;a tabindex="4" accesskey="u" id="volumeMax" title="Max"&gt;&lt;span&gt;Max Volume&lt;/span&gt;&lt;/a&gt;
+	&lt;a tabindex="1" accesskey="p" id="play" title="Play"&gt;&lt;span&gt;Play&lt;/span&gt;&lt;/a&gt;
+	&lt;a id="pause" title="Pause"&gt;&lt;span&gt;Pause&lt;/span&gt;&lt;/a&gt;
+	&lt;a tabindex="2" accesskey="s" id="stop" title="Stop"&gt;&lt;span&gt;Stop&lt;/span&gt;&lt;/a&gt;
 
-    &lt;!-- Container for error messages --&gt;
-    &lt;div id="error"&gt;
-        &lt;h2&gt;Error&lt;/h2&gt;
-        &lt;p&gt; &lt;/p&gt;
-    &lt;/div&gt;
+	&lt;!-- Container for error messages --&gt;
+	&lt;div id="error"&gt;
+		&lt;h2&gt;Error&lt;/h2&gt;
+		&lt;p&gt; &lt;/p&gt;
+	&lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
@@ -294,15 +293,15 @@ By putting the information about the radio station and streams in this JSON feed
   * Play button
   */
 .radio-default #play{
-    position: absolute;
-    top: 75px;
-    left: 255px;
-    width: 40px;
-    height: 40px;
-    background-image: url(../gfx/default/button-play.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-    cursor: pointer;
+	position: absolute;
+	top: 75px;
+	left: 255px;
+	width: 40px;
+	height: 40px;
+	background-image: url(../gfx/default/button-play.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	cursor: pointer;
 }</code></pre>
 
 <p>The other controls, channel picker, time display, etc. are created in much the same way.</p>
@@ -310,14 +309,14 @@ By putting the information about the radio station and streams in this JSON feed
 <p>One small detail worth noticing is the <code>class</code> attribute on the <code>&lt;div&gt;</code> element that wraps the whole player. We can use the value of this <code>class</code> attribute as a prefix on all our styles like this:</p>
 
 <pre><code>.radio-default #play{
-    /* some style */
+	/* some style */
 }</code></pre>
 
 <p>By doing so we have added the possibility to skin the player. If we then create a new set of styles with a new prefix we can use a small JavaScript function to switch skins by just changing the value of the <code>class</code> attribute on the surrounding <code>&lt;div&gt;</code> element:
 </p>
 
 <pre><code>.radio-different #play{
-    /* some different style */
+	/* some different style */
 }</code></pre>
 
 
@@ -339,16 +338,16 @@ var playerElement = jQuery("#player");</code></pre>
 <p>Next, we take advantage of jQuery's AJAX functionality to read our JSON feed with the streaming details:</p>
 
 <pre><code>jQuery.ajax({
-    url: "http://yourserver/channels.json",
-    dataType: 'json',
-    ifModified: true,
-    success: function(data, status){
-        for (var i = 0, len = data.station.channels.length; i &lt; len; i++) {
+	url: "http://yourserver/channels.json",
+	dataType: 'json',
+	ifModified: true,
+	success: function(data, status){
+		for (var i = 0, len = data.station.channels.length; i &lt; len; i++) {
 
-            // Put each channel into a channel picker
+			// Put each channel into a channel picker
 
-        }
-    }
+		}
+	}
 });</code></pre>
 
 <p>
@@ -362,24 +361,24 @@ When the AJAX request has fetched the data from the server it loops through each
 
 <pre><code>changeChannel:function(){
 
-    // Remove old stream
-    playerElement.jPlayer("clearFile");
+	// Remove old stream
+	playerElement.jPlayer("clearFile");
 
-    // Set new stream
-    playerElement.jPlayer("setFile", "urlToNewMP3Stream", "urlToNewOGGStream");
+	// Set new stream
+	playerElement.jPlayer("setFile", "urlToNewMP3Stream", "urlToNewOGGStream");
 }</code></pre>
 
 <p>jPlayer takes care of clearing out old streams and setting new ones on the <code>&lt;audio&gt;</code> element. jPlayer knows what type of streams the browser supports and if the Flash fallback should be used. After we have read our channel data and set up a selection of channels the user can choose from, we must set up jPlayer to work against our HTML structure.</p>
 
 <pre><code>playerElement.jPlayer({
-    ready: function(){
-        this.element.jPlayer("setFile", urlToDefaultMp3Stream, urlToDefaultOggStream);
-    },
-    swfPath: "script/jplayer-1.1.1/",
-    nativeSupport: true,
-    volume: 60,
-    oggSupport: true,
-    customCssIds: true
+	ready: function(){
+		this.element.jPlayer("setFile", urlToDefaultMp3Stream, urlToDefaultOggStream);
+	},
+	swfPath: "script/jplayer-1.1.1/",
+	nativeSupport: true,
+	volume: 60,
+	oggSupport: true,
+	customCssIds: true
 })
 .jPlayer("cssId", "play", "play")
 .jPlayer("cssId", "pause", "pause")
@@ -388,7 +387,7 @@ When the AJAX request has fetched the data from the server it loops through each
 .jPlayer("cssId", "volumeMax", "volumeMax")
 .jPlayer("cssId", "volumeBar", "volume")
 .jPlayer("onProgressChange", function updateDuration(lp,ppr,ppa,pt,tt) {
-     jQuery("#duration").text(jQuery.jPlayer.convertTime(pt));
+	 jQuery("#duration").text(jQuery.jPlayer.convertTime(pt));
 });</code></pre>
 
 <p>The above code adds the jPlayer to the <code>#player</code> element we selected earlier. We tell jPlayer to use the native <code>&lt;audio&gt;</code> element if the browser supports it by setting <code>nativeSupport: true</code>; we also set a default volume (<code>volume: 60</code>), the location of the Flash fallback (<code>swfPath: "script/jplayer-1.1.1/"</code>), whether Ogg should be used if supported by the browser (<code>oggSupport: true</code>), and what to do when the player is ready (<code>ready: function( ... );</code>).</p>
@@ -416,24 +415,24 @@ When the AJAX request has fetched the data from the server it loops through each
 <p>Widgets can handle AJAX requests to any server available on the Internet and since we have put all our stream data in a JSON feed on the server-side, we are able to update the data in the stream without having to update the player in any way. This is good since we might be forced to do changes related to our streams faster than the users can update their players. To enable the Widget to make AJAX requests across the network and to our server, we must add <code>network="public"</code> on the <code>&lt;widget&gt;</code> element. Our final configuration file looks like this:</p>
 
 <pre><code>&lt;widget defaultmode="application" network="public private"&gt;
-    &lt;widgetname&gt;Radio Player&lt;/widgetname&gt;
-    &lt;description&gt;Radio Player&lt;/description&gt;
-    &lt;width&gt;300&lt;/width&gt;
-    &lt;height&gt;120&lt;/height&gt;
-    &lt;icon&gt;gfx/icon/icon_128.png&lt;/icon&gt;
-    &lt;icon&gt;gfx/icon/icon_64.png&lt;/icon&gt;
-    &lt;icon&gt;gfx/icon/icon_32.png&lt;/icon&gt;
-    &lt;icon&gt;gfx/icon/icon_16.png&lt;/icon&gt;
-    &lt;author&gt;
-        &lt;name&gt;John Doe&lt;/name&gt;
-        &lt;email&gt;john.doe@yoursite.com&lt;/email&gt;
-        &lt;link&gt;http://yoursite/&lt;/link&gt;
-    &lt;/author&gt;
-    &lt;id&gt;
-        &lt;host&gt;radio.yoursite.com&lt;/host&gt;
-        &lt;name&gt;radio-player&lt;/name&gt;
-        &lt;revised&gt;2010-05&lt;/revised&gt;
-    &lt;/id&gt;
+	&lt;widgetname&gt;Radio Player&lt;/widgetname&gt;
+	&lt;description&gt;Radio Player&lt;/description&gt;
+	&lt;width&gt;300&lt;/width&gt;
+	&lt;height&gt;120&lt;/height&gt;
+	&lt;icon&gt;gfx/icon/icon_128.png&lt;/icon&gt;
+	&lt;icon&gt;gfx/icon/icon_64.png&lt;/icon&gt;
+	&lt;icon&gt;gfx/icon/icon_32.png&lt;/icon&gt;
+	&lt;icon&gt;gfx/icon/icon_16.png&lt;/icon&gt;
+	&lt;author&gt;
+		&lt;name&gt;John Doe&lt;/name&gt;
+		&lt;email&gt;john.doe@yoursite.com&lt;/email&gt;
+		&lt;link&gt;http://yoursite/&lt;/link&gt;
+	&lt;/author&gt;
+	&lt;id&gt;
+		&lt;host&gt;radio.yoursite.com&lt;/host&gt;
+		&lt;name&gt;radio-player&lt;/name&gt;
+		&lt;revised&gt;2010-05&lt;/revised&gt;
+	&lt;/id&gt;
 &lt;/widget&gt;</code></pre>
 
 <p>To package the application, we simply zip up the HTML, CSS, JavaScript and any other assets, along with the <code>config.xml</code> file, and change the file extension to <code>.wgt</code>. We now have a Widget ready to be installed.</p>

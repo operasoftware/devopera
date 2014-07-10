@@ -5,7 +5,6 @@ authors:
 intro: 'This article looks at what image post-processing is and how to use the raw WebGL API to apply real-time post-processing effects to images and other media like video, canvas, etc.'
 cover: png
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -14,7 +13,7 @@ layout: article
 <p>In this article we'll look at what image post-processing is and how to use the raw WebGL API to apply real-time post-processing effects on images and other media like video, <code>&lt;canvas&gt;</code>, etc.</p>
 
 <p>While this article is not strictly related to previous <a href='http://dev.opera.com/articles/tags/webgl'>WebGL articles</a> on dev.opera, some familiarity with the WebGL API is needed to get the most out of this. In particular, knowledge about the rendering pipeline (explained in
-    <a href='http://dev.opera.com/articles/view/an-introduction-to-webgl/'>An introduction to WebGL</a>) will be useful; in addition, if this is your first time diving into the raw WebGL API, it is recommended that you <a href='http://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>read Erik Möller's articles on raw WebGL</a> first.</p>
+		<a href='http://dev.opera.com/articles/view/an-introduction-to-webgl/'>An introduction to WebGL</a>) will be useful; in addition, if this is your first time diving into the raw WebGL API, it is recommended that you <a href='http://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>read Erik Möller's articles on raw WebGL</a> first.</p>
 
 <h2>Post-Processing</h2>
 
@@ -33,21 +32,21 @@ layout: article
 
 <pre class="javascript"><code>//check support
 if (!supportsWebGL()) {
-  $('log').innerHTML = 'Your browser doesn\'t seem to support WebGL.';
-  return;
+	$('log').innerHTML = 'Your browser doesn\'t seem to support WebGL.';
+	return;
 }
 
 //get context
 var canvas = $('webgl-canvas'),
-  gl = getWebGLContext(canvas);
+	gl = getWebGLContext(canvas);
 
 //create a program
 createProgramFromURIs(gl, {
-  vsURI: 'shaders/simple.vs',
-  fsURI: 'shaders/simple.fs',
-  onComplete: function(program) {
-    render(program);
-  }
+	vsURI: 'shaders/simple.vs',
+	fsURI: 'shaders/simple.fs',
+	onComplete: function(program) {
+		render(program);
+	}
 });</code></pre>
 
 <p>Next, we send some information to the shader program: the size of the screen as a uniform, and also the vertices that make up a 2D rectangle via an attribute buffer. Uniforms and attributes are covered in the <a href='http://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>raw WebGL 101 series</a>. If the rectangle's vertices go from (-1, -1) to (1, 1), then the rectangle will cover the whole canvas. Here's the code for setting the uniforms and binding the vertex buffer:</p>
@@ -71,8 +70,8 @@ gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);</code></pre>
 <pre class="javascript"><code>uniform float size;
 
 void main(void) {
-  vec2 colors = gl_FragCoord.xy / size;
-  gl_FragColor = vec4(colors.xy, 1, 1);
+	vec2 colors = gl_FragCoord.xy / size;
+	gl_FragColor = vec4(colors.xy, 1, 1);
 }</code></pre>
 
 <p>In this code we grab the (x, y) coordinates of the special variable <code>gl_FragCoord</code>, which holds the coordinates of the pixel being evaluated, and divide it by the size of the canvas so we bring the coordinates to the (0, 1) space. Then we set the special variable <code>gl_FragColor</code> that holds the color of the rendered pixel in RGBA format with red and green matching (x, y), then set full blue color (1) and full alpha (1).</p>
@@ -124,17 +123,17 @@ gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);</cod
 <p><img src="post-processing.png" alt="Post processing workflow for a bloom effect pass"></p>
 <p class="caption">Figure 4: Post processing workflow for a bloom effect pass.</p>
 
-    <ol>
+		<ol>
 <li>
-        The first step (horizontal blur) applies the x-axis gaussian blur effect to the original input image.
+				The first step (horizontal blur) applies the x-axis gaussian blur effect to the original input image.
 </li>
 <li>
-        The second step (vertical blur) takes the x-axis blurred image, and applies a y-axis blur. This completes the gaussian blur effect (see Figure 3).
+				The second step (vertical blur) takes the x-axis blurred image, and applies a y-axis blur. This completes the gaussian blur effect (see Figure 3).
 </li>
 <li>
-        The third step (tone mapping) takes two input textures: the blurred image and the original image, and blends them together into a third image. Other simple effects are also added during blending, such as a vignette and exposure effects. The resulting image is sent to the screen.
+				The third step (tone mapping) takes two input textures: the blurred image and the original image, and blends them together into a third image. Other simple effects are also added during blending, such as a vignette and exposure effects. The resulting image is sent to the screen.
 </li>
-    </ol>
+		</ol>
 
 <p>You can <a href='http://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/multipass.html'>view the bloom effect example here</a>. Play with the different stages of the pipeline by toggling the options in the checkboxes. Figure 5 shows an image of the effect.</p>
 
@@ -144,32 +143,32 @@ gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);</cod
 <p>In order to have multiple passes, we will need to store the intermediate results somewhere. The way to do this is to use extra textures. In order to store them we will also need a special type of buffer called a framebuffer. The framebuffer is a structure holding some metadata that can be bound to a texture and used to render the scene to it instead of rendering it to the screen. We will use one framebuffer to store the x-axis blur effect, and another one to store the y-axis blur effect. A framebuffer is created like this:</p>
 
 <pre class="javascript"><code>function createFramebuffer(gl, size) {
-  var buffer = gl.createFramebuffer();
-  //bind framebuffer to texture
-  gl.bindFramebuffer(gl.FRAMEBUFFER, buffer);
-  var texture = createTexture(gl, size);
-  gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, texture, 0);
+	var buffer = gl.createFramebuffer();
+	//bind framebuffer to texture
+	gl.bindFramebuffer(gl.FRAMEBUFFER, buffer);
+	var texture = createTexture(gl, size);
+	gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, texture, 0);
 
-  return {
-    texture: texture,
-    buffer: buffer
-  };
+	return {
+		texture: texture,
+		buffer: buffer
+	};
 }</code></pre>
 
 <p>The texture initialization code is similar to that seen in the previous example:</p>
 
 <pre class="javascript"><code>function createTexture(gl, size) {
-  var texture = gl.createTexture();
-  //set properties for the texture
-  gl.bindTexture(gl.TEXTURE_2D, texture);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+	var texture = gl.createTexture();
+	//set properties for the texture
+	gl.bindTexture(gl.TEXTURE_2D, texture);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
 
-  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, size.offsetWidth, size.offsetHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+	gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, size.offsetWidth, size.offsetHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
-  return texture;
+	return texture;
 }</code></pre>
 
 <p>In order to send the rendering to the framebuffer and not the screen, we need to bind the framebuffer first, then make the rendering, then bind the texture associated with that framebuffer. Note that when we're done with the multiple passes we need to unbind the framebuffer — or bind to "null" — so that what we paint will be drawn on the screen:</p>
@@ -195,13 +194,13 @@ gl.bindFramebuffer(gl.FRAMEBUFFER, null);</code></pre>
 <h2>Related Articles, Demos, Examples and Libraries</h2>
 <ul>
 <li>
-      The <a href='http://shinydemos.com/world-flights/'>World Flights demo</a> on <a href='http://shinydemos.com/'>shinydemos</a>, made with <a href='http://senchalabs.org/philogl'>PhiloGL</a>, has a neon post-processing effect.
+			The <a href='http://shinydemos.com/world-flights/'>World Flights demo</a> on <a href='http://shinydemos.com/'>shinydemos</a>, made with <a href='http://senchalabs.org/philogl'>PhiloGL</a>, has a neon post-processing effect.
 </li>
 <li>
-        <a href='http://madebyevan.com/'>Evan Wallace</a> has made a great image processing framework with WebGL called glfx.js. The code is on <a href='https://github.com/evanw/glfx.js'>GitHub</a>. There's a <a href='http://evanw.github.com/glfx.js/demo/'>glfx.js demo page here</a>.
+				<a href='http://madebyevan.com/'>Evan Wallace</a> has made a great image processing framework with WebGL called glfx.js. The code is on <a href='https://github.com/evanw/glfx.js'>GitHub</a>. There's a <a href='http://evanw.github.com/glfx.js/demo/'>glfx.js demo page here</a>.
 </li>
 <li>
-      If you're looking for advanced fragment shader techniques, <a href='http://www.senchalabs.org/philogl/PhiloGL/examples/quaternion/'>this Quaternion Julia Set example</a> shows a quaternion fractal raymarching done in a fragment shader.
+			If you're looking for advanced fragment shader techniques, <a href='http://www.senchalabs.org/philogl/PhiloGL/examples/quaternion/'>this Quaternion Julia Set example</a> shows a quaternion fractal raymarching done in a fragment shader.
 </li>
 </ul>
 

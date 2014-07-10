@@ -9,7 +9,6 @@ tags:
 - media-queries
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I got a bit frustrated the other day. I&#39;d come across yet another site that was designed for at least a 1280-width screen, meaning it wouldn&#39;t fit on my trusty 1024-width laptop and I had to scroll horizontally. &quot;Yada yada, first world problems&quot;, I hear you say, but considering the small effort it takes to make a web page look good at different widths (and the abundance of <abbr title="Responsive Web Design">RWD</abbr> tutorials out there now), surely it&#39;s worth web designers making such tweaks. Besides, there&#39;s got to be many other users in my position, hasn&#39;t there?</p>
@@ -28,25 +27,25 @@ layout: post
 
 <p>Technical users:</p>
 <ol>
-    <li><strong>1366x768</strong> - 18.1% of users</li>
-    <li><strong>1920x1080</strong> - 14.2% of users</li>
-    <li><strong>1280x800</strong> - 9.7% of users</li>
+	<li><strong>1366x768</strong> - 18.1% of users</li>
+	<li><strong>1920x1080</strong> - 14.2% of users</li>
+	<li><strong>1280x800</strong> - 9.7% of users</li>
 </ol>
 
 <p>Non-technical users:</p>
 <ol>
-    <li><strong>1366x768</strong> - 15.5% of users</li>
-    <li><strong>320x480</strong> - 14.7% of users</li>
-    <li><strong>1024x768</strong> - 12.5% of users</li>
+	<li><strong>1366x768</strong> - 15.5% of users</li>
+	<li><strong>320x480</strong> - 14.7% of users</li>
+	<li><strong>1024x768</strong> - 12.5% of users</li>
 </ol>
 
 <h3>Observations</h3>
 
 <ol>
-    <li>The first thing that stands out is that both graphs have a sort of slanted V-shape. These are two rough lines showing screens in portrait and landscape format, with a slight variation due to differing screen ratios. This indicates non-technical users tend to have a higher ratio of portrait to landscape devices than technical users.</li>
-    <li>Not surprisingly, there&#39;s a high concentration of large screens or multiple monitors among techies but this is clearly not representative of a wider audience.</li>
-    <li>Non-technical users have less variety in the portrait format devices they use. It looks pretty much like iPhone-size (320x480) and iPad-size devices (768x1024) rule in this group. (Note I&#39;m ignoring manufacturer and OS in this study.)</li>
-    <li>Non-technical users have notably smaller screens than technical users, on the whole, and my beloved 1024x768 screen size is indeed very popular with non-techies. Admittedly that resolution could be a horizontal tablet or a laptop but I don&#39;t care. <a href="http://blog.cloudfour.com/responsive-design-for-apps-part-1/">Jason Grigsby explains very well</a> how the distinction between such devices is rapidly disappearing.</li>
+	<li>The first thing that stands out is that both graphs have a sort of slanted V-shape. These are two rough lines showing screens in portrait and landscape format, with a slight variation due to differing screen ratios. This indicates non-technical users tend to have a higher ratio of portrait to landscape devices than technical users.</li>
+	<li>Not surprisingly, there&#39;s a high concentration of large screens or multiple monitors among techies but this is clearly not representative of a wider audience.</li>
+	<li>Non-technical users have less variety in the portrait format devices they use. It looks pretty much like iPhone-size (320x480) and iPad-size devices (768x1024) rule in this group. (Note I&#39;m ignoring manufacturer and OS in this study.)</li>
+	<li>Non-technical users have notably smaller screens than technical users, on the whole, and my beloved 1024x768 screen size is indeed very popular with non-techies. Admittedly that resolution could be a horizontal tablet or a laptop but I don&#39;t care. <a href="http://blog.cloudfour.com/responsive-design-for-apps-part-1/">Jason Grigsby explains very well</a> how the distinction between such devices is rapidly disappearing.</li>
 </ol>
 
 <h3>Takeaway</h3>

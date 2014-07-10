@@ -7,7 +7,6 @@ tags:
 - turkey
 - odin
 license: cc-by-3.0
-layout: post
 ---
 A month after <a href="/ODIN/blog/2012/03/27/operas-turkish-fans-opening-the-web" target="_blank">I wrote</a> how Opera Türkiye had opened up the Avea website, a large Turkish mobile phone operator that was sniffing and blocking Opera, the Turkish guys and gals have scored another brilliant web-opening goal.<br/><br/>This time, they&#39;ve used Facebook to persuade the sports portal <a href="http://www.trtspor.com.tr/" target="_blank">trtspor.com.tr</a> to change some CSS that hid all the homepage content from Opera. <br/><br/>It&#39;s an interesting case-study. Opera was behaving correctly and implementing the specification properly, but the website owners hadn&#39;t tested it properly.<br/><br/>There was a super-whizzo CSS technique called <a href="http://www.positioniseverything.net/easyclearing.html">clearfix</a> that uses CSS pseudo-elements to insert content after an element, and hide it from view while clearing floats:<br/><br/><pre><code>
 .clearfix:after {

@@ -7,7 +7,6 @@ tags:
 - highlight
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>The first fruits of our post-Opera 10 labour on Opera Dragonfly and Scope has just landed with today’s release of the beta of Opera Mobile 10 for Nokia Smartphones. As with previous versions, Opera Mobile 10 includes remote dubugging functionality to connect to Opera Dragonfly in the desktop browser. For information on remote debugging take a look at the Dev Opera <a href="http://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/">Remote debugging with Opera Dragonfly</a> article. You will notice that Opera Dragonfly will prompt you to download a compatible version that will work with Opera 10 Mobile.</p>

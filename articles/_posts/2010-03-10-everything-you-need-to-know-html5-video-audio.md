@@ -4,9 +4,8 @@ authors:
 - simon-pieters
 intro: 'This article builds on our previous HTML5 `<video>` publications by offering deep coverage of the functionality available in the `<video>`/`<audio>` API, a detailed reference of `<video>` and `<audio>` attributes, and guidance on codecs, and creating video/audio suitable for use with these elements.'
 license: cc-bsd
-layout: article
 ---
-              <div class="note">
+							<div class="note">
 
 <p>Update history:</p>
 
@@ -16,7 +15,7 @@ layout: article
 <li>Article updated 14th May 2010 — some minor changes made; information on codecs added to mention the VP8 codec Google have made available and the experimental <a href="http://labs.opera.com/news/2010/05/19/">VP8-supporting Opera Labs build</a>.</li>
 </ul>
 
-              </div>
+							</div>
 
 <h2>Introduction</h2>
 <p>The latest version of Opera supports the HTML5 <code>video</code> and <code>audio</code> elements. But how do you use them? <a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> is a great general introduction but doesn't go deep into the details. <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> shows how captions can be implemented until the spec gains proper support for captions; and <a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video">(re-)Introducing &lt;video&gt;</a> has some information on Opera's implementation. I recommend reading all three!</p>
@@ -173,13 +172,13 @@ alert(video.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"'));</pre></c
 
 <code><pre>var video = document.getElementsByTagName('video')[0];
 if (video.canPlayType) { // &lt;video&gt; is supported!
-  if (video.canPlayType('video/ogg; codecs="theora, vorbis"')) {
-    // it can play (maybe)!
-  } else {
-    // the container format or codecs aren't supported
-    // let's fall back
-    fallback(video);
-  }
+	if (video.canPlayType('video/ogg; codecs="theora, vorbis"')) {
+		// it can play (maybe)!
+	} else {
+		// the container format or codecs aren't supported
+		// let's fall back
+		fallback(video);
+	}
 }</pre></code>
 
 <p class="note">Note: HTML5 earlier said to return the string <code>"no"</code> instead of the empty string, which would make the above code never fall back (since the string <code>"no"</code> is truthy in JavaScript, while the empty string is falsy). If you want to support old video-supporting browsers that implemented <code>"no"</code>, then you would have to check for that string explicitly, or check for <code>"maybe"</code> and <code>"probably"</code> instead.
@@ -188,14 +187,14 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>function fallback(video) {
-  while (video.firstChild) {
-    if (video.firstChild instanceof HTMLSourceElement) {
-      video.removeChild(video.firstChild);
-    } else {
-      video.parentNode.insertBefore(video.firstChild, video);
-    }
-  }
-  video.parentNode.removeChild(video);
+	while (video.firstChild) {
+		if (video.firstChild instanceof HTMLSourceElement) {
+			video.removeChild(video.firstChild);
+		} else {
+			video.parentNode.insertBefore(video.firstChild, video);
+		}
+	}
+	video.parentNode.removeChild(video);
 }</pre></code>
 
 <p>The other way to detect lack of codec support is to listen for the <code>error</code> event on the video:
@@ -211,7 +210,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 
 <code><pre>&lt;video controls&gt;
  &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
-         onerror="fallback(this.parentNode)"&gt;
+				 onerror="fallback(this.parentNode)"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
 
@@ -220,7 +219,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 
 <code><pre>&lt;video controls&gt;
  &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
-         onerror="fallback(this.parentNode)"&gt;
+				 onerror="fallback(this.parentNode)"&gt;
  video not supported; if you're using Safari, try installing
  &lt;a href="http://www.xiph.org/quicktime/"&gt;XiphQT&lt;/a&gt;
 
@@ -232,7 +231,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 <code><pre>&lt;video controls&gt;
  &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
  &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-         onerror="fallback(this.parentNode)"&gt;
+				 onerror="fallback(this.parentNode)"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
 
@@ -250,12 +249,12 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 
 <code><pre>&lt;video controls&gt;
  &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
-         onerror="fallback(this.parentNode)"&gt;
+				 onerror="fallback(this.parentNode)"&gt;
  &lt;object type="application/x-java-applet" width="480" height="288"&gt;
-  &lt;param name="archive" value="cortado-ovt-stripped-wm_r51500.jar"&gt;
-  &lt;param name="code" value="com.fluendo.player.Cortado.class"&gt;
-  &lt;param name="url" value="video.ogv"&gt;
-  video and Java not supported
+	&lt;param name="archive" value="cortado-ovt-stripped-wm_r51500.jar"&gt;
+	&lt;param name="code" value="com.fluendo.player.Cortado.class"&gt;
+	&lt;param name="url" value="video.ogv"&gt;
+	video and Java not supported
  &lt;/object&gt;
 &lt;/video&gt;</pre></code>
 
@@ -264,10 +263,10 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 
 <code><pre>&lt;video controls&gt;
  &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-         onerror="fallback(this.parentNode)"&gt;
+				 onerror="fallback(this.parentNode)"&gt;
  &lt;object data="videoplayer.swf"&gt;
-  &lt;param name="flashvars" value="video.mp4"&gt;
-  video and Flash not supported
+	&lt;param name="flashvars" value="video.mp4"&gt;
+	video and Flash not supported
  &lt;/object&gt;
 &lt;/video&gt;</pre></code>
 
@@ -304,7 +303,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
  video not supported
 &lt;/video&gt;
 &lt;input type="button" value="Load video"
-       onclick="document.getElementsByTagName('video')[0].src = 'video.ogv';"&gt;</pre>
+			 onclick="document.getElementsByTagName('video')[0].src = 'video.ogv';"&gt;</pre>
 
 <p>To populate a video with <code>source</code> elements dynamically, it could be done as follows:
 </p>
@@ -314,15 +313,15 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 &lt;/video&gt;
 &lt;script&gt;
 function loadVideo() {
-  var video = document.getElementsByTagName('video')[0];
-  video.insertBefore(createSource('video.ogv', 'video/ogg; codecs="theora, vorbis"'), video.firstChild);
-  video.insertBefore(createSource('video.mp4', 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'), video.firstChild.nextSibling);
+	var video = document.getElementsByTagName('video')[0];
+	video.insertBefore(createSource('video.ogv', 'video/ogg; codecs="theora, vorbis"'), video.firstChild);
+	video.insertBefore(createSource('video.mp4', 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'), video.firstChild.nextSibling);
 }
 function createSource(src, type) {
-  var source = document.createElement('source');
-  source.src = src;
-  source.type = type;
-  return source;
+	var source = document.createElement('source');
+	source.src = src;
+	source.type = type;
+	return source;
 }
 &lt;/script&gt;
 &lt;input type="button" value="Load video" onclick="loadVideo()"&gt;</pre></code>
@@ -383,7 +382,7 @@ function createSource(src, type) {
 </p>
 
 <code><pre>&lt;video src="video.ogv" width="300" height="300"
-       onloadedmetadata="alert(this.videoWidth + 'x' + this.videoHeight);"&gt;
+			 onloadedmetadata="alert(this.videoWidth + 'x' + this.videoHeight);"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
 
@@ -467,12 +466,12 @@ var video = document.getElementsByTagName('video')[0];
 
 <code><pre>var playpause = document.getElementById('playpause');
 video.onpause = function(e) {
-  playpause.value = 'Play';
-  playpause.onclick = function(e) { video.play(); }
+	playpause.value = 'Play';
+	playpause.onclick = function(e) { video.play(); }
 }
 video.onplay = funtion(e) {
-  playpause.value = 'Pause';
-  playpause.onclick = function(e) { video.pause(); }
+	playpause.value = 'Pause';
+	playpause.onclick = function(e) { video.pause(); }
 }</pre></code>
 
 <p>Alternatively, we could come up with a more elegant solution and take look at the <code>paused</code> IDL attribute when updating the button's label and deciding what to do when clicking the button:
@@ -481,32 +480,32 @@ video.onplay = funtion(e) {
 <code><pre>&lt;input type="button" value="Play" id="playpause" onclick="playOrPause()"&gt;</pre>
 
 <pre>video.onpause = video.onplay = function(e) {
-  playpause.value = video.paused ? 'Play' : 'Pause';
+	playpause.value = video.paused ? 'Play' : 'Pause';
 }
 function playOrPause() {
-  if (video.paused) {
-    video.play();
-  } else {
-    video.pause();
-  }
+	if (video.paused) {
+		video.play();
+	} else {
+		video.pause();
+	}
 }</pre></code>
 
 <p>Note that when the video has ended, the paused state of the video is still unpaused. Thus, if you want to show the "play" button when the video has ended, you need to change it when getting the <code>ended</code> event.
 </p>
 
 <code><pre>video.onended = function(e) {
-  playpause.value = 'Play';
+	playpause.value = 'Play';
 }</pre></code>
 
 <p>The <code>playOrPause</code> function would be modified by also checking the value of the <code>ended</code> IDL attribute:
 </p>
 
 <code><pre>function playOrPause() {
-  if (video.ended || video.paused) {
-    video.play();
-  } else {
-    video.pause();
-  }
+	if (video.ended || video.paused) {
+		video.play();
+	} else {
+		video.pause();
+	}
 }</pre></code>
 
 <h3>Can you play anything yet?</h3>
@@ -529,8 +528,8 @@ alert(video.networkState == video.NETWORK_EMPTY); // true</pre></code>
 <code><pre>var video = document.createElement('video');
 video.src = 'a-video-that-is-unsupported';
 video.onerror = function(e) {
-  alert(video.error.code == video.error.MEDIA_ERR_SRC_NOT_SUPPORTED); // true
-  alert(video.networkState == video.NETWORK_NO_SOURCE); // true
+	alert(video.error.code == video.error.MEDIA_ERR_SRC_NOT_SUPPORTED); // true
+	alert(video.networkState == video.NETWORK_NO_SOURCE); // true
 }</pre></code>
 
 <p>The other values of <code>MediaError</code>'s <code>code</code> IDL attribute are 1, <code>MEDIA_ERR_ABORTED</code>, which means the user aborted the download (which will cause a <code>abort</code> event to be fired); 2, <code>MEDIA_ERR_NETWORK</code>, which means a network error occurred while the video was being downloaded; 3, <code>MEDIA_ERR_DECODE</code>, which means that a decoding error occured after successfully decoding part of the video.
@@ -550,7 +549,7 @@ browser tries to download and decode that source. If the <code>source</code> can
 
 <code><pre>&lt;input type="button" value="Play" id="playpause" onclick="playOrPause()" disabled&gt;</pre>
 <pre>video.oncanplay = function(e) {
-  playpause.disabled = false;
+	playpause.disabled = false;
 }</pre></code>
 
 <p>The <code>readyState</code> IDL attribute indicates how much data the browser has loaded. At first, the value is 0, <code>HAVE_NOTHING</code>. When the <code>loadedmetadata</code> event is fired, <code>readyState</code> is 1, <code>HAVE_METADATA</code>. When <code>loadeddata</code> is fired, <code>readyState</code> is 2, <code>HAVE_CURRENT_DATA</code>. When <code>canplay</code> is fired, <code>readyState</code> is <code>HAVE_FUTURE_DATA</code>. When <code>canplaythrough</code> is fired, <code>readyState</code> is <code>HAVE_ENOUGH_DATA</code>. Note however that <code>readyState</code> can jump several steps in one go, for instance from <code>HAVE_METADATA</code> to <code>HAVE_FUTURE_DATA</code>, skipping <code>HAVE_CURRENT_DATA</code>, so if you inspect the <code>readyState</code> attribute in the <code>canplay</code> event handler, it might not be the value you expect because it has changed already before the event handler is run.
@@ -558,7 +557,7 @@ browser tries to download and decode that source. If the <code>source</code> can
 </p>
 
 <code><pre>video.oncanplay = function(e) {
-  alert(video.readyState); // might be 2, 3 or even 4
+	alert(video.readyState); // might be 2, 3 or even 4
 }</pre></code>
 
 <h3>Skip forward, please</h3>
@@ -575,7 +574,7 @@ browser tries to download and decode that source. If the <code>source</code> can
 
 <code><pre>var seekbar = document.getElementById('seekbar');
 function setupSeekbar() {
-  seekbar.max = video.duration;
+	seekbar.max = video.duration;
 }
 video.ondurationchange = setupSeekbar;</pre></code>
 
@@ -584,10 +583,10 @@ video.ondurationchange = setupSeekbar;</pre></code>
 </p>
 
 <code><pre>function seekVideo() {
-  video.currentTime = seekbar.value;
+	video.currentTime = seekbar.value;
 }
 function updateUI() {
-  seekbar.value = video.currentTime;
+	seekbar.value = video.currentTime;
 }
 seekbar.onchange = seekVideo;
 video.ontimeupdate = updateUI;</pre></code>
@@ -600,8 +599,8 @@ video.ontimeupdate = updateUI;</pre></code>
 </p>
 
 <code><pre>function setupSeekbar() {
-  seekbar.min = video.startTime;
-  seekbar.max = video.startTime + video.duration;
+	seekbar.min = video.startTime;
+	seekbar.max = video.startTime + video.duration;
 }</pre></code>
 
 <p>For a streaming video, <code>duration</code> is Infinity, so instead we need to set the <code>max</code> attribute to the latest time that has been buffered, and since <code>startTime</code> can change over time, we need to set the <code>min</code> attribute over time as well.
@@ -618,10 +617,10 @@ video.ontimeupdate = updateUI;</pre></code>
 </p>
 
 <code><pre>function updateUI() {
-  var lastBuffered = video.buffered.end(video.buffered.length-1);
-  seekbar.min = video.startTime;
-  seekbar.max = lastBuffered;
-  seekbar.value = video.currentTime;
+	var lastBuffered = video.buffered.end(video.buffered.length-1);
+	seekbar.min = video.startTime;
+	seekbar.max = lastBuffered;
+	seekbar.value = video.currentTime;
 }</pre></code>
 
 <p>The <code>played</code> and <code>seekable</code> IDL attributes also return <code>TimeRanges</code> objects. The <code>played</code> IDL attribute returns the ranges that have been played, and the <code>seekable</code> IDL attribute returns which ranges the browser is able to seek to.
@@ -650,10 +649,10 @@ video.ontimeupdate = updateUI;</pre></code>
 <code><pre>&lt;input type="button" value="Unmuted" id="mutebutton" onclick="muteOrUnmute()"&gt;</pre>
 <pre>var mutebutton = document.getElementById('mutebutton');
 video.onvolumechange = function(e) {
-  mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
+	mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
 }
 function muteOrUnmute() {
-  video.muted = !video.muted;
+	video.muted = !video.muted;
 }</pre></code>
 
 <p>For the volume control, we can use a slider control just like the seekbar:
@@ -662,11 +661,11 @@ function muteOrUnmute() {
 <code><pre>&lt;input type="range" max="1" step="any" id="volumecontrol" onchange="updateVolume()"&gt;</pre>
 <pre>var volumecontrol = document.getElementById('volumecontrol');
 video.onvolumechange = function(e) {
-  mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
-  volumecontrol.value = video.volume;
+	mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
+	volumecontrol.value = video.volume;
 }
 function updateVolume() {
-  video.volume = volumecontrol.value;
+	video.volume = volumecontrol.value;
 }</pre></code>
 
 <h3>Let's look at another movie</h3>
@@ -680,7 +679,7 @@ function updateVolume() {
  video not supported
 &lt;/video&gt;
 &lt;input type="button" value="Load another video"
-       onclick="document.getElementsByTagName('video')[0].src = 'video2.ogv';"&gt;</pre></code>
+			 onclick="document.getElementsByTagName('video')[0].src = 'video2.ogv';"&gt;</pre></code>
 
 <p>However, if you're using <code>source</code> elements, then you need to call <code>load()</code> manually when you're done changing the <code>source</code> elements.
 
@@ -693,22 +692,22 @@ function updateVolume() {
 &lt;/video&gt;
 &lt;script&gt;
 function loadAnotherVideo() {
-  var video = document.getElementsByTagName('video')[0];
-  var sources = video.getElementsByTagName('source');
-  sources[0].src = 'video2.ogv';
-  sources[1].src = 'video2.mp4';
-  video.load(); // need this for the new video to load
+	var video = document.getElementsByTagName('video')[0];
+	var sources = video.getElementsByTagName('source');
+	sources[0].src = 'video2.ogv';
+	sources[1].src = 'video2.mp4';
+	video.load(); // need this for the new video to load
 }
 &lt;/script&gt;
 &lt;input type="button" value="Load another video"
-       onclick="loadAnotherVideo()"&gt;</pre></code>
+			 onclick="loadAnotherVideo()"&gt;</pre></code>
 
 <p>If you want to load in another video when the current one has ended, you can listen for the <code>ended</code> event. Remember though that you'll get another <code>ended</code> event when the second video has ended, so if you just want two videos to play, you need to clear the event listener after it has run once. If you use an <code>onended</code> attribute or IDL attribute, then you can set the IDL attribute to null.
 </p>
 
 <code><pre>video.onended = function(e) {
-  video.onended = null;
-  video.src = 'video2.ogv';
+	video.onended = null;
+	video.src = 'video2.ogv';
 }</pre></code>
 
 <p>If you use <code>addEventListener()</code>, then you remove the listener with <code>removeEventListener()</code>:
@@ -716,8 +715,8 @@ function loadAnotherVideo() {
 </p>
 
 <code><pre>video.addEventListener('ended', function(e) {
-  video.removeEventListener('ended', arguments.callee, false);
-  video.src = 'video2.ogv';
+	video.removeEventListener('ended', arguments.callee, false);
+	video.src = 'video2.ogv';
 }, false);</pre></code>
 
 <p>When you call <code>load()</code>, or when you set <code>src</code>, or when a video fatally fails to load, an <code>emptied</code> event is fired, which allows you to reset your UI.
@@ -730,14 +729,14 @@ function loadAnotherVideo() {
 </p>
 
 <code><pre>&lt;input type="range" min="-3" max="3" value="1" id="ratecontrol"
-       onchange="changePlaybackRate()"&gt;
+			 onchange="changePlaybackRate()"&gt;
 &lt;script&gt;
 var ratecontrol = document.getElementById('ratecontrol');
 video.onratechange = function(e) {
-  ratecontrol.value = video.playbackRate;
+	ratecontrol.value = video.playbackRate;
 }
 function changePlaybackRate() {
-  video.playbackRate = ratecontrol.value;
+	video.playbackRate = ratecontrol.value;
 }
 &lt;/script&gt;</pre></code>
 
@@ -766,11 +765,11 @@ var helloend = hello.getAttribute('data-endtime');
 video.ontimeupdate = function(e) {
  var hasHidden = hello.hasAttribute('hidden');
  if (video.currentTime &gt; hellostart &amp;&amp; video.currentTime &lt; helloend) {
-   if (hasHidden)
-     hello.removeAttribute('hidden');
+	 if (hasHidden)
+		 hello.removeAttribute('hidden');
  } else {
-   if (!hasHidden)
-     hello.setAttribute('hidden', '');
+	 if (!hasHidden)
+		 hello.setAttribute('hidden', '');
  }
 }
 &lt;/script&gt;</pre></code>
@@ -794,11 +793,11 @@ var helloend = hello.getAttribute('data-endtime');
 setInterval(function() {
  var hasHidden = hello.hasAttribute('hidden');
  if (video.currentTime &gt; hellostart &amp;&amp; video.currentTime &lt; helloend) {
-   if (hasHidden)
-     hello.removeAttribute('hidden');
+	 if (hasHidden)
+		 hello.removeAttribute('hidden');
  } else {
-   if (!hasHidden)
-     hello.setAttribute('hidden', '');
+	 if (!hasHidden)
+		 hello.setAttribute('hidden', '');
  }
 }, 100);
 &lt;/script&gt;</pre></code>
@@ -824,9 +823,9 @@ setInterval(function() {
 var ctx = document.getElementById('canvas').getContext('2d');
 var video = document.getElementsByTagName('video')[0];
 video.onloadeddata = function(e) {
-  ctx.canvas.width = video.videoWidth;
-  ctx.canvas.height = video.videoHeight;
-  ctx.drawImage(video, 0, 0);
+	ctx.canvas.width = video.videoWidth;
+	ctx.canvas.height = video.videoHeight;
+	ctx.drawImage(video, 0, 0);
 }
 &lt;/script&gt;</pre></code>
 

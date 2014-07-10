@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Since 10.70 has a newer core than 10.60 we&#39;ve decided to split the files. The difference isn&#39;t that big yet, the most visible change being Google Calendar actually working again in 10.70.

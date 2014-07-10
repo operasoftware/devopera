@@ -11,7 +11,6 @@ tags:
 - html
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Recently we&#39;ve been prototyping on Opera Mobile for Android to add support for both the HTML <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#devices" rel="nofollow" target="_blank">&lt;device&gt;</a> element and the W3C&#39;s proposed <a href="http://dev.w3.org/geo/api/spec-source-orientation.html" rel="nofollow" target="_blank">orientation events</a> specification.<br/><br/>In our first internal build, web developers are able to access, display and interact in real-time with a user&#39;s web camera using native HTML features. ... </p><!--more--><strong><span style="color: red">This information is out of date. For the latest information, please refer here: <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" target="_blank">http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview</a></span></strong>
@@ -28,9 +27,9 @@ The simple example below demonstrates how our implementation of the HTML <span s
 &lt;video autoplay&gt;&lt;/video&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 var device = document.getElementsByTagName(&#39;device&#39;)[0],
-    video = document.getElementsByTagName(&#39;video&#39;)[0];
+		video = document.getElementsByTagName(&#39;video&#39;)[0];
 device.addEventListener(&#39;change&#39;, function() {
-  video.src = device.data;
+	video.src = device.data;
 }, true);
 &lt;/script&gt;
 </pre>
@@ -52,29 +51,29 @@ Here&#39;s an example of using orientation events to create a simple compass:
 &lt;p id=&#39;orient&#39;&gt;&lt;/p&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 window.addEventListener(&#39;deviceorientation&#39;, function(evt) {
-  var arrow = document.getElementById(&#39;arrow&#39;);
-  var ctx = arrow.getContext(&#39;2d&#39;);
-  ctx.clearRect(0,0,480,480);
+	var arrow = document.getElementById(&#39;arrow&#39;);
+	var ctx = arrow.getContext(&#39;2d&#39;);
+	ctx.clearRect(0,0,480,480);
 
-  alpha = -Math.PI *(evt.alpha/180.0);
+	alpha = -Math.PI *(evt.alpha/180.0);
 
-  var x1 = 240 + Math.round(240.0 * Math.sin(alpha));
-  var y1 = 240 - Math.round(240.0 * Math.cos(alpha));
-  var x2 = 240 + Math.round(10.0 * Math.sin(alpha - Math.PI/2));
-  var y2 = 240 - Math.round(10.0 * Math.cos(alpha - Math.PI/2));
-  var x3 = 240 + Math.round(10.0 * Math.sin(alpha + Math.PI/2));
-  var y3 = 240 - Math.round(10.0 * Math.cos(alpha + Math.PI/2));
+	var x1 = 240 + Math.round(240.0 * Math.sin(alpha));
+	var y1 = 240 - Math.round(240.0 * Math.cos(alpha));
+	var x2 = 240 + Math.round(10.0 * Math.sin(alpha - Math.PI/2));
+	var y2 = 240 - Math.round(10.0 * Math.cos(alpha - Math.PI/2));
+	var x3 = 240 + Math.round(10.0 * Math.sin(alpha + Math.PI/2));
+	var y3 = 240 - Math.round(10.0 * Math.cos(alpha + Math.PI/2));
 
-  ctx.beginPath();
-  ctx.moveTo(x1,y1);
-  ctx.lineTo(x2,y2);
-  ctx.lineTo(x3,y3);
-  ctx.closePath();
-  ctx.fill();
+	ctx.beginPath();
+	ctx.moveTo(x1,y1);
+	ctx.lineTo(x2,y2);
+	ctx.lineTo(x3,y3);
+	ctx.closePath();
+	ctx.fill();
 
-  var orient = document.getElementById(&#39;orient&#39;);
-  orient.innerHTML = &quot;(&quot; + evt.alpha + &quot;, &quot; + evt.beta + &quot;, &quot; +
-                         evt.gamma + &quot;)&quot;;
+	var orient = document.getElementById(&#39;orient&#39;);
+	orient.innerHTML = &quot;(&quot; + evt.alpha + &quot;, &quot; + evt.beta + &quot;, &quot; +
+												 evt.gamma + &quot;)&quot;;
 }, true);
 &lt;/script&gt;</pre>
 <span style="font-size: 160%">Next steps</span>

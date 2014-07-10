@@ -12,7 +12,6 @@ tags:
 - qa
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>About one year ago, Andreas Tolf Tolfsen <a href="http://seleniumhq.wordpress.com/2011/02/09/operadriver_released/">announced</a> <a href="http://www.opera.com/developer/tools/operawatir/">OperaWatir</a>, a library for driving the Opera browser. To use the library, you needed to brush up a <a href="http://dev.opera.com/articles/view/opera-watir-tutorial/">few scripts in Ruby</a> and <a href="http://my.opera.com/ODIN/blog/2011/02/09/automate-web">start testing</a>. Your first thought is</p>

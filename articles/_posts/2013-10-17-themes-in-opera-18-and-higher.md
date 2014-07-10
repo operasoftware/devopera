@@ -8,7 +8,6 @@ tags:
 - opera
 cover: jpg
 license: cc-by-3.0
-layout: article
 ---
 
 Due to the major architecture changes we’ve been going through recently, the first versions of our Chromium/Blink based Opera browser (versions 15, 16 and 17) do not support themes. However, from Opera 18 onward, themes are supported again! This article explains you how to create themes for Opera 18+.

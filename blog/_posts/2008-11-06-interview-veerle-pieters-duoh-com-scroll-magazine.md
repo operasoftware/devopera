@@ -10,7 +10,6 @@ tags:
 - mobile
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Last week, ODIN interviewed <a href="/ODIN/blog/interview-john-allsopp-of-web-directions-and-scroll-magazine">John Allsopp of Web Directions and Scroll Magazine</a>,  and are pleased to have the opportunity to interview Veerle Pieters, who designed the layout of Scroll and who has redesigned company <a href="http://wwww.duoh.com">Duoh.com</a>&#39;s site to <a href="http://veerle.duoh.com/blog/comments/new_duoh_dot_com_has_launched/">great acclaim</a>.</p>

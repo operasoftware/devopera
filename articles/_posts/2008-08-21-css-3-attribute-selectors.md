@@ -4,7 +4,6 @@ authors:
 - christopher-schmitt
 intro: 'In this article, Christopher Schmitt carries on his detailed exploration of what CSS3 has to offer us, looking at CSS3 attribute selectors that allow us to write selectors matching strings of text inside attribute values.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 <p>CSS attribute selectors allow us to pinpoint the values of attributes of an element and to style that element accordingly.  CSS3 introduces three new selectors that can match strings against an attribute value at the beginning, the end, or anywhere within the value.</p>
@@ -21,7 +20,7 @@ layout: article
 
 
 <pre>.favorite:before {
-  content: url(icons/heart.png);
+	content: url(icons/heart.png);
 }</pre>
 
 <p>This tells the browser to place the <code>heart.png</code> image before every element labeled with the &quot;favorite&quot; class. We end up with a link, as shown in Figure 1.</p>
@@ -32,7 +31,7 @@ layout: article
 <p>We can also just as easily place the icon after the link using the <code>:after</code>  pseudo-selector:</p>
 
 <pre>.favorite:after {
-  content: url(icons/heart.png);
+	content: url(icons/heart.png);
 }</pre>
 
 <h2>Adding contextual icons</h2>
@@ -45,7 +44,7 @@ layout: article
 
 
 <pre>a[href$='.mov']:after {
-  content: url(icons/video.png);
+	content: url(icons/video.png);
 }</pre>
 
 <p>The <code>$=</code> specifies that we want to match links whose <code>href</code>s end with &quot;.mov&quot;. Once again, we’ve used the <code>:after</code>  pseudo-selector to place the icon after the link, as shown in Figure 2.</p>
@@ -58,8 +57,8 @@ layout: article
 
 
 <pre>a[href$='.mov'] {
-  padding-right: 17px;
-  background: url(icons/video.png) no-repeat right;
+	padding-right: 17px;
+	background: url(icons/video.png) no-repeat right;
 }</pre>
 
 <p>Here we’ve made space for the icon by adding generous padding to the right of the link; then, we’ve placed a background image to the right of the element. The result is shown in Figure 3.</p>
@@ -81,8 +80,8 @@ layout: article
 <p>So, to style all links that begin with the string &quot;mailto:&quot;, we can use the following rule:</p>
 
 <pre>a[href ^=&quot;mailto:&quot;] {
-  padding-right: 18px;
-  background: url(icons/email.png) no-repeat right;
+	padding-right: 18px;
+	background: url(icons/email.png) no-repeat right;
 }</pre>
 
 <p>The <code>^=</code> specifies that we want to match links that begin with the &quot;mailto:&quot; string. The result is shown in Figure 4.</p>
@@ -94,8 +93,8 @@ layout: article
 <p>You may also want to pick out links that end with one of several types of extension. Links to subscription feeds, for example, can end with <code>.rss</code> or <code>.atom</code>. You can add more than one attribute selector to a particular rule, like so:</p>
 
 <pre>a[href$='.rss'], a[href$='.atom'] {
-  padding-right: 17px;
-  background: url(icons/rss.png) no-repeat right;
+	padding-right: 17px;
+	background: url(icons/rss.png) no-repeat right;
 }</pre>
 
 <p>So, the feed icon is added to both types of subscription feeds as shown in Figure 5.</p>
@@ -106,8 +105,8 @@ layout: article
 
 
 <pre>a[href *=&quot;username&quot;] {
-  padding-right: 17px;
-  background: url(icons/star.png) no-repeat right;
+	padding-right: 17px;
+	background: url(icons/star.png) no-repeat right;
 }</pre>
 
 

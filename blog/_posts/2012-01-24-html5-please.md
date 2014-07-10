@@ -7,7 +7,6 @@ tags:
 - html5
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><a href="http://html5please.us"><img src="http://cache.gyazo.com/c5d6f648394681c59d93c487b8347cf5.png" alt="" /></a></p>

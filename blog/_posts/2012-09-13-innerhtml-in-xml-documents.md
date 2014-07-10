@@ -6,7 +6,6 @@ tags:
 - xml
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>In the run-up to the next stable desktop release, you&#39;ll notice that a lot of changes are being made to our browser&#39;s core engine. Although here on the Developer Relations blog we usually just cherry-pick and explain some of the shinier new additions that fall under the big &quot;HTML5&quot; umbrella, there are also quite often tiny improvements under the hood that remove bugs and browser incompatibilities that don&#39;t get much notice...until sites that somehow relied on our previous behaviour start to misbehave.</p>

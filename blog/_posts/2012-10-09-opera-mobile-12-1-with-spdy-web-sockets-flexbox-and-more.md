@@ -10,7 +10,6 @@ tags:
 - standards
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today marks the release of <a href="https://play.google.com/store/apps/details?id=com.opera.browser">Opera Mobile 12.1 for Android phones</a> — from Android 1.6 (Donut) to 4.1 (Jelly Bean), we&#39;ve got you covered with a mean and lean browsing machine!</p>
@@ -56,80 +55,80 @@ layout: post
 
 <table id="prefixes">
  <thead>
-  <tr>
-   <th></th>
-   <th id="prefixesColHdr2">-o-</th>
-   <th id="prefixesColHdr3">-webkit-</th>
-   <th id="prefixesColHdr4">unprefixed (standardized)</th>
-  </tr>
+	<tr>
+	 <th></th>
+	 <th id="prefixesColHdr2">-o-</th>
+	 <th id="prefixesColHdr3">-webkit-</th>
+	 <th id="prefixesColHdr4">unprefixed (standardized)</th>
+	</tr>
  </thead>
  <tbody>
-  <tr>
-   <th id="prefixesRowHdr2">linear-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">yes; old syntax</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">yes; old syntax</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr2">repeating-linear-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr2">radial-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-    <tr>
-   <th id="prefixesRowHdr2">repeating-radial-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr3">animation</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr3">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr3">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr3">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr4">transform</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr4">yes (deprecated)</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr4">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr4">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr5">transition</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr5">yes (deprecated)</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr5">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr5">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr6">border-radius</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr6">never existed</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr6">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr6">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr7">background-size</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr7">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr7">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr7">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr8">box-shadow</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr8">never existed</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr8">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr8">yes</td>
-  </tr>
-    <tr>
-   <th id="prefixesRowHdr8">flexbox related properties</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr9">never existed</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr9">yes; old syntax</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr9">yes</td>
-  </tr>
+	<tr>
+	 <th id="prefixesRowHdr2">linear-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">yes; old syntax</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">yes; old syntax</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr2">repeating-linear-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr2">radial-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+		<tr>
+	 <th id="prefixesRowHdr2">repeating-radial-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr3">animation</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr3">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr3">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr3">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr4">transform</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr4">yes (deprecated)</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr4">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr4">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr5">transition</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr5">yes (deprecated)</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr5">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr5">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr6">border-radius</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr6">never existed</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr6">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr6">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr7">background-size</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr7">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr7">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr7">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr8">box-shadow</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr8">never existed</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr8">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr8">yes</td>
+	</tr>
+		<tr>
+	 <th id="prefixesRowHdr8">flexbox related properties</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr9">never existed</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr9">yes; old syntax</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr9">yes</td>
+	</tr>
  </tbody>
 </table>
 

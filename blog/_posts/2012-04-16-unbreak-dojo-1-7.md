@@ -7,7 +7,6 @@ tags:
 - ouch
 - browser.js
 license: cc-by-3.0
-layout: post
 ---
 
 Hey, Ola was away last week so I get to do a guest post again :) I’ve shipped a small and urgent update for 11.62 only.

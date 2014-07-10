@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 The blog has been quiet for some time as we digested the outcome of the big experiments. Now we&#39;re back with some nice normal fixes.
 

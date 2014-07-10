@@ -9,7 +9,6 @@ tags:
 - tokenizer
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We are currently working on new <a href="http://en.wikipedia.org/wiki/Lexical_analysis">tokenizers</a> and <a href="http://en.wikipedia.org/wiki/Syntax_highlighting">syntax highlighting</a> for the source views in the <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> Resource Service. One of the core requirements for this is performance. Everything in Opera Dragonfly is done client side with JavaScript; if you want to debug something as complex as GMail, with many large scripts the tokenizer and highlighter has to be lightning fast to give a useable experience.  This was a considerable challenge when we started Opera Dragonfly. If we tokenised and highlighted an entire script at once it would take multiple seconds for large files. Instead, we took an approach and would split the script into chunks and highlight what was visible in the script view. With this approach in place, syntax highlighting was almost instant.</p>
@@ -17,46 +16,46 @@ layout: post
 <p>That was back then in 2008; long before Carakan (Opera’s modern JIT based JavaScript engine) had even started development. A JavaScript performance race has waged since then. JavaScript is only one factor in performance (although the most visible PR wise), and other subsystems in Opera have also improved performance immensely in the same time period.  Examples of this include layout, painting (Opera included Vega at the same time as Carakan) and DOM performance. Opera Dragonfly is a perfect example of a complex modern application which benefits from these improvements. Benchmarks are all well and nice, but how much does Opera Dragonfly benefit from such improvements? We’ve produced a test to judge performance when performing tokenising and syntax highlighting on the large files we may encounter when debugging complex pages. The improvements are quite amazing.</p>
 
 <table>
-    <thead>
-        <tr>
-        <th>Method</th>
-        <th>Opera 11</th>
-        <th>Chrome 10.0.634</th>
-        <th>Firefox 4 b9</th>
-        </tr><tr>
-    </tr></thead>
-    <tbody>
-        <tr>
-         <td>dom_fragment</td>
-          <td>350 ms</td>
-          <td>799 ms</td>
-          <td>521 ms</td>
-        </tr>
-        <tr>
-         <td>template</td>
-          <td>372 ms</td>
-          <td>816 ms</td>
-          <td>597 ms</td>
-        </tr>
-         <tr>
-         <td>markup</td>
-          <td>294 ms</td>
-          <td>380 ms</td>
-          <td>701 ms</td>
-        </tr>
-        <tr>
-         <td>webworker</td>
-          <td>308 ms</td>
-          <td>270 ms</td>
-          <td>469 ms</td>
-        </tr>
-        <tr>
-         <td>no_highlight </td>
-          <td>94 ms</td>
-          <td>149 ms</td>
-          <td>146 ms</td>
-        </tr>
-    </tbody>
+		<thead>
+				<tr>
+				<th>Method</th>
+				<th>Opera 11</th>
+				<th>Chrome 10.0.634</th>
+				<th>Firefox 4 b9</th>
+				</tr><tr>
+		</tr></thead>
+		<tbody>
+				<tr>
+				 <td>dom_fragment</td>
+					<td>350 ms</td>
+					<td>799 ms</td>
+					<td>521 ms</td>
+				</tr>
+				<tr>
+				 <td>template</td>
+					<td>372 ms</td>
+					<td>816 ms</td>
+					<td>597 ms</td>
+				</tr>
+				 <tr>
+				 <td>markup</td>
+					<td>294 ms</td>
+					<td>380 ms</td>
+					<td>701 ms</td>
+				</tr>
+				<tr>
+				 <td>webworker</td>
+					<td>308 ms</td>
+					<td>270 ms</td>
+					<td>469 ms</td>
+				</tr>
+				<tr>
+				 <td>no_highlight </td>
+					<td>94 ms</td>
+					<td>149 ms</td>
+					<td>146 ms</td>
+				</tr>
+		</tbody>
 </table>
 
 <p>The following tests results (in ms) are the average of 50 runs using a 250kb JavaScript file on a Windows XP machine. You can run the tests yourself by following the link to our <a href="http://scope.bitbucket.org/tests/js-highlight-performance/index.html">JavaScript tokenise and highlight performance test</a>. Your mileage may vary depending on platform and hardware specs.</p>

@@ -9,7 +9,6 @@ tags:
 - javascript
 - physics
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 Blob Sallad is a small demo I put together using the `canvas` tag, which modern browsers have started to support in recent versions (eg Opera 9.x and Firefox 2.x,) and some JavaScript physics simulation. The main inspiration was the game Loco Rocco, and after reading an [article about game character physics][1] by Thomas Jacobsen. I decided I could use similar techniques for blob simulation.

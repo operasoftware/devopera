@@ -7,7 +7,6 @@ tags:
 - geolocation
 - labs
 license: cc-by-3.0
-layout: post
 ---
 
 ## This article is obsolete

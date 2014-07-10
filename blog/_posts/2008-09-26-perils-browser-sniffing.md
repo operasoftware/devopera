@@ -7,7 +7,6 @@ tags:
 - masking
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Broswer sniffing doesn&#39;t work. Browser sniffing may have started out as a way to prevent browsers without proper features from accessing the sites, but now it often  keeps browsers away from sites which otherwise would have worked.</p>

@@ -4,7 +4,6 @@ authors:
 - esteban-velazquez
 intro: 'RoboHydra is a web server designed to help you write and test software that uses HTTP as a communication protocol. This article will take you through the basics of how RoboHydra works and how to install and use it at a basic level. You’ll see how to use it as a proxy for an existing site, and how you can make changes to local files and see those changes immediately reflected on the live site!'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -66,10 +65,10 @@ layout: article
 <p>RoboHydra configuration files are simple JSON files that specify a list of <strong>plugins</strong> to be loaded. Plugins are special scripts that define one or more heads that you want to load together. A configuration file loading two plugins, <code>monitor</code> and <code>dev-proxy</code>, would look like this:</p>
 
 <pre><code class="javascript">{
-  "plugins": [
-    {"name": "monitor", "config": {}},
-    {"name": "dev-proxy", "config": {}}
-  ]
+	"plugins": [
+		{"name": "monitor", "config": {}},
+		{"name": "dev-proxy", "config": {}}
+	]
 }</code></pre>
 
 <p>The actual code of your plugins is written in JavaScript, and needs to be stored in a directory <em>robohydra/plugins</em>, placed inside your working directory. So by default, the example plugins mentioned above would be loaded from <em>devo-robohydra/robohydra/plugins/monitor/index.js</em> and <em>devo-robohydra/robohydra/plugins/dev-proxy/index.js</em>. We will see how to write a full plugin in the example that follows.</p>
@@ -87,36 +86,36 @@ layout: article
 <p>To achieve this, we'll have to write a RoboHydra plugin containing two heads: one to serve local files from <em>/js/</em> and another to proxy everything else to http://www.opera.com. The former will serve static files, and the latter will be a proxying head. The plugin code will look like this:</p>
 
 <pre><code class="javascript">var heads                   = require('robohydra').heads,
-    RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem,
-    RoboHydraHeadProxy      = heads.RoboHydraHeadProxy;
+		RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem,
+		RoboHydraHeadProxy      = heads.RoboHydraHeadProxy;
 
 exports.getBodyParts = function(config) {
-  var projectPath = config.rootpath || '.';
+	var projectPath = config.rootpath || '.';
 
-  return {
-    heads: [
-      new RoboHydraHeadFilesystem
-      (
-        {
-          name: 'js',
-          mountPath: '/js',
-          documentRoot: projectPath + '/static/js'
-        }
-      ),
+	return {
+		heads: [
+			new RoboHydraHeadFilesystem
+			(
+				{
+					name: 'js',
+					mountPath: '/js',
+					documentRoot: projectPath + '/static/js'
+				}
+			),
 
-      // When none of the above heads match, this head
-      // always matches
-      new RoboHydraHeadProxy
-      (
-        {
-          name: 'proxy',
-          mountPath: '/',
-          proxyTo: 'http://www.opera.com',
-          setHostHeader: true
-        }
-      )
-    ]
-  };
+			// When none of the above heads match, this head
+			// always matches
+			new RoboHydraHeadProxy
+			(
+				{
+					name: 'proxy',
+					mountPath: '/',
+					proxyTo: 'http://www.opera.com',
+					setHostHeader: true
+				}
+			)
+		]
+	};
 };</code></pre>
 
 <ol>
@@ -129,9 +128,9 @@ exports.getBodyParts = function(config) {
 <p>Now create a configuration file called operacom-dev.conf inside <em>devo-robohydra</em> with the following contents:</p>
 
 <pre><code class="javascript">{
-  "plugins": [
-    {"name": "operacom-dev", "config": {"rootpath": "operacom"}}
-  ]
+	"plugins": [
+		{"name": "operacom-dev", "config": {"rootpath": "operacom"}}
+	]
 }</code></pre>
 </li>
 
@@ -163,23 +162,23 @@ exports.getBodyParts = function(config) {
 <p>Let's see this in action. Open <code>operacom/static/js/mainmenu.js</code> and find the following function:</p>
 
 <pre><code class="javascript">frm.onsubmit=function() {
-  if(this.words.value=='Search www.opera.com'||this.words.value=='') {
-    alert('Please enter a search term.');
-    this.words.focus();
-    return false;
-  }
+	if(this.words.value=='Search www.opera.com'||this.words.value=='') {
+		alert('Please enter a search term.');
+		this.words.focus();
+		return false;
+	}
 }</code></pre>
 
 <p>If you click on the search button at the bottom of the page without typing in any words, the alert box will appear to tell you what to do. Let's try changing this function to the following, to present the error message to the user in a different way:</p>
 
 <pre><code class="javascript">frm.onsubmit=function() {
-  if(this.words.value=='Search www.opera.com'||this.words.value=='') {
-    wrd.value = 'Please enter a search term.';
-    wrd.style.color = 'black';
-    wrd.style.fontWeight = 'bold';
-    this.words.focus();
-    return false;
-  }
+	if(this.words.value=='Search www.opera.com'||this.words.value=='') {
+		wrd.value = 'Please enter a search term.';
+		wrd.style.color = 'black';
+		wrd.style.fontWeight = 'bold';
+		this.words.focus();
+		return false;
+	}
 }</code></pre>
 
 <p>Save your JS file, then go to <code>http://localhost:3000</code> with your browser and reload the page to make sure you're using the latest JavaScript files. If you go to the bottom of the page and click on the search button without typing any words, you'll see the updated effect. This illustrates just how great RoboHydra is for such experimentation.</p>

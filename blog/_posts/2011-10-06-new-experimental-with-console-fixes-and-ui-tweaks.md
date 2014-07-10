@@ -6,7 +6,6 @@ tags:
 - experimental
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We have a new build up on the experimental branch.</p>

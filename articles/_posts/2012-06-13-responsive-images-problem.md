@@ -4,7 +4,6 @@ authors:
 - matt-wilcox
 intro: 'Responsive images is a surprisingly complicated topic, and one that’s been steadily gaining attention over the last year as more developers discover they need them and then discover there’s no good solution yet. This article aims to give an overview of the problem itself, and show the different proposals in the works to address it.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 

@@ -6,7 +6,6 @@ tags:
 - sitepatching
 - ouch
 license: cc-by-3.0
-layout: post
 ---
 
 Site patching isn’t risk-free. It’s pretty powerful to be able to rewrite scripts and websites, and while we try to use it really carefully, things can go wrong. [Very wrong][1]. We now know that a patch [added back in June][2] recently broke BBC’s iPlayer site completely.

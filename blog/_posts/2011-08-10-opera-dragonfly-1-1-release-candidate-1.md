@@ -7,7 +7,6 @@ tags:
 - release-candidate
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We have just released the release candidate of Opera Dragonfly 1.1 on the cutting-edge (coming soon) and <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental paths</a>. This will be the build that will be pushed to the default path unless we find any P1 bugs during the final testing and cooling down phase. Work will then switch to feature development on Opera Dragonfly 1.2, including features such as a profiler and collapsing to shorthands in the CSS Inspector.</p>

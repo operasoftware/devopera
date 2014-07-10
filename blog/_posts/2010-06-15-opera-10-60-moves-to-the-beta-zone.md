@@ -13,7 +13,6 @@ tags:
 - web-workers
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>With a <a href="http://my.opera.com/ODIN/blog/opera-10-60-alpha">successful Opera 10.60 alpha release</a> behind us, we have continued progress on this version of the browser, and today we can announce <a href="http://www.opera.com/browser/next/">Opera 10.60 beta</a>! This new release is exciting in many ways, featuring further speed improvements over the alpha version, but the main interesting developer features are as follows:</p>

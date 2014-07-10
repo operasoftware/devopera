@@ -6,7 +6,6 @@ tags:
 - localisation
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p><em>[UPDATE] Added Bulgarian, Tamil, Telugu, Turkish and Ukrainian, which I accidently missed from the list.</em></p>
@@ -16,43 +15,43 @@ layout: post
 <p>The main noteworthy fix for this release is the localisation of Opera Dragonfly into 37 different languages.  A big thank you should go out to everyone that helped us with these translations.  The included localisations include:</p>
 
 <ul>
-    <li>bg: Bulgarian</li>
-    <li>cs: Czech</li>
-    <li>da: Danish</li>
-    <li>de: German</li>
-    <li>el: Greek</li>
-    <li>en: English</li>
-    <li>es-ES: Spanish (Spain)</li>
-    <li>es-LA: Spanish (Latin America)</li>
-    <li>et: Estonian</li>
-    <li>fi: Finnish</li>
-    <li>fr: French</li>
-    <li>fr-CA: French Canadian</li>
-    <li>fy: Friesian</li>
-    <li>hi: Hindi</li>
-    <li>hr: Croatian</li>
-    <li>hu: Hungarian</li>
-    <li>id: Indonesian</li>
-    <li>it: Italian</li>
-    <li>ja: Japanese</li>
-    <li>ka: Georgian</li>
-    <li>ko: Korean</li>
-    <li>lt: Lithuanian</li>
-    <li>mk: Macedonian</li>
-    <li>nb: Norwegian bokmål</li>
-    <li>nl: Dutch</li>
-    <li>nn: Norwegian nynork</li>
-    <li>pl: Polish</li>
-    <li>pt: Portuguese</li>
-    <li>pt-BR: Portuguese (Brazilian)</li>
-    <li>ru: Russian</li>
-    <li>sv: Swedish</li>
-    <li>ta: Tamil</li>
-    <li>te: Telugu</li>
-    <li>tr: Turkish</li>
-    <li>uk: Ukrainian</li>
-    <li>zh-cn: Simplified Chinese</li>
-    <li>zh-tw: Traditional Chinese</li>
+	<li>bg: Bulgarian</li>
+	<li>cs: Czech</li>
+	<li>da: Danish</li>
+	<li>de: German</li>
+	<li>el: Greek</li>
+	<li>en: English</li>
+	<li>es-ES: Spanish (Spain)</li>
+	<li>es-LA: Spanish (Latin America)</li>
+	<li>et: Estonian</li>
+	<li>fi: Finnish</li>
+	<li>fr: French</li>
+	<li>fr-CA: French Canadian</li>
+	<li>fy: Friesian</li>
+	<li>hi: Hindi</li>
+	<li>hr: Croatian</li>
+	<li>hu: Hungarian</li>
+	<li>id: Indonesian</li>
+	<li>it: Italian</li>
+	<li>ja: Japanese</li>
+	<li>ka: Georgian</li>
+	<li>ko: Korean</li>
+	<li>lt: Lithuanian</li>
+	<li>mk: Macedonian</li>
+	<li>nb: Norwegian bokmål</li>
+	<li>nl: Dutch</li>
+	<li>nn: Norwegian nynork</li>
+	<li>pl: Polish</li>
+	<li>pt: Portuguese</li>
+	<li>pt-BR: Portuguese (Brazilian)</li>
+	<li>ru: Russian</li>
+	<li>sv: Swedish</li>
+	<li>ta: Tamil</li>
+	<li>te: Telugu</li>
+	<li>tr: Turkish</li>
+	<li>uk: Ukrainian</li>
+	<li>zh-cn: Simplified Chinese</li>
+	<li>zh-tw: Traditional Chinese</li>
 </ul>
 
 <p>You can change the UI language of Opera Dragonfly by clicking the settings icon (lower right hand corner), clicking the general expander (the text is now clickable as well as the arrow icon), and select the language from the drop down list.</p>

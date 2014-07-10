@@ -4,7 +4,6 @@ authors:
 - chris-mills
 intro: 'CSS animations allow us to animate our web content, by declaring property values at different keyframes, and then applying the animations you’ve declared to the elements you want to animate. And what’s more is that they’re available in Opera 12+! In this article, we’ll walk you through the basics and look at some examples along the way.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -29,8 +28,8 @@ layout: article
 <p>To set up an animation, you first have to define some animation keyframes, in a special new at-rule block, which looks like this:</p>
 
 <pre><code>@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
 }</code></pre>
 
 <p>Here we are saying that this animation is called <q>spin</q>, and what the animation does is smoothly rotates whatever it is applied to through 360 degrees. Nothing else is defined here at all, which may sound lacking, but in actual fact it is very flexible, as you can define an animation once, and then apply it to many different elements with different durations and other behaviour.</p>
@@ -38,10 +37,10 @@ layout: article
 <p>You can also use <code>0%</code> and <code>100%</code> in place of <code>from</code> and <code>to</code>. If you like, you can include intermediate keyframes, for more complex animations:</p>
 
 <pre><code>@keyframes spin {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(30deg); }
-  50% { transform: rotate(120deg); }
-  100% { transform: rotate(360deg); }
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(30deg); }
+	50% { transform: rotate(120deg); }
+	100% { transform: rotate(360deg); }
 }</code></pre>
 
 <p>You can write keyframes that have the same values on one line, like this:</p>
@@ -57,14 +56,14 @@ layout: article
 <p>To animate an element using this animation, you apply it to the element using the <code>animation-name</code> property:</p>
 
 <pre><code>#image {
-  animation-name: spin;
+	animation-name: spin;
 }</code></pre>
 
 <p>To make this do anything, you also need to tell the animation how long it should take to run from start to finish: this is done using <code>animation-duration</code>:</p>
 
 <pre><code>#image {
-  animation-name: spin;
-  animation-duration: 3s;
+	animation-name: spin;
+	animation-duration: 3s;
 }</code></pre>
 
 <p>these are all the properties you need to get an animation to run once on an element. Let's now look at what other properties we have to control animations.</p>
@@ -74,9 +73,9 @@ layout: article
 <p>To make our animation run a set number of times, you use <code>animation-iteration-count</code>:</p>
 
 <pre><code>#image {
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-iteration-count: 10;
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-iteration-count: 10;
 }</code></pre>
 
 <p>the value of <code>animation-iteration-count</code> can be any positive whole number, or you can set it to <code>infinite</code> to make it go on forever. The default value is 1.</p>
@@ -108,7 +107,7 @@ layout: article
 <p>You can set a delay before the animation starts, by setting an <code>animation-delay</code> property:</p>
 
 <pre><code>#image {
-  animation-delay: 4s;
+	animation-delay: 4s;
 }</code></pre>
 
 <p>This property can take positive and negative values. A positive value will delay when the animation starts, whereas a negative value will make the animation start part way through the specified animation duration. You'll most commonly use this when you've got multiple animations that you want to fire at different times to provide a complete sequence.</p>

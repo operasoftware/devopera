@@ -6,7 +6,6 @@ tags:
 - emulator
 - tv
 license: cc-by-3.0
-layout: article
 ---
 
 - [インストールと起動](#install)

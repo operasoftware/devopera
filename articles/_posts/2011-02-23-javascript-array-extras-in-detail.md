@@ -4,16 +4,15 @@ authors:
 - dmitry-soshnikov
 intro: 'In this article we’ll look at the functionality made available by the new methods of array objects standardized in ECMAScript 5.'
 license: cc-by-3.0
-layout: article
 ---
 <p>Table of contents:</p>
 
-              <ol>
+							<ol>
 <li><a href="#introduction" title="Introduction">Introduction</a></li>
 <li><a href="#browsers-support" title="Browsers support">Browser support</a></li>
 <li><a href="#theory-and-rationale" title="Theory and rationale">Theory and rationale</a></li>
 <li><a href="#arrays-extra-processing" title="Arrays: extra processing">Arrays: extra processing</a>
-                  <ol>
+									<ol>
 <li><a href="#foreach" title="forEach">forEach</a></li>
 <li><a href="#map" title="map">map</a></li>
 <li><a href="#filter" title="filter">filter</a></li>
@@ -23,11 +22,11 @@ layout: article
 <li><a href="#lastindexof" title="lastIndexOf">lastIndexOf</a></li>
 <li><a href="#reduce" title="reduce">reduce</a></li>
 <li><a href="#reduceright" title="reduceRight">reduceRight</a></li>
-                  </ol>
+									</ol>
 <li><a href="#generic-nature" title="Generic nature">Generic nature</a></li>
 <li><a href="#summary" title="Summary">Summary</a></li>
 <li><a href="#further-reading" title="Further reading">Further reading</a></li>
-              </ol>
+							</ol>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -53,9 +52,9 @@ layout: article
 <pre><code>// for old browsers
 
 if (typeof Array.prototype.forEach != "function") {
-  Array.prototype.forEach = function () {
-    /* own implementation */
-  };
+	Array.prototype.forEach = function () {
+		/* own implementation */
+	};
 }
 </code></pre>
 
@@ -68,11 +67,11 @@ if (typeof Array.prototype.forEach != "function") {
 <pre><code>// sum of numbers in range
 
 function getSum(from, to) {
-  var result = 0;
-  for (var k = from; k &lt; to; k++) {
-    result += k;
-  }
-  return result;
+	var result = 0;
+	for (var k = from; k &lt; to; k++) {
+		result += k;
+	}
+	return result;
 }
 
 var sum = getSum(1, 10); // 45
@@ -80,11 +79,11 @@ var sum = getSum(1, 10); // 45
 // sum of squares of numbers in range
 
 function getSumOfSquares(from, to) {
-  var result = 0;
-  for (var k = from; k &lt; to; k++) {
-    result += k * k;
-  }
-  return result;
+	var result = 0;
+	for (var k = from; k &lt; to; k++) {
+		result += k * k;
+	}
+	return result;
 }
 
 var sumOfSquares = getSumOfSqures(1, 10); // 285</code></pre>
@@ -96,11 +95,11 @@ var sumOfSquares = getSumOfSqures(1, 10); // 285</code></pre>
 <p>The common part of the above two functions (the exact <em>action</em> applied on current number <code>k</code>) can be <em>encapsulated</em> into a <em>function</em>. In such a way, we can <em>separate</em> the common (often boring) part of the <em>processing</em> (the <code>for...length</code> in this case) from the <em>transformation</em> made on the each element. Having such an approach, the transformation can be <em>passed as an argument</em> to our common function, like so:</p>
 
 <pre><code>function genericSum(handler, from, to) {
-  var result = 0;
-  for (var k = from; k &lt; to; k++) {
-    result += handler(k);
-  }
-  return result;
+	var result = 0;
+	for (var k = from; k &lt; to; k++) {
+		result += handler(k);
+	}
+	return result;
 }</code></pre>
 
 <p>Here every subsequent summed value is presented not simply as the current number, but as a <em>result of the transformation</em> (provided by the function <code>handler</code>) made on the number. That is, we get the ability to <em>parameterize</em> the handling of every element in the sequence.</p>
@@ -140,7 +139,7 @@ var sumOfSquares = getSumOfSqures(1, 10); // 285</code></pre>
 <pre><code>var array = [1, 2, 3, 4];
 
 for (var k = 0, length = array.length; k &lt; length; k++) {
-  alert(array[k]);
+	alert(array[k]);
 }</code></pre>
 
 <p>Since we can't refer to an array without a variable, we use an additional variable <code>array</code>; for the loop counter we also use the variable <code>k</code>. And the code itself becomes longer because we are repeating the <code>for...length</code> loop over and over again. We could of course use another iteration (e.g. <code>while</code>) and wrap the code into a function (thereby hiding helper variables and not polluting the global scope), but obviously this is less abstract than the <code>forEach</code> approach.</p>
@@ -163,8 +162,8 @@ for (var k = 0, length = array.length; k &lt; length; k++) {
 <pre><code>var sum = 0;
 
 [1, 2, 3, 4].forEach(function (item, index, array) {
-  console.log(array[index] == item); // true
-  sum += item;
+	console.log(array[index] == item); // true
+	sum += item;
 });
 
 alert(sum); // 10</code></pre>
@@ -177,25 +176,25 @@ alert(sum); // 10</code></pre>
 
 <pre><code>var database = {
 
-  users: ["Dmitry", "John", "David"],
+	users: ["Dmitry", "John", "David"],
 
-  sendEmail: function (user) {
-    if (this.isValidUser(user)) {
-      /* sending message */
-    }
-  },
+	sendEmail: function (user) {
+		if (this.isValidUser(user)) {
+			/* sending message */
+		}
+	},
 
-  isValidUser: function (user) {
-    /* some checks */
-  }
+	isValidUser: function (user) {
+		/* some checks */
+	}
 
 };
 
 // send an email to every user
 
 database.users.forEach(  // for each user in database
-  database.sendEmail,    // send email
-  database               // using context (this) as database
+	database.sendEmail,    // send email
+	database               // using context (this) as database
 );</code></pre>
 
 <p>Let’s discuss what is going on here. Inside the <code>sendEmail</code> activation function the <code>this</code> value is set to a <code>database</code> object, and <code>this.isValidUser</code> refers to the required function. If we didn’t pass this second argument, the <code>this</code> value would be set to the <em>global object</em> (in browsers it’s <code>window</code>) or even to <code>undefined</code> in <a href="http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/">strict mode</a>.</p>
@@ -222,7 +221,7 @@ array.forEach(alert); // alerts only 1 and 3</code></pre>
 <pre><code>var data = [1, 2, 3, 4];
 
 var arrayOfSquares = data.map(function (item) {
-  return item * item;
+	return item * item;
 });
 
 alert(arrayOfSquares); // 1, 4, 9, 16</code></pre>
@@ -230,10 +229,10 @@ alert(arrayOfSquares); // 1, 4, 9, 16</code></pre>
 <p>In practice we may use this technique to get any transformation of a list. For example, if we have a list of user objects, we can get the list of their email addresses:</p>
 
 <pre><code>var users = [
-  {name: "Dmitry", "email": "dmitry@email.com"},
-  {name: "John",   "email": "john@email.com"},
-  {name: "David",  "email": "david@email.de"},
-  // etc
+	{name: "Dmitry", "email": "dmitry@email.com"},
+	{name: "John",   "email": "john@email.com"},
+	{name: "David",  "email": "david@email.de"},
+	// etc
 ];
 
 var emails = users.map(function (user) { return user.email; });
@@ -254,11 +253,11 @@ alert(emails); // ["dmitry@email.com", "john@email.com", "david@email.de"]</code
 
 <pre><code>var comEmails = users // from users ...
 
-  // get emails ...
-  .map(function (user) { return user.email; })
+	// get emails ...
+	.map(function (user) { return user.email; })
 
-  // and remove non-needed, leaving only "com"-emails
-  .filter(function (email) { return /com$/.test(email); });
+	// and remove non-needed, leaving only "com"-emails
+	.filter(function (email) { return /com$/.test(email); });
 
 alert(comEmails); // ["dmitry@email.com", "john@email.com"]</code></pre>
 
@@ -276,10 +275,10 @@ alert(comEmails); // ["dmitry@email.com", "john@email.com"]</code></pre>
 var email;
 
 for (var k = 0, length = users.length; k &lt; length; k++) {
-  email = user.email;
-  if (/com$/.test(email)) {
-    comEmails.push(email);
-  }
+	email = user.email;
+	if (/com$/.test(email)) {
+		comEmails.push(email);
+	}
 }
 
 alert(comEmails); // ["dmitry@email.com", "john@email.com"]</code></pre>
@@ -302,11 +301,11 @@ alert(comEmails); // ["dmitry@email.com", "john@email.com"]</code></pre>
 var current = 7;
 
 function higherThanCurrent(score) {
-  return score &gt; current;
+	return score &gt; current;
 }
 
 if (scores.some(higherThanCurrent)) {
-  alert("Accepted");
+	alert("Accepted");
 }</code></pre>
 
 <p>This code gives the result <code>"Accepted"</code>, since the <code>some</code> method determines that the second element of the <code>scores</code> array (value <code>8</code>) is higher than the current item, value <code>7</code>. The processing therefore stops, returning <code>true</code>.</p>
@@ -316,24 +315,24 @@ if (scores.some(higherThanCurrent)) {
 <pre><code>var found = null;
 
 var points = [
-  {x: 10, y: 20},
-  {x: 15, y: 53},
-  {x: 17, y: 72}
+	{x: 10, y: 20},
+	{x: 15, y: 53},
+	{x: 17, y: 72}
 ];
 
 points.some(function (point) {
 
-  if (point.x &gt; 10 &amp;&amp; point.y &lt; 60) {
-    found = point; // found
-    return true;
-  }
+	if (point.x &gt; 10 &amp;&amp; point.y &lt; 60) {
+		found = point; // found
+		return true;
+	}
 
-  return false;
+	return false;
 
 });
 
 if (found) {
-  alert("Found: " + found.x + ", " + found.y); // Found: 15, 53
+	alert("Found: " + found.x + ", " + found.y); // Found: 15, 53
 }</code></pre>
 
 <p>We could also use <code>forEach</code> for searching, however <code>forEach</code> wouldn’t stop on the first found element: we'd need to throw a special exception to exit from it.</p>
@@ -349,9 +348,9 @@ if (found) {
 <p>Our updated example looks like so:</p>
 
 <pre><code>if (scores.every(higherThanCurrent)) {
-  alert("Accepted");
+	alert("Accepted");
 } else {
-  alert("Not all scores are higher than " + current);
+	alert("Not all scores are higher than " + current);
 }
 
 // change our value to 2
@@ -390,7 +389,7 @@ alert(data.lastIndexOf(5)); // 4
 alert(data.lastIndexOf(5, 3)); // 1 (start search from 3 index)
 
 if (data.indexOf(4) == -1) {
-  alert("4 is not found");
+	alert("4 is not found");
 }</code></pre>
 
 <h3 id="reduce">reduce</h3>
@@ -406,7 +405,7 @@ if (data.indexOf(4) == -1) {
 <pre><code>// reduce the array to sum of elements
 
 var sum = [1, 2, 3, 4].reduce(function (previous, current, index, array) {
-  return previous + current;
+	return previous + current;
 });
 
 alert(sum); // 10</code></pre>
@@ -436,9 +435,9 @@ previous = (6 + 4) =  10, current = undefined (exit)</code></pre>
 <p>The resulting value is not required to be a primitive value. With <code>reduce</code> we can, for example, transform two-dimensional arrays into flat vectors:</p>
 
 <pre><code>var matrix = [
-  [1, 2],
-  [3, 4],
-  [5, 6]
+	[1, 2],
+	[3, 4],
+	[5, 6]
 ];
 
 alert(matrix[0][1]); // 2
@@ -446,7 +445,7 @@ alert(matrix[0][1]); // 2
 // and now get the flatten array
 
 var flatten = matrix.reduce(function (previous, current) {
-  return previous.concat(current);
+	return previous.concat(current);
 });
 
 alert(flatten); // [1, 2, 3, 4, 5, 6]</code></pre>
@@ -463,11 +462,11 @@ alert(flatten); // [1, 2, 3, 4, 5, 6]</code></pre>
 
 var specialDiff = data.reduceRight(function (previous, current, index) {
 
-  if (index == 0) {
-    return previous + current;
-  }
+	if (index == 0) {
+		return previous + current;
+	}
 
-  return previous - current;
+	return previous - current;
 
 });
 
@@ -488,7 +487,7 @@ var map = Array.prototype.map;
 // and call it for a string
 
 var hello = map.call("hello world", function (char) {
-  return char + "*";
+	return char + "*";
 });
 
 alert(hello.join("")); // "h*e*l*l*o* *w*o*r*l*d*"</code></pre>
@@ -519,17 +518,17 @@ String.toLowerCase(["F", "O", "O"]).split(","); // ["f", "o", "o"]</code></pre>
 
 function foo(/* arguments */) {
 
-  var every = Array.prototype.every;
+	var every = Array.prototype.every;
 
-  var allNumbers = every.call(arguments, function (arg) {
-    return typeof arg == "number";
-  });
+	var allNumbers = every.call(arguments, function (arg) {
+		return typeof arg == "number";
+	});
 
-  if (!allNumbers) {
-    throw "Some argument is not a number";
-  }
+	if (!allNumbers) {
+		throw "Some argument is not a number";
+	}
 
-  /* further handling */
+	/* further handling */
 
 }
 

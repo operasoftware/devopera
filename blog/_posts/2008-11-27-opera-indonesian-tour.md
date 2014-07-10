@@ -7,7 +7,6 @@ tags:
 - indonesia
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>After 8 days, <a href="http://my.opera.com/universitytours/blog/index.dml/tag/indonesia">11 universities</a> and 9 kilograms of Nasi Goreng per person, the first Opera university tour of Indonesia is finished.</p>

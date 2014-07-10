@@ -4,7 +4,6 @@ authors:
 - patrick-lauke
 intro: 'Google Maps is a fantastic API for adding powerful mapping functionality to your web applications quickly, but the accessibility leaves a little bit to be desired. In this article, Patrick Lauke shows how to construct a solution to improve things, adding keyboard accessibility to Google Maps.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -20,10 +19,10 @@ layout: article
 <p>We'll begin by using the lesser-known <a href="http://code.google.com/apis/maps/documentation/staticmaps/">Google Static Maps API</a> to place an image of our desired starting map on a page, wrapped in a simple container <code>div</code>. In the absence of JavaScript, this provides users with a basic fallback:</p>
 
 <pre><code>&lt;div id="map_canvas"&gt;
-  &lt;img src="http://maps.google.com/staticmap?center=53.480998,-2.236748
-  &amp;zoom=15&amp;size=450x350&amp;key=[YOUR API KEY]"
-  width="450" height="350"
-  alt="Map of Manchester, UK" /&gt;
+	&lt;img src="http://maps.google.com/staticmap?center=53.480998,-2.236748
+	&amp;zoom=15&amp;size=450x350&amp;key=[YOUR API KEY]"
+	width="450" height="350"
+	alt="Map of Manchester, UK" /&gt;
 &lt;/div&gt;</code></pre>
 
 <p><a href="demo01.html">View demo 1</a> to see this in action.</p>
@@ -31,17 +30,17 @@ layout: article
 <p>Next, we'll use the "regular" <a href="http://code.google.com/apis/maps/documentation/introduction.html">Google Maps API</a> to replace the static contents of the container <code>div</code> with a dynamic map, including large pan/zoom and map type controls. We'll also enable use of the scroll wheel and continuous zoom:</p>
 
 <pre><code>&lt;script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=[YOUR API KEY]"
-  type="text/javascript"&gt;&lt;/script&gt;
+	type="text/javascript"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
 function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById("map_canvas"));
-    map.setCenter(new GLatLng(53.480998, -2.236748), 15);
-    map.addControl(new GLargeMapControl());
-    map.addControl(new GMapTypeControl());
-    map.enableScrollWheelZoom();
-    map.enableContinuousZoom();
-  }
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		map.setCenter(new GLatLng(53.480998, -2.236748), 15);
+		map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+		map.enableScrollWheelZoom();
+		map.enableContinuousZoom();
+	}
 }
 &lt;/script&gt;</code></pre>
 
@@ -62,29 +61,29 @@ function initialize() {
 
 <pre><code>&lt;div class=&quot;gmnoprint&quot; style=&quot;overflow: hidden; width: 59px; height: 256px; -moz-user-select: none; position: absolute; left: 7px; top: 7px;&quot;&gt;
 
-  &lt;div style=&quot;overflow: hidden; position: absolute; left: 0px; top: 0px; width: 59px; height: 226px;&quot;&gt;
-    &lt;div style=&quot;overflow: hidden; width: 59px; height: 354px;&quot;&gt;
-      <strong>&lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;</strong>
-    &lt;/div&gt;
-    <strong>&lt;div style=&quot;position: absolute; left: 20px; top: 0px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan up&quot; <strong>log=&quot;pan_up&quot;</strong>/&gt;</strong>
-    <strong>&lt;div style=&quot;position: absolute; left: 0px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan left&quot; <strong>log=&quot;pan_lt&quot;</strong>/&gt;</strong>
-    <strong>&lt;div style=&quot;position: absolute; left: 40px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan right&quot; <strong>log=&quot;pan_rt&quot;</strong>/&gt;</strong>
-    <strong>&lt;div style=&quot;position: absolute; left: 20px; top: 40px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan down&quot; <strong>log=&quot;pan_down&quot;</strong>/&gt;</strong>
-    <strong>&lt;div style=&quot;position: absolute; left: 20px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Return to the last result&quot; <strong>log=&quot;center_result&quot;</strong>/&gt;</strong>
-    <strong>&lt;div style=&quot;position: absolute; left: 20px; top: 65px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Zoom In&quot; <strong>log=&quot;zi&quot;</strong>/&gt;</strong>
-  &lt;/div&gt;
+	&lt;div style=&quot;overflow: hidden; position: absolute; left: 0px; top: 0px; width: 59px; height: 226px;&quot;&gt;
+		&lt;div style=&quot;overflow: hidden; width: 59px; height: 354px;&quot;&gt;
+			<strong>&lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;</strong>
+		&lt;/div&gt;
+		<strong>&lt;div style=&quot;position: absolute; left: 20px; top: 0px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan up&quot; <strong>log=&quot;pan_up&quot;</strong>/&gt;</strong>
+		<strong>&lt;div style=&quot;position: absolute; left: 0px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan left&quot; <strong>log=&quot;pan_lt&quot;</strong>/&gt;</strong>
+		<strong>&lt;div style=&quot;position: absolute; left: 40px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan right&quot; <strong>log=&quot;pan_rt&quot;</strong>/&gt;</strong>
+		<strong>&lt;div style=&quot;position: absolute; left: 20px; top: 40px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Pan down&quot; <strong>log=&quot;pan_down&quot;</strong>/&gt;</strong>
+		<strong>&lt;div style=&quot;position: absolute; left: 20px; top: 20px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Return to the last result&quot; <strong>log=&quot;center_result&quot;</strong>/&gt;</strong>
+		<strong>&lt;div style=&quot;position: absolute; left: 20px; top: 65px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Zoom In&quot; <strong>log=&quot;zi&quot;</strong>/&gt;</strong>
+	&lt;/div&gt;
 
-  &lt;div style=&quot;position: absolute; left: 0px; top: 226px; width: 59px; height: 354px; text-align: left;&quot;&gt;
-  &lt;div style=&quot;overflow: hidden; width: 59px; height: 30px; position: absolute;&quot;&gt;
-    <strong>&lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: -354px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;</strong>
-  &lt;/div&gt;
-    <strong>&lt;div style=&quot;position: absolute; left: 20px; top: 11px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Zoom Out&quot; <strong>log=&quot;zo&quot;</strong>/&gt;</strong>
-  &lt;/div&gt;
-  &lt;div style=&quot;position: absolute; left: 19px; top: 86px; width: 22px; height: 150px; cursor: pointer;&quot;&gt;
-    &lt;div style=&quot;overflow: hidden; width: 22px; height: 14px; position: absolute; left: 0px; top: 8px; cursor: url(http://maps.google.com/intl/en_ALL/mapfiles/openhand.cur), default;&quot; title=&quot;Drag to zoom&quot;&gt;
-      &lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: -384px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+	&lt;div style=&quot;position: absolute; left: 0px; top: 226px; width: 59px; height: 354px; text-align: left;&quot;&gt;
+	&lt;div style=&quot;overflow: hidden; width: 59px; height: 30px; position: absolute;&quot;&gt;
+		<strong>&lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: -354px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;</strong>
+	&lt;/div&gt;
+		<strong>&lt;div style=&quot;position: absolute; left: 20px; top: 11px; width: 18px; height: 18px; cursor: pointer;&quot; title=&quot;Zoom Out&quot; <strong>log=&quot;zo&quot;</strong>/&gt;</strong>
+	&lt;/div&gt;
+	&lt;div style=&quot;position: absolute; left: 19px; top: 86px; width: 22px; height: 150px; cursor: pointer;&quot;&gt;
+		&lt;div style=&quot;overflow: hidden; width: 22px; height: 14px; position: absolute; left: 0px; top: 8px; cursor: url(http://maps.google.com/intl/en_ALL/mapfiles/openhand.cur), default;&quot; title=&quot;Drag to zoom&quot;&gt;
+			&lt;img style=&quot;border: 0px none ; margin: 0px; padding: 0px; position: absolute; left: 0px; top: -384px; -moz-user-select: none; width: 59px; height: 458px;&quot; src=&quot;http://maps.google.com/intl/en_ALL/mapfiles/mapcontrols2.png&quot;/&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
@@ -98,15 +97,15 @@ function initialize() {
 <p>Similarly, the map type controls can be found in the following block of markup:</p>
 
 <pre><code>&lt;div class=&quot;gmnoprint&quot; style=&quot;-moz-user-select: none; position: absolute; right: 7px; top: 7px; color: black; font-family: Arial,sans-serif; font-size: small; width: 200px; height: 19px;&quot;&gt;
-  <strong>&lt;div <strong>id=&quot;amtc_option_0&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 10.2em;&quot; title=&quot;Show street map&quot;&gt;
-    &lt;div style=&quot;border-style: solid; border-color: rgb(52, 86, 132) rgb(108, 157, 223) rgb(108, 157, 223) rgb(52, 86, 132); border-width: 1px; font-size: 12px; font-weight: bold;&quot;&gt;Map&lt;/div&gt;
-  &lt;/div&gt;</strong>
-  <strong>&lt;div <strong>id=&quot;amtc_option_1&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 5.1em;&quot; title=&quot;Show satellite imagery&quot;&gt;
-    &lt;div style=&quot;border-style: solid; border-color: white rgb(176, 176, 176) rgb(176, 176, 176) white; border-width: 1px; font-size: 12px;&quot;&gt;Satellite&lt;/div&gt;
-  &lt;/div&gt;</strong>
-  <strong>&lt;div <strong>id=&quot;amtc_option_2&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 0em;&quot; title=&quot;Show imagery with street names&quot;&gt;
-    &lt;div style=&quot;border-style: solid; border-color: white rgb(176, 176, 176) rgb(176, 176, 176) white; border-width: 1px; font-size: 12px;&quot;&gt;Hybrid&lt;/div&gt;
-  &lt;/div&gt;</strong>
+	<strong>&lt;div <strong>id=&quot;amtc_option_0&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 10.2em;&quot; title=&quot;Show street map&quot;&gt;
+		&lt;div style=&quot;border-style: solid; border-color: rgb(52, 86, 132) rgb(108, 157, 223) rgb(108, 157, 223) rgb(52, 86, 132); border-width: 1px; font-size: 12px; font-weight: bold;&quot;&gt;Map&lt;/div&gt;
+	&lt;/div&gt;</strong>
+	<strong>&lt;div <strong>id=&quot;amtc_option_1&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 5.1em;&quot; title=&quot;Show satellite imagery&quot;&gt;
+		&lt;div style=&quot;border-style: solid; border-color: white rgb(176, 176, 176) rgb(176, 176, 176) white; border-width: 1px; font-size: 12px;&quot;&gt;Satellite&lt;/div&gt;
+	&lt;/div&gt;</strong>
+	<strong>&lt;div <strong>id=&quot;amtc_option_2&quot;</strong> style=&quot;border: 1px solid black; position: absolute; background-color: white; text-align: center; width: 5em; cursor: pointer; right: 0em;&quot; title=&quot;Show imagery with street names&quot;&gt;
+		&lt;div style=&quot;border-style: solid; border-color: white rgb(176, 176, 176) rgb(176, 176, 176) white; border-width: 1px; font-size: 12px;&quot;&gt;Hybrid&lt;/div&gt;
+	&lt;/div&gt;</strong>
 &lt;/div&gt;</code></pre>
 
 <p>Looking at the code that Google generates for the various controls, it quickly becomes apparent why they are not keyboard accessible. In HTML, the only elements that can receive keyboard focus (or, to put it another way, the only elements that get included in the browser/user agent tab cycle) are links, image map areas, and form elements. As used here, <code>div</code>s cannot receive focus, so a keyboard user doesn't get a chance to navigate or activate these controls when using the <kbd>Tab</kbd> key.</p>
@@ -132,7 +131,7 @@ function initialize() {
 <pre><code>
 var mapContainer = document.getElementById("map_canvas");
 GEvent.trigger(document, "click",
-  {srcElement: mapContainer, target: mapContainer, nodeType: 1}
+	{srcElement: mapContainer, target: mapContainer, nodeType: 1}
 );
 </code></pre>
 
@@ -163,10 +162,10 @@ GEvent.trigger(document, "click",
 <pre><code>var button;
 var divs = map.getContainer().getElementsByTagName('DIV');
 for (var i = 0; i &lt; divs.length; i++) {
-  if (<strong>/* one of the control DIV elements we're interested in */</strong>) {
-    button = document.createElement("BUTTON");
-    divs[i].appendChild(button);
-  }
+	if (<strong>/* one of the control DIV elements we're interested in */</strong>) {
+		button = document.createElement("BUTTON");
+		divs[i].appendChild(button);
+	}
 }</code></pre>
 
 <p>As with other form controls, we should provide an explicit label. In the case of <code>button</code>, this is usually achieved by setting the element's <code>value</code> attribute. As all the control <code>div</code>s we're interested in also have a descriptive <code>title</code> attribute, we'll hijack that to act as our label:</p>
@@ -174,11 +173,11 @@ for (var i = 0; i &lt; divs.length; i++) {
 <pre><code>var button;
 var divs = map.getContainer().getElementsByTagName('DIV');
 for (var i = 0; i &lt; divs.length; i++) {
-  if (<strong>/* one of the control DIV elements we're interested in */</strong>) {
-    button = document.createElement("BUTTON");
-    <strong>button.setAttribute('value',divs[i].getAttribute('title'));</strong>
-    divs[i].appendChild(button);
-  }
+	if (<strong>/* one of the control DIV elements we're interested in */</strong>) {
+		button = document.createElement("BUTTON");
+		<strong>button.setAttribute('value',divs[i].getAttribute('title'));</strong>
+		divs[i].appendChild(button);
+	}
 }</code></pre>
 
 <p>Now, looking at the markup generated by Google maps, we need to determine the appropriate hooks that will let us select the right control <code>div</code>s.</p>
@@ -190,36 +189,36 @@ for (var i = 0; i &lt; divs.length; i++) {
 <pre><code>var button;
 var divs = map.getContainer().getElementsByTagName('DIV');
 for (var i = 0; i &lt; divs.length; i++) {
-  if (<strong>divs[i].hasAttribute('log')</strong>) {
-    button = document.createElement("BUTTON");
-    button.setAttribute('value',divs[i].getAttribute('title'));
-    divs[i].appendChild(button);
-  }
+	if (<strong>divs[i].hasAttribute('log')</strong>) {
+		button = document.createElement("BUTTON");
+		button.setAttribute('value',divs[i].getAttribute('title'));
+		divs[i].appendChild(button);
+	}
 }</code></pre>
 
 <p>Combining this with our previous code, we get:</p>
 
 <pre><code>function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById("map_canvas"));
-    map.setCenter(new GLatLng(53.480998, -2.236748), 15);
-    map.addControl(new GLargeMapControl());
-    map.addControl(new GMapTypeControl());
-    map.enableScrollWheelZoom();
-    map.enableContinuousZoom();
-    new GKeyboardHandler(map);
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		map.setCenter(new GLatLng(53.480998, -2.236748), 15);
+		map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+		map.enableScrollWheelZoom();
+		map.enableContinuousZoom();
+		new GKeyboardHandler(map);
 
 <strong>    var button;
-    var divs = map.getContainer().getElementsByTagName('DIV');
-    for (var i = 0; i &lt; divs.length; i++) {
-      if (divs[i].hasAttribute('log')) {
-        button = document.createElement("BUTTON");
-        button.setAttribute('value',divs[i].getAttribute('title'));
-        divs[i].appendChild(button);
-      }
-    }</strong>
+		var divs = map.getContainer().getElementsByTagName('DIV');
+		for (var i = 0; i &lt; divs.length; i++) {
+			if (divs[i].hasAttribute('log')) {
+				button = document.createElement("BUTTON");
+				button.setAttribute('value',divs[i].getAttribute('title'));
+				divs[i].appendChild(button);
+			}
+		}</strong>
 
-  }
+	}
 }</code></pre>
 
 <p><a href="demo05.html">View demo 5</a> to see this in action.</p>
@@ -233,28 +232,28 @@ for (var i = 0; i &lt; divs.length; i++) {
 <blockquote><p>This event is fired when the map setup is complete, and <code>isLoaded()</code> would return <var>true</var>. This means position, zoom, and map type are all initialized, but tile images may still be loading.</p></blockquote>
 
 <pre><code>function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById("map_canvas"));
-    <strong>GEvent.addDomListener(map, "load", GKeyboardPatch(map));</strong>
-    map.setCenter(new GLatLng(53.480998, -2.236748), 15);
-    map.addControl(new GLargeMapControl());
-    map.addControl(new GMapTypeControl());
-    map.enableScrollWheelZoom();
-    map.enableContinuousZoom();
-    new GKeyboardHandler(map);
-  }
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		<strong>GEvent.addDomListener(map, "load", GKeyboardPatch(map));</strong>
+		map.setCenter(new GLatLng(53.480998, -2.236748), 15);
+		map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+		map.enableScrollWheelZoom();
+		map.enableContinuousZoom();
+		new GKeyboardHandler(map);
+	}
 }
 
 <strong>function GKeyboardPatch(map) {</strong>
-  var button;
-  var divs = map.getContainer().getElementsByTagName('DIV');
-  for (var i = 0; i &lt; divs.length; i++) {
-    if (<strong>divs[i].getAttribute('log')</strong>) {
-      button = document.createElement("BUTTON");
-      button.setAttribute('value',divs[i].getAttribute('title'));
-      divs[i].appendChild(button);
-    }
-  }
+	var button;
+	var divs = map.getContainer().getElementsByTagName('DIV');
+	for (var i = 0; i &lt; divs.length; i++) {
+		if (<strong>divs[i].getAttribute('log')</strong>) {
+			button = document.createElement("BUTTON");
+			button.setAttribute('value',divs[i].getAttribute('title'));
+			divs[i].appendChild(button);
+		}
+	}
 <strong>}</strong></code></pre>
 
 <p><a href="demo06.html">View demo 6</a> to see this in action.</p>
@@ -264,7 +263,7 @@ for (var i = 0; i &lt; divs.length; i++) {
 <p>Now, we could write some very convoluted script that keeps checking at regular intervals to see if the controls have been generated before calling the <code>GKeyboardPatch</code> function. I'll gladly leave this as a task for the reader, opting instead for a quick kludge: once the <code>load</code> event is fired, we'll give the API three seconds (based on a bit of trial and error) to sort itself out before our function call is made. This is certainly not the cleanest way to do it, and your mileage may vary if you're doing further things with the map (such as putting in additional overlays).</p>
 
 <pre><code>GEvent.addDomListener(map, "load", <strong>function() {
-  setTimeout('GKeyboardPatch(map);',3000);
+	setTimeout('GKeyboardPatch(map);',3000);
 }</strong>);</code></pre>
 
 <p><a href="demo07.html">View demo 7</a> to see this in action.</p>
@@ -275,11 +274,11 @@ for (var i = 0; i &lt; divs.length; i++) {
 
 <pre><code><strong>var map; // a small kludge, polluting the document's namespace</strong>
 function initialize() {
-  ...
+	...
 }
 
 function GKeyboardPatch(map) {
-  ...
+	...
 }</code></pre>
 
 
@@ -317,21 +316,21 @@ left: -2px;</code></pre>
 <p>We could define these rules in a separate CSS style block or external style sheet, but to make this code more or less self-contained, we'll inject the styles directly in the <code>style</code> attribute of each generated <code>button</code> (since that's what the Maps API already does anyway).</p>
 
 <pre><code>function GKeyboardPatch(map) {
-  var button, <strong>button_style =
-  'width:100%;height:100%;padding:2px;margin:2px; \
-  background:transparent ;border-width:0px;border-style:solid; \
-  cursor: pointer;overflow:hidden ;text-indent:-100em; \
-  position:absolute ;top:-2px;left:-2px;';</strong>
-  var divs = map.getContainer().getElementsByTagName('DIV');
-  for (var i = 0; i &lt; divs.length; i++) {
-    if (divs[i].getAttribute('log')) {
-      button = document.createElement("BUTTON");
-      title = divs[i].getAttribute('title');
-      button.setAttribute('value',divs[i].getAttribute('title'));
-      <strong>button.setAttribute('style',button_style);</strong>
-      divs[i].appendChild(button);
-    }
-  }
+	var button, <strong>button_style =
+	'width:100%;height:100%;padding:2px;margin:2px; \
+	background:transparent ;border-width:0px;border-style:solid; \
+	cursor: pointer;overflow:hidden ;text-indent:-100em; \
+	position:absolute ;top:-2px;left:-2px;';</strong>
+	var divs = map.getContainer().getElementsByTagName('DIV');
+	for (var i = 0; i &lt; divs.length; i++) {
+		if (divs[i].getAttribute('log')) {
+			button = document.createElement("BUTTON");
+			title = divs[i].getAttribute('title');
+			button.setAttribute('value',divs[i].getAttribute('title'));
+			<strong>button.setAttribute('style',button_style);</strong>
+			divs[i].appendChild(button);
+		}
+	}
 }</code></pre>
 
 <p><a href="demo09.html">View demo 9</a> to see this in action.</p>
@@ -353,20 +352,20 @@ button.style.cssText = button_style;</code></pre>
 <p>Let's override these two styles for each <code>div</code> that we iterate through as well. Changing the <code>filter</code> is not a problem, but simply setting the <code>background-color</code> to <var>transparent</var> renders the controls unusable in IE for some reason. As a convoluted work-around, I've set the <code>background</code> to a transparent PNG instead, and again, to make this code self-contained I'm going to borrow one that Google Maps itself already uses elsewhere.</p>
 
 <pre><code>for (var i = 0; i &lt; divs.length; i++) {
-  if (divs[i].getAttribute('log')) {
-    button = document.createElement("BUTTON");
-    button.setAttribute('value',divs[i].getAttribute('title'));
-    // proper W3C DOM method for styling
-    button.setAttribute('style',button_style);
-    // ...and now to make it work in IE
-    button.style.cssText = button_style;
-    divs[i].appendChild(button);
-    <strong>// override the IE opacity filter that Google annoyingly sets
-    divs[i].style.filter = '';
-    // should really set to 'transparent'
-    divs[i].style.background =
-    'url(<strong>http://www.google.com/intl/en_ALL/mapfiles/transparent.png</strong>)';</strong>
-  }
+	if (divs[i].getAttribute('log')) {
+		button = document.createElement("BUTTON");
+		button.setAttribute('value',divs[i].getAttribute('title'));
+		// proper W3C DOM method for styling
+		button.setAttribute('style',button_style);
+		// ...and now to make it work in IE
+		button.style.cssText = button_style;
+		divs[i].appendChild(button);
+		<strong>// override the IE opacity filter that Google annoyingly sets
+		divs[i].style.filter = '';
+		// should really set to 'transparent'
+		divs[i].style.background =
+		'url(<strong>http://www.google.com/intl/en_ALL/mapfiles/transparent.png</strong>)';</strong>
+	}
 }</code></pre>
 
 <p><a href="demo10.html">View demo 10</a> to see this in action.</p>
@@ -381,13 +380,13 @@ button.style.cssText = button_style;</code></pre>
 
 <pre><code>
 for (var i = 0; i &lt; divs.length; i++) {
-  <strong>if ( divs[i].getAttribute('log') ||
-       ( divs[i].getAttribute('id') &amp;&amp;
-         (divs[i].getAttribute('id')!='map_magnifyingglass')
-       )
-     )</strong> {
-    ...
-  }
+	<strong>if ( divs[i].getAttribute('log') ||
+			 ( divs[i].getAttribute('id') &amp;&amp;
+				 (divs[i].getAttribute('id')!='map_magnifyingglass')
+			 )
+		 )</strong> {
+		...
+	}
 }
 </code></pre>
 
@@ -399,49 +398,49 @@ for (var i = 0; i &lt; divs.length; i++) {
 
 <pre><code>var map; // a small kludge, polluting the document's namespace
 function initialize() {
-  if (GBrowserIsCompatible()) {
-    map = new GMap2(document.getElementById("map_canvas"));
-    GEvent.addDomListener(map, "load", function() {
-      setTimeout('GKeyboardPatch(map);',3000);
-    });
-    map.setCenter(new GLatLng(53.480998, -2.236748), 15);
-    map.addControl(new GLargeMapControl());
-    map.addControl(new GMapTypeControl());
-    map.enableScrollWheelZoom();
-    map.enableContinuousZoom();
-    new GKeyboardHandler(map);
-  }
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas"));
+		GEvent.addDomListener(map, "load", function() {
+			setTimeout('GKeyboardPatch(map);',3000);
+		});
+		map.setCenter(new GLatLng(53.480998, -2.236748), 15);
+		map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+		map.enableScrollWheelZoom();
+		map.enableContinuousZoom();
+		new GKeyboardHandler(map);
+	}
 }
 
 function GKeyboardPatch(map) {
-  var button, button_style =
-  'width:100%;height:100%;padding:2px;margin:2px; \
-  background:transparent ; border-width:0px;border-style:solid; \
-  cursor: pointer;overflow:hidden ;text-indent:-100em; \
-  position:absolute ;top:-2px;left:-2px;';
-  var divs = map.getContainer().getElementsByTagName('DIV');
-  for (var i = 0; i &lt; divs.length; i++) {
-    if ( divs[i].getAttribute('log') ||
-       ( divs[i].getAttribute('id') &amp;&amp;
-         (divs[i].getAttribute('id')!='map_magnifyingglass')
-       )
-     ) {
-      button = document.createElement("BUTTON");
-      button.setAttribute('value',divs[i].getAttribute('title'));
-      // proper W3C DOM method for styling
-      button.setAttribute('style',button_style);
-      // ...and now to make it work in IE
-      button.style.cssText = button_style;
-      divs[i].appendChild(button);
-      <strong>if (divs[i].getAttribute('log')) { // only control buttons</strong>
-        // override the IE opacity filter that Google annoyingly sets
-        divs[i].style.filter = '';
-        // should really set to 'transparent'
-        divs[i].style.background =
-        'url(http://www.google.com/intl/en_ALL/mapfiles/transparent.png)';
-      <strong>}</strong>
-    }
-  }
+	var button, button_style =
+	'width:100%;height:100%;padding:2px;margin:2px; \
+	background:transparent ; border-width:0px;border-style:solid; \
+	cursor: pointer;overflow:hidden ;text-indent:-100em; \
+	position:absolute ;top:-2px;left:-2px;';
+	var divs = map.getContainer().getElementsByTagName('DIV');
+	for (var i = 0; i &lt; divs.length; i++) {
+		if ( divs[i].getAttribute('log') ||
+			 ( divs[i].getAttribute('id') &amp;&amp;
+				 (divs[i].getAttribute('id')!='map_magnifyingglass')
+			 )
+		 ) {
+			button = document.createElement("BUTTON");
+			button.setAttribute('value',divs[i].getAttribute('title'));
+			// proper W3C DOM method for styling
+			button.setAttribute('style',button_style);
+			// ...and now to make it work in IE
+			button.style.cssText = button_style;
+			divs[i].appendChild(button);
+			<strong>if (divs[i].getAttribute('log')) { // only control buttons</strong>
+				// override the IE opacity filter that Google annoyingly sets
+				divs[i].style.filter = '';
+				// should really set to 'transparent'
+				divs[i].style.background =
+				'url(http://www.google.com/intl/en_ALL/mapfiles/transparent.png)';
+			<strong>}</strong>
+		}
+	}
 }</code></pre>
 
 <p><a href="demo12.html">View demo 12</a> to see the final code in action.</p>

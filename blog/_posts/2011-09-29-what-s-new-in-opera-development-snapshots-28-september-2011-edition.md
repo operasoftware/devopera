@@ -6,7 +6,6 @@ tags:
 - opera-next
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>The biggest news for this <a href="http://my.opera.com/desktopteam/blog/2011/09/28/core-bookmark-star">snapshot</a> is that your users will no longer see an XML screen of death and instead it will be rendered to the error console.</p>

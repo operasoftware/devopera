@@ -10,7 +10,6 @@ tags:
 - opera
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Making its debut in a Labs build this week is <a href="http://en.wikipedia.org/wiki/Ragnar%f6k">Ragnar&#xF6;k</a>, our implementation of the HTML5 Parsing algorithm. We&#39;d love you to try to break this and give us feedback, so please grab a copy to install on your machine from one of the download links below.</p>

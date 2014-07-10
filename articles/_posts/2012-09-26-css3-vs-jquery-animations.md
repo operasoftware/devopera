@@ -4,7 +4,6 @@ authors:
 - siddharth-rao
 intro: 'JavaScript has allowed us to create animations on our web pages for a number of years, with JavaScript libraries making such code easier to create and more reliable cross-browser. CSS3 animations, a more recent contender, also allow us to create animations on web pages, although they are currently not quite as reliably supported cross-browser. Which one should you use? This article compares the two approaches in terms of performance and other benefits.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -29,13 +28,13 @@ layout: article
 <pre><code class="html">&lt;div&gt;&lt;/div&gt;</code></pre>
 
 <pre><code class="css">div {
-  margin-left:10px;
-  margin-bottom:10px;
-  background-color:red;
-  opacity:1;
-  float:left;
-  width:100px;
-  height:1px;
+	margin-left:10px;
+	margin-bottom:10px;
+	background-color:red;
+	opacity:1;
+	float:left;
+	width:100px;
+	height:1px;
 }</code></pre>
 </li>
 <li>
@@ -48,10 +47,10 @@ layout: article
 <p>Write some jQuery code to select the <code>&lt;div&gt;</code> element and apply the effects once the button is clicked. On click, the <code>&lt;div&gt;</code>'s height is increased to 25px and opacity is decreased from 1 to 0.5 over a period of 2000 milliseconds or 2 seconds.</p>
 
 <pre><code class="javascript">$("#start").click(function(){
-  $("div").animate({
-    opacity: 0.5,
-    height:"25px",
-  } , 2000);
+	$("div").animate({
+		opacity: 0.5,
+		height:"25px",
+	} , 2000);
 });</code></pre>
 
 </li>
@@ -64,35 +63,35 @@ layout: article
 <p>To create an animation in CSS3, you need to specify two different constructs in your CSS. First of all, you need to specify what form the animation will take using the <code>@keyframes</code> at-rule, which looks something like this:</p>
 
 <pre><code class="css">@keyframes my-animation {
-  0%   {height:0px; opacity:1; }
-  100% {height:25px; opacity:0.5; }
+	0%   {height:0px; opacity:1; }
+	100% {height:25px; opacity:0.5; }
 }</code></pre>
 
 <p><code>my-animation</code> is the name your animation will be identified by, and the different lines are different keyframes. In each case, the properties inside the curly braces say what value the animated properties will have at each stage of the animation, and the percentages dictate how far through the animation each stage is — in this particular case our animation is pretty simple, so we are only defining the start and end of the animation. Then, to apply your animation to an element on your page, you need to refer to it using the <code>animation</code> property:</p>
 
 <pre><code class="css">div {
-  margin-left:10px;
-  margin-bottom:10px;
-  background-color:red;
-  opacity:0.5;
-  float:left;
-  width:100px;
-  height:25px;
-  <strong>animation: my-animation 2s;</strong>
+	margin-left:10px;
+	margin-bottom:10px;
+	background-color:red;
+	opacity:0.5;
+	float:left;
+	width:100px;
+	height:25px;
+	<strong>animation: my-animation 2s;</strong>
 }</code></pre>
 
 <p>This is functionally identical to the jQuery example earlier: the <code>&lt;div&gt;</code> is animated over a period of 2 seconds, with its height increasing to 25px and its opacity decreasing from 1 to 0.5. Sounds pretty simple, huh? Unfortunately browser support is not as good for CSS3 animations — IE versions below 10 don't support it, and although all other major browsers support animations well, and the animation spec is now stable, most of them haven't dropped their vendor prefixes yet, so to ensure support just for the moment you'll have to include prefixed versions of the two blocks, for <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code> and <code>-o-</code>. The Opera blocks would look like this, for example:</p>
 
 <pre><code class="css">@-o-keyframes my-animation {
-  0%   {height:0px; opacity:1; }
-  100% {height:25px; opacity:0.5; }
+	0%   {height:0px; opacity:1; }
+	100% {height:25px; opacity:0.5; }
 }</code></pre>
 
 <p>and</p>
 
 <pre><code class="css">div {
-    ...
-  <strong>-o-animation: my-animation 2s;</strong>
+		...
+	<strong>-o-animation: my-animation 2s;</strong>
 }</code></pre>
 
 <p>This instantly makes the code base a lot more daunting, although if you wanted to reduce the code back to one block, you could use a solution like a preprocessor. Here are a couple of solutions that you could use to add the right prefix at runtime, or during a site build process:</p>

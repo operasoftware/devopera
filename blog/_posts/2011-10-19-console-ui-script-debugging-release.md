@@ -7,7 +7,6 @@ tags:
 - ui
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>As <a href="http://my.opera.com/dragonfly/blog/2011/10/06/new-experimental-with-console-fixes-and-ui-tweaks">you&#39;ve seen before</a>, quite some work has gone into Opera Dragonfly&#39;s UI lately. We have now released these changes on the default path, so everyone should be able to see them. Here are some more things that we have improved:<p>

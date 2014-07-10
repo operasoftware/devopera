@@ -10,7 +10,6 @@ tags:
 - tv
 cover: png
 license: cc-by-3.0
-layout: article
 ---
 
 This guide has been updated to cover the Opera TV Emulator 3.4. For previous versions of the emulator, please refer to the documentation contained inside the emulator’s `.zip` package.

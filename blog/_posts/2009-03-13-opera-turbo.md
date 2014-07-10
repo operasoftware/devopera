@@ -7,7 +7,6 @@ tags:
 - turbo
 - labs
 license: os-asa
-layout: post
 ---
 
 ## This article is obsolete

@@ -4,7 +4,6 @@ authors:
 - patrick-lauke
 intro: 'This article introduces the concept of “Paired devices”, which allows developers to test their applications directly inside the Opera TV Store even before they’ve been submitted.'
 license: cc-by-3.0
-layout: article
 ---
 
 <h2>Introduction</h2>

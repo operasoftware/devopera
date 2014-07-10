@@ -7,7 +7,6 @@ tags:
 - html5
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <video width="620" height="360" controls="controls">

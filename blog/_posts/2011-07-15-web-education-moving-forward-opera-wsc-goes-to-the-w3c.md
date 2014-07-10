@@ -14,7 +14,6 @@ tags:
 - web-standards-curriculum
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I have been fighting to improve web education for a number of years now - many courses and resources around the world that profess to teach web design/development are woefully out of date, resulting in students completing courses without the real world skills they need to get a job in the web industry. I think that this is the single biggest thing holding us back from making significant improvements to the accessibility, usability and overall quality of the Web, and evolving our industry.</p>

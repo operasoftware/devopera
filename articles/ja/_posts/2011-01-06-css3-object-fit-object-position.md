@@ -8,7 +8,6 @@ tags:
 - opera-11
 language: ja
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 ## はじめに

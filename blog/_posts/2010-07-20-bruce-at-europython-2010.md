@@ -7,7 +7,6 @@ tags:
 - europython
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I was honoured to give two talk at EuroPython 2010 today (including my first ever keynote!). Here are the resources and useful links.</p>

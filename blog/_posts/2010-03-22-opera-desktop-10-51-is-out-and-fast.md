@@ -10,7 +10,6 @@ tags:
 - benchmark
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>Fastest Browser</h3>

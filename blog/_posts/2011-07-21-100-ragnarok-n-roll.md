@@ -8,7 +8,6 @@ tags:
 - opera-12
 - labs
 license: os-asa
-layout: post
 ---
 
 Note: the HTML5 parser is now available in our finished [Opera browser][1].

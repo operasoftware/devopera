@@ -4,7 +4,6 @@ authors:
 - corey-mwamba
 intro: 'In this article, Corey Mwamba shows you how to create an inspiring horizontally scrolling interface using only CSS, with some clever use of CSS3 transitions and the `:target` pseudo-class.'
 license: cc-by-3.0
-layout: article
 ---
 <h2 id="s0">Introduction</h2>
 
@@ -57,8 +56,8 @@ replicates the behaviour of many applications. For example, if you click on any 
 <p>So, if we had a page containing this simple content:</p>
 
 <pre style="white-space: pre-wrap;"><code>&lt;ul&gt;
-   &lt;li&gt;&lt;a href="#s1"&gt;S1&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#s2"&gt;S2&lt;/a&gt;&lt;/li&gt;
+	 &lt;li&gt;&lt;a href="#s1"&gt;S1&lt;/a&gt;&lt;/li&gt;
+	 &lt;li&gt;&lt;a href="#s2"&gt;S2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p id="s1"&gt;hello&lt;/p&gt;
 &lt;p id="s2"&gt;bye&lt;/p&gt;</code></pre>
@@ -71,24 +70,24 @@ want each paragraph to behave differently we need to style
 each one separately (proprietary prefixes for transition are left out for brevity).</p>
 
 <pre><code>p[id^="s"] {
-  width: 5em;
-  height: 5em;
-  position: absolute;
-  font-size: 4em;
+	width: 5em;
+	height: 5em;
+	position: absolute;
+	font-size: 4em;
 }
 
 p#s1 {
-  left: 21em;
-  top: 2em;
-  opacity: 0;
-  transition: all 4s;
+	left: 21em;
+	top: 2em;
+	opacity: 0;
+	transition: all 4s;
 }
 
 p#s2 {
-  left: 1em;
-  top: 2em;
-  opacity: 0;
-  transition: all 4s;
+	left: 1em;
+	top: 2em;
+	opacity: 0;
+	transition: all 4s;
 }</code></pre>
 
 <p class="note">Note: In HTML5, you can start ID values off with numbers if you so wish. This wasn't allowed before, in HTML4.</p>
@@ -96,19 +95,19 @@ p#s2 {
 <p>Now let's set the paragraphs to fade in and go to a specific position when they are the target of the fragment in the current URL:</p>
 
 <pre><code>p#s1:target, p#s2:target {
-  left: 14em;
-  top: 2em;
-  opacity: 1;
+	left: 14em;
+	top: 2em;
+	opacity: 1;
 }</code></pre>
 
 <p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/try1.html">see our first simple example in action here</a>, and notice how (depending on the resolution of your screen) the page gains a horizontal scroll bar. The browser (correctly) jumps to the target, but in our case we don't want this correct behaviour as it's quite ugly. Luckily this is easy to fix: apply <code>position: fixed;</code> to the containing block (in this case, the <code>body</code>):</p>
 
 <pre><code>body {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-family: freesans;
-  position: fixed;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: freesans;
+	position: fixed;
 }</code></pre>
 
 <p>A fixed position element is placed relatively to the browser window.
@@ -122,48 +121,48 @@ the browser and <a href="http://dev.opera.com/articles/view/css3-target-based-in
 much more likely that we would have our elements in a container. So let's now create a page with an article, and sections:</p>
 
 <pre style="white-space: pre-wrap;"><code>&lt;ul id="nav"&gt;
-  &lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;article&gt;
 
-  &lt;section id="s0"&gt;
-    &lt;h2&gt;Welcome&lt;/h2&gt;
-    &lt;p&gt;This is a basic study in green, in HTML5. I've decided to use
-    a collection of &lt;code&gt;section&lt;/code&gt; elements housed within
-    an &lt;code&gt;article&lt;/code&gt;, but I could have used a generic
-    container (&lt;abbr title="id est" lang="la"&gt;i.e.&lt;/abbr&gt; a
-    &lt;code&gt;div&lt;/code&gt;). As long as the outer container (in this
-    case &lt;code&gt;article&lt;/code&gt;) holds the background image and is
-    fixed, then you can get a scrollable background!&lt;/p&gt;
-  &lt;/section&gt;
+	&lt;section id="s0"&gt;
+		&lt;h2&gt;Welcome&lt;/h2&gt;
+		&lt;p&gt;This is a basic study in green, in HTML5. I've decided to use
+		a collection of &lt;code&gt;section&lt;/code&gt; elements housed within
+		an &lt;code&gt;article&lt;/code&gt;, but I could have used a generic
+		container (&lt;abbr title="id est" lang="la"&gt;i.e.&lt;/abbr&gt; a
+		&lt;code&gt;div&lt;/code&gt;). As long as the outer container (in this
+		case &lt;code&gt;article&lt;/code&gt;) holds the background image and is
+		fixed, then you can get a scrollable background!&lt;/p&gt;
+	&lt;/section&gt;
 
-  &lt;section id="s1"&gt;
-    &lt;h2&gt;Tab styling&lt;/h2&gt;
-    &lt;p&gt;It's all rounded corners, and an inset &lt;var&gt;box-shadow
-    &lt;/var&gt; to create a three-dimensional effect. It perhaps is not as
-    good as a drawing - but it's quicker.&lt;/p&gt;
-  &lt;/section&gt;
+	&lt;section id="s1"&gt;
+		&lt;h2&gt;Tab styling&lt;/h2&gt;
+		&lt;p&gt;It's all rounded corners, and an inset &lt;var&gt;box-shadow
+		&lt;/var&gt; to create a three-dimensional effect. It perhaps is not as
+		good as a drawing - but it's quicker.&lt;/p&gt;
+	&lt;/section&gt;
 
-  &lt;section id="s2"&gt;
-    &lt;h2&gt;Applications&lt;/h2&gt;
-    &lt;p&gt;You could use this for a kiosk or information terminal; and bearing
-    in mind that you don't only have to scroll horizontally, a very creative
-    person could create an accessible web-comic where the reader was guided to
-    each frame, with the art rendered in SVG, or text with
-    &lt;var&gt;:content&lt;/var&gt; generated images.&lt;/p&gt;
-  &lt;/section&gt;
+	&lt;section id="s2"&gt;
+		&lt;h2&gt;Applications&lt;/h2&gt;
+		&lt;p&gt;You could use this for a kiosk or information terminal; and bearing
+		in mind that you don't only have to scroll horizontally, a very creative
+		person could create an accessible web-comic where the reader was guided to
+		each frame, with the art rendered in SVG, or text with
+		&lt;var&gt;:content&lt;/var&gt; generated images.&lt;/p&gt;
+	&lt;/section&gt;
 &lt;/article&gt;</code></pre>
 
 <p>As it's the holding block, let's give the <code>article</code> a fixed position:</p>
 
 <pre><code>article {
-  position: fixed;
-  outline: 1px solid blue;
-  left: 1em;
-  top: 3em;
+	position: fixed;
+	outline: 1px solid blue;
+	left: 1em;
+	top: 3em;
 }</code></pre>
 
 <p>Let's look at the visual candy. As in the previous example, we've
@@ -174,35 +173,35 @@ the background for each block so that the image tiles seamlessly.</p>
 
 <pre style="white-space: pre-wrap;"><code>section[id^="s"] {
 width: 25em;
-  height: 25em;
-  position: absolute;
-  background-image: url(271.jpg);
-  background-size:25em 25em;
-  font-size: 1em;
-  opacity: 0;
-  transition: all 6s;
+	height: 25em;
+	position: absolute;
+	background-image: url(271.jpg);
+	background-size:25em 25em;
+	font-size: 1em;
+	opacity: 0;
+	transition: all 6s;
 }
 
 #s0 {
 left: 0em;
-  top: 0em;
-  background-position: 0em 0em;
+	top: 0em;
+	background-position: 0em 0em;
 }
 
 #s1 {
 left: 25em;
-  top: 0em;
-  background-position: -25em 0em;
+	top: 0em;
+	background-position: -25em 0em;
 }
 
 #s2 {
 left: 50em;
-  top: 0em;
-  background-position: -50em 0em;
+	top: 0em;
+	background-position: -50em 0em;
 }
 
 #s0:target, #s1:target, #s2:target {
-  opacity: 1
+	opacity: 1
 }</code></pre>
 
 <p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example1.html">You can test the first iteration here</a>. But it isn't quite what we want, as in this version the links just make the sections appear in different parts of the screen; we want the effect to fill the screen and transition smoothly.</p>
@@ -213,31 +212,31 @@ left: 50em;
 
 <pre style="white-space: pre-wrap;"><code>#s0 {
 left: 25em;
-  top: 0em;
-  background-position: 0em 0em;
-  transition: all 3s;
+	top: 0em;
+	background-position: 0em 0em;
+	transition: all 3s;
 }
 
 #s1 {
 left: 50em;
-  top: 0em;
-  background-position: -25em 0em;
-  transition: all 3s;
+	top: 0em;
+	background-position: -25em 0em;
+	transition: all 3s;
 }
 
 #s2 {
 left: 75em;
-  top: 0em;
-  background-position: -50em 0em;
-  transition: all 3s;
+	top: 0em;
+	background-position: -50em 0em;
+	transition: all 3s;
 }</code></pre>
 
 <p>And alter the rule for the targeted section accordingly, so that each section moves to a predetermined point.</p>
 
 <pre style="white-space: pre-wrap;"><code>#s0:target, #s1:target, #s2:target{
-  opacity: 1;
-  left: 0em;
-  top: 0em;
+	opacity: 1;
+	left: 0em;
+	top: 0em;
 }</code></pre>
 
 <p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example2.html">this gives us iteration 2</a>. But still, what I'm really looking for is a moving area inside a static viewport. For this we'll need to create a single viewport that scrolls to a specific location when an anchor is selected. So we have two options:</p>
@@ -272,16 +271,16 @@ left: 75em;
 and <code>article</code> inside another container, in this case a <code>div</code>:</p>
 
 <pre style="white-space: pre-wrap;"><code>&lt;div&gt;
-  &lt;ul id="nav"&gt;
-    &lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
-    &lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;article&gt;
-    &lt;section id="s0"&gt;...&lt;/section&gt;
-    &lt;section id="s1"&gt;...&lt;/section&gt;
-    &lt;section id="s2"&gt;...&lt;/section&gt;
-  &lt;/article&gt;
+	&lt;ul id="nav"&gt;
+		&lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;article&gt;
+		&lt;section id="s0"&gt;...&lt;/section&gt;
+		&lt;section id="s1"&gt;...&lt;/section&gt;
+		&lt;section id="s2"&gt;...&lt;/section&gt;
+	&lt;/article&gt;
 &lt;/div&gt;</code></pre>
 
 <p>Let's adjust the style of the generic container so that it's fixed, and set the size of our viewport, which is the <code>article</code> element. We want the background image to fill the element completely. As we want to give the impression of movement, we apply the transition to this element.</p>
@@ -289,22 +288,22 @@ and <code>article</code> inside another container, in this case a <code>div</cod
 <p>We also need to remember that there is a stacking order to consider. Each subsequent element rendered on a page will stack <em>above its predecessors</em>; so a child sits on top of the parent, and the last sibling will sit above the first. If we want our exposed links to display correctly we'll need to add a <code>z-index</code> to the article. Giving it a negative number will stack it below the links.</p>
 
 <pre style="white-space: pre-wrap;"><code>div {
-  position: fixed;
-  left:0em; top: 0em;
+	position: fixed;
+	left:0em; top: 0em;
 }
 
 div > article {
-  width: 300em; height: 80em;
-  position:absolute;
-  left: 0em; top: 0em;
-  background-image:url(271.jpg);
-  background-size: 300em 80em;
-  background-repeat: no-repeat;
-  list-style-type: none;
-  font-size: 2em;
-  z-index: -100;
-  margin: 0; padding: 0;
-  transition: top 1.5s 1.5s, left 1.5s 1s;
+	width: 300em; height: 80em;
+	position:absolute;
+	left: 0em; top: 0em;
+	background-image:url(271.jpg);
+	background-size: 300em 80em;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	font-size: 2em;
+	z-index: -100;
+	margin: 0; padding: 0;
+	transition: top 1.5s 1.5s, left 1.5s 1s;
 }</code></pre>
 
 <p>Now, we need to have the anchors and the <code>article</code> at the
@@ -320,9 +319,9 @@ better than white space</a>: so we'll surround our links in brackets, with each 
 &lt;span&gt;{&lt;/span&gt;&lt;a id="l2" href="#l2"&gt;Applications&lt;/a&gt;&lt;span&gt;}&lt;/span&gt;
 
 &lt;ul id="nav"&gt;
-  &lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt; &lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
 <p>Since the child cannot affect a parent, the target declaration in
@@ -340,50 +339,50 @@ siblings of the container, we can add <strong>meaningful</strong> fragment ident
 positions of each section in the block by floating them, and since we've stretched the <code>article</code> to be 300em &times; 80em, the three sections each must be 100em &times; 80em. This will have the effect of arranging the <code>section</code>s in a line.</p>
 
 <pre style="white-space: pre-wrap;"><code>article &gt; section {
-  display: block;
-  width: 100em;
-  height: 80em;
-  margin: 0em;
-  padding: 0em;
-  float:left;
-  opacity: 0;
-  color: #250;
-  transition:all 1.5s;
+	display: block;
+	width: 100em;
+	height: 80em;
+	margin: 0em;
+	padding: 0em;
+	float:left;
+	opacity: 0;
+	color: #250;
+	transition:all 1.5s;
 }</code></pre>
 
 <p>We can now use the general sibling combinator (~) alongside <code>:target</code> to move the container...</p>
 
 <pre><code>#welcome:target ~ article {
-  left: 0em;
-  top: 0em;
+	left: 0em;
+	top: 0em;
 }
 
 #tabs:target ~ article {
-  left: -100em;
-  top: 0em;
+	left: -100em;
+	top: 0em;
 }
 
 #apps:target ~ article {
-  left: -200em;
-  top: 0em;
+	left: -200em;
+	top: 0em;
 }</code></pre>
 
 <p>...and modify the rule to display the appropriate <code>section</code>s. In this case we want the first section to display upon loading the page, so we set its initial opacity to 1, and then change it to zero when the other sections are targeted.</p>
 
 <pre style="white-space: pre-wrap;"><code>#tabs:target ~ article &gt; section#s1 {
-  opacity:1;
+	opacity:1;
 }
 
 #apps:target ~ article &gt; section#s2 {
-  opacity:1;
+	opacity:1;
 }
 
 section#s0 {
-  opacity: 1;
+	opacity: 1;
 }
 
 #tabs:target ~ article &gt; section#s0, #apps:target ~ article &gt; section#s0 {
-  opacity: 0;
+	opacity: 0;
 }</code></pre>
 
 
@@ -392,35 +391,35 @@ section#s0 {
 <p>We'll now add a bit of styling for the links. Here we're making them look like tabs that pop up slightly on a hover, and then extend fully on a target. We've used box-shadow to create the effect of a light source, and made them translucent. Finally, we've positioned them relative to our sections:</p>
 
 <pre style="white-space: pre-wrap;"><code>#tabs, #apps, #welcome {
-  height: 1em;
-  position: relative;
-  left: 40em; top: -2em;
-  display: inline-block;
-  padding: 1ex;
-  border: 1px solid #230;
-  border-bottom: none;
-  width: auto;
-  font-size: 1.4em;
-  text-decoration: none;
-  border-radius: 2ex 2ex 0ex 0ex;
-  box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
-  background-color: rgba(127, 154, 102, 0.6);
-  transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+	height: 1em;
+	position: relative;
+	left: 40em; top: -2em;
+	display: inline-block;
+	padding: 1ex;
+	border: 1px solid #230;
+	border-bottom: none;
+	width: auto;
+	font-size: 1.4em;
+	text-decoration: none;
+	border-radius: 2ex 2ex 0ex 0ex;
+	box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
+	background-color: rgba(127, 154, 102, 0.6);
+	transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
 }
 
 #tabs:hover, #apps:hover, #welcome:hover {
-  background-color: rgba(158, 192, 65, 0.6);
-  top: -3em;
-  height: 2em;
-  box-shadow: -2px 1px 2px 0px rgba(187, 214, 152, 0.3) inset;
-  transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+	background-color: rgba(158, 192, 65, 0.6);
+	top: -3em;
+	height: 2em;
+	box-shadow: -2px 1px 2px 0px rgba(187, 214, 152, 0.3) inset;
+	transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
 }
 
 #tabs:target, #apps:target, #welcome:target {
-  background-color: rgba(158, 192, 65, 1);
-  top: -4em;
-  height: 3em;
-  box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
+	background-color: rgba(158, 192, 65, 1);
+	top: -4em;
+	height: 3em;
+	box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
 }</code></pre>
 
 
@@ -442,23 +441,23 @@ section#s0 {
 <p>We can simply use the cascade for this, adding a <code>display: none</code> rule above our declarations for the links: we can also hide the <code>span</code> elements with this rule.</p>
 
 <pre style="white-space: pre-wrap;"><code>#tabs, #apps, #welcome, span {
-  display: none;
+	display: none;
 }
 
 #tabs, #apps, #welcome {
-  height: 1em;
-  position: relative;
-  left: 40em;
-  top: -2em;
-  display: inline-block;
-  padding: 1ex;
-  border: 1px solid #230; border-bottom: none;
-  width: auto;
-  font-size: 1.4em; text-decoration: none;
-  border-radius: 2ex 2ex 0ex 0ex;
-  box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
-  background-color: rgba(127, 154, 102, 0.6);
-  transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+	height: 1em;
+	position: relative;
+	left: 40em;
+	top: -2em;
+	display: inline-block;
+	padding: 1ex;
+	border: 1px solid #230; border-bottom: none;
+	width: auto;
+	font-size: 1.4em; text-decoration: none;
+	border-radius: 2ex 2ex 0ex 0ex;
+	box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
+	background-color: rgba(127, 154, 102, 0.6);
+	transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
 }</code></pre>
 
 <p>In older browsers, the more advanced styles will be skipped over.</p>
@@ -469,16 +468,16 @@ section#s0 {
 
 <pre style="white-space: pre-wrap;"><code>
 &lt;article&gt;
-  &lt;section id="s2"&gt;
-    &lt;h2&gt;Applications&lt;/h2&gt;
-    &lt;p&gt;...&lt;/p&gt;
-  &lt;/section&gt;
+	&lt;section id="s2"&gt;
+		&lt;h2&gt;Applications&lt;/h2&gt;
+		&lt;p&gt;...&lt;/p&gt;
+	&lt;/section&gt;
 &lt;/article&gt;
 
 &lt;ul id="nav"&gt;
-  &lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s0"&gt;Welcome&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s1"&gt;Tab styling&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#s2"&gt;Applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
 <p>Then for our exposed links, we can include a heading and link, writing a short sentence to explain the situation to text and screen-readers:</p>
@@ -488,13 +487,13 @@ section#s0 {
 <p>Now we can use a media query to hide these things from more modern browsers.</p>
 
 <pre style="white-space: pre-wrap;"><code>@media all and (min-width: 1px) {
-  #nav {
-    display: none;
-  }
+	#nav {
+		display: none;
+	}
 
-  #skip {
-    display: none;
-  }
+	#skip {
+		display: none;
+	}
 }</code></pre>
 
 <p>This gives a reasonable layout on a text browser, and makes the menu accessible on legacy graphical browsers.</p>
@@ -516,152 +515,152 @@ section, and which degrades gracefully on older browsers to a single page - <a h
 
 <pre style="white-space: pre-wrap;"><code>@media not all and (-webkit-min-device-pixel-ratio: 0) {
 
-  #nav {
-    display: none;
-  }
+	#nav {
+		display: none;
+	}
 
-  #skip {
-    display: none;
-  }
+	#skip {
+		display: none;
+	}
 
-  #tabs, #apps, #welcome {
-    height: 1em;
-    display: inline-block;
-    position: relative;
-    left: 40em;
-    top: -2em;
-    padding: 1ex;
-    border: 1px solid #230;
-    border-bottom: none;
-    width: auto;
-    font-size: 1.4em;
-    text-decoration: none;
-    background-color: rgba(127, 154, 102, 0.6);
+	#tabs, #apps, #welcome {
+		height: 1em;
+		display: inline-block;
+		position: relative;
+		left: 40em;
+		top: -2em;
+		padding: 1ex;
+		border: 1px solid #230;
+		border-bottom: none;
+		width: auto;
+		font-size: 1.4em;
+		text-decoration: none;
+		background-color: rgba(127, 154, 102, 0.6);
 
-    border-radius: 2ex 2ex 0ex 0ex;       /* Opera understands this as-is */
-    -moz-border-radius: 2ex 2ex 0ex 0ex;
+		border-radius: 2ex 2ex 0ex 0ex;       /* Opera understands this as-is */
+		-moz-border-radius: 2ex 2ex 0ex 0ex;
 
-    box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;    /* Opera also understands this */
-    -moz-box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
+		box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;    /* Opera also understands this */
+		-moz-box-shadow: -2px 1px 2px 0px rgba(157, 184, 122, 0.5) inset;
 
-    -o-transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-    -moz-transition: -moz-box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-    transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-  }
+		-o-transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+		-moz-transition: -moz-box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+		transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+	}
 
-  #tabs:hover, #apps:hover, #welcome:hover {
-    background-color: rgba(158, 192, 65, 0.6);
-    top: -3em;
-    height: 2em;
+	#tabs:hover, #apps:hover, #welcome:hover {
+		background-color: rgba(158, 192, 65, 0.6);
+		top: -3em;
+		height: 2em;
 
-    box-shadow: -2px 1px 2px 0px rgba(187, 214, 152,  0.3) inset;
-    -moz-box-shadow: -2px 1px 2px 0px rgba(187, 214, 152,  0.3) inset;
+		box-shadow: -2px 1px 2px 0px rgba(187, 214, 152,  0.3) inset;
+		-moz-box-shadow: -2px 1px 2px 0px rgba(187, 214, 152,  0.3) inset;
 
-    -o-transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-    -moz-transition: -moz-box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-    transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
-  }
+		-o-transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+		-moz-transition: -moz-box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+		transition: box-shadow 2.5s, background-color 2s, top 1s, height 1s;
+	}
 
-  #tabs:target, #apps:target, #welcome:target {
-    background-color: rgba(158, 192, 65, 1);
-    top: -4em;
-    height: 3em;
-    -moz-box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
-    box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
-  }
+	#tabs:target, #apps:target, #welcome:target {
+		background-color: rgba(158, 192, 65, 1);
+		top: -4em;
+		height: 3em;
+		-moz-box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
+		box-shadow: -2px 1px 2px 0px rgba(217, 244, 182,  0.6) inset;
+	}
 
-  div > h1 {
-    width: 80em;
-    padding: 1.5ex;
-    background-color: rgba(10, 10, 10, 0.8);
-    color: #efe;
-    font-size: 2.5em;
-    margin: 0em;
-  }
+	div > h1 {
+		width: 80em;
+		padding: 1.5ex;
+		background-color: rgba(10, 10, 10, 0.8);
+		color: #efe;
+		font-size: 2.5em;
+		margin: 0em;
+	}
 
-  div > h2 {
-    display: inline;
-  }
+	div > h2 {
+		display: inline;
+	}
 
-  div {
-    position: fixed;
-    left:0em; top: 0em;
-  }
+	div {
+		position: fixed;
+		left:0em; top: 0em;
+	}
 
-  div > article {
-    width: 300em; height: 80em;
-    position:absolute;
-    left: 0em;
-    top: 0em;
-    background-image:url(271.jpg);
-    background-size: 300em 80em;
-    -moz-background-size: 300em 80em;
-    background-repeat: no-repeat;
-    z-index: -100;
-    list-style-type: none;
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    -o-transition: top 1.5s 1.5s, left 1.5s 1s;
-    -moz-transition: top 1.5s 1.5s, left 1.5s 1s;
-    transition: top 1.5s 1.5s, left 1.5s 1s;
-  }
+	div > article {
+		width: 300em; height: 80em;
+		position:absolute;
+		left: 0em;
+		top: 0em;
+		background-image:url(271.jpg);
+		background-size: 300em 80em;
+		-moz-background-size: 300em 80em;
+		background-repeat: no-repeat;
+		z-index: -100;
+		list-style-type: none;
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+		-o-transition: top 1.5s 1.5s, left 1.5s 1s;
+		-moz-transition: top 1.5s 1.5s, left 1.5s 1s;
+		transition: top 1.5s 1.5s, left 1.5s 1s;
+	}
 
-  article > section {
-    width: 100em;
-    height: 80em;
-    margin: 0em;
-    padding: 0em;
-    float:left;
-    opacity: 0;
-    color: #250;
-    -o-transition: all 1.5s;
-    -moz-transition: all 1.5s;
-    transition: all 1.5s;
-  }
+	article > section {
+		width: 100em;
+		height: 80em;
+		margin: 0em;
+		padding: 0em;
+		float:left;
+		opacity: 0;
+		color: #250;
+		-o-transition: all 1.5s;
+		-moz-transition: all 1.5s;
+		transition: all 1.5s;
+	}
 
-  section[id^="s"] > p {
-    width: 36em;
-    padding-left: 2em;
-    font-size: 0.7em;
-  }
+	section[id^="s"] > p {
+		width: 36em;
+		padding-left: 2em;
+		font-size: 0.7em;
+	}
 
-  section[id^="s"] > h2, section[id^="s"] > h3 {
-    padding-left: 1em;
-    margin-bottom: 0.1em;
-    margin-top: 3em;
-  }
+	section[id^="s"] > h2, section[id^="s"] > h3 {
+		padding-left: 1em;
+		margin-bottom: 0.1em;
+		margin-top: 3em;
+	}
 
-  #tabs:target ~ article > section#s1 {
-    opacity: 1;
-  }
+	#tabs:target ~ article > section#s1 {
+		opacity: 1;
+	}
 
-  #apps:target ~ article > section#s2 {
-    opacity: 1;
-  }
+	#apps:target ~ article > section#s2 {
+		opacity: 1;
+	}
 
-  section#s0 {
-    opacity: 1;
-  }
+	section#s0 {
+		opacity: 1;
+	}
 
-  #tabs:target ~ article > section#s0, #apps:target ~ article > section#s0 {
-    opacity: 0;
-  }
+	#tabs:target ~ article > section#s0, #apps:target ~ article > section#s0 {
+		opacity: 0;
+	}
 
-  #welcome:target ~ article {
-    left: 0em;
-    top: 0em;
-  }
+	#welcome:target ~ article {
+		left: 0em;
+		top: 0em;
+	}
 
-  #tabs:target ~ article {
-    left: -100em;
-    top: 0em;
-  }
+	#tabs:target ~ article {
+		left: -100em;
+		top: 0em;
+	}
 
-  #apps:target ~ article {
-    left: -200em;
-    top: 0em;
-  }
+	#apps:target ~ article {
+		left: -200em;
+		top: 0em;
+	}
 }</code></pre>
 
 

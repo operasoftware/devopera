@@ -8,7 +8,6 @@ tags:
 - opera-11
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h2 id="custom_protocol_and_content_handlers_in_opera_1160_beta">Custom Protocol and Content Handlers in Opera 11.60 beta</h2>

@@ -11,7 +11,6 @@ tags:
 - standards
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Spent a delightful evening at the <a href="http://www.thisisleaf.co.uk/">Leaf Tea Shop &amp; Bar</a> in Liverpool last night as part of the <a href="http://speaktheweb.org/">Speak the Web</a> series of &quot;gig&quot; style events.</p>

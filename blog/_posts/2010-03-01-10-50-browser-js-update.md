@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 It&#39;s been a while since the last browser.js update on this blog - 1 short month to be exact. This isn&#39;t as big as the last change but some nice ones anyway:

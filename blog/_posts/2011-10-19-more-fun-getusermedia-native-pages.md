@@ -8,7 +8,6 @@ tags:
 - opera-mobile
 - labs
 license: os-asa
-layout: post
 ---
 
 Note: the features covered in this article are now available in a much more stable form in our latest [Opera Next][1] release.

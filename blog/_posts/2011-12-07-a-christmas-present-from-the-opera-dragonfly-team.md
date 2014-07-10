@@ -9,7 +9,6 @@ tags:
 - opera-next
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>The team has been hard at work to deliver a nice christmas present for developers! We have an experimental release ready for you to try out (change the URL in <code>opera:config#DeveloperTools</code> to point to <code><a>https://dragonfly.opera.com/app/stp-1/experimental/</a></code>) and make it run on <a href="http://opera.com/next/">Opera Next</a>. Let&#8217;s see what you get:</p>

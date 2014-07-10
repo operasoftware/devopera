@@ -12,7 +12,6 @@ tags:
 - prefixes
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><a href="http://www.opera.com/browser/next/">Opera 12.10 beta</a> streamlines and speeds up browsing for end-users, makes images more beautiful, and includes functionality that allows web developers to add user-friendly features to their pages and extensions.</p>
@@ -68,74 +67,74 @@ layout: post
 
 <table>
  <thead>
-  <tr>
-   <th></th>
-   <th id="prefixesColHdr2">-o-</th>
-   <th id="prefixesColHdr3">-webkit-</th>
-   <th id="prefixesColHdr4">unprefixed (standardised)</th>
-  </tr>
+	<tr>
+	 <th></th>
+	 <th id="prefixesColHdr2">-o-</th>
+	 <th id="prefixesColHdr3">-webkit-</th>
+	 <th id="prefixesColHdr4">unprefixed (standardised)</th>
+	</tr>
  </thead>
  <tbody>
-  <tr>
-   <th id="prefixesRowHdr2">linear-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">yes; old syntax</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">yes; old syntax</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr2">repeating-linear-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr2">radial-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-    <tr>
-   <th id="prefixesRowHdr2">repeating-radial-gradient</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr3">animation</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr3">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr3">no</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr3">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr4">transform</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr4">yes (deprecated)</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr4">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr4">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr5">transition</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr5">yes (deprecated)</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr5">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr5">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr6">border-radius</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr6">never existed</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr6">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr6">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr7">background-size</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr7">no</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr7">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr7">yes</td>
-  </tr>
-  <tr>
-   <th id="prefixesRowHdr8">box-shadow</th>
-   <td headers="prefixesColHdr2 prefixesRowHdr8">never existed</td>
-   <td headers="prefixesColHdr3 prefixesRowHdr8">yes</td>
-   <td headers="prefixesColHdr4 prefixesRowHdr8">yes</td>
-  </tr>
+	<tr>
+	 <th id="prefixesRowHdr2">linear-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">yes; old syntax</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">yes; old syntax</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr2">repeating-linear-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr2">radial-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+		<tr>
+	 <th id="prefixesRowHdr2">repeating-radial-gradient</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr2">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr2">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr3">animation</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr3">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr3">no</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr3">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr4">transform</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr4">yes (deprecated)</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr4">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr4">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr5">transition</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr5">yes (deprecated)</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr5">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr5">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr6">border-radius</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr6">never existed</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr6">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr6">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr7">background-size</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr7">no</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr7">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr7">yes</td>
+	</tr>
+	<tr>
+	 <th id="prefixesRowHdr8">box-shadow</th>
+	 <td headers="prefixesColHdr2 prefixesRowHdr8">never existed</td>
+	 <td headers="prefixesColHdr3 prefixesRowHdr8">yes</td>
+	 <td headers="prefixesColHdr4 prefixesRowHdr8">yes</td>
+	</tr>
  </tbody>
 </table>
 <p>&quot;Old syntax&quot; refers to the previous syntax of specifying &quot;bottom left&quot; for a linear gradient as opposed to the standardised syntax &quot;to top right&quot;, which is supported without a prefix. <code>-o-</code> prefixed linear gradients used to support a &#39;semi-new&#39; syntax accepting the &quot;to&quot; keyword which has now been removed. In Opera 12.02 <code>-o-linear-gradient(bottom, red, green)</code> and <code>-o-linear-gradient(to top, red, green)</code> both worked, while in Opera 12.10+ and SDK 3.5+ only <code>-o-linear-gradient(bottom, red, green)</code> works.</p>

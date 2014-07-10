@@ -7,7 +7,6 @@ tags:
 - developer-tools
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We’ve got a couple of announcments related to <a href="http://www.opera.com/products/dragonfly">Opera Dragonfly</a> today.  The first piece of news is that Opera Dragonfly alpha 3 has just been released.  The main focus of this release has been fixing reported bugs, to make the user experience more pleasant.  We’ve also added localisation support—which was introduced in the previous weekly release.  The German translation is ready, and we are working on other locales, that will be pushed live as they are completed and QA&#39;d.  We hope this will make Opera Dragonfly more useful in the none-English speaking world.  Obviously markets where Opera is more popular have high priority, such as Russian and Indonesian.</p>

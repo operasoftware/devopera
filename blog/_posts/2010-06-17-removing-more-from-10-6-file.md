@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Today&#39;s 10.60 snapshot saw a number of nice core fixes. Some of these errors were patched and we can now remove them. (Note: b3426 claims to be Version/10.50, thus getting the 10.5x browser.js)

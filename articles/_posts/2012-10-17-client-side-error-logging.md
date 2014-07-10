@@ -5,7 +5,6 @@ authors:
 - rob-miller
 intro: 'This article shows how to handle client-side error logging, a very useful practice that helps you better understand and discover issues that your users are having.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -52,15 +51,15 @@ layout: article
 <p>In essence, what we need to do for our purposes is listen for the <code>window.onerror</code> event. Whenever it fires, we make an AJAX request to the server, passing along the details of the error message. Here's what it might look like using jQuery:</p>
 
 <pre><code>window.onerror = function(message, file, line) {
-    $.post('/log', { message: message, file: file, line: line });
+		$.post('/log', { message: message, file: file, line: line });
 }</code></pre>
 
 <p>Another way of capturing error information would be by making use of a <code>try</code>/<code>catch</code> statement. Here is a simple example of how we might do this:</p>
 
 <pre><code>try {
-    // Code that might throw an error here.
+		// Code that might throw an error here.
 } catch (error) {
-    $.post('/log', { message: 'This error happened within the try/catch: '+error.message });
+		$.post('/log', { message: 'This error happened within the try/catch: '+error.message });
 }</code></pre>
 
 <h2>Capturing debugging information</h2>
@@ -72,11 +71,11 @@ layout: article
 <p>If you're comfortable both with leaving these debug messages lying around in your code and the idea of parodying important functions, you can hook into them with some code similar to this; it's called the <a href="http://stackoverflow.com/a/296706">proxy pattern</a>:</p>
 
 <pre><code>console.log = (function(message) {
-  var original_log = console.log;
-  return function(message) {
-    $.post('/log', { message: message });
-    original_log(message);
-  }
+	var original_log = console.log;
+	return function(message) {
+		$.post('/log', { message: message });
+		original_log(message);
+	}
 })();</code></pre>
 
 <p>Now, every time you call <code>console.log</code>, your output will be sent to the server as well as the developer console. Magic!</p>
@@ -88,42 +87,42 @@ layout: article
 <p>Here's an example of a simple PHP backend that could work; hopefully it's commented enough to be self-explanatory:</p>
 
 <pre><code>&lt;?php
-  # Take the message from the query string, e.g.
-  # log.php?message=some+error
-  $message = $_REQUEST['message'];
+	# Take the message from the query string, e.g.
+	# log.php?message=some+error
+	$message = $_REQUEST['message'];
 
-  # Store the log data in a file called 'log.txt', in the same
-  # directory as the script.
-  $log_file = __DIR__ . '/log.txt';
+	# Store the log data in a file called 'log.txt', in the same
+	# directory as the script.
+	$log_file = __DIR__ . '/log.txt';
 
-  # If the file can't be read, attempt to create it and set its
-  # permissions to be writable; if all that fails, then we must exit.
-  if ( !is_readable($log_file) && !touch($log_file) && !chmod($log_file, 0664) ) {
-    die;
-  }
+	# If the file can't be read, attempt to create it and set its
+	# permissions to be writable; if all that fails, then we must exit.
+	if ( !is_readable($log_file) && !touch($log_file) && !chmod($log_file, 0664) ) {
+		die;
+	}
 
-  # Fetch the existing log data; we'll be appending to it.
-  $json = file_get_contents($log_file);
-  $log  = json_decode($json);
+	# Fetch the existing log data; we'll be appending to it.
+	$json = file_get_contents($log_file);
+	$log  = json_decode($json);
 
-  # If we couldn't decode the JSON, then the file is likely to be
-  # empty and we should start a new log.
-  if ( !$log ) {
-    $log = array();
-  }
+	# If we couldn't decode the JSON, then the file is likely to be
+	# empty and we should start a new log.
+	if ( !$log ) {
+		$log = array();
+	}
 
-  # Along with the log message, store the date.
-  $log[] = array('date' => date('Y-m-d H:i:s'), 'message' => $message);
-  $json  = json_encode($log);
+	# Along with the log message, store the date.
+	$log[] = array('date' => date('Y-m-d H:i:s'), 'message' => $message);
+	$json  = json_encode($log);
 
-  # If the file isn't writable, and we can't make it so, then we must
-  # exit too.
-  if ( !is_writable($log_file) && !chmod($log_file, 0664) ) {
-    die;
-  }
+	# If the file isn't writable, and we can't make it so, then we must
+	# exit too.
+	if ( !is_writable($log_file) && !chmod($log_file, 0664) ) {
+		die;
+	}
 
-  # Finally, write the log data back out to the file.
-  file_put_contents($log_file, $json);
+	# Finally, write the log data back out to the file.
+	file_put_contents($log_file, $json);
 ?&gt;</code></pre>
 
 <h2>But wait, surely there are some security issues here?</h2>
@@ -166,24 +165,24 @@ RewriteRule \.txt$ - [F,L]</code></pre>
 <p>Detection for and usage of this is baked in to jQuery from version 1.5.1 onwards. Should you need (or want) to do this without jQuery, you can use this handy <a href="http://www.nczonline.net/blog/about/">XMLHTTPRequest2 wrapper function</a> courtesy of Nicholas Zakas:</p>
 
 <pre><code>function createCORSRequest(method, url){
-    var xhr = new XMLHttpRequest();
-    if ("withCredentials" in xhr){
-        xhr.open(method, url, true);
-    } else if (typeof XDomainRequest != "undefined"){
-        xhr = new XDomainRequest();
-        xhr.open(method, url);
-    } else {
-        xhr = null;
-    }
-    return xhr;
+		var xhr = new XMLHttpRequest();
+		if ("withCredentials" in xhr){
+				xhr.open(method, url, true);
+		} else if (typeof XDomainRequest != "undefined"){
+				xhr = new XDomainRequest();
+				xhr.open(method, url);
+		} else {
+				xhr = null;
+		}
+		return xhr;
 }
 
 var request = createCORSRequest("get", "http://www.example.com/foo");
 if (request){
-    request.onload = function(){
-        //do something with request.responseText
-    };
-    request.send();
+		request.onload = function(){
+				//do something with request.responseText
+		};
+		request.send();
 }</code></pre>
 
 <p>To find out more, I highly recommend giving <a href="http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">DOM access control using cross-origin resource sharing</a> by Tiffany Brown a good read.</p>

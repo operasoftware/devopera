@@ -6,7 +6,6 @@ intro: 'Welcome to Opera Labs, a behind-the-scenes look at the latest technology
 tags:
 - labs
 license: os-asa
-layout: post
 ---
 
 Welcome to Opera Labs, a behind-the-scenes look at the latest technology and products from Opera Software.

@@ -4,7 +4,6 @@ authors:
 - christopher-schmitt
 intro: 'In this article Christopher Schmitt gives a succinct overview of how to use the nth-child CSS3 property to easily create zebra-striped HTML tables.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 <p>Zebra striping—or, coloring or shading alternate rows on a table—is thought to enhance the usability of a table by guiding the user’s eye along a row. This method has been used in print for years, and many designers try to emulate this technique when making tables for the Web. CSS has made achieving zebra striping easier, but, up until CSS3, it still involved a bit of cumbersome coding.&nbsp;</p>
@@ -17,24 +16,24 @@ layout: article
 <p>Before we begin covering how to use this new selector, let’s review the old way of doing things. First, we would have to add a class attribute to every other table row:</p>
 
 <pre>&lt;table&gt;
-  &lt;tr valign=&quot;top&quot; <strong>class=&quot;odd&quot;</strong>&gt;
-    &lt;td&gt;Salmon&lt;/td&gt;
-    &lt;td&gt;Omega-3's help the brain develop properly, reduce the risk of Alzheimer's, and help prevent heart disease.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr valign=&quot;top&quot;&gt;
-    &lt;td&gt;Spinach&lt;/td&gt;
-    &lt;td&gt;Great source of folate and lutein. Prevents birth defects, heart disease, stroke, and protects your skin from sun damage.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr valign=&quot;top&quot; <strong>class=&quot;odd&quot;</strong>&gt;
-    &lt;td&gt;Sweet Potatoes&lt;/td&gt;
-    &lt;td&gt;Beta carotene protects your skin from sun damage.&lt;/td&gt;
-  &lt;/tr&gt;
+	&lt;tr valign=&quot;top&quot; <strong>class=&quot;odd&quot;</strong>&gt;
+		&lt;td&gt;Salmon&lt;/td&gt;
+		&lt;td&gt;Omega-3's help the brain develop properly, reduce the risk of Alzheimer's, and help prevent heart disease.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr valign=&quot;top&quot;&gt;
+		&lt;td&gt;Spinach&lt;/td&gt;
+		&lt;td&gt;Great source of folate and lutein. Prevents birth defects, heart disease, stroke, and protects your skin from sun damage.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr valign=&quot;top&quot; <strong>class=&quot;odd&quot;</strong>&gt;
+		&lt;td&gt;Sweet Potatoes&lt;/td&gt;
+		&lt;td&gt;Beta carotene protects your skin from sun damage.&lt;/td&gt;
+	&lt;/tr&gt;
 &lt;/table&gt;</pre>
 
 <p>Luckily, our table is fairly small, so this doesn’t require too much work. But you could imagine how tedious this process would be if our table was dozens of rows long! We would then add a CSS rule that targeted those rows:</p>
 
 <pre>tr.odd {
-  background-color: #99ff99;
+	background-color: #99ff99;
 }</pre>
 <p>While this method works, it’s a bit inefficient in that it requires extra markup in the HTML document. This markup, in turn, doesn’t really add anything semantically valuable: The odd rows don’t serve a different function&nbsp;than the even rows; we just want them to look different. Hence, we haven’t kept the structure separate from the presentation. Not to mention that coding a large table this way can be a frustrating task.</p>
 <h2>Introducing the nth-child</h2>
@@ -52,98 +51,98 @@ layout: article
 
 <p>In this example as shown in Table 1, you can see that the second child element is matched, then the seventh, then the twelfth, and so on, until we’ve run out of elements.</p>
 	<table border="1">
-      <tr>
-        <th colspan="4" scope="col">Which child element gets selected?</th>
-      </tr>
-      <tr>
-        <th width="122" scope="col">Child Element</th>
-        <th colspan="3" scope="col">Formulas</th>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <th width="81" scope="col">n</th>
-        <th width="81" scope="col">5n</th>
-        <th width="73" scope="col">5n+2</th>
-      </tr>
-      <tr>
-        <th scope="row">0</th>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-    </table>
+			<tr>
+				<th colspan="4" scope="col">Which child element gets selected?</th>
+			</tr>
+			<tr>
+				<th width="122" scope="col">Child Element</th>
+				<th colspan="3" scope="col">Formulas</th>
+			</tr>
+			<tr>
+				<th scope="row">&nbsp;</th>
+				<th width="81" scope="col">n</th>
+				<th width="81" scope="col">5n</th>
+				<th width="73" scope="col">5n+2</th>
+			</tr>
+			<tr>
+				<th scope="row">0</th>
+				<td>n/a</td>
+				<td>n/a</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">6</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">7</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">8</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">9</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">10</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">11</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">12</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+		</table>
 <p class="comment">Table 1. Demonstrating which child element is selected</p>
 <h2>Calculating zebra stripes</h2>
 <p>How does this selector help us with zebra striping? Note that this formula allows for some quite complicated configurations—making it very versatile. To target only odd or even elements, however, we need only remember two kinds of selectors.</p>
@@ -152,84 +151,84 @@ layout: article
 <pre>tr:nth-child(2n)</pre>
 
 	<table border="1">
-      <tr>
-        <th colspan="3" scope="col">Which child element gets selected?</th>
-      </tr>
-      <tr>
-        <th width="122" scope="col">Child&nbsp;Element</th>
-        <th colspan="2" scope="col">Formulas</th>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <th width="120" scope="col">n</th>
-        <th width="118" scope="col">2n</th>
-      </tr>
-      <tr>
-        <th scope="row">0</th>
-        <td>n/a</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Y</td>
-        <td>Y</td>
-      </tr>
-    </table>
+			<tr>
+				<th colspan="3" scope="col">Which child element gets selected?</th>
+			</tr>
+			<tr>
+				<th width="122" scope="col">Child&nbsp;Element</th>
+				<th colspan="2" scope="col">Formulas</th>
+			</tr>
+			<tr>
+				<th scope="row">&nbsp;</th>
+				<th width="120" scope="col">n</th>
+				<th width="118" scope="col">2n</th>
+			</tr>
+			<tr>
+				<th scope="row">0</th>
+				<td>n/a</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">6</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">7</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">8</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">9</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">10</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">11</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">12</th>
+				<td>Y</td>
+				<td>Y</td>
+			</tr>
+		</table>
 <p class="comment">Table 2. Demonstrating that only even-numbered of rows are selected</p>
 <p>To target all odd rows, we would compose the following selector:</p>
 
@@ -237,98 +236,98 @@ layout: article
 
 <p>This selector matches the first row within a table, and every second row after that—all of the odd rows as shown in Table 3.</p>
 	<table border="1">
-      <tr>
-        <th colspan="4" scope="col">Which child element gets selected?</th>
-      </tr>
-      <tr>
-        <th width="122" scope="col">Child&nbsp;Element</th>
-        <th colspan="3" scope="col">Formulas</th>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <th width="81" scope="col">n</th>
-        <th width="81" scope="col">2n</th>
-        <th width="73" scope="col">2n+1</th>
-      </tr>
-      <tr>
-        <th scope="row">0</th>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>Y</td>
-        <td>&nbsp;</td>
-        <td>Y</td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Y</td>
-        <td>Y</td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
+			<tr>
+				<th colspan="4" scope="col">Which child element gets selected?</th>
+			</tr>
+			<tr>
+				<th width="122" scope="col">Child&nbsp;Element</th>
+				<th colspan="3" scope="col">Formulas</th>
+			</tr>
+			<tr>
+				<th scope="row">&nbsp;</th>
+				<th width="81" scope="col">n</th>
+				<th width="81" scope="col">2n</th>
+				<th width="73" scope="col">2n+1</th>
+			</tr>
+			<tr>
+				<th scope="row">0</th>
+				<td>n/a</td>
+				<td>n/a</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">6</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">7</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">8</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">9</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">10</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">11</th>
+				<td>Y</td>
+				<td>&nbsp;</td>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th scope="row">12</th>
+				<td>Y</td>
+				<td>Y</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
 <p class="comment">Table 3. Demonstrating that only odd-numbered of rows are selected</p>
 <h2>Illustrating zebra striping</h2>
 <p> Figure 1 shows a table listing various &quot;superfoods&quot; and their nutritional virtues as an demonstration of zebra striping.</p>
@@ -337,7 +336,7 @@ layout: article
 <p> In this demonstration, we want to color the background of the odd rows so that the table is easier to read. The declaration block is written as such:</p>
 
 <pre>tr:nth-child(2n+1) {
-  background-color: #99ff99;
+	background-color: #99ff99;
 }</pre>
 
 <p>This rule matches all of the odd rows, and applies the background color only to that row as shown in Figure 2.</p>
@@ -346,7 +345,7 @@ layout: article
 <p>If these formulas are too complicated for you to remember, the<code> nth-child</code> property allows the math-challenged to use keyword shortcuts. Instead of a mathematical formula, we can also use the &quot;odd&quot; or &quot;even&quot; keywords as a value:</p>
 
 <pre>tr:nth-child(<strong>odd</strong>) {
-  background-color: #99ff99;
+	background-color: #99ff99;
 }</pre>
 
 <p>CSS3 provides us with a hassle-free technique for zebra-striping our tables, list items or forms, and so on.</p>

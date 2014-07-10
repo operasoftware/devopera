@@ -14,7 +14,6 @@ tags:
 - wai-aria
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><em>Report by Chris Mills, with contributions from Henny Swan</em></p>

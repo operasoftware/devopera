@@ -8,7 +8,6 @@ tags:
 - android
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/scrn-android.png" style="float: right; margin: 0 0 3px 10px; width: 240px;" />

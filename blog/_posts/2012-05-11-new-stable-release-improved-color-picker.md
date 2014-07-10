@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today&#39;s new release on the Opera Dragonfly stable branch includes some major improvements to our color picker. It now opens next to the color being edited, instead of being a floating window. The interface itself has been made lighter, with a smaller size and a gray background. The alpha value is now always available, while previously it only appeared when the original color being edited was specified as <code>rgba</code> or <code>hsla</code>. The palette is available in the bottom left corner and colors can now be added and removed directly from here.</p>

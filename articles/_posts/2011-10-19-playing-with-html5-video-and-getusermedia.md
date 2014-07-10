@@ -4,7 +4,6 @@ authors:
 - daniel-davis
 intro: 'Building on the famous exploding video demo by Sean Christmann, we’re going to see how we can explode the video stream from a camera. With a few performance tweaks, this works surprisingly well both in desktop browser and on mobile devices.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <img src="html5-exploding-camera.jpg" width="400" height="300" alt="Use getUserMedia to make your head explode." style="float:right;padding-left: 10px;"/>
 
@@ -29,25 +28,25 @@ layout: article
 
 <pre><code>/* JavaScript code */
 window.addEventListener('DOMContentLoaded', function() {
-    // Assign the &lt;video&gt; element to a variable
-    var video = document.getElementById('sourcevid');
+	// Assign the &lt;video&gt; element to a variable
+	var video = document.getElementById('sourcevid');
 
-    // Replace the source of the video element with the stream from the camera
-    if (navigator.getUserMedia) {
-        navigator.getUserMedia('video', successCallback, errorCallback);
-        // Below is the latest syntax. Using the old syntax for the time being for backwards compatibility.
-        // navigator.getUserMedia({video: true}, successCallback, errorCallback);
-        function successCallback(stream) {
-            video.src = stream;
-        }
-        function errorCallback(error) {
-            console.error('An error occurred: [CODE ' + error.code + ']');
-            return;
-        }
-    } else {
-        console.log('Native web camera streaming (getUserMedia) is not supported in this browser.');
-        return;
-    }
+	// Replace the source of the video element with the stream from the camera
+	if (navigator.getUserMedia) {
+		navigator.getUserMedia('video', successCallback, errorCallback);
+		// Below is the latest syntax. Using the old syntax for the time being for backwards compatibility.
+		// navigator.getUserMedia({video: true}, successCallback, errorCallback);
+		function successCallback(stream) {
+			video.src = stream;
+		}
+		function errorCallback(error) {
+			console.error('An error occurred: [CODE ' + error.code + ']');
+			return;
+		}
+	} else {
+		console.log('Native web camera streaming (getUserMedia) is not supported in this browser.');
+		return;
+	}
 }, false);</code></pre>
 
 <p>That's it! In the demo code we added a more readable error message for users without camera support. Credit goes to <a href="http://richt.me/">Rich Tibbett</a> for this code.</p>
@@ -69,31 +68,31 @@ var outputcanvas = document.getElementById('output');
 var mouse_down = (isTouch ? 'ontouchstart' : 'onmousedown');
 
 outputcanvas[mouse_down] = function(event) {
-    dropBomb(event, this);
+	dropBomb(event, this);
 };</code></pre>
 
 <p>This is enough to get it to work, but in our demo we will also need the coordinates of the touch event. This is slightly different to getting mouse coordinates and this difference, if you're not aware, can cause a lot of head-scratching. Well, it did in my case! The cause is multi-touch support which means that each touch event has multiple coordinates, provided by the browser in a <code>touches</code> array. With an <code>if</code> statement such as the following, we can get the coordinates whatever browser we're dealing with:</p>
 
 <pre><code>// Get the user's touch/mouse coordinates to explode the canvas
 function dropBomb(event, obj) {
-    event.preventDefault();
-    var posx = 0;
-    var posy = 0;
-    var e = event || window.event;
+	event.preventDefault();
+	var posx = 0;
+	var posy = 0;
+	var e = event || window.event;
 
-    if (e.touches) {
-        posx = event.touches[0].pageX;
-        posy = event.touches[0].pageY;
-    } else if (e.pageX || e.pageY) {
-        posx = e.pageX;
-        posy = e.pageY;
-    } else if (e.clientX || e.clientY) {
-        posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-        posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-    }
-    var canvasX = posx-obj.offsetLeft;
-    var canvasY = posy-obj.offsetTop;
-    explode(canvasX, canvasY);
+	if (e.touches) {
+		posx = event.touches[0].pageX;
+		posy = event.touches[0].pageY;
+	} else if (e.pageX || e.pageY) {
+		posx = e.pageX;
+		posy = e.pageY;
+	} else if (e.clientX || e.clientY) {
+		posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+		posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+	}
+	var canvasX = posx-obj.offsetLeft;
+	var canvasY = posy-obj.offsetTop;
+	explode(canvasX, canvasY);
 }</code></pre>
 
 <h2>Speed, more speed!</h2>
@@ -102,12 +101,12 @@ function dropBomb(event, obj) {
 
 <pre><code>// Standard for loop
 for(var i = 0; i &lt; tiles.length; i++){
-    // Execute code
+	// Execute code
 }
 
 // Faster for loop with array length cached
 for(var i = 0, len = tiles.length; i &lt; len; i++){
-    // Execute code
+	// Execute code
 }</code></pre>
 
 <p>Any calls to <code>Math</code> methods are also time-consuming so we should to try to optimise these as well. One way is to simply cache the <code>Math</code> object in a global variable but we found this usually only gives a small improvement. A better approach would be to replace certain methods with more efficient versions if possible. In our <code>processFrame()</code> we're using <code>Math.abs()</code> a few times and there happens to be a faster way to achieve the same result:</p>
@@ -117,7 +116,7 @@ var a = Math.abs(x);
 
 // Faster than Math.abs
 function absolute(x) {
-    return (x &lt; 0 ? -x : x);
+	return (x &lt; 0 ? -x : x);
 }
 var b = absolute(x);</code></pre>
 
@@ -129,9 +128,9 @@ var PAINTWIDTH = window.innerWidth;
 var PAINTHEIGHT = window.innerHeight;
 
 function processFrame() {
-    // Some code
-    draw.clearRect(PAINTX, PAINTY,PAINTWIDTH,PAINTHEIGHT);
-    // Some more code
+	// Some code
+	draw.clearRect(PAINTX, PAINTY,PAINTWIDTH,PAINTHEIGHT);
+	// Some more code
 }</code></pre>
 
 <p class="note">For performance testing, <a href="http://jsperf.com/">jsPerf</a> is an excellent resource, both for creating your own tests or running pre-made ones.</p>

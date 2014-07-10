@@ -11,7 +11,6 @@ tags:
 - api
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 [Opera 17 for desktop is released][1], and installs are being autoupdated as you read this.

@@ -7,7 +7,6 @@ tags:
 - unite
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>How are we doing?</h3>

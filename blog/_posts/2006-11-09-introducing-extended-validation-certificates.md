@@ -8,7 +8,6 @@ tags:
 - certificates
 - labs
 license: os-asa
-layout: post
 ---
 
 Last year it became clear that the procedures for verifying data used to issue SSL certificates (and other types of certificates) were not as uniform as might be desired. This led to a situation where information in certificates might be misleading.

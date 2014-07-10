@@ -9,7 +9,6 @@ tags:
 - hacking
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <span class='imgright'><img alt='' src='/blog/how-to-get-started-contributing-to-opera-dragonfly-development/bb-logo.png' /></span> <p>The web developer tool <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> is open source, and it&#39;s written in JavaScript. It&#39;s available from <a href="https://bitbucket.org/scope/dragonfly-stp-1/">a public repository on Bitbucket</a> so that everyone who would like to can contribute. Sounds easy? It&#39;s meant to be.. but how, exactly, do you get started?</p>

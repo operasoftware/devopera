@@ -8,7 +8,6 @@ tags:
 - javascript
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>So I was there at <a href="http://jsfoo.hasgeek.com/" target="_blank">jsFoo</a> in Bangalore last weekend, which I think was India&#39;s first exclusively JS based conference. The event was great, with a turnout which was greater than expected. We had talked on the some advanced JS tricks, stuff on the internal working of some JS engines, a few node.js talks, as well as my talk which was about how does JS fit into the mobile web.</p>

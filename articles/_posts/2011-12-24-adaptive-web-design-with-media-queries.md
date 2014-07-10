@@ -4,7 +4,6 @@ authors:
 - chris-mills
 intro: 'In this article Chris Mills takes a look at techniques and technologies that we can adopt to create adaptive (or responsive) web sites, including percentage units, media queries and viewport. He also discusses some recent happenings in the area, such as considerations for display on tablet browsers, object-fit, and the `@viewport` CSS rule.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -60,8 +59,8 @@ layout: article
 <p>The premise behind flexible layout units is using percentages for your layout dimensions (such as column and image widths.) If I'm doing a fixed width layout, I usually set a specific percentage for the <code>font-size</code> (usually <a href="http://clagnut.com/blog/348/">Mr Rutter's magic 62.5%</a>), and then set all dimensions in ems, so the whole layout is manipulated proportionally to that size. However, recently I've started playing more and more with flexible layouts. In my psychedelic example, I have used the body as the wrapper for the page, and set margins to 0, plus a <code>min-width</code> so things don't break at really low widths when the media queries are put in place.
 
 <pre><code>body {
-  margin: 0;
-  min-width: 320px;
+	margin: 0;
+	min-width: 320px;
 }</code></pre>
 
 <p class="note">Note that Firefox and Chrome automatically apply a minimum width to pages, even if you don't specify it in the CSS.</p>
@@ -69,28 +68,28 @@ layout: article
 <p>I have then floated the left and right columns left and right and given them percentage widths that total a little less than 100% to form a natural gutter in the middle:</p>
 
 <pre><code>section#main {
-  width: 33%;
-  float: left;
-  margin-left: 2%;
+	width: 33%;
+	float: left;
+	margin-left: 2%;
 }
 
 section#features {
-  width: 62%;
-  float: right;
-  margin-bottom: 3%;
+	width: 62%;
+	float: right;
+	margin-bottom: 3%;
 }</code></pre>
 
 <p>This is mundane really, but things start to get more interesting when you look at using percentages for the different contents of the columns. The <code>&lt;article&gt;</code> elements that contain the "psychedelic features" are all floated left, meaning that they will fit comfortably across the width of the container, nearly regardless of what that width might be. In addition, I have set <code>max-width: 100%;</code> on the images, so they will never expand outside the width of their containers, even when the containers are reduced in width.</p>
 
 <pre><code>article {
-  float: left;
-  width: 30%;
-  height:22em;
-  margin: 0 1% 0 1%;
+	float: left;
+	width: 30%;
+	height:22em;
+	margin: 0 1% 0 1%;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }</code></pre>
 
 <p>The below screenshot illustrates what effect these rules have when the container width is reduced:</p>
@@ -102,9 +101,9 @@ img {
 <p>If you look at the final live code, you'll see some additional properties present in the <code>img</code> rule:</p>
 
 <pre><code>img {
-  max-width: 100%;
-  <strong>-o-object-fit: none;
-  overflow: hidden;</strong>
+	max-width: 100%;
+	<strong>-o-object-fit: none;
+	overflow: hidden;</strong>
 }</code></pre>
 
 <p><code>object-fit</code> is a CSS property introduced in the CSS3 <a href="http://dev.w3.org/csswg/css3-images/">CSS Image Values and Replaced Content module</a>, which allows you to control how the content of replaced elements behaves. By default, the image will break out of its container and display full size, unless constrained by settings such as <code>width</code>, <code>height</code>, or <code>max-width</code>, as in the case above. <code>object-fit</code> overrides this default and can give some useful advantages, if your browser supports it (it is currently only supported by Opera 11+, and WebKit nightlies, with vendor prefixes). For example, in this case I am using <code>object-fit: none</code>, which makes the image completely ignore any kind of resizing efforts and display full size, regardless. I am then using <code>overflow: hidden;</code> to hide the overflowing image portion, which will differ in size depending on the width of the container. So now, instead of the image resizing to fit the container, it stays the same size, and a different amount of it is cut off by the <code>overflow: hidden;</code>:</p>
@@ -144,59 +143,59 @@ img {
 
 <pre><code>screen and (max-width: 1000px), print and (max-width: 29.7cm)</code></pre>
 
-	    <h3>The obvious - width media queries</h3>
+			<h3>The obvious - width media queries</h3>
 
 <p>The most common media query you'll use is one that alters your design when browser width gets below or above a certain amount, and this is what I've done a lot in my example. I won't go through everything, but for example, I have changed the percentage width that the <code>&lt;article&gt;</code> elements span across their containing <code>&lt;section&gt;</code> when width gets below 1000 pixels, so that the layout goes from three per row to two per row. They are initially styled like this:</p>
 
 <pre><code>article {
-    ...
-  width: 30%;
-  margin: 0 1% 0 1%;
-    ...
+		...
+	width: 30%;
+	margin: 0 1% 0 1%;
+		...
 }</code></pre>
 
 And the media query then styles them like this:
 
 <pre><code>@media all and (max-width: 1000px) {
-  article {
-    width: 40%;
-    margin: 0 5% 0 1%;
-  }
+	article {
+		width: 40%;
+		margin: 0 5% 0 1%;
+	}
 }</code></pre>
 
 <p>As another example, I also have an extra-wide layout that kicks in at 1500 pixels and above, for wide monitors. This changes the percentage width again so that all six "psychedelic features" fit on one row:</p>
 
 <pre><code>article {
-  width: 14%;
-  margin: 0 1% 0 1%;
+	width: 14%;
+	margin: 0 1% 0 1%;
 }</code></pre>
 
 <p>I also used a media query to get rid of the <code>&lt;section&gt;</code> floats, to make the 2-column layout turn to 1-column, when the browser width is 700 pixels or less. I think that's enough examples - the rest of them work in the same way.</p>
 
-	    <h3>Other uses</h3>
+			<h3>Other uses</h3>
 
 <p>Media queries aren't just limited to setting rules based on widths and heights. You can also set rules based on many other variables, such as resolution, aspect ratio, whether the screen is monochrome or not, orientation (portrait or landscape?) and more. For example, you could bump up the font size on high resolution devices such as the iPhone 4, so the text isn't teeny tiny (although be aware that some such devices tend to automatically bump up text size for the same reason).</p>
 
 <pre><code>@media screen and (resolution: 163dpi) {
-  p { font-size: 200%; }
+	p { font-size: 200%; }
 }</code></pre>
 
 <p class="note">You could use <code>min-pixel-ratio: 2</code> in place of <code>resolution: 163dpi</code>, for a similar result.</p>
 
 <p>For a full list of the media features you can create rules based on, look them up on the <a href="http://www.w3.org/TR/css3-mediaqueries/#media1">media queries specification</a>.</p>
 
-	    <h3>The media attribute on video</h3>
+			<h3>The media attribute on video</h3>
 
 <p>And that's not all, folks. Recently, the HTML5 specification was changed to allow the <code>media</code> attribute to be used on the video <code>&lt;source&gt;</code> attribute. This means that you can serve different video files to different devices — for example, my "psychedelic video" page contains the following player code:</p>
 
 <pre><code>&lt;article&gt;
-  &lt;video controls&gt;
-    &lt;source type="video/mp4" src="video/windowsill_small.mp4" media="all and (max-width: 480px), all and (max-device-width: 480px)"&gt;
-    &lt;source type="video/webm" src="video/windowsill_small.webm" media="all and (max-width: 480px), all and (max-device-width: 480px)"&gt;
-    &lt;source type="video/mp4" src="video/windowsill.mp4"&gt;
-    &lt;source type="video/webm" src="video/windowsill.webm"&gt;
-	  &lt;!-- proper fallback content goes here --&gt;
-  &lt;/video&gt;
+	&lt;video controls&gt;
+		&lt;source type="video/mp4" src="video/windowsill_small.mp4" media="all and (max-width: 480px), all and (max-device-width: 480px)"&gt;
+		&lt;source type="video/webm" src="video/windowsill_small.webm" media="all and (max-width: 480px), all and (max-device-width: 480px)"&gt;
+		&lt;source type="video/mp4" src="video/windowsill.mp4"&gt;
+		&lt;source type="video/webm" src="video/windowsill.webm"&gt;
+		&lt;!-- proper fallback content goes here --&gt;
+	&lt;/video&gt;
 &lt;/article&gt;</code></pre>
 
 <p>Here, the first two <code>&lt;source&gt;</code> attributes contain a media query rule that is passed if the browser or device screen width is 480 pixels or less, i.e., probably some kind of mobile device. If the rule is passed, then the browser will load the video from one of those <code>&lt;source&gt;</code> attributes (depending on which video format it understands). If not, the browser will skip down the list and load the video from the third or fourth <code>&lt;source&gt;</code> attribute. This is great, as mobile browser users with small screen widths don't need a large video file, so you might as well serve them a smaller-sized version and save them a bit of bandwidth. This works on all the latest versions of modern browsers.</p>
@@ -216,12 +215,12 @@ And the media query then styles them like this:
 
 <p>So what do we do? Well, there are a couple of approaches we could use, either separately, or in combination.</p>
 
-	    <h3>max-device-width</h3>
+			<h3>max-device-width</h3>
 
 <p>Instead of just including <code>max-width</code> in your media query, you could chain together two media queries to test for <code>max-width</code> <em>and</em> <code>max-device-width</code>, like I did in the video source <code>media</code> attribute. For example:</p>
 
 <pre><code>@media all and (max-width: 700px), all and (max-device-width: 700px) {
-  ...
+	...
 }</code></pre>
 
 <p>So here we are saying we want the CSS block to kick in if either the browser width is 700 pixels wide or less (the one the mobile browsers lie about), or the actual device screen is 700 pixels of less (the mobile browsers find it harder to lie about this). I do however find this a bit messy to deal with on all your media queries: can't we just make those mobile browsers tell the truth?</p>
@@ -240,19 +239,19 @@ And the media query then styles them like this:
 
 <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=2"&gt;</code></pre>
 
-	    <h3>Coming soon to a browser near you — @viewport</h3>
+			<h3>Coming soon to a browser near you — @viewport</h3>
 
 <p>Us lovely folks at Opera like the viewport meta tag, but we thought it strange that it is implemented as a meta tag at all, when what it is doing is really quite, well, <em>CSS-ish</em>. So we decided to create a new implementation of viewport, reformulated as a CSS at-rule. If you look near the top of my CSS, you'll find this construct, commented out:</p>
 
 <pre><code>@-o-viewport {
-  width: device-width;
+	width: device-width;
 }</code></pre>
 
 <p>This does the same thing as the viewport meta tag we discussed above. Try swapping the comments around from one to the other and loading the page in Opera Mobile 11 (or later), and you'll see the same effect as before. We are hoping this will catch on in other browsers soon. The CSS version has been submitted to the W3C as an editor's draft — see the <a href="http://dev.w3.org/csswg/css-device-adapt/">CSS device adaptation</a> spec.</p>
 
 <p><code>@viewport</code> has equivalents for all the things you can do with the viewport meta tag. For a much deeper, more complete treatment of viewport, read <a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a> by Andreas Bovens.</p>
 
-     <h3>Tablets and viewport</h3>
+		 <h3>Tablets and viewport</h3>
 
 <p>The recent growth in popularity of tablet devices has given us even more to think about in terms of adaptive web design, to be sure. Generally there are not too many horrors to consider, but one thing to bear in mind is that some tablet browsers behave like mobile browsers and therefore follow viewport rules, and some don't. As an example, I originally had my viewport rule set to <code>width=320</code>, to give a more consistent small screen layout that would blow up the text to be as big and readable as possible (bear in mind that my layout has a <code>min-width</code> of 320 pixels set, as it looks awful if set to thinner than this). The layout did look great across most smartphone browsers I tested it on.</p>
 
@@ -296,7 +295,7 @@ And the media query then styles them like this:
 <li><a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
 </ul>
 
-	    <h3>Credits</h3>
+			<h3>Credits</h3>
 
 <ul>
 <li><a href="http://www.flickr.com/photos/burningmax/4955905625/">psychedelic header background</a> by Burningmax</li>

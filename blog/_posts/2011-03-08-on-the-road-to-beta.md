@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/closer-to-beta.png" alt="" />

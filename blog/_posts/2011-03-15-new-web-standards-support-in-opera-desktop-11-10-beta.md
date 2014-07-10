@@ -10,7 +10,6 @@ tags:
 - opera-11
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>So many new features!</h3>

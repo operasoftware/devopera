@@ -8,7 +8,6 @@ tags:
 - video
 - labs
 license: os-asa
-layout: post
 ---
 
 In February 2007, 1177 days ago to be exact, [Opera proposed the `<video>` element][1] and we published a [manifesto for video on the Web][2]. When proposing `<video>`, we knew there would be two challenges. The first was easy: to get consensus around the syntax. We wanted `<video>` to be as easy to use as `<img>`. The second was harder: to find an open and freely-usable high quality video format.

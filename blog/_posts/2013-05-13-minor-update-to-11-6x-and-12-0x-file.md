@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 PATCH-770 has been active in Browser.js for 11.6x and 12.0x since last year, but an update on outlook.com made it no longer apply. This update modifies the patch to work again, making menus and messages clickable.

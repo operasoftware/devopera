@@ -4,7 +4,6 @@ authors:
 - christopher-schmitt
 intro: 'In this article, Christopher Schmitt follows up his hCard introduction by showing us how add some style to hCards, to make them fit nicely into a page design.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <ul class="seriesNav">
 <li class="prev"><a href="http://dev.opera.com/articles/view/introduction-to-hcard/" rel="prev" title="link to the previous article in the series">Previous article&#8212;Introduction to hCard</a></li>
@@ -20,18 +19,18 @@ layout: article
 <p>For our first example, let's work on the contact card created in the first part of the article, making it a bit more visually appealing with some CSS. First let's add a few more fields to the hCard we made last time (to give our card some more hooks to hang style information on):</p>
 
 <pre><code>&lt;div class="vcard"&gt;
-        &lt;div class="fn"&gt;Tripper, Jack&lt;/div&gt;
-    &lt;div class="n"&gt;Jack Tripper&lt;/div&gt;
-    &lt;div class="org"&gt;Jack's Bistro&lt;/div&gt;
-        &lt;div class="adr"&gt;
-          &lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
-          &lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
-          &lt;span class="region"&gt;CA&lt;/span&gt;,
-          &lt;span class="postal-code"&gt;90405&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p&gt;&lt;div class="tel"&gt;(310) 444-8444&lt;/div&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;div class="email"&gt;&lt;a href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt;&lt;/div&gt;&lt;/p&gt;
-   &lt;/div&gt;&lt;!-- end vcard--&gt;</code></pre>
+				&lt;div class="fn"&gt;Tripper, Jack&lt;/div&gt;
+		&lt;div class="n"&gt;Jack Tripper&lt;/div&gt;
+		&lt;div class="org"&gt;Jack's Bistro&lt;/div&gt;
+				&lt;div class="adr"&gt;
+					&lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
+					&lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
+					&lt;span class="region"&gt;CA&lt;/span&gt;,
+					&lt;span class="postal-code"&gt;90405&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;p&gt;&lt;div class="tel"&gt;(310) 444-8444&lt;/div&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;div class="email"&gt;&lt;a href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt;&lt;/div&gt;&lt;/p&gt;
+	 &lt;/div&gt;&lt;!-- end vcard--&gt;</code></pre>
 
 <p>Notice how we've split up the <code>n</code> and <code>fn</code> properties: For the purposes of this example, we want to separate the title of our contact card (or "formatted name") from the rest of the card. The formatted name – <code>Tripper, Jack</code> – will label our contact card, while the <code>n</code> name field – <code>Jack Tripper</code> – will be included in the body of the card.</p>
 
@@ -55,27 +54,27 @@ layout: article
 <p>So, how do we make our card this hip and retro? Let's begin by marking up our HTML a bit more. We first want to style the "title" of the hCard, which will make the "tab" of the Rolodex card stand out separate from the rest of it. So we first wrap the portion of the hCard that is separate from this title in its own <code>div</code>:</p>
 
 <pre><code>&lt;div class="vcard"&gt;
-        &lt;div class="fn"&gt;Tripper, Jack&lt;/div&gt;
-    <strong>&lt;div class="vcardmain"&gt;</strong>
-    &lt;div class="n"&gt;Jack Tripper&lt;/div&gt;
-    &lt;div class="org"&gt;Jack's Bistro&lt;/div&gt;
-        &lt;div class="adr"&gt;
-          &lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
-          &lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
-          &lt;span class="region"&gt;CA&lt;/span&gt;,
-          &lt;span class="postal-code"&gt;90405&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p&gt;&lt;div class="tel"&gt;(310) 444-8444&lt;/div&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;div class="email"&gt;&lt;a href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt;&lt;/div&gt;&lt;/p&gt;
-      <strong>&lt;/div&gt;&lt;!-- end vcardmain--&gt;</strong>
-   &lt;/div&gt;&lt;!-- end vcard--&gt;</code></pre>
+				&lt;div class="fn"&gt;Tripper, Jack&lt;/div&gt;
+		<strong>&lt;div class="vcardmain"&gt;</strong>
+		&lt;div class="n"&gt;Jack Tripper&lt;/div&gt;
+		&lt;div class="org"&gt;Jack's Bistro&lt;/div&gt;
+				&lt;div class="adr"&gt;
+					&lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
+					&lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
+					&lt;span class="region"&gt;CA&lt;/span&gt;,
+					&lt;span class="postal-code"&gt;90405&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;p&gt;&lt;div class="tel"&gt;(310) 444-8444&lt;/div&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;div class="email"&gt;&lt;a href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt;&lt;/div&gt;&lt;/p&gt;
+			<strong>&lt;/div&gt;&lt;!-- end vcardmain--&gt;</strong>
+	 &lt;/div&gt;&lt;!-- end vcard--&gt;</code></pre>
 
 <p>Next, we add dimensions to this element, and a background color:</p>
 <pre><code>.vcardmain {
-          width: 350px;
-          padding: 45px 35px 65px 35px;
-          background: #fff;
-  }</code></pre>
+					width: 350px;
+					padding: 45px 35px 65px 35px;
+					background: #fff;
+	}</code></pre>
 
 <p>Our contact card now looks like Figure 3.</p>
 
@@ -89,11 +88,11 @@ layout: article
 <p>Next we want to create the Rolodex "tab" – we do this by targeting the <acronym title="formatted name"><code>fn</code></acronym> <code>class</code>:</p>
 
 <pre><code>.fn {
-   width: 140px;
-   padding: 5px 5px 5px 15px;
-   background-color: #fc0;
-   font-weight: bold;
-   color: #000;
+	 width: 140px;
+	 padding: 5px 5px 5px 15px;
+	 background-color: #fc0;
+	 font-weight: bold;
+	 color: #000;
 }</code></pre>
 
 <p>This rule sets the dimensions of the <code>div</code>, makes the font bold so it stands out, and sets the background and font colour. Now our contact card is beginning to look more like a Rolodex card – check out Figure 4.</p>
@@ -115,10 +114,10 @@ layout: article
 <p>Then, add the following script to the heading as well:</p>
 
 <pre><code>&lt;script type="text/javascript"&gt;
-         window.onload=function(){
-         Nifty("div.fn","large top");
-         Nifty("div.vcardmain","large tr");
-    }
+				 window.onload=function(){
+				 Nifty("div.fn","large top");
+				 Nifty("div.vcardmain","large tr");
+		}
 &lt;/script&gt;</code></pre>
 
 <p>This first targets the <code>fn</code> <code>div</code> (the top tab) and gives it large round corners on the top. The second line of the script targets the <code>vcardmain</code> <code>div</code> (the element making up the body of the card), and rounds the top right (<code>tr</code>) corner of the element.</p>
@@ -141,9 +140,9 @@ layout: article
 <p>So, the background image is attached to the <code>vcardmain div</code> using the following CSS rule:</p>
 
 <pre><code>.vcardmain {
-    width: 350px;
-    padding: 45px 35px 65px 35px;
-    background: #fff url('images/background.jpg') no-repeat bottom;
+		width: 350px;
+		padding: 45px 35px 65px 35px;
+		background: #fff url('images/background.jpg') no-repeat bottom;
 }</code></pre>
 <p>Note that we put this image at the bottom of the card, and set the <code>background-repeat</code> property to <code>no-repeat</code>.</p>
 
@@ -166,15 +165,15 @@ layout: article
 <p>Let's look at the HTML for the footer portion of this web page:</p>
 
 <pre><code>&lt;div id="footer"&gt;
-     &lt;a href="http://feeds.technorati.com/contacts/referrer"&gt;&lt;img src="images/hcardicon.png" alt="download vcard" /&gt;&lt;/a&gt;
-     &lt;div class="vcard"&gt;
-         &lt;span class="title"&gt;&lt;span class="fn"&gt;Jack Tripper&lt;/span&gt; at &lt;span class="org"&gt;Jack's Bistro&lt;/span&gt;&lt;/span&gt;
-             &lt;div class="adr"&gt;
-                  &lt;span class="street-address"&gt;834 Ocean Vista Ave.&lt;/span&gt;, &lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,         &lt;span class="region"&gt;CA&lt;/span&gt;, &lt;span class="postal-code"&gt;90405&lt;/span&gt;
-             &lt;/div&gt;&lt;!--end adr--&gt;
-         ph &lt;span class="tel"&gt;(310) 444-8444&lt;/span&gt; e: &lt;span class="email"&gt;&lt;a
+		 &lt;a href="http://feeds.technorati.com/contacts/referrer"&gt;&lt;img src="images/hcardicon.png" alt="download vcard" /&gt;&lt;/a&gt;
+		 &lt;div class="vcard"&gt;
+				 &lt;span class="title"&gt;&lt;span class="fn"&gt;Jack Tripper&lt;/span&gt; at &lt;span class="org"&gt;Jack's Bistro&lt;/span&gt;&lt;/span&gt;
+						 &lt;div class="adr"&gt;
+									&lt;span class="street-address"&gt;834 Ocean Vista Ave.&lt;/span&gt;, &lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,         &lt;span class="region"&gt;CA&lt;/span&gt;, &lt;span class="postal-code"&gt;90405&lt;/span&gt;
+						 &lt;/div&gt;&lt;!--end adr--&gt;
+				 ph &lt;span class="tel"&gt;(310) 444-8444&lt;/span&gt; e: &lt;span class="email"&gt;&lt;a
 href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt;&lt;/span&gt;
-     &lt;/div&gt;&lt;!-- end vcard--&gt;
+		 &lt;/div&gt;&lt;!-- end vcard--&gt;
 &lt;/div&gt;&lt;!--end footer--&gt;</code></pre>
 
 <p>Apart from a few minor changes, the hCard portion of the footer is very similar to the first example. Note however the link above the hCard that wraps a small icon image. When the user clicks on this icon, any hCards included in the markup is converted to a vCard, which can then be downloaded onto the user's computer.</p>
@@ -185,15 +184,15 @@ href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt
 <p>Now we've set up our download icon and hCard, we just need to add a bit of CSS to style these elements within the footer. Once we've set the desired colors and general font styles in the footer, we just need to add the following:</p>
 
 <pre><code>#footer .title {
-  color: #999;
+	color: #999;
 }
 
 #footer img {
-  float: left;
+	float: left;
 }
 
 #footer .vcard {
-  margin-left: 38px;
+	margin-left: 38px;
 }</code></pre>
 
 

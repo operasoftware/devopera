@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 We don’t have a file for you this time, but want to highlight the latest 11.62 snapshot over at [Desktopteam blog][1]

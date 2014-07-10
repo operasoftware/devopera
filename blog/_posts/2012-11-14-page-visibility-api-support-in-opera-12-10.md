@@ -8,7 +8,6 @@ tags:
 - opera-12
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Our recent <a href="http://www.opera.com/browser/download/">Opera 12.10 release</a> added partial support for the <a href="http://www.w3.org/TR/page-visibility/">Page Visibility API</a>. It&#39;s a simple API, but a mighty one because it allows developers to specify what a document should do when it becomes hidden. If you&#39;ve ever been embarrassed at the office while trying to determine which of your 200 tabs is playing unexpected sound, you&#39;ll appreciate the utility of the Page Visibility API.</p>

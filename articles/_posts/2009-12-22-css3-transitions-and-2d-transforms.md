@@ -4,7 +4,6 @@ authors:
 - david-storey
 intro: 'In this article, you’ll learn about CSS3 transitions and transforms (as well as their SVG and SMIL corollaries), all of which are supported by Opera versions 10.50 and later.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -29,9 +28,9 @@ layout: article
 <p>When changing the value of a property in CSS, that new value is applied immediately. For example, in the CSS below the colour would change from red to blue when the user hovers over the element:</p>
 
 <pre><code>div {
-      width: 3em;
-      height: 3em;
-      background-color: red;
+			width: 3em;
+			height: 3em;
+			background-color: red;
 }
 
 div:hover {  background-color: blue; }</code></pre>
@@ -48,10 +47,10 @@ div:hover {  background-color: blue; }</code></pre>
 <p>This is done with the <code>transition-property</code> property:</p>
 
 <pre><code>div {
-      width: 3em;
-      height: 3em;
-      background-color: red;
-      <strong>-o-transition-property: background-color;</strong>
+			width: 3em;
+			height: 3em;
+			background-color: red;
+			<strong>-o-transition-property: background-color;</strong>
 }</code></pre>
 
 <p>Note, for brevity I've only used the Opera prefixed version of the property in the inline examples. The actual examples use the prefixes for other vendors and the standard (non-prefixed) version. It is important to use the standard version along with browser-specific prefixes so that your transitions automatically work in other browsers when they support it.</p>
@@ -61,11 +60,11 @@ div:hover {  background-color: blue; }</code></pre>
 <p>Next you'll define the duration of the transition. This is set with the <code>transition-duration</code> property, which by default is 0 seconds, so we add a time value, usually specified in seconds:</p>
 
 <pre><code>div {
-      width: 3em;
-      height: 3em;
-      background-color: red;
-      -o-transition-property: background-color;
-      <strong>-o-transition-duration: 4s;</strong>
+			width: 3em;
+			height: 3em;
+			background-color: red;
+			-o-transition-property: background-color;
+			<strong>-o-transition-duration: 4s;</strong>
 }
 
 div:hover { background-color: blue; }</code></pre>
@@ -77,10 +76,10 @@ div:hover { background-color: blue; }</code></pre>
 <p>By default the transition happens as soon as the specified element is accessed, but the <code>transition-delay</code> property can be used to delay the start of the transition:</p>
 
 <pre><code>div {
-      …
-      -o-transition-property: background-color;
-      -o-transition-duration: 4s;
-      <strong>-o-transition-delay: 1s;</strong>
+			…
+			-o-transition-property: background-color;
+			-o-transition-duration: 4s;
+			<strong>-o-transition-delay: 1s;</strong>
 }</code></pre>
 
 <p>Try the <a href="http://dev.opera.com/static/dstorey/transitions/color-transition-delay.html">delayed transition example</a>.</p>
@@ -92,9 +91,9 @@ div:hover { background-color: blue; }</code></pre>
 <p>Try out the following <a href="http://dev.opera.com/static/dstorey/transitions/transition-timing-example.html">transition example using all five pre-defined timing functions</a>. I've used the <code>width</code> property for the transition to make the differences more obvious:</p>
 
 <pre><code>div {
-      …
-      -o-transition-property: width;
-      -o-transition-duration: 4s;
+			…
+			-o-transition-property: width;
+			-o-transition-duration: 4s;
 }
 
 div:nth-of-type(1) { -o-transition-timing-function: ease;  }
@@ -112,10 +111,10 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 <p>As well as just specifying one property to transition, each of the CSS3 transitions properties can take a comma-separated list of values. This allows multiple properties to be transitioned on each element, each with their own timing and velocity values. In the following example I transition the width, height and background colour, each over varying lengths of time:</p>
 
 <pre><code>div {
-  …
-  -o-transition-property: background-color, width, height;
-  -o-transition-duration: 4s, 8s, 5s;
-  -o-transition-delay: 0s, 0s 2s;
+	…
+	-o-transition-property: background-color, width, height;
+	-o-transition-duration: 4s, 8s, 5s;
+	-o-transition-delay: 0s, 0s 2s;
 }</code></pre>
 
 <p><a href="http://dev.opera.com/static/dstorey/transitions/multiple-transitions.html">Try out the multiple transitions example</a>.</p>
@@ -125,7 +124,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 <p>As with other CSS properties such as <code>border</code> and <code>background</code>, there is a <code>transition</code> shorthand property. The example above as a shorthand would be the following:</p>
 
 <pre><code>div {
-  transition: background-color 4s 0s, width 8s 0s, height 5s 2s;
+	transition: background-color 4s 0s, width 8s 0s, height 5s 2s;
 }</code></pre>
 
 <h3>Transitions in SVG</h3>
@@ -133,7 +132,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 <p>Similar effects to CSS transitions can be performed in SVG using the <code>animate</code> element from SMIL. The SVG equivalent of the delay transition example above would be:</p>
 
 <pre><code>&lt;animate attributeType="CSS" attributeName="background-color"
-  from="red" to="blue" begin="2s" dur="4s" fill="freeze" /&gt;</code></pre>
+	from="red" to="blue" begin="2s" dur="4s" fill="freeze" /&gt;</code></pre>
 
 <p>The <code>animate</code> element is placed as a child of the element you want to animate. You can use multiple <code>animate</code> elements to transition multiple properties. The attributes are all self-explanatory except for the <var>freeze</var> value. This is used to express that when the transition ends, it will stay in the final state rather than resetting to the initial state. With SVG, it is possible to animate along paths, fire animations by events such as clicking or hovering, repeat animations and so on, but that is beyond the scope of this article.</p>
 

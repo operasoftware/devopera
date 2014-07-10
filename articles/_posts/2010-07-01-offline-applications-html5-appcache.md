@@ -4,7 +4,6 @@ authors:
 - shwetank-dixit
 intro: 'In this article Shwetank Dixit explains how to use the HTML5 application cache feature to make your web apps run offline.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 

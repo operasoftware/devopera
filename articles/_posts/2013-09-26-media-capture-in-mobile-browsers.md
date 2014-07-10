@@ -11,7 +11,6 @@ tags:
 - mobile
 - w3c
 license: cc-by-3.0
-layout: article
 ---
 
 ## Introduction

@@ -11,7 +11,6 @@ tags:
 - disconnect
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 This morning, we’ve spun out [Opera 16][1] stable from our [Opera Next][2] stream.

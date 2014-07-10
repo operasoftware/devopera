@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Some may have noticed that the Browser.js status page shows that it is indeed active in Opera 14 on Android and in the new Opera Next 15 for desktop.

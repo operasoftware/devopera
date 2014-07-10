@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 A bit of a mixed release this time. Some additions and some removals. However, the important part of this release is a small patch with huge potential impact. In PATCH-313 Hallvord has disabled attachEvent and detachEvent in the file for 10.70/11.00.

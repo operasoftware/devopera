@@ -6,7 +6,6 @@ tags:
 - developer-tools
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/Screen%20shot%202011-07-07%20at%2002.16.30.png" alt="" />

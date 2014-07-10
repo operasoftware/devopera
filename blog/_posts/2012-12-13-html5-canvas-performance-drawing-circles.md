@@ -9,7 +9,6 @@ tags:
 - canvas
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/canvas-christmas-tree.jpg" alt="HTML5 canvas baubles on a Christmas tree" style="float:right;margin:0 0 1em 1em;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);" />

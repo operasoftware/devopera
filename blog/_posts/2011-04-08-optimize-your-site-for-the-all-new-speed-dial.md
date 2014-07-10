@@ -10,7 +10,6 @@ tags:
 - minimized
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>With our Desktop team in <a href="http://my.opera.com/desktopteam/blog/">full acceleration mode</a> towards a final release of Opera 11.10, it&#39;s a good time to look at how you can make your site stand out in the revamped Speed Dial.</p>

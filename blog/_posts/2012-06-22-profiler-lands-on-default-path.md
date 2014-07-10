@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today we&#39;re releasing the profiler that&#39;s been in beta testing for some time now.</p>

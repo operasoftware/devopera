@@ -7,7 +7,6 @@ tags:
 - javascript
 - indexeddb
 license: cc-by-3.0
-layout: article
 ---
 
 IndexedDB offers a powerful way to store and retrieve data in the browser. As with server-side databases, IndexedDB allows us to generate keys, search data, or sort it by a particular field. In this article, we’ll dig into the IndexedDB API by building a to-do list manager. But first, let’s look at some of the concepts around databases and IndexedDB.

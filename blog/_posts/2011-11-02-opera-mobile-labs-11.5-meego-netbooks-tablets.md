@@ -10,7 +10,6 @@ tags:
 - opera-mobile
 - labs
 license: cc-by-3.0
-layout: post
 ---
 
 **Update 2012-02-21:** This post has been edited with information about an updated build available [from our download server][1] as well as from the Intel AppUp store. For a Nokia N9 build, check our [A treat for Nokia N9 users][2] Opera Labs post.

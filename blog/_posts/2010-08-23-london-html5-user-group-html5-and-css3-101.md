@@ -7,7 +7,6 @@ tags:
 - conference
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>I was honoured to be invited to talk about HTML5, CSS 3 and how <a href="http://www.iscss3partofhtml5.com" target="_blank">they&#39;re not the same thing</a> for the London HTML5 Users Group. Here are demos and resources from the presentation:</p>

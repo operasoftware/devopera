@@ -6,7 +6,6 @@ tags:
 - seo
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><a href="http://w-shadow.com/blog/2008/09/05/seo-for-opera/">W-shadow writes</a>,</p>

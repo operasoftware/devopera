@@ -11,7 +11,6 @@ tags:
 - presto
 - webkit
 license: cc-by-3.0
-layout: article
 ---
 
 CSS vendor prefixes were introduced in CSS 2.1 for vendor-specific extensions with the warning that [authors should avoid vendor-specific extensions][1]. CSS Snapshot 2010 [extended the definition][2]:

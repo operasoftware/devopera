@@ -7,7 +7,6 @@ tags:
 - dragonfly
 - usage-tracker
 license: cc-by-3.0
-layout: post
 ---
 
 <p>It is important for any nontrivial project to be able to have reliable usage statistics. Opera Dragonfly is no exception to this. Usage stats are important to be able to help judge the success of a product, and to be able to monitor if there are sudden rises or drops in the user based, due to things like new releases, reviews, advertisements and promotions, and so on.</p>

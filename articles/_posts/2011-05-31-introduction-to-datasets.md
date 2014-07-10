@@ -8,7 +8,6 @@ tags:
 - html5
 - open-web
 license: cc-by-3.0
-layout: article
 ---
 
 ## Introduction

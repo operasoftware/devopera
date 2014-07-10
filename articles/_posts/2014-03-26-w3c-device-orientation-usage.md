@@ -15,7 +15,6 @@ tags:
 - tait-bryan-angles
 - virtual-reality
 license: cc-by-3.0
-layout: article
 ---
 
 ## Contents
@@ -92,11 +91,11 @@ We can obtain the current orientation of the device by registering a `deviceorie
 
 Here’s a simple event handler that captures the given `deviceorientation` event data values and stores them for us to use at a later time within our application:
 
-    var deviceOrientationData = null;
+	var deviceOrientationData = null;
 
-    window.addEventListener('deviceorientation', function( event ) {
-    	deviceOrientationData = event;
-    }, false);
+	window.addEventListener('deviceorientation', function( event ) {
+		deviceOrientationData = event;
+	}, false);
 
 ## Limitations of using Euler angles {#eulerlimitations}
 
@@ -134,11 +133,11 @@ Known collectively as the `window.orientation` API, by registering for `orientat
 
 Let’s go ahead and add an `orientationchange` event listener to our web application code to record screen orientation changes:
 
-    var currentScreenOrientation = window.orientation || 0; // active default
+	var currentScreenOrientation = window.orientation || 0; // active default
 
-    window.addEventListener('orientationchange', function() {
-    	currentScreenOrientation = window.orientation;
-    }, false);
+	window.addEventListener('orientationchange', function() {
+		currentScreenOrientation = window.orientation;
+	}, false);
 
 We will discuss how we can apply this screen orientation data against different alternative device orientation representations in the next section.
 
@@ -211,42 +210,42 @@ Multiplying each Z, X and Y _component rotation matrix_ together we arrive at th
 
 Let’s add this to our codebase as follows:
 
-    var degtorad = Math.PI / 180; // Degree-to-Radian conversion
+	var degtorad = Math.PI / 180; // Degree-to-Radian conversion
 
-    function getBaseRotationMatrix( alpha, beta, gamma ) {
-    	var _x = beta  ? beta  * degtorad : 0; // beta value
-    	var _y = gamma ? gamma * degtorad : 0; // gamma value
-    	var _z = alpha ? alpha * degtorad : 0; // alpha value
+	function getBaseRotationMatrix( alpha, beta, gamma ) {
+		var _x = beta  ? beta  * degtorad : 0; // beta value
+		var _y = gamma ? gamma * degtorad : 0; // gamma value
+		var _z = alpha ? alpha * degtorad : 0; // alpha value
 
-    	var cX = Math.cos( _x );
-    	var cY = Math.cos( _y );
-    	var cZ = Math.cos( _z );
-    	var sX = Math.sin( _x );
-    	var sY = Math.sin( _y );
-    	var sZ = Math.sin( _z );
+		var cX = Math.cos( _x );
+		var cY = Math.cos( _y );
+		var cZ = Math.cos( _z );
+		var sX = Math.sin( _x );
+		var sY = Math.sin( _y );
+		var sZ = Math.sin( _z );
 
-    	//
-    	// ZXY-ordered rotation matrix construction.
-    	//
+		//
+		// ZXY-ordered rotation matrix construction.
+		//
 
-    	var m11 = cZ * cY - sZ * sX * sY;
-    	var m12 = - cX * sZ;
-    	var m13 = cY * sZ * sX + cZ * sY;
+		var m11 = cZ * cY - sZ * sX * sY;
+		var m12 = - cX * sZ;
+		var m13 = cY * sZ * sX + cZ * sY;
 
-    	var m21 = cY * sZ + cZ * sX * sY;
-    	var m22 = cZ * cX;
-    	var m23 = sZ * sY - cZ * cY * sX;
+		var m21 = cY * sZ + cZ * sX * sY;
+		var m22 = cZ * cX;
+		var m23 = sZ * sY - cZ * cY * sX;
 
-    	var m31 = - cX * sY;
-    	var m32 = sX;
-    	var m33 = cX * cY;
+		var m31 = - cX * sY;
+		var m32 = sX;
+		var m33 = cX * cY;
 
-    	return [
-    		m11,    m12,    m13,
-    		m21,    m22,    m23,
-    		m31,    m32,    m33
-    	];
-    };
+		return [
+			m11,    m12,    m13,
+			m21,    m22,    m23,
+			m31,    m32,    m33
+		];
+	};
 
 So now we have a way to obtain a _combined rotation matrix_ representation that matches the Tait-Bryan representation originally provided by the `deviceorientation` event. Next we need to apply device-specific transformations to this rotation matrix to match it up with both the current screen orientation and world orientation.
 
@@ -268,21 +267,21 @@ We construct our screen orientation transformation matrix (rs) as follows where 
 
 The construction of our screen orientation transform matrix (rs) can be represented in JavaScript as follows:
 
-    function getScreenTransformationMatrix( screenOrientation ) {
-    	var orientationAngle = screenOrientation ? screenOrientation * degtorad : 0;
+	function getScreenTransformationMatrix( screenOrientation ) {
+		var orientationAngle = screenOrientation ? screenOrientation * degtorad : 0;
 
-    	var cA = Math.cos( orientationAngle );
-    	var sA = Math.sin( orientationAngle );
+		var cA = Math.cos( orientationAngle );
+		var sA = Math.sin( orientationAngle );
 
-    	// Construct our screen transformation matrix
-    	var r_s = [
-    		cA,    -sA,    0,
-    		sA,    cA,     0,
-    		0,     0,      1
-    	];
+		// Construct our screen transformation matrix
+		var r_s = [
+			cA,    -sA,    0,
+			sA,    cA,     0,
+			0,     0,      1
+		];
 
-    	return r_s;
-    }
+		return r_s;
+	}
 
 #### R.3: Fixing our rotation matrix frame relative to our application’s world orientation
 
@@ -306,21 +305,21 @@ We construct our world orientation transformation matrix (rw) as follows:
 
 The construction of our world orientation transform matrix (rw) can be represented in JavaScript as follows:
 
-    function getWorldTransformationMatrix() {
-    	var x = 90 * degtorad;
+	function getWorldTransformationMatrix() {
+		var x = 90 * degtorad;
 
-    	var cA = Math.cos( x );
-    	var sA = Math.sin( x );
+		var cA = Math.cos( x );
+		var sA = Math.sin( x );
 
-    	// Construct our world transformation matrix
-    	var r_w = [
-    		1,     0,    0,
-    		0,     cA,   -sA,
-    		0,     sA,   cA
-    	];
+		// Construct our world transformation matrix
+		var r_w = [
+			1,     0,    0,
+			0,     cA,   -sA,
+			0,     sA,   cA
+		];
 
-    	return r_w;
-    }
+		return r_w;
+	}
 
 #### R.4: Computing our final rotation matrix representation
 
@@ -334,41 +333,41 @@ Now we need to put all of this code together so it can be called on each loop of
 
 Let’s define a two functions: `matrixMultiply(a, b)` that provides generic matrix multiplication and `computeMatrix()` that applies all the multiplications defined above to obtain a final rotation matrix we can finally use in our web application:
 
-    function matrixMultiply( a, b ) {
-    	var final = [];
+	function matrixMultiply( a, b ) {
+		var final = [];
 
-    	final[0] = a[0] * b[0] + a[1] * b[3] + a[2] * b[6];
-    	final[1] = a[0] * b[1] + a[1] * b[4] + a[2] * b[7];
-    	final[2] = a[0] * b[2] + a[1] * b[5] + a[2] * b[8];
+		final[0] = a[0] * b[0] + a[1] * b[3] + a[2] * b[6];
+		final[1] = a[0] * b[1] + a[1] * b[4] + a[2] * b[7];
+		final[2] = a[0] * b[2] + a[1] * b[5] + a[2] * b[8];
 
-    	final[3] = a[3] * b[0] + a[4] * b[3] + a[5] * b[6];
-    	final[4] = a[3] * b[1] + a[4] * b[4] + a[5] * b[7];
-    	final[5] = a[3] * b[2] + a[4] * b[5] + a[5] * b[8];
+		final[3] = a[3] * b[0] + a[4] * b[3] + a[5] * b[6];
+		final[4] = a[3] * b[1] + a[4] * b[4] + a[5] * b[7];
+		final[5] = a[3] * b[2] + a[4] * b[5] + a[5] * b[8];
 
-    	final[6] = a[6] * b[0] + a[7] * b[3] + a[8] * b[6];
-    	final[7] = a[6] * b[1] + a[7] * b[4] + a[8] * b[7];
-    	final[8] = a[6] * b[2] + a[7] * b[5] + a[8] * b[8];
+		final[6] = a[6] * b[0] + a[7] * b[3] + a[8] * b[6];
+		final[7] = a[6] * b[1] + a[7] * b[4] + a[8] * b[7];
+		final[8] = a[6] * b[2] + a[7] * b[5] + a[8] * b[8];
 
-    	return final;
-    }
+		return final;
+	}
 
-    function computeMatrix() {
-    	var rotationMatrix = getBaseRotationMatrix(
-    		deviceOrientationData.alpha,
-    		deviceOrientationData.beta,
-    		deviceOrientationData.gamma
-    	); // R
+	function computeMatrix() {
+		var rotationMatrix = getBaseRotationMatrix(
+			deviceOrientationData.alpha,
+			deviceOrientationData.beta,
+			deviceOrientationData.gamma
+		); // R
 
-    	var screenTransform = getScreenTransformationMatrix( currentScreenOrientation ); // r_s
+		var screenTransform = getScreenTransformationMatrix( currentScreenOrientation ); // r_s
 
-    	var screenAdjustedMatrix = matrixMultiply( rotationMatrix, screenTransform ); // R_s
+		var screenAdjustedMatrix = matrixMultiply( rotationMatrix, screenTransform ); // R_s
 
-    	var worldTransform = getWorldTransformationMatrix(); // r_w
+		var worldTransform = getWorldTransformationMatrix(); // r_w
 
-    	var finalMatrix = matrixMultiply( screenAdjustedMatrix, worldTransform ); // R_w
+		var finalMatrix = matrixMultiply( screenAdjustedMatrix, worldTransform ); // R_w
 
-    	return finalMatrix; // [ m11, m12, m13, m21, m22, m23, m31, m32, m33 ]
-    }
+		return finalMatrix; // [ m11, m12, m13, m21, m22, m23, m31, m32, m33 ]
+	}
 
 We can now call the `computeMatrix()` function whenever we like, typically during a loop in our application for example using [requestAnimationFrame][26].
 
@@ -397,31 +396,31 @@ We can convert the Tait-Bryan alpha (α), beta (β) and gamma (γ) representatio
 
 This can be represented in JavaScript as follows:
 
-    var degtorad = Math.PI / 180; // Degree-to-Radian conversion
+	var degtorad = Math.PI / 180; // Degree-to-Radian conversion
 
-    function getBaseQuaternion( alpha, beta, gamma ) {
-    	var _x = beta  ? beta- degtorad : 0; // beta value
-    	var _y = gamma ? gamma * degtorad : 0; // gamma value
-    	var _z = alpha ? alpha * degtorad : 0; // alpha value
+	function getBaseQuaternion( alpha, beta, gamma ) {
+		var _x = beta  ? beta- degtorad : 0; // beta value
+		var _y = gamma ? gamma * degtorad : 0; // gamma value
+		var _z = alpha ? alpha * degtorad : 0; // alpha value
 
-    	var cX = Math.cos( _x/2 );
-    	var cY = Math.cos( _y/2 );
-    	var cZ = Math.cos( _z/2 );
-    	var sX = Math.sin( _x/2 );
-    	var sY = Math.sin( _y/2 );
-    	var sZ = Math.sin( _z/2 );
+		var cX = Math.cos( _x/2 );
+		var cY = Math.cos( _y/2 );
+		var cZ = Math.cos( _z/2 );
+		var sX = Math.sin( _x/2 );
+		var sY = Math.sin( _y/2 );
+		var sZ = Math.sin( _z/2 );
 
-    	//
-    	// ZXY quaternion construction.
-    	//
+		//
+		// ZXY quaternion construction.
+		//
 
-    	var w = cX * cY * cZ - sX * sY * sZ;
-    	var x = sX * cY * cZ - cX * sY * sZ;
-    	var y = cX * sY * cZ + sX * cY * sZ;
-    	var z = cX * cY * sZ + sX * sY * cZ;
+		var w = cX * cY * cZ - sX * sY * sZ;
+		var x = sX * cY * cZ - cX * sY * sZ;
+		var y = cX * sY * cZ + sX * cY * sZ;
+		var z = cX * cY * sZ + sX * sY * cZ;
 
-    	return [ w, x, y, z ];
-    }
+		return [ w, x, y, z ];
+	}
 
 #### Q.2: Fixing our quaternion frame relative to the current screen orientation
 
@@ -441,21 +440,21 @@ We construct our quaternion transformation (qs) as follows where θ is the value
 
 The construction of our quaternion transform (qs) can be represented in JavaScript as follows:
 
-    function getScreenTransformationQuaternion( screenOrientation ) {
-    	var orientationAngle = screenOrientation ? screenOrientation * degtorad : 0;
+	function getScreenTransformationQuaternion( screenOrientation ) {
+		var orientationAngle = screenOrientation ? screenOrientation * degtorad : 0;
 
-    	var minusHalfAngle = - orientationAngle / 2;
+		var minusHalfAngle = - orientationAngle / 2;
 
-    	// Construct the screen transformation quaternion
-    	var q_s = [
-    		Math.cos( minusHalfAngle ),
-    		0,
-    		0,
-    		Math.sin( minusHalfAngle )
-    	];
+		// Construct the screen transformation quaternion
+		var q_s = [
+			Math.cos( minusHalfAngle ),
+			0,
+			0,
+			Math.sin( minusHalfAngle )
+		];
 
-    	return q_s;
-    }
+		return q_s;
+	}
 
 #### Q.3: Fixing our quaternion frame relative to our application’s world orientation
 
@@ -479,21 +478,21 @@ We construct our world orientation transformation quaternion (qw) as follows:
 
 The construction of our world orientation transform quaternion (qw) can be represented in JavaScript as follows:
 
-    function getWorldTransformationQuaternion() {
-    	var worldAngle = 90 * degtorad;
+	function getWorldTransformationQuaternion() {
+		var worldAngle = 90 * degtorad;
 
-    	var minusHalfAngle = - worldAngle / 2;
+		var minusHalfAngle = - worldAngle / 2;
 
-    	// Construct the world transformation quaternion
-    	var q_w = [
-    		Math.cos( minusHalfAngle ),
-    		Math.sin( minusHalfAngle ),
-    		0,
-    		0
-    	];
+		// Construct the world transformation quaternion
+		var q_w = [
+			Math.cos( minusHalfAngle ),
+			Math.sin( minusHalfAngle ),
+			0,
+			0
+		];
 
-    	return q_w;
-    }
+		return q_w;
+	}
 
 #### Q.4: Computing our final quaternion representation
 
@@ -507,32 +506,32 @@ Now we need to put all of this code together so it can be called on each loop of
 
 Let’s define a two functions: `quaternionMultiply(a, b)` that provides generic quaternion multiplication and `computeQuaternion()` that applies all the multiplications defined above to obtain a final quaternion representation we can finally use in our web application:
 
-    function quaternionMultiply( a, b ) {
-    	var w = a[0] * b[0] - a[1] * b[1] - a[2] * b[2] - a[3] * b[3];
-    	var x = a[1] * b[0] + a[0] * b[1] + a[2] * b[3] - a[3] * b[2];
-    	var y = a[2] * b[0] + a[0] * b[2] + a[3] * b[1] - a[1] * b[3];
-    	var z = a[3] * b[0] + a[0] * b[3] + a[1] * b[2] - a[2] * b[1];
+	function quaternionMultiply( a, b ) {
+		var w = a[0] * b[0] - a[1] * b[1] - a[2] * b[2] - a[3] * b[3];
+		var x = a[1] * b[0] + a[0] * b[1] + a[2] * b[3] - a[3] * b[2];
+		var y = a[2] * b[0] + a[0] * b[2] + a[3] * b[1] - a[1] * b[3];
+		var z = a[3] * b[0] + a[0] * b[3] + a[1] * b[2] - a[2] * b[1];
 
-    	return [ w, x, y, z ];
-    }
+		return [ w, x, y, z ];
+	}
 
-    function computeQuaternion() {
-    	var quaternion = getBaseQuaternion(
-    		deviceOrientationData.alpha,
-    		deviceOrientationData.beta,
-    		deviceOrientationData.gamma
-    	); // q
+	function computeQuaternion() {
+		var quaternion = getBaseQuaternion(
+			deviceOrientationData.alpha,
+			deviceOrientationData.beta,
+			deviceOrientationData.gamma
+		); // q
 
-    	var worldTransform = getWorldTransformationQuaternion(); // q_w
+		var worldTransform = getWorldTransformationQuaternion(); // q_w
 
-    	var worldAdjustedQuaternion = quaternionMultiply( quaternion, worldTransform ); // q'_w
+		var worldAdjustedQuaternion = quaternionMultiply( quaternion, worldTransform ); // q'_w
 
-    	var screenTransform = getScreenTransformationQuaternion( currentScreenOrientation ); // q_s
+		var screenTransform = getScreenTransformationQuaternion( currentScreenOrientation ); // q_s
 
-    	var finalQuaternion = quaternionMultiply( worldAdjustedQuaternion, screenTransform ); // q'_s
+		var finalQuaternion = quaternionMultiply( worldAdjustedQuaternion, screenTransform ); // q'_s
 
-    	return finalQuaternion; // [ w, x, y, z ]
-    }
+		return finalQuaternion; // [ w, x, y, z ]
+	}
 
 We can now call the `computeQuaternion()` function whenever we like, typically during a loop in our application for example using [requestAnimationFrame][34].
 
