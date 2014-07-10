@@ -48,31 +48,31 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">Web Fonts</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Media Queries</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">text-shadow (incl. multiple text-shadow)</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" />*</td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" />*</td>
 </tr>
 <tr>
 <td style="padding-left:20px;">selectors</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td><a href="http://www.w3.org/TR/css3-background/">CSS3 Backgrounds and Borders</a></td>
@@ -83,52 +83,52 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">border-radius</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">background-clip</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">background-origin</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">multiple background images</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">background-attachment</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">box-shadow</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">border-image</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td><a href="http://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
@@ -139,66 +139,66 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">transition-property</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">transition-duration</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">transition-delay</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">transition-timing-function</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:40px;">ease</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:40px;">linear</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:40px;">ease-in</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:40px;">ease-out</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:40px;">ease-in-out</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td><a href="http://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
@@ -209,52 +209,52 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">translate</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">translateX</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">translateY</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">scale</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">skew</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">rotate</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">transform-origin</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td><a href="http://www.w3.org/TR/css3-color/">CSS3 Color</a></td>
@@ -265,17 +265,17 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">rgba()</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">hsla()</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td><a href="http://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
@@ -286,24 +286,24 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">Video</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" />	†</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" />	†</td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Audio</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" />	†</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" />	†</td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Web Forms</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td>Storage</td>
@@ -314,24 +314,24 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">Web Storage - Local Storage</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Web Storage - Session Storage</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Web SQL Storage</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td>Graphics</td>
@@ -343,17 +343,17 @@ layout: post
 
 <tr>
 <td style="padding-left:20px;">Canvas</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /> ‡</td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /> ‡</td>
 </tr>
 <tr>
 <td style="padding-left:20px;">SVG</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" />	‡</td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" />	‡</td>
 </tr>
 <tr style="background-color: #ebebeb">
 <td>Miscellaneous</td>
@@ -364,17 +364,17 @@ layout: post
 </tr>
 <tr>
 <td style="padding-left:20px;">Selectors API</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" />	¶</td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" />	¶</td>
 </tr>
 <tr>
 <td style="padding-left:20px;">Viewport META tag</td>
 <td>N/A</td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/accept.png" alt="supported" /></td>
-<td><img src="/blog/opera-mobile-10-for-nokia-n900-n800-n810-maemo-standards-support/delete.png" alt="not supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
+<td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 
 </tbody>

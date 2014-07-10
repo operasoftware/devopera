@@ -13,7 +13,7 @@ layout: post
 
 <p>As announced <a href="http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle">on the Desktop Team Blog</a> a while back, we&#39;ve now switched to a fast release cycle with 3 different streams: Stable, Next and Developer.</p>
 
-<img src="/blog/start-of-the-opera-developer-stream/0opera-developer.png" alt="Opera Developer logo" style="float: right; margin: 0 0 5px 5px;" />
+<img src="{{ page.id }}/0opera-developer.png" alt="Opera Developer logo" style="float: right; margin: 0 0 5px 5px;" />
 <p>Today marks the <strong>release of our first Opera Developer build (<a href="http://www.opera.com/download/get/?partner=www&amp;opsys=MacOS&amp;product=Opera%20Developer">Mac</a>, <a href="http://www.opera.com/download/get/?partner=www&amp;opsys=Windows&amp;product=Opera%20Developer">Windows</a>)</strong>. If you&#39;re a web or extension developer, we recommend you to install this build, which will be auto-updated frequently from now on, and gives a peek at what we have in the pipeline, including but not limited to fresh web standards support.</p>
 
 <p>What is the difference between Next and Developer? Opera Next is a preview of what will be in the next stable version of Opera, which at present is 16. Opera Developer on the other hand is more experimental: this build includes stuff that you may see in 17 or later, but possibly also features that never make it to stable.</p>

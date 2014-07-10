@@ -11,9 +11,10 @@
 	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
 {% endif %}
 	<link rel="stylesheet" href="/styles/screen.css">
-{% if page.url == '/index.html' %}
-	<link href="/feed/" rel="alternate" type="application/atom+xml">
-{% endif %}
+	<link href="/feed/" rel="alternate" type="application/atom+xml" title="Dev.Opera">
+	<link href="/feed/articles/" rel="alternate" type="application/atom+xml" title="Dev.Opera Articles">
+	<link href="/feed/blog/" rel="alternate" type="application/atom+xml" title="Dev.Opera Blog">
+	<link href="/feed/tv/" rel="alternate" type="application/atom+xml" title="Dev.Opera TV">
 </head>
 <body>
 	{% include analytics.html %}

@@ -18,7 +18,7 @@ layout: post
 
 <p>The UI continues its makeover and refinement. The toolbars have lost their high gloss look, making them blend better with the rest of the UI. The buttons have been improved so they look like they have been engraved into the toolbar. The general smoked glass overlay style has been tweaked and polished to give it better contrast and emphasis, and the syntax highlighting for the Console has been improved. </p>
 
-<img src="/blog/opera-dragonfly-1-1-release-candidate-1/Screen%20shot%202011-08-10%20at%2020.28.42.png" alt="" />
+<img src="{{ page.id }}/Screen%20shot%202011-08-10%20at%2020.28.42.png" alt="" />
 
 
 <p>Along with those changes, a large number of bugs have been fixed, including all P1 bugs targeted at this release.</p>

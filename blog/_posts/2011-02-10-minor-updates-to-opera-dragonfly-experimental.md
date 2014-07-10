@@ -9,7 +9,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/minor-updates-to-opera-dragonfly-experimental/minor-update.png" alt="" />
+<img src="{{ page.id }}/minor-update.png" alt="" />
 
 <p>We’ve pushed out a minor update to the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental</a> version of Opera Dragonfly. The main changes are as follows:</p>
 

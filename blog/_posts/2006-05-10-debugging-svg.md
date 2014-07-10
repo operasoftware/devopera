@@ -16,10 +16,10 @@ Opera 9 has a lot of new features to help developing content. Here is an example
 
 The basic plan is to have an HTML page that has a clock in it. If you look at the [broken clock][1] it simply doesn’t appear due to bugs in the code. This might seem frustrasting, but it is a good reminder that you need to get at least the minimum right or browsers will have to include megabyutes of bug correction, and spend their developers’ time fixing authors’ bugs instead of making a better browser.
 
-[1]: /articles/debugging-svg/svg-clock-broken.svg
+[1]: {{ page.id }}/svg-clock-broken.svg
 
-<figure>
-	<img src="/articles/debugging-svg/error-console.gif" alt="The error console; it’s the idea that counts">
+<figure class="figure">
+	<img src="{{ page.id }}/error-console.gif" alt="The error console; it’s the idea that counts" class="figure__media">
 </figure>
 
 So what’s wrong, and how do we fix it? First, let’s check for warnings. Sure enough, if you open the Error Console (Tools » Advanced » Error Console) we get two messages. One is that there is a failed attribute in SVG — the value `preserve` for `preserveAspectRatio` isn’t what the browser likes. Who is right here? Does Opera 9 even support `preserveAspectRatio`?
@@ -33,12 +33,12 @@ So now we know what we want to do, how do we change it? Easily enough... look at
 
 So that’s the first error dealt with. There is also a JavaScript error — we have used `…Date()…` in the last statement of the script where we should have used `new Date()…` (or a variable, as earlier in the script). Opera actually works out how to make sense of this by forcing a type change, but good programming style is worth having, so we should make the second change too.
 
-<figure>
-	<object type="image/svg+xml" data="/articles/debugging-svg/svg-clock.svg"></object>
+<figure class="figure">
+	<object type="image/svg+xml" data="{{ page.id }}/svg-clock.svg" class="figure__media"></object>
 </figure>
 
 And Lo! and Behold! We have a [simple SVG clock][5] in our page. Being in a space that can’t fit it exactly (the object where the clock is has width 20% and height 50%), we can at least see the middle of the clock and so tell the time…
 
-[5]: /articles/debugging-svg/svg-clock.svg
+[5]: {{ page.id }}/svg-clock.svg
 
 **Note:** This article shows the features of Opera 9. While all the code is standards-compliant, it may not work in a non-compliant browser.

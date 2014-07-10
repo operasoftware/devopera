@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Ghinda video player with html5, css3 and javascript</title>
+	<link rel="stylesheet" href="ghindaVideoPlayer.css">
+	<script src="jquery-1.4.2.min.js"></script>
+	<script src="jquery-ui-1.8.2.custom.min.js"></script>
+	<script src="jquery.ghindaVideoPlayer.js"></script>
+	<script>
+		$(function() {
+			$('#video1').gVideo();
+			$('#video2').gVideo({
+				childtheme:'smalldark'
+			});
+		});
+	</script>
+
+	<style>
+		body {
+			background-color: #ccc;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		article {
+			display: block;
+			overflow: hidden;
+			width: 510px;
+			padding: 10px;
+			margin: 0px auto;
+			background-color: #fff;
+		}
+		section {
+		  display: block;
+		}
+		section p {
+			padding: 10px;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<article>
+
+		<h2>Custom video player with jQuery and CSS3</h2>
+
+		<section>
+			<h3>Default dark theme</h3>
+			<video controls="controls" width="480" height="208" id="video1">
+				<source src="sintel-trailer.ogv" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="sintel-trailer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			</video>
+			<p>
+				This player uses the default simpledark theme. This "parent" theme sets rules for all the controls from scratch.
+			</p>
+			<p>It's being called using:</p>
+<pre><code>$('#video1').gVideo();</code></pre>
+		</section>
+
+		<section>
+			<h3>Smalldark child theme</h3>
+			<video controls="controls" width="480" height="208" id="video2">
+				<source src="sintel-trailer.ogv" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="sintel-trailer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			</video>
+			<p>This second example uses the <code>smalldark</code> child theme. This theme builds upon the rules set by the default parent theme. It adds and overwrites styles, and uses the same technique as for the volume slider to show and hide the controls. </p>
+
+			<p>It's being called using: </p>
+<pre><code>$('#video2').gVideo({
+  childtheme:'smalldark'
+});</code></pre>
+		</section>
+
+		<footer>
+			<em>The video is the trailer for the upcoming <a href="http://durian.blender.org/">Durian Open Movie Project, Sintel. </a> by the <a href="http://www.blender.org/blenderorg/blender-foundation/">Blender Foundation.</a> </em>
+
+		</footer>
+	</article>
+
+</body>
+</html>

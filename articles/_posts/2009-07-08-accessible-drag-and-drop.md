@@ -224,14 +224,14 @@ I have created a simple application to demonstrate drag and drop with ARIA and o
 [13]: http://www.w3.org/WAI/PF/aria-practices/#dragdrop
 
 <figure id="figure-1">
-	<img src="/articles/accessible-drag-and-drop/screenshot.gif" alt="List of artists with three targets favourites tolerable rejected">
+	<img src="{{ page.id }}/screenshot.gif" alt="List of artists with three targets favourites tolerable rejected">
 	<figcaption>Figure 1: List of artists with three targets: favourites, tolerable, rejected</figcaption>
 </figure>
 
 You can [check out the drag and drop example running live][15], or [download the source code][16] and play with it yourself.
 
-[15]: /articles/accessible-drag-and-drop/example.html
-[16]: /articles/accessible-drag-and-drop/code.zip
+[15]: {{ page.id }}/example.html
+[16]: {{ page.id }}/code.zip
 
 ### Ensure objects can be reached using the keyboard
 
@@ -291,7 +291,7 @@ The CSS class simply sets the background colour on the list to make it visually 
 		}
 
 <figure id="figure-2">
-	<img src="/articles/accessible-drag-and-drop/highlighttarget.gif" alt="List targets visually identified with a red background">
+	<img src="{{ page.id }}/highlighttarget.gif" alt="List targets visually identified with a red background">
 	<figcaption>Figure 2: List targets visually identified with a red background</figcaption>
 </figure>
 
@@ -306,7 +306,7 @@ In the demonstration, only one item can be dragged at a time. As pressing the `S
 When an artist is selected with the keyboard for dragging, a dialog for the user to select a target is automatically presented, as shown in Figure 3.
 
 <figure id="figure-3">
-	<img src="/articles/accessible-drag-and-drop/popup.gif" alt="Popup with two targets to choose from">
+	<img src="{{ page.id }}/popup.gif" alt="Popup with two targets to choose from">
 	<figcaption>Figure 3: Popup with two targets to choose from</figcaption>
 </figure>
 

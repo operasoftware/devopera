@@ -17,7 +17,7 @@ layout: post
 
 <p>Opera takes several actions from the time it loads a document to when it is rendered on screen: markup, stylesheets and scripts are parsed, scripts are executed, parts of the page are painted on screen. All of these events that occur while rendering are presented in a timeline in this profiler. Our focus has been on providing detailed information about CSS selectors. Clicking the &quot;Style recalculation&quot; header, or one of the individual style recalculation events in the timeline, will give you a list of the most expensive selectors.
 
-<p><a href="/blog/style-profiler-preview/profiler.png" target="_blank"><span class='imgcenter'><img alt='' src='/blog/style-profiler-preview/profiler-small.png' /></span></a>
+<p><a href="{{ page.id }}/profiler.png" target="_blank"><span class='imgcenter'><img alt='' src='/blog/style-profiler-preview/profiler-small.png' /></span></a>
 
 <div class="info">
 <p><strong>Note</strong>: This is a special build of Opera Dragonfly – the functionality has not yet been merged with either the experimental or cutting-edge builds. Only the Profiler tab is available. To test, grab a recent Opera build (11.60 or 12) from the <a href="http://my.opera.com/desktopteam/blog/" target="_blank">Desktop team blog</a>, and set the <a href="opera:config#DeveloperTools">Developer Tools URL</a> to:</p>

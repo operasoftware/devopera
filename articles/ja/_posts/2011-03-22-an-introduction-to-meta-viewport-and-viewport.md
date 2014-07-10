@@ -9,6 +9,7 @@ tags:
 - opera-mobile
 - target-densitydpi
 - viewport
+language: ja
 license: cc-by-3.0
 layout: article
 ---
@@ -27,9 +28,9 @@ viewport はあなたのサイトをモバイルに最適化する際に使え�
 
 ## モバイルブラウザの Web ページ処理
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes_small.jpg" alt="スクリーンショット: New York Times の Art ページ"></a>
-	<figcaption markdown="span">図1: New York Timesのサイトは、画面内にうまく収まるように縮小されて表示される。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/nytimes_small.jpg" alt="スクリーンショット: New York Times の Art ページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図1: New York Timesのサイトは、画面内にうまく収まるように縮小されて表示される。</figcaption>
 </figure>
 
 最近のモバイルブラウザはふつうの Web ページをなんの問題もなく描画できます。モバイルブラウザはページをデバイスの画面内、もしくは表示領域内に収まるように拡大縮小します。ユーザーは指やキーパッド、トラックボールなど端末が持つ何らかの入力方法で、ページの一部を拡大し、そして見回すことができます。
@@ -77,9 +78,9 @@ Opera Mobile 11 ももちろん、この振る舞いを踏襲しています。�
 
 この設定は、ブラウザが幅 320px のキャンバスにページを描画し、表示可能な画面領域に収まるように調整することを意味します。画面領域が幅 360px の場合 (図2)、ページは 1.125 倍に拡大されます。もし画面領域が幅 240px の場合、ページは 0.75 倍に縮小されます。
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width_small.jpg" alt="スクリーンショット: viewport を幅 320px と設定したページ"></a>
-	<figcaption markdown="span">図2: 360×600px の画面で、[viewport の幅を 320px に設定したページ][8] を表示したもの。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/specific-width_small.jpg" alt="スクリーンショット: viewport を幅 320px と設定したページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図2: 360×600px の画面で、[viewport の幅を 320px に設定したページ][8] を表示したもの。</figcaption>
 </figure>
 
 [8]: http://people.opera.com/andreasb/viewport/ex01.html
@@ -102,9 +103,9 @@ Opera Mobile 11 ももちろん、この振る舞いを踏襲しています。�
 
 端末の幅で設定するとき、どんな端末でも綺麗に表示されるように、リキッドレイアウトの手法やメディアクエリーを使いたくなるのではないでしょうか。じゃあ、viewport とメディアクエリーを組み合わせて使うとどうなるか、少しあとで見てみることにしましょう。
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-width.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-width_small.jpg" alt="スクリーンショット: viewport を device-width と指定したページ"></a>
-	<figcaption markdown="span">図3: 360×600px の画面で、[viewport の幅を `device-width` に設定したページ][11] を表示したもの。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-width.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-width_small.jpg" alt="スクリーンショット: viewport を device-width と指定したページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図3: 360×600px の画面で、[viewport の幅を `device-width` に設定したページ][11] を表示したもの。</figcaption>
 </figure>
 
 [11]: http://people.opera.com/andreasb/viewport/ex02.html
@@ -130,9 +131,9 @@ Opera Mobile 11 ももちろん、この振る舞いを踏襲しています。�
 
 ### 初期ズーム倍率 (`initial-scale`)
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale_small.jpg" alt="スクリーンショット: initial-scale を 2 に設定したページ"></a>
-	<figcaption markdown="span">図4: [`initial-scale` を 2 に設定したページ][14]。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/initial-scale_small.jpg" alt="スクリーンショット: initial-scale を 2 に設定したページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図4: [`initial-scale` を 2 に設定したページ][14]。</figcaption>
 </figure>
 
 [14]: http://people.opera.com/andreasb/viewport/ex03.html
@@ -206,9 +207,9 @@ Opera Mobile 11 ももちろん、この振る舞いを踏襲しています。�
 
 こうすることで、viewport の幅が画面幅と同じになり、ページの内容が拡大されます。そして、幅 360px 以下の環境においてメディアクエリーが適用されます。Nokia 5800 (縦持ちで幅 360px) の Opera Mobile 11 は画像をコンテナ幅の 96% で表示し、第二世代 iPod touch の Safari (幅 320px) と同じようになります。いっぽう、幅 480px な環境においてはこのメディアクエリーが適用されません (図5)。
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries_small.jpg" alt="スクリーンショット: メディアクエリーが適用される環境と、そうでない環境"></a>
-	<figcaption markdown="span">図5: [メディアクエリーと viewport を組み合わせた例][18] を表示したもの。左にある幅 480px なブラウザではメディアクエリーが適用されず、右にある幅 320px なブラウザでは適用されている。異なる画面サイズや異なる形状でのレイアウト対応に利用できる。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/media-queries_small.jpg" alt="スクリーンショット: メディアクエリーが適用される環境と、そうでない環境" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図5: [メディアクエリーと viewport を組み合わせた例][18] を表示したもの。左にある幅 480px なブラウザではメディアクエリーが適用されず、右にある幅 320px なブラウザでは適用されている。異なる画面サイズや異なる形状でのレイアウト対応に利用できる。</figcaption>
 </figure>
 
 [18]: http://people.opera.com/andreasb/viewport/ex04.html
@@ -251,9 +252,9 @@ viewport の幅が `device-width` である場合、第二世代 iPod touch の 
 
 Opera は `device-pixel-ratio` の値として ratio 値 (3/2 など) のみをとります。一方、Android のブラウザは数値 (1.5 など) を受けつけます。現時点ではこの媒体特性はベンダー接頭辞をつけなければ動作しませんから、それぞれに違う値を指定するだけです。
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio_small.jpg" alt="スクリーンショット: device-pixel-ratio を使ったページと使わないページ"></a>
-	<figcaption markdown="span">図6: HTC Desire のスクリーンショット2つ。左の [`width=device-width` のみを指定した例][23] では背景画像が拡大されぼやけて見える。右の [`device-pixel-ratio` を追加した例][24] では DPI を理解しているので、背景が綺麗に見える。</figcaption>
+<figure class="figure">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/device-pixel-ratio_small.jpg" alt="スクリーンショット: device-pixel-ratio を使ったページと使わないページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図6: HTC Desire のスクリーンショット2つ。左の [`width=device-width` のみを指定した例][23] では背景画像が拡大されぼやけて見える。右の [`device-pixel-ratio` を追加した例][24] では DPI を理解しているので、背景が綺麗に見える。</figcaption>
 </figure>
 
 [23]: http://people.opera.com/andreasb/viewport/ex02.html
@@ -271,9 +272,9 @@ Opera は `device-pixel-ratio` の値として ratio 値 (3/2 など) のみを�
 
 Opera Mobile 11 は @viewport 規則で `target-densitydpi` をサポートしていないので、今は viewport メタタグで指定することになります。
 
-<figure>
-	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi_small.jpg" alt="スクリーンショット: target-densitydpi を指定していないページとしているページ"></a>
-	<figcaption markdown="span">図7: HTC Desire のスクリーンショット2つ。左の [`width=device-width` のみを指定した例][27] ではデフォルトのズーム倍率が 160% になっている。右の [`target-densitydpi` に `device-dpi` を指定した例][28] ではズームが無効化されている。</figcaption>
+<figure class="figure__media">
+	<a href="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi.jpg"><img src="/articles/an-introduction-to-meta-viewport-and-viewport/target-densitydpi_small.jpg" alt="スクリーンショット: target-densitydpi を指定していないページとしているページ" class="figure__media"></a>
+	<figcaption class="figure__caption" markdown="span">図7: HTC Desire のスクリーンショット2つ。左の [`width=device-width` のみを指定した例][27] ではデフォルトのズーム倍率が 160% になっている。右の [`target-densitydpi` に `device-dpi` を指定した例][28] ではズームが無効化されている。</figcaption>
 </figure>
 
 [27]: http://people.opera.com/andreasb/viewport/ex02.html

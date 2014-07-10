@@ -24,8 +24,8 @@ layout: post
 
 <p>Over the last couple of years, we&#39;ve contacted all sites we found are breaking like this, and asked Microsoft to fix the ASP.NET sniffing problem, which they&#39;ve done. However, as the rollout of this update takes time, there are still a number of sites broken, and it seems like this situation will be with us for quite some time to come.</p>
 
-<p>Hence, we&#39;ve decided to stop throwing draconian XML parsing failed error messages, and instead, attempt to reparse the document automatically as HTML. Instead of showing an error message in the browser, it&#39;s <a href="/blog/no-more-xml-parsing-failed-errors/allhiphop.png">now dumped to the console</a>, so as a developer, you can still find XML parsing error warnings in Opera Dragonfly and the Error Console if you want to.</p>
+<p>Hence, we&#39;ve decided to stop throwing draconian XML parsing failed error messages, and instead, attempt to reparse the document automatically as HTML. Instead of showing an error message in the browser, it&#39;s <a href="{{ page.id }}/allhiphop.png">now dumped to the console</a>, so as a developer, you can still find XML parsing error warnings in Opera Dragonfly and the Error Console if you want to.</p>
 
-<img src="/blog/no-more-xml-parsing-failed-errors/parsing_small.png" alt="Image showing no more XML parsing errors" />
+<img src="{{ page.id }}/parsing_small.png" alt="Image showing no more XML parsing errors" />
 
 <p>If you want to play around with this, grab the latest Opera Next build from the <a href="http://my.opera.com/desktopteam/blog/2011/09/28/core-bookmark-star">Opera Desktop team blog</a> (or wait for the automatic update), and let us know what you think.</p>

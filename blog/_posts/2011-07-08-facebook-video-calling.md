@@ -16,8 +16,8 @@ This week, [Facebook][1] unveiled its new [Video Calling][2] feature. Unfortunat
 [1]: http://www.facebook.com
 [2]: http://www.facebook.com/videocalling
 
-<figure>
-	<img src="/blog/facebook-video-calling/fb-video.png">
+<figure class="figure">
+	<img src="{{ page.id }}/fb-video.png" class="figure__media">
 </figure>
 
 The reason for Facebook’s block seems to be a problem with our version of Opera on OS X. Facebook’s plug-in installs itself as `FacebookVideoCalling.webplugin` on Mac, but our browser only recognises plug-ins with a `.plugin` extension. This causes their plug-in detection scripts to think the installation failed, triggering a renewed installation process.

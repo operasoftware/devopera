@@ -9,6 +9,7 @@ tags:
 - devicemotion
 - deviceorientation
 - gamma
+language: pl
 license: cc-by-3.0
 layout: article
 ---

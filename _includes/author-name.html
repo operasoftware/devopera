@@ -1,3 +1,12 @@
-{% capture authors %}{% for authors in site.categories.authors %}{% assign author = authors.id | split: '/' | last %}{% if {{include.object}}.authors contains author %}, {% if include.link %}<a href="{{ authors.url }}"{% if include.class %} class="{{ include.class }}"{% endif %}>{% endif %}{{ authors.title }}{% if include.link %}</a>{% endif %}{% endif %}{% endfor %}{% endcapture authors %}
+{% capture authors %}
+	{% for authors in site.categories.authors %}
+		{% assign author = authors.id | split: '/' | last %}
+		{% if {{include.object}}.authors contains author %}
+			, {% if include.link %}<a href="{{ authors.url }}"{% if include.class %} class="{{ include.class }}"{% endif %}>{% endif %}
+				{{ authors.title }}
+			{% if include.link %}</a>{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endcapture authors %}
 
-{{ authors | replace_first: ', ' }}
+{{ authors | remove: '	' | strip_newlines | replace_first: ', ' }}

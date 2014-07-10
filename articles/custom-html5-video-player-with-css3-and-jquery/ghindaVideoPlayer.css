@@ -1,0 +1,349 @@
+/*
+ * ghindaVideoPlayer - jQuery plugin 1.0.0
+ *
+ * Copyright (c) 2010 Cristian-Ionut Colceriu
+ *
+ * ghindaVideoPlayer.css
+ * Styles for the ghindaVideoPlayer
+ *
+ */
+
+/* base styles */
+.ghinda-video-player {}
+.ghinda-video-play, .ghinda-volume-button {
+	cursor: pointer;
+}
+.ghinda-video-timer {
+	cursor: default;
+}
+
+
+/* Start of simpledark default theme */
+.ghinda-video-player.simpledark {
+	float: left;
+	position: relative;
+	padding: 10px;
+	border: 5px solid #61625d;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	border-radius: 5px; /* Opera 10.5, IE 9 */
+
+	background: #000000;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
+	background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
+	background-image: linear-gradient(#313131, #000000);
+
+	box-shadow: inset 0 15px 35px #535353;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-controls {
+	position: relative;
+	padding-top: 5px;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-play, .ghinda-video-player.simpledark .ghinda-video-seek, .ghinda-video-player.simpledark .ghinda-volume-box, .ghinda-video-timer {
+	float: left;
+}
+
+/* play, pause */
+.ghinda-video-player.simpledark .ghinda-video-play {
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 15px;
+	background: url(play-icon.png) no-repeat;
+
+	opacity: 0.7;
+
+	-moz-transition: all 0.2s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.2s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in-out;  /* Opera */
+	transition: all 0.2s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-paused-button {
+	background: url(pause-icon.png) no-repeat;
+}
+
+
+.ghinda-video-player.simpledark video {
+	float: left;
+}
+
+
+.ghinda-video-player.simpledark .ghinda-video-play:hover {
+    opacity: 1;
+}
+
+/* seek */
+.ghinda-video-player.simpledark .ghinda-video-seek {
+	position:relative;
+	width: 360px;
+	height: 10px;
+	margin-top: 5px;
+	border: 1px solid #494949;
+
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #535353;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #535353),color-stop(1, #333333));
+	background-image: -moz-linear-gradient(top, #535353, #333333);
+	background-image: linear-gradient(#535353, #333333);
+
+	box-shadow: inset 0 -3px 3px #333333;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-handle {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #333;
+	top: -4px;
+
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	background: #e6e6e6;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: linear-gradient(#e6e6e6, #d5d5d5);
+
+	box-shadow: inset 0 -3px 3px #d5d5d5;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-handle.ui-state-hover {
+	background: #fff;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-range {
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #4cbae8;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #4cbae8),color-stop(1, #39a2ce));
+	background-image: -moz-linear-gradient(top, #4cbae8, #39a2ce);
+	background-image: linear-gradient(#4cbae8, #39a2ce);
+
+	box-shadow: inset 0 -3px 3px #39a2ce;
+}
+
+
+/* timer */
+.ghinda-video-player.simpledark .ghinda-video-timer {
+	margin-top: 5px;
+	margin-left: 10px;
+
+	color: #999;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+/* volume */
+.ghinda-video-player.simpledark .ghinda-volume-box {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+	width: 20px;
+	height: 30px;
+	color: #fff;
+	padding: 0px 10px;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-box:hover {
+	height: 135px;
+	padding-top: 5px;
+}
+
+
+.ghinda-video-player.simpledark .ghinda-volume-box:hover .ghinda-volume-slider {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider {
+	position: relative;
+	height: 100px;
+	width: 7px;
+	left: 4px;
+
+	visiblity: hidden;
+	opacity: 0;
+
+	border: 1px solid #444;
+
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #535353;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #535353),color-stop(1, #333333));
+	background-image: -moz-linear-gradient(top, #535353, #333333);
+	background-image: linear-gradient(#535353, #333333);
+
+	box-shadow: inset 0 3px 3px #333333;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.1s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-handle {
+	width: 12px;
+	height: 12px;
+	left: -4px;
+	margin-bottom:-0.6em;
+	margin-left:0;
+	border: 1px solid #333;
+
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	background: #e6e6e6;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: linear-gradient(#e6e6e6, #d5d5d5);
+
+	box-shadow: inset 0 3px 3px #d5d5d5;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-handle.ui-state-hover {
+	background: #fff;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-range {
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #e6e6e6;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: linear-gradient(#e6e6e6, #d5d5d5);
+
+	box-shadow: inset 0 3px 3px #d5d5d5;
+}
+
+/* volume button */
+
+.ghinda-video-player.simpledark .ghinda-volume-button {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(volume-full-icon.png) no-repeat;
+	text-indent: -9999px;
+
+	opacity: 0.8;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-button:hover {
+	opacity: 1;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-mute {
+	background: url(volume-mute-icon.png) no-repeat;
+}
+
+
+/* Start of smalldark child theme */
+
+.ghinda-video-player.smalldark {
+	padding: 0px;
+}
+
+.ghinda-video-player.smalldark video:hover + .ghinda-video-controls {
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-controls:hover {
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-controls {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	width: 320px;
+	padding: 10px;
+
+	border: 1px solid #2E2E2E;
+
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	border-radius: 5px; /* Opera 10.5, IE 9 */
+
+	background: #000000;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
+	background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
+	background-image: linear-gradient(#313131, #000000);
+
+	opacity: 0;
+	visibility: hidden;
+
+	box-shadow: inset 0 15px 35px #535353;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.1s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-seek {
+	width: 200px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-box {
+	bottom: 10px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-box:hover {
+	height: 85px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-slider {
+	height: 50px;
+}
+
+/* needed jquery ui styles
+ * using these, we don't depend on jQuery UI's stylsheet
+ */
+.ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	margin-left:-0.6em;
+	cursor: default;
+	outline: none;
+}
+
+.ui-slider-range {
+	display:block;
+	width:100%;
+	height:100%;
+	left:0;
+	bottom: 0;
+	border:0 none;
+	position:absolute;
+	z-index:1;
+}

@@ -9,7 +9,7 @@ license: cc-by-3.0
 layout: post
 ---
 
-<img src="/blog/conditional-breakpoints-http-header-profiles-and-more/conditional.png" alt="" />
+<img src="{{ page.id }}/conditional.png" alt="" />
 
 <p>We have another build for you on the experimental branch of Opera Dragonfly. This build contains all of the features we are targeting for the Opera Dragonfly 1.0 release. We now move to the polishing and bug fixing phase. Critical bugs will be fixed, and the UI and features will be polished to look and feel consistently across the application. Extra features will only be considered if they are critical to improve the usability, or we magically find time before the final release date (i.e. don’t count on it). New feature development will start up again once Opera Dragonfly 1.0 is released.</p>
 
@@ -31,7 +31,7 @@ layout: post
 
 <h3>Breadcrumb trail toolbar position, and other UI adjustments</h3>
 
-<img src="/blog/conditional-breakpoints-http-header-profiles-and-more/breadcrumbs.png" alt="" />
+<img src="{{ page.id }}/breadcrumbs.png" alt="" />
 
 <p>We have had requests to give the option to allow the breadcrumb trail to be positioned at the bottom of the window, like the previous version of Opera Dragonfly. There have also been reports that Opera Dragonfly now takes up more space than the previous version. The number of pixels taken up by the chrome is actually less than the previous version, but as it is stacked at the top of the window it can visually look bigger. We’re experimenting in this build with moving the breadcrumbs toolbar to the bottom of the window. We request your feedback on this to see which you prefer.</p>
 

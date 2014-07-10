@@ -12,7 +12,7 @@ layout: post
 
 <p>Zi Bin and I had a wonderful two weeks touring Indonesian Universities with Putri. We visited 10 Universities in five cities and spoke to 2500 students.<p>
 
-<p><img src="/blog/opera-indonesian-university-tour-2009/DSC_0069a.jpg" alt="Bruce, Zi Bin, Putri" /></p>
+<p><img src="{{ page.id }}/DSC_0069a.jpg" alt="Bruce, Zi Bin, Putri" /></p>
 
 <p>My talk is available on Slideshare:</p>
 

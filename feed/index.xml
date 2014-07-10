@@ -14,27 +14,19 @@ layout: none
 		<email></email>
 	</author>
 
-{% capture entries %}
-	{% for post in site.posts %}
-		{% if post.categories contains 'blog' or post.categories contains 'articles' or post.categories contains 'tv' %}
-	<entry>
-		<id>http://dev.opera.com{{ post.url }}</id>
-		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ post.url }}"/>
-		<title>{{ post.title | markdownline }}</title>
-		<published>{{ post.date | date_to_xmlschema }}</published>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<author>
-			<name>{% include author-name.html object=post %}</name>
-		</author>
-		<content type="html">{{ post.content | xml_escape }}</content>
-	</entry>(•)
-		{% endif %}
-	{% endfor %}
-{% endcapture %}
-
-{% assign entries = entries | split: '(•)' %}
+{% assign entries = site.posts | where: 'language', 'en' %}
 {% for entry in entries limit:25 %}
-	{{ entry | replace: '=&quot;/','=&quot;http://dev.opera.com/' }}
+	<entry>
+		<id>http://dev.opera.com{{ entry.url }}</id>
+		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ entry.url }}"/>
+		<title>{{ entry.title | markdownline }}</title>
+		<published>{{ entry.date | date_to_xmlschema }}</published>
+		<updated>{{ entry.date | date_to_xmlschema }}</updated>
+		<author>
+			<name>{% include author-name.html object=entry %}</name>
+		</author>
+		<content type="html" xml:base="http://dev.opera.com/"><![CDATA[{{ entry.content }}]]></content>
+	</entry>
 {% endfor %}
 
 </feed>

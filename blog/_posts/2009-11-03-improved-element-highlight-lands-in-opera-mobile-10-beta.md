@@ -14,7 +14,7 @@ layout: post
 
 <p>The big feature of note is that there is a brand-new highlight feature in the DOM inspector. Previously we used the spatnav style highlight when clicking on elements, which was not as precise as was needed and showed little detail. This has been replaced with an advanced new highlight, which shows all the details of the box model, such as the padding and margins, along with handy guidelines.</p>
 
-<img src="/blog/improved-element-highlight-lands-in-opera-mobile-10-beta/dflhighlight.png" alt="Opera Dragonfly highlighting in Opera Mobile" />
+<img src="{{ page.id }}/dflhighlight.png" alt="Opera Dragonfly highlighting in Opera Mobile" />
 
 <p>In the first screenshot above, I have hovered the content metrics in the layout panel. As you can see, just the content is highlighted, along with guidelines. In the second screenshot I have customised the highlight colours in the <em>Spotlight</em> section of the <em>Settings</em> tab, and turned on the grid guidelines for the content and padding. The highlight colour is fully customisable, and you can turn on or off each part that you are interested in.</p>
 

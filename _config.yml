@@ -19,3 +19,23 @@ exclude:
 - 'LICENSE.md'
 - 'CONTRIBUTING.md'
 - '*.scss'
+
+defaults:
+  - scope:
+      path: 'articles'
+      type: 'post'
+    values:
+      category: 'articles'
+      language: 'en'
+  - scope:
+      path: 'blog'
+      type: 'post'
+    values:
+      category: 'blog'
+      language: 'en'
+  - scope:
+      path: 'tv'
+      type: 'post'
+    values:
+      category: 'tv'
+      language: 'en'

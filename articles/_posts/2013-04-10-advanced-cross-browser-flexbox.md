@@ -2,7 +2,7 @@
 title: Advanced Cross-Browser Flexbox
 authors:
 - chris-mills
-intro: 'The CSS Flexible box module level 3 brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. In this article Chris Mills goes beyond the basics, showing some more interesting uses of flexbox, and how Modernizr can be employed to serve different styles to browsers with differing levels of flexbox support to provide the best level of cross browser support available.'
+intro: 'The CSS Flexible box module level 3 brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. In this article Chris Mills goes beyond the basics, showing some more interesting uses of Flexbox, and how Modernizr can be employed to serve different styles to browsers with differing levels of Flexbox support to provide the best level of cross browser support available.'
 tags:
 - advanced
 - cross-browser
@@ -16,7 +16,7 @@ layout: article
 
 ## Introduction
 
-The [CSS Flexible box module level 3][1] — or Flexbox for short — brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. I dealt with the basics of Flexbox in my article [Flexbox: fast track to layout nirvana?][2] In this article I will go a bit further, looking at a more advanced example, and using Modernizr to serve different styles to browsers with differing levels of flexbox support, providing the best level of cross browser support currently available.
+The [CSS Flexible box module level 3][1] — or Flexbox for short — brings with it a lot of power and some very exciting possibilities for web development, allowing us to put together complex site layouts easily and rapidly, and dispensing with some of the illogical hacks and kludges that we’ve traditionally used. I dealt with the basics of Flexbox in my article [Flexbox: fast track to layout nirvana?][2] In this article I will go a bit further, looking at a more advanced example, and using Modernizr to serve different styles to browsers with differing levels of Flexbox support, providing the best level of cross browser support currently available.
 
 [1]: http://www.w3.org/TR/css3-flexbox/
 [2]: /articles/flexbox-basics/
@@ -30,7 +30,7 @@ The example I have built for this article looks like Figure 1:
 	<figcaption class="figure__caption">Figure 1: An image of the final layout example</figcaption>
 </figure>
 
-This has multiple levels of flexboxes contained within it. You can [view the example live][4] if you wish, and read on to explore the code in more detail.
+This has multiple levels of Flexboxes contained within it. You can [view the example live][4] if you wish, and read on to explore the code in more detail.
 
 [4]: {{ page.id }}/case-study/
 
@@ -47,7 +47,7 @@ The basic layout of the site is like this:
 The `<section>` is set to display as a flexible box like so:
 
 	section {
-		display: -ms-flexbox;
+		display: -ms-Flexbox;
 		-ms-box-orient: horizontal;
 
 		display: -webkit-flex;
@@ -61,7 +61,7 @@ The `<section>` is set to display as a flexible box like so:
 		flex-flow: row wrap;
 	}
 
-Note: Different IE-specific properties are specified at the top of the rule because IE10 currently supports different flexbox syntax (from 2011) to the latest spec supported by Opera and Chrome. What makes it worse is that Firefox and other WebKit browsers (like Safari) support an even older version of the syntax (from 2009). And to top it off, Modernizr reports IE10 as supporting modern flexbox, even though it doesn’t, therefore we need to deal with IE10 like this, rather than in a Modernizr rule. See below, in the [Intelligent fallbacks for flexbox][5] section for more details and clarification.
+Note: Different IE-specific properties are specified at the top of the rule because IE10 currently supports different Flexbox syntax (from 2011) to the latest spec supported by Opera and Chrome. What makes it worse is that Firefox and other WebKit browsers (like Safari) support an even older version of the syntax (from 2009). And to top it off, Modernizr reports IE10 as supporting modern Flexbox, even though it doesn’t, therefore we need to deal with IE10 like this, rather than in a Modernizr rule. See below, in the [Intelligent fallbacks for Flexbox][5] section for more details and clarification.
 
 [5]: http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/#fallbacks
 
@@ -75,7 +75,7 @@ I am making the flow horizontal, but forcing the `<nav>` to sit on its own line 
 		flex: 1 100%;
 	}
 
-Setting `flex-basis` to `100%` makes it take up 100% of the width of its parent, forcing the other flexbox children to wrap onto a new line. The `<article>`s are set with `flex-grow` values as follows:
+Setting `flex-basis` to `100%` makes it take up 100% of the width of its parent, forcing the other Flexbox children to wrap onto a new line. The `<article>`s are set with `flex-grow` values as follows:
 
 	article:nth-of-type(1) {
 		-webkit-flex: 2;
@@ -93,13 +93,13 @@ Setting `flex-basis` to `100%` makes it take up 100% of the width of its parent,
 
 They will take up that proportion of the space on the line they are sat on — the first `<article>` spanning 40%, or 2/5ths of the width, and the second `<article>` (the image container) spanning 60%, or 3/5ths of the width. This is worth remembering — the proportion values constitute a proportion of the space only on the line the item is sitting on, not all lines the children are sat on.
 
-Note: The `flex-basis` values, when specified, are applied to the flexbox child elements first; after that, the space left over in the parent is divided up between the children according to the `flex-grow` proportion values. When a `flex-grow` value is not set explicitly, like in the `nav` ruleset above, it defaults to 1. For more information on how these work, read the “Making your elements flex” section of my [Flexbox — fast track to layout nirvana?][6] article.
+Note: The `flex-basis` values, when specified, are applied to the Flexbox child elements first; after that, the space left over in the parent is divided up between the children according to the `flex-grow` proportion values. When a `flex-grow` value is not set explicitly, like in the `nav` ruleset above, it defaults to 1. For more information on how these work, read the “Making your elements flex” section of my [Flexbox — fast track to layout nirvana?][6] article.
 
 [6]: /articles/flexbox-basics/
 
 ## Child flexboxes
 
-When you set an element to be laid out as a flexible box, it will only flex its immediate children, and not further descendants. But there is nothing to stop you making those descendants flexible boxes as well, enabling some really complex layouts! Here, I have set the `<nav>` to be a flexbox as well, so I can center it effectively without having to worry about how wide it is:
+When you set an element to be laid out as a flexible box, it will only flex its immediate children, and not further descendants. But there is nothing to stop you making those descendants flexible boxes as well, enabling some really complex layouts! Here, I have set the `<nav>` to be a Flexbox as well, so I can center it effectively without having to worry about how wide it is:
 
 	nav {
 		display: -ms-flexbox;
@@ -228,20 +228,20 @@ Here I am setting them to have a fixed `flex-basis` value, so they will change t
 	<figcaption class="figure__caption">Figure 3: A nice responsive image box, without media queries</figcaption>
 </figure>
 
-## Intelligent fallbacks for flexbox
+## Intelligent fallbacks for Flexbox
 
-Support for flexbox is getting there (WebKit browsers, Presto-based Opera, Firefox support limited, coming in others soon!) but it will be a little while before support is really in the mainstream. This means that for now, we’ll need to employ some intelligent alternatives if we want to employ flexbox in production code. Some browsers (old WebKits, and Firefox) support an [older version of the Flexbox syntax from 2009][13]. IE10 supports a weird hybrid of old and new, from 2011. As luck would have it the Modernizr feature detection library has a feature detect for modern flexbox syntax and legacy flexbox syntax, with the `flexbox`, and `flexbox-legacy` flags. But there’s a further problem — Modernizr’s tests report IE10 as supporting modern flexbox, and not flexbox legacy. It in fact doesn’t support either — it supports an in between syntax! This is why we have been putting the IE10-specific properties throughout our code in the main CSS rules, rather than dealing with them in the Modernizr code blocks you’ll see below.
+Support for Flexbox is getting there (WebKit browsers, Presto-based Opera, Firefox support limited, coming in others soon!) but it will be a little while before support is really in the mainstream. This means that for now, we’ll need to employ some intelligent alternatives if we want to employ Flexbox in production code. Some browsers (old WebKits, and Firefox) support an [older version of the Flexbox syntax from 2009][13]. IE10 supports a weird hybrid of old and new, from 2011. As luck would have it the Modernizr feature detection library has a feature detect for modern Flexbox syntax and legacy Flexbox syntax, with the `flexbox`, and `flexbox-legacy` flags. But there’s a further problem — Modernizr’s tests report IE10 as supporting modern Flexbox, and not Flexbox legacy. It in fact doesn’t support either — it supports an in between syntax! This is why we have been putting the IE10-specific properties throughout our code in the main CSS rules, rather than dealing with them in the Modernizr code blocks you’ll see below.
 
 [13]: http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/
 
-Note: There has been discussion about what to do with the [Modernizr flexbox IE10 detection issue][14], and it is still ongoing as of April 2013.
+Note: There has been discussion about what to do with the [Modernizr Flexbox IE10 detection issue][14], and it is still ongoing as of April 2013.
 
 [14]: https://github.com/Modernizr/Modernizr/issues/812
 
-The following table provides a summary of modern flexbox syntax, and its equivalent in the 2009, and 2011 hybrid syntax:
+The following table provides a summary of modern Flexbox syntax, and its equivalent in the 2009, and 2011 hybrid syntax:
 
 <table>
-<caption>Table showing the different flexbox syntaxes supported across different browsers, and what the equivalents are for different properties.</caption>
+<caption>Table showing the different Flexbox syntaxes supported across different browsers, and what the equivalents are for different properties.</caption>
 <tr>
 	<th>Final syntax</th>
 	<th>2009 syntax</th>
@@ -276,9 +276,9 @@ The following table provides a summary of modern flexbox syntax, and its equival
 
 Note: There is a `box-lines` property in the 2009 spec, which looks like an equivalent of `flex-wrap`, but unfortunately this doesn’t seem to be supported by any of the legacy syntax-supporting browsers. My example therefore wouldn’t work, so I had to simplify it for older browsers.
 
-So I have got the following fallback styles provided in my example for browsers that don’t support flexbox modern, but do support flexbox legacy:
+So I have got the following fallback styles provided in my example for browsers that don’t support Flexbox modern, but do support Flexbox legacy:
 
-	/* legacy flexbox fallback */
+	/* legacy Flexbox fallback */
 
 	.no-flexbox section {
 		display: -webkit-box;
@@ -307,7 +307,7 @@ So I have got the following fallback styles provided in my example for browsers 
 		width: 200px;
 	}
 
-Then we’ve got the following in place, for browsers that don’t even support legacy flexbox:
+Then we’ve got the following in place, for browsers that don’t even support legacy Flexbox:
 
 	.no-flexbox-legacy nav, .no-flexbox-legacy article {
 		float: left;
@@ -331,9 +331,9 @@ Note: A good way to generate cross browser Flexbox code, and learn about the syn
 
 ## Adding in simple media queries for narrow and wide screen layouts
 
-In the end, I did decide to put in a couple of media queries, just to fix the layout at narrow screen widths. But please take note of how small the code inside the media queries is: flexbox creates layouts that are innately very flexible, at varying screen widths.
+In the end, I did decide to put in a couple of media queries, just to fix the layout at narrow screen widths. But please take note of how small the code inside the media queries is: Flexbox creates layouts that are innately very flexible, at varying screen widths.
 
-First of all, a brief fix for the legacy flexbox layout:
+First of all, a brief fix for the legacy Flexbox layout:
 
 	@media all and (max-width: 600px) {
 		h1 {
@@ -356,7 +356,7 @@ First of all, a brief fix for the legacy flexbox layout:
 
 	}
 
-Next, a fix for modern flexbox and no flex at all browsers, at small screen widths.
+Next, a fix for modern Flexbox and no flex at all browsers, at small screen widths.
 
 	@media all and (max-width: 480px) {
 		article:nth-of-type(1) {
@@ -394,6 +394,6 @@ Last, a media query that just centers the content on wide screens.
 
 ## Conclusion
 
-There are limitations to using flexbox at the moment, and it will be much easier when flexbox is just supported across all modern browsers in the same way. For now, it is much more effective to just stick to simpler, single line uses of flexbox, as multi-line flexboxes can’t really be done effectively in legacy-flex supporting browsers. As it standards, my example works ok, even though the legacy layout is not as good as the modern flexbox layout; one other interesting problem is that Firefox seems to refuse to center content that has been laid out as a flexbox using the `margin: 0 auto` trick (the centering works fine in Safari).
+There are limitations to using Flexbox at the moment, and it will be much easier when Flexbox is just supported across all modern browsers in the same way. For now, it is much more effective to just stick to simpler, single line uses of Flexbox, as multi-line Flexboxes can’t really be done effectively in legacy-flex supporting browsers. As it standards, my example works ok, even though the legacy layout is not as good as the modern Flexbox layout; one other interesting problem is that Firefox seems to refuse to center content that has been laid out as a Flexbox using the `margin: 0 auto` trick (the centering works fine in Safari).
 
-For simple flexbox uses however, you can get things working well a wide range of modern browsers: Chrome, Firefox, Safari, Opera Presto 12.1+, IE 10+, iOS and Android.
+For simple Flexbox uses however, you can get things working well a wide range of modern browsers: Chrome, Firefox, Safari, Opera Presto 12.1+, IE 10+, iOS and Android.
