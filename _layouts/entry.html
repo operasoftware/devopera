@@ -2,13 +2,8 @@
 layout: default
 ---
 
-{% assign lang = page.categories[1] %}
-{% unless lang %}
-	{% assign lang = 'en' %}
-{% endunless %}
-
 <main>
-	<article role="main" lang="{{ lang }}" class="layout-entry">
+	<article role="main" lang="{{ page.language }}" class="layout-entry">
 		<div class="layout-entry__content">
 			<div class="content">
 				<h1 class="content__title">{{ page.title | markdownline }}</h1>
@@ -23,11 +18,14 @@ layout: default
 				in <a href="/{{ page.categories[0] }}/" class="meta__category">{{ page.categories[0] | capitalize }}</a>
 			</p>
 			<p class="tags">
-				<span class="tags__caption">Article tags:</span> {% include tags.html object=page %}
+				<span class="tags__caption">Tags:</span> {% include tags.html object=page %}
 			</p>
-			{% include translations.html category=site.categories.articles %}
+			{% include translations.html %}
 			<p class="license" rel="license">
 				{% include license.html license=page.license %}
+			</p>
+			<p>
+				<a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a>
 			</p>
 		</div>
 	</article>
