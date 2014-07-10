@@ -7,7 +7,6 @@ tags:
 - freelance
 - business
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 [Next article: The Freelancing Business Part 2: Budgeting Your Projects][1]

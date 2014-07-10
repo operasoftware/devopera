@@ -10,7 +10,6 @@ tags:
 - mobile
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/operamobileemu12.png" alt="Opera Mobile Emulator screenshot" title="Opera Mobile Emulator" width="300" height="467" style="float: right; margin: 0 0 5px 2px;" />

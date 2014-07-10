@@ -8,7 +8,6 @@ tags:
 - github
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/octocat160.png" alt="GitHub Octocat" style="float:right;" />

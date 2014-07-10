@@ -7,7 +7,6 @@ tags:
 - box-shadow
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 Back from its temporary disappearance from the specification, <a href="temporarily disappeared from the specification">CSS <code>box-shadow</code></a> is widely supported in all the modern browsers.

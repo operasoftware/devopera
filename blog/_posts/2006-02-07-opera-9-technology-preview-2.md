@@ -7,7 +7,6 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: post
 ---
 
 ## This article is obsolete

@@ -6,7 +6,6 @@ tags:
 - presentation
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Chris Mills and I were honoured to present on Open Web Standards and the Mobile Web at Kingston University, London.</p>

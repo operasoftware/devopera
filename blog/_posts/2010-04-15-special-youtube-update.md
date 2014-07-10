@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 Following yesterday&#39;s update of Youtube, Opera 10.5x users were left with a Flash upgrade message. We&#39;re doing this quick and dirty urgent patch to make it work again for now.
 

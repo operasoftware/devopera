@@ -10,7 +10,6 @@ tags:
 - web-directions-south
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>One of the most exciting conferences of the year is almost upon us,

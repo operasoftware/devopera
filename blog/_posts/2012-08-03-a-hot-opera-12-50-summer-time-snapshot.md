@@ -6,7 +6,6 @@ tags:
 - opera-12
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Summer is usually a quiet time in the Opera offices, but looking at the latest <a href="http://my.opera.com/desktopteam/blog/2012/08/03/summer-core-update">Opera 12.50 snapshot</a>, you&#39;d be forgiven for thinking that our developers have never heard of vacation time.</p>

@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 During the last two weeks, browser.js has been tested against Opera 10.5, and the updates both on bug fixing and on handling broken code means an unprecedented number of patches are now due for removal. :D

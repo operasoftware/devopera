@@ -5,7 +5,6 @@ authors:
 - chris-mills
 intro: 'The HTML5 history API - supported in Opera 11.50+ - provides a means to perform tasks such as moving forward and backward in the session history, adding new entries into the history, and so on. In this article we’ll look at the API’s basic syntax along with a simple example to show you what’s possible.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -58,23 +57,23 @@ layout: article
 <p>We are using custom <code>data-*</code> attributes to store each image's caption, and then using the <code>dataset</code> property to access these and print them underneath their respective images:</p>
 
 <pre><code>&lt;li class="photo"&gt;
-  &lt;a href="crab2.href" data-note="Grey crab!"&gt;crab2.png&lt;/a&gt;
+	&lt;a href="crab2.href" data-note="Grey crab!"&gt;crab2.png&lt;/a&gt;
 &lt;/li&gt;</code></pre>
 
 <p>Now, there is something clever going on here - when we access the main <code>viewer.html</code> page with a browser that supports the history API, then open a folder and click on an image, it looks like we are visiting a new page. But in fact this is not the case - every time an image is selected, it is dynamically loaded into the <code>viewer.html</code> page and a new history entry is written using the history API. This way, the user experience is far snappier as we aren't loading an entire new page each time a new image is selected, and the history API usage means that we are still able to use the back button to go between different images.</p>
 
 <p>But there's more - each page is also available at a separate URL, as a separate HTML file, so the demo will gracefully degrade in non-supporting browsers, and you can bookmark the URLs and go straight back to them. Try for example, going straight to <a href="http://people.opera.com/miket/2011/6/crab.html">crab.html</a> in a browser, even one that doesn't support the History API, or one that has JavaScript turned off completely!</p>
 
-    <h3>Walking through the code</h3>
+		<h3>Walking through the code</h3>
 
 <p>The HTML is pretty self-explanatory &mdash; two <code>&lt;div&gt;</code>s sat next to one another, the left one containing the folder structure inside nested lists, and the right one providing a space to display the pictures. The dynamic functionality is all controlled via the linked JavaScript file, <code>app.js</code>. Apart from images and CSS, the demo relies on a single constructor function, <code>FilePreview</code>. We'll only highlight relevant portions here, but the code is quite short (only 80 lines) and we encourage you to have a look at it all.</p>
 
 <p>In the <code>bindEvents</code> method, we set up event handlers for the <code>popstate</code> event on the document, as that will allow the application to know that the history has been navigated and to update the page accordingly.</p>
 
 <pre><code>window.addEventListener('popstate', function(e){
-  if (history.state){
-    self.loadImage(e.state.path, e.state.note);
-  }
+	if (history.state){
+		self.loadImage(e.state.path, e.state.note);
+	}
 }, false);</pre></code>
 
 <p>Note that the event object that gets passed into the listener has a <code>state</code> property which corresponds to the <code>state</code> argument (if any) of the <code>pushState</code> or <code>replaceState</code> method call of the current history entry.
@@ -87,26 +86,26 @@ layout: article
 </ul>
 
 <pre><code>dir.addEventListener('click', function(e){
-  e.preventDefault();
-  var f = e.target;
+	e.preventDefault();
+	var f = e.target;
 
-  if (f.parentNode.classList.contains('folder')) {
-    self.toggleFolders(f);
-  }
+	if (f.parentNode.classList.contains('folder')) {
+		self.toggleFolders(f);
+	}
 
-  else if (f.parentNode.classList.contains('photo')){
-    note = f.dataset ? f.dataset.note : f.getAttribute('data-note');
+	else if (f.parentNode.classList.contains('photo')){
+		note = f.dataset ? f.dataset.note : f.getAttribute('data-note');
 
-    self.loadImage(f.textContent, note);
-    history.pushState({note: note, path:f.textContent}, '', f.href);
-  }
+		self.loadImage(f.textContent, note);
+		history.pushState({note: note, path:f.textContent}, '', f.href);
+	}
 }, false);</pre></code>
 
 <p>The actual method that changes the image and updates the caption is pretty self-explanatory:</p>
 
 <pre><code>loadImage: function(path, note){
-    img.src = path;
-    h2.textContent = note;
+		img.src = path;
+		h2.textContent = note;
 }</pre></code>
 
 <h2>Summary</h2>

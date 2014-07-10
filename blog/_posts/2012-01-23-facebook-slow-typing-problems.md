@@ -7,7 +7,6 @@ tags:
 - browser.js
 - facebook
 license: cc-by-3.0
-layout: post
 ---
 
 Today’s Facebook update caused some issues for Opera, some of their changed CSS made Opera work a lot harder while Facebook is updating itself. The main impact of this was that typing became very slow. Ouch.

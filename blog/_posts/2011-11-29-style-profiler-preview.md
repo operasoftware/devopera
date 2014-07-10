@@ -6,7 +6,6 @@ tags:
 - performance
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>CSS selector matching is often neglected when it comes to performance of web documents and applications. For small documents, the performance impact is negligible, but for documents with a large DOM (like the Opera Dragonfly application itself), a single &quot;bad&quot; selector can have a serious impact.

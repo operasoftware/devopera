@@ -17,7 +17,6 @@ tags:
 - extensions
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>From beta to final: a heritage of great functionality</h3>

@@ -7,7 +7,6 @@ tags:
 - html5
 - odin
 license: cc-by-3.0
-layout: post
 ---
 Here&#39;s my presentation given earlier at <abbr title="South by SouthWest">SxSW: download <a href="http://people.opera.com/brucel/talks/2010/SxSW/Bruce-Lawson-HTML5-SxSW.odp">Open Office format (6 MB)</a>, <a href="http://people.opera.com/brucel/talks/2010/SxSW/Bruce-Lawson-HTML5-SxSW.pdf">PDF format (1.22 MB)</a>. Or watch it on Slideshare:
 

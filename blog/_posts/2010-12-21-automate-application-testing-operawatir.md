@@ -8,7 +8,6 @@ tags:
 - watir
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>You&#39;re the proud author of a super-marvellous web application, but don&#39;t want to hire legions of monkeys to press keys in browsers all day according to a testing script. What you need is a method to  take control of the browser and run automated tests.</p>

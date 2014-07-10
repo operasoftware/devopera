@@ -4,7 +4,6 @@ authors:
 - corey-mwamba
 intro: 'Creating expanding and collapsing (or show and hide) content on websites used to be the domain of JavaScript, but in modern times we can recreate such functionality without JavaScript, using a combination of `:focus`, and CSS3 opacity and transitions. In this article, Corey Mwamba shows you how.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -14,13 +13,13 @@ layout: article
 
 <div>
 <h2>Contents</h2>
-  <ol id="toc">
+	<ol id="toc">
 <li><a href="#sec1">A simple example</a></li>
 <li><a href="#sec2">A real world solution</a></li>
 <li><a href="#sec3">Expanding and collapsing with CSS</a></li>
 <li><a href="#sec5">Styling the menu: a smoother ride</a></li>
 <li><a href="#sec6">Taking care of the elderly</a></li>
-  </ol>
+	</ol>
 </div>
 
 <h2 id="sec1">A simple example</h2>
@@ -29,27 +28,27 @@ layout: article
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;head&gt;
-   &lt;title&gt;menu mockup&lt;/title&gt;
-   &lt;style type="text/css"&gt;
-      .show {display: none; }
-      .hide:focus + .show {display: inline; }
-      .hide:focus { display: none; }
-      .hide:focus ~ #list { display:none; }
-      @media print { .hide, .show { display: none; } }
-   &lt;/style&gt;
+	 &lt;title&gt;menu mockup&lt;/title&gt;
+	 &lt;style type="text/css"&gt;
+			.show {display: none; }
+			.hide:focus + .show {display: inline; }
+			.hide:focus { display: none; }
+			.hide:focus ~ #list { display:none; }
+			@media print { .hide, .show { display: none; } }
+	 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-   &lt;p&gt;Here's a list&lt;/p&gt;
-      &lt;div&gt;
-         &lt;a href="#" class="hide"&gt;[hide]&lt;/a&gt;
-         &lt;a href="#" class="show"&gt;[show]&lt;/a&gt;
-         &lt;ol id="list"&gt;
-            &lt;li&gt;item 1&lt;/li&gt;
-            &lt;li&gt;item 2&lt;/li&gt;
-            &lt;li&gt;item 3&lt;/li&gt;
-         &lt;/ol&gt;
-      &lt;/div&gt;
-   &lt;p&gt;How about that?&lt;/p&gt;
+	 &lt;p&gt;Here's a list&lt;/p&gt;
+			&lt;div&gt;
+				 &lt;a href="#" class="hide"&gt;[hide]&lt;/a&gt;
+				 &lt;a href="#" class="show"&gt;[show]&lt;/a&gt;
+				 &lt;ol id="list"&gt;
+						&lt;li&gt;item 1&lt;/li&gt;
+						&lt;li&gt;item 2&lt;/li&gt;
+						&lt;li&gt;item 3&lt;/li&gt;
+				 &lt;/ol&gt;
+			&lt;/div&gt;
+	 &lt;p&gt;How about that?&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
@@ -73,22 +72,22 @@ layout: article
 
 
 <pre><code>&lt;table id="toc" class="toc"&gt;
-  &lt;tr&gt;
-    &lt;td&gt;
-      &lt;div id="toctitle"&gt;
-        &lt;h2&gt;Contents&lt;/h2&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-        &lt;li class="toclevel-1 tocsection-1"&gt;&lt;a href="#Concept"&gt;&lt;span class="tocnumber"&gt;1&lt;/span&gt; &lt;span class="toctext"&gt;Concept&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        <em>...and the rest</em>
-      &lt;/ul&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			&lt;div id="toctitle"&gt;
+				&lt;h2&gt;Contents&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;ul&gt;
+				&lt;li class="toclevel-1 tocsection-1"&gt;&lt;a href="#Concept"&gt;&lt;span class="tocnumber"&gt;1&lt;/span&gt; &lt;span class="toctext"&gt;Concept&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				<em>...and the rest</em>
+			&lt;/ul&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
 &lt;/table&gt;
 &lt;script type="text/javascript"&gt;
-  //&lt;![CDATA[
-    if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); }
-  //]]&gt;
+	//&lt;![CDATA[
+		if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); }
+	//]]&gt;
 &lt;/script&gt;</code></pre>
 
 <p>This takes the form of a table with one cell that contains a list. Why the table? Well, it's a table of contents. But I also suspect the most convenient way to get the border to grow and shrink was to surround the menu in a table cell.</p>
@@ -152,9 +151,9 @@ a.hide:focus ~ #menu { opacity: 0;  }</code></pre>
 <p>Instead of putting the transition properties directly on these elements, it is more reusable to create a separate class to handle this transition:</p>
 
 <pre><code>.tran1 { -o-transition: all 1s;
-         -moz-transition: all 1s;
-         -webkit-transition: all 1s;
-         transition: all 1s;
+				 -moz-transition: all 1s;
+				 -webkit-transition: all 1s;
+				 transition: all 1s;
 }</code></pre>
 
 <p>The <code>transition</code> shorthand specifies that all properties that are changed when the state changes should be transitioned over a period of one second. Note that this includes vendor prefixes for Opera, Gecko (Mozilla) and Webkit, and that we've also included the official W3C syntax at the end for when browsers drop the prefixed versions.</p>
@@ -206,7 +205,7 @@ option here is to hide the switch using a Webkit-only media query after the
 other queries:</p>
 
 <pre><code>@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .hide, .show  { display: none; }
+	.hide, .show  { display: none; }
 }</code></pre>
 
 <p>You could use this as the basis of a Webkit-friendly alternative solution. With any luck this will be fixed in newer versions.</p>

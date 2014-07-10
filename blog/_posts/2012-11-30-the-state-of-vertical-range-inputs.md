@@ -8,7 +8,6 @@ tags:
 - forms
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 Yesterday I found myself needing to write a silly demo to sketch out some code (to be used in a larger project). The idea was to dump a ton of `<input type=range>` elements on a page, alternate between horizontal and vertical orientations, and manipulate the `value` property in various magical ways.

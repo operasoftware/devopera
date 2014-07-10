@@ -5,7 +5,6 @@ authors:
 - sophie-taboni
 intro: 'The challenges of responsive web design go way beyond media queries and screen widths. In this article we look at some of the key issues you need to explore when embarking on a complicated web project, considering if, how and why the project should be made responsive.'
 license: cc-by-3.0
-layout: article
 ---
 <p class="note">French translation | Traduction française: <a href="http://www.clever-age.com/veille/blog/responsive-web-design-du-point-de-vue-du-chef-de-projet.html">Responsive Web Design, du point de vue du chef de projet</a></p>
 

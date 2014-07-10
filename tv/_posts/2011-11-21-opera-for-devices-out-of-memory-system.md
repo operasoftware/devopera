@@ -7,7 +7,6 @@ tags:
 - devices
 - tv
 license: cc-by-3.0
-layout: article
 ---
 
 [Opera for Devices][1] provides powerful mechanisms to strictly limit the heap usage of Opera. Memory is an expensive commodity on many devices and different programs may compete for the limited resources with unpredictable consequences. With the Out of Memory (OOM) system it is possible to restrict Opera to a limited amount of memory while ensuring good functionality.

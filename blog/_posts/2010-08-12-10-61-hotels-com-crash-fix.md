@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 A small accident happened for 10.61 - we introduced a crash when searching on hotels.com. This browser.js is a quick fix for that until we get a fix in Opera proper.

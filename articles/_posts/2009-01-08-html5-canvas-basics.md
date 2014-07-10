@@ -4,7 +4,6 @@ authors:
 - mihai-sucan
 intro: 'HTML5 canvas is a powerful, flexible way to create two dimensional graphics on web pages using scripting, and a number of previous dev.opera.com articles have demonstrated usage of it already. This article goes back to basics, giving beginners a starting point to work from and explaining the basics. Get drawing!'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Table of contents</h2>
 
@@ -17,7 +16,7 @@ layout: article
 <li><a href="#paths">Paths</a></li>
 <li><a href="#insertingimages">Inserting images</a></li>
 <li><a href="#pixelbasedmanipulation">Pixel-based
-    manipulation</a></li>
+		manipulation</a></li>
 <li><a href="#text">Text</a></li>
 <li><a href="#shadows">Shadows</a></li>
 <li><a href="#gradients">Gradients</a></li>
@@ -92,15 +91,15 @@ var elem = document.getElementById('myCanvas');
 // Always check for properties and methods, to make sure your code doesn't break
 // in other browsers.
 if (elem &amp;&amp; elem.getContext) {
-  // Get the 2d context.
-  // Remember: you can only initialize one context per element.
-  var context = elem.getContext('2d');
-  if (context) {
-    // You are done! Now you can draw your first rectangle.
-    // You only need to provide the (x,y) coordinates, followed by the width and
-    // height dimensions.
-    context.fillRect(0, 0, 150, 100);
-  }
+	// Get the 2d context.
+	// Remember: you can only initialize one context per element.
+	var context = elem.getContext('2d');
+	if (context) {
+		// You are done! Now you can draw your first rectangle.
+		// You only need to provide the (x,y) coordinates, followed by the width and
+		// height dimensions.
+		context.fillRect(0, 0, 150, 100);
+	}
 }</code></pre>
 
 <p class="note">You can choose to include this script inside the
@@ -262,8 +261,8 @@ var pix = imgd.data;
 
 // Loop over each pixel and set a transparent red.
 for (var i = 0; n = pix.length, i &lt; n; i += 4) {
-  pix[i  ] = 255; // red channel
-  pix[i+3] = 127; // alpha channel
+	pix[i  ] = 255; // red channel
+	pix[i+3] = 127; // alpha channel
 }
 
 // Draw the ImageData object at the given (x,y) coordinates.
@@ -272,13 +271,13 @@ context.putImageData(imgd, 0,0);</code></pre>
 <p>Note: not all browsers implement <code>createImageData</code>. On such
 browsers, you need to obtain your <code>ImageData</code> object using the
 <code>getImageData</code> method. Please see the provided <a
-  href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-imagedata2.html">example code</a>.</p>
+	href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-imagedata2.html">example code</a>.</p>
 
 <p>With the <code>ImageData</code> capabilities you can do a lot more than that. For
 example, you can do image filtering, or you can do mathematical
 visualisations (think fractals and more). The following code shows you how
 to create a <a href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-imagedata.html">simple color inversion
-  filter</a>:</p>
+	filter</a>:</p>
 
 <pre><code>// Get the <code>CanvasPixelArray</code> from the given coordinates and dimensions.
 var imgd = context.getImageData(<var>x</var>, <var>y</var>, <var>width</var>, <var>height</var>);
@@ -286,10 +285,10 @@ var pix = imgd.data;
 
 // Loop over each pixel and invert the color.
 for (var i = 0, n = pix.length; i &lt; n; i += 4) {
-  pix[i  ] = 255 - pix[i  ]; // red
-  pix[i+1] = 255 - pix[i+1]; // green
-  pix[i+2] = 255 - pix[i+2]; // blue
-  // i+3 is alpha (the fourth element)
+	pix[i  ] = 255 - pix[i  ]; // red
+	pix[i+1] = 255 - pix[i+1]; // green
+	pix[i+2] = 255 - pix[i+2]; // blue
+	// i+3 is alpha (the fourth element)
 }
 
 // Draw the <code>ImageData</code> at the given (x,y) coordinates.
@@ -299,7 +298,7 @@ context.putImageData(imgd, <var>x</var>, <var>y</var>);</code></pre>
 graphic (compare to Figure 3, which shows the original color scheme of the Opera graphic).</p>
 
 <p><a href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-imagedata.html"><img src="html5-canvas_color-inversion-filter.jpg"
-  alt="Example rendering of the invert color filter."></a></p>
+	alt="Example rendering of the invert color filter."></a></p>
 <p class="comment">Figure 4: The color inversion filter in action.</p>
 
 <h3 id="text">Text</h3>
@@ -311,16 +310,16 @@ object:</p>
 
 <ul>
 <li><code>font</code>: Specifies the font of the text, in the same manner
-  as the <abbr title="Cascading Style Sheet">CSS</abbr>
-  <code>font-family</code> property)</li>
+	as the <abbr title="Cascading Style Sheet">CSS</abbr>
+	<code>font-family</code> property)</li>
 <li><code>textAlign</code>: Specifies the horizontal alignment of the
-  text. Values: <code>start</code>, <code>end</code>, <code>left</code>,
-  <code>right</code>, <code>center</code>. Default value:
-  <code>start</code>.</li>
+	text. Values: <code>start</code>, <code>end</code>, <code>left</code>,
+	<code>right</code>, <code>center</code>. Default value:
+	<code>start</code>.</li>
 <li><code>textBaseline</code>: Specifies the vertical alignment of the
-  text. Values: <code>top</code>, <code>hanging</code>, <code>middle</code>,
-  <code>alphabetic</code>, <code>ideographic</code>, <code>bottom</code>.
-  Default value: <code>alphabetic</code>.</li>
+	text. Values: <code>top</code>, <code>hanging</code>, <code>middle</code>,
+	<code>alphabetic</code>, <code>ideographic</code>, <code>bottom</code>.
+	Default value: <code>alphabetic</code>.</li>
 </ul>
 
 <p>You have two methods for drawing text: <code>fillText</code> and
@@ -334,7 +333,7 @@ the given width, if that's needed.</p>
 <p>The text alignment properties affect the text position relative to the
 (x,y) coordinates you give to the drawing methods.</p>
 <p>At this point, an example is in order - the following code is a <a
-  href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-text.html">simple canvas text "hello world" example</a>.</p>
+	href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-text.html">simple canvas text "hello world" example</a>.</p>
 
 <pre><code>context.fillStyle    = '#00f';
 context.font         = 'italic 30px sans-serif';
@@ -346,7 +345,7 @@ context.strokeText('Hello world!', 0, 50);</code></pre>
 <p>Figure 5 shows the output of this example.</p>
 
 <p><a href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-text.html"><img src="html5-canvas_text-rendering.jpg"
-  alt="Example text render."></a></p>
+	alt="Example text render."></a></p>
 <p class="comment">Figure 5: A simple canvas text rendering.</p>
 
 <h3 id="shadows">Shadows</h3>
@@ -355,15 +354,15 @@ context.strokeText('Hello world!', 0, 50);</code></pre>
 
 <ul>
 <li><code>shadowColor</code>: Sets the shadow color you want. The value
-  allowed is the same as the CSS color values.</li>
+	allowed is the same as the CSS color values.</li>
 <li><code>shadowBlur</code>: Sets the amount of blur on the shadow, in
-  pixels. The lower the blur value, the sharper the shadows are. It gives a very similar effect to gaussian blur in Photoshop.</li>
+	pixels. The lower the blur value, the sharper the shadows are. It gives a very similar effect to gaussian blur in Photoshop.</li>
 <li><code>shadowOffsetX</code> and <code>shadowOffsetY</code>: Specifies
-  the x and y offset of the shadow, again in pixels.</li>
+	the x and y offset of the shadow, again in pixels.</li>
 </ul>
 
 <p>Usage is very straightforward, as shown by the following <a
-  href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-shadows.html">canvas shadow code example</a>:</p>
+	href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-shadows.html">canvas shadow code example</a>:</p>
 
 <pre><code>context.shadowOffsetX = 5;
 context.shadowOffsetY = 5;
@@ -375,7 +374,7 @@ context.fillRect(20, 20, 150, 100);</code></pre>
 <p>This will render as shown in Figure 6.</p>
 
 <p><a href="http://www.robodesign.ro/coding/canvas-primer/20081208/example-shadows.html"><img src="html5-canvas_shadow.jpg"
-  alt="Example canvas shadow - a blue rectangle with a red shadow."></a></p>
+	alt="Example canvas shadow - a blue rectangle with a red shadow."></a></p>
 <p class="comment">Figure 6: Example canvas shadow - a blue rectangle with
 a red shadow.</p>
 
@@ -434,10 +433,10 @@ at the following projects and demos:</p>
 <li><a href="http://www.benjoffe.com/code/demos/interpolate/">Newton polynomial</a></li>
 <li><a href="http://www.benjoffe.com/code/demos/canvascape/">Canvascape - "3D Walker"</a></li>
 <li><a href="http://code.google.com/p/paintweb">Paint.Web - painting
-  demo, open-source</a></li>
+	demo, open-source</a></li>
 <li><a
-  href="http://arapehlivanian.com/wp-content/uploads/2007/02/canvas.html">Star-field
-  flight</a></li>
+	href="http://arapehlivanian.com/wp-content/uploads/2007/02/canvas.html">Star-field
+	flight</a></li>
 <li><a href="http://www.blobsallad.se/">Interactive blob</a></li>
 </ul>
 

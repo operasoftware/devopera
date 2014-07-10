@@ -9,7 +9,6 @@ tags:
 - html5
 - raycasting
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 [Next article: Creating Pseudo 3D Games with HTML 5 Canvas and Raycasting — Part 2][1]

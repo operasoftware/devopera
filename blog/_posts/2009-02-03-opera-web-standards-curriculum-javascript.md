@@ -14,7 +14,6 @@ tags:
 - javascript
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><h2>Introduction</h2>
@@ -26,24 +25,24 @@ layout: post
 <h3>Advanced CSS study</h3>
 
 <ol start="38">
-  <li><a href="http://dev.opera.com/articles/view/38-headers-footers-columns-templates/">Headers, footers, columns, and templates</a>, by Ben Henick</li>
+	<li><a href="http://dev.opera.com/articles/view/38-headers-footers-columns-templates/">Headers, footers, columns, and templates</a>, by Ben Henick</li>
 </ol>
 
 <h3>JavaScript core skills</h3>
 
 <ol start="39">
-  <li><a href="http://dev.opera.com/articles/view/programming-the-real-basics/">Programming - the real basics!</a>, by Christian Heilmann</li>
-  <li><a href="http://dev.opera.com/articles/view/javascript-uses/">What can you do with JavaScript?</a>, by Christian Heilmann</li>
-  <li><a href="http://dev.opera.com/articles/view/first-look-at-javascript/">Your first look at JavaScript</a>, by Christian Heilmann</li>
-  <li><a href="http://dev.opera.com/articles/view/javascript-best-practices/">JavaScript best practices</a> (full article coming soon)</li>
-  <li><a href="http://dev.opera.com/articles/view/unobtrusive-javascript/">The principles of unobtrusive JavaScript</a>, by PPK</li>
-  <li><a href="http://dev.opera.com/articles/view/javascript-functions/">JavaScript functions</a>, by Mike West</li>
-  <li><a href="http://dev.opera.com/articles/view/objects-in-javascript/">Objects in JavaScript</a>, by Mike West</li>
-  <li><a href="http://dev.opera.com/articles/view/traversing-the-dom/">Traversing the DOM</a>, by Mike West</li>
-  <li><a href="http://dev.opera.com/articles/view/creating-and-modifying-html/">Creating and modifying HTML</a>, by Stuart Langridge</li>
-  <li><a href="http://dev.opera.com/articles/view/dynamic-style-css-javascript/">Dynamic style - manipulating CSS with JavaScript</a>, by Greg Schechter</li>
-  <li><a href="http://dev.opera.com/articles/view/handling-events-with-javascript/">Handling events with JavaScript</a>, by Robert Nyman</li>
-  <li><a href="http://dev.opera.com/articles/view/javascript-animation/">JavaScript animation</a>, by Stuart Langridge</li>
+	<li><a href="http://dev.opera.com/articles/view/programming-the-real-basics/">Programming - the real basics!</a>, by Christian Heilmann</li>
+	<li><a href="http://dev.opera.com/articles/view/javascript-uses/">What can you do with JavaScript?</a>, by Christian Heilmann</li>
+	<li><a href="http://dev.opera.com/articles/view/first-look-at-javascript/">Your first look at JavaScript</a>, by Christian Heilmann</li>
+	<li><a href="http://dev.opera.com/articles/view/javascript-best-practices/">JavaScript best practices</a> (full article coming soon)</li>
+	<li><a href="http://dev.opera.com/articles/view/unobtrusive-javascript/">The principles of unobtrusive JavaScript</a>, by PPK</li>
+	<li><a href="http://dev.opera.com/articles/view/javascript-functions/">JavaScript functions</a>, by Mike West</li>
+	<li><a href="http://dev.opera.com/articles/view/objects-in-javascript/">Objects in JavaScript</a>, by Mike West</li>
+	<li><a href="http://dev.opera.com/articles/view/traversing-the-dom/">Traversing the DOM</a>, by Mike West</li>
+	<li><a href="http://dev.opera.com/articles/view/creating-and-modifying-html/">Creating and modifying HTML</a>, by Stuart Langridge</li>
+	<li><a href="http://dev.opera.com/articles/view/dynamic-style-css-javascript/">Dynamic style - manipulating CSS with JavaScript</a>, by Greg Schechter</li>
+	<li><a href="http://dev.opera.com/articles/view/handling-events-with-javascript/">Handling events with JavaScript</a>, by Robert Nyman</li>
+	<li><a href="http://dev.opera.com/articles/view/javascript-animation/">JavaScript animation</a>, by Stuart Langridge</li>
 <li><a href="http://dev.opera.com/articles/view/graceful-degradation-progressive-enhancement/">Graceful degredation versus progressive enhancement</a>, by Christian Heilmann</li>
 </ol>
 
@@ -62,8 +61,8 @@ layout: post
 <p>At this point, there is still a lot of work to be done; the next steps I envisage for the web standards curriculum (in no particular order) are as follows:</p>
 
 <ul>
-  <li><strong>Follow-on courses</strong>: as mentioned above, I am aiming to create follow-on courses to build on the core knowledge already published, and allow readers to follow on to advanced/specialist learning paths when they are ready. This doesn&#39;t just go for JavaScript - there is CSS and markup ground still to be covered.</li>
-  <li><strong>Translations</strong>: This has started already, but now I have the core course out the way, I will be continuing this effort in earnest. Get in touch if you want to help with translations!</li>
-  <li><strong>Accessible PDFs</strong>: I will be creating accessible PDFs of all the articles, to allow them to be printed out more easily.</li>
-  <li><strong>Adoption in education</strong>: Again, I have already started this effort, but I will be trying to push the curriculum at universities and schools as much as possible, to manimise the benefit it can bring. Get in touch with me if you want to help bring the curriculum to your school or university.</li>
+	<li><strong>Follow-on courses</strong>: as mentioned above, I am aiming to create follow-on courses to build on the core knowledge already published, and allow readers to follow on to advanced/specialist learning paths when they are ready. This doesn&#39;t just go for JavaScript - there is CSS and markup ground still to be covered.</li>
+	<li><strong>Translations</strong>: This has started already, but now I have the core course out the way, I will be continuing this effort in earnest. Get in touch if you want to help with translations!</li>
+	<li><strong>Accessible PDFs</strong>: I will be creating accessible PDFs of all the articles, to allow them to be printed out more easily.</li>
+	<li><strong>Adoption in education</strong>: Again, I have already started this effort, but I will be trying to push the curriculum at universities and schools as much as possible, to manimise the benefit it can bring. Get in touch with me if you want to help bring the curriculum to your school or university.</li>
 </ul>

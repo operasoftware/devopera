@@ -8,7 +8,6 @@ tags:
 - amazon
 - ymail
 license: cc-by-3.0
-layout: post
 ---
 
 Hi, while Ola is still away on vacation, I’ve just signed a set of new browser.js files. The main reason to get them out quickly is to pull the patch that adds jQuery on Amazon pages, because while it fixes some problems it seems to cause others..

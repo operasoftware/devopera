@@ -7,7 +7,6 @@ tags:
 - opera-next
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>New Release Model</h3>

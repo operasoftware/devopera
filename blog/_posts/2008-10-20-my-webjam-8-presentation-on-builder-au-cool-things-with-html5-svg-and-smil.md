@@ -10,7 +10,6 @@ tags:
 - svg
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Builder AU has featured my WebJam 8 presentation of a couple of weeks ago in their video section. Here&#39;s an embed (oh the irony) for you to enjoy!</p>

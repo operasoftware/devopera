@@ -4,7 +4,6 @@ authors:
 - bruce-lawson
 intro: '`getUserMedia` alllows access to a device’s camera and microphone. This article shows how to access the camera and demonstrates a Privacy User Interface that Opera is experimenting with. Includes moustaches and exploding cameras.'
 license: cc-bsd
-layout: article
 ---
 <p>In 2011, one of the most discussed aspects of HTML5 was whether web applications would "kill" native apps that are written for specific devices in platform-dependent languages. Two years ago, access to a device's Global Positioning System was only possible through native code; now, it's trivially easy to access via a Web app using the W3C Geolocation API.</p>
 <p>Opera co-chaired the Geolocation Working Group, and today we're advancing the Web further towards feature-parity with native applications. We're not there yet, but we're getting closer.</p>

@@ -15,7 +15,6 @@ tags:
 - open-web
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>The delightful Helen Kennedy, Senior Lecturer in New Media, Institute of Communications Studies at the University of Leeds invited Patrick and Bruce to harangue her students about Open Web Standards, HTML5, CSS and the like. Here are the slides and some supporting links.</p>

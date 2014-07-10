@@ -4,7 +4,6 @@ authors:
 - domenico-strazzullo
 intro: 'Mapping applications are very popular, and it is easy to embed a simple map on a page using something like the Google Maps API. In this article we are going to show how to build a fully fledged SVG-based, windowed mapping application using the Pergola framework and its libraries, with the Polymaps library plugged in, and tiles imported from Bing.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -21,18 +20,18 @@ layout: article
 
 <pre><code>pergola.container = document.getElementById("svg");
 pergola.doc = $C({
-  element: "svg",
-  width: "100%",
-  height: "100%",
-  appendTo: pergola.container
+	element: "svg",
+	width: "100%",
+	height: "100%",
+	appendTo: pergola.container
 });</code></pre>
 
 <p>The default container is overridden (you can use any selection method), and the outmost <code>&lt;svg&gt;</code> is created and appended to the newly defined container. If the container does not exist you can create one on the fly:</p>
 
 <pre><code>pergola.container = $html({
-  element: "div",
-  style: "margin: 40px; overflow: hidden;",
-  appendTo: document.body
+	element: "div",
+	style: "margin: 40px; overflow: hidden;",
+	appendTo: document.body
 });</code></pre>
 
 <p>In fact the SVG DOM helper comes with a sibling HTML DOM helper, which exposes the HTML library and its vocabulary in the same way.</p>
@@ -68,12 +67,12 @@ myWindow.build({});</code></pre>
 <pre><code>var bingWin = new pergola.Window("Bing Maps");
 
 bingWin.build({
-  isFull: true,
-  type: "map",
-  mapWidth: 2048,
-  mapHeight: 1536,
-  fill: "#010413",
-  ...
+	isFull: true,
+	type: "map",
+	mapWidth: 2048,
+	mapHeight: 1536,
+	fill: "#010413",
+	...
 });</code></pre>
 
 <p>The first few properties we see here are self-explanatory. The <code>width</code> and <code>height</code> of the map should be set to at least <code>window.screen.width</code> and  <code>window.screen.height</code> respectively, and they should also be multiples of 512, which is the size of the map tiles we are going to use. <code>type: "map”,</code> will produce a window with different behavior from a regular window: the class's prototype is extended with specific mapping properties and methods, and the behavior of the transformation tools, including scrollbars, overrides the regular behavior by sending requests rather than acting on the contained document's viewport.</p>
@@ -85,39 +84,39 @@ bingWin.build({
 <p>Next up is adding a menu; Pergola has built-in functionality for menus, dialogs, static panels, check-boxes, radio buttons, pop-up selectors, etc. Adding a menu is as simple as this:</p>
 
 <pre><code> ...,
-  menu: {
-    ...
-  },</code></pre>
+	menu: {
+		...
+	},</code></pre>
 
 <p>Perhaps one of the most interesting things about maps is switching between different views: satellite shots, road maps, birds eye views, etc. In our map we'll create three views: <em>Aerial</em>, <em>Aerial With Labels</em> and <em>Road</em>. We do this by setting a property with title of <code>Views</code>, which defines the menu title and a list of three views:</p>
 
 <pre><code>menu: {
-  menu1: {
-    title: "Views",
-    items: {
-      item1: {
-        string: "Aerial",
-        check: false,
-        exclusive: true,
-        view: "Aerial",
-        fn: tileSource
-      },
-      item2: {
-        string: "Aerial With Labels",
-        check: true,
-        exclusive: true,
-        view: "AerialWithLabels",
-        fn: tileSource
-      },
-      item3: {
-        string: "Road",
-        check: false,
-        exclusive: true,
-        view: "Road",
-        fn: tileSource
-      }
-    }
-  }
+	menu1: {
+		title: "Views",
+		items: {
+			item1: {
+				string: "Aerial",
+				check: false,
+				exclusive: true,
+				view: "Aerial",
+				fn: tileSource
+			},
+			item2: {
+				string: "Aerial With Labels",
+				check: true,
+				exclusive: true,
+				view: "AerialWithLabels",
+				fn: tileSource
+			},
+			item3: {
+				string: "Road",
+				check: false,
+				exclusive: true,
+				view: "Road",
+				fn: tileSource
+			}
+		}
+	}
 }</code></pre>
 
 <p>The user function <code>tileSource</code> is in charge of switching scripts in order to request the appropriate tiles for each view. It is a top level function closely associated with the request callback function. We will see later that there are several type values for user functions (<code>fn</code>) in Pergola.</p>
@@ -125,9 +124,9 @@ bingWin.build({
 <p>The Polymaps development model doesn't follow a typical Javascript OOD model. In order to facilitate communication with Polymaps we define the <code>views</code> property, designed to store information about Polymaps' tile layers:</p>
 
 <pre><code>views: {
-  Aerial: {},
-  AerialWithLabels: {},
-  Road: {}
+	Aerial: {},
+	AerialWithLabels: {},
+	Road: {}
 }</code></pre>
 
 <h2>Populating the map</h2>
@@ -143,45 +142,45 @@ bingWin.build({
 <pre><code>var bingWin = new pergola.Window("Bing Maps");
 
 bingWin.build({
-  isFull: true,
-  type: "map",
-  mapWidth: 2048,
-  mapHeight: 1536,
-  fill: "#010413",
-  menu: {
-    menu1: {
-      title: "Views",
-      items: {
-        item1: {
-          string: "Aerial",
-          check: false,
-          exclusive: true,
-          view: "Aerial",
-          fn: tileSource
-        },
-        item2: {
-          string: "Aerial With Labels",
-          check: true,
-          exclusive: true,
-          view: "AerialWithLabels",
-          fn: tileSource
-        },
-        item3: {
-          string: "Road",
-          check: false,
-          exclusive: true,
-          view: "Road",
-          fn: tileSource
-        }
-      }
-    }
-  },
-  views: {
-    Aerial: {},
-    AerialWithLabels: {},
-    Road: {}
-  },
-  contains: function() {return this.mapMaker()}
+	isFull: true,
+	type: "map",
+	mapWidth: 2048,
+	mapHeight: 1536,
+	fill: "#010413",
+	menu: {
+		menu1: {
+			title: "Views",
+			items: {
+				item1: {
+					string: "Aerial",
+					check: false,
+					exclusive: true,
+					view: "Aerial",
+					fn: tileSource
+				},
+				item2: {
+					string: "Aerial With Labels",
+					check: true,
+					exclusive: true,
+					view: "AerialWithLabels",
+					fn: tileSource
+				},
+				item3: {
+					string: "Road",
+					check: false,
+					exclusive: true,
+					view: "Road",
+					fn: tileSource
+				}
+			}
+		}
+	},
+	views: {
+		Aerial: {},
+		AerialWithLabels: {},
+		Road: {}
+	},
+	contains: function() {return this.mapMaker()}
 });</code></pre>
 
 <p>For the hard core who may need more control, here is the code for appending the map manually, showing the use of private member functions (see the <a href="http://polymaps.org/docs">Polymaps documentation for more</a>):</p>
@@ -192,10 +191,10 @@ polymaps.origin = {x: bingWin.x + doc.x, y: bingWin.y + doc.y};
 
 bingWin.map = polymaps.map(doc)
 .container(doc.transformable.appendChild($C({
-  element: "svg",
-  id: bingWin.id + "_tiles",
-  width: bingWin.mapWidth,
-  height: bingWin.mapHeight
+	element: "svg",
+	id: bingWin.id + "_tiles",
+	width: bingWin.mapWidth,
+	height: bingWin.mapHeight
 })))
 .add(polymaps.interact())
 .add(polymaps.hash());</code></pre>
@@ -205,20 +204,20 @@ bingWin.map = polymaps.map(doc)
 <p>Let's proceed now with adding a custom tool in the tool bar. For several of its interface features the <code>Window</code> class allows “inline” (defined in the object literal) or deferred construction/addition, like we've seen for the <code>contains</code> property. The addition of tools can be done while creating the window instance by setting the <code>tools</code> property, or at a later stage by invoking the <code>addTools</code> prototype method. This time let's use the second technique:</p>
 
 <pre><code>bingWin.addTools({
-  group1: {
-    separator: true,
-    myMeasureTool": {
-      symbol: {
-        symbol: pergola.symbols.ruler,
-        x: 4,
-        y: 4
-      },
-      selected: false,
-      quickTip: "measureTool",
-      ev: "mouseup",
-      fn: function() {...}
-    }
-  }
+	group1: {
+		separator: true,
+		myMeasureTool": {
+			symbol: {
+				symbol: pergola.symbols.ruler,
+				x: 4,
+				y: 4
+			},
+			selected: false,
+			quickTip: "measureTool",
+			ev: "mouseup",
+			fn: function() {...}
+		}
+	}
 });</code></pre>
 
 
@@ -246,19 +245,19 @@ bingWin.map = polymaps.map(doc)
 
 <p>Before proceeding, let's remember that these are just definitions, and the order in which the properties of the window are defined in the object literal passed as parameter to the window's <code>buid</code> method is irrelevant.</p>
 
-        <h3>The <code>layers</code> object</h3>
+				<h3>The <code>layers</code> object</h3>
 
 <p>The order in which the properties of this object are defined is also irrelevant.</p>
 
 <pre><code>layers: {
-  copyright: {
-    feature: false,
-    display: "block"
-  },
-  svgOpen2011: {
-    feature: true,
-    display: "none"
-  }
+	copyright: {
+		feature: false,
+		display: "block"
+	},
+	svgOpen2011: {
+		feature: true,
+		display: "none"
+	}
 }</code></pre>
 
 <p>The <code>feature</code> property indicates if the layer contains projection (true) or static material. The <code>display</code> property indicates the initial state we want for that layer.</p>
@@ -268,36 +267,36 @@ bingWin.map = polymaps.map(doc)
 <p>We add the definition of our “Layers” menu, containing custom items and their user functions, to the <code>menu</code> object (a window has exactly 1 menu object):</p>
 
 <pre><code>menu: {
-  menu1: {
-    ...
-  }
-  menu2: {
-    title: "Layers",
-    items: {
-      item1: {
-        string: "SVG Open 2011",
-        target: function() {
-          return {
-            obj: bingWin.layers.svgOpen2011,
-            center: {lat: 42.36131, lon: -71.08124},
-            zoom: 17,
-            view: "Road"
-          };
-        },
-        fn: 'showFeatureLayer',
-      },
-      item2: {
-        string: "Copyright",
-        check: true,
-        target: function() {return bingWin.childDoc.copyright;},
-        fn: function() {
-          var l = bingWin.layers.copyright;
-          l.display = l.display == "block" ? "none" : "block";
-          this.target().setAttributeNS(null, "display", l.display);
-        }
-      }
-    }
-  }
+	menu1: {
+		...
+	}
+	menu2: {
+		title: "Layers",
+		items: {
+			item1: {
+				string: "SVG Open 2011",
+				target: function() {
+					return {
+						obj: bingWin.layers.svgOpen2011,
+						center: {lat: 42.36131, lon: -71.08124},
+						zoom: 17,
+						view: "Road"
+					};
+				},
+				fn: 'showFeatureLayer',
+			},
+			item2: {
+				string: "Copyright",
+				check: true,
+				target: function() {return bingWin.childDoc.copyright;},
+				fn: function() {
+					var l = bingWin.layers.copyright;
+					l.display = l.display == "block" ? "none" : "block";
+					this.target().setAttributeNS(null, "display", l.display);
+				}
+			}
+		}
+	}
 }</code></pre>
 
 <p>We have defined the “SVG Open 2011” feature directly in the object literal. We specify a latitude and a longitude as the new map center, an appropriate value for the zoom level (in the 1-21 range) and optionally, a view type that we estimate most appropriate.</p>
@@ -305,30 +304,30 @@ bingWin.map = polymaps.map(doc)
 <p>The user function of the "SVG Open 2011" menu item updates the Views menu, builds the feature layer if it doesn't exist, and centers and zooms the map. This is where the GeoJSON Geometry Object is defined:</p>
 
 <pre><code>bingWin.menu.menu2.list.item1.showFeatureLayer = function(evt) {
-  var target = this.target(),
-      o = target.obj,
-      currentMap = pergola.Window.currentMap;
+	var target = this.target(),
+			o = target.obj,
+			currentMap = pergola.Window.currentMap;
 
-  if (target.view) {
-    currentMap.mapViewsToggle(currentMap.menu.menu1.list.item3, target.view);
-  }
+	if (target.view) {
+		currentMap.mapViewsToggle(currentMap.menu.menu1.list.item3, target.view);
+	}
 
-  if (!o.container) {
-    currentMap.map.add(polymaps.geoJson(o)
-    .features([
-      {
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-71.08124, 42.36131],
-          "elements": pergola.symbols.signalPaddle
-        }
-      }
-    ]));
-  }
+	if (!o.container) {
+		currentMap.map.add(polymaps.geoJson(o)
+		.features([
+			{
+				"geometry": {
+					"type": "Point",
+					"coordinates": [-71.08124, 42.36131],
+					"elements": pergola.symbols.signalPaddle
+				}
+			}
+		]));
+	}
 
-  currentMap.centerMap(target.center);
-  currentMap.mapZoom(target.zoom);
-  currentMap.showMapFeatureLayer(o);
+	currentMap.centerMap(target.center);
+	currentMap.mapZoom(target.zoom);
+	currentMap.showMapFeatureLayer(o);
 };</code></pre>
 
 <p>Note that the GeoJSON Geometry Object <code>Point</code> refers to a point on earth using coordinates. The <code>elements</code> property gets an array of one or more SVG elements whose origin 0,0 will be placed at <code>coordinates</code>. The SVG elements are in the format specified in the Pergola documentation and consistent throughout its libraries and classes. It is the format expected by Pergola's <a href="http://www.dotuscomus.com/svg/lib/tinytools/DOM_Helper.html">progressive DOM Helper</a>, a method which builds and returns any SVG element. In the object expected by the method we can define any of the element's attributes using SVG syntax, without the need of any extra artifact or appendices. The method is extensively used in this custom version of Polymaps.</p>
@@ -342,86 +341,86 @@ We can check the <a href="http://www.dotuscomus.com/pergola/download/pergola_1.3
 <pre><code>var bingWin = new pergola.Window("Bing Maps");
 
 bingWin.build({
-  isFull: true,
-  type: "map",
-  mapWidth: 2048,
-  mapHeight: 1536,
-  fill: "#010413",
+	isFull: true,
+	type: "map",
+	mapWidth: 2048,
+	mapHeight: 1536,
+	fill: "#010413",
 
-  menu: {
-    menu1: {
-      title: "Views",
-      items: {
-        item1: {
-          string: "Aerial",
-          check: false,
-          exclusive: true,
-          view: "Aerial",
-          fn: tileSource
-        },
-        item2: {
-          string: "Aerial With Labels",
-          check: true,
-          exclusive: true,
-          view: "AerialWithLabels",
-          fn: tileSource
-        },
-        item3: {
-          string: "Road",
-          check: false,
-          exclusive: true,
-          view: "Road",
-          fn: tileSource
-        }
-      }
-    },
-    menu2: {
-      title: "Layers",
-      items: {
-        item1: {
-          string: "SVG Open 2011",
-          target: function() {
-            return {
-              obj: bingWin.layers.svgOpen2011,
-              center: {lat: 42.36131, lon: -71.08124},
-              zoom: 17,
-              view: "Road"
-            };
-          },
-          fn: 'showFeatureLayer'
-        },
-        item2: {
-          string: "Copyright",
-          check: true,
-          target: function() {return bingWin.childDoc.copyright;},
-          fn: function() {
-            var l = bingWin.layers.copyright;
-            l.display = l.display == "block" ? "none" : "block";
-            this.target().setAttributeNS(null, "display", l.display);
-          }
-        }
-      }
-    }
-  },
+	menu: {
+		menu1: {
+			title: "Views",
+			items: {
+				item1: {
+					string: "Aerial",
+					check: false,
+					exclusive: true,
+					view: "Aerial",
+					fn: tileSource
+				},
+				item2: {
+					string: "Aerial With Labels",
+					check: true,
+					exclusive: true,
+					view: "AerialWithLabels",
+					fn: tileSource
+				},
+				item3: {
+					string: "Road",
+					check: false,
+					exclusive: true,
+					view: "Road",
+					fn: tileSource
+				}
+			}
+		},
+		menu2: {
+			title: "Layers",
+			items: {
+				item1: {
+					string: "SVG Open 2011",
+					target: function() {
+						return {
+							obj: bingWin.layers.svgOpen2011,
+							center: {lat: 42.36131, lon: -71.08124},
+							zoom: 17,
+							view: "Road"
+						};
+					},
+					fn: 'showFeatureLayer'
+				},
+				item2: {
+					string: "Copyright",
+					check: true,
+					target: function() {return bingWin.childDoc.copyright;},
+					fn: function() {
+						var l = bingWin.layers.copyright;
+						l.display = l.display == "block" ? "none" : "block";
+						this.target().setAttributeNS(null, "display", l.display);
+					}
+				}
+			}
+		}
+	},
 
-  views: {
-    Aerial: {},
-    AerialWithLabels: {},
-    Road: {}
-  },
+	views: {
+		Aerial: {},
+		AerialWithLabels: {},
+		Road: {}
+	},
 
-  layers: {
-    copyright: {
-      feature: false,
-      display: "block"
-    },
-    svgOpen2011: {
-      feature: true,
-      display: "none"
-    }
-  },
+	layers: {
+		copyright: {
+			feature: false,
+			display: "block"
+		},
+		svgOpen2011: {
+			feature: true,
+			display: "none"
+		}
+	},
 
-  contains: function() {return this.mapMaker()}
+	contains: function() {return this.mapMaker()}
 
 });</code></pre>
 

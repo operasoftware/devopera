@@ -11,7 +11,6 @@ tags:
 - web-agency
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>The web helps us manage interactions and exchange messages. In many cases, these interactions happen from machine to machine. Sometimes we (humans) become the machine. If you have been working in a web agency, you know that. How many hours did you spend testing a website? Browsing each page one by one to check if everything was working accordingly to the notebook. How many times did you have to repeat the same process for checking the Web site for each release, each version of the back-end before pushing the site on production?</p>

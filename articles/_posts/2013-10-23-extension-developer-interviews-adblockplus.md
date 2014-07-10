@@ -11,7 +11,6 @@ tags:
 - opera
 cover: jpg
 license: cc-by-3.0
-layout: article
 ---
 
 This is the fourth article in a [series of interviews][1] with Opera extension developers. We want to shed a light on what drives them, what their workflow is like, which tools they use, what their plans for future extension versions are, and so on. For this interview, we sat down with Ben Williams from [Adblock Plus][2], which is the company behind the popular [extension with the same name][3], and asked him some questions over a (virtual) coffee.

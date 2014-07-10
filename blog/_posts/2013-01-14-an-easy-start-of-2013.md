@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 A freezing start of the new year (-15°C in Oslo today) so the start is slow, only for 12.1x this time.

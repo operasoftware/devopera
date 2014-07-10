@@ -4,7 +4,6 @@ authors:
 - bruce-lawson
 intro: 'Everyone wants to make their sites “mobile friendly” these days — the mobile web market is becoming big business. This article takes you through the different available strategies for making your websites mobile browser compatible, sharing many tips and tricks along the way.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <p class="note">Updated April 2012 to modernise references, eg "will be supported in IE9" and to change the default assumed width in Opera Mobile from 850 to 980 pixels.</p>
 <h2>Contents</h2>

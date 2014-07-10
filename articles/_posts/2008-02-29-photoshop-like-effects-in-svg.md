@@ -6,7 +6,6 @@ intro: 'Wanna add some polish to your site, the standards way? In this article E
 tags:
 - svg
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 ## Introduction

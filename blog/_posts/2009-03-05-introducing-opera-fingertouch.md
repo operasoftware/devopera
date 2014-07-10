@@ -8,7 +8,6 @@ tags:
 - opera-mobile
 - labs
 license: os-asa
-layout: post
 ---
 
 As of today millions of people are browsing the full web on their mobile phones and devices. These devices bring new challenges to browser vendors and handset manufacturers trying to deliver a pleasurable user experience to their users because of small screen size, limited controls, and other factors. As a result, the phones and devices are evolving to suit, with touchscreens and other advances becoming more popular. In addition, people are increasingly touching screens with their fingers rather than a stylus, which is not as precise, and brings its own set of problems to the table.

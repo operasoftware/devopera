@@ -6,7 +6,6 @@ intro: 'Twelve months ago today, I stayed up past my bedtime to blog about the n
 tags:
 - blink
 license: cc-by-3.0
-layout: post
 ---
 
 Twelve months ago today, I stayed up past my bedtime to [blog about the new rendering engine, Blink](http://www.brucelawson.co.uk/2013/hello-blink/), being forked from WebKit.

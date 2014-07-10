@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 A security fix in 11.01 makes it impossible to log in to Orkut, as Opera throws a security error if reading from an iframe too soon. This release has a rather ugly patch for this, that will probably break as soon as Orkut updates something. But for now it should be fine. There will be a proper Core fix in an upcoming release.

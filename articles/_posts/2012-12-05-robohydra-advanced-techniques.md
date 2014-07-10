@@ -4,7 +4,6 @@ authors:
 - esteban-velazquez
 intro: 'In the first article in this series, we looked at the basics of RoboHydra, the flexible test server tool for testing client-server interactions. In this — the second article — we are taking this knowledge further, looking at more complex examples that utilize RoboHydra as a mock server to send customized test responses back to your client applications.'
 license: os-asa
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -21,19 +20,19 @@ layout: article
 <p>The <code>handler</code> function you pass to a <code>RoboHydraHead</code> is supposed to decide what to send as a response (maybe based on the contents of the request object), then write that response in the response object. Let's look at a trivial example that always returns a given response text without setting any headers or checking anything in the incoming request. This would be roughly equivalent to a <code>RoboHydraHeadStatic</code> head:</p>
 
 <pre><code class="javascript">var heads         = require('robohydra').heads,
-    RoboHydraHead = heads.RoboHydraHead;
+	RoboHydraHead = heads.RoboHydraHead;
 
 exports.getBodyParts = function(conf) {
-    return {
-        heads: [
-            new RoboHydraHead({
-                path: '/.*',
-                handler: function(req, res) {
-                    res.send("Always the same response text");
-                }
-            })
-        ]
-    };
+	return {
+		heads: [
+			new RoboHydraHead({
+				path: '/.*',
+				handler: function(req, res) {
+					res.send("Always the same response text");
+				}
+			})
+		]
+	};
 };</code></pre>
 
 <p>Save the code above to a file named <code>roboexamples/robohydra/plugins/simple/index.js</code>, and create a file <code>roboexamples/simple.conf</code> with the following contents:</p>
@@ -49,32 +48,32 @@ exports.getBodyParts = function(conf) {
 <p>However, that's not terribly exciting, is it? Now we'll try something a bit more involved: we'll make a head that listens in <code>/guess-number</code> and will expect a GET parameter <code>guess</code>. According to whether that number is correct or not, we'll show a message. Plus, we'll print the messages in HTML and set the correct headers so the browser knows how to interpret the output:</p>
 
 <pre><code class="javascript">var heads         = require('robohydra').heads,
-    RoboHydraHead = heads.RoboHydraHead;
+	RoboHydraHead = heads.RoboHydraHead;
 
 exports.getBodyParts = function(conf) {
-    return {
-        heads: [
-            new RoboHydraHead({
-                path: "/guess-number",
-                handler: function(req, res) {
-                    var message = "Sorry, try again";
+	return {
+		heads: [
+			new RoboHydraHead({
+				path: "/guess-number",
+				handler: function(req, res) {
+					var message = "Sorry, try again";
 
-                    // Chosen by fair dice roll, guaranteed to be random
-                    var secretNumber = 4;
-                    if (parseInt(req.queryParams.guess, 10) === secretNumber) {
-                        message = "You guessed right!!!";
-                    }
+					// Chosen by fair dice roll, guaranteed to be random
+					var secretNumber = 4;
+					if (parseInt(req.queryParams.guess, 10) === secretNumber) {
+						message = "You guessed right!!!";
+					}
 
-                    // By convention all headers are in lowercase
-                    res.headers["content-type"] = "text/html";
-                    res.headers["x-comic-number"] = "221";
-                    res.send("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
-                             message +
-                             "&lt;/body&gt;&lt;/html&gt;");
-                }
-            })
-        ]
-    };
+					// By convention all headers are in lowercase
+					res.headers["content-type"] = "text/html";
+					res.headers["x-comic-number"] = "221";
+					res.send("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
+							 message +
+							 "&lt;/body&gt;&lt;/html&gt;");
+				}
+			})
+		]
+	};
 };</code></pre>
 
 <p>Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> with the above code,
@@ -97,47 +96,47 @@ might want to have one URL that saves whatever comes to it, and another URL that
 following example:</p>
 
 <pre><code class="javascript">var heads         = require('robohydra').heads,
-    RoboHydraHead = heads.RoboHydraHead;
+	RoboHydraHead = heads.RoboHydraHead;
 
 exports.getBodyParts = function(conf) {
-    var visits = {};
+	var visits = {};
 
-    return {
-        heads: [
-            new RoboHydraHead({
-                path: "/articles/:articleId",
-                handler: function(req, res) {
-                    var id = req.params.articleId;
-                    visits[id] = visits[id] || 0;
-                    visits[id]++;
+	return {
+		heads: [
+			new RoboHydraHead({
+				path: "/articles/:articleId",
+				handler: function(req, res) {
+					var id = req.params.articleId;
+					visits[id] = visits[id] || 0;
+					visits[id]++;
 
-                    res.headers["content-type"] = "text/html";
-                    res.send("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
-                                 "&lt;h1&gt;" + id + "&lt;/h1&gt;" +
-                                 "&lt;p&gt;Text for article '" +
-                                 id + "'&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;");
-                }
-            }),
+					res.headers["content-type"] = "text/html";
+					res.send("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
+								 "&lt;h1&gt;" + id + "&lt;/h1&gt;" +
+								 "&lt;p&gt;Text for article '" +
+								 id + "'&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;");
+				}
+			}),
 
-            new RoboHydraHead({
-                path: "/admin/visits",
-                handler: function(req, res) {
-                    res.headers["content-type"] = "text/html";
-                    res.write("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
-                                  "&lt;h1&gt;Visits per article&lt;/h1&gt;" +
-                                  "&lt;ul&gt;");
+			new RoboHydraHead({
+				path: "/admin/visits",
+				handler: function(req, res) {
+					res.headers["content-type"] = "text/html";
+					res.write("&lt;!doctype&gt;\n&lt;html&gt;&lt;body&gt;" +
+								  "&lt;h1&gt;Visits per article&lt;/h1&gt;" +
+								  "&lt;ul&gt;");
 
-                    for (var articleId in visits) {
-                        res.write("&lt;li&gt;" + articleId + " (" +
-                                  visits[articleId] + " visits)&lt;/li&gt;");
-                    }
+					for (var articleId in visits) {
+						res.write("&lt;li&gt;" + articleId + " (" +
+								  visits[articleId] + " visits)&lt;/li&gt;");
+					}
 
-                    res.write("&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;");
-                    res.end();
-                }
-            })
-        ]
-    };
+					res.write("&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;");
+					res.end();
+				}
+			})
+		]
+	};
 };
 </code></pre>
 
@@ -151,26 +150,26 @@ exports.getBodyParts = function(conf) {
 
 <table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Path</th>
-    </tr>
+	<tr>
+	  <th>Name</th>
+	  <th>Path</th>
+	</tr>
   </thead>
   <tr>
-    <td>onlyFoo</td>
-    <td>/foo</td>
+	<td>onlyFoo</td>
+	<td>/foo</td>
   </tr>
   <tr>
-    <td>onlyBar</td>
-    <td>/bar</td>
+	<td>onlyBar</td>
+	<td>/bar</td>
   </tr>
   <tr>
-    <td>atLeastFoo</td>
-    <td>/foo.*</td>
+	<td>atLeastFoo</td>
+	<td>/foo.*</td>
   </tr>
   <tr>
-    <td>catchAll</td>
-    <td>/.*</td>
+	<td>catchAll</td>
+	<td>/.*</td>
   </tr>
 </table>
 
@@ -181,33 +180,33 @@ exports.getBodyParts = function(conf) {
 <p>We'll illustrate this first of all with a trivial example. Let's say we have a head A that depends on a GET parameter called <code>type</code>, but we don't always want to pass it: when we don't pass it, we want it to default to <code>basic</code>. We can write a small head B that sets the type GET parameter only if it's not already set, then pass the request to head A for actual processing. Head A will be very simple in this example, but it could be a proxy or anything else. Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> with the below code block, and restart RoboHydra:</p>
 
 <pre><code class="javascript">var heads         = require('robohydra').heads,
-    RoboHydraHead = heads.RoboHydraHead;
+	RoboHydraHead = heads.RoboHydraHead;
 
 exports.getBodyParts = function(conf) {
-    return {
-        heads: [
-            new RoboHydraHead({
-                name: "defaultTypeSetter",
-                path: "/.*",
-                handler: function(req, res, next) {
-                    if (req.queryParams.type === undefined) {
-                        req.queryParams.type = "basic";
-                    }
-                    next(req, res);
-                }
-            }),
+	return {
+		heads: [
+			new RoboHydraHead({
+				name: "defaultTypeSetter",
+				path: "/.*",
+				handler: function(req, res, next) {
+					if (req.queryParams.type === undefined) {
+						req.queryParams.type = "basic";
+					}
+					next(req, res);
+				}
+			}),
 
-            new RoboHydraHead({
-                name: "content",
-                path: "/.*",
-                handler: function(req, res) {
-                    res.send("The type in the request was: '" +
-                                 req.queryParams.type +
-                                 "'");
-                }
-            })
-        ]
-    };
+			new RoboHydraHead({
+				name: "content",
+				path: "/.*",
+				handler: function(req, res) {
+					res.send("The type in the request was: '" +
+								 req.queryParams.type +
+								 "'");
+				}
+			})
+		]
+	};
 };
 </code></pre>
 
@@ -216,29 +215,29 @@ exports.getBodyParts = function(conf) {
 <p>Let's look at another example. Let's say we are superstitious and we don't like the number 3. So, when we're browsing Dev Opera we don't want to see the contents of page 3, and instead want the contents of page 4. As we can see if we check on this site, the pagination URLs look like <code>http://dev.opera.com/?page=<em>number</em></code>. What we will do, then, is create a head that will replace any <code>page=3</code> we see in the URL with <code>page=4</code> before passing it on to the proxy head that serves Dev Opera. Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> again — this time with the following code — and restart RoboHydra:</p>
 
 <pre><code class="javascript">var heads              = require("robohydra").heads,
-    RoboHydraHead      = heads.RoboHydraHead,
-    RoboHydraHeadProxy = heads.RoboHydraHeadProxy;
+	RoboHydraHead      = heads.RoboHydraHead,
+	RoboHydraHeadProxy = heads.RoboHydraHeadProxy;
 
 exports.getBodyParts = function(conf) {
-    return {
-        heads: [
-            new RoboHydraHead({
-                name: "superstitiousPagination",
-                path: "/.*",
-                handler: function(req, res, next) {
-                    req.url = req.url.replace(/page=3/, "page=4");
-                    next(req, res);
-                }
-            }),
+	return {
+		heads: [
+			new RoboHydraHead({
+				name: "superstitiousPagination",
+				path: "/.*",
+				handler: function(req, res, next) {
+					req.url = req.url.replace(/page=3/, "page=4");
+					next(req, res);
+				}
+			}),
 
-            new RoboHydraHeadProxy({
-                name: "devOpera",
-                mountPath: "/",
-                proxyTo: "http://dev.opera.com",
-                setHostHeader: true
-            })
-        ]
-    };
+			new RoboHydraHeadProxy({
+				name: "devOpera",
+				mountPath: "/",
+				proxyTo: "http://dev.opera.com",
+				setHostHeader: true
+			})
+		]
+	};
 };</code></pre>
 
 <p>Now go to <a href="http://localhost:3000/">http://localhost:3000/</a> and start clicking on the next pages. Notice how when you click on page 3, page 4 is shown instead (you can tell because the pagination links mark page 4, not 3, as the current one), even though in the address bar you can still see <code>?page=3</code>.</p>
@@ -253,44 +252,44 @@ property. If we had changed the URL, the request would have been processed by th
 <p>Let's look at another simple example: we'll create a simple file server with a custom 404 error message. To do that, we'll need two heads: a regular <code>RoboHydraHeadFilesystem</code> head and a second head that will call the first and check the status code. If it's 404, it will return our own error message. If not, it will simply serve whatever the filesystem head returned. Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> with the following code and restart RoboHydra:</p>
 
 <pre><code class="javascript">var robohydra               = require('robohydra'),
-    heads                   = robohydra.heads,
-    Response                = robohydra.Response,
-    RoboHydraHead           = heads.RoboHydraHead,
-    RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem;
+	heads                   = robohydra.heads,
+	Response                = robohydra.Response,
+	RoboHydraHead           = heads.RoboHydraHead,
+	RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem;
 
 exports.getBodyParts = function(conf) {
-    return {
-        heads: [
-            new RoboHydraHead({
-                name: "special404",
-                path: "/.*",
-                handler: function(req, res, next) {
-                    // Create a fake response object to pass to the
-                    // filesystem head so we can capture its
-                    // response. Once we have it, decide if we should
-                    // respond with our error message, or with
-                    // whatever the filesystem head returned
-                    var fakeRes = new Response().on('end', function(evt) {
-                        if (evt.response.statusCode === 404) {
-                            res.send("OH NOES, YOU FOUND A DEAD LINK. " +
-                                         "Have you been playing Zelda again?");
-                        } else {
-                            res.copyFrom(evt.response);
-                            res.end();
-                        }
-                    });
+	return {
+		heads: [
+			new RoboHydraHead({
+				name: "special404",
+				path: "/.*",
+				handler: function(req, res, next) {
+					// Create a fake response object to pass to the
+					// filesystem head so we can capture its
+					// response. Once we have it, decide if we should
+					// respond with our error message, or with
+					// whatever the filesystem head returned
+					var fakeRes = new Response().on('end', function(evt) {
+						if (evt.response.statusCode === 404) {
+							res.send("OH NOES, YOU FOUND A DEAD LINK. " +
+										 "Have you been playing Zelda again?");
+						} else {
+							res.copyFrom(evt.response);
+							res.end();
+						}
+					});
 
-                    next(req, fakeRes);
-                }
-            }),
+					next(req, fakeRes);
+				}
+			}),
 
-            new RoboHydraHeadFilesystem({
-                name: "realFileServer",
-                mountPath: "/",
-                documentRoot: "files"
-            })
-        ]
-    };
+			new RoboHydraHeadFilesystem({
+				name: "realFileServer",
+				mountPath: "/",
+				documentRoot: "files"
+			})
+		]
+	};
 };</code></pre>
 
 <p>As you can see, we're using the <code>Response</code> class to create the fake response object we'll pass to the filesystem head. In that fake response object we hook a function to the <code>end</code> event, and decide what to do there (pass the same response the filesystem head returned, or make our own response).</p>
@@ -306,60 +305,60 @@ exports.getBodyParts = function(conf) {
 code, restart RoboHydra and go to <a href="http://localhost:3000">http://localhost:3000</a> in your browser:</p>
 
 <pre><code class="javascript">var robohydra               = require('robohydra'),
-    heads                   = robohydra.heads,
-    RoboHydraHead           = heads.RoboHydraHead,
-    RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem,
-    RoboHydraHeadProxy      = heads.RoboHydraHeadProxy,
-    Response                = robohydra.Response;
+	heads                   = robohydra.heads,
+	RoboHydraHead           = heads.RoboHydraHead,
+	RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem,
+	RoboHydraHeadProxy      = heads.RoboHydraHeadProxy,
+	Response                = robohydra.Response;
 
 exports.getBodyParts = function(conf) {
-    var developersDevelopersDevelopersDevelopers =
-      '&lt;span onmouseover="var a = document.createElement(\'audio\'); a.src = \'/ogg/developers.ogg\'; a.autoplay = true; document.body.appendChild(a);"&gt;DEVELOPERS, DEVELOPERS, DEVELOPERS, DEVELOPERS&lt;/span&gt;';
+	var developersDevelopersDevelopersDevelopers =
+	  '&lt;span onmouseover="var a = document.createElement(\'audio\'); a.src = \'/ogg/developers.ogg\'; a.autoplay = true; document.body.appendChild(a);"&gt;DEVELOPERS, DEVELOPERS, DEVELOPERS, DEVELOPERS&lt;/span&gt;';
 
-    return {
-        heads: [
-            new RoboHydraHeadFilesystem({
-                name: "static",
-                mountPath: "/ogg",
-                documentRoot: "files"
-            }),
+	return {
+		heads: [
+			new RoboHydraHeadFilesystem({
+				name: "static",
+				mountPath: "/ogg",
+				documentRoot: "files"
+			}),
 
-            new RoboHydraHead({
-                name: "emphasizer",
-                path: "/.*",
-                handler: function(req, res, next) {
-                    // Create a fake response object to pass to the
-                    // proxy head, so we can capture the proxy
-                    // response. Once we have the proxy response,
-                    // substitute the emphasized string for
-                    // "developers" and return the modified response
-                    var fakeRes = new Response().on('end', function(evt) {
-                        res.copyFrom(evt.response);
-                        res.body =
-                            res.body.toString().replace(
-                                /developers&lt;/,
-                                developersDevelopersDevelopersDevelopers + "&lt;"
-                            );
-                        res.end();
-                    });
+			new RoboHydraHead({
+				name: "emphasizer",
+				path: "/.*",
+				handler: function(req, res, next) {
+					// Create a fake response object to pass to the
+					// proxy head, so we can capture the proxy
+					// response. Once we have the proxy response,
+					// substitute the emphasized string for
+					// "developers" and return the modified response
+					var fakeRes = new Response().on('end', function(evt) {
+						res.copyFrom(evt.response);
+						res.body =
+							res.body.toString().replace(
+								/developers&lt;/,
+								developersDevelopersDevelopersDevelopers + "&lt;"
+							);
+						res.end();
+					});
 
-                    // Remove the Accept-Encoding header from the
-                    // original request to make sure the server won't
-                    // compress the response, and pass the fake
-                    // response object created above
-                    delete req.headers["accept-encoding"];
-                    next(req, fakeRes);
-                }
-            }),
+					// Remove the Accept-Encoding header from the
+					// original request to make sure the server won't
+					// compress the response, and pass the fake
+					// response object created above
+					delete req.headers["accept-encoding"];
+					next(req, fakeRes);
+				}
+			}),
 
-            new RoboHydraHeadProxy({
-                name: "realDevOpera",
-                mountPath: "/",
-                proxyTo: "http://dev.opera.com",
-                setHostHeader: true
-            })
-        ]
-    };
+			new RoboHydraHeadProxy({
+				name: "realDevOpera",
+				mountPath: "/",
+				proxyTo: "http://dev.opera.com",
+				setHostHeader: true
+			})
+		]
+	};
 };</code></pre>
 
 <p>How does this work? First of all, in the <code>emphasizer</code> head, we remove the <code>Accept-Encoding</code> header from the original request to make sure the server doesn't reply with a compressed response. Then we call the <code>next</code> function passing the modified request object and a fake response object that we'll use only to save the response from the <code>realDevOpera</code> head. This fake response object has an event listener for the <code>end</code> event, when the "next" head (in this case, the proxy) has finished writing its response. At that moment we copy the contents of the proxy response to our own response, modify the body to emphasize the text we want, and then signal that we're done by calling the <code>end</code> method in the original response.</p>

@@ -10,7 +10,6 @@ tags:
 - opera
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/sxswi.jpg">

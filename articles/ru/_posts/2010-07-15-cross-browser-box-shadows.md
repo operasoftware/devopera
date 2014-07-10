@@ -9,7 +9,6 @@ tags:
 - ie
 language: ru
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 ## Введение

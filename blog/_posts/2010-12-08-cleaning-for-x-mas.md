@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 Nothing brand new this time, but the web has evolved somewhat this year too, making some patches obsolete.
 

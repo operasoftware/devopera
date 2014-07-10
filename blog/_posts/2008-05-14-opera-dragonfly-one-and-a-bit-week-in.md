@@ -7,7 +7,6 @@ tags:
 - debugger
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera Dragonfly is just over a week old, and I think we can say the early signs are we had a successful launch.  It was ready and launched on time, except some gremlins in the server which took a few minutes to sync the development version of the web site with the live site.  We got a lot of coverage both in the media and on blogs.  We made <a href="http://www.techcrunch.com/2008/05/06/opera-releases-firebug-alternative-dragonfly/">TechCrunch</a> (and <a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/05/06/AR2008050601679.html">Washington Post</a>), <a href="http://blog.wired.com/monkeybites/2008/05/dragonfly-opera.html">Wired</a>, <a href="http://www.digital-web.com/news/2008/05/Opera_Dragonfly">Digital Web</a> and <a href="http://ajaxian.com/archives/opera-dragonfly-new-web-tooling">Ajaxian</a> among others.</p>

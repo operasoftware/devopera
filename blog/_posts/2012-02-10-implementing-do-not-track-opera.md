@@ -11,7 +11,6 @@ tags:
 - implementation
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>On the Opera Desktop Team blog, there is a <a href="http://my.opera.com/desktopteam/blog/2012/02/10/core-dnt-mail-themes">new <strong>experimental</strong> build</a> available which includes support for the &quot;Do Not Track&quot; feature. Last year, in April 2011, the W3C invited the industry and the user alike to participate in a <a href="http://www.w3.org/2011/track-privacy/">workshop on Web Tracking and User Privacy</a>. A few months later, after a very successful workshop, a working group started the <a href="http://www.w3.org/2011/tracking-protection/">work on Web tracking</a> with essentially three items in its <a href="http://www.w3.org/2011/tracking-protection/charter">charter</a>: </p>

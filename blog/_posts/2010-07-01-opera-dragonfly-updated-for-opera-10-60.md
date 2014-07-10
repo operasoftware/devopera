@@ -8,7 +8,6 @@ tags:
 - html5
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Those of you who love traveling by trains or planes will enjoy the latest update to Opera Dragonfly. To sync up with the <a href="http://www.opera.com/browser/">Opera 10.60 release</a>, we have added offline support to Opera Dragonfly. We now take advantage of the <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">Application Cache</a> feature (commonly known as AppCache) of HTML5, which has just landed in the desktop browser. This is not the first time we have taken advantage of a feature from the HTML5 family of specifications; we recently used <a href="http://dev.opera.com/articles/view/web-storage/">Web Storage</a> (introduced in Opera 10.50) to save user preferences, such as colours used in the element highlight. The added power of HTML5 JavaScript APIs allow us to get closer to the capabilities of native applications.</p>

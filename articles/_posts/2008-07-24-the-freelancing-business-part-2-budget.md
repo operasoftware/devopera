@@ -7,7 +7,6 @@ tags:
 - freelance
 - business
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 - [Previous article: The Freelancing Business Part 1: Pricing Your Work][1]

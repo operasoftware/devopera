@@ -11,7 +11,6 @@ tags:
 - oslo
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>This is a story of places. Beijing (China), Birmingham (UK), Brooklyn (USA) , Chandigarh (India), Los Angeles (USA), Manchester (UK), Montreal (Canada), Oslo (Norway), Saint Petersburg (Russia), San Mateo (USA), Seattle (USA), Tokyo (Japan). For each of these cities, you may imagine food, architecture, colors, climate, and people. These are the cities, where we, the <a href="http://my.opera.com/ODIN/members/">Opera developer relations team</a>, are located in the world. After some departures and some hiring in the last year, we had never met altogether. Last week was <strong>our first time meeting</strong> altogether in Oslo (Norway).  </p>

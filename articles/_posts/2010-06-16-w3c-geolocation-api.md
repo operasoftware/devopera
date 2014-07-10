@@ -4,7 +4,6 @@ authors:
 - shwetank-dixit
 intro: 'In this article, Opera Web Evangelist Shwetank gives you a guide to the W3C Geolocation API, which is newly-supported in our Opera 10.60 beta release. Find out how to add location awareness to your Web apps for a lot of interesting possibilities!'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -39,9 +38,9 @@ layout: article
 
 <pre><code>//Check if browser supports W3C Geolocation API
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+	navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
 } else {
-    alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
+	alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
 }</code></pre>
 
 <p class="note">In a production system, you should consider fallback so those users without Geolocation-enabled browsers can manually enter their location by inputting their postal code or choosing their position on a map, for example.</p>
@@ -49,15 +48,15 @@ if (navigator.geolocation) {
 <p>Then you add the success function:</p>
 
 <pre><code>function successFunction(position) {
-    var lat = position.coords.latitude;
-    var long = position.coords.longitude;
-    alert('Your latitude is :'+lat+' and longitude is '+long);
+	var lat = position.coords.latitude;
+	var long = position.coords.longitude;
+	alert('Your latitude is :'+lat+' and longitude is '+long);
 }</code></pre>
 
 <p>You can write the error function however you want. Refer to the <a href="http://dev.w3.org/geo/api/spec-source.html#position_error_interface">PositionError Interface</a> in the specification for more on error codes. For the sake of the example, we&apos;ll keep it simple for now:</p>
 
 <pre><code>function errorFunction(position) {
-    alert('Error!');
+	alert('Error!');
 }</code></pre>
 
 <p>Here is the <a href="{{ page.id }}/basic_geolocation_example.htm">resulting example page</a>.</p>
@@ -91,61 +90,61 @@ if (navigator.geolocation) {
 <pre><code>&lt;script type="text/javascript"&gt;
 // Determine support for Geolocation
 if (navigator.geolocation) {
-    // Locate position
-    navigator.geolocation.getCurrentPosition(displayPosition, errorFunction);
+	// Locate position
+	navigator.geolocation.getCurrentPosition(displayPosition, errorFunction);
 } else {
-    alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
+	alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
 }
 
 // Success callback function
 function displayPosition(pos) {
-    var mylat = pos.coords.latitude;
-    var mylong = pos.coords.longitude;
-    var thediv = document.getElementById('locationinfo');
-    thediv.innerHTML = '&lt;p&gt;Your longitude is :' +
-        mylong + ' and your latitide is ' + mylat + '&lt;/p&gt;';
+	var mylat = pos.coords.latitude;
+	var mylong = pos.coords.longitude;
+	var thediv = document.getElementById('locationinfo');
+	thediv.innerHTML = '&lt;p&gt;Your longitude is :' +
+		mylong + ' and your latitide is ' + mylat + '&lt;/p&gt;';
 
 //Load Google Map
 var latlng = new google.maps.LatLng(mylat, mylong);
-    var myOptions = {
-      zoom: 15,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.HYBRID
-    };
+	var myOptions = {
+	  zoom: 15,
+	  center: latlng,
+	  mapTypeId: google.maps.MapTypeId.HYBRID
+	};
 
 var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
 //Add marker
 var marker = new google.maps.Marker({
-	     position: latlng,
-	     map: map,
-	     title:"You are here"
+		 position: latlng,
+		 map: map,
+		 title:"You are here"
 	 });
 }
 
 // Error callback function
 function errorFunction(pos) {
-    alert('Error!');
+	alert('Error!');
 }
 &lt;/script&gt;</code></pre>
 
 <p>Finally, the HTML and CSS to display the data is as follows:</p>
 
 <pre><code>&lt;head&gt;
-    &lt;style type="text/css"&gt;
-        html, body {
-        width: 100%;
-        height: 100%;
-    }
-    #map_canvas {
-        height: 85%;
-        width: 100%;
-    }
-    &lt;/style&gt;
+	&lt;style type="text/css"&gt;
+		html, body {
+		width: 100%;
+		height: 100%;
+	}
+	#map_canvas {
+		height: 85%;
+		width: 100%;
+	}
+	&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div id="map_canvas"&gt;&lt;/div&gt;
-    &lt;div id="locationinfo"&gt;&lt;/div&gt;
+	&lt;div id="map_canvas"&gt;&lt;/div&gt;
+	&lt;div id="locationinfo"&gt;&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 
 <p>Figure 2 shows the <a href="http://people.opera.com/shwetankd/external/demos/demo_geo_googlemap.htm">resulting Geolocation example</a>. It will ask you for permission to share your location and then display a Google Map of your location.</p>

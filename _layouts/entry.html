@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main>
+	<article role="main" lang="{{ page.language }}" class="layout-entry">
+		<div class="layout-entry__content">
+			<div class="content">
+				<h1 class="content__title">{{ page.title | markdownline }}</h1>
+				{{ content }}
+			</div>
+		</div>
+		<div class="layout-entry__aside">
+			<div class="content">
+				<p>
+					{% include author-picture.html object=page class='meta__picture' %}
+					<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time>
+					by {% include author-name.html object=page link=true class='meta__author' %}
+					in <a href="/{{ page.category }}/">{{ page.category | capitalize }}</a>
+				</p>
+				<p>Tags: {% include tags.html object=page %}</p>
+				{% include translations.html %}
+				<p rel="license">{% include license.html license=page.license %}</p>
+				<p><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
+			</div>
+		</div>
+	</article>
+</main>

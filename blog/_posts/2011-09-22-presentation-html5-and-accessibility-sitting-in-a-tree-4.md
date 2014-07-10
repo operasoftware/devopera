@@ -7,7 +7,6 @@ tags:
 - accessibility
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Bruce went to down to London to present at the Accessibility London unconference. His theme was that, contrary to the belief of some accessibility consultants, HTML5 doesn&#39;t hate accessibility (or disabled people), but that it attempts to build accessibility in rather than bolt in on as an afterthought with extra special markup or WAI-ARIA.</p>

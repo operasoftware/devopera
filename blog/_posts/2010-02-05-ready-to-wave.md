@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 With the latest <a href="http://my.opera.com/desktopteam/blog/2010/02/05/skin-fixes-unite-and-then-some" rel="nofollow" target="_blank">snapshot</a> we have killed some more bugs in the new Carakan JS engine, including a couple required to get Google Wave to work. ...

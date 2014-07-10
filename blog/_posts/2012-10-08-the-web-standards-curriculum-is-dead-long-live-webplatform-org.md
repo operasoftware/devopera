@@ -10,7 +10,6 @@ tags:
 - web-standards-curriculum
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Around a year or so ago, I was approached by Doug Schepers of the W3C with a request for help — they wanted me to get involved with a collaborative documentation project, which would be comprehensive, complete, and more importantly, vendor neutral. I loved this idea. So much time is wasted when trying to learn web design or look up information to do our jobs because there is so much stuff out there, some of it good, some of it not so good, some of it really out of date, and some of it bad practice (whether that is using proprietary features, not accessible, etc.)</p>

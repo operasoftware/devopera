@@ -1,13 +1,10 @@
 {% assign translated = false %}
 {% capture translations %}
-	{% for post in {{include.category}} %}
+	{% for post in site.posts %}
 		{% assign page_slug = page.url | split: '/' | last %}
 		{% assign post_slug = post.url | split: '/' | last %}
 		{% if post_slug == page_slug %}
-			{% assign lang = post.categories[1] %}
-			{% unless lang %}
-				{% assign lang = 'en' %}
-			{% endunless %}
+			{% assign lang = post.language %}
 			{% if page.url != post.url %}
 				{% assign translated = true %}
 				<a href="{{ post.url }}">{{ site.data.langs[lang] }}</a>
@@ -18,5 +15,5 @@
 	{% endfor %}
 {% endcapture %}
 {% if translated %}
-	<p class="translations">Translations:{{ translations }}</p>
+	<p>Translations:{{ translations }}</p>
 {% endif %}

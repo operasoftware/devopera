@@ -9,7 +9,6 @@ tags:
 - mini
 - ios
 license: cc-by-3.0
-layout: post
 ---
 
 <figure class="figure figure--right">

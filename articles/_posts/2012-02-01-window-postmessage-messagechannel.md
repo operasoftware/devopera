@@ -4,7 +4,6 @@ authors:
 - tiffany-brown
 intro: 'HTML5 web messaging provides a way for documents to share data without exposing the DOM to malicious cross-origin scripting. This article provides an introductory guide to using this new functionality, and some simple examples to get you started.'
 license: cc-by-3.0
-layout: article
 ---
 <ul>
 <li><a href="#messageevent">Message events</a></li>
@@ -86,8 +85,8 @@ layout: article
 var button = document.querySelector('button');
 
 var clickHandler = function(){
-    // iframe.contentWindow refers to the iframe's window object.
-    iframe.contentWindow.postMessage('The message to send.','http://dev.opera.com');
+	// iframe.contentWindow refers to the iframe's window object.
+	iframe.contentWindow.postMessage('The message to send.','http://dev.opera.com');
 }
 
 button.addEventListener('click',clickHandler,false);</code></pre>
@@ -99,10 +98,10 @@ button.addEventListener('click',clickHandler,false);</code></pre>
 <p>We can then listen for the <code>message</code> event as shown below:
 
 <pre><code>var messageEventHandler = function(event){
-    // check that the origin is one we want.
-    if(event.origin == 'http://dev.opera.com'){
-    	alert(event.data);
-    }
+	// check that the origin is one we want.
+	if(event.origin == 'http://dev.opera.com'){
+		alert(event.data);
+	}
 }
 window.addEventListener('message', messageEventHandler,false);</code></pre>
 
@@ -119,15 +118,15 @@ window.addEventListener('message', messageEventHandler,false);</code></pre>
 button = document.querySelector('button');
 
 clickHandler = function(){
-    window.open('otherpage.html','newwin','width=500,height=500');
+	window.open('otherpage.html','newwin','width=500,height=500');
 }
 
 button.addEventListener('click',clickHandler,false);
 
 messageHandler = function(event){
-    if(event.origin == 'http://foo.example'){
-        event.source.postMessage('This is the message.','http://foo.example');
-    }
+	if(event.origin == 'http://foo.example'){
+		event.source.postMessage('This is the message.','http://foo.example');
+	}
 }
 
 window.addEventListener('message',messageHandler, false);</code></pre>
@@ -137,7 +136,7 @@ window.addEventListener('message',messageHandler, false);</code></pre>
 <p>In our opened window, we will listen for the <code>DOMContentLoaded</code> event — see below. When it is fired, it will use <code>window.postMessage()</code> to "notify" the opening document that it is ready to receive messages (<a href="webmessaging.tellopener.html">view a <code>window.postMessage()</code> notification demo</a>).</p>
 
 <pre><code>var loadHandler = function(event){
-    event.currentTarget.opener.postMessage('ready','http://foo.example');
+	event.currentTarget.opener.postMessage('ready','http://foo.example');
 }
 window.addEventListener('DOMContentLoaded', loadHandler, false);</code></pre>
 
@@ -183,23 +182,23 @@ window.addEventListener('DOMContentLoaded', loadHandler, false);</code></pre>
 <p>We will also wrap everything in a function that will be invoked when the DOM is ready.</p>
 
 <pre><code>var loadHandler = function(){
-    var mc, portMessageHandler;
+	var mc, portMessageHandler;
 
-    mc = new MessageChannel();
+	mc = new MessageChannel();
 
-    // Send a port to our parent document.
-    window.parent.postMessage('documentAHasLoaded','http://foo.example',[mc.port2]);
+	// Send a port to our parent document.
+	window.parent.postMessage('documentAHasLoaded','http://foo.example',[mc.port2]);
 
-    // Define our message event handler.
-    portMessageHandler = function(portMsgEvent){
-        alert( portMsgEvent.data );
-    }
+	// Define our message event handler.
+	portMessageHandler = function(portMsgEvent){
+		alert( portMsgEvent.data );
+	}
 
-    // Set up our port event listener.
-    mc.port1.addEventListener('message', portMessageHandler, false);
+	// Set up our port event listener.
+	mc.port1.addEventListener('message', portMessageHandler, false);
 
-    // Open the port
-    mc.port1.start();
+	// Open the port
+	mc.port1.start();
 }
 
 window.addEventListener('DOMContentLoaded', loadHandler, false);</code></pre>
@@ -207,20 +206,20 @@ window.addEventListener('DOMContentLoaded', loadHandler, false);</code></pre>
 <p>Now in our parent document, we will listen for this incoming message and associated port. When it's received, we will post a message to our second <code>iframe</code>, and forward our port with that message.</p>
 
 <pre><code>var loadHandler = function(){
-    var iframes, messageHandler;
+	var iframes, messageHandler;
 
-    iframes = window.frames;
+	iframes = window.frames;
 
-    // Define our message handler.
-    messageHandler = function(messageEvent){
-        if( messageEvent.ports.length > 0 ){
-            // transfer the port to iframe[1]
-            iframes[1].postMessage('portopen','http://foo.example',messageEvent.ports);
-        }
-    }
+	// Define our message handler.
+	messageHandler = function(messageEvent){
+		if( messageEvent.ports.length > 0 ){
+			// transfer the port to iframe[1]
+			iframes[1].postMessage('portopen','http://foo.example',messageEvent.ports);
+		}
+	}
 
-    // Listen for the message from iframe[0]
-    window.addEventListener('message',messageHandler,false);
+	// Listen for the message from iframe[0]
+	window.addEventListener('message',messageHandler,false);
 }
 
 window.addEventListener('DOMContentLoaded',loadHandler,false);</code></pre>
@@ -228,17 +227,17 @@ window.addEventListener('DOMContentLoaded',loadHandler,false);</code></pre>
 <p>Finally, in our second <code>iframe</code>, we can handle the message from our parent document, and post a message to the port. The message sent from this port will be handled by the <code>portMsgHandler</code> function in our first document.</p>
 
 <pre><code>var loadHandler(){
-    // Define our message handler function
-    var messageHandler = function(messageEvent){
+	// Define our message handler function
+	var messageHandler = function(messageEvent){
 
-        // Our form submission handler
-        var formHandler = function(){
-            var msg = 'add &lt;foo@example.com&gt; to game circle.';
-            messageEvent.ports[0].postMessage(msg);
-        }
-        document.forms[0].addEventListener('submit',formHandler,false);
-    }
-    window.addEventListener('message',messageHandler,false);
+		// Our form submission handler
+		var formHandler = function(){
+			var msg = 'add &lt;foo@example.com&gt; to game circle.';
+			messageEvent.ports[0].postMessage(msg);
+		}
+		document.forms[0].addEventListener('submit',formHandler,false);
+	}
+	window.addEventListener('message',messageHandler,false);
 }
 
 window.addEventListener('DOMContentLoaded',loadHandler,false);</code></pre>

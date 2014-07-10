@@ -10,7 +10,6 @@ tags:
 - browser
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 Today, we’re launching a new iPad product called [Coast by Opera][1]. Primarily designed for leisure surfing, the goal is invisible technology; the browser treats websites as apps, using gestures for navigation so that nothing gets in the way of an intuitive, full-screen experience.

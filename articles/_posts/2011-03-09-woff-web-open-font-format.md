@@ -4,7 +4,6 @@ authors:
 - zi-bin-cheah
 intro: 'This article introduces the new Web Open Font Format or WOFF, explaining the benefits of WOFF, showing where to download and create WOFF font packages and presenting two WOFF demos.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Table of Contents</h2>
 <ul>
@@ -67,14 +66,14 @@ Another useful tool to have is the <a href="http://people.mozilla.com/~jkew/woff
 <pre>
 <code>
 @font-face {
-  font-family: 'raleway';
-  src: url('raleway_thin-webfont.woff') format('woff');
-  font-style: normal;
+	font-family: 'raleway';
+	src: url('raleway_thin-webfont.woff') format('woff');
+	font-style: normal;
 }
 
 em {
-  font-family: raleway, serif;
-  color: #F45355;
+	font-family: raleway, serif;
+	color: #F45355;
 
 }
 </code>
@@ -84,11 +83,11 @@ em {
 
 <pre>
 <code>
-  @font-face {
+	@font-face {
 
-    font-family: 'procionott';
-    src: url('procionott-webfont.woff') format('woff');
-    font-style: normal;
+		font-family: 'procionott';
+		src: url('procionott-webfont.woff') format('woff');
+		font-style: normal;
 }
 
 #subtext #image1{

@@ -9,7 +9,6 @@ tags:
 - interoperability
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Open The Web is an initiative from Opera to encourage Web developers to use Web standards for ensuring interoperability across Web browsers (and Web clients as large). We publish <a href="http://dev.opera.com/">articles</a>. We participate in <a href="http://my.opera.com/ODIN/blog/2011/03/24/opera-developer-relations-team-april-events">conferences</a>. We contact Web sites owners that have interoperability issues. Opera users kindly report issues through <a href="https://bugs.opera.com/wizard/">Opera Bug Report Wizard</a>. We sometimes group similar issues in a work package.</p>

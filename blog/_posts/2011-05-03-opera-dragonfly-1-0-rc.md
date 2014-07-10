@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/Screen%20shot%202011-05-03%20at%2016.18.20.png" alt="" />

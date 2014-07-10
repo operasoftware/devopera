@@ -14,7 +14,6 @@ tags:
 - video
 language: fr
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 
 ## Introduction

@@ -6,7 +6,6 @@ tags:
 - opera-12
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>As work steadily continues on our next stable release, this week&#39;s <a href="http://my.opera.com/desktopteam/blog/2012/08/28/core">Opera 12.50 snapshot</a> provides a colourful mixed bag of new features and improvements. As ever, we&#39;ve cherry-picked the ones we find most interesting for developers.</p>
@@ -42,29 +41,29 @@ layout: post
 <p>As a first step towards our implementation of <a href="http://dev.w3.org/csswg/css3-conditional/">CSS 3 Conditional Rules</a>, this build introduces support for nested <code>@media</code> blocks. Instead of long and repetitive <code>@media</code> feature lists such as:</p>
 
 <pre><code>@media only screen and (orientation: portrait) and (min-width: 480px) {
-    ...
+	...
 }
 @media only screen and (orientation: portrait) and (min-width: 600px) {
-    ...
+	...
 }
 @media only screen and (orientation: portrait) and (min-width: 768px) {
-    ...
+	...
 }</code></pre>
 
 <p>it&#39;s now possible to nest media queries, allowing for much cleaner, leaner and most importantly more understandable CSS:</p>
 
 <pre><code>@media only screen {
-    @media (orientation: portrait) {
-        @media (min-width:480px) {
-            ...
-        }
-        @media (min-width: 600px) {
-            ...
-        }
-        @media (min-width: 768px) {
-            ...
-        }
-    }
+	@media (orientation: portrait) {
+		@media (min-width:480px) {
+			...
+		}
+		@media (min-width: 600px) {
+			...
+		}
+		@media (min-width: 768px) {
+			...
+		}
+	}
 }</code></pre>
 
 <h3>Support for images with ICC Profiles</h3>

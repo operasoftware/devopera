@@ -9,7 +9,6 @@ tags:
 - meego
 - labs
 license: os-asa
-layout: post
 ---
 
 Today we are launching final versions of Opera Mobile 11 for Android and Symbian/S60 as well as Mini 6 for various platforms. We are also making available builds of Opera Mobile 11 for Maemo, MeeGo and Windows here on Opera Labs. The MeeGo and Windows builds come with our new tablet optimized UI.

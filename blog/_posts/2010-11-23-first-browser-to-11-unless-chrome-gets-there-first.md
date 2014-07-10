@@ -10,7 +10,6 @@ tags:
 - html5
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera released the beta version of our eleventh desktop browser today. New features unveiled include visual mouse gestures and tab stacking. The latter allows you to place your tabs in stacks to save screen real estate and organise the many tabs you probably have open. So far the feedback has been outstanding. I’m sure you’re not here to learn about the browser features though, or otherwise you’d be on the Spinal Tap inspired <a href="http://www.opera.com/browser/next/">Opera 11 beta product page</a>. What features do we have for the designers and developers I hear you ask? Quite a lot as it happens.</p>

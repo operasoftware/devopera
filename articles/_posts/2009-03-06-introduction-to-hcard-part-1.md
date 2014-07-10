@@ -4,7 +4,6 @@ authors:
 - christopher-schmitt
 intro: 'In this article, Christopher Schmitt follows up his hCard introduction by showing us how add some style to hCards, to make them fit nicely into a page design.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <ul class="seriesNav">
 <li class="next"><a href="http://dev.opera.com/articles/view/introduction-to-hcard-part-two-styling/" rel="next" title="link to the previous article in the series">Next article—Introduction to hCard, Part two: Styling hCards</a></li>

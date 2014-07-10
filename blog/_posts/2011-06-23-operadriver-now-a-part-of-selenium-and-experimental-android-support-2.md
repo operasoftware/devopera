@@ -6,7 +6,6 @@ tags:
 - operadriver
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>A bit of background</h3>

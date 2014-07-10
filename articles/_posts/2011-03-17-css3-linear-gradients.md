@@ -8,7 +8,6 @@ tags:
 - gradients
 - css3
 license: cc-by-3.0
-layout: article
 ---
 
 ## Article update: 12th December 2012

@@ -7,7 +7,6 @@ tags:
 - resource-inspector
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Many changes in the Resource Inspector have landed into an Experimental build of  Opera Dragonfly. The main goal of this update is to give a more natural and focused access to the resources of your page or application.

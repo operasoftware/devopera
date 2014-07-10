@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 We’ve been busy the past week, looking at some issues that have been around for a while without response from site owners. Time to patch. Expect more the coming weeks.

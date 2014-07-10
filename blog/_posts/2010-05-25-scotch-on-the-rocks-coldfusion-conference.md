@@ -7,7 +7,6 @@ tags:
 - conference
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><h2>ColdFusion conference, May 24 2010, London</h2>

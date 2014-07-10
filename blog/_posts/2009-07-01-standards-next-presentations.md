@@ -8,7 +8,6 @@ tags:
 - standards.next
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Last Saturday, I had the pleasure to attend the first edition of <a href="http://standards-next.org/">Standards.next</a>, an informal bootcamp about tomorrow&#39;s web standards, organized by my fab colleagues <a href="http://www.brucelawson.co.uk/">Bruce</a> and <a href="http://www.iheni.com/">Henny</a>. A quick overview with lots of links to online resources:</p>

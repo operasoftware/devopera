@@ -5,7 +5,6 @@ authors:
 - mike-taylor
 intro: 'The beta release of Opera 11 debuts our support for Web Sockets. In this article we will explain the background to Web Sockets, show why it is a cool feature, and give you some simple usage examples to get you up to speed.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -61,21 +60,21 @@ connections, use &lt;script&gt; streams in &lt;iframe&gt;s, etc.</p>
 <p>If the connection is established, the <code>WebSocket</code> object receives an <code>open</code> event, at which point you can start to send and receive messages. In the context of Web Sockets, a message is simply a string of text, for example, a bit of JSON. You send a message using the <code>send()</code> method, and you handle incoming messages with an <code>onmessage</code> event listener:</p>
 
 <pre><code>ws.onopen = function(e) {
-  // the connection is now established
-  // let's send a simple message
-  this.send('{"username": "Bruce", "message": "Hello!"}');
+	// the connection is now established
+	// let's send a simple message
+	this.send('{"username": "Bruce", "message": "Hello!"}');
 }
 
 ws.onmessage = function(e) {
-  // got a message from the server
-  var msg = JSON.parse(e.data);
-  alert(msg.message);
+	// got a message from the server
+	var msg = JSON.parse(e.data);
+	alert(msg.message);
 }</code></pre>
 
 <p>If the server refuses the connection, or if the connection closes for some reason, the <code>WebSocket</code> object receives a <code>close</code> event.</p>
 
 <pre><code>ws.onclose = function(e) {
-  alert('WebSocket closed :-(');
+	alert('WebSocket closed :-(');
 }</code></pre>
 
 <p>You can close the connection with the <code>close()</code> method:</p>
@@ -87,17 +86,17 @@ ws.onmessage = function(e) {
 <p>Feature detection of Web Sockets is simple — just do the following:</p>
 
 <pre><code>if ('WebSocket' in window) {
-  // Web Sockets supported
+	// Web Sockets supported
 } else {
-  // Web Sockets not supported
+	// Web Sockets not supported
 }</code></pre>
 
 <p>Or if you're already using <a href="http://www.modernizr.com/">Modernizr</a> in your application, detection is just as simple:</p>
 
 <pre><code>if (Modernizr.websockets) {
-  // Web Sockets supported
+	// Web Sockets supported
 } else {
-  // Web Sockets not supported
+	// Web Sockets not supported
 }</code></pre>
 
 <h2>What about non-supporting browsers?</h2>

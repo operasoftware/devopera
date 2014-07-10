@@ -9,7 +9,6 @@ tags:
 - news
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Audio and video has been a part of the Web since the early days.  Just like the browser wars, with the <q>made for IE</q> or <q>made for Netscape</q> badges, it wasn’t uncommon to see badges asking you to download Real player or Window Media Player.  Real were early leaders but lost that lead, with the BBC seemingly one of the last bastions of Real media content.  The format war wasn’t won however, and it wasn’t until YouTube and its Flash movie  player hit the big time that video consumption and publishing really exploded on the Web.</p>

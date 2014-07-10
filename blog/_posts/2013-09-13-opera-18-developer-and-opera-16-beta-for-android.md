@@ -10,7 +10,6 @@ tags:
 - off-road
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 On Wednesday, we’ve [announced][1] our first Opera 18 build in the Developer Stream — it comes with a lot of [bug fixes][2], and showcases some of the features we’re working on: themes support, quick access bar, improved tab handling (you can now drag tabs between browser windows), and under the hood you’ll find Chromium 31. If you have Opera Developer installed, the update will be applied automatically: check opera:about if you want to double check.

@@ -10,7 +10,6 @@ tags:
 - plugins
 - security
 license: cc-by-3.0
-layout: article
 ---
 
 **Update, November 22nd 2012**: Please note that Opera 12.00 final shipped with 64-bit and OOPP support, and that as of version 12.02, OOPP is disabled for Windows 32-bit.

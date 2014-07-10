@@ -9,7 +9,6 @@ tags:
 - opera-9
 - labs
 license: os-asa
-layout: post
 ---
 
 It’s time to make video a first-class citizen of the web. We, the users, have video cameras in our pockets and the bandwidth to tranfer more clips and streams than we can watch. What’s missing is a an easy way to integrate video into web pages, and native support for video in browsers. We, the web community, should address this by adding a [video element][1] to HTML.

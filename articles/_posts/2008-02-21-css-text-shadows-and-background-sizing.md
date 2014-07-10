@@ -7,7 +7,6 @@ tags:
 - css
 - css3
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 ## Introduction

@@ -7,7 +7,6 @@ tags:
 - beta
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We released a candidate for the beta release of Opera Dragonfly 1.1 on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental branch</a> today. If all goes well this will move over to the cutting-edge branch in the near future.</p>

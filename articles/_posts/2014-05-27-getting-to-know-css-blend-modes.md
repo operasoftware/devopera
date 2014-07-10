@@ -9,7 +9,6 @@ tags:
 - masking
 cover: jpg
 license: cc-by-3.0
-layout: article
 ---
 
 CSS Blend Modes provide a way to specify how one layer will interact or “blend” with the one underneath. Until now, this was the domain of photo editing applications, but now they are available on the web using CSS itself!

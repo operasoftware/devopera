@@ -8,7 +8,6 @@ The W3C has been working on a new technology called ARIA - Accessible Rich Inter
 
 When I was reading up on ARIA, I found that I couldn’t see the big picture because the specifications focus on the detail. So we asked Gez Lemon of The Paciello Group, Juicy Studio and the Web Standards Project’s Accessibility Task Force to write us an overview that would help developers understand what ARIA is, why it’s important, and how they can use it right now to help users with disabilities.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <p>This article is for those who are new to ARIA. You need an understanding of HTML and the potential difficulties that people with disabilities can face using the Web. It is useful to be familiar with some Rich Internet Applications from a user's perspective</p>
 <p>After reading this article, you'll understand what ARIA is for, how to integrate it into your sites, and how you can use it now to make even the simplest of sites more accessible.</p>

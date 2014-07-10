@@ -11,7 +11,6 @@ tags:
 - media-queries
 intro: 'About five weeks ago, we announced that Opera’s products would transition to using WebKit. We said “Opera will contribute to the WebKit and Chromium projects. Our work on web standards to advance the web continues.”'
 license: cc-by-3.0
-layout: post
 ---
 
 About five weeks ago, we [announced][1] that Opera’s products would transition to using WebKit. We said "Opera will contribute to the WebKit and Chromium projects. Our work on web standards to advance the web continues."

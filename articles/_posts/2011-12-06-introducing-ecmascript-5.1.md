@@ -12,7 +12,6 @@ tags:
 - object-additions
 - strict-mode
 license: cc-by-3.0
-layout: article
 ---
 
 ## Table of contents:

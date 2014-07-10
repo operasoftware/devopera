@@ -6,7 +6,6 @@ tags:
 - developer-tools
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We have made some refinements to the first preview of Opera Dragonfly 1.1, which we released on the experimental branch today. These include polishing the new search feature, and further updates to the Error Log.</p>

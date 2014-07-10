@@ -26,16 +26,19 @@ defaults:
       type: 'post'
     values:
       category: 'articles'
+      layout: 'entry'
       language: 'en'
   - scope:
       path: 'blog'
       type: 'post'
     values:
       category: 'blog'
+      layout: 'entry'
       language: 'en'
   - scope:
       path: 'tv'
       type: 'post'
     values:
       category: 'tv'
+      layout: 'entry'
       language: 'en'

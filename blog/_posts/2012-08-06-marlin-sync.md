@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Marlin got a major [Core version bump][1] last week, up to Presto/2.12.363. This obsoletes a number of patches. (we’re only releasing a 12.50 file today)

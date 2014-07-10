@@ -10,7 +10,6 @@ tags:
 - opera-mobile
 - emulator
 license: cc-by-3.0
-layout: article
 ---
 
 <figure class="figure" id="figure-1">

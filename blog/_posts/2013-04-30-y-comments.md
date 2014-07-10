@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 Only 12.1x this time as the Yahoo! patch doesn’t apply to earlier versions.

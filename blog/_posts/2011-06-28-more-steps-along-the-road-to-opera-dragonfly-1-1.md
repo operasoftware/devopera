@@ -6,7 +6,6 @@ tags:
 - developer-tools
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>On the day that <a href="http://my.opera.com/chooseopera/blog/2011/06/28/new-opera-version-available-updated-design-speed-dial-extensions-and-a-lot-mor">Opera 11.50</a> was released, we have released another build of Opera Dragonfly 1.1 to the experimental branch. This continues the work with a lot of <a href="https://dragonfly.opera.com/app/stp-1/experimental/logs/4601.b3a9baf012fa.log">bug fixes</a> and a few new features.</p>

@@ -4,7 +4,6 @@ authors:
 - chris-mills
 intro: 'CSS viewport units allow us to size lengths on web pages relative to the viewport size, which has some interesting applications for responsive design. In this article we’ll explore the fundamentals of this topic.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -26,19 +25,19 @@ layout: article
 <p>I have created a <a href="vw-units.html">simple viewport demo</a> that includes a main heading, a dummy navigation menu, and a simple article of content split into columns using column-width from the <a href="http://www.w3.org/TR/css3-multicol/">CSS Multi-column Layout Module</a> (Figure 1).</p>
 
 <pre><code>article {
-  -webkit-column-width: 40rem;
-  -moz-column-width: 40rem;
-  column-width: 40rem;
+	-webkit-column-width: 40rem;
+	-moz-column-width: 40rem;
+	column-width: 40rem;
 }
 
 article p {
-    -webkit-break-inside: avoid-column;
-    -moz-break-inside: avoid-column;
-    break-inside: avoid-column;
+		-webkit-break-inside: avoid-column;
+		-moz-break-inside: avoid-column;
+		break-inside: avoid-column;
 }
 
 article p:first-child {
-  margin-top: 0;
+	margin-top: 0;
 }</code></pre>
 
 <p>If you load this up in a supporting browser and try adjusting the viewport width, you'll see that the main heading and navigation menu's text sizes adjust accordingly to keep them fitting inside the design (Figure 2)! This is very cool, and works because they are sized relative to the viewport width — when it changes, they change.</p>
@@ -52,11 +51,11 @@ article p:first-child {
 <p>The code used for this is as follows:</p>
 
 <pre><code>h1 {
-  font-size: 6vw;
+	font-size: 6vw;
 }
 
 nav li a {
-  font-size: 1.5vw;
+	font-size: 1.5vw;
 }</code></pre>
 
 <p>This allows you to natively implement responsive headings in a similar fashion to Paravel's excellent jQuery plugin <a href="http://fittextjs.com/">fittext.js</a> (although with less flexibility; fittext automatically expands headings so they will fill up their containers, so they will still work if the amount of text in the headings changes). But think about it — I have kept things simple here, but you could size all your UI features with these units, resulting in the ultimate liquid layout that always stays relative to the viewport size.</p>
@@ -64,9 +63,9 @@ nav li a {
 <p>According to <a href="http://caniuse.com/viewport-units">caniuse.com</a>, at the time of writing support for viewport units in today’s browsers ran at about 55%. So you should think carefully when using them in your production projects. You could use fittext.js, consider using a Polyfill (<a href="https://github.com/saabi/vminpoly">vminpoly</a> works ok, but is in need of improvements) or use a fallback like so (bearing in mind that old IE doesn’t support rem units either):</p>
 
 <pre><code>h1 {
-  font-size: 100px;
-  font-size: 10rem;
-  font-size: 6vw;
+	font-size: 100px;
+	font-size: 10rem;
+	font-size: 6vw;
 }</code></pre>
 
 <p class="note">You should be careful about overusing vw units: I especially wouldn't recommend it for body copy, as you could too easily end up with text that is too small to read easily on some devices.</p>

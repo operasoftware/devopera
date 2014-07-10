@@ -8,7 +8,6 @@ tags:
 - presto
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p><a href="http://www.opera.com/browser/">Opera 10.50</a> has been released as a final version, which brings with it a new rendering engine — Opera Presto 2.5 — and a new version of <a href="http://dragonfly.opera.com/">Opera Dragonfly</a>, featuring some important new features and fixes. In this post I will take you through these Dragonfly updates.</p>

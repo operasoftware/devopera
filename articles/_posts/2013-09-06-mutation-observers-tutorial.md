@@ -9,7 +9,6 @@ tags:
 - dom
 cover: jpg
 license: cc-by-3.0
-layout: article
 ---
 
 As you develop more complex JavaScript-heavy applications or roll-your-own framework, you may find that you need to know when the DOM node tree has changed. You may want to know when a view has been loaded or unloaded. Or perhaps you are profiling an application, and want to measure how many nodes are affected by a DOM operation.

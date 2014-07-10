@@ -6,7 +6,6 @@ tags:
 - scripts-panel
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We have updated the drop-down select in the <em>Scripts</em> panel in our latest cutting-edge and experimental builds. It now has a filter, to make it easier to find a script file, and an improved keyboard interaction.</p>

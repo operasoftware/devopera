@@ -8,7 +8,6 @@ tags:
 - seo
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>On Friday 12 September, <a href="http://www.vasilis.nl">Vasilis van Gemert</a> and I delivered a few slides as part of a panel presentation at the <a href="http://fronteers.nl/congres/2008/english">Fronteers conference</a> in Amsterdam.</p>

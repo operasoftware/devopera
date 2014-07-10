@@ -9,7 +9,6 @@ tags:
 - html5
 - wai-aria
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 
 ## Introduction

@@ -5,7 +5,6 @@ authors:
 tags:
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today&#39;s release on the stable branch of Opera Dragonfly includes many of the recent enhancements and fixes from our experimental builds.</p>

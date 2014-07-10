@@ -6,7 +6,6 @@ tags:
 - experimental
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Progress towards Opera Dragonfly 1.0 marches on, and we have a new build on the <a href="http://my.opera.com/dragonfly/blog/getting-opera-dragonfly-ready-for-opera-11/#enable">experimental path</a> for you to try. This build comes with a number of changes:</p>
@@ -26,10 +25,10 @@ layout: post
 <h4>Styling improvements</h4>
 
 <ul>
-  <li>Floating window styling</li>
-  <li>Updated context menus to a more toned down white theme</li>
-  <li>Improved readability of the keyboard bindings preference panel</li>
-  <li>Added press state to the Command Line button</li>
+	<li>Floating window styling</li>
+	<li>Updated context menus to a more toned down white theme</li>
+	<li>Improved readability of the keyboard bindings preference panel</li>
+	<li>Added press state to the Command Line button</li>
 </ul>
 
 <h4>Filters</h4>
@@ -51,10 +50,10 @@ layout: post
 There is an entirely new Cookie Inspector which is available for Opera 11 and above. This has a number of improvements over the old service, including:
 
 <ul>
-  <li>Expanded information about cookies, including fields for domain, path, secure and http-only</li>
-  <li>The cookie list can be sorted and grouped</li>
-  <li>Deleting cookies works more consistently</li>
-  <li>Fuzzy dates for cookie expiry date</li>
+	<li>Expanded information about cookies, including fields for domain, path, secure and http-only</li>
+	<li>The cookie list can be sorted and grouped</li>
+	<li>Deleting cookies works more consistently</li>
+	<li>Fuzzy dates for cookie expiry date</li>
 </ul>
 
 <h3>JavaScript Debugger</h3>
@@ -70,8 +69,8 @@ There is an entirely new Cookie Inspector which is available for Opera 11 and ab
 <p>Work continues on the new version of the network inspector. This is still largely unstyled. New features include:</p>
 
 <ul>
-  <li>Added support for showing network details and content bodies</li>
-  <li>Added network option to switch on/off content tracking</li>
+	<li>Added support for showing network details and content bodies</li>
+	<li>Added network option to switch on/off content tracking</li>
 </ul>
 
 <h3>Resource Inspector</h3>
@@ -81,11 +80,11 @@ There is an entirely new Cookie Inspector which is available for Opera 11 and ab
 <p>A number of updates have been made to the brand new Resource Inspector. These include:</p>
 
 <ul>
-  <li>Added missing icon</li>
-  <li>Updated styling for resource list and resource meta data</li>
-  <li>Ability to group by host or resource type</li>
-  <li>Ability to enable and disable columns in the resource list</li>
-  <li>Syntax highlighting for JavaScript source</li>
+	<li>Added missing icon</li>
+	<li>Updated styling for resource list and resource meta data</li>
+	<li>Ability to group by host or resource type</li>
+	<li>Ability to enable and disable columns in the resource list</li>
+	<li>Syntax highlighting for JavaScript source</li>
 </ul>
 
 
@@ -94,12 +93,12 @@ There is an entirely new Cookie Inspector which is available for Opera 11 and ab
 <p>Some known issues and missing features from this build include:</p>
 
 <ul>
-    <li><del>Event breakpoints are missing from the Scripts view</del> (now fixed)</li>
-    <li>Network view is mostly unstyled</li>
-    <li>Scroll bars and timeline rendering is a bit broken in the Network view</li>
-    <li>Only JavaScript files have a customised view in the Resource Inspector at present</li>
-    <li>Syntax highlighting in the resource view only works for JavaScript files</li>
-    <li>Editing is disabled in the cookie manager</li>
-    <li>Both the new and old cookie managers are show</li>
-    <li>The colour picker is missing the colour slider image</li>
+		<li><del>Event breakpoints are missing from the Scripts view</del> (now fixed)</li>
+		<li>Network view is mostly unstyled</li>
+		<li>Scroll bars and timeline rendering is a bit broken in the Network view</li>
+		<li>Only JavaScript files have a customised view in the Resource Inspector at present</li>
+		<li>Syntax highlighting in the resource view only works for JavaScript files</li>
+		<li>Editing is disabled in the cookie manager</li>
+		<li>Both the new and old cookie managers are show</li>
+		<li>The colour picker is missing the colour slider image</li>
 </ul>

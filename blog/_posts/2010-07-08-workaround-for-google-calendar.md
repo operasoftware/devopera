@@ -6,7 +6,6 @@ tags:
 - sitepatching
 - browser.js
 license: cc-by-3.0
-layout: post
 ---
 Ola is on vacation so it&#39;s my turn to keep you updated and fully sitepatched. Fun to blog here again, and I have some high-profile problems fixed this week. :D
 

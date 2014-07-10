@@ -4,7 +4,6 @@ authors:
 - molly-holzschlag
 intro: 'This guide explains how the RGB (Red, Green, Blue) and HSL (Hue, Saturation, Lightness) color models work, and how web designers can make clever use of them in CSS to improve their designs, and make more logical color scheme choices. It also looks at the alpha channel, and how that can also be beneficial.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 <p>This article explains how the HSL (Hue, Saturation, Lightness) and RGB (Red, Green, Blue) color models work (and the alpha transparency options in both color models), as supported in the new <a href="http://www.opera.com/browser">Opera 10 browser</a>. It also shows how designers and developers can tap into these color models to create more intelligent color schemes. We will first look at RGB, and how it can be considered somewhat counter-intuitive; then we will explore use of HSL colors for web color schemes, and how shifting the component values gives more logical results, once you get used to how they work.</p>

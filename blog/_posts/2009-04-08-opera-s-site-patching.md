@@ -7,7 +7,6 @@ tags:
 - browser.js
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p><em>You know the complexity of web technology is getting out of hand when every website needs some special treatment</em>. Imagine driving a car if you had to change the engine slightly or replace wheels every time you turned a corner and entered a new street? Browser development is a lot like that these days.</p>

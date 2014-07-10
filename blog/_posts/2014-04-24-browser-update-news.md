@@ -9,7 +9,6 @@ tags:
 - coast
 - browser
 license: cc-by-3.0
-layout: post
 ---
 
 What better way to celebrate the new redesigned Dev.Opera than with a round-up of new Opera browser releases?

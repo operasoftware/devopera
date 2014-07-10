@@ -7,7 +7,6 @@ tags:
 - wai-aria
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Accessibility genius Gez Lemon recently published <strong>An Introduction to WAI ARIA</strong> on <a href="http://dev.opera.com/">Dev.Opera</a>. Designed to work together with <a href="http://www.alistapart.com/articles/previewofhtml5">HTML 5</a> the <a href="http://www.w3.org/WAI/intro/aria">Accessible Rich Internet Application Suite</a>, published by the Web Accessibility Initiative, aims to make Ajax accessible to disabled people using screen-readers and is key to safeguarding accessibility in today&#39;s increasingly dynamic web.</p>

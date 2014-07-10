@@ -8,7 +8,6 @@ tags:
 - canvas
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p>My name is Tim Johansson, I am a core technology developer at Opera.

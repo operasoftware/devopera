@@ -12,7 +12,6 @@ tags:
 - theora
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 Today the desktop team released a [new years pre-alpha of Opera 10.50](http://my.opera.com/desktopteam/blog/happy-new-year) which includes the first public preview of our new HTML5 `<video>` implementation. It was Opera that first [proposed](http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2007-February/009702.html) `<video>` and made the first [proof-of-concept build](http://people.opera.com/howcome/2007/video/) way back in 2007. In this post I will talk about what we've done since then, the decisions we've made and where we hope to go next.

@@ -8,7 +8,6 @@ tags:
 - accessibility
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>On Monday, 14 September, I had the pleasure of speaking at the Glasgow leg of the <a href="http://events.carsonified.com/fowd/2009/tour/">Future of Web Design Tour 2009</a> on the topic of <cite>Keyboard accessibility - basic steps towards a more usable and accessible site</cite>.</p>

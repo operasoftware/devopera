@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 **Edit:** as Darko Pantić points out below, there was a bug in this patch. Thus a new file has been released with a fix for this.

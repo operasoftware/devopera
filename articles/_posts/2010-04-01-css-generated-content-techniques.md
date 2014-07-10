@@ -4,7 +4,6 @@ authors:
 - divya-manian
 intro: 'With generated content, developers can easily add decorative text and images to their pages directly via CSS. In this article we look at the basics of CSS generated content and give a few interesting examples of where it can be used.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -26,7 +25,7 @@ layout: article
 <p><code>content</code> is used like this:</p>
 
 <pre><code>h2:before {
-   content: "some text";
+	content: "some text";
 }</code></pre>
 
 <p>This will insert "some text" just <em>before</em> the start of every <code>h2</code> element on the page.</p>
@@ -34,7 +33,7 @@ layout: article
 <p>Instead of typing in the text value for the content property, you can also use values of attributes using <code>attr()</code>, like this:</p>
 
 <pre><code>a:after {
-   content: attr(href)
+	content: attr(href)
 }</code></pre>
 
 <p>This will insert the contents of each <code>a</code> element's <code>href</code> after the end of the elements.</p>
@@ -47,13 +46,13 @@ layout: article
 <p>If you want to insert an incremental value such as <q>Question 1</q>, <q>Question 2</q>, <q>Question 3</q> on a repeated sequence of elements, you can use counters to increment the counter value and then display the count appropriately using <code>content</code>:</p>
 
 <pre>ol {
-   list-style-type:none;
-   counter-reset: sectioncounter;
+	list-style-type:none;
+	counter-reset: sectioncounter;
 }
 
 li:before {
-   content: "Chapter" counter(sectioncounter);
-   counter-increment: sectioncounter;
+	content: "Chapter" counter(sectioncounter);
+	counter-increment: sectioncounter;
 }</pre>
 
 <p>In the first rule, the counter is reset to 1 using the <code>counter-reset</code> property. In the second rule each <code>li</code> element has a string printed out before it of <code>Chapter <var>X</var></code>, where <var>X</var> is the current value of the <code>sectioncounter</code> counter. The last property in the second rule — <code>counter-increment</code> — increases the value of the <code>sectioncounter</code> counter by 1 before moving on to the next <code>li</code> element in the list.</p>
@@ -98,7 +97,7 @@ q:after  { content: close-quote }</code></pre>
 <p>There are <a href="http://www.mezzoblue.com/tests/revised-image-replacement/">several image replacement techniques</a> that you could use, each with their own merits and flaws. Here is another way to replace text with images, using <code>content</code>.</p>
 
 <pre>div.logo {
-   content:url(logo.png);
+	content:url(logo.png);
 }</pre>
 
 <p>The advantage of using this technique for image replacement is that it truly <em>replaces</em> the text. You therefore do not have to resort to using <code>height</code> and <code>width</code> to create space for the image, and <code>text-indent</code> or <code>padding</code> to hide the original text.</p>
@@ -117,11 +116,11 @@ q:after  { content: close-quote }</code></pre>
 <p>You can use attribute selectors with the content property to render icons after a link based on what file format it is or if it is an external one.</p>
 
 <pre><code>a[href $='.pdf']:after {
-   content:url(icon-pdf.png);
+	content:url(icon-pdf.png);
 }
 
 a[rel="external"]:after {  /* You can also use a[href ^="http"]:after */
-   content:url(icon-external.png);
+	content:url(icon-external.png);
 }</code></pre>
 
 <p>the first rule uses a CSS3 selector with substring matching — <code>href $='.pdf'</code> means <q><code>href</code> attributes with <code>.pdf</code> at <strong>the end</strong> of the value.</q></p>
@@ -138,13 +137,13 @@ a[rel="external"]:after {  /* You can also use a[href ^="http"]:after */
 <p>As mentioned in the article <a href="http://www.alistapart.com/articles/goingtoprint/"><cite>Going to Print</cite></a> on <cite>A List Apart</cite>, you can use generated content to spice up your pages once they're printed out. For instance, the following in your print CSS to print the URL of a link just after it:</p>
 
 <pre><code>a:after {
-   content: "(" attr(href) ")";
+	content: "(" attr(href) ")";
 }</code></pre>
 
 <p>You can use the same method to print the expansion of your <code>abbr</code> elements. Simply add the following to your print stylesheet:</p>
 
 <pre>abbr:after {
-   content: "(" attr(title) ")";
+	content: "(" attr(title) ")";
 }</pre>
 
 <p>View my <a href="cssgendemo.html#printcss">demo of printing URLs and abbreviation expansions</a> to learn more.</p>

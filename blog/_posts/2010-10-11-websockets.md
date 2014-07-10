@@ -7,7 +7,6 @@ tags:
 - testsuite
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <h3>Introduction</h3>

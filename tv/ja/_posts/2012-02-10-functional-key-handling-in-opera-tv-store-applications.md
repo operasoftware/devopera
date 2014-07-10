@@ -7,7 +7,6 @@ tags:
 - opera-tv-store
 - tv
 license: cc-by-3.0
-layout: article
 ---
 
 Opera TV Store は、リモートコントロールにある基本的な 4 方向キーを空間ナビゲーションに使用するようにデザインされています。アプリケーションが Opera TV Store ブラウザに組み込まれたデフォルトの空間ナビゲーションを使用して問題なく機能するかどうかをテストしてください。

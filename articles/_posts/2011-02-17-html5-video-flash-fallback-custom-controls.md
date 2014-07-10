@@ -5,7 +5,6 @@ authors:
 - vadim-makeev
 intro: 'Want to put video onto your web page? HTML5 enables us to do this as easily as placing images with an `<img>` element – and in this tutorial, we’ll show you how the magic is done.'
 license: cc-by-nc-sa-3.0
-layout: article
 ---
 <p class="note">Article adapted from original published in <a href="http://www.netmag.co.uk/">.net magazine</a> July 2010 issue. Thanks to Dan Oliver and team!</p>
 
@@ -21,7 +20,7 @@ this tutorial, we’ll show you how the magic is done.</p>
 
 <pre><code>&lt;video src="video.webm" controls poster="video.jpg" width="854"
 height="480"&gt;
-  &lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;
+	&lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;
 Download it&lt;/a&gt; instead.&lt;/p&gt;
 &lt;/video&gt;</code></pre>
 
@@ -40,9 +39,9 @@ WebM (which Opera, Firefox and Chrome supports) and one in H.264 format (support
 video element, we drop the <code>src</code> attribute and instead include all the alternative formats with <code>&lt;source&gt;</code> elements:</p>
 
 <pre><code>&lt;video controls poster="video.jpg" width="854" height="480"&gt;
-  &lt;source src="video.mp4" type="video/mp4"&gt;
-  &lt;source src="video.webm" type="video/webm"&gt;
-    ...
+	&lt;source src="video.mp4" type="video/mp4"&gt;
+	&lt;source src="video.webm" type="video/webm"&gt;
+		...
 &lt;/video&gt;</code></pre>
 
 <p class="note">Note: It is advisable to put the MP4 source first, because of an iPad bug that stops it finding the source, if this is not the case.</p>
@@ -69,30 +68,30 @@ we’ve placed the player and the videos in the same directory.</p>
 
 <pre><code>&lt;object type="application/x-shockwave-flash" data="m/player.swf"
 width="854" height="504"&gt;
-  &lt;param name="allowfullscreen" value="true"&gt;
-  &lt;param name="allowscriptaccess" value="always"&gt;
-  &lt;param name="flashvars" value="file=video.mp4"&gt;
-  &lt;!--[if IE]&gt;&lt;param name="movie" value="player.swf"&gt;&lt;![endif]--&gt;
-  &lt;img src="video.jpg" width="854" height="480" alt="Video"&gt;
-  &lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;Download
-  it&lt;/a&gt; instead.&lt;/p&gt;
+	&lt;param name="allowfullscreen" value="true"&gt;
+	&lt;param name="allowscriptaccess" value="always"&gt;
+	&lt;param name="flashvars" value="file=video.mp4"&gt;
+	&lt;!--[if IE]&gt;&lt;param name="movie" value="player.swf"&gt;&lt;![endif]--&gt;
+	&lt;img src="video.jpg" width="854" height="480" alt="Video"&gt;
+	&lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;Download
+	it&lt;/a&gt; instead.&lt;/p&gt;
 &lt;/object&gt;</code></pre>
 
 <p>So, if we combine all of this together, our final code looks like this:</p>
 
 <pre><code>&lt;video controls poster="video.jpg" width="854" height="480"&gt;
-  &lt;source src="video.mp4" type="video/mp4"&gt;
-  &lt;source src="video.webm" type="video/webm"&gt;
-  &lt;object type="application/x-shockwave-flash" data="player.swf"
+	&lt;source src="video.mp4" type="video/mp4"&gt;
+	&lt;source src="video.webm" type="video/webm"&gt;
+	&lt;object type="application/x-shockwave-flash" data="player.swf"
 width="854" height="504"&gt;
-    &lt;param name="allowfullscreen" value="true"&gt;
-    &lt;param name="allowscriptaccess" value="always"&gt;
-    &lt;param name="flashvars" value="file=video.mp4"&gt;
-    &lt;!--[if IE]&gt;&lt;param name="movie" value="player.swf"&gt;&lt;![endif]--&gt;
-    &lt;img src="video.jpg" width="854" height="480" alt="Video"&gt;
-    &lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;
+		&lt;param name="allowfullscreen" value="true"&gt;
+		&lt;param name="allowscriptaccess" value="always"&gt;
+		&lt;param name="flashvars" value="file=video.mp4"&gt;
+		&lt;!--[if IE]&gt;&lt;param name="movie" value="player.swf"&gt;&lt;![endif]--&gt;
+		&lt;img src="video.jpg" width="854" height="480" alt="Video"&gt;
+		&lt;p&gt;Your browser can’t play HTML5 video. &lt;a href="video.webm"&gt;
 Download it&lt;/a&gt; instead.&lt;/p&gt;
-  &lt;/object&gt;
+	&lt;/object&gt;
 &lt;/video&gt;</code></pre>
 
 <p><img src="html5-video-basic.jpg" alt="video player with WebM and H 264 formats available, and Flash fallback" /></p>
@@ -135,46 +134,46 @@ native controls remain available for users without scripting capabilities.</p>
 
 <pre><code>&lt;script&gt;
 function init() {
-  // 1. Check for video support
-  if( !document.createElement('video').canPlayType ) return;
-  // 2. Get all video containers on the page
-  var videos = document.querySelectorAll( 'div.video' ),
-  videosLength = videos.length;
-  // 3. Get every single video instance
-  for( var i=0; i &lt; videosLength; i++ ) {
-    var root = videos[i];
-    // 4. Get and create all needed elements
-    video = root.querySelector( 'video' ),
-    play = document.createElement( 'button' ),
-    mute = document.createElement( 'button' );
-    // 5. Turn off native video controls
-    video.controls = false;
-    // 6. Customise Play button behaviour
-    play.innerHTML = play.title = 'Play';
-    play.onclick = function() {
-      if( video.paused ) {
-        video.play();
-        play.innerHTML = play.title = 'Pause';
-      } else {
-        video.pause();
-        play.innerHTML = play.title = 'Play';
-      }
-    }
-    // 7. Customise Mute button behaviour
-    mute.innerHTML = mute.title = 'Mute';
-    mute.onclick = function() {
-      if( video.muted ) {
-        video.muted = false;
-        mute.innerHTML = mute.title = 'Mute';
-      } else {
-        video.muted = true;
-        mute.innerHTML = mute.title = 'Unmute';
-      }
-    }
-    // 8. Add custom controls to the video container
-    root.appendChild( play );
-    root.appendChild( mute );
-  }
+	// 1. Check for video support
+	if( !document.createElement('video').canPlayType ) return;
+	// 2. Get all video containers on the page
+	var videos = document.querySelectorAll( 'div.video' ),
+	videosLength = videos.length;
+	// 3. Get every single video instance
+	for( var i=0; i &lt; videosLength; i++ ) {
+		var root = videos[i];
+		// 4. Get and create all needed elements
+		video = root.querySelector( 'video' ),
+		play = document.createElement( 'button' ),
+		mute = document.createElement( 'button' );
+		// 5. Turn off native video controls
+		video.controls = false;
+		// 6. Customise Play button behaviour
+		play.innerHTML = play.title = 'Play';
+		play.onclick = function() {
+			if( video.paused ) {
+				video.play();
+				play.innerHTML = play.title = 'Pause';
+			} else {
+				video.pause();
+				play.innerHTML = play.title = 'Play';
+			}
+		}
+		// 7. Customise Mute button behaviour
+		mute.innerHTML = mute.title = 'Mute';
+		mute.onclick = function() {
+			if( video.muted ) {
+				video.muted = false;
+				mute.innerHTML = mute.title = 'Mute';
+			} else {
+				video.muted = true;
+				mute.innerHTML = mute.title = 'Unmute';
+			}
+		}
+		// 8. Add custom controls to the video container
+		root.appendChild( play );
+		root.appendChild( mute );
+	}
 }
 
 // 9. Initialise function on page load
@@ -195,33 +194,33 @@ necessary classes to our buttons via JavaScript:</p>
 
 <pre><code>play.className = 'video-button video-play';
 play.onclick = function() {
-  if( video.paused ) {
-      …
-    // Additional class names for container and button while playing
-    root.className += ' video-on';
-    play.className += ' video-play-on';
-  } else {
-      …
-    // Remove additional class names for container and button in paused state
-    root.className = root.className.replace( ' video-on', '' );
-    play.className = play.className.replace( ' video-play-on', '' );
-  }
+	if( video.paused ) {
+			…
+		// Additional class names for container and button while playing
+		root.className += ' video-on';
+		play.className += ' video-play-on';
+	} else {
+			…
+		// Remove additional class names for container and button in paused state
+		root.className = root.className.replace( ' video-on', '' );
+		play.className = play.className.replace( ' video-play-on', '' );
+	}
 }</code></pre>
 
 <p>Our buttons will be square but, with some tricky rounded corners (using the
 much-loved <code>border-radius</code> property, set to exactly half of the width/height of the square), we’ll style them to look like circles:</p>
 
 <pre><code>.video-play {
-  border-radius:25px;
+	border-radius:25px;
 }</code></pre>
 
 <p>Let’s add more dimensions with the box-shadow property, specifying all
 necessary values separated by commas, with the help of the inset keyword:</p>
 
 <pre><code>.video-play {
-  box-shadow:0 0 50px #FFF,
-  inset 5px 5px 20px #444,
-  inset 0 -20px 40px #000;
+	box-shadow:0 0 50px #FFF,
+	inset 5px 5px 20px #444,
+	inset 0 -20px 40px #000;
 }</code></pre>
 
 <p>Now, let’s place a small icon under every button to show its current state:
@@ -229,9 +228,9 @@ Play/Pause and Mute/Unmute. We’ll add it via CSS-generated content placed
 after each button with the <code>::after</code> pseudo-element (the double colon is newer syntax; we’ll use a single colon for backwards compatibility):</p>
 
 <pre><code>.video-button:after {
-  position:absolute;
-  background:url(buttons.png) no-repeat;
-  content:'';
+	position:absolute;
+	background:url(buttons.png) no-repeat;
+	content:'';
 }</code></pre>
 
 <p>To reduce HTTP requests across the network, we’re using CSS sprites: all icons
@@ -253,16 +252,16 @@ completely opaque while playing. The background colour of the container is
 the colour our semi-transparent video will be dissolved in.</p>
 
 <pre><code>.video video {
-  opacity:.4;
+	opacity:.4;
 }
 
 .video:hover video {
-  opacity:.6;
+	opacity:.6;
 }
 
 .video-on video,
 .video-on:hover video {
-  opacity:1;
+	opacity:1;
 }</code></pre>
 
 <p>Our experiment wouldn’t be complete without some fancy animations. Let’s
@@ -273,7 +272,7 @@ start with the buttons: using the <code>transform:scale(…)</code> property we 
 button size on hover by an extra 10%. First, we define a button’s default scale:</p>
 
 <pre><code>.video-button {
-  transform:scale(1.0);
+	transform:scale(1.0);
 }</code></pre>
 
 <p>For full compatibility we should repeat this property four times with vendor
@@ -283,14 +282,14 @@ browsers that will support this property. Next, we define the animation itself. 
 smoothly animate changes on any of the button properties for 0.2 seconds with linear acceleration.</p>
 
 <pre><code>.video-button {
-  transition:all .2s linear;
+	transition:all .2s linear;
 }</code></pre>
 
 <p>Lastly, we define the property that needs to change when the button is
 hovered. In our case, the size increase by 10%:</p>
 
 <pre><code>.video-button:hover {
-  transform:scale(1.1);
+	transform:scale(1.1);
 }</code></pre>
 
 <p>We use a similar approach to define all the different states of video

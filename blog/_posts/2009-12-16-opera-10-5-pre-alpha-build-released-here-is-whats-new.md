@@ -12,7 +12,6 @@ tags:
 - opera-10
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Today, we&#39;ve released a <a href="http://labs.opera.com/news/2009/12/22/" target="_blank">pre-alpha version of Opera 10.5</a> on Opera Labs. Download it and give it a spin. Let us know what you think about it too!</p>

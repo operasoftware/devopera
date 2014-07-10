@@ -14,7 +14,6 @@ tags:
 - progressive-enhancement
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 The death of the feature phone is widely reported and greatly exaggerated. “Although we see a huge market ‘hype’ around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast” analyst [Faisal Kawoosa said][1] in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.

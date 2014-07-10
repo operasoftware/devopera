@@ -8,7 +8,6 @@ tags:
 - multimedia
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Fate (and RyanAir) took me once again to the super country of Poland, where I was honoured to keynote day 2 of the inaugural <a href="http://frontrowconf.com/">Frontrow Conference</a>.</p>

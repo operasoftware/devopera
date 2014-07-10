@@ -4,7 +4,6 @@ authors:
 - chris-mills
 intro: 'We have practised feature detection to allow us to provide appropriate code to browsers with differing levels of standards support for a while now, but we’ve always needed 3rd party libraries to handle it. But not for much longer: the CSS3 Conditional Rules Module Level 3 provides the `@supports` at-rule and associated JavaScript API, providing a native mechanism for doing CSS feature detection. In this article we’ll give you the lowdown on how this rule works, looking at a real example in the process.'
 license: cc-by-3.0
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -21,8 +20,8 @@ layout: article
 <p><code>@supports</code> takes the form of an at-rule block, which performs a test and then executes normal CSS rules placed inside the block depending on whether the test returns true or not. In this case, the test is always one or more CSS declarations, and the browser returns true if it supports the indicated declaration(s). For example:</p>
 
 <pre><code>@supports (display:flex) {
-  section { display: flex }
-  ...
+	section { display: flex }
+	...
 }</code></pre>
 
 <p>The rules inside this block will be applied if the browser supports <code>display: flex</code>.</p>
@@ -30,8 +29,8 @@ layout: article
 <p><code>@supports</code> also provides a <code>not</code> keyword for applying styles when features are not supported. You could provide some specific alternative styling for browsers that don't support <code>display:flex</code> like this:</p>
 
 <pre><code>@supports not (display: flex) {
-  // provide alternative layout
-  // with floats perhaps
+	// provide alternative layout
+	// with floats perhaps
 }</code></pre>
 
 <p><code>@supports</code> also provides <code>or</code> and <code>and</code> keywords, for applying styles only if the browser passes two or more specific support tests, or if the browser passes one of a number of different support tests.</p>
@@ -39,33 +38,33 @@ layout: article
 <p>For example, Flexbox is only supported without prefixes in Opera (Mobile and Next) and IE10 preview. To test if the browser supports any of the necessary prefixed versions or the non-prefixed version, you could do this:</p>
 
 <pre><code>@supports (display: -webkit-flex) or
-          (display: -moz-flex) or
-          (display: flex) {
-  section {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: flex;
-    …
-  }
+					(display: -moz-flex) or
+					(display: flex) {
+	section {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		…
+	}
 }</code></pre>
 
 <p>For an <code>and</code> example, you might want to apply a multi-column layout and associated rules only when the unprefixed version of the <code>column-width</code> and <code>column-span</code> properties are supported, as browsers that support multi-col with prefixes currently don't support <code>column-span</code>, which limits its usefulness:</p>
 
 <pre><code>@supports (column-width: 20rem) and (column-span: all) {
-  div { column-width: 20rem }
-  div h2 { column-span: all }
-  div h2 + p { margin-top: 0; }
-  ...
+	div { column-width: 20rem }
+	div h2 { column-span: all }
+	div h2 + p { margin-top: 0; }
+	...
 }</code></pre>
 
 <p>The last thing to note about <code>@supports</code> syntax is that you are not allowed to mix <code>and</code>, <code>or</code> and <code>not</code> without using a layer of parentheses to make the precedence clear. So for example you might want to apply an animation involving a 3D transform to an element, ONLY if the browser supports both the animation and 3D transform:</p>
 
 <pre><code>@supports ((-webkit-animation-name: my-animation) and (-webkit-transform: rotate3D(1,2,4,90deg))) or
-          ((-moz-animation-name: my-animation) and (-moz-transform: rotate3D(1,2,4,90deg))) or
-          ((-ms-animation-name: my-animation) and (-ms-transform: rotate3D(1,2,4,90deg))) or
-          ((-o-animation-name: my-animation) and (-o-transform: rotate3D(1,2,4,90deg))) or
-          ((animation-name: my-animation) and (transform: rotate3D(1,2,4,90deg))) {
-  // add your funky animation here!
+					((-moz-animation-name: my-animation) and (-moz-transform: rotate3D(1,2,4,90deg))) or
+					((-ms-animation-name: my-animation) and (-ms-transform: rotate3D(1,2,4,90deg))) or
+					((-o-animation-name: my-animation) and (-o-transform: rotate3D(1,2,4,90deg))) or
+					((animation-name: my-animation) and (transform: rotate3D(1,2,4,90deg))) {
+	// add your funky animation here!
 }</code></pre>
 
 <h2>A @supports example</h2>
@@ -86,7 +85,7 @@ layout: article
 <pre><code>/* || For browsers that don't support 2D or 3D transforms */
 
 #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
-  margin-left: -350px;
+	margin-left: -350px;
 }</code></pre>
 
 <p>Older browsers will just get to here, and then ignore everything inside the <code>@supports</code> rules.</p>
@@ -96,29 +95,29 @@ layout: article
 <pre><code>/* || For browsers supporting 2D transforms */
 
 @supports (-webkit-transform: rotate(-30deg)) or
-          (-moz-transform: rotate(-30deg)) or
-          (-ms-transform: rotate(-30deg)) or
-          (-o-transform: rotate(-30deg)) or
-          (transform: rotate(-30deg)) {
+					(-moz-transform: rotate(-30deg)) or
+					(-ms-transform: rotate(-30deg)) or
+					(-o-transform: rotate(-30deg)) or
+					(transform: rotate(-30deg)) {
 
 
-  #inner-wrapper #front {
-    -webkit-transition: 0.8s all ease-in;
-    -moz-transition: 0.8s all ease-in;
-    -ms-transition: 0.8s all ease-in;
-    -o-transition: 0.8s all ease-in;
-    transition: 0.8s all ease-in;
-  }
+	#inner-wrapper #front {
+		-webkit-transition: 0.8s all ease-in;
+		-moz-transition: 0.8s all ease-in;
+		-ms-transition: 0.8s all ease-in;
+		-o-transition: 0.8s all ease-in;
+		transition: 0.8s all ease-in;
+	}
 
-  #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
-    margin-left: 0;
+	#wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
+		margin-left: 0;
 
-    -webkit-transform: rotate(-30deg) translate(-50%,-100%);
-    -moz-transform: rotate(-30deg) translate(-50%,-100%);
-    -ms-transform: rotate(-30deg) translate(-50%,-100%);
-    -o-transform: rotate(-30deg) translate(-50%,-100%);
-    transform: rotate(-30deg) translate(-50%,-100%);
-  }
+		-webkit-transform: rotate(-30deg) translate(-50%,-100%);
+		-moz-transform: rotate(-30deg) translate(-50%,-100%);
+		-ms-transform: rotate(-30deg) translate(-50%,-100%);
+		-o-transform: rotate(-30deg) translate(-50%,-100%);
+		transform: rotate(-30deg) translate(-50%,-100%);
+	}
 
 }</code></pre>
 
@@ -127,50 +126,50 @@ layout: article
 <pre><code>/* || For browsers supporting 3D transforms */
 
 @supports (-webkit-transform: rotateX(0deg)) or
-          (-moz-transform: rotateX(0deg)) or
-          (-ms-transform: rotateX(0deg)) or
-          (-o-transform: rotateX(0deg)) or
-          (transform: rotateX(0deg)) {
+					(-moz-transform: rotateX(0deg)) or
+					(-ms-transform: rotateX(0deg)) or
+					(-o-transform: rotateX(0deg)) or
+					(transform: rotateX(0deg)) {
 
-  #front, #back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+	#front, #back {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
 
-  #front {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-  }
+	#front {
+		-webkit-transform: rotateX(0deg);
+		-moz-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		-o-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	}
 
-  #back {
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    -o-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-  }
+	#back {
+		-webkit-transform: rotateX(180deg);
+		-moz-transform: rotateX(180deg);
+		-ms-transform: rotateX(180deg);
+		-o-transform: rotateX(180deg);
+		transform: rotateX(180deg);
+	}
 
-  #wrapper:hover #inner-wrapper, #wrapper:focus #inner-wrapper {
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    -o-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-  }
+	#wrapper:hover #inner-wrapper, #wrapper:focus #inner-wrapper {
+		-webkit-transform: rotateX(180deg);
+		-moz-transform: rotateX(180deg);
+		-ms-transform: rotateX(180deg);
+		-o-transform: rotateX(180deg);
+		transform: rotateX(180deg);
+	}
 
-  #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
+	#wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
 
 }</code></pre>
 
@@ -183,7 +182,7 @@ layout: article
 <pre><code>var flexy = window.supportsCSS('display:flex');
 
 if(flexy) {
-  alert('I support Flexbox!');
+	alert('I support Flexbox!');
 }</code></pre>
 
 <p class="note">In the spec, you'll see that the syntax is listed as <code>CSS.supports</code>, not <code>window.supportsCSS</code>. This is because we implemented a slightly older version of the spec, plus we were worried about the site compatibility implications of an object called <code>CSS</code> in the global namespace. What is eventually settled upon remains to be seen.</p>

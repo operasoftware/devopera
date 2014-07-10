@@ -8,7 +8,6 @@ tags:
 - android
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/device2.png" alt="Opera Mini 5.1 screenshot">

@@ -11,7 +11,6 @@ tags:
 - vega
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Hello everybody! I think I can speak for all Mac users when I say that I am really glad to see the final version of <a href="http://www.opera.com/browser">Opera 10.52 for Mac</a> released. The final version has been titled Opera 10.52, skipping a couple of point releases to make sure the final version is of the highest quality possible, and ensuring that, once again, the Mac and Win versions are aligned.</p>

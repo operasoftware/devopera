@@ -8,7 +8,6 @@ tags:
 - ics
 - opera-mobile
 license: cc-by-3.0
-layout: article
 ---
 
 ## Introduction

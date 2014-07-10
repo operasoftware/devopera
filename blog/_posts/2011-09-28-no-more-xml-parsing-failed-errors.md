@@ -11,7 +11,6 @@ tags:
 - handling
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Through our <a href="http://my.opera.com/community/openweb/info/">Open The Web effort</a>, Opera&#39;s Developer Relations team contacts websites that don&#39;t work as expected when viewed in Opera, and we suggest changes to their source code that fix the problem. </p>

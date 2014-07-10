@@ -10,7 +10,6 @@ tags:
 - standards
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Last week, 120 Londoners were locked in a room and made to listen to me talk about HTML5, specifically its origins and design principles.</p>

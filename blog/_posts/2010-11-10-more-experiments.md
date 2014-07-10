@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 As discussed in a <a href="http://my.opera.com/sitepatching/blog/2010/10/19/to-attach-or-to-detach-is-that-the-question" target="_blank">previous post</a> supporting everything and the kitchen sink isn&#39;t always for the best.

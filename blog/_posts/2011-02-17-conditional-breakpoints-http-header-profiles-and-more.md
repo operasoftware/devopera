@@ -6,7 +6,6 @@ tags:
 - conditional-breakpoints
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/conditional.png" alt="" />

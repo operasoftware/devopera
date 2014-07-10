@@ -4,7 +4,6 @@ authors:
 - patrick-lauke
 intro: 'Browsers based on the Opera Device SDK are generally designed to use the standard four-way directional keys on a remote control for spatial navigation. Websites specifically aimed at TV browsing can directly handle navigation and the use of functional keys through key events. This article outlines some possible approaches, particularly in light of the new DOM Level 3 Events model introduced in the Opera Device SDK 3.4.'
 license: cc-by-3.0
-layout: article
 ---
 
 <div class="note">
@@ -44,11 +43,11 @@ object.addEventListener("keydown", handler, useCapture);</code></pre>
 <p>Before the standardisation effort of <a href="http://www.w3.org/TR/DOM-Level-3-Events/#events-keyboard-event-order">DOM Level 3 Events</a>, key handler functions would simply compare the <code>event.keyCode</code> value to hardcoded values corresponding to specific keys. For instance, to detect if the <kbd>UP</kbd> arrow was pressed, the handler script would have been something like:</p>
 
 <pre><code>function handler(event){
-    …
-    if (event.keyCode == 38){
-        // UP (generally keyCode 38) was pressed … do something useful
-    }
-    …
+	…
+	if (event.keyCode == 38){
+		// UP (generally keyCode 38) was pressed … do something useful
+	}
+	…
 }</code></pre>
 
 <p>The potential problem with this approach has always been that the specific numerical values of <code>event.keyCode</code> were never standardised – the same functional or navigation key, on different devices, may generate different key codes. For this reason, DOM Level 3 introduces a new, more abstracted method of identifying keys in the form of the <a href="http://www.w3.org/TR/DOM-Level-3-Events/#key-values-list">DOM Level 3 Events Key values list</a> and the new <code>event.key</code> (as well as <code>event.char</code>, which is however only applicable to keys which produce a character value).</p>
@@ -56,11 +55,11 @@ object.addEventListener("keydown", handler, useCapture);</code></pre>
 <p>Starting with the Opera Device SDK 3.4, the recommended method of identifying navigation and functional keys is therefore:</p>
 
 <pre><code>function handler(event){
-    …
-    if (event.key == 'Up'){
-        // 'Up' was pressed … do something useful
-    }
-    …
+	…
+	if (event.key == 'Up'){
+		// 'Up' was pressed … do something useful
+	}
+	…
 }</code></pre>
 
 <p class="note">Although the <a href="http://www.w3.org/TR/DOM-Level-3-Events/#events-keyboard-event-order">DOM Level 3 Events</a> model normatively uses <code>event.key</code> and <code>event.char</code>, it still retains information on <a href="http://www.w3.org/TR/DOM-Level-3-Events/#legacy-key-attributes">legacy key attributes</a> such as <code>event.keyCode</code>. For compatibility with existing content, it is likely that <code>event.keyCode</code> will continue to be available for the time being.</p>
@@ -68,11 +67,11 @@ object.addEventListener("keydown", handler, useCapture);</code></pre>
 <p>To ensure backwards compatibility with previous Opera Device SDK versions, it may be necessary to combine the old and new way of comparing key events into a single expression:</p>
 
 <pre><code>function handler(event){
-    …
-    if ((event.key == 'Up') || (event.keyCode == 38)) {
-        // 'Up'/key 38 was pressed … do something useful
-    }
-    …
+	…
+	if ((event.key == 'Up') || (event.keyCode == 38)) {
+		// 'Up'/key 38 was pressed … do something useful
+	}
+	…
 }</code></pre>
 
 <p>Depending on the application, it is advisable not to include a large number of separate event handlers to various elements in the page, but to instead take advantage of event capture / bubbling and use an event delegation mechanism, hooking the <code>keydown</code> handler on a top-level element (for instance, the <code>body</code>) or object (<code>window</code> or similar):</p>
@@ -82,9 +81,9 @@ object.addEventListener("keydown", handler, useCapture);</code></pre>
 <p>In your <code>handler</code> function, you may need to determine the element where the event originated. A reference to this can be easily obtained from the <code>event.target</code>:</p>
 
 <pre><code>function handler(event){
-    …
-    var target = event.target;
-    …
+	…
+	var target = event.target;
+	…
 }</code></pre>
 
 <h2 id="repeat">Repeating key events</h2>
@@ -115,9 +114,9 @@ window.addEventListener("keydown", handler, useCapture);
 window.addEventListener("keypress", handler, useCapture);
 
 function handler(event){
-    if ((event.type=='keydown' &amp;&amp; !('repeat' in event)) ||
-        (event.type=='keypress' &amp;&amp; ('repeat' in event))) return;
-    …
+	if ((event.type=='keydown' &amp;&amp; !('repeat' in event)) ||
+		(event.type=='keypress' &amp;&amp; ('repeat' in event))) return;
+	…
 }
 </code></pre>
 
@@ -126,14 +125,14 @@ function handler(event){
 <pre><code>
 // example using event delegation
 if (window.KeyboardEvent){
-    window.addEventListener('keydown', handler, useCapture);
+	window.addEventListener('keydown', handler, useCapture);
 } else {
-    window.addEventListener('keypress', handler, useCapture);
+	window.addEventListener('keypress', handler, useCapture);
 }
 
 function handler(event){
-    // no need to de-dupe events
-    …
+	// no need to de-dupe events
+	…
 }
 </code></pre>
 
@@ -142,7 +141,7 @@ function handler(event){
 <p>When handling key events directly, you will probably want to stop the Opera Device SDK from carrying out its normal spatial navigation and element activation behaviours. This can simply be suppressed in the <code>handler</code> function:</p>
 
 <pre><code>function handler(event){
-    …
-    event.preventDefault();
-    …
+	…
+	event.preventDefault();
+	…
 }</code></pre>

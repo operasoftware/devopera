@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 While last week was about Core fixes, this week is about fixes done by the sites themselves. Plus some new patches.
 

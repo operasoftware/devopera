@@ -16,7 +16,6 @@ tags:
 - webvtt
 language: zh-cn
 license: cc-by-3.0
-layout: article
 ---
 
 ## 简介

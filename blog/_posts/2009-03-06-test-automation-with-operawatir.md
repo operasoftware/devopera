@@ -8,7 +8,6 @@ tags:
 - watir
 - coreblog
 license: cc-by-3.0
-layout: post
 ---
 
 <p>To make sure new versions of our browser core are of sufficient quality before making their way into any of our products, we run more than 100,000 automated tests on a number of different reference configurations every time we have a new build.
@@ -51,16 +50,16 @@ puts &quot;PASS&quot; if browser.text.include? &quot;Wikipedia&quot;</code></pre
 <p>There are several different browser drivers out there, and we would like to support the most popular ones. The script above was using the Watir API. The following script is doing the same thing through Webdriver, which will be used in the next version of Selenium:
 
 <pre><code>public class OperaDriverExample  {
-    public static void main(String[] args) {
-        WebDriver driver = new OperaDriver();
-        driver.get(&quot;<a href="http://www.google.com" target="_blank">http://www.google.com</a>&quot;);
-        WebElement element = driver.findElement(By.name(&quot;q&quot;));
-        element.sendKeys(&quot;Wikipedia&quot;);
-        element.submit();
-        WebElement wikipediaLink = driver.findElement(By.linkText(&quot;Wikipedia&quot;));
-        wikipediaLink.click();
-        System.out.println(&quot;Page title is: &quot; + driver.getTitle());
-    }
+	public static void main(String[] args) {
+		WebDriver driver = new OperaDriver();
+		driver.get(&quot;<a href="http://www.google.com" target="_blank">http://www.google.com</a>&quot;);
+		WebElement element = driver.findElement(By.name(&quot;q&quot;));
+		element.sendKeys(&quot;Wikipedia&quot;);
+		element.submit();
+		WebElement wikipediaLink = driver.findElement(By.linkText(&quot;Wikipedia&quot;));
+		wikipediaLink.click();
+		System.out.println(&quot;Page title is: &quot; + driver.getTitle());
+	}
 }</code></pre>
 
 </p></p></p></p></p></p></p></p></p></p></p></p>

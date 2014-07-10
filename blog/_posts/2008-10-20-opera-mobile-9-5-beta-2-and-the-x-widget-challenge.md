@@ -10,7 +10,6 @@ tags:
 - x-device
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera today announced that the <a href="http://www.opera.com/pressreleases/en/2008/10/20/">second beta of Opera Mobile 9.5 for Windows Mobile</a> has now been released.  This is joined by the first beta of Opera Mobile 9.5 for Symbian UIQ.  The notable absence is Opera Mobile for Symbian S60, which will be released some time in 2009.</p>

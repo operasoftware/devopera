@@ -7,7 +7,6 @@ tags:
 - devopera
 - redesign
 license: cc-by-3.0
-layout: post
 ---
 
 Today, we’re happy to release a new, totally fresh version of Dev.Opera.

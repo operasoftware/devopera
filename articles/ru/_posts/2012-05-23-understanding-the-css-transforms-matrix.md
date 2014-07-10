@@ -13,7 +13,6 @@ tags:
 - math
 language: ru
 license: cc-by-3.0
-layout: article
 ---
 
 - [Введение](#intro)

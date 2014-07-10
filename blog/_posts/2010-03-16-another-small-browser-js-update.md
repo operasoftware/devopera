@@ -5,7 +5,6 @@ authors:
 tags:
 - sitepatching
 license: cc-by-3.0
-layout: post
 ---
 
 A few more updates to browser.js. This log covers the update from March 1. file to March 16. file.

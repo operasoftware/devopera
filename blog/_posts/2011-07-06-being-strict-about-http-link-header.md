@@ -14,7 +14,6 @@ tags:
 - bug
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Opera users are <a href="https://bugs.opera.com/wizard/" target="_blank">reporting Web sites</a> which seem to not work properly. That is good. There are two cases:</p>

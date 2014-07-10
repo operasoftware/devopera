@@ -8,7 +8,6 @@ tags:
 - weekly
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>Have you ever tried to debug something like <code>border: 1px solid rgb(255, 0, 0);</code> in Opera Dragonfly&#39;s CSS inspector, only to be greeted by a bunch of expanded properties?</p>

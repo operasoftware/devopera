@@ -7,7 +7,6 @@ tags:
 - job
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <img src="{{ page.id }}/logo.png" alt="Open the Web logo" title="Open the Web" style="float: right;" />

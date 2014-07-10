@@ -7,7 +7,6 @@ tags:
 - localization
 - dragonfly
 license: cc-by-3.0
-layout: post
 ---
 
 <p>We’ve just put the latest build of Opera Dragonfly on the <a href="https://dragonfly.opera.com/app/weekly">weekly branch</a>.  New for this release is the infrastructure for localisation.  We have plans to release Opera Dragonfly in a number of languages, and this release is focused on testing the infrastructure we’ve put in place.  It is supplied with test localisations in Japanese and German.  These localisations are examples and not the finalised text for those languages. Opera Dragonfly will load the required language file, depending on the language of your browser.</p>

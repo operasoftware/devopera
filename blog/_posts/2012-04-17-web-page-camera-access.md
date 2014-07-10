@@ -10,7 +10,6 @@ tags:
 - webapi
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p>In 1969, we were told that <a href="http://photoshopcandy.com/wp-content/uploads/2010/03/tv-phone.jpg" target="_blank">someday, you&#39;ll be a star</a>, and after great efforts from the open web community, that time has come! <strong>Access to the camera from a web page</strong> through JavaScript (<a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html">getUserMedia</a>) is possible. Grab the latest Opera Next version <a href="http://my.opera.com/desktopteam/blog/2012/04/17/camera-getusermedia-support">from the desktop team blog</a>!</p>

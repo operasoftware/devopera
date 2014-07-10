@@ -4,7 +4,6 @@ authors:
 - craig-grannell
 intro: 'Another article in Craig Grannell’s fabulous series on design basics. In this article Craig gives us the lowdown on grid design basics - how to create a baseline grid in CSS, and how to position text on screen using it, with distances measured in both pixels and ems.'
 license: cc-by-nc-sa-2.5
-layout: article
 ---
 <h2>Introduction</h2>
 
@@ -24,24 +23,24 @@ layout: article
 
 <p>First, you need some content to style. Below is a code block that includes a number of typical typographic elements, structured in a semantic manner. There are three levels of headings (for the main title, the strap-line and cross-heads), some paragraphs, a blockquote (for a pull-quote) and a list. Note that the lines are truncated, to make the structure more obvious; you can <a href="baseline.html">download the original HTML document here</a>. The type elements are housed within a &#8220;wrapper&#8221; <code>div</code>, to define a width for the page&#8217;s content.</p>
 <pre>&lt;div id="wrapper"&gt;
-  &lt;h1&gt;Main heading&lt;/h1&gt;
-  &lt;h2&gt;Article strap-line. [...]&lt;/h2&gt;
-  &lt;p&gt;Suspendisse id [...].&lt;/p&gt;
-  &lt;p&gt;Donec porttitor [...].&lt;/p&gt;
-  &lt;h3&gt;Cross-head&lt;/h3&gt;
-  &lt;p&gt;Proin tincidunt [...]&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Nunc molestie [...]&lt;/p&gt;
-    &lt;p&gt;&lt;cite&gt;Citation reference&lt;/cite&gt;&lt;/p&gt;
-  &lt;/blockquote&gt;
-  &lt;p&gt;Morbi a [...]&lt;/p&gt;
-  &lt;p&gt;Proin at eros non:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Eros adipiscing mollis&lt;/li&gt;
-    &lt;li&gt;Donec semper turpis sed diam&lt;/li&gt;
-    &lt;li&gt;Sed consequat ligula nec tortor&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p&gt;Integer eget [...]&lt;/p&gt;
+	&lt;h1&gt;Main heading&lt;/h1&gt;
+	&lt;h2&gt;Article strap-line. [...]&lt;/h2&gt;
+	&lt;p&gt;Suspendisse id [...].&lt;/p&gt;
+	&lt;p&gt;Donec porttitor [...].&lt;/p&gt;
+	&lt;h3&gt;Cross-head&lt;/h3&gt;
+	&lt;p&gt;Proin tincidunt [...]&lt;/p&gt;
+	&lt;blockquote&gt;
+		&lt;p&gt;Nunc molestie [...]&lt;/p&gt;
+		&lt;p&gt;&lt;cite&gt;Citation reference&lt;/cite&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+	&lt;p&gt;Morbi a [...]&lt;/p&gt;
+	&lt;p&gt;Proin at eros non:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Eros adipiscing mollis&lt;/li&gt;
+		&lt;li&gt;Donec semper turpis sed diam&lt;/li&gt;
+		&lt;li&gt;Sed consequat ligula nec tortor&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Integer eget [...]&lt;/p&gt;
 &lt;/div&gt;</pre>
 
 <p>Next, a decision needs to be made regarding the underlying unit height of the baseline grid, based around a value in pixels. With comfortable Web text typically being sized between 11px and 13px (or equivalent values in ems), a vertical unit of around 18px is suitable. This slightly loose leading ensures there&#8217;s a little room to breathe between lines of copy and makes the content easier to read for users.</p>
@@ -53,19 +52,19 @@ layout: article
 <p>Everything else within this article is CSS-based. Prior to setting property values for text elements, page defaults need styling. I will use the universal selector (<code>*</code>) to remove padding and margins from all elements, and then define a default font stack and <code>color</code> value using a <code>body</code> rule. Within the <code>body</code> rule, I also define the baseline grid unit height via the <code>line-height</code> property. Then, I style the &#8220;wrapper&#8221; div by setting <code>width</code> and <code>margin</code> values for the <code>#wrapper</code> rule.</p>
 
 <pre>* {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, Helvetica, sans-serif;
-  color: #111111;
-  line-height: 18px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, Helvetica, sans-serif;
+	color: #111111;
+	line-height: 18px;
 }
 
 #wrapper {
-  width: 500px;
-  margin: 36px auto;
+	width: 500px;
+	margin: 36px auto;
 }</pre>
 
 <h2>Styling text elements</h2>
@@ -73,40 +72,40 @@ body {
 <p>With text elements, the entire amount of space they take up needs to be equal to or a multiple of the <code>line-height</code> value, including padding and margins, if applied. Therefore, in the following code block, you&#8217;ll see that the majority of the <code>margin-bottom</code> values are equal to 18px, the <code>line-height</code> value. In the case of the <code>h3</code> element, the negative margin value &#8220;pulls&#8221; subsequent content up, so there&#8217;s no gap under it.</p>
 
 <pre>h1 {
-  font-size: 27px;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 18px;
+	font-size: 27px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 18px;
 }
 
 h2 {
-  font-size: 15px;
-  margin-bottom: 18px;
+	font-size: 15px;
+	margin-bottom: 18px;
 }
 
 h3 {
-  font-size: 12px;
-  margin-bottom: -18px;
+	font-size: 12px;
+	margin-bottom: -18px;
 }
 
 p, ul {
-  font-size: 12px;
-  margin: 18px 0;
+	font-size: 12px;
+	margin: 18px 0;
 }</pre>
 
 <p>For the <code>blockquote</code> element (for the pull-quote) and content within, three rules are required. The first, for the <code>blockquote</code> itself, sets text within the pull-quote to bold and adds some padding to its left and right sides, to make the text stand out from the body copy. The <code>blockquote p</code> rule removes margins from within the <code>blockquote</code>, otherwise there&#8217;d be a gap between the quote and citation, making the relationship between the two less obvious. The cite element is set to display as a block element, so it stretches to fill the paragraph that contains it, and the text is aligned right&#8212;a common standard with pull-quote citations. This helps differentiate the citation from the quote body.</p>
 <pre>blockquote {
-  font-weight: bold;
-  padding: 0 100px;
+	font-weight: bold;
+	padding: 0 100px;
 }
 
 blockquote p {
-  margin: 0;
+	margin: 0;
 }
 
 cite {
-  text-align: right;
-  display: block;
+	text-align: right;
+	display: block;
 }</pre>
 
 <p>The completed page is shown in Figure 2.</p>
@@ -123,10 +122,10 @@ cite {
 <p>However, if the text is to scale and retain the vertical rhythm, margin values and <code>line-height</code> must now be defined in ems also; otherwise, the rhythm will break as soon as the text is zoomed. First, then, I&#8217;ll amend the <code>body</code> rule, adding the <code>font-size</code> value mentioned earlier and changing the <code>line-height</code> value to 1.8em.</p>
 
 <pre>body {
-  font-size: 62.5%;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, Helvetica, sans-serif;
-  color: #111111;
-  line-height: 1.8em;
+	font-size: 62.5%;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, Helvetica, sans-serif;
+	color: #111111;
+	line-height: 1.8em;
 }</pre>
 
 <p>The <code>font-size</code> values for the text elements should be changed according to the ratio mentioned earlier&mdash;this is done by dividing by 10 and amending the units from px to em.</p>
@@ -134,10 +133,10 @@ cite {
 <p>Margins are a little more complex. With 1em equating to the font size of the current unit, margin values are calculated by dividing the <code>line-height</code> value from the <code>body</code> rule by the <code>font-size</code> value in each case. Take, for example, the <code>h1</code> rule:</p>
 
 <pre>h1 {
-  font-size: 2.7em;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 0.666666em;
+	font-size: 2.7em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 0.666666em;
 }</pre>
 
 <p>With a <code>font-size</code> value of 2.7em (equating to 27px), a <code>margin-bottom</code> value of 1em would place a margin equivalent to 27px underneath the <code>h1</code> element. By dividing the <code>line-height</code> value of 1.8 by the <code>font-size</code> value of 2.7, we get the value 0.666666, and two-thirds of 2.7em is 1.8em&mdash;the same as the <code>line-height</code> value. (Read that again&mdash;it will make sense after a couple of run throughs, if it doesn't already.)</p>
@@ -145,18 +144,18 @@ cite {
 <p>Using this methodology, margin values can be defined for the other text elements. For the <code>h2</code> element, with a <code>font-size</code> of 1.5em, the <code>margin-bottom</code> value is 1.8/1.5em, which is 1.2em. For elements with a <code>font-size</code> of 1.2em, the <code>margin</code> values are 1.8/1.2em, which is 1.5em. Again, the <code>h3</code> rule has a negative bottom margin, to &#8220;pull&#8221; subsequent content up, but its value still adheres to the grid.</p>
 
 <pre>h2 {
-  font-size: 1.5em;
-  margin-bottom: 1.2em;
+	font-size: 1.5em;
+	margin-bottom: 1.2em;
 }
 
 h3 {
-  font-size: 1.2em;
-  margin-bottom: -1.5em;
+	font-size: 1.2em;
+	margin-bottom: -1.5em;
 }
 
 p, ul {
-  font-size: 1.2em;
-  margin: 1.5em 0;
+	font-size: 1.2em;
+	margin: 1.5em 0;
 }</pre>
 
 <h2>Final thoughts</h2>
@@ -173,15 +172,15 @@ p, ul {
 <p>Internet Explorer, even with version 7, typically doesn&#8217;t display content outside of the parent box, and so it doesn&#8217;t show the bullet points in this page. However, by adding the following rule, which positions unordered lists in a relative fashion, you can add padding to the left and then &#8220;pull&#8221; the lists left by the same amount (via the negative <code>left</code> value), allowing the bullets to make a welcome return:</p>
 
 <pre>ul {
-  padding-left: 1.5em;
-  position: relative;
-  left: -1.5em;
+	padding-left: 1.5em;
+	position: relative;
+	left: -1.5em;
 }</pre>
 
 <p>Note that this rule doesn&#8217;t affect Opera, Safari, and Firefox, but as it&#8217;s a rule specifically for Internet Explorer, it should nonetheless be applied using a conditional comment:</p>
 
 <pre>&lt;!--[if lte IE 7]&gt;
-  &lt;link rel="stylesheet" type="text/css" href="ie-7-hacks.css" media="screen" /&gt;
+	&lt;link rel="stylesheet" type="text/css" href="ie-7-hacks.css" media="screen" /&gt;
 &lt;![endif]--&gt;</pre>
 
 <p>You can find <a href="http://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">more about conditional comments</a> in a dedicated dev.opera.com article.</p>

@@ -16,7 +16,6 @@ tags:
 - kharkov
 - odin
 license: cc-by-3.0
-layout: post
 ---
 
 <p><h2>Web standards and heavy metal in Ukraine</h2>
