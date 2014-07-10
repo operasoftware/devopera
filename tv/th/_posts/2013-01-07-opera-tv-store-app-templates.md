@@ -5,6 +5,7 @@ authors:
 tags:
 - opera-tv-store
 - tv
+language: th
 license: cc-by-3.0
 ---
 

@@ -5,6 +5,7 @@ authors:
 tags:
 - devices
 - tv
+language: ja
 license: cc-by-nc-sa-3.0
 ---
 
