@@ -25,7 +25,7 @@ layout: none
 		<author>
 			<name>{% include author-name.html object=entry %}</name>
 		</author>
-		<content type="html">{{ entry.content | replace: '="/','="http://dev.opera.com/' | xml_escape }}</content>
+		<content type="html" xml:base="http://dev.opera.com/"><![CDATA[{{ entry.content }}]]></content>
 	</entry>
 {% endfor %}
 
