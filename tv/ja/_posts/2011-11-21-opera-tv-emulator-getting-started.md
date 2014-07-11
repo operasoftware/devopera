@@ -5,6 +5,7 @@ authors:
 tags:
 - emulator
 - tv
+language: ja
 license: cc-by-3.0
 ---
 

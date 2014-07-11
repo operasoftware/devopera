@@ -13,6 +13,7 @@ tags:
 - opera-tv-emulator
 - tv-emulator
 - tv
+language: ja
 license: cc-by-3.0
 ---
 

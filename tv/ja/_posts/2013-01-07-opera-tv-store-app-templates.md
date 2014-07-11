@@ -5,6 +5,7 @@ authors:
 tags:
 - opera-tv-store
 - tv
+language: ja
 license: cc-by-3.0
 ---
 

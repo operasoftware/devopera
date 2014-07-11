@@ -7,6 +7,7 @@ tags:
 - css3
 - devices
 - tv
+language: ja
 license: cc-by-nc-sa-3.0
 ---
 

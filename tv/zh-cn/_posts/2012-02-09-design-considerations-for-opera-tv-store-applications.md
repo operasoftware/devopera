@@ -6,6 +6,7 @@ authors:
 tags:
 - opera-tv-store
 - tv
+language: zh-cn
 license: cc-by-3.0
 ---
 
