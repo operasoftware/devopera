@@ -49,7 +49,7 @@ By way of brief background, my primary work is as CTO of Almer/Blank, an interac
 
 **Important note**: Bear in mind that, although I am experienced in these matters, and am more than happy to share my advice, to help you with the business side of your work, none of the information within the articles in this series should be considered legal advice. For example, when putting a contract template together, you should get it checked over by a qualified legal professional.
 
-## The wild west of interactive/web {#thewildwest}
+## The wild west of interactive/web
 
 My MBA thesis was a study of the freelancer-based operations model of the entertainment and real-estate industries, both of which feature large project budgets and are also heavily contractor-based. One of the issues I found to be core to the ability of these industries to function is the maturity and standardization of the roles involved. By having established standards and practices, teams can be assembled from a wide variety of sources, come together, execute very large projects in relatively rapid order, and then dissolve, with individual members moving on to different projects.
 
@@ -65,7 +65,7 @@ I am a firm believer in the power of the technologies we use to build new experi
 
 Hence my workshops and this series of articles, aimed at increasing the sophistication of freelancers and contractors in some of the fundamental business considerations, including service contracts and pricing.
 
-## Considering pricing {#consideringpricing}
+## Considering pricing
 
 Pricing is deceptively difficult. At it’s core, it’s really simple — after all, all you are doing is picking a number. But it really is far deeper. The rates you pick influence the amount you work, the work you get, how clients and colleagues perceive you and your service, and of course, how much money you make. Sure, you could charge $20/hr and be fully booked, but you could possibly charge $40/hr, work half as much and make the same amount of money. This would probably mean however establishing an entirely different client base that is willing to pay these new rates.
 
@@ -82,13 +82,13 @@ These will establish upper and lower bounds for your income, and therefore your 
 
 The second reason directly impacts your value. In our industry, value is based on specificity and focus — people pay higher rates for specialized talent known for particular skills and services. If you do not formulate a relatively firm set of goals, it is more likely that your career will not have as specific a focus, which will in turn dilute your potential value.
 
-## General considerations {#general}
+## General considerations
 
 Of course, I cannot tell you exactly what you should charge, nor precisely how you should raise your rates. What I can do is discuss the considerations that should influence your decisions on these issues that are fundamental to doing business.
 
 While the rates of specific individuals may vary widely, considered en masse, rates conform to a range of values that are not arbitrary, that is, rates are reflective of real value. And the actual service being contracted is a core determinant of that value (e.g., there is a certain range of values that you consider fair for an AJAX developer to charge). But, what many freelancers fail to consider is that the value reflected in rates includes far more factors than just the skill involved. So, what are the other factors that are reflected in rates?
 
-### The cost of doing business {#costofdoingbusiness}
+### The cost of doing business
 
 One significant set of considerations are the raw costs of doing business. For example, your rates must factor in your ability to secure sufficient hardware and software for executing the work. In countries like the United States, you rates should reflect the cost of health insurance. In short, when contracting, your rates must consider all the costs of doing business that an employer would normally cover.
 
@@ -100,19 +100,19 @@ Other examples might be harder to predict. For example, let’s say that you are
 
 In both of the above examples, the cost of the item in question (the 3DStudio license or the new hard-drive) could be the difference between the project being profitable for you or not, which is why items such as these must be factored into your prices (and these assumptions on which you base your price must be enforced by a good contract — more on that later in this series).
 
-### Regional economic factors {#regionalfactors}
+### Regional economic factors
 
 Rates also depend on the context of the local economy. For your specific skill, in your specific region, is there a shortage or an abundance of available talent? What types of projects, with what scale of budgets, are being executed? Does your city have a high cost of living? Are the local business taxes high or low?
 
 For example, here in Los Angeles, the interactive industry is driven heavily by entertainment, automotive and advertising work, so while it is not the largest city for interactive work in the United States, there are good projects with decent budgets. The cost of living in LA is relatively high, so overall rates reflect that premium. Flash and Flex programmers right now are quite scarce in this region, so they demand a premium over, for example, similarly skilled Java and PHP programmers.
 
-### Middlemen {#middlemen}
+### Middlemen
 
 Finally, the presence of middlemen affect the rate. This one can be a little hard for less experienced freelancers. The same exact work, performed by the same person under the same exact conditions, can have different values in different contexts. It’s like the difference between buying wholesale and retail — the same exact product costs different prices when acquired through different sources. Simply put, the more people there are in between you and the actual source of the money (aka, middle-men), the less money you should expect to earn. In our industry, middlemen mostly come in two forms: agencies and recruiters.
 
 If rates are lower when you work through middlemen, why do it? Because they can find you lots of work. I remember that, as a freelancer, I could maintain three agencies as my direct clients, but could work on projects for dozens of companies that were the clients of the agencies. In effect, you can think of the discounted rate you apply to this work as your payment for a sales force — the same single client can bring you in lots of work. So I could do more work, for a wider array of higher-profile firms, than I could on my own. And once you do that long enough, and you establish a sufficiently impressive portfolio, it becomes easier to secure more direct-client work, for which you can charge higher rates.
 
-### Idle time and stability {#idletime}
+### Idle time and stability
 
 When considering rates, it’s important to remember that, as a freelancer, there is a good chance that you will not be fully engaged. That is, your contracts will likely not consume 100% of your available hours, which means your overall rates must consider the actual amount of time you will work.
 
@@ -122,21 +122,21 @@ No. Often when you are a contractor or freelancer you jump from job to job every
 
 This means, that you should be willing to apply different rates with the scope and reliability of the work. If this contract covers a small amount of work for a fixed fee, the overhead alone of working with this single client on this small project means that you should do so for a higher rate. On the other hand, if a specific contract provides reliable, consistent, long-term income — such as a contract to work 40 hours per week for 12 months (bringing you up, effectively to 100% capacity) — you can move your rates lower.
 
-### Responsibility {#responsibility}
+### Responsibility
 
 This is somewhat related to the discussion on hourly vs. fixed rates, below, but is useful to consider on its own. Simply stated, the more responsibility a position entails, the higher a rate that should be applied to the work. If you are paid to show up and do exactly what someone else tells you to do, you don’t have as much responsibility involved; in essence, the work is simpler, less stressful with less risk, so the work is worth less. Conversely, if, in addition to performing your development work, you must establish estimates and deadlines and manage others, the work entails more responsibility and is more complex and stressful, so you should be compensated at a higher rate.
 
-### Quality of life {#qualityoflife}
+### Quality of life
 
 It is really hard to overstate the importance of quality of life. Again, most people who freelance/contract do so by choice — for the reasons of freedom, opportunity and responsibility I describe above. For example, you might be the type of person who would rather only work an average of 6 hours a day, rather than 8, 10, or 12, so you need to consider what your rate must be given you have less time each day to earn your crust.
 
 Also, how complementary a contract is with your desired lifestyle also affects the rate you should accept for that work. For example, if having weekends to yourself is important, and a specific project will involve many long working weekends, your rates should include a premium reflecting your sacrifice — that is, the work must pay a higher rate than your average for you to consider it. Or, if a certain project fits your open schedule perfectly, you might consider taking the work at a lower rate.
 
-### The “match” {#thematch}
+### The “match”
 
 Another key consideration is the match of your skills with the work. For example, a high-end ActionScript 3 programmer can earn a lot more than an average Flash developer. But, if the work is producing banner ads, that is only worth so much, so the high-end programmer would receive a lower rate than if the work were, for example, a complex game. In fact, the high-end ActionScripter is likely to be worth less in this context than a less-skilled Flash producer who works on banner ads all the time and can churn them out rapidly.
 
-### Growth opportunities {#growthopportunities}
+### Growth opportunities
 
 Basically, opportunity and rate are inversely proportional. By opportunity, I include considerations such as:
 
@@ -147,21 +147,21 @@ Basically, opportunity and rate are inversely proportional. By opportunity, I in
 
 If a job presents few opportunities for growth, advancement and career development, you should apply a higher rate to that work. This is especially true as you are establishing a reputation and a client base, and is less true the busier you are.
 
-## Hourly vs fixed-fee rates {#hourlyvsfixedfee}
+## Hourly vs fixed-fee rates
 
 The above factors essentially form the context in which rates are established and inform what people are willing to pay for your skill-set. But, another major factor in pricing is the payment basis of the contract. Will the work be performed on an hourly basis, in which you are paid a certain rate for each hour you work (also called time & materials)? Or will the work be performed for a fixed fee, in which you provide a given service, such as building a website, for a fixed, pre-defined cost.
 
-### Hourly {#hourly}
+### Hourly
 
 Hourly contracts involve much less financial risk. You know exactly what you will be paid for every hour you work. It’s not necessarily that you should consider lower rates for hourly work, it’s just that you do not need to buffer in the same way that you do for fixed fee work. Pricing hourly work is really easy. You just pick a rate and then multiply it by the number of billable hours you work, and BOOM — you got your income!
 
-### Fixed-fee {#fixedfee}
+### Fixed-fee
 
 Fixed fee work can be dangerous. You are obligating yourself to complete a specific deliverable for a fixed amount of money. Which means that if problems or surprises arise, creating extra hours, you will end up working a whole lot more hours for no extra pay. With fixed fee contracts, you assume a great deal of risk (which is why it is vital to provide specific definitions of the work being contracted; more on this when we discuss contracts later in the series).
 
 So why enter into fixed fee contracts? Well, because that’s what a lot of contracts are. Establishing fixed fee contracts mitigates the client’s risk — helping to cap the costs of development. Most larger and more interesting projects are executed with fixed-fee contracts. Although there are certain warning signs that should make you seriously consider whether you can accept the contract at a fixed-fee — for example, if you are inheriting incomplete, buggy code from another developer.
 
-### Creating fixed-fee bids {#creatingfixedfeebids}
+### Creating fixed-fee bids
 
 There are two basic models for establishing fixed-fee estimates: time and features.
 
@@ -173,15 +173,15 @@ In either case, you must buffer! No matter how detailed the specification docume
 
 It is very dangerous to agree to fixed fee work without having first established a detailed project definition. This is the core reason my agency does not represent a fixed-fee for project development until the discovery phase is complete and the functional and technical requirements have been precisely defined.
 
-### Spreadsheets {#spreadsheets}
+### Spreadsheets
 
 When calculating bids, I would strongly recommend that you learn and use a spreadsheet program. The process of laying out all of the hours and estimates in a table is amazingly powerful and informative — not doing so invites mistakes and oversights in your planning. While any spreadsheet tool is useful in this process, Microsoft Excel is really uniquely powerful. This is especially true for the coders among you who are willing to learn and lasso some VBA code in your Excel files. Open Office Calc is also good.
 
-## Marketing yourself {#marketing}
+## Marketing yourself
 
 Now we’ve looked at how to calculate your rates, and the available pricing schemes you’ll come across, let’s turn our attention to you — how do you increase the price you can charge for your work?
 
-### Communicating your value {#communicatingvalue}
+### Communicating your value
 
 Notice that I didn’t call this part “communicating your rates”. Because that’s not the challenge — that’s stating a number. The challenge is ensuring your potential clients understand the value that you bring to the table — because, contrary to what you might think, it’s not necessarily clear to a client what particular skills and specialties you bring to the table, and what those assets are worth.
 
@@ -191,11 +191,11 @@ So it is important to understand the importance of marketing in the process of e
 
 The most important ways to communicate your value are through your portfolio, resume/CV and cover letters.
 
-### Portfolio {#portfolio}
+### Portfolio
 
 The portfolio is the single most important basis on which your value is assets. Therefore, your portfolio must be impressive and it must show examples of the type of work you are seeking — it’s not enough to have impressive examples; to get the highest rates you must have impressive examples of exactly the type of work you are seeking. As digital artist Joshua Davis succinctly explains: "you get the work you show."
 
-### Resume/CV {#resume}
+### Resume/CV
 
 Your resume/CV must show that you are professional and have experience. To demonstrate professionalism and experience with a resume, you must:
 
@@ -209,7 +209,7 @@ It’s also important to remember that you can rework your resume for each poten
 
 Finally, the goal of a cover letter is to, as succinctly as possible, communicate why you fit this opportunity. This is your best chance to explicitly make your marketing case for why you are the one the client must select for this contract.
 
-### A few tips on negotiating {#negotiatingtips}
+### A few tips on negotiating
 
 For both hourly and fixed-fee work, you should be prepared for a counter bid. Once you state your rate, or your fixed-fee estimate, clients will often attempt to negotiate down the cost. Negotiating is a complex art-form, and I can not begin to cover it effectively here. But I can share two pieces of advice on negotiating price.
 
@@ -217,7 +217,7 @@ The first is to know your walk-away point. In negotiations, this is called your 
 
 The second is to be open and forthcoming in discussions. If the client needs a lower price, one you do not feel comfortable accepting, discuss the situation and the possible trade-offs. For hourly work, perhaps you can agree on flexible hours that improve your ability to accept other simultaneous contracts. For fixed-fee work, perhaps there are features that the client could be convinced aren’t absolute requirements, and so can be dropped or pushed to future versions, in order to accommodate the budget.
 
-### Increasing your value {#increasingvalue}
+### Increasing your value
 
 Finally, I want to discuss a few points about increasing your rates. As I explained above, the core to maximizing your rates is to communicate a focus and a speciality — you will get paid for more certain types of work if you are recognized as specializing in that type of work. So, once you determine what that speciality is, pursue more contracts and opportunities in that arena. You must build a portfolio that demonstrates the type of work you aim to secure, and the more depth, experience and focus your portfolio demonstrates, the higher the rates you will be able to charge. This also means being somewhat selective with the contracts you accept. Sometimes even tempting contracts will take you off your course, and so should be avoided.
 
@@ -227,7 +227,7 @@ The better known you are, the more clients are willing to pay for your services.
 
 And finally, with some exceptions, the more professional you appear, the higher your perceived value to potential clients. If you show up to interviews and planning meetings in a nice shirt and pants, it portrays an image of a higher-level and more successful individual. This doesn’t necessarily mean wear a suit, but the more professional you look, you will notice that clients will be willing to pay more for your services. This can be easy to ignore in industries such as ours, in which sloppy attire is not only seen as acceptable — it can be considered a badge of honor.
 
-## Summary {#summary}
+## Summary
 
 So that brings our discussion of pricing to a close. In the [next article][25] in this series, I will address the topic of budgeting. I will discuss how to formulate and manage budgets, and calculate and mitigate risk in the process.
 

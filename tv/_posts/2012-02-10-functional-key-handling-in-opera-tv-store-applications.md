@@ -18,15 +18,7 @@ Update history:
 
 [1]: http://www.w3.org/TR/DOM-Level-3-Events/#events-keyboard-event-order
 
-- [Spatial navigation and functional buttons](#spatial-functional)
-- [List of available functional buttons](#functional-buttons)
-- [Handling `keydown` events](#handling-keydown)
-- [Repeating key events](#repeat)
-- [Requirements for the `Back/Return` button](#return)
-- [Preventing default spatial navigation](#prevent-default)
-- [Determining support for a specific functional key](#determining-support)
-
-## Spatial navigation and functional buttons {#spatial-functional}
+## Spatial navigation and functional buttons
 
 The Opera TV Store is designed to use the standard four-way directional keys on a remote control for spatial navigation. Authors should test that their applications work correctly using the default spatial navigation built into the Opera TV Store browser.
 
@@ -38,7 +30,7 @@ In most cases, authors can simply rely on Opera’s spatial navigation to handle
 
 For maximum control, authors may also choose to handle the navigation of their application themselves by intercepting key presses from the remote control. This makes it possible to not only react to the basic directional buttons (`UP`, `RIGHT`, `DOWN`, `LEFT`), but to further bind functionality to the various shortcut and functional keys (such as `BACK`, `INFO`, `OPTIONS` or the RED button). As the exact key codes for remote control keys vary between different devices, the Opera TV Store browser provides built-in **global constants** mapped to the hardware-specific codes used by the current device.
 
-## List of available functional buttons {#functional-buttons}
+## List of available functional buttons
 
 <table>
 <thead>
@@ -401,7 +393,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 
 **Note:** `CONFIRM`, `EXIT` and directional buttons are mandatory for device manufacturers to implement, so they are always available for the end user via the remote control of any device that the Opera TV Store is integrated with. The `EXIT` key is handled by the Opera TV Store browser itself, to ensure that each application can be closed. For this reason `VK_EXIT` will not be sent to the application. Not all keys from the table above are always present in various remote controllers (see Availability column). It is important to take this into account when designing an app. For example, it should be possible to play and pause video, even if the PLAY or PAUSE buttons are not available.
 
-## Handling `keydown` events {#handling-keydown}
+## Handling `keydown` events
 
 Previously, authors were encouraged to handle `keypress` events. However, starting with the Opera Device SDK 3.4, the Opera TV Store is aligned with the [DOM Level 3 Events][10] model.
 
@@ -453,7 +445,7 @@ In your `handler` function, you may need to determine the element where the even
 		…
 	}
 
-## Repeating key events {#repeat}
+## Repeating key events
 
 What happens when a user keeps a functional button on their remote control pressed is dependant on their specific device. Some devices will only send a single `keydown` event until the button is released. Others may send a series of `keydown` (and `keypress`, if it’s a key that produces a _character value_) and `keyup` events (as if the button was manually being pressed and released multiple times). Lastly, platforms that do support proper key repeats will send a continuous stream of `keydown` (and `keypress`, if it’s a key that produces a _character value_) events, and only fire `keyup` once the user releases the button.
 
@@ -503,7 +495,7 @@ Alternatively, if you’re binding event handlers via JavaScript already, you ca
 	}
 
 
-## Requirements for the `Back/Return` button {#return}
+## Requirements for the `Back/Return` button
 
 Most remote controllers have a `Back` or `Return` button. In the Opera TV emulator, this is equivalent to pressing the `BACKSPACE` key. The Opera TV Store requires that the `Back/Return` button works consistently in each application as follows:
 
@@ -543,7 +535,7 @@ To circumvent this behavior, a slightly hacky workaround is to user the HTML5 hi
 
 After this, the preceding code snippets to manually handle the Back/Return key using `preventDefault()` will work as expected.
 
-## Preventing default spatial navigation {#prevent-default}
+## Preventing default spatial navigation
 
 When handling key events directly, you will probably want to stop the Opera TV Store browser from carrying out its normal spatial navigation and element activation behaviours. This can simply be suppressed in the `handler` function:
 
@@ -553,7 +545,7 @@ When handling key events directly, you will probably want to stop the Opera TV S
 		…
 	}
 
-## Determining support for a specific functional key {#determining-support}
+## Determining support for a specific functional key
 
 Authors can check if a specific functional key has been defined on the current device using a simple JavaScript check. If a button is supported, the constant will contain the device-specific key code of the button; otherwise, the constant will return a `null` value. For example, to test for the VK_RED key:
 

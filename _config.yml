@@ -3,10 +3,15 @@ url: http://dev.opera.com/
 permalink: /:categories/:title/
 future: false
 
-markdown: kramdown
-kramdown:
-  auto_ids: true
-  transliterated_header_ids: true
+markdown: redcarpet
+redcarpet:
+  extensions: [
+    "lax_spacing",
+    "no_intra_emphasis",
+    "strikethrough",
+    "tables",
+    "with_toc_data"
+  ]
 
 include:
 - '.htaccess'

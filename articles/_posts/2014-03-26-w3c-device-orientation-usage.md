@@ -17,23 +17,7 @@ tags:
 license: cc-by-3.0
 ---
 
-## Contents
-
-- [Introduction](#introduction)
-- [Our coordinate system revisited](#coordinatesystem)
-- [Limitations of using Euler angles](#eulerlimitations)
-- [Practical considerations for using device orientation in web applications](#practicalconsiderations)
-	- [Avoiding gimbal lock](#practicalconsiderations_1)
-	- [Screen orientation](#practicalconsiderations_2)
-	- [World orientation](#practicalconsiderations_3)
-- [Conversion to alternate device orientation representations](#alternateorientationrepresentations)
-	- [Using Rotation Matrices](#rotationmatrixes)
-	- [Using Quaternions](#quaternions)
-- [Example: An orientation-aware virtual reality viewer](#demo)
-- [Cross browser compatibility](#xbrowser)
-- [Summary](#summary)
-
-## Introduction {#introduction}
+## Introduction
 
 The [W3C Device Orientation specification][1] allows developers to plug in and use a device’s gyroscope and accelerometer data. Such capabilities could be used to build virtual and augmented reality experiences right in to today’s web browsers. Yet the learning curve required for web developers to utilize this raw information to date has been large.
 
@@ -41,7 +25,7 @@ The [W3C Device Orientation specification][1] allows developers to plug in and u
 
 In this article we’ll break down and explain practical usage of device orientation event data so web developers can incorporate `deviceorientation` event data in to their web applications in a practical way.
 
-## Our coordinate system revisited {#coordinatesystem}
+## Our coordinate system revisited
 
 In our [previous article in this series][2] we introduced the coordinate system in use within the W3C Device Orientation specification.
 
@@ -97,7 +81,7 @@ Here’s a simple event handler that captures the given `deviceorientation` even
 		deviceOrientationData = event;
 	}, false);
 
-## Limitations of using Euler angles {#eulerlimitations}
+## Limitations of using Euler angles
 
 Tait-Bryan angles, and Euler angles in general, give us a good way to visualize the rotations of a device as it moves around in physical space. However, using Euler angles is known to introduce an issue when trying to model 3-axis rotations called [gimbal lock][10].
 
@@ -111,15 +95,15 @@ As two of our gimbals start approaching the same parallel direction they start t
 
 Fortunately, other device orientation representations exist that can remove the effects of gimbal lock. In order to remove gimbal lock as an issue we need to represent device rotations in an alternative rotation system such as matrix-based or quaternion-based device orientation representations. We will run through both of these alternate orientation representations in a subsequent section.
 
-## Practical considerations for using device orientation in web applications {#practicalconsiderations}
+## Practical considerations for using device orientation in web applications
 
 Let’s run through some considerations that can affect how device orientation data will behave in our web application.
 
-### Avoiding gimbal lock {#practicalconsiderations_1}
+### Avoiding gimbal lock
 
 Firstly, it makes sense for us to avoid gimbal lock as we discussed in the previous section. To do this we can convert the Tait-Bryan angles collected in our `deviceorientation` event listener to a different rotational representation such as a rotation matrix or a quaternion. We will demonstrate how to make that conversion in the alternative device orientation representations section below.
 
-### Matching the current screen orientation {#practicalconsiderations_2}
+### Matching the current screen orientation
 
 Once we have an alternate orientation that can avoid gimbal lock such as a rotation matrix or a quaternion, we need to transform our new rotational representation to account for the current screen orientation of a device. Screen orientation changes can be defined as a Z-axis based transformation by the current screen orientation angle.
 
@@ -141,7 +125,7 @@ Let’s go ahead and add an `orientationchange` event listener to our web applic
 
 We will discuss how we can apply this screen orientation data against different alternative device orientation representations in the next section.
 
-### Matching the application world orientation {#practicalconsiderations_3}
+### Matching the application world orientation
 
 The final consideration we may need to account for is how we want our orientation to behave relative to the world coordinate frame that we want to use in our final web application model.
 
@@ -149,7 +133,7 @@ For virtual reality or augmented reality applications we want our world coordina
 
 To do this we will need to make adjustments to our accumulated rotational representation that we can then finally apply to our web application. We will discuss how this can be done in more depth for each of the different alternative device orientation representations presented in the following section.
 
-## Conversion to alternate device orientation representations {#alternateorientationrepresentations}
+## Conversion to alternate device orientation representations
 
 In the [limitations of using Euler angles][13] section above we discussed how Euler angles tend to introduce gimbal lock in to our rotational coordinate system. Let’s take the device orientation data and convert it to one of the two alternative representations below to avoid this issue entirely.
 
@@ -159,7 +143,7 @@ You can decide to use either a Rotation Matrix or a Quaternions representation f
 
 The methods provided below expect that each of the alpha, beta and gamma values provided from the `deviceorientation` event are defined and are not null.
 
-### Using Rotation Matrices {#rotationmatrixes}
+### Using Rotation Matrices
 
 A [rotation matrix][14] is a matrix that can be used to represent the physical rotation of our device within 3-dimensional space. In order to build a rotation matrix we need a way to represent matrix-based rotation for each of the x, y and z axis rotations. We shall call each of these axis matrices a _component rotation matrix_ and we will then multiply these together to generate a _combined rotation matrix_ representing the full 3-axis rotation of our device.
 
@@ -373,7 +357,7 @@ We can now call the `computeMatrix()` function whenever we like, typically durin
 
 [26]: http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
 
-### Using Quaternions {#quaternions}
+### Using Quaternions
 
 A [quaternion][27] can be used as another alternative representation for device orientation. A quaternion itself consists of two things. Firstly, every quaternion has an x, y and z component that represents the axis about which a device rotation occurs. Secondly, every quaternion has a w component that represents the amount of rotation that will occur about this axis. With these four numbers it is possible to describe device orientation perfectly while also avoiding introducing the problem of gimbal lock.
 
@@ -537,7 +521,7 @@ We can now call the `computeQuaternion()` function whenever we like, typically d
 
 [34]: http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
 
-## Example: An orientation-aware virtual reality viewer {#demo}
+## Example: An orientation-aware virtual reality viewer
 
 Applying everything we have covered in this article we can now create virtual reality and augmented reality experiences right in the web browser!
 
@@ -563,7 +547,7 @@ You can find a live version of this virtual reality demonstration [here][40] (be
 [40]: http://people.opera.com/richt/release/demos/orientation/virtualreality/
 [41]: https://github.com/richtr/threeVR
 
-## Cross browser compatibility {#xbrowser}
+## Cross browser compatibility
 
 Since the publication of our [previous article][42] in this series the cross-browser compatibility of `deviceorientation` data values has improved considerably between different web browsers.
 
@@ -579,7 +563,7 @@ At the time of writing the above provided rotation transformations works correct
 [44]: https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html
 [45]: https://github.com/w3c/deviceorientation/issues/6
 
-## Summary {#summary}
+## Summary
 
 In this article we have presented two methods we can use to model a device’s 3-dimensional movement without introducing gimbal lock: rotation matrixes and quaternions.
 

@@ -23,7 +23,7 @@ If you haven’t already, download the new Opera Unite builds available, and sta
 
 Let us know what you think!
 
-## 1. Introducing Opera Unite {#part-1}
+## 1. Introducing Opera Unite
 
 Opera Unite is a unique technology that turns any computer or device running Opera into a Web server. In other words, your computer (running Opera Unite) is truly part of the fabric of the Web, rather than just interacting with it, and it’s something anyone can use. With Opera Unite, everyday non-technical users can serve and share content and services directly from their own computers in the form of intuitive applications. That sounds kind of cool from a technology point of view, but what can you do with it, and why is it important?
 
@@ -39,7 +39,7 @@ What Opera Unite offers is an opportunity and a challenge to developers and entr
 
 At this point, if you’re already convinced about Opera Unite’s potential, feel free to jump to [part 3][#part-3] for some examples of what Opera Unite services might look like in the near future. If you want to learn more about _why_ we created this technology, read the next part.
 
-## 2. The Internet’s unfulfilled promise {#part-2}
+## 2. The Internet’s unfulfilled promise
 
 Originally the Internet’s promise was that it would connect us all, bringing people together in a whole new way, bypassing the constraints of geography. The Web meant that we could all be part of a larger human network. How we _actually_ interact with each other online, however, has been shaped by particular techno-social circumstances. Because of those circumstances, our online interactions have been constrained and are far from perfect.
 
@@ -58,7 +58,7 @@ We are connected to a Web that has democratized much and is an amazing source of
 
 With Opera Unite, I think we can start moving in a different direction. I hope you’ll join me in imagining a more personal and social computing experience that actually begins to deliver on the old (but not forgotten) promise of the Internet bringing people together in meaningful ways.
 
-## 3. A vision of Opera Unite services {#part-3}
+## 3. A vision of Opera Unite services
 
 The first few services we’ve released for Opera Unite are fairly simple and offer functionality that you’ve likely seen elsewhere, perhaps on desktop applications or 3rd party web sites. These first few demos are meant to illustrate how Opera Unite services are put together and the basics behind the new technology. Building on that foundation, what power will developers unlock when they create and deploy Unite Services in the future? Below is an illustration of what an Opera Unite service could look like. In coming weeks, we’ll follow this up with further ideas and concepts.
 

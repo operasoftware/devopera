@@ -9,12 +9,7 @@ language: ja
 license: cc-by-3.0
 ---
 
-- [インストールと起動](#install)
-- [Opera TV Emulator を使用する](#using)
-- [Opera TV Emulator を使った Web プロジェクトの開発](#developing)
-- [サポートしているメディア形式](#media)
-
-## インストールと起動 {#install}
+## インストールと起動
 
 Opera TV Emulator は Linux のシステムイメージの形で提供され、バーチャルマシン [Oracle VirtualBox][1] を用いて起動する必要があります。これにより Web 開発者向けのテスト環境をできるだけ実際のデバイスシステムに近づけることができます。Virtual Box は Windows, Linux, Mac OS X などの一般的なオペレーティングシステム上で動作します。
 
@@ -41,7 +36,7 @@ Opera TV Emulator には２つの起動方法があります。`TVEmulator.vbox`
 
 Opera TV Emulator を頻繁に使うため、素早く起動したいと思われる場合には、`TVEmulator.vbox` ファイルのショートカットを作成し、デスクトップやアプリケーションメニュー内に置かれるとよいでしょう。
 
-## Opera TV Emulator を使用する {#using}
+## Opera TV Emulator を使用する
 
 ### キーボードとマウスを使って
 
@@ -70,7 +65,7 @@ TV Emulator を終了するには、右上にある **X** (Mac OS X の場合は
 
 ![リモコンボタンの動作](/articles/opera-tv-emulator-getting-started/remote.png)
 
-## Opera TV Emulator を使った Web プロジェクトの開発 {#developing}
+## Opera TV Emulator を使った Web プロジェクトの開発
 
 Opera TV Emulator を使うことで、ローカルコンピューター上に保存されている Web ページをテストすることができます。初めに TV Emulator の Linux system とフォルダーを共有する必要があります。
 
@@ -84,7 +79,7 @@ Opera TV Emulator を使うことで、ローカルコンピューター上に�
 
 プロジェクトファイルにアクセスするには TV Emulator にて以下のリンクをタイプします: `file://localhost/mydata/sf_foldername` (`foldername` には共有したフォルダ名を入力します)
 
-## サポートしているメディア形式 {#media}
+## サポートしているメディア形式
 
 Opera TV Emulator では以下の audio/video メディアフォーマットをサポートしています。
 

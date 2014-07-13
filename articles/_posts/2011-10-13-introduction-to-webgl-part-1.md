@@ -29,7 +29,7 @@ WebGL runs as a specific context for the HTML `<canvas>` element, which gives yo
 [3]: http://www.khronos.org/opengles/2_X/
 [4]: https://www.khronos.org/registry/webgl/specs/1.0/
 
-## How do I run WebGL? {#implementations}
+## How do I run WebGL?
 
 To access WebGL content you need to have a browser that supports it.
 

@@ -23,26 +23,7 @@ Welcome to the second in the series of dev.opera.com articles covering making mo
 
 There is significant overlap between pricing and budgeting, and of course scheduling and contracts as well. I don’t care if you’re the coolest, most in-demand talent in the world — successful execution of projects requires a sufficient grasp and intelligent use of these disciplines — or working with others who have those skills.
 
-The contents of this article are:
-
-- [What is Budgeting?](#budgeting)
-- [Where do budgets come from?](#budgets-from)
-- [What Factors Influence Complexity and Risk of Budgeting?](#factors)
-	- [Moving Parts](#moving-parts)
-	- [Project Definition](#projdef)
-	- [Technology Risk](#tech-risk)
-	- [Cash Flow](#cash-flow)
-	- [Other People](#other-people)
-- [How to Mitigate Your Risk](#mitigate)
-	- [Be Specific and Detailed in Everything You Do](#specific)
-	- [Buffer](#buffer)
-	- [Prevent Scope Creep](#scope-creep)
-	- [Distribute the Risk](#distribute-risk)
-	- [Maintain Constant Vigilance](#vigilance)
-	- [Tools to Help](#tools)
-- [Summary](#summary)
-
-## What is Budgeting? {#budgeting}
+## What is Budgeting?
 
 Broadly speaking, budgeting is the process of estimating the effort and resources required to execute a given task. When people speak of “budgeting”, they almost always refer to financial budgeting — budgeting money, and that’s what this article focuses on.
 
@@ -52,7 +33,7 @@ The budget is the financial plan for a project and to ensure profitability, you 
 
 Thus, the difference between taking this process seriously and not is the difference between a profitable and unprofitable project — making money!
 
-## Where do budgets come from? {#budgets-from}
+## Where do budgets come from?
 
 Budgets come from two places: they are either established by the client, or they are estimated by you after a client explains what he wants built. So, for example, a client will say “I have $10,000 to spend on a website — tell me what I can get”, or a client will say “I want a website that does X, Y and Z,” in response to which you estimate a budget.
 
@@ -73,15 +54,15 @@ So, on top of a good spec, and task list, generating good budgets requires two s
 
 If you can do both yourself, that’s fantastic! But, if you can’t, the odds are that for a given project, you are better at one, so find some help for the other.
 
-## What Factors Influence Complexity and Risk of Budgeting? {#factors}
+## What Factors Influence Complexity and Risk of Budgeting?
 
 Complexity and risk are two different, though related, concepts. Both, however, can directly impact your budgets.
 
-### Moving Parts {#moving-parts}
+### Moving Parts
 
 There are some obvious factors, and some that are less obvious. On the obvious side, budgets are harder to manage when there are more moving parts and more money. For example, managing the budget for a $10,000 website that you can build yourself will be far easier than managing the development budget for, say..., Windows Vista. In part this is because the budget for the website is approximately 0.00001% of Vista’s dev budget, and in part it is because you can build the website yourself, but Vista will take the coordinated efforts of tens of thousands of resources. This is, of course, an extreme instance, but it illustrates the point — the larger the project and the more moving parts, the harder it will be to plan and stick to a budget.
 
-### Project Definition {#projdef}
+### Project Definition
 
 Uncertainty means precisely that — lack of specific and fixed knowledge. The more uncertainty in a project, the less comfortable you should be representing a budget for that work. Hence all that time spent reinforcing the need for a good spec!
 
@@ -89,7 +70,7 @@ Defining a budget without a good spec is like trying to decide how much it shoul
 
 So, to start, if the spec is missing, wrong or incomplete, it will be extraordinarily challenging to generate an accurate budget (sometimes an inaccurate budget can be far worse than no budget at all — when there’s no budget you know it; when the budget is wrong, you can be lulled into incorrect and dangerous ambivalence, as you operate under the incorrect assumption that the work has been budgeted properly).
 
-### Technology Risk {#tech-risk}
+### Technology Risk
 
 Many of us love finding projects that allow us to work with new technologies — it’s how we keep our skills fresh and our portfolios sexy (recall the tips on increasing your rates from the last article). But, working with new technologies is directly akin to being a test pilot — odds are you’ll survive, but you never know!
 
@@ -108,7 +89,7 @@ This lesson applies even when working with established technologies — there is
 
 So, whether or not you realize it, there is always a technology risk inherent in the work we do, and when these risks manifest into problems, the budgets suffer.
 
-### Cash Flow {#cash-flow}
+### Cash Flow
 
 Another important consideration in budgeting is cash flow management. Let’s say you have a project that you believe will take you about 12 months to finish, and you’ve estimated the budget for the project at $50,000. And what’s even better is that your budget is accurate! (Woo hoo!)
 
@@ -116,7 +97,7 @@ Even though the budget was accurate, you could still end up in trouble. How? Wel
 
 It’s not enough to be cash-flow positive at the end of the project — you must be cash-flow positive at all points during the project, or your project will “run in the red” causing you financial pressure.
 
-### Other People {#other-people}
+### Other People
 
 As I mentioned above, budgets are always easier to manage when you are the only resource on a project. There are however issues beyond just the size of the team that can increase or decrease the budget risk. For example, have the multiple resources on the team worked together previously? If not, then work will inevitably flow more slowly than if everyone on the team were already familiar with the others. And, with new resources there is always the risk that the resource will flake out or fail — in which case you will have to find another resource for the work (with no guarantees what that new resource will cost), or, if you are capable and have no alternatives, you will end up doing the work yourself.
 
@@ -124,15 +105,15 @@ The same uncertainty applies to clients. If the client is new, you often have a 
 
 The more familiar you are with the other people involved in the project, the more comfortably you can formulate your budget estimates.
 
-## How to Mitigate Your Risk {#mitigate}
+## How to Mitigate Your Risk
 
-### Be Specific and Detailed in Everything You Do {#specific}
+### Be Specific and Detailed in Everything You Do
 
 As you can see from the description of risks, most of them stem directly from uncertainty. Some uncertainty — such as working with new people or technologies — can’t be resolved up-front and must be worked through. But others, such as project definition and cash-flow, can be reduced, and even eliminated completely.
 
 This requires being detailed about everything. As I explained above, no budget can be accurate without a detailed project definition, so make sure that the project definition leaves no room for questions. Define all the functional requirements, the technologies that will be used, the server environments on which the project will be deployed and your access to them — everything that you can think of. You’ll never get this right the first time — the point is to never make the same mistake twice. As soon as a mistake bites you in the ass once, learn from it and ensure you institute a process to prevent it from recurring.
 
-### Buffer {#buffer}
+### Buffer
 
 Even those uncertainties completely out of our control can be somewhat counter-balanced through the easiest, most basic and most important risk mitigation technique — buffering the budget. A buffer is padding — some extra cushion in your budget to account for complexities and risks.
 
@@ -146,13 +127,13 @@ There is no standard buffer. Recall that the buffer is a way to assign a value t
 
 Similarly, demanding, difficult clients incur larger buffers than reasonable, accommodating clients. Although you may derive some subconscious pleasure from charging more on projects with unpleasant clients, it is important to remember this is not punishment — this is business and as a business owner, it is your responsibility to look out for the interests of you, your firm, and your contractors and employees.
 
-### Prevent Scope Creep {#scope-creep}
+### Prevent Scope Creep
 
 To increase the chances that you can successfully maintain the budget on a project, it is vital to maintain vigilance for scope creep (the addition of new requirements to the project, without recognition of that fact, and corresponding adjustments to schedules and budgets). When a client attempts to add or change project requirements, it is important that you consider this a change request. You must not let change requests occur silently — that is a death-knell.
 
 Remember that you need not charge for all change requests — one reason to apply a buffer is so that you may accommodate certain reasonable change requests without upcharging. You can make that call on a case-by-case basis. Even if you don’t charge for the request however, the client must understand that it represents a change (so that, for example, if you have to charge for a separate change request later in the project, the client will be more accommodating, because you accommodated the client’s request at this point).
 
-### Distribute the Risk {#distribute-risk}
+### Distribute the Risk
 
 Risk is like a hot potato — if you have to carry it, you should get paid to carry it. But, sometimes it’s better just to pass it on to the next guy. Of course, it isn’t possible to distribute all risk away, but there are some key things you can do to pass on bits of the potato.
 
@@ -164,15 +145,15 @@ Of course, you must also strictly define your warranty. A warranty for your work
 
 The terms of your warranty would be contained in your contract. Just like a spec is the binding definition of the project, the contract is the binding definition of the relationship and business context of the project. Your contracts and warranties must be as comprehensively detailed as are your specification documents — a well written and considered contract can be all that separates a profitable from an unprofitable project. I’ll have much more to say on that, and many other important points that will impact your budgets, when I address contracts later in this series.
 
-### Maintain Constant Vigilance {#vigilance}
+### Maintain Constant Vigilance
 
 A budget should be considered a living document — it is not written once and then locked-down, only to be reviewed at the end to see how profitable the project was. Instead, the budget (like the schedule, as we will see in the next article) should be maintained and updated throughout the project. In this way you will be able to see, and hopefully address, minor issues before they become significant cost drains. You will learn to see budget problems in advance and avoid costly problems.
 
-### Tools to Help {#tools}
+### Tools to Help
 
 A final word to the wise: Learn to use a spreadsheet program fluently. At Almer/Blank, we use Numbers for day-to-day spreadsheet work, and when we need to bust out the VBA, we boot into Windows and use Excel — by far the most powerful spreadsheet program in the world. And if you don’t want to pay, there’s always OpenOffice.
 
-## Summary {#summary}
+## Summary
 
 In this article, we explored several important considerations in the process of establishing and managing project budgets, with a particular focus on recognizing and addressing the core risks of budgeting. We didn’t actually formulate a budget — and that’s because budgets really derive directly from the project schedule. So, in the next article, we will explore the creation and maintenance of project schedules — and their relationship to budgets.
 

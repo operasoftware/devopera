@@ -10,19 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-- [Introduction](#intro)
-- [What is the Network Service Discovery API?](#whatis)
-- [Download a build](#download)
-- [What does this build do?](#whatdoes)
-- [How do I use it?](#howtouse)
-- [Can I see any demos?](#demos)
-- [Are these builds production-ready?](#production)
-- [Anything else to be aware of?](#other)
-- [If you have problems](#problems)
-- [What’s next?](#next)
-- [Conclusion](#conclusion)
-
-## Introduction {#intro}
+## Introduction
 
 <figure class="figure">
 	<iframe width="560" height="315" src="//www.youtube.com/embed/dujaAWwGVB4" allowfullscreen class="figure__media"></iframe>
@@ -33,11 +21,11 @@ license: cc-by-3.0
 [1]: http://blog.nielsen.com/nielsenwire/online_mobile/three-screen-report-media-consumption-and-multi-tasking-continue-to-increase/
 [2]: http://www.w3.org/TR/2012/WD-discovery-api-20121004/
 
-## What is the Network Service Discovery API? {#whatis}
+## What is the Network Service Discovery API?
 
 The Network Service Discovery API enables web pages to communicate with devices advertising themselves on the network via different discovery protocols in a peer-to-peer configuration. It abstracts away the underlying complexity of Service Discovery protocols and returns back one or more UPnP or Zeroconf services in the network via a single API call. Now you can use JavaScript to find a UPnP server locally, browse its content and send that content to a UPnP client. A web page can act as a third-party control point and pass messages between connected services in the most appropriate format for that service.
 
-## Download a build {#download}
+## Download a build
 
 We have implemented this API in an [Opera Labs][3] build for desktop, available for you to download and experiment with. You can download the build most suited for your platform here:
 
@@ -69,7 +57,7 @@ Note: For this API to work, you **must** enable two features in this build:
 	<img src="{{ page.id }}/opera-config-service-discovery.png" alt="" class="figure__media">
 </figure>
 
-## What does this build do? {#whatdoes}
+## What does this build do?
 
 This build is based on the [Network Service Discovery API specification][18] snapshot dated 4th October 2012 with the following caveats:
 
@@ -108,7 +96,7 @@ The most common use case at this stage is to search for media files on a server 
 
 [26]: http://www.w3.org/TR/2012/WD-discovery-api-20121004/#use-cases-and-requirements
 
-## How do I use it? {#howtouse}
+## How do I use it?
 
 It’s probably best to look at a basic example by breaking it down into a few simple steps:
 
@@ -122,7 +110,7 @@ To simplify the process, we have also created the [Plug.Play library][27] which 
 [27]: http://richtr.github.com/plug.play.js/
 [28]: https://github.com/richtr/plug.play.js
 
-## Can I see any demos? {#demos}
+## Can I see any demos?
 
 We’ve prepared a couple of simple demos to demonstrate the discovery concept. The first is a [media player demo][29] which acts as a middle-man between media servers and renderers The second is a [web-based UPnP inspector][30] so you can monitor and edit messages to and from UPnP devices. Of course, to test these out you need UPnP services available on your network. Wikipedia has an extensive [list of UPnP media servers and clients][31], both hardware and software.
 
@@ -138,13 +126,13 @@ We’ve prepared a couple of simple demos to demonstrate the discovery concept. 
 	<a href="{{ page.id }}/snoopnp/"><img src="{{ page.id }}/javascript-upnp-inspector.png" alt="" class="figure__media"></a>
 </figure>
 
-## Are these builds production-ready? {#production}
+## Are these builds production-ready?
 
 No. The main issue is that there is no UI or privacy mechanism at this point -- in other words, web pages have full access to all UPnP services on your local network and a call to getNetworkServices will return all services that match the requested service type. Because of this, the Service Discovery API needs to be enabled manually in <a href="opera:config#UserPrefs|EnableServiceDiscoveryAPI">opera:config</a> in the builds provided on this page, as mentioned earlier.
 
 Ultimately, this API will ship with a opt-in interface to allow users to authorize a web page to connect with one or more services that the page has requested. We are currently hard at work imagining this user interface. When we have a good user experience story to tell for this API we will provide updates on this blog.
 
-## Anything else to be aware of? {#other}
+## Anything else to be aware of?
 
 A couple of things:
 
@@ -153,7 +141,7 @@ A couple of things:
 
 [38]: https://www.virtualbox.org/ticket/8698
 
-## If you have problems {#problems}
+## If you have problems
 
 If you have trouble getting the demos or your own code to work, there are number of things that could be the cause. Here are some steps to take to fix the problem.
 
@@ -164,7 +152,7 @@ If you have trouble getting the demos or your own code to work, there are number
 
 [39]: http://my.opera.com/community/forums/tgr.dml?id=2157
 
-## What’s next? {#next}
+## What’s next?
 
 We are currently discussing and iterating on the [current Network Service Discovery specification][40] in the [W3C Device APIs Working Group][41]. If you would like to contribute to development of this specification, you should join the [public mailing list][42].
 
@@ -174,7 +162,7 @@ We are currently discussing and iterating on the [current Network Service Discov
 
 One future improvement we are considering is to enable web pages to register themselves as services and advertise themselves on the local network. This would mean they could communicate with other devices in a network peer-to-peer, even between web pages on different devices!
 
-## Conclusion {#conclusion}
+## Conclusion
 
 As this is the first implementation of an early specification, any developer feedback is extremely valuable. We’d be grateful if you could let us know in the comments section below about your experiences with these builds, as well as ideas you may have for other use cases and improvements we could make. One improvement that has lots of potential is support for Zeroconf, meaning web pages could talk to iTunes, AirPlay devices, etc.
 

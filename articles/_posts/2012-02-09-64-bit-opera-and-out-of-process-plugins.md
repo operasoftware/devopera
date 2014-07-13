@@ -81,7 +81,7 @@ Bringing the out-of-process plug-in architecture across to Windows and Mac also 
 
 64-bit Windows and Mac have been in the works for a while, but we didn’t want to release them until we had a way of running all plug-ins that’s completely transparent to the user: This is now possible with the out-of-process plug-in architecture, so here we are! The 64-bit versions of Opera offer performance improvements in some specific areas and allow Opera to have more freedom in allocating memory.
 
-## Download Builds! {#builds}
+## Download Builds!
 
 - [Windows 32-bit][2]
 - [Windows 64-bit][3]
@@ -101,7 +101,7 @@ Note on bug reporting: This build is based on Opera 12 (Wahoo) therefore it incl
 
 [6]: opera:config#UserPrefs|EnableHardwareAcceleration
 
-## Read more… {#readmore}
+## Read more…
 
 - [The Opera plug-in interface][7]
 

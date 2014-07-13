@@ -15,13 +15,7 @@ tags:
 license: cc-by-3.0
 ---
 
-- [Introduction](#intro)
-- [What is a matrix?](#whatisamatrix)
-- [Transforms and coordinate systems](#coordinates)
-- [Calculating the transform: Matrix and vector math](#calculatingtransform)
-- [Compound transforms with the matrix](#compoundtransforms)
-
-## Introduction {#intro}
+## Introduction
 
 The matrix functions — `matrix()` and `matrix3d()` — are two of the more brain-bending things to understand about [CSS3 Transforms][6]. In most cases, you’ll use functions such as `rotate()` and `skewY()` for ease and clarity’s sake. Behind every transform, though, is an equivalent matrix. It’s helpful to understand a bit about how they work, so let’s take a look.
 
@@ -37,7 +31,7 @@ Note that as of this publication, Opera does not support three dimensional trans
 
 I’ve also used un-prefixed versions of the `transform` properties in this article. In practice, these properties are still experimental and subject to change. Include the prefixed versions (`-o-transform`, for example) in your style sheet until they are finalized.
 
-## What is a matrix? {#whatisamatrix}
+## What is a matrix?
 
 [Matrix][8] is a fancy math word for a rectangular array of numbers, symbols, or expressions, ([Figure 1](#figure-1)). Matrices have many math and science applications. Physicists, for example, used them in the study of quantum mechanics. In the computer graphics realm, they’re also used for things like — surprise! — linear transformations and projecting 3D images onto a 2D screen. That’s precisely what the matrix functions do: `matrix()` allows us to create linear transformations, while `matrix3d()` lets us create the illusion of three dimensions in two dimensions using CSS.
 
@@ -56,7 +50,7 @@ We won’t wade too far into the waters of advanced algebra here. You should be 
 
 The big point to understand is that a transform multiplies a matrix by the coordinates of a particular point (or points), expressed as a vector.
 
-## Transforms and coordinate systems {#coordinates}
+## Transforms and coordinate systems
 
 First let’s talk about coordinate systems. Every document viewport is a coordinate system. The top-left point in the viewport is the origin, with `(0,0)` coordinates. Values increase to the right along the X-axis, and down along the Y-axis. The Z-axis determines the perceived distance from the viewer in the case of 3D transforms. Larger values appear to be closer and bigger; smaller values appear smaller and farther away.
 
@@ -76,7 +70,7 @@ We can change the origin of the local coordinate system by adjusting the `transf
 
 Browsers do these calculations for you whenever you apply a transform. You just need to know which arguments can help you achieve your desired effect.
 
-## Calculating the transform: Matrix and vector math {#calculatingtransform}
+## Calculating the transform: Matrix and vector math
 
 Let’s look at an example using the [3×3 matrix][18] used to calculate two dimensional transforms ([Figure 4](#figure-4)). The [4×4 matrix][20] used for 3D transforms works the same way, with additional numbers for the additional z-axis.
 
@@ -179,7 +173,7 @@ Matrix values for each of the transform functions are outlined in both the [Scal
 [38]: http://www.w3.org/TR/SVG/coords.html#TransformMatrixDefined
 [39]: http://www.w3.org/TR/css3-transforms/#mathematical-description
 
-## Compound transforms with the matrix {#compoundtransforms}
+## Compound transforms with the matrix
 
 Finally, let’s look at how to create a compound transform — a transform equal to applying multiple transform functions at the same time. For simplicity’s sake, we’ll stick to two dimensions. That means we will use the 3×3 transform matrix and the `matrix()` function. With this transform, we will rotate our object by 45° and scale it to 1.5 times its size.
 

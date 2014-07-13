@@ -32,7 +32,7 @@ In this article I will take you through a possible cross-browser solution — a 
 
 **Editor’s note:** A few of you may be wondering what we are doing publishing an example that makes use of IE Filters? After all, they can slow down the page a lot, and they are a proprietary, IE-specific, non-open standard. CSS3 properties can handle a lot of the typical IE filter use cases. Well, this is great if you don’t particularly need the drop-shadows in IE (9 will support `box-shadow`, but 8 and below don’t), and/or want to add a JavaScript solution. But what if you absolutely need UI consistency across all browsers and want it to work without JavaScript? We absolutely do not condone widespread use of IE filters, but taking a pragmatic view, this is a good cross-browser solution for certain situations.
 
-## Native support in browsers {#internalSupport}
+## Native support in browsers
 
 The CSS3 `box-shadow` property has good support across most modern browsers, although for cross-browser support you currently need to use all of the following variants of the property:
 
@@ -95,7 +95,7 @@ Browser support summary (as of July 2010):
 
 Data about IE9 taken from IE9 Developer Preview 3.
 
-## IE filters {#ieAnalog}
+## IE filters
 
 I have learnt a lot about CSS-filters in IE recently. First of all, the [blur filter][8] allows you to blur elements in IE. Let’s start with a simple `<div>` element:
 
@@ -135,7 +135,7 @@ This gives the effect shown in figure 2 when applied to our example.
 	<figcaption class="figure__caption" markdown="span">Figure 2: Our simple `<div>` element with a blur filter applied</figcaption>
 </figure>
 
-## Creating the drop shadow in IE and in other browsers {#IEandNormal}
+## Creating the drop shadow in IE and in other browsers
 
 We can use this to create box-shadows in IE. I will include a "ghost" `<div>` element the same size as the content we want to put a shadow on. In browsers that do support `box-shadow`, it will be hidden off screen. In IE, it will be given a blur and positioned behind the content block to act as a drop shadow.
 
@@ -171,7 +171,7 @@ The result of this is shown in figure 3:
 	<figcaption class="figure__caption">Figure 3: The IE drop shadow, shown on its own without the content it is shadowing</figcaption>
 </figure>
 
-## Putting the example together {#realization}
+## Putting the example together
 
 You can download a [normal drop shadow example][12] and an [inner drop shadow example][13] to get more of an idea of how this technique works. Below I have listed the full code for the basic technique. The first listing shows the HTML code for the example, with the main content and "ghost" `<div>` element put together:
 
@@ -260,7 +260,7 @@ So, after all is said and done, the final result we are left with is similar to 
 	<figcaption class="figure__caption">Figure 4: The final example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
 </figure>
 
-## Inner shadow {#inner}
+## Inner shadow
 
 We can use a similar technique to create inner shadows that work across browsers including IE. The differences are that `overflow: hidden;` is used to clip the shadow so that it doesn’t spill out of the container, and we also change the `background-color` in the conditional CSS to the same as the `box-shadow` colour in the main CSS. Again, let’s first start with the HTML:
 
@@ -337,7 +337,7 @@ The code above gives us the rendering shown in figure 5.
 	<figcaption class="figure__caption">Figure 5: The final inner shadow example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
 </figure>
 
-## Summary {#summary}
+## Summary
 
 In this article we have walked through a cross-browser solution for creating drop shadows on block level elements, based on `box-shadow` and using IE filters to provide IE support. It provides drop shadows for:
 

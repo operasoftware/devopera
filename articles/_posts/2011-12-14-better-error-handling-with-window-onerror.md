@@ -155,7 +155,7 @@ To prevent information leaking from one server to the other, it is important to 
 
 [9]: http://www.schemehostport.com/2011/10/x-script-origin-we-hardly-knew-ye.html
 
-## Browsers supporting `window.onerror` {#browser}
+## Browsers supporting `window.onerror`
 
 - Chrome 13+
 - Firefox 6.0+

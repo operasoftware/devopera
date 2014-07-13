@@ -42,7 +42,7 @@ This article takes things further, showing how to use these properties to create
 	- [A Windows desktop](#windowsdesktop)
 - [Summary](#summary)
 
-## Where can they be applied? {#whereapplied}
+## Where can they be applied?
 
 Support for these CSS3 features was introduced in Opera 10.50, and you’ll also be able to rely on most of them in the latest versions of Firefox, Safari and Chrome.
 
@@ -106,11 +106,11 @@ It is really a matter of who your target audience is, and providing an acceptabl
 
 One thing to be aware of is that using a lot of `box-shadow` properties is expensive in terms of processing — especially when you make heavy use of blurring. If you want to use these effects in your Widgets and web applications, you should test carefully, especially on mobile and other lower-power devices as they start to support these features.
 
-## Take 1: Buttons {#buttons}
+## Take 1: Buttons
 
 One of the most obvious applications of these properties is to simplify button design. Todays buttons are typically created in a particular pattern. The button usually has rounded corners. Light comes from the top, and shadow appears below the button. Often there is a glass shine effect on the button itself. The text is often white (or another light colour) with a dark drop shadow, or vice-versa, to give an embossed or raised effect. Let’s now go through some examples of what is possible, starting with a step-by-step button construction.
 
-### Stage 1: The basic shape {#stageone}
+### Stage 1: The basic shape
 
 First up, I’ll set a basic core colour for the button, and give it rounded corners:
 
@@ -135,7 +135,7 @@ The result of this code is as follows:
 	</style>
 </figure>
 
-### Stage 2: Adding some light and shadow {#stagetwo}
+### Stage 2: Adding some light and shadow
 
 Next I’ll add two box shadows to the button, to make it look 3D: raised up, and slightly convex on top:
 
@@ -178,7 +178,7 @@ Here’s the result of this addition:
 	</style>
 </figure>
 
-### Stage 3: Adding text style {#stagethree}
+### Stage 3: Adding text style
 
 Finally, I’ll give the button text a more fitting colour, and give it a lighter drop shadow to make it look slightly embossed:
 
@@ -225,7 +225,7 @@ Here is our final result:
 	</style>
 </figure>
 
-### Variation 1: A red button {#redbutton}
+### Variation 1: A red button
 
 	button {
 		padding:5px 30px;
@@ -276,7 +276,7 @@ The result is as follows:
 	</style>
 </figure>
 
-### Variation 2: A Twitter-esque button {#twitterbutton}
+### Variation 2: A Twitter-esque button
 
 	button{
 		padding:5px 30px;
@@ -327,7 +327,7 @@ This looks like so:
 	</style>
 </figure>
 
-### Variation 3: A download button {#downloadbutton}
+### Variation 3: A download button
 
 	button {
 		padding:5px 30px;
@@ -378,11 +378,11 @@ This gives us the following result:
 	</style>
 </figure>
 
-## Take 2: Containing boxes {#boxes}
+## Take 2: Containing boxes
 
 Another obvious use of these properties is to style containing boxes in UIs — the areas that contain your buttons, form fields, and other interactive application features. As before, I will go through a few examples to help fire up your creativity!
 
-### Box 1: Surf’s up {#surfbox}
+### Box 1: Surf’s up
 
 This is a blue box with some cyan highlights and a light drop shadow.
 
@@ -427,7 +427,7 @@ Here is the result:
 	</style>
 </figure>
 
-### Box 2: Ghosted grey {#ghostbox}
+### Box 2: Ghosted grey
 
 In this case, the effect is obtained with creative use of an inner shadow.
 
@@ -472,7 +472,7 @@ This gives us the following effect:
 	</style>
 </figure>
 
-### Box 3: They call me Mr. Glass {#glassbox}
+### Box 3: They call me Mr. Glass
 
 Here I’ve applied rgba colours to the shadows, so most of this box is semi-transparent. I have added a second `div` around the first one with a repeating background pattern image applied to it, so you can appreciate the full extent of this effect.
 
@@ -554,11 +554,11 @@ For more information on RGBa and HSLa colours, check out Molly Holzschlag’s ar
 
 [22]: /articles/hsl-rgb-and-alpha-transparency/
 
-## Take 3: Advanced examples {#advanced}
+## Take 3: Advanced examples
 
 Hopefully you are completely blown away by the power of the new CSS properties by now, but just in case I have prepared some more examples! Figures 1-3 show what the examples look like, and you can also use the links to see them running live.
 
-### Media player {#mediaplayer}
+### Media player
 
 <figure class="figure" id="figure-1">
 	<img src="{{ page.id }}/media-player.png" alt="A screenshot of a CSS3 media player UI example" class="figure__media">
@@ -569,7 +569,7 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 [24]: {{ page.id }}/media-ui.html
 
-### A certain phone home screen {#phone}
+### A certain phone home screen
 
 <figure class="figure" id="figure-2">
 	<img src="{{ page.id }}/phone-home-screen.png" alt="A screenshot of a CSS3 mobile phone UI example" class="figure__media">
@@ -580,7 +580,7 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 [26]: {{ page.id }}/phone.html
 
-### A Windows desktop {#windowsdesktop}
+### A Windows desktop
 
 <figure class="figure" id="figure-3">
 	<img src="{{ page.id }}/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example" class="figure__media">
@@ -591,7 +591,7 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 [28]: {{ page.id }}/win7.html
 
-## Summary {#summary}
+## Summary
 
 This concludes our tour of some advanced UI effects, all created with CSS3 shadows and rounded corners — absolutely no images required. At Opera we’re pretty excited about having this functionality available, and hope you are as well — we look forward to seeing what you’ll create!
 
