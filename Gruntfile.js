@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 		watch: {
 			styles: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'copy']
+				tasks: ['sass', 'autoprefixer', 'cssshrink', 'copy']
 			},
 			limit: {
 				files: [
