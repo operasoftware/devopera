@@ -7,11 +7,12 @@
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-sass": "^0.7.3",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssshrink": "0.0.7",
     "grunt-jekyll": "^0.4.2",
     "grunt-rsync": "^0.6.1",
     "grunt-text-replace": "^0.3.12",
     "load-grunt-tasks": "^0.6.0",
     "lodash-template": "^1.0.0",
-    "time-grunt": "^0.3.2"
+    "time-grunt": "^0.4.0"
   }
 }
