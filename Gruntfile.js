@@ -42,7 +42,10 @@ module.exports = function(grunt) {
 				},
 				expand: true,
 				cwd: '_site/',
-				src: '**/index.html',
+				src: [
+					'**/index.html',
+					'errors/*.html'
+				],
 				dest: '_site/'
 			},
 			xml: {
