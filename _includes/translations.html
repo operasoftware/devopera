@@ -1,6 +1,6 @@
 {% assign translated = false %}
 {% capture translations %}
-	{% for post in site.posts %}
+	{% for post in site.categories[page.category] %}
 		{% assign page_slug = page.url | split: '/' | last %}
 		{% assign post_slug = post.url | split: '/' | last %}
 		{% if post_slug == page_slug %}
