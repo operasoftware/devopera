@@ -1,5 +1,5 @@
 ---
-title: Accessibilité d’une vidéo en HTML5 avec sous-titres en JavaScript
+title: Accessibilité d’une Vidéo en HTML5 Avec Sous-Titres en JavaScript
 authors:
 - bruce-lawson
 tags:
