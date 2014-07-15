@@ -66,15 +66,32 @@ module.exports = function(grunt) {
 			limit: {
 				files: [
 					'**',
-					'!_site/**',
-					'!node_modules/**',
+
+					'!.git/**',
 					'!.sass-cache/**',
-					'!styles/*',
-					'!Gruntfile.js',
-					'!README.md',
+
+					'!_scripts/**',
+					'!_site/**',
+
+					'!CONTRIBUTING.md',
 					'!LICENSE.md',
+					'!README.md',
+
+					'!Gruntfile.js',
+					'!node_modules/**',
 					'!package.json',
-					'!.git/**'
+					'!install.sh',
+					'!styles/*',
+
+					'!articles/**',
+						'articles/index.html',
+						'articles/**/_posts/*.md',
+					'!blog/**',
+						'blog/index.html',
+						'blog/**/_posts/*.md',
+					'!tv/**',
+						'tv/index.html',
+						'tv/**/_posts/*.md',
 				],
 				tasks: ['jekyll:limit', 'htmlmin']
 			}
