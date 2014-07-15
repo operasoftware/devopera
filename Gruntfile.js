@@ -14,6 +14,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		cssshrink: {
+			shrink: {
+				files: {
+					'styles/screen.css': 'styles/screen.css'
+				}
+			}
+		},
 		autoprefixer: {
 			prefix: {
 				src: 'styles/screen.css'
@@ -125,6 +132,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [
 		'sass',
 		'autoprefixer',
+		'cssshrink',
 		'jekyll:full',
 		'htmlmin'
 	]);
@@ -132,6 +140,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build:limit', [
 		'sass',
 		'autoprefixer',
+		'cssshrink',
 		'jekyll:limit',
 		'htmlmin'
 	]);
