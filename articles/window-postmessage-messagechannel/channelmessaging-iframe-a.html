@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo</title>
+	<link rel="stylesheet" href="webmessaging.css" media="screen">
+	<style media="screen">
+		body{font:90% / 1 sans-serif;}
+		h1{color:#000;}
+		p{margin:0;}
+	</style>
+</head>
+<body>
+	<h1>Pretend this is a games site.</h1>
+	<div></div>
+
+	<script>
+	var loadHandler = function(e){
+		if(window.MessageChannel === undefined){
+       	 alert('Your browser does not support MessageChannel.');
+    	} else {
+			// Create a new MessageChannel object.
+			var mc = new MessageChannel();
+
+			// Send a port to our parent.
+			window.parent.postMessage('gameSiteLoaded','http://dev.opera.com',[mc.port1]);
+
+			mc.port2.addEventListener('message', function(e){
+				var div = document.querySelector('div');
+				div.innerHTML += '<p>'+e.data.replace(/add/gi,'Added')+'</p>';
+			},false);
+
+			mc.port2.start();
+		}
+	}
+
+
+	window.addEventListener('DOMContentLoaded', loadHandler, false);
+
+	</script>
+
+</body>
+</html>

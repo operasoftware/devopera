@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo: Telling the parent document</title>
+	<link rel="stylesheet" href="webmessaging.css" media="screen">
+</head>
+<body class="demo">
+
+	<h1>Web Messaging Demo: Telling the parent document</h1>
+
+	<p>In this document, we are:</p>
+
+	<ul>
+		<li>Opening a new window.</li>
+		<li>Adding a <code>message</code> event listener and handler.</li>
+		<li>Once that <code>message</code> event is fired, we will use our event handler to invoke <code>window.postMessage()</code> (and using <code>setTimeout</code> to delay the message posting).</li>
+	</ul>
+
+	<p>In the document of our new window, we are:</p>
+
+	<ul>
+		<li>Setting up an event listener that will post a message to this window when that document loads.</li>
+		<li>Adding a <code>message</code> event listener and handler to listen for message events posted from this document.</li>
+	</ul>
+
+
+<p><button>Open the window</button></p>
+
+<footer>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+
+</footer>
+
+<script>
+var button, clickHandler;
+
+button = document.querySelector('button');
+
+clickHandler = function(e){
+	window.open('webmessaging-tellopener-win.html','newwin','width=500,height=500');
+}
+button.addEventListener('click',clickHandler,false);
+
+/*
+Receives and handles the message sent by the
+document in our other window
+*/
+
+window.addEventListener('message', function(e){
+	var interval;
+	var postmsg = function(win){
+		win.postMessage('This is the message.<br>','http://dev.opera.com');
+	};
+
+	// check the origin
+	if( e.origin == 'http://dev.opera.com')
+		switch( e.data ){
+			case 'ready':
+				// e.source = the sending window object
+				interval = setTimeout(postmsg,2000,e.source);
+			    break;
+
+			case 'closed':
+				clearInterval(interval);
+				break;
+		}
+    }, false);
+
+
+</script>
+</body>
+</html>
