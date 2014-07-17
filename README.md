@@ -27,5 +27,5 @@ There are two modes of development available:
 
 - All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.
 - You may require write access for all commands mentioned above. Type `sudo`, space and command if needed.
-- To launch a Jekyll server open _another_ console instance or tab and run `jekyll serve`.
+- To launch a simple Python server open _another_ console instance or tab, navigate to the `_site` folder and run `python -m SimpleHTTPServer 8000`. You can then load the website in your browser by going to `http://localhost:8000/` or in any browser on a device on the local network by going to `computername.local:8000`. You can find and edit your computer name in _System Preferences_ > _Sharing_.
 - If you get an error running `grunt watch`, try to increase the file number limit with the `ulimit -n 10000` command
