@@ -23,9 +23,12 @@ There are two modes of development available:
 	- Please file an issue if you need the same quick watcher for anything else: scripts, images, etc.
 2. If you need to build a production version of Dev.Opera, run `grunt build` and everything will not just be built inside the `_site` folder, but also compressed and optimized. Just once.
 
+## Running local server
+
+To launch a simple server open _another_ console instance or tab, navigate to the `_site` folder and run `python -m SimpleHTTPServer 8000`. You can then load the website in your browser by `http://localhost:8000/` address. This server will be also available in the local Wi-Fi network by following address `x.x.x.x:8000` where `x.x.x.x` is your computer’s IP address. To get your IP address go to _System Preferences > Network > Wi-Fi._ For all Apple devices your server will be also available by your computer’s local network name like `computername.local:8000`, which could be found in _System Preferences > Sharing._
+
 ## Notes
 
 - All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.
 - You may require write access for all commands mentioned above. Type `sudo`, space and command if needed.
-- To launch a simple Python server open _another_ console instance or tab, navigate to the `_site` folder and run `python -m SimpleHTTPServer 8000`. You can then load the website in your browser by going to `http://localhost:8000/` or in any browser on a device on the local network by going to `computername.local:8000`. You can find and edit your computer name in _System Preferences_ > _Sharing_.
 - If you get an error running `grunt watch`, try to increase the file number limit with the `ulimit -n 10000` command
