@@ -6,8 +6,13 @@ intro: 'This article describes how you can install Opera Mini on your computer f
 tags:
 - opera-mini
 - compatibility
+cover: png
 license: cc-by-3.0
 ---
+
+<figure class="figure figure--right">
+	<img src="{{ page.id }}/cellphone.png" alt="Opera Mini in Microemulator" class="figure__media">
+</figure>
 
 For development and testing purposes, it can be useful to install Opera Mini on your computer. Opera Mini is used by more than 244 million people per month, and for many of them, it’s the only way they can access the internet. However, as Opera Mini is a proxy browser with limited JavaScript functionality, it’s important you test your site in it.
 
@@ -15,44 +20,36 @@ In a nutshell, you’ll need Java and MicroEmulator, in which you’ll run an in
 
 ## Get Java
 
-Go to the [Java download page](https://www.java.com/en/download/mac_download.jsp?locale=en) and click on the “I understand the above and want to download…” link: the Java installer will be downloaded. Open the downloaded Java installer and follow the steps to complete the installation.
+Go to the [Java download page](https://www.java.com/en/download/) and click on the “Free Java Download” button. On the next screen, you may get a warning that Java might not run inside your browser: this is not important as we will run Java on the system level. Just proceed with the download, and once this is finished, open the Java installer and follow the steps to complete the installation.
 
 ## Get MicroEmulator up and running
 
-Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downloads/detail?name=microemulator-2.0.4.zip&can=2&q=) and click on **microemulator-2.0.4.zip** to start the download. Once it’s downloaded, unzip **microemulator-2.0.4.zip** and move it to a convenient location. Inside the **microemulator-2.0.4** folder, you will find **microemulator.jar**.
+Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downloads/detail?name=microemulator-2.0.4.zip&can=2&q=) and click on _microemulator-2.0.4.zip_ to start the download. Once it’s downloaded, unzip it and move the resulting folder to a convenient location, _Program Files_ on Windows or _Applications_ on Mac, for example. Inside you will find _microemulator.jar._
 
-### On Mac
+### Special Mac instructions
 
-Right click it and choose **Open** from the context menu. Next, you will get a warning that **microemulator.jar** is from an unidentified developer. Click **Open** to launch the application.
-
-<figure class="figure">
-	<img src="{{ page.id }}/open-microemu.png" alt="Resizable device setting" class="figure__media">
+<figure class="figure figure--right">
+	<img src="{{ page.id }}/open.png" alt="Security dialog on Mac" class="figure__media">
 </figure>
 
-### On Windows
+Right click _microemulator.jar_ and choose _Open_ from the context menu. Next, you will get a warning that this application is from an unidentified developer. Click _Open_ button to launch the application.
 
-???
+## Making the emulator resizable
 
-Once MicroEmulator is launched, go to **Options > Select device**. Select **Resizable device** and choose **Set as default**. This setting will give you a resizable (and more usable) emulator window.
-
-<figure class="figure">
-	<img src="{{ page.id }}/resize-microemu.png" alt="Resizable device setting" class="figure__media">
+<figure class="figure figure--right">
+	<img src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini" class="figure__media">
 </figure>
+
+Once MicroEmulator is launched, go to _Options > Select device._ Select _Resizable device_ and choose _Set as default._ This setting will give you a resizable (and more usable) emulator window.
 
 ## Get Opera Mini
 
-Go to the [Opera Mini download page](http://www.opera.com/mobile/download/versions/), select “Opera Mini 8” and click on “View download link”. Then choose **opera-mini-latest-advanced-en.jar** to start the download.
+Go to the [Opera Mini download page](http://www.opera.com/mobile/download/versions/), select “Opera Mini 8” and click on “View download link”. Then choose _opera-mini-latest-advanced-en.jar_ to start the download.
 
 ## Running Opera Mini inside MicroEmulator
 
-Now we will run Opera Mini inside MicroEmulator.
+Now we will run Opera Mini inside MicroEmulator. Open MicroEmulator and go to _File > Open MIDlet File…,_ then navigate to the location where you’ve saved the downloaded _opera-mini-…-advanced-en.jar_ file and open it.
 
-Open MicroEmulator and go to **File > Open MIDlet File...**, then navigate to the location where you’ve saved the downloaded **opera-mini-...-advanced-en.jar** file and open it.
+Then, click _Start._ Opera Mini will be installed and subsequently, its EULA is shown. Once you accept it, the Opera Mini start screen is shown and you can start browsing!
 
-Then, click **Start**. Opera Mini will be installed and subsequently, its EULA is shown. Once you accept it, the Opera Mini start screen is shown and you can start browsing!
-
-<figure class="figure">
-	<img src="{{ page.id }}/browse-operamini.png" alt="Opera Mini with comfortable size" class="figure__media">
-</figure>
-
-Note that file and localhost URLs are not supported in Opera Mini. Your page needs to be on a publicly accessible URL (behind a password is OK of course) in order to be viewable in Opera Mini.
+Note that `file://` and `localhost://` URLs are not supported in Opera Mini. Your page needs to be on a publicly accessible URL (behind a password is OK of course) in order to be viewable in Opera Mini.
