@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo: Channel Messaging</title>
+	<link rel="stylesheet" href="webmessaging.css" media="screen">
+</head>
+<body>
+
+	<h1>Web Messaging Demo: Channel messaging and ports</h1>
+
+
+	<iframe src="channelmessaging-iframe-a.html"></iframe>
+	<iframe src="channelmessaging-iframe-b.html"></iframe>
+
+<footer>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+
+</footer>
+
+<script>
+function init(){
+
+
+	var iframes,
+		messageHandler,
+
+	iframes = window.frames;
+
+	messageHandler = function(evt){
+		if( evt.origin == 'http://dev.opera.com'){
+			if( evt.ports.length > 0 ){
+				// transfer the port to our other document.
+				iframes[1].postMessage('portopen','http://dev.opera.com',evt.ports);
+			}
+		}
+	}
+
+
+	// Listen for the message from iframe[0]
+	window.addEventListener('message',messageHandler,false);
+}
+
+window.addEventListener('DOMContentLoaded',init,false);
+
+</script>
+</body>
+</html>

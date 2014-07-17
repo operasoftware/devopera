@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo</title>
+	<style media="screen">
+		body{font:90% / 1.5 sans-serif;}
+		.highlight{background:#fc0;}
+	</style>
+</head>
+<body>
+	<h1>postMessage recipient (iframe; same domain)</h1>
+
+	<div></div>
+
+	<script>
+	(function(){
+		var div = document.querySelector('div');
+		div.innerHTML = '';
+
+		var msgHandler = function(e){
+			/*
+			  check that the origin is the right one.
+			*/
+			if( e.origin == 'http://dev.opera.com' ){
+				div.innerHTML += e.data+'<br>';
+			} else{
+				throw new Error('Origin domain is not allowed.');
+			}
+		}
+		// listen for the message event
+		window.addEventListener('message', msgHandler, false);
+	})();
+	</script>
+
+</body>
+</html>
