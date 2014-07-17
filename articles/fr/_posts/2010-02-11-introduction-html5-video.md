@@ -1,5 +1,5 @@
 ---
-title: Introduction à l’élément HTML5 video
+title: Introduction à l’élément HTML5 Video
 authors:
 - patrick-lauke
 - bruce-lawson

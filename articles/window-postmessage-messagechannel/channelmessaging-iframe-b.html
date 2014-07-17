@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo</title>
+ 	<link rel="stylesheet" href="webmessaging.css" media="screen">
+	<style media="screen">
+		body{font:90% / 1.2 sans-serif;}
+		h1{color:#000;}
+	</style>
+	</head>
+<body>
+	<h1>Pretend that this is an address book site.</h1>
+
+	<div></div>
+
+	<form>
+	<p><label for="email">Enter a friend's email address:</label>
+	<input type="email" id="email" name="email" placeholder="foo@example.com" value="" required><br>
+	<button>Add a friend to game circle</button></p>
+
+	<script>
+
+	function loadHandler(evt){
+		var port;
+
+		var messageHandler = function(evt){
+			/*
+			  widening our port's scope so it is available
+			  whenever the form handler is invoked.
+			*/
+			if( evt.origin == 'http://dev.opera.com'){
+				port = evt.ports[0];
+			} else {
+				alert('Origin '+evt.origin+' is not allowed.');
+			}
+		}
+
+		var formHandler = function(fevt){
+				/*
+				 Since we don't have a script to post this to,
+				 we still want to prevent the default submission
+				 behavior. But we ONLY after we know whether the email
+				 is valid.
+
+				 If we prevented the default before checkValidity,
+				 we would kill ALL validation.
+				 */
+
+				if( fevt.target.checkValidity() ){
+					// prevent form submission.
+					fevt.preventDefault();
+					var email = document.querySelector('#email').value;
+					if( port === undefined){
+						alert('No port available. Message sending failed.');
+					} else {
+						port.postMessage('add '+email+' to gaming circle.');
+					}
+				}
+
+		}
+		document.forms[0].addEventListener('submit',formHandler,false);
+
+
+		window.addEventListener('message',messageHandler,false);
+
+
+		window.parent.postMessage('addressBookSiteLoaded','http://dev.opera.com');
+
+	}
+
+	window.addEventListener('DOMContentLoaded',loadHandler,false);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Web messaging demo: Telling the opening window</title>
+	<style media="screen">
+		body{font:90% / 1.5 sans-serif;}
+		.highlight{background:#fc0;}
+	</style>
+</head>
+<body>
+	<h1>postMessage recipient (new window; across domains)</h1>
+
+	<div></div>
+
+	<script>
+	(function(){
+
+		var alsoinvoke = function(data){
+			var div = document.querySelector('div');
+			div.innerHTML += data;
+		}
+
+		var msgHandler = function(e){
+			/*
+			Check that the origin is the right one.
+			Could also pass the event object as is to a function
+			that pulls out the data, lastEventId, and source.
+			*/
+
+			// allowed origins
+			if(e.origin === 'http://dev.opera.com'){
+				alsoinvoke( e.data );
+			} else{
+				throw new Error('Origin domain is not allowed.');
+			}
+		}
+		// listen for the message event from our opening window
+		window.addEventListener('message', msgHandler, false);
+
+		// when this document has loaded, send a message to our parent.
+		window.addEventListener('load', function(e){
+			e.currentTarget.opener.postMessage('ready','http://dev.opera.com');
+		}, false);
+
+		// when we have closed the window, tell the parent that it is closed.
+		window.addEventListener('unload', function(e){
+			e.currentTarget.opener.postMessage('closed','http://dev.opera.com');
+		}, false);
+
+	})();
+	</script>
+
+</body>
+</html>
