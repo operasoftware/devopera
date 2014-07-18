@@ -48,7 +48,7 @@
 		padding:0 0.2em;
 		tab-size:4;
 		font-size:0.95em;
-		font-family:PT Mono, monospace, monospace;
+		font-family:Monaco, Consolas, monospace, monospace;
 		}
 	// Quote
 	blockquote {
@@ -100,6 +100,7 @@
 		code {
 			padding:0;
 			background:none;
+			word-wrap:break-word;
 			}
 		}
 	}
