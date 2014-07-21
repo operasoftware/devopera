@@ -30,6 +30,7 @@
   - html5
   - media:
     - audio
+    - picture
     - video
   - semantics:
     - microdata
