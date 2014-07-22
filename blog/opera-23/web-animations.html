@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<title>Web Animations API demo</title>
+<body>
+<!--
+	Based on https://gist.github.com/dstockwell/822baee4997a54723b87, but
+	updated to match the latest version of the spec.
+-->
+<script>
+function createAndAnimate(part) {
+	var element = document.createElement('pre');
+	element.textContent = part;
+	document.body.appendChild(element);
+	element.animate(
+		[
+			{ 'transform': 'rotate(0deg)' },
+			{ 'transform': 'rotate(360deg)' },
+		],
+		{
+			'duration': 5000,
+			'iterations': Infinity,
+			'delay': Math.random() * 5000,
+		}
+	);
+}
+
+document.documentElement
+	.outerHTML
+	.split('\n')
+	.forEach(createAndAnimate);
+</script>
