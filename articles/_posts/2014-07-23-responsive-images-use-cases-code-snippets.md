@@ -1,5 +1,5 @@
 ---
-title: Responsive images: use cases and documented code snippets to get you started
+title: 'Responsive images: use cases and documented code snippets to get you started'
 authors:
 - andreas-bovens
 intro: 'A handy list of documented examples of responsive images markup, to make you familiar with its different combined use cases.'
@@ -15,9 +15,9 @@ license: cc-by-3.0
 
 ## Introduction
 
-Finally, true responsive images are becoming a reality on the web — in pure  HTML, without convoluted hacks. The `<picture>` element and a couple of new attributes for the `<img>` element are behing a flag in Chromium 37 (so coming soon in Opera), in [Firefox Nightly](https://bugzilla.mozilla.org/show_bug.cgi?id=870022) and are being [implemented in WebKit](https://bugs.webkit.org/show_bug.cgi?id=134634) (although it remains to be seen if Apple will ship it in the next version of Safari).
+Finally, true responsive images are becoming a reality on the web — in pure HTML, without convoluted hacks. The `<picture>` element and a couple of new attributes for the `<img>` element are behing a flag in Chromium 37 (so coming soon in Opera), in [Firefox Nightly](https://bugzilla.mozilla.org/show_bug.cgi?id=870022) and are being [implemented in WebKit](https://bugs.webkit.org/show_bug.cgi?id=134634) (although it remains to be seen if Apple will ship it in the next version of Safari).
 
-The new `<picture>` element can be verbose and confusing, because it solves a range of use cases. To help you match your requirements to the responsive image syntax, we've prepared this article full of examples.
+The new `<picture>` element can be verbose and confusing, because it solves a range of use cases. To help you match your requirements to the responsive image syntax, we’ve prepared this article full of examples.
 
 ## Four questions
 
@@ -28,18 +28,18 @@ Before you start using responsive images in your design, you always have to answ
 - Do I want to serve images with different **mime** types to browsers that support them?
 - Do I want to serve different **art** depending on certain contextual factors?
 
-In the examples below, we're referring to these questions with the keywords **sizes**, **dpi**, **mime** and **art**, respectively, and then for each combination of answers, we show a snippet of example code with a short explanation. When creating these examples, I had [this night shot of the Oslo Opera house](http://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg) in my head — it might be useful for your reference.
+In the examples below, we’re referring to these questions with the keywords **sizes**, **dpi**, **mime** and **art**, respectively, and then for each combination of answers, we show a snippet of example code with a short explanation. When creating these examples, I had [this night shot of the Oslo Opera house](http://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg) in my head — it might be useful for your reference.
 
 ## Things to keep in mind
 
 Before you start looking at the different examples though, here are a couple of things to keep in mind:
 
-- `<picture>` *requires* `<img>` as last child. Without that, nothing is displayed. This is good for accessibility as there is just one traditional place for your alternate text, and it's great for fallback
+- `<picture>` *requires* `<img>` as last child. Without that, nothing is displayed. This is good for accessibility as there is just one traditional place for your alternate text, and it’s great for fallback
 in old browsers, which just show the `<img>` element.
-- Think of `<picture>`, `sizes` and `srcset` attributes as overriding the `src` of the `<img>`. Check `currentSrc` in JavaScript to see what's chosen by the browser. Old browsers will just use `<img src>` of course.
+- Think of `<picture>`, `sizes` and `srcset` attributes as overriding the `src` of the `<img>`. Check `currentSrc` in JavaScript to see what’s chosen by the browser. Old browsers will just use `<img src>` of course.
 - The `srcset` and `sizes` list is a hint to browsers, not a command. For example, a device with a device-pixel-ratio of 1.5 is free to use either the 1x or 2x image, depending on what it knows about its capabilities, the network, etc.
-- `<img sizes="(max-width: 30em) 100vw ...">` says: if this "media query"
-is true, show the image with a `100vw` width. The first true "media query"
+- `<img sizes="(max-width: 30em) 100vw …">` says: if this “media query”
+is true, show the image with a `100vw` width. The first true “media query”
 wins, so source order matters.
 
 ## Art direction use case
@@ -70,7 +70,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers that support WebP get a WebP image; other browsers get JPG.
 
-## Art direction & different image types use case
+## Art direction &amp; different image types use case
 
 <span class="false">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="true">art</span>
 
@@ -101,7 +101,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers on devices with high-DPI screens get a high resolution image; other browsers get a normal image.
 
-## High-DPI images & art direction use case
+## High-DPI images &amp; art direction use case
 
 <span class="false">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="true">art</span>
 
@@ -119,7 +119,7 @@ Browsers on devices with high-DPI screens get a high resolution image; other bro
 
 For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo is used; smaller browser windows get a close-up photo. In addition, these photos are served as high-resolution images to browsers on devices with high-DPI screens; other browsers get a normal image.
 
-## High-DPI images & different image types use case
+## High-DPI images &amp; different image types use case
 
 <span class="false">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="false">art</span>
 
@@ -137,7 +137,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers on devices with high-DPI screens get an image with twice or even three times the amount of pixels; other browsers get a normal image. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## High-DPI images, different image types & art direction use case
+## High-DPI images, different image types &amp; art direction use case
 
 <span class="false">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="true">art</span>
 
@@ -180,7 +180,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI.
 
-## Changing image sizes & art direction use case
+## Changing image sizes &amp; art direction use case
 
 <span class="true">sizes</span> <span class="false">dpi</span> <span class="false">mime</span> <span class="true">art</span>
 
@@ -203,7 +203,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI.
 
-## Changing image sizes & different image types use case
+## Changing image sizes &amp; different image types use case
 
 <span class="true">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="false">art</span>
 
@@ -225,7 +225,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## Changing image sizes, different image types & art direction use case
+## Changing image sizes, different image types &amp; art direction use case
 
 <span class="true">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="true">art</span>
 
@@ -263,7 +263,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## Changing image sizes & high-DPI images use case
+## Changing image sizes &amp; high-DPI images use case
 
 <span class="true">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="false">art</span>
 
@@ -279,7 +279,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI.
 
-## Changing image sizes, high-DPI images & art direction use case
+## Changing image sizes, high-DPI images &amp; art direction use case
 
 <span class="true">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="true">art</span>
 
@@ -306,7 +306,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI.
 
-## Changing image sizes, high-DPI images & different image types use case
+## Changing image sizes, high-DPI images &amp; different image types use case
 
 <span class="true">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="false">art</span>
 
@@ -332,7 +332,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-# Changing image sizes, high-DPI images, different image types & art direction use case
+# Changing image sizes, high-DPI images, different image types &amp; art direction use case
 
 <span class="true">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="true">art</span>
 
@@ -380,4 +380,4 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 ## There is more!
 
-Don't worry if you haven't understood this fully! Soon, we'll publish an in-depth tutorial article on `<picture>` and responsive images. In the meantime, enjoy preparing to save your boss' and customers' bandwidth, and making your site even more performant.
+Don’t worry if you haven’t understood this fully! Soon, we’ll publish an in-depth tutorial article on `<picture>` and responsive images. In the meantime, enjoy preparing to save your boss’ and customers’ bandwidth, and making your site even more performant.
