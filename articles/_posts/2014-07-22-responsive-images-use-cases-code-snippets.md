@@ -1,5 +1,5 @@
 ---
-title: 'Responsive images: use cases and documented code snippets to get you started'
+title: 'Responsive Images: Use Cases and Documented Code Snippets to Get You Started'
 authors:
 - andreas-bovens
 intro: 'A handy list of documented examples of responsive images markup, to make you familiar with its different combined use cases.'
@@ -9,9 +9,23 @@ tags:
 - picture
 - media-queries
 - rwd
-cover: png
+cover: jpg
 license: cc-by-3.0
 ---
+
+<style>
+	.feature {
+		display:inline-block;
+		padding:1px 10px;
+		}
+	.feature--false {
+		background:#EEE;
+		}
+	.feature--true {
+		background:#00A700;
+		color:#FFF;
+		}
+</style>
 
 ## Introduction
 
@@ -30,6 +44,11 @@ Before you start using responsive images in your design, you always have to answ
 
 In the examples below, we’re referring to these questions with the keywords **sizes**, **dpi**, **mime** and **art**, respectively, and then for each combination of answers, we show a snippet of example code with a short explanation. When creating these examples, I had [this night shot of the Oslo Opera house](http://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg) in my head — it might be useful for your reference.
 
+<figure class="figure">
+	<img src="{{ page.id }}/opera-house.jpg" alt="The Opera House in Oslo at night" class="figure__media">
+	<figcaption class="figure__caption">The Opera House in Oslo at night</figcaption>
+</figure>
+
 ## Things to keep in mind
 
 Before you start looking at the different examples though, here are a couple of things to keep in mind:
@@ -44,7 +63,10 @@ wins, so source order matters.
 
 ## Art direction use case
 
-<span class="false">sizes</span> <span class="false">dpi</span> <span class="false">mime</span> <span class="true">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -58,7 +80,10 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 ## Different image types use case
 
-<span class="false">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="false">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--false">art</span>
 
 	<picture>
 		<source
@@ -70,9 +95,12 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers that support WebP get a WebP image; other browsers get JPG.
 
-## Art direction &amp; different image types use case
+## Different image types &amp; art direction use case
 
-<span class="false">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="true">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -93,7 +121,10 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 ## High-DPI images use case
 
-<span class="false">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="false">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--false">art</span>
 
 	<img
 		src="opera-1x.jpg" alt="The Oslo Opera House"
@@ -103,7 +134,10 @@ Browsers on devices with high-DPI screens get a high resolution image; other bro
 
 ## High-DPI images &amp; art direction use case
 
-<span class="false">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="true">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -121,7 +155,10 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 ## High-DPI images &amp; different image types use case
 
-<span class="false">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="false">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--false">art</span>
 
 	<picture>
 		<source
@@ -139,7 +176,10 @@ Browsers on devices with high-DPI screens get an image with twice or even three 
 
 ## High-DPI images, different image types &amp; art direction use case
 
-<span class="false">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="true">art</span>
+<span class="feature feature--false">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -168,7 +208,10 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 ## Changing image sizes use case
 
-<span class="true">sizes</span> <span class="false">dpi</span> <span class="false">mime</span> <span class="false">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--false">art</span>
 
 	<img
 		src="opera-fallback.jpg" alt="The Oslo Opera House"
@@ -182,7 +225,10 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 ## Changing image sizes &amp; art direction use case
 
-<span class="true">sizes</span> <span class="false">dpi</span> <span class="false">mime</span> <span class="true">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -205,7 +251,10 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 ## Changing image sizes &amp; different image types use case
 
-<span class="true">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="false">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--false">art</span>
 
 	<picture>
 		<source
@@ -227,7 +276,10 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 ## Changing image sizes, different image types &amp; art direction use case
 
-<span class="true">sizes</span> <span class="false">dpi</span> <span class="true">mime</span> <span class="true">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--false">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -265,7 +317,10 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 ## Changing image sizes &amp; high-DPI images use case
 
-<span class="true">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="false">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--false">art</span>
 
 	<img
 		src="opera-fallback.jpg" alt="The Oslo Opera House"
@@ -281,7 +336,10 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 ## Changing image sizes, high-DPI images &amp; art direction use case
 
-<span class="true">sizes</span> <span class="true">dpi</span> <span class="false">mime</span> <span class="true">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--false">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
@@ -308,7 +366,10 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 ## Changing image sizes, high-DPI images &amp; different image types use case
 
-<span class="true">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="false">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--false">art</span>
 
 	<picture>
 		<source
@@ -332,9 +393,12 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-# Changing image sizes, high-DPI images, different image types &amp; art direction use case
+## Changing image sizes, high-DPI images, different image types &amp; art direction use case
 
-<span class="true">sizes</span> <span class="true">dpi</span> <span class="true">mime</span> <span class="true">art</span>
+<span class="feature feature--true">sizes</span>
+<span class="feature feature--true">dpi</span>
+<span class="feature feature--true">mime</span>
+<span class="feature feature--true">art</span>
 
 	<picture>
 		<source
