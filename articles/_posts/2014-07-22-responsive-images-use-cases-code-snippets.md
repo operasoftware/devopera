@@ -95,7 +95,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers that support WebP get a WebP image; other browsers get JPG.
 
-## Different image types &amp; art direction use case
+## Different image types & art direction use case
 
 <span class="feature feature--false">sizes</span>
 <span class="feature feature--false">dpi</span>
@@ -132,7 +132,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers on devices with high-DPI screens get a high resolution image; other browsers get a normal image.
 
-## High-DPI images &amp; art direction use case
+## High-DPI images & art direction use case
 
 <span class="feature feature--false">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -153,7 +153,7 @@ Browsers on devices with high-DPI screens get a high resolution image; other bro
 
 For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo is used; smaller browser windows get a close-up photo. In addition, these photos are served as high-resolution images to browsers on devices with high-DPI screens; other browsers get a normal image.
 
-## High-DPI images &amp; different image types use case
+## High-DPI images & different image types use case
 
 <span class="feature feature--false">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -174,7 +174,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 Browsers on devices with high-DPI screens get an image with twice or even three times the amount of pixels; other browsers get a normal image. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## High-DPI images, different image types &amp; art direction use case
+## High-DPI images, different image types & art direction use case
 
 <span class="feature feature--false">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -223,7 +223,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI.
 
-## Changing image sizes &amp; art direction use case
+## Changing image sizes & art direction use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--false">dpi</span>
@@ -249,7 +249,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI.
 
-## Changing image sizes &amp; different image types use case
+## Changing image sizes & different image types use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--false">dpi</span>
@@ -274,7 +274,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## Changing image sizes, different image types &amp; art direction use case
+## Changing image sizes, different image types & art direction use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--false">dpi</span>
@@ -315,7 +315,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px and 1200px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## Changing image sizes &amp; high-DPI images use case
+## Changing image sizes & high-DPI images use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -334,7 +334,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI.
 
-## Changing image sizes, high-DPI images &amp; art direction use case
+## Changing image sizes, high-DPI images & art direction use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -364,7 +364,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 
 For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo with a width of 50% of the viewport width is used; for browser windows with a width of 640-1279 CSS pixels, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. In each case, the browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI.
 
-## Changing image sizes, high-DPI images &amp; different image types use case
+## Changing image sizes, high-DPI images & different image types use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--true">dpi</span>
@@ -393,7 +393,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 For browser windows with a width of 640 CSS pixels and wider, a photo with a width of 60% of the viewport width is used; for less wide browser windows, a photo with a width that is equal to the full viewport width is used. The browser picks the optional image from a selection of images with widths of 200px, 400px, 800px, 1200px, 1600px and 2000px, keeping in mind image width and screen DPI. These photos are served as WebP to browsers that support it; other browsers get JPG.
 
-## Changing image sizes, high-DPI images, different image types &amp; art direction use case
+## Changing image sizes, high-DPI images, different image types & art direction use case
 
 <span class="feature feature--true">sizes</span>
 <span class="feature feature--true">dpi</span>
