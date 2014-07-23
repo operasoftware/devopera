@@ -53,9 +53,9 @@ In the examples below, we’re referring to these questions with the keywords **
 
 Before you start looking at the different examples though, here are a couple of things to keep in mind:
 
-- `<picture>` *requires* `<img>` as last child. Without that, nothing is displayed. This is good for accessibility as there is just one traditional place for your alternate text, and it’s great for fallback
+- `<picture>` *requires* `<img>` as its last child. Without that, nothing is displayed. This is good for accessibility as there is just one traditional place for your alternate text, and it’s great for fallback content
 in old browsers, which just show the `<img>` element.
-- Think of `<picture>`, `sizes` and `srcset` attributes as overriding the `src` of the `<img>`. Check `currentSrc` in JavaScript to see what’s chosen by the browser. Old browsers will just use `<img src>` of course.
+- Think of `<picture>`, `sizes` and `srcset` attributes as overriding the `src` of the `<img>`. Check `currentSrc` in JavaScript to see what’s chosen by the browser. Old browsers will just use `<img src>` of course, so you’d use something like `image.currentSrc || image.src` to handle all cases.
 - The `srcset` and `sizes` list is a hint to browsers, not a command. For example, a device with a device-pixel-ratio of 1.5 is free to use either the 1x or 2x image, depending on what it knows about its capabilities, the network, etc.
 - `<img sizes="(max-width: 30em) 100vw …">` says: if this “media query”
 is true, show the image with a `100vw` width. The first true “media query”
