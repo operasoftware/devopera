@@ -29,7 +29,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-Finally, true responsive images are becoming a reality on the web — in pure HTML, without convoluted hacks. The `<picture>` element and a couple of new attributes for the `<img>` element are behing a flag in Chromium 37 (so coming soon in Opera), in [Firefox Nightly](https://bugzilla.mozilla.org/show_bug.cgi?id=870022) and are being [implemented in WebKit](https://bugs.webkit.org/show_bug.cgi?id=134634) (although it remains to be seen if Apple will ship it in the next version of Safari).
+Finally, true responsive images are becoming a reality on the web — in pure HTML, without convoluted hacks. The `<picture>` element and a couple of new attributes for the `<img>` element are behind a flag in Chromium 37 and shipping in Chromium 38 (so coming soon in Opera), in [Firefox Nightly](https://bugzilla.mozilla.org/show_bug.cgi?id=870022) and are being [implemented in WebKit](https://bugs.webkit.org/show_bug.cgi?id=134634) (although it remains to be seen if Apple will ship it in the next version of Safari).
 
 The new `<picture>` element can be verbose and confusing, because it solves a range of use cases. To help you match your requirements to the responsive image syntax, we’ve prepared this article full of examples.
 
