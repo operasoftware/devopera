@@ -237,7 +237,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 			srcset="opera-fullshot-200.jpg 200w,
 					opera-fullshot-400.jpg 400w,
 					opera-fullshot-800.jpg 800w,
-					press-fullshot-1200.jpg 1200w">
+					opera-fullshot-1200.jpg 1200w">
 		<img
 		 	src="opera-fallback.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
