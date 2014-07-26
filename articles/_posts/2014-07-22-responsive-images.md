@@ -37,7 +37,7 @@ The new `<picture>` element can be verbose and confusing, because it solves a ra
 
 Before you start using responsive images in your design, you always have to answer the following four questions:
 
-- Do my image **sizes** change depending on my responsive design rules?
+- Do I want my image **sizes** to change depending on my responsive design rules?
 - Do I want to optimize for high-**dpi** screens?
 - Do I want to serve images with different **mime** types to browsers that support them?
 - Do I want to serve different **art** depending on certain contextual factors?
