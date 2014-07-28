@@ -58,10 +58,27 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		connect: {
+			task: {
+				options: {
+					livereload: true,
+					base: '_site',
+					open: {
+						target: 'http://localhost:8000',
+						appName: 'Opera Developer'
+					}
+				}
+			}
+		},
 		watch: {
 			styles: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'cssshrink', 'copy']
+				tasks: [
+					'sass',
+					'autoprefixer',
+					'cssshrink',
+					'copy'
+				]
 			},
 			limit: {
 				files: [
@@ -83,17 +100,23 @@ module.exports = function(grunt) {
 					'!install.sh',
 					'!styles/*',
 
-					'!articles/**',
-						'articles/index.html',
-						'articles/**/_posts/*.md',
-					'!blog/**',
-						'blog/index.html',
-						'blog/**/_posts/*.md',
-					'!tv/**',
-						'tv/index.html',
-						'tv/**/_posts/*.md',
+					'!{articles,blog,tv}/**',
+						'{articles,blog,tv}/index.html',
+						'{articles,blog,tv}/**/_posts/*.md'
 				],
-				tasks: ['jekyll:limit', 'htmlmin']
+				tasks: [
+					'jekyll:limit',
+					'htmlmin'
+				]
+			},
+			livereload: {
+				options: {
+					livereload: true
+				},
+				files: [
+					'_site/**/*.html',
+					'_site/styles/screen.css'
+				]
 			}
 		},
 		copy: {
@@ -142,12 +165,15 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', function() {
-		grunt.log.subhead('Please use one of the following commands:');
-		grunt.log.writeln('• grunt watch  — for quick dev build');
-		grunt.log.writeln('• grunt build  — for full site build');
-		grunt.log.writeln('• grunt deploy — for deploying build');
-	});
+	grunt.registerTask('default', [
+		'sass',
+		'autoprefixer',
+		'cssshrink',
+		'jekyll:limit',
+		'htmlmin',
+		'connect',
+		'watch'
+	]);
 
 	grunt.registerTask('build', [
 		'sass',
