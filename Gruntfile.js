@@ -64,8 +64,7 @@ module.exports = function(grunt) {
 					livereload: true,
 					base: '_site',
 					open: {
-						target: 'http://localhost:8000',
-						appName: 'Opera Developer'
+						target: 'http://localhost:8000'
 					}
 				}
 			}
