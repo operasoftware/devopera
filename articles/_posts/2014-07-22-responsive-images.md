@@ -258,6 +258,8 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 	<picture>
 		<source
+			media="(min-width: 640px)"
+			sizes="60vw" 
 			srcset="opera-200.webp 200w,
 					opera-400.webp 400w,
 					opera-800.webp 800w,
@@ -373,6 +375,8 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 	<picture>
 		<source
+			media="(min-width: 640px)"
+			sizes="60vw"
 			srcset="opera-200.webp 200w,
 					opera-400.webp 400w,
 					opera-800.webp 800w,
