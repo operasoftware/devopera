@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 You might have noticed that [Opera Developer 25](http://blogs.opera.com/desktop/2014/08/opera-developer-25-supports-web-notifications/) has support for [Web Notifications](http://www.w3.org/TR/notifications/).
 
-Now, Web Notifications was already there in the chromium project for quite some time, so why did it take us time to add it? Well, the way chromium deals with notifications makes it seem non-native — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
+Now, Web Notifications was already there in the chromium project for quite some time, so why did it take us time to add it? Well, the way chromium deals with notifications makes it seem non-native in certain platforms — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
 
 So the notifications you have on Opera will feel like native notifications (i.e, however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
 
