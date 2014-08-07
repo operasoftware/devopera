@@ -40,20 +40,24 @@ You can do this by the writing something like the following:
 If permission is granted by the user, then you can proceed to display a notification, like so:
 
 	if (notification.permission == 'granted') {
-		var firstNotification = new Notification('Sample Notification', {
-			body: 'This is a sample notification.'
+		var firstNotification = new Notification('Sample Notification Title', {
+			body: 'This is the notification body.'
 		});
 	}
 
 You can add in other parameters in too, like an icon:
 
 	if (notification.permission == 'granted') {
-		var firstNotification = new Notification('Sample Notification', {
-			icon: 'icon.png', body: 'This is a sample notification.'
+		var firstNotification = new Notification('Sample Notification Title', {
+			icon: 'icon.png', body: 'This is the notification body.'
 		});
 	}
+	
+Often the title is not enough for a notification. The `body` attribute is used to describe a further explanation of the notification which the user will see in the notification just below the title. 
 
-Apart from the `body` and `icon` attributes, you also have the `dir` and `tag` attribute available. The former is about specifying the direction of the text in the notification. The latter, `tag` is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
+Apart from the `body` and `icon` attributes, you also have the `dir` attribute (You can specify "ltr", "rtl" or "auto" depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (You need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series). 
+
+The `tag` attribute is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
 
 ## Working with notification events
 
@@ -67,7 +71,7 @@ The most common thing you would do is to do something when a person clicks on a 
 		console.log('onclick worked');
 	}
 
-Similarly, you have the `onerror`, and the `onshow` methods.
+Similarly, you have the `onerror`, and the `onshow` methods. The former will be called when an error has occured with the notification, and the latter is called whenever the notification has actually been shown to the user. 
 
 ## The Road Ahead
 
