@@ -16,16 +16,16 @@ Now, Web Notifications was already there in the chromium project for quite some 
 
 So the notifications you have on Opera will feel like native notifications (i.e, however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
 
-A very simple notification on the mac platform would look like this
+A very simple notification on the mac platform would look like this:
 
 <figure class="figure">
-	<img src="{{ page.id }}/1.png" alt="Simple notification on mac" class="figure__media">
+	<img src="{{ page.id }}/notification.png" alt="Simple notification on Mac" class="figure__media">
 </figure>
 
 You can of course, include an image as well, like so:
 
 <figure class="figure">
-	<img src="{{ page.id }}/2.png" alt="Notification with image on mac" class="figure__media">
+	<img src="{{ page.id }}/notification-image.png" alt="Notification with image on Mac" class="figure__media">
 </figure>
 
 To give you a quick overview of web notitifcations, it’s really quite simple. The first thing you need check if the browser supports notifications, if so, to ask the user for permission to show notifications.
@@ -52,12 +52,12 @@ You can add in other parameters in too, like an icon:
 			icon: 'icon.png', body: 'This is the notification body.'
 		});
 	}
-	
-Often the title is not enough for a notification. The `body` attribute is used to describe a further explanation of the notification which the user will see in the notification just below the title. 
 
-Apart from the `body` and `icon` attributes, you also have the `dir` attribute (You can specify "ltr", "rtl" or "auto" depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (You need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series). 
+Often the title is not enough for a notification. The `body` attribute is used to describe a further explanation of the notification which the user will see in the notification just below the title.
 
-There is also the `tag` attribute - which is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
+Apart from the `body` and `icon` attributes, you also have the `dir` attribute (You can specify `ltr`, `rtl` or `auto` depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (You need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series).
+
+There is also the `tag` attribute — which is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
 
 ## Working with notification events
 
@@ -71,10 +71,10 @@ The most common thing you would do is to do something when a person clicks on a 
 		console.log('onclick worked');
 	}
 
-Similarly, you have the `onerror`, and the `onshow` methods. The former will be called when an error has occured with the notification, and the latter is called whenever the notification has actually been shown to the user. 
+Similarly, you have the `onerror`, and the `onshow` methods. The former will be called when an error has occured with the notification, and the latter is called whenever the notification has actually been shown to the user.
 
 ## The Road Ahead
 
-We are also working on getting notfications in Opera extensions via the `chrome.notifications` API.  
+We are also working on getting notfications in Opera extensions via the `chrome.notifications` API.
 
 Notifications dramitically increase the usefullness of certain apps, especially ones dealing with email and social networking (some of the biggest sites in the world fall into this category). We hope you’ll like the native-like notifications that Opera provides to web apps. Cheers!
