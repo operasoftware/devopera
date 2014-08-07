@@ -151,21 +151,44 @@ Using **PubSub** we can rewrite our code as follows:
 Where did `window.favs` go? We don't need it anymore! We just **publish** a `favs/add` event (note that it is a good practice to namespace your event names), the `favs.js` file will be listening and will react accordingly, triggering the `favs/added` and `favs/failed` events as needed. We have **decoupled** our little module, as a result we no longer need to use a global variable, have more flexibility on the loading order of the scripts, and more importantly we can now easily test our code by simply publishing events as needed; as a bonus this allows our tests to be more behaviour-driven rather than feature-driven, which is also a good practice :)
 
 # Promises: Another solution for async code
-Promises are another tool we can use to deal with async code, they are gaining popularity and for a good reason! They can be quite helpful, it's important to know what they are and when they should be used, it also plays nice with the PubSub design pattern.
+Promises are another tool we can use to deal with async code, they are gaining popularity and for a good reason! They can be quite helpful so it's important to know what they are and when they should be used, they also plays nice with the PubSub design pattern.
 
 The [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) defines promises as follows:
 
 > The Promise interface represents a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers to an asynchronous action's eventual success or failure. This lets asynchronous methods return values like synchronous methods: instead of the final value, the asynchronous method returns a promise of having a value at some point in the future.
 > A pending promise can become either fulfilled with a value, or rejected with a reason. When either of these happens, the associated handlers queued up by a promise's then method are called.
 
-That definition might be a bit hard to swallow, but it's in fact pretty simple; Promises represent an entity which still doesn't have a value, but it's guaranteed that it will eventually either have a value (**succeed**) or **fail**.
+That definition might be a bit hard to swallow, but it's in fact pretty simple. Promises represent an entity which still doesn't have a value, but it's guaranteed that it will eventually either have a value (**succeed**) or **fail**.
 
 	// A simple promise
-	var promise = new Promise();
-	promise.done(onPromiseFinished);
-	promise.fail(onPromiseFailed);
+	var promise = new MyPromise();
+	promise.then(onPromiseFinished, onPromiseFailed, onProgress);
 
-That might not seem like a big deal, but there are several scenarios where it is quite useful! I'll illustrate two, the first one is for caching AJAX requests. First let's write an implementation **without** promises:
+A Promise **must** have a `then` function which accepts 3 callbacks, the first two are for success and failure respectively, the third one is to notify the consumer on progress, useful for very long operations but seldom used.
+
+Something nice about promises is that they are **chainable**.
+
+	var promise = new MyPromise();
+	promise.then(function () {
+		console.log('First callback');
+	}).then(function () {
+		console.log('Second callback');
+	});
+
+This code will print `First callback` and then `Second callback`. Something important to not is that if one callback fails, the following won't get executed.
+
+	var promise = new MyPromise();
+	promise.then(function () {
+		console.log('I get executed');
+		throw 'Error';
+	}).then(function () {
+		console.log('I don't get executed');
+	});
+
+This allows us to execute async code in a synchronous manner, as we are used to. Also, if one of your callbacks returns a promise, the subsequent `then` call will be evaluated on that promise you returned, this makes chaining Promises easy as pie.
+
+## Common Promise Scenario #1
+So by now you've read quite a lot on abstract promises, let's get down to a real use case! I'll illustrate two, the first one is for caching AJAX requests. First let's write an implementation **without** promises:
 
 	var cache = {};
 	function loadSong(id, callback) {
@@ -183,7 +206,7 @@ That might not seem like a big deal, but there are several scenarios where it is
 	    });
 	}
 
-The code above simply loads a song by `id` only once and then executes a `callback`. Not too bad, but we can do better! Let's use Promises! Because Promises only get resolved once, if `done` or `fail` is called when a Promise is already resolved, the callback will be executed **immediatly**, knowing this, we can easily cache AJAX requests as jQuery async functions always return a Promise:
+The code above simply loads a song by `id` only once and then executes a `callback`. Not too bad, a lot of Javascript code looks like that, but we can do better! Let's use Promises! Because Promises only get resolved once, if `then` is called when a Promise is already resolved, the callback will be executed **immediatly**, because of this and also taking advantage of jQuery's promises implementation we can easily cache AJAX requests as jQuery AJAX functions actually return promises:
 
 	var cache = {};
 	function loadSong(id, callback) {
@@ -193,9 +216,12 @@ The code above simply loads a song by `id` only once and then executes a `callba
 	    cache[id].done(callback);
 	}
 
-Much better! You might notice the use of `.promise()`, this is because jQuery uses [Deferred](http://api.jquery.com/category/deferred-object/), which is a superset of Promise. In this case we just want to return a Promise object which can be resolved only once, so we use `.promise()` the code would also work if we returned a `Deferred` but it's a good practice to always return Promises.
+Much better! You might notice the use of `.promise()`, this is because jQuery uses [Deferred](http://api.jquery.com/category/deferred-object/), which is a superset of Promise. In this case we just want to return a Promise object which can be resolved only once, so we use `.promise()`. The code would also work if we returned a `Deferred` but it's a good jQuery practice to always return Promises.
 
-The second use scenario happens whenever we have to wait for several async actions to finish before proceeding, for example:
+**Note on jQuery's Promises**: There is a catch with jQuery Promises, they aren't fully compatible with the Promises specification as you can see in [Domenic Denicola's article](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/) so there are some edge cases, but I find it convenient to use jQuery's implementation to demonstrate the concept as it's used by a wide variety of developers. If you want a more loyal implementation you can try other libraries such as [Q](https://github.com/kriskowal/q), [rsvp](https://github.com/tildeio/rsvp.js) or [when.js](https://github.com/cujojs/when) as Domenic suggests.
+
+## Common Promise Scenario #2
+This situation it's also quite common, it happens whenever we have to wait for several async actions to finish before proceeding, for example:
 
 	// Get latest comments based on user and latest posts
 	$.post('/user/get_current_user', function (user) {
@@ -207,25 +233,25 @@ The second use scenario happens whenever we have to wait for several async actio
 		});
 	});
 
-Now **that's ugly**, callback spaghetti should always be avoided! Promises also implement a method called `when` which resolves when all it's arguments (which are promises) are resolved, knowing this we can simply code:
+Now **that's ugly**, callback spaghetti should always be avoided! Luckly a lot of libraries which implement Promises also provide method called `when` which resolves when all it's arguments (which are promises) are resolved, knowing this we can simply code:
 
 	$.when(
 		$.post('/user/get_current_user'),
 		$.post('/posts/latest')
-	).done(function (users, posts) {
+	).then(function (users, posts) {
 		$.post('/comments/latest', drawToDom);
 	});
 
-That's much better, now the first two AJAX requests are executed at the same time, so it will be considerably faster. Moreover, the code is much cleaner, but we can still improve! Turns out that `done` also returns a Promise! So we can chain our code as follows:
+That's much better, now the first two AJAX requests are executed at the same time, so it will be considerably faster. Moreover, the code is much cleaner, but we can still improve! Remember that we can chain `then` calls? Let's try that:
 
 	$.when(
 		$.post('/user/get_current_user'),
 		$.post('/posts/latest')
-	).done(function (users, posts) {
+	).then(function (users, posts) {
 		return $.post('/comments/latest');
-	}).done(drawToDom)
+	}).then(drawToDom)
 
-Promises are awesome, don't be afraid to use them and try them out. If you want to know more about Promises I highly reccommend watching [this **great** jQuery conference talk](https://www.youtube.com/watch?v=juRtEEsHI9E) by Alex McPherson. I also [wrote a brief article on the subject](http://gosukiwi.svbtle.com/the-right-way-of-caching-ajax-requests-with-jquery).
+Looking good! Promises are awesome, don't be afraid to use them and try them out. If you want to know more about Promises I highly reccommend watching [this **great** jQuery conference talk](https://www.youtube.com/watch?v=juRtEEsHI9E) by Alex McPherson. I also [wrote a brief article on the subject](http://gosukiwi.svbtle.com/the-right-way-of-caching-ajax-requests-with-jquery).
 
 # Conclusion
 **PubSub** as well as all design patterns has known advantages and disadvantages which you should know very well. It's main strength is highly decoupling the different parts of your application, but it also helps us work with async code and is pretty easy to use and get started, so don't hesitate to try it out in your next project!
@@ -238,3 +264,4 @@ The following are references I used for writing this article and are recommended
  * [Javascript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) by Addy Osmany
  * [Design Principles and Design Patterns](http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf) by Robert C. Martin
  * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
+ * [You're Missing the Point of Promises](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/) by Domenic Denicola
