@@ -1,8 +1,8 @@
 ---
-title: Web Notifications in Opera Developer 24
+title: Web Notifications in Opera Developer 25
 authors:
 - shwetank-dixit
-intro: '[Opera Developer 24 for Mac, Windows and Linux](http://www.opera.com/developer) has been released, with support for web notifications too. Let us take a look at it.'
+intro: '[Opera Developer 25 for Mac, Windows and Linux](http://www.opera.com/developer) has been released, with support for web notifications too. Let us take a look at it.'
 tags:
 - web-notifications
 - javascript
@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-With the newest release of Opera 24 (which we have also [released on Linux](http://blogs.opera.com/desktop/2014/06/opera-24-linux-released-developer-stream/) now), we have added support for [Web Notifications](http://www.w3.org/TR/notifications/).
+You might have noticed that [Opera Developer 25](http://blogs.opera.com/desktop/2014/08/opera-developer-25-supports-web-notifications/) has support for [Web Notifications](http://www.w3.org/TR/notifications/).
 
 Now, Web Notifications was already there in the chromium project for quite some time, so why did it take us time to add it? Well, the way chromium deals with notifications makes it seem non-native — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
 
@@ -71,6 +71,6 @@ Similarly, you have the `onerror`, and the `onshow` methods.
 
 ## The Road Ahead
 
-Though not available currently, we are also working on getting notfications in Opera extensions via the `chrome.notifications` API, so you can look forward to that in future versions.
+We are also working on getting notfications in Opera extensions via the `chrome.notifications` API.  
 
 Notifications dramitically increase the usefullness of certain apps, especially ones dealing with email and social networking (some of the biggest sites in the world fall into this category). We hope you’ll like the native-like notifications that Opera provides to web apps. Cheers!
