@@ -1,8 +1,8 @@
 ---
-title: Web Notifications in Opera Developer 24
+title: Web Notifications in Opera Developer 25
 authors:
 - shwetank-dixit
-intro: '[Opera Developer 24 for Mac, Windows and Linux](http://www.opera.com/developer) has been released, with support for web notifications too. Let us take a look at it.'
+intro: '[Opera Developer 25 for Mac, Windows and Linux](http://www.opera.com/developer) has been released, with support for web notifications too. Let us take a look at it.'
 tags:
 - web-notifications
 - javascript
@@ -10,9 +10,9 @@ tags:
 license: cc-by-3.0
 ---
 
-With the newest release of Opera 24 (which we have also [released on Linux](http://blogs.opera.com/desktop/2014/06/opera-24-linux-released-developer-stream/) now), we have added support for [Web Notifications](http://www.w3.org/TR/notifications/).
+You might have noticed that [Opera Developer 25](http://blogs.opera.com/desktop/2014/08/opera-developer-25-supports-web-notifications/) has support for [Web Notifications](http://www.w3.org/TR/notifications/).
 
-Now, Web Notifications was already there in the chromium project for quite some time, so why did it take us time to add it? Well, the way chromium deals with notifications makes it seem non-native — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
+Now, Web Notifications was already there in the chromium project for quite some time, so why did it take us time to add it? Well, the way chromium deals with notifications makes it seem non-native in certain platforms — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
 
 So the notifications you have on Opera will feel like native notifications (i.e, however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
 
@@ -40,20 +40,24 @@ You can do this by the writing something like the following:
 If permission is granted by the user, then you can proceed to display a notification, like so:
 
 	if (notification.permission == 'granted') {
-		var firstNotification = new Notification('Sample Notification', {
-			body: 'This is a sample notification.'
+		var firstNotification = new Notification('Sample Notification Title', {
+			body: 'This is the notification body.'
 		});
 	}
 
 You can add in other parameters in too, like an icon:
 
 	if (notification.permission == 'granted') {
-		var firstNotification = new Notification('Sample Notification', {
-			icon: 'icon.png', body: 'This is a sample notification.'
+		var firstNotification = new Notification('Sample Notification Title', {
+			icon: 'icon.png', body: 'This is the notification body.'
 		});
 	}
+	
+Often the title is not enough for a notification. The `body` attribute is used to describe a further explanation of the notification which the user will see in the notification just below the title. 
 
-Apart from the `body` and `icon` attributes, you also have the `dir` and `tag` attribute available. The former is about specifying the direction of the text in the notification. The latter, `tag` is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
+Apart from the `body` and `icon` attributes, you also have the `dir` attribute (You can specify "ltr", "rtl" or "auto" depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (You need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series). 
+
+There is also the `tag` attribute - which is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
 
 ## Working with notification events
 
@@ -67,10 +71,10 @@ The most common thing you would do is to do something when a person clicks on a 
 		console.log('onclick worked');
 	}
 
-Similarly, you have the `onerror`, and the `onshow` methods.
+Similarly, you have the `onerror`, and the `onshow` methods. The former will be called when an error has occured with the notification, and the latter is called whenever the notification has actually been shown to the user. 
 
 ## The Road Ahead
 
-Though not available currently, we are also working on getting notfications in Opera extensions via the `chrome.notifications` API, so you can look forward to that in future versions.
+We are also working on getting notfications in Opera extensions via the `chrome.notifications` API.  
 
 Notifications dramitically increase the usefullness of certain apps, especially ones dealing with email and social networking (some of the biggest sites in the world fall into this category). We hope you’ll like the native-like notifications that Opera provides to web apps. Cheers!
