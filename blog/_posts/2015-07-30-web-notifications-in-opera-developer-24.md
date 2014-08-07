@@ -57,7 +57,7 @@ Often the title is not enough for a notification. The `body` attribute is used t
 
 Apart from the `body` and `icon` attributes, you also have the `dir` attribute (You can specify "ltr", "rtl" or "auto" depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (You need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series). 
 
-The `tag` attribute is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
+There is also the `tag` attribute - which is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
 
 ## Working with notification events
 
