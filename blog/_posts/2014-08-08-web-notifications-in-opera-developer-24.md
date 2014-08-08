@@ -39,7 +39,7 @@ You can do this by the writing something like the following:
 
 If permission is granted by the user, then you can proceed to display a notification, like so:
 
-	if (notification.permission == 'granted') {
+	if (Notification.permission == 'granted') {
 		var firstNotification = new Notification('Sample Notification Title', {
 			body: 'This is the notification body.'
 		});
@@ -47,7 +47,7 @@ If permission is granted by the user, then you can proceed to display a notifica
 
 You can add in other parameters in too, like an icon:
 
-	if (notification.permission == 'granted') {
+	if (Notification.permission == 'granted') {
 		var firstNotification = new Notification('Sample Notification Title', {
 			icon: 'icon.png', body: 'This is the notification body.'
 		});
