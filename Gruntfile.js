@@ -179,15 +179,9 @@ module.exports = function(grunt) {
 		'autoprefixer',
 		'cssshrink',
 		'jekyll:full',
-		'htmlmin'
-	]);
-
-	grunt.registerTask('build:limit', [
-		'sass',
-		'autoprefixer',
-		'cssshrink',
-		'jekyll:limit',
-		'htmlmin'
+		'htmlmin',
+		'connect',
+		'watch'
 	]);
 
 	grunt.registerTask('deploy', ['replace', 'rsync']);
