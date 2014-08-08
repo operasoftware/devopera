@@ -14,7 +14,7 @@ You might have noticed that [Opera Developer 25](http://blogs.opera.com/desktop/
 
 Now, Web Notifications was already there in the Chromium project for quite some time, so why did it take us time to add it? Well, the way Chromium deals with notifications makes it seem non-native in certain platforms — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
 
-So the notifications you have on Opera will feel like native notifications (i.e, however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
+So the notifications you have on Opera will feel like native notifications (i.e., however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
 
 A very simple notification on the Mac platform would look like this:
 
@@ -36,7 +36,6 @@ You can do this by the writing something like the following:
 		Notification.requestPermission(function() {});
 	}
 
-
 If permission is granted by the user, then you can proceed to display a notification, like so:
 
 	if (Notification.permission == 'granted') {
@@ -49,7 +48,8 @@ You can add in other parameters in too, like an icon:
 
 	if (Notification.permission == 'granted') {
 		var firstNotification = new Notification('Sample Notification Title', {
-			icon: 'icon.png', body: 'This is the notification body.'
+			icon: 'icon.png',
+			body: 'This is the notification body.'
 		});
 	}
 
@@ -67,14 +67,14 @@ The most common thing you would do is to do something when a person clicks on a 
 		body: 'This is a sample notification.'
 	});
 
-	testNotification.onclick = function(){
+	testNotification.onclick = function() {
 		console.log('onclick worked');
-	}
+	};
 
-Similarly, you have the `onerror`, and the `onshow` methods. The former will be called when an error has occured with the notification, and the latter is called whenever the notification has actually been shown to the user.
+Similarly, you have the `onerror`, and the `onshow` event handlers. The former is called when an error occurs with the notification, and the latter is called whenever the notification has actually been shown to the user.
 
 ## The Road Ahead
 
 We are also working on getting notfications in Opera extensions via the `chrome.notifications` API.
 
-Notifications dramitically increase the usefullness of certain apps, especially ones dealing with email and social networking (some of the biggest sites in the world fall into this category). We hope you’ll like the native-like notifications that Opera provides to web apps. Cheers!
+Notifications dramatically increase the usefulness of certain apps, especially ones dealing with email and social networking (some of the biggest sites in the world fall into this category). We hope you’ll like the native-like notifications that Opera provides to web apps. Cheers!
