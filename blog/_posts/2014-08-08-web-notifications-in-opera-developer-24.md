@@ -14,7 +14,7 @@ You might have noticed that [Opera Developer 25](http://blogs.opera.com/desktop/
 
 Now, Web Notifications was already there in the Chromium project for quite some time, so why did it take us time to add it? Well, the way Chromium deals with notifications makes it seem non-native in certain platforms — we wanted to make it feel native on all our platforms, and we worked on it to make it happen.
 
-So the notifications you have on Opera will feel like native notifications (i.e., however your operating system displays notifications — whichever your platform is). We beleive this is a much better experience for users.
+So the notifications you have on Opera will feel like native notifications (i.e., however your operating system displays notifications — whichever your platform is). We believe this is a much better experience for users.
 
 A very simple notification on the Mac platform would look like this:
 
@@ -61,7 +61,7 @@ There is also the `tag` attribute — which is about specifying that particular 
 
 ## Working with notification events
 
-The most common thing you would do is to do something when a person clicks on a notification. The `onclick` event is used to capture this and perform an actions.
+The most common thing you would do is to do something when a person clicks on a notification. The `onclick` event is used to capture this and perform an action.
 
 	var testNotification = new Notification('Sample Notification', {
 		body: 'This is a sample notification.'
@@ -71,7 +71,7 @@ The most common thing you would do is to do something when a person clicks on a 
 		console.log('onclick worked');
 	};
 
-Similarly, you have the `onerror`, and the `onshow` event handlers. The former is called when an error occurs with the notification, and the latter is called whenever the notification has actually been shown to the user.
+Similarly, you have the `onerror` and the `onshow` event handlers. The former is called when an error occurs with the notification, and the latter is called whenever the notification has actually been shown to the user.
 
 ## The Road Ahead
 
