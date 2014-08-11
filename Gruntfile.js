@@ -61,11 +61,10 @@ module.exports = function(grunt) {
 		connect: {
 			task: {
 				options: {
-					livereload: true,
 					base: '_site',
-					open: {
-						target: 'http://localhost:8000'
-					}
+					port: 0,
+					livereload: true,
+					open: true
 				}
 			}
 		},
