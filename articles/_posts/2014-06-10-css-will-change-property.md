@@ -196,7 +196,7 @@ At the time of writing of this article, only Chrome Canary 36+, Opera Developer 
 
 ## Final Words
 
-The `will-change` property is a will help us write hack-free performance-optimized code, and emphasize the importance of speed and performance to our CSS operations. But, as with all things, with great power comes great reponsibility, and `will-change` is one of those properties that should not be taken lightly and should be used wisely. At this point, I’m going to quote Tab Atkins Jr., the `will-change` [specification](http://dev.w3.org/csswg/css-will-change/) editor:
+The `will-change` property will help us write hack-free performance-optimized code, and emphasize the importance of speed and performance to our CSS operations. But, as with all things, with great power comes great reponsibility, and `will-change` is one of those properties that should not be taken lightly and should be used wisely. At this point, I’m going to quote Tab Atkins Jr., the `will-change` [specification](http://dev.w3.org/csswg/css-will-change/) editor:
 
 > Set `will-change` to the properties you’ll actually change, on the elements that are actually changing. And remove it when they stop.
 
