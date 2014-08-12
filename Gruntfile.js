@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 			task: {
 				options: {
 					base: '_site',
-					port: 0,
+					port: 33310,
 					livereload: true,
 					open: true
 				}
