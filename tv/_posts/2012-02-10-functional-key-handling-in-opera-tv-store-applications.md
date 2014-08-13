@@ -1,4 +1,4 @@
----
+﻿---
 title: Functional Key Handling in Opera TV Store Applications
 authors:
 - patrick-lauke
@@ -34,7 +34,7 @@ Opera’s spatial navigation works in a similar way to traditional TAB based key
 
 In most cases, authors can simply rely on Opera’s spatial navigation to handle their application’s controls. There are simple mechanisms to further [tweak spatial navigation for TV browsing][9] using CSS3.
 
-[9]: /articles/tweaking-spatial-navigation-for-tv-browsing/
+[9]: /articles/view/tweaking-spatial-navigation-for-tv-browsing/
 
 For maximum control, authors may also choose to handle the navigation of their application themselves by intercepting key presses from the remote control. This makes it possible to not only react to the basic directional buttons (`UP`, `RIGHT`, `DOWN`, `LEFT`), but to further bind functionality to the various shortcut and functional keys (such as `BACK`, `INFO`, `OPTIONS` or the RED button). As the exact key codes for remote control keys vary between different devices, the Opera TV Store browser provides built-in **global constants** mapped to the hardware-specific codes used by the current device.
 
