@@ -146,7 +146,7 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are:
  - Microsoft Smooth Streaming (MSS) - VOD and Live profiles,
  - MPEG-DASH - Live profile only (recommended)
  
-DRM format supported in the Opera TV Store is Microsoft Playready in combination with the MSSS (recommended) or MPEG-DASH.
+DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combination with the MSSS (recommended) or MPEG-DASH.
  
 ### Using HTTP Live Streaming (HLS)
 
@@ -170,7 +170,7 @@ DRM format supported in the Opera TV Store is Microsoft Playready in combination
  - MP4 as a container,
  - Source pointing to the MSSS manifest file,
  - Source type set to application/vnd.ms-sstr+xml,
- - Playready content can be supported here,
+ - Playready protected content can be supported here,
  	- Such content can be embedded with the ProtectionHeader inside the MSSS manifest,
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
@@ -186,7 +186,7 @@ DRM format supported in the Opera TV Store is Microsoft Playready in combination
  - MP4 as a continer,
  - Source pointing to the MPD manifest,
  - Source type: application/dash+xml,
- - Playready content is supported here by future devices only,
+ - Playready protected content will be supported here by future devices,
  	- Such content can be embeded with the ContentProtection element as defined by the reactive licence acquisition method,
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
