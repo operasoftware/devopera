@@ -59,7 +59,7 @@ Another, much more powerful way of controlling the TV Emulator is through a web 
 
 To do this, launch a browser on your host machine and type `http://localhost:5555`. The remote itself works in all browser. However, if you'd like to take advantage of the [remote debugging][5] functionality with [Opera Dragonfly][6], you should use a recent version of the Opera desktop browser.
 
-[5]: /articles/opera-tv-emulator-developer-tools/#debugging
+[5]: /articles/view/opera-tv-emulator-developer-tools/#debugging
 [6]: http://www.opera.com/dragonfly
 
 If you would like to use the web interface, you should make sure that no other application blocks port 5555.
