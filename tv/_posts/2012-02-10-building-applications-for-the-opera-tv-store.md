@@ -55,12 +55,12 @@ Applications for the Opera TV Store are, in essence, regular web applications, w
 
 Although the Opera Devices SDK is built on the same core rendering engine as our desktop browsers, there are still platform-specific APIs and subtle integration differences that developers need to be aware of. For this reason, it is recommended that developers test their applications on an actual TV running the Opera TV Store and/or with the [Opera TV Emulator][16].
 
-[16]: http://www.opera.com/developer/tools/
+[16]: http://www.operasoftware.com/products/tv-emulator
 
 Developing web content for TV brings with it its own challenges – from a difference in user interaction to considerations regarding device capabilities and performance optimisation. For an introduction to some of the necessary adaptations and techniques see our documentation on [creating web content for TV][17] and other articles in our [TV section][18].
 
-[17]: http://dev.opera.com/articles/creating-web-content-for-tv/
-[18]: /tags/tv/
+[17]: /tv/creating-web-content-for-tv/
+[18]: /tv/
 
 ## Requirements specific to Opera TV Store applications
 
@@ -74,7 +74,7 @@ All TV Store applications have to support 1280×720 resolution. Other common TV 
 
 The Opera TV Store is designed to use the standard four-way directional keys on a remote control for spatial navigation. Authors should test that their applications work correctly using the default spatial navigation built into the Opera TV Store browser. Authors may also choose to handle the navigation of their application themselves by intercepting key presses from the remote control. As the exact key codes for remote control functional keys varies between different devices, the Opera TV Store browser provides built-in constants (tailored to the device currently running the TV Store). See the article on [Functional key handling in Opera TV Store applications][19] for further details.
 
-[19]: /articles/functional-key-handling-in-opera-tv-store-applications/
+[19]: /tv/functional-key-handling-in-opera-tv-store-applications/
 
 ### Modal dialogs
 
@@ -95,7 +95,7 @@ There are known limitations in some of the current devices that are shipping wit
 - Missing [CORS (Cross-Origin Resource Sharing)][20] support: if your application relies on cross-origin resources (particularly via `XMLHttpRequest`), you will need to implement some form of proxy on your application's origin domain to relay the resources from other domains.
 - Due to the integration with external media playback frameworks on certain devices, it may not be possible to guarantee simultaneous playback of more than a single `audio` or `video` element.
 
-[20]: http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/
+[20]: /articles/dom-access-control-using-cors/
 
 ## Submitting to the Opera TV Store
 
