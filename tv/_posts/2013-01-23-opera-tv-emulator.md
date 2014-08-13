@@ -253,5 +253,5 @@ Opera Software does not provide any official support for the Opera TV Emulator. 
 - Join our developer community forums on [dev.opera.com/forums][30], where you’ll find a dedicated section on TV content development.
 - Get notified of updates to the Opera TV Emulator on the [tv-emulator-external@list.opera.com mailing list][31].
 
-[30]: http://dev.opera.com/forums/
+[30]: http://forums.opera.com/categories/en-opera-tv-store
 [31]: https://list.opera.com/mailman/listinfo/tv-emulator-external
