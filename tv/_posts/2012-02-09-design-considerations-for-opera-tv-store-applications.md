@@ -239,8 +239,8 @@ Last but not least, take a few seconds to read our documents about app submissio
 - [Design considerations for Opera TV store applications][30]
 - [Opera TV store acceptance criteria][31]
 
-[29]: http://dev.opera.com/articles/functional-key-handling-in-opera-tv-store-applications/
-[30]: http://dev.opera.com/articles/design-considerations-for-opera-tv-store-applications/
+[29]: /articles/view/functional-key-handling-in-opera-tv-store-applications/
+[30]: /articles/view/design-considerations-for-opera-tv-store-applications/
 [31]: https://publish.tvstore.opera.com/guidelines/#acceptance-criteria
 
 Adhering to these guidelines will make store acceptance of your app a lot easier and quicker.
