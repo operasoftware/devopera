@@ -2,6 +2,7 @@
 title: HTML5 Audio and Video Support in Opera TV Store Applications
 authors:
 - patrick-lauke
+- tomaszstawarz-opera
 intro: 'The Opera TV Store browser comes with built-in support for the HTML5 `<audio>` and `<video>` elements, allowing developers to include multimedia content in their applications without any need for plugin-based solutions.'
 license: cc-by-3.0
 ---
@@ -158,10 +159,12 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
  - Source type set to application/vnd.apple.mpegurl,
  - At some devices HLS playback may be terminated if HLS stream is broken,
  - Example player code:
-
+```
 	<video controls="">
-		<source type="application/vnd.apple.mpegurl" src="http://example.com/videofile.m3u8"></source>
+		<source type="application/vnd.apple.mpegurl" 
+			src="http://example.com/videofile.m3u8"></source>
 	</video>
+```
 
 ### Using Microsoft Smooth Streaming (MSSS)
 
@@ -175,10 +178,12 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
  - Example player code:
-
+```
 	<video controls="">
-		<source type="application/vnd.ms-sstr+xml" src="http://example.com/videofile.ssm/Manifest"></source>
+		<source type="application/vnd.ms-sstr+xml" 
+			src="http://example.com/videofile.ssm/Manifest"></source>
 	</video>
+```
 
 ### Using MPEG-DASH
 
@@ -191,10 +196,12 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
  - Example player code:
-
+```
 	<video controls="">
-		<source type="application/dash+xml" src="http://example.com/videofile.isml/videofile.mpd"></source>
+		<source type="application/dash+xml" 
+			src="http://example.com/videofile.isml/videofile.mpd"></source>
 	</video>
+```
 
 ## Testing
 
