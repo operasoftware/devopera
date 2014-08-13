@@ -95,7 +95,7 @@ There are known limitations in some of the current devices that are shipping wit
 - Missing [CORS (Cross-Origin Resource Sharing)][20] support: if your application relies on cross-origin resources (particularly via `XMLHttpRequest`), you will need to implement some form of proxy on your application's origin domain to relay the resources from other domains.
 - Due to the integration with external media playback frameworks on certain devices, it may not be possible to guarantee simultaneous playback of more than a single `audio` or `video` element.
 
-[20]: /articles/view/dom-access-control-using-cross-origin-resource-sharing/
+[20]: /articles/dom-access-control-using-cors/
 
 ## Submitting to the Opera TV Store
 
