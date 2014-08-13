@@ -26,7 +26,7 @@ Update history:
 
 This guide is aimed at web developers wishing to optimize their web sites and applications for better compatibility with web-enabled/connected televisions — with a particular emphasis on the [Opera for Devices SDK][1] and its functionality.
 
-[1]: http://www.opera.com/business/solutions/devices/
+[1]: http://www.operasoftware.com/products/devices-sdk
 
 - [The Opera SDK and Opera TV Emulator](#sdk-emulator)
 - [Standards support on web-enabled TVs](#standards)
@@ -55,7 +55,7 @@ This guide is aimed at web developers wishing to optimize their web sites and ap
 
 For discussions on creating web content for TV, visit our [Opera TV Content Development Discussions forum][26].
 
-[26]: http://my.opera.com/community/forums/forum.dml?id=40112
+[26]: http://forums.opera.com/categories/en-opera-tv-store
 
 ## The Opera SDK and Opera TV Emulator {#sdk-emulator}
 
@@ -69,7 +69,7 @@ However, developers wanting to more easily test and debug their sites for delive
 
 Download the [Opera TV Emulator][28].
 
-[28]: http://www.opera.com/business/tv-emulator/
+[28]: http://www.operasoftware.com/products/tv-emulator
 
 It’s worth noting that, even though the emulator can facilitate testing and debugging, developers should — if possible — still test their content on actual devices, as certain features and specific constraints (such as the speed of the device’s processor and available memory) can vary from device to device.
 
