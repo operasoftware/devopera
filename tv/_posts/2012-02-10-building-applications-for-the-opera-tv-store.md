@@ -59,7 +59,7 @@ Although the Opera Devices SDK is built on the same core rendering engine as our
 
 Developing web content for TV brings with it its own challenges – from a difference in user interaction to considerations regarding device capabilities and performance optimisation. For an introduction to some of the necessary adaptations and techniques see our documentation on [creating web content for TV][17] and other articles in our [TV section][18].
 
-[17]: /articles/view/creating-web-content-for-tv/
+[17]: /tv/creating-web-content-for-tv/
 [18]: /tv/
 
 ## Requirements specific to Opera TV Store applications
