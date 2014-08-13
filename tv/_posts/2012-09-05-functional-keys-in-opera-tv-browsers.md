@@ -1,4 +1,4 @@
-﻿---
+---
 title: Functional Key Handling in Opera Device SDK Based TV Browsers
 authors:
 - patrick-lauke
@@ -7,7 +7,7 @@ license: cc-by-3.0
 ---
 
 <div class="note">
-<p>This article offers advice for generic browsers based on the Opera Device SDK. For specific information about the Opera TV Store – which introduces further functionality, as well as additional requirements to authors – please refer to this separate article: <a href="http://dev.opera.com/tv/functional-key-handling-in-opera-tv-store-applications/"><cite>Functional key handling in Opera TV Store applications</cite></a>.</p>
+<p>This article offers advice for generic browsers based on the Opera Device SDK. For specific information about the Opera TV Store – which introduces further functionality, as well as additional requirements to authors – please refer to this separate article: <a href="http://dev.opera.com/articles/view/functional-key-handling-in-opera-tv-store-applications/"><cite>Functional key handling in Opera TV Store applications</cite></a>.</p>
 </div>
 
 <ul class="toc">
@@ -20,7 +20,7 @@ license: cc-by-3.0
 <h2 id="spatial-functional">Spatial navigation and functional buttons</h2>
 
 <p>Browsers based on the Opera Device SDK are generally designed to use the standard four-way directional keys on a remote control for spatial navigation. Opera's spatial navigation works in a similar way to traditional <kbd>TAB</kbd> based keyboard access in most browsers, allowing users to move between focusable elements (links, form controls, image map areas). In addition, spatial navigation also employs heuristics that make arbitrary elements with attached <code>click</code> and <code>mouseover</code> JavaScript events focusable as well. Lastly, as the name implies, spatial navigation in Opera allows the user to move between those elements based on their spatial relationship on screen, rather than in source order (as with <kbd>TAB</kbd> navigation).</p>
-<p>In most cases, websites can simply rely on Opera's spatial navigation to handle site navigation. There are simple mechanisms to further <a href="http://dev.opera.com/tv/tweaking-spatial-navigation-for-tv-browsing/">tweak spatial navigation for TV browsing</a> using CSS3.</p>
+<p>In most cases, websites can simply rely on Opera's spatial navigation to handle site navigation. There are simple mechanisms to further <a href="http://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/">tweak spatial navigation for TV browsing</a> using CSS3.</p>
 <p>However, for maximum control, web authors may also choose to handle the navigation of their site (or or specific aspects of their site, such as individual image carousel elements for instance) themselves by intercepting key presses from the remote control. This makes it possible to not only react to the basic directional buttons (<kbd>UP</kbd>, <kbd>RIGHT</kbd>, <kbd>DOWN</kbd>, <kbd>LEFT</kbd>), but to further bind functionality to the various shortcut and functional keys (such as <kbd>BACK</kbd>, <kbd>INFO</kbd>, <kbd>OPTIONS</kbd> or the <kbd>RED</kbd> button).</p>
 
 <h2 id="handling-keydown">Handling <code>keydown</code> events</h2>
