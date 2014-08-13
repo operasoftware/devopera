@@ -74,7 +74,7 @@ All TV Store applications have to support 1280×720 resolution. Other common TV 
 
 The Opera TV Store is designed to use the standard four-way directional keys on a remote control for spatial navigation. Authors should test that their applications work correctly using the default spatial navigation built into the Opera TV Store browser. Authors may also choose to handle the navigation of their application themselves by intercepting key presses from the remote control. As the exact key codes for remote control functional keys varies between different devices, the Opera TV Store browser provides built-in constants (tailored to the device currently running the TV Store). See the article on [Functional key handling in Opera TV Store applications][19] for further details.
 
-[19]: /articles/view/functional-key-handling-in-opera-tv-store-applications/
+[19]: /tv/functional-key-handling-in-opera-tv-store-applications/
 
 ### Modal dialogs
 
