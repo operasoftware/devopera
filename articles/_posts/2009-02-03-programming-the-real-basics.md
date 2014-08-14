@@ -3,6 +3,8 @@ title: Programming — the Real Basics!
 authors:
 - christian-heilmann
 intro: 'As an experienced developer you’ll sooner or later have to face people that are just not technical and will consider whatever you do as black magic. This article explains in simple terms what programming is about and hopefully will help both parties involved to steer these non-conversations into more productive waters.'
+tags:
+- javascript
 license: cc-by-nc-sa-2.5
 ---
 
