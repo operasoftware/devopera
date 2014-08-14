@@ -36,7 +36,7 @@ In contrast to the desktop version of Opera — where multimedia decoding and pl
 
 Additionally, due to the way some of the current devices have integrated audio and video support on their platform via an external media playback framework, it may not be possible to guarantee simultaneous playback of more than a single `<audio>` or `<video>` element.
 
-Whenever you switch to next audio/video source with JavaScript, make sure to destroy current audio/video element, and create new one. Without this some devices may have problems playing new audio/video source, especially if the format is different than previously played.
+Whenever you switch to the next audio/video source with JavaScript, make sure to destroy the current audio/video element, and create a new one. Without this some devices may have problems playing the new audio/video source, especially if the format is different than the one previously played.
 
 ## Supported formats
 
