@@ -135,47 +135,46 @@ At the time of publication, the following container formats and codecs are suppo
 
 ## Adaptive Bitrate Streaming and DRM
 
-Adaptive bitrate streaming (ABR) and digital rights management (DRM) technologies are very important in the internet transmision of multimedias. They allow to achieve smooth video playback by dynamically adjusting the bitrate (ABR), and content protection by utilizing encryption methods (DRM).
+When dealing with premium multimedia content, you'll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
 
-Support for various ABR and DRM formats differs between devices. Opera TV Store aims to unify those at devices it runs to reduce fragmentation. Please not that not all devices TV Store runs at support them though.
-
-Below you can find the list of supported ABR formats and their combinations with the DRM, together with simple examples how to correctly use such videos into your application. Please note, that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations.
+Below you can find the list of supported ABR formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important that not all devices TV Store runs at support ABD and DRM.
 
 Adaptive bitrate streaming formats supported in the Opera TV Store are:
- - HTTP Live Streaming (HLS) - VOD and Live profiles,
- - Microsoft Smooth Streaming (MSS) - VOD and Live profiles,
- - MPEG-DASH - Live profile only (recommended)
+
+- HTTP Live Streaming (HLS) - VOD and Live profiles,
+- Microsoft Smooth Streaming (MSS) - VOD and Live profiles,
+- MPEG-DASH - Live profile only (recommended)
  
-DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combination with the MSSS (recommended) or MPEG-DASH.
+DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with the Smooth Streaming (MSS) (recommended) or MPEG-DASH.
  
 ### Using HTTP Live Streaming (HLS)
 
- - VOD and Live profiles are supported, 
- - HLS version 3 specification up to and including Panthos 06, 
- - Streamed over HTTP or AES 128 bit encrypted HTTPS,
- - MPEG2TS as a container,
- - Source pointing to a m3u8 playlist,
- - Source type set to `application/vnd.apple.mpegurl`,
- - At some devices HLS playback may be terminated if HLS stream is broken,
- - Example player code:
+- VOD and Live profiles are supported, 
+- HLS version 3 specification up to and including Panthos 06, 
+- Streamed over HTTP or AES 128 bit encrypted HTTPS,
+- MPEG2TS as a container,
+- Source pointing to a m3u8 playlist,
+- Source type set to `application/vnd.apple.mpegurl`,
+- At some devices HLS playback may be terminated if HLS stream is broken,
+- Example player code:
 
 	<video controls="">
 		<source type="application/vnd.apple.mpegurl" 
 			src="http://example.com/videofile.m3u8"></source>
 	</video>
 
-### Using Microsoft Smooth Streaming (MSSS)
+### Using Microsoft Smooth Streaming (MSS)
 
- - VOD and Live profiles are supported,
- - Version 1.0 of the specification,
- - MP4 as a container,
- - Source pointing to the MSSS manifest file,
- - Source type set to `application/vnd.ms-sstr+xml`,
- - Playready protected content can be supported here,
- 	- Such content can be embedded with the ProtectionHeader inside the MSSS manifest,
- 	- Some device may not support Security Levels (content with any security level required is played),
- 	- DRM errors are signaled by the MediaError element of the video tag,
- - Example player code:
+- VOD and Live profiles are supported,
+- Version 1.0 of the specification,
+- MP4 as a container,
+- Source pointing to the MSS manifest file,
+- Source type set to `application/vnd.ms-sstr+xml`,
+- PlayReady protected content can be supported here,
+	- Such content can be embedded with the ProtectionHeader inside the MSS manifest,
+	- Some device may not support Security Levels (content with any security level required is played),
+	- DRM errors are signaled by the MediaError element of the video tag,
+- Example player code:
 
 	<video controls="">
 		<source type="application/vnd.ms-sstr+xml" 
@@ -184,15 +183,15 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
 
 ### Using MPEG-DASH
 
- - Only Live profile is supported. VOD functionality can be still achieved by using Live profile,
- - MP4 as a continer,
- - Source pointing to the MPD manifest,
- - Source type set to `application/dash+xml`,
- - Playready protected content will be supported here by future devices,
- 	- Such content can be embeded with the ContentProtection element as defined by the reactive licence acquisition method,
- 	- Some device may not support Security Levels (content with any security level required is played),
- 	- DRM errors are signaled by the MediaError element of the video tag,
- - Example player code:
+- Only Live profile is supported. VOD functionality can be still achieved by using Live profile,
+- MP4 as a continer,
+- Source pointing to the MPD manifest,
+- Source type set to `application/dash+xml`,
+- PlayReady protected content will be supported here by future devices,
+	- Such content can be embeded with the ContentProtection element as defined by the reactive licence acquisition method,
+	- Some device may not support Security Levels (content with any security level required is played),
+	- DRM errors are signaled by the MediaError element of the video tag,
+- Example player code:
 
 	<video controls="">
 		<source type="application/dash+xml" 
@@ -201,9 +200,9 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
 
 ## Testing
 
-[Opera TV Emulator][1] supports above audio and video formats but without ABR and DRM. You can test h.264 streaming or audio playback in your application with it. Please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
+[Opera TV Emulator][1] supports the above audio and video formats but without ABR and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
 
-Since the [Opera TV Emulator][1] doesn't support any ABR nor DRM formats, the only wat to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [this article][4].
+Since the [Opera TV Emulator][1] doesn't support any ABR no DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
  
 [1]: http://www.operasoftware.com/products/tv-emulator
 [2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
