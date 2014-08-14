@@ -156,15 +156,14 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
  - Streamed over HTTP or AES 128 bit encrypted HTTPS,
  - MPEG2TS as a container,
  - Source pointing to a m3u8 playlist,
- - Source type set to application/vnd.apple.mpegurl,
+ - Source type set to `application/vnd.apple.mpegurl`,
  - At some devices HLS playback may be terminated if HLS stream is broken,
  - Example player code:
-```
+
 	<video controls="">
 		<source type="application/vnd.apple.mpegurl" 
 			src="http://example.com/videofile.m3u8"></source>
 	</video>
-```
 
 ### Using Microsoft Smooth Streaming (MSSS)
 
@@ -172,36 +171,34 @@ DRM format supported in the Opera TV Store is Microsoft Playready 1.2 in combina
  - Version 1.0 of the specification,
  - MP4 as a container,
  - Source pointing to the MSSS manifest file,
- - Source type set to application/vnd.ms-sstr+xml,
+ - Source type set to `application/vnd.ms-sstr+xml`,
  - Playready protected content can be supported here,
  	- Such content can be embedded with the ProtectionHeader inside the MSSS manifest,
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
  - Example player code:
-```
+
 	<video controls="">
 		<source type="application/vnd.ms-sstr+xml" 
 			src="http://example.com/videofile.ssm/Manifest"></source>
 	</video>
-```
 
 ### Using MPEG-DASH
 
  - Only Live profile is supported. VOD functionality can be still achieved by using Live profile,
  - MP4 as a continer,
  - Source pointing to the MPD manifest,
- - Source type: application/dash+xml,
+ - Source type set to `application/dash+xml`,
  - Playready protected content will be supported here by future devices,
  	- Such content can be embeded with the ContentProtection element as defined by the reactive licence acquisition method,
  	- Some device may not support Security Levels (content with any security level required is played),
  	- DRM errors are signaled by the MediaError element of the video tag,
  - Example player code:
-```
+
 	<video controls="">
 		<source type="application/dash+xml" 
 			src="http://example.com/videofile.isml/videofile.mpd"></source>
 	</video>
-```
 
 ## Testing
 
