@@ -10,6 +10,9 @@ Update history:
 
 - Article updated on 30 March 2012 to suggest explicit `<source>` workaround.
 - Article updated on 18 April 2012 to include MPEG-1/MPEG-2 Audio Layer 3 audio codec for video and clarification on limitation of single `<audio>` or `<video>` element playback on some of the current devices.
+- Article updated on 13 August 2014 to include information about supported Adaptive Bitrate Streaming and DRM formats
+
+## Introduction
 
 The Opera TV Store browser comes with built-in support for the HTML5 `<audio>` and `<video>` elements, allowing developers to include multimedia content in their applications without any need for plugin-based solutions.
 
@@ -17,6 +20,8 @@ At its simplest, this means that multimedia elements can be included in a TV Sto
 
 	<video src="/path/to/video.mp4"></video>
 	<audio src="/path/to/audio.mp3"></audio>
+
+For more on the basics of HTML5 `<audio>` and `<video>`, read [Introduction to HTML5 video][3].
 
 Due to limitations in how multimedia content is handled on certain current devices, there are situations in which the type of audio/video content being used is not automatically inferred by file extensions or MIME types. For this reason, we suggest to use the more explicit, though slightly more wordy, variant:
 
@@ -30,6 +35,10 @@ Due to limitations in how multimedia content is handled on certain current devic
 In contrast to the desktop version of Opera — where multimedia decoding and playback is handled directly by the browser) — the specifics of which codecs are supported on devices can vary considerably, as this depends on the underlying platform and integration work carried out by device manufacturers, as well as the specific version of the Opera TV Store that may be running on the device.
 
 Additionally, due to the way some of the current devices have integrated audio and video support on their platform via an external media playback framework, it may not be possible to guarantee simultaneous playback of more than a single `<audio>` or `<video>` element.
+
+Whenever you switch to the next audio/video source with JavaScript, make sure to destroy the current audio/video element, and create a new one. Without this some devices may have problems playing the new audio/video source, especially if the format is different than the one previously played.
+
+## Supported formats
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
@@ -123,8 +132,84 @@ At the time of publication, the following container formats and codecs are suppo
 </tbody>
 </table>
 
-If you are testing your applications in the Opera TV Emulator, please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the emulator’s user guide for information of how to install these codecs separately.
 
-For more on the basics of HTML5 `<audio>` and `<video>`, read [Introduction to HTML5 video][1].
+## Adaptive Bitrate Streaming and DRM
 
-[1]: http://dev.opera.com/articles/view/introduction-html5-video/
+When dealing with premium multimedia content, you'll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
+
+Below you can find the list of supported ABR formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important that not all devices TV Store runs at support ABD and DRM.
+
+Adaptive bitrate streaming formats supported in the Opera TV Store are:
+
+- HTTP Live Streaming (HLS) - VOD and Live profiles,
+- Microsoft Smooth Streaming (MSS) - VOD and Live profiles,
+- MPEG-DASH - Live profile only (recommended)
+ 
+DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with the Smooth Streaming (MSS) (recommended) or MPEG-DASH.
+ 
+### Using HTTP Live Streaming (HLS)
+
+- VOD and Live profiles are supported, 
+- HLS version 3 specification up to and including Panthos 06, 
+- Streamed over HTTP or AES 128 bit encrypted HTTPS,
+- MPEG2TS as a container,
+- Source pointing to a m3u8 playlist,
+- Source type set to `application/vnd.apple.mpegurl`,
+- At some devices HLS playback may be terminated if HLS stream is broken,
+- Example player code:
+
+	<video controls="">
+		<source type="application/vnd.apple.mpegurl" 
+			src="http://example.com/videofile.m3u8"></source>
+	</video>
+
+### Using Microsoft Smooth Streaming (MSS)
+
+- VOD and Live profiles are supported,
+- Version 1.0 of the specification,
+- MP4 as a container,
+- Source pointing to the MSS manifest file,
+- Source type set to `application/vnd.ms-sstr+xml`,
+- PlayReady protected content can be supported here,
+	- Such content can be embedded with the ProtectionHeader inside the MSS manifest,
+	- Some device may not support Security Levels (content with any security level required is played),
+	- DRM errors are signaled by the MediaError element of the video tag,
+- Example player code:
+
+	<video controls="">
+		<source type="application/vnd.ms-sstr+xml" 
+			src="http://example.com/videofile.ssm/Manifest"></source>
+	</video>
+
+### Using MPEG-DASH
+
+- Only Live profile is supported. VOD functionality can be still achieved by using Live profile,
+- MP4 as a continer,
+- Source pointing to the MPD manifest,
+- Source type set to `application/dash+xml`,
+- PlayReady protected content will be supported here by future devices,
+	- Such content can be embeded with the ContentProtection element as defined by the reactive licence acquisition method,
+	- Some device may not support Security Levels (content with any security level required is played),
+	- DRM errors are signaled by the MediaError element of the video tag,
+- Example player code:
+
+	<video controls="">
+		<source type="application/dash+xml" 
+			src="http://example.com/videofile.isml/videofile.mpd"></source>
+	</video>
+
+## Testing
+
+[Opera TV Emulator][1] supports the above audio and video formats but without ABR and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
+
+Since the [Opera TV Emulator][1] doesn't support any ABR no DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
+ 
+[1]: http://www.operasoftware.com/products/tv-emulator
+[2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
+[3]: http://dev.opera.com/articles/view/introduction-html5-video/
+[4]: http://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/
+
+
+
+
+
