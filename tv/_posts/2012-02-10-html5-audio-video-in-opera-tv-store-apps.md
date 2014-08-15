@@ -43,7 +43,7 @@ Whenever you switch to the next audio/video source with JavaScript, make sure to
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
-<table border="1">
+<table>
 <thead>
 <tr>
 	<th>Type</th>
@@ -133,18 +133,17 @@ At the time of publication, the following container formats and codecs are suppo
 </tbody>
 </table>
 
-
 ## Adaptive Bitrate Streaming and DRM
 
-When dealing with premium multimedia content, you'll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
+When dealing with premium multimedia content, you’ll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
 
 Below you can find the list of supported ABR formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important to note that not all devices the Opera TV Store runs on support ABD and DRM.
 
 Adaptive bitrate streaming formats supported in the Opera TV Store are as follows:
 
-- HTTP Live Streaming (HLS) - VOD and Live profiles
-- Microsoft Smooth Streaming (MSS) - VOD and Live profiles
-- MPEG-DASH - Live profile only (recommended)
+- HTTP Live Streaming (HLS) — VOD and Live profiles
+- Microsoft Smooth Streaming (MSS) — VOD and Live profiles
+- MPEG-DASH — Live profile only (recommended)
 
 The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with MSS (recommended) or MPEG-DASH.
 
@@ -162,7 +161,7 @@ Technical details are as follows:
 
 Example player code:
 
-	<video controls="">
+	<video controls>
 		<source type="application/vnd.apple.mpegurl"
 			src="http://example.com/videofile.m3u8"></source>
 	</video>
@@ -183,7 +182,7 @@ Technical details are as follows:
 
 Example player code:
 
-	<video controls="">
+	<video controls>
 		<source type="application/vnd.ms-sstr+xml"
 			src="http://example.com/videofile.ssm/Manifest"></source>
 	</video>
@@ -203,7 +202,7 @@ Technical details are as follows:
 
 Example player code:
 
-	<video controls="">
+	<video controls>
 		<source type="application/dash+xml"
 			src="http://example.com/videofile.isml/videofile.mpd"></source>
 	</video>
