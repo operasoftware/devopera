@@ -135,9 +135,9 @@ At the time of publication, the following container formats and codecs are suppo
 
 ## Adaptive Bitrate Streaming and DRM
 
-When dealing with premium multimedia content, you’ll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
+When dealing with premium multimedia content, you’ll encounter technologies like adaptive bitrate streaming, which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
 
-Below you can find the list of supported ABR formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important to note that not all devices the Opera TV Store runs on support ABD and DRM.
+Below you can find the list of supported adaptive bitrate streaming formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important to note that not all devices the Opera TV Store runs on support adaptive bitrate streaming and DRM.
 
 Adaptive bitrate streaming formats supported in the Opera TV Store are as follows:
 
@@ -209,9 +209,9 @@ Example player code:
 
 ## Testing
 
-[Opera TV Emulator][1] supports the above audio and video formats but without ABR and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that because of licensing reasons the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
+[Opera TV Emulator][1] supports the above audio and video formats but without adaptive bitrate streaming and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that because of licensing reasons the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
 
-Since the [Opera TV Emulator][1] doesn’t support any ABR or DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
+Since the [Opera TV Emulator][1] doesn’t support any adaptive bitrate streaming or DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
 
 [1]: http://www.operasoftware.com/products/tv-emulator
 [2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
