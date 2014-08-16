@@ -289,7 +289,7 @@ IE development team show up on the #respimg IRC quite often and ask good
 questions. Let's hope the status will switch to "in development" shortly.
 
 Picture element support was also implemented in the W3C's
-[validator](http://validator.nu/), so you can use that
+[validator](http://validator.w3.org/), so you can use that
 to spot mistakes in your markup, should you run into trouble with it.
 
 The feature has a standard compliant polyfill called
