@@ -161,7 +161,7 @@ largest display dimensions the image might be displayed in without
 horizontal scrolling.
 
 So what happens if you want to see slightly different images on different layouts,
-showing images which proportions are different, which subject is more
+showing images whose proportions are different, whose subject is more
 visible, or anything else your creative selves desire?
 
 That's what the art direction use-case is all about!
