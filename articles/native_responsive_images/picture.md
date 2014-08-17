@@ -244,7 +244,7 @@ trying to push. These formats usually perform better than the traditional format
 since they include all kinds of algorithmic improvements that make
 image compression more efficient. Specifically, Google is pushing the
 [WebP](https://developers.google.com/speed/webp/) format and Microsoft is pushing 
-[JPEG-XR](http://msdn.microsoft.com/en-us/library/windows/desktop/hh707223(v=vs.85).aspx).
+[JPEG-XR](http://msdn.microsoft.com/en-us/library/windows/desktop/hh707223\(v=vs.85\).aspx).
 
 The problem here is that these new formats lack the traditional formats' level of ubiquitous support,
 which means that if you serve these formats as your `<img src>` value, even though the browsers that support them will show an
