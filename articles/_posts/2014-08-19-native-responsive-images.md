@@ -2,7 +2,7 @@
 title: Native Responsive Images
 authors:
 - yoav-weiss
-intro: 'Yoav Weiss, the implementor of `<picture>` in Blink, gives an introduction to the new native responsive images spec.'
+intro: 'Yoav Weiss, the implementor of `<picture>` in Blink, explains how we got the new responsive images spec and how you can use it.'
 tags:
 - html
 - media
