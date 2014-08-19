@@ -32,7 +32,9 @@ Let’s say that you have a 500px image. You want it to be displayed at these _s
 
 The syntax that enables you to do that would look something like:
 
-	<img src="cat_500px.jpg" srcset="cat_750px.jpg 1.5x, cat_1000px.jpg 2x" width="500px" alt="lolcat">
+	<img src="cat_500px.jpg"
+		srcset="cat_750px.jpg 1.5x, cat_1000px.jpg 2x"
+		width="500px" alt="lolcat">
 
 Short and sweet, right? No need for too many explanations there. You just give the browser a comma-separated list of resources and their `x` descriptors (describing the screen’s DPR), and the browser picks the best fit.
 
