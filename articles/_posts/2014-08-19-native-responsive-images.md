@@ -36,7 +36,7 @@ The syntax that enables you to do that would look something like:
 
 Short and sweet, right? No need for too many explanations there. You just give the browser a comma-separated list of resources and their `x` descriptors (describing the screen’s DPR), and the browser picks the best fit.
 
-Note that the 1x image resource is in the `src` attribute, where it doubles as a fallback resource. There no need to write the same resource twice!
+Note that the 1x image resource is in the `src` attribute, where it doubles as a fallback resource. There’s no need to write the same resource twice!
 
 ## Variable Width Images
 
