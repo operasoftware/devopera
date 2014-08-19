@@ -13,6 +13,7 @@ license: cc-by-3.0
 ---
 
 ## How It All Began
+
 Our story starts in ancient times, when WURFLs roamed the wilderness, and mobile-only websites were a thing. In these times, a developer that wanted to provide access to his website to mobile users created a simpler, dumbed down version of the "real" website, and served that based on UA detection.
 
 As you surely know, the proliferation of devices with numerous viewport dimensions and many different capabilities called out for a better way to target mobile (and not-so-mobile) users. [Responsive Web Design](http://alistapart.com/article/responsive-web-design) combined new browser capabilities and CSS techniques to create websites that adapt to the device displaying them, and look ideal everywhere. That enabled developers to stop worrying about unreliable device detection and think of their websites in terms of viewport dimensions.
@@ -42,21 +43,21 @@ Note that the 1x image resource is in the `src` attribute, where it doubles as a
 
 ## Variable Width Images
 
-Now, if your site is a "classical" responsive Web site with "stretchy" images, the above is not enough. It's better than nothing, sure, but a 1920px wide screen and a 360px screen with the same density will get the same image, which means you'll be making significant UX compromises, either on blurriness or on slowness.
+Now, if your site is a "classical" responsive website with "stretchy" images, the above is not enough. It's better than nothing, sure, but a 1920px wide screen and a 360px screen with the same density will get the same image, which means you'll be making significant UX compromises, either on blurriness or on slowness.
 
 What you really want is to define the image resources in a way that allows a browser to pick the right one for the current DPR and viewport size. But how can we do that?
 
 Ideally, we'd want to define the set of available image resources along with their physical dimensions (i.e. their width in pixels), and have the browser download one based on the image's display dimensions.
 
-But there's a problem: The browser doesn't know what the image's display dimensions will be when it needs to choose which resource to download.
+But there's a problem: the browser doesn't know what the image's display dimensions will be when it needs to choose which resource to download.
 The image's display dimensions depend on the final page's layout, which often relies on external CSS, and can be influenced by the image's dimensions, as well as the dimensions of other images on the page. That's some circularity madness right there!
 
 So, if we want the browser to download the right resource, we need to
-provide it with a hint regarding the final display dimensions - there's
+provide it with a hint regarding the final display dimensions -- there's
 just no way around that. Of course, depending on our design, the image's
 dimensions can vary at the various layouts.
 
-These are rather complex constraints, which is one of the reasons it took a loooong while to get a proper definition of the problem. Eventually, Google's [Tab Atkins](https://twitter.com/tabatkins) and [John Mellor](https://twitter.com/john__mellor) came up with a proposal for a syntax that would resolve this "stretchy images" use case, and it was happily adopted into the overall responsive images spec (with Tab as well as [Simon Pieters](https://twitter.com/zcorpan) from Opera doing most of the spec's editing).
+These are rather complex constraints, which is one of the reasons it took a long while to get a proper definition of the problem. Eventually, Google's [Tab Atkins](https://twitter.com/tabatkins) and [John Mellor](https://twitter.com/john__mellor) came up with a proposal for a syntax that would resolve this "stretchy images" use case, and it was happily adopted into the overall responsive images spec (with Tab as well as [Simon Pieters](https://twitter.com/zcorpan) from Opera doing most of the spec's editing).
 
 Let's look at an example of what you would do if you have an image that takes up different dimensions at different layout breakpoints:
 
@@ -79,27 +80,27 @@ The browser goes over the media conditions and looks for the first one that matc
 
 The effective size of the matching pair is used by the browser, along with the screen's DPR (and possibly other factors) to figure out which resource would be the best to download and display.
 
-Going back to our code example above, assuming we're running with a browser viewport of 20em over the default root font size of 16px (i.e. a viewport width of 320px), the browser will go over the sizes pairs and pick the first one - `(max-width: 30em) 100vw`. That would indicate it that the image is likely to be displayed at the full width of the viewport, so assuming a DPR of 1, the browser is likely try to download the first resource that is larger than 320px wide and end up downloading swing-400.jpg.
+Going back to our code example above, assuming we're running with a browser viewport of 20em over the default root font size of 16px (i.e. a viewport width of 320px), the browser will go over the sizes pairs and pick the first one: `(max-width: 30em) 100vw`. That would indicate it that the image is likely to be displayed at the full width of the viewport, so assuming a DPR of 1, the browser is likely try to download the first resource that is larger than 320px wide and end up downloading swing-400.jpg.
 If the DPR value is 2, in order to match the screen's density the required resource needs to be twice as large, so the browser will probably download the first resource larger than 640px, which is swing-800.jpg.
 
-Now, if our viewport is 40em (640px), the `(max-width: 50em) 50vw` pair matches, and the image is likely to take up half of the viewport's width. That means the image picked it probably the first one larger than 320px for 1x screens and 640px for 2x screen, and the downloaded resources are likely to be identical in both cases.
+Now, if our viewport is 40em (640px), the `(max-width: 50em) 50vw` pair matches, and the image is likely to take up half of the viewport's width. That means the image picked it probably the first one larger than 320px for 1x screens and 640px for 2x screens, and the downloaded resources are likely to be identical in both cases.
 
-Why did I use all of those "likely"s and "probably"s in the sections above? They're there because for the resources *inside* srcset, the browser is free to pick whatever resource its algorithms see fit. That means that you, as a Web developer, can't rely on the browser downloading and displaying the exact resource you want it to. That's a Good Thing<span>&trade;</span>, since it leaves the browser room to innovate in this space, by adding user preferences, network considerations and other future optimizations to the decision-making process. And since all of the different resources should only differ in quality, differing resource choices shouldn't have any impact on your page's layout.
+Why did I use all of those "likely"s and "probably"s in the sections above? They're there because for the resources *inside* srcset, the browser is free to pick whatever resource its algorithms see fit. That means that you, as a web developer, can't rely on the browser downloading and displaying the exact resource you want it to. That's a Good Thing<span>&trade;</span>, since it leaves the browser room to innovate in this space, by adding user preferences, network considerations and other future optimizations to the decision-making process. And since all of the different resources should only differ in quality, differing resource choices shouldn't have any impact on your page's layout.
 
 It's worth noting that if the `sizes` attribute is missing, a default value of `100vw` is used as the effective size instead, as it represents the largest display dimensions the image might be displayed in without horizontal scrolling.
 
 So what happens if you want to see slightly different images on different layouts, showing images whose proportions are different, whose subject is more visible, or anything else your creative selves desire?
 
-That's what the art direction use-case is all about!
+That's what the art direction use case is all about!
 
 ## Art Direction
 
 The term "Art Direction" with regard to responsive images was first
-[coined](http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/) by [Jason Grigsby](https://twitter.com/grigs), and refers to cases where you want to tailor-fit the displayed image to a specific responsive layout breakpoint. Art-direction should be used when your image resources differ not only in their quality, but also in their proportions, crop area, copy text location, shot angle, etc, etc. The possibilities are limitless!
+[coined](http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/) by [Jason Grigsby](https://twitter.com/grigs), and refers to cases where you want to tailor-fit the displayed image to a specific responsive layout breakpoint. Art direction should be used when your image resources differ not only in their quality, but also in their proportions, crop area, copy text location, shot angle, etc, etc. The possibilities are limitless!
 
 In these cases, you want to make sure that the image displayed to your users at a certain design breakpoint is in fact the image you intended they'd see.
 
-The art-direction syntax goes something like:
+The art direction syntax goes something like:
 
 	<picture>
 		<source media="(min-width: 45em)" srcset="large.jpg">
@@ -111,7 +112,7 @@ Here again we hand out a grocery list of resources to the browser. The differenc
 
 The browser follows that algorithm to the letter and picks the source tag that you intended, every time.
 
-Very much like it does when using the `sizes` algorithm, the browser goes over the list of sources and picks the first one that matches. A match can happen based on both `media` and `type` attributes. (Why `type`? We'll see that in a bit)
+Very much like it does when using the `sizes` algorithm, the browser goes over the list of sources and picks the first one that matches. A match can happen based on both `media` and `type` attributes. (Why `type`? We'll see that in a bit.)
 
 If both attributes either match or are missing, the matching source is picked. If none of the `<source>`s match, the `<img>` is picked. And once we have an element that's picked as the source for this image, the resource that will be downloaded is chosen using the source's `srcset` and `sizes` attributes,
 according to the same mechanisms we discussed earlier.
@@ -164,13 +165,15 @@ Picture element support was also implemented in the W3C's [validator](http://val
 The feature has a standard compliant polyfill called [picturefill](http://scottjehl.github.io/picturefill/), and even without it, the inherent `<img>` tag fallback makes it so that legacy browsers would still download and display the fallback image, meaning that the user experience in these browsers won't be any different than what they get if you simply use an `<img>` tag.
 
 ## The Proposal Left Behind
+
 Those of you who followed the responsive images saga closely may remember yet another proposal, called "Client-Hints". That proposal suggested solving some of the use cases by using HTTP request headers to tell the server regarding the browser's environmental conditions, and letting the server adapt the images it sends accordingly. That kind of solution is generally referred to as "content-negotiation".
 
 Unfortunately some browser vendors were reluctant to add new content negotiation-based solutions, because of past bad experience with this kind of solutions. Without support from these browser vendors, progress on Client-Hints
 stalled and now the proposal is not being actively worked on.
 
 ## Community
-The responsive images effort, unlike the development process behind most Web platform features, was community-driven. It was championed by the RICG, supported by the developer community, and taken home when browser folks got involved too. One big happy family.
+
+The responsive images effort, unlike the development process behind most web platform features, was community-driven. It was championed by the RICG, supported by the developer community, and taken home when browser folks got involved too. One big happy family.
 
 In the same spirit, the feature's implementation in Blink (the rendering engine behind Chrome and Opera) also set something of a precedent.
 
