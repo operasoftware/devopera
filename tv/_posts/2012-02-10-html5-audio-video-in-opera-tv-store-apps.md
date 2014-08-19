@@ -38,6 +38,8 @@ Additionally, due to the way some of the current devices have integrated audio a
 
 Whenever you switch to the next audio/video source with JavaScript, make sure to destroy the current audio/video element, and create a new one. Without this some devices may have problems playing the new audio/video source, especially if the format is different than the one previously played.
 
+We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by network bandwidth users usually have) in your videos.
+
 ## Supported formats
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
@@ -68,7 +70,8 @@ At the time of publication, the following container formats and codecs are suppo
 		MPEG-1/MPEG-2<br>
 		Audio Layer 3<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
@@ -76,7 +79,8 @@ At the time of publication, the following container formats and codecs are suppo
 	<td>
 		AAC-LC<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
@@ -84,7 +88,8 @@ At the time of publication, the following container formats and codecs are suppo
 	<td>
 		HE-AAC<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
@@ -98,7 +103,8 @@ At the time of publication, the following container formats and codecs are suppo
 		MPEG-1/MPEG-2<br>
 		Audio Layer 3<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
@@ -113,7 +119,8 @@ At the time of publication, the following container formats and codecs are suppo
 	<td>
 		AAC-LC<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
@@ -125,7 +132,8 @@ At the time of publication, the following container formats and codecs are suppo
 	<td>
 		HE-AAC<br>
 		Mono/Stereo<br>
-		16-320kbps; SBR/VBR<br>
+		16kbps-10Mbps (supported)<br>
+		2Mbps-4Mbps (recommended)<br>
 		32kHz/44.1kHz/48kHz
 	</td>
 </tr>
