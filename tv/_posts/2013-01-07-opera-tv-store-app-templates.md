@@ -9,7 +9,9 @@ tags:
 license: cc-by-3.0
 ---
 
-The templates presented in this article are available for free to developers developing towards the Opera TV Store, but they are not maintained or supported by Opera any more. Instead, we strongly suggest that content creators use the Opera TV Snap tool, which generates template-based applications automatically. Opera Snap also contains buildt-in support for monetization and is constantly developed and maintained by Opera. See <a href="http://opera.com/tvsnap">opera.com/tvsnap</a> for more details.
+The templates presented in this article are available for free to developers developing for the Opera TV Store, but they are not maintained or supported by Opera any more. Instead, we strongly suggest that content creators use the Opera TV Snap tool, which generates template-based applications automatically. Opera Snap also contains built-in support for monetization and is constantly developed and maintained by Opera. See [opera.com/tvsnap][1] for more details.
+
+[1]: http://opera.com/tvsnap
 
 ## Introduction
 

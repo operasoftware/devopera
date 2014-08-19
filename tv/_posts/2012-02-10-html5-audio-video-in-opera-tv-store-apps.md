@@ -39,7 +39,7 @@ Additionally, due to the way some of the current devices have integrated audio a
 
 Whenever you switch to the next audio/video source with JavaScript, make sure to destroy the current audio/video element, and create a new one. Without this, some devices may have problems playing the new audio/video source, especially if the format is different than the one previously played.
 
-We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by network bandwidth users usually have) in your videos.
+We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by the network bandwidth users usually have) in your videos.
 
 ## Supported formats
 
