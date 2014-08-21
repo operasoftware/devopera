@@ -23,21 +23,21 @@ exclude:
 defaults:
   - scope:
       path: 'articles'
-      type: 'post'
+      type: 'posts'
     values:
       category: 'articles'
       layout: 'entry'
       language: 'en'
   - scope:
       path: 'blog'
-      type: 'post'
+      type: 'posts'
     values:
       category: 'blog'
       layout: 'entry'
       language: 'en'
   - scope:
       path: 'tv'
-      type: 'post'
+      type: 'posts'
     values:
       category: 'tv'
       layout: 'entry'
