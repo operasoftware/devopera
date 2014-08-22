@@ -155,6 +155,16 @@ It is also important to consider the space in between your graphic elements. Not
 	<figcaption class="figure__caption">A pixel grid with the word “blocks” spelled out by some of the pictures, plus a pair of 3D glasses</figcaption>
 </figure>
 
+### Extending thumbnail
+
+You may notice from time to time, that people around you don't recognise even perfectly known and famous brands. Extending your thumbnail with some content may help creating first sight impression of "what this is about". Check out examples below. Can you tell what are apps on the left side about? If not its extended version should give you an answer.
+
+<figure class="figure">
+	<img src="{{ page.id }}/13.jpg" alt="Examples of well designed thumbnails, and their extended versions" class="figure__media">
+	<figcaption class="figure__caption">Examples of well designed thumbnails, and their extended versions</figcaption>
+</figure>
+
+
 ## Screenshots
 
 It is important to include screenshots in your app’s app store page to show users what functionality the app has, and entice them to install it. When you include more than one the app store creates a nice fading gallery in the app description page.
