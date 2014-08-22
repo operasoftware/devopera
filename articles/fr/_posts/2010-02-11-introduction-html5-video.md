@@ -13,6 +13,7 @@ tags:
 - opera-10
 - video
 language: fr
+translator: Nicolas Chevallier
 license: cc-by-nc-sa-3.0
 ---
 

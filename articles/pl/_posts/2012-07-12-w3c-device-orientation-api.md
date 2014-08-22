@@ -10,6 +10,7 @@ tags:
 - deviceorientation
 - gamma
 language: pl
+translator: Chocimier
 license: cc-by-3.0
 ---
 

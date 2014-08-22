@@ -7,6 +7,7 @@ tags:
 - open-web
 - opera-11
 language: ja
+translator: Masataka Yakura
 license: cc-by-nc-sa-3.0
 ---
 

@@ -11,6 +11,7 @@ tags:
 - accessibility
 - video
 language: ja
+translator: Masataka Yakura
 license: cc-by-nc-sa-3.0
 ---
 

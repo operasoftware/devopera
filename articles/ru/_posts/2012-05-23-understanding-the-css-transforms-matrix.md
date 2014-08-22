@@ -12,6 +12,7 @@ tags:
 - vector
 - math
 language: ru
+translator: psywalker
 license: cc-by-3.0
 ---
 

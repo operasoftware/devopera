@@ -8,6 +8,7 @@ tags:
 - css3
 - ie
 language: ja
+translator: Makoto Mizukami
 license: cc-by-nc-sa-3.0
 ---
 

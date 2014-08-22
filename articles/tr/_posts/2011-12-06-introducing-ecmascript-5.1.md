@@ -12,6 +12,7 @@ tags:
 - object-additions
 - strict-mode
 language: tr
+translator: Çağlar Yeşilyurt
 license: cc-by-3.0
 ---
 
