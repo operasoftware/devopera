@@ -28,7 +28,7 @@ license: cc-by-3.0
 </li>
 <li>
 	<h3>Change viewport via JavaScript</h3>
-	<p><a href="http://www.blog.highub.com/">Shi chuan</a>, <a href="http://mathiasbynens.be/">Mathias</a> wrote <a href="https://gist.github.com/901295">an interesting solution to fix the viewport scaling</a> that occurs when you change the orientation of mobile devices using JavaScript (<a href="https://github.com/shichuan/mobile-html5-boilerplate/issues/12">more context</a>). This did not trigger a re-layout in Opera, which meant the change in layout were never applied. But now it does!</p>
+	<p><a href="http://www.blog.highub.com/">Shi Chuan</a>, <a href="https://mathiasbynens.be/">Mathias</a> wrote <a href="https://gist.github.com/901295">an interesting solution to fix the viewport scaling</a> that occurs when you change the orientation of mobile devices using JavaScript (<a href="https://github.com/shichuan/mobile-html5-boilerplate/issues/12">more context</a>). This did not trigger a re-layout in Opera, which meant the change in layout were never applied. But now it does!</p>
 </li>
 <li>
 	<p>If you are a frequent user of <a href="http://github.com">github</a>, you would find it easier to use, as SSL renegotiations are now more reliable with this snapshot.</p>
