@@ -12,7 +12,7 @@ tags:
 - vector
 - math
 language: ru
-translator: psywalker
+translator: Maxim Usachev
 license: cc-by-3.0
 ---
 

@@ -15,7 +15,7 @@ tags:
 - video
 - webvtt
 language: zh-cn
-translator: xie fen
+translator: Xie Fen
 license: cc-by-3.0
 ---
 
