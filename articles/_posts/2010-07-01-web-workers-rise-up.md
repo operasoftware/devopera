@@ -92,7 +92,7 @@ worker.onmessage = function (event) {
   alert(event.data);
 };</code></pre>
 
-<p>Feel free to <a href="WebWorkers_demo.zip">download this Web Workers demo</a>.</p>
+<p>Feel free to <a href="web-workers-demo.zip">download this Web Workers demo</a>.</p>
 
 <!--<p>We've also made this <a href="http://people.opera.com/danield/webapps/web-workers/">Web Workers speed test</a> to demonstrate their effectiveness. Note that results may vary depending on the browser.</p>-->
 
