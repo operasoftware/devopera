@@ -11,7 +11,7 @@
 - text: Opera on Can I use…
   link: http://caniuse.com/#agents=opera,op_mini,op_mob&statuses=All
 - text: Opera’s upstreamed commits
-  link: http://operasoftware.github.io/upstreamtools/
+  link: https://operasoftware.github.io/upstreamtools/
 - text: Chromium dashboard
   link: http://www.chromestatus.com/features
 - text: Opera bug wizard
