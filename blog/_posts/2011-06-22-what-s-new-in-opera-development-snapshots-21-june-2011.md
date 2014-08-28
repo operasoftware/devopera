@@ -14,7 +14,7 @@ license: cc-by-3.0
 			<h3>Presto 2.9!</h3><p>The biggest news is we are now one version up. Hooray for <a href="http://www.opera.com/docs/specs/presto29/">Presto 2.9</a>!</p></li>
 		<li><h3>Extensions can share cookies with the browser</h3>
 			<p>When writing <a href=" https://addons.opera.com/addons/extensions/">extensions</a>, it is really annoying when you have to interact with APIs that require user authentication before they serve you content to display. Now, your Opera extensions can share cookies which means they can now interact with APIs and websites that require authentication.</p>
-			<p>Do note that an extension can only have access to cookies if it has an explicit <code>&lt;access&gt;</code> directive in the <code>config.xml</code> —not just every single cookie on the web. <del>Needless to say, we would be mentioning more details about this soon</del>Daniel Davis has written a great <a href="http://dev.opera.com/articles/view/cookie-sharing-in-opera-extensions/">post on shared cookies along with a demo extension</a>. </p>
+			<p>Do note that an extension can only have access to cookies if it has an explicit <code>&lt;access&gt;</code> directive in the <code>config.xml</code> —not just every single cookie on the web. <del>Needless to say, we would be mentioning more details about this soon</del>Daniel Davis has written a great <a href="https://dev.opera.com/articles/view/cookie-sharing-in-opera-extensions/">post on shared cookies along with a demo extension</a>. </p>
 		</li>
 		<li>
 			<h3>CSS parsing optimizations</h3>

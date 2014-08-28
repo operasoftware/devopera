@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>The first fruits of our post-Opera 10 labour on Opera Dragonfly and Scope has just landed with today’s release of the beta of Opera Mobile 10 for Nokia Smartphones. As with previous versions, Opera Mobile 10 includes remote dubugging functionality to connect to Opera Dragonfly in the desktop browser. For information on remote debugging take a look at the Dev Opera <a href="http://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/">Remote debugging with Opera Dragonfly</a> article. You will notice that Opera Dragonfly will prompt you to download a compatible version that will work with Opera 10 Mobile.</p>
+<p>The first fruits of our post-Opera 10 labour on Opera Dragonfly and Scope has just landed with today’s release of the beta of Opera Mobile 10 for Nokia Smartphones. As with previous versions, Opera Mobile 10 includes remote dubugging functionality to connect to Opera Dragonfly in the desktop browser. For information on remote debugging take a look at the Dev Opera <a href="https://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/">Remote debugging with Opera Dragonfly</a> article. You will notice that Opera Dragonfly will prompt you to download a compatible version that will work with Opera 10 Mobile.</p>
 
 <p>The big feature of note is that there is a brand-new highlight feature in the DOM inspector. Previously we used the spatnav style highlight when clicking on elements, which was not as precise as was needed and showed little detail. This has been replaced with an advanced new highlight, which shows all the details of the box model, such as the padding and margins, along with handy guidelines.</p>
 

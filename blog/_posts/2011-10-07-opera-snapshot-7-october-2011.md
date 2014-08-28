@@ -19,9 +19,9 @@ license: cc-by-3.0
 
 <h2>Radial gradients</h2>
 
-<p>Opera has supported <a href="http://dev.opera.com/articles/view/css3-linear-gradients/">linear gradients</a> for some time now, but there was still some way to go before we could claim to support the full gradients section of the <a href="http://www.w3.org/TR/css3-images/">CSS Image Values and Replaced Content Module Level 3</a> working draft. But no more! We now support the full gamut of gradients functionality, plus a little bit of a surprise for secret hunters...</p>
+<p>Opera has supported <a href="https://dev.opera.com/articles/view/css3-linear-gradients/">linear gradients</a> for some time now, but there was still some way to go before we could claim to support the full gradients section of the <a href="http://www.w3.org/TR/css3-images/">CSS Image Values and Replaced Content Module Level 3</a> working draft. But no more! We now support the full gamut of gradients functionality, plus a little bit of a surprise for secret hunters...</p>
 
-<p>Read more about linear gradients in our new dev.opera article, <a href="http://dev.opera.com/articles/view/css3-radial-gradients/">CSS3 radial gradients</a>.</p>
+<p>Read more about linear gradients in our new dev.opera article, <a href="https://dev.opera.com/articles/view/css3-radial-gradients/">CSS3 radial gradients</a>.</p>
 
 <h2>HTML5 error handling</h2>
 

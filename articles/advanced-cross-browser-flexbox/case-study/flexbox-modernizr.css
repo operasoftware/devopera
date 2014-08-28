@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'groovy';
-    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot');
-    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.woff') format('woff'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.ttf') format('truetype'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.svg') format('svg');
+    src: url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot');
+    src: url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.woff') format('woff'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.ttf') format('truetype'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/not-just-groovy-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -17,11 +17,11 @@
 
 @font-face {
     font-family: 'neuropol';
-    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot');
-    src: url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.woff') format('woff'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.ttf') format('truetype'),
-         url('http://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.svg') format('svg');
+    src: url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot');
+    src: url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.woff') format('woff'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.ttf') format('truetype'),
+         url('https://dev.opera.com/static/articles/2013/flexbox-case-study/fonts/neuropol-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -43,7 +43,7 @@ h1 {
   padding: 2rem 0;
   margin: 0;
   color: black;
-  text-shadow: 1px 1px 10px rgba(0,0,0,0.8); 
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
   text-align: center;
 }
 
@@ -116,7 +116,7 @@ section {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  
+
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
@@ -156,20 +156,20 @@ nav {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  
+
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 nav ul {
   text-align: center;
-  
+
   display: -ms-flexbox;
   -ms-box-orient: horizontal;
   -ms-box-pack: center;
-  
+
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -181,7 +181,7 @@ nav ul {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  justify-content: center; 
+  justify-content: center;
   width: 80%;
 }
 
@@ -210,22 +210,22 @@ article:nth-of-type(2) {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  
+
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  
+
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  
+
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  
+
   -webkit-align-content: flex-start;
   -moz-align-content: flex-start;
   -ms-align-content: flex-start;
@@ -234,7 +234,7 @@ article:nth-of-type(2) {
 
 article p {
   margin: 0.5rem;
-  
+
   -webkit-flex: 1 20rem;
   -moz-flex: 1 20rem;
   -ms-flex: 1 20rem;
@@ -254,10 +254,10 @@ article p img {
 .no-flexbox section {
   display: -webkit-box;
   display: -moz-box;
-  
+
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
-  
+
 }
 
 .no-flexbox nav {
@@ -301,17 +301,17 @@ article p img {
   h1 {
     font-size: 5rem;
   }
-  
-  .no-flexbox section { 
+
+  .no-flexbox section {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
   }
-  
+
   .no-flexbox nav {
     width: 100%;
     margin-left: -3rem;
   }
-  
+
   .no-flexbox nav a, .no-flexbox nav ul, .no-flexbox nav li {
     width: 100%;
   }
@@ -325,15 +325,15 @@ article p img {
     -ms-flex: 1 100%;
     flex: 1 100%;
   }
-  
+
   body {
     min-width: 320px;
   }
-  
+
   nav ul {
     width: 100%;
   }
-    
+
   .no-flexbox-legacy nav, .no-flexbox-legacy article {
     float: none;
   }

@@ -33,7 +33,7 @@ Unfortunately, JIT support for ARM was not yet stable enough to include, but the
 The second treat is the Mobile debut of our [Vega rendering library][4] which — among other things — is responsible for rendering all the exciting new eye-candy like [CSS3 rounded corners and shadow effects][5].
 
 [4]: http://my.opera.com/core/blog/2009/02/04/vega
-[5]: http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/
+[5]: https://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/
 
 There are a number of known issues with this build, listed below:
 

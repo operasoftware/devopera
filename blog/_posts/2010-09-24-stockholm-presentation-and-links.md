@@ -44,10 +44,10 @@ The slides for my first presentation are available:
 <ul>
 
 <li><a href="http://my.opera.com/ODIN/blog/canvas-and-svg-which-should-i-use-when">Canvas and SVG - which should I use when?</a></li>
-<li><a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
-<li><a href="http://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
-<li><a href="http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
-<li><a href="http://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a>
+<li><a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
+<li><a href="https://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
+<li><a href="https://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a>
 </li></ul>
 
 <h4>HTML5 <code>&lt;video&gt;</code> resources</h4>
@@ -61,10 +61,10 @@ The slides for my first presentation are available:
 <li><a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">Fancy styled JavaScript-based <code>video</code> controls</a></li>
 <li><a href="http://people.opera.com/patrickl/experiments/webm/fancy-swap/">Swapping <code>video</code> sources for simple playlists/galleries</a></li>
 
-<li><a href="Introduction%20to%20HTML5%20video">http://dev.opera.com/articles/view/introduction-html5-video/</a></li>
+<li><a href="Introduction%20to%20HTML5%20video">https://dev.opera.com/articles/view/introduction-html5-video/</a></li>
 <li>
 <a href="http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2">Everything you need to know about HTML5 video and audio</a> - and it really is <em>everything</em>!</li>
-<li><a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a></li>
+<li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a></li>
 
 <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#video"><code>&lt;video&gt;</code> specification</a></li>
 <li><a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video">How <code>&lt;video&gt;</code> is implemented in Opera</a></li>
@@ -84,7 +84,7 @@ The slides for my first presentation are available:
 
 <h4>HTML5&#39;s friends: JavaScript APIs</h4>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a></li>
+<li><a href="https://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a></li>
 </ul>
 
 <h4>CSS Media Queries for adaptive content</h4>
@@ -110,18 +110,18 @@ The slides for my first presentation are available:
 <a href="http://css3please.com/">CSS3please</a>: apply CSS3 rules and see what happens</li>
 <li><a href="http://border-radius.com/">Border radius generator</a></li>
 
-<li><a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a></li>
+<li><a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a></li>
 
 <li>
-<a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a> (multiple backgrounds, box-shadow, border-radius and border-image etc)</li>
+<a href="https://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a> (multiple backgrounds, box-shadow, border-radius and border-image etc)</li>
 <li>
 <a href="http://www.brucelawson.co.uk/2010/cross-browser-future-proof-css-3/">Writing cross-browser, future-proof CSS 3</a> (a rant with the rant hat on)</li>
 </ul>
 
 <h4>Mobile-specific resources</h4>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
-<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
+<li><a href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
+<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
 <li>
 <a href="http://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report (this <a href="http://www.opera.com/smw">monthly report</a> has breakdowns by territory of most-vsited sites and handsets)</li>
 <li><a href="http://www.w3.org/TR/mwbp-wcag/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> (If you design so people with disabilities can use your content, it has good side-effects for mobile users)</li>
@@ -132,7 +132,7 @@ The slides for my first presentation are available:
 <ul>
 <li><a href="http://widgets.opera.com/">Widgets repository</a> - try some out. (I demoed <a href="http://widgets.opera.com/widget/downloading/4196/1.2/">Torus</a>.)</li>
 <li><a href="http://www.quirksmode.org/blog/archives/2009/04/introduction_to.html">Introduction to W3C Widgets</a> by Peter-Paul Koch</li>
-<li><a href="http://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
 <li><a href="http://www.w3.org/TR/widgets/">W3C Widget spec</a></li>
 <li><a href="http://www.w3.org/2009/dap/">W3C DAP (Device APIs and Policy Working Group)</a>(&quot;the mission of the Device APIs and Policy Working Group is to create client-side APIs that enable the development of Web Applications and Web Widgets that interact with devices services such as Calendar, Contacts, Camera, etc.&quot;)</li>
 <li><a href="http://berjon.com/blog/2010/09/dap.html">Robin Berjon&#39;s DAP blog</a></li>

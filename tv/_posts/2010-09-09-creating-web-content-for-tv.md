@@ -216,7 +216,7 @@ Note that for these non-traditional elements, spatial navigation mimics mouse be
 Although spatial navigation works “out-of-the-box” in most situations, developers can take further control over the order in which elements receive focus using the [CSS3 Basic User Interface specification for directional focus navigation][30]. See our separate article on [Tweaking spatial navigation for TV browsing][31] for more details.
 
 [30]: http://www.w3.org/TR/css3-ui/#nav-dir
-[31]: http://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/
+[31]: https://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/
 
 ### Indicating focus {#focus}
 

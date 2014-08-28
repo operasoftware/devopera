@@ -6,11 +6,11 @@ intro: 'In this article, Christopher Schmitt follows up his hCard introduction b
 license: cc-by-nc-sa-2.5
 ---
 <ul class="seriesNav">
-<li class="prev"><a href="http://dev.opera.com/articles/view/introduction-to-hcard/" rel="prev" title="link to the previous article in the series">Previous article&#8212;Introduction to hCard</a></li>
+<li class="prev"><a href="https://dev.opera.com/articles/view/introduction-to-hcard/" rel="prev" title="link to the previous article in the series">Previous article&#8212;Introduction to hCard</a></li>
 </ul>
 
 <h2>Introduction</h2>
-<p>In <a href="http://dev.opera.com/articles/view/introduction-to-hcard/">the first part of this tutorial</a>, I showed you the basics of the hCard microformat - what it is, how you implement on in HTML, and what tools are available to extract tem form web pages. Now that we know how to create hCards, let's go through a couple of examples that demonstrate how we might style hCards with CSS to make them fit into the visual design of a web page.</p>
+<p>In <a href="https://dev.opera.com/articles/view/introduction-to-hcard/">the first part of this tutorial</a>, I showed you the basics of the hCard microformat - what it is, how you implement on in HTML, and what tools are available to extract tem form web pages. Now that we know how to create hCards, let's go through a couple of examples that demonstrate how we might style hCards with CSS to make them fit into the visual design of a web page.</p>
 
 <p class="note"><a href="hcard_examples.zip">Download the full code</a> for the examples in this article.</p>
 
@@ -202,5 +202,5 @@ href="mailto:jackthetripper@@example.com"&gt;jackthetripper@example.com&lt;/a&gt
 <p>In this article, we have created a couple of simple, elegant method to make your contact information more easily accessible to your users. With a bit of semantic markup, we've made it very simple for the user to import your contact data into their favorite address book application.</p>
 
 <ul class="seriesNav">
-<li class="prev"><a href="http://dev.opera.com/articles/view/introduction-to-hcard/" rel="prev" title="link to the previous article in the series">Previous article&#8212;Introduction to hCard</a></li>
+<li class="prev"><a href="https://dev.opera.com/articles/view/introduction-to-hcard/" rel="prev" title="link to the previous article in the series">Previous article&#8212;Introduction to hCard</a></li>
 </ul>

@@ -26,7 +26,7 @@ File I/O (originally [announced in May][1], and [proposed to W3C][2] for develop
 
 The video feature provides support for the royalty-free Ogg Theora video format, used by Wikipedia and others. There are [HTML5 examples][6] based on working drafts of the HTML 5 specification being developed at W3C, and Erik Dahlström’s [video in SVG][7] article.
 
-[6]: http://dev.opera.com/articles/a-call-for-video-on-the-web/
+[6]: https://dev.opera.com/articles/a-call-for-video-on-the-web/
 [7]: http://my.opera.com/MacDev_ed/blog/2007/11/21/svg-at-the-movies-take-two
 
 3D canvas is the most experimental feature in this build. At least Opera and Mozilla have been thinking about how to provide 3D rendering in a way we can implement cross-platform even on proprietary systems. 3D canvas, like its 2D cousin, gives developers a javascript-based approach (which meant that we could implement it for you to try, without spending massive amounts of time that should be spent on current work). Tim Johansson, who implemented it, wrote about [using 3D canvas][8] including some examples.

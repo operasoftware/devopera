@@ -78,6 +78,6 @@ If you have read this far, you deserve to see some demos!
 * [Metavid - Open Video Archive of the US Congress](http://metavid.org/)
 * [“Video For Everybody” Test Page](http://camendesign.com/code/files/video_for_everybody/test.html)
 * [HTML5and Audio() Support Tester](http://www.happyworm.com/jquery/jplayer/HTML5.Audio.Support/)
-* [Opera's original call for video on the web](http://dev.opera.com/articles/view/a-call-for-video-on-the-web-opera-vid/) (for the nostalgic)
+* [Opera's original call for video on the web](https://dev.opera.com/articles/view/a-call-for-video-on-the-web-opera-vid/) (for the nostalgic)
 
 With this I wish everyone a happy new year, may there be an abundance of `<video>` for all!

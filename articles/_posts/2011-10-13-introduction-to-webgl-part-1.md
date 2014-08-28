@@ -76,7 +76,7 @@ WebGL is slightly more complicated than your typical web technologies because it
 
 You don’t need to fully understand the inner workings of WebGL. There are [several WebGL libraries][32] available to take some of the complexity out of your hands. However, gaining an understanding of it can be useful in case you want to spice up your code with features that are not in your library of choice, or you feel that having a better grasp of the technology will help you find your way around what the libraries have to offer.
 
-[32]: http://dev.opera.com/articles/view/an-introduction-to-webgl/#webgllib
+[32]: https://dev.opera.com/articles/view/an-introduction-to-webgl/#webgllib
 
 When programming in WebGL, you are usually aiming to render a scene of some kind. This usually includes multiple subsequent draw jobs or “calls”, each of which is carried out in the GPU though a process called the rendering pipeline.
 

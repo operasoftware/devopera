@@ -159,7 +159,7 @@ Now we've got our functionality in place, we want it to look good! In this secti
 
 Instead of just appearing and disappearing, it would be nice for the menu to fade in and out smoothly. Luckily for us, the CSS3 transitions module allows us to change a value over a set period of time — perfect! In short, the idea is that you create a default state for the element you want to transition, and specify the properties you want to transition, and how long you want the transition to last. Then you specify a transitioned state of that element (for instance, using `:hover`), which contains the end state of the transition. When the state change occurs (e.g., the element is hovered over), you see a smooth transition between the two states, rather than just an instant flip from one to the other. For more details on the basics of transitions, read [CSS3 transitions and 2D transforms][5].
 
-   [5]: http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
+   [5]: https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
 
 Going back to our example, we want to create a transition between completely opaque and completely transparent, which occurs when the menu goes from shown to hidden. We can represent these two states as follows:
 

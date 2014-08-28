@@ -19,7 +19,7 @@ license: cc-by-nc-sa-3.0
 
 The HTML5 `<video>` element is already supported by most modern browsers, and even IE has support announced for version 9. There are many advantages of having video embedded natively in the browser (covered in the article [Introduction to HTML5 video][1] by Bruce Lawson), so many developers are trying to use it as soon as possible. There are a couple of barriers to this that remain, most notably the problem of which codecs are supported in each browser, with a disagreement between Opera/Firefox and IE/Safari. That might not be a problem for much longer though, with Google recently releasing the VP8 codec, and [the WebM project][2] coming into existence. Opera, Firefox, Chrome and IE9 all have support in final builds, developer builds, or at least support announced for this format, and Flash will be able to play VP8. This means that we will soon be able to create a single version of the video that will play in the `<video>` element in most browsers, and the Flash Player in those that don’t support WebM natively.
 
-[1]: http://dev.opera.com/articles/view/introduction-html5-video/
+[1]: https://dev.opera.com/articles/view/introduction-html5-video/
 [2]: http://www.webmproject.org/
 
 The other major barrier to consider is building up a custom HTML5 `<video>` player -- this is where a Flash-only solution currently has an advantage, with the powerful Flash IDE providing an easy interface with which to create a customized video player component. IF we want to write a customised player for the HTML5 `<video>` element we need to handcode all the HTML5, CSS3, JavaScript, and any other open standards we want to use to build a player!
@@ -70,7 +70,7 @@ After creating the markup we’ll have to tie our elements to the media elements
 **Author’s note:** I’m going to assume you are familiar with the basic anatomy of a jQuery plugin, and JavaScript, so I’m only briefly going to explain the script. If you need more information on these subjects, consult Craig Buckler’s [How to develop a jQuery plugin][5] tutorial, and [the JavaScript section of the Opera web standards curriculum][6].
 
 [5]: http://www.sitepoint.com/blogs/how-to-develop-a-jquery-plugin/
-[6]: http://dev.opera.com/articles/view/programming-the-real-basics/
+[6]: https://dev.opera.com/articles/view/programming-the-real-basics/
 
 	$.fn.gVideo = function(options) {
 		// build main options before element iteration

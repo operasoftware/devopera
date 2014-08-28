@@ -66,7 +66,7 @@ license: cc-by-nc-sa-3.0
 <p>With SVG you can do a lot more than simple vector graphics and
 		animations. You can develop highly interactive Web applications with
 		scripting, advanced animation events, filters, and almost anything you want.
-		To learn more about SVG, read the <a href="http://dev.opera.com/articles/view/svg-evolution-not-revolution/"><em>SVG: Evolution, Not Revolution</em> article series</a>.</p>
+		To learn more about SVG, read the <a href="https://dev.opera.com/articles/view/svg-evolution-not-revolution/"><em>SVG: Evolution, Not Revolution</em> article series</a>.</p>
 
 <h2 id="html5-canvas">HTML5 Canvas</h2>
 
@@ -210,7 +210,7 @@ setInterval(function () {
 		<code>.jpg</code>s, or anything else the Web browser can load. The Canvas
 		output can also be exported/saved in common image formats.</p>
 
-<p class="note">To learn more about Canvas basics, read our <a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML5 Canvas tutorial</a>.</p>
+<p class="note">To learn more about Canvas basics, read our <a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML5 Canvas tutorial</a>.</p>
 
 <p>The Canvas example provided here is not a good use-case for Canvas
 		because you can achieve the same effect with a lot less code in SVG, as

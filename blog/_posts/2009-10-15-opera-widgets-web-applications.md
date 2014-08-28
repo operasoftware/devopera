@@ -55,7 +55,7 @@ For more information on Opera Widgets, please visit [widgets.opera.com][5].
 
 If you are a developer and want to know more about using Opera Widgets for desktop to power your Web applications, please visit [dev.opera.com][6].
 
-[6]: http://dev.opera.com/articles/view/opera-desktop-widgets-evolved/
+[6]: https://dev.opera.com/articles/view/opera-desktop-widgets-evolved/
 
 If you just want to try it out, you can download the latest Labs build here:
 

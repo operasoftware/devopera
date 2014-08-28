@@ -87,7 +87,7 @@ This header contains a comma-separated list of features supported by the phone. 
 - `viewport`: The Opera Mini version supports viewport, which allows web developers to specify optimized rendering information for mobile browsers. For more information on this feature, read [An introduction to meta viewport and @viewport][2] by Andreas Bovens.
 
 [1]: http://www.operamini.com/help/faq/
-[2]: http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/
+[2]: https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/
 
 ## X-OperaMini-Phone-UA
 

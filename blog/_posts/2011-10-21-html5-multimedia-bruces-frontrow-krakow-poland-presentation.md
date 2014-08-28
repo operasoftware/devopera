@@ -25,7 +25,7 @@ license: cc-by-3.0
 
 <ul>
 <li>
-<a href="http://dev.opera.com/articles/view/introduction-html5-video/" rel="nofollow">Introduction to HTML5 video</a> by Moi and Patrick Lauke</li>
+<a href="https://dev.opera.com/articles/view/introduction-html5-video/" rel="nofollow">Introduction to HTML5 video</a> by Moi and Patrick Lauke</li>
 <li>
 <a href="http://camendesign.com/code/video_for_everybody" rel="nofollow">Video for Everybody</a> - Kroc Camen frankensteins in olde-worlde Flash embed code as fallback for HTML5 video</li>
 <li>Pat Lauke&#39;s <a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">Fancy video controls with JavaScript</a> - view source, or steal his code</li>
@@ -44,7 +44,7 @@ license: cc-by-3.0
 <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#synchronising-multiple-media-elements" rel="nofollow">Synchronising multiple media elements</a> - nascent specification: <strong>highly liable to change</strong>!</li>
 <li>
 <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" rel="nofollow">Accessing device camera from JavaScript</a> - Labs build of Opera/ Android that implements HTML5 <code>getUserMedia</code> with bonus link to the Magic HTML5 Moustache demo</li>
-<li><a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Playing with HTML5 video and getUserMedia support</a> - tutorial article</li>
+<li><a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Playing with HTML5 video and getUserMedia support</a> - tutorial article</li>
 <li>
 </li></ul>
 

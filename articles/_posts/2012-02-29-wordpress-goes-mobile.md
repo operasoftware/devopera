@@ -92,7 +92,7 @@ license: cc-by-3.0
 <p>Beware that this (like any form of responsive design) won&#39;t work for all devices:</p>
 
 <ul>
-<li>To read media queries, feature phones need to be running <a href="http://dev.opera.com/articles/view/opera-mini-5-developers/" title="Opera Mini 5 for developers">Opera Mini 5</a>, and other more basic browsers will ignore them. A way around this is to use the mobile first approach, coding for  mobile devices first and then adding media queries for larger screens. However (it's never simple, is it?), you'll then need to use a JavaScript polyfill such as <a href="https://github.com/scottjehl/Respond" title="Respond by Scott Jehl">Respond</a> if you want IE 6-8 obey the media queries and display the desktop site. Of course, this might not be an issue — there is probably more chance of early IE versions rendering simpler mobile layouts!</li>
+<li>To read media queries, feature phones need to be running <a href="https://dev.opera.com/articles/view/opera-mini-5-developers/" title="Opera Mini 5 for developers">Opera Mini 5</a>, and other more basic browsers will ignore them. A way around this is to use the mobile first approach, coding for  mobile devices first and then adding media queries for larger screens. However (it's never simple, is it?), you'll then need to use a JavaScript polyfill such as <a href="https://github.com/scottjehl/Respond" title="Respond by Scott Jehl">Respond</a> if you want IE 6-8 obey the media queries and display the desktop site. Of course, this might not be an issue — there is probably more chance of early IE versions rendering simpler mobile layouts!</li>
 
 <li>If a large proportion of your visitors are using Blackberries, you may also need to adapt the mobile first strategy, as older Blackberries (which a lot of corporate users have and are blocked from upgrading the browser on) don't support some of the CSS needed for media queries. What they do and don't support will depend on the model, but even those supporting media queries sometimes don't support <code>display: none;</code>, which you may need to use.</li>
 </ul>
@@ -117,7 +117,7 @@ license: cc-by-3.0
 
 <h2>Responsive design?</h2>
 
-<p>Responsive design is hot right now, and it&#39;s constantly being improved upon as a technique, so I thought I'd give it its own section. There are some great resources out there on this topic, including <a href="http://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Chris Mills&#39; article on this site</a>, so I&#39;m not going to go into a lot of detail here.</p>
+<p>Responsive design is hot right now, and it&#39;s constantly being improved upon as a technique, so I thought I'd give it its own section. There are some great resources out there on this topic, including <a href="https://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Chris Mills&#39; article on this site</a>, so I&#39;m not going to go into a lot of detail here.</p>
 
 <p>However, WordPress does have some plugins that will help you to implement more effective responsive sites:</p>
 

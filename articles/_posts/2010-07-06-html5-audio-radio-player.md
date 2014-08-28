@@ -138,7 +138,7 @@ audio.addEventListener("timeupdate", function() {
 
 <h2>Codec support across browsers</h2>
 <p>
-The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;video&gt;</code> element in HTML5. There have been a lot of debates and disagreements as to which video format to use (read our <a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> for more details), and audio has undergone the same kinds of discussions. Currently the support for audio codecs across the major browsers is as follows:</p>
+The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;video&gt;</code> element in HTML5. There have been a lot of debates and disagreements as to which video format to use (read our <a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> for more details), and audio has undergone the same kinds of discussions. Currently the support for audio codecs across the major browsers is as follows:</p>
 
 <table>
 	<thead>

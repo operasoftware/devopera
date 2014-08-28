@@ -29,13 +29,13 @@ license: cc-by-3.0
 <ul>
 <li>
  <a href="http://my.opera.com/core/blog/show.dml/26453141">Ragnarök</a>, our HTML5 parser,  for  better web apps and increased compatibility with websites.</li>
- <li><a href="http://dev.opera.com/articles/view/introducing-ecmascript-5-1/">ECMAScript 5.1</a> for those who are too damn groovy for JavaScript. </li>
+ <li><a href="https://dev.opera.com/articles/view/introducing-ecmascript-5-1/">ECMAScript 5.1</a> for those who are too damn groovy for JavaScript. </li>
 <li><a href="http://my.opera.com/shwetankdixit/blog/2011/07/06/getusermedia-and-device-orientation-adventures">Orientation Support</a></li>
-<li>For Android only, support for <a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">camera use in the browser</a> using the same, newer, <a href="http://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">getUserMedia syntax</a> as Opera desktop Labs.</li>
+<li>For Android only, support for <a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">camera use in the browser</a> using the same, newer, <a href="https://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">getUserMedia syntax</a> as Opera desktop Labs.</li>
 
-<li><a href="http://dev.opera.com/articles/view/css3-radial-gradients/">CSS3 radial gradients</a> and the fabled <a href="http://media.opera.com/media/press/2011/unicorn/"><code>-o-double-rainbow</code></a>.</li>
-<li><a href="http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">CORS (cross-origin resource sharing)</a>.</li>
-<li>For Android only, hardware-accelerated <a href="http://dev.opera.com/articles/view/an-introduction-to-webgl/">WebGL</a>  for all things 3D and web. With WebGL on mobile, it&#39;ll be even easier to make and distribute games that work cross-platform.</li>
+<li><a href="https://dev.opera.com/articles/view/css3-radial-gradients/">CSS3 radial gradients</a> and the fabled <a href="http://media.opera.com/media/press/2011/unicorn/"><code>-o-double-rainbow</code></a>.</li>
+<li><a href="https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">CORS (cross-origin resource sharing)</a>.</li>
+<li>For Android only, hardware-accelerated <a href="https://dev.opera.com/articles/view/an-introduction-to-webgl/">WebGL</a>  for all things 3D and web. With WebGL on mobile, it&#39;ll be even easier to make and distribute games that work cross-platform.</li>
 
 </ul>
 <p>Keen standards-spotters can check out our <a href="http://www.opera.com/docs/specs/productspecs/">Web specifications support in Opera products</a>.</p>
@@ -52,7 +52,7 @@ license: cc-by-3.0
 <h3>Opera Mini Next</h3>
 <p>Be sure to check out your site in Opera Mini, and experience it as many of your users will.</p>
 <p>Opera Mini now has a Next channel, where the latest improvements will land on in advance of an official release. In this case, those improvements include the &quot;Home Screen&quot; for social network integration next to Speed Dial for feature phones, and hardware-accelerated scrolling with revamped Speed Dial for smartphones.</p>
-<p>You should also read our <a href="http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a>.</p>
+<p>You should also read our <a href="https://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a>.</p>
 <h3>Opera Mini 7 for iOS</h3>
 <p><a href="http://itunes.apple.com/au/app/opera-mini-web-browser/id363729560?mt=8">Opera Mini 7 Final</a> for iOS is in the Appstore today. We&#39;ve added support for file uploads, and  more than nine Speed Dials.</p>
 <h3>Gimme, gimme, gimme</h3>

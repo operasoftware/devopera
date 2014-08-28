@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />	
+	<meta charset="utf-8" />
 	<title>A more accessible HTML5 video player on Dev.Opera.com</title>
 	<!-- Styles for the demos -->
 	<style>
@@ -43,15 +43,15 @@
 			display: block;
 			clear: both;
 			padding: 10px;
-			
+
 			color: #333;
 			font-size: 80%;
-		}		
+		}
 		pre {
 			padding: 10px;
 			overflow: auto;
 			background-color: #333;
-			
+
 			color: #fff;
 		}
 		footer {
@@ -62,14 +62,14 @@
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-	
+
 	<!-- Acorn Media Player specific -->
 	<link href="acornmediaplayer.base.css" rel="stylesheet" type="text/css">
-	<script src="jquery.acornmediaplayer.js"></script>	
+	<script src="jquery.acornmediaplayer.js"></script>
 	<!-- Themes -->
-	<link href="acorn.access.css" rel="stylesheet" type="text/css">	
+	<link href="acorn.access.css" rel="stylesheet" type="text/css">
 	<link href="acorn.barebones.css" rel="stylesheet" type="text/css">
-	<!-- Call the plugin --> 
+	<!-- Call the plugin -->
 	<script>
 		jQuery(function() {
 			// demo1
@@ -88,17 +88,17 @@
 	</script>
 </head>
 <body>
-	
+
 	<article>
 
 		<h1>
-			Demos for <a href="http://dev.opera.com/articles/view/more-accessible-html5-video-player/">A more accessible HTML5 &lt;video&gt; player</a> on <a href="http://dev.opera.com">Dev.Opera</a>
+			Demos for <a href="https://dev.opera.com/articles/view/more-accessible-html5-video-player/">A more accessible HTML5 &lt;video&gt; player</a> on <a href="https://dev.opera.com">Dev.Opera</a>
 		</h1>
-		
+
 		<section>
 			<h2>Defaults</h2>
 			<figure>
-				<video controls="controls" width="826" height="352" id="demo1" preload="metadata" aria-describedby="demo1-description">					
+				<video controls="controls" width="826" height="352" id="demo1" preload="metadata" aria-describedby="demo1-description">
 					<source src="sintel_movie_340x144.mp4" type="video/mp4">
 					<source src="sintel_movie_340x144.webm" type="video/webm">
 					<source src="sintel_movie_340x144.ogv" type="video/ogg">
@@ -113,21 +113,21 @@
 					<p><a href="www.sintel.org">www.sintel.org</a></p>
 				</figcaption>
 			</figure>
-			
+
 			<p>
-				Calling the plugin with the default options. 
-			</p>			
-			<pre><code>$('#demo1').acornMediaPlayer();</code></pre>			
+				Calling the plugin with the default options.
+			</p>
+			<pre><code>$('#demo1').acornMediaPlayer();</code></pre>
 		</section>
-				
+
 		<section>
 			<h2><code>accesslight</code> Child Theme with captions and trascript</h2>
 			<figure>
-				<video controls="controls" width="826" height="352" id="demo2" preload="metadata" aria-describedby="demo2-description">				
+				<video controls="controls" width="826" height="352" id="demo2" preload="metadata" aria-describedby="demo2-description">
 					<source src="sintel_movie_340x144.mp4" type="video/mp4">
 					<source src="sintel_movie_340x144.webm" type="video/webm">
 					<source src="sintel_movie_340x144.ogv" type="video/ogg">
-					
+
 					<track src="sintel_en.srt" kind="subtitles" srclang="en" label="English" />
 					<track src="sintel_de.srt" kind="subtitles" srclang="de" label="Deutsch" />
 					<track src="sintel_es.srt" kind="subtitles" srclang="es" label="Español" />
@@ -136,7 +136,7 @@
 					<track src="sintel_nl.srt" kind="subtitles" srclang="nl" label="Nederlands" />
 					<track src="sintel_pl.srt" kind="subtitles" srclang="pl" label="Polski" />
 					<track src="sintel_pt.srt" kind="subtitles" srclang="pt" label="Português" />
-					
+
 					You can download Sintel at <a href="www.sintel.org">www.sintel.org</a>.
 				</video>
 				<figcaption id="demo2-description">
@@ -155,7 +155,7 @@
 	theme: 'access accesslight'
 });</code></pre>
 		</section>
-		
+
 		<section>
 			<h2><code>barebones</code> Child Theme</h2>
 			<figure>
@@ -163,7 +163,7 @@
 					<source src="sintel_movie_340x144.mp4" type="video/mp4">
 					<source src="sintel_movie_340x144.webm" type="video/webm">
 					<source src="sintel_movie_340x144.ogv" type="video/ogg">
-					
+
 					You can download Sintel at <a href="www.sintel.org">www.sintel.org</a>.
 				</video>
 				<figcaption id="demo3-description">
@@ -181,14 +181,14 @@
 	nativeSliders: 'true',
 	volumeSliders: 'horizontal'
 });</code></pre>
-		</section>		
-	
+		</section>
+
 		<footer>
 			<p>More details, documentation and the rest on the GitHub page for <a href="http://github.com/ghinda/acornmediaplayer">Acorn Media Player</a>.</p>
 			<p>Acorn Media Player is a project by <a href="http://www.ghinda.net">Cristian I. Colceriu</a>. </p>
 			<p>Sintel is &copy; copyright the Blender Foundation | <a href="www.sintel.org">www.sintel.org</a>, licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license. </p>
 		</footer>
 	</article>
-	
+
 </body>
 </html>

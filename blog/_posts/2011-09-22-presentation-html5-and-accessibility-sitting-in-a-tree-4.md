@@ -22,7 +22,7 @@ license: cc-by-3.0
 
 <p>Some links from the talk:</p>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a>: tutorial from first principles by Bruce and Patrick Lauke</li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a>: tutorial from first principles by Bruce and Patrick Lauke</li>
 <li>Patrick Lauke&#39;s <a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">All HTML5 + CSS3 video player</a> and bonus <a href="http://people.opera.com/patrickl/experiments/webm/fancy-swap/">Fancy Swap video player</a> (both Creative Commons Attribution 3.0 - licensed, so take them and go!)</li>
 <li><a href="{{ page.id }}/classlist-url.htm">Top 20 class names on HTML elements</a></li>
 <li><a href="{{ page.id }}/idlist-url.htm">Top 20 id names on HTML elements</a></li>
@@ -40,6 +40,6 @@ license: cc-by-3.0
 <li><a href="http://sites.google.com/site/webrtc/">WebRTC project</a> (for in-browser video conferencing)</li>
 </ul>
 
-<p>dev.Opera has more articles on <a href="http://dev.opera.com/articles/tags/open%20web/">HTML5 and Open Web Standards</a>. I also co-curate <a href="http://html5doctor.com/article-archive/">HTML5doctor</a>.</p>
+<p>dev.Opera has more articles on <a href="https://dev.opera.com/articles/tags/open%20web/">HTML5 and Open Web Standards</a>. I also co-curate <a href="http://html5doctor.com/article-archive/">HTML5doctor</a>.</p>
 
 

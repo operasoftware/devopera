@@ -150,7 +150,7 @@ Un tout nouveau monde de vidéos de chatons mignons nous attend. Maintenant, je 
 Maintenant que `video` fait partie de l’ensemble des technologies Open Web, nous pouvons utiliser les feuilles de style CSS pour appliquer du style à l’élément. Voici un exemple simple de ce qui peut maintenant être réalisé. Nous allons appliquer [des transitions CSS pour la vidéo du cours de danse turque][17] afin de changer ses dimensions une fois que les évènements `:hover :focus` seront déclenchés sur la vidéo. (Lire notre tutoriel sur les [transitions CSS3 et les transformations 2D.)][18]
 
 [17]: http://people.opera.com/patrickl/articles/introduction-html5-video/transitions/
-[18]: http://dev.opera.com/articles/css3-transitions-and-2d-transforms/
+[18]: https://dev.opera.com/articles/css3-transitions-and-2d-transforms/
 
 #### Combiner `video` et `canvas`
 
@@ -193,4 +193,4 @@ Voir notre exemple de [de contrôles personnalisés en javascript pour l’élé
 [22]: http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2
 [23]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element
 [24]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
-[25]: http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/
+[25]: https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/

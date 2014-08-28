@@ -6,7 +6,7 @@ intro: 'In this article, Christopher Schmitt follows up his hCard introduction b
 license: cc-by-nc-sa-2.5
 ---
 <ul class="seriesNav">
-<li class="next"><a href="http://dev.opera.com/articles/view/introduction-to-hcard-part-two-styling/" rel="next" title="link to the previous article in the series">Next article—Introduction to hCard, Part two: Styling hCards</a></li>
+<li class="next"><a href="https://dev.opera.com/articles/view/introduction-to-hcard-part-two-styling/" rel="next" title="link to the previous article in the series">Next article—Introduction to hCard, Part two: Styling hCards</a></li>
 </ul>
 
 <h2>Introduction</h2>
@@ -24,10 +24,10 @@ license: cc-by-nc-sa-2.5
   &lt;span class="fn n"&gt;Jack Tripper&lt;/span&gt;
   &lt;div class="org"&gt;Jack's Bistro&lt;/div&gt;
   &lt;div class="adr"&gt;
-    &lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
-    &lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
-    &lt;span class="region"&gt;CA&lt;/span&gt;,
-    &lt;span class="postal-code"&gt;90405&lt;/span&gt;
+	&lt;div class="street-address"&gt;834 Ocean Vista Ave.&lt;/div&gt;
+	&lt;span class="locality"&gt;Santa Monica&lt;/span&gt;,
+	&lt;span class="region"&gt;CA&lt;/span&gt;,
+	&lt;span class="postal-code"&gt;90405&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
@@ -87,5 +87,5 @@ license: cc-by-nc-sa-2.5
 <p>A simple construction of HTML elements, the hCard microformat makes the information in your site much more versatile, which is one of the reasons sites like Flickr and Google Maps use it to markup contact information. With tools such as those discussed above, it is well worth the effort to mark up your contact data using hCards; it makes it more easily accessible to developers and users alike.</p>
 
 <ul class="seriesNav">
-<li class="next"><a href="http://dev.opera.com/articles/view/introduction-to-hcard-part-two-styling/" rel="next" title="link to the previous article in the series">Next article—Introduction to hCard, Part two: Styling hCards</a></li>
+<li class="next"><a href="https://dev.opera.com/articles/view/introduction-to-hcard-part-two-styling/" rel="next" title="link to the previous article in the series">Next article—Introduction to hCard, Part two: Styling hCards</a></li>
 </ul>

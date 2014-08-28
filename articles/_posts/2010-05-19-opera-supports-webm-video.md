@@ -14,7 +14,7 @@ license: cc-by-nc-sa-3.0
 
 <h2>Introduction</h2>
 
-<p>You’ll probably already have read up on and experimented with the new HTML5 <code>&lt;video&gt;</code> element, which allows us to include video inside an HTML page without the need for plugins (if not, read our <a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> before going any further.) You’ll probably also be aware that there is somewhat of a disagreement over codecs going on. Opera and Firefox currently support the Ogg Theora video codec, while Safari supports the H.264 codec. Google Chrome supports both, while Microsoft have announced support for H.264 in IE9. This is not ideal, as to implement a cross-browser video with HTML5 you would need to encode and reference multiple video formats. For example:</p>
+<p>You’ll probably already have read up on and experimented with the new HTML5 <code>&lt;video&gt;</code> element, which allows us to include video inside an HTML page without the need for plugins (if not, read our <a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> before going any further.) You’ll probably also be aware that there is somewhat of a disagreement over codecs going on. Opera and Firefox currently support the Ogg Theora video codec, while Safari supports the H.264 codec. Google Chrome supports both, while Microsoft have announced support for H.264 in IE9. This is not ideal, as to implement a cross-browser video with HTML5 you would need to encode and reference multiple video formats. For example:</p>
 
 <pre><code>&lt;video controls="controls"&gt;
    &lt;source src="theora.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
@@ -88,7 +88,7 @@ license: cc-by-nc-sa-3.0
 
 <ul>
 <li><a href="http://labs.opera.com/news/2010/05/19/">Opera Labs: Welcome, WebM &lt;video&gt;!</a>, by Håkon Wium Lie.</li>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a>, by Bruce Lawson and Patrick Lauke</li>
-<li><a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a>, by Bruce Lawson</li>
-<li><a href="http://dev.opera.com/articles/view/everything-you-need-to-know-about-html5-video-and-audio/">Everything you need to know about HTML5 video and audio</a>, by Simon Pieters</li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a>, by Bruce Lawson and Patrick Lauke</li>
+<li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a>, by Bruce Lawson</li>
+<li><a href="https://dev.opera.com/articles/view/everything-you-need-to-know-about-html5-video-and-audio/">Everything you need to know about HTML5 video and audio</a>, by Simon Pieters</li>
 </ul>

@@ -33,7 +33,7 @@ formHandler = function(e){
 	if( msg == ''){
 		alert('Enter a message, please.');
 	} else {
-		iframe.contentWindow.postMessage(msg,'http://dev.opera.com');
+		iframe.contentWindow.postMessage(msg,'https://dev.opera.com');
 	}
 }
 form.addEventListener('submit', formHandler, false);

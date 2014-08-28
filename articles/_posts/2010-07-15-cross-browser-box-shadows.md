@@ -360,5 +360,5 @@ One disadvantage is that using combinations of `top`/`bottom` properties and `le
 - [Beautiful UI styling with CSS3 text-shadow, box-shadow and border-radius][16]
 - [CSS3 borders, backgrounds and boxes][17]
 
-[16]: http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/
-[17]: http://dev.opera.com/articles/view/css3-border-background-boxshadow/
+[16]: https://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/
+[17]: https://dev.opera.com/articles/view/css3-border-background-boxshadow/

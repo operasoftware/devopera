@@ -36,6 +36,6 @@ license: cc-by-3.0
 <h3>Apply</h3>
 <p><a href="http://jil.vodafone.com/app_planet/">Apply for free tickets</a> from Vodafone</p>
 <h2>More Widgets resources</h2>
-<p>If you&#39;re not going to be around Barcelona to attend, dev.O has <a href="http://dev.opera.com/articles/widgets/">plenty of resources</a> to get you up to speed. I recommend beginning with <a href="http://dev.opera.com/articles/view/creating-your-first-opera-widget/">Creating your first Opera widget</a> and progressing from there. You&#39;ll also find some resources on the <a href="http://www.betavine.net/bvportal/resources/widgets">Betavine site</a>.</p>
+<p>If you&#39;re not going to be around Barcelona to attend, dev.O has <a href="https://dev.opera.com/articles/widgets/">plenty of resources</a> to get you up to speed. I recommend beginning with <a href="https://dev.opera.com/articles/view/creating-your-first-opera-widget/">Creating your first Opera widget</a> and progressing from there. You&#39;ll also find some resources on the <a href="http://www.betavine.net/bvportal/resources/widgets">Betavine site</a>.</p>
 <p><a href="http://widgets.opera.com/">widgets.opera.com</a> has hundreds of Widgets you can try out on your phone, desktop or Web-enabled TV.</p>
 <p>The W3C <a href="http://www.w3.org/TR/widgets/">Widget Packaging and Configuration</a> specificaton details the method of packing Widgets for distribution.</p>

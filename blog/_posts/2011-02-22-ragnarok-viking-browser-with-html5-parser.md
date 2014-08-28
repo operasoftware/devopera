@@ -44,7 +44,7 @@ license: cc-by-3.0
 &lt;/BODY&gt;&lt;/html&gt;
 </code></pre>
 
-<p>All the browsers have sorted out the mis-nesting, but inconsistently: note that IE and Safari have an additional empty <code>&lt;i&gt;</code> element that Opera, Firefox and Chrome don&#39;t have. Which is correct? In an HTML4 world, both are. The HTML4 spec describes what to do with good markup, but not what to do with bad markup - and we know that <a href="http://dev.opera.com/articles/view/mama-markup-validation-report/">95% of the Web doesn&#39;t validate</a>. Therefore, browsers have traditionally been left to their own devices and forced to guess what to do with bad markup, as error-handling was never defined for HTML4.</p>
+<p>All the browsers have sorted out the mis-nesting, but inconsistently: note that IE and Safari have an additional empty <code>&lt;i&gt;</code> element that Opera, Firefox and Chrome don&#39;t have. Which is correct? In an HTML4 world, both are. The HTML4 spec describes what to do with good markup, but not what to do with bad markup - and we know that <a href="https://dev.opera.com/articles/view/mama-markup-validation-report/">95% of the Web doesn&#39;t validate</a>. Therefore, browsers have traditionally been left to their own devices and forced to guess what to do with bad markup, as error-handling was never defined for HTML4.</p>
 
 <p>Our simple markup above already produces very different DOMs, so imagine what would result from more real world examples of tag soup with dozens or hundreds of elements. Writing JavaScript that has to operate across browsers with such inconsistencies is a major cause of hair loss and weeping amongst web developers.</p>
 

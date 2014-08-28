@@ -103,7 +103,7 @@ license: cc-by-3.0
 
 <p>So at the moment, it looks like jQuery is the best way to go, especially in terms of browser support. If you want your site to still be usable in older browsers that don't support the animation, it is advisable to make the default settings of the properties that are animated equal to the end state of the animation, for example above you can see that <code>height</code> is set to 25px and <code>opacity</code> is set to 0.5, so if the animation isn't available, the element just defaults at its end state. This may be acceptable for your site, or it may not — it really depends on what you are trying to do, and what your client or boss is happy with.</p>
 
-<p class="note">Note: for a lot more detail on CSS animations, read <a href="http://dev.opera.com/articles/view/css3-animations/">Making a move with CSS3 animations</a> by Chris Mills.</p>
+<p class="note">Note: for a lot more detail on CSS animations, read <a href="https://dev.opera.com/articles/view/css3-animations/">Making a move with CSS3 animations</a> by Chris Mills.</p>
 
 
 <h2>Animation Wars: CSS3 vs jQuery</h2>
@@ -167,4 +167,4 @@ license: cc-by-3.0
 
 <p>Alternatively, you might be able to live with your animations gracefully degrading in non-supporting browsers, in which case CSS3 animations are the best option.</p>
 
-<p class="note">Note that for simple animations, such as the trivial one shown in this test example, you could probably use less CSS if you did it as a <a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">transition</a> instead of an animation. It really is up to you what to use — transitions are quicker to set up but rely on state changes, whereas animations are arguably more flexible and powerful. Choose what is best for your particular situation.</p>
+<p class="note">Note that for simple animations, such as the trivial one shown in this test example, you could probably use less CSS if you did it as a <a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">transition</a> instead of an animation. It really is up to you what to use — transitions are quicker to set up but rely on state changes, whereas animations are arguably more flexible and powerful. Choose what is best for your particular situation.</p>

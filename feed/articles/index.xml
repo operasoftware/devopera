@@ -5,10 +5,10 @@ layout: none
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Dev.Opera Articles</title>
-	<link href="http://dev.opera.com/"/>
-	<link type="application/atom+xml" rel="self" href="http://dev.opera.com/feed/"/>
+	<link href="https://dev.opera.com/"/>
+	<link type="application/atom+xml" rel="self" href="https://dev.opera.com/feed/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://dev.opera.com/</id>
+	<id>https://dev.opera.com/</id>
 	<author>
 		<name>Dev.Opera editors</name>
 		<email></email>
@@ -17,15 +17,15 @@ layout: none
 {% assign entries = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
 {% for entry in entries limit:25 %}
 	<entry>
-		<id>http://dev.opera.com{{ entry.url }}</id>
-		<link type="text/html" rel="alternate" href="http://dev.opera.com{{ entry.url }}"/>
+		<id>https://dev.opera.com{{ entry.url }}</id>
+		<link type="text/html" rel="alternate" href="https://dev.opera.com{{ entry.url }}"/>
 		<title>{{ entry.title | markdownline }}</title>
 		<published>{{ entry.date | date_to_xmlschema }}</published>
 		<updated>{{ entry.date | date_to_xmlschema }}</updated>
 		<author>
 			<name>{% include author-name.html object=entry %}</name>
 		</author>
-		<content type="html" xml:base="http://dev.opera.com/"><![CDATA[{{ entry.content }}]]></content>
+		<content type="html" xml:base="https://dev.opera.com/"><![CDATA[{{ entry.content }}]]></content>
 	</entry>
 {% endfor %}
 

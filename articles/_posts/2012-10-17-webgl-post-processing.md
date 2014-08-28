@@ -12,8 +12,8 @@ license: cc-by-3.0
 
 <p>In this article we'll look at what image post-processing is and how to use the raw WebGL API to apply real-time post-processing effects on images and other media like video, <code>&lt;canvas&gt;</code>, etc.</p>
 
-<p>While this article is not strictly related to previous <a href='http://dev.opera.com/articles/tags/webgl'>WebGL articles</a> on dev.opera, some familiarity with the WebGL API is needed to get the most out of this. In particular, knowledge about the rendering pipeline (explained in
-		<a href='http://dev.opera.com/articles/view/an-introduction-to-webgl/'>An introduction to WebGL</a>) will be useful; in addition, if this is your first time diving into the raw WebGL API, it is recommended that you <a href='http://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>read Erik Möller's articles on raw WebGL</a> first.</p>
+<p>While this article is not strictly related to previous <a href='https://dev.opera.com/articles/tags/webgl'>WebGL articles</a> on dev.opera, some familiarity with the WebGL API is needed to get the most out of this. In particular, knowledge about the rendering pipeline (explained in
+		<a href='https://dev.opera.com/articles/view/an-introduction-to-webgl/'>An introduction to WebGL</a>) will be useful; in addition, if this is your first time diving into the raw WebGL API, it is recommended that you <a href='https://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>read Erik Möller's articles on raw WebGL</a> first.</p>
 
 <h2>Post-Processing</h2>
 
@@ -23,7 +23,7 @@ license: cc-by-3.0
 
 <h2>Drawing a Rectangle</h2>
 
-<p>The first step to do then is to render a simple 2D rectangle on the screen, and then play a bit with the fragment shader code and see what happens. Check out my <a href='http://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/simple.html'>simple shaded rectangle</a> example (also seen in Figure 1). You'll find the code for the JavaScript that does all the heavy lifting example file below the canvas in the example page.</p>
+<p>The first step to do then is to render a simple 2D rectangle on the screen, and then play a bit with the fragment shader code and see what happens. Check out my <a href='https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/simple.html'>simple shaded rectangle</a> example (also seen in Figure 1). You'll find the code for the JavaScript that does all the heavy lifting example file below the canvas in the example page.</p>
 
 <p><img src="webgl-shaded-rectangle.png" alt="A simple quad in which some color interpolation is being performed to create a linear gradient"></p>
 <p class="caption">Figure 1: A simple quad in which some color interpolation is being performed to create a linear gradient.</p>
@@ -49,7 +49,7 @@ createProgramFromURIs(gl, {
 	}
 });</code></pre>
 
-<p>Next, we send some information to the shader program: the size of the screen as a uniform, and also the vertices that make up a 2D rectangle via an attribute buffer. Uniforms and attributes are covered in the <a href='http://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>raw WebGL 101 series</a>. If the rectangle's vertices go from (-1, -1) to (1, 1), then the rectangle will cover the whole canvas. Here's the code for setting the uniforms and binding the vertex buffer:</p>
+<p>Next, we send some information to the shader program: the size of the screen as a uniform, and also the vertices that make up a 2D rectangle via an attribute buffer. Uniforms and attributes are covered in the <a href='https://dev.opera.com/articles/view/raw-webgl-part1-getting-started/'>raw WebGL 101 series</a>. If the rectangle's vertices go from (-1, -1) to (1, 1), then the rectangle will cover the whole canvas. Here's the code for setting the uniforms and binding the vertex buffer:</p>
 
 <pre  class="javascript"><code>var sizeLocation = gl.getUniformLocation(program, 'size'),
 positionLocation = gl.getAttribLocation(program, 'position'),
@@ -82,9 +82,9 @@ void main(void) {
 
 <p>In this example we will take a webcam input (a static image would also do just fine), and manipulate its pixels to do some edge-detection using the <a href='http://en.wikipedia.org/wiki/Sobel_operator'>Sobel operator</a>. The Sobel operator consists of what's called a convolution operation, which in this particular case can be explained as a weighted sum of the current pixel being evaluated and its surrounding pixels. This weighted sum operation can be performed via a matrix.</p>
 
-<p class="note">Note: For information on how to grab data from the camera, read <a href='http://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/'>getUserMedia: accessing the camera and privacy UI</a>.
+<p class="note">Note: For information on how to grab data from the camera, read <a href='https://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/'>getUserMedia: accessing the camera and privacy UI</a>.
 
-<p>Our <a href='http://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/texImage2D.html'>edge detection example</a> looks like Figure 2:</p>
+<p>Our <a href='https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/texImage2D.html'>edge detection example</a> looks like Figure 2:</p>
 
 <p><img src='webgl-edge-detection.png' alt="Post processing an image in WebGL using Sobel-based edge detection"></p>
 <p class="caption">Figure 2: Post processing an image in WebGL using Sobel-based edge detection.</p>
@@ -135,7 +135,7 @@ gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);</cod
 </li>
 		</ol>
 
-<p>You can <a href='http://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/multipass.html'>view the bloom effect example here</a>. Play with the different stages of the pipeline by toggling the options in the checkboxes. Figure 5 shows an image of the effect.</p>
+<p>You can <a href='https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/multipass.html'>view the bloom effect example here</a>. Play with the different stages of the pipeline by toggling the options in the checkboxes. Figure 5 shows an image of the effect.</p>
 
 <p><img src='webgl-bloom-effect.jpg' alt="Our WebGL version of the bloom effect in action; a post processed image with blur and blending applied"></p>
 <p class="caption">Figure 5: Our WebGL version of the bloom effect in action.</p>

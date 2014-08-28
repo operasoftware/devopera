@@ -116,9 +116,9 @@ Now we need to bind that buffer to the WebGL context using `bindBuffer`, which t
 Now let’s think about the shape we want to draw — in this case we will draw a simple triangle. In such situations, it is always easier to think about what you want to draw by first sketching it out on paper, or in this case using ASCII art!
 
 	/*
-	                  2 - (0, 0.5)
-	                  /\
-	                 /  \
+					  2 - (0, 0.5)
+					  /\
+					 /  \
 	(-0.5, -0.5) - 0/____\1 - (0.5, -0.5)
 	*/
 
@@ -237,7 +237,7 @@ Now reference your utility script from your HTML file, like so:
 
 Let’s improve these functions by adding in some error handling. To handle general JavaScript errors, we’ll use the nice [window.onerror handler][16]. First of all, add the following general error handling function to the top of your utility file:
 
-[16]: http://dev.opera.com/articles/view/better-error-handling-with-window-onerror/
+[16]: https://dev.opera.com/articles/view/better-error-handling-with-window-onerror/
 
 	window.onerror = function(msg, url, lineno) {
 		alert(url + '(' + lineno + '): ' + msg);
@@ -280,7 +280,7 @@ We’ve hope you’ve found this exploration of WebGL useful. Please stay turned
 - [Emberwind game][20]
 - [“Odin” WebGL showcase][21]
 
-[18]: http://dev.opera.com/articles/view/an-introduction-to-webgl/
+[18]: https://dev.opera.com/articles/view/an-introduction-to-webgl/
 [19]: http://www.khronos.org/registry/webgl/specs/latest/
 [20]: http://www.github.com/operasoftware/Emberwind
 [21]: https://github.com/operasoftware/Odin

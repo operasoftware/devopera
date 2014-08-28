@@ -11,11 +11,11 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>I was mucking around with  <a href="http://dev.opera.com/articles/extensions/">Opera Extensions</a>, largely to get a grip on how they work, and decided to make an extension that exposes ARIA information in a page, as I was travelling Australia and <a href="http://wipa.org.au/html5/">talking HTML5 and ARIA</a> with ARIA-expert <a href="http://www.paciellogroup.com/blog/">Steve Faulkner</a>.</p>
+<p>I was mucking around with  <a href="https://dev.opera.com/articles/extensions/">Opera Extensions</a>, largely to get a grip on how they work, and decided to make an extension that exposes ARIA information in a page, as I was travelling Australia and <a href="http://wipa.org.au/html5/">talking HTML5 and ARIA</a> with ARIA-expert <a href="http://www.paciellogroup.com/blog/">Steve Faulkner</a>.</p>
 
 <p><del>Here&#39;s a very early alpha 1 version of the <a href="http://people.opera.com/brucel/dev/oex/aria-alpha1.oex">ARIA debugging Opera extension</a>. It&#39;s not pretty, and it&#39;s not well-architected (the beta is better), but you can get an idea of the basic functionality. I&#39;m looking for comments on the functionality it offers rather than how it accomplishes it or the aesthetics of the logo, buttons etc.</del></p>
 
-<p>You can download the <a href="http://people.opera.com/brucel/dev/oex/aria-outliner-b1.oex">ARIA highlighter extension beta 1</a>. It&#39;s made much more robustly, using some <a href="http://dev.opera.com/articles/view/opera-extensions-prototypes-modifying-css/">Opera Extension prototype templates</a> that I encourage you to use as the basis for your extensions. (See also the full <a href="http://dev.opera.com/articles/view/opera-extensions-quick-documentation-overview/">Opera Extensions documentation</a>.)
+<p>You can download the <a href="http://people.opera.com/brucel/dev/oex/aria-outliner-b1.oex">ARIA highlighter extension beta 1</a>. It&#39;s made much more robustly, using some <a href="https://dev.opera.com/articles/view/opera-extensions-prototypes-modifying-css/">Opera Extension prototype templates</a> that I encourage you to use as the basis for your extensions. (See also the full <a href="https://dev.opera.com/articles/view/opera-extensions-quick-documentation-overview/">Opera Extensions documentation</a>.)
 
 <p>If you install it in Opera 11, you&#39;ll see it adds a toolbar button with a couple of musical notes (Aria, geddit?). Pressing the button activates the extension. If you try it on my handy <a href="http://people.opera.com/brucel/articles/aria-testpage.html">ARIA test page</a> you can see the whole gamut of functionality:
 </p>
@@ -24,7 +24,7 @@ license: cc-by-3.0
 <p>These are currently outlined in green. I thought about popping up informational boxes, but decided against it; it would make the page look even busier. To find out more, right click and choose <kbd>Inspect Element</kbd> to see the DOM, stylehseets and layout with Opera Dragonfly.
 </p>
 <h3>Outline roles</h3>
-<p>ARIA roles are outlined in rakish blue. (Actually, any roles.) These are likely to be an important part of your page, particularly your document landmark roles. (See Gez Lemon&#39;s <a href="http://dev.opera.com/articles/view/introduction-to-wai-aria/">Introduction to WAI ARIA</a> for more information.)</p>
+<p>ARIA roles are outlined in rakish blue. (Actually, any roles.) These are likely to be an important part of your page, particularly your document landmark roles. (See Gez Lemon&#39;s <a href="https://dev.opera.com/articles/view/introduction-to-wai-aria/">Introduction to WAI ARIA</a> for more information.)</p>
 
 <p>A yellow overlay tells you what kind of role it is. Some roles, such as <code>main</code>, <code>banner</code> and  <code>contentinfo</code> are only allowed once on a page - think of them as analogous to HTML <code>id</code>s rather than <code>class</code>es. Therefore, the extension shows a severe red error if it finds duplicates of these roles.
 </p>

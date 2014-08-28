@@ -160,12 +160,12 @@ function errorFunction(pos) {
 <ul>
 <li>The first example in the article shows how to <a href="{{ page.id }}/basic_geolocation_example.htm">use the functions to get a longitude/latitude pair</a>.</li>
 <li>The second example in the article <a href="http://people.opera.com/shwetankd/external/demos/demo_geo_googlemap.htm">determines your location and uses a Google Map to display your city</a>.</li>
-<li><a href="http://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a> has created a <a href="{{ page.id }}/GeolocationAPI.htm">simple example that zooms in and displays your exact location</a>, using the Geolocation API, Google Maps API v3, and Simple JS (accuracy as always will depend on how much geo data is available for your area).</li>
+<li><a href="https://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a> has created a <a href="{{ page.id }}/GeolocationAPI.htm">simple example that zooms in and displays your exact location</a>, using the Geolocation API, Google Maps API v3, and Simple JS (accuracy as always will depend on how much geo data is available for your area).</li>
 <li>A more <a href="http://experimenting.in/other/demo_geo_twitter_mashup.htm">complicated Geolocation demo</a> which finds out the name of your location, displays a map of it, lists the tweets mentioning your location and also any meetups happening in the next few days around that location. Uses data from <a href="http://geonames.org">GeoNames.org</a>, <a href="http://maps.google.com">Google Maps</a>, <a href="http://www.twitter.com">Twitter</a> and <a href="http://www.meetup.com">Meetup.com</a>.</li>
-<li>A <a href="http://people.opera.com/pepelsbey/experiments/geo/">Geolocation demo in Russian</a>, also by <a href="http://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a>, uses <a href="http://maps.yandex.ru">Yandex Maps</a> and <a href="http://www.twitter.com">Twitter</a> and works in a similar way to the previous example.</li>
+<li>A <a href="http://people.opera.com/pepelsbey/experiments/geo/">Geolocation demo in Russian</a>, also by <a href="https://dev.opera.com/authors/vadim-makeev/">Vadim Makeev</a>, uses <a href="http://maps.yandex.ru">Yandex Maps</a> and <a href="http://www.twitter.com">Twitter</a> and works in a similar way to the previous example.</li>
 </ul>
 
 <h3>Read more...</h3>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/w3c-device-orientation-api/">How to use the Device Orientation API</a></li>
+<li><a href="https://dev.opera.com/articles/view/w3c-device-orientation-api/">How to use the Device Orientation API</a></li>
 </ul>

@@ -44,9 +44,9 @@ Opera 14 is based on Chromium 26, which does not include [Blink][5] just yet. Ho
 - [CSS3 `@supports`][9], which allow you to do simple feature detection using CSS.
 
 [6]: http://jsbin.com/oxomam/1/
-[7]: http://dev.opera.com/articles/view/an-introduction-to-webgl/
+[7]: https://dev.opera.com/articles/view/an-introduction-to-webgl/
 [8]: http://operasoftware.github.io/Odin/mobile/
-[9]: http://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/
+[9]: https://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/
 
 We’ve also done something cool with how we handle HTML5 audio: if you start playing e.g. [this excellent song on SoundCloud][10], you’ll see that a pause button appears in the Android notification area. You can now switch tabs, or even open other apps while the song is playing, and easily control playback from the notification area.
 
@@ -79,7 +79,7 @@ A _special_ mention for Off-Road mode, available from the red O menu: when toggl
 
 To learn more about optimizing for Opera Mini and Off-Road mode, read our [Opera Mini and JavaScript][12] article.
 
-[12]: http://dev.opera.com/articles/view/opera-mini-and-javascript/
+[12]: https://dev.opera.com/articles/view/opera-mini-and-javascript/
 
 Keep in mind that users can set their own preference of Off-Road-specific image quality: they can increase or decrease image quality, or even opt to receive no images at all (a good option to have, since [images account for more than 50% of page size][13]). As my colleague Bruce points out: be sure to use alternative text with images, and remember — it’s not just for the visually impaired!
 
@@ -99,7 +99,7 @@ By default, Opera for Android uses the same text autosizing (aka FontBoosting) m
 
 Of course, there will be times as a developer when you’ll need to debug sites running on Opera 14 for Android. This can be done from Windows, Mac and Linux desktops — see our article about [remote debugging Opera for Android][15].
 
-[15]: http://dev.opera.com/articles/view/remotely-debugging-opera-for-android/
+[15]: https://dev.opera.com/articles/view/remotely-debugging-opera-for-android/
 
 ## Made to discover
 

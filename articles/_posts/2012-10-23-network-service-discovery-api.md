@@ -41,7 +41,7 @@ The Network Service Discovery API enables web pages to communicate with devices 
 
 We have implemented this API in an [Opera Labs][3] build for desktop, available for you to download and experiment with. You can download the build most suited for your platform here:
 
-[3]: http://dev.opera.com/labs
+[3]: https://dev.opera.com/labs
 
 - Opera desktop for Windows: [32 bit][4], [64 bit][5]
 - [Opera desktop for Mac][6]
@@ -86,7 +86,7 @@ This build is based on the [Network Service Discovery API specification][18] sna
 Focusing on [UPnP][23], communication is possible with XML messaging relayed via the [XMLHttpRequest API][24]. Here is an example SOAP request to browse files within the remote directory of a [UPnP Media Server][25]:
 
 [23]: http://upnp.org
-[24]: http://dev.opera.com/articles/view/xhr2/
+[24]: https://dev.opera.com/articles/view/xhr2/
 [25]: http://upnp.org/specs/av/av1/
 
 	<?xml version="1.0" encoding="utf-8"?>
@@ -126,8 +126,8 @@ To simplify the process, we have also created the [Plug.Play library][27] which 
 
 We’ve prepared a couple of simple demos to demonstrate the discovery concept. The first is a [media player demo][29] which acts as a middle-man between media servers and renderers The second is a [web-based UPnP inspector][30] so you can monitor and edit messages to and from UPnP devices. Of course, to test these out you need UPnP services available on your network. Wikipedia has an extensive [list of UPnP media servers and clients][31], both hardware and software.
 
-[29]: http://dev.opera.com/static/articles/2012/nsd-demo/
-[30]: http://dev.opera.com/static/articles/2012/snoopnp/
+[29]: https://dev.opera.com/static/articles/2012/nsd-demo/
+[30]: https://dev.opera.com/static/articles/2012/snoopnp/
 [31]: http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
 
 <figure class="figure">

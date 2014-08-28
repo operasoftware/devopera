@@ -62,7 +62,7 @@ You can select which mode you’d like to use under Options -> Select device.
 
 99% of the time, you should use [feature detection][12] to determine whether a browser supports a particular feature or API. Yet sometimes browser sniffing is the right choice. There are two approaches you can take to detect Opera Mini. You can:
 
-[12]: http://dev.opera.com/articles/using-capability-detection/
+[12]: https://dev.opera.com/articles/using-capability-detection/
 
 - Examine the **user agent string**
 - Check for the presence of the **`operamini` object**
@@ -87,7 +87,7 @@ Opera Mini also includes an `operamini` object as a property of the `window` obj
 
 Unfortunately, `navigator.appVersion` is not an accurate way to determine which version of Opera you’re using ([here’s why][13]). Instead, you’ll need to parse the value of the `navigator.userAgent` string. An example using [regular expressions][14] is shown below.
 
-[13]: http://dev.opera.com/articles/view/opera-ua-string-changes/
+[13]: https://dev.opera.com/articles/view/opera-ua-string-changes/
 [14]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp
 
 	var operaVersion = navigator.userAgent.match(/Version\/([1-9]+\.[0-9]{2})/)[1];
@@ -113,7 +113,7 @@ In desktop versions of Opera (and mobile versions with trackball type controls a
 
 In Opera Mini, the `mouseover`, `mousedown`, `mouseup`, and `click` events are all fired at once, after the user engages with a clickable hotspot (see Figure 3, and [view my click events example][15]). Note that the **`mouseenter`, `mouseleave` and `mouseout` events are never fired**.
 
-[15]: http://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig3.html
+[15]: https://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig3.html
 
 <figure class="figure" id="figure-3">
 	<img src="{{ page.id }}/mouse-events.png" alt="How mouse events work in Opera Mini" class="figure__media">
@@ -124,7 +124,7 @@ In Opera Mini, the `mouseover`, `mousedown`, `mouseup`, and `click` events are a
 
 In a similar fashion, form fields can receive `focus`, `click`, `change`, and `blur` events, in that order. However, these events will only be triggered after the user has changed the value of a field (see Figure 4, and view my [form events example][18]).
 
-[18]: http://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig4.html
+[18]: https://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig4.html
 
 <figure class="figure" id="figure-4">
 	<img src="{{ page.id }}/form-events.png" alt="How form events work in Opera Mini" class="figure__media">
@@ -206,7 +206,7 @@ It’s possible to **un-pause** a script, however, with the help of a user-initi
 
 The last few lines of this script add a `click` event listener to the `box` object. When the box object receives a `click` event, the interval will resume. ([view my animation example running live][22].)
 
-[22]: http://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig5.html
+[22]: https://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig5.html
 
 As mentioned before, Opera Mini versions 5.0 and upwards support progressive loading, meaning data is sent to the client in chunks as it is transcoded. This is not true of Opera Mini 4, which is why its timeouts are shorter.
 
@@ -319,7 +319,7 @@ For scalability and performance reasons, Web Workers have been disabled in recen
 
 Current versions of Opera desktop and Opera Mobile support [HTML5 form features][23], including validation. Opera Mini, at this time, does not support them. Developers must still use JavaScript for client-side validation, and newer type attribute values such as `range` and `email` default to the `text` type in Opera Mini. However, you can still use selectors such as `input[type=range]` in your CSS and with the [Selectors API][24].
 
-[23]: http://dev.opera.com/articles/view/new-form-features-in-html5/
+[23]: https://dev.opera.com/articles/view/new-form-features-in-html5/
 [24]: http://www.w3.org/TR/selectors-api2/
 
 You may also set attributes such as `min`, `max` and `pattern`, and use the `getAttribute()` method to retrieve those values for your validation script. Another option is to just rely solely on server-side validation — something you probably have and should have in place regardless of client-side validation support.

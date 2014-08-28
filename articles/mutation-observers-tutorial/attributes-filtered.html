@@ -8,12 +8,12 @@
 <body>
 <header>
 	<h1>Observing changes to attributes</h1>
-	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+	<nav><a href="https://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
 </header>
 
 <article>
 	<p>In this example, clicking the <b>Toggle class / data</b> button will toggle a 'modded' class on our <code>div</code> element, and switch the <code>data-config</code> attribute between two values. <em>However</em>, in this case, we've added an <code>attributeFilter</code> to only observe the <code>class</code> attribute. Notice that we don't have a mutation record for the <code>data-config</code> attribute.</p>
-	
+
 	<p>Open the developer console to examine changes between states.</p>
 	<p>
 		<button type="button">Toggle class / data</button>
@@ -32,17 +32,17 @@
 (function(d){
 	var btn = d.querySelector('button'),
 	clickhandler = function(){
-		var demo = d.getElementById('demo'), 
-			olddata = 'Demonstration', 
+		var demo = d.getElementById('demo'),
+			olddata = 'Demonstration',
 			newdata =  "Observing multiple attribute changes.";
-			
+
 		demo.classList.toggle('modded');
-		
+
 		( demo.dataset.config == olddata ) ? demo.dataset.config = newdata : demo.dataset.config = olddata;
 	}
-	btn.addEventListener('click',clickhandler,false);	
+	btn.addEventListener('click',clickhandler,false);
 
-	var mocallback = function(mutationrecords){				
+	var mocallback = function(mutationrecords){
 		mutationrecords.map( function(mr){
 			console.log( mr );
 		});
@@ -50,7 +50,7 @@
 	mo = new MutationObserver(mocallback),
 	options = {'attributes':true,'attributeOldValue':true,'attributeFilter':['class']},
 	mo.observe( d.getElementById('demo'),options);
-})(document); 
+})(document);
 </script>
 
 </body>

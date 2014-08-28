@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Video with overlaid canvas</title>
@@ -16,11 +16,11 @@ if ((!!document.createElement('video').play)&&(!!document.createElement('canvas'
 		ctx : new Object(),
 		v: new Object(),
 		pointer : new Image(),
-		
+
 		init : function(v) {
 			megamouse.v = v;
 			megamouse.pointer.src = 'mouse.png';
-			
+
 			/* wrap the video in a div, so we can absolutely position the canvas there */
 			var container=document.createElement('div');
 			container.style.position='relative';
@@ -40,12 +40,12 @@ if ((!!document.createElement('video').play)&&(!!document.createElement('canvas'
 			megamouse.y = megamouse.cv_h/2;
 			container.appendChild(canvas);
 			megamouse.ctx = canvas.getContext('2d');
-			
+
 			/* every 30 milliseconds, call the move function */
 			setInterval(megamouse.move, 30);
 
 		},
-		
+
 		move : function(e) {
 			/* only do stuff when the video is not paused */
 			if (!megamouse.v.paused) {
@@ -112,6 +112,6 @@ h1 {
 </video>
 </div>
 
-<p>This demonstration supplements the <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="../../../../../index.html">Dev.Opera</a>.</p>
+<p>This demonstration supplements the <a href="https://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="../../../../../index.html">Dev.Opera</a>.</p>
 </body>
 </html>

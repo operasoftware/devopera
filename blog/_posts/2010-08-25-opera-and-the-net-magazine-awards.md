@@ -14,7 +14,7 @@ license: cc-by-3.0
 <h3>Innovation of the Year</h3>
 <p><a href="http://www.opera.com/developer/tools/" target="_blank">Opera Mobile Emulator</a> is up for this gong.</p>
 
-<p>Testing mobile browsers usually requires Web developers to buy one or more devices on which they then can investigate how their Web sites perform. The Opera Mobile emulator is designed to make the whole testing effort a bit easier: you install a small, native application on the desktop platform of your choice, and load Web pages from the comfort of your desktop. You can even debug them using Opera Dragonfly. (<a href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/" target="_blank">More about Opera Mobile Emulator</a>)</p>
+<p>Testing mobile browsers usually requires Web developers to buy one or more devices on which they then can investigate how their Web sites perform. The Opera Mobile emulator is designed to make the whole testing effort a bit easier: you install a small, native application on the desktop platform of your choice, and load Web pages from the comfort of your desktop. You can even debug them using Opera Dragonfly. (<a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/" target="_blank">More about Opera Mobile Emulator</a>)</p>
 
 <h3>Viral Campaign of the Year</h3>
 <p>Odd and Even&#39;s <a href="http://my.opera.com/odd-even/blog/">Opera Speed Test video</a> is nominated. Were there a Vegetable of the Year category, I&#39;m sure Norwegian potatoes would be in there too.

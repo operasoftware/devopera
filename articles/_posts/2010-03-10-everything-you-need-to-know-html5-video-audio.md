@@ -18,7 +18,7 @@ license: cc-bsd
 							</div>
 
 <h2>Introduction</h2>
-<p>The latest version of Opera supports the HTML5 <code>video</code> and <code>audio</code> elements. But how do you use them? <a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> is a great general introduction but doesn't go deep into the details. <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> shows how captions can be implemented until the spec gains proper support for captions; and <a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video">(re-)Introducing &lt;video&gt;</a> has some information on Opera's implementation. I recommend reading all three!</p>
+<p>The latest version of Opera supports the HTML5 <code>video</code> and <code>audio</code> elements. But how do you use them? <a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> is a great general introduction but doesn't go deep into the details. <a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> shows how captions can be implemented until the spec gains proper support for captions; and <a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video">(re-)Introducing &lt;video&gt;</a> has some information on Opera's implementation. I recommend reading all three!</p>
 
 <p>This article aims to provide all the nitty-gritty details of HTML5 media, the DOM API, events, and so forth, so you can implement your own HTML5 player with fallback for older browsers.
 </p>
@@ -809,7 +809,7 @@ setInterval(function() {
 
 <h3>Video on a canvas</h3>
 
-<p>The <code>canvas</code> element is like a dynamic <code>img</code> element, which you can draw on with JavaScript. I'm not going into detail how <code>canvas</code> works in general (<a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML5 canvas - the basics</a> is a recommended introduction), but I'll mention that it's possible to draw a <code>video</code> element on a canvas using the 2d context's <code>drawImage()</code> method (which also accepts <code>img</code> and <code>canvas</code> elements, and in Opera, <code>svg</code> elements). It will draw the current frame of the video onto the canvas. This allows you to do transformations of a video and to read pixel data from a video, which could be used to detect faces or movement in JavaScript.
+<p>The <code>canvas</code> element is like a dynamic <code>img</code> element, which you can draw on with JavaScript. I'm not going into detail how <code>canvas</code> works in general (<a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML5 canvas - the basics</a> is a recommended introduction), but I'll mention that it's possible to draw a <code>video</code> element on a canvas using the 2d context's <code>drawImage()</code> method (which also accepts <code>img</code> and <code>canvas</code> elements, and in Opera, <code>svg</code> elements). It will draw the current frame of the video onto the canvas. This allows you to do transformations of a video and to read pixel data from a video, which could be used to detect faces or movement in JavaScript.
 
 </p>
 

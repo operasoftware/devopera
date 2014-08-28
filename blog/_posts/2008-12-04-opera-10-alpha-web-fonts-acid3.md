@@ -28,5 +28,5 @@ license: cc-by-3.0
 
 </ul>
 
-<p>Read more about the <a href="http://dev.opera.com/articles/view/presto-2-2-and-opera-10-a-first-look/">advances in standards-support in Presto 2.2</a>, or better still download and play, baby. And watch this space…this is just the first alpha release.</p>
+<p>Read more about the <a href="https://dev.opera.com/articles/view/presto-2-2-and-opera-10-a-first-look/">advances in standards-support in Presto 2.2</a>, or better still download and play, baby. And watch this space…this is just the first alpha release.</p>
 <p>Please, let us know what you think. We&#39;re listening.</p>

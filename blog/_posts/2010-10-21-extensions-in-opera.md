@@ -189,6 +189,6 @@ that we have a solid ground to build on before we add on all the bells
 and whistles that are necessary for those great super-extensions we know
 are lurking out there, just waiting to be written.
 We have some good ideas cooking already, but we will also use
-<a href="http://dev.opera.com/forums/forum/42202">feedback on the alpha release</a>
+<a href="https://dev.opera.com/forums/forum/42202">feedback on the alpha release</a>
 so that we can implement the things you care most about.
 </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

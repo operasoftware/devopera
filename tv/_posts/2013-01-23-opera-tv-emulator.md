@@ -76,7 +76,7 @@ The Opera TV Emulator is, in essence, a self-contained generic web browser, equi
 The emulator’s start page — itself just a web page — provides a direct link to the [Opera TV Store demo server][13] at `http://demo.tvstore.opera.com`. This demo store can be used to test Opera TV Store applications. See our article on [Testing your app inside the Opera TV Store][14] for further information.
 
 [13]: http://demo.tvstore.opera.com
-[14]: http://dev.opera.com/articles/view/testing-your-app-inside-the-opera-tv-store/
+[14]: https://dev.opera.com/articles/view/testing-your-app-inside-the-opera-tv-store/
 
 ## Installing the H.264 codec {#h264-codec}
 
@@ -91,7 +91,7 @@ To do this, simply choose the Install option on the start page. This will downlo
 
 For information about the specific multimedia formats that can be used, please refer to the article on [HTML5 audio/video support in Opera TV Store applications][16].
 
-[16]: http://dev.opera.com/articles/view/html5-audio-video-support-in-opera-tv-store-applications/
+[16]: https://dev.opera.com/articles/view/html5-audio-video-support-in-opera-tv-store-applications/
 
 ## Navigation {#navigation}
 

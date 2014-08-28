@@ -29,7 +29,7 @@ license: cc-by-3.0
 
 <h2>Extensions</h2>
 
-<p>Talking of extensions, we&#39;ve added several new APIs to give more power to developers. The most notable of these is the <a href="http://dev.opera.com/articles/view/extensions-api-contextmenu/">Context Menu API</a> that allows an extension to add options to the user&#39;s right-click menu. Other improvements include the <a href="http://dev.opera.com/articles/view/extensions-api-resourceloader/">Resource Loader API</a>, the <a href="http://dev.opera.com/articles/view/extensions-api-screenshot/">Screenshot API</a> and an update to our <a href="http://dev.opera.com/articles/view/extensions-api-urlfilter/">URL Filter API</a>.</p>
+<p>Talking of extensions, we&#39;ve added several new APIs to give more power to developers. The most notable of these is the <a href="https://dev.opera.com/articles/view/extensions-api-contextmenu/">Context Menu API</a> that allows an extension to add options to the user&#39;s right-click menu. Other improvements include the <a href="https://dev.opera.com/articles/view/extensions-api-resourceloader/">Resource Loader API</a>, the <a href="https://dev.opera.com/articles/view/extensions-api-screenshot/">Screenshot API</a> and an update to our <a href="https://dev.opera.com/articles/view/extensions-api-urlfilter/">URL Filter API</a>.</p>
 
 <p>In order to ensure security for end-users, by default <a href="http://my.opera.com/desktopteam/blog/2012/09/06/increased-security-when-installing-extensions">only extensions that are hosted by Opera may be installed</a>, as these have been rigorously tested to ensure they&#39;re safe and don&#39;t harm a user&#39;s machine or data.</p>
 

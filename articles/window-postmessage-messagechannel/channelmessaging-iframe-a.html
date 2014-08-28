@@ -23,7 +23,7 @@
 			var mc = new MessageChannel();
 
 			// Send a port to our parent.
-			window.parent.postMessage('gameSiteLoaded','http://dev.opera.com',[mc.port1]);
+			window.parent.postMessage('gameSiteLoaded','https://dev.opera.com',[mc.port1]);
 
 			mc.port2.addEventListener('message', function(e){
 				var div = document.querySelector('div');

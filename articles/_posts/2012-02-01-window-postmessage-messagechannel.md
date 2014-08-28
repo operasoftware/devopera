@@ -28,7 +28,7 @@ Say for example you want to send data from your page to an ad contained in an `i
 
 When we talk about web messaging, we’re actually talking about two slightly different systems: **cross-document messaging** and **channel messaging**. Cross-document messaging is often referred to by its syntax as `window.postMessage()`, and channel messaging is also known as `MessageChannel`. Along with server-sent events and [web sockets][1], cross-document and channel messaging are a valuable part of the HTML5 “suite” of communication interfaces.
 
-[1]: http://dev.opera.com/articles/tags/web%20sockets
+[1]: https://dev.opera.com/articles/tags/web%20sockets
 
 Web messaging is supported by Opera, Chrome, and Safari, though Safari ≤ 5.1.2 [contains a bug][2]. Internet Explorer 8+ partially supports cross-document messaging: it currently works with iframes, but not new windows. Internet Explorer 10, however, will support `MessageChannel`. Firefox currently supports cross-document messaging, but not `MessageChannel`.
 
@@ -74,7 +74,7 @@ The `targetOrigin` is the origin of the receiving document. Browsers will not se
 
 You can also limit message sending to the same origin by setting the `targetOrigin` argument to `/`, However at the time of publication, only Opera supports this.
 
-In the example below, we will send a message from our parent document to a document contained within an `iframe`. Even though our documents share the same origin, for cross-browser compatibility we will set the value of `targetOrigin` to `http://dev.opera.com` instead of `/`. If our document lived on another domain, we could send a message using its origin as the target.
+In the example below, we will send a message from our parent document to a document contained within an `iframe`. Even though our documents share the same origin, for cross-browser compatibility we will set the value of `targetOrigin` to `https://dev.opera.com` instead of `/`. If our document lived on another domain, we could send a message using its origin as the target.
 
 Note that origins do not contain a trailing slash.
 
@@ -83,7 +83,7 @@ Note that origins do not contain a trailing slash.
 
 	var clickHandler = function(){
 		// iframe.contentWindow refers to the iframe’s window object.
-		iframe.contentWindow.postMessage('The message to send.','http://dev.opera.com');
+		iframe.contentWindow.postMessage('The message to send.','https://dev.opera.com');
 	}
 
 	button.addEventListener('click',clickHandler,false);
@@ -96,7 +96,7 @@ We can then listen for the `message` event as shown below:
 
 	var messageEventHandler = function(event){
 		// check that the origin is one we want.
-		if(event.origin == 'http://dev.opera.com'){
+		if(event.origin == 'https://dev.opera.com'){
 			alert(event.data);
 		}
 	}

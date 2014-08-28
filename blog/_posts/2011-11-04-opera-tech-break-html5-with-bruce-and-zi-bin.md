@@ -27,6 +27,6 @@ license: cc-by-3.0
 <li><a href="http://labs.opera.com/news/2011/07/21/">Ragnarök, Opera&#39;s HTML5 Parser</a></li>
 <li><a href="http://labs.opera.com/news/2011/10/19/">Labs build with Camera support (<code>getUserMedia</code>)</a></li>
 <li><a href="http://people.opera.com/richt/release/demos/device/facerecognition/">Magical HTML5 moustache demo</a> (needs build above)</li>
-<li><a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Tutorial on HTML5 video and camera support</a></li>
-<li><a href="http://dev.opera.com/articles/tags/open%20web/">dev.Opera HTML5 tutorials</a></li>
+<li><a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Tutorial on HTML5 video and camera support</a></li>
+<li><a href="https://dev.opera.com/articles/tags/open%20web/">dev.Opera HTML5 tutorials</a></li>
 </ul>

@@ -209,7 +209,7 @@ for new mail or notifications, and dynamic form autocomplete suggestions.</p>
 <p>This way of doing things is better than a simple variable check, as an object's internal Class can't be tampered with — in this case there is no way to set an arbitrary <code>window.operamini</code> variable to pass false results, as there would be with this:</p>
 
 <pre><code> if (operamini) {
-    alert("Running on Opera Mini");
+	alert("Running on Opera Mini");
 }</code></pre>
 
 <h3 id="operamini-page"><code>operamini.page</code> object</h3>
@@ -256,7 +256,7 @@ for example:
 
 <h3 id="feature-strings">Feature strings</h3>
 
-<p>There are two main ways to detect what functionality is available for use on the phone when using Mini: using HTTP request headers, or in-page using JavaScript. You can find detailed information on what HTTP headers Opera Mini has available for use in the article <a href="http://dev.opera.com/articles/view/opera-mini-request-headers/">Opera Mini request headers</a>.</p>
+<p>There are two main ways to detect what functionality is available for use on the phone when using Mini: using HTTP request headers, or in-page using JavaScript. You can find detailed information on what HTTP headers Opera Mini has available for use in the article <a href="https://dev.opera.com/articles/view/opera-mini-request-headers/">Opera Mini request headers</a>.</p>
 
 Opera Mini provides various feature strings. These can be accessed through the <code>operamini.features</code> object in JavaScript:</p>
 
@@ -268,7 +268,7 @@ Opera Mini provides various feature strings. These can be accessed through the <
 
 <pre><code>X-OperaMini-Features: advanced, folding, secure</code></pre>
 
-<p>The feature strings available can be seen in <a href="http://dev.opera.com/articles/view/opera-mini-request-headers/#x-operamini-features">X-OperaMini-Features</a>.</p>
+<p>The feature strings available can be seen in <a href="https://dev.opera.com/articles/view/opera-mini-request-headers/#x-operamini-features">X-OperaMini-Features</a>.</p>
 
 <h3 id="native-user-sgent">Detecting the device's native user-agent</h3>
 

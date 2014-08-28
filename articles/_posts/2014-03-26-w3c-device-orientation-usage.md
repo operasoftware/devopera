@@ -45,11 +45,11 @@ In this article we’ll break down and explain practical usage of device orienta
 
 In our [previous article in this series][2] we introduced the coordinate system in use within the W3C Device Orientation specification.
 
-[2]: http://dev.opera.com/articles/view/w3c-device-orientation-api/
+[2]: https://dev.opera.com/articles/view/w3c-device-orientation-api/
 
 A full description of the coordinate system is provided in our [previous article][3] but to recap, here is the standard W3C Device Orientation coordinate frame:
 
-[3]: http://dev.opera.com/articles/view/w3c-device-orientation-api/
+[3]: https://dev.opera.com/articles/view/w3c-device-orientation-api/
 
 <figure class="figure" id="figure-1">
 	<img src="{{ page.id }}/device-axes.png" class="figure__media" alt="Explanation of coordinate system">
@@ -567,7 +567,7 @@ You can find a live version of this virtual reality demonstration [here][40] (be
 
 Since the publication of our [previous article][42] in this series the cross-browser compatibility of `deviceorientation` data values has improved considerably between different web browsers.
 
-[42]: http://dev.opera.com/articles/view/w3c-device-orientation-api/
+[42]: https://dev.opera.com/articles/view/w3c-device-orientation-api/
 
 At the time of writing the above provided rotation transformations works correctly on most Android and iOS-based browsers with a few important caveats that web developers need to keep in mind:
 

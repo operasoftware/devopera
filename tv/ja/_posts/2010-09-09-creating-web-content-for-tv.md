@@ -209,7 +209,7 @@ CSS3 メディアクエリは、CSS2.1 メディアタイプと同様、`<link>`
 ほとんどの状況において空間ナビゲーションは「枠にとらわれずに」機能しますが、開発者は [CSS3 Basic User Interface specification for directional focus navigation][29] を使用すると、要素がフォーカスを受け取る順序をさらに制御することができます。詳細に関しては、[Tweaking spatial navigation for TV browsing][30] をご覧ください。
 
 [29]: http://www.w3.org/TR/css3-ui/#nav-dir
-[30]: http://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/
+[30]: https://dev.opera.com/articles/view/tweaking-spatial-navigation-for-tv-browsing/
 
 ### フォーカスの表示 {#focus}
 

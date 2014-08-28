@@ -22,7 +22,7 @@ NOTE, September 22nd 2011: There is a new and shiny way to add subtitles to HTML
 
 It’s great that HTML5 allows us to embed video into web pages that can then be displayed directly by browsers, without having to rely on third-party plugins. (For more information on the true power of HTML5 video, see [Introduction to HTML5 video][2].)
 
-[2]: http://dev.opera.com/articles/introduction-html5-video/
+[2]: https://dev.opera.com/articles/introduction-html5-video/
 
 The elephant in the corner regarding all video — whether it be HTML5 or proprietary — is accessibility. What are conscientious developers to do to provide textual alternatives for those who can’t access the contents of the video? In HTML5 there isn’t an `alt` attribute on the `video` element as there is on `img`, but you can add "fallback content" between the tags like this:
 

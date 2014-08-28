@@ -55,26 +55,26 @@ Opera 18 adds the following APIs to extensions:
 - [chrome.types][23]
 - [Opera Off-Road Mode extension API (available through chrome.types)][24]
 
-[9]: http://dev.opera.com/extension-docs/permissions.html
-[10]: http://dev.opera.com/extension-docs/tut_optional_permissions.html
-[11]: http://dev.opera.com/extension-docs/browsingData.html
-[12]: http://dev.opera.com/extension-docs/tut_removing_browsingdata.html
-[13]: http://dev.opera.com/extension-docs/contentSettings.html
-[14]: http://dev.opera.com/extension-docs/tut_contentsettings.html
-[15]: http://dev.opera.com/extension-docs/devtools.inspectedWindow.html
-[16]: http://dev.opera.com/extension-docs/devtools.network.html
-[17]: http://dev.opera.com/extension-docs/devtools.panels.html
-[18]: http://dev.opera.com/extension-docs/omnibox.html
-[19]: http://dev.opera.com/extension-docs/tut_omnibox.html
-[20]: http://dev.opera.com/extension-docs/pageCapture.html
-[21]: http://dev.opera.com/extension-docs/privacy.html
-[22]: http://dev.opera.com/extension-docs/tut_privacy.html
-[23]: http://dev.opera.com/extension-docs/types.html
-[24]: http://dev.opera.com/extension-docs/tut_offroad.html
+[9]: https://dev.opera.com/extension-docs/permissions.html
+[10]: https://dev.opera.com/extension-docs/tut_optional_permissions.html
+[11]: https://dev.opera.com/extension-docs/browsingData.html
+[12]: https://dev.opera.com/extension-docs/tut_removing_browsingdata.html
+[13]: https://dev.opera.com/extension-docs/contentSettings.html
+[14]: https://dev.opera.com/extension-docs/tut_contentsettings.html
+[15]: https://dev.opera.com/extension-docs/devtools.inspectedWindow.html
+[16]: https://dev.opera.com/extension-docs/devtools.network.html
+[17]: https://dev.opera.com/extension-docs/devtools.panels.html
+[18]: https://dev.opera.com/extension-docs/omnibox.html
+[19]: https://dev.opera.com/extension-docs/tut_omnibox.html
+[20]: https://dev.opera.com/extension-docs/pageCapture.html
+[21]: https://dev.opera.com/extension-docs/privacy.html
+[22]: https://dev.opera.com/extension-docs/tut_privacy.html
+[23]: https://dev.opera.com/extension-docs/types.html
+[24]: https://dev.opera.com/extension-docs/tut_offroad.html
 
 See our [Opera 15+ extensions documentation][25] for in-depth discussion of these APIs.
 
-[25]: http://dev.opera.com/extension-docs/index.html
+[25]: https://dev.opera.com/extension-docs/index.html
 
 Also, a big shout-out to Martin Kadlec (BS-Harou) who [suggested][26] an Off-Road Mode API with a concrete use-case. Thanks, Martin!
 
@@ -84,7 +84,7 @@ Also, a big shout-out to Martin Kadlec (BS-Harou) who [suggested][26] an Off-Roa
 
 Opera 18 can be themed. Making themes is very easy — read [Themes in Opera 18+][27] and upload to [addons.opera.com/en/themes/][28] to share with the world.
 
-[27]: http://dev.opera.com/articles/themes-in-opera-18-and-higher/
+[27]: https://dev.opera.com/articles/themes-in-opera-18-and-higher/
 [28]: https://addons.opera.com/en/themes/
 
 In the next two weeks, we’ll promote the experimental [Opera developer stream][29] to feature-complete [Opera.Next][30] so you can try out new standards and features. Keep an eye on the [Opera desktop team blog][31] for documentation about forthcoming releases and full changelogs.

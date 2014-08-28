@@ -22,7 +22,7 @@ license: cc-by-nc-sa-2.5
 
 My previous [HTML5 Canvas tutorial][1] provided you with insight into the numerous use cases for Canvas in web applications. In this article we will explore how you can write your own Canvas-based painting application.
 
-[1]: http://dev.opera.com/articles/html-5-canvas-the-basics/
+[1]: https://dev.opera.com/articles/html-5-canvas-the-basics/
 
 Making a web application that allows users to draw on a Canvas requires several important steps: setting up your HTML document with a Canvas context (a `<canvas>` element with an `id`), setting up your script to target that Canvas context and draw inside it and adding the required mouse event handlers for user interaction and associated logic. Once the event handlers are in place, it’s then fairly simple to add any desired functionality.
 

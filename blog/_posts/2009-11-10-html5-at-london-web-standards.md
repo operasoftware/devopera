@@ -32,10 +32,10 @@ license: cc-by-3.0
 
 <p>Opera Developer Network has some beginner&#39;s <code>canvas</code> tutorials available:</p>
 <ol>
-<li><a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
-<li><a href="http://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
-<li><a href="http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
-<li><a href="http://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
+<li><a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
+<li><a href="https://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
+<li><a href="https://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
 </ol>
 
 <p>For the second half of the talk, I built an <abbr>HTML</abbr>5 page through the magic of live coding (with lavish prizes!).</p>

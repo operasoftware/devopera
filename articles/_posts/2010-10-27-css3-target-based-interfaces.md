@@ -45,7 +45,7 @@ pure graphical format like Flash. But what if you don't want to use Flash or Jav
 
 <h3 id="s3-a">First principles: a simple example</h3>
 
-<p><a href="http://dev.opera.com/articles/view/css3-show-and-hide/">In a previous article</a>, we looked at how we could expand and collapse elements in a web-page using the <code>:focus</code> selector to trigger the switch. This technique has quite a few benefits
+<p><a href="https://dev.opera.com/articles/view/css3-show-and-hide/">In a previous article</a>, we looked at how we could expand and collapse elements in a web-page using the <code>:focus</code> selector to trigger the switch. This technique has quite a few benefits
  - the browsing history is not changed by using the <code>:focus</code> switch, and it
 replicates the behaviour of many applications. For example, if you click on any item in your menu bar then move away from it and click inside the window, the menu will disappear.</p>
 
@@ -100,7 +100,7 @@ p#s2 {
 	opacity: 1;
 }</code></pre>
 
-<p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/try1.html">see our first simple example in action here</a>, and notice how (depending on the resolution of your screen) the page gains a horizontal scroll bar. The browser (correctly) jumps to the target, but in our case we don't want this correct behaviour as it's quite ugly. Luckily this is easy to fix: apply <code>position: fixed;</code> to the containing block (in this case, the <code>body</code>):</p>
+<p><a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/try1.html">see our first simple example in action here</a>, and notice how (depending on the resolution of your screen) the page gains a horizontal scroll bar. The browser (correctly) jumps to the target, but in our case we don't want this correct behaviour as it's quite ugly. Luckily this is easy to fix: apply <code>position: fixed;</code> to the containing block (in this case, the <code>body</code>):</p>
 
 <pre><code>body {
 	margin: 0;
@@ -113,7 +113,7 @@ p#s2 {
 <p>A fixed position element is placed relatively to the browser window.
 Since in this case the containing block is the body, we are effectively
 fixing the body in place. This breaks the normal targeting behaviour of
-the browser and <a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/try2.html">the window will not jump or scroll</a>.</p>
+the browser and <a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/try2.html">the window will not jump or scroll</a>.</p>
 
 <h3 id="s3-b">Heading towards real life: horizontal targeting and backgrounds</h3>
 
@@ -204,7 +204,7 @@ left: 50em;
 	opacity: 1
 }</code></pre>
 
-<p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example1.html">You can test the first iteration here</a>. But it isn't quite what we want, as in this version the links just make the sections appear in different parts of the screen; we want the effect to fill the screen and transition smoothly.</p>
+<p><a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/example1.html">You can test the first iteration here</a>. But it isn't quite what we want, as in this version the links just make the sections appear in different parts of the screen; we want the effect to fill the screen and transition smoothly.</p>
 
 <h3 id="s3-c">Moving blocks; the actual problem</h3>
 
@@ -239,7 +239,7 @@ left: 75em;
 	top: 0em;
 }</code></pre>
 
-<p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example2.html">this gives us iteration 2</a>. But still, what I'm really looking for is a moving area inside a static viewport. For this we'll need to create a single viewport that scrolls to a specific location when an anchor is selected. So we have two options:</p>
+<p><a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/example2.html">this gives us iteration 2</a>. But still, what I'm really looking for is a moving area inside a static viewport. For this we'll need to create a single viewport that scrolls to a specific location when an anchor is selected. So we have two options:</p>
 
 <ol>
 <li><p><strong>When an anchor is selected, move every <code>section</code> into the corresponding positions, and show the relevant <code>section</code>.</strong></p>
@@ -423,7 +423,7 @@ section#s0 {
 }</code></pre>
 
 
-<p>With some extra styling to the main page heading, we're almost there, but it will need tidying up — <a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example3.html">see the third iteration in action</a>.</p>
+<p>With some extra styling to the main page heading, we're almost there, but it will need tidying up — <a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/example3.html">see the third iteration in action</a>.</p>
 
 <h3 id="s3-f">Saving graces</h3>
 
@@ -503,7 +503,7 @@ section#s0 {
 </ol>
 
 <p>And We now have an interface that scrolls smoothly from section to
-section, and which degrades gracefully on older browsers to a single page - <a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example4.html">try out the fourth iteration</a>.</p>
+section, and which degrades gracefully on older browsers to a single page - <a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/example4.html">try out the fourth iteration</a>.</p>
 
 <p><strong>And yet we still have some...</strong></p>
 
@@ -664,7 +664,7 @@ section, and which degrades gracefully on older browsers to a single page - <a h
 }</code></pre>
 
 
-<p><a href="http://dev.opera.com/articles/view/css3-target-based-interfaces/example5.html">Try the fifth iteration, with Webkit media query</a>.</p>
+<p><a href="https://dev.opera.com/articles/view/css3-target-based-interfaces/example5.html">Try the fifth iteration, with Webkit media query</a>.</p>
 
 <p>In this case, we're saying that the styles should not be applied to
 those screens that have a Webkit-specific device pixel ratio of zero or more.</p>

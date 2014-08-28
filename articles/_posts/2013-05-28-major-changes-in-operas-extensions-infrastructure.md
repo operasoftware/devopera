@@ -16,8 +16,8 @@ With Opera switching from Presto to Chromium and a complete UI remake, our exten
 If you want to upgrade your existing Opera extension to the new format, you can use the conversion tool we’ve built into the Opera extensions catalog’s [developer interface][2] and test if the extension works as expected ([detailed steps][3]). Of course, you can also reuse an existing Chromium extension or create a new one from scratch. There’s a whole [new tutorial section][4] with API documentation, examples and more for you to get started.
 
 [2]: https://addons.opera.com/developer/
-[3]: http://dev.opera.com/extension-docs/tut_conversion.html
-[4]: http://dev.opera.com/extension-docs/
+[3]: https://dev.opera.com/extension-docs/tut_conversion.html
+[4]: https://dev.opera.com/extension-docs/
 
 We’re looking forward to getting the [Opera extensions catalog][5] filled with exciting new extensions in the next few months, and will be expanding our support for Chromium extension APIs, as well as adding new Opera-specific APIs.
 
@@ -27,4 +27,4 @@ As for themes, Opera 15 ships with a couple of preset themes, but third party th
 
 If you have questions or feedback, [get in touch][6]!
 
-[6]: http://dev.opera.com/extension-docs/contact.html
+[6]: https://dev.opera.com/extension-docs/contact.html

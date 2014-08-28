@@ -28,7 +28,7 @@ license: cc-by-3.0
 <li><a href="http://m.flickr.com">flickr mobile site</a></li>
 <li><a href="http://www.zeldman.com/2010/04/08/best-aea-yet/">Jeffrey Zeldman – <cite>Best <abbr title="An Event Apart">AEA</abbr> yet</cite></a></li>
 <li><a href="http://www.w3.org/TR/css3-mediaqueries/">CSS 3 Media Queries</a></li>
-<li><a href="http://dev.opera.com/articles/view/opera-mini-5-developers/">Media Queries example from <cite>A developer&#39;s look at Opera Mini 5</cite></a> on the <a href="http://dev.opera.com">Opera Developer Community</a></li>
+<li><a href="https://dev.opera.com/articles/view/opera-mini-5-developers/">Media Queries example from <cite>A developer&#39;s look at Opera Mini 5</cite></a> on the <a href="https://dev.opera.com">Opera Developer Community</a></li>
 <li><a href="http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html">Safari Web Content Guide – <cite>Configuring the viewport</cite></a></li>
 <li><a href="http://developer.yahoo.com/performance/rules.html"><cite>Best Practices for Speeding Up Your Web Site</cite></a> from the <a href="http://developer.yahoo.com">Yahoo! Developer Network</a> (forgot to add this to the presentation)</li>
 <li><a href="http://www.alistapart.com/articles/sprites">Dave Shea – <cite>CSS Sprites: Image Slicing’s Kiss of Death</cite></a> on <a href="http://www.alistapart.com">A List Apart</a></li>

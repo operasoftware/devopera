@@ -13,11 +13,11 @@ license: cc-by-nc-sa-2.5
 
 <p>Grids are a template, a framework within which creativity can flourish. Too many designers spend time looking at a blank canvas, trying to figure out where elements should be positioned, but, if you have a flexible underlying grid, many such problems are already solved for you. It becomes obvious where and how elements should and can be positioned, thereby leaving you, the designer, with more time to work on graphic design and other page components.</p>
 
-<p>Instead of arbitrarily picking column sizes, grids enable you to create a common visual language throughout an entire Web site, rather than deciding things on a page-by-page basis. Components relate to each other, which makes it easier for users to scan content and develop familiarity with it, in a manner similar to text that&#8217;s set on a baseline grid (see my <a href="http://dev.opera.com/articles/view/setting-web-type-to-a-baseline-grid/">Setting Web type to a baseline grid</a> article for more).</p>
+<p>Instead of arbitrarily picking column sizes, grids enable you to create a common visual language throughout an entire Web site, rather than deciding things on a page-by-page basis. Components relate to each other, which makes it easier for users to scan content and develop familiarity with it, in a manner similar to text that&#8217;s set on a baseline grid (see my <a href="https://dev.opera.com/articles/view/setting-web-type-to-a-baseline-grid/">Setting Web type to a baseline grid</a> article for more).</p>
 
 <h2>Creating a layout grid</h2>
 
-<p>Unlike in print, there&#8217;s no set canvas size for a Web page. This means one aspect of magazine-oriented grids&mdash;working to specific vertical points across an entire page&mdash;is, at best, tricky. Generally, it&#8217;s best to ensure that a vertical rhythm is maintained (again, see the <a href="http://dev.opera.com/articles/view/setting-web-type-to-a-baseline-grid/">baseline grids article</a>) but not get hung up on trying to align elements across different page areas (navigation, content, sidebar) and instead focus on working with vertical grid lines.</p>
+<p>Unlike in print, there&#8217;s no set canvas size for a Web page. This means one aspect of magazine-oriented grids&mdash;working to specific vertical points across an entire page&mdash;is, at best, tricky. Generally, it&#8217;s best to ensure that a vertical rhythm is maintained (again, see the <a href="https://dev.opera.com/articles/view/setting-web-type-to-a-baseline-grid/">baseline grids article</a>) but not get hung up on trying to align elements across different page areas (navigation, content, sidebar) and instead focus on working with vertical grid lines.</p>
 
 <p>With the majority of users now having monitors capable of a resolution of 1024 x 768 or higher, the tendency for layouts is towards a width of about 950. For grid design, a 960-pixel total width is a good starting point, because it provides a massive amount of scope for divisions (960 is divisible by 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 30, 32, 40, 48, 60, 64, 80, 96, 120, 160, 192, 240, 320 and 480).</p>
 
@@ -118,7 +118,7 @@ license: cc-by-nc-sa-2.5
 	width: 320px;
 }</pre>
 
-<p>(Note that for Internet Explorer 6 and below to behave, <code>overflow: hidden;</code> may need to be added to the <code>#contentArea</code> and <code>#sidebar</code> rules via CSS attached using a <a href="http://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">conditional comment</a>.)</p>
+<p>(Note that for Internet Explorer 6 and below to behave, <code>overflow: hidden;</code> may need to be added to the <code>#contentArea</code> and <code>#sidebar</code> rules via CSS attached using a <a href="https://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">conditional comment</a>.)</p>
 
 <h2>Further thoughts</h2>
 

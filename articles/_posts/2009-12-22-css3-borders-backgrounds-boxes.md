@@ -382,8 +382,8 @@ To check whether you’re looking at the correct `box-shadow` implementation, pl
 
 If you like a kick in your tea, add some `box-shadow`, [transforms, transitions][31], [RGBa][32], query selectors and `:lang()`. Enjoy the steaming hot [CSS3 `box-shadow` effects by Vadim Makeev][33].
 
-[31]: http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
-[32]: http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/
+[31]: https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
+[32]: https://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/
 [33]: http://people.opera.com/pepelsbey/experiments/bsh/
 
 <figure class="figure" id="figure-17">

@@ -10,17 +10,17 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Those of you who love traveling by trains or planes will enjoy the latest update to Opera Dragonfly. To sync up with the <a href="http://www.opera.com/browser/">Opera 10.60 release</a>, we have added offline support to Opera Dragonfly. We now take advantage of the <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">Application Cache</a> feature (commonly known as AppCache) of HTML5, which has just landed in the desktop browser. This is not the first time we have taken advantage of a feature from the HTML5 family of specifications; we recently used <a href="http://dev.opera.com/articles/view/web-storage/">Web Storage</a> (introduced in Opera 10.50) to save user preferences, such as colours used in the element highlight. The added power of HTML5 JavaScript APIs allow us to get closer to the capabilities of native applications.</p>
+<p>Those of you who love traveling by trains or planes will enjoy the latest update to Opera Dragonfly. To sync up with the <a href="http://www.opera.com/browser/">Opera 10.60 release</a>, we have added offline support to Opera Dragonfly. We now take advantage of the <a href="https://dev.opera.com/articles/view/offline-applications-html5-appcache/">Application Cache</a> feature (commonly known as AppCache) of HTML5, which has just landed in the desktop browser. This is not the first time we have taken advantage of a feature from the HTML5 family of specifications; we recently used <a href="https://dev.opera.com/articles/view/web-storage/">Web Storage</a> (introduced in Opera 10.50) to save user preferences, such as colours used in the element highlight. The added power of HTML5 JavaScript APIs allow us to get closer to the capabilities of native applications.</p>
 
 <p>We recently launched a survey of developers to find out their needs and wants for a tool such as Opera Dragonfly. The ability to work offline was close to the top of this list, so we are pleased to be able to offer this feature right now. Many of the top requests are already in the pipeline or under active development. Examples of the top requests include:</p>
 
 <ol>
-    <li>Enable/Disable CSS rules (Close to completion)</li>
-    <li>Improve icons and UI intuitiveness (Design work ongoing)</li>
-    <li>Offline support (Implemented)</li>
-    <li>Right-click (context menu) support (Planned)</li>
-    <li>Firebug Console API (Supported in Scope. Under development in Opera Dragonfly)</li>
-    <li>Requests around inspecting bodies of HTTP requests and page resources (Under development)</li>
+	<li>Enable/Disable CSS rules (Close to completion)</li>
+	<li>Improve icons and UI intuitiveness (Design work ongoing)</li>
+	<li>Offline support (Implemented)</li>
+	<li>Right-click (context menu) support (Planned)</li>
+	<li>Firebug Console API (Supported in Scope. Under development in Opera Dragonfly)</li>
+	<li>Requests around inspecting bodies of HTTP requests and page resources (Under development)</li>
 </ol>
 
 <p>There were of course many more requests and suggestions, and we’ll release a more in depth summary at a latter date. The feature closest to release in the above list is the ability to be able to temporarily disable and enable individual CSS style rules. This was heavily requested, and we hope to get it out on the cutting edge path in the near future.</p>

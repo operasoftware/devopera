@@ -31,7 +31,7 @@ license: cc-by-3.0
 
 <h3 id="articles_and_demos">Articles And Demos</h3>
 
-<p><a href="http://dev.opera.com/">Writing about the open web stack</a> and the technology is an interesting challenge. We often publish articles when we release a new feature in Opera. We have to be careful though that this new feature actually helps the Open Web. That means that we are careful of checking if the feature will break in other modern browsers, because their implementation is not ready. That means for example to put all CSS vendor extensions when creating a demo for the technology in addition to the property defined by the standard. </p>
+<p><a href="https://dev.opera.com/">Writing about the open web stack</a> and the technology is an interesting challenge. We often publish articles when we release a new feature in Opera. We have to be careful though that this new feature actually helps the Open Web. That means that we are careful of checking if the feature will break in other modern browsers, because their implementation is not ready. That means for example to put all CSS vendor extensions when creating a demo for the technology in addition to the property defined by the standard. </p>
 
 <h3 id="fun_of_being_together">Fun Of Being Together</h3>
 

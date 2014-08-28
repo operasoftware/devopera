@@ -18,7 +18,7 @@ license: cc-by-3.0
 
 <p>I have been fighting to improve web education for a number of years now - many courses and resources around the world that profess to teach web design/development are woefully out of date, resulting in students completing courses without the real world skills they need to get a job in the web industry. I think that this is the single biggest thing holding us back from making significant improvements to the accessibility, usability and overall quality of the Web, and evolving our industry.</p>
 
- <p>So I&#39;ve gone around and <del>bullied</del> <ins>spoken politely to</ins> universities and other educational institutions, ranted at web conferences, skirted around governments, and collaborated with like-minded web industry folk on projects such as <a href="http://interact.webstandards.org/">WaSP InterACT</a> and the Opera <a href="http://dev.opera.com/articles/view/1-introduction-to-the-web-standards-cur/">Web standards curriculum</a>. </p>
+ <p>So I&#39;ve gone around and <del>bullied</del> <ins>spoken politely to</ins> universities and other educational institutions, ranted at web conferences, skirted around governments, and collaborated with like-minded web industry folk on projects such as <a href="http://interact.webstandards.org/">WaSP InterACT</a> and the Opera <a href="https://dev.opera.com/articles/view/1-introduction-to-the-web-standards-cur/">Web standards curriculum</a>. </p>
 
  <h2>Moving on up</h2>
 

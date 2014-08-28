@@ -9,11 +9,11 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Accessibility genius Gez Lemon recently published <strong>An Introduction to WAI ARIA</strong> on <a href="http://dev.opera.com/">Dev.Opera</a>. Designed to work together with <a href="http://www.alistapart.com/articles/previewofhtml5">HTML 5</a> the <a href="http://www.w3.org/WAI/intro/aria">Accessible Rich Internet Application Suite</a>, published by the Web Accessibility Initiative, aims to make Ajax accessible to disabled people using screen-readers and is key to safeguarding accessibility in today&#39;s increasingly dynamic web.</p>
+<p>Accessibility genius Gez Lemon recently published <strong>An Introduction to WAI ARIA</strong> on <a href="https://dev.opera.com/">Dev.Opera</a>. Designed to work together with <a href="http://www.alistapart.com/articles/previewofhtml5">HTML 5</a> the <a href="http://www.w3.org/WAI/intro/aria">Accessible Rich Internet Application Suite</a>, published by the Web Accessibility Initiative, aims to make Ajax accessible to disabled people using screen-readers and is key to safeguarding accessibility in today&#39;s increasingly dynamic web.</p>
 
 <p>The article is now available in both Spanish and French as well as English:</p>
 <ul>
-	<li><a href="http://dev.opera.com/articles/view/introduction-to-wai-aria/">An Introduction to WAI ARIA</a>, original article in English</li>
+	<li><a href="https://dev.opera.com/articles/view/introduction-to-wai-aria/">An Introduction to WAI ARIA</a>, original article in English</li>
 	<li><span lang="es"><a href="http://www.areia.info/introduccion-a-wai-aria/">Introducción a WAI-ARIA</a></span>, Spanish version translated by David Martin</li>
 	<li><span lang="fr&quot;"><a href="http://www.lesintegristes.net/2008/12/09/introduction-a-wai-aria-traduction/">Introduction à WAI ARIA</a>, French version translate by Pierre Bertet</span></li>
  </ul>

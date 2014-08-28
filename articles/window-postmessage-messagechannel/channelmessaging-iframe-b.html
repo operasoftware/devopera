@@ -29,7 +29,7 @@
 			  widening our port's scope so it is available
 			  whenever the form handler is invoked.
 			*/
-			if( evt.origin == 'http://dev.opera.com'){
+			if( evt.origin == 'https://dev.opera.com'){
 				port = evt.ports[0];
 			} else {
 				alert('Origin '+evt.origin+' is not allowed.');
@@ -65,7 +65,7 @@
 		window.addEventListener('message',messageHandler,false);
 
 
-		window.parent.postMessage('addressBookSiteLoaded','http://dev.opera.com');
+		window.parent.postMessage('addressBookSiteLoaded','https://dev.opera.com');
 
 	}
 

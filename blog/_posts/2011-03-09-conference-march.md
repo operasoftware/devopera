@@ -15,22 +15,22 @@ license: cc-by-3.0
 
 <p><a href="http://sxsw.com/">SXSW</a> (in Austin, Texas, USA) will have the lion share of Opera people this month. There will be an <a href="http://sxsw.com/interactive/trade_show/exhibitors?action=exhib_show&amp;amp;id=S11-3500">Opera Booth</a>, some speakers and a few attendees : Lars Erick Bolstad,
 Tiffany Brown,
-<a href="http://dev.opera.com/author/2334476">Molly Holzschlag</a>,
-<a href="http://dev.opera.com/author/1991992">Patrick H. Lauke</a>,
-<a href="http://dev.opera.com/author/1146592">Bruce Lawson</a>,
-<a href="http://dev.opera.com/author/162910">Charles McCathieNeville</a>,
-<a href="http://dev.opera.com/author/241852">David Storey</a></p>
+<a href="https://dev.opera.com/author/2334476">Molly Holzschlag</a>,
+<a href="https://dev.opera.com/author/1991992">Patrick H. Lauke</a>,
+<a href="https://dev.opera.com/author/1146592">Bruce Lawson</a>,
+<a href="https://dev.opera.com/author/162910">Charles McCathieNeville</a>,
+<a href="https://dev.opera.com/author/241852">David Storey</a></p>
 
-<p><a href="http://confoo.ca/en">ConFoo</a> (Montreal, Canada) is an impressive Web developer conference which runs for the second time. <a href="http://dev.opera.com/author/2064912">Karl Dubost</a> will be speaking there. </p>
+<p><a href="http://confoo.ca/en">ConFoo</a> (Montreal, Canada) is an impressive Web developer conference which runs for the second time. <a href="https://dev.opera.com/author/2064912">Karl Dubost</a> will be speaking there. </p>
 
-<p><a href="http://dev.opera.com/author/1766230">Zi Bin Cheah</a> will be joined by <a href="http://twitter.com/syndare">Sangwhan Moon</a> and <a href="http://my.opera.com/ting0619">Peko Wan</a>, and together they will be touring Taiwan speaking to universities and leading companies about HTML5 and Opera Widgets.</p>
+<p><a href="https://dev.opera.com/author/1766230">Zi Bin Cheah</a> will be joined by <a href="http://twitter.com/syndare">Sangwhan Moon</a> and <a href="http://my.opera.com/ting0619">Peko Wan</a>, and together they will be touring Taiwan speaking to universities and leading companies about HTML5 and Opera Widgets.</p>
 
 <table id="marchtalklist">
 <caption>March Talks List</caption>
 <tr><th>Conference</th><th>Date</th><th>Title</th><th>Speaker</th></tr>
 <tr><td><a href="http://confoo.ca/en">ConFoo</a></td><td>Friday, March 11 9:40AM</td><td>
-    <a href="http://confoo.ca/en/2011/session/think-mobile-first-then-enhance">Think Mobile First, Then Enhance</a>
-    </td><td><a href="http://my.opera.com/karlcow" title="Karl Dubost - karlCOW">Karl Dubost</a></td></tr>
+	<a href="http://confoo.ca/en/2011/session/think-mobile-first-then-enhance">Think Mobile First, Then Enhance</a>
+	</td><td><a href="http://my.opera.com/karlcow" title="Karl Dubost - karlCOW">Karl Dubost</a></td></tr>
 <tr><td><a href="http://sxsw.com/">SXSW</a></td><td>Saturday, March 12 11:00AM</td><td><a href="http://schedule.sxsw.com/events/event_IAP6628">Drawing Back the Curtains on CSS Implementation</a></td><td><a href="http://moly.com/" title="Moly News - Breaking News, Expert Opinion &amp; Company/CEO Articles - Home">Molly Holzschlag</a></td></tr>
 <tr><td><a href="http://sxsw.com/">SXSW</a></td><td>Saturday, March 12 5:00PM</td><td> <a href="http://schedule.sxsw.com/events/event_IAP7486" title="Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript">Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript</a></td><td><a href="http://www.brucelawson.co.uk/">Bruce Lawson</a></td></tr>
 <tr><td><a href="http://sxsw.com/">SXSW</a></td><td>Sunday, March 13 11:00AM</td><td><a href="http://schedule.sxsw.com/events/event_IAP7300" title="The Politics Behind HTML5">The Politics Behind HTML5</a></td><td><a href="http://my.opera.com/chaals/blog/">Charles McCathieNeville</a></td></tr>

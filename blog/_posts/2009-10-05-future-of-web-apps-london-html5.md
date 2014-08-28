@@ -39,10 +39,10 @@ This puts HTML in direct competition with other technologies intended for applic
 </ul>
 <p>Opera Developer Network has some beginner&#39;s <code>canvas</code> tutorials available:</p>
 <ol>
-<li><a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
-<li><a href="http://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
-<li><a href="http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
-<li><a href="http://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
+<li><a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
+<li><a href="https://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
+<li><a href="https://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
 </ol>
 <p>Early the next morning, I was woken by the organisers asking me to do a second talk. As I had no time to prepare, I coded an <abbr>HTML</abbr>5 page live. Five minutes before going on stage, my laptop died; thanks so much to the guys on the Microsoft stand who lent me a replacement Windows machine, installed the necessary software and got my lappie running again!</p>
 

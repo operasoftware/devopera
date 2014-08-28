@@ -239,7 +239,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 					opera-fullshot-800.jpg 800w,
 					opera-fullshot-1200.jpg 1200w">
 		<img
-		 	src="opera-closeup-400.jpg" alt="The Oslo Opera House"
+			src="opera-closeup-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-closeup-200.jpg 200w,
 					opera-closeup-400.jpg 400w,
@@ -448,4 +448,4 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 
 Don’t worry if you haven’t understood this fully! Soon, we’ll publish an in-depth tutorial article on `<picture>` and responsive images. In the meantime, enjoy preparing to save your boss’ and customers’ bandwidth, and making your site even more performant.
 
-**Update**: we’ve published a [Native responsive images article](http://dev.opera.com/articles/native-responsive-images/), so be sure to check it out!
+**Update**: we’ve published a [Native responsive images article](https://dev.opera.com/articles/native-responsive-images/), so be sure to check it out!

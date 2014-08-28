@@ -13,7 +13,7 @@ license: cc-by-nc-sa-3.0
 
 <p>At the time, the boundaries of non-plugin video within a desktop browser were being explored and it caused a stir as an example of how video within the browser can be manipulated. The way he achieved the result was clever as he used two instances of the HTML5 canvas: a hidden one for painting and another visible one for manipulating. Sean must have been through a lot of trial and error and the lessons he learned are an interesting read.</p>
 
-<p>Now that we have released a <a href="http://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">desktop build with getUserMedia support</a> to match our <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Opera Mobile with camera support</a> for Android, we thought we'd have a go at converting his demo (with his permission) to work with either a webcam or a mobile device's built-in camera. The result can be seen here:</p>
+<p>Now that we have released a <a href="https://dev.opera.com/articles/view/getusermedia-access-camera-privacy-ui/">desktop build with getUserMedia support</a> to match our <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Opera Mobile with camera support</a> for Android, we thought we'd have a go at converting his demo (with his permission) to work with either a webcam or a mobile device's built-in camera. The result can be seen here:</p>
 
 <p><a href="http://people.opera.com/danield/html5/explode/">HTML5 exploding camera demo (bit.ly/democam)</a></p>
 
@@ -21,7 +21,7 @@ license: cc-by-nc-sa-3.0
 
 <h2>Use <code>getUserMedia</code> for the video source</h2>
 
-<p>The original HTML code has a <code>&lt;video&gt;</code> element that uses two <code>&lt;source&gt;</code> elements to <a href="http://dev.opera.com/articles/view/introduction-html5-video/#codecs">enable two video formats to be available to browsers</a>. For camera use, we removed these <code>&lt;source&gt;</code> elements and replaced them with JavaScript code to use the camera as the video source. Incidentally, although we don't initially have a video source, we can still use the <code>autoplay</code> attribute so that the camera stream will be displayed without the user having to click anything.</p>
+<p>The original HTML code has a <code>&lt;video&gt;</code> element that uses two <code>&lt;source&gt;</code> elements to <a href="https://dev.opera.com/articles/view/introduction-html5-video/#codecs">enable two video formats to be available to browsers</a>. For camera use, we removed these <code>&lt;source&gt;</code> elements and replaced them with JavaScript code to use the camera as the video source. Incidentally, although we don't initially have a video source, we can still use the <code>autoplay</code> attribute so that the camera stream will be displayed without the user having to click anything.</p>
 
 <pre><code>&lt;!-- HTML code --&gt;
 &lt;video id="sourcevid" autoplay&gt;Put your fallback message here.&lt;/video&gt;</code></pre>

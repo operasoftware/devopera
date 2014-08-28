@@ -52,7 +52,7 @@ us the URL below in the comments.</p>
 
 <p>We will then judge the competition and announce the winner on Monday October the 5th.</p>
 
-<p>The only condition is that the showcase idea must work in Opera 10. The winner will be invited to write up their showcase as an article to be published on the <a href="http://dev.opera.com" target="_blank">dev.opera.com</a> front page!</p>
+<p>The only condition is that the showcase idea must work in Opera 10. The winner will be invited to write up their showcase as an article to be published on the <a href="https://dev.opera.com" target="_blank">dev.opera.com</a> front page!</p>
 
 <p>The winner will get their name put down for a free ticket at the
 door of WDS (please note that we are only supplying the free ticket,

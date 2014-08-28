@@ -60,7 +60,7 @@ TV Emulator を終了するには、右上にある **X** (Mac OS X の場合は
 ホストマシン上でブラウザを起動して `http://localhost:5555` とタイプしてください。このリモコンはすべてのブラウザで動作します。但し [Opera Dragonfly][5] の [リモートデバッグ][6] 機能をご利用になりたい場合には、最新版の Opera デスクトップブラウザをご利用ください。
 
 [5]: http://www.opera.com/dragonfly
-[6]: http://dev.opera.com/articles/view/opera-tv-emulator-developer-tools/#debugging
+[6]: https://dev.opera.com/articles/view/opera-tv-emulator-developer-tools/#debugging
 
 この Web インタフェースをご利用になる際には、他のアプリケーションがポート 5555 をブロックすることがないようにしてください。
 

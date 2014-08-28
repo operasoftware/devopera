@@ -53,7 +53,7 @@ license: cc-bsd
 <p>So that's the theory. What can we do with this new facility? We've enjoyed copying video into <code>&lt;canvas&gt;</code>, then manipulating the pixel data with JavaScript:</p>
 <ul>
 <li><a href="http://people.opera.com/brucel/articles/magic-html5-moustache.html">Magical HTML5 Moustache</a> by Richard Tibbett (the &quot;<a href="http://www.wired.com/thisdayintech/2011/03/0310bell-invents-telephone-mr-watson-come-here/">Mr. Watson, come here</a>&quot; of getUserMedia demos)</li>
-<li><a href="http://people.opera.com/danield/html5/explode/">Exploding camera demo</a> (and <a href="http://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">how-it-works tutorial</a>)</li>
+<li><a href="http://people.opera.com/danield/html5/explode/">Exploding camera demo</a> (and <a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">how-it-works tutorial</a>)</li>
 <li>Relive yesteryear with Daniel's <a href="http://people.opera.com/danield/webapps/instant-camera/">Webaroid Instant Camera</a> that doesn't need to be <a href="http://www.reddit.com/r/IAmA/comments/l63y6/iama_polaroid_expert_polaroid_camera_collector_ama/c2q3ao5">put under your armpit</a> to develop</li>
 <li><a href="http://people.opera.com/shwetankd/external/demos/rlcp/rlcolorpicker.htm">Real Life Colour Picker</a></li>
 <li><a href="http://people.opera.com/shwetankd/external/demos/warholiser/warholiser.htm">Warholiser</a></li>

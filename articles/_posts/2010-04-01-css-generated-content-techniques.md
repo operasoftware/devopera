@@ -61,7 +61,7 @@ li:before {
 
 <p class="note">Of course, in browsers that don't support this CSS feature, no numbering will appear. This would then make it confusing if, somewhere in your page, you refer back to sections with <q>See Chapter X for more details</q>. This is the fine line between generated content being purely decorative or actual part of the content, which should be written in the actual HTML.</p>
 
-<p>I have written a demo to illustrate the <a href="cssgendemo.html#counters">creation of counters with generated content</a>. For more detail on the subject, read David Storey's excellent article on <a href="http://dev.opera.com/articles/view/automatic-numbering-with-css-counters/"><cite>Automatic numbering with CSS Counters</cite></a>.</p>
+<p>I have written a demo to illustrate the <a href="cssgendemo.html#counters">creation of counters with generated content</a>. For more detail on the subject, read David Storey's excellent article on <a href="https://dev.opera.com/articles/view/automatic-numbering-with-css-counters/"><cite>Automatic numbering with CSS Counters</cite></a>.</p>
 
 <h2>Inserting correct quotes for multi-language content</h2>
 

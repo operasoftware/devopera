@@ -28,10 +28,10 @@ function init(){
 	iframes = window.frames;
 
 	messageHandler = function(evt){
-		if( evt.origin == 'http://dev.opera.com'){
+		if( evt.origin == 'https://dev.opera.com'){
 			if( evt.ports.length > 0 ){
 				// transfer the port to our other document.
-				iframes[1].postMessage('portopen','http://dev.opera.com',evt.ports);
+				iframes[1].postMessage('portopen','https://dev.opera.com',evt.ports);
 			}
 		}
 	}

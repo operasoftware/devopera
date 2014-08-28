@@ -69,7 +69,7 @@ div:hover {  background-color: blue; }</code></pre>
 
 div:hover { background-color: blue; }</code></pre>
 
-<p>In the above example, when the user hovers over the div element the colour will transition from red to blue in 4 seconds. Try the <a href="http://dev.opera.com/static/dstorey/transitions/color-transition.html">colour transition example</a>.</p>
+<p>In the above example, when the user hovers over the div element the colour will transition from red to blue in 4 seconds. Try the <a href="https://dev.opera.com/static/dstorey/transitions/color-transition.html">colour transition example</a>.</p>
 
 <h3>Delaying a transition</h3>
 
@@ -82,13 +82,13 @@ div:hover { background-color: blue; }</code></pre>
 			<strong>-o-transition-delay: 1s;</strong>
 }</code></pre>
 
-<p>Try the <a href="http://dev.opera.com/static/dstorey/transitions/color-transition-delay.html">delayed transition example</a>.</p>
+<p>Try the <a href="https://dev.opera.com/static/dstorey/transitions/color-transition-delay.html">delayed transition example</a>.</p>
 
 <h3>Controlling transition velocity</h3>
 
 <p>As well as defining the timing of the transition, you can also control the velocity. Instead of a smooth transition from A to B, you can define a transition to speed up or slow down along its duration. This is defined using a <a href="http://en.wikipedia.org/wiki/Bézier_curve#Cubic_B.C3.A9zier_curves" title="Wikipedia definition of a cubic bezier curve">cubic bezier curve</a>, which is a common method in computer animation. To make this simpler to use in CSS, there are a number of predefined curves: <var>ease</var> (the default), <var>linear</var>, <var>ease-in</var>, <var>ease-out</var>, and <var>ease-in-out</var>.</p>
 
-<p>Try out the following <a href="http://dev.opera.com/static/dstorey/transitions/transition-timing-example.html">transition example using all five pre-defined timing functions</a>. I've used the <code>width</code> property for the transition to make the differences more obvious:</p>
+<p>Try out the following <a href="https://dev.opera.com/static/dstorey/transitions/transition-timing-example.html">transition example using all five pre-defined timing functions</a>. I've used the <code>width</code> property for the transition to make the differences more obvious:</p>
 
 <pre><code>div {
 			…
@@ -117,7 +117,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 	-o-transition-delay: 0s, 0s 2s;
 }</code></pre>
 
-<p><a href="http://dev.opera.com/static/dstorey/transitions/multiple-transitions.html">Try out the multiple transitions example</a>.</p>
+<p><a href="https://dev.opera.com/static/dstorey/transitions/multiple-transitions.html">Try out the multiple transitions example</a>.</p>
 
 <p>The <code>transition-property</code> property defaults to the <code>all</code> keyword, which means that by default all properties will be transitioned when changed, providing the <code>transition-duration</code> is changed from the default value of zero seconds.</p>
 
@@ -162,13 +162,13 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <p>We'll start with a simple <code>translate</code> transform. This moves the element from its original position in the document to the new location specified by the X and Y co-ordinates supplied.</p>
 
-<p>The following <a href="http://dev.opera.com/static/dstorey/transforms/transformTransition.html">translate example</a> moves the <code>div</code> element 50 pixels to the left and down 100 pixels from the centre of the element:</p>
+<p>The following <a href="https://dev.opera.com/static/dstorey/transforms/transformTransition.html">translate example</a> moves the <code>div</code> element 50 pixels to the left and down 100 pixels from the centre of the element:</p>
 
 <pre><code>-o-transform: translate(50px, 100px);</code></pre>
 
-<p>We've created a <a href="http://dev.opera.com/static/dstorey/transforms/transformTransitionGhost.html">second version of the translate example</a> with a faded out element moved to the original position the element was in before it was transformed in order to highlight the transform.</p>
+<p>We've created a <a href="https://dev.opera.com/static/dstorey/transforms/transformTransitionGhost.html">second version of the translate example</a> with a faded out element moved to the original position the element was in before it was transformed in order to highlight the transform.</p>
 
-<p>Note that a transform <em>doesn't affect the flow of the document</em>, so if the element is moved to where another element is already positioned it will overlap that element rather than the content flowing around or under it. Elements later in the document also will not take up the space vacated by the transformed element. This is illustrated in this <a href="http://dev.opera.com/static/dstorey/transforms/transformTransitionFlow.html">translate transform flow example</a> where the blue <code>div</code> element stays in its natural position.</p>
+<p>Note that a transform <em>doesn't affect the flow of the document</em>, so if the element is moved to where another element is already positioned it will overlap that element rather than the content flowing around or under it. Elements later in the document also will not take up the space vacated by the transformed element. This is illustrated in this <a href="https://dev.opera.com/static/dstorey/transforms/transformTransitionFlow.html">translate transform flow example</a> where the blue <code>div</code> element stays in its natural position.</p>
 
 <p>If the Y co-ordinate value is not specified then it is assumed to be zero. Negative values will move the element to the left and above the point of origin respectively. Alternatively the X and Y co-ordinate can be specified individually using <code>translateX</code> and <code>translateY</code>:</p>
 
@@ -185,14 +185,14 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <h3>Scaling</h3>
 
-<p>The <code>scale</code> transform function scales the element it is applied on by the value specified from the point of origin. The following <a href="http://dev.opera.com/static/dstorey/transforms/transformScale.html">scale example</a> scales the <code>div</code> element 2.5 times from the top left of the element:</p>
+<p>The <code>scale</code> transform function scales the element it is applied on by the value specified from the point of origin. The following <a href="https://dev.opera.com/static/dstorey/transforms/transformScale.html">scale example</a> scales the <code>div</code> element 2.5 times from the top left of the element:</p>
 
 <pre><code>-o-transform: scale(2.5);
 -o-transform-origin: left top;</code></pre>
 
 <p>In this example only one value was specified. In this case the Y scaling direction is set to the same value as the X scaling direction. If you only want to scale in one direction you can use the <code>scaleX</code> or <code>scaleY</code> transform functions. To scale an image smaller, a value less than 1 is used such as 0.5 for halving the size of the element.</p>
 
-<p>We've created a <a href="http://dev.opera.com/static/dstorey/transforms/transformScaleCentreOrigin.html">second scaling example</a> to highlight what happens if the point of origin for the scale is set to the centre point of the element. Here the element scales slightly off the screen to the left and overlaps the element above it, as the element scales in all directions equally from the centre point.</p>
+<p>We've created a <a href="https://dev.opera.com/static/dstorey/transforms/transformScaleCentreOrigin.html">second scaling example</a> to highlight what happens if the point of origin for the scale is set to the centre point of the element. Here the element scales slightly off the screen to the left and overlaps the element above it, as the element scales in all directions equally from the centre point.</p>
 
 <p>In SVG, an initial scale example would be the following:</p>
 
@@ -200,7 +200,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <h3>Skewing</h3>
 
-<p>The <code>skew</code> transform function skews the element along the X or Y axis, or both. The value is specified in degrees (<code>deg</code>), and if only one value is specified the skew on the Y axis is set to 0 or no skew. In the following <a href="http://dev.opera.com/static/dstorey/transforms/transformSkew.html">skew example</a> the element is skewed 10 degrees on the X axis, so that it is leaning to the left, and 20 degrees on the Y axis, so that it is sloping from top to bottom. The skew is applied from the default centre point of the element:</p>
+<p>The <code>skew</code> transform function skews the element along the X or Y axis, or both. The value is specified in degrees (<code>deg</code>), and if only one value is specified the skew on the Y axis is set to 0 or no skew. In the following <a href="https://dev.opera.com/static/dstorey/transforms/transformSkew.html">skew example</a> the element is skewed 10 degrees on the X axis, so that it is leaning to the left, and 20 degrees on the Y axis, so that it is sloping from top to bottom. The skew is applied from the default centre point of the element:</p>
 
 <pre><code>-o-transform: skew(10deg, 20deg);</code></pre>
 
@@ -212,7 +212,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <h3>Rotating</h3>
 
-<p>The <code>rotate</code> transform function rotates the element around the point of origin and as with skewing is specified in degrees. The following <a href="http://dev.opera.com/static/dstorey/transforms/transformRotate.html">rotation example</a> rotates the element 30 degrees clockwise:</p>
+<p>The <code>rotate</code> transform function rotates the element around the point of origin and as with skewing is specified in degrees. The following <a href="https://dev.opera.com/static/dstorey/transforms/transformRotate.html">rotation example</a> rotates the element 30 degrees clockwise:</p>
 
 <pre><code>-o-transform: rotate(30deg);</code></pre>
 
@@ -224,7 +224,7 @@ div:nth-of-type(5) { -o-transition-timing-function: ease-in-out;  }</code></pre>
 
 <h2 id="combining-transforms">Combining transforms</h2>
 
-<p>Multiple transforms can be applied to one <code>transform</code> property using a space-separated list. When multiple transforms are used, they are applied one after another linearly from left to right. In the following <a href="http://dev.opera.com/static/dstorey/transforms/multipleTransforms.html">multiple transform example</a>, the element is initially scaled by a factor of two, then rotated 45 degrees clockwise, then moved 80 pixels along the X axis:</p>
+<p>Multiple transforms can be applied to one <code>transform</code> property using a space-separated list. When multiple transforms are used, they are applied one after another linearly from left to right. In the following <a href="https://dev.opera.com/static/dstorey/transforms/multipleTransforms.html">multiple transform example</a>, the element is initially scaled by a factor of two, then rotated 45 degrees clockwise, then moved 80 pixels along the X axis:</p>
 
 <pre><code>-o-transform: scale(2) rotate(45deg) translate(80px);</code></pre>
 

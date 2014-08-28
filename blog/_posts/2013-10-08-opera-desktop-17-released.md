@@ -27,12 +27,12 @@ In addition, we’ve added support for a number of new extension APIs, which you
 * `chrome.commands`: [API docs][5], [tutorial][6]
 * `chrome.webNavigation`: [API docs][7], [tutorial][8]
 
-[3]: http://dev.opera.com/extension-docs/bookmarks.html
-[4]: http://dev.opera.com/extension-docs/tut_bookmarks.html
-[5]: http://dev.opera.com/extension-docs/commands.html
-[6]: http://dev.opera.com/extension-docs/tut_commands.html
-[7]: http://dev.opera.com/extension-docs/webNavigation.html
-[8]: http://dev.opera.com/extension-docs/tut_webnavigation.html
+[3]: https://dev.opera.com/extension-docs/bookmarks.html
+[4]: https://dev.opera.com/extension-docs/tut_bookmarks.html
+[5]: https://dev.opera.com/extension-docs/commands.html
+[6]: https://dev.opera.com/extension-docs/tut_commands.html
+[7]: https://dev.opera.com/extension-docs/webNavigation.html
+[8]: https://dev.opera.com/extension-docs/tut_webnavigation.html
 
 Consumer highlights are the ability to add custom searches, configure startup options, pinned tabs and (behind opera:flags) a new Quick Access Bar to house bookmarklets and bookmarks, powered by the chrome.bookmarks API.
 

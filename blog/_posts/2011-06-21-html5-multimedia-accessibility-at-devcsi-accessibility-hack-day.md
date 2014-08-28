@@ -19,7 +19,7 @@ Fate took me five miles up the road to Aston University for a <a href="http://ww
 Some resources
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> by Moi and Patrick Lauke</li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> by Moi and Patrick Lauke</li>
 <li><a href="http://camendesign.com/code/video_for_everybody">Video for Everybody</a> - Kroc Camen frankensteins in olde-worlde Flash embed code as fallback for HTML5 video</li>
 <li><a href="http://www.w3.org/TR/html5/video.html#media-elements">Video API spec</a></li>
 <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-track-element">Spec for the <code>&lt;track&gt;</code> element</a> for subtitles/ captioning etc</li>

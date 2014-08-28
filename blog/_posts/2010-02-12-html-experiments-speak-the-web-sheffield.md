@@ -21,7 +21,7 @@ license: cc-by-3.0
 <a href="http://people.opera.com/brucel/demo/html5-forms-LWS-demo.html">My <abbr>HTML</abbr>5 forms demo, including range, date, regex validation</a>
 </li>
 </ul>
-<p>The video demonstrations were from the newly-published article <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to <abbr>HTML</abbr>5 video</cite></a> and <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/"><cite>Accessible <abbr>HTML</abbr> Video with JavaScripted captions</cite></a>.</p>
+<p>The video demonstrations were from the newly-published article <a href="https://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to <abbr>HTML</abbr>5 video</cite></a> and <a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/"><cite>Accessible <abbr>HTML</abbr> Video with JavaScripted captions</cite></a>.</p>
 
 <p>Some other useful resources:</p>
 

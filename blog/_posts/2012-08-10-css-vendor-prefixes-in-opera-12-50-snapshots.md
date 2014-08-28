@@ -46,4 +46,4 @@ license: cc-by-3.0
 <li><code>-webkit-transition-timing-function</code></li>
 </ul>
 <p>Therefore, if (for some reason) you&#39;re sending a different value to Opera than to webkit browsers, put the -o- prefixed rule <em>after</em> the <code>-webkit-</code> prefix, so the Opera one &quot;wins&quot; in the cascade.</p>
-<p>You can find more information about this in our earlier article on the <a href="http://dev.opera.com/articles/view/opera-mobile-emulator-experimental-webkit-prefix-support/">Opera Mobile Emulator build with experimental WebKit prefix support</a>.</p>
+<p>You can find more information about this in our earlier article on the <a href="https://dev.opera.com/articles/view/opera-mobile-emulator-experimental-webkit-prefix-support/">Opera Mobile Emulator build with experimental WebKit prefix support</a>.</p>

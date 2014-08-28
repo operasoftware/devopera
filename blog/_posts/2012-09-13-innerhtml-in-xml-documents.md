@@ -18,9 +18,9 @@ license: cc-by-3.0
 
 <p>In previous versions of Opera&#39;s core, <code>innerHTML</code> was quite forgiving when injecting markup into XML/XHTML documents. As with regular HTML pages, when trying to add malformed content, Opera silently error-corrected the injected fragment according to its HTML parsing algorithm.</p>
 
-<p>To see this in action, here&#39;s a <a href="http://dev.opera.com/static/blog/2012/innerhtml-in-xml-documents/innerhtml-in-xml.xml" title="Test case for injecting malformed content via innerHTML in an XHTML document">simple test case</a> using <code>innerHTML</code> to inject the classic <code>&lt;b&gt;&lt;i&gt;...&lt;/b&gt;&lt;/i&gt;</code> set of misnested tags into an XHTML document. If you take a peek at the DOM after the page was loaded you&#39;ll see how the misnested tags have been silently fixed in the current stable version of Opera, while the same test case will fail in other browsers such as Chrome and Firefox.</p>
+<p>To see this in action, here&#39;s a <a href="https://dev.opera.com/static/blog/2012/innerhtml-in-xml-documents/innerhtml-in-xml.xml" title="Test case for injecting malformed content via innerHTML in an XHTML document">simple test case</a> using <code>innerHTML</code> to inject the classic <code>&lt;b&gt;&lt;i&gt;...&lt;/b&gt;&lt;/i&gt;</code> set of misnested tags into an XHTML document. If you take a peek at the DOM after the page was loaded you&#39;ll see how the misnested tags have been silently fixed in the current stable version of Opera, while the same test case will fail in other browsers such as Chrome and Firefox.</p>
 
-<img src="http://dev.opera.com/static/blog/2012/innerhtml-in-xml-documents/innerHTML-xhtml-result.png" alt="Opera Dragonfly showing how the misnested markup has been silently fixed in the DOM" />
+<img src="https://dev.opera.com/static/blog/2012/innerhtml-in-xml-documents/innerHTML-xhtml-result.png" alt="Opera Dragonfly showing how the misnested markup has been silently fixed in the DOM" />
 
 <p>Following the fix to CORE-4336, Opera&#39;s core is now aligned with the stricter behavior of other browsers, which has been formally specified in <a href="http://www.whatwg.org">WHATWG</a>&#39;s <a href="http://html5.org/specs/dom-parsing.html#innerhtml">DOM Parsing and Serialization</a>:</p>
 

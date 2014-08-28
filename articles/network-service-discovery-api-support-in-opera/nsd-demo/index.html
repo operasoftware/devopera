@@ -22,7 +22,7 @@
     </script>
     <script id="tmpl-container-item" type="text/html">
     <div class="container-element container-item">
-        <div class="item-ico"><img src="http://dev.opera.com/static/articles/2012/nsd-demo/img/${ico}" /></div>
+        <div class="item-ico"><img src="https://dev.opera.com/static/articles/2012/nsd-demo/img/${ico}" /></div>
         <div class="item-name">${name}</div>
         <div class="arrow-right"></div>
     </div>
@@ -83,7 +83,7 @@ function try_add_server(server)
 		if ($(obj).data('server') == server)
 			exists_already = true;
 	});
-	
+
     // Check that the server type and the current server view matches
     if ((server.type.indexOf('AVTransport') != -1 &&
          serverPickingMode != 'renderer') ||
@@ -143,7 +143,7 @@ function try_remove_server(server)
 			$(obj).remove();
 	});
 	select_element(selected_element, false);
-	
+
 	if( serverPickingMode === 'server' && upnp.servers.length < 1 )
 		$( "#no-servers-available" ).fadeIn( 300 );
 }
@@ -207,7 +207,7 @@ $( function() {
 					$( "#back" ).fadeOut( 200 );
 					$( "#container" ).fadeOut( 300, function(){
 						$( "#box" ).empty();
-						$( "#no-servers-available" ).fadeIn( 300 ); 
+						$( "#no-servers-available" ).fadeIn( 300 );
 					} );
 				} else {
 					showServers();
@@ -215,7 +215,7 @@ $( function() {
 			}
 		};
         upnp.addEventListener( 'ServerOffline', serverOfflineCallback );
-        upnp.addEventListener( 'RendererOffline', serverOfflineCallback ); 
+        upnp.addEventListener( 'RendererOffline', serverOfflineCallback );
 	}, 2000 );
 
     $('video, audio').bind('error', function() {
@@ -258,7 +258,7 @@ function setVolumeIcon(volume) {
         volumeImage = 2;
     else
         volumeImage = 3;
-    
+
     $('#media-control-volume').css('background-image', 'url(img/volume_' + volumeImage + '.png)');
 }
 
@@ -277,12 +277,12 @@ function KeyCheck(e) {
 	//}, 200);
 	}, 100);
 	var KeyID = e.keyCode;
-	
+
 	if ( KeyID == 37 || KeyID == 38 || KeyID == 39 || KeyID == 40 ||
 		KeyID == 13 || KeyID == 11 ||
 		KeyID == 27 || KeyID == 8 || KeyID == 82 || KeyID == 66)
 		e.preventDefault();
-	
+
 	if (playMode)
 	{
 		if (KeyID == 38 || KeyID === 76) // Arrow up or volume +
@@ -315,7 +315,7 @@ function KeyCheck(e) {
 		else if (KeyID == 40)
 			moveDown();
 	}
-	
+
 	if (KeyID == 13 || KeyID == 11)
 		onEnterPressed();
 	if (KeyID == 27 || KeyID == 8 || KeyID == 82 || KeyID == 66)
@@ -332,7 +332,7 @@ function showRenderers() {
     renderingTarget = null;
     serverPickingMode = 'renderer';
 	$("#loading_image").fadeOut(300);
-	
+
 	$( "#back" ).stop().fadeOut( 200 );
 	$( "#container" ).stop().fadeOut( 300, function(){
 		$( "#box" ).empty();
@@ -368,7 +368,7 @@ function showRenderers() {
 
         updateRendererInformation();
         setInterval(updateRendererInformation, rendererListUpdateInterval);
-	
+
         // The no servers available message is disabled for renderers, since there's
         // always the local renderer.
         $( "#no-servers-available" ).fadeOut( 200, function() {
@@ -380,7 +380,7 @@ function showRenderers() {
 function showServers() {
     serverPickingMode = 'server';
 	$("#loading_image").fadeOut(300);
-	
+
 	$( "#back" ).fadeOut( 200 );
 	$( "#container" ).fadeOut( 300, function(){
 		$( "#box" ).empty();
@@ -399,7 +399,7 @@ function showServers() {
 		elements = null;
 		elements_are_servers = true;
 		select_element(0, true);
-		
+
 		if( upnp.servers.length > 0 ) {
 			$( "#no-servers-available" ).fadeOut( 200, function() {
 				$( "#container" ).fadeIn( 300 );
@@ -424,7 +424,7 @@ function showElements( ) {
 	browsing = true;
     currentServer.browse( currentFolder, 0, 100000 );
 	$("#loading_image").fadeIn( 150 );
-} 
+}
 function serverBrowseCompleted( itemz ) {
 	if (browsing == false)
 		return;
@@ -443,7 +443,7 @@ function serverBrowseCompleted( itemz ) {
         }
 		return;
 	}
-	
+
 	elements = itemz;
 	$( "#back" ).fadeOut( 300 );
 	$( "#container" ).fadeOut( 300, function(){
@@ -451,7 +451,7 @@ function serverBrowseCompleted( itemz ) {
 		for( var i = 0; i < itemz.length; i++ ) {
 			var tmpl = $( "#tmpl-container-item" ).tmpl( {
 				name: shrt( itemz[ i ].title, 30 ),
-				ico: getClassNameThumbnail( itemz[i].className ) 
+				ico: getClassNameThumbnail( itemz[i].className )
 			} );
 			if( isPlayable( itemz[i] ) )
 				$( ".arrow-right", tmpl ).css( "display", "none" );
@@ -463,7 +463,7 @@ function serverBrowseCompleted( itemz ) {
 		elements_are_servers = false;
 		select_element(0, true);
 		$( "#container" ).fadeIn( 300 );
-		
+
 		var fldr_name = "";
 		if( currentFolder )
 			fldr_name = currentFolder.title;
@@ -524,7 +524,7 @@ function try_preview(item) {
 		show_preview = false;
 		$( "#loading_image" ).fadeOut( 50 );
 		$( "#playable-area" ).fadeOut( 400 );
-		
+
 		if (playMode)
 			enterBrowseMode(false);
 	}
@@ -532,7 +532,7 @@ function try_preview(item) {
 
 function select_element(element_id, initial) {
 	var element_count = $( "#box .container-element" ).length;
-	
+
 	var center_diff = Math.abs(element_id - center_element);
 	if (center_diff <= displayed_item_count_half - 1)
 	{
@@ -546,24 +546,24 @@ function select_element(element_id, initial) {
 	center_element = Math.min( center_element, element_count - displayed_item_count_half - 1 );
 	if (element_count < displayed_item_count_half*2 + 1)
 		center_element = element_count / 2;
-	
+
 	selected_element = element_id;
-	
+
 	$( "#box .container-element" ).each(function(i, obj){
 		$(obj).removeClass( 'marked' );
 	});
 	$( "#box .container-element:eq(" + (element_id) + ")" ).addClass( 'marked' );
-	
+
 	var box_width = $("#container").width();
 	var box_height = $("#container").height();
-	
+
 	$("#box .container-element").each(function(i, obj){
 		if (false == initial)
 			$(obj).css("-o-transition", "all 0.2s ease-out");
-		
+
 		var distance = i - center_element;
 		var distance_selection = i - selected_element;
-		
+
 		var item_width = 700;
 		var item_height = 40;
 		var item_padding_height = 67;
@@ -581,21 +581,21 @@ function select_element(element_id, initial) {
 			obj.style.opacity = 0;
 		else
 			obj.style.opacity = 0.8;
-		
+
 		var distance_y = distance * item_padding_height;
 		var centerX = box_width / 2;
 		var centerY = box_height / 2 + distance_y;
-		
+
 		//obj.style.height =
 		obj.style.height = item_height;
 		obj.style.width = item_width;
 		obj.style.top = centerY - item_height/2;
 		obj.style.left = centerX - item_width/2;
 	});
-	
+
 	if (elements)
 		try_preview(elements[selected_element]);
-		
+
 	clearTimeout(scroll_hide_timeout);
 	if (element_count > (displayed_item_count_half*2+1))
 	{
@@ -606,7 +606,7 @@ function select_element(element_id, initial) {
 		var per_item_scroll = (scroll_total_height - scroll_height) / extra_element_count;
 		$("#scroll_indicator").css('top', ((center_element - displayed_item_count_half)*per_item_scroll) + 'px');
 		$("#scroll_indicator").css('height', (scroll_total_height * ((displayed_item_count_half*2+1) / element_count)) + 'px');
-		
+
 		scroll_hide_timeout = setTimeout(function(){
 			$("#scroll_box").stop().fadeOut( 1600 );
 		}, 3000);
@@ -615,7 +615,7 @@ function select_element(element_id, initial) {
 	{
 		$("#scroll_box").stop().hide( );
 	}
-	
+
 	if (selected_element == 0)
 		$("#play-arrow-left").hide();
 	else
@@ -675,7 +675,7 @@ function moveRight() {
     		currentFolder = elements[selected_element];
     	}
     	selected_element = null;
-    	showElements();	
+    	showElements();
     }
 }
 
@@ -895,7 +895,7 @@ function stateChangedCallback(playState) {
             renderingTargetSendPlayWhenDoneTransitioning = false;
             onBackPressed();
             $.gritter.add({
-                title: 'Error Playing Item', 
+                title: 'Error Playing Item',
                 text: renderingTarget.lastError || 'Unknown error.',
                 time: 10000,
             });
@@ -917,15 +917,15 @@ function showRenderingTargetControls(resuming, className) {
             if (resuming) {
                 if (currentItem.simple === true) {
                     $.gritter.add({
-                        title: 'Unkown Item', 
-                        text: 'Not enough information from the renderer. Assuming audio/video.', 
+                        title: 'Unkown Item',
+                        text: 'Not enough information from the renderer. Assuming audio/video.',
                         time: 6000,
                     });
                 }
                 else if (currentItem === null || currentItem.title === "") {
                     $.gritter.add({
-                        title: 'No Current Item', 
-                        text: 'No item loaded on renderer, pick an item to play.', 
+                        title: 'No Current Item',
+                        text: 'No item loaded on renderer, pick an item to play.',
                         time: 6000,
                     });
                 }
@@ -973,8 +973,8 @@ function showRenderingTargetControls(resuming, className) {
 function onEnterPressed() {
 	if( playMode ) {
         if ( renderingTarget ) {
-            if ( renderingTarget.playState === renderingTarget.PLAYSTATE_PAUSED || 
-                      renderingTarget.playState === renderingTarget.PLAYSTATE_MEDIA_READY || 
+            if ( renderingTarget.playState === renderingTarget.PLAYSTATE_PAUSED ||
+                      renderingTarget.playState === renderingTarget.PLAYSTATE_MEDIA_READY ||
                       renderingTarget.playState === renderingTarget.PLAYSTATE_STOPPED ) {
 				renderingTarget.play();
 //				$( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
@@ -1037,7 +1037,7 @@ function onEnterPressed() {
                     $("#playable-video-tag").attr("src", elements[selected_element].contentURL);
                     updateMediaInfo(elements[selected_element]);
                     $( "#media-details" ).stop().show();
-                        
+
                     video_media = $( "#playable-video-tag" ).get( 0 );
                     $( "#media-control-seek-times-max" ).get( 0 ).innerHTML = "";
                     video_media.addEventListener( 'canplay', function() {
@@ -1058,7 +1058,7 @@ function onEnterPressed() {
                     } );
                     video_media.play();
                     $( "#media-control-ico" ).get( 0 ).innerHTML = '<img src="img/pause.png" />';
-                    
+
                     playMode = true;
                 }
                 else if( isAudio( elements[selected_element].className ) ) {
@@ -1070,11 +1070,11 @@ function onEnterPressed() {
                     //$( "#close" ).fadeIn( 300 );
                     $( "#playable-area" ).css( 'background-image', '' );
                     $( "#playable-audio-tag" ).attr( "src", elements[selected_element].contentURL );
-                    
+
                     updateMediaInfo(elements[selected_element]);
                     $( "#media-details" ).stop().show();
-                    
-                    
+
+
                     $( "#audio-speaker-ico" ).fadeIn(300);
 
                     audio_media = $( "#playable-audio-tag" ).get( 0 );
@@ -1102,7 +1102,7 @@ function onEnterPressed() {
                 }
                 else
                     moveRight();
-                
+
                 if (playMode)
                 {	// switched to the play mode
                     showUiOverlay();
@@ -1119,8 +1119,8 @@ function onEnterPressed() {
                 showRenderingTargetControls(true);
             }
             else {
-				$.gritter.add( { 
-                    title: 'Cannot Take Control', 
+				$.gritter.add( {
+                    title: 'Cannot Take Control',
                     text: 'The renderer does not have an item loaded. Pick something to play and try again.',
                     time: 6000,
                     class_name: 'opaque'
@@ -1160,7 +1160,7 @@ function niceTime( secs ) {
 	var divisor_for_minutes = secs % ( 60 * 60 );
 	var minutes = Math.floor( divisor_for_minutes / 60 );
 	if( minutes < 10 ) minutes = '0' + minutes;
- 
+
 	var divisor_for_seconds = divisor_for_minutes % 60;
 	var seconds = Math.floor( divisor_for_seconds );
 	if( seconds < 10 ) seconds = '0' + seconds;
@@ -1191,11 +1191,11 @@ function mediaError(msg) {
         return;
 
     var mediaErrorId = $.gritter.add({
-        title: 'Problem With Playback!', 
-        text: msg, 
-        sticky: true, 
+        title: 'Problem With Playback!',
+        text: msg,
+        sticky: true,
         class_name: 'media-error',
-        after_close: function(){ } 
+        after_close: function(){ }
     });
     mediaErrorIds.push(mediaErrorId);
 }
@@ -1207,7 +1207,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
 #remote-control-header {
     display:none;
 }
-#description-text { 
+#description-text {
     text-align: center;
 	padding: 0;
     margin: 0 auto;
@@ -1217,7 +1217,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
 	font-size: 18px;
 	color: #fff;
 }
-.container-header { 
+.container-header {
     text-align: center;
 	padding: 12px 0 0 0;
     margin: 0 auto;
@@ -1227,7 +1227,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
 	font-size: 30px;
 	color: #fff;
 }
-.container-element { 
+.container-element {
 	position: absolute;
 	background: #272727;
 	padding: 0px;
@@ -1306,7 +1306,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
 	left: 0px;
 	width: 100%;
 	height: 100px;
-	
+
 	-o-transition: all 0.2s ease-out;
 }
 .opaque .gritter-item {
@@ -1320,17 +1320,17 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
 </head>
 <body>
     <div id="logo"></div>
-    
+
     <div id="back">
         <div style="margin: 11px 35px 0 5px; float: left;"><img src="img/arrow_back.png" /></div>
         <div id="back-name" class="item-name" style="padding: 0px;"></div>
     </div>
-    
+
     <div id="no-servers-available">
         <div class="item-ico"><img src="img/icon_nodevices.png" /></div>
         <div class="item-name" style="margin-top: 13px;">Searching for servers...</div>
     </div>
-    
+
     <div id="playable-area">
         <h1 id="remote-control-header" class="container-header">Controlling Remote Renderer "<span></span>"</h1>
         <div id="playable-video">
@@ -1359,9 +1359,9 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
             <div id="media-control-volume"></div>
         </div>
     </div>
-    
+
     <!--div id="close"><div style="text-align: center;"><img src="img/close_ico.png" /></div><div style="text-align: center; padding: 10px 5px 0px 5px; color: #9d9d9d; font-family: sans-serif; font-size: 16px;">Close</div></div-->
-    
+
     <div id="screen-ui">
         <div id="photo-details"><div class="item-ico"><img src="img/photo_ico.png" /></div><div class="item-name" id="photo-details-text">Photo details</div></div>
         <div id="media-details"><div id="media-details-file-name" class="item-name"></div><div id="media-details-media-name" class="item-caption"></div></div>
@@ -1371,7 +1371,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
             <div id="play-arrow-right"><img src="img/arrow_right.png" /></div>
         </div>
     </div>
-    
+
     <div id="container">
         <div id="box">
         </div><!-- end of div box -->
@@ -1381,7 +1381,7 @@ body {  background-color: #505050; margin: 0; padding: 0; background-image: url(
             </div>
         </div>
     </div><!-- end of div container -->
-    
+
     <img id="loading_image" src="img/load.gif" />
 </body>
 </html>

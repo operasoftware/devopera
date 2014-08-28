@@ -14,7 +14,7 @@ Text:
 
 <h2>Introduction</h2>
 
-<p>In my last article, I implemented a <a href="http://dev.opera.com/articles/view/custom-html5-video-player-with-css3-and-jquery/">customisable, cross-browser compatible video player</a> using the HTML5 <code>&lt;video&gt;</code> element. This is a good solution for many reasons, including accessibility - HTML5 <code>&lt;video&gt;</code> is a lot more accessible than plugin-based alternatives, for example in terms of keyboard accessibility out of the box, and easier to customise without the need for a costly IDE.</p> 
+<p>In my last article, I implemented a <a href="https://dev.opera.com/articles/view/custom-html5-video-player-with-css3-and-jquery/">customisable, cross-browser compatible video player</a> using the HTML5 <code>&lt;video&gt;</code> element. This is a good solution for many reasons, including accessibility - HTML5 <code>&lt;video&gt;</code> is a lot more accessible than plugin-based alternatives, for example in terms of keyboard accessibility out of the box, and easier to customise without the need for a costly IDE.</p> 
 
 <p>But our work does not stop there. the solution I have built so far, like other JavaScript-based widgets, still has a number of accessibility concerns in terms of semantics and discoverability, which could be addressed using the W3C Web Accessibility Initiative&#39;s <a href="http://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Inititative Accessible Rich Internet Applications">WAI-ARIA</abbr></a> specification.</p>
 	
@@ -48,7 +48,7 @@ Text:
 		<li><a href="#finishing">Finishing touches?</a></li>
 		<li><a href="#fallback">Fallback</a></li>
 		<li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#futher-reading">Further reading</a></li>
+				<li><a href="#futher-reading">Further reading</a></li>
 	</ol>
 	
 	<h2 id="multimedia">Multimedia</h2>
@@ -118,7 +118,7 @@ Text:
 	<p><img alt="Video player controls, with the new markup" src="http://forum-test.oslo.osa/kirby/content/articles/389-a-more-accessible-html5-video-player/barebones-video-controls.png" /></p>
 	<p class="comment">Figure 2: Custom video player controls, with the new markup.</p>
 	
-		<p class="note">If you’re completely new to WAI-ARIA I strongly recommend reading the <a href="http://dev.opera.com/articles/view/introduction-to-wai-aria/">Introduction to WAI ARIA article</a> on <a href="http://dev.opera.com/">Dev.Opera</a>. </p>
+		<p class="note">If you’re completely new to WAI-ARIA I strongly recommend reading the <a href="https://dev.opera.com/articles/view/introduction-to-wai-aria/">Introduction to WAI ARIA article</a> on <a href="https://dev.opera.com/">Dev.Opera</a>. </p>
 	
 	<h4 id="buttons">Buttons</h4>
 	<p>All our buttons have meaningful labels and <code>title</code> attributes. The <code>title</code> attributes also provide tooltips, which are especially useful if the designer decides to just show the buttons in the UI, without labels. They also benefit screen reader users by providing them with a longer explanation of what the control actually does. </p>
@@ -253,7 +253,7 @@ video.$volume.$handle.attr(&quot;aria-valuetext&quot;, Math.round(volume*100) + 
 	
 	<p>One major problem is that it’s not implemented in any browser right now, but fear not — we’re going to implement the element on our own, using JavaScript. This is the best future-proof way of dealing with captions right now. That’s because once problems are cleared, and browsers implement the element, we won’t have to change existing markup to use native captions.</p>
 	
-	<p>The technique we’re going to use is more or less a reversed version of Bruce Lawson’s captioning technique. In case you’re not familiar with it, check out the <a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> article on Dev Opera.</p>
+	<p>The technique we’re going to use is more or less a reversed version of Bruce Lawson’s captioning technique. In case you’re not familiar with it, check out the <a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> article on Dev Opera.</p>
 	
 	<p>The technique described in the article uses HTML markup to define the captions, using custom <code>data-</code> attributes to set the time offsets for each caption. It then parses the elements and creates a JavaScript object which it uses to show each caption at the correct time. It also uses CSS generated content to insert timestamps into the content. </p>
 	
@@ -372,13 +372,13 @@ video.$volume.$handle.attr(&quot;aria-valuetext&quot;, Math.round(volume*100) + 
 	<h3>More on &lt;video&gt;</h3>
 	<ul>
 		<li><a href="http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2">Everything you need to know about HTML5 video and audio</a></li>
-		<li><a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a></li>
+		<li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a></li>
 	</ul>
 	
 	<h3>Opera Curriculum on Accessibility</h3>
 	<ul>
-		<li><a href="http://dev.opera.com/articles/view/25-accessibility-basics/">Accessibility basics</a></li>
-		<li><a href="http://dev.opera.com/articles/view/26-accessibility-testing/">Accessibility testing</a></li>
+		<li><a href="https://dev.opera.com/articles/view/25-accessibility-basics/">Accessibility basics</a></li>
+		<li><a href="https://dev.opera.com/articles/view/26-accessibility-testing/">Accessibility testing</a></li>
 	</ul>
 	
 	<h3>Resources</h3>

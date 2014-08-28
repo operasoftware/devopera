@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 <p>To make applications run fully offline, we should make ourselves familiar with three very interesting technologies: The HTML5 Application Cache, Web Storage and WebSQL Databases.</p>
 
-<p>I’ve already written introductory articles covering <a href="http://dev.opera.com/articles/view/web-storage/">Web Storage</a> and <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">HTML5 Application Cache</a>: you should read these first if you are not already familiar with the basic concepts. This article will revisit these technologies, introduce WebSQL, and show how to effectively use all three in context. All three of these technologies are now supported by Opera desktop version 11.10, Opera Mobile 11, and Webkit-based browsers such as the iOS and Google Android browsers.</p>
+<p>I’ve already written introductory articles covering <a href="https://dev.opera.com/articles/view/web-storage/">Web Storage</a> and <a href="https://dev.opera.com/articles/view/offline-applications-html5-appcache/">HTML5 Application Cache</a>: you should read these first if you are not already familiar with the basic concepts. This article will revisit these technologies, introduce WebSQL, and show how to effectively use all three in context. All three of these technologies are now supported by Opera desktop version 11.10, Opera Mobile 11, and Webkit-based browsers such as the iOS and Google Android browsers.</p>
 
 <p class="note">Note: All the examples discussed below can be found in our <a href="offline-web-apps.zip">offline web apps demo package</a>. You might want to download this and look through it while you read through the article (unless you are offline, of course!)</p>
 
@@ -52,7 +52,7 @@ index.htm</code></pre>
 
 <p>All the files listed here will be cached in the browser’s application cache. Even if a person is offline and tries to load the page, all of the resources mentioned in the linked manifest file will be loaded by the browser.</p>
 
-<p>Full details about this can be found in our full featured <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache">article about HTML5 application cache</a>.</p>
+<p>Full details about this can be found in our full featured <a href="https://dev.opera.com/articles/view/offline-applications-html5-appcache">article about HTML5 application cache</a>.</p>
 
 <h2>What about the data?</h2>
 
@@ -60,7 +60,7 @@ index.htm</code></pre>
 
 <h3>Going offline with Web Storage</h3>
 
-<p>Web Storage is perfect for storing small chunks of information rather than large tables of organized information. We only give a brief overview in this article, and look at some examples. You can learn more of the basics in our <a href="http://dev.opera.com/articles/view/web-storage/">dedicated article on Web Storage</a>.</p>
+<p>Web Storage is perfect for storing small chunks of information rather than large tables of organized information. We only give a brief overview in this article, and look at some examples. You can learn more of the basics in our <a href="https://dev.opera.com/articles/view/web-storage/">dedicated article on Web Storage</a>.</p>
 
 <p>There are a lot of places in the world where electricity goes off frequently, and people are offline for quite a while before the power comes back on again. Imagine if someone living in such a region is filling out a multi-page form, or writing a long blog post, or composing an important email? If the power suddenly goes off (or their computer runs out of battery), they would lose all that data. Wouldn’t it be nice if the next time they are online, they could go to the URL and have that information available again, to carry on with?</p>
 
@@ -94,7 +94,7 @@ function loadMessage(){
 	var message = localStorage.getItem(&quot;message&quot;);
 
 	 if (!message) {
-	 	textbox.value = &quot;&quot;;
+		textbox.value = &quot;&quot;;
 	 }else {
 		textbox.value = message;
 	}

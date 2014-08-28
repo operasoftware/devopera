@@ -219,7 +219,7 @@ Aşağıdaki yöntemler dizi `prototype` nesnesine eklenmiştir:
 
 Dmitry Soshnikov [ES5 dizi “ilaveleri”][18] adresinde bulunan hakkında detaylı bir makale yazdı.
 
-[18]: http://dev.opera.com/articles/view/javascript-array-extras-in-detail/
+[18]: https://dev.opera.com/articles/view/javascript-array-extras-in-detail/
 
 Dmitry’nin makalesinde yer almayan tek şey `Array.isArray`. Görebileceğiniz gibi bu, `prototype` nesnesinin değil doğrudan `Array` kurucusunun üzerindedir. `Array.isArray` beklemediğiniz kadar tatlıdır — parametrenin `[[Class]]` dahili özelliği `Array` olup olmamasına göre `true` ya da `false` döndüren bir yöntemdir.
 

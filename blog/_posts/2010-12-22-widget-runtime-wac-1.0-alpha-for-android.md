@@ -30,8 +30,8 @@ For widget developers, we have prepared two articles that explain how to build a
 - [Introduction to Widget Handset APIs in WAC 1.0][2]
 - [Building a spirit level widget using WAC 1.0][3]
 
-[2]: http://dev.opera.com/articles/view/widget-handset-apis-wac
-[3]: http://dev.opera.com/articles/view/building-a-widget-with-wac/
+[2]: https://dev.opera.com/articles/view/widget-handset-apis-wac
+[3]: https://dev.opera.com/articles/view/building-a-widget-with-wac/
 
 There are demo widgets created by Opera for each WAC 1.0 API group. Each widget demonstrates the basic functionality, displays returned values in real time and provides short introduction how to use respective APIs. Refer to installation instructions on how/where to get them.
 
@@ -42,7 +42,7 @@ For more details on how to develop WAC 1.0 widgets, we refer to the [WAC 1.0 spe
 This build supports remote debugging via [Opera Dragonfly][5] ; please refer to [Dev.Opera][6] for more instructions.
 
 [5]: http://www.opera.com/dragonfly/
-[6]: http://dev.opera.com/articles/view/remote-debugging-of-widgets-on-mobile-devices/
+[6]: https://dev.opera.com/articles/view/remote-debugging-of-widgets-on-mobile-devices/
 
 Play with the build, try to create your own WAC 1.0 widgets and let us know what you think on the [Opera Widgets forum][7].
 

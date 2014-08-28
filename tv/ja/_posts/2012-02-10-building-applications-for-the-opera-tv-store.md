@@ -85,7 +85,7 @@ Opera TV Store は、リモートコントロールにある基本的な 4 方�
 - [CORS （クロスオリジンリソースシェアリング）][19] サポートの不足： アプリケーションが CORS に依存している場合（特に `XMLHttpRequest` を使用している場合）、他のドメインからのリソースをリレーするには、ある形式のプロキシをアプリケーションの元のドメインに実装する必要があります。
 - 一定のデバイスでは外部のメディア再生フレームワークがインテグレートされているため、複数の `audio` あるいは `video` 要素の同時再生は保証されない場合があります。
 
-[19]: http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/
+[19]: https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/
 
 ## Opera TV Store への提出
 

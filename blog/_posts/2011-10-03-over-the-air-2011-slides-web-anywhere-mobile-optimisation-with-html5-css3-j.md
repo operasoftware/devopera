@@ -22,9 +22,9 @@ license: cc-by-3.0
 <h4>Mobile-specific resources</h4>
 <ul>
 <li>
-<a rel="nofollow" href="http://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
-<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="http://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
-<li><a href="http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a></li>
+<a rel="nofollow" href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
+<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
+<li><a href="https://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a></li>
 <li>
 <a rel="nofollow" href="http://www.w3.org/TR/mwbp-wcag/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> (If you design so people with disabilities can use your content, it has good side-effects for mobile users)</li>
 <li><a href="http://mir.aculo.us/2010/06/04/making-an-ipad-html5-app-making-it-really-fast/">Making an iPad HTML5 App &amp; making it really fast</a> - obviously, iPhone-centric, but useful information about performance implications of some CSS shadows, gradients etc</li>
@@ -33,7 +33,7 @@ license: cc-by-3.0
 
 <h4>CSS Media Queries and Viewport for adaptive content</h4>
 <ul>
-<li>Nice project-based approach to the subject: <a href="http://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Love your devices: adaptive web design with media queries, viewport and more</a></li>
+<li>Nice project-based approach to the subject: <a href="https://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Love your devices: adaptive web design with media queries, viewport and more</a></li>
 <li>Demo:
 <a rel="nofollow" href="http://people.opera.com/danield/css3/vangogh/">Media Queries: CSS that responds to the screen width</a>
 </li>
@@ -44,7 +44,7 @@ license: cc-by-3.0
 </li>
 <li>
 <a rel="nofollow" href="http://www.peachpit.com/articles/article.aspx?p=1604236">Flexible Web Layouts with CSS3 Media Queries</a> tutorial</li>
-<li><a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
+<li><a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
 <li><a href="http://dev.w3.org/csswg/css-device-adapt/">CSS Device Adaptation</a> - the draft &quot;CSS Viewport&quot; specification (implemented in Opera with <code>-o-</code> prefixes)</li>
 <li><a rel="nofollow" href="http://www.quirksmode.org/blog/archives/2010/08/combining_media.html">Combining media queries and JavaScript</a></li>
 <li><a href="http://mediaqueri.es">Mediaqueri.es showcase site</a></li>
@@ -53,11 +53,11 @@ license: cc-by-3.0
 
 <h4>HTML5&#39;s friends: JavaScript APIs</h4>
 <ul>
-<li><a rel="nofollow" href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a></li>
-<li><a href="http://dev.opera.com/articles/view/taking-your-web-apps-offline-web-storage-appcache-websql/">Taking your web apps offline: A tale of Web Storage, Application Cache and WebSQL</a></li>
-<li><a href="http://dev.opera.com/articles/view/introducing-web-sockets/">Introducing Web Sockets</a></li>
-<li><a href="http://dev.opera.com/articles/view/websockets-and-server-sent-events/">WebSockets and Server-sent Events</a></li>
-<li><a href="http://dev.opera.com/articles/view/web-workers-rise-up/">Web Workers rise up!</a></li>
+<li><a rel="nofollow" href="https://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">How to use the W3C Geolocation API</a></li>
+<li><a href="https://dev.opera.com/articles/view/taking-your-web-apps-offline-web-storage-appcache-websql/">Taking your web apps offline: A tale of Web Storage, Application Cache and WebSQL</a></li>
+<li><a href="https://dev.opera.com/articles/view/introducing-web-sockets/">Introducing Web Sockets</a></li>
+<li><a href="https://dev.opera.com/articles/view/websockets-and-server-sent-events/">WebSockets and Server-sent Events</a></li>
+<li><a href="https://dev.opera.com/articles/view/web-workers-rise-up/">Web Workers rise up!</a></li>
 </ul>
 
 
@@ -66,7 +66,7 @@ license: cc-by-3.0
 <li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Opera and HTML5 &lt;device&gt; element</a> to give web sites access to a device&#39;s camera, and Orientation Events  (now renamed  <a href="http://www.whatwg.org/specs/web-apps/current-work/complete/video-conferencing-and-peer-to-peer-communication.html#obtaining-local-multimedia-content">getUserMedia()</a>)</li>
 <li>
 <li><a href="http://my.opera.com/ODIN/blog/video-tutorial-access-your-phones-camera-with-wac-widgets">Video tutorial: Access your phone&#39;s camera with WAC widgets</a></li>
-<li><a rel="nofollow" href="http://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
+<li><a rel="nofollow" href="https://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
 
 <li>
 <a rel="nofollow" href="http://www.quirksmode.org/blog/archives/2009/04/introduction_to.html">Introduction to W3C Widgets</a> by Peter-Paul Koch</li>

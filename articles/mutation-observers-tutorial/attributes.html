@@ -8,7 +8,7 @@
 <body>
 <header>
 	<h1>Observing changes to attributes</h1>
-	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+	<nav><a href="https://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
 </header>
 
 <article>
@@ -30,24 +30,24 @@
 (function(d){
 	var btn = d.querySelector('button'),
 	clickhandler = function(){
-		var demo = d.getElementById('demo'), 
-			olddata = 'Demonstration', 
+		var demo = d.getElementById('demo'),
+			olddata = 'Demonstration',
 			newdata =  "Observing multiple attribute changes.";
-			
+
 		demo.classList.toggle('modded');
-		
+
 		( demo.dataset.config == olddata ) ? demo.dataset.config = newdata : demo.dataset.config = olddata;
 	}
-	btn.addEventListener('click',clickhandler,false);	
+	btn.addEventListener('click',clickhandler,false);
 
-	var mocallback = function(mutationrecords){				
+	var mocallback = function(mutationrecords){
 		mutationrecords.map( function(mr){
 			console.log( mr );
 		});
 	}
 	mo = new MutationObserver(mocallback),
 	mo.observe( d.getElementById('demo'),{'attributes':true,'attributeOldValue':true});
-})(document); 
+})(document);
 </script>
 
 </body>

@@ -17,7 +17,7 @@ This is a truly busy summer (or winter, depending where you are). Following the 
 
 <h3>Vega</h3>
 <p>
-Opera’s graphic library Vega is turned on in this version. This means that CSS3 support such as <a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">2D Transforms</a>, <code>border-radius</code>, <code>border-image</code>, and <code>box-shadow</code> now work on <a href="http://en.wikipedia.org/wiki/S60_(software_platform)">Symbian S60</a> phones.
+Opera’s graphic library Vega is turned on in this version. This means that CSS3 support such as <a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">2D Transforms</a>, <code>border-radius</code>, <code>border-image</code>, and <code>box-shadow</code> now work on <a href="http://en.wikipedia.org/wiki/S60_(software_platform)">Symbian S60</a> phones.
 </p>
 
 <h3>Carakan</h3>
@@ -27,7 +27,7 @@ Our JavaScript engine has boosted speed greatly on Opera desktop, you can see ho
 
 <h3>Geolocation</h3>
 <p>
-We have heard time and again that geolocation has the best use case on mobile phone. It is our privilege to bring the <a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">W3C Geolocation API</a> to S60 phones. Developers can now build awesome websites that make use of this wonderful web standard, on desktop and mobile phones.
+We have heard time and again that geolocation has the best use case on mobile phone. It is our privilege to bring the <a href="https://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">W3C Geolocation API</a> to S60 phones. Developers can now build awesome websites that make use of this wonderful web standard, on desktop and mobile phones.
 </p>
 <h3>…for developers, a standards chart</h3>
 <p>

@@ -23,7 +23,7 @@ The demos I showed:
 
 <ul>
 <li><a href="http://people.opera.com/brucel/demo/html5-forms-LWS-demo.html">HTML5 forms</a> page</li>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> article on <a href="http://dev.opera.com">dev.opera</a></li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> article on <a href="https://dev.opera.com">dev.opera</a></li>
 <li><a href="http://people.opera.com/andreasb/demos/demos_svgopen2009/svgscalegold.html">Mediaqueries + SVG</a></li>
 <li><a href="http://www.splintered.co.uk/experiments/archives/paranoid_0.2/">Paranoid 0.2</a> classic game lookalike in <code>&lt;canvas&gt;</code></li>
 <li><a href="http://people.opera.com/patrickl/experiments/canvas/particle/2/">Particle party</a> using <code>&lt;canvas&gt;</code></li>

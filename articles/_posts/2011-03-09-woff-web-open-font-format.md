@@ -22,7 +22,7 @@ Opera's Håkon Wium Lie first publicized the idea of freely downloadable fonts, 
 </p>
 
 <p>
-We first <a href="http://dev.opera.com/articles/view/presto-2-2-and-opera-10-a-first-look/#webfonts">implemented Web Fonts in Opera 10</a>. Web fonts allow linkage of font files (Opera initially supported TrueType, OpenType and SVG fonts) via special @font-face at-rules in CSS, resulting in linked fonts being downloaded "on the fly" to the users' computers when web pages are accessed.
+We first <a href="https://dev.opera.com/articles/view/presto-2-2-and-opera-10-a-first-look/#webfonts">implemented Web Fonts in Opera 10</a>. Web fonts allow linkage of font files (Opera initially supported TrueType, OpenType and SVG fonts) via special @font-face at-rules in CSS, resulting in linked fonts being downloaded "on the fly" to the users' computers when web pages are accessed.
 </p>
 
 <p>

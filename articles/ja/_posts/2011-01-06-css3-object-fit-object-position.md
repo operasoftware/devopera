@@ -50,7 +50,7 @@ CSS でよくある問題に、やなどの置換要素のアスペクト比を�
 
 `object-position` は [`background-position`][5] が背景画像に及ぼすものと同じ効果を与えます。
 
-[5]: http://dev.opera.com/articles/view/31-css-background-images/#positioningtheimage
+[5]: https://dev.opera.com/articles/view/31-css-background-images/#positioningtheimage
 
 	img {
 		height: 100px;

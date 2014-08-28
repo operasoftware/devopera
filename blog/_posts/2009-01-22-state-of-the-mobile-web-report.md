@@ -33,7 +33,7 @@ The Full Web surfing comprises more than 77% of all traffic. Content on <span ab
 </ol><ol>
 </ol></p>
 <p>
-The report shows us more and more people are browsing web pages on their mobile phones making it more important for web developers to build with mobile devices in mind. <a href="http://dev.opera.com/articles/mobile/">Tutorials and best practices when designing for mobile</a> are available.
+The report shows us more and more people are browsing web pages on their mobile phones making it more important for web developers to build with mobile devices in mind. <a href="https://dev.opera.com/articles/mobile/">Tutorials and best practices when designing for mobile</a> are available.
 </p>
 <p>
 Also, Opera Dragonfly is a developer tool that allows you to remotely debug your web pages for mobile and TV from the comfort of you computer.

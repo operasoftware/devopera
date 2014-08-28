@@ -15,7 +15,7 @@ license: cc-by-3.0
 <li>
 	<h3>6-7% reduction in memory consumption</h3><p>The object model was completely rewritten which increases the overall performance and reduces Carakan&#x2019;s memory usage! Woo!</p></li>
 <li><h3>Choose preloading videos</h3>
-	<p>Opera will now honor the <code>preload</code> attribute on HTML5 <code>video</code> elements. Here is a <a href="http://jsfiddle.net/nimbu/b637m/show/">demo</a> to show how that works (Dev.Opera has some <a href="http://dev.opera.com/articles/tags/video/">excellent posts on how to use HTML5 video</a>). </p>
+	<p>Opera will now honor the <code>preload</code> attribute on HTML5 <code>video</code> elements. Here is a <a href="http://jsfiddle.net/nimbu/b637m/show/">demo</a> to show how that works (Dev.Opera has some <a href="https://dev.opera.com/articles/tags/video/">excellent posts on how to use HTML5 video</a>). </p>
 </li>
 <li>
 	<h3>The curse of the 32767px is lifted!</h3>

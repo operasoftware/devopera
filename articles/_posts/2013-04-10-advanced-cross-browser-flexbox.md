@@ -62,7 +62,7 @@ The `<section>` is set to display as a flexible box like so:
 
 Note: Different IE-specific properties are specified at the top of the rule because IE10 currently supports different Flexbox syntax (from 2011) to the latest spec supported by Opera and Chrome. What makes it worse is that Firefox and other WebKit browsers (like Safari) support an even older version of the syntax (from 2009). And to top it off, Modernizr reports IE10 as supporting modern Flexbox, even though it doesn’t, therefore we need to deal with IE10 like this, rather than in a Modernizr rule. See below, in the [Intelligent fallbacks for Flexbox][5] section for more details and clarification.
 
-[5]: http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/#fallbacks
+[5]: https://dev.opera.com/articles/view/advanced-cross-browser-flexbox/#fallbacks
 
 I am making the flow horizontal, but forcing the `<nav>` to sit on its own line using the following rule:
 

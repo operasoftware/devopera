@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'groovy';
-    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot');
-    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.woff') format('woff'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.ttf') format('truetype'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.svg') format('svg');
+    src: url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot');
+    src: url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.eot?') format('embedded-opentype'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.woff') format('woff'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.ttf') format('truetype'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/not-just-groovy-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -17,11 +17,11 @@
 
 @font-face {
     font-family: 'neuropol';
-    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot');
-    src: url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.woff') format('woff'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.ttf') format('truetype'),
-         url('http://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.svg') format('svg');
+    src: url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot');
+    src: url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.eot?') format('embedded-opentype'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.woff') format('woff'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.ttf') format('truetype'),
+         url('https://dev.opera.com/static/articles/2013/regions-intro/fonts/neuropol-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -49,7 +49,7 @@ h1 {
   padding: 2rem 0;
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.8); 
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
   text-align: center;
 }
 
@@ -245,10 +245,10 @@ section.main {
 }
 
 .text-overflow {
-  -webkit-flow-from: article; 
-  -moz-flow-from: article; 
-  -ms-flow-from: article; 
-  flow-from: article;  
+  -webkit-flow-from: article;
+  -moz-flow-from: article;
+  -ms-flow-from: article;
+  flow-from: article;
 }
 
 

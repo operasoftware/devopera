@@ -42,7 +42,7 @@ Good HTML content that you progressively enhance for JavaScript-capable browsers
 - [Web Standards Curriculum][7] (W3C)
 - [State of the Mobile Web report][8] — a free monthly report from Opera on mobile use and trends
 
-[5]: http://dev.opera.com/articles/view/opera-mini-and-javascript/
+[5]: https://dev.opera.com/articles/view/opera-mini-and-javascript/
 [6]: http://jakearchibald.com/2013/progressive-enhancement-is-faster/
 [7]: http://www.w3.org/community/webed/wiki/Main_Page
 [8]: http://opera.com/smw

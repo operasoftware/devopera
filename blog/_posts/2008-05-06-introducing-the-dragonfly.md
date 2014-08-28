@@ -18,7 +18,7 @@ license: cc-by-3.0
 
 <ul>
 <li>Interviews with web developers how they use developer tools and how they would like such a tool to be.</li>
-<li>Early prototype for <a href="http://dev.opera.com/tools/">DOM inspector and DOM snapshot</a>.</li>
+<li>Early prototype for <a href="https://dev.opera.com/tools/">DOM inspector and DOM snapshot</a>.</li>
 <li>Implementation of the Scope protocol in Presto (Supported in Core 2.1 and later).</li>
 <li>Support for Dragonfly in Opera 9.5 beta 2.</li>
 <li>Feature development for JavaScript debugger and CSS/DOM inspector.</li>

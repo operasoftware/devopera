@@ -8,7 +8,7 @@
 <body>
 <header>
 	<h1>Why mutation observers are better than mutation events</h1>
-	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+	<nav><a href="https://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
 </header>
 
 <article>
@@ -26,9 +26,9 @@
 	var mocallback = function(mr){
 		eventcount++;
 		d.querySelector('.numevents').textContent = eventcount;
-	}, 
+	},
 	mo = new MutationObserver(mocallback),
-	demo = d.querySelector('#demo');	
+	demo = d.querySelector('#demo');
 	mo.observe(demo,{'childList':true});
 })(document);
 </script>

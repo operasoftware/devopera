@@ -113,13 +113,13 @@ img {
 
 <p>This has a definite advantage — image resizing can look ugly, especially on Windows, so cropping instead could definitely be preferred in many situations. There are other <code>object-fit</code> options too, for example if you always want your differently-sized images all to fit inside <code>&lt;img&gt;</code> elements of exactly the same size but maintain aspect ratio, you could use <code>object-fit: contain;</code> along with <code>width</code> and <code>height</code> settings to cause wrongly-sized images to letterbox inside the <code>&lt;img&gt;</code> element. There is also a closely-related property available called <code>object-position</code>, which allows you to change the display position of the media inside the replaced element in the same way that <code>background-position</code> does for background images.</p>
 
-<p>To find out more about these properties and their use cases, read my article <a href="http://dev.opera.com/articles/view/css3-object-fit-object-position/">The CSS3 object-fit and object-position properties</a>.</p>
+<p>To find out more about these properties and their use cases, read my article <a href="https://dev.opera.com/articles/view/css3-object-fit-object-position/">The CSS3 object-fit and object-position properties</a>.</p>
 
 <h3>Other thoughts on fluid layouts</h3>
 
 <p>There are a couple more points worthy of note here, before we move on. For a start, I have used a very long image for the header, so that as the header size increases, you still get an image spanning all the way across it. Well, up until the point the browser reaches 1920 pixels wide, anyway! This is a useful technique to consider with adaptive layouts, although of course you need to optimize such images as much as possible in a real production environment so that it doesn't adversely affect mobile users/low bandwidth users too much.</p>
 
-<p>Second, the CSS3 <a href="http://www.w3.org/TR/css3-multicol/">multi-column layout module</a> has some uses in this area. <a href="http://people.opera.com/cmills/multi-col/multi-columns3b.html">Look at my multi-col example</a> that uses fixed widths for the columns. When you resize the browser window, the number of columns changes because the browser is able to fit different multiples of that column width into the container. For more on multi-col, read <a href="http://dev.opera.com/articles/view/css3-multi-column-layout/">CSS3 Multi-column layout</a> by Molly Holzschlag.</p>
+<p>Second, the CSS3 <a href="http://www.w3.org/TR/css3-multicol/">multi-column layout module</a> has some uses in this area. <a href="http://people.opera.com/cmills/multi-col/multi-columns3b.html">Look at my multi-col example</a> that uses fixed widths for the columns. When you resize the browser window, the number of columns changes because the browser is able to fit different multiples of that column width into the container. For more on multi-col, read <a href="https://dev.opera.com/articles/view/css3-multi-column-layout/">CSS3 Multi-column layout</a> by Molly Holzschlag.</p>
 
 <h2>The heavy hitter: media queries</h2>
 
@@ -249,7 +249,7 @@ And the media query then styles them like this:
 
 <p>This does the same thing as the viewport meta tag we discussed above. Try swapping the comments around from one to the other and loading the page in Opera Mobile 11 (or later), and you'll see the same effect as before. We are hoping this will catch on in other browsers soon. The CSS version has been submitted to the W3C as an editor's draft — see the <a href="http://dev.w3.org/csswg/css-device-adapt/">CSS device adaptation</a> spec.</p>
 
-<p><code>@viewport</code> has equivalents for all the things you can do with the viewport meta tag. For a much deeper, more complete treatment of viewport, read <a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a> by Andreas Bovens.</p>
+<p><code>@viewport</code> has equivalents for all the things you can do with the viewport meta tag. For a much deeper, more complete treatment of viewport, read <a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a> by Andreas Bovens.</p>
 
 		 <h3>Tablets and viewport</h3>
 
@@ -281,7 +281,7 @@ And the media query then styles them like this:
 
 <p>I also made use of the <a href="http://code.google.com/p/css3-mediaqueries-js/">css3-mediaqueries.js</a> library, which adds support for media queries to older browsers, including IE5-8. It isn't perfect, and you'll notice a lag when resizing your browser, but it is nice to know there is a way.</p>
 
-<p>Oh wait, one more thing - I haven't implemented a fallback for users of browsers that don't support HTML5 <code>&lt;video&gt;</code>. You can read about how to do that in <a href="http://dev.opera.com/articles/view/simple-html5-video-flash-fallback-custom-controls/">Simple HTML5 video player with Flash fallback and custom controls</a>, by Bruce Lawson and Vadim Makeev.</p>
+<p>Oh wait, one more thing - I haven't implemented a fallback for users of browsers that don't support HTML5 <code>&lt;video&gt;</code>. You can read about how to do that in <a href="https://dev.opera.com/articles/view/simple-html5-video-flash-fallback-custom-controls/">Simple HTML5 video player with Flash fallback and custom controls</a>, by Bruce Lawson and Vadim Makeev.</p>
 
 <h2>Summary</h2>
 
@@ -290,9 +290,9 @@ And the media query then styles them like this:
 <h2>Read more...</h2>
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/css3-object-fit-object-position/">The CSS3 object-fit and object-position properties</a></li>
-<li><a href="http://dev.opera.com/articles/view/css3-multi-column-layout/">CSS3 Multi-column layout</a></li>
-<li><a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
+<li><a href="https://dev.opera.com/articles/view/css3-object-fit-object-position/">The CSS3 object-fit and object-position properties</a></li>
+<li><a href="https://dev.opera.com/articles/view/css3-multi-column-layout/">CSS3 Multi-column layout</a></li>
+<li><a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
 </ul>
 
 			<h3>Credits</h3>

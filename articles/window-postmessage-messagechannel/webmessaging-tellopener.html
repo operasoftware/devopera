@@ -50,11 +50,11 @@ document in our other window
 window.addEventListener('message', function(e){
 	var interval;
 	var postmsg = function(win){
-		win.postMessage('This is the message.<br>','http://dev.opera.com');
+		win.postMessage('This is the message.<br>','https://dev.opera.com');
 	};
 
 	// check the origin
-	if( e.origin == 'http://dev.opera.com')
+	if( e.origin == 'https://dev.opera.com')
 		switch( e.data ){
 			case 'ready':
 				// e.source = the sending window object

@@ -54,7 +54,7 @@ In the same manner as screen resolution, you can choose the pixel density — wh
 
 The _User Interface_ section of the Profile Selector contains a dropdown menu with three options to choose from: _Touch_, _Keypad_ and _Tablet_. The _Touch_ option will give you our touch-screen phone UI, whereas choosing _Keypad_ will result in our UI for phones with only keypad input. The _Tablet_ option enables Opera Mobile’s tablet-optimized touch UI. To learn more about the differences between these UIs and input modes they trigger, see the [input modes][4] section below.
 
-[4]: http://dev.opera.com/articles/view/opera-mobile-emulator/#inputmodes
+[4]: https://dev.opera.com/articles/view/opera-mobile-emulator/#inputmodes
 
 <figure class="figure" id="figure-3">
 	<img src="{{ page.id }}/multiple-instances.jpg" alt="Multiple instances of Opera Mobile Emulator" class="figure__media">
@@ -171,7 +171,7 @@ Opera Mobile Emulator 12.1 is also able to talk to our browser automation librar
 
 [13]: http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html
 [14]: http://seleniumhq.org/
-[15]: http://dev.opera.com/articles/view/introducing-mobile-browser-automation/
+[15]: https://dev.opera.com/articles/view/introducing-mobile-browser-automation/
 
 ## Conclusion
 

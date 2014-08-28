@@ -20,7 +20,7 @@ I was invited to speak to a group of developers at the China Bank of Communicati
 <p>After presenting, the discussion dived right into questions and answers; it was very stimulating and I learned a lot about the perspective of developers working with banks. During the discussion, the thousand dollar question was &quot;If not ActiveX, then what?&quot; I suggested three possible solutions:</p>
 
 <ul>
-<li>First, if your bank insists on using plugins, then use the <a href="http://dev.opera.com/articles/view/the-opera-plug-in-interface/">NPAPI</a> plugin interface. NPAPI is arguably more secure than ActiveX because it is solely an Internet plugin, while ActiveX can also tinker with your operating system (for example components in Office applications). Opera, Safari and Firefox all support the NPAPI plugin.</li>
+<li>First, if your bank insists on using plugins, then use the <a href="https://dev.opera.com/articles/view/the-opera-plug-in-interface/">NPAPI</a> plugin interface. NPAPI is arguably more secure than ActiveX because it is solely an Internet plugin, while ActiveX can also tinker with your operating system (for example components in Office applications). Opera, Safari and Firefox all support the NPAPI plugin.</li>
 
 <li>If ActiveX is used only to prevent keyloggers, then another solution might be to only allow users to type their login credentials using a virtual keyboard. This could however be a bane for accessibility.</li>
 

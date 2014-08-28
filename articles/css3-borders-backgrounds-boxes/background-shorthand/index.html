@@ -11,31 +11,31 @@
 				width: 50em;
 
 			}
-			
+
 			h1 {
 				font-size: 16px;
 			}
 			h2 {
 				font-size: 14px;
 			}
-			
+
 			#box-model {
 				width: 200px;
 				height: 70px;
 				border: 20px solid transparent;
 				padding: 20px;
-				
+
 				background: url("content.svgz") no-repeat left top / 200px 70px scroll content-box content-box,
 							url("padding.svgz") no-repeat left top / 240px 110px scroll padding-box padding-box,
-							url("border.svgz") no-repeat left top / 280px 150px scroll border-box border-box white;		
+							url("border.svgz") no-repeat left top / 280px 150px scroll border-box border-box white;
 			}
- 			
+
 		</style>
 	</head>
 	<body>
 		<h1>CSS3 Background shorthand</h1>
 		<p>The following <code>div</code> uses the <code>background</code> shorthand to set three background images to illustrate the CSS box model. All values are specified even if they are the same as the default to illustrate how they are specified in the shorthand. The new values added to the shorthand to make it compliant with the <a href="http://www.w3.org/TR/css3-background">CSS3 Backgrounds and Borders specification</a> are <code>background-size</code>, <code>background-clip</code> and <code>background-origin</code>.</p>
-		
+
 		<h2>W3C box model</h2>
 		<div id="box-model">
 		</div>
@@ -45,9 +45,9 @@
 		    url("border.svgz") no-repeat left top / 280px 150px scroll border-box border-box white;
 		</pre></code>
 		<p>The values are from left to right: <code>background-image</code>, <code>background-repeat</code>, <code>background-position</code> (horizontal vertical), <code>background-size</code> (X Y), <code>background-attachment</code>, <code>background-origin</code>, <code>background-clip</code> and <code>background-color</code>. Only the final background image can specify a <code>background-color</code>.</p>
-		
+
 		<p>The diagram above was inspired by Russ Weakley’s <a href="http://css.maxdesign.com.au/listamatic/about-boxmodel.htm">box model illustration</a>. If you do not see a diagram above your browser does not support the full CSS3 <code>background</code> property. Try with the <a href="http://www.opera.com/browser/next">latest version of Opera</a>.</p>
-		
-		<p>To find out more about the <code>background</code> shorthand and other CSS3 Backgrounds and Borders properties visit the Dev.Opera article <a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and boxes</a>.</p>
+
+		<p>To find out more about the <code>background</code> shorthand and other CSS3 Backgrounds and Borders properties visit the Dev.Opera article <a href="https://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and boxes</a>.</p>
 	</body>
 </html>

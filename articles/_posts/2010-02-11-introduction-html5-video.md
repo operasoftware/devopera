@@ -152,7 +152,7 @@ With the native `<video>` element, it’s the browser itself that is taking care
 Now video is part of the Open Web set of technologies, we can use CSS to style the element reliably. As a simple demonstration of what can now be achieved, we’ll apply [CSS transitions to a video][17] to change its dimensions once we `:hover` or `:focus` on it. (Read our [CSS3 transitions and 2D transforms tutorial][18].)
 
 [17]: {{ page.id }}/transitions/
-[18]: http://dev.opera.com/articles/css3-transitions-and-2d-transforms/
+[18]: https://dev.opera.com/articles/css3-transitions-and-2d-transforms/
 
 #### Combining video and canvas
 
@@ -361,4 +361,4 @@ Does this spell the end for plugin-based video solutions of old? In the short te
 [27]: http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2
 [28]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video
 [29]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
-[30]: http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/
+[30]: https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/

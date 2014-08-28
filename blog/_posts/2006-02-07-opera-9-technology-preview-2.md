@@ -24,7 +24,7 @@ We’ve released a technology preview of Opera 9, codenamed Merlin, on Opera Lab
 
 **Opera Widgets:** Widgets are small AJAX applications that provide specific functionality — like getting your favorite news, converting currency and so on. We’ve posted [documentation][4] on Opera Widgets — not only how to use them but also how to make them. Go to [My Opera Community][5] to download Widgets.
 
-[4]: http://dev.opera.com/articles/tags/widgets
+[4]: https://dev.opera.com/articles/tags/widgets
 [5]: http://my.opera.com/community/customize/widgets/
 
 <figure class="figure">

@@ -46,7 +46,7 @@ license: cc-by-3.0
 
 <h2>Capturing errors</h2>
 
-<p>Whenever JavaScript encounters an error, it fires the <code>window.onerror</code> event; you can listen for this event, either to attempt to recover from the error or, in our case, log the error message. Karl Dubost has written <a href="http://dev.opera.com/articles/view/better-error-handling-with-window-onerror/">an excellent article</a> about exactly what <code>window.onerror</code> is and how it behaves; it's certainly worth a read.</p>
+<p>Whenever JavaScript encounters an error, it fires the <code>window.onerror</code> event; you can listen for this event, either to attempt to recover from the error or, in our case, log the error message. Karl Dubost has written <a href="https://dev.opera.com/articles/view/better-error-handling-with-window-onerror/">an excellent article</a> about exactly what <code>window.onerror</code> is and how it behaves; it's certainly worth a read.</p>
 
 <p>In essence, what we need to do for our purposes is listen for the <code>window.onerror</code> event. Whenever it fires, we make an AJAX request to the server, passing along the details of the error message. Here's what it might look like using jQuery:</p>
 
@@ -185,7 +185,7 @@ if (request){
 		request.send();
 }</code></pre>
 
-<p>To find out more, I highly recommend giving <a href="http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">DOM access control using cross-origin resource sharing</a> by Tiffany Brown a good read.</p>
+<p>To find out more, I highly recommend giving <a href="https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/">DOM access control using cross-origin resource sharing</a> by Tiffany Brown a good read.</p>
 
 <h2>What about the privacy of the user?</h2>
 

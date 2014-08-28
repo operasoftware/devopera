@@ -25,7 +25,7 @@ Both documents can communicate with each other through an awkward API that is sp
 
 [A `showModalDialog()` demo page](/articles/showmodaldialog/demo.html) that demonstrates this is available.
 
-Another gotcha is that `window.dialogArguments` only works between same-origin documents, even if [Cross-Origin Resource Sharing](http://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/) is enabled on your server.
+Another gotcha is that `window.dialogArguments` only works between same-origin documents, even if [Cross-Origin Resource Sharing](https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/) is enabled on your server.
 
 ## Why was `showModalDialog()` ever standardized?
 
@@ -53,7 +53,7 @@ At the time of writing, when visiting a page that uses `showModalDialog`, the fo
 
 > Chromium is considering deprecating `showModalDialog`. Please use `window.open` and `postMessage` instead.
 
-That’s correct. `window.open` can be used to open a separate HTML document in a pop-up window. And [the `postMessage` API](http://dev.opera.com/articles/view/window-postmessage-messagechannel/) makes it easy send data from one window to another. These two features get you a long way when emulating `showModalDialog`-like behavior.
+That’s correct. `window.open` can be used to open a separate HTML document in a pop-up window. And [the `postMessage` API](https://dev.opera.com/articles/view/window-postmessage-messagechannel/) makes it easy send data from one window to another. These two features get you a long way when emulating `showModalDialog`-like behavior.
 
 An [even better](http://uxmovement.com/forms/why-modal-windows-have-killed-popup-windows/) solution would be to not rely on separate pop-up windows at all. Just display the modal page’s contents as an overlay within the parent page, optionally using JavaScript and CSS.
 

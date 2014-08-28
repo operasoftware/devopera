@@ -14,7 +14,7 @@ license: cc-by-3.0
 
 [In the last article][1], we concluded by saying that HTTP manages the interactions between a client and a server, and explained the notion of HTTP headers. There will be a lot more to say about these later on in this article series: they influence interactions and performance. In the meantime, let’s look at an equally important and related aspect of these interactions: HTTP Response codes.
 
-[1]: http://dev.opera.com/articles/view/http-lets-get-it-on/
+[1]: https://dev.opera.com/articles/view/http-lets-get-it-on/
 
 ## A stroll through the streets
 
@@ -34,7 +34,7 @@ Anyway, it was very good day overall, and I thought I’d round it off by writin
 
 [In the last article][3], we touched upon the first line of the response syntax sent by clients (including the methods). This time we will focus mainly on the first line of the response message coming from the server, and what the different codes that can appear in that line mean. Note that these two types of message — request and response — are very similar. As stated in the [HTTP/1.1 revision][4] (still at work but almost finished):
 
-[3]: http://dev.opera.com/articles/view/http-lets-get-it-on/
+[3]: https://dev.opera.com/articles/view/http-lets-get-it-on/
 [4]: http://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging#section-3.1
 
 > An HTTP message can either be a request from client to server or a response from server to client. Syntactically, the two types of message differ only in the start-line, which is either a request-line (for requests) or a status-line (for responses), and in the algorithm for determining the length of the message body (Section 3.3).

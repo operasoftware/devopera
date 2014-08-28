@@ -29,7 +29,7 @@
 			*/
 
 			// allowed origins
-			if(e.origin === 'http://dev.opera.com'){
+			if(e.origin === 'https://dev.opera.com'){
 				alsoinvoke( e.data );
 			} else{
 				throw new Error('Origin domain is not allowed.');
@@ -40,12 +40,12 @@
 
 		// when this document has loaded, send a message to our parent.
 		window.addEventListener('load', function(e){
-			e.currentTarget.opener.postMessage('ready','http://dev.opera.com');
+			e.currentTarget.opener.postMessage('ready','https://dev.opera.com');
 		}, false);
 
 		// when we have closed the window, tell the parent that it is closed.
 		window.addEventListener('unload', function(e){
-			e.currentTarget.opener.postMessage('closed','http://dev.opera.com');
+			e.currentTarget.opener.postMessage('closed','https://dev.opera.com');
 		}, false);
 
 	})();

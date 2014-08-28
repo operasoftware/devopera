@@ -131,7 +131,7 @@ To create an IndexedDB database, use the `open()` method of the `indexedDB` obje
 
 	var idb = indexedDB.open('IDBTaskManager', 1);
 
-That first argument is the name of our database. It’s required, and must be a string. Database names can be just about any string, including an empty one (`''`). However, each database name must be unique for its _origin_. The origin is the combination of scheme, host name, and port — _http://dev.opera.com_, or _http://www.example.com:80_, for example.
+That first argument is the name of our database. It’s required, and must be a string. Database names can be just about any string, including an empty one (`''`). However, each database name must be unique for its _origin_. The origin is the combination of scheme, host name, and port — _https://dev.opera.com_, or _http://www.example.com:80_, for example.
 
 The optional second argument is the version number of our database. Since this is the first iteration of our application, we’ve set it to 1.
 

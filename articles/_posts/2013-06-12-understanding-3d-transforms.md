@@ -31,7 +31,7 @@ license: cc-by-nc-sa-3.0
 Opera 15 adds a lot of goodies under its hood, including [three-dimensional CSS transforms][14] ([2D transforms][15] have been available since Opera 10.50). In this article we'll dig in to 3D transforms in detail, looking at the fundamental differences between 3D and 2D transforms, the 3D transforms available, and some demos that show how these work.
 
 [14]: http://www.w3.org/TR/css3-transforms/
-[15]: http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
+[15]: https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
 
 ## Keeping perspective {#perspective}
 
@@ -257,7 +257,7 @@ To create a compound transforms using `matrix3d()` you'll need to [multiply the 
 
 Our matrix product values are then used as arguments for the `matrix3d()` function. We could use `transform: matrix3d(2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 3, -0.015, 0, 0, 0, 1)` instead of `transform: scale3d(2,3,3) perspective(200px)`. My previous article [Understanding the CSS Transforms Matrix][55] covers this in a bit more depth.
 
-[55]: http://dev.opera.com/articles/understanding-the-css-transforms-matrix/
+[55]: https://dev.opera.com/articles/understanding-the-css-transforms-matrix/
 
 #### Order and transform functions
 
@@ -278,7 +278,7 @@ Using `getComputedStyle()` has its limits of course. It only returns the compute
 
 Since using `matrix3d()` can make your CSS more obtuse than necessary, it's best to stick to the transform functions. I'll assume you're already familiar with two-dimensional transforms. For the rest of this article, we'll focus exclusively on 3D transform functions. If you need a primer on two-dimensional transforms, read [CSS3 transitions and 2D transforms][57], our previous article on the subject.
 
-[57]: http://dev.opera.com/articles/css3-transitions-and-2d-transforms/
+[57]: https://dev.opera.com/articles/css3-transitions-and-2d-transforms/
 
 ### Translating objects with `translateZ()` and `translate3d()` {#translating}
 

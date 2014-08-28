@@ -8,7 +8,7 @@
 <body>
 <header>
 	<h1>The problem with mutation events</h1>
-	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+	<nav><a href="https://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
 </header>
 
 <article>
@@ -28,7 +28,7 @@
 	onnodeinsert = function(){
 		eventcount++;
 		var numevents = d.querySelector('.numevents');
-		numevents.textContent = eventcount;	
+		numevents.textContent = eventcount;
 	}
 	demo.addEventListener('DOMNodeInserted',onnodeinsert,false);
 })(document);

@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 <p>Many of us have moved on from thinking about media queries and responsive layout towards addressing the challenges of responsive images, navigation, UX and more.</p>
 
-<p>Content and planning are important too. Even if you're not adopting a Mobile First strategy, it's important to consider the mobile experience when planning any responsive site. This includes thinking about content, user experience, design, performance and more. <a href="http://dev.opera.com/articles/view/responsive-web-design-a-project-management-perspective/">Rudy Rigot's article on responsive projects</a> examines more of these issues in detail.</p>
+<p>Content and planning are important too. Even if you're not adopting a Mobile First strategy, it's important to consider the mobile experience when planning any responsive site. This includes thinking about content, user experience, design, performance and more. <a href="https://dev.opera.com/articles/view/responsive-web-design-a-project-management-perspective/">Rudy Rigot's article on responsive projects</a> examines more of these issues in detail.</p>
 
 <p>In this article I'll look at some of these considerations in the light of a specific case study — a responsive WordPress site I developed to support the campaign for an elected mayor in Birmingham, England (we'll say nothing more about whether it worked — the result was a 'no' vote — but building the site was fun anyway!)</p>
 
@@ -58,7 +58,7 @@ license: cc-by-3.0
 
 <h3>Responsive images — the approach I took</h3>
 
-<p>The first element of the site which had to be made responsive (bar the layout itself)  was the images. I won't dwell on this in detail, as <a href="http://dev.opera.com/articles/view/responsive-images-problem/">Matt Wilcox has written on the topic in detail</a> — but it's worth describing the WordPress-specific solution I used.</p>
+<p>The first element of the site which had to be made responsive (bar the layout itself)  was the images. I won't dwell on this in detail, as <a href="https://dev.opera.com/articles/view/responsive-images-problem/">Matt Wilcox has written on the topic in detail</a> — but it's worth describing the WordPress-specific solution I used.</p>
 
 <p>WordPress creates multiple copies of an image when you upload it, meaning you have access to three differently sized images (by default — it's possible to change this). I took advantage of this, and the WordPress featured image functionality, to deliver smaller images to mobile devices. I've written about <a href="http://mobile.smashingmagazine.com/2012/06/14/responsive-images-with-wordress-featured-images/">how I did this for Smashing Magazine</a>, so will summarise it briefly here.</p>
 
@@ -75,7 +75,7 @@ license: cc-by-3.0
 <p>This was a quick and easy solution for us but does have some drawbacks:</p>
 <ul>
 <li>It relies on site editors using featured images instead of simply uploading images into the post</li>
-<li>The Mobble plugin uses UA detection, which is <a href="http://dev.opera.com/articles/view/using-capability-detection/">widely recognised as bad practice</a>. We tested its effect on the devices and browsers we were targeting and it proved reliable, but in future I'd prefer a solution which didn't use this approach.</li>
+<li>The Mobble plugin uses UA detection, which is <a href="https://dev.opera.com/articles/view/using-capability-detection/">widely recognised as bad practice</a>. We tested its effect on the devices and browsers we were targeting and it proved reliable, but in future I'd prefer a solution which didn't use this approach.</li>
 </ul>
 
 <p>If I was developing this site again, I'd use Stuart Bates's <a href="http://wordpress.org/extend/plugins/wp-responsive-images/">WP Responsive Images plugin</a>, released after I built this site. This plugin uses javascript to detect the width of the screen, saves this in a cookie and then uses a handler script to create a correctly sized image, deliver and cache that image. Stuart Bates has documented how the plugin works in more detail <a href="http://www.stuartbates.com/wp-responsive-images/">on his blog</a>. This plugin has two advantages over the approach I used: it doesn't rely on UA detection, and it doesn't require the site editor to use featured images.</p>
@@ -174,11 +174,11 @@ license: cc-by-3.0
 <p>On dev.opera.com:</p>
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/responsive-images-problem/">Matt Wilcox on responsive images</a></li>
-<li><a href="http://dev.opera.com/articles/view/responsive-web-design-a-project-management-perspective/">Rudy Rigot on project management for responsive sites</a></li>
-<li><a href="http://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Chris Mills on adaptive design</a></li>
-<li><a href="http://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Bruce Lawson on mobile optimization</a></li>
-<li><a href="http://dev.opera.com/articles/view/wordpress-goes-mobile-responsive-design-comes-to-cmses/">Rachel McCollin (yes, me!) on mobile WordPress development</a></li>
+<li><a href="https://dev.opera.com/articles/view/responsive-images-problem/">Matt Wilcox on responsive images</a></li>
+<li><a href="https://dev.opera.com/articles/view/responsive-web-design-a-project-management-perspective/">Rudy Rigot on project management for responsive sites</a></li>
+<li><a href="https://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/">Chris Mills on adaptive design</a></li>
+<li><a href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Bruce Lawson on mobile optimization</a></li>
+<li><a href="https://dev.opera.com/articles/view/wordpress-goes-mobile-responsive-design-comes-to-cmses/">Rachel McCollin (yes, me!) on mobile WordPress development</a></li>
 </ul>
 
 <p>WordPress resources:</p>

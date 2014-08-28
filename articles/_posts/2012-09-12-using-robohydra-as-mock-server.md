@@ -166,7 +166,7 @@ exports.getBodyParts = function(config) {
 						text0: "are you saying...",
 						text1: "you don't use robohydra?",
 						instanceImageUrl: "Bruce-Lawson-Final.jpg",
-						instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+						instanceUrl: "https://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
 					}
 				}
 			})
@@ -243,7 +243,7 @@ exports.getBodyParts = function(config) {
 								text0: "are you saying...",
 								text1: "you don't use robohydra?",
 								instanceImageUrl: "Bruce-Lawson-Final.jpg",
-								instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+								instanceUrl: "https://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
 							}
 						}
 					})
@@ -350,7 +350,7 @@ exports.getBodyParts = function(config, modules) {
 								text0: "are you saying...",
 								text1: "you don't use robohydra?",
 								instanceImageUrl: "Bruce-Lawson-Final.jpg",
-								instanceUrl: "http://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
+								instanceUrl: "https://dev.opera.com/articles/view/robohydra-a-new-testing-tool-for-client-server-interactions/"
 							}
 						}
 					})

@@ -11,7 +11,7 @@ license: cc-by-3.0
 
 <p>This was all well and good, but there was still no way for non-developers to create animations using open standards. You can spout all the religious arguments you want about animation belonging in the behaviour layer rather than the presentation layer, but I think animation definitely falls in the realm of design. And now, with CSS3 transitions and animations, we can animate elements of our web documents. Standards-based web design with added fun! And added skip intros, if you're that way inclined...</p>
 
-<p>Opera has supported transitions now for a long time, and we've already written about them in <a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a>. This article focuses on the other way to animate things using stylesheets — <strong>CSS3 animations</strong>. Below we'll give you a concrete introduction including where the specification and browser support is at, how animations differ from transitions, basic syntax, and a list of examples.</p>
+<p>Opera has supported transitions now for a long time, and we've already written about them in <a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a>. This article focuses on the other way to animate things using stylesheets — <strong>CSS3 animations</strong>. Below we'll give you a concrete introduction including where the specification and browser support is at, how animations differ from transitions, basic syntax, and a list of examples.</p>
 
 <h2>How mature is the technology?</h2>
 

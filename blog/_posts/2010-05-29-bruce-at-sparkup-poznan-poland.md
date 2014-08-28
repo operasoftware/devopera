@@ -24,22 +24,22 @@ I&#39;ve <a href="http://www.brucelawson.co.uk/2010/poland/">always wanted to vi
 </ul>
 <h3>CSS</h3>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a></li>
-<li><a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a></li>
-<li><a href="http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">CSS 3: Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a></li>
+<li><a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a></li>
+<li><a href="https://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a></li>
+<li><a href="https://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">CSS 3: Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a></li>
 </ul>
 
 <h3>HTML5</h3>
 <ul>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a></li>
-<li><a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a></li>
+<li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a>
 </li><li><a href="http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2">Everything you need to know about HTML5 video and audio</a>
 <li><a href="http://camendesign.com/code/video_for_everybody">Video for Everybody technique for degrading to Flash video for IE and other legacy browsers</a></li>
 <li><a href="http://people.opera.com/patrickl/articles/chip.eu-video-article/examples/fancy-swap/">Patrick Lauke&#39;s video player (JavaScript, CSS and HTML5)</a></li>
-<li><a href="http://dev.opera.com/articles/view/opera-supports-webm-video/">Opera supports the WebM video format</a></li>
+<li><a href="https://dev.opera.com/articles/view/opera-supports-webm-video/">Opera supports the WebM video format</a></li>
 <li><a href="http://people.opera.com/brucel/demo/html5-forms-demo.html">HTML5 Forms demo</a></li>
-<li><a href="http://dev.opera.com/articles/view/web-storage/">Web Storage: easier, more powerful client-side data storage</a></li>
-<li><a href="http://dev.opera.com/articles/tags/html5/">More dev.Opera HTML5 articles</a></li>
+<li><a href="https://dev.opera.com/articles/view/web-storage/">Web Storage: easier, more powerful client-side data storage</a></li>
+<li><a href="https://dev.opera.com/articles/tags/html5/">More dev.Opera HTML5 articles</a></li>
 <li><a href="http://www.html5doctor.com/">HTML5 Doctor</a></li>
 </li></ul>
 <h3>Mobile Development</h3>
@@ -50,6 +50,6 @@ I&#39;ve <a href="http://www.brucelawson.co.uk/2010/poland/">always wanted to vi
 <li> <a href="http://people.opera.com/danield/css3/vangogh/">Sexy Media Queries demo</a></li>
 <li><a href="http://www.slideshare.net/maxdesign/css3-media-queries">Media Queries presentation by Russ Weakley</a></li>
 <li><a href="http://widgets.opera.com">Downloadable Widgets</a></li>
-<li><a href="http://dev.opera.com/articles/widgets/">Widgets documentation</a></li>
+<li><a href="https://dev.opera.com/articles/widgets/">Widgets documentation</a></li>
 <li><a href="http://www.flickr.com/photos/redux/4607350999/">Widgets on Windows Mobile 6.5</a></li>
 </ul>

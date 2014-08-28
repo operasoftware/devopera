@@ -29,7 +29,7 @@ The matrix functions — `matrix()` and `matrix3d()` — are two of the more bra
 
 CSS transforms are rooted in linear algebra and geometry. Though it helps a great deal to have some advanced math under your belt, it’s possible to understand the matrix functions without it. You should, however, be familiar with CSS transforms. If you aren’t read [CSS3 transitions and 2D transforms][7].
 
-[7]: http://dev.opera.com/articles/css3-transitions-and-2D-transforms/
+[7]: https://dev.opera.com/articles/css3-transitions-and-2D-transforms/
 
 In this article, I’ll cover both the 3×3 matrix used for 2D transforms and the 4×4 matrix used for 3D transforms.
 

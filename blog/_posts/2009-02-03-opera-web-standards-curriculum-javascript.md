@@ -25,25 +25,25 @@ license: cc-by-3.0
 <h3>Advanced CSS study</h3>
 
 <ol start="38">
-	<li><a href="http://dev.opera.com/articles/view/38-headers-footers-columns-templates/">Headers, footers, columns, and templates</a>, by Ben Henick</li>
+	<li><a href="https://dev.opera.com/articles/view/38-headers-footers-columns-templates/">Headers, footers, columns, and templates</a>, by Ben Henick</li>
 </ol>
 
 <h3>JavaScript core skills</h3>
 
 <ol start="39">
-	<li><a href="http://dev.opera.com/articles/view/programming-the-real-basics/">Programming - the real basics!</a>, by Christian Heilmann</li>
-	<li><a href="http://dev.opera.com/articles/view/javascript-uses/">What can you do with JavaScript?</a>, by Christian Heilmann</li>
-	<li><a href="http://dev.opera.com/articles/view/first-look-at-javascript/">Your first look at JavaScript</a>, by Christian Heilmann</li>
-	<li><a href="http://dev.opera.com/articles/view/javascript-best-practices/">JavaScript best practices</a> (full article coming soon)</li>
-	<li><a href="http://dev.opera.com/articles/view/unobtrusive-javascript/">The principles of unobtrusive JavaScript</a>, by PPK</li>
-	<li><a href="http://dev.opera.com/articles/view/javascript-functions/">JavaScript functions</a>, by Mike West</li>
-	<li><a href="http://dev.opera.com/articles/view/objects-in-javascript/">Objects in JavaScript</a>, by Mike West</li>
-	<li><a href="http://dev.opera.com/articles/view/traversing-the-dom/">Traversing the DOM</a>, by Mike West</li>
-	<li><a href="http://dev.opera.com/articles/view/creating-and-modifying-html/">Creating and modifying HTML</a>, by Stuart Langridge</li>
-	<li><a href="http://dev.opera.com/articles/view/dynamic-style-css-javascript/">Dynamic style - manipulating CSS with JavaScript</a>, by Greg Schechter</li>
-	<li><a href="http://dev.opera.com/articles/view/handling-events-with-javascript/">Handling events with JavaScript</a>, by Robert Nyman</li>
-	<li><a href="http://dev.opera.com/articles/view/javascript-animation/">JavaScript animation</a>, by Stuart Langridge</li>
-<li><a href="http://dev.opera.com/articles/view/graceful-degradation-progressive-enhancement/">Graceful degredation versus progressive enhancement</a>, by Christian Heilmann</li>
+	<li><a href="https://dev.opera.com/articles/view/programming-the-real-basics/">Programming - the real basics!</a>, by Christian Heilmann</li>
+	<li><a href="https://dev.opera.com/articles/view/javascript-uses/">What can you do with JavaScript?</a>, by Christian Heilmann</li>
+	<li><a href="https://dev.opera.com/articles/view/first-look-at-javascript/">Your first look at JavaScript</a>, by Christian Heilmann</li>
+	<li><a href="https://dev.opera.com/articles/view/javascript-best-practices/">JavaScript best practices</a> (full article coming soon)</li>
+	<li><a href="https://dev.opera.com/articles/view/unobtrusive-javascript/">The principles of unobtrusive JavaScript</a>, by PPK</li>
+	<li><a href="https://dev.opera.com/articles/view/javascript-functions/">JavaScript functions</a>, by Mike West</li>
+	<li><a href="https://dev.opera.com/articles/view/objects-in-javascript/">Objects in JavaScript</a>, by Mike West</li>
+	<li><a href="https://dev.opera.com/articles/view/traversing-the-dom/">Traversing the DOM</a>, by Mike West</li>
+	<li><a href="https://dev.opera.com/articles/view/creating-and-modifying-html/">Creating and modifying HTML</a>, by Stuart Langridge</li>
+	<li><a href="https://dev.opera.com/articles/view/dynamic-style-css-javascript/">Dynamic style - manipulating CSS with JavaScript</a>, by Greg Schechter</li>
+	<li><a href="https://dev.opera.com/articles/view/handling-events-with-javascript/">Handling events with JavaScript</a>, by Robert Nyman</li>
+	<li><a href="https://dev.opera.com/articles/view/javascript-animation/">JavaScript animation</a>, by Stuart Langridge</li>
+<li><a href="https://dev.opera.com/articles/view/graceful-degradation-progressive-enhancement/">Graceful degredation versus progressive enhancement</a>, by Christian Heilmann</li>
 </ol>
 
 

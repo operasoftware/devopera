@@ -27,4 +27,4 @@ license: cc-by-3.0
 
 <p>Head over to the <a href="http://www.opera.com/business/tv-emulator/">Opera TV Emulator</a> product page, fill out our short registration form, and take the emulator for a spin.</p>
 
-<p>If you need more information about the various aspects that need to be considered when developing for TVs and connected devices, you should have a look at our article on <a href="http://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a> over on <a href="http://dev.opera.com">Dev.Opera</a>.</p>
+<p>If you need more information about the various aspects that need to be considered when developing for TVs and connected devices, you should have a look at our article on <a href="https://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a> over on <a href="https://dev.opera.com">Dev.Opera</a>.</p>

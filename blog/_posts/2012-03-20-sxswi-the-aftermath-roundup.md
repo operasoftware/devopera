@@ -46,7 +46,7 @@ license: cc-by-3.0
 
 <ul>
 	<li><a href="http://www.slideshare.net/philogb/leaving-flatland-getting-started-with-webgl-sxsw-2012">Flatland slides on Slideshare</a></li>
-	<li><a href="http://dev.opera.com/articles/view/an-introduction-to-webgl/">Introduction to WebGL — for more information and links to demos</a></li>
+	<li><a href="https://dev.opera.com/articles/view/an-introduction-to-webgl/">Introduction to WebGL — for more information and links to demos</a></li>
 	<li><a href="http://schedule.sxsw.com/2012/events/event_IAP10895">Listen to the <q>Flatland</q> audio</a> at the SXSWi site</li>
 </ul>
 

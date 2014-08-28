@@ -27,14 +27,14 @@
 	margin:0 0 0px 0;
 }
 .gritter-top {
-	background:url(http://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left -30px;
+	background:url(https://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left -30px;
 	height:10px;
 }
 .hover .gritter-top {
 	background-position:right -30px;
 }
 .gritter-bottom {
-	background:url(http://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left bottom;
+	background:url(https://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left bottom;
 	height:8px;
 	margin:0;
 }
@@ -63,7 +63,7 @@
 	position:absolute;
 	top:5px;
 	left:3px;
-	background:url(http://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left top;
+	background:url(https://dev.opera.com/static/articles/2012/nsd-demo/images/gritter.png) no-repeat left top;
 	cursor:pointer;
 	width:30px;
 	height:30px;
@@ -93,7 +93,7 @@
 .gritter-light .gritter-bottom,
 .gritter-light .gritter-top,
 .gritter-close {
-    background-image: url(http://dev.opera.com/static/articles/2012/nsd-demo/images/gritter-light.png);
+    background-image: url(https://dev.opera.com/static/articles/2012/nsd-demo/images/gritter-light.png);
     color: #222;
 }
 .gritter-light .gritter-title {

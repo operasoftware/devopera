@@ -688,8 +688,8 @@ In this article I discussed the importance of proper schedules in profitability.
 
 Thus far in this series we have covered [pricing][23] and [budgeting][24] and scheduling. Developing a sophisticated grasp of these topics (in addition to creating a good project specification document, which I consider to be more of a technical topic, rather than a business topic) is incredibly valuable in helping you to maximize your profitability.
 
-[23]: http://dev.opera.com/articles/view/the-freelancing-business-part-1-pricing/
-[24]: http://dev.opera.com/articles/view/the-freelancing-business-part-2-budget/
+[23]: https://dev.opera.com/articles/view/the-freelancing-business-part-1-pricing/
+[24]: https://dev.opera.com/articles/view/the-freelancing-business-part-2-budget/
 
 In the next article I will begin to cover the importance of contracts in ensuring profitability. Your price, bid, budget and schedule all rely on a series of assumptions. You are responsible for, and in control of, some of those assumptions — other assumptions (such as turn-around times on client approvals, or access to the client’s servers) are out of your control. Since many issues that are out of your control are vital factors in your profitability, you will need a way to enforce those assumptions (such as that your client promises to make all turn-around times in two days). And that’s what contracts are for in this context — to ensure everyone promises to do what is required to ensure the project gets done and you make a profit! Thus the remaining articles in this series of how to make money as a freelancer, will focus on ensuring that all your assumptions reflected in the budget and schedule are adhered to, and everyone plays fair.
 

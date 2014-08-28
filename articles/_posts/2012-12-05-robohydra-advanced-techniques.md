@@ -212,7 +212,7 @@ exports.getBodyParts = function(conf) {
 
 <p>Now load URLs into your browser like <a href="http://localhost:3000/foo?type=bar">http://localhost:3000/foo?type=bar</a> and <a href="http://localhost:3000/foo">http://localhost:3000/foo</a> and see the different results.</p>
 
-<p>Let's look at another example. Let's say we are superstitious and we don't like the number 3. So, when we're browsing Dev Opera we don't want to see the contents of page 3, and instead want the contents of page 4. As we can see if we check on this site, the pagination URLs look like <code>http://dev.opera.com/?page=<em>number</em></code>. What we will do, then, is create a head that will replace any <code>page=3</code> we see in the URL with <code>page=4</code> before passing it on to the proxy head that serves Dev Opera. Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> again — this time with the following code — and restart RoboHydra:</p>
+<p>Let's look at another example. Let's say we are superstitious and we don't like the number 3. So, when we're browsing Dev Opera we don't want to see the contents of page 3, and instead want the contents of page 4. As we can see if we check on this site, the pagination URLs look like <code>https://dev.opera.com/?page=<em>number</em></code>. What we will do, then, is create a head that will replace any <code>page=3</code> we see in the URL with <code>page=4</code> before passing it on to the proxy head that serves Dev Opera. Replace the contents of <code>roboexamples/robohydra/plugins/simple/index.js</code> again — this time with the following code — and restart RoboHydra:</p>
 
 <pre><code class="javascript">var heads              = require("robohydra").heads,
 	RoboHydraHead      = heads.RoboHydraHead,
@@ -233,7 +233,7 @@ exports.getBodyParts = function(conf) {
 			new RoboHydraHeadProxy({
 				name: "devOpera",
 				mountPath: "/",
-				proxyTo: "http://dev.opera.com",
+				proxyTo: "https://dev.opera.com",
 				setHostHeader: true
 			})
 		]
@@ -354,7 +354,7 @@ exports.getBodyParts = function(conf) {
 			new RoboHydraHeadProxy({
 				name: "realDevOpera",
 				mountPath: "/",
-				proxyTo: "http://dev.opera.com",
+				proxyTo: "https://dev.opera.com",
 				setHostHeader: true
 			})
 		]

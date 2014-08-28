@@ -9,7 +9,7 @@ license: cc-by-nc-sa-3.0
 <h2>Introduction</h2>
 
 
-<p>HTML5 brings two new things to the table: new APIs that add essential new features to the open standards web development model, and new structural elements that define specific web page features with much more accurate semantics than were available in HTML 4. You can find articles covering many of the new APIs by looking for <a href="http://dev.opera.com/articles/tags/html5/">Dev.Opera articles marked with the HTML5 tag</a>.</p>
+<p>HTML5 brings two new things to the table: new APIs that add essential new features to the open standards web development model, and new structural elements that define specific web page features with much more accurate semantics than were available in HTML 4. You can find articles covering many of the new APIs by looking for <a href="https://dev.opera.com/articles/tags/html5/">Dev.Opera articles marked with the HTML5 tag</a>.</p>
 
 <p>This article, on the other hand, focuses on the latter — we will briefly look at how the new semantic elements were chosen, what the main new features are and how they are used, how headings work in HTML5, and browser support for these new elements, including how you can support them in older browsers.</p>
 
@@ -78,7 +78,7 @@ license: cc-by-nc-sa-3.0
 <p>During the creation of HTML5, editor Ian Hickson used Google's tools to mine data from over a billion web pages, surveying what ID and class names are most commonly used on the real world web. You can see one of the surveys published at <a href="http://code.google.com/webstats/2005-12/classes.html">Google Code: Web Authoring Statistics: Classes</a>. To cut a long story short, the element names seen in this article were taken from the 20 most popular IDs and class names found in Hickson's surveys.</p>
 
 
-<p class="note">Note: Opera did a similar study, of 3.5 million URLs, calling it <abbr title="Metadata Analysis and Mining Application">MAMA</abbr>. MAMA had a smaller URL set, but looked at a larger and wider variety of web page statistics. For more information, take a look at <a href="http://dev.opera.com/articles/view/mama-common-attributes">MAMA common attributes</a>, <a href="/articles/view/mama-common-attributes/idlist-url.htm">MAMA's id list</a>, and <a href="/articles/view/mama-common-attributes/classlist-url.htm">MAMA's class list</a>. For more options, go to the <a href="http://dev.opera.com/articles/view/mama/">MAMA home page</a>.</p>
+<p class="note">Note: Opera did a similar study, of 3.5 million URLs, calling it <abbr title="Metadata Analysis and Mining Application">MAMA</abbr>. MAMA had a smaller URL set, but looked at a larger and wider variety of web page statistics. For more information, take a look at <a href="https://dev.opera.com/articles/view/mama-common-attributes">MAMA common attributes</a>, <a href="/articles/view/mama-common-attributes/idlist-url.htm">MAMA's id list</a>, and <a href="/articles/view/mama-common-attributes/classlist-url.htm">MAMA's class list</a>. For more options, go to the <a href="https://dev.opera.com/articles/view/mama/">MAMA home page</a>.</p>
 
 		<h3 id="why-no-content">Why isn't there a <code>&lt;content&gt;</code> element?</h3>
 
@@ -110,7 +110,7 @@ license: cc-by-nc-sa-3.0
 
 <p>Another thing to mention is that the HTML5 spec strictly defines how to handle badly-formed markup (for example wrongly nested elements, or unclosed elements), defining a parsing algorithm for the first time. This means that even if you do get some of your markup wrong, the <abbr title="Document Object Model">DOM</abbr> will be consistent across HTML5-supporting browsers.</p>
 
-<p>So does this mean we don't need to worry about validation and best practices any more? HECK NO! validation is still a very useful tool for making your pages as good as they can be. Even if your DOM is consistent across browsers, it still might not behave how you wanted it to in the first place, resulting in CSS and JavaScript headaches! And as you'll see as you explore HTML5 further, there are still very good reasons for making sure you declare document features like <code>&lt;html&gt;</code> up front. For example, You might want to declare the document's language on the <code>&lt;html&gt;</code> element for i18n and accessibility benefits, and certain related technologies also require it. A good example is <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">AppCache</a>.</p>
+<p>So does this mean we don't need to worry about validation and best practices any more? HECK NO! validation is still a very useful tool for making your pages as good as they can be. Even if your DOM is consistent across browsers, it still might not behave how you wanted it to in the first place, resulting in CSS and JavaScript headaches! And as you'll see as you explore HTML5 further, there are still very good reasons for making sure you declare document features like <code>&lt;html&gt;</code> up front. For example, You might want to declare the document's language on the <code>&lt;html&gt;</code> element for i18n and accessibility benefits, and certain related technologies also require it. A good example is <a href="https://dev.opera.com/articles/view/offline-applications-html5-appcache/">AppCache</a>.</p>
 
 <p>To validate HTML5 documents, you can use the <a href="http://validator.w3.org/">W3C validator</a>, which can validate HTML5, as well as a wide range of other markup language flavours. Or for a dedicated HTML5 (+ WAI-ARIA and MathML) validator, go to <a href="http://validator.nu">validator.nu</a>.</p>
 
@@ -360,7 +360,7 @@ license: cc-by-nc-sa-3.0
 
 <p>IE will now magically apply styles to those elements. It is a pain having to use JavaScript to make your CSS work, but hey, at least we have a way forward? Why does this work exactly? no-one I've talked to actually knows. There is also a problem with these styles STILL not being carried through to the printer when you try to print HTML5 documents from IE.</p>
 
-<p class="note">Note: The IE print problem can be solved using the <a href="http://code.google.com/p/html5shiv/">HTML5 Shiv</a> JavaScript library, which also handles adding the <code>document.createElement</code> lines for you. You should wrap it up in <a href="http://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">Conditional comments</a> for IE less than IE9, so modern browsers don't execute JS they don't need.</p>
+<p class="note">Note: The IE print problem can be solved using the <a href="http://code.google.com/p/html5shiv/">HTML5 Shiv</a> JavaScript library, which also handles adding the <code>document.createElement</code> lines for you. You should wrap it up in <a href="https://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">Conditional comments</a> for IE less than IE9, so modern browsers don't execute JS they don't need.</p>
 
 
 <h2 id="summary">Summary</h2>

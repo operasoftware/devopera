@@ -8,7 +8,7 @@
 <body>
 <header>
 	<h1>Observing the addition of child nodes</h1>
-	<nav><a href="http://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
+	<nav><a href="https://dev.opera.com/articles/view/mutation-observers-tutorial/">Return to article</a></nav>
 </header>
 
 <article>
@@ -24,7 +24,7 @@
 	demo = d.getElementById('demo'),
 	clickhandler = function(){
 		var p, sentence = 'Lorem ipsum dolar sit amet consecutum.';
-	
+
 		if( p !== undefined){
 			p = p.cloneNode(true);
 		} else {
@@ -33,9 +33,9 @@
 		}
 		demo.appendChild(p);
 	}
-	btn.addEventListener('click',clickhandler,false);	
+	btn.addEventListener('click',clickhandler,false);
 
-	var mocallback = function(mutationrecords){		
+	var mocallback = function(mutationrecords){
 		mutationrecords.map( function(mr){
 			var mrtype = [];
 			mrtype[0] = Object.prototype.toString.call(mr)+"\n";
@@ -44,10 +44,10 @@
 			}
 			console.log( mrtype.join('\n') );
 		});
-		
-	}, 
+
+	},
 	mo = new MutationObserver(mocallback),
-	demo = d.getElementById('demo');	
+	demo = d.getElementById('demo');
 	mo.observe(d.body,{'childList':true,'subtree':true});
 })(document);
 </script>

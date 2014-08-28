@@ -19,7 +19,7 @@ license: cc-by-nc-sa-3.0
 
 HTML5 ではサードパーティ製プラグインに頼らず、ブラウザーが直接表示するかたちで Web ページにビデオを埋め込むことができます。(HTML5 video の真の力については、[HTML5 video の紹介][1]をご覧ください。)
 
-[1]: http://dev.opera.com/articles/introduction-html5-video/
+[1]: https://dev.opera.com/articles/introduction-html5-video/
 
 しかし、HTML5 や他のプロプライエタリな方式に関わらず、すべてのビデオににはアクセシビリティの問題があります。ビデオの内容にアクセスできない人に対して、良心的な開発者はどうすればよいのでしょうか。HTML5 の `video` 要素には `img` 要素にある `alt` 属性がありませんが、タグの間に「代替コンテンツ」を与えることができます。
 

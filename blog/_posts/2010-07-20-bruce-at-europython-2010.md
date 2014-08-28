@@ -21,9 +21,9 @@ license: cc-by-3.0
 <li><a href="http://www.benjoffe.com/code/demos/canvascape/"><code>canvas</code> first-person shooter</a></li>
 <li><a href="http://htmlfive.appspot.com/static/gifter.html"><code>canvas</code> first-person gifter</a></li>
 <li><a href="http://excanvas.sourceforge.net/">the excanvas library to port <code>canvas</code> to Internet Explorer</a></li>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 Video</a></li>
-<li><a href="http://dev.opera.com/articles/view/introduction-html5-video/">Everything you need to know about HTML5 video and audio</a></li>
-<li><a href="http://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> (transcribed video demo)</li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 Video</a></li>
+<li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Everything you need to know about HTML5 video and audio</a></li>
+<li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> (transcribed video demo)</li>
 
 <li><a href="http://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report</li>
 <li><a href="http://people.opera.com/danield/css3/vangogh/">Media Queries Adaptive Content (Van Gogh example)</a> (narrow your browser window)</li>
@@ -36,10 +36,10 @@ license: cc-by-3.0
 </ul>
 <p>Opera Developer Network has some beginner&#39;s <code>canvas</code> tutorials available:</p>
 <ol>
-<li><a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
-<li><a href="http://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
-<li><a href="http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
-<li><a href="http://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
+<li><a href="https://dev.opera.com/articles/view/html-5-canvas-the-basics/">HTML 5 canvas - the basics</a></li>
+<li><a href="https://dev.opera.com/articles/view/html5-canvas-painting/">Creating an HTML 5 canvas painting application</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/">Creating pseudo 3D games with HTML 5 canvas and raycasting</a></li>
+<li><a href="https://dev.opera.com/articles/view/3d-games-with-canvas-and-raycasting-part/">Creating pseudo 3D games with HTML 5 canvas and raycasting: Part 2</a></li>
 </ol>
 
 <h3>HTML5: The good, the bad and the quite interesting</h3>

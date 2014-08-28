@@ -29,10 +29,10 @@ license: cc-by-3.0
 
 <ul>
   <li>The HTML5 <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements are now supported — find more about these by reading our <a href="">Introduction to HTML5</a> article.</li>
-  <li>HTML5 storage — read our <a href="http://dev.opera.com/articles/view/web-storage/">Web Storage: easier, more powerful client-side data storage</a> article for more details.</li>
-  <li>The CSS3 backgrounds and borders module, which includes things such as <code>border-radius</code> and multiple background images. For more on how to use these features, read our <a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a> article.</li>
-  <li>CSS3 transitions and 2D transforms. You can read more about using these features in <a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a>.</li>
-  <li>We have also published an exciting new article covering how to use various CSS3 properties to create great looking interfaces — <a href="http://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a>.</li>
+  <li>HTML5 storage — read our <a href="https://dev.opera.com/articles/view/web-storage/">Web Storage: easier, more powerful client-side data storage</a> article for more details.</li>
+  <li>The CSS3 backgrounds and borders module, which includes things such as <code>border-radius</code> and multiple background images. For more on how to use these features, read our <a href="https://dev.opera.com/articles/view/css3-border-background-boxshadow/">CSS3 borders, backgrounds and box-shadows</a> article.</li>
+  <li>CSS3 transitions and 2D transforms. You can read more about using these features in <a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS3 transitions and 2D transforms</a>.</li>
+  <li>We have also published an exciting new article covering how to use various CSS3 properties to create great looking interfaces — <a href="https://dev.opera.com/articles/view/beautiful-ui-styling-with-css3-text-shadow-box-shadow-and-border-radius/">Beautiful UI styling with CSS3 text-shadow, box-shadow, and border-radius</a>.</li>
 </ul>
 
 <p>You can get a quick overview of what new web standards are supported by looking at our <a href="http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart">Opera Browser Standards Support Chart</a>.</p>

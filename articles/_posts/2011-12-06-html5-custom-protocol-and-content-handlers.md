@@ -35,7 +35,7 @@ license: cc-by-3.0
 <p><img src="contentchoice.png" alt="once the registration has been allowed, the user is now given the choice of handling the custom protocol with the custom handler application."></p>
 <p class="caption">Figure 2: Once the registration has been allowed, the user is now given the choice of handling the custom protocol with the custom handler application.</p>
 
-<p>When the custom handler application is chosen, the browser then navigates to <code>http://dev.opera.com/articles/view/html5-custom-protocol-and-content-handlers/index.html/?tel%3A5551234</code> &mdash; you can see how the placeholder is filled in. A <a href="app.js">custom script</a> can then parse this custom URL and operate on the &#8220;tel%3A5551234&#8221; content (in this case, just put the phone number in the phone&#8217;s LED on the application).</p>
+<p>When the custom handler application is chosen, the browser then navigates to <code>https://dev.opera.com/articles/view/html5-custom-protocol-and-content-handlers/index.html/?tel%3A5551234</code> &mdash; you can see how the placeholder is filled in. A <a href="app.js">custom script</a> can then parse this custom URL and operate on the &#8220;tel%3A5551234&#8221; content (in this case, just put the phone number in the phone&#8217;s LED on the application).</p>
 
 <h2 id="content_registration">Content Registration</h2>
 

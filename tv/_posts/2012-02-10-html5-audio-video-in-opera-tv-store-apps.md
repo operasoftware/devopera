@@ -223,6 +223,6 @@ Example player code:
 Since the [Opera TV Emulator][1] doesn’t support any adaptive bitrate streaming or DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
 
 [1]: http://www.operasoftware.com/products/tv-emulator
-[2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
-[3]: http://dev.opera.com/articles/view/introduction-html5-video/
-[4]: http://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/
+[2]: https://dev.opera.com/tv/opera-tv-emulator/#h264-codec
+[3]: https://dev.opera.com/articles/view/introduction-html5-video/
+[4]: https://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/

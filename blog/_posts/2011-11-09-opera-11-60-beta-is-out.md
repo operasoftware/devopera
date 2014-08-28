@@ -57,7 +57,7 @@ Our Core developers have been hard at work to bring you the next version of Oper
 </li>
 <li>
 <h3>Radial Gradients</h3>
-<p>With radial gradients, you can now enjoy all sorts of gradient deliciousness on your browser. Chris Mills has written more in depth on <a href="http://dev.opera.com/articles/view/css3-radial-gradients/">how to use CSS3 Radial Gradients</a> over at Dev.Opera.</p>
+<p>With radial gradients, you can now enjoy all sorts of gradient deliciousness on your browser. Chris Mills has written more in depth on <a href="https://dev.opera.com/articles/view/css3-radial-gradients/">how to use CSS3 Radial Gradients</a> over at Dev.Opera.</p>
 </li>
 <li>
 <h3>Support for <code>rem</code> unit &amp; <code>box-shadow</code> fix</h3>

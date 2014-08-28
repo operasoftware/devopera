@@ -36,8 +36,8 @@ license: cc-by-3.0
 <p>Further reading:</p>
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-screenshot/">View the screenshot API documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-screenshot-getScreenshot/">View the <code>getScreenshot()</code> method documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-screenshot/">View the screenshot API documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-screenshot-getScreenshot/">View the <code>getScreenshot()</code> method documentation</a></li>
 </ul>
 
 <h2 id="resource-loader">The resource loader API</h2>
@@ -47,8 +47,8 @@ license: cc-by-3.0
 <p>Further reading:</p>
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-resourceloader/">View the resource loader API documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-resourceloader-getFile/">View the <code>getFile()</code> method documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-resourceloader/">View the resource loader API documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-resourceloader-getFile/">View the <code>getFile()</code> method documentation</a></li>
 </ul>
 
 <h2 id="url-filter">The URL filter API</h2>
@@ -77,13 +77,13 @@ license: cc-by-3.0
 <p>Further reading:</p>
 
 <ul>
-<li><a href="http://dev.opera.com/articles/view/site-blocking-with-operas-url-filter-api/">Read the tutorial: <q>Site blocking with Opera’s URL Filter API</q></a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-urlfilter/">View the URL filter API documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-urlfilter-allow-add/">View the <code>add()</code> method documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-ruleoptions-excludedomains/">View the <code>excludeDomains</code> property documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-ruleoptions-includedomains/">View the <code>includeDomains</code> property documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-ruleoptions-resources/">View the <code>resources</code> property documentation</a></li>
-<li><a href="http://dev.opera.com/articles/view/extensions-api-ruleoptions-thirdparty/">View the <code>thirdParty</code> property documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/site-blocking-with-operas-url-filter-api/">Read the tutorial: <q>Site blocking with Opera’s URL Filter API</q></a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-urlfilter/">View the URL filter API documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-urlfilter-allow-add/">View the <code>add()</code> method documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-ruleoptions-excludedomains/">View the <code>excludeDomains</code> property documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-ruleoptions-includedomains/">View the <code>includeDomains</code> property documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-ruleoptions-resources/">View the <code>resources</code> property documentation</a></li>
+<li><a href="https://dev.opera.com/articles/view/extensions-api-ruleoptions-thirdparty/">View the <code>thirdParty</code> property documentation</a></li>
 </ul>
 
 <p><a href="http://www.flickr.com/photos/comedynose/3720718593/">Cover image by Comedy Nose</a></p>

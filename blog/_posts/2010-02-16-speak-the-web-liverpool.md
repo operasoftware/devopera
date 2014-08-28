@@ -24,5 +24,5 @@ license: cc-by-3.0
 <li><a href="http://www.splintered.co.uk/experiments/archives/paranoid_0.2/">Paranoid 0.2</a> classic game lookalike in <code>&lt;canvas&gt;</code></li>
 <li><a href="http://people.opera.com/patrickl/experiments/canvas/particle/2/">Particle party</a> using <code>&lt;canvas&gt;</code></li>
 <li>Appropriate use of <code>&lt;canvas&gt;</code> on <a href="http://www.filamentgroup.com/lab/jquery_visualize_plugin_accessible_charts_graphs_from_tables_html5_canvas/">Filament Group&#39;s <cite>Accessible Charts &amp; Graphs</cite> jQuery plugin</a></li>
-<li>All the examples from the <a href="http://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="http://dev.opera.com">dev.opera</a></li>
+<li>All the examples from the <a href="https://dev.opera.com/articles/view/introduction-html5-video/"><cite>Introduction to HTML5 video</cite></a> article on <a href="https://dev.opera.com">dev.opera</a></li>
 </ul>

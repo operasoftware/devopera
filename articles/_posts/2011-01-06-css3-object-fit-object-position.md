@@ -47,7 +47,7 @@ Although the value `none` was in the original specification and is supported in 
 
 `object-position` works in exactly the same way as [`background-position`][4] does for background images, and can take the same values. For example:
 
-[4]: http://dev.opera.com/articles/view/31-css-background-images/#positioningtheimage
+[4]: https://dev.opera.com/articles/view/31-css-background-images/#positioningtheimage
 
 	img {
 		height: 100px;

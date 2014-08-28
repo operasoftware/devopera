@@ -14,7 +14,7 @@ license: cc-by-3.0
 
 <p>Another new API for extensions? Yes indeed! This time, it&#39;s a handy method to add items to the context / right-click menu. This can be useful for any kind of interaction with a page or its contents.</p>
 <p>The API allows fine-grained control, making it possible for an extension menu item to only appear in the context menu for a link, or to only be present on certain domains. It&#39;s also possible to add sub-menu items which can be created with a folder-style structure. When a menu item is clicked, there are also a variety of event properties to enable you to work with things such as a link&#39;s URL or some text selected by the user.</p>
-<p>In short, this API is ideal for developers wanting to activate their extension through more than just a toolbar button, so feel free to try it out following our freshly released <a href="http://dev.opera.com/articles/view/extensions-api-contextmenu/">Context Menu API documentation</a>.</p>
+<p>In short, this API is ideal for developers wanting to activate their extension through more than just a toolbar button, so feel free to try it out following our freshly released <a href="https://dev.opera.com/articles/view/extensions-api-contextmenu/">Context Menu API documentation</a>.</p>
 
 <h3>Fullscreen API</h3>
 
@@ -30,7 +30,7 @@ license: cc-by-3.0
 <p>For browsers without support, there&#39;s a clever and semantically meaningful <a href="http://www.impressivewebs.com/reverse-ordered-lists-html5/">reverse ordered lists polyfill</a> by Louis Lazaris.</p>
 <h3>SPDY support</h3>
 
-<p>They grow up so quickly...only last month we released an <a href="http://dev.opera.com/articles/view/opera-spdy-build/">Opera Labs build with SPDY support</a>, and now it graduated to our main branch, on track for inclusion in our next stable release.</p>
+<p>They grow up so quickly...only last month we released an <a href="https://dev.opera.com/articles/view/opera-spdy-build/">Opera Labs build with SPDY support</a>, and now it graduated to our main branch, on track for inclusion in our next stable release.</p>
 
 <p>As a bonus, this snapshot also comes bundled with a <a href="https://addons.opera.com/en/extensions/details/spdy-indicator/">SPDY indicator extension</a> that shows you when a site uses SPDY...no more hunting around in <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a>&#39;s network panel for those extra headers!</p>
 

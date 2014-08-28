@@ -31,7 +31,7 @@ license: cc-by-3.0
 	<li>In the Preferences Editor, expand the &quot;User Prefs&quot; topic and see &quot;Enable WebSockets&quot;.</li>
 	<li>Click the &quot;Enable WebSockets&quot; check box.</li>
 </ol>
-<p>Don&#39;t forget to check out our tutorial <a href="http://dev.opera.com/articles/view/introducing-web-sockets/">Introducing Web Sockets</a>.</p>
+<p>Don&#39;t forget to check out our tutorial <a href="https://dev.opera.com/articles/view/introducing-web-sockets/">Introducing Web Sockets</a>.</p>
 <h3>HTML5 Forms:</h3>
 <p>I&#39;m very pleased with the changes that we&#39;ve made to our HTML5 Forms. </p>
 <p>We&#39;ve added </p>
@@ -57,7 +57,7 @@ license: cc-by-3.0
 	<li>Support for allowing a single control to be associated with more than one form</li>
 	<li>Support for WebForms from <code>hasFeature</code></li>
 </ul>
-<p>Be sure to read the super-splendid article <a href="http://dev.opera.com/articles/view/new-form-features-in-html5/">New form features in HTML5</a>. </p>
+<p>Be sure to read the super-splendid article <a href="https://dev.opera.com/articles/view/new-form-features-in-html5/">New form features in HTML5</a>. </p>
 <p>Software wouldn&#39;t be software without some bugs, so here are some that we&#39;ll fix just as soon as we can:</p>
 <ul>
 	<li><code>placeholder</code> doesn&#39;t work on <code>&lt;textarea&gt;</code> elements</li>

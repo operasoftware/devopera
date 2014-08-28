@@ -183,4 +183,4 @@ p, ul {
 	&lt;link rel="stylesheet" type="text/css" href="ie-7-hacks.css" media="screen" /&gt;
 &lt;![endif]--&gt;</pre>
 
-<p>You can find <a href="http://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">more about conditional comments</a> in a dedicated dev.opera.com article.</p>
+<p>You can find <a href="https://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">more about conditional comments</a> in a dedicated dev.opera.com article.</p>

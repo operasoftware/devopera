@@ -89,7 +89,7 @@ license: cc-by-nc-sa-3.0
 <p>By default Opera Mobile assumes a page to be 980 pixels wide, and the zoomed-out overview rescales these values accordingly to fit on the device screen. With a viewport <code>meta</code> tag in the <code>head</code> section of the page you can override this default width and instead set an arbitrary pixel value such as 320, 480, etc. For cross-device compatibility, we recommend setting the width to the <code>device-width</code>:</p>
 <pre><code>&lt;meta name="viewport" content="width=device-width" /&gt;</code></pre>
 <p>This adjusts the page width to fit in the full width of the screen, or put differently, it makes one CSS pixel equal to one device pixel.</p>
-<p>Read more in <a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a>.</p>
+<p>Read more in <a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a>.</p>
 <h2 id="strategy-3">Strategy #3: Build mobile-aware adaptive sites</h2>
 <p>The hardest to pull-off methodology is the one that can bring the best of all worlds to your site visitors. A fully mobile-aware site has adaptive content that reacts to device capabilities, and is therefore future-proof as it tests features rather than sniffing browsers.</p>
 <p>The heart of the technique is CSS Media Queries, which are supported by Opera Desktop, Opera Mini and Opera Mobile, Safari (desktop and iPhone/ iPad), Chrome and Firefox and Internet Explorer 9.</p>
@@ -110,8 +110,8 @@ license: cc-by-nc-sa-3.0
 <p>Several different queries are contained within one stylesheet:</p>
 <pre><code>@media screen and (min-width: 800px) {
    @font-face {
-     font-family: "demand";
-     src: url("demand.ttf") format("truetype");
+	 font-family: "demand";
+	 src: url("demand.ttf") format("truetype");
    }
    h1 {font-family: demand, cursive}
 }
@@ -143,7 +143,7 @@ license: cc-by-nc-sa-3.0
 </ol>
 <p>You can view Andreas Bovens' <a href="http://my.opera.com/ODIN/blog/screencast-mobile-web-development-techniques#comments">Mobile web development techniques screencast.</a></p>
 <h3 id="hungry">Using Media Queries to turn off resource-hungry CSS</h3>
-<p>You may find that some facets of your CSS renders slowly on a resource-constrained device, or uses lots of CPU and drains the battery. The culprits vary between browsers and devices, but animating <a href="http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS transforms and transitions</a> and <a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">box-shadow</a> have been reported to be resource-hungry.</p>
+<p>You may find that some facets of your CSS renders slowly on a resource-constrained device, or uses lots of CPU and drains the battery. The culprits vary between browsers and devices, but animating <a href="https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/">CSS transforms and transitions</a> and <a href="https://dev.opera.com/articles/view/css3-border-background-boxshadow/">box-shadow</a> have been reported to be resource-hungry.</p>
 <p>As CSS is purely stylistic, you may decide to turn such effects off.</p>
 <h2 id="techniques">Other useful mobile-friendly techniques</h2>
 <p>Whichever primary method you choose for your mobile sites, you can use some or all of the following techniques as appropriate to your content and functionality.</p>
@@ -167,7 +167,7 @@ license: cc-by-nc-sa-3.0
 </li>
 </ul>
 <h3 id="svg">Use Scalable Vector Graphics for images</h3>
-<p><acronym title="Scalable Vector Graphics"><a href="http://dev.opera.com/articles/view/svg-evolution-not-revolution/?page=2">SVG</a></acronym> is a technology that allows pictures to be described mathematically for the browser to draw via markup. So instead of a bitmapped image of a circle and a rectangle, for example, you describe the shapes:</p>
+<p><acronym title="Scalable Vector Graphics"><a href="https://dev.opera.com/articles/view/svg-evolution-not-revolution/?page=2">SVG</a></acronym> is a technology that allows pictures to be described mathematically for the browser to draw via markup. So instead of a bitmapped image of a circle and a rectangle, for example, you describe the shapes:</p>
 <pre><code>&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
    xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
    &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;30&quot; fill=&quot;blue&quot; stroke=&quot;red&quot;/&gt;
@@ -204,21 +204,21 @@ license: cc-by-nc-sa-3.0
 height:auto; /* preserve aspect ratio */
 }</code></pre>
 <h3 id="html5">Familiarise yourself with HTML5</h3>
-<p>HTML5 has many aspects that can make developing for devices easier. For example, you can store information inside the browser using <a href="http://dev.opera.com/articles/view/web-storage">local or session storage</a> rather than relying on cookies.</p>
+<p>HTML5 has many aspects that can make developing for devices easier. For example, you can store information inside the browser using <a href="https://dev.opera.com/articles/view/web-storage">local or session storage</a> rather than relying on cookies.</p>
 <p>HTML5 forms provide native in-browser validation of certain generic form types; you can test whether an element is a number in certain range, or conforms to a certain regex, or whether a required field is completed, etc.,  without using JavaScript. Try this <a href="http://people.opera.com/brucel/demo/html5-forms-demo.html">HTML5 forms demo</a> in Opera to see it in action. Additionally, some mobile browsers that have their own built-in keyboards (like WebKit on iPhone) give a customised keyboard depending on whether the form type is set to email, number, telephone, etc.</p>
 <h3>Use progressive enhancement</h3>
 <p>You're probably using a progressive ehancement methodology in your work anyway. In a mobile context, this might be called "mobile-first".
-<p>Do not assume scripting support or Ajax capabilities. For example, Opera Mini renders pages on the server and sends a snapshot of the page to the device, so the page won't change until the user does something on that and there is no way for scripts to run in the background. The user must do something to make Mini talk to the server in order for JavaScript to be unpaused. As a result, you cannot expect things like JavaScript animations or timed Ajax updates to work in the background as they would on a desktop browser. There's much more information in our article <a href="http://dev.opera.com/articles/view/opera-mini-and-javascript/">Opera Mini and JavaScript</a>.</p>
-<p>Similarly, you should make no assumptions about animation capabilities (<code>canvas</code>, SVG animations, animated GIFs), fonts, colours and the like. Opera Mini development is docmented in-depth in the companion article <a href="http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a>.</p>
+<p>Do not assume scripting support or Ajax capabilities. For example, Opera Mini renders pages on the server and sends a snapshot of the page to the device, so the page won't change until the user does something on that and there is no way for scripts to run in the background. The user must do something to make Mini talk to the server in order for JavaScript to be unpaused. As a result, you cannot expect things like JavaScript animations or timed Ajax updates to work in the background as they would on a desktop browser. There's much more information in our article <a href="https://dev.opera.com/articles/view/opera-mini-and-javascript/">Opera Mini and JavaScript</a>.</p>
+<p>Similarly, you should make no assumptions about animation capabilities (<code>canvas</code>, SVG animations, animated GIFs), fonts, colours and the like. Opera Mini development is docmented in-depth in the companion article <a href="https://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a>.</p>
 <h2 id="geo">Geolocation</h2>
-<p>Geolocation isn't just on mobile phones (it's in the modern desktop browsers, too) but as most high-end phones have a GPS facility and are used when on the move, there is a lot of potential to <a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">use  the W3C Geolocation API</a> for useful applications.</p>
+<p>Geolocation isn't just on mobile phones (it's in the modern desktop browsers, too) but as most high-end phones have a GPS facility and are used when on the move, there is a lot of potential to <a href="https://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/">use  the W3C Geolocation API</a> for useful applications.</p>
 <p>But it's important to ensure that Geolocation is added as an enhancement rather than as a prerequisite; a user may choose not to share his location with the site for privacy reasons, or is running low on battery (GPS can drain batteries quickly), or is in an area where mapping is rudimentary so accuracy is low.</p>
 <p>A good example of such progressive enhancement is <a href="http://owlsnearyou.com/">owlsnearyou.com</a> that lists sightings of the bird in your area. If you visit with a geolocation-enabled browser and confirm you wish to share your location, the API will pre-fill a search box with what it believes your current location is. But if that's not correct (or maybe you're in London now but want to check owl sightings in Scotland), you can simply type a new destination into the search.</p>
 <p> If your browser isn't geo-enabled, or you deny permission, the search form is blank so you can type in a place-name or postcode.</p>
 <h2 id="testing">Testing, testing, one two three…</h2>
 <p>To round off this article, I will give you tips for easier testing of websites on Mobile browsers.</p>
 <h3 id="testing-opera">Testing on Opera Mobile and Opera Mini</h3>
-<p><a href="http://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> can be <a href="http://dev.opera.com/articles/view/introducing-opera-mobile-10-for-desktop/">installed on your desktop</a> and you can therefore use it to test any files that are on your local machine or network before they go live. It's the full product — the same codebase — so you can be certain it's accurate. Opera Mobile emulator allows you to change the UA string to mimic several different popular browsers.</p>
+<p><a href="http://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> can be <a href="https://dev.opera.com/articles/view/introducing-opera-mobile-10-for-desktop/">installed on your desktop</a> and you can therefore use it to test any files that are on your local machine or network before they go live. It's the full product — the same codebase — so you can be certain it's accurate. Opera Mobile emulator allows you to change the UA string to mimic several different popular browsers.</p>
 <p>If you don't have Opera Mini on your phone (and it's available for over 3000 different handsets, so there should be a version for you!) you can test your site using the web-based <a href="http://www.opera.com/mobile/demo/">Opera Mini Emulator</a>. Note that because of the nature of the product, pages viewed in Opera Mini must go through Opera's servers, so the pages you test must be on the Web somewhere (although you could put them behind a password so that no-one else can see your pre-production pages).</p>
 <h3 id="testing-other">Testing on other handsets and browsers</h3>
 <p>We've teamed up with <a href="http://www.perfectomobile.com/portal/cms/opera.xhtml?key=OP631R89YL2">Perfecto Mobile</a> who have a service that allows you to test on different handsets remotely. Opera users can sign up for <a href="http://www.perfectomobile.com/portal/cms/opera.xhtml?key=OP631R89YL2">seven free hours of testing</a>. Additionally, companies like Apple and BlackBerry offer emulators for testing on their products.</p>

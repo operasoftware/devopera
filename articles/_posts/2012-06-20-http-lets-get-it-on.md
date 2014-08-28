@@ -15,7 +15,7 @@ license: cc-by-3.0
 
 A few weeks ago, we learnt that HTTP is an [application-level protocol][1]. Now it is time to explore how we can use this protocol to communicate between the client and the server.
 
-[1]: http://dev.opera.com/articles/view/http-basic-introduction/
+[1]: https://dev.opera.com/articles/view/http-basic-introduction/
 
 ## Getting things on the Web
 
@@ -55,7 +55,7 @@ I think by now you’ve got it. We now have a system of labels for identifying p
 
 [In the last article][2], we learnt to craft an HTTP request on the command line. We used a very minimal construct with the HTTP method `GET` and one HTTP header: `Host`.
 
-[2]: http://dev.opera.com/articles/view/http-basic-introduction/
+[2]: https://dev.opera.com/articles/view/http-basic-introduction/
 
 	GET / HTTP/1.1
 	Host: www.opera.com

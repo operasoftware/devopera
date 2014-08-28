@@ -21,7 +21,7 @@ I was delighted to attend the Web Standards Group meetup in Sydney and speak on 
 <a href="http://widgets.opera.com/">Widgets repository</a> - try some out. (I demoed <a href="http://widgets.opera.com/widget/downloading/4196/1.2/">Torus</a>.)</li>
 <li>
 <a href="http://www.quirksmode.org/blog/archives/2009/04/introduction_to.html">Introduction to W3C Widgets</a> by Peter-Paul Koch</li>
-<li><a href="http://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
+<li><a href="https://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
 <li>
 <a href="http://berjon.com/blog/2010/09/dap.html">Robin Berjon&#39;s DAP blog</a></li>
 <li><a href="http://www.w3.org/TR/widgets/">W3C Widget spec</a></li>

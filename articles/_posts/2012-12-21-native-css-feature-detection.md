@@ -69,7 +69,7 @@ license: cc-by-3.0
 
 <h2>A @supports example</h2>
 
-<p>To demonstrate a real world usage of <code>@supports</code>, I'm going to rewrite an example I first wrote for my book (<a href="http://my.opera.com/chrismills/blog/2012/07/12/practical-css3-my-book-is-finally-published">Practical CSS3: develop and design</a>) — a simple 3D rotating card flipper example that uses Modernizr to provide an alternative experience to browsers that don't support 3D transforms (like Opera, at the time of writing; we've got it in the pipeline!) or 2D transforms (I just apply a lot of left padding to the front of the card on hover to show the back.) You can <a href="http://dev.opera.com/static/articles/2012/supports/example-with-modernizr/two-faced-cheek-modernizr.html">view the Modernizr card flipper example running live</a>, and see the difference between the experience for different support levels in Figures 1-3.</p>
+<p>To demonstrate a real world usage of <code>@supports</code>, I'm going to rewrite an example I first wrote for my book (<a href="http://my.opera.com/chrismills/blog/2012/07/12/practical-css3-my-book-is-finally-published">Practical CSS3: develop and design</a>) — a simple 3D rotating card flipper example that uses Modernizr to provide an alternative experience to browsers that don't support 3D transforms (like Opera, at the time of writing; we've got it in the pipeline!) or 2D transforms (I just apply a lot of left padding to the front of the card on hover to show the back.) You can <a href="https://dev.opera.com/static/articles/2012/supports/example-with-modernizr/two-faced-cheek-modernizr.html">view the Modernizr card flipper example running live</a>, and see the difference between the experience for different support levels in Figures 1-3.</p>
 
 <p><img src="css-supports-rule_3d-transform.jpg" alt="A business card created using CSS3. In browsers that do support 3D transforms the card flips over with a nice animation"></p>
 <p class="caption">Figure 1: In browsers that do support 3D transforms the card flips over with a nice animation.</p>
@@ -173,7 +173,7 @@ license: cc-by-3.0
 
 }</code></pre>
 
-<p><a href="http://dev.opera.com/static/articles/2012/supports/example-with-supports/two-faced-cheek-supports.html">See the @supports card flipper example running live</a>.</p>
+<p><a href="https://dev.opera.com/static/articles/2012/supports/example-with-supports/two-faced-cheek-supports.html">See the @supports card flipper example running live</a>.</p>
 
 <h2>window.supportsCSS();</h2>
 
