@@ -18,7 +18,7 @@ This is the first in our series of articles about WebGL. The objective of this s
 
 WebGL is a JavaScript API that allows us to implement interactive 3D graphics, straight in the browser. For an example of what WebGL can do, take a look at this [WebGL demo video][1] (viewable in all browsers!)
 
-[1]: http://www.youtube.com/embed/KDQbXLXM_l4
+[1]: https://www.youtube.com/embed/KDQbXLXM_l4
 
 WebGL is a web standard developed by the [Khronos group][2]; Opera is an active participating member along with Google (Chrome), Mozilla (Firefox), Apple (Safari), and other 3D graphics developers.
 

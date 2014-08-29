@@ -19,13 +19,13 @@ This tutorial series, created by Erik Möller in video format (with Chris Mills 
 
 This article gets you started with the basics, and forms a transcription of the material covered in Erik’s [WebGL video tutorial][1] from the beginning to time 22:25. You can [download the code for this tutorial][2] in a single zip file.
 
-[1]: http://www.youtube.com/watch?v=me3BviH3nZc
+[1]: https://www.youtube.com/watch?v=me3BviH3nZc
 [2]: {{ page.id }}/code.zip
 
 - [Watch Erik’s entire WebGL video tutorial][3] for free on Youtube. Over 2 and a half hours of WebGL tuition!
 - [Access the full WebGL 101 code example set][4] and links to see the examples running live, at Github
 
-[3]: http://www.youtube.com/watch?v=me3BviH3nZc
+[3]: https://www.youtube.com/watch?v=me3BviH3nZc
 [4]: https://github.com/emoller/WebGL101
 
 ## Getting prepared

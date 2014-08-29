@@ -17,7 +17,7 @@ While at the [SVG Open][1] conference last week, I investigated how this problem
 
 I’ve presented my findings during the lightning talks session at SVG Open, and have turned the talk into a [YouTube video][2], which you can watch below.
 
-[2]: http://www.youtube.com/watch?v=YAK5el8Uvrg
+[2]: https://www.youtube.com/watch?v=YAK5el8Uvrg
 
 <figure class="figure">
 	<iframe width="420" height="315" src="//www.youtube.com/embed/YAK5el8Uvrg" allowfullscreen class="figure__media"></iframe>

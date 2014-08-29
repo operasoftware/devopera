@@ -17,8 +17,8 @@ Welcome to part 3 of our Raw WebGL series! Now that we’ve covered the real bas
 
 This article is a transcript of [time 32:36 to 56:50][1] in Erik Möller’s [WebGL 101][2] tutorial, available on YouTube.
 
-[1]: http://www.youtube.com/watch?v=me3BviH3nZc&t=32m36s
-[2]: http://www.youtube.com/watch?v=me3BviH3nZc
+[1]: https://www.youtube.com/watch?v=me3BviH3nZc&t=32m36s
+[2]: https://www.youtube.com/watch?v=me3BviH3nZc
 
 ## Ramping up our fragment shader power!
 
@@ -29,7 +29,7 @@ You can see the final result of this article in [fragment-shader.html][3]. To fo
 
 First of all, change the size of the canvas to 900×900 pixels:
 
-    <canvas id="c" width="900" height="900"></canvas>
+	<canvas id="c" width="900" height="900"></canvas>
 
 ### Modifying the vertex shader
 

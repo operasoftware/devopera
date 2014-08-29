@@ -51,10 +51,10 @@ This article gives you an introduction to `<video>` and some of its associated A
 Until now, if you wanted to include video in a web page, you had to wrangle some fairly cryptic markup. Here’s an example, taken directly from YouTube:
 
 	<object width="425" height="344">
-		<param name="movie" value="http://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&"></param>
+		<param name="movie" value="https://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&"></param>
 		<param name="allowFullScreen" value="true"></param>
 		<param name="allowscriptaccess" value="always"></param>
-		<embed src="http://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+		<embed src="https://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
 	</object>
 
 First of all, we have an `<object>` element — a generic container for foreign objects — to include the Flash movie in. To work around browser inconsistencies, we also include an `<embed>` element as fallback content and duplicate most of the `<object>`’s parameters. The resulting code is ungainly and not very readable, and it has other problems — the plugin content does not play very nicely with the other technologies on the page, and it has inherent accessibility problems (more on those later).

@@ -73,7 +73,7 @@ If you have read this far, you deserve to see some demos!
 * [Wikipedia's article on Gulliver's Travels](http://en.wikipedia.org/w/index.php?title=Gulliver%27s_Travels_(film)&direction=next&oldid=329469376#History) includes an excerpt from the film
 * [Video and Canvas performance demo](http://people.freedesktop.org/~company/stuff/video-demo.html)
 * [9elements HTML5 Canvas and Audio Experiment](http://9elements.com/io/projects/html5/canvas/) (see also the [blog post](http://9elements.com/io/?p=153))
-* [YouTube HTML5 demo](http://www.youtube.com/html5) (uses MPEG-4 - only works on Linux/FreeBSD with the appropriate codecs installed)
+* [YouTube HTML5 demo](https://www.youtube.com/html5) (uses MPEG-4 - only works on Linux/FreeBSD with the appropriate codecs installed)
 * [TinyVid - an experimental Ogg video uploading site](http://tinyvid.tv/)
 * [Metavid - Open Video Archive of the US Congress](http://metavid.org/)
 * [“Video For Everybody” Test Page](http://camendesign.com/code/files/video_for_everybody/test.html)

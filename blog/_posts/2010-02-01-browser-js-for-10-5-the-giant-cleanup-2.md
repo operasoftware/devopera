@@ -49,7 +49,7 @@ Walla.co.il is improving their standards compliance, making patches obsolete.
 
 <h2>Patches removed for 10.5</h2>
 
-<strong>Removed - <a href="http://www.youtube.com" target="_blank">YouTube</a> menu painting</strong> - site changed
+<strong>Removed - <a href="https://www.youtube.com" target="_blank">YouTube</a> menu painting</strong> - site changed
 
 <strong>Removed CORE-17333 - The constructor property of DOM nodes should not be object</strong> - <a href="http://my.opera.com/hallvors/blog/2009/01/08/google-maps-vs-dom2-specification-1-0" target="_blank">this problem</a> now fixed in core
 

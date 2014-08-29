@@ -116,7 +116,7 @@ ws.onmessage = function(e) {
 <p>In addition to those demos, Ericsson Labs has a nice screencast demonstrating the benefits of Web Sockets over HTTP long-polling for real-time applications:</p>
 
 <ul>
-<li><a href="http://www.youtube.com/watch?v=Z897fkPn7Rw">WebSocket speed comparison (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Z897fkPn7Rw">WebSocket speed comparison (video)</a></li>
 </ul>
 
 <h3>Resources</h3>

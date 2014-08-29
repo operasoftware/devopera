@@ -21,7 +21,7 @@ license: cc-by-3.0
 
 <h4>Video preview</h4>
 
-<object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/BeTzJ-HGLo4?fs=1&amp;amp;hl=en_GB" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/BeTzJ-HGLo4?fs=1&amp;amp;hl=en_GB" type="application/x-shockwave-flash" width="640" height="390" allowfullscreen="true" allowscriptaccess="never" /></object>
+<object width="640" height="390"><param name="movie" value="https://www.youtube.com/v/BeTzJ-HGLo4?fs=1&amp;amp;hl=en_GB" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="https://www.youtube.com/v/BeTzJ-HGLo4?fs=1&amp;amp;hl=en_GB" type="application/x-shockwave-flash" width="640" height="390" allowfullscreen="true" allowscriptaccess="never" /></object>
 
 <h4>Getting started</h4>
 

@@ -44,7 +44,7 @@ Among many others, the following gestures are currently included:
 
 As always, we encourage all feedback and suggestions you may have. Please upload your gestures suggestions as a response to the above [video in YouTube][1].
 
-[1]: http://www.youtube.com/watch?v=kkNxbyp6thM
+[1]: https://www.youtube.com/watch?v=kkNxbyp6thM
 
 ## Security Considerations
 

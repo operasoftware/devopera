@@ -17,8 +17,8 @@ Greetings, WebGL ninjas. The fourth tutorial is upon you, so be prepared: keep y
 
 This article is a transcript of [time 56:50 to 1:03:20][1] in Erik Möller’s [WebGL 101][2] tutorial, available on YouTube.
 
-[1]: http://www.youtube.com/watch?v=me3BviH3nZc&t=56m50s
-[2]: http://www.youtube.com/watch?v=me3BviH3nZc
+[1]: https://www.youtube.com/watch?v=me3BviH3nZc&t=56m50s
+[2]: https://www.youtube.com/watch?v=me3BviH3nZc
 
 Note: [You can run the finished texture example][3] from this article to see what you are aiming towards.
 

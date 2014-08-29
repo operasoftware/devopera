@@ -43,10 +43,10 @@ Cet article propose une introduction à l’élément `<video>` et certaines de 
 Jusqu’à présent, si vous souhaitiez inclure une vidéo dans une page Web, vous deviez vous disputer avec quelques balises peu parlantes. Voici un exemple, pris directement depuis YouTube:
 
 	<object width="425" height="344">
-		<param name="movie" value="http://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&"></param>
+		<param name="movie" value="https://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&"></param>
 		<param name="allowFullScreen" value="true"></param>
 		<param name="allowscriptaccess" value="always"></param>
-		<embed src="http://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+		<embed src="https://www.youtube.com/v/9sEI1AUFJKw&hl=en_GB&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
 	</object>
 
 Tout d’abord, nous avons un élément `<object>` — un conteneur générique pour les objets étrangers — pour inclure l’animation Flash. Pour contourner certaines incompatibilités entre les différents navigateurs, nous incluons également un élément `<embed>` qui spécifie un contenu de remplacement et qui duplique la plupart des paramètres de l’élément `<object>`. Le code résultant n’est pas très lisible.

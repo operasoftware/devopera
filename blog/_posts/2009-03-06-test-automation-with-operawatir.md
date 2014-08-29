@@ -35,7 +35,7 @@ puts &quot;PASS&quot; if browser.text.include? &quot;Wikipedia&quot;</code></pre
 
 <p>Below is a video of the script running in the desktop version of our browser. We&#39;ve had to slow it down significantly for you to be able to see what&#39;s going on - the test normally takes a few hundred milliseconds.
 
-<object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/6jbEpYjWisU&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/6jbEpYjWisU&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="480" height="295" allowscriptaccess="never" /></object>
+<object width="480" height="295"><param name="movie" value="https://www.youtube.com/v/6jbEpYjWisU&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="https://www.youtube.com/v/6jbEpYjWisU&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="480" height="295" allowscriptaccess="never" /></object>
 
 <p>Through scripts like these, we can automatically test many of the things our millions of users do every day. If we break anything and a test fails, our scripts will instantly notify us so that we can fix it.
 
@@ -43,7 +43,7 @@ puts &quot;PASS&quot; if browser.text.include? &quot;Wikipedia&quot;</code></pre
 
 <p>When using the scope protocol, it doesn&#39;t really matter if you&#39;re talking to an Opera instance locally or remotely; it was built for working on any device. Here&#39;s the exact same script running on a mobile phone:
 
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/taqqlReb7pA&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/taqqlReb7pA&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344" allowscriptaccess="never" /></object>
+<object width="425" height="344"><param name="movie" value="https://www.youtube.com/v/taqqlReb7pA&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="https://www.youtube.com/v/taqqlReb7pA&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344" allowscriptaccess="never" /></object>
 
 <p>Shortly after we started working on this tool, we figured that this might not just be useful for us testing our browser engine, but for Web developers testing their own Web applications, too. Our new tools are still in a pre-alpha stage, but as they mature over the coming months, we would like to make them available to all of you as well.
 

@@ -28,7 +28,7 @@ license: cc-by-nc-sa-3.0
 <p class="note">On the day of the announcement, Opera released an experimental WebM-enabled build. This feature is now part of the core functionality of <a href="http://www.opera.com/browser/">Opera 10.60</a> and all of our future desktop browser releases.</p>
 
 
-<p>Google’s <a href="http://www.youtube.com">YouTube</a> property now supports WebM/VP8 — new videos are being made available in this format.</p>
+<p>Google’s <a href="https://www.youtube.com">YouTube</a> property now supports WebM/VP8 — new videos are being made available in this format.</p>
 
 <p class="note">Opera has worked with Google to include WebM/VP8 at its launch because we want to support high quality, royalty-free formats, so no-one is locked out of viewing or publishing Web content. We’d like to thank Google and the others involved for making this available.</p>
 
@@ -65,7 +65,7 @@ license: cc-by-nc-sa-3.0
 
 <h3>YouTube support for WebM</h3>
 
-<p>As mentioned above, YouTube now supports the WebM format — a number of videos are now being encoded using WebM, in addition to Flash and other formats, which will continue to be available for browsers that don’t support HTML5 <code>&lt;video&gt;</code>. To have the HTML5 videos served to you by default (where available), you can opt in to the HTML5 Youtube support at <a href="http://www.youtube.com/html5">http://www.youtube.com/html5</a> (click the link at the bottom of the page.)</p>
+<p>As mentioned above, YouTube now supports the WebM format — a number of videos are now being encoded using WebM, in addition to Flash and other formats, which will continue to be available for browsers that don’t support HTML5 <code>&lt;video&gt;</code>. To have the HTML5 videos served to you by default (where available), you can opt in to the HTML5 Youtube support at <a href="https://www.youtube.com/html5">https://www.youtube.com/html5</a> (click the link at the bottom of the page.)</p>
 
 <p>You’ll know when you’re accessing a WebM video because Youtube shows
 "HTML5·WEBM" as part of the controls UI.</p>
@@ -75,9 +75,9 @@ license: cc-by-nc-sa-3.0
 <p>In case you want some examples, the following videos have a HTML5·WEBM version available:</p>
 
 <ul>
-<li><a href="http://www.youtube.com/watch?v=H_mU7lkE-sA&html5=True">Opera 10.50</a></li>
-<li><a href="http://www.youtube.com/watch?v=OpTCS3g-cBY&html5=True">Opera Mini 5 on the iPhone</a></li>
-<li><a href="http://www.youtube.com/watch?v=tQxbpryKKQo&html5=True">Official Adriana Lima COME BACK Video</a></li>
+<li><a href="https://www.youtube.com/watch?v=H_mU7lkE-sA&html5=True">Opera 10.50</a></li>
+<li><a href="https://www.youtube.com/watch?v=OpTCS3g-cBY&html5=True">Opera Mini 5 on the iPhone</a></li>
+<li><a href="https://www.youtube.com/watch?v=tQxbpryKKQo&html5=True">Official Adriana Lima COME BACK Video</a></li>
 </ul>
 
 <h2>Encoding WebM videos</h2>

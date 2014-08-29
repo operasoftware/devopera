@@ -117,7 +117,7 @@ In Opera Mini, the `mouseover`, `mousedown`, `mouseup`, and `click` events are a
 
 <figure class="figure" id="figure-3">
 	<img src="{{ page.id }}/mouse-events.png" alt="How mouse events work in Opera Mini" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: How mouse events work in Opera Mini view <a href="http://www.youtube.com/watch?v=mp5IFTPhV20" title="A video showing how mouse events work in Opera Mini">a video</a></figcaption>
+	<figcaption class="figure__caption">Figure 3: How mouse events work in Opera Mini view <a href="https://www.youtube.com/watch?v=mp5IFTPhV20" title="A video showing how mouse events work in Opera Mini">a video</a></figcaption>
 </figure>
 
 ### Form events in Opera Mini
@@ -128,7 +128,7 @@ In a similar fashion, form fields can receive `focus`, `click`, `change`, and `b
 
 <figure class="figure" id="figure-4">
 	<img src="{{ page.id }}/form-events.png" alt="How form events work in Opera Mini" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: How form events work in Opera Mini <a href="http://www.youtube.com/watch?v=DWbr3cV9hbg" title="A video showing how form events work in Opera Mini">view a video</a></figcaption>
+	<figcaption class="figure__caption">Figure 4: How form events work in Opera Mini <a href="https://www.youtube.com/watch?v=DWbr3cV9hbg" title="A video showing how form events work in Opera Mini">view a video</a></figcaption>
 </figure>
 
 Unlike desktop browsers, `focus` and `blur` events **only apply to form input elements** in Opera Mini. The `click` event is the only mouse event supported for `input` elements.
@@ -171,7 +171,7 @@ As with `setInterval`, if an XHR request exceeds the timeout, the script will be
 
 **What does a paused script look like?** Have a look at my [video example of a paused script being restarted][21]. Here we are using `setInterval` to change the background color of an object every 50 milliseconds. When the timeout limit is reached, the color will stop changing as the state of the script pauses.
 
-[21]: http://www.youtube.com/watch?v=VnleANWlomI
+[21]: https://www.youtube.com/watch?v=VnleANWlomI
 
 It’s possible to **un-pause** a script, however, with the help of a user-initiated event. Let’s examine the JavaScript code used to create the animation in the video.
 

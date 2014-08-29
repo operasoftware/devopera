@@ -19,8 +19,8 @@ In the last part of this article series — [Raw WebGL 101 — Part 1: Getting S
 
 In this article, we will carry on where we left off, going further with the same example file and building up a simple shader. This article is a transcript of [time 22:26 to 32:36][2] in Erik Möller’s [WebGL 101][3] tutorial, available on YouTube.
 
-[2]: http://www.youtube.com/watch?v=me3BviH3nZc&t=22m26s
-[3]: http://www.youtube.com/watch?v=me3BviH3nZc
+[2]: https://www.youtube.com/watch?v=me3BviH3nZc&t=22m26s
+[3]: https://www.youtube.com/watch?v=me3BviH3nZc
 
 ## Making a rectangle out of our triangle
 

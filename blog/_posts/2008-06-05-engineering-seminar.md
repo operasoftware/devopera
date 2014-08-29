@@ -31,7 +31,7 @@ for the flashlight in the 3d engine.</p>
 than 3 years ago.
 </p>
 <!-- Flash movie tag-->
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/P02k4iBhRtc&amp;hl=en" /><param name="wmode" value="transparent" /><embed src="http://www.youtube.com/v/P02k4iBhRtc&amp;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344" allowscriptaccess="never" /></object>
+<object width="425" height="344"><param name="movie" value="https://www.youtube.com/v/P02k4iBhRtc&amp;hl=en" /><param name="wmode" value="transparent" /><embed src="https://www.youtube.com/v/P02k4iBhRtc&amp;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344" allowscriptaccess="never" /></object>
 
 <h2>Hardware acceleration</h2>
 <p>One of the things I have been working on lately is hardware
@@ -52,4 +52,4 @@ or soon to be released products.
 </p>
 
 <!-- Flash movie tag-->
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/MkKCsrh2ESA&amp;hl=en" /><param name="wmode" value="transparent" /><embed src="http://www.youtube.com/v/MkKCsrh2ESA&amp;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344" allowscriptaccess="never" /></object>
+<object width="425" height="344"><param name="movie" value="https://www.youtube.com/v/MkKCsrh2ESA&amp;hl=en" /><param name="wmode" value="transparent" /><embed src="https://www.youtube.com/v/MkKCsrh2ESA&amp;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344" allowscriptaccess="never" /></object>

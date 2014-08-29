@@ -18,7 +18,7 @@ Youtube has fixed this issue, so patch is no longer needed
 
 ## Added patches
 
-PATCH-234 <a href="http://www.youtube.com" target="_blank">Youtube</a> Flash detection fails due to bug in Carakan plug-in scripting. This patch effectively disables the Flash upgrade functionality on Youtube, so we hope it will be short lived.
+PATCH-234 <a href="https://www.youtube.com" target="_blank">Youtube</a> Flash detection fails due to bug in Carakan plug-in scripting. This patch effectively disables the Flash upgrade functionality on Youtube, so we hope it will be short lived.
 
 PATCH-222 <a href="http://mail.qq.com" target="_blank">qq.com</a> mail sending hangs when trying to read iframe attributes
 

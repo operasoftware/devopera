@@ -30,6 +30,6 @@ license: cc-by-3.0
 
 <p>I have included here a video demonstration of how both these features would work for you:</p>
 
-<object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/Zng4yzE_Eg8?version=3&amp;amp;hl=en_US&amp;amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="http://www.youtube.com/v/Zng4yzE_Eg8?version=3&amp;amp;hl=en_US&amp;amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowfullscreen="true" allowscriptaccess="never" /></object>
+<object width="560" height="315"><param name="movie" value="https://www.youtube.com/v/Zng4yzE_Eg8?version=3&amp;amp;hl=en_US&amp;amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="https://www.youtube.com/v/Zng4yzE_Eg8?version=3&amp;amp;hl=en_US&amp;amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowfullscreen="true" allowscriptaccess="never" /></object>
 
 <p>This build includes all the recent changes except the profiler in one neat new package. Hope you have fun exploring and debugging your webpages with Dragonfly! Do let us know if you come across any issues!</p>

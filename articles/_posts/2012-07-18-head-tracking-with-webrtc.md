@@ -94,10 +94,10 @@ camera.position.y += ( -(mouseY/windowHalfY)*600 - camera.position.y ) * .08;
 
 <p>If you feel like implementing any of these, feel free to <a href="https://github.com/auduno/headtrackr">grab a fork</a>! Meanwhile, I&#8217;m pretty sure we&#8217;ll see many more exciting things turn up once WebRTC becomes supported across more browsers, check out <a href="https://vimeo.com/41666669">Eye Track Three Dee</a> for instance&#8230;</p>
 
-<p>To give credit where credit is due, the inspiration for this demo was <a href="http://www.youtube.com/embed/Jd3-eiid-Uw">Head Tracking for Desktop VR Displays using the WiiRemote</a>. In this video, Johnny Chung Lee hacks a Wii remote to capture the motions of the user. Later on, some French researchers decided to try out the same thing without the Wii remote: see <a href="http://iihm.imag.fr/en/demo/hcpmobile/">3D displays on mobile devices: HCP</a>. Instead of motion sensors they used the front-facing camera of the iPad to detect and track the rough position of the head, with pretty convincing results. The result is available as an iPad app — <a href="http://iihm.imag.fr/francone/i3D/">i3D</a> — and can be seen in Figure 6:</p>
+<p>To give credit where credit is due, the inspiration for this demo was <a href="https://www.youtube.com/embed/Jd3-eiid-Uw">Head Tracking for Desktop VR Displays using the WiiRemote</a>. In this video, Johnny Chung Lee hacks a Wii remote to capture the motions of the user. Later on, some French researchers decided to try out the same thing without the Wii remote: see <a href="http://iihm.imag.fr/en/demo/hcpmobile/">3D displays on mobile devices: HCP</a>. Instead of motion sensors they used the front-facing camera of the iPad to detect and track the rough position of the head, with pretty convincing results. The result is available as an iPad app — <a href="http://iihm.imag.fr/francone/i3D/">i3D</a> — and can be seen in Figure 6:</p>
 
 <p><img src="i3D-demo.jpg" alt="i3D is an iPad app that uses head tracking to pan around a 3D environment"></p>
-<p class="caption">Figure 6: i3D is an iPad app that uses head tracking to pan around a 3D environment <a href="http://www.youtube.com/embed/19XZJa15hOs" title="i3D iPad app">(watch the video)</a>.</p>
+<p class="caption">Figure 6: i3D is an iPad app that uses head tracking to pan around a 3D environment <a href="https://www.youtube.com/embed/19XZJa15hOs" title="i3D iPad app">(watch the video)</a>.</p>
 
 <h3>Footnotes</h3>
 

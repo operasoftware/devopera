@@ -17,7 +17,7 @@ license: cc-by-3.0
 <ul>
   <li>View the <a href="http://www.opera.com/dragonfly/">Opera Dragonfly product pages</a></li>
   <li>Read the <a href="http://www.opera.com/dragonfly/documentation/">Opera Dragonfly field guide</a></li>
-  <li>Watch the <a href="http://www.youtube.com/watch?v=BeTzJ-HGLo4">Opera Dragonfly introduction video</a></li>
+  <li>Watch the <a href="https://www.youtube.com/watch?v=BeTzJ-HGLo4">Opera Dragonfly introduction video</a></li>
   <li>Check out the feedback on <a href="http://search.twitter.com/search?q=%23dfl1">Twitter</a>, or post your own with the #dfl1 hashtag</li>
 </ul>
 

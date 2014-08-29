@@ -13,10 +13,10 @@ license: cc-by-3.0
    <source src="http://people.opera.com/espenao/movie/techbreak-html5.mp4" type="video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;" />
    <source src="http://people.opera.com/espenao/movie/techbreak-html5.webm" type="video/webm; codecs=&quot;vp8.0, vorbis&quot;" />
 <object width="640" height="390">
-  <param name="movie" value="http://www.youtube.com/v/X52zJ3XehIM=1&amp;amp&amp;hl=EN&amp;fs=1&amp;cc_load_policy=1" />
+  <param name="movie" value="https://www.youtube.com/v/X52zJ3XehIM=1&amp;amp&amp;hl=EN&amp;fs=1&amp;cc_load_policy=1" />
   <param name="allowFullScreen" value="true" />
   <param name="allowscriptaccess" value="never" />
-  <embed src="http://www.youtube.com/v/X52zJ3XehIM?fs=1&amp;amp&amp;hl=EN&amp;fs=1&amp;cc_load_policy=1" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="390" allowscriptaccess="never">
+  <embed src="https://www.youtube.com/v/X52zJ3XehIM?fs=1&amp;amp&amp;hl=EN&amp;fs=1&amp;cc_load_policy=1" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="390" allowscriptaccess="never">
 <p><cite>Opera Tech Break:HTML5</cite> video in <a href="http://people.opera.com/espenao/movie/techbreak-html5.mp4">MP4</a> and <a href="http://people.opera.com/espenao/movie/techbreak-html5.webm">WebM</a> format.</p>
 </embed></object>
 </video>

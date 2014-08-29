@@ -13,10 +13,10 @@ license: cc-by-3.0
 <p>Here it is — <a href="http://www.opera.com/computer">Opera 15 for computers</a>: your fast, secure browser that doesn&#39;t get in your way. Here&#39;s a quick video introduction.</p>
 
 <object width="640" height="360">
-<param name="movie" value="http://www.youtube.com/v/_mpF5aQpmow" />
+<param name="movie" value="https://www.youtube.com/v/_mpF5aQpmow" />
 <param name="allowFullScreen" value="true" />
 <param name="allowscriptaccess" value="never" />
-<embed src="http://www.youtube.com/v/_mpF5aQpmow" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360" allowscriptaccess="never" />
+<embed src="https://www.youtube.com/v/_mpF5aQpmow" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360" allowscriptaccess="never" />
 </object>
 
 <p>Opera 15 for computers also commences our new <a href="http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle">fast release cycle</a>, so expect to see what&#39;s in the next version very soon, too.</p>

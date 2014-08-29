@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 <p>Today, we're happy to present you with a <strong>Labs release of Opera Mobile with support for extensions</strong>!</p>
 
-<p><object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/PR6EoHsWL2Q?version=3&hl=en_US&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PR6EoHsWL2Q?version=3&hl=en_US&rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+<p><object width="640" height="360"><param name="movie" value="https://www.youtube.com/v/PR6EoHsWL2Q?version=3&hl=en_US&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/PR6EoHsWL2Q?version=3&hl=en_US&rel=0" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
 
 <p>This is a very early Labs release and it's not quite certain at this point that extensions functionality will effectively make it into a future release of Opera Mobile; the design is also most definitely <strong>not final</strong>, and there are some rough edges here and there, but if that doesn't scare you away – and why should it! –, you can find an Opera Mobile Labs build with extensions support for Android below. In addition, we've released extension-enabled Opera Mobile Emulator Labs builds, so you can test your extensions in a desktop-based Opera Mobile instance as well.</p>
 
