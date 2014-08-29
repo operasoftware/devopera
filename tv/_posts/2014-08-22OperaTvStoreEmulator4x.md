@@ -56,7 +56,7 @@ localStorage disabled - when localStorage is used error popup appears
 
 After a successful installation of the Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner.
 <figure class="figure">
-	<img src="{{ page.id }}/toolbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
+	<img src="http://apps.tvstore.op-cdn.net/opera-tv-store-emulator/description_page/toollbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
 	<figcaption class="figure__caption">Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner</figcaption>
 </figure>
 
@@ -73,8 +73,8 @@ To use navigation, keys with keyboard follow the mapping below. Other keys (colo
 In addition to basic keyboard controls, the Opera TV Emulator also provides a more comprehensive remote control that also simulates the colored keys (red, green, yellow, blue) and a set of media controls (play/pause, stop, rewind, fast-forward).
 
 <figure class="figure">
-	<img src="{{ page.id }}/web-based-remote.png" alt="The Opera TV Emulator’s web-based remote control on localhost:5555" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Emulator’s web-based remote control on localhost:5555</figcaption>
+	<img src="{{ page.id }}/remote.png" alt="The Opera TV Store Emulator’s remote control" class="figure__media">
+	<figcaption class="figure__caption">The Opera TV Store Emulator’s remote control</figcaption>
 </figure>
 
 
@@ -83,7 +83,7 @@ In addition to basic keyboard controls, the Opera TV Emulator also provides a mo
 
 - SDK 4.x and Opera desktop are both Blink based.
 - In order to simulate Spatial Navigation run Opera browse from command line using arg "enable-spatial-navigation
-- H.264 support will be available in Opera version 25 which is planned to be released in October 2014. For the moment you can try to turn it on as an experiment option called "Proprietary media types"
+- H.264 support will be available in Opera version 25 which is planned to be released in October 2014. For the moment you can use developer version of Opera 25
 - For information about the specific multimedia formats that can be used, please refer to the article on [HTML5 audio/video support in Opera TV Store applications][16].
 
 [16]: http://dev.opera.com/articles/view/html5-audio-video-support-in-opera-tv-store-applications/
