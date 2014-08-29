@@ -50,14 +50,14 @@ localStorage disabled - when localStorage is used error popup appears
 3. drag&drop extension on extensions tab
 4. After the installation is finished you can check "Allow access to file URLs" to emulate local files - e.g file://foo/bar/index.html
 
-[7]: http://tvapps.bizon.opera.com/tve/description/OperaTVStoreEmulator-1.1.4.nex
+[7]: http://apps.tvstore.op-cdn.net/opera-tv-store-emulator/description_page/OperaTVStoreEmulator.nex
 
 ## Manual {#manual}
 
 After a successful installation of the Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner.
 <figure class="figure">
-	<img src="{{ page.id }}/codec-install.png" alt="The H.264 codec installation prompt on the Opera TV Emulator start page" class="figure__media">
-	<figcaption class="figure__caption">The H.264 codec installation prompt on the Opera TV Emulator start page</figcaption>
+	<img src="{{ page.id }}/toolbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
+	<figcaption class="figure__caption">Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner</figcaption>
 </figure>
 
 
