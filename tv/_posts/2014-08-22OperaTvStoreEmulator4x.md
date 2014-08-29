@@ -73,7 +73,7 @@ To use navigation, keys with keyboard follow the mapping below. Other keys (colo
 In addition to basic keyboard controls, the Opera TV Emulator also provides a more comprehensive remote control that also simulates the colored keys (red, green, yellow, blue) and a set of media controls (play/pause, stop, rewind, fast-forward).
 
 <figure class="figure">
-	<img src="{{ page.id }}/remote.png" alt="The Opera TV Store Emulator’s remote control" class="figure__media">
+	<img src="{{ page.id }}/RemoteController4x.png" alt="The Opera TV Store Emulator’s remote control" class="figure__media">
 	<figcaption class="figure__caption">The Opera TV Store Emulator’s remote control</figcaption>
 </figure>
 
