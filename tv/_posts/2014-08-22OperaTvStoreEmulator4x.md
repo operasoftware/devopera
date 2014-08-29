@@ -56,7 +56,7 @@ localStorage disabled - when localStorage is used error popup appears
 
 After a successful installation of the Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner.
 <figure class="figure">
-	<img src="http://apps.tvstore.op-cdn.net/opera-tv-store-emulator/description_page/toollbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
+	<img src="{{ page.id }}/toollbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
 	<figcaption class="figure__caption">Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner</figcaption>
 </figure>
 
