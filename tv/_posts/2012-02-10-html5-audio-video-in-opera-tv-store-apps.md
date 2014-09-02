@@ -159,7 +159,7 @@ DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combina
 
 - VOD and Live profiles are supported, 
 - HLS version 3 specification up to and including Panthos 06, 
-- Streamed over HTTP or AES 128 bit encrypted HTTPS,
+- With or without AES 128 bit encryption,
 - MPEG2TS as a container,
 - Source pointing to a m3u8 playlist,
 - Source type set to `application/vnd.apple.mpegurl`,
