@@ -49,17 +49,7 @@ Most importantly, `showModalDialog` is not extremely popular — it can likely b
 
 ## What should I use instead of `showModalDialog`?
 
-At the time of writing, when visiting a page that uses `showModalDialog`, the following warning is logged in the Opera or Chrome DevTools:
-
-> Chromium is considering deprecating `showModalDialog`. Please use `window.open` and `postMessage` instead.
-
-That’s correct. `window.open` can be used to open a separate HTML document in a pop-up window. And [the `postMessage` API](https://dev.opera.com/articles/view/window-postmessage-messagechannel/) makes it easy send data from one window to another. These two features get you a long way when emulating `showModalDialog`-like behavior.
-
-An [even better](http://uxmovement.com/forms/why-modal-windows-have-killed-popup-windows/) solution would be to not rely on separate pop-up windows at all. Just display the modal page’s contents as an overlay within the parent page, optionally using JavaScript and CSS.
-
-However, to make a dialog truly ‘modal’, any clicks and attempts to focus an element outside of the dialog should be ignored. Once again, this is something that can be accomplished using JavaScript and CSS. If you don’t want to write all the code for this yourself, use something like [jQuery UI’s dialog widget](http://jqueryui.com/dialog/).
-
-The HTML spec defines [a `<dialog>` element](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element) which would be extremely useful in such situations. No browser supports this yet at the time of writing. However, Opera and Chrome have an experimental implementation of this element and its JavaScript APIs. Enable the “experimental Web platform features” flag via `opera://flags/#enable-experimental-web-platform-features` or `chrome://flags/#enable-experimental-web-platform-features` and then [check out this demo](http://demo.agektmr.com/dialog/#showmodal).
+Web developers wishing to use modal dialogs on their websites should use [the `<dialog>` HTML element](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element) and its corresponding JavaScript API (`element.show()`, `element.showModal()`, and `element.close()`). [Here’s a demo page with code examples.](http://demo.agektmr.com/dialog/) At the time of writing only Opera and Chrome support this feature. For compatibility with other browsers, [a polyfill is available](https://github.com/GoogleChrome/dialog-polyfill).
 
 ## When is `showModalDialog` being removed?
 
