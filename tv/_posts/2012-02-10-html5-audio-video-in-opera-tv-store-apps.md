@@ -162,7 +162,7 @@ Technical details are as follows:
 
 - VOD and Live profiles are supported
 - HLS version 3 specification up to and including Panthos 06
-- Streamed over HTTP or AES 128 bit encrypted HTTPS
+- With or without AES 128 bit encryption
 - container format is MPEG2TS
 - Source pointing to a m3u8 playlist
 - Source type set to `application/vnd.apple.mpegurl`
