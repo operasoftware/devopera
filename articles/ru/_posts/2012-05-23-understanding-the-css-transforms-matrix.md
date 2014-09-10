@@ -12,6 +12,7 @@ tags:
 - vector
 - math
 language: ru
+translator: Maxim Usachev
 license: cc-by-3.0
 ---
 

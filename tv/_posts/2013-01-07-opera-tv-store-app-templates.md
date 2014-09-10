@@ -9,6 +9,10 @@ tags:
 license: cc-by-3.0
 ---
 
+The templates presented in this article are available for free to developers developing for the Opera TV Store, but they are not maintained or supported by Opera any more. Instead, we strongly suggest that content creators use the Opera TV Snap tool, which generates template-based applications automatically. Opera Snap also contains built-in support for monetization and is constantly developed and maintained by Opera. See [opera.com/tvsnap][1] for more details.
+
+[1]: http://opera.com/tvsnap
+
 ## Introduction
 
 Since the launch of the Opera TV Store, we’ve seen a variety of apps published by creators and enjoyed by users. The fact that our TV apps are built using web standards means that web developers can use their existing skills to create content for the TV platform. Developing for TV can still feel unfamiliar, however, so to make it easier we’ve created a couple of templates for common app types that content creators can freely use.

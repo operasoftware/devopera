@@ -214,7 +214,7 @@ For browser windows with a width of 1024 CSS pixels and wider, a full-shot photo
 <span class="feature feature--false">art</span>
 
 	<img
-		src="opera-fallback.jpg" alt="The Oslo Opera House"
+		src="opera-400.jpg" alt="The Oslo Opera House"
 		sizes="(min-width: 640px) 60vw, 100vw"
 		srcset="opera-200.jpg 200w,
 				opera-400.jpg 400w,
@@ -239,7 +239,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 					opera-fullshot-800.jpg 800w,
 					opera-fullshot-1200.jpg 1200w">
 		<img
-		 	src="opera-fallback.jpg" alt="The Oslo Opera House"
+		 	src="opera-closeup-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-closeup-200.jpg 200w,
 					opera-closeup-400.jpg 400w,
@@ -265,7 +265,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 					opera-1200.webp 1200w"
 			type="image/webp">
 		<img
-			src="opera-fallback.jpg" alt="The Oslo Opera House"
+			src="opera-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-200.jpg 200w,
 					opera-400.jpg 400w,
@@ -306,7 +306,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 					opera-fullshot-800.jpg 800w,
 					opera-fullshot-1200.jpg 1200w">
 		<img
-			src="opera-fallback.jpg" alt="The Oslo Opera House"
+			src="opera-closeup-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-closeup-200.jpg 200w,
 					opera-closeup-400.jpg 400w,
@@ -324,7 +324,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 <span class="feature feature--false">art</span>
 
 	<img
-		src="opera-fallback.jpg" alt="The Oslo Opera House"
+		src="opera-400.jpg" alt="The Oslo Opera House"
 		sizes="(min-width: 640px) 60vw, 100vw"
 		srcset="opera-200.jpg 200w,
 				opera-400.jpg 400w,
@@ -353,7 +353,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 					opera-fullshot-1600.jpg 1600w,
 					opera-fullshot-2000.jpg 2000w">
 		<img
-			src="opera-fallback.jpg" alt="The Oslo Opera House"
+			src="opera-closeup-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-closeup-200.jpg 200w,
 					opera-closeup-400.jpg 400w,
@@ -383,7 +383,7 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 					opera-2000.webp 2000w"
 			type="image/webp">
 		<img
-			src="opera-fallback.jpg" alt="The Oslo Opera House"
+			src="opera-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-200.jpg 200w,
 					opera-400.jpg 400w,
@@ -432,7 +432,7 @@ For browser windows with a width of 640 CSS pixels and wider, a photo with a wid
 					opera-fullshot-1600.jpg 1800w,
 					opera-fullshot-2000.jpg 2000w">
 		<img
-			src="opera-fallback.jpg" alt="The Oslo Opera House"
+			src="opera-closeup-400.jpg" alt="The Oslo Opera House"
 			sizes="(min-width: 640px) 60vw, 100vw"
 			srcset="opera-closeup-200.jpg 200w,
 					opera-closeup-400.jpg 400w,
@@ -447,3 +447,5 @@ For browser windows with a width of 1280 CSS pixels and wider, a full-shot photo
 ## There is more!
 
 Don’t worry if you haven’t understood this fully! Soon, we’ll publish an in-depth tutorial article on `<picture>` and responsive images. In the meantime, enjoy preparing to save your boss’ and customers’ bandwidth, and making your site even more performant.
+
+**Update**: we’ve published a [Native responsive images article](http://dev.opera.com/articles/native-responsive-images/), so be sure to check it out!

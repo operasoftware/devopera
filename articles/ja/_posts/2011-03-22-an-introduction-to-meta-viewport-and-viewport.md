@@ -10,6 +10,7 @@ tags:
 - target-densitydpi
 - viewport
 language: ja
+translator: Masataka Yakura
 license: cc-by-3.0
 ---
 

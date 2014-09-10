@@ -11,6 +11,7 @@ tags:
 - accessibility
 - video
 language: fr
+translator: Nicolas Chevallier
 license: cc-by-nc-sa-3.0
 ---
 
