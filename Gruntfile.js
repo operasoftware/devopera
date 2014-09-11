@@ -129,9 +129,9 @@ module.exports = function(grunt) {
 				src: '.htaccess',
 				dest: '_site/',
 				replacements: [{
-					// Redirect all traffic to https://dev.opera.com/*
+					// Redirect all traffic to http://dev.opera.com/*
 					from: 'RewriteEngine On\n\n',
-					to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ https://dev.opera.com%{REQUEST_URI} [R=301,L]\n\nRewriteCond %{HTTPS} off\nRewriteRule ^(.*)$ https://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
+					to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ http://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
 				}]
 			}
 		},
@@ -164,6 +164,15 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', [
+		'sass',
+		'autoprefixer',
+		'cssshrink',
+		'jekyll:limit',
+		'htmlmin',
+		'connect:task:keepalive'
+	]);
+
+	grunt.registerTask('dev', [
 		'sass',
 		'autoprefixer',
 		'cssshrink',
