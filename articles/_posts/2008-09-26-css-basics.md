@@ -65,9 +65,9 @@ The pertinent parts are as follows:
 Now let’s look at a specific example:
 
 	p {
-		margin:5px;
-		font-family:arial;
-		color:blue;
+		margin: 5px;
+		font-family: Arial;
+		color: blue;
 	}
 
 The HTML element this rule selects is `<p>` — every `<p>` in the HTML document(s) that use this CSS will have this rule applied to it, unless they have more specific rules also applied to them, in which case the more specific rule(s) will overwrite this rule. The properties affected by this rule are the margins around the paragraphs, the font of the text inside the paragraphs, and the colour of that text. The margins are set at 5 pixels, the font is set as Arial, and the colour of the text is set as blue.
