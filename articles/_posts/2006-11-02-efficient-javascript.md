@@ -24,7 +24,7 @@ This article will show several simple changes that can be made to improve the pe
 	- [Rewrite that `eval`](#rewriteeval)
 	- [If you want a function, use a function](#usefunction)
 - [Avoid using `with`](#avoidwith)
-- [Don't use `try-catch-finally` inside performance-critical functions](#trycatch)
+- [Don’t use `try-catch-finally` inside performance-critical functions](#trycatch)
 - [Isolate uses of `eval` and `with`](#isolate)
 - [Avoid using global variables](#avoidglobal)
 - [Beware of implicit object conversion](#implicitconversion)
@@ -143,7 +143,7 @@ This will be more efficient for the script engine:
 	testObject.secondary = 'roles';
 	testObject.tertiary = 'references';
 
-### Don't use `try-catch-finally` inside performance-critical functions {#trycatch}
+### Don’t use `try-catch-finally` inside performance-critical functions {#trycatch}
 
 The `try-catch-finally` construct is fairly unique. Unlike other constructs, it creates a new variable in the current scope at runtime. This happens each time the `catch` clause is executed, where the caught exception object is assigned to a variable. This variable does not exist inside other parts of the script even inside the same scope. It is created at the start of the `catch` clause, then destroyed at the end of it.
 
@@ -289,7 +289,7 @@ String concatenation can be an expensive process. Using the `+` operator does no
 
 	a += 'x' + 'y';
 
-That code would be evaluated by firstly creating a temporary string in memory, assigning the concatenated value of 'xy', then concatenating that with the current value of a, and finally assigning the resulting value of that to a. The following code uses two separate commands, but because it assigns directly to a each time, the temporary string is not used. The resulting code is around 20% faster in many current browsers, and potentially requires less memory, as it does not need to temporarily store the concatenated string:
+That code would be evaluated by firstly creating a temporary string in memory, assigning the concatenated value of `xy`, then concatenating that with the current value of a, and finally assigning the resulting value of that to a. The following code uses two separate commands, but because it assigns directly to a each time, the temporary string is not used. The resulting code is around 20% faster in many current browsers, and potentially requires less memory, as it does not need to temporarily store the concatenated string:
 
 	a += 'x';
 	a += 'y';
@@ -358,7 +358,7 @@ So is an animation does not need to be applied to the whole document, it is bett
 
 ### Document tree modification {#modifyingtree}
 
-Document tree modification _will_ trigger reflow. Adding new elements to the DOM, changing the value of text nodes, or changing various attributes will all be enough to cause a reflow. Making several changes one after the other, may trigger more than one reflow, so in general, it is best to make multiple changes in a non-displayed DOM tree fragment. The changes can then be made to the live document's DOM in one single operation:
+Document tree modification _will_ trigger reflow. Adding new elements to the DOM, changing the value of text nodes, or changing various attributes will all be enough to cause a reflow. Making several changes one after the other, may trigger more than one reflow, so in general, it is best to make multiple changes in a non-displayed DOM tree fragment. The changes can then be made to the live document’s DOM in one single operation:
 
 	var docFragm = document.createDocumentFragment();
 	var elem, contents;
