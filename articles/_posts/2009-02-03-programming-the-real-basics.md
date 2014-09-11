@@ -102,19 +102,17 @@ In English, this construct would be as follows:
 
 You can do all kind of calculations with variables by adding operators in between them. There are the classics like adding with a plus sign operator and subtracting with a minus sign operator. For multiplication you have to use an asterisk `*` and for dividing, a slash `/`. The following example shows some calculations that are possible. Notice the texts preceded by a double slash `//` — these are JavaScript comments. When a JavaScript interpreter encounters these in a script it will not try to execute what follows on that line, and skips it — these are comments made for humans and not to be interpreted by the browser.
 
-	<script type="text/javascript">
-		var x = 5;
-		var y = 6;
-		var z = 20;
-		var multiply = x * y * z;
-		// multiply will be 600
-		var divide = x / y;
-		// divide will be 0.8333333333333334
-		var addAndDivide = (x + z) / y;
-		// addAndDivide = 4.166666666666667
-		var half = (y + z) / 2;
-		// half will be 13
-	</script>
+	var x = 5;
+	var y = 6;
+	var z = 20;
+	var multiply = x * y * z;
+	// multiply will be 600
+	var divide = x / y;
+	// divide will be 0.8333333333333334
+	var addAndDivide = (x + z) / y;
+	// addAndDivide = 4.166666666666667
+	var half = (y + z) / 2;
+	// half will be 13
 
 As you can see you can mix and match any variable, and also use variables along with fixed values in calculations; you can also group them with parenthesis to override the natural order of operators (parentheses first, then multiplication or dividing, then adding or subtracting and all those Math lesson classics).
 
@@ -135,11 +133,9 @@ JavaScript is a “loosely typed” language, which means that you don’t have 
 
 There is nothing magical or strange going on with these. You define variables and set their values to any number type.
 
-	<script type="text/javascript">
-		var fahrenheit = 123;
-		var celsius = (fahrenheit - 32) * 5/9;
-		var clue = 0.123123;
-	</script>
+	var fahrenheit = 123;
+	var celsius = (fahrenheit - 32) * 5/9;
+	var clue = 0.123123;
 
 Floats and integers can be modified with any mathematical operators.
 
@@ -147,33 +143,27 @@ Floats and integers can be modified with any mathematical operators.
 
 Booleans are simple “yes or no” definitions. You assign them by using the `true` or `false` keywords.
 
-	<script type="text/javascript">
-		var doorClosed = true;
-		var catCanLeave = false;
-	</script>
+	var doorClosed = true;
+	var catCanLeave = false;
 
 #### Strings {#strings}
 
 Strings are lines of text that can contain any character. You define them in JavaScript by enclosing the text in single quotes or double quotes.
 
-	<script type="text/javascript">
-		var surname = 'Heilmann';
-		var name = "Christian";
-		var age = '33';
-		var hair = 'Flickr famous';
-	</script>
+	var surname = 'Heilmann';
+	var name = "Christian";
+	var age = '33';
+	var hair = 'Flickr famous';
 
 You can concatenate (a technical term that means “join together”) strings using the + operator but you cannot subtract strings from one another. For string modification you need to use functions the language provides you with. Simple concatenation on the other hand is as easy as this:
 
-	<script type="text/javascript">
-		var surname = 'Heilmann';
-		var name = 'Christian';
-		var age = '33';
-		var hair = 'Flickr famous';
-		var message = 'Hi, I am ' + name + ' ' + surname + '. ';
-		message += 'I am ' + age + 'years old and my hair is ' + hair;
-		alert(message);
-	 </script>
+	var surname = 'Heilmann';
+	var name = 'Christian';
+	var age = '33';
+	var hair = 'Flickr famous';
+	var message = 'Hi, I am ' + name + ' ' + surname + '. ';
+	message += 'I am ' + age + 'years old and my hair is ' + hair;
+	alert(message);
 
 Try out the [string concatenation example][10].
 
@@ -189,21 +179,17 @@ There is a catch to remember when using concatenation versus adding values. If y
 
 Most languages will not care if you use single or double quotes to enclose the string, as long as you don’t mix them. To stop the JavaScript interpreter from becoming confused about where the end of the string is, you need to comment out quotes contained in the string with a backslash:
 
-	<script type="text/javascript">
-		// This will cause an error, as the interpreter doesn’t know
-		// what the things after the ' are. The string defined here is 'Isn'.
-		var stringWithError = 'Isn’t it hard to get things right?';
-		// This is not an error, all is fine
-		var stringWithoutError = 'Isn’t it hard to get things right?';
-	</script>
+	// This will cause an error, as the interpreter doesn’t know
+	// what the things after the ' are. The string defined here is 'Isn'.
+	var stringWithError = 'Isn’t it hard to get things right?';
+	// This is not an error, all is fine
+	var stringWithoutError = 'Isn’t it hard to get things right?';
 
 #### Arrays {#arrays}
 
 Arrays are very powerful constructs. An array is a collection of values, and each of the values can be a variable, or a real value. For example:
 
-	<script type="text/javascript">
-		var pets = new Array('Boomer', 'Polly', 'Mr.Frisky');
-	</script>
+	var pets = new Array('Boomer', 'Polly', 'Mr.Frisky');
 
 You can access each of the values with the **array** counter, which is the index number in the array — think of it as being like looking up chapters in a book. The syntax is `arrayname[index]`. So for example `pets[1]` would give you the string “Polly”. But wait! I hear you ask — shouldn’t it be `pets[2]` for Polly, given that it is the **second** value in the array? **No** — the counter is not 2, as computers start counting at 0, not at 1! This is a very common cause of confusion and errors.
 
@@ -217,13 +203,11 @@ If you have a collection of items that need more detailed descriptions than just
 
 Objects are a big and very clever and versatile part of programming and explaining them in detail here would be beyond the scope of this article. Let’s just say that an object is a thing that has several properties. Say for example you have a person object; you can define the different properties by appending them with a dot:
 
-	<script type="text/javascript">
-		var person = new Object();
-		person.name = 'Chris';
-		person.surname = 'Heilmann';
-		person.age = 33;
-		person.hair = 'Flickr famous';
-	</script>
+	var person = new Object();
+	person.name = 'Chris';
+	person.surname = 'Heilmann';
+	person.age = 33;
+	person.hair = 'Flickr famous';
 
 You can access the properties with dot notation (`person.age` would give you 33) or with the square bracket notation (`person['name']` gets you “Chris”). You will learn more about JavaScript objects later on in the course.
 
@@ -239,31 +223,29 @@ The other thing conditions can do for you is allow for branching. You might have
 
 The easiest condition is an `if` statement and its syntax is `if (condition) { do this … }`. The condition has to be true for the code inside the curly braces to be executed. You can for example test a string and set the value of another string dependent on its value:
 
-	<script type="text/javascript">
-		var country = 'France';
-		var weather;
-		var food;
-		var currency;
-		if (country === 'England') {
-			weather = 'horrible';
-			food = 'filling';
-			currency = 'pound sterling';
-		}
-		if (country === 'France') {
-			weather = 'nice';
-			food = 'stunning, but hardly ever vegetarian';
-			currency = 'funny, small and colourful';
-		}
-		if (country === 'Germany') {
-			weather = 'average';
-			food = 'wurst thing ever';
-			currency = 'funny, small and colourful';
-		}
-		var message = 'this is ' + country + ', the weather is ' +
-									weather + ', the food is ' + food + ' and the ' +
-									'currency is ' + currency;
-		alert(message);
-	</script>
+	var country = 'France';
+	var weather;
+	var food;
+	var currency;
+	if (country === 'England') {
+		weather = 'horrible';
+		food = 'filling';
+		currency = 'pound sterling';
+	}
+	if (country === 'France') {
+		weather = 'nice';
+		food = 'stunning, but hardly ever vegetarian';
+		currency = 'funny, small and colourful';
+	}
+	if (country === 'Germany') {
+		weather = 'average';
+		food = 'wurst thing ever';
+		currency = 'funny, small and colourful';
+	}
+	var message = 'this is ' + country + ', the weather is ' +
+		weather + ', the food is ' + food + ' and the ' +
+		'currency is ' + currency;
+	alert(message);
 
 Try it out yourself in my [Weather `if` statement example][13]. Change the value of the country variable to see the different messages.
 
@@ -281,33 +263,31 @@ Other conditional test examples:
 
 Conditions can also be nested. Say for example you want to make sure that the country variable is set in the earlier example; you can do that this way:
 
-	<script type="text/javascript">
-		var country = 'Germany';
-		var weather;
-		var food;
-		var currency;
-		if (country) {
-			if (country === 'England') {
-				weather = 'horrible';
-				food = 'filling';
-				currency = 'pound sterling';
-			}
-			if (country === 'France') {
-				weather = 'nice';
-				food = 'stunning, but hardly ever vegetarian';
-				currency = 'funny, small and colourful';
-			}
-			if (country === 'Germany') {
-				weather = 'average';
-				food = 'wurst thing ever';
-				currency = 'funny, small and colourful';
-			}
-			var message = 'this is ' + country + ', the weather is ' +
-				weather + ', the food is ' + food + ' and the ' +
-				'currency is ' + currency;
-			alert(message);
+	var country = 'Germany';
+	var weather;
+	var food;
+	var currency;
+	if (country) {
+		if (country === 'England') {
+			weather = 'horrible';
+			food = 'filling';
+			currency = 'pound sterling';
 		}
-	</script>
+		if (country === 'France') {
+			weather = 'nice';
+			food = 'stunning, but hardly ever vegetarian';
+			currency = 'funny, small and colourful';
+		}
+		if (country === 'Germany') {
+			weather = 'average';
+			food = 'wurst thing ever';
+			currency = 'funny, small and colourful';
+		}
+		var message = 'this is ' + country + ', the weather is ' +
+			weather + ', the food is ' + food + ' and the ' +
+			'currency is ' + currency;
+		alert(message);
+	}
 
 Try it out yourself in my [Safe-weather `if` statement example][14]. Change the value of the country variable to see the different messages.
 
@@ -319,39 +299,35 @@ Furthermore you can concatenate different conditions with “or” or “and” 
 
 There is also an `else` clause that will be applied every time the first condition isn’t true. This is very powerful if you want to react to any value, but single out one in particular for special treatment:
 
-	<script type="text/javascript">
-		var umbrellaMandatory;
-		if (country === 'England') {
-			umbrellaMandatory = true;
-		} else {
-			umbrellaMandatory = false;
-		}
-	</script>
+	var umbrellaMandatory;
+	if (country === 'England') {
+		umbrellaMandatory = true;
+	} else {
+		umbrellaMandatory = false;
+	}
 
 Conditions are great, but they are a bit limited. What if you want to do something over and over again? Say your job is to add a paragraph tag around each of the values in an array? Using only conditions you’d need to hard-code cases for arrays of all the different lengths you’d be likely to come across:
 
-	<script type="text/javascript">
-		var names = new Array('Chris', 'Dion', 'Ben', 'Brendan');
-		var all = names.length;
-		if (all == 1) {
-			names[0] = '<p>' + names[0] + '</p>';
-		}
-		if (all == 2) {
-			names[0] = '<p>' + names[0] + '</p>';
-			names[1] = '<p>' + names[1] + '</p>';
-		}
-		if (all == 3) {
-			names[0] = '<p>' + names[0] + '</p>';
-			names[1] = '<p>' + names[1] + '</p>';
-			names[2] = '<p>' + names[2] + '</p>';
-		}
-		if (all == 4) {
-			names[0] = '<p>' + names[0] + '</p>';
-			names[1] = '<p>' + names[1] + '</p>';
-			names[2] = '<p>' + names[2] + '</p>';
-			names[3] = '<p>' + names[3] + '</p>';
-		}
-	</script>
+	var names = new Array('Chris', 'Dion', 'Ben', 'Brendan');
+	var all = names.length;
+	if (all == 1) {
+		names[0] = '<p>' + names[0] + '</p>';
+	}
+	if (all == 2) {
+		names[0] = '<p>' + names[0] + '</p>';
+		names[1] = '<p>' + names[1] + '</p>';
+	}
+	if (all == 3) {
+		names[0] = '<p>' + names[0] + '</p>';
+		names[1] = '<p>' + names[1] + '</p>';
+		names[2] = '<p>' + names[2] + '</p>';
+	}
+	if (all == 4) {
+		names[0] = '<p>' + names[0] + '</p>';
+		names[1] = '<p>' + names[1] + '</p>';
+		names[2] = '<p>' + names[2] + '</p>';
+		names[3] = '<p>' + names[3] + '</p>';
+	}
 
 This is just terrible and inflexible. Programming is meant to make our life easier and if you find yourself writing the same code over and over again, you are probably doing something wrong. Good programming means leaving the boring tasks to the machines and focusing on what you want to achieve.
 
@@ -367,29 +343,23 @@ Loops are repetitive conditions where one variable in the loop changes. The easi
 
 Normally what you do with a `for` loop is to execute the code in the curly braces several times. For this you need to define an iterator variable and keep changing it during the loop until the variable value meets the end condition (which causes the interpreter to exit the loop and carry on to the next part of the code). For example:
 
-	<script type="text/javascript">
-		for (var i = 0;i < 11;i = i + 1) {
-			// do it, do it now
-		}
-	</script>
+	for (var i = 0;i < 11;i = i + 1) {
+		// do it, do it now
+	}
 
 Here we define a variable `i` as having an initial value of 0 and then do a check to see if it has reached 11 yet (is it smaller than 11?). The change equation — `i = i + 1` — adds one to `i` every time the loop executes and goes through another iteration. This means that this loop executes 11 times. If you add two to `i` on every iteration it executes only 6 times:
 
-	<script type="text/javascript">
-		for (var i = 0;i < 11;i = i + 2) {
-			// do it, do it now
-		}
-	</script>
+	for (var i = 0;i < 11;i = i + 2) {
+		// do it, do it now
+	}
 
 Using a loop the paragraph adding example we saw above gets a lot shorter and simpler:
 
-	<script type="text/javascript">
-		var names = new Array('Chris', 'Dion', 'Ben', 'Brendan');
-		var all = names.length;
-		for (var i=0;i<all;i=i+1) {
-			names[i] = '<p>' + names[i] + '</p>';
-		}
-	</script>
+	var names = new Array('Chris', 'Dion', 'Ben', 'Brendan');
+	var all = names.length;
+	for (var i=0;i<all;i=i+1) {
+		names[i] = '<p>' + names[i] + '</p>';
+	}
 
 Notice that you can use the value of `i` as the array counter inside the loop. This is the power of loops — not only can you do the same thing over and over again; you also know in every iteration how many times you have already done it.
 
