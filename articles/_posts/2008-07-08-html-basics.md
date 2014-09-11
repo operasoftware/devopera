@@ -43,7 +43,7 @@ In most browsers there is a “Source” or “View Source” option, commonly u
 
 In the article [The history of the internet and the web][1] you learned a little about how the modern Web came about. When Tim Berners-Lee invented the World Wide Web, he created both the first web server and web browser and [the first version of HTML][2].
 
-[1]: http://dev.opera.com/articles/view/2-the-history-of-the-internet-and-the-w/ (the history of the web)
+[1]: http://dev.opera.com/articles/view/2-the-history-of-the-internet-and-the-w/ (The history of the web)
 [2]: http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/MarkUp.html (The first ever version of HTML)
 
 Whilst HTML has changed considerably since the first days, a lot of the content of modern-day HTML is embodied in that first documentation and more than half of the “tags” described in the original “HTML tags” document still exist.
@@ -58,7 +58,7 @@ A draft of HTML 3.0 followed later that year, but work on that version was disco
 
 In 1997, the W3C published HTML 4.0 as a recommendation that adopted more browser-specific extensions but also attempted to rationalise and clean up HTML. This was done by marking various elements as deprecated — which means the elements are obsolete and whilst they still exist in this version they will be removed in a later revision. This was to encourage better and more semantic use of HTML in documents (described in more detail in [The web standards model][3] article).
 
-[3]: http://dev.opera.com/articles/view/4-the-web-standards-model-html-css-a/ (the web standards model)
+[3]: http://dev.opera.com/articles/view/4-the-web-standards-model-html-css-a/ (The web standards model)
 
 HTML 4.01 was published in 1999, with some errata noted in 2001. This is the latest version of HTML, although HTML 5 is currently being drafted.
 
@@ -80,13 +80,13 @@ The smallest valid HTML document possible would be something like this:
 
 The document first starts with a document type element, or doctype (described in more detail in the [Choosing the right doctype…][4]). This describes which type of HTML is being used — so that browsers can determine how to interpret the document, and work out whether it is following the rules it says it is going to follow.
 
-[4]: http://dev.opera.com/articles/view/14-choosing-the-right-doctype-for-your/ (choosing the right doctype)
+[4]: http://dev.opera.com/articles/view/14-choosing-the-right-doctype-for-your/ (Choosing the right doctype)
 
 After this, you can see the opening tag of the `html` element. This is a wrapper around the entire document. The closing `html` tag is the last thing in any HTML document.
 
 Inside the `html` element, there is the `head` element. This is a wrapper to contain information about the document (the metadata). This is described in more detail in [the next article][5]. Inside the head is the `title` element, which defines the “Example page” heading in the menu bar.
 
-[5]: http://dev.opera.com/articles/view/13-the-html-head-element/ (article about the HTML head)
+[5]: http://dev.opera.com/articles/view/13-the-html-head-element/ (Article about the HTML head)
 
 After the `<head>` element there is a `<body>` element, which is the wrapper to contain the actual content of the page — in this case, only a level-one header (`<h1>`) element, which contains the text “Hello world.” And that’s our document in full.
 
@@ -136,7 +136,7 @@ The ampersand (`&`) introduces the reference and the semi-colon (`;`) ends it. H
 
 An actual ampersand has to be entered into a document as `&amp;`, which is the character entity reference, or as `&#38;` which is the numeric reference. [A full chart of character references can be found on evolt.org][7].
 
-[7]: http://www.evolt.org/article/A_Simple_Character_Entity_Chart/17/21234/ (entity reference chart)
+[7]: http://www.evolt.org/article/A_Simple_Character_Entity_Chart/17/21234/ (Entity reference chart)
 
 ## Summary {#summary}
 
