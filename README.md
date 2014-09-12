@@ -4,7 +4,7 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 
 ## Environment setup
 
-1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll kramdown stringex sass` in command line.
+1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll kramdown stringex sass` on the command line.
 2. Download and install [Node.js](http://nodejs.org) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
@@ -25,7 +25,7 @@ To open Dev.Opera locally run `grunt`, it would take up to 1 minute to:
 
 To start developing Dev.Opera run `grunt dev`, it would take up to 1 minute to:
 
-1. Buid site in a limited mode with only latest 150 posts.
+1. Build site in a limited mode with only latest 150 posts.
 2. Start local server on `http://0.0.0.0:33310` address.
 3. Open it in your default browser.
 4. Launch a `watch` task for all files.
@@ -40,4 +40,4 @@ To **build** a complete Dev.Opera, run `grunt build`: it will take a while to bu
 
 - All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.
 - You may require write access for all commands mentioned above. Type `sudo`, space and command if needed.
-- If you get an error running `grunt dev`, try to increase the file number limit with the `ulimit -n 10000` command or use nighly build of Node.JS 0.11 (could be installed alongside to 0.10 using [nvm](https://github.com/creationix/nvm)).
+- If you get an error running `grunt dev`, try to increase the file number limit with the `ulimit -n 10000` command or use a nightly build of Node.JS 0.11 (could be installed alongside to 0.10 using [nvm](https://github.com/creationix/nvm)).
