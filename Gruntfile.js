@@ -169,6 +169,15 @@ module.exports = function(grunt) {
 		'cssshrink',
 		'jekyll:limit',
 		'htmlmin',
+		'connect:task:keepalive'
+	]);
+
+	grunt.registerTask('dev', [
+		'sass',
+		'autoprefixer',
+		'cssshrink',
+		'jekyll:limit',
+		'htmlmin',
 		'connect',
 		'watch'
 	]);
