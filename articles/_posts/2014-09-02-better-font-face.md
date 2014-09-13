@@ -18,39 +18,34 @@ First—let’s discuss what @font-face gets right.
 
 What happens when you slap a fancy new @font-face custom web font into your CSS? As it turns out—not much. Just including a @font-face block will not actually initiate a download of the remote font file from the server in almost all browsers (except IE8).
 
-```
-/* Does not download */
-@font-face {
-	font-family: 'open_sansregular';
-  src: /* This article does not cover @font-face syntax */;
-}
-```
+	/* Does not download */
+	@font-face {
+		font-family: 'open_sansregular';
+	  src: /* This article does not cover @font-face syntax */;
+	}
 
 So, how does one go about initiating a font download? Peep your eyes on this source:
 
-```
-<!-- Initiates download in Firefox, IE 9+ -->
-<div style="font-family: open_sansregular"></div>
+	<!-- Initiates download in Firefox, IE 9+ -->
+	<div style="font-family: open_sansregular"></div>
 
-<!-- Initiates download in Chrome, Safari (WebKit et al) -->
-<div style="font-family: open_sansregular">Content</div>
-```
+	<!-- Initiates download in Chrome, Safari (WebKit/Blink et al) -->
+	<div style="font-family: open_sansregular">Content</div>
 
 This means that WebKit is smart enough to know that even if a node exists in the document that uses our new font-family but the node is empty—the font will not download.  This is great!
 
 What if we create the nodes dynamically in JavaScript?
 
-```
-/* Does not download */
-var el = document.createElement( "div" );
-el.style.fontFamily = "open_sansregular";
+	/* Does not download */
+	var el = document.createElement( "div" );
+	el.style.fontFamily = "open_sansregular";
 
-/* Initiates download in Firefox, IE 9+ */
-document.body.appendChild( el );
+	/* Initiates download in Firefox, IE 9+ */
+	document.body.appendChild( el );
 
-/* Initiates download in all WebKits */
-el.innerHTML = "Content.";
-```
+	/* Initiates download in WebKit/Blink */
+	el.innerHTML = "Content.";
+
 
 All but IE8 will wait until the new node has been appended into the document (is not detached) and as previously mentioned, WebKit browsers will even wait until the node has text content.
 
@@ -90,21 +85,17 @@ We need more control over our @font-face requests. The two main use cases: preva
 
 One way we can regain control over the loading behavior is to use font loading events. The most promising font loading event solution is a native one: the [CSS Font Loading Module](http://dev.w3.org/csswg/css-font-loading/); which is already implemented and available in Chrome and Opera.
 
-```
-document.fonts.load("1em open_sansregular")
-	.then(function() {
-		var docEl = document.documentElement;
-		docEl.className += " open-sans-loaded";
-	});
-```
+	document.fonts.load("1em open_sansregular")
+		.then(function() {
+			var docEl = document.documentElement;
+			docEl.className += " open-sans-loaded";
+		});
 
 By placing a JS-assigned class around any use of our custom @font-face, we regain control over the fallback experience.
 
-```
-.open-sans-loaded h1 {
-	font-family: open_sansregular;
-}
-```
+	.open-sans-loaded h1 {
+		font-family: open_sansregular;
+	}
 
 Using the above CSS and JS for content fonts, we can show the fallback text while the font request is in flight. If you want to use it for icon fonts, you can easily modify the approach to hide the fallback text avoiding the timeout FOUT as well.
 
@@ -116,14 +107,12 @@ The above solution works great for Chrome and Opera that support the native API,
 
 Alternatively, you can use the [FontFaceOnload](https://github.com/zachleat/fontfaceonload) utility, which reuses the native API where supported. It is **not** a one-to-one polyfill for the CSS Font Loading API and as such the syntax is different:
 
-```
-FontFaceOnload( "open_sansregular", {
-    success: function() {
-        var docEl = document.documentElement;
-				docEl.className += " open-sans-loaded";
-    }
-});
-```
+	FontFaceOnload( "open_sansregular", {
+		success: function() {
+			var docEl = document.documentElement;
+			docEl.className += " open-sans-loaded";
+		}
+	});
 
 If you’d like a full one-to-one polyfill of the CSS Font Loading API, you can follow along with [Bram Stein’s in-progress fontloader polyfill](https://github.com/bramstein/fontloader).
 
