@@ -25,7 +25,7 @@
 // * Canvas width/height should is using content-box by default. IE in
 //   Quirks mode will draw the canvas using border-box. Either change your
 //   doctype to HTML5
-//   (http://www.whatwg.org/specs/web-apps/current-work/#the-doctype)
+//   (https://html.spec.whatwg.org/#the-doctype)
 //   or use Box Sizing Behavior from WebFX
 //   (http://webfx.eae.net/dhtml/boxsizing/boxsizing.html)
 // * Optimize. There is always room for speed improvements.

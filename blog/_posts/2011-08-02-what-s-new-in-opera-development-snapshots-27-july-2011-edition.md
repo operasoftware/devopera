@@ -13,7 +13,7 @@ license: cc-by-3.0
 <ul>
 <li>
 	<h3>Implementation of Microdata APIs</h3>
-	<p>This release of Opera has full support for <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#microdata-dom-api">Microdata DOM APIs</a>. There is a bug around the implementation on Mac, Linux/FreeBSD versions of this snapshot that we are hoping to fix as soon as we can. </p>
+	<p>This release of Opera has full support for <a href="https://html.spec.whatwg.org/multipage/microdata.html#microdata-dom-api">Microdata DOM APIs</a>. There is a bug around the implementation on Mac, Linux/FreeBSD versions of this snapshot that we are hoping to fix as soon as we can. </p>
 	<p>What this API would allow you to do is to access microdata specified using microdata attributes like <code>itemprop</code>, <code>itemscope</code> via a JavaScript interface. </p>
 	<p>Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> also <a href="http://bugzilla.validator.nu/show_bug.cgi?id=671">added a bunch of patches</a> to make <a href="http://validator.nu">validator.nu</a> validate microdata attributes better. </p>
 	<p>Tests written while implementing the APIs will also be shortly submitted to the W3C test suite.</p>

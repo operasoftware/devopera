@@ -32,10 +32,10 @@ license: cc-by-3.0
 <li><a href="http://www.archive.org/create/">Archive.org conversion and hosting service</a></li>
 <li><a href="http://www.mirovideoconverter.com/">Miro Video Converter</a> (simple drag and drop conversion utility)</li>
 <li><a href="https://wiki.mozilla.org/Gecko:FullScreenAPI">Gecko Full Screen API</a></li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-track-element"><code>&lt;track&gt;</code> element specification</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/video.html#the-track-element"><code>&lt;track&gt;</code> element specification</a></li>
 <li><a href="http://www.delphiki.com/html5/playr/">Playr captioning polyfill</a></li>
 <li><a href="http://mediaelementjs.com/">mediaElement.js</a> - polyfill for captioning and faking JS API in Flash for old browsers</li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#synchronising-multiplemedia-elements">Specification: synchronising multiple media elements</a> (NB still liable to change)</li>
+<li><a href="https://html.spec.whatwg.org/multipage/video.html#synchronising-multiplemedia-elements">Specification: synchronising multiple media elements</a> (NB still liable to change)</li>
 <li><a href="HTTP://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview"><code>getUserMedia</code> Magic HTML5 Moustache demo</a> (accessing camera from JavaScript)</li>
 <li><a href="http://sites.google.com/site/webrtc/">WebRTC project</a> (for in-browser video conferencing)</li>
 </ul>

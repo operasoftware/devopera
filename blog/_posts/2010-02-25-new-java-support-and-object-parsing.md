@@ -13,7 +13,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>10.50 introduces support for <a href="https://jdk6.dev.java.net/plugin2/" rel="nofollow" target="_blank">Java plugin2</a> and at the same time changes parsing of object tags to be in line with <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#the-object-element" rel="nofollow" target="_blank">HTML5</a>
+<p>10.50 introduces support for <a href="https://jdk6.dev.java.net/plugin2/" rel="nofollow" target="_blank">Java plugin2</a> and at the same time changes parsing of object tags to be in line with <a href="https://html.spec.whatwg.org/multipage/the-iframe-element.html#the-object-element" rel="nofollow" target="_blank">HTML5</a>
 
 This topic isn&#39;t strictly about sitepatching but will change site compatibility. Mostly for the better but there could be unexpected side effects on sites that expect certain behavior - thus becoming targets for site patching. More on that later.
 

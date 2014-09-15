@@ -22,11 +22,11 @@ Some resources
 <li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> by Moi and Patrick Lauke</li>
 <li><a href="http://camendesign.com/code/video_for_everybody">Video for Everybody</a> - Kroc Camen frankensteins in olde-worlde Flash embed code as fallback for HTML5 video</li>
 <li><a href="http://www.w3.org/TR/html5/video.html#media-elements">Video API spec</a></li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-track-element">Spec for the <code>&lt;track&gt;</code> element</a> for subtitles/ captioning etc</li>
+<li><a href="https://html.spec.whatwg.org/multipage/video.html#the-track-element">Spec for the <code>&lt;track&gt;</code> element</a> for subtitles/ captioning etc</li>
 <li><a href="http://www.iandevlin.com/blog/2011/05/html5/webvtt-and-video-subtitles">WebVTT format explained</a> by <a href="http://twitter.com/iandevlin">Ian Devlin</a></li>
 <li><a href="http://www.delphiki.com/html5/playr/">Playr</a> - lightweight polyfill script that fakes <code>&lt;track&gt;</code> support in browsers that don&#39;t have native support (eg, all of them)</li>
 <li><a href="http://mediaelementjs.com/">MediaElement.js</a> - jQuery-based polyfill that fakes track support and degrades to custom Flash and Silverlight players that mimic the HTML5 MediaElement API for older browsers</li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#synchronising-multiple-media-elements">Synchronising multiple media elements</a> - nascent specification: <strong>highly liable to change</strong>!</li>
+<li><a href="https://html.spec.whatwg.org/multipage/video.html#synchronising-multiple-media-elements">Synchronising multiple media elements</a> - nascent specification: <strong>highly liable to change</strong>!</li>
 <li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Accessing device camera from JavaScript</a> - Labs build of Opera/ Android that implements HTML5 <code>getUserMedia</code> with bonus link to the Magic HTML5 Moustache demo</li>
 </ul>
 

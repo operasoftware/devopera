@@ -49,7 +49,7 @@ Most importantly, `showModalDialog` is not extremely popular — it can likely b
 
 ## What should I use instead of `showModalDialog`?
 
-Web developers wishing to use modal dialogs on their websites should use [the `<dialog>` HTML element](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element) and its corresponding JavaScript API (`element.show()`, `element.showModal()`, and `element.close()`). [Here’s a demo page with code examples.](http://demo.agektmr.com/dialog/) At the time of writing only Opera and Chrome support this feature. For compatibility with other browsers, [a polyfill is available](https://github.com/GoogleChrome/dialog-polyfill).
+Web developers wishing to use modal dialogs on their websites should use [the `<dialog>` HTML element](https://html.spec.whatwg.org/multipage/forms.html#the-dialog-element) and its corresponding JavaScript API (`element.show()`, `element.showModal()`, and `element.close()`). [Here’s a demo page with code examples.](http://demo.agektmr.com/dialog/) At the time of writing only Opera and Chrome support this feature. For compatibility with other browsers, [a polyfill is available](https://github.com/GoogleChrome/dialog-polyfill).
 
 ## When is `showModalDialog` being removed?
 

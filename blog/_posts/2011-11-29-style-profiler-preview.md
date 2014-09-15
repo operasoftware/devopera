@@ -23,7 +23,7 @@ license: cc-by-3.0
 <pre><code><a>https://dragonfly.opera.com/app/profiler/</a></code></pre>
 <p>Keep in my mind that this is an early preview. Lots of things will be tweaked before this is released.</p></div>
 
-<p>As a real-world example of how big the impact can be on performance, I made a test with the full <a href="http://www.whatwg.org/specs/web-apps/current-work/" target="_blank">HTML5 specification</a> downloaded locally and ran the profiler. I noticed a few of the most expensive selectors had &quot;:link&quot; and &quot;:visited&quot;. I changed these to instead be &quot;a:link&quot; or &quot;a:visited&quot; (in this case they were equivalent in terms of which elements matched). This trivial change makes the engine use a cache, and brought the selector matching time down from about 14 seconds to about 11 seconds.
+<p>As a real-world example of how big the impact can be on performance, I made a test with the full <a href="https://html.spec.whatwg.org/" target="_blank">HTML5 specification</a> downloaded locally and ran the profiler. I noticed a few of the most expensive selectors had &quot;:link&quot; and &quot;:visited&quot;. I changed these to instead be &quot;a:link&quot; or &quot;a:visited&quot; (in this case they were equivalent in terms of which elements matched). This trivial change makes the engine use a cache, and brought the selector matching time down from about 14 seconds to about 11 seconds.
 
 <p>Apart from detailed selector matching performance, you can hover on events in the timeline to get more information about them. For example, when you hover on a paint event, it will show the point in the viewport where the paint event occurred, and how big the painted area was.
 

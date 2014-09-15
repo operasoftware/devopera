@@ -191,6 +191,6 @@ Voir notre exemple de [de contrôles personnalisés en javascript pour l’élé
 - [Vidéo HTML5 accessible sous-titrée en JavaScript][25]
 
 [22]: http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2
-[23]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element
+[23]: https://html.spec.whatwg.org/multipage/the-video-element.html#the-video-element
 [24]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
 [25]: https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/

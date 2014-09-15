@@ -110,7 +110,7 @@ JavaScript が有効になっている場合は、トランスクリプトを一
 - [`video` の仕様][11]
 - [Opera でどのように `video` が実装されているか][12]
 
-[11]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element
+[11]: https://html.spec.whatwg.org/multipage/the-video-element.html#the-video-element
 [12]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
 
 ## 謝辞

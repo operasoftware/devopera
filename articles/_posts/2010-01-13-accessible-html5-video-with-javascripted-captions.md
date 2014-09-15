@@ -115,7 +115,7 @@ Also see Daniel Davis’ [multilingual example][11] that allows you to choose be
 - [How `video` is implemented in Opera][14]
 
 [12]: http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2
-[13]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video
+[13]: https://html.spec.whatwg.org/multipage/the-video-element.html#video
 [14]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
 
 ## Acknowledgments

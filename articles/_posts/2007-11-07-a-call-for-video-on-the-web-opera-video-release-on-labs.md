@@ -22,7 +22,7 @@ In short, we need a `<video>` element in HTML, and we must also agree on a basel
 
 The `<video>` element has already been proposed in the [HTML5 working draft][1], and here at Opera, we have created an experimental build of our browser for Windows, Mac and Linux with (amongst other things) support for the `<video>` element/Ogg Theora built in. Even better is that we have made it downloadable for you to play with:
 
-[1]: http://www.whatwg.org/specs/web-apps/current-work/#video
+[1]: https://html.spec.whatwg.org/#video
 
 - [Opera 9.52 preview for Linux/UNIX][2]
 - [Opera 9.52 preview for Windows][3] (MSI installer)

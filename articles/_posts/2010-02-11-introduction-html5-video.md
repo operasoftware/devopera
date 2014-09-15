@@ -359,6 +359,6 @@ Does this spell the end for plugin-based video solutions of old? In the short te
 - [Accessible HTML5 Video with JavaScripted captions][30]
 
 [27]: http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2
-[28]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video
+[28]: https://html.spec.whatwg.org/multipage/the-video-element.html#video
 [29]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
 [30]: https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/

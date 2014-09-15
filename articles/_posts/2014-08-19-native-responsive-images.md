@@ -20,7 +20,7 @@ As you surely know, the proliferation of devices with numerous viewport dimensio
 
 But, even though RWD sites _looked_ different on each device, underneath, [most of them continued to download the same resources for all devices](http://www.guypo.com/uncategorized/real-world-rwd-performance-take-2/). And since images [comprised the major part](http://httparchive.org/interesting.php#bytesperpage) of the bytes that websites were downloading, the developer community started to look into possible solutions to avoid this waste.
 
-That started a (very) long process in which multiple proposals were suggested on various mailing-lists, the problem was analyzed over [blog post](http://blog.cloudfour.com/responsive-imgs/) debates, and the [various use-cases](http://usecases.responsiveimages.org/) that emerged were taken into consideration. The developer community united to form the [Responsive Images Community Group](http://responsiveimages.org/), and eventually, browser vendors got involved and consensus was reached. The [picture element](http://picture.responsiveimages.org/) specification that was written in collaboration between the community and browser vendors was merged into the [HTML spec](http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html), and both Blink & Gecko’s implementations are destined to ship early this fall!
+That started a (very) long process in which multiple proposals were suggested on various mailing-lists, the problem was analyzed over [blog post](http://blog.cloudfour.com/responsive-imgs/) debates, and the [various use-cases](http://usecases.responsiveimages.org/) that emerged were taken into consideration. The developer community united to form the [Responsive Images Community Group](http://responsiveimages.org/), and eventually, browser vendors got involved and consensus was reached. The [picture element](http://picture.responsiveimages.org/) specification that was written in collaboration between the community and browser vendors was merged into the [HTML spec](https://html.spec.whatwg.org/multipage/embedded-content.html), and both Blink & Gecko’s implementations are destined to ship early this fall!
 
 But, hold on a minute. That’s a great story and all, but why should I care about responsive images? What can responsive images do for _me?_
 
@@ -101,7 +101,7 @@ The art direction syntax goes something like:
 		<img src="small.jpg" alt="The president giving an award.">
 	</picture>
 
-Here again we hand out a grocery list of resources to the browser. The difference is that this is a list of `<source>` tags, and _their_ selection algorithm is [well-defined by the spec](http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#select-an-image-source).
+Here again we hand out a grocery list of resources to the browser. The difference is that this is a list of `<source>` tags, and _their_ selection algorithm is [well-defined by the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#select-an-image-source).
 
 The browser follows that algorithm to the letter and picks the source tag that you intended, every time.
 

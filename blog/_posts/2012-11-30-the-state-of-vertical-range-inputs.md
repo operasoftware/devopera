@@ -27,7 +27,7 @@ There’s a catch though — not all browsers support this yet. But we’re real
 
 So how do you get a vertical range slider? The [HTML Standard mentions][4] “determin[ing] the orientation of the control from the ratio of the style-sheet-specified height and width properties.” So as long as you define the width to be smaller than the height, your browser should create a vertical range input for you.
 
-[4]: http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#range-state-(type=range
+[4]: https://html.spec.whatwg.org/multipage/states-of-the-type-attribute.html#range-state-(type=range
 
 You can [see if this works in your browser][5] right now.
 

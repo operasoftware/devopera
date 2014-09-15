@@ -21,7 +21,7 @@ license: cc-by-3.0
 
 </p><p>This article aims to provide all the nitty-gritty details of HTML5 media, the DOM API, events, and so forth, so you can implement your own HTML5 player with fallback to old browsers.
 </p> ... </p><!--more--><h3>What&#39;s supported?</h3>
-<p>Opera 10.50 supports everything in <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html">the spec</a> with the following exceptions:</p>
+<p>Opera 10.50 supports everything in <a href="https://html.spec.whatwg.org/multipage/video.html">the spec</a> with the following exceptions:</p>
 <ul>
 <li><code>preload</code> attribute is not supported. (<code>autobuffer</code> was changed to <code>preload</code> in the spec; Opera has <code>autobuffer</code> in the DOM but it doesn&#39;t do anything.)
 
@@ -617,4 +617,4 @@ video.onloadeddata = function(e) {
 </p><h3>Yawn</h3>
 <p>Phew, that was quite an article, no? On the plus side, I think I managed to cover the whole <code>video</code> and <code>audio</code> DOM API and all related events. Now I&#39;m just waiting for you guys to do something creative with all of this. I haven&#39;t included any demos in this post — sorry — but I want <em>you</em> to create the demos and kick-ass sites and applications. There&#39;s lots of potential here with what can be done. Personally, I need to get back to working on QA...
 
-</p><p>P.S. If the examples in this article don&#39;t work in some browsers, then either I&#39;ve made a typo or some other mistake, or there&#39;s a bug in the browser. Check the error console, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html">the spec</a>, and if you think there&#39;s a bug, file it in the relevant browser vendor&#39;s bug tracker. For Opera, you can use our <a href="https://bugs.opera.com/wizard/">Bug Report Wizard</a> — include &quot;video&quot; or &quot;audio&quot; or &quot;media&quot; in the summary. Thanks!</p>
+</p><p>P.S. If the examples in this article don&#39;t work in some browsers, then either I&#39;ve made a typo or some other mistake, or there&#39;s a bug in the browser. Check the error console, <a href="https://html.spec.whatwg.org/multipage/video.html">the spec</a>, and if you think there&#39;s a bug, file it in the relevant browser vendor&#39;s bug tracker. For Opera, you can use our <a href="https://bugs.opera.com/wizard/">Bug Report Wizard</a> — include &quot;video&quot; or &quot;audio&quot; or &quot;media&quot; in the summary. Thanks!</p>

@@ -35,7 +35,7 @@ license: cc-by-3.0
 
 <h2>HTML5 and Web Standards</h2>
 
-<p>Opera is the browser that <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/introduction.html#history-1">began the HTML5 specification</a> that is transforming the web, so it&#39;s only natural that we&#39;d be adding more support for the latest standards.</p>
+<p>Opera is the browser that <a href="https://html.spec.whatwg.org/multipage/introduction.html#history-1">began the HTML5 specification</a> that is transforming the web, so it&#39;s only natural that we&#39;d be adding more support for the latest standards.</p>
 
 <p>Opera 12.10 beta adds partial support for the Fullscreen API that allows video, games or web pages to use the whole screen to remove distractions like browser chrome that can divert your attention from skateboarding kittens or shooting aliens. (We say &quot;partial&quot; because new &quot;HTML5 the living-on-the-edge standard&quot; specs chop and change. This beta implements the <a href="http://dvcs.w3.org/hg/fullscreen/raw-file/529a67b8d9f3/Overview.html" rel="nofollow">Fullscreen API editors&#39; draft 7 February 2012</a>, while the standard has now mutated in the latest <a href="http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html" rel="nofollow">July 2012 version</a>.)</p>
 

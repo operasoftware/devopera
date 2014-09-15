@@ -24,7 +24,7 @@ license: cc-by-nc-sa-3.0
 
 <p>New Web technologies are gaining support across browsers, with bridging solutions becoming available for those that don&apos;t, eg <a href="http://raphaeljs.com/">Raphaёl</a> for SVG, and <a href="http://code.google.com/p/explorercanvas/">ExCanvas</a> for Canvas. Even <a href="http://blogs.msdn.com/ie/archive/2010/02/01/w3c-svg-working-group-update-for-january-2010.aspx">Internet Explorer has started to flirt with SVG</a> (with support annouced for IE9), so we could see wider support in the future! This however causes a new problem to rear its ugly head &mdash; it has become harder to decide which technology is best for a new project.</p>
 
-<p><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html">HTML5 Canvas</a> and <a href="http://www.w3.org/TR/SVG/">SVG</a> are both Web technologies that allow you to create rich graphics inside the browser, but they are fundamentally different. In this article we explore those differences, giving you the knowledge needed to use SVG and Canvas effectively and appropriately.</p>
+<p><a href="https://html.spec.whatwg.org/multipage/the-canvas-element.html">HTML5 Canvas</a> and <a href="http://www.w3.org/TR/SVG/">SVG</a> are both Web technologies that allow you to create rich graphics inside the browser, but they are fundamentally different. In this article we explore those differences, giving you the knowledge needed to use SVG and Canvas effectively and appropriately.</p>
 
 <p class="note">If you wish to experiment more with the code presented here, you can <a href="svg-or-canvas-article.zip">download the SVG and Canvas examples</a> provided in this article.</p>
 
@@ -70,14 +70,14 @@ license: cc-by-nc-sa-3.0
 
 <h2 id="html5-canvas">HTML5 Canvas</h2>
 
-<p>The <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html">HTML5 Canvas specification</a> is a versatile JavaScript API allowing us to code
+<p>The <a href="https://html.spec.whatwg.org/multipage/the-canvas-element.html">HTML5 Canvas specification</a> is a versatile JavaScript API allowing us to code
 		programmatic drawing operations. Canvas, by itself, allows you to define
 		a <code>canvas</code> context object (manifesting as
 		a <code>&lt;canvas&gt;</code> element on your HTML page), which can then be
 		drawn inside. To do the actual drawing, you have different options:</p>
 
 <ul>
-<li>A <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-2d-context">2D drawing context</a>,</li>
+<li>A <a href="https://html.spec.whatwg.org/multipage/the-canvas-element.html#the-2d-context">2D drawing context</a>,</li>
 <li>A <a href="https://www.khronos.org/webgl/">3D drawing context (WebGL)</a>.</li>
 </ul>
 

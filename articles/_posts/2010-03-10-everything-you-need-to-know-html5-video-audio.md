@@ -26,7 +26,7 @@ license: cc-bsd
 <p class="note">Editor's note: This article was originally published on the <a href="http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2">Opera Core Concerns blog</a>, but we liked it so much that we convinced Simon to let us publish it here as well.</p>
 
 <h3>What's supported?</h3>
-<p>Opera supports everything in <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video">the HTML5 <code>video</code> spec</a> with the following exceptions:</p>
+<p>Opera supports everything in <a href="https://html.spec.whatwg.org/multipage/the-video-element.html#video">the HTML5 <code>video</code> spec</a> with the following exceptions:</p>
 <ul>
 <li>The <code>preload</code> attribute is not supported. (<code>autobuffer</code> was changed to <code>preload</code> in the spec; Opera has <code>autobuffer</code> in the DOM but it doesn't do anything.)
 
@@ -835,7 +835,7 @@ video.onloadeddata = function(e) {
 <h3>Summary</h3>
 <p>Phew, that was quite an article, no? On the plus side, I think I managed to cover the whole <code>video</code> and <code>audio</code> DOM API and all related events. Now I'm just waiting for you guys to do something creative with all of this. I haven't included any demos in this post — sorry — but I want <em>you</em> to create the demos and kick-ass sites and applications. There's lots of potential here of what can be done. Personally, I need to get back to working on QA...</p>
 
-<p class="note">If the examples in this article don't work in some browsers, then either I've made a typo or some other mistake, or there's a bug in the browser. Check the error console, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video">the HTML5 &lt;video&gt; spec</a>, and if you think there's a bug, file it in the relevant browser vendor's bug tracker. For Opera, you can use our <a href="https://bugs.opera.com/wizard/">Bug Report Wizard</a> — include "video" or "audio" or "media" in the summary. Thanks!</p>
+<p class="note">If the examples in this article don't work in some browsers, then either I've made a typo or some other mistake, or there's a bug in the browser. Check the error console, <a href="https://html.spec.whatwg.org/multipage/the-video-element.html#video">the HTML5 &lt;video&gt; spec</a>, and if you think there's a bug, file it in the relevant browser vendor's bug tracker. For Opera, you can use our <a href="https://bugs.opera.com/wizard/">Bug Report Wizard</a> — include "video" or "audio" or "media" in the summary. Thanks!</p>
 
 <h2 id="readmore">Read more...</h2>
 <ul>

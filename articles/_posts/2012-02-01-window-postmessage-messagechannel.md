@@ -46,7 +46,7 @@ Before we get into the nitty-gritty of web messaging, let’s take a look at the
 - `source` A reference to the originating document’s window. More accurately, it’s a [`WindowProxy` object][4].
 - `ports` An array containing any [`MessagePort`][5] objects sent with the message.
 
-[4]: http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#windowproxy
+[4]: https://html.spec.whatwg.org/multipage/browsers.html#windowproxy
 [5]: http://dev.w3.org/html5/postmsg/#messageport
 
 In the case of cross-document messaging events and channel messaging, the value of `lastEventId` is always an empty string; `lastEventId` applies to server-sent events. If no ports are sent with the message, the value of the `ports` attribute will be an array whose length is zero.

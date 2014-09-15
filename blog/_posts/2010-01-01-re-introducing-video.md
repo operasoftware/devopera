@@ -22,7 +22,7 @@ From the very beginning, one of the most important questions has been which audi
 
 ### Features
 
-While the core codec support remains the same, almost everything else has changed. The [specification](http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html) has evolved a lot since `<video>` was first added, and we try to follow the spec to the letter. This is a non-exhaustive list of what we consider more or less done:
+While the core codec support remains the same, almost everything else has changed. The [specification](https://html.spec.whatwg.org/multipage/video.html) has evolved a lot since `<video>` was first added, and we try to follow the spec to the letter. This is a non-exhaustive list of what we consider more or less done:
 
 * Native controls (the `controls` attribute)
 * Scripted controls (e.g. using `play()`, `.currentTime` and `ontimeupdate`)

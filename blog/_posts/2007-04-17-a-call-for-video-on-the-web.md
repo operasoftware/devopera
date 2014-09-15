@@ -13,7 +13,7 @@ license: os-asa
 
 It’s time to make video a first-class citizen of the web. We, the users, have video cameras in our pockets and the bandwidth to tranfer more clips and streams than we can watch. What’s missing is a an easy way to integrate video into web pages, and native support for video in browsers. We, the web community, should address this by adding a [video element][1] to HTML.
 
-[1]: http://www.whatwg.org/specs/web-apps/current-work/#video
+[1]: https://html.spec.whatwg.org/#video
 
 In addition to giving video an HTML element, we must also agree on a baseline video format that will be universally supported, just like the GIF, JPEG and PNG image format are universally supported. It’s important that the video format we choose can be supported by a wide range of devices an that it’s royalty-free (RF). RF is a well-establish principle for W3C standards.
 

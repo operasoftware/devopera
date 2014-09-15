@@ -408,5 +408,5 @@ Building our own custom video player with HTML5 video, JavaScript and CSS3 is fa
 [11]: /articles/introduction-html5-video/
 [12]: /articles/accessible-html5-video-with-javascripted-captions/
 [13]: /blog/everything-you-need-to-know-about-html5-video-and-audio-2/
-[14]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#video
+[14]: https://html.spec.whatwg.org/multipage/the-video-element.html#video
 [15]: /blog/re-introducing-video/

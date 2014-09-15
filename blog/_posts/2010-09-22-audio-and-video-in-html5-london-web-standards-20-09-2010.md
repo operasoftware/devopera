@@ -27,7 +27,7 @@ license: cc-by-3.0
 <li><a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">Fancy styled JavaScript-based <code>video</code> controls</a></li>
 <li><a href="http://people.opera.com/patrickl/experiments/webm/fancy-swap/">Swapping <code>video</code> sources for simple playlists/galleries</a></li>
 </ul>
-<p>As a bonus, I also mentioned <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#websrt-0">WebSRT</a> and the <code>&lt;track&gt;</code> element (not part of HTML5), and showed the <a href="http://people.opera.com/philipj/2010/07/21/html5-video-webinar/demos/track.html">JavaScript demo implementation of WebSRT</a> by Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> as another example of how the native APIs for <code>video</code> can be used in creative new ways.</p>
+<p>As a bonus, I also mentioned <a href="https://html.spec.whatwg.org/multipage/video.html#websrt-0">WebSRT</a> and the <code>&lt;track&gt;</code> element (not part of HTML5), and showed the <a href="http://people.opera.com/philipj/2010/07/21/html5-video-webinar/demos/track.html">JavaScript demo implementation of WebSRT</a> by Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> as another example of how the native APIs for <code>video</code> can be used in creative new ways.</p>
 <h3><code>audio</code></h3>
 <p>The first public outing of my <code>audio</code> examples!</p>
 <ul>

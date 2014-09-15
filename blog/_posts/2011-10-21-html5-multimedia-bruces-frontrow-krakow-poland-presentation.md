@@ -31,7 +31,7 @@ license: cc-by-3.0
 <li>Pat Lauke&#39;s <a href="http://people.opera.com/patrickl/experiments/webm/fancy-controls/">Fancy video controls with JavaScript</a> - view source, or steal his code</li>
 <li><a href="http://www.w3.org/TR/html5/video.html#media-elements" rel="nofollow">Video API spec</a></li>
 <li>
-<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-track-element" rel="nofollow">Spec for the <code>&lt;track&gt;</code> element</a> for subtitles/ captioning etc</li>
+<a href="https://html.spec.whatwg.org/multipage/video.html#the-track-element" rel="nofollow">Spec for the <code>&lt;track&gt;</code> element</a> for subtitles/ captioning etc</li>
 <li>
 <a href="http://www.iandevlin.com/blog/2011/05/html5/webvtt-and-video-subtitles" rel="nofollow">WebVTT format explained</a> by <a href="http://twitter.com/iandevlin" rel="nofollow">Ian Devlin</a>
 </li>
@@ -41,7 +41,7 @@ license: cc-by-3.0
 <li>
 <a href="http://mediaelementjs.com/" rel="nofollow">MediaElement.js</a> - jQuery-based polyfill that fakes track support and degrades to custom Flash and Silverlight players that mimic the HTML5 MediaElement API for older browsers</li>
 <li>
-<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#synchronising-multiple-media-elements" rel="nofollow">Synchronising multiple media elements</a> - nascent specification: <strong>highly liable to change</strong>!</li>
+<a href="https://html.spec.whatwg.org/multipage/video.html#synchronising-multiple-media-elements" rel="nofollow">Synchronising multiple media elements</a> - nascent specification: <strong>highly liable to change</strong>!</li>
 <li>
 <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" rel="nofollow">Accessing device camera from JavaScript</a> - Labs build of Opera/ Android that implements HTML5 <code>getUserMedia</code> with bonus link to the Magic HTML5 Moustache demo</li>
 <li><a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Playing with HTML5 video and getUserMedia support</a> - tutorial article</li>

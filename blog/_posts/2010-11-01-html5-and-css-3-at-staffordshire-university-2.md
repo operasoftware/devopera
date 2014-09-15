@@ -44,10 +44,10 @@ license: cc-by-3.0
 <li><a href="http://people.opera.com/patrickl/experiments/webm/fancy-swap/">Swapping <code>video</code> sources for simple playlists/galleries</a></li>
 <li>
 <a href="http://my.opera.com/core/blog/2010/03/03/everything-you-need-to-know-about-html5-video-and-audio-2">Everything you need to know about HTML5 video and audio</a> - and it really is <em>everything</em>!</li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#video"><code>&lt;video&gt;</code> specification</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/video.html#video"><code>&lt;video&gt;</code> specification</a></li>
 <li><a href="http://my.opera.com/core/blog/2009/12/31/re-introducing-video">How <code>&lt;video&gt;</code> is implemented in Opera</a></li>
 </ul>
-<p>For video accessibility, see <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#websrt-0">WebSRT</a> and the <code>&lt;track&gt;</code> element (not part of HTML5), and showed the <a href="http://people.opera.com/philipj/2010/07/21/html5-video-webinar/demos/track.html">JavaScript demo implementation of WebSRT</a> by Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> as another example of how the native APIs for <code>video</code> can be used in creative new ways.</p>
+<p>For video accessibility, see <a href="https://html.spec.whatwg.org/multipage/video.html#websrt-0">WebSRT</a> and the <code>&lt;track&gt;</code> element (not part of HTML5), and showed the <a href="http://people.opera.com/philipj/2010/07/21/html5-video-webinar/demos/track.html">JavaScript demo implementation of WebSRT</a> by Opera&#39;s <a href="http://blog.foolip.org/">Philip Jägenstedt</a> as another example of how the native APIs for <code>video</code> can be used in creative new ways.</p>
 
 
 

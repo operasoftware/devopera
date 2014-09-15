@@ -130,6 +130,6 @@ license: cc-by-3.0
 <li><a rel="nofollow" href="https://dev.opera.com/articles/view/creating-web-content-for-tv/">Creating web content for TV</a></li>
 <li>
 <li><a href="http://my.opera.com/ODIN/blog/video-tutorial-access-your-phones-camera-with-wac-widgets">Video tutorial: Access your phone&#39;s camera with WAC widgets</a></li>
-<li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Opera and HTML5 &lt;device&gt; element</a> to give web sites access to a device&#39;s camera, and Orientation Events  (now renamed  <a href="http://www.whatwg.org/specs/web-apps/current-work/complete/video-conferencing-and-peer-to-peer-communication.html#obtaining-local-multimedia-content">getUserMedia()</a>)</li>
+<li><a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview">Opera and HTML5 &lt;device&gt; element</a> to give web sites access to a device&#39;s camera, and Orientation Events  (now renamed  <a href="https://html.spec.whatwg.org/complete/video-conferencing-and-peer-to-peer-communication.html#obtaining-local-multimedia-content">getUserMedia()</a>)</li>
 <li><a rel="nofollow" href="http://www.w3.org/TR/widgets/">W3C Widget spec</a></li>
 </li></ul>

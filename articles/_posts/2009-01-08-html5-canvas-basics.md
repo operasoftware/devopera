@@ -28,9 +28,9 @@ license: cc-by-nc-sa-2.5
 <h2 id="introduction">Introduction</h2>
 
 <p>The <a
-href="http://www.whatwg.org/specs/web-apps/current-work/multipage/">HTML5 specification</a>
+href="https://html.spec.whatwg.org/multipage/">HTML5 specification</a>
 includes lots of new features, one of which is <a
-href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html">the
+href="https://html.spec.whatwg.org/multipage/the-canvas-element.html">the
 <code>canvas</code> element</a>. HTML5 <code>canvas</code> gives you an
 easy and powerful way to draw graphics using JavaScript. For each
 <code>canvas</code> element you can use a "context" (think about a page in

@@ -45,6 +45,6 @@ but
 
 CORE-24242 aligns `onreadystatechange` behavior with [HTML5][3]. Until now, Opera fired these events various places (like `<script>`, `<img>` elements) for IE compatibility. Again this causes pain and we have been patching issues through browser.js for a long time.
 
-[3]: http://www.whatwg.org/specs/web-apps/current-work/multipage/scripting-1.html#the-script-element
+[3]: https://html.spec.whatwg.org/multipage/scripting-1.html#the-script-element
 
 So try this out and look for breakage.

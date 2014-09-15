@@ -12,13 +12,13 @@ license: cc-by-3.0
 
 <h2 id="custom_protocol_and_content_handlers_in_opera_1160_beta">Custom Protocol and Content Handlers in Opera 11.60 beta</h2>
 
-<p>The Opera 11.60 alpha snapshot introduces support for <a href="http://www.whatwg.org/specs/web-apps/current-work/#custom-handlers">HTML5 custom scheme and content handlers</a>.</p>
+<p>The Opera 11.60 alpha snapshot introduces support for <a href="https://html.spec.whatwg.org/#custom-handlers">HTML5 custom scheme and content handlers</a>.</p>
 
 <p>Not yet supported are the <code>isProtocolHandlerRegistered</code>, <code>isContentHandlerRegistered</code>, <code>unregisterContentHandler</code>, <code>unregisterProtocolHandler</code> methods which were added to the spec <a href="http://html5.org/tools/web-apps-tracker?from=6523&amp;amp;to=6524">recently</a>.</p>
 
 <p>The idea is pretty simple. Your site can offer to handle certain MIME types or schemes (aka &#8220;protocols&#8221;) and the user has the option of opting in. One obvious use-case is webmail. For example, a service like Fastmail.fm or Gmail could tell your browser to open its &quot;Compose&quot; page if you click on a &quot;mailto:&quot; link rather than open a native mail application.</p>
 
-<p>Of course, there are reasons why you wouldn&#8217;t want to pass off every type of content to a web-app&#x2014;we want JavaScript and CSS to be handled by the browser, for example&#x2014;so a <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#type-blacklist">blacklist exists</a>. For <a href="http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-April/031220.html">security reasons</a>, there&#39;s also a <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#whitelisted-scheme">whitelist</a> for schemes (but with the option to create a custom &#8220;web+&#8221; scheme).</p>
+<p>Of course, there are reasons why you wouldn&#8217;t want to pass off every type of content to a web-app&#x2014;we want JavaScript and CSS to be handled by the browser, for example&#x2014;so a <a href="https://html.spec.whatwg.org/multipage/timers.html#type-blacklist">blacklist exists</a>. For <a href="http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-April/031220.html">security reasons</a>, there&#39;s also a <a href="https://html.spec.whatwg.org/multipage/timers.html#whitelisted-scheme">whitelist</a> for schemes (but with the option to create a custom &#8220;web+&#8221; scheme).</p>
 
 <h3 id="protocol_registration">Protocol Registration</h3>
 

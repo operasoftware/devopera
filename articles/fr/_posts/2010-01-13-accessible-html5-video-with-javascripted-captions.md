@@ -106,7 +106,7 @@ Le code est fourni sous licence Creative Commons, donc n’hésitez pas à le mo
 - [Spécification de la balise `video`][10]
 - [Comment la balise `video` est prise en charge dans Opera][11]
 
-[10]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element
+[10]: https://html.spec.whatwg.org/multipage/the-video-element.html#the-video-element
 [11]: http://my.opera.com/core/blog/2009/12/31/re-introducing-video
 
 ## Remerciements

@@ -47,7 +47,7 @@ video element, we drop the <code>src</code> attribute and instead include all th
 <p class="note">Note: It is advisable to put the MP4 source first, because of an iPad bug that stops it finding the source, if this is not the case.</p>
 
 <p>The <code>type</code> attribute in this case tells the browser about the
-container format (and optionally the codec) of the video. See <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-source-element">the `source` element specification</a> for more details.</p>
+container format (and optionally the codec) of the video. See <a href="https://html.spec.whatwg.org/multipage/the-video-element.html#the-source-element">the `source` element specification</a> for more details.</p>
 
 <p class="note"><strong>Creating WebM videos</strong>: For a simple and easy to use application for converting videos to WebM (and many other formats), check out the <a href="http://www.mirovideoconverter.com/">Miro video converter</a>.</p>
 

@@ -69,7 +69,7 @@ The latest versions of popular web browsers all support both `<audio>` and `<vid
 
 The solution to these problems is to create our own multimedia player, and render keyboard accessible controls using the [media elements API][4].
 
-[4]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#media-elements
+[4]: https://html.spec.whatwg.org/multipage/the-video-element.html#media-elements
 
 In this article we’ll be focusing on adapting the custom-built video player from my last article with some jQuery and CSS3, making it as accessible as possible, and adding new features along the way, such as closed captions and transcriptions.
 
@@ -246,7 +246,7 @@ The current file format is called WebSRT, and is basically an improved version o
 
 You can read more about it in the [WHATWG HTML5 spec][10].
 
-[10]: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-track-element
+[10]: https://html.spec.whatwg.org/multipage/the-video-element.html#the-track-element
 
 The element is not present in the W3C spec because of “political” problems, mainly because the current proposed format (WebSRT) conflicts with about 50 other formats, including W3C formats like smilText and TTML.
 

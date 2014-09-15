@@ -40,9 +40,9 @@ The quickest way to get started with drag and drop is to add `draggable=true` to
 The `draggable` attribute indicates to the browser that an element is eligible for dragging with three possible values: `true`, `false`, and `auto`. For example, in the following list of items, the first is draggable, the second isn’t, and the third may or may not be depending on the user agent’s default behavior.
 
 <ul>
-    <li draggable="true">You can drag me.</li>
-    <li draggable="false"><a href="http://opera.com/">You can’t drag me</a>.</li>
-    <li draggable="auto">You might be able to drag me.</li>
+	<li draggable="true">You can drag me.</li>
+	<li draggable="false"><a href="http://opera.com/">You can’t drag me</a>.</li>
+	<li draggable="auto">You might be able to drag me.</li>
 </ul>
 
 Keep in mind that text selections are always draggable by default, as are images and links. You can set their `draggable` attributes to false to prevent this, which may not be very nice for your users.
@@ -292,7 +292,7 @@ This concludes our tour of HTML5 Drag and Drop. Pat yourself on the back if you�
 - [DND: spec not matching implementations][19] by Anne van Kesteren
 - [DND: proposal to expose origin][20] by Anne van Kesteren
 
-[15]: http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html
+[15]: https://html.spec.whatwg.org/multipage/dnd.html
 [16]: http://www.html5rocks.com/en/tutorials/dnd/basics/
 [17]: http://www.useragentman.com/blog/2010/01/10/cross-browser-html5-drag-and-drop/
 [18]: http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2012-February/034889.html

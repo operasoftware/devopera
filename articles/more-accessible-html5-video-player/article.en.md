@@ -74,7 +74,7 @@ Text:
 	<p class="comment">Figure 1: Native browser video controls in Opera 10.63, with the volume button focused.</p>
 	
 	<h2 id="custom">A custom, accessible HTML5 video player</h2>
-	<p>The solution to these problems is to create our own multimedia player, and render keyboard accessible controls using the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#media-elements">media elements API</a>.</p>
+	<p>The solution to these problems is to create our own multimedia player, and render keyboard accessible controls using the <a href="https://html.spec.whatwg.org/multipage/the-video-element.html#media-elements">media elements API</a>.</p>
 	
 	<p>In this article we’ll be focusing on adapting the custom-built video player from my last article with some jQuery and CSS3, making it as accessible as possible, and adding new features along the way, such as closed captions and transcriptions. </p>
 	
@@ -247,7 +247,7 @@ video.$volume.$handle.attr(&quot;aria-valuetext&quot;, Math.round(volume*100) + 
 	
 	<p>The current file format is called WebSRT, and is basically an improved version of <a href="http://en.wikipedia.org/wiki/SubRip">SubRip’s SRT format</a>.</p>
 	
-	<p>You can read more about it in the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-track-element">WHATWG HTML5 spec</a>. </p>
+	<p>You can read more about it in the <a href="https://html.spec.whatwg.org/multipage/the-video-element.html#the-track-element">WHATWG HTML5 spec</a>. </p>
 	
 	<p>The element is not present in the W3C spec because of &quot;political&quot; problems, mainly because the current proposed format (WebSRT) conflicts with about 50 other formats, including W3C formats like smilText and TTML. </p>
 	
