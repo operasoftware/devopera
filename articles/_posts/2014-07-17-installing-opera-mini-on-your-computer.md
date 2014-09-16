@@ -18,7 +18,7 @@ For development and testing purposes, it can be useful to install Opera Mini on 
 
 In a nutshell, you’ll need Java and MicroEmulator, in which you’ll run an instance of Opera Mini for J2ME-enabled feature phones. To make this as straightforward as possible, we’ve outlined all the necessary steps below.
 
-## Get Java
+## Get Java (Windows and Mac)
 
 Go to the [Java download page](https://www.java.com/en/download/) and click on the “Free Java Download” button. On the next screen, you may get a warning that Java might not run inside your browser: this is not important as we will run Java on the system level. Just proceed with the download, and once this is finished, open the Java installer and follow the steps to complete the installation.
 
@@ -33,6 +33,10 @@ Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downl
 </figure>
 
 Right click _microemulator.jar_ and choose _Open_ from the context menu. Next, you will get a warning that this application is from an unidentified developer. Click _Open_ button to launch the application.
+
+### Special Ubuntu instructions
+
+From the Dash Apps lens (or Ubuntu Software Centre) install OpenJDK Java 7 Runtime. Right-click _microemulator.jar_ and select Properties, Permissions and tick _Allow executing file as program_. Close the Permissions dialog and double-click _microemulator.jar_ to run it.
 
 ## Making the emulator resizable
 
