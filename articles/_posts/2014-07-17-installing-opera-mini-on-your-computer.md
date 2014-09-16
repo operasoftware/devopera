@@ -18,9 +18,11 @@ For development and testing purposes, it can be useful to install Opera Mini on 
 
 In a nutshell, you’ll need Java and MicroEmulator, in which you’ll run an instance of Opera Mini for J2ME-enabled feature phones. To make this as straightforward as possible, we’ve outlined all the necessary steps below.
 
-## Get Java (Windows and Mac)
+## Get Java
 
-Go to the [Java download page](https://www.java.com/en/download/) and click on the “Free Java Download” button. On the next screen, you may get a warning that Java might not run inside your browser: this is not important as we will run Java on the system level. Just proceed with the download, and once this is finished, open the Java installer and follow the steps to complete the installation.
+If you're using Windows or Mac, go to the [Java download page](https://www.java.com/en/download/) and click on the “Free Java Download” button. On the next screen, you may get a warning that Java might not run inside your browser: this is not important as we will run Java on the system level. Just proceed with the download, and once this is finished, open the Java installer and follow the steps to complete the installation.
+
+If you're running Ubuntu, you can install the [OpenJDK Java 7 Runtime](https://apps.ubuntu.com/cat/applications/openjdk-7-jre/) from the Ubuntu Apps Directory.
 
 ## Get MicroEmulator up and running
 
@@ -32,11 +34,11 @@ Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downl
 	<img src="{{ page.id }}/open.png" alt="Security dialog on Mac" class="figure__media">
 </figure>
 
-Right click _microemulator.jar_ and choose _Open_ from the context menu. Next, you will get a warning that this application is from an unidentified developer. Click _Open_ button to launch the application.
+Right-click _microemulator.jar_ and choose _Open_ from the context menu. Next, you will get a warning that this application is from an unidentified developer. Click _Open_ button to launch the application.
 
 ### Special Ubuntu instructions
 
-From the Dash Apps lens (or Ubuntu Software Centre) install OpenJDK Java 7 Runtime. Right-click _microemulator.jar_ and select Properties, Permissions and tick _Allow executing file as program_. Close the Permissions dialog and double-click _microemulator.jar_ to run it.
+Right-click _microemulator.jar_ and select _Properties_, _Permissions_ and tick _Allow executing file as program_. Close the _Permissions_ dialog and double-click _microemulator.jar_ to run it.
 
 ## Making the emulator resizable
 
