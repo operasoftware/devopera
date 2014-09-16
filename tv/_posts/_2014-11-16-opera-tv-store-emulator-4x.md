@@ -1,7 +1,7 @@
 ---
 title: Opera TV Emulator 4.x User Guide
 authors:
-- KrystianGorski
+- krystian-gorski
 intro: 'The Opera TV Store Emulator allows web developers to test HTML-based applications for the Opera TV Store to see how it will behave under Opera TV Store'
 tags:
 - developer-tools
@@ -14,7 +14,7 @@ license: cc-by-3.0
 
 ## About the Opera TV Emulator 4.x
 
-The Opera TV Store Emulator allows web developers to test HTML-based applications for the [Opera TV Store][1]  to see how it will behave under Opera TV Store.
+The Opera TV Store Emulator allows web developers to test HTML-based applications for the [Opera TV Store][1] to see how it will behave in the Opera TV Store.
 
 [1]: http://www.opera.com/business/tv/store/
 
@@ -30,22 +30,24 @@ The Opera TV Store Emulator allows web developers to test HTML-based application
 
 ## Description {#description}
 
-The Opera TV Emulator allows web developer to test HTML-based applications for the [Opera TV Store][1](For SDK 3.x emulation use Opera TV Emulator 3.4). It is created as an extension for the Opera 24+ Desktop browser.
+The Opera TV Emulator allows web developers to test HTML-based applications for the [Opera TV Store][1]. It is created as an extension for the Opera 24+ Desktop browser.
+
+Note: For SDK 3.x emulation, please use Opera TV Emulator 3.4.
 
 ## Features {#features}
 
-- Overscan - be able to see how your app looks like when overscan occurs
+- Overscan — check what your app looks like when overscan occurs
 - Default CSS TV colors
-- Remote control widget is enabled all the time and is located on the bottom of the screen. It is possible to hide it, when clicking in dash icon.
-- Functional key mappings - VK_KEY button emulation, including directional, enter, back and colour buttons (r,g,b,y)
-- Draggable popup with information appears when window.close function is called
-- localStorage disabled - when localStorage is used error popup appears
+- Remote control widget is enabled all the time and is located on the bottom of the screen. It is possible to hide it, when clicking the dash icon.
+- Functional key mappings — VK_KEY button emulation, including directional, enter, back and color buttons (r,g,b,y)
+- Draggable popup with information appears when the `window.close` function is called
+- `localStorage` is disabled — when `localStorage` is used, an error popup appears
 
 ## Installation {#install}
 
 1. Download the latest version of the Opera TV Store Emulator extension for [Opera][3]
-2. open extensions tab
-3. drag&drop extension on extensions tab
+2. open the extensions tab
+3. drag & drop extension on extensions tab
 4. After the installation is finished you can check "Allow access to file URLs" to emulate local files - e.g file://foo/bar/index.html
 
 [3]: http://apps.tvstore.op-cdn.net/opera-tv-store-emulator/description_page/OperaTVStoreEmulator.nex
