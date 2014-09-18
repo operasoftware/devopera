@@ -1,4 +1,7 @@
 {
+	"12-the-basics-of-html": "articles/html-basics",
+	"27-css-basics": "articles/css-basics",
+	"38-programming-the-real-basics": "articles/programming-the-real-basics",
 	"3d-games-with-canvas-and-raycasting-part": "articles/3d-games-with-canvas-and-raycasting-part-2",
 	"a-treat-for-nokia-n9-users-opera-mobile-labs-11-5": "articles/a-treat-for-nokia-n9-users-opera-mobile-labs-11.5",
 	"an-introduction-to-webgl": "articles/introduction-to-webgl-part-1",
