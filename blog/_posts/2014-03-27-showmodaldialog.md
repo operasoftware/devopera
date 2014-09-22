@@ -51,6 +51,8 @@ Most importantly, `showModalDialog` is not extremely popular — it can likely b
 
 Web developers wishing to use modal dialogs on their websites should use [the `<dialog>` HTML element](https://html.spec.whatwg.org/multipage/forms.html#the-dialog-element) and its corresponding JavaScript API (`element.show()`, `element.showModal()`, and `element.close()`). [Here’s a demo page with code examples.](http://demo.agektmr.com/dialog/) At the time of writing only Opera and Chrome support this feature. For compatibility with other browsers, [a polyfill is available](https://github.com/GoogleChrome/dialog-polyfill).
 
+Depending on the complexity of your code, switching the codebase over to use `<dialog>` may require a great deal of refactoring. [Alternate solutions](http://thinkingoutsidetheanglebrackets.blogspot.com/2014/09/removal-of-showmodaldialog-and.html), such as ECMAScript 7 `async`/`await`, may be easier to implement. Your mileage may vary.
+
 ## When is `showModalDialog` being removed?
 
 The latest plan is to land the `showModalDialog` removal in Chromium 37. This means the feature will be gone in Opera 24 and Chrome 37, both of which should be released in September.
