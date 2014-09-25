@@ -57,7 +57,7 @@ What happens to our content while our little `@font-face` request is in flight? 
 Since `@font-face` is largely used for content fonts the FOIT seems counterintuitive, given that the alternative has better perceived performance and the web has historically favored progressive rendering. However, this behavior’s use with icon fonts is useful, given that some code points in icon fonts are [mapped to existing Unicode glyphs or using the free-for-all Private Use Area](http://filamentgroup.com/lab/bulletproof_icon_fonts.html). For example, `0xF802` is a pencil icon in Mac OS X Safari and Opera, but a generic default Unicode square in Firefox and iOS Safari. Worse, the Private Use Area is chock-full of multicolor emoji on iOS Safari. You don’t want an unpredictable fallback to show while the icon is loading.
 
 <figure class="figure">
-	<img src="{{ page.id }}/ios-pua.jpg" alt="Multicolor Emoji Characters in the Private Use Area on iOS Safari" class="figure__media">
+	<img src="{{ page.id }}/ios-pua.png" alt="Multicolor Emoji Characters in the Private Use Area on iOS Safari" class="figure__media">
 	<figcaption class="figure__caption">Multicolor Emoji Characters in the Private Use Area on iOS Safari</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ When the article mentions “all browsers” above, it includes this list:
 - Internet Explorer 8, 9, 10, 11
 - Windows Phone 8
 
-*and WebKit/Blink:*
+_and WebKit/Blink:_
 
 - Google Chrome 37
 - Opera 23
