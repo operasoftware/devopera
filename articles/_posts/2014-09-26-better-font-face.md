@@ -2,7 +2,7 @@
 title: Better `@font-face` with Font Load Events
 authors:
 - zach-leatherman
-intro: 'Zach Leatherman, explains common pitfalls with `@font-face` and how to fix them using font load events.'
+intro: 'Zach Leatherman explains common pitfalls with `@font-face` and how to fix them using font load events.'
 tags:
 - css
 - javascript
@@ -10,13 +10,13 @@ tags:
 license: cc-by-3.0
 ---
 
-`@font-face` is an established staple in the diet of almost half of the web. According to the HTTP Archive, 47% of web sites make a request for at least one custom web font. What does this mean for a casual browser of the web? In this article, I will make the argument that current implementations of `@font-face` are actually harmful to the performance and usability of the web. These problems are exacerbated by the fact that developers have started using @font-face for two completely different use cases: Content fonts and Icon fonts, of which should be handled differently. But there is hope. We can make small changes to how these fonts load to mitigate those drawbacks and make the web work better for everyone.
+`@font-face` is an established staple in the diet of almost half of the web. According to the HTTP Archive, 47% of web sites make a request for at least one custom web font. What does this mean for a casual browser of the web? In this article, I make the argument that current implementations of `@font-face` are actually harmful to the performance and usability of the web. These problems are exacerbated by the fact that developers have started using `@font-face` for two completely different use cases: _content fonts_ and _icon fonts_, which should be handled differently. But there is hope. We can make small changes to how these fonts load to mitigate those drawbacks and make the web work better for everyone.
 
 First—let’s discuss what `@font-face` gets right.
 
 ## Initiating a Font Download
 
-What happens when you slap a fancy new @font-face custom web font into your CSS? As it turns out—not much. Just including a `@font-face` block will not actually initiate a download of the remote font file from the server in almost all browsers (except IE8).
+What happens when you slap a fancy new `@font-face` custom web font into your CSS? As it turns out—not much. Just including a `@font-face` block doesn’t actually initiate a download of the remote font file from the server in almost all browsers (except IE8).
 
 	/* Does not download */
 	@font-face {
@@ -30,9 +30,9 @@ So, how does one go about initiating a font download? Peep your eyes on this sou
 	<div style="font-family: open_sansregular"></div>
 
 	<!-- Initiates download in Chrome, Safari (WebKit/Blink et al) -->
-	<div style="font-family: open_sansregular">Content</div>
+	<div style="font-family: open_sansregular">Content.</div>
 
-This means that WebKit and Blink are smart enough to know that even if a node exists in the document that uses our new `font-family` but the node is empty—the font will not download. This is great!
+This means that WebKit and Blink are smart enough to know that even if a node exists in the document that uses our new `font-family` but the node is empty—the font does not download. This is great!
 
 What if we create the nodes dynamically in JavaScript?
 
@@ -46,15 +46,15 @@ What if we create the nodes dynamically in JavaScript?
 	/* Initiates download in WebKit/Blink */
 	el.innerHTML = 'Content.';
 
-All but IE8 will wait until the new node has been appended into the document (is not detached) and as previously mentioned, WebKit/Blink browsers will even wait until the node has text content.
+All but IE8 wait until the new node has been appended into the document (is not detached) and as previously mentioned, WebKit/Blink browsers even wait until the node has text content.
 
 Now we know what `@font-face` got right. Now let’s get our hands dirty.
 
 ## Request in Flight
 
-What happens to our content while our little `@font-face` request is in flight? To the elements affected by the new `font-family`, most browsers will actually hide their fallback text. When the request completes, the text is shown with the new `font-family`. This is sometimes referred to as the Flash of Invisible Text, or FOIT.
+What happens to our content while our little `@font-face` request is in flight? To the elements affected by the new `font-family`, most browsers actually hide their fallback text. When the request completes, the text is shown with the new `font-family`. This is sometimes referred to as the Flash of Invisible Text, or FOIT.
 
-Since `@font-face` is largely used for content fonts the FOIT seems counterintuitive, given that the alternative has better perceived performance and the web has historically favored progressive rendering. However, this behavior’s use with icon fonts is useful, given that some code points in icon fonts are [mapped to existing Unicode glyphs or using the free-for-all Private Use Area](http://filamentgroup.com/lab/bulletproof_icon_fonts.html). For example, `0xF802` is a pencil icon in Mac OS X Safari and Opera, but a generic default Unicode square in Firefox and iOS Safari. Worse, the Private Use Area is chock-full of multicolor emoji on iOS Safari. You don’t want an unpredictable fallback to show while the icon is loading.
+Since `@font-face` is largely used for content fonts the FOIT seems counterintuitive, given that the alternative has better perceived performance and the web has historically favored progressive rendering. However, this behavior’s use with icon fonts is useful, given that some code points in icon fonts are [mapped to existing Unicode glyphs or using the free-for-all Private Use Area](http://filamentgroup.com/lab/bulletproof_icon_fonts.html). For example, [U+F802](http://codepoints.net/U+F802) is a pencil icon in OS X Safari and Opera, but a generic default Unicode square in Firefox and iOS Safari. Worse, the Private Use Area is chock-full of multicolor emoji on iOS Safari. You don’t want an unpredictable fallback to show while the icon is loading.
 
 <figure class="figure">
 	<img src="{{ page.id }}/ios-pua.png" alt="Multicolor Emoji Characters in the Private Use Area on iOS Safari" class="figure__media">
@@ -78,9 +78,9 @@ If the `@font-face` request doesn’t complete in a browser that doesn’t have 
 
 ## The Stop Button
 
-Ok, so the @font-face request hangs. Can’t the user just press the stop button? Actually, no. In all browsers, hitting the stop button had no positive effect on `@font-face` requests.
+Ok, so the `@font-face` request hangs. Can’t the user just press the stop button? Actually, no. In all browsers, hitting the stop button had no positive effect on `@font-face` requests.
 
-Some browsers (Safari 7, Mobile Safari 7, Firefox) pretend as if the stop button had never been triggered, with the exception of Chrome. If you hit the stop button after the three second timeout in Chrome, it will re-hides the fallback text and wait an additional three seconds.
+Some browsers (Safari 7, Mobile Safari 7, Firefox) pretend as if the stop button had never been triggered, with the exception of Chrome. If you hit the stop button after the three-second timeout in Chrome, it re-hides the fallback text and waits an additional three seconds.
 
 Worse, other browsers (Mobile Safari 6.1, Blackberry 7, Android 2.3, 4.2) accept the Stop button but don’t show any fallback content, ever. Your only recourse in this situation is to reload the entire page.
 
@@ -106,9 +106,9 @@ By placing a JS-assigned class around any use of our custom `@font-face`, we reg
 
 Using the above CSS and JS for content fonts, we can show the fallback text while the font request is in flight. If you want to use it for icon fonts, you can easily modify the approach to hide the fallback text avoiding the timeout FOUT as well.
 
-If a user hits the stop button while the text is loading, it may not stop the `@font-face` from loading and triggering the font event, but at least a fallback font will always be shown in all supported browsers.
+If a user hits the stop button while the text is loading, it may not stop the `@font-face` from loading and triggering the font event, but at least a fallback font is always shown in all supported browsers.
 
-## A Cross Browser Solution
+## A Cross-Browser Solution
 
 The above solution works great for Chrome and Opera that support the native API, but what about other browsers? Of course, if you’re already using [TypeKit’s webfontloader](https://github.com/typekit/webfontloader) on your page, you could reuse that—but as of the time this article was written it does not reuse the native API where supported (and is somewhat large to use solely for this purpose—currently 7.1 KB after minification and gzip).
 
@@ -121,11 +121,11 @@ Alternatively, you can use the [FontFaceOnload](https://github.com/zachleat/font
 		}
 	});
 
-If you’d like a full one-to-one polyfill of the CSS Font Loading API, you can follow along with [Bram Stein’s in-progress fontloader polyfill](https://github.com/bramstein/fontloader).
+If you’d like a full one-to-one polyfill of the CSS Font Loading API, you can follow along with [Bram Stein’s in-progress `FontLoader` polyfill](https://github.com/bramstein/fontloader).
 
 ## Conclusion
 
-Content fonts and Icon fonts must be treated differently in order to effectively use them in our pages. In order to make our content usable as soon as possible to our visitors, we must embrace fallback fonts. In order to remove the confusion from sometimes unpredictable icon fonts, we must hide fallback fonts. I hope you’ll consider these inconsistencies and attempt to solve them in your web pages—your users will be happier for it.
+Content fonts and icon fonts must be treated differently in order to effectively use them in our pages. In order to make our content usable as soon as possible to our visitors, we must embrace fallback fonts. In order to remove the confusion from sometimes unpredictable icon fonts, we must hide fallback fonts. I hope you’ll consider these inconsistencies and attempt to solve them in your web pages—your users will be happier for it.
 
 ## Addendum: Browser Support
 
