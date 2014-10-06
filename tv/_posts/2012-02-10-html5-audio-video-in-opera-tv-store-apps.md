@@ -11,6 +11,7 @@ Update history:
 - Article updated on 30 March 2012 to suggest explicit `<source>` workaround.
 - Article updated on 18 April 2012 to include MPEG-1/MPEG-2 Audio Layer 3 audio codec for video and clarification on limitation of single `<audio>` or `<video>` element playback on some of the current devices.
 - Article updated on 13 August 2014 to include information about supported Adaptive Bitrate Streaming and DRM formats
+- Article updated on 7 October 2014 to cover subtitles support
 
 ## Introduction
 
@@ -26,10 +27,10 @@ For more on the basics of HTML5 `<audio>` and `<video>`, read [Introduction to H
 Due to limitations in how multimedia content is handled on certain current devices, there are situations in which the type of audio/video content being used is not automatically inferred by file extensions or MIME types. For this reason, we suggest to use the more explicit, though slightly more wordy, variant:
 
 	<video>
-		<source src="/path/to/video.mp4" type="video/mp4">
+		<source src="/path/to/video.mp4" type="video/mp4"></source>
 	</video>
 	<audio>
-		<source src="/path/to/audio.mp3" type="audio/mp3">
+		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
 	</audio>
 
 In contrast to the desktop version of Opera — where multimedia decoding and playback is handled directly by the browser) — the specifics of which codecs are supported on devices can vary considerably, as this depends on the underlying platform and integration work carried out by device manufacturers, as well as the specific version of the Opera TV Store that may be running on the device.
@@ -206,9 +207,24 @@ DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combina
 			src="http://example.com/videofile.isml/videofile.mpd"></source>
 	</video>
 
+## Subtitles
+
+Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file. Example:
+
+	<video controls="">
+  		<source type="video/mp4" src="http://example.com/video.mp4"></source>
+  		<track src="http://example.com/subtitles.vtt" srclang="en" label="English"></track>
+	</video>
+
+It can be also used together with all ABR or DRM formats mentioned in this article just by adding the `<track>` tag.
+
+More information about using the WebVTT format can be found in [this article][5].
+
+In-band subtitles (included inside the media container e.g. MP4) are supported at subset of devices only. In addition platforms are fragmented so we recommend using out-of-band subtitles with the WebVTT format only.
+
 ## Testing
 
-[Opera TV Emulator][1] supports the above audio and video formats but without ABR and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
+[Opera TV Emulator][1] supports the above audio and video formats, including subtitles but without ABR and DRM formats. You can test H.264 streaming or audio playback in your application with it. Please note that — because of licensing reasons — the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
 
 Since the [Opera TV Emulator][1] doesn't support any ABR no DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
  
@@ -216,6 +232,7 @@ Since the [Opera TV Emulator][1] doesn't support any ABR no DRM formats, the onl
 [2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
 [3]: http://dev.opera.com/articles/view/introduction-html5-video/
 [4]: http://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/
+[5]: http://dev.opera.com/articles/an-introduction-to-webvtt-and-track/
 
 
 
