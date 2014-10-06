@@ -45,6 +45,7 @@ We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
+
 <table border="1">
 <thead>
 <tr>
@@ -148,13 +149,51 @@ When dealing with premium multimedia content, you'll encounter technologies like
 
 Below you can find the list of supported ABR formats and their combinations with DRM, together with simple examples how to correctly use such videos into your application. Please note that the actual support may slightly differ, depending on specific video stream parameters, firmware versions and device generations. It is also important that not all devices TV Store runs at support ABD and DRM.
 
-Adaptive bitrate streaming formats supported in the Opera TV Store are:
+<table border="1">
+<thead>
+<tr>
+	<th width="50%">Adaptive Bitrate Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">HTTP Live Streaming (HLS) v3<br>Live and VOD profiles</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+<tr>
+	<th width="50%">Microsoft Smooth Streaming (MSS) v1<br>Live and VOD profiles</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+<tr>
+	<th width="50%">MPEG-DASH Live profile only</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+</tbody>
+</table>
 
-- HTTP Live Streaming (HLS) - VOD and Live profiles,
-- Microsoft Smooth Streaming (MSS) - VOD and Live profiles,
-- MPEG-DASH - Live profile only (recommended)
- 
-DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with the Smooth Streaming (MSS) (recommended) or MPEG-DASH.
+<table border="1">
+<thead>
+<tr>
+	<th width="50%">DRM Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br> Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">Microsoft PlayReady 1.2</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+
+Note: Microsoft PlayReady is supported in combination with the Microsoft Smooth Streaming (recommended) or MPEG-DASH only. It is not supported in combination with the HLS.
  
 ### Using HTTP Live Streaming (HLS)
 
@@ -209,14 +248,33 @@ DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combina
 
 ## Subtitles
 
-Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file. Example:
+<table border="1">
+<thead>
+<tr>
+	<th width="50%">Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">Out-of-band WebVTT</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+
+Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file. 
+
+Example:
 
 	<video controls="">
   		<source type="video/mp4" src="http://example.com/video.mp4"></source>
   		<track src="http://example.com/subtitles.vtt" srclang="en" label="English"></track>
 	</video>
 
-It can be also used together with all ABR or DRM formats mentioned in this article just by adding the `<track>` tag.
+WebVTT subtitles can be also used together with all ABR or DRM formats mentioned in this article just by adding the `<track>` tag.
 
 More information about using the WebVTT format can be found in [this article][5].
 
