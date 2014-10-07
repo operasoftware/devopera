@@ -27,10 +27,10 @@ For more on the basics of HTML5 `<audio>` and `<video>`, read [Introduction to H
 Due to limitations in how multimedia content is handled on certain current devices, there are situations in which the type of audio/video content being used is not automatically inferred by file extensions or MIME types. For this reason, we suggest to use the more explicit, though slightly more wordy, variant:
 
 	<video>
-		<source src="/path/to/video.mp4" type="video/mp4"></source>
+		<source src="/path/to/video.mp4" type="video/mp4">
 	</video>
 	<audio>
-		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
+		<source src="/path/to/audio.mp3" type="audio/mp3">
 	</audio>
 
 In contrast to the desktop version of Opera — where multimedia decoding and playback is handled directly by the browser) — the specifics of which codecs are supported on devices can vary considerably, as this depends on the underlying platform and integration work carried out by device manufacturers, as well as the specific version of the Opera TV Store that may be running on the device.
