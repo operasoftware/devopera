@@ -41,7 +41,7 @@ Whenever you switch to the next audio/video source with JavaScript, make sure to
 
 We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by network bandwidth users usually have) in your videos.
 
-## Supported formats
+## Audio and video codecs
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
@@ -49,100 +49,72 @@ At the time of publication, the following container formats and codecs are suppo
 <table border="1">
 <thead>
 <tr>
-	<th>Type</th>
-	<th>Media</th>
-	<th>MIME</th>
-	<th>Container</th>
-	<th>Video codec</th>
-	<th>Audio codec</th>
+	<th width="50%">Audio or video codec</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th rowspan="3">Video</th>
-	<td rowspan="3">AVC</td>
-	<td rowspan="3">video/mp4</td>
-	<td rowspan="3">MP4</td>
-	<td rowspan="3">
-		MPEG-4 AVC(H.264)<br>
-		Main and High Profiles<br>
-		Up to Level 4(inclusive)
-	</td>
-	<td>
-		MPEG-1/MPEG-2<br>
-		Audio Layer 3<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">h.264</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<td>
-		AAC-LC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">MP3</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<td>
-		HE-AAC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">AAC-LC</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<th rowspan="4">Audio</th>
-	<td rowspan="2">MP3</td>
-	<td>audio/mp3</td>
-	<td rowspan="2">MP3</td>
-	<td rowspan="2"></td>
-	<td rowspan="2">
-		MPEG-1/MPEG-2<br>
-		Audio Layer 3<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
-</tr>
-<tr>
-	<td>audio/mpeg</td>
-</tr>
-<tr>
-	<td>AAC-LC</td>
-	<td>audio/mp4</td>
-	<td>MP4</td>
-	<td></td>
-	<td>
-		AAC-LC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
-</tr>
-<tr>
-	<td>HE-AAC</td>
-	<td>audio/mp4</td>
-	<td>MP4</td>
-	<td></td>
-	<td>
-		HE-AAC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">HE-AAC</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 </tbody>
 </table>
 
 
+### Using MPEG-4 AVC (H.264) video
+- Main and High Profiles, 
+- Up to Level 4 (inclusive),
+- With audio codecs: MP3, AAC-LC or HE-AAC,
+- Container format is MP4,
+- Source type set to `video/mp4`,
+- Example player code:
+
+	<video>
+		<source src="/path/to/video.mp4" type="video/mp4"></source>
+	</video>
+
+### Using MPEG-1/MPEG-2 Audio Layer 3 (MP3) audio
+- Mono or Stereo options, 
+- 32kHz/44.1kHz/48kHz frequencies,
+- 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
+- Container format is MP3,
+- Source type set to `audio/mp3` or `audio/mpeg`,
+- Example player code:
+
+	<audio>
+		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
+	</audio>
+
+### Using AAC-LC and HE-AAC audio 
+- Mono or Stereo options,
+- 32kHz/44.1kHz/48kHz frequencies,
+- 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
+- Container format is MP4,
+- Source type set to `audio/mp4`,
+- Example player code:
+
+	<audio>
+		<source src="/path/to/audio.mp4" type="audio/mp4"></source>
+	</audio>				
+		
 ## Adaptive Bitrate Streaming and DRM
 
 When dealing with premium multimedia content, you'll encounter technologies like adaptive bitrate streaming (ABR), which allows for smooth video playback by dynamically adjusting the bitrate, and digital rights management (DRM).
