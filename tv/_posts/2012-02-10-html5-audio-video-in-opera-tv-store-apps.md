@@ -127,7 +127,7 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 - Microsoft Smooth Streaming (MSS) — VOD and Live profiles
 - MPEG-DASH — Live profile only (recommended)
 
-<table border="1">
+<table>
 <thead>
 <tr>
 	<th width="50%">Adaptive Bitrate Format</th>
@@ -154,7 +154,7 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 </tbody>
 </table>
 
-<table border="1">
+<table>
 <thead>
 <tr>
 	<th width="50%">DRM Format</th>
@@ -232,7 +232,7 @@ Example player code:
 
 ## Subtitles
 
-<table border="1">
+<table>
 <thead>
 <tr>
 	<th width="50%">Format</th>
