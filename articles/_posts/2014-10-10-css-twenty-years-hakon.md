@@ -109,7 +109,7 @@ Layout is complex, and layout on the web is even more complex due to pages being
 
 **What’s your opinion on pre-processors like SASS and LESS? Does CSS have anything to learn from them?**
 
-Yes, pre-processors make a lot of sense. We should probably take the five or so most popular features from pre-processors and add them to CSS itself. My own favorites would be nested comments, and single-line comments (starting with `//`). When CSS turns 50 I’ll tell you why they were not part of CSS from the beginning.
+Yes, pre-processors make a lot of sense. We should probably take the five or so most popular features from pre-processors and add them to CSS itself. My own favorites would be nested selectors, and single-line comments (starting with `//`). When CSS turns 50 I’ll tell you why they were not part of CSS from the beginning.
 
 **You’re one of the members of [the WHATWG](http://en.wikipedia.org/wiki/WHATWG). How did that come about?**
 
