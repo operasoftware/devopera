@@ -99,7 +99,7 @@ Having text wrap around images is one of the basic layout techniques. For sure, 
 
 I’d banish browser-version-specific code like: `<!--[if lt IE 7 ]>`. While technically not expressed in CSS, these kinds of “comments” should not be necessary and they lower the standards of the web.
 
-The second part of your question is even more interesting. In 2006, I would have said [web fonts](http://web.archive.org/web/20111109020901/http://news.cnet.com/Microsofts-forgotten-monopoly/2010-1032_3-6085417.html). In 2007, I would have said [the `<video>` element](http://people.opera.com/howcome/2007/video/) (straying into HTML-land for a while). Both of these are now implemented in all browsers.
+The second part of your question is even more interesting: what parts of CSS should be magically implemented everywhere? In 2006, I would have said [web fonts](http://web.archive.org/web/20111109020901/http://news.cnet.com/Microsofts-forgotten-monopoly/2010-1032_3-6085417.html). In 2007, I would have said [the `<video>` element](http://people.opera.com/howcome/2007/video/) (straying into HTML-land for a while). Both of these are now implemented in all browsers.
 
 In 2011, seeing that many apps used pages (and not scrollbars) to create compelling presentations, I started advocating for [web pages to become real pages](http://people.opera.com/howcome/2011/reader/). The idea is that the style sheet would trigger paged mode so that content is split into pages. Users would navigate from one page to the next with gestures, or perhaps with `PageUp` and `PageDown`. I want it to be possible, even easy, to create ebook-readers in browsers. For this to happen, a bit of magic would be helpful. Could you sprinkle some fairy dust on the pillows of all browser vendors, please?
 
