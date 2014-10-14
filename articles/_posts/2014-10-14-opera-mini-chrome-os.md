@@ -26,6 +26,11 @@ It might sound a bit insane at first — why would you want to run a browser ins
 
 Here’s the fastest way to get Opera Mini running on your Chromebook, using an Android device and a custom runtime called _ARChon_ (the difference in runtimes is explained later in the article):
 
+<figure class="figure">
+	<iframe src="//www.youtube.com/embed/FA2UDyTB7lI" width="570" height="320" allowfullscreen class="figure__media"></iframe>
+	<figcaption class="figure__caption">Quick demo of Opera Mini with ARC</figcaption>
+</figure>
+
 1. [Download Opera Mini](https://play.google.com/store/apps/details?id=com.opera.mini.android&hl=en) and [the ARChon Packager](https://play.google.com/store/apps/details?id=me.bpear.archonpackager&hl=en) onto your Android device from Google Play.
 2. [Download the appropriate ARChon runtime](https://github.com/vladikoff/chromeos-apk/blob/master/archon.md#instructions) to your Chromebook from GitHub.
 3. Use the ARChon Packager on your Android device to convert Opera Mini for your Chromebook. This will generate a ZIP file. Transfer the ZIP file to your Chromebook. Use the “Tablet mode” and “Landscape” orientation when you are converting the application to get the best experience out of Opera Mini.
@@ -36,8 +41,6 @@ Here’s the fastest way to get Opera Mini running on your Chromebook, using an 
 	<img src="{{ page.id }}/chrome-os-launcher.jpg" alt="Chrome OS launcher integration" class="figure__media">
 	<figcaption class="figure__caption">Chrome OS launcher integration</figcaption>
 </figure>
-
-You can watch a quick demo of Opera Mini with ARC in [this YouTube video](https://www.youtube.com/watch?v=FA2UDyTB7lI).
 
 If you already use the official Android applications on Chrome OS, [follow the instructions on GitHub](https://github.com/vladikoff/chromeos-apk#setup-for-chrome-os--app-conversion) to get Opera Mini working with the official runtime. At this time the official runtime can only run up to four applications on Chrome OS. If you do not have an Android device, then obtain the Opera Mini APK file and follow the instructions of the [`chromeos-apk`](https://github.com/vladikoff/chromeos-apk) project to get Opera Mini working using a Node.js conversion tool.
 
