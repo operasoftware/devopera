@@ -31,7 +31,7 @@ Here’s the fastest way to get Opera Mini running on your Chromebook, using an 
 	<figcaption class="figure__caption">Quick demo of Opera Mini with ARC</figcaption>
 </figure>
 
-1. [Download Opera Mini](https://play.google.com/store/apps/details?id=com.opera.mini.android&hl=en) and [the ARChon Packager](https://play.google.com/store/apps/details?id=me.bpear.archonpackager&hl=en) onto your Android device from Google Play.
+1. [Download Opera Mini](https://play.google.com/store/apps/details?id=com.opera.mini.android&hl=en) and [the ARChon Packager](https://play.google.com/store/apps/details?id=me.bpear.archonpackager&hl=en) onto your Android device from Google Play. (Alternatively, [the Opera Mini APK can be downloaded here](http://www.opera.com/mobile/download/versions/).)
 2. [Download the appropriate ARChon runtime](https://github.com/vladikoff/chromeos-apk/blob/master/archon.md#instructions) to your Chromebook from GitHub.
 3. Use the ARChon Packager on your Android device to convert Opera Mini for your Chromebook. This will generate a ZIP file. Transfer the ZIP file to your Chromebook. Use the “Tablet mode” and “Landscape” orientation when you are converting the application to get the best experience out of Opera Mini.
 4. Unpack both ZIP files (the runtime and the application), navigate to
