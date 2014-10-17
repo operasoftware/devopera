@@ -28,11 +28,12 @@ Without further ado, here is my [â€œMonster audio-visual demos in a TCP packetâ€
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/8aYVH2j0kAU" frameborder="0" allowfullscreen></iframe>
 
+
 For those interested, there is also a [full transcript of my talk](http://2014.jsconf.eu/speakers/mathieu-p01-henri-monster-audiovisual-demos-in-a-tcp-packet.html#transcript) available on the JSConf EU 2014 site.
 
 ## Explore more
 
-* [Curio](http://curio.displayhack.org) shows a curated list of outstanding demos
+* [Curio](http://curio.displayhack.org) shows a curated list of outstanding demos.
 * The [Scene.org Awards](http://awards.scene.org) honors the best demoscene releases of the previous years.
 * Youtube has a couple of [Demoscene High-Quality Videos](http://www.youtube.com/channel/UC96JVq-z0-0iHAkIkKp1_6w) for easier consumption.
 * The [archive of the Assembly demoparty](http://archive.assembly.org) contains many jewels.
@@ -42,3 +43,5 @@ For those interested, there is also a [full transcript of my talk](http://2014.j
 ## Your turn
 
 As you saw in the talk above, this demoscene thing is no black magic. It is very rewarding and teaches to think in new ways. It doesn't have to be big, it doesn't have to be small. Just go and make something cool, share it with the world, and why not present it at a demoparty?
+
+*Cover photo credit: [Matthew Bergman](https://flic.kr/p/pda7X8)*
