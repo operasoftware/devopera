@@ -15,7 +15,7 @@ This is a quick post about the talk I had the pleasure to give at [JSConf EU 201
 
 ## The demoscene and the web
 
-The demoscene is a vast group of creatives producing real-time computer raphics & audio animations, thereby pushing the technical and artistic limits of the platform — any platform, really. Developing such animations involves a lot of tricks and is a great exercise to make the most out of the given constraints.
+The demoscene is a vast group of creatives producing real-time computer graphics & audio animations, thereby pushing the technical and artistic limits of the platform — any platform, really. Developing such animations involves a lot of tricks and is a great exercise to make the most out of the given constraints.
 
 Demosceners gather at events called “demoparties” to enjoy live concerts, seminars, and more importantly, to compete with their latest productions.
 
