@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Simple card flipper example with @supports progressive enhancement</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<style>
+
+	/* || font imports */
+
+@font-face {
+    font-family: 'DeutschGothicNormal';
+    src: url('fonts/deutsch-webfont.eot');
+    src: url('fonts/deutsch-webfont.eot%3F') format('embedded-opentype'),
+         url('fonts/deutsch-webfont.woff') format('woff'),
+         url('fonts/deutsch-webfont.ttf') format('truetype'),
+         url('fonts/deutsch-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'SFArcheryBlackSCRegular';
+    src: url('fonts/sf_archery_black_sc-webfont.eot');
+    src: url('fonts/sf_archery_black_sc-webfont.eot%3F') format('embedded-opentype'),
+         url('fonts/sf_archery_black_sc-webfont.woff') format('woff'),
+         url('fonts/sf_archery_black_sc-webfont.ttf') format('truetype'),
+         url('fonts/sf_archery_black_sc-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* || general layout stuff */
+
+      body {
+        height: 800px;
+        font-size: 62.5%;
+        background-color: #eee;
+      }
+
+      html,body,h1,h2,p {
+        margin: 0;
+        padding: 0;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+
+      #inner-wrapper {
+        width: 85.6mm;
+        height: 53.98mm;
+        margin: 120px auto;
+        margin: 12rem auto;
+        position: relative;
+
+        -webkit-transition: 1.5s all;
+        -moz-transition: 1.5s all;
+        -ms-transition: 1.5s all;
+        -o-transition: 1.5s all;
+        transition: 1.5s all;
+
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+
+      #front, #back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75.6mm;
+        height: 43.98mm;
+        padding: 5mm;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+        background: #FF3500;
+
+        background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6)), -webkit-linear-gradient(45deg,#FF3500 37.7mm,#FF7600 37.8mm,#FF7600 59.7mm,#FF3500 59.8mm);
+        background: -moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6)), -moz-linear-gradient(45deg,#FF3500 37.7mm,#FF7600 37.8mm,#FF7600 59.7mm,#FF3500 59.8mm);
+        background: -ms-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6)), -ms-linear-gradient(45deg,#FF3500 37.7mm,#FF7600 37.8mm,#FF7600 59.7mm,#FF3500 59.8mm);
+        background: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6)), -o-linear-gradient(45deg,#FF3500 37.7mm,#FF7600 37.8mm,#FF7600 59.7mm,#FF3500 59.8mm);
+        background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.6)), linear-gradient(45deg,#FF3500 37.7mm,#FF7600 37.8mm,#FF7600 59.7mm,#FF3500 59.8mm);
+      }
+
+      #front {
+        z-index: 2;
+      }
+
+      /* || typography */
+
+      h1, h2 {
+        font-family: DeutschGothicNormal, sans-serif;
+      }
+
+      h1 {
+        position: relative;
+        font-size: 30px;
+        font-size: 3rem;
+        z-index: 3;
+      }
+
+      h2 {
+        position: relative;
+        top: 2mm;
+        font-size: 15px;
+        font-size: 1.5rem;
+        text-shadow: 0 0 4px white, 0 -5px 4px #FFFF33, 2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px -25px 18px #FF2200;
+      }
+
+      p, li {
+        font-family: SFArcheryBlackSCRegular;
+        font-size: 11px;
+        font-size: 1.1rem;
+        margin-top: 5px;
+        margin-top: 0.5rem;
+      }
+
+      li {
+        position: relative;
+        top: 8mm;
+      }
+
+      /* || For browsers that don't support 2D or 3D transforms */
+
+      #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
+        margin-left: -350px;
+      }
+
+      /* || For browsers supporting 2D transforms */
+
+      @supports (-webkit-transform: rotate(-30deg)) or
+                         (-moz-transform: rotate(-30deg)) or
+                         (-ms-transform: rotate(-30deg)) or
+                         (-o-transform: rotate(-30deg)) or
+                         (transform: rotate(-30deg)) {
+
+
+        #inner-wrapper #front {
+          -webkit-transition: 0.8s all ease-in;
+          -moz-transition: 0.8s all ease-in;
+          -ms-transition: 0.8s all ease-in;
+          -o-transition: 0.8s all ease-in;
+          transition: 0.8s all ease-in;
+         }
+
+        #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
+           margin-left: 0;
+
+           -webkit-transform: rotate(-30deg) translate(-50%,-100%);
+           -moz-transform: rotate(-30deg) translate(-50%,-100%);
+           -ms-transform: rotate(-30deg) translate(-50%,-100%);
+           -o-transform: rotate(-30deg) translate(-50%,-100%);
+           transform: rotate(-30deg) translate(-50%,-100%);
+         }
+
+       }
+
+      /* || For browsers supporting 3D transforms */
+
+      @supports (-webkit-transform: rotateX(0deg)) or
+                         (-moz-transform: rotateX(0deg)) or
+                         (-ms-transform: rotateX(0deg)) or
+                         (-o-transform: rotateX(0deg)) or
+                         (transform: rotateX(0deg)) {
+
+        #front, #back {
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        #front {
+          -webkit-transform: rotateX(0deg);
+          -moz-transform: rotateX(0deg);
+          -ms-transform: rotateX(0deg);
+          -o-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+        }
+
+        #back {
+          -webkit-transform: rotateX(180deg);
+          -moz-transform: rotateX(180deg);
+          -ms-transform: rotateX(180deg);
+          -o-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+        }
+
+        #wrapper:hover #inner-wrapper, #wrapper:focus #inner-wrapper {
+          -webkit-transform: rotateX(180deg);
+          -moz-transform: rotateX(180deg);
+          -ms-transform: rotateX(180deg);
+          -o-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+        }
+
+        #wrapper:hover #inner-wrapper #front, #wrapper:focus #inner-wrapper #front {
+           -webkit-transform: none;
+           -moz-transform: none;
+           -ms-transform: none;
+           -o-transform: none;
+           transform: none;
+        }
+
+      }
+
+
+          </style>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+  <div id="wrapper" tabindex="0">
+  <div id="inner-wrapper">
+    <div id="front">
+      <hgroup>
+        <h1>Chris Mills</h1>
+        <h2>Heavy metal web designer</h2>
+      </hgroup>
+
+      <p>Available for copy writing, web design, drums, guitar and bad jokes.</p>
+
+      <p>Please contact me on...</p>
+    </div>
+    <div id="back">
+      <ul>
+      <li><strong>Email:</strong> cmills@opera.com</li>
+      <li><strong>Phone:</strong> +44 123 456 7890</li>
+      <li><strong>Twitter:</strong> @chrisdavidmills</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+  </body>
+</html>
