@@ -138,18 +138,21 @@ module.exports = function(grunt) {
 		rsync: {
 			options: {
 				args: [
+					'--checksum', // skip based on checksum, not mod-time & size
+					'--chmod=ug=rwX,o=rX', // `chmod` new files
+					'--compress', // compress data during the transfer
 					// Note: the next line is commented out to avoid deleting the
 					// `extension-docs` directory, which is generated from a separate
 					// repository at the moment. As soon as the extension docs are merged
 					// with the main `devopera` repository, we should re-enable it.
 					//'--delete', // delete extraneous files on the receiving side
-					'--times', // preserve modification times…
-					'--omit-dir-times', // …except for directories
-					'--compress', // compress data during the transfer
-					'--verbose', // increase verbosity
-					'--chmod=ug=rwX,o=rX', // `chmod` new files
 					'--human-readable', // output numbers in a human-readable format
-					'--checksum' // skip based on checksum, not mod-time & size
+					'--itemize-changes', // output a change-summary for all updates
+					'--omit-dir-times', // …except for directories
+					'--progress', // show progress during transfer
+					'--stats', // show some file-transfer stats
+					'--times', // preserve modification times…
+					'--verbose' // increase verbosity
 				],
 				exclude: ['.DS_Store'],
 				recursive: true
