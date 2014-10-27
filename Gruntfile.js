@@ -148,7 +148,8 @@ module.exports = function(grunt) {
 					'--compress', // compress data during the transfer
 					'--verbose', // increase verbosity
 					'--chmod=ug=rwX,o=rX', // `chmod` new files
-					'--human-readable' // output numbers in a human-readable format
+					'--human-readable', // output numbers in a human-readable format
+					'--checksum' // skip based on checksum, not mod-time & size
 				],
 				exclude: ['.DS_Store'],
 				recursive: true
