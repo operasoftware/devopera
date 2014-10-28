@@ -13,6 +13,7 @@ Update history:
 - Article updated on 30 March 2012 to suggest explicit `<source>` workaround.
 - Article updated on 18 April 2012 to include MPEG-1/MPEG-2 Audio Layer 3 audio codec for video and clarification on limitation of single `<audio>` or `<video>` element playback on some of the current devices.
 - Article updated on 13 August 2014 to include information about supported Adaptive Bitrate Streaming and DRM formats.
+- Article updated on 7 October 2014 to cover subtitles support
 
 ## Introduction
 
@@ -42,105 +43,77 @@ Whenever you switch to the next audio/video source with JavaScript, make sure to
 
 We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by the network bandwidth users usually have) in your videos.
 
-## Supported formats
+## Audio and video codecs
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
 <table>
 <thead>
 <tr>
-	<th>Type</th>
-	<th>Media</th>
-	<th>MIME</th>
-	<th>Container</th>
-	<th>Video codec</th>
-	<th>Audio codec</th>
+	<th width="50%">Audio or video codec</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th rowspan="3">Video</th>
-	<td rowspan="3">AVC</td>
-	<td rowspan="3">video/mp4</td>
-	<td rowspan="3">MP4</td>
-	<td rowspan="3">
-		MPEG-4 AVC(H.264)<br>
-		Main and High Profiles<br>
-		Up to Level 4(inclusive)
-	</td>
-	<td>
-		MPEG-1/MPEG-2<br>
-		Audio Layer 3<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">h.264</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<td>
-		AAC-LC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">MP3</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<td>
-		HE-AAC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">AAC-LC</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 <tr>
-	<th rowspan="4">Audio</th>
-	<td rowspan="2">MP3</td>
-	<td>audio/mp3</td>
-	<td rowspan="2">MP3</td>
-	<td rowspan="2"></td>
-	<td rowspan="2">
-		MPEG-1/MPEG-2<br>
-		Audio Layer 3<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
-</tr>
-<tr>
-	<td>audio/mpeg</td>
-</tr>
-<tr>
-	<td>AAC-LC</td>
-	<td>audio/mp4</td>
-	<td>MP4</td>
-	<td></td>
-	<td>
-		AAC-LC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
-</tr>
-<tr>
-	<td>HE-AAC</td>
-	<td>audio/mp4</td>
-	<td>MP4</td>
-	<td></td>
-	<td>
-		HE-AAC<br>
-		Mono/Stereo<br>
-		16kbps-10Mbps (supported)<br>
-		2Mbps-4Mbps (recommended)<br>
-		32kHz/44.1kHz/48kHz
-	</td>
+	<th width="50%">HE-AAC</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
 </tr>
 </tbody>
 </table>
+
+### Using MPEG-4 AVC (H.264) video
+- Main and High Profiles,
+- Up to Level 4 (inclusive),
+- With audio codecs: MP3, AAC-LC or HE-AAC,
+- Container format is MP4,
+- Source type set to `video/mp4`,
+- Example player code:
+
+	<video>
+		<source src="/path/to/video.mp4" type="video/mp4"></source>
+	</video>
+
+### Using MPEG-1/MPEG-2 Audio Layer 3 (MP3) audio
+- Mono or Stereo options,
+- 32kHz/44.1kHz/48kHz frequencies,
+- 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
+- Container format is MP3,
+- Source type set to `audio/mp3` or `audio/mpeg`,
+- Example player code:
+
+	<audio>
+		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
+	</audio>
+
+### Using AAC-LC and HE-AAC audio
+- Mono or Stereo options,
+- 32kHz/44.1kHz/48kHz frequencies,
+- 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
+- Container format is MP4,
+- Source type set to `audio/mp4`,
+- Example player code:
+
+	<audio>
+		<source src="/path/to/audio.mp4" type="audio/mp4"></source>
+	</audio>
 
 ## Adaptive Bitrate Streaming and DRM
 
@@ -154,23 +127,64 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 - Microsoft Smooth Streaming (MSS) — VOD and Live profiles
 - MPEG-DASH — Live profile only (recommended)
 
+<table>
+<thead>
+<tr>
+	<th width="50%">Adaptive Bitrate Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">HTTP Live Streaming (HLS) v3<br>Live and VOD profiles</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+<tr>
+	<th width="50%">Microsoft Smooth Streaming (MSS) v1<br>Live and VOD profiles</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+<tr>
+	<th width="50%">MPEG-DASH Live profile only</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+	<th width="50%">DRM Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br> Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">Microsoft PlayReady 1.2</th>
+	<td align="center">Yes</td>
+	<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+
 The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with MSS (recommended) or MPEG-DASH.
 
 ### Using HTTP Live Streaming (HLS)
 
-Technical details are as follows:
+- VOD and Live profiles are supported,
+- HLS version 3 specification up to and including Panthos 06,
+- With or without AES 128 bit encryption,
+- MPEG2TS as a container,
+- Source pointing to a m3u8 playlist,
+- Source type set to `application/vnd.apple.mpegurl`,
+- At some devices HLS playback may be terminated if HLS stream is broken,
+- Example player code:
 
-- VOD and Live profiles are supported
-- HLS version 3 specification up to and including Panthos 06
-- With or without AES 128 bit encryption
-- container format is MPEG2TS
-- Source pointing to a m3u8 playlist
-- Source type set to `application/vnd.apple.mpegurl`
-- On some devices HLS playback may be terminated if HLS stream is broken
-
-Example player code:
-
-	<video controls>
+	<video controls="">
 		<source type="application/vnd.apple.mpegurl"
 			src="http://example.com/videofile.m3u8"></source>
 	</video>
@@ -216,13 +230,48 @@ Example player code:
 			src="http://example.com/videofile.isml/videofile.mpd"></source>
 	</video>
 
+## Subtitles
+
+<table>
+<thead>
+<tr>
+	<th width="50%">Format</th>
+	<th>Supported in the<br>Opera TV Store</th>
+	<th>Supported in the<br>Opera TV Emulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th width="50%">Out-of-band WebVTT</th>
+	<td align="center">Yes</td>
+	<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+
+Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file.
+
+Example:
+
+	<video controls="">
+  		<source type="video/mp4" src="http://example.com/video.mp4"></source>
+  		<track src="http://example.com/subtitles.vtt" srclang="en" label="English"></track>
+	</video>
+
+WebVTT subtitles can be also used together with all ABR or DRM formats mentioned in this article just by adding the `<track>` tag.
+
+More information about using the WebVTT format can be found in [this article][5].
+
+In-band subtitles (included inside the media container e.g. MP4) are supported at subset of devices only. In addition platforms are fragmented so we recommend using out-of-band subtitles with the WebVTT format only.
+
 ## Testing
 
-[Opera TV Emulator][1] supports the above audio and video formats but without adaptive bitrate streaming and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that because of licensing reasons the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
+[Opera TV Emulator][1] supports the above audio and video formats, including subtitles but without adaptive bitrate streaming and DRM. You can test H.264 streaming or audio playback in your application with it. Please note that because of licensing reasons the H.264 codecs are not installed by default. See the [emulator’s user guide][2] for information of how to install these codecs.
 
-Since the [Opera TV Emulator][1] doesn’t support any adaptive bitrate streaming or DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
+Since the [Opera TV Emulator][1] doesn't support any adaptive bitrate streaming or DRM formats, the only way to test such streams in your application is to use a retail device. We recommend to use Sony Blue-ray Disc Players 2013 or 2014 models e.g. BDP-S1100 or BDP-S1200. For more info on how to test your app inside the Opera TV Store see [our article][4] about it.
 
 [1]: http://www.operasoftware.com/products/tv-emulator
-[2]: https://dev.opera.com/tv/opera-tv-emulator/#h264-codec
-[3]: https://dev.opera.com/articles/view/introduction-html5-video/
-[4]: https://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/
+[2]: http://dev.opera.com/tv/opera-tv-emulator/#h264-codec
+[3]: http://dev.opera.com/articles/view/introduction-html5-video/
+[4]: http://dev.opera.com/tv/testing-your-app-inside-opera-tv-store/
+[5]: http://dev.opera.com/articles/an-introduction-to-webvtt-and-track/
