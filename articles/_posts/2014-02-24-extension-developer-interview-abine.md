@@ -14,6 +14,10 @@ cover: jpg
 license: cc-by-3.0
 ---
 
+**Update Oct 30 2014: the DoNotTrackMe extension has been renamed to [Blur][0]**
+
+[0]: https://addons.opera.com/en/extensions/details/blur-protect-your-passwords-payments-privacy/?display=en
+
 This is the fifth article in a [series of interviews][1] with Opera extension developers. We want to shed a light on what drives them, what their workflow is like, which tools they use, what their plans for future extension versions are, and so on. For this interview, we sat down with Zach Rachins from [Abine][2], which is the company behind the [DoNotTrackMe][3] extension, and asked him some questions over a (virtual) coffee.
 
 [1]: /tags/extinterview/
