@@ -13,9 +13,7 @@ PATCH-1150, cabrio.ch: UDM Menu sniffing for `navigator.vendor`. Le sigh!
 
 ## Removed patches from Blink
 
-PATCH-1141, google.com — hide voice input icon while it is unsupported. Google fixed the feature detection, so this patch and the July [mishap][1] can be avoided completely.
-
-[1]: http://my.opera.com/sitepatching/blog/show.dml/67831402#comment110389762
+PATCH-1141, google.com — hide voice input icon while it is unsupported. Google fixed the feature detection, so this patch and the July [mishap](http://my.opera.com/sitepatching/blog/show.dml/67831402#comment110389762) can be avoided completely.
 
 ## Removed patches for Presto
 
