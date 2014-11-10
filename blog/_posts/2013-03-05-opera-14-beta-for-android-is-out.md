@@ -38,7 +38,7 @@ The engine inside Opera is very closely in sync with the one included in Chrome 
 
 Opera 14 for Android has out-of-the-box support for:
 
-- `input type=color`
+- `<input type=color>`
 - Microdata
 - WebGL 3D context
 - CSS3 `@supports`
@@ -46,7 +46,7 @@ Opera 14 for Android has out-of-the-box support for:
 Opera 14 for Android does not have support for:
 
 - Custom search providers
-- access to chrome://flags
+- access to `chrome://flags`
 
 We’ve also adjusted our UA string, so as to avoid old sniffing traps: it’s similar in format as the Chrome UA string, with, for this release, OPR/14.0.1025.52315 appended at the end. Of course, you shouldn’t be looking at this at all, and instead do feature detection, so forget we mentioned it.
 
