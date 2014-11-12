@@ -8,7 +8,7 @@ fi
 
 # Install gems. (Assuming they have ruby.)
 echo "Installing the required ruby gems."
-sudo gem install jekyll kramdown stringex sass &&
+sudo gem install jekyll stringex sass &&
 echo "Done installing the gems."
 
 
