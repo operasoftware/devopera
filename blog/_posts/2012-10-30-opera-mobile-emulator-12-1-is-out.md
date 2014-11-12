@@ -10,18 +10,17 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Opera Mobile Emulator is a fine tool for creating and testing responsive web designs, as explained in my recent <a href="http://mobile.smashingmagazine.com/2012/08/30/responsive-designs-opera-mobile-emulator/">Smashing Magazine article</a>. So it&#39;s my pleasure to announce that, today, we&#39;ve released version 12.1 of our <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a> for Mac, Windows and Linux!</p>
+Opera Mobile Emulator is a fine tool for creating and testing responsive web designs, as explained in my recent [Smashing Magazine article](http://mobile.smashingmagazine.com/2012/08/30/responsive-designs-opera-mobile-emulator/). So it’s my pleasure to announce that, today, we’ve released version 12.1 of our [Opera Mobile Emulator](http://www.opera.com/developer/tools/mobile/) for Mac, Windows and Linux!
 
-<p>This release brings the emulator in sync with our <a href="https://play.google.com/store/apps/details?id=com.opera.browser&amp;hl=en">Opera Mobile 12.1 for Android release</a> in early October: the same <a href="http://www.opera.com/docs/specs/productspecs/">standards support</a> and feature set of course, but there is more:</p>
-<ul>
-<li>A wide selection of new profile presets in the Profile Selector, representing a selection of common Android phones.</li>
-<li>The Profile Selector now comes with a UA string dropdown, allowing you to set a UA string before launching the browser.</li>
-<li>The Window Scale dropdown allows you to launch an Opera Mobile instance at e.g. 50% of its original size: this makes sure the instance fits comfortably inside your laptop monitor, while at the same time preserving reported screen height, width and <code>devicePixelRatio</code>.</li>
-<li>Opera Mobile Emulator can now also talk to our browser automation library, OperaDriver. OperaDriver is an implementation of the <a href="http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html">W3C WebDriver specification</a> and part of the free software web testing framework <a href="http://seleniumhq.org/">Selenium</a>. Support for OperaDriver was first introduced in a <a href="https://dev.opera.com/articles/view/introducing-mobile-browser-automation/">Labs release of the Opera Mobile Emulator</a> back in August, but this is now part of the 12.1 release.</li>
-</ul>
+This release brings the emulator in sync with our [Opera Mobile 12.1 for Android release](https://play.google.com/store/apps/details?id=com.opera.browser&hl=en) in early October: the same [standards support](http://www.opera.com/docs/specs/productspecs/) and feature set of course, but there is more:
 
-<p>Also note that you can use all the <a href="http://my.opera.com/dragonfly/blog/">recent additions to Opera Dragonfly</a> with Opera Mobile Emulator, by activating Opera Dragonfly&#39;s <a href="http://www.opera.com/dragonfly/documentation/remote/">remote debugging feature</a>, opening <code>opera:debug</code> in Opera Mobile Emulator and clicking the Connect button.</p>
+* A wide selection of new profile presets in the Profile Selector, representing a selection of common Android phones.
+* The Profile Selector now comes with a UA string dropdown, allowing you to set a UA string before launching the browser.
+* The Window Scale dropdown allows you to launch an Opera Mobile instance at e.g. 50% of its original size: this makes sure the instance fits comfortably inside your laptop monitor, while at the same time preserving reported screen height, width and `devicePixelRatio`.
+* Opera Mobile Emulator can now also talk to our browser automation library, OperaDriver. OperaDriver is an implementation of the [W3C WebDriver specification](http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html) and part of the free software web testing framework [Selenium](http://seleniumhq.org/). Support for OperaDriver was first introduced in a [Labs release of the Opera Mobile Emulator](https://dev.opera.com/articles/view/introducing-mobile-browser-automation/) back in August, but this is now part of the 12.1 release.
 
-<img src="{{ page.id }}/debugging.png" alt="Debugging Opera Mobile Emulator with Opera Dragonfly" style="clear: left;" />
+Also note that you can use all the [recent additions to Opera Dragonfly](http://my.opera.com/dragonfly/blog/) with Opera Mobile Emulator, by activating Opera Dragonfly’s [remote debugging feature](http://www.opera.com/dragonfly/documentation/remote/), opening `opera:debug` in Opera Mobile Emulator and clicking the Connect button.
 
-<p>For a full overview of all input modes, launch arguments, shortcuts and other power user settings, check out our <a href="https://dev.opera.com/articles/view/opera-mobile-emulator/">extensive guide on Dev.Opera</a>.</p>
+![Debugging Opera Mobile Emulator with Opera Dragonfly]({{ page.id }}/debugging.png)
+
+For a full overview of all input modes, launch arguments, shortcuts and other power user settings, check out our [extensive guide on Dev.Opera](https://dev.opera.com/articles/view/opera-mobile-emulator/).
