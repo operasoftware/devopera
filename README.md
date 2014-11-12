@@ -4,7 +4,7 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 
 ## Environment setup
 
-1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll kramdown stringex sass` on the command line.
+1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll stringex sass` on the command line.
 2. Download and install [Node.js](http://nodejs.org) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
