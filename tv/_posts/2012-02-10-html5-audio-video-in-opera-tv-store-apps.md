@@ -51,35 +51,26 @@ We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
 <table>
-<thead>
 <tr>
-	<th align="center" width="50%">Audio or video codec</th>
-	<th align="center">Supported in the<br>Opera TV Store</th>
-	<th align="center">Supported in the<br>Opera TV Emulator</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<th align="center" width="50%">h.264</th>
-	<td align="center">Yes</td>
-	<td align="center">Yes</td>
+	<th width="50%">Audio or video codec</th>
+	<th>Supported in the Opera TV Store</th>
+	<th>Supported in the Opera TV Emulator</th>
 </tr>
 <tr>
-	<th align="center" width="50%">MP3</th>
-	<td align="center">Yes</td>
-	<td align="center">Yes</td>
+	<th>MP3</th>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 <tr>
-	<th align="center" width="50%">AAC-LC</th>
-	<td align="center">Yes</td>
-	<td align="center">Yes</td>
+	<th>AAC-LC</th>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 <tr>
-	<th width="50%">HE-AAC</th>
-	<td align="center">Yes</td>
-	<td align="center">Yes</td>
+	<th>HE-AAC</th>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
-</tbody>
 </table>
 
 ### Using MPEG-4 AVC (H.264) video
@@ -92,7 +83,7 @@ At the time of publication, the following container formats and codecs are suppo
 Example player code:
 
 	<video>
-		<source src="/path/to/video.mp4" type="video/mp4"></source>
+		<source src="/path/to/video.mp4" type="video/mp4">
 	</video>
 
 ### Using MPEG-1/MPEG-2 Audio Layer 3 (MP3) audio
@@ -105,7 +96,7 @@ Example player code:
 Example player code:
 
 	<audio>
-		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
+		<source src="/path/to/audio.mp3" type="audio/mp3">
 	</audio>
 
 ### Using AAC-LC and HE-AAC audio
@@ -118,7 +109,7 @@ Example player code:
 Example player code:
 
 	<audio>
-		<source src="/path/to/audio.mp4" type="audio/mp4"></source>
+		<source src="/path/to/audio.mp4" type="audio/mp4">
 	</audio>
 
 ## Adaptive Bitrate Streaming and DRM
@@ -134,47 +125,39 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 - MPEG-DASH — Live profile only (recommended)
 
 <table>
-<thead>
 <tr>
-	<th align="center" width="50%">Adaptive Bitrate Format</th>
-	<th align="center">Supported in the<br>Opera TV Store</th>
-	<th align="center">Supported in the<br>Opera TV Emulator</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<th align="center" width="50%">HTTP Live Streaming (HLS) v3<br>Live and VOD profiles</th>
-	<td align="center">Yes</td>
-	<td align="center">No</td>
+	<th width="50%">Adaptive Bitrate Format</th>
+	<th>Supported in the Opera TV Store</th>
+	<th>Supported in the Opera TV Emulator</th>
 </tr>
 <tr>
-	<th align="center"width="50%">Microsoft Smooth Streaming (MSS) v1<br>Live and VOD profiles</th>
-	<td align="center">Yes</td>
-	<td align="center">No</td>
+	<th>HTTP Live Streaming (HLS) v3. Live and VOD profiles</th>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 <tr>
-	<th align="center"width="50%">MPEG-DASH Live profile only</th>
-	<td align="center">Yes</td>
-	<td align="center">No</td>
+	<th>Microsoft Smooth Streaming (MSS) v1. Live and VOD profiles</th>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
-</tbody>
+<tr>
+	<th>MPEG-DASH. Live profile only</th>
+	<td>Yes</td>
+	<td>No</td>
+</tr>
 </table>
 
 <table>
-<thead>
 <tr>
-	<th align="center" width="50%">DRM Format</th>
-	<th align="center">Supported in the<br>Opera TV Store</th>
-	<th align="center">Supported in the<br> Opera TV Emulator</th>
+	<th width="50%">DRM Format</th>
+	<th>Supported in the Opera TV Store</th>
+	<th>Supported in the Opera TV Emulator</th>
 </tr>
-</thead>
-<tbody>
 <tr>
-	<th align="center" width="50%">Microsoft PlayReady 1.2</th>
-	<td align="center">Yes</td>
-	<td align="center">No</td>
+	<th>Microsoft PlayReady 1.2</th>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
-</tbody>
 </table>
 
 The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with MSS (recommended) or MPEG-DASH.
@@ -191,9 +174,9 @@ The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in com
 
 Example player code:
 
-	<video controls="">
+	<video>
 		<source type="application/vnd.apple.mpegurl"
-			src="http://example.com/videofile.m3u8"></source>
+			src="http://example.com/videofile.m3u8">
 	</video>
 
 ### Using Microsoft Smooth Streaming (MSS)
@@ -214,7 +197,7 @@ Example player code:
 
 	<video controls>
 		<source type="application/vnd.ms-sstr+xml"
-			src="http://example.com/videofile.ssm/Manifest"></source>
+			src="http://example.com/videofile.ssm/Manifest">
 	</video>
 
 ### Using MPEG-DASH
@@ -234,35 +217,31 @@ Example player code:
 
 	<video controls>
 		<source type="application/dash+xml"
-			src="http://example.com/videofile.isml/videofile.mpd"></source>
+			src="http://example.com/videofile.isml/videofile.mpd">
 	</video>
 
 ## Subtitles
 
 <table>
-<thead>
 <tr>
-	<th align="center" width="50%">Format</th>
-	<th align="center">Supported in the<br>Opera TV Store</th>
-	<th align="center">Supported in the<br>Opera TV Emulator</th>
+	<th width="50%">Format</th>
+	<th>Supported in the Opera TV Store</th>
+	<th>Supported in the Opera TV Emulator</th>
 </tr>
-</thead>
-<tbody>
 <tr>
-	<th align="center" width="50%">Out-of-band WebVTT</th>
-	<td align="center">Yes</td>
-	<td align="center">Yes</td>
+	<th>Out-of-band WebVTT</th>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
-</tbody>
 </table>
 
 Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file.
 
 Example player code:
 
-	<video controls="">
-  		<source type="video/mp4" src="http://example.com/video.mp4"></source>
-  		<track src="http://example.com/subtitles.vtt" srclang="en" label="English"></track>
+	<video>
+  		<source type="video/mp4" src="http://example.com/video.mp4">
+  		<track src="http://example.com/subtitles.vtt" srclang="en" label="English">
 	</video>
 
 WebVTT subtitles can be also used together with all ABR or DRM formats mentioned in this article just by adding the `<track>` tag.
