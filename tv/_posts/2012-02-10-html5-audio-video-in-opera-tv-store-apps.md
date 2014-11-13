@@ -14,6 +14,7 @@ Update history:
 - Article updated on 18 April 2012 to include MPEG-1/MPEG-2 Audio Layer 3 audio codec for video and clarification on limitation of single `<audio>` or `<video>` element playback on some of the current devices.
 - Article updated on 13 August 2014 to include information about supported Adaptive Bitrate Streaming and DRM formats.
 - Article updated on 7 October 2014 to cover subtitles support
+- Article update on 5 November 2014 with information about Shoutcast and fixed example player codes
 
 ## Introduction
 
@@ -41,6 +42,8 @@ Additionally, due to the way some of the current devices have integrated audio a
 
 Whenever you switch to the next audio/video source with JavaScript, make sure to destroy the current audio/video element, and create a new one. Without this, some devices may have problems playing the new audio/video source, especially if the format is different than the one previously played.
 
+Shoutcast format is not officially supported. It may work with subset of devices with the Opera TV Store depending on platform capabilities. We recommend to not use it in order to increase the reach.
+
 We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 4Mbps (highest limited by the network bandwidth users usually have) in your videos.
 
 ## Audio and video codecs
@@ -50,24 +53,24 @@ At the time of publication, the following container formats and codecs are suppo
 <table>
 <thead>
 <tr>
-	<th width="50%">Audio or video codec</th>
-	<th>Supported in the<br>Opera TV Store</th>
-	<th>Supported in the<br>Opera TV Emulator</th>
+	<th align="center" width="50%">Audio or video codec</th>
+	<th align="center">Supported in the<br>Opera TV Store</th>
+	<th align="center">Supported in the<br>Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th width="50%">h.264</th>
+	<th align="center" width="50%">h.264</th>
 	<td align="center">Yes</td>
 	<td align="center">Yes</td>
 </tr>
 <tr>
-	<th width="50%">MP3</th>
+	<th align="center" width="50%">MP3</th>
 	<td align="center">Yes</td>
 	<td align="center">Yes</td>
 </tr>
 <tr>
-	<th width="50%">AAC-LC</th>
+	<th align="center" width="50%">AAC-LC</th>
 	<td align="center">Yes</td>
 	<td align="center">Yes</td>
 </tr>
@@ -85,7 +88,8 @@ At the time of publication, the following container formats and codecs are suppo
 - With audio codecs: MP3, AAC-LC or HE-AAC,
 - Container format is MP4,
 - Source type set to `video/mp4`,
-- Example player code:
+
+Example player code:
 
 	<video>
 		<source src="/path/to/video.mp4" type="video/mp4"></source>
@@ -97,7 +101,8 @@ At the time of publication, the following container formats and codecs are suppo
 - 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
 - Container format is MP3,
 - Source type set to `audio/mp3` or `audio/mpeg`,
-- Example player code:
+
+Example player code:
 
 	<audio>
 		<source src="/path/to/audio.mp3" type="audio/mp3"></source>
@@ -109,7 +114,8 @@ At the time of publication, the following container formats and codecs are suppo
 - 16kbps-10Mbps bitrate (2Mbps-4Mbps is recommended to be used),
 - Container format is MP4,
 - Source type set to `audio/mp4`,
-- Example player code:
+
+Example player code:
 
 	<audio>
 		<source src="/path/to/audio.mp4" type="audio/mp4"></source>
@@ -130,24 +136,24 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 <table>
 <thead>
 <tr>
-	<th width="50%">Adaptive Bitrate Format</th>
-	<th>Supported in the<br>Opera TV Store</th>
-	<th>Supported in the<br>Opera TV Emulator</th>
+	<th align="center" width="50%">Adaptive Bitrate Format</th>
+	<th align="center">Supported in the<br>Opera TV Store</th>
+	<th align="center">Supported in the<br>Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th width="50%">HTTP Live Streaming (HLS) v3<br>Live and VOD profiles</th>
+	<th align="center" width="50%">HTTP Live Streaming (HLS) v3<br>Live and VOD profiles</th>
 	<td align="center">Yes</td>
 	<td align="center">No</td>
 </tr>
 <tr>
-	<th width="50%">Microsoft Smooth Streaming (MSS) v1<br>Live and VOD profiles</th>
+	<th align="center"width="50%">Microsoft Smooth Streaming (MSS) v1<br>Live and VOD profiles</th>
 	<td align="center">Yes</td>
 	<td align="center">No</td>
 </tr>
 <tr>
-	<th width="50%">MPEG-DASH Live profile only</th>
+	<th align="center"width="50%">MPEG-DASH Live profile only</th>
 	<td align="center">Yes</td>
 	<td align="center">No</td>
 </tr>
@@ -157,14 +163,14 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 <table>
 <thead>
 <tr>
-	<th width="50%">DRM Format</th>
-	<th>Supported in the<br>Opera TV Store</th>
-	<th>Supported in the<br> Opera TV Emulator</th>
+	<th align="center" width="50%">DRM Format</th>
+	<th align="center">Supported in the<br>Opera TV Store</th>
+	<th align="center">Supported in the<br> Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th width="50%">Microsoft PlayReady 1.2</th>
+	<th align="center" width="50%">Microsoft PlayReady 1.2</th>
 	<td align="center">Yes</td>
 	<td align="center">No</td>
 </tr>
@@ -182,7 +188,8 @@ The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in com
 - Source pointing to a m3u8 playlist,
 - Source type set to `application/vnd.apple.mpegurl`,
 - At some devices HLS playback may be terminated if HLS stream is broken,
-- Example player code:
+
+Example player code:
 
 	<video controls="">
 		<source type="application/vnd.apple.mpegurl"
@@ -235,14 +242,14 @@ Example player code:
 <table>
 <thead>
 <tr>
-	<th width="50%">Format</th>
-	<th>Supported in the<br>Opera TV Store</th>
-	<th>Supported in the<br>Opera TV Emulator</th>
+	<th align="center" width="50%">Format</th>
+	<th align="center">Supported in the<br>Opera TV Store</th>
+	<th align="center">Supported in the<br>Opera TV Emulator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-	<th width="50%">Out-of-band WebVTT</th>
+	<th align="center" width="50%">Out-of-band WebVTT</th>
 	<td align="center">Yes</td>
 	<td align="center">Yes</td>
 </tr>
@@ -251,7 +258,7 @@ Example player code:
 
 Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file.
 
-Example:
+Example player code:
 
 	<video controls="">
   		<source type="video/mp4" src="http://example.com/video.mp4"></source>
