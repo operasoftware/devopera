@@ -21,7 +21,7 @@ license: cc-by-3.0
 </ul>
 <h3> WebSockets support</h3>
 <p> Opera offers support for WebSockets which provide a way to communicate between script in a web page and the server in full-duplex
-	mode with low latency. Opera supports <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00">version
+	mode with low latency. Opera supports <a href="https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00">version
 	-00</a> of the WebSocket protocol (-76). WebSockets sets up one TCP connection and confirms that the server can speak
 	WebSocket by doing a special handshake, after which the server and the client can send text messages over the connection
 	at will, resulting in faster communication.</p>

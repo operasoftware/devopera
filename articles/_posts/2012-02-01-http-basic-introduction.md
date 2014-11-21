@@ -45,7 +45,7 @@ An online communication protocol contains the same elements. The syntax will be 
 HTTP itself runs on top of other protocols. When connecting to a web site, for example at `www.example.org`, the user agent is using the TCP/IP suite of protocols. The [TCP/IP model][4] was designed in 1970 with [4 distinct layers][5]:
 
 [4]: http://en.wikipedia.org/wiki/TCP/IP_model
-[5]: http://tools.ietf.org/html/rfc1122
+[5]: https://tools.ietf.org/html/rfc1122
 
 1. **Link** describes the access to physical media (e.g. using the network card)
 2. **Internet** describes the envelope and routing of data — how it is packaged (IP)

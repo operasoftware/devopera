@@ -51,7 +51,7 @@ Updates are often missed by people using assistive technology. Assistive technol
 
 <h2>A Brief History of HTML</h2>
 <p>
-HTML was originally designed to be a hypertext system for structuring and sharing linked documents. Early HTML drafts defined tags, such as headings, paragraphs, lists, and anchors, to add structure to text-based documents. The first <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">proposal for an HTML specification</a> by the <abbr title="Internet Engineering Task Force">IETF</abbr> also included the <code>img</code> element to allow graphics to be displayed inline. The first formal HTML specification was <a href="http://tools.ietf.org/html/rfc1866">HTML 2</a>, based on the early HTML drafts. This specification introduced forms, and defined a small set of interface components to create edit boxes, buttons, checkboxes, radio buttons, and dropdown lists. The small set of interface components defined in HTML 2 has hardly changed compared with the set we currently use with <a href="http://www.w3.org/TR/html401/">HTML 4.01</a>.
+HTML was originally designed to be a hypertext system for structuring and sharing linked documents. Early HTML drafts defined tags, such as headings, paragraphs, lists, and anchors, to add structure to text-based documents. The first <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">proposal for an HTML specification</a> by the <abbr title="Internet Engineering Task Force">IETF</abbr> also included the <code>img</code> element to allow graphics to be displayed inline. The first formal HTML specification was <a href="https://tools.ietf.org/html/rfc1866">HTML 2</a>, based on the early HTML drafts. This specification introduced forms, and defined a small set of interface components to create edit boxes, buttons, checkboxes, radio buttons, and dropdown lists. The small set of interface components defined in HTML 2 has hardly changed compared with the set we currently use with <a href="http://www.w3.org/TR/html401/">HTML 4.01</a>.
 </p>
 <p>
 The communication model for HTML is based on the client server model. In the client server model, the client sends requests and can receive replies; the server listens for requests, processes the request on the server, and sends replies back to the client. As HTML did not have a behaviour layer, communication was intended to be sequential — the client requests a page from the server; the server processes the request and sends a page to the client.
@@ -148,14 +148,14 @@ The role given by the <code>role</code> attribute trumps the role of the native 
 </p>
 
 <pre><code>&lt;input type="image"
-       src="thumb.gif"
-       alt="Effectiveness"
-       role="slider"
-       aria-valuemin="0"
-       aria-valuemax="100"
-       aria-valuenow="42"
-       aria-valuetext="42 percent"
-       aria-labelledby="leffective"&gt;</code></pre>
+	   src="thumb.gif"
+	   alt="Effectiveness"
+	   role="slider"
+	   aria-valuemin="0"
+	   aria-valuemax="100"
+	   aria-valuenow="42"
+	   aria-valuetext="42 percent"
+	   aria-labelledby="leffective"&gt;</code></pre>
 
 <p>
 When this element receives focus, a screen reader user understands the role this widget plays. The ARIA specification maintains a <a href="http://www.w3.org/TR/wai-aria/#roles">list of roles</a>.
@@ -276,15 +276,15 @@ The <code>aria-atomic</code> property is an optional property of live regions th
 In the following example, all elements within the unordered list will be announced in their entirety when the region is spoken, unless another element further down the chain overrides the <code>aria-atomic</code> property.
 </p>
 <pre><code>&lt;ul aria-atomic="true"
-    aria-live="polite"&gt;</code></pre>
+	aria-live="polite"&gt;</code></pre>
 
 <h3>The <code>aria-busy</code> Property</h3>
 <p>
 The <code>aria-busy</code> property is an optional property of live regions that can have the values <code>true</code> or <code>false</code> (the default if this property is not specified). If multiple parts of a live region need to be loaded before changes are announced to the user, the <code>aria-busy</code> property can be set to <code>true</code> until the final part is loaded, and then set to <code>false</code> when the updates are complete. This property prevents assistive technologies announcing changes before the updates are complete.
 </p>
 <pre><code>&lt;ul aria-atomic="true"
-    aria-busy="true"
-    aria-live="polite"&gt;</code></pre>
+	aria-busy="true"
+	aria-live="polite"&gt;</code></pre>
 
 <h3>The <code>aria-relevant</code> Property</h3>
 <p>
@@ -304,8 +304,8 @@ The <code>aria-relevant</code> property is an optional property of live regions 
 In the absence of an explicit <code>aria-relevant</code> property, the default is to assume there are text changes and additions (<code>aria-relevant="text additions"</code>). The following example would only announce changes if nodes are added to the DOM within the region. If there are text changes, or nodes are removed within the region, the user will not be notified.
 </p>
 <pre><code>&lt;ul aria-relevant="additions"
-    aria-atomic="true"
-    aria-live="polite"&gt;</code></pre>
+	aria-atomic="true"
+	aria-live="polite"&gt;</code></pre>
 
 <h2>When can ARIA be used?</h2>
 <p>
@@ -330,9 +330,9 @@ On my personal website, I have included document landmark roles for <code>main</
 ...
 &lt;/div&gt;
 &lt;div id="nav"&gt;
-    &lt;form id="searchform" ...&gt;
-    ...
-    &lt;/form&gt;
+	&lt;form id="searchform" ...&gt;
+	...
+	&lt;/form&gt;
 ...
 &lt;/div&gt;
 &lt;div id="content"&gt;
@@ -347,9 +347,9 @@ We could write the <code>role</code> attribute for our document landmarks direct
 ...
 &lt;/div&gt;
 &lt;div id="nav" role="navigation"&gt;
-    &lt;form id="searchform" role="search" ...&gt;
-    ...
-    &lt;/form&gt;
+	&lt;form id="searchform" role="search" ...&gt;
+	...
+	&lt;/form&gt;
 ...
 &lt;/div&gt;
 &lt;div id="content" role="main"&gt;
@@ -362,25 +362,25 @@ Alternatively, as most pages are structured so they can be styled with <abbr tit
 
 <pre><code>function addARIARole(strID, strRole)
 {
-    // Find the element to add a role property to
-    var objElement = document.getElementById(strID);
+	// Find the element to add a role property to
+	var objElement = document.getElementById(strID);
 
-    if (objElement)
-    {
-        // Add the role property to the element
-        objElement.setAttribute('role', strRole);
-    }
+	if (objElement)
+	{
+		// Add the role property to the element
+		objElement.setAttribute('role', strRole);
+	}
 }</code></pre>
 <p>
 The function can then be called with the <code>id</code> of the section, and the document landmark role for the section. So considering the document structure above, we could use this JavaScript function to insert the <code>role</code> attribute, rather than write it into the markup.
 </p>
 <pre><code>function setupARIA()
 {
-    // Add ARIA roles to the document
-    addARIARole('content', 'main');
-    addARIARole('nav', 'navigation');
-    addARIARole('searchform', 'search');
-    addARIARole('ads', 'banner');
+	// Add ARIA roles to the document
+	addARIARole('content', 'main');
+	addARIARole('nav', 'navigation');
+	addARIARole('searchform', 'search');
+	addARIARole('ads', 'banner');
 }
 
 window.onload = setupARIA;</code></pre>
@@ -392,10 +392,10 @@ If you have forms containing required fields, you can make use of the <code>aria
 
 <pre><code>&lt;label for="contactname"&gt;Name&lt;/label&gt;
 &lt;input type="text"
-       id="contactname"
-       name="contactname"
-       size="30"
-       aria-required="true"&gt;</code></pre>
+	   id="contactname"
+	   name="contactname"
+	   size="30"
+	   aria-required="true"&gt;</code></pre>
 
 <p>
 Wordpress have started to use the <code>aria-required</code> attribute for required fields in the comments section for blog entries.
@@ -413,9 +413,9 @@ A long description of our paragliding trip ...
 
 &lt;div&gt;
 &lt;img src="takeoff.png"
-     alt="Getting ready to take off"
-     aria-labelledby="limg"
-     aria-describedby="dimg"&gt;
+	 alt="Getting ready to take off"
+	 aria-labelledby="limg"
+	 aria-describedby="dimg"&gt;
 &lt;/div&gt;</code></pre>
 
 <h3>Precedence of markup</h3>
@@ -426,10 +426,10 @@ ARIA markup takes precedence over the host language markup. This means that if <
 <pre><code>&lt;label id="lblef" for="effectiveness"&gt;Effectiveness&lt;/label&gt;
 
 &lt;input type="image"
-       role="slider"
-       id="effectiveness"
-       aria-labelledby="lblef"
-       ...&gt;</code></pre>
+	   role="slider"
+	   id="effectiveness"
+	   aria-labelledby="lblef"
+	   ...&gt;</code></pre>
 
 <p>
 Look through the <a href="http://www.w3.org/TR/wai-aria/#supported">full list of states and properties</a> to see how ARIA can help you ensure your content is more accessible.

@@ -33,7 +33,7 @@ The current Geolocation API specification is currently in <a href="http://en.wik
 	Desktop: Opera, Chrome, Firefox, Safari.
 	Mobile: Opera, Chrome, Safari, Fennec.</p>
 <p>We&#39;re (soon to be) <a href="http://www.w3.org/2008/geolocation/charter/charter-2.html">chartered</a> to work on the next version of the Geolocation API (&quot;Level 2&quot;), as well as the <a href="http://dev.w3.org/geo/api/spec-source-orientation.html">Device Orientation Event specification</a>. </p>
-<p>The Level 2 API spec will add the ability to get the location as an Address, and we&#39;ve already spent quite some time discussing various proposals for an address format. The IETF crowd would like us to directly adapt the Geopriv &quot;civic address&quot; format specified in RFCs <a href="http://tools.ietf.org/html/rfc4119">4119</a> and <a href="http://www.ietf.org/rfc/rfc5139.txt">5139</a>, but there&#39;s strong pushback from implementors who feel this is overkill. The current proposal is to have a simpler format, but to specify a mapping from the Geopriv format to the Geolocation address format, and to include the raw, unparsed Geopriv address in one of the fields. </p>
+<p>The Level 2 API spec will add the ability to get the location as an Address, and we&#39;ve already spent quite some time discussing various proposals for an address format. The IETF crowd would like us to directly adapt the Geopriv &quot;civic address&quot; format specified in RFCs <a href="https://tools.ietf.org/html/rfc4119">4119</a> and <a href="http://www.ietf.org/rfc/rfc5139.txt">5139</a>, but there&#39;s strong pushback from implementors who feel this is overkill. The current proposal is to have a simpler format, but to specify a mapping from the Geopriv format to the Geolocation address format, and to include the raw, unparsed Geopriv address in one of the fields. </p>
 <p>The Device Orientation Event specification introduces new DOM events for detecting the physical orientation and movement of a device, based on combining input from an accelerometer, a magnetometer (compass) and possibly also a gyroscope. The current proposal is pretty much based on the Android APIs. </p>
 <h3 id="webapps">Web Applications Working Group</h3>
 <p>Anne van Kesteren represented Opera on the <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a>. WebApps is the group that took over a lot from HTML5 and already had a lot to begin with. Arthur Barstow (Nokia) and Charles McCathieNevile (Opera) are Co-Chairs.</p>
@@ -219,7 +219,7 @@ Work only starting up so far, sharing gradients between svg and css, possibly ad
 	Discussion on how restrictions on text/* media types make no sense for
 	HTTP usage. (E.g. CRLF for line breaks, no UTF-16, defaults to US-ASCII.)
 	And discussed the path forward with processing URLs - I think it will be
-	<a href="http://tools.ietf.org/html/draft-abarth-url" target="_blank">http://tools.ietf.org/html/draft-abarth-url</a></p>
+	<a href="https://tools.ietf.org/html/draft-abarth-url" target="_blank">https://tools.ietf.org/html/draft-abarth-url</a></p>
 <h4>Semantics</h4>
 <p>Short discussion over whether retrofitting<code> &lt;i&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;small&gt;</code>,
 	etc. as being semantic elements rather than presentational was worth it

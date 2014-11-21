@@ -21,7 +21,7 @@ license: cc-by-3.0
 
 <h2>WebSockets</h2>
 
-<p>Although the current stable release of Opera already has sockets support, it has been disabled by default because it was using an older version of the spec. This snapshot brings our implementation up to the latest <a href="http://tools.ietf.org/html/rfc6455">WebSockets protocol RFC-6455</a> and it is now enabled by default.</p>
+<p>Although the current stable release of Opera already has sockets support, it has been disabled by default because it was using an older version of the spec. This snapshot brings our implementation up to the latest <a href="https://tools.ietf.org/html/rfc6455">WebSockets protocol RFC-6455</a> and it is now enabled by default.</p>
 
 <h2>New Opera extension APIs</h2>
 <p>A few months ago, we released a special <a href="https://dev.opera.com/articles/view/new-extension-apis-screenshot-resource-loader-url-filter/">Opera Labs</a> build with the new Screenshot and Resource Loader APIs and an improved URL Filter API (including whitelisting, 3rd-party blocking, and a new filter syntax) for extensions. We&#39;ve had some great feedback from developers on these features, and with today&#39;s release of the Opera 12.50 snapshot we are now &quot;promoting&quot; these new and improved APIs out of the labs and putting them on track for our next stable release.</p>

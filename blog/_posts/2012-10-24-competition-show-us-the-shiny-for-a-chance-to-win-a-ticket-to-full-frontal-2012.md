@@ -13,7 +13,7 @@ If you’re serious about your JavaScript and fanatical about web app developmen
 
 Due to some scheduling clashes, we’ve got a spare ticket for the conference, as well as a place on [Remy Sharp’s "Mobile Web Apps" workshop](http://2012.full-frontal.org/#mobile)… in all, two days of intense JS and web app knowledge (8-9 November).
 
-Want to get your hands on the tickets? Here’s the deal: in the run-up to releasing Opera 12.10, our [desktop team](http://my.opera.com/desktopteam/blog/) been busy adding support for new standards (such as the [Fullscreen API](http://dvcs.w3.org/hg/fullscreen/raw-file/529a67b8d9f3/Overview.html) and the latest [WebSockets protocol](http://tools.ietf.org/html/rfc6455)). We’re currently in the process of getting a few simple demos ready to showcase these new technologies...but maybe you’ve already got a cool idea of how they could be put to good use. If so, we’d love to see what you come up with!
+Want to get your hands on the tickets? Here’s the deal: in the run-up to releasing Opera 12.10, our [desktop team](http://my.opera.com/desktopteam/blog/) been busy adding support for new standards (such as the [Fullscreen API](http://dvcs.w3.org/hg/fullscreen/raw-file/529a67b8d9f3/Overview.html) and the latest [WebSockets protocol](https://tools.ietf.org/html/rfc6455)). We’re currently in the process of getting a few simple demos ready to showcase these new technologies...but maybe you’ve already got a cool idea of how they could be put to good use. If so, we’d love to see what you come up with!
 
 Make something awesome, and you’ll not only get your 15 minutes of fame on our [Shiny Demos](http://shinydemos.com/) site, but you’ll also be in with a chance to snag the tickets to Full Frontal.
 

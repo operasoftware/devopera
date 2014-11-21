@@ -35,13 +35,13 @@ Anyway, it was very good day overall, and I thought I’d round it off by writin
 [In the last article][3], we touched upon the first line of the response syntax sent by clients (including the methods). This time we will focus mainly on the first line of the response message coming from the server, and what the different codes that can appear in that line mean. Note that these two types of message — request and response — are very similar. As stated in the [HTTP/1.1 revision][4] (still at work but almost finished):
 
 [3]: https://dev.opera.com/articles/view/http-lets-get-it-on/
-[4]: http://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging#section-3.1
+[4]: https://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging#section-3.1
 
 > An HTTP message can either be a request from client to server or a response from server to client. Syntactically, the two types of message differ only in the start-line, which is either a request-line (for requests) or a status-line (for responses), and in the algorithm for determining the length of the message body (Section 3.3).
 
 The first line in the response is called the [status-line][5]. The line starts with the HTTP protocol version, a space, a 3-digit integer code, a space and finally an explanation sentence. Here is an example:
 
-[5]: http://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging#section-3.1.2
+[5]: https://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging#section-3.1.2
 
 	HTTP/1.1 200 OK
 
@@ -164,7 +164,7 @@ Nginx is another frequently used server, more specifically for Content Delivery 
 
 Above we have looked at just a few of the available HTTP codes; there are [many others][11]. Some are very well-known, such as `404 Not Found`, but others are quite obscure and don’t crop up very often. Whatever the case, the first digit is always an indication of the family of codes they belong to:
 
-[11]: http://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics#section-4
+[11]: https://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics#section-4
 
 - `1xx` (Informational): Request received, continuing process.
 - `2xx` (Successful): The action was successfully received, understood, and accepted.

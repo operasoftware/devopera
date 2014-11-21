@@ -62,7 +62,7 @@ I think by now you’ve got it. We now have a system of labels for identifying p
 
 The full list of current [HTTP methods][3] is: `OPTIONS`, `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `TRACE`, `CONNECT`. Each of them have different roles that we will explore in further articles. `GET` is by far the most used one. Each time, we enter an HTTP URI in the browser address bar, we send a `GET` request to a server.
 
-[3]: http://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics#section-6
+[3]: https://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics#section-6
 
 On the Web, a lot more information (HTTP headers) is sent by the client to the server to help with negotiating the HTTP request. The server then will be able to adjust its answer according to these headers. There is a very practical tool in [Opera Dragonfly][4] to create custom HTTP requests and inspect the server HTTP response: you can find it under the Network section, in the Make Request tab.
 

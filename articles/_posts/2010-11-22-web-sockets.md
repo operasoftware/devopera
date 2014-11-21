@@ -8,7 +8,7 @@ license: cc-by-nc-sa-3.0
 ---
 <h2>Introduction</h2>
 
-<p>Opera 11 and above support Web Sockets, a feature once part of the HTML5 spec known as <a href="http://www.w3.org/TR/2008/WD-html5-20080610/comms.html#tcpconnection">TCPConnection</a>. Web Sockets today, however, are specified in two places: the <a href="http://www.w3.org/TR/websockets/">Web Sockets API</a> is maintained by HTML5 editor Ian Hickson, while the <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">Web Socket protocol</a> is edited by Ian Fette. Web Sockets allow an application to push information back and forth between server and browser, rather than having to poll the server at set intervals or use <code>&lt;iframe&gt;</code> tricks — this allows web developers to cut down on unnecessary HTTP traffic, hacks and complexity.</p>
+<p>Opera 11 and above support Web Sockets, a feature once part of the HTML5 spec known as <a href="http://www.w3.org/TR/2008/WD-html5-20080610/comms.html#tcpconnection">TCPConnection</a>. Web Sockets today, however, are specified in two places: the <a href="http://www.w3.org/TR/websockets/">Web Sockets API</a> is maintained by HTML5 editor Ian Hickson, while the <a href="https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">Web Socket protocol</a> is edited by Ian Fette. Web Sockets allow an application to push information back and forth between server and browser, rather than having to poll the server at set intervals or use <code>&lt;iframe&gt;</code> tricks — this allows web developers to cut down on unnecessary HTTP traffic, hacks and complexity.</p>
 
 <p>In this article we will explain the background to Web Sockets, show why it is a cool feature, and give you some simple usage examples to get you up to speed.</p>
 
@@ -124,5 +124,5 @@ ws.onmessage = function(e) {
 <li><a href="http://my.opera.com/core/blog/websockets">Web Sockets in Opera</a> by Simon Pieters</li>
 <li><a href="http://testsuites.opera.com/websockets/">Web Sockets test suite</a></li>
 <li><a href="http://dev.w3.org/html5/websockets/">Web Sockets spec</a></li>
-<li><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">Web Sockets protocol</a></li>
+<li><a href="https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">Web Sockets protocol</a></li>
 </ul>
