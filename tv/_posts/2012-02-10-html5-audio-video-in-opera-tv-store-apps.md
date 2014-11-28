@@ -57,6 +57,11 @@ At the time of publication, the following container formats and codecs are suppo
 	<th>Supported in the Opera TV Emulator</th>
 </tr>
 <tr>
+	<th>H.264</th>
+	<td>Yes</td>
+	<td>Yes</td>
+</tr>
+<tr>
 	<th>MP3</th>
 	<td>Yes</td>
 	<td>Yes</td>
