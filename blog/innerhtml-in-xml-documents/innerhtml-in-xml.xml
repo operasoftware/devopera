@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>innerHTML and XHTML</title>
+<script>
+/* <![CDATA[ */
+window.onload = function() {
+  try {
+    document.getElementById('r').innerHTML = "<b><i>test</b></i>";
+    document.getElementById('result').innerHTML = "FAIL: no parse error thrown.";
+  } catch(e) {
+    document.getElementById('result').innerHTML = e.code == DOMException.SYNTAX_ERR ? "PASS: <code>DOMException.SYNTAX_ERR</code> thrown." : "FAIL: wrong error thrown.";
+  }
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<h1><code>innerHTML</code> and XHTML</h1>
+<p>Trying to inject malformed markup:</p>
+<pre><code>window.onload = function() {
+  try {
+    document.getElementById('r').innerHTML = "&lt;b>&lt;i>test&lt;/b>&lt;/i>";
+    document.getElementById('result').innerHTML = "FAIL: no parse error thrown.";
+  } catch(e) {
+    document.getElementById('result').innerHTML = e.code == DOMException.SYNTAX_ERR ? "PASS: &lt;code>DOMException.SYNTAX_ERR&lt;/code> thrown." : "FAIL: wrong error thrown.";
+  }
+}</code></pre>
+<p id="r"></p>
+<p id="result">FAIL: script did not run.</p>
+</body>
+</html>
