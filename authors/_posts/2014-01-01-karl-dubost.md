@@ -4,4 +4,4 @@ link: http://www.la-grange.net/karl/
 layout: author
 ---
 
-Karl is working from Montréal, Canada. It has been participating to the Web since its inception under different roles including Web designer, CTO, W3C staff, translations volunteer, bits pusher, http poet, ... 
+Karl is working from somewhere in the world (probably Japan, Canada or France). He has been participating to the Web since its inception. More information about <a href="http://www.la-grange.net/karl/">Karl</a>.
