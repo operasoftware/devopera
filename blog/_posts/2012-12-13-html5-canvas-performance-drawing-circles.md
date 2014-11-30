@@ -35,7 +35,7 @@ This way of drawing a circle is a bit cumbersome in my opinion, compared to SVG 
     ctx.fillStyle = gradient;
     ctx.fillRect(x - radius, y - radius, x + radius, y + radius);
 
-Sure enough, using radial gradients is slower than `arc()`. Several times slower! You can play with this [canvas test page](http://people.opera.com/danield/html5/canvas-speed/) here to see the speed difference for yourself.
+Sure enough, using radial gradients is slower than `arc()`. Several times slower! You can play with this [canvas test page](http://daniemon.com/tech/html5/canvas-speed/) here to see the speed difference for yourself.
 
 If I’d thought about it properly, I should have realised this without needing to test it and saved myself some time, but then I tried playing with spheres (well, circles with shading) as well.
 
@@ -67,7 +67,7 @@ As before, radial gradients are several times slower. Of course, the flip side i
 
 Don’t forget that using images means they have to be downloaded first so it's better to pre-load them if possible.
 
-You can test the performance of these on the same [canvas test page](http://people.opera.com/danield/html5/canvas-speed/).
+You can test the performance of these on the same [canvas test page](http://daniemon.com/tech/html5/canvas-speed/).
 
 As you can see, the overlay approach is obviously slower but not as much as with gradients. It also gives you more freedom in controlling the colours, however the overall effect has lower contrast than the original image.
 
