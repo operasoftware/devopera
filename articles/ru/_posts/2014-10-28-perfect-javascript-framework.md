@@ -7,7 +7,7 @@ tags:
 - javascript
 language: ru
 translator: 
-- [Антон Хлыновский](http://twitter.com/subzey)
+- anton-hlinovsky
 license: cc-by-3.0
 ---
 
