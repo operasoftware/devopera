@@ -6,8 +6,8 @@ intro: 'Krasimir Tsonev мечтает об идеальном JavaScript-фре
 tags:
 - javascript
 language: ru
-translator: 
-- anton-hlinovsky
+translator: Антон Хлыновский
+source: http://frontender.info/perfect-javascript-framework/
 license: cc-by-3.0
 ---
 
