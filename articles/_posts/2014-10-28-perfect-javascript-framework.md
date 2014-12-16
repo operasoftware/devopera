@@ -19,7 +19,7 @@ We all like simple tools. Complexity kills. It makes our work difficult and give
 		'visible': true
 	});
 
-Let’s say that this is a real framework. Behind the scenes, `createPage` generates a new *view* class that loads the `home.html` template. Based on the `visible` parameter we append (or not) the newly created DOM element to the tree. Now, let’s put ourselves in the developer’s shoes. We read in the documentation that this creates a new page with a certain template. We do not know any particular details because this is an abstraction.
+Let’s say that this is a real framework. Behind the scenes, `createPage` generates a new _view_ class that loads the `home.html` template. Based on the `visible` parameter we append (or not) the newly created DOM element to the tree. Now, let’s put ourselves in the developer’s shoes. We read in the documentation that this creates a new page with a certain template. We do not know any particular details because this is an abstraction.
 
 Some of today’s frameworks have not one, but many levels of abstractions. Sometimes, in order to use the framework properly, we have to know the details. Abstracting, in fact, is a powerful instrument because it wraps functionalities. It encapsulates design decisions. However, it should be used wisely because it leads to untraceable processes.
 
@@ -52,8 +52,8 @@ Very often, our project requires custom functionality. There is no framework tha
 			'mouseover .title .date': 'showTooltip',
 			'click .open': 'render'
 		},
-		'render': function() { ... },
-		'showTooltip': function() { ... }
+		'render': function() { … },
+		'showTooltip': function() { … }
 	});
 
 Personally, I prefer to use a framework that doesn’t have many levels of abstractions — a framework that provides transparency.
@@ -185,7 +185,7 @@ JavaScript based applications usually communicate with the users through DOM eve
 			'click .header.menu': 'toggleMenu'
 		},
 		'toggleMenu': function() {
-			// ...
+			// …
 		}
 	});
 
@@ -206,7 +206,7 @@ In general, I would like to see such kind of logic inside HTML. Interestingly, w
 Instead, I’m talking about descriptive attributes that control the behavior of the element. For example:
 
 	<div data-component="slideshow" data-items="5" data-select="dispatch:selected">
-		...
+		…
 	</div>
 
 It should not be like JavaScript coding in HTML, but more like setting configurations.
@@ -218,7 +218,7 @@ Managing the dependencies is an important job in our development process. We usu
 [RequireJS](http://requirejs.org/) is one of the popular instruments for resolving dependencies. The idea is to wrap your code in a closure that accepts the needed modules:
 
 	require(['ajax', 'router'], function(ajax, router) {
-		// ...
+		// …
 	});
 
 In the example above, our function needs two modules — `ajax` and `router`. The magical `require` method reads the passed array and calls our function with the proper arguments. The definition of the `router` looks like this:
@@ -227,14 +227,14 @@ In the example above, our function needs two modules — `ajax` and `router`. Th
 	define(['jquery'], function($) {
 		return {
 			'apiMethod': function() {
-				// ...
+				// …
 			}
 		}
 	});
 
 Notice that we have another dependency here — jQuery. It’s also important to mention that we have to return our module’s public API. Otherwise, the code which requires our module can’t access the defined functionalities.
 
-AngularJS goes a little bit further by giving us something called *factory*. We register our dependencies there, and they are [magically](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript#the-reflection-approach) available in our controllers. For example:
+AngularJS goes a little bit further by giving us something called _factory_. We register our dependencies there, and they are [magically](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript#the-reflection-approach) available in our controllers. For example:
 
 	myModule.factory('greeter', function($window) {
 		return {
@@ -282,7 +282,7 @@ This is used often because the template is placed in the HTML. It looks natural,
 
 We place our code into external HTML files and avoid the usage of additional `<script>` tags. However, this means that we need more HTTP requests which is not always appropriate (at least not until HTTP2 becomes more widespread).
 
-* The template is part of the page’s markup — the framework reads the template from the DOM tree. It relies on already generated HTML. We don’t have to perform additional HTTP requests, create a new file or add additional `<script>` elements.
+The template is part of the page’s markup — the framework reads the template from the DOM tree. It relies on already generated HTML. We don’t have to perform additional HTTP requests, create a new file or add additional `<script>` elements.
 
 ### The template is part of the JavaScript
 
@@ -301,9 +301,9 @@ Some frameworks don’t use HTML directly at all. They use templates in the form
 
 ### Final thoughts about templates
 
-Ok, where do we go from here? The framework of the future should make us think only about the data and only about the markup. Nothing in between. We don’t want to deal with loading HTML strings or passing data to special functions. We want to apply values to variables and get the DOM updated. The popular *two-way data binding* should not be a feature, but a *must-have* core functionality.
+Ok, where do we go from here? The framework of the future should make us think only about the data and only about the markup. Nothing in between. We don’t want to deal with loading HTML strings or passing data to special functions. We want to apply values to variables and get the DOM updated. The popular _two-way data binding_ should not be a feature, but a _must-have_ core functionality.
 
-In fact, AngularJS is close to the desired behavior. It reads the template from the provided page’s content and has the magical data binding implemented. However, it is still not ideal. Sometimes there is a flickering effect. It happens when the browser renders the HTML but AngularJS’s boot mechanisms are still not fired. Also, AngularJS uses *dirty checking* to find out what is changed. This approach could cost a lot in some cases. Hopefully [`Object.observe`](http://www.html5rocks.com/en/tutorials/es7/observe/) will soon be supported in all browsers, so that we have better data binding.
+In fact, AngularJS is close to the desired behavior. It reads the template from the provided page’s content and has the magical data binding implemented. However, it is still not ideal. Sometimes there is a flickering effect. It happens when the browser renders the HTML but AngularJS’s boot mechanisms are still not fired. Also, AngularJS uses _dirty checking_ to find out what is changed. This approach could cost a lot in some cases. Hopefully [`Object.observe`](http://www.html5rocks.com/en/tutorials/es7/observe/) will soon be supported in all browsers, so that we have better data binding.
 
 The question about dynamic templates comes up to every developer sooner or later. For sure, we have parts of our application that appear after the bootstrapping. The framework ought to handle that easily. We shouldn’t think about Ajax requests, and we should work with an API that makes the process look synchronous.
 
@@ -311,7 +311,7 @@ The question about dynamic templates comes up to every developer sooner or later
 
 I like the idea of turning features off and on. If we don’t use something, then why is it in our code base? It would be nice if the framework has a builder that generates a version containing only modules that we need. Like, for example [YUI](http://yuilibrary.com/yui/configurator/), which has a configurator. We choose the modules that we want and get a minified JavaScript file ready to use.
 
-Even now, there are frameworks that have something usually called *core*. Additionally we are able to use bunch of plugins (or modules). However, we could improve that. The process of choosing the needed features shouldn’t involve downloading files. We should not include them manually in the page. It ought to be somehow part of the framework’s code.
+Even now, there are frameworks that have something usually called _core_. Additionally we are able to use bunch of plugins (or modules). However, we could improve that. The process of choosing the needed features shouldn’t involve downloading files. We should not include them manually in the page. It ought to be somehow part of the framework’s code.
 
 After having appropriate setup capabilities, the perfect environment must provide extensibility. We should be able to write our own modules and share them with other developers. In other words, there should be a friendly environment for creating modules. We can’t develop a strong community without the existence of a proper developer environment.
 
@@ -353,7 +353,7 @@ We could use another design like this one, for example:
 	var AboutCtrl = Framework.createController({ 'type': 'about' });
 	Framework.addRoute('/about', AboutCtrl.handler);
 
-Notice that we are not exposing our router. It is not visible, but now we have control of the two processes — creating the controller and registering a route. Of course, the proposed design matches our personal use case. We may find this approach much complex because we have to create controllers manually. While we design APIs, we have to think about the [single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle) and the idea of *doing one thing and doing it right*. I’m seeing that more and more frameworks decentralize their functionalities. They split the complex methods in smaller and smaller pieces. That’s a good sign, and I hope that we will see more of this in the future.
+Notice that we are not exposing our router. It is not visible, but now we have control of the two processes — creating the controller and registering a route. Of course, the proposed design matches our personal use case. We may find this approach much complex because we have to create controllers manually. While we design APIs, we have to think about the [single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle) and the idea of _doing one thing and doing it right_. I’m seeing that more and more frameworks decentralize their functionalities. They split the complex methods in smaller and smaller pieces. That’s a good sign, and I hope that we will see more of this in the future.
 
 ## Testability
 
@@ -371,9 +371,9 @@ I believe that without good documentation any project will die sooner or later. 
 
 I could split the successful documentation into three parts:
 
-* *What you can do* section — the documentation has to teach the users, and it should do it right. No matter how awesome and powerful our framework is, there really has to be a proper explanation. Some people prefer watching video clips, others — reading articles. In both cases, the vendor should lead the developers from the very basic stuff to the advanced components of the framework.
-* *API documentation* — this is usually included. It’s a list of all the public methods of the framework, their parameters, what they return and maybe an example usage.
-* *How it works* section — usually this section is missing. It’s nice if someone explains the structure of the framework — even a simple schema of the core functionalities and their relation will help. This will make the code transparent. It will help the developers who want to make custom modifications.
+- **What you can do** section — the documentation has to teach the users, and it should do it right. No matter how awesome and powerful our framework is, there really has to be a proper explanation. Some people prefer watching video clips, others — reading articles. In both cases, the vendor should lead the developers from the very basic stuff to the advanced components of the framework.
+- **API documentation** — this is usually included. It’s a list of all the public methods of the framework, their parameters, what they return and maybe an example usage.
+- **How it works** section — usually this section is missing. It’s nice if someone explains the structure of the framework — even a simple schema of the core functionalities and their relation will help. This will make the code transparent. It will help the developers who want to make custom modifications.
 
 ## Summary
 
