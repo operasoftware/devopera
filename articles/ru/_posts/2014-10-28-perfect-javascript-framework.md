@@ -6,7 +6,7 @@ intro: 'Казимир Тсонев мечтает об идеальном JavaS
 tags:
 - javascript
 language: ru
-translator: Anton Hlinovsky
+translator: Anton Khlynovskiy
 source: http://frontender.info/perfect-javascript-framework/
 license: cc-by-3.0
 ---
