@@ -8,7 +8,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Recently, the Opera Web Technology team attended [BlinkOn 3](https://docs.google.com/a/opera.com/document/d/1m6JNcFYnwJ0I7OWHrs-meO6820oM_5q9jSELOPDAQnc/), the twice-yearly conference for Blink contributors. ([Videos](https://www.youtube.com/user/blinkontalks) are available on YouTube.) As you may know, after Google and Samsung, Opera is the [most prolific committer to Blink](http://browserg.nom.es/), and has the only [non-Google API owner](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/wp7Pa4fdSbU/XwvPcxguiN0J) and [Chromium Security Group members](http://blogs.opera.com/security/2014/08/security-changes-opera-23/).
+Recently, the Opera Web Technology team attended [BlinkOn 3](https://docs.google.com/a/opera.com/document/d/1m6JNcFYnwJ0I7OWHrs-meO6820oM_5q9jSELOPDAQnc/), the twice-yearly conference for Blink contributors. ([Videos](https://www.youtube.com/user/blinkontalks) are available on YouTube.) As you may know, Opera is a [prolific committer to Blink](https://operasoftware.github.io/upstreamtools/), and has the only [non-Google API owner](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/wp7Pa4fdSbU/XwvPcxguiN0J) and [Chromium Security Group members](http://blogs.opera.com/security/2014/08/security-changes-opera-23/).
 
 Here are a few notes and observations from our team.
 
@@ -17,6 +17,11 @@ Here are a few notes and observations from our team.
 A year ago, a “mobile first” policy was formed. Now that has been replaced by a policy about enabling web developers to do whatever they want. Part of that is to keep landing new APIs that give more and more access to hardware/os features and to avoid having slow code that prevents web apps from being smooth.
 
 A main Google Blink focus for the next year will be never slipping on 60fps and its per-frame timing budget.
+
+<figure class="figure">
+    <iframe src="//www.youtube.com/embed/Ku3znd7JNIk" width="560" height="315" allowfullscreen class="figure__media"></iframe>
+    <figcaption class="figure__caption">BlinkOn 3: State of Blink (Keynote)</figcaption>
+</figure>
 
 ### 60 frames per second
 
