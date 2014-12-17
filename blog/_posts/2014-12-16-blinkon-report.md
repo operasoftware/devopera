@@ -18,6 +18,11 @@ A year ago, a “mobile first” policy was formed. Now that has been replaced b
 
 A main Google Blink focus for the next year will be never slipping on 60fps and its per-frame timing budget.
 
+<figure class="figure">
+    <iframe src="//www.youtube.com/embed/Ku3znd7JNIk" width="560" height="315" allowfullscreen class="figure__media"></iframe>
+    <figcaption class="figure__caption">BlinkOn 3: State of Blink (Keynote)</figcaption>
+</figure>
+
 ### 60 frames per second
 
 Ian Vollick held an interesting talk about adding javascript hooks on the compositor thread (UIWorker) to implement snap points, pull-to-refresh etc in a smooth way without having to go via the main thread.
