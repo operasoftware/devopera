@@ -12,7 +12,7 @@ Recently, the Opera Web Technology team attended [BlinkOn 3](https://docs.google
 
 Here are a few notes and observations from our team.
 
-## MOBILE FIRST?
+## Mobile first?
 
 A year ago, a “mobile first” policy was formed. Now that has been replaced by a policy about enabling web developers to do whatever they want. Part of that is to keep landing new APIs that give more and more access to hardware/os features and to avoid having slow code that prevents web apps from being smooth.
 
@@ -35,13 +35,13 @@ Project Warden meeting: It’s an ongoing project to improve hackability of Blin
 
 We had interesting chats with Nat Duca about style performance, and we discussed the state of the style part.
 
-### BLINK SCHEDULER
+### Blink scheduler
 
 The Blink scheduler has promising results. That was something we talked about in BlinkOn2 (based on ideas from Presto). The idea is to have some code that actively decides what to do next (i.e. handle input events) instead of doing everything in the order they were queued or in 100 parallel threads. The main problem will still be to get rid of long running tasks on the main thread or that hogs the active CPU core and we’ll never be able to handle input within the 100 ms we need to. But the Android team in London has added metrics and some code and already there are measurable improvements which indicate that this is the right idea.
 
 “UI workers” is currently an interesting experiment on allowing some programmability/scripting to the compositor thread.
 
-## OILPAN
+## Oilpan
 
 Oilpan (replacing a messy ref-counted DOM environment with a garbage collected one) is also proceeding, but it’s a big knife in the middle of the Chromium guts, so lots of nervousness and attempts to figure out hard requirements before it can be enabled for performance sensitive code. Oilpan presented preliminary performance numbers and plans for shipping. It was given a fair hearing, but has been given fairly hard targets and a deadline (end of 2015Q1) to meet in order to ship.
 
@@ -53,7 +53,7 @@ Work/effort on v8 is picking up. One aspect is bringing up its language support 
 
 Crankshaft is being replaced by TurboFan. An initial goal for TurboFan is to address the “asm.js use case”. Meaning it wants to derive just as good type information and generated code as an asm.js validator and backend will when given asm.js input. But not without recognizing the asm.js type rules specifically, just by being a better all-around backend for JS/ES6.
 
-## MISC
+## Misc
 
 - The ServiceWorkers shipping efforts are going to plan.
 - The merge of Chromium and Blink repos is moving forwards again (Having them divided costs a lot of time). It’s gated on even more bot capacity.
