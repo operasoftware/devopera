@@ -8,7 +8,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Recently, the Opera Web Technology team attended [BlinkOn 3](https://docs.google.com/a/opera.com/document/d/1m6JNcFYnwJ0I7OWHrs-meO6820oM_5q9jSELOPDAQnc/), the twice-yearly conference for Blink contributors. ([Videos](https://www.youtube.com/user/blinkontalks) are available on YouTube.) As you may know, after Google and Samsung, Opera is the [most prolific committer to Blink](http://browserg.nom.es/), and has the only [non-Google API owner](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/wp7Pa4fdSbU/XwvPcxguiN0J) and [Chromium Security Group members](http://blogs.opera.com/security/2014/08/security-changes-opera-23/).
+Recently, the Opera Web Technology team attended [BlinkOn 3](https://docs.google.com/a/opera.com/document/d/1m6JNcFYnwJ0I7OWHrs-meO6820oM_5q9jSELOPDAQnc/), the twice-yearly conference for Blink contributors. ([Videos](https://www.youtube.com/user/blinkontalks) are available on YouTube.) As you may know, Opera is a [prolific committer to Blink](https://operasoftware.github.io/upstreamtools/), and has the only [non-Google API owner](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/wp7Pa4fdSbU/XwvPcxguiN0J) and [Chromium Security Group members](http://blogs.opera.com/security/2014/08/security-changes-opera-23/).
 
 Here are a few notes and observations from our team.
 
