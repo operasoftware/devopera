@@ -1,5 +1,5 @@
 ---
-title: Responsive web design presentations at Fluent Conf and State of the Browser
+title: Responsive web design presentations at Fluent and State of the Browser
 authors:
 - andreas-bovens
 intro: 'Earlier this year, I had the chance to speak at [Fluent](http://fluentconf.com/fluent2014/public/schedule/detail/32540) and at [State of the Browser](http://browser.londonwebstandards.org/andreas-bovens/): I talked about various new CSS features that have become available in mobile browsers and allow you to create compelling responsive designs.'
