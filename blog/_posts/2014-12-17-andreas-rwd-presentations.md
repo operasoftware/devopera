@@ -22,24 +22,24 @@ In the introduction to both presentations, I also went for a short trip down mem
 
 <figure class="figure">
 	<img src="{{ page.id }}/gerstner.jpg" alt="Boîte à musique example" class="figure__media">
-	<figcaption class="figure__caption">Karl Gerstner's “Boîte à musique” example. From “Programme entwerfen”, 1964.</figcaption>
+	<figcaption class="figure__caption">Karl Gerstner’s “Boîte à musique” example. From “Programme entwerfen”, 1964.</figcaption>
 </figure>
 
 You can find the full videos and slides of these talks below.
 
 <figure class="figure">
-    <iframe src="//www.youtube.com/embed/r5zWh7-SMpk" width="690" height="388" allowfullscreen class="figure__media"></iframe>
-    <figcaption class="figure__caption">“Responsive Web Design with @viewport and Other New CSS Features” video (Fluent 2014)</figcaption>
+	<iframe src="//www.youtube.com/embed/r5zWh7-SMpk" width="690" height="388" allowfullscreen class="figure__media"></iframe>
+	<figcaption class="figure__caption">“Responsive Web Design with @viewport and Other New CSS Features” video (Fluent 2014)</figcaption>
 </figure>
 
 <figure class="figure">
-    <iframe src="//player.vimeo.com/video/93347108" width="690" height="388" allowfullscreen class="figure__media"></iframe>
-    <figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” video (State of the Browser 2014)</figcaption>
+	<iframe src="//player.vimeo.com/video/93347108" width="690" height="388" allowfullscreen class="figure__media"></iframe>
+	<figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” video (State of the Browser 2014)</figcaption>
 </figure>
 
 <figure class="figure">
-    <iframe src="//www.slideshare.net/slideshow/embed_code/34076556" width="690" height="436" allowfullscreen class="figure__media"></iframe>
-    <figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” slides (State of the Browser 2014)</figcaption>
+	<iframe src="//www.slideshare.net/slideshow/embed_code/34076556" width="690" height="436" allowfullscreen class="figure__media"></iframe>
+	<figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” slides (State of the Browser 2014)</figcaption>
 </figure>
 
 Enjoy!
