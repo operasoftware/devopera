@@ -166,6 +166,6 @@ You could also use `-o-object-position` to move a contained video or image to ma
 
 ## Summary
 
-This article showcased a few ideas for how to use `object-fit` and `object-position`. You can find more examples on our [`object-fit` test suites page][11]. We are looking forward to seeing what examples you create, and as always let us know what you think of our implementation!
+This article showcased a few ideas for how to use `object-fit` and `object-position`. We are looking forward to seeing what examples you create, and as always let us know what you think of our implementation!
 
 [11]: http://testsuites.opera.com/object-fit/
