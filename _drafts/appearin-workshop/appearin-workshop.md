@@ -8,6 +8,7 @@ tags:
 - webrtc
 license: cc-by-3.0
 ---
+
 ## Background
 
 In early December 2014, we invited the team behind the fantastic WebRTC-powered [appear.in](https://appear.in/) video chat service for a 1-day workshop in Opera’s Oslo office: for about 6 hours, we sat together with engineers, designers and product people from both companies — mostly powered by good coffee and tasty pepperkake — and came up with a number of experiments using [appear.in](https://appear.in/).
@@ -36,7 +37,7 @@ This is a simple extension to quickly create an appear.in room. Simply click the
 
 [extension page](https://addons.opera.com/extensions/details/appearin-social/), [source](https://github.com/operasoftware/appearin-social)
 
-This extension adds a small appear.in icon in Facebook chat, Twitter DM and Slack, which you can use to quickly generate an appear.in link for your contacts to use. Instant video chat gratification!
+This extension adds a small appear.in icon in Facebook chat and Twitter DM, which you can use to quickly generate an appear.in link for your contacts to use. Instant video chat gratification!
 
 <figure class="figure">
 	<img src="{{ page.id }}/social.jpg" alt="The Appear.in Social extension" class="figure__media">
@@ -53,6 +54,6 @@ This extension allows you to easily transfer an ongoing appear.in video chat fro
 	<iframe src="https://www.youtube.com/embed/d7hQIgj13UE" width="570" height="320" allowfullscreen class="figure__media"></iframe>
 </figure>
 
-## It's up to you!
+## It’s up to you!
 
-If you're interested in creating your own extension, you can start with the <a href="https://developer.appear.in/">Appear.in API documentation</a> and our <a href="https://dev.opera.com/extensions">extension docs</a> and take it from there.
+If you’re interested in creating your own extension, you can start with the [Appear.in API documentation](https://developer.appear.in/) and our [extension docs](https://dev.opera.com/extensions) and take it from there.
