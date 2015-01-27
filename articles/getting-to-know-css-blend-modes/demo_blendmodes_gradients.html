@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Blend modes with gradients</title>
-	<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
+	<script src="//use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
 <style type="text/css">
 
 body {
@@ -56,14 +56,14 @@ p, a {
 	font-size: 1.15em;
 }
 
-a, a:visited, a:hover, a:link {	
+a, a:visited, a:hover, a:link {
 	border-bottom: 1px dotted #333;
 	text-decoration: none;
 	color: #333;
 }
 
 #blend > .mainimage{
-	border-radius: 10px; 
+	border-radius: 10px;
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -156,7 +156,7 @@ code {
 		<h2>Explanation</h2>
 		<p>There is a &lt;div&gt; under the picture, on which a radial gradient (or linear, if you switch to it) is applied. That radial gradient is a transparent ( <code>RGBa (0,0,0,0)</code> ) to black one, and the linear gradient is from a yellowish color to a transparent one.</p>
 		<p>On the picture which is entirely over the &lt;div&gt;, we apply <code>mix-blend-mode: multiply;</code>, to apply the above effect.</p>
-		
+
 		<footer>
 		<h2>Credits</h2>
             <p>Photo by <a href="https://www.flickr.com/photos/liberato/199164956">Ricardo Liberato</a>. Demo By <a href="http://twitter.com/shwetank">@shwetank</a></p>
@@ -185,19 +185,19 @@ code {
 	}
 
 	function detect(){
-		
-		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
-    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode');
 		var aside = document.querySelector("#warning");
 
-		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){  
+		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){
 			aside.style.display="block";
 			aside.innerHTML = "<p>Looks like your browser does not support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>background-blend-mode</code> supported by this browser?: <span>"+supportsBackgroundBlendMode+"</span></li></ul>";
-			} 
-		
+			}
+
 	}
 
 	detect();
-</script>	
+</script>
 </body>
 </html>

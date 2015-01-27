@@ -1,8 +1,8 @@
 <html>
 <head>
 	<title>CSS Masks with Blend Modes</title>
-	<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script> 
-	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<script src="//use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>
+	<link href='//fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 <style type="text/css">
 
 @-webkit-keyframes my-move {
@@ -130,7 +130,7 @@ main:hover {
 	-webkit-transition: 2.75s -webkit-filter ease-in-out;
 	-moz-transition: 2.75s -moz-filter ease-in-out;
 	-ms-transition: 2.75s -ms-filter ease-in-out;
-	
+
 }
 
 #batmantext:hover {
@@ -201,7 +201,7 @@ code {
 	color: red;
 }
 </style>
-<script src="modernizr-custom.js"></script> 
+<script src="modernizr-custom.js"></script>
 </head>
 <body>
 <aside id="warning"></aside>
@@ -230,14 +230,14 @@ code {
 </div>
 <script>
 	function detect(){
-		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
-    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode');
 		var aside = document.querySelector("#warning");
 
-		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){  
+		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){
 			aside.style.display="block";
 			aside.innerHTML = "<p>Looks like this browser does not support CSS Blend Modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>background-blend-mode</code> supported by this browser?: <span>"+supportsBackgroundBlendMode+"</span></li></ul>";
-		} 
+		}
 
 	}
 
