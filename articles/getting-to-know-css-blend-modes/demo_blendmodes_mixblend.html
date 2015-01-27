@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Blend Modes</title>
-	<script src="http://use.edgefonts.net/open-sans-condensed;advent-pro.js"></script>
+	<script src="//use.edgefonts.net/open-sans-condensed;advent-pro.js"></script>
 <style type="text/css">
 
 body {
@@ -33,7 +33,7 @@ header > h1 {
  	font-size: 3.0em;
  	display: inline-block;
  	line-height: 0.0;
- 
+
  }
 
 header > h2 {
@@ -54,7 +54,7 @@ h2 > a {
 
 #blend img{
 	position: absolute;
-	border-radius: 10px; 
+	border-radius: 10px;
 	display: block;
 	top: 0;
 	left: 0;
@@ -215,7 +215,7 @@ code {
             <button id="luminosity">Luminosity</button>
 		</div>
 		<div id="explaination">
-			
+
 		</div>
 		<footer>Photos by <a href="https://www.flickr.com/photos/saad/19654343">Saad Akthar</a>, <a href="https://www.flickr.com/photos/araswami/2605623669">Swaminathan</a> and <a href="https://www.flickr.com/photos/tabor-roeder/5569818223/">Phil Roeder</a> are available under creative commons. <a href="https://www.flickr.com/photos/66348631@N08/13225893233/in/pool-childrenofindia">Ganesh kumar Murugesan's picture</a> is used with due permission. Made by <a href="http://twitter.com/shwetank">@shwetank</a>.</footer>
 </div>
@@ -227,7 +227,7 @@ code {
 	var switchpic = document.querySelector("#switchcpic");
 
 	var text = {
-	"normal" : "This mode simply selects the source color (upper layer). In effect, no blending is applied in this mode", 
+	"normal" : "This mode simply selects the source color (upper layer). In effect, no blending is applied in this mode",
 	"overlay" : "This applies 'multiply' mode on the darker pixels and 'screen' mode on the lighter pixels.",
 	"multiply" : "The color from the source layer is multiplied with the color from the background layer to form the final effect on that pixel.",
 	"screen" : "This is the opposite of 'multiply'. The compliments of the source and the backdrop layers are multiplied, and then its compliment is taken to form the final color of the pixel.",
@@ -251,7 +251,7 @@ code {
 
 	function applyEffect() {
 		topImage.style.mixBlendMode = ""+this.id+"";
-		var content = this.id+"";		
+		var content = this.id+"";
 		explaination.innerHTML = "<h2>Blend Mode: <em>"+this.id+"</em></h2><p>"+text[content]+"</p>";
 
 		if (this.classList.contains("selected")) {
@@ -326,16 +326,16 @@ code {
 	}
 
 	function detect(){
-		
-		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
-    	
+
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+
 		var aside = document.querySelector("#warning");
 
-		if (!supportsMixBlendMode){  
+		if (!supportsMixBlendMode){
 			aside.style.display="block";
 			aside.innerHTML = "<p>Looks like your browser does not fully support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li></ul>";
-			} 
-		
+			}
+
 	}
 
 

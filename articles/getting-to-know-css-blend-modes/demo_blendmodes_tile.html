@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Blend modes with background &lt;div&gt;</title>
-<script src="http://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>         
+<script src="//use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>         
 <style>
   body {
     font-family: open-sans-condensed, sans-serif;
@@ -50,7 +50,7 @@
   }
 
   .pic {
-    display: inline-block; 
+    display: inline-block;
     /*width: 100%;*/
     padding:0;
     margin-bottom: 3px;
@@ -81,7 +81,7 @@
 
   .pic:nth-of-type(2) > img {
     mix-blend-mode: darken;
-  }  
+  }
 
   .pic:nth-of-type(3) {
     background-color: #3498db;
@@ -175,13 +175,13 @@
   color: red;
 }
 </style>
-<script src="modernizr-custom.js"></script> 
+<script src="modernizr-custom.js"></script>
 </head>
 <body>
 <aside id="warning"></aside>
     <h1>CSS Blend Modes - Image blending with with <code>mix-blend-mode</code> and <code>isolation</code></h1>
-    <div id="inputwrapper"><input type="checkbox" id="switch" value="switch">Remove <code>isolation</code> from the &lt;div&gt; contating the pictures (Hover over images to see the how the elements blend with the layers underneath).</input></div><br>    
-    <div id="wrapper">  
+    <div id="inputwrapper"><input type="checkbox" id="switch" value="switch">Remove <code>isolation</code> from the &lt;div&gt; contating the pictures (Hover over images to see the how the elements blend with the layers underneath).</input></div><br>
+    <div id="wrapper">
       <div id="photos">
         <div class="pic"><img src="images/kid1.jpg" id="blondie" /><code><pre>mix-blend-mode: overlay;</pre></code></div>
         <div class="pic"><img src="images/boy_glasses_m2.jpg" /><code><pre>mix-blend-mode: darken;</pre></code></div>
@@ -225,16 +225,16 @@
 
 
     function detect(){
-    var supportsMixBlendMode = Modernizr.testProp('mixBlendMode'); 
-    var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode'); 
+    var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+    var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode');
     var supportsIsolation = Modernizr.testProp('isolation');
-    
+
     var aside = document.querySelector("#warning");
 
-    if (!supportsMixBlendMode || !supportsIsolation){  
+    if (!supportsMixBlendMode || !supportsIsolation){
       aside.style.display="block";
       aside.innerHTML = "<p>Looks like your browser does not support blend modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>isolation</code> supported by this browser?: <span>"+supportsIsolation+"</span></li></ul>";
-    } 
+    }
 
   }
 
