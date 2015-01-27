@@ -6,6 +6,7 @@ intro: 'В начале декабря 2014 года мы пригласили �
 tags:
 - extensions
 - webrtc
+language: ru
 license: cc-by-3.0
 ---
 
