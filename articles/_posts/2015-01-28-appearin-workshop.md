@@ -6,6 +6,7 @@ intro: 'In early December 2014, we invited the team behind the fantastic WebRTC-
 tags:
 - extensions
 - webrtc
+cover: png
 license: cc-by-3.0
 ---
 
