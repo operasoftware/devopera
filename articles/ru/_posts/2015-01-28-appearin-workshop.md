@@ -1,4 +1,4 @@
-]---
+---
 title: Мастер-класс и расширения appear.in
 authors:
 - andreas-bovens
