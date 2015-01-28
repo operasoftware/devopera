@@ -1,4 +1,4 @@
----
+]---
 title: Мастер-класс и расширения appear.in
 authors:
 - andreas-bovens
@@ -42,7 +42,7 @@ license: cc-by-3.0
 
 <figure class="figure">
 	<img src="{{ page.id }}/social.jpg" alt="The Appear.in Social extension" class="figure__media">
-	<figcaption class="figure__caption">Расширений Appear.in Social, встроенное в чат Facebook</figcaption>
+	<figcaption class="figure__caption">Расширение Appear.in Social, встроенное в чат Facebook</figcaption>
 </figure>
 
 ## Appear.in Handoff
