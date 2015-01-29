@@ -1,5 +1,5 @@
 ---
-title: NLHTML5 Presentation: “Bruce’s tour of the sausage factory”
+title: 'NLHTML5 Presentation: “Bruce’s tour of the sausage factory”'
 authors:
 - bruce-lawson
 intro: 'I was invited to give a talk to the inaugural NLHTML5 meet-up in Amsterdam about how web standards have been made in the past, and how that will change in the future.'
