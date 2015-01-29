@@ -3,5 +3,6 @@ styles/screen.css
 styles/*.map
 .sass-cache
 node_modules
+bower_components
 .DS_Store
 Thumbs.db
