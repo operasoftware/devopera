@@ -1,0 +1,15 @@
+// -------------------------------
+// Blog Column
+// -------------------------------
+
+.blog-column {
+
+	margin-bottom:24px;
+	padding:15px 15px 0;
+	background:$blue-5;
+
+	&__title {
+		@include offscreen;
+		}
+
+	}

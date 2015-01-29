@@ -1,0 +1,16 @@
+// -------------------------------
+// Linkbait
+// -------------------------------
+
+.linkbait {
+
+	padding:0 15px;
+
+	&__title {
+		@include offscreen;
+		}
+	&__link {
+		@extend %link--blue;
+		}
+
+	}

@@ -1,0 +1,73 @@
+// -------------------------------
+// Author
+// -------------------------------
+
+.author {
+
+	@extend %link--blue;
+
+	position:relative;
+	display:block;
+	width:8em;
+	font-size:16px;
+
+	&__picture {
+		display:block;
+		width:100%;
+		border-radius:50%;
+		}
+	&:hover &__picture,
+	&:focus &__picture {
+		box-shadow:0 0 0 3px $blue;
+		}
+
+	&__name {
+		display:block;
+		padding:0.5em 0 1em;
+		line-height:1.2;
+		text-align:center;
+		}
+
+	// position:relative;
+	// display:block;
+	// margin-bottom:24px;
+	// width:8em;
+	// font-size:14px;
+
+	// &__picture {
+	// 	display:block;
+	// 	width:100%;
+	// 	border-radius:50%;
+	// 	}
+	// &:hover &__picture,
+	// &:focus &__picture {
+	// 	box-shadow:0 0 0 3px $blue;
+	// 	}
+
+	// &__name {
+	// 	line-height:1.2;
+	// 	}
+
+	// // Up to Lap
+
+	// @include breakpoint($up-to-lap) {
+	// 	float:left;
+	// 	&__name {
+	// 		display:block;
+	// 		padding-top:0.8em;
+	// 		text-align:center;
+	// 		}
+	// 	}
+
+	// // Lap and Up
+
+	// @include breakpoint($lap-and-up) {
+	// 	&__name {
+	// 		position:absolute;
+	// 		top:2.9em;
+	// 		left:100%;
+	// 		padding-left:0.8em;
+	// 		}
+	// 	}
+
+	}
