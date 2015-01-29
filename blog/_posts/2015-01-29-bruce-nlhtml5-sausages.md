@@ -14,3 +14,5 @@ I was invited to give a talk to the inaugural NLHTML5 meet-up in Amsterdam about
 <figure class="figure">
 	<iframe class="figure__media" width="560" height="315" src="//www.youtube.com/embed/nXAzctXGEeg" allowfullscreen></iframe>
 </figure>
+
+My talk was followed, chronologically and thematically, by a presentation by Robin Berjon of W3C that delves into actually how developers can contribute to making more nimble web standards: [Make Forks Not War (slides)](http://berjon.com/presentations/20150115-nlhtml5/#/), [video](http://youtu.be/KpCaWhvlnnQ). The same caveat about language applies.
