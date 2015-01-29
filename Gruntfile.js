@@ -5,29 +5,28 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		sass: {
-			compile: {
-				options: {
-					style: 'compressed'
-				},
+			task: {
 				files: {
 					'styles/screen.css': 'styles/screen.scss'
 				}
 			}
 		},
-		cssshrink: {
-			shrink: {
+		cssmin: {
+			task: {
 				files: {
 					'styles/screen.css': 'styles/screen.css'
 				}
 			}
 		},
 		autoprefixer: {
-			prefix: {
+			task: {
 				src: 'styles/screen.css'
 			}
 		},
 		jekyll: {
-			full: {},
+			full: {
+				//
+			},
 			limit: {
 				options: {
 					limit_posts: 150
@@ -74,7 +73,7 @@ module.exports = function(grunt) {
 				tasks: [
 					'sass',
 					'autoprefixer',
-					'cssshrink',
+					'cssmin',
 					'copy'
 				]
 			},
@@ -118,14 +117,14 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
-			css: {
+			task: {
 				files: {
 					'_site/styles/screen.css' : 'styles/screen.css'
 				}
 			}
 		},
 		replace: {
-			remote: {
+			task: {
 				src: '.htaccess',
 				dest: '_site/',
 				replacements: [{
@@ -167,19 +166,14 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', [
+	grunt.registerTask('styles', [
 		'sass',
 		'autoprefixer',
-		'cssshrink',
-		'jekyll:limit',
-		'htmlmin',
-		'connect:task:keepalive'
+		'cssmin'
 	]);
 
-	grunt.registerTask('dev', [
-		'sass',
-		'autoprefixer',
-		'cssshrink',
+	grunt.registerTask('default', [
+		'styles',
 		'jekyll:limit',
 		'htmlmin',
 		'connect',
@@ -187,14 +181,15 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('build', [
-		'sass',
-		'autoprefixer',
-		'cssshrink',
+		'styles',
 		'jekyll:full',
 		'htmlmin',
 		'connect:task:keepalive'
 	]);
 
-	grunt.registerTask('deploy', ['replace', 'rsync']);
+	grunt.registerTask('deploy', [
+		'replace',
+		'rsync'
+	]);
 
 };
