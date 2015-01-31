@@ -25,6 +25,7 @@ license: cc-by-nc-sa-2.5
 <li>Norwegian: <a href="http://globe-views.com/introduksjon-til-wai-aria/"><span lang="no">Introduksjon til WAI-ARIA</span></a>, translated by <a href="http://globe-views.com"><span lang="no">Globe Views</span></a></li>
 <li>Russian: <a href="http://science.eduboard.com/introduction-to-wai-aria/"><span lang="ru">Введение в WAI ARIA</span></a>, translated by Donna Barrier and team</li>
 <li>Spanish: <a href="http://web.archive.org/web/20100622122838/http://www.areia.info/introduccion-a-wai-aria/"><span lang="es">Introducci&oacute;n a WAI-ARIA</span></a>, translated by David Martin</li>
+<li>Chinese: <a href="https://blog.othree.net/log/2010/10/10/introduction-to-wai-aria-1/"><span lang="zh-TW">WAI-ARIA 介紹</span></a>, translated by othree</li>
 </ul>
 
 <p>Please note these are translations independent of Opera.</p>
