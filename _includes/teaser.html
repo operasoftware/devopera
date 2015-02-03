@@ -1,0 +1,21 @@
+{% assign entry = {{include.entry}} %}
+{% assign class = {{include.class}} %}
+
+<article class="teaser{{ class }}">
+	<a class="teaser__link" href="{{ entry.url }}">
+		<h3 class="teaser__title">{{ entry.title }}</h3>
+{% if entry.cover %}
+		<img class="teaser__picture" src="{{ entry.url }}cover.{{ entry.cover }}" alt="{{ entry.title | markdownline | strip_html }}">
+{% endif %}
+	</a>
+	<div class="teaser__content">
+		<p class="teaser__meta">
+			<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time>
+			by {% include author-name.html object=entry link=true class='teaser__author' %}
+			in <a href="/{{ entry.category }}/" class="teaser__category">{{ entry.category | capitalize }}</a>
+		</p>
+{% if entry.intro %}
+		<p class="teaser__intro">{{ entry.intro | markdownline }}</p>
+{% endif %}
+	</div>
+</article>

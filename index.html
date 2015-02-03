@@ -12,24 +12,7 @@ layout: default
 			<h2 class="featured__title">Featured</h2>
 			<div class="featured__article">
 {% for article in featured %}
-				<article class="teaser teaser--featured">
-					<a class="teaser__link" href="{{ article.url }}">
-						<h3 class="teaser__title">{{ article.title | markdownline }}</h3>
-	{% if article.cover %}
-						<img class="teaser__picture" src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}">
-	{% endif %}
-					</a>
-					<div class="teaser__content">
-						<p class="teaser__meta">
-							<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%-d %B %Y' }}</time>
-							by {% include author-name.html object=article link=true class='teaser__author' %}
-							in <a href="/{{ article.category }}/" class="teaser__category">{{ article.category | capitalize }}</a>
-						</p>
-	{% if article.intro %}
-						<p class="teaser__intro content">{{ article.intro | markdownline }}</p>
-	{% endif %}
-					</div>
-				</article>
+	{% include teaser.html entry=article class=' teaser--featured' %}
 {% endfor %}
 			</div>
 			<div class="featured__tags">
@@ -43,48 +26,9 @@ layout: default
 		<section class="archive">
 			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
 {% for article in articles limit:16 %}
-	{% case forloop.index %}
-		{% when 1 %}
-			<div class="archive__first">
-		{% when 7 %}
-			<div class="archive__second">
-		{% when 13 %}
-			<div class="archive__third">
-	{% endcase %}
-	{% case forloop.index %}
-		{% when 13 %}
-			<div class="archive__third-first">
-		{% when 15 %}
-			<div class="archive__third-second">
-	{% endcase %}
 	{% unless article.featured %}
-				<article class="teaser">
-					<a class="teaser__link" href="{{ article.url }}">
-						<h3 class="teaser__title">{{ article.title | markdownline }}</h3>
-		{% if article.cover %}
-						<img class="teaser__picture" src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}">
-		{% endif %}
-					</a>
-					<div class="teaser__content">
-						<p class="teaser__meta">
-							<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%-d %B %Y' }}</time>
-							by {% include author-name.html object=article link=true class='teaser__author' %}
-							in <a href="/{{ article.category }}/" class="teaser__category">{{ article.category | capitalize }}</a>
-						</p>
-		{% if article.intro %}
-						<p class="teaser__intro content">{{ article.intro | markdownline }}</p>
-		{% endif %}
-					</div>
-				</article>
+		{% include teaser.html entry=article %}
 	{% endunless %}
-	{% case forloop.index %}
-		{% when 14 or 16 %}
-			</div>
-	{% endcase %}
-	{% case forloop.index %}
-		{% when 6 or 12 or 16 %}
-			</div>
-	{% endcase %}
 {% endfor %}
 		</section>
 	</div>
@@ -92,21 +36,12 @@ layout: default
 		<section class="blog-column">
 			<h2 class="blog-column__title"><a href="/blog/">Blog</a></h2>
 {% for post in blog limit:6 %}
-			<article class="teaser teaser--blog{% if forloop.last %} teaser--last{% endif %}">
-				<a class="teaser__link" href="{{ post.url }}">
-					<h3 class="teaser__title">{{ post.title | markdownline }}</h3>
-				</a>
-				<div class="teaser__content">
-					<p class="teaser__meta">
-						<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time>
-						by {% include author-name.html object=post link=true class='teaser__author' %}
-						in <a href="/{{ post.category }}/" class="teaser__category">{{ post.category | capitalize }}</a>
-					</p>
-	{% if post.intro %}
-					<p class="teaser__intro content">{{ post.intro | markdownline }}</p>
+	{% if forloop.last %}
+		{% assign teaser_class = ' teaser--blog teaser--last' %}
+	{% else %}
+		{% assign teaser_class = ' teaser--blog' %}
 	{% endif %}
-				</div>
-			</article>
+	{% include teaser.html entry=post class=teaser_class %}
 {% endfor %}
 		</section>
 		<section class="linkbait">
