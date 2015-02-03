@@ -1,7 +1,7 @@
 module Jekyll
 	module KeepUnique
 		def keep_unique(input)
-			input.to_s.split('|').uniq
+			input.uniq
 		end
 	end
 end
