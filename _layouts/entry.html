@@ -17,23 +17,7 @@ layout: default
 			<p class="entry__info">Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time> in <a href="">Articles</a>. Translated to <a href="">Japanese</a>.</p>
 			<p class="entry__edit"><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
 			<div class="entry__tags">
-				<ul class="tags">
-					<li class="tags__item"><a class="tags__link" href="">css</a></li>
-					<li class="tags__item"><a class="tags__link" href="">flexbox</a></li>
-					<li class="tags__item"><a class="tags__link" href="">html</a></li>
-					<li class="tags__item"><a class="tags__link" href="">semantics</a></li>
-					<li class="tags__item"><a class="tags__link" href="">javascript</a></li>
-					<li class="tags__item"><a class="tags__link" href="">design</a></li>
-					<li class="tags__item"><a class="tags__link" href="">dev-tools</a></li>
-					<li class="tags__item"><a class="tags__link" href="">extensions</a></li>
-					<li class="tags__item"><a class="tags__link" href="">http</a></li>
-					<li class="tags__item"><a class="tags__link" href="">webrtc</a></li>
-					<li class="tags__item"><a class="tags__link" href="">i18n</a></li>
-					<li class="tags__item"><a class="tags__link" href="">android</a></li>
-					<li class="tags__item"><a class="tags__link" href="">opera-mini</a></li>
-					<li class="tags__item"><a class="tags__link" href="">svg</a></li>
-					<li class="tags__item"><a class="tags__link" href="">tv</a></li>
-				</ul>
+				{% include tags.html tags=page.tags %}
 			</div>
 			<p class="entry__license">{% include license.html license=page.license %}</p>
 		</div>

@@ -1,10 +1,17 @@
-{% assign category = include.category %}
-{% assign object = include.object %}
+{% assign class = include.class | prepend:' ' %}
+{% assign tags = include.tags %}
+{% assign entries = include.entries %}
 
-{% capture tags %}{% if category or object %}{% if category %}{% for entry in category %}{% for tag in entry.tags %}{{ tag }}|{% endfor %}{% endfor %}{% endif %}{% if object %}{% for tag in object.tags %}{{ tag }}|{% endfor %}{% endif %}{% endif %}{% endcapture %}
+{% if tags %}
+	{% assign object = tags %}
+{% endif %}
+{% if entries %}
+	{% capture tags %}{% for entry in entries %}{% for tag in entry.tags %}{{ tag }}(•){% endfor %}{% endfor %}{% endcapture %}
+	{% assign object = tags | split: '(•)' %}
+{% endif %}
 
-{% assign tags = tags | keep_unique | sort %}
-
-{% for tag in tags %}
-	<a href="/tags/{{ tag }}/" class="tags__link">{{ tag }}</a>
+<ul class="tags{{ class }}">
+{% for tag in object %}
+	<li class="tags__item"><a class="tags__link" href="/tags/{{ tag }}/">{{ tag }}</a></li>
 {% endfor %}
+</ul>

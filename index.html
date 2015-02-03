@@ -12,15 +12,11 @@ layout: default
 			<h2 class="featured__title">Featured</h2>
 			<div class="featured__article">
 {% for article in featured %}
-	{% include teaser.html entry=article class=' teaser--featured' %}
+	{% include teaser.html entry=article class='teaser--featured' %}
 {% endfor %}
 			</div>
 			<div class="featured__tags">
-				<ul class="tags tags--featured">
-{% for item in site.data.tags-featured %}
-					<li class="tags__item"><a class="tags__link" href="/tags/{{ item }}/">{{ item }}</a></li>
-{% endfor %}
-				</ul>
+				{% include tags.html tags=site.data.tags-featured class='tags--featured' %}
 			</div>
 		</section>
 		<section class="archive">
@@ -37,9 +33,9 @@ layout: default
 			<h2 class="blog-column__title"><a href="/blog/">Blog</a></h2>
 {% for post in blog limit:6 %}
 	{% if forloop.last %}
-		{% assign teaser_class = ' teaser--blog teaser--last' %}
+		{% assign teaser_class = 'teaser--blog teaser--last' %}
 	{% else %}
-		{% assign teaser_class = ' teaser--blog' %}
+		{% assign teaser_class = 'teaser--blog' %}
 	{% endif %}
 	{% include teaser.html entry=post class=teaser_class %}
 {% endfor %}

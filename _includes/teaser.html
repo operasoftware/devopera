@@ -1,5 +1,5 @@
-{% assign entry = {{include.entry}} %}
-{% assign class = {{include.class}} %}
+{% assign entry = include.entry %}
+{% assign class = include.class | prepend:' ' %}
 
 <article class="teaser{{ class }}">
 	<a class="teaser__link" href="{{ entry.url }}">
