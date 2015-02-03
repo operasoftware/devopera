@@ -7,8 +7,10 @@
 {% endif %}
 {% if entries %}
 	{% capture tags %}{% for entry in entries %}{% for tag in entry.tags %}{{ tag }}(•){% endfor %}{% endfor %}{% endcapture %}
-	{% assign object = tags | split: '(•)' | keep_unique | sort %}
+	{% assign object = tags | split: '(•)' %}
 {% endif %}
+
+{% assign object = object | keep_unique | sort %}
 
 <ul class="tags{{ class }}">
 {% for tag in object %}
