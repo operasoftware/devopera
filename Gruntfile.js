@@ -52,9 +52,10 @@ module.exports = function(grunt) {
 					collapseWhitespace: true,
 					keepClosingSlash: true
 				},
-				files: {
-					'_site/feed/index.xml': '_site/feed/index.xml'
-				}
+				expand: true,
+				cwd: '_site/feed/',
+				src: '**/index.xml',
+				dest: '_site/feed/'
 			}
 		},
 		connect: {
