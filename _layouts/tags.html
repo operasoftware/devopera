@@ -26,17 +26,40 @@ layout: default
 
 {% assign tag = tag | split: '(•)' %}
 
-<main>
-	<article role="main" class="layout-archive">
-		<section class="layout-archive__content">
-			<div class="columns columns--archive">
+<main class="layout">
+	<div class="layout__content">
+		<section class="archive">
+			<h2 class="archive__title">Entries with “{{ page.tag }}” tag</h2>
+			<div class="archive__first">
 {% for post in tag %}
 	{{ post }}
 {% endfor %}
 			</div>
+			<div class="archive__second">
+
+			</div>
+			<div class="archive__third">
+
+			</div>
 		</section>
-		<section class="layout-archive__aside">
-			<h1>Entries with “{{ page.tag }}” tag</h1>
-		</section>
-	</article>
+	</div>
+	<div class="layout__aside">
+		<ul class="tags">
+			<li class="tags__item"><a class="tags__link" href="">css</a></li>
+			<li class="tags__item"><a class="tags__link" href="">flexbox</a></li>
+			<li class="tags__item"><a class="tags__link" href="">html</a></li>
+			<li class="tags__item"><a class="tags__link" href="">semantics</a></li>
+			<li class="tags__item"><a class="tags__link" href="">javascript</a></li>
+			<li class="tags__item"><a class="tags__link" href="">design</a></li>
+			<li class="tags__item"><a class="tags__link" href="">dev-tools</a></li>
+			<li class="tags__item"><a class="tags__link" href="">extensions</a></li>
+			<li class="tags__item"><a class="tags__link" href="">http</a></li>
+			<li class="tags__item"><a class="tags__link" href="">webrtc</a></li>
+			<li class="tags__item"><a class="tags__link" href="">i18n</a></li>
+			<li class="tags__item"><a class="tags__link" href="">android</a></li>
+			<li class="tags__item"><a class="tags__link" href="">opera-mini</a></li>
+			<li class="tags__item"><a class="tags__link" href="">svg</a></li>
+			<li class="tags__item"><a class="tags__link" href="">tv</a></li>
+		</ul>
+	</div>
 </main>

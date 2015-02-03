@@ -2,54 +2,120 @@
 layout: default
 ---
 
-{% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
 {% assign articles = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
+{% assign featured = site.posts | where: 'featured', 'featured' %}
+{% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
 
-<main class="layout-main">
-	<section class="layout-main__blog">
-		<article class="teaser teaser--links">
-			<ul>
-{% for item in site.data.links-main %}
-				<li><a href="{{ item.link | escape }}">{{ item.text }}</a></li>
+<main class="layout">
+	<div class="layout__content">
+		<section class="featured">
+			<h2 class="featured__title">Featured</h2>
+			<div class="featured__article">
+{% for article in featured %}
+				<article class="teaser teaser--featured">
+					<a class="teaser__link" href="{{ article.url }}">
+						<h3 class="teaser__title">{{ article.title | markdownline }}</h3>
+	{% if article.cover %}
+						<img class="teaser__picture" src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}">
+	{% endif %}
+					</a>
+					<div class="teaser__content">
+						<p class="teaser__meta">
+							<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%-d %B %Y' }}</time>
+							by {% include author-name.html object=article link=true class='teaser__author' %}
+							in <a href="/{{ article.category }}/" class="teaser__category">{{ article.category | capitalize }}</a>
+						</p>
+	{% if article.intro %}
+						<p class="teaser__intro content">{{ article.intro | markdownline }}</p>
+	{% endif %}
+					</div>
+				</article>
 {% endfor %}
-			</ul>
-		</article>
-		<h2 class="layout-main__title"><a href="/blog/">Blog</a></h2>
+			</div>
+			<div class="featured__tags">
+				<ul class="tags tags--featured">
+{% for item in site.data.tags-featured %}
+					<li class="tags__item"><a class="tags__link" href="/tags/{{ item }}/">{{ item }}</a></li>
+{% endfor %}
+				</ul>
+			</div>
+		</section>
+		<section class="archive">
+			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
+{% for article in articles limit:16 %}
+	{% case forloop.index %}
+		{% when 1 %}
+			<div class="archive__first">
+		{% when 7 %}
+			<div class="archive__second">
+		{% when 13 %}
+			<div class="archive__third">
+	{% endcase %}
+	{% case forloop.index %}
+		{% when 13 %}
+			<div class="archive__third-first">
+		{% when 15 %}
+			<div class="archive__third-second">
+	{% endcase %}
+	{% unless article.featured %}
+				<article class="teaser">
+					<a class="teaser__link" href="{{ article.url }}">
+						<h3 class="teaser__title">{{ article.title | markdownline }}</h3>
+		{% if article.cover %}
+						<img class="teaser__picture" src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}">
+		{% endif %}
+					</a>
+					<div class="teaser__content">
+						<p class="teaser__meta">
+							<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%-d %B %Y' }}</time>
+							by {% include author-name.html object=article link=true class='teaser__author' %}
+							in <a href="/{{ article.category }}/" class="teaser__category">{{ article.category | capitalize }}</a>
+						</p>
+		{% if article.intro %}
+						<p class="teaser__intro content">{{ article.intro | markdownline }}</p>
+		{% endif %}
+					</div>
+				</article>
+	{% endunless %}
+	{% case forloop.index %}
+		{% when 14 or 16 %}
+			</div>
+	{% endcase %}
+	{% case forloop.index %}
+		{% when 6 or 12 or 16 %}
+			</div>
+	{% endcase %}
+{% endfor %}
+		</section>
+	</div>
+	<div class="layout__aside">
+		<section class="blog-column">
+			<h2 class="blog-column__title"><a href="/blog/">Blog</a></h2>
 {% for post in blog limit:6 %}
-		<article class="teaser">
-			<h3 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
-			<p class="meta meta--teaser">
-				<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
-				by {% include author-name.html object=post link=true class='meta__author' %}
-				in <a href="/{{ post.category }}/" class="meta__category">{{ post.category | capitalize }}</a>
-			</p>
-{% if post.intro %}
-			<p class="teaser__intro">{{ post.intro | markdownline }}</p>
-{% endif %}
-		</article>
-{% endfor %}
-	</section>
-	<section class="layout-main__articles">
-		<h2 class="layout-main__title"><a href="/articles/">Articles</a></h2>
-		<div class="columns columns--main">
-{% for article in articles limit:12 %}
-			<article class="teaser">
-				<h3 class="teaser__title"><a href="{{ article.url }}" class="teaser__link">{{ article.title | markdownline }}</a></h3>
-{% if article.cover %}
-				<a href="{{ article.url }}">
-					<img src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}" class="teaser__cover">
+			<article class="teaser teaser--blog{% if forloop.last %} teaser--last{% endif %}">
+				<a class="teaser__link" href="{{ post.url }}">
+					<h3 class="teaser__title">{{ post.title | markdownline }}</h3>
 				</a>
-{% endif %}
-				<p class="meta meta--teaser">
-					<time datetime="{{ article.date | date: '%Y-%m-%d' }}" class="meta__time">{{ article.date | date: '%-d %B %Y' }}</time>
-					by {% include author-name.html object=article link=true class='meta__author' %}
-					in <a href="/{{ article.category }}/" class="meta__category">{{ article.category | capitalize }}</a>
-				</p>
-{% if article.intro %}
-				<p class="teaser__intro">{{ article.intro | markdownline }}</p>
-{% endif %}
+				<div class="teaser__content">
+					<p class="teaser__meta">
+						<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time>
+						by {% include author-name.html object=post link=true class='teaser__author' %}
+						in <a href="/{{ post.category }}/" class="teaser__category">{{ post.category | capitalize }}</a>
+					</p>
+	{% if post.intro %}
+					<p class="teaser__intro content">{{ post.intro | markdownline }}</p>
+	{% endif %}
+				</div>
 			</article>
 {% endfor %}
-		</div>
-	</section>
+		</section>
+		<section class="linkbait">
+			<h2 class="linkbait__title">Useful Links</h2>
+			<ul>
+{% for item in site.data.links-main %}
+				<li><a class="linkbait__link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
+{% endfor %}
+			</ul>
+		</section>
+	</div>
 </main>

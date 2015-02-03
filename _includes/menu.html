@@ -1,13 +1,13 @@
 {% assign items = include.items | split: '|' %}
-<ul class="menu">
+<ul class="header__menu">
 {% for item in items %}
-	<li class="menu__item">
+	<li>
 	{% assign url = page.url | remove: 'index.html' | replace: '/','' %}
 	{% assign slug = item | downcase %}
 	{% if url == slug %}
 		{{ item }}
 	{% else %}
-		<a href="/{{ slug }}/" class="menu__link">{{ item }}</a>
+		<a class="header__menu-link" href="/{{ slug }}/">{{ item }}</a>
 	{% endif %}
 	</li>
 {% endfor %}

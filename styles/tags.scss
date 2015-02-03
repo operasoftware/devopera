@@ -10,7 +10,7 @@
 		display:inline-block;
 		&:not(:last-child):after {
 			color:$grey;
-			content:'\00A0\2219';
+			content:'\00A0\2219\00A0';
 			}
 		}
 

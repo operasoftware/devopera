@@ -2,6 +2,45 @@
 layout: default
 ---
 
+<main class="layout">
+	<div class="layout__content layout__content--entry">
+		<article role="main" lang="{{ page.language }}" class="content">
+			<h1 class="content__title">{{ page.title | markdownline }}</h1>
+			{{ content }}
+		</article>
+	</div>
+	<div class="layout__aside">
+		<div class="entry">
+			<p class="entry__author">
+				{% include author-picture.html object=page class='meta__picture' %}
+			</p>
+			<p class="entry__info">Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time> in <a href="">Articles</a>. Translated to <a href="">Japanese</a>.</p>
+			<p class="entry__edit"><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
+			<div class="entry__tags">
+				<ul class="tags">
+					<li class="tags__item"><a class="tags__link" href="">css</a></li>
+					<li class="tags__item"><a class="tags__link" href="">flexbox</a></li>
+					<li class="tags__item"><a class="tags__link" href="">html</a></li>
+					<li class="tags__item"><a class="tags__link" href="">semantics</a></li>
+					<li class="tags__item"><a class="tags__link" href="">javascript</a></li>
+					<li class="tags__item"><a class="tags__link" href="">design</a></li>
+					<li class="tags__item"><a class="tags__link" href="">dev-tools</a></li>
+					<li class="tags__item"><a class="tags__link" href="">extensions</a></li>
+					<li class="tags__item"><a class="tags__link" href="">http</a></li>
+					<li class="tags__item"><a class="tags__link" href="">webrtc</a></li>
+					<li class="tags__item"><a class="tags__link" href="">i18n</a></li>
+					<li class="tags__item"><a class="tags__link" href="">android</a></li>
+					<li class="tags__item"><a class="tags__link" href="">opera-mini</a></li>
+					<li class="tags__item"><a class="tags__link" href="">svg</a></li>
+					<li class="tags__item"><a class="tags__link" href="">tv</a></li>
+				</ul>
+			</div>
+			<p class="entry__license">{% include license.html license=page.license %}</p>
+		</div>
+	</div>
+</main>
+
+{% comment %}
 <main>
 	<article role="main" lang="{{ page.language }}" class="layout-entry">
 		<div class="layout-entry__content">
@@ -32,3 +71,4 @@ in <a href="/{{ page.category }}/">{{ page.category | capitalize }}</a>.
 		</div>
 	</article>
 </main>
+{% endcomment %}
