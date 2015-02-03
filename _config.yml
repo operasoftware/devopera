@@ -42,3 +42,9 @@ defaults:
       category: 'tv'
       layout: 'entry'
       language: 'en'
+  - scope:
+      path: 'authors'
+      type: 'posts'
+    values:
+      category: 'authors'
+      layout: 'author'

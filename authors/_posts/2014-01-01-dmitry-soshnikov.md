@@ -1,7 +1,6 @@
 ---
 title: Dmitry Soshnikov
 link: http://dmitrysoshnikov.com/
-layout: author
 ---
 Dmitry is a programmer and researcher in computer science. The main specialization is JavaScript; ECMAScript theorist. He is interested also in other object-oriented and functional languages, such as Ruby, Python, Java, Erlang, etc. As a hobby he writes music.
 

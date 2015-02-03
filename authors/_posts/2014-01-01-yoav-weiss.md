@@ -1,7 +1,6 @@
 ---
 title: Yoav Weiss
 link: https://twitter.com/yoavweiss
-layout: author
 ---
 
 Yoav is a web performance and browser internals specialist, working on
