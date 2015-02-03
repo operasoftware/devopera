@@ -2,8 +2,8 @@
 layout: none
 ---
 
-{% if post.category %}
-	{% assign entries = site.posts | where: 'language', 'en' | where: 'category', post.category %}
+{% if page.category %}
+	{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
 {% else %}
 	{% assign entries = site.posts | where: 'language', 'en' %}
 {% endif %}
