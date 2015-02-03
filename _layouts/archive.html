@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
+
+<main>
+	<article role="main" class="layout-archive">
+		<h1 class="layout-archive__title">{{ page.title }}</h1>
+		<section class="layout-archive__content">
+			<div class="columns columns--archive">
+{% for entry in entries %}
+	{% include teaser.html entry=entry %}
+{% endfor %}
+			</div>
+		</section>
+		<section class="layout-archive__aside">
+			<p class="tags">
+				<span class="tags__caption">Posts by tags:</span> {% include tags.html category=entries %}
+			</p>
+		</section>
+	</article>
+</main>
