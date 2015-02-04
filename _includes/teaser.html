@@ -11,7 +11,7 @@
 	<div class="teaser__content">
 		<p class="teaser__meta">
 			<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time>
-			by {% include author-name.html object=entry link=true class='teaser__author' %}
+			by {% include authors.html entry=entry link=true class='teaser__author' %}
 			in <a href="/{{ entry.category }}/" class="teaser__category">{{ entry.category | capitalize }}</a>
 		</p>
 {% if entry.intro %}

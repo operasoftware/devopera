@@ -1,9 +1,0 @@
-{% for authors in site.categories.authors %}
-	{% assign author = authors.id | split: '/' | last %}
-	{% if {{include.object}}.authors contains author %}
-		<a href="" class="author">
-			<img class="author__picture" src="/authors/{{ authors.url | split: '/' | last }}.jpg" alt="{{ authors.title }}">
-			<span class="author__name">{{ authors.title | replace: ' ','<br>' }}</span>
-		</a>
-	{% endif %}
-{% endfor %}
