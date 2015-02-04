@@ -1,19 +1,23 @@
+{% assign entry = include.entry %}
+{% assign entry_id = entry.id | split: '/' | last %}
+
 {% assign translated = false %}
+
 {% capture translations %}
-	{% for post in site.categories[page.category] %}
-		{% assign page_slug = page.url | split: '/' | last %}
-		{% assign post_slug = post.url | split: '/' | last %}
-		{% if post_slug == page_slug %}
+	{% for post in site.posts %}
+		{% assign post_id = post.id | split: '/' | last %}
+		{% if post_id == entry_id %}
 			{% assign lang = post.language %}
-			{% if page.url != post.url %}
+			{% if post.url != entry.url %}
 				{% assign translated = true %}
 				<a href="{{ post.url }}">{{ site.data.langs[lang] }}</a>
 			{% else %}
 				{{ site.data.langs[lang] }}
-			{% endif %}
+			{% endif %}(•)
 		{% endif %}
 	{% endfor %}
 {% endcapture %}
+
 {% if translated %}
-	<p>Translations:{{ translations }}</p>
+	Translated to {{ translations | remove: '	' | strip_newlines | split: '(•)' | join: ', ' }}.
 {% endif %}

@@ -11,46 +11,23 @@ layout: default
 	</div>
 	<div class="layout__aside">
 		<div class="entry">
-			<p class="entry__author">
-				{% include authors-picture.html entry=page %}
+			<p>{% include authors-picture.html entry=page %}</p>
+
+			<p>
+				Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time>
+				in <a href="">Articles</a>.
+				{% include translations.html entry=page %}
+				<a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a>.
+				{% include license.html %}
 			</p>
-			<p class="entry__info">Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time> in <a href="">Articles</a>. Translated to <a href="">Japanese</a>.</p>
-			<p class="entry__edit"><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
-			<div class="entry__tags">
-				{% include tags.html tags=page.tags %}
-			</div>
-			<p class="entry__license">{% include license.html license=page.license %}</p>
+{% if page.translator %}
+			<p>
+				{% if page.source %}<a href="{{ page.source }}">{% endif %}
+					Translated by {{ page.translator }}
+				{% if page.source %}</a>{% endif %}.
+			</p>
+{% endif %}
+			{% include tags.html tags=page.tags %}
 		</div>
 	</div>
 </main>
-
-{% comment %}
-<main>
-	<article role="main" lang="{{ page.language }}" class="layout-entry">
-		<div class="layout-entry__content">
-			<div class="content">
-				<h1 class="content__title">{{ page.title | markdownline }}</h1>
-				{{ content }}
-			</div>
-		</div>
-		<div class="layout-entry__aside">
-			<div class="content">
-				<p>
-
-<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time>
-
-in <a href="/{{ page.category }}/">{{ page.category | capitalize }}</a>.
-
-{% if page.translator %}
-	{% if page.source %}<a href="{{ page.source }}">{% endif %}Translated by {{ page.translator }}{% if page.source %}</a>{% endif %}.
-{% endif %}
-				</p>
-				<p>Tags: {% include tags.html object=page %}</p>
-				{% include translations.html %}
-				<p rel="license">{% include license.html license=page.license %}</p>
-				<p><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
-			</div>
-		</div>
-	</article>
-</main>
-{% endcomment %}
