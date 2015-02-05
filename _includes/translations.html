@@ -19,5 +19,5 @@
 {% endcapture %}
 
 {% if translated %}
-	Translated to {{ translations | remove: '	' | strip_newlines | split: '(•)' | join: ', ' }}.
+	Available in {{ translations | remove: '	' | strip_newlines | split: '(•)' | join: ', ' }}.
 {% endif %}
