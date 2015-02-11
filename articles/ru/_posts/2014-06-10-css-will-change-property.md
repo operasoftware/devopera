@@ -1,5 +1,5 @@
 ---
-title: Все, что вам нужно знать о CSS-свойстве `will-change`
+title: Всё, что вам нужно знать о CSS-свойстве `will-change`
 authors:
 - sara-soueidan
 intro: 'CSS `will-change` is a new property that allows you to let a browser know ahead of time that an element may change, so that it can make any preparatory optimisations. Sara Soueidan shows you how to put an end to cargo-cult hacks, and speed up your animations.'
