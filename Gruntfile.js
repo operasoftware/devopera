@@ -6,21 +6,31 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		sass: {
 			task: {
-				files: {
-					'styles/screen.css': 'styles/screen.scss'
-				}
+				files: [{
+					expand: true,
+					cwd: 'styles',
+					src: [
+						'screen.scss',
+						'search.scss'
+					],
+					dest: 'styles',
+					ext: '.css'
+				}]
 			}
 		},
 		cssmin: {
 			task: {
-				files: {
-					'styles/screen.css': 'styles/screen.css'
-				}
+				files: [{
+					expand: true,
+					cwd: 'styles',
+					src: '*.css',
+					dest: 'styles'
+				}]
 			}
 		},
 		autoprefixer: {
 			task: {
-				src: 'styles/screen.css'
+				src: 'styles/*.css'
 			}
 		},
 		jekyll: {
@@ -72,9 +82,7 @@ module.exports = function(grunt) {
 			styles: {
 				files: 'styles/*.scss',
 				tasks: [
-					'sass',
-					'autoprefixer',
-					'cssmin',
+					'styles',
 					'copy'
 				]
 			},
@@ -119,9 +127,10 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			task: {
-				files: {
-					'_site/styles/screen.css' : 'styles/screen.css'
-				}
+				files: [{
+					src: 'styles/*.css',
+					dest: '_site/'
+				}]
 			}
 		},
 		replace: {
