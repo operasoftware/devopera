@@ -8,6 +8,7 @@ layout: default
 	<div class="layout__content">
 		<section class="archive">
 			<h2 class="archive__title">Entries with “{{ page.tag }}” tag</h2>
+			<div class="archive__columns">
 {% for entry in entries %}
 	{% for tag in entry.tags %}
 		{% if tag == page.tag %}
@@ -15,6 +16,7 @@ layout: default
 		{% endif %}
 	{% endfor %}
 {% endfor %}
+			</div>
 		</section>
 	</div>
 	<div class="layout__aside">

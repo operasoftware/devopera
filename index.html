@@ -21,11 +21,13 @@ layout: default
 		</section>
 		<section class="archive">
 			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
+			<div class="archive__columns">
 {% for article in articles limit:16 %}
 	{% unless article.featured %}
 		{% include teaser.html entry=article %}
 	{% endunless %}
 {% endfor %}
+			</div>
 		</section>
 	</div>
 	<div class="layout__aside">

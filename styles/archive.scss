@@ -10,32 +10,21 @@
 		@include offscreen;
 		}
 
-	// Column
+	// Columns
 
-	@include layout-breakpoint($lap-to-desk) {
-		&__first,
-		&__third-first {
-			@include span(2 at 1 of 4);
-			}
-		&__second,
-		&__third-second {
-			@include span(2 at 3 of 4);
-			}
-		&__third {
-			@include span(full break);
-			}
-		}
+	&__columns {
 
-	@include layout-breakpoint($desk-and-up) {
-		&__first {
-			@include span(3 at 1 of 9);
+		columns:auto;
+		column-gap:24px;
+
+		@include layout-breakpoint($lap-to-desk) {
+			column-count:2;
 			}
-		&__second {
-			@include span(3 at 4 of 9);
+
+		@include layout-breakpoint($desk-and-up) {
+			column-count:3;
 			}
-		&__third {
-			@include span(3 at 7 of 9);
-			}
+
 		}
 
 	}
