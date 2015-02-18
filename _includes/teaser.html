@@ -3,7 +3,7 @@
 
 <article class="teaser{{ class }}">
 	<a class="teaser__link" href="{{ entry.url }}">
-		<h3 class="teaser__title">{{ entry.title }}</h3>
+		<h3 class="teaser__title">{{ entry.title | markdownline }}</h3>
 {% if entry.cover %}
 		<img class="teaser__picture" src="{{ entry.url }}cover.{{ entry.cover }}" alt="{{ entry.title | markdownline | strip_html }}">
 {% endif %}
