@@ -3,7 +3,8 @@ layout: default
 ---
 
 {% assign articles = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
-{% assign featured = site.posts | where: 'featured', 'featured' %}
+{% assign articles_list = articles | where: 'featured', null %}
+{% assign articles_featured = articles | where: 'featured', 'featured' %}
 {% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
 
 <main class="layout">
@@ -11,7 +12,7 @@ layout: default
 		<section class="featured">
 			<h2 class="featured__title">Featured</h2>
 			<div class="featured__article">
-{% for article in featured %}
+{% for article in articles_featured %}
 	{% include teaser.html entry=article class='teaser--featured' %}
 {% endfor %}
 			</div>
@@ -22,10 +23,11 @@ layout: default
 		<section class="archive">
 			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
 			<div class="archive__columns">
-{% for article in articles limit:16 %}
-	{% unless article.featured %}
-		{% include teaser.html entry=article %}
-	{% endunless %}
+{% for article in articles_list limit:16 %}
+	{% include teaser.html entry=article %}
+	{% if forloop.index == 8 %}
+			</div><div class="archive__columns">
+	{% endif %}
 {% endfor %}
 			</div>
 		</section>
