@@ -1,0 +1,7 @@
+{% assign link = include.link %}
+
+{% if page.link contains 'twitter.com' %}
+	<a href="{{ link }}">@{{ link | split: '/' | last }}</a>
+{% else %}
+	<a href="{{ link }}">{{ link | remove: 'http://' | remove: 'https://' | remove: 'www.' | split: '/' | join: '/' }}</a>
+{% endif %}

@@ -2,26 +2,12 @@
 layout: default
 ---
 
-<main>
-	<article role="main" class="layout-author">
-		<div class="layout-author__aside">
-			<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}" class="meta__picture">
-		</div>
-		<div class="layout-author__content">
-		<div class="content">
-			<h1>
-					{{ page.title | markdownline }}
-{% if page.link %}
-	{% if page.link contains 'twitter.com' %}
-					<a href="{{ page.link }}">@{{ page.link | split: '/' | last }}</a>
-	{% else %}
-					<a href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' |  remove: 'www.' }}</a>
-	{% endif %}
-{% endif %}
-			</h1>
-
+<main class="layout">
+	<div class="layout__content">
+		<article role="main" class="content">
+			<h1 class="content__title">{{ page.title | markdownline }}</h1>
+			<p>{% include link.html link=page.link %}</p>
 			{{ content }}
-
 			<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
 			<ul>
 {% assign author = page.id | split: '/' | last %}
@@ -33,7 +19,9 @@ layout: default
 	{% endif %}
 {% endfor %}
 			</ul>
-		</div>
-		</div>
-	</article>
+		</article>
+	</div>
+	<div class="layout__aside">
+		<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
+	</div>
 </main>
