@@ -81,8 +81,6 @@ Now, if our viewport is 40em (640px), the `(max-width: 50em) 50vw` pair matches,
 
 Why did I use all of those “likely”s and “probably”s in the sections above? They’re there because for the resources _inside_ `srcset`, the browser is free to pick whatever resource its algorithms see fit. That means that you, as a web developer, can’t rely on the browser downloading and displaying the exact resource you want it to. That’s a Good Thing™, since it leaves the browser room to innovate in this space, by adding user preferences, network considerations and other future optimizations to the decision-making process. And since all of the different resources should only differ in quality, differing resource choices shouldn’t have any impact on your page’s layout.
 
-It’s worth noting that if the `sizes` attribute is missing, a default value of `100vw` is used as the effective size instead, as it represents the largest display dimensions the image might be displayed in without horizontal scrolling.
-
 So what happens if you want to see slightly different images on different layouts, showing images whose proportions are different, whose subject is more visible, or anything else your creative selves desire?
 
 That’s what the art direction use case is all about!
