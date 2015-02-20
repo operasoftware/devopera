@@ -22,12 +22,9 @@ layout: default
 		</section>
 		<section class="archive">
 			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
-			<div class="archive__columns">
+			<div data-columns class="archive__columns">
 {% for article in articles_list limit:16 %}
 	{% include teaser.html entry=article %}
-	{% if forloop.index == 8 %}
-			</div><div class="archive__columns">
-	{% endif %}
 {% endfor %}
 			</div>
 		</section>
@@ -54,3 +51,4 @@ layout: default
 		</section>
 	</div>
 </main>
+<script src="/scripts/salvattore.js"></script>

@@ -8,7 +8,7 @@ layout: default
 	<div class="layout__content">
 		<section class="archive">
 			<h2 class="archive__title">Entries with “{{ page.tag }}” tag</h2>
-			<div class="archive__columns">
+			<div data-columns class="archive__columns">
 {% for entry in entries %}
 	{% for tag in entry.tags %}
 		{% if tag == page.tag %}
@@ -23,3 +23,4 @@ layout: default
 		{% include tags.html entries=entries %}
 	</div>
 </main>
+<script src="/scripts/salvattore.js"></script>

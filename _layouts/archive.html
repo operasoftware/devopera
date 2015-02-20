@@ -8,7 +8,7 @@ layout: default
 	<div class="layout__content">
 		<section class="archive">
 			<h1 class="archive__title">{{ page.title }}</h1>
-			<div class="archive__columns">
+			<div data-columns class="archive__columns">
 {% for entry in entries %}
 	{% include teaser.html entry=entry %}
 {% endfor %}
@@ -19,3 +19,4 @@ layout: default
 		{% include tags.html entries=entries %}
 	</div>
 </main>
+<script src="/scripts/salvattore.js"></script>
