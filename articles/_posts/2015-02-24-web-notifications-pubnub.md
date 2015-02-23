@@ -2,7 +2,7 @@
 title: Working with Web Notifications using PubNub’s Realtime Data Stream
 authors:
 - tomomi-imura
-intro: '[TODO]'
+intro: 'In this article, Tomomi explores how to build a simple notification web app using PubNub's Data Stream Network and the W3C Web Notifications API.'
 tags:
 - javascript
 - communication
@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 Notifications are a great way for apps to indicate that they have something to tell you, for example, that you’ve received a new Twitter message.
 
-The [W3C Web notifications][1] API allows your web browser to display notifications as well: it is a great way to engage with your users because these notifications can be displayed even when the page is not active -- note however that the page must be opened in a background tab for the notification to be triggered. The W3C doesn’t specify how notifications should look, so Opera has chosen to use native notifications so that your browser feels completely integrated with your operating system.
+The [W3C Web Notifications][1] API allows your web browser to display notifications as well: it is a great way to engage with your users because these notifications can be displayed even when the page is not active -- note however that the page must be opened in a background tab for the notification to be triggered. The W3C doesn’t specify how notifications should look, so Opera has chosen to use native notifications so that your browser feels completely integrated with your operating system.
 
 [1]: http://www.w3.org/TR/notifications/
 
