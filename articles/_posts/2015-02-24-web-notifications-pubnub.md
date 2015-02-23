@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 Notifications are a great way for apps to indicate that they have something to tell you, for example, that you’ve received a new Twitter message.
 
-The [W3C Web Notifications][1] API allows your web browser to display notifications as well: it is a great way to engage with your users because these notifications can be displayed even when the page is not active -- note however that the page must be opened in a background tab for the notification to be triggered. The W3C doesn’t specify how notifications should look, so Opera has chosen to use native notifications so that your browser feels completely integrated with your operating system.
+The [W3C Web Notifications API][1] allows your web browser to display notifications as well: it is a great way to engage with your users because these notifications can be displayed even when the page is not active — note however that the page must be opened in a background tab for the notification to be triggered. The W3C doesn’t specify how notifications should look, so Opera has chosen to use native notifications so that your browser feels completely integrated with your operating system.
 
 [1]: http://www.w3.org/TR/notifications/
 
@@ -40,7 +40,7 @@ Common publish/subscribe messaging paradigms
 
 # What we’ll be building
 
-For this article, I made an alternative version of the "Yo" app, which allows you to send the message "Yo" to your friends. With the ["Oi" web app][6], instead of sending a message to your friends, you can send "Oi" to strangers online.
+For this article, I made an alternative version of the “Yo” app, which allows you to send the message “Yo” to your friends. With the [“Oi” web app][6], instead of sending a message to your friends, you can send “Oi” to strangers online.
 
 [6]: http://pubnub.github.io/oi-web-notifications/
 
@@ -82,11 +82,11 @@ Try for yourself and see. You can always reset the permission setting by going t
 
 # Connecting users using PubNub Data Stream
 
-Once the user has granted permission, the next interaction you expect from the user is that she/he enters a name in order to get started.
+Once the user has granted permission, the next interaction you expect is that they enter a name in order to get started.
 
 	<input type="text" placeholder="Type your name to start" autofocus>
 
-When the user enters a name , then hits the return key (we’re listening for a keyup event with a `keyCode === 13`), we send the username to the PubNub stream to register the user.
+When the user enters a name, then hits the return key (we’re listening for a keyup event with a `keyCode === 13`), we send the username to the PubNub stream to register the user.
 
 	document.querySelector('[type="text"]').addEventListener('keyup', function(event) {
 		if (event.keyCode !== 13) return;
@@ -97,7 +97,7 @@ When the user enters a name , then hits the return key (we’re listening for a 
 
 ## Initializing PubNub with user info
 
-This requires your own PubNub API keys, so you need to[ sign up for a free account][10]. Your publish/subscribe keys are in the [Developer’s Admin Dashboard][11].
+This requires your own PubNub API keys, so you need to [sign up for a free account][10]. Your publish/subscribe keys are in the [Developer’s Admin Dashboard][11].
 
 [10]: http://www.google.com/url?q=http%3A%2F%2Fwww.pubnub.com%2Fget-started%2F&sa=D&sntz=1&usg=AFQjCNHpCZe5gALKuYikUrFqQaySKaNdDA
 [11]: https://www.google.com/url?q=https%3A%2F%2Fadmin.pubnub.com%2F&sa=D&sntz=1&usg=AFQjCNFSTvUrfox_eUQqqUYfryvoRQKP8Q
