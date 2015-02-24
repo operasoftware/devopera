@@ -4,4 +4,4 @@ link: https://twitter.com/girlie_mac
 layout: author
 ---
 
-Dev evangelist who code & write tuts/blog PubNub. Past: destroyed two major mobile phone companies.
+Developer evangelist at PubNub in San Francisco, providing use cases and ideas with the APIs by writing demos and technical articles. She is also an avid open web advocate.
