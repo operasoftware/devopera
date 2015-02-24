@@ -120,5 +120,7 @@
 	"opera-tv-emulator-getting-started": "tv/opera-tv-emulator-getting-started",
 	"opera-tv-store-app-templates": "tv/opera-tv-store-app-templates",
 	"testing-your-app-inside-the-opera-tv-store": "tv/testing-your-app-inside-opera-tv-store",
-	"tweaking-spatial-navigation-for-tv-browsing": "tv/tweaking-spatial-navigation-for-tv-browsing"
+	"tweaking-spatial-navigation-for-tv-browsing": "tv/tweaking-spatial-navigation-for-tv-browsing",
+
+	"web-notifications-in-opera-developer-24": "web-notifications-in-opera-developer-25"
 }
