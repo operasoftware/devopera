@@ -2,11 +2,11 @@
 title: Working with Web Notifications using PubNub’s Realtime Data Stream
 authors:
 - tomomi-imura
-intro: 'In this article, Tomomi explores how to build a simple notification web app using PubNub's Data Stream Network and the W3C Web Notifications API.'
+intro: 'In this article, Tomomi explores how to build a simple notification web app using PubNub’s Data Stream Network and the W3C Web Notifications API.'
 tags:
 - javascript
 - communication
-cover: png
+cover: jpg
 license: cc-by-3.0
 ---
 
