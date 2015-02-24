@@ -22,7 +22,7 @@ The [W3C Web Notifications API][1] allows your web browser to display notificati
 
 Web Notifications have been supported by Opera since version 25. The article [Web Notifications in Opera Developer 25][3] describes the basic use of the API.
 
-[3]: https://dev.opera.com/blog/web-notifications-in-opera-developer-24/
+[3]: https://dev.opera.com/blog/web-notifications-in-opera-developer-25/
 
 Today, I am going to show you how to use Web Notifications by creating an interactive multi-user app using PubNub’s realtime data stream JavaScript APIs.
 
@@ -34,11 +34,10 @@ Today, I am going to show you how to use Web Notifications by creating an intera
 
 <figure class="figure">
 	<img src="{{ page.id }}/pubnub-publish-subscribe-paradigms.png" alt="" class="figure__media">
+	<figcaption class="figure__caption">Common publish/subscribe messaging paradigms</figcaption>
 </figure>
 
-Common publish/subscribe messaging paradigms
-
-# What we’ll be building
+## What we’ll be building
 
 For this article, I made an alternative version of the “Yo” app, which allows you to send the message “Yo” to your friends. With the [“Oi” web app][6], instead of sending a message to your friends, you can send “Oi” to strangers online.
 
@@ -46,7 +45,7 @@ For this article, I made an alternative version of the “Yo” app, which allow
 
 Let’s get started!
 
-# Checking for API support
+## Checking for API support
 
 The first step is checking if the Web Notifications API is supported by the user’s browser. This feature detection step is good practice and currently needed since [not all browsers support the API][7] yet.
 
@@ -60,7 +59,7 @@ For this exercise, let’s just simply terminate the app when the browser doesn�
 		// Go ahead and use the Web Notification API.
 	}
 
-# Requesting permission
+## Requesting permission
 
 Each browser provides a built-in permission UI for the Web Notification API, so that you can control which web pages can send you notifications. When your page is loaded for the first time, a browser-specific permission dialog is shown to the user. After the user has granted permission, your page can send notifications, otherwise (denied), it can’t.
 
@@ -80,7 +79,7 @@ Try for yourself and see. You can always reset the permission setting by going t
 	<img src="{{ page.id }}/web-notification-permission-preference.gif" alt="" class="figure__media">
 </figure>
 
-# Connecting users using PubNub Data Stream
+## Connecting users using PubNub Data Stream
 
 Once the user has granted permission, the next interaction you expect is that they enter a name in order to get started.
 
@@ -136,7 +135,7 @@ To make this article simple and focus more on the essential parts, I’m skippin
 
 [12]: https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fpubnub%2Foi-web-notifications%2F&sa=D&sntz=1&usg=AFQjCNHoZZAiZe0tlv-KoObduXXynqcjpA
 
-# Sending messages
+## Sending messages
 
 When the user clicks a username in the list, the app will publish a message. The publish() function is used to send a message to all subscribers of a channel. You can simply pass an object as a message payload. In this demo, only from and to info is passed but you can send any messages in the object.
 
@@ -154,7 +153,7 @@ When the user clicks a username in the list, the app will publish a message. The
 
 You can pass an object with any data you want as the message. So instead of the default "Oi!" message, you can also modify the script and allow your users to send custom messages.
 
-# Receiving messages
+## Receiving messages
 
 When somebody sends the user a message, the web app will trigger the browser to display a notification.
 
@@ -175,7 +174,7 @@ To retrieve the live messages, you simply use PubNub subscribe() API. If the mes
 		}
 	});
 
-# Displaying a notification
+## Displaying a notification
 
 Creating a web notification is super-simple: just call the Notification constructor.
 
