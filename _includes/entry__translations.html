@@ -5,8 +5,8 @@
 
 {% capture translations %}
 	{% for post in site.posts %}
-		{% assign post_id = post.id | split: '/' | last %}
-		{% if post_id == entry_id %}
+		{% assign post_slug = post.url | split: '/' | last %}
+		{% if post_slug == entry_id %}
 			{% assign lang = post.language %}
 			{% if post.url != entry.url %}
 				{% assign translated = true %}

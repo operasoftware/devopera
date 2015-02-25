@@ -2,12 +2,12 @@
 {% assign link = include.link %}
 {% assign class = include.class %}
 
-{% assign site_authors = site.categories.authors | sort %}
+{% assign site_authors = site.authors | sort %}
 
 {% capture entry_authors %}
 	{% for author in site_authors %}
-		{% assign author_id = author.id | split: '/' | last %}
-		{% if entry.authors contains author_id %}
+		{% assign author_slug = author.url | split: '/' | last %}
+		{% if entry.authors contains author_slug %}
 			{% if link %}
 				<a href="{{ author.url }}"{{ class | prepend: ' class="' | append: '"' }}>
 			{% endif %}
