@@ -41,6 +41,7 @@
 		display:flex;
 		justify-content:space-between;
 		font-size:20px;
+		color:$grey;
 		}
 	&__menu-link {
 		@extend %link--black;
