@@ -10,7 +10,7 @@
 			{% assign lang = post.language %}
 			{% if post.url != entry.url %}
 				{% assign translated = true %}
-				<a href="{{ post.url }}">{{ site.data.langs[lang] }}</a>
+				<a href="{{ post.url }}" class="entry__link">{{ site.data.langs[lang] }}</a>
 			{% else %}
 				{{ site.data.langs[lang] }}
 			{% endif %}(•)
