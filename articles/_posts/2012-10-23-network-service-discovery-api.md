@@ -25,7 +25,7 @@ license: cc-by-3.0
 ## Introduction {#intro}
 
 <figure class="figure">
-	<iframe width="560" height="315" src="//www.youtube.com/embed/dujaAWwGVB4" allowfullscreen class="figure__media"></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dujaAWwGVB4" allowfullscreen class="figure__media"></iframe>
 </figure>
 
 [According to Nielsen][1], as of 2009 nearly 60% people in the US used their TV and internet simultaneously for an average of 2.5 hours per person per month. That’s around 128 million people and just over 19 billion minutes of simultaneous viewing per month! It’s not surprising, then, that we’ve seen a surge of interest in multi-screen development recently. As part of this, we’ve submitted a draft specification to the W3C entitled [Network Service Discovery API][2] which aims to ease discovering and sharing data between devices.

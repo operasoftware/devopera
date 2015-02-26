@@ -1,3 +1,6 @@
+cc-by-4.0:
+  text: Creative Commons Attribution 4.0 International
+  link: http://creativecommons.org/licenses/by/4.0/
 cc-by-3.0:
   text: Creative Commons Attribution 3.0 Unported
   link: http://creativecommons.org/licenses/by/3.0/
@@ -18,4 +21,4 @@ cc-bsd:
   link: http://creativecommons.org/licenses/BSD/
 os-asa:
   text: Opera Software ASA
-  link: http://opera.com/
+  link: http://www.opera.com/

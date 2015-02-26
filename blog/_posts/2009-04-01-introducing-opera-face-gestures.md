@@ -19,7 +19,7 @@ Today we introduce Face Gestures, a revolutionary technology designed to make in
 
 You can try Face Gestures today by downloading the latest Opera 10 alpha snapshot or check out the video below to learn more.
 
-<iframe allowfullscreen width="640" height="360" src="//www.youtube.com/embed/kkNxbyp6thM"></iframe>
+<iframe allowfullscreen width="640" height="360" src="https://www.youtube.com/embed/kkNxbyp6thM"></iframe>
 
 ## Setting up Face Gestures
 

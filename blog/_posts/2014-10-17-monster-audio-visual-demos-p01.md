@@ -26,7 +26,7 @@ Nowadays, the web platform is not only the best distribution platform, but it ca
 Without further ado, here is my [“Monster audio-visual demos in a TCP packet” talk](https://www.youtube.com/watch?v=8aYVH2j0kAU) from [JSConf EU 2014](http://2014.jsconf.eu):
 
 <figure class="figure">
-	<iframe src="//www.youtube.com/embed/8aYVH2j0kAU" width="570" height="320" allowfullscreen class="figure__media"></iframe>
+	<iframe src="https://www.youtube.com/embed/8aYVH2j0kAU" width="570" height="320" allowfullscreen class="figure__media"></iframe>
 </figure>
 
 For those interested, there is also a [full transcript of my talk](http://2014.jsconf.eu/speakers/mathieu-p01-henri-monster-audiovisual-demos-in-a-tcp-packet.html#transcript) available on the JSConf EU 2014 site.

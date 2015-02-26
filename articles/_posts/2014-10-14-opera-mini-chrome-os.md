@@ -27,7 +27,7 @@ It might sound a bit insane at first — why would you want to run a browser ins
 Here’s the fastest way to get Opera Mini running on your Chromebook, using an Android device and a custom runtime called _ARChon_ (the difference in runtimes is explained later in the article):
 
 <figure class="figure">
-	<iframe src="//www.youtube.com/embed/FA2UDyTB7lI" width="570" height="320" allowfullscreen class="figure__media"></iframe>
+	<iframe src="https://www.youtube.com/embed/FA2UDyTB7lI" width="570" height="320" allowfullscreen class="figure__media"></iframe>
 	<figcaption class="figure__caption">Quick demo of Opera Mini with ARC</figcaption>
 </figure>
 

@@ -9,13 +9,19 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
 5. Run `npm install grunt-cli -g` to install Grunt globally.
-6. Run `grunt build` to build Dev.Opera inside the `_site` folder.
 
 Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [.editorconfig](.editorconfig) file.
 
+## Environment update
+
+If you’ve set up all the above at some point in the past, and want to update your installation, these are the steps to follow:
+
+1. Run `sudo gem update` to install the latest Ruby gems.
+2. Run `npm install` inside the `devopera` folder.
+
 ## Opening
 
-To open Dev.Opera locally run `grunt`, it would take up to 1 minute to:
+To open Dev.Opera locally, simply run `grunt`. It will take up to 1 minute to:
 
 1. Build the site in “limited mode” with only the latest 150 posts.
 2. Start local server at `http://0.0.0.0:33310` address.
@@ -34,10 +40,9 @@ So now every time you change project files, Dev.Opera will be rebuilt and you br
 
 # Full build and deploy
 
-To **build** a complete Dev.Opera, run `grunt build`: it will take a while to build the full site with all posts included. To **deploy** (sync build with remote server), run `grunt deploy`.
+To **build** a complete Dev.Opera, run `grunt build`: it will take a while to build the full site with all posts included in the `_site` folder. To **deploy** (sync build with remote server), run `grunt deploy`.
 
 ## Notes
 
 - All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.
 - You may require write access for all commands mentioned above. Type `sudo`, space and command if needed.
-- If you get an error running `grunt dev`, try to increase the file number limit with the `ulimit -n 10000` command or use a nightly build of Node.JS 0.11 (could be installed alongside to 0.10 using [nvm](https://github.com/creationix/nvm)).
