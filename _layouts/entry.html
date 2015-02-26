@@ -4,9 +4,11 @@ layout: default
 
 <main class="layout">
 	<div class="layout__content layout__content--entry">
-		<article role="main" lang="{{ page.language }}" class="content">
+		<article role="main" lang="{{ page.language }}">
 			<h1 class="content__title">{{ page.title | markdownline }}</h1>
-			{{ content }}
+			<div class="content">
+				{{ content }}
+			</div>
 		</article>
 	</div>
 	<div class="layout__aside">
