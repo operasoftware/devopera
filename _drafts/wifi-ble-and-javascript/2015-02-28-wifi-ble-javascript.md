@@ -1,4 +1,3 @@
-<!--
 ---
 title: Getting Started with WiFi, BLE and JavaScript
 authors:
@@ -15,21 +14,12 @@ tags:
 - ble
 license: cc-by-3.0
 ---
--->
 
 ## Introduction
 
 [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us the web developers? This article will explore 2 common wireless protocol such as [WiFi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servos to the Internet. Then we will learn how to either control these devices or access the sensor data using JavaScript!
 
-The easiest way to get started in learning to interface web technologies with electronics is to choose a hardware platform which already comes with a JavaScript API. Here are some examples of such platforms:
-
-1. [Spark](https://www.spark.io/) - [JavaScript API](http://docs.spark.io/javascript/)
-- [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) - [noble npm](https://www.npmjs.com/package/noble), [sensortag npm](https://www.npmjs.com/package/sensortag)
-- [Tessel](https://tessel.io/) - [hardware api](https://tessel.io/docs/hardwareAPI)
-- [Arduino Yun](http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN) - [Johnny-Five](https://github.com/rwaldron/johnny-five)
-- [Raspberry PI](http://www.raspberrypi.org/) - [node.js build for Linux arm pi](https://nodejs.org/dist/v0.10.28/), [io.js v1.4.1 build for armv6l and armv7l](https://iojs.org/dist/v1.4.1/)
-
-In this article we will explore 2 such platforms: [Spark](https://www.spark.io/) for WiFi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. It will be fun!
+In this article we will explore 2 platforms: [Spark](https://www.spark.io/) for WiFi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. It will be fun!
 
 ### Pre-requisites
 
@@ -381,6 +371,120 @@ To play with the TI SensorTag, you need a couple of things:
 1. [TI SensorTag](http://processors.wiki.ti.com/index.php/Simplelink_SensorTag) powered with a single coin cell
 - The machine on which you will run the JavaScript code should have BLE hardware
 
+The main npm module that we will be using to interface with the SensorTag is the [senstortag npm](https://www.npmjs.com/package/sensortag) which has an underlying generic node BLE central module, [noble](https://www.npmjs.com/package/noble). We will attempt to read the IR temperature once upon connecting the with device and then upon rotating the sensortag, we will log the gyroscope data on every change. Let's get started by requiring the modules and connecting to the sensortag.
 
+1. create a file `sensortag.js`, connect, discover and then disconnect the device:
+
+	```js
+	var async = require('async');
+	var SensorTag = require('sensortag');
+
+	SensorTag.discover(function(sensorTag) {
+
+	  sensorTag.on('disconnect', function() {
+	    console.log('disconnected!');
+	    process.exit(0);
+	  });
+
+	  async.series([
+	    function(callback) {
+	      console.log('Connect!');
+	      sensorTag.connect(callback);
+	    },
+	    function(callback) {
+	      console.log('Discovered');
+	      sensorTag.discoverServicesAndCharacteristics(callback);
+	    },
+	    function(callback) {
+	      console.log('Disconnected');
+	      sensorTag.disconnect(callback);
+	    }
+	  ]);
+	});
+	```
+
+	Because the events connect, discovered and disconnected should happen sequentially when the previous event is done, we will use the npm module `async` to deal with callbacks.
+
+- Read the IR Temperature once between the events discovered and disconnected:
+
+	```js
+	...
+	function(callback) {
+		console.log('IR Temperature enabled');
+		sensorTag.enableIrTemperature(callback);
+	},
+	function(callback) {
+		console.log('readIrTemperature');
+		sensorTag.readIrTemperature(function(objectTemperature, ambientTemperature) {
+			console.log('\tobject temperature = %d °C', objectTemperature.toFixed(1));
+			console.log('\tambient temperature = %d °C', ambientTemperature.toFixed(1));
+			callback();
+		});
+	},
+	...
+	```
+- Finally, we will add in the gyroscope reading and on change, the sensortag should output the values form the gyroscope. We will enable the gyroscope reading after the IR temperature reading.
+
+	```js
+	// readIRTemperature
+	...
+	function(callback) {
+		console.log('Gyroscope enabled');
+		sensorTag.enableGyroscope(callback);
+	},
+	function(callback) {
+		setTimeout(callback, 1000);
+	},
+	function(callback) {
+		sensorTag.on('gyroscopeChange', function(x, y, z) {
+			console.log('On Gyrosope change: '
+				+ x.toFixed(1) + '°/s[X]\t'
+				+ y.toFixed(1) + '°/s[Y]\t'
+				+ z.toFixed(1) + '°/s[Z]');
+		});
+
+		sensorTag.notifyGyroscope(function() {
+			console.log('Start tracking gyroscope!');
+		});
+	}
+	// comment out disconnect
+	// function(callback) {
+	//  console.log('Disconnected');
+	//  sensorTag.disconnect(callback);
+	// }
+	```
+- You can refer to the [entire code here](code/senstor-tag). Let's run it!
+
+	```sh
+	$ node sensortag.js
+	```
+
+	![](img/sensortag-output.jpg)
+
+That is just a tiny example on how to interface with a BLE device. To dabble more, have a look at [all the sensors data you can query](https://github.com/sandeepmistry/node-sensortag/blob/master/test.js) in the SensorTag as well as the underlying [noble module](https://github.com/sandeepmistry/noble). The author of both these modules, [Sandeep Mistry](https://github.com/sandeepmistry?tab=repositories) has open sourced many more BLE related npm packages such as the ones we can interface with [iBeacons](https://github.com/sandeepmistry/node-bleacon) or [Arduino library](https://github.com/sandeepmistry/arduino-BLEPeripheral). Have a go at them!
 
 ## More resources
+
+The easiest way to get started in learning to interface web technologies with electronics is to choose a hardware platform which already comes with a JavaScript API. Here are some examples of more such platforms other than the Spark and SensorTag that we covered:
+
+1. [Tessel](https://tessel.io/) - [hardware api](https://tessel.io/docs/hardwareAPI)
+- [Arduino Yun](http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN) - [Johnny-Five](https://github.com/rwaldron/johnny-five)
+- [Raspberry PI](http://www.raspberrypi.org/) - [node.js build for Linux arm pi](https://nodejs.org/dist/v0.10.28/), [io.js v1.4.1 build for armv6l and armv7l](https://iojs.org/dist/v1.4.1/)
+
+Hardware and electronics interfacing might be daunting at first, but the good news is there are many community events, help online and modules. Here are some to check out:
+
+1. [Nodebots](http://nodebots.io/) - JavaScript based robotics events around the world
+- [Nodecopter](http://www.nodecopter.com/) - Node and drones community hacking events
+- [CyclonJS](http://cylonjs.com/) - JavaScript framework for robotics
+- [Serial port](https://github.com/voodootikigod/node-serialport) - Along with WiFi and BLE, try out interfacing with the [Z-Wave](http://www.z-wave.com/modules/ZwaveStart/) and [Zigbee](http://www.zigbee.org/)
+- [USB](https://github.com/nonolith/node-usb) - communicate with USB devices
+
+![](img/nodeboats.jpg)
+
+*[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant's boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five.*
+
+I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challengin at start, but seeing your code literally come to life in the physical world will be immensely rewarding. 
+
+Come and hack away with electronics and JavaScript!
+
+
