@@ -364,14 +364,14 @@ This example is just the tip of the iceberg in how you can control many other de
 
 ## TI Sensor Tag and BLE
 
-In this section, we will use with the BLE protocol in the [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag), which is designed for developers to play with various sensors and BLE. The SensorTag comes with a BLE chip on board along with sensors such as the IR temperature, humidity, pressure, accelerometer, etc all in a compact handy device. The advantage of using BLE is its low power consumption and the device can be powered with just a coin cell potential for days to years.
+In this section, we will use with the Bluetooth Low Energy(BLE) protocol with the [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag), which is designed for developers to play with various sensors and BLE. The SensorTag comes with a BLE chip on-board along with sensors such as IR temperature sensor, humidity sensor, pressure sensor, accelerometer, etc in a compact handy device. The advantage of using BLE is its low power consumption. The SensorTag can be powered with just a coin cell potentially for years.
 
 To play with the TI SensorTag, you need a couple of things:
 
 1. [TI SensorTag](http://processors.wiki.ti.com/index.php/Simplelink_SensorTag) powered with a single coin cell
 - The machine on which you will run the JavaScript code should have BLE hardware
 
-The main npm module that we will be using to interface with the SensorTag is the [senstortag npm](https://www.npmjs.com/package/sensortag) which has an underlying generic node BLE central module, [noble](https://www.npmjs.com/package/noble). We will attempt to read the IR temperature once upon connecting the with device and then upon rotating the sensortag, we will log the gyroscope data on every change. Let's get started by requiring the modules and connecting to the sensortag.
+The main npm module that we will be using to interface with the SensorTag is [senstortag](https://www.npmjs.com/package/sensortag) which is based on an underlying generic node BLE central module, [noble](https://www.npmjs.com/package/noble). We will attempt to read the IR temperature from the SensorTag and log the gyroscope data while rotating the sensortag. Let's get started by requiring the modules and connecting to the sensortag.
 
 1. create a file `sensortag.js`, connect, discover and then disconnect the device:
 
@@ -403,9 +403,9 @@ The main npm module that we will be using to interface with the SensorTag is the
 	});
 	```
 
-	Because the events connect, discovered and disconnected should happen sequentially when the previous event is done, we will use the npm module `async` to deal with callbacks.
+	Because the events 'connect', 'discovered' and 'disconnected' should happen sequentially when the previous event is done, we will use the npm module `async` to deal with callbacks.
 
-- Read the IR Temperature once between the events discovered and disconnected:
+- Read the IR Temperature once between the events 'discovered' and 'disconnected':
 
 	```js
 	...
@@ -423,7 +423,7 @@ The main npm module that we will be using to interface with the SensorTag is the
 	},
 	...
 	```
-- Finally, we will add in the gyroscope reading and on change, the sensortag should output the values form the gyroscope. We will enable the gyroscope reading after the IR temperature reading.
+- Finally, we will add in the gyroscope reading and when the SensorTag is physically rotated, the JavaScript should output the updated values from the gyroscope. We hook onto the gyroscope events after the IR temperature reading. We have to specifically enable the gyroscope readings using the `notifyGyroscope` API.
 
 	```js
 	// readIRTemperature
@@ -471,7 +471,7 @@ The easiest way to get started in learning to interface web technologies with el
 - [Arduino Yun](http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN) - [Johnny-Five](https://github.com/rwaldron/johnny-five)
 - [Raspberry PI](http://www.raspberrypi.org/) - [node.js build for Linux arm pi](https://nodejs.org/dist/v0.10.28/), [io.js v1.4.1 build for armv6l and armv7l](https://iojs.org/dist/v1.4.1/)
 
-Hardware and electronics interfacing might be daunting at first, but the good news is there are many community events, help online and modules. Here are some to check out:
+Hardware and electronics interfacing might be daunting at first, but the good news is there are many community events, forums, blog posts and modules/libraries available online. Here are some to check out:
 
 1. [Nodebots](http://nodebots.io/) - JavaScript based robotics events around the world
 - [Nodecopter](http://www.nodecopter.com/) - Node and drones community hacking events
@@ -483,7 +483,7 @@ Hardware and electronics interfacing might be daunting at first, but the good ne
 
 *[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant's boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five.*
 
-I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challengin at start, but seeing your code literally come to life in the physical world will be immensely rewarding. 
+I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challenging at start, but seeing your code literally come to life in the physical world will be immensely rewarding.
 
 Come and hack away with electronics and JavaScript!
 
