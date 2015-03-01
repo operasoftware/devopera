@@ -2,7 +2,7 @@
 title: Getting Started with WiFi, BLE and JavaScript
 authors:
 - sayanee-basu
-intro: 'Internet of Things is gaining momentum in the recent years as more embedded devices are being connected to the Internet. What does this mean for the web developers? This article explores 2 common wireless protocol such as WiFi and BLE and gives practical examples to start playing with them with JavaScript and some sensors.'
+intro: 'The Internet of Things is gaining momentum in the recent years as more embedded devices are being connected to the Internet. What does this mean for the web developers? This article explores 2 common wireless protocol, WiFi and BLE,  and gives practical examples to start playing with them with JavaScript and some sensors.'
 tags:
 - iot
 - javascript
@@ -17,13 +17,13 @@ license: cc-by-3.0
 
 ## Introduction
 
-[Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us the web developers? This article will explore 2 common wireless protocol such as [WiFi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servos to the Internet. Then we will learn how to either control these devices or access the sensor data using JavaScript!
+The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us the web developers? This article will explore 2 common wireless protocol, [WiFi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
 In this article we will explore 2 platforms: [Spark](https://www.spark.io/) for WiFi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. It will be fun!
 
 ### Pre-requisites
 
-This article assumes that you are already an intermediate to an advanced level JavaScripter. We will primarily use [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) for server side and simple frontend JavaScript to create some control buttons on a web browser. You don't need any prior knowledge of electronics. Seeing you can effect change and gather data from the physical world can be exciting and I hope through this article you will get that first excitement to dive into the fun world of electronics and web technologies! Let's get started!
+This article assumes that you are already an intermediate to advanced level JavaScripter. We will primarily use [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) for server side and simple frontend JavaScript to create some control UI on a web browser. You don't need any prior knowledge of electronics. Seeing you can effect change and gather data from the physical world can be exciting and I hope through this article you will get that first excitement to dive into the fun world of electronics and web technologies! Let's get started!
 
 ## Spark and WiFi
 
@@ -153,11 +153,11 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 
 ### 1. Setup
 
-In this section, we will connect the Spark Core to your Spark account and then connect it to the Wifi. To setup the Spark Core, [signup for an account](https://www.spark.io/signup). Then connect the Spark Core to your laptop via the USB cable. You should see a fast-paced blinking blue light which means the Spark Core is waiting for WiFi credentials.
+In this section, we will connect the Spark Core to your Spark account and then connect it to the local WiFi. To setup the Spark Core, [signup for an account](https://www.spark.io/signup). Then connect the Spark Core to your laptop via the USB cable. You should see a fast-paced blinking blue light which means the Spark Core is waiting for WiFi credentials.
 
 <iframe src="https://vine.co/v/hFHPMue5lgd/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
-To associate the Spark Core with your account (i.e. claiming the core) and then connect it to your WiFi, we will use the `spark-cli` module.
+To associate the Spark Core with your account (also known as 'claiming the core') , we will use the `spark-cli` module. Next, we will give the Spark Core our local WiFi credientials so it can connect to the WiFi network.
 
 ```shell
 $ npm install -g spark-cli
@@ -173,7 +173,7 @@ Next, we will note down 2 important values (device is and access token) for your
 
 ![](img/device-id-access-token.jpg)
 
-In the next couple of sections we will go through 2 examples. These 2 examples are 2 different ways how you can use Spark:
+In the next couple of sections we will go through 2 examples. These 2 examples show 2 different ways you can use Spark:
 
 1. sensing with an LDR (light dependent resistor) with:
 	- [firmware code](http://docs.spark.io/firmware/) that will publish the sensor values
@@ -186,17 +186,17 @@ In the next couple of sections we will go through 2 examples. These 2 examples a
 
 1. blink the on-board `D7` led
 
-	As the very first step, we will learn how to blink an LED which is like the `hello world` of electronics. [Open the Spark web editor](https://www.spark.io/build) and [copy the simple blinking LED code](code/spark-blinky/blinky.ino). Here it uses a [simple firmware code](http://docs.spark.io/firmware/) to blink the on-board LED `D7` every 1 second. To flash the firmware code onto your Spark Core, click the `flash` icon at the top of the left sidebar and wait for the LED on board to come back to the breathing cyan pattern. You should see the LED `D7` blinking.
+	As the very first step, we will learn how to blink an LED. This is the `hello world` of electronics. [Open the Spark web editor](https://www.spark.io/build) and [copy the simple blinking LED code](code/spark-blinky/blinky.ino). Here it uses a [simple firmware code](http://docs.spark.io/firmware/) to blink the on-board LED `D7` every 1 second. To flash the firmware code onto your Spark Core, click the `flash` icon at the top of the left sidebar and wait for the LED on board to come back to the breathing cyan pattern. You should see the LED `D7` blinking.
 
 	![](img/flash.png)
 - wire up the breadboard for detecting photocell values
 
-	Here we will need a couple of jumper wires, 1 photocell and 1kΩ resistor. We will firstly wireup the `Red` wire to pin `Vin` and the horizontal lines `+`. And similarly, the `Black` wire to pin `Gnd` and the horizontal line `-`. Next we will connect the photocell (or LDR) to pin `A0` and the ground, horizontal line `-`. LDRs do not have any polarity, so we can connect either of the legs to the pin or `Gnd`. Finally, with the 1kΩ resistor, we will connect to pin `A0` and `Vin`. This circuit might remind you of your [high school physics LDR circuit](http://www.build-electronic-circuits.com/ldr-circuit-diagram/).
+	Here we will need a couple of jumper wires, 1 photocell and 1kΩ resistor. We will firstly wireup the `Red` wire to pin `Vin` and the horizontal lines `+`. And similarly, the `Black` wire to pin `Gnd` and the horizontal line `-`. Next we will connect the photocell (or LDR) to pin `A0` on the Spark Core and the ground, horizontal line `-`. LDRs do not have any polarity, so we can connect either of the legs to `Gnd`. Finally, with the 1kΩ resistor, we will connect to pins `A0` and `Vin` on the Spark Core. This circuit might remind you of your [high school physics voltage divider circuit](http://www.build-electronic-circuits.com/ldr-circuit-diagram/).
 
 	![](img/ldr-circuit.jpg)
 - flash the firemware code to read the photocell values
 
-	While you see the breathing cyan on the Spark Core, take the [LDR firmware code](code/spark-ldr/ldr.ino) and flash it onto the Spark Core with the [web ide](https://www.spark.io/build). The firmware code does a couple of things. Every 200ms, it take the analog reading from pin `A0`, to which we connected the LDR and then publishes it as a variable for us to query if needed. For easy detection and debugging we are also turning on and off the on-board LED `D7`.
+	While you see the breathing cyan on the Spark Core, take the [LDR firmware code](code/spark-ldr/ldr.ino) and flash it onto the Spark Core with the [web ide](https://www.spark.io/build). The firmware code does a couple of things. Every 200ms, it take the analog reading from pin `A0`, to which we connected the LDR and then publishes it as a `Variable` on the Spark Cloud which can then be queried using standard Web APIs. For easy detection and debugging we are also turning on and off the on-board LED `D7` to indicate our code is running.
 
 	![](img/ldr-actual.jpg)
 
@@ -265,7 +265,7 @@ In the next couple of sections we will go through 2 examples. These 2 examples a
 	$ EMAIL="{SPARK_EMAIL_ADDRESS}" PASSWORD="{SPARK_ACCOUNT_PASSWORD}" node ldr.js
 	```
 
-	You should next see a stream of sensor data. Shine a torch light on the LDR and the value should change with a comment being displayed and cover it totally to see another comment! So now whatever you do physically in the real world can be reflected in your command line with node and JavaScript!
+	You should next see a stream of sensor data. Shine a torch light on the LDR and the value should change and a comment would be displayed. Cover the LDR totally and you will see another comment! So now whatever you do physically in the real world can be sensed with node and JavaScript! Such sensors can be used to sense open/close cupboard doors and light levels in rooms.
 
 	![](img/ldr-result.png)
 
@@ -275,9 +275,9 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 
 1. Let's wireup the breadboard with a servo this time!
 
-	We will use a servo and a capacitor. Wire up the Black / Brown wire to the Ground pin of the Spark Core, Orange / Red to the `Vin` and finally the Yellow wire will be used to wire up to the analog pin `A0`. We will also use a capacitor to stabilise the power to the servo. Capacitor is optional, but it's good to have it for stability.
+	We will use a servo motor and a capacitor. Wire up the Black / Brown wire to the `Gnd` pin of the Spark Core, Orange / Red to the `Vin` of the Spark Core and finally the Yellow wire will be used to wire up to the analog pin `A0` of the Spark Core. We will also use a capacitor between the `Vin` of the Spark Core and `Gnd` of the Spark Core to stabilise the power to the servo. Capacitor is optional, but it's good to have it for stability.
 
-	The control of the servo is fairly easy. It can rotate 180 degrees. So, when the signal is `0V`, it will rotate to 0 degrees and at the other end, when the signal is `5V` it will rotate to 180 degrees.
+	The control of the servo is fairly easy. It can rotate 180 degrees. So, when the signal is `0V`, it will rotate to 0 degrees and at the other end, when the signal is `5V` it will rotate to 180 degrees. To help us do the analog output of these signals, we will use a firmware called VoodooSpark.
 
 	![](img/servo-circuit.jpg)
 - Flash the pre-built firmware [Voodoospark](https://raw.githubusercontent.com/voodootikigod/voodoospark/master/firmware/voodoospark.cpp) using the [Spark web editor](https://www.spark.io/build)	 and wait for the breathing cyan light
@@ -292,7 +292,7 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 	$ npm install express johnny-five spark-io
 	```
 
-	We will need 3 modules. [Spark-io](https://github.com/rwaldron/spark-io) will help to interact with the Spark Core using the [Johnny-Five](https://github.com/rwaldron/johnny-five) package. Johnny-five [provides interfaces](https://github.com/rwaldron/johnny-five/tree/master/lib) to many devices such as sensors, motors, switches, etc.
+	We will need 3 modules. [Spark-io](https://github.com/rwaldron/spark-io) to output the TCP packets which VooDooSpark firmware on the Spark Core understands. [Johnny-Five](https://github.com/rwaldron/johnny-five) package uses Spark-io and [provides higher level interfaces](https://github.com/rwaldron/johnny-five/tree/master/lib) to many devices such as sensors, motors, switches, etc. And finally [Express](https://github.com/strongloop/express) to serve a webpage and pass HTTP requests from the browser to the Spark Core.
 - Store the Spark device id and access token in config file
 
 	Create file `~/.sparkrc` to [store your config](https://github.com/rwaldron/spark-io#getting-started) and add the file to your profile with `source ~/.sparkrc`:
