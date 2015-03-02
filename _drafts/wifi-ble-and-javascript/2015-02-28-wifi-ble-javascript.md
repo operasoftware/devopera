@@ -142,7 +142,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 			<ul>
 				<li><a href="http://en.wikipedia.org/wiki/Capacitor">Wikipedia</a></li>
 				<li><a href="http://docs.spark.io/shields/#setting-up-the-shield-2-electrolytic-capacitor-100uf-5">Capacitors</a></li>
-				<li><strong>Tip: </strong> Capacitors have polarity. On the plastic above one of the pins you'll see a light coloured strip with a negative sign "-" on it. Always connect that pin to GND pins or rails </li>
+				<li><strong>Tip: </strong> Capacitors have polarity. On the plastic above one of the pins you'll see a light colored strip with a negative sign "-" on it. Always connect that pin to GND pins or rails </li>
 			</ul>
 		</td>
 		<td><img src="img/capacitor.jpg"></td>
@@ -157,7 +157,7 @@ In this section, we will connect the Spark Core to your Spark account and then c
 
 <iframe src="https://vine.co/v/hFHPMue5lgd/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
-To associate the Spark Core with your account (also known as 'claiming the core') , we will use the `spark-cli` module. Next, we will give the Spark Core our local WiFi credientials so it can connect to the WiFi network.
+To associate the Spark Core with your account (also known as 'claiming the core') , we will use the `spark-cli` module. Next, we will give the Spark Core our local WiFi credentials so it can connect to the WiFi network.
 
 ```shell
 $ npm install -g spark-cli
@@ -194,7 +194,7 @@ In the next couple of sections we will go through 2 examples. These 2 examples s
 	Here we will need a couple of jumper wires, 1 photocell and 1kΩ resistor. We will firstly wireup the `Red` wire to pin `Vin` and the horizontal lines `+`. And similarly, the `Black` wire to pin `Gnd` and the horizontal line `-`. Next we will connect the photocell (or LDR) to pin `A0` on the Spark Core and the ground, horizontal line `-`. LDRs do not have any polarity, so we can connect either of the legs to `Gnd`. Finally, with the 1kΩ resistor, we will connect to pins `A0` and `Vin` on the Spark Core. This circuit might remind you of your [high school physics voltage divider circuit](http://www.build-electronic-circuits.com/ldr-circuit-diagram/).
 
 	![](img/ldr-circuit.jpg)
-- flash the firemware code to read the photocell values
+- flash the firmware code to read the photocell values
 
 	While you see the breathing cyan on the Spark Core, take the [LDR firmware code](code/spark-ldr/ldr.ino) and flash it onto the Spark Core with the [web ide](https://www.spark.io/build). The firmware code does a couple of things. Every 200ms, it take the analog reading from pin `A0`, to which we connected the LDR and then publishes it as a `Variable` on the Spark Cloud which can then be queried using standard Web APIs. For easy detection and debugging we are also turning on and off the on-board LED `D7` to indicate our code is running.
 
@@ -275,14 +275,14 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 
 1. Let's wireup the breadboard with a servo this time!
 
-	We will use a servo motor and a capacitor. Wire up the Black / Brown wire to the `Gnd` pin of the Spark Core, Orange / Red to the `Vin` of the Spark Core and finally the Yellow wire will be used to wire up to the analog pin `A0` of the Spark Core. We will also use a capacitor between the `Vin` of the Spark Core and `Gnd` of the Spark Core to stabilise the power to the servo. Capacitor is optional, but it's good to have it for stability.
+	We will use a servo motor and a capacitor. Wire up the Black / Brown wire to the `Gnd` pin of the Spark Core, Orange / Red to the `Vin` of the Spark Core and finally the Yellow wire will be used to wire up to the analog pin `A0` of the Spark Core. We will also use a capacitor between the `Vin` of the Spark Core and `Gnd` of the Spark Core to stabilize the power to the servo. Capacitor is optional, but it's good to have it for stability.
 
 	The control of the servo is fairly easy. It can rotate 180 degrees. So, when the signal is `0V`, it will rotate to 0 degrees and at the other end, when the signal is `5V` it will rotate to 180 degrees. To help us do the analog output of these signals, we will use a firmware called VoodooSpark.
 
 	![](img/servo-circuit.jpg)
 - Flash the pre-built firmware [Voodoospark](https://raw.githubusercontent.com/voodootikigod/voodoospark/master/firmware/voodoospark.cpp) using the [Spark web editor](https://www.spark.io/build)	 and wait for the breathing cyan light
 
-	[VoodooSpark](https://github.com/voodootikigod/voodoospark) will allow a local TCP connection instead of the usual HTTP protocol that we used in the earlier example. This allows controlling the Spark Core in real-time. Finally, we will use Express to create the routes that will trigger the rotation of the servo through an html page.
+	[VoodooSpark](https://github.com/voodootikigod/voodoospark) will allow a local TCP connection instead of the usual HTTP protocol that we used in the earlier example. This allows controlling the Spark Core in real-time. Finally, we will use Express to create the routes that will trigger the rotation of the servo through an `html` page.
 
 	![](img/servo-actual.jpg)
 
@@ -486,5 +486,3 @@ Hardware and electronics interfacing might be daunting at first, but the good ne
 I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challenging at start, but seeing your code literally come to life in the physical world will be immensely rewarding.
 
 Come and hack away with electronics and JavaScript!
-
-
