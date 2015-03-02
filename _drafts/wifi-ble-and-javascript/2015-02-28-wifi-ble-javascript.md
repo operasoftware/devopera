@@ -78,7 +78,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 	</tr>
 
 	<tr>
-		<td>3</td>
+		<td>4</td>
 		<td>
 			<strong>jumper cables</strong>
 			<ul>
@@ -92,7 +92,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 	</tr>
 
 	<tr>
-		<td>4</td>
+		<td>5</td>
 		<td>
 			<strong>light dependent resistor (LDR or photocell)</strong>
 			<ul>
@@ -106,7 +106,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 	</tr>
 
 	<tr>
-		<td>5</td>
+		<td>6</td>
 		<td>
 			<strong>1 k ohm resistor</strong>
 			<ul>
@@ -120,7 +120,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 	</tr>
 
 	<tr>
-		<td>6</td>
+		<td>7</td>
 		<td>
 			<strong>Servo</strong>
 			<ul>
@@ -134,7 +134,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 		<td><a href="http://www.adafruit.com/product/169">Adafruit</a> or <a href="https://www.sparkfun.com/products/9065">Sparkfun</a></td>
 	</tr>
 	<tr>
-		<td>7</td>
+		<td>8</td>
 		<td>
 			<strong>10 micro Farad Capacitor</strong>
 			<ul>
@@ -197,7 +197,6 @@ In the next couple of sections we will go through 2 examples. These 2 examples s
 	While you see the breathing cyan on the Spark Core, take the [LDR firmware code](code/spark-ldr/ldr.ino) and flash it onto the Spark Core with the [web ide](https://www.spark.io/build). The firmware code does a couple of things. Every 200ms, it take the analog reading from pin `A0`, to which we connected the LDR and then publishes it as a `Variable` on the Spark Cloud which can then be queried using standard Web APIs. For easy detection and debugging we are also turning on and off the on-board LED `D7` to indicate our code is running.
 
 	![](img/ldr-actual.jpg)
-
 - install the npm module [spark](https://www.npmjs.com/package/spark)
 
 	```shell
