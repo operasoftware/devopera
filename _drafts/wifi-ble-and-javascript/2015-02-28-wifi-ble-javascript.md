@@ -283,7 +283,6 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 	[VoodooSpark](https://github.com/voodootikigod/voodoospark) will allow a local TCP connection instead of the usual HTTP protocol that we used in the earlier example. This allows controlling the Spark Core in real-time. Finally, we will use Express to create the routes that will trigger the rotation of the servo through an `html` page.
 
 	![](img/servo-actual.jpg)
-
 - Use JavaScript to send signals to the servo via a web browser
 
 	```sh
@@ -402,7 +401,6 @@ The main npm module that we will be using to interface with the SensorTag is [se
 	```
 
 	Because the events 'connect', 'discovered' and 'disconnected' should happen sequentially when the previous event is done, we will use the npm module `async` to deal with callbacks.
-
 - Read the IR Temperature once between the events 'discovered' and 'disconnected':
 
 	```js
