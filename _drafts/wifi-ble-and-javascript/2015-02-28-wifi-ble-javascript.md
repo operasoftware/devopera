@@ -44,12 +44,12 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 		<td>
 			<strong>Spark Core</strong>
 			<ul>
-				<li><a href="http://docs.spark.io/assets/images/spark-pinout.png">pinout diagram</a></li>
+				<li><a href="http://docs.spark.io/assets/images/spark-pinout.jpg">pinout diagram</a></li>
 				<li><a href="http://docs.spark.io/start/#step-3-connect-your-core-to-the-cloud">LED colors/actions and their meanings</a></li>
 			</ul>
 		</td>
-		<td><img height=150 src="img/spark.png"></td>
-		<td><img height=150 src="img/spark-pic.png"></td>
+		<td><img height=150 src="img/spark.jpg"></td>
+		<td><img height=150 src="img/spark-pic.jpg"></td>
 		<td><a href="https://store.spark.io/?product=spark-core">Spark store</a></td>
 	</tr>
 	<tr>
@@ -57,7 +57,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 		<td>
 			<strong><a href="http://en.wikipedia.org/wiki/Breadboard">Breadboard</a></strong>
 			<ul>
-				<li>Wiring pattern in a breadboard<br><img src="img/wiring.png"></li>
+				<li>Wiring pattern in a breadboard<br><img src="img/wiring.jpg"></li>
 				<li>
 					<strong>Horizontal rows</strong>
 					<br>Red: HIGH or Vin (~6V)
@@ -65,8 +65,8 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 				</li>
 			</ul>
 		</td>
-		<td><img height=150 src="img/breadboard.png"></td>
-		<td><img height=150 src="img/breadboard-pic.png"></td>
+		<td><img height=150 src="img/breadboard.jpg"></td>
+		<td><img height=150 src="img/breadboard-pic.jpg"></td>
 		<td>You will <a href="http://docs.spark.io/start/">get a breadboard when you buy the Spark Core</a></td>
 	</tr>
 	<tr>
@@ -75,7 +75,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 			<strong><a href="http://www.amazon.com/Micro-USB-to-Cable/dp/B004GETLY2">Micro-B to USB cable</a></strong>
 		</td>
 		<td></td>
-		<td><img height=150 src="img/usb.png"></td>
+		<td><img height=150 src="img/usb.jpg"></td>
 		<td>You will <a href="http://docs.spark.io/start/">get this cable when you buy the Spark Core</a> or this might be your mobile charger.</td>
 	</tr>
 
@@ -88,7 +88,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 				</li>
 			</ul>
 		</td>
-		<td><img height=150 src="img/cables.png"></td>
+		<td><img height=150 src="img/cables.jpg"></td>
 		<td><img height=150 src="img/cables-pic.jpg"></td>
 		<td><a href="http://www.adafruit.com/product/758">Adafruit</a> or <a href="https://www.sparkfun.com/products/8431">Sparkfun</a></td>
 	</tr>
@@ -131,8 +131,8 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 				<li><strong>Tip: </strong>For wiring - <em>Yellow</em> is Signal, <em>Orange</em> is +5V (VIN), <em>Brown</em> is ground</li>
 			</ul>
 		</td>
-		<td><img src="img/servo.png"></td>
-		<td><img src="img/servo-pic.png"></td>
+		<td><img src="img/servo.jpg"></td>
+		<td><img src="img/servo-pic.jpg"></td>
 		<td><a href="http://www.adafruit.com/product/169">Adafruit</a> or <a href="https://www.sparkfun.com/products/9065">Sparkfun</a></td>
 	</tr>
 	<tr>
@@ -188,7 +188,7 @@ In the next couple of sections we will go through 2 examples. These 2 examples s
 
 	As the very first step, we will learn how to blink an LED. This is the `hello world` of electronics. [Open the Spark web editor](https://www.spark.io/build) and [copy the simple blinking LED code](code/spark-blinky/blinky.ino). Here it uses a [simple firmware code](http://docs.spark.io/firmware/) to blink the on-board LED `D7` every 1 second. To flash the firmware code onto your Spark Core, click the `flash` icon at the top of the left sidebar and wait for the LED on board to come back to the breathing cyan pattern. You should see the LED `D7` blinking.
 
-	![](img/flash.png)
+	![](img/flash.jpg)
 - wire up the breadboard for detecting photocell values
 
 	Here we will need a couple of jumper wires, 1 photocell and 1kΩ resistor. We will firstly wireup the `Red` wire to pin `Vin` and the horizontal lines `+`. And similarly, the `Black` wire to pin `Gnd` and the horizontal line `-`. Next we will connect the photocell (or LDR) to pin `A0` on the Spark Core and the ground, horizontal line `-`. LDRs do not have any polarity, so we can connect either of the legs to `Gnd`. Finally, with the 1kΩ resistor, we will connect to pins `A0` and `Vin` on the Spark Core. This circuit might remind you of your [high school physics voltage divider circuit](http://www.build-electronic-circuits.com/ldr-circuit-diagram/).
@@ -267,7 +267,7 @@ In the next couple of sections we will go through 2 examples. These 2 examples s
 
 	You should next see a stream of sensor data. Shine a torch light on the LDR and the value should change and a comment would be displayed. Cover the LDR totally and you will see another comment! So now whatever you do physically in the real world can be sensed with node and JavaScript! Such sensors can be used to sense open/close cupboard doors and light levels in rooms.
 
-	![](img/ldr-result.png)
+	![](img/ldr-result.jpg)
 
 This is just the start in playing with the [Spark JavaScript API](http://docs.spark.io/javascript/#getting-started-logging-in) for the server-side. There are many more [firmware code libraries](https://www.spark.io/build#libraries) available that you can instantly flash to the your SparkCore and collect the results via the [events api](http://docs.spark.io/javascript/#supported-commands-events).
 
@@ -354,9 +354,9 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 	$ node servo.js
 	```
 
-	![](img/servo-output.png)
+	![](img/servo-output.jpg)
 
-	<video loop="loop">
+	<video loop="loop" controls="controls">
 	  <source src="https://dl.dropboxusercontent.com/u/57433/servo.mp4" type="video/mp4" />
 	</video>
 
