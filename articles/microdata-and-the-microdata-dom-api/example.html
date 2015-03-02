@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Microdata example</title>
+
+		<script>
+			document.createElement('article');
+			document.createElement('section');
+			document.createElement('aside');
+			document.createElement('hgroup');
+			document.createElement('nav');
+			document.createElement('header');
+			document.createElement('footer');
+			document.createElement('figure');
+			document.createElement('figcaption');
+		</script>
+
+		<style>
+			header, footer, section, article, nav, aside, hgroup, figure, figcaption, video {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>Me: defined in microdata</h1>
+
+		<article itemscope itemtype="http://example.org/biography">
+			<h2 itemprop="name">Chris Mills</h2>
+			<p><img itemprop="image" src="http://www.w3.org/wiki/images/0/0b/Chrismills.jpg" alt="Photo of Chris Mills - this is me"></p>
+			<ul>
+				<li>Nationality: <span itemprop="nationality">British</span></li>
+				<li>Age: <span itemprop="age">33</span></li>
+				<li>Date of birth: <time itemprop="birthday" datetime="1978-06-27">June 27th 1978</time></li>
+				<li>Hair colour: <span itemprop="colour">Brown</span></li>
+				<li>
+					<div itemscope itemprop="band" itemtype="http://example.org/band" itemref="members">
+						<h3>My band</h3>
+						<ul>
+							<li>Name: <span itemprop="name">Conquest of Steel</span></li>
+							<li>Band: <span itemprop="style">Heavy metal</span></li>
+							<li>Members: <span itemprop="bandsize">5</span></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</article>
+
+		<ul id="members">
+			<li itemprop="member">Claymore Clark</li>
+			<li itemprop="member">DD Danger</li>
+			<li itemprop="member">Dan Durrant</li>
+			<li itemprop="member">Chris Mills</li>
+			<li itemprop="member">Vic Victory</li>
+		</ul>
+
+		<script>
+			var biography = document.getItems("http://example.org/biography")[0];
+			alert('Hello ' + biography.properties['name'][0].textContent + '!');
+		</script>
+
+	</body>
+</html>
