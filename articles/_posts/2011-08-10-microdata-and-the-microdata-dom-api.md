@@ -24,7 +24,7 @@ Microdata tries to improve on what we’ve already had in the past: providing a 
 
 Microdata consists of a series of _items_, each of which has data attributed to it via a series of properties, which consist of name-value pairs. So, in the true fashion of a vain web geek, let’s define ourselves in microdata! You can write your own example, following my lead.
 
-Note: You can check whether your microdata syntax is correct by running it through the experimental [HTML5 validator](https://html5.validator.nu/). You should also open up [my live microdata example]({{ page.id }}/microdata_example.html) and refer to it as you go through the text below.
+Note: You can check whether your microdata syntax is correct by running it through the experimental [HTML5 validator](https://html5.validator.nu/). You should also open up [my live microdata example]({{ page.id }}/example.html) and refer to it as you go through the text below.
 
 First of all, we can define any suitable element as an item container, using the `itemscope` attribute:
 
@@ -196,7 +196,7 @@ Would grab our biography item and store it in a variable. Once you’ve grabbed 
 
 And there’s not much more to it than that, really. You can find some more examples to study in the [Using the microdata DOM API](https://html.spec.whatwg.org/multipage/microdata.html#using-the-microdata-dom-api) section of the spec. Alternatively, [Philip Jägenstedt](http://blog.foolip.org/) has created a rather nifty [live microdata viewer](http://foolip.org/microdatajs/live/), which is rather useful for checking your code, and extracting values from it quickly in different formats, e.g. JSON.
 
-You can [view my microdata example]({{ page.id }}/microdata_example.html) live. Also be sure to check out [Opera’s microdata tests](http://w3c-test.org/html/tests/submission/Opera/microdata/001.html) — these have only recently been submitted to the W3C test suite.
+You can [view my microdata example]({{ page.id }}/example.html) live. Also be sure to check out [Opera’s microdata tests](http://w3c-test.org/html/tests/submission/Opera/microdata/001.html) — these have only recently been submitted to the W3C test suite.
 
 ## Summary
 
