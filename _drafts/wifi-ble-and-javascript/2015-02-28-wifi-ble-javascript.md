@@ -19,7 +19,7 @@ license: cc-by-3.0
 
 The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us the web developers? This article will explore 2 common wireless protocol, [WiFi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
-In this article we will explore 2 platforms: [Spark](https://www.spark.io/) for WiFi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. It will be fun!
+In this article we will explore 2 platforms: [Spark](https://www.spark.io/) for WiFi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](/code). It will be fun!
 
 ### Pre-requisites
 
@@ -169,7 +169,7 @@ If you have setup the Spark Core correctly, you will see a breathing cyan light 
 
 <iframe src="https://vine.co/v/hFwubhA3JXV/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
-Next, we will note down 2 important values (device is and access token) for your Spark Core that will be needed for any secure communication. Open [Spark's web editor](https://www.spark.io/build), Spark Build for this and note down these 2 values.
+Next, we will note down 2 important values (device id and access token) for your Spark Core that will be needed for any secure communication. Open [Spark's web editor](https://www.spark.io/build), Spark Build for this and note down these 2 values.
 
 ![](img/device-id-access-token.jpg)
 

@@ -1,3 +1,6 @@
+// run in command line:
+// EMAIL="{SPARK_EMAIL}" PASSWORD="SPARK_PASSWORD" node ldr.js
+
 var spark = require('spark');
 
 spark.login({
@@ -13,7 +16,7 @@ spark.login({
         // console.log('\nDevices: ', devices);
         var device = devices[0];
 
-        // cover and uncover the LDR and see the values change
+        // getLight is an event published by the firmware code in ldr.ino file
         device.onEvent('getLight', function(reply) {
           var now = new Date();
 
@@ -21,9 +24,11 @@ spark.login({
           	// some fun derivations based on the sensor value
             if (parseInt(reply.data) < 1000) {
             	// shine a torch light on the LDR
+            	// amend 1000 according to your environment lighting
               console.log(now.getSeconds() + ': ' + reply.data + ' bright!');
             } else if (parseInt(reply.data) > 2000) {
-            	// cover the LDR
+            	// cover the LDR with your finger
+            	// amend 2000 according to your environment lighting
               console.log(now.getSeconds() + ': ' + reply.data + ' dark! ');
             } else {
               console.log(now.getSeconds() + ': ' + reply.data);
