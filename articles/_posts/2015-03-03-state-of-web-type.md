@@ -86,7 +86,6 @@ Until the `font-rendering` property is implemented we can use [the CSS Font Load
 This is just the tip of the iceberg. To compete with and surpass the typographic quality of print publications we need support for drop caps, colour fonts, advanced layout (akin to shapes, exclusions and regions), sizing text to fit a container, widows and orphans, balanced text, math typesetting (though MathML is now an officially recommended standard, [Chromium](https://www.chromestatus.com/features/5240822173794304) and [Internet Explorer](https://status.modern.ie/mathml) have no plans to support it), and so on. Clearly, we need to do better and push browser vendors for these features if we want to improve the web’s reading experience. You can help out by participating in the W3C mailing lists, building demos, implementing polyfills and drafting specifications for features _you_ want to see. Don’t worry about getting it right the first time. Sometimes the best thing to come out of a specification is a new and better specification.
 
 <figure class="figure">
-
 	<a href="http://stateofwebtype.com/"><img src="{{ page.id }}/figure-1.png" alt="" class="figure__media"></a>
 </figure>
 
