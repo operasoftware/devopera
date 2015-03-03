@@ -5,6 +5,7 @@ authors:
 intro: 'Typography has a long and rich history, but much has been lost in the transition to the web. Let’s take a look at some of the features we need for an optimal and beautiful reading experience.'
 tags:
 - css
+- design
 license: cc-by-3.0
 ---
 
