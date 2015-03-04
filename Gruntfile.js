@@ -121,13 +121,14 @@ module.exports = function(grunt) {
 				},
 				files: [
 					'_site/**/*.html',
-					'_site/styles/screen.css'
+					'_site/styles/*.css'
 				]
 			}
 		},
 		copy: {
 			task: {
 				files: [{
+					expand: true,
 					src: 'styles/*.css',
 					dest: '_site/'
 				}]
