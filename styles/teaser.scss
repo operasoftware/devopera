@@ -6,8 +6,8 @@
 
 	@include clearfix;
 
-	padding-bottom:16px;
-	break-inside:avoid;
+	margin-bottom:16px;
+	border-bottom:1px solid $grey-20;
 
 	&__link {
 		@extend %link--black;
@@ -26,7 +26,6 @@
 		max-width:100%;
 		}
 	&__content {
-		border-bottom:1px solid $grey-20;
 		}
 		&__meta {
 			padding-bottom:18px;
@@ -52,15 +51,19 @@
 
 .teaser {
 
-	&--blog &__content {
+	// Blog
+
+	&--blog {
 		border-bottom-color:$blue-15;
 		}
-	&--last {
+
+	// Last
+
+	&:last-child {
+		margin-bottom:-1px;
 		padding-bottom:0;
+		border-bottom:none;
 		}
-		&--last &__content {
-			border-bottom:none;
-			}
 
 	}
 
@@ -68,59 +71,43 @@
 
 .teaser {
 
-	&--featured &__title {
+	&__title--featured {
 		margin-bottom:5px;
 		font-size:24px;
 		}
+	&__picture--featured {
 
-	// Palm to Lap
+		}
+	&__content--featured {
 
-	@include layout-breakpoint($palm-to-lap) {
-		&--featured &__title {
-			margin-top:-3px;
-			}
 		}
 
 	// Lap to Desk
 
 	@include layout-breakpoint($lap-to-desk) {
-		&--featured {
-			&:after {
-				border-bottom:1px solid $grey-20;
-				}
+
+		&__picture--featured {
+			@include span(3 at 1 of 6);
+			margin-bottom:22px;
 			}
-			&--featured &__title {
-				margin-top:-3px;
-				}
-			&--featured &__picture {
-				@include span(3 at 1 of 6);
-				margin-bottom:22px;
-				}
-			&--featured &__content {
-				@include span(3 at 4 of 6 last);
-				border-bottom:none;
-				}
+		&__content--featured {
+			@include span(3 at 4 of 6 last);
+			}
+
 		}
 
 	// Desk and Up
 
 	@include layout-breakpoint($desk-and-up) {
-		&--featured {
-			padding-bottom:0;
+
+		&__picture--featured {
+			@include span(3 at 1 of 6);
+			margin-bottom:22px;
 			}
-			&--featured &__title {
-				margin-top:-7px;
-				margin-bottom:2px;
-				font-size:36px;
-				}
-			&--featured &__picture {
-				@include span(3 at 1 of 6);
-				margin-bottom:22px;
-				}
-			&--featured &__content {
-				@include span(3 at 4 of 6);
-				border-bottom:none;
-				}
+		&__content--featured {
+			@include span(3 at 4 of 6);
+			}
+
 		}
 
 	}

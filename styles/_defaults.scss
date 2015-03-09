@@ -23,9 +23,10 @@ $desk:1024px;
 
 $up-to-palm:max-width ($palm - 1px);
 $palm-to-lap:$palm ($lap - 1px);
-$lap-to-desk:$lap ($desk - 1px);
 $up-to-lap:max-width ($lap - 1px);
 $lap-and-up:$lap;
+$lap-to-desk:$lap ($desk - 1px);
+$up-to-desk:max-width ($desk - 1px);
 $desk-and-up:$desk;
 
 $layouts:(

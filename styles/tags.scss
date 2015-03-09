@@ -30,6 +30,10 @@
 		@include breakpoint($lap-to-desk) {
 			font-size:22px;
 			}
+		@include breakpoint($up-to-desk) {
+			padding-top:12px;
+			border-top:1px solid $grey-20;
+			}
 		@include breakpoint($desk-and-up) {
 			font-size:24px;
 			}

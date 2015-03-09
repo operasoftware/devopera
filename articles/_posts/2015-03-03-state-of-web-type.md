@@ -7,7 +7,6 @@ tags:
 - css
 - design
 license: cc-by-3.0
-featured: featured
 ---
 
 Typography has a long and rich history, but much has been lost in the transition to the web. While browser support for typography has advanced a lot in the last couple years, we still have a long way to go. Features print designers take for granted are either nonexistent on the web or have insufficient browser support in order to be useful. Challenges unique to web browsers such as responsive design and web font loading could use some improvement as well. Let’s take a look at some of the features we need for an optimal and beautiful reading experience.
