@@ -7,7 +7,6 @@ tags:
 - extensions
 - webrtc
 cover: png
-featured: featured
 license: cc-by-3.0
 ---
 
