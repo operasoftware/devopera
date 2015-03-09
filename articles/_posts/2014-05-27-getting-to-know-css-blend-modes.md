@@ -266,7 +266,7 @@ Of course, in SVG you can also use `feImage` and `feBlend` to add Blend Modes, b
 
 ## Browser Support
 
-Chromium-based browsers have the most support for CSS Blend Modes at the moment (they have support for both `background-blend-mode` as well as `mix-blend-mode`). To enable support for CSS Blend Modes in Opera, type _opera:flags_ in the address bar and enable the option: _Enable experimental Web Platform features_. For Chrome, you need to enable the same option by going to _chrome://flags_.
+Chromium-based browsers (i.e. Chrome and Opera) have the most support for CSS Blend Modes at the moment: they have support for both `background-blend-mode` as well as `mix-blend-mode`.
 
 Firefox right now does not have support for the `isolation` property, but you can still play with the other properties by searching for them in `about:config` and enabling it there. Safari is slated to have support for blend modes in the next release coming along with OS X Yosemite, and you can already play with it by downloading the latest nightlies. Internet Explorer does not have support for these properties thus far.
 
