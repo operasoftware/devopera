@@ -1,4 +1,4 @@
-{% assign class = include.class | prepend:' ' %}
+{% assign mod = include.mod %}
 {% assign tags = include.tags %}
 {% assign entries = include.entries %}
 
@@ -12,8 +12,8 @@
 
 {% assign object = object | keep_unique | sort %}
 
-<ul class="tags{{ class }}">
+<ul block="tags" mod="{{ mod }}">
 {% for tag in object %}
-	<li class="tags__item"><a class="tags__link" href="/tags/{{ tag }}/">{{ tag }}</a></li>
+	<li elem="item"><a elem="link" href="/tags/{{ tag }}/">{{ tag }}</a></li>
 {% endfor %}
 </ul>

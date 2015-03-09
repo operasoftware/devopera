@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<main class="layout">
-	<div class="layout__content">
-		<article role="main" class="content">
-			<h1 class="content__title">{{ page.title | markdownline }}</h1>
+<main block="layout">
+	<div elem="content">
+		<article block="content" role="main">
+			<h1 elem="title">{{ page.title | markdownline }}</h1>
 			<p>{% include link.html link=page.link %}</p>
 			{{ content }}
 			<h2>{{ page.title | split: ' ' | first | append: '’s' | replace: 's’s','s’' }} articles:</h2>
@@ -21,7 +21,7 @@ layout: default
 			</ul>
 		</article>
 	</div>
-	<div class="layout__aside">
+	<div elem="aside">
 		<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
 	</div>
 </main>

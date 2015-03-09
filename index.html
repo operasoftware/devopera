@@ -3,49 +3,47 @@ layout: default
 ---
 
 {% assign articles = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
-{% assign articles_list = articles | where: 'featured', null %}
-{% assign articles_featured = articles | where: 'featured', 'featured' %}
+{% assign articles_regular = articles | where: 'featured', null %}
+{% assign articles_featured = articles | where: 'featured', 'featured' | last %}
+
 {% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
 
-<main class="layout">
-	<div class="layout__content">
-		<section class="featured">
-			<h2 class="featured__title">Featured</h2>
-			<div class="featured__article">
-{% for article in articles_featured %}
-	{% include teaser.html entry=article class='teaser--featured' %}
-{% endfor %}
+<main block="layout">
+	<div elem="content">
+		<section block="featured">
+			<h2 elem="title">Featured</h2>
+			<div elem="article">
+{% if articles_featured %}
+	{% include teaser.html entry=articles_featured mod='featured' %}
+{% endif %}
 			</div>
-			<div class="featured__tags">
-				{% include tags.html tags=site.data.tags-featured class='tags--featured' %}
+			<div elem="tags">
+				{% include tags.html tags=site.data.tags-featured mod='featured' %}
 			</div>
 		</section>
-		<section class="archive">
-			<h2 class="archive__title"><a href="/articles/">Articles</a></h2>
-			<div data-columns class="archive__columns">
-{% for article in articles_list limit:16 %}
+		<section block="archive">
+			<h2 elem="title">
+				<a href="/articles/">Articles</a>
+			</h2>
+			<div data-columns elem="columns">
+{% for article in articles_regular limit:16 %}
 	{% include teaser.html entry=article %}
 {% endfor %}
 			</div>
 		</section>
 	</div>
-	<div class="layout__aside">
-		<section class="blog-column">
-			<h2 class="blog-column__title"><a href="/blog/">Blog</a></h2>
+	<div elem="aside">
+		<section block="blog">
+			<h2 elem="title"><a href="/blog/">Blog</a></h2>
 {% for post in blog limit:6 %}
-	{% if forloop.last %}
-		{% assign teaser_class = 'teaser--blog teaser--last' %}
-	{% else %}
-		{% assign teaser_class = 'teaser--blog' %}
-	{% endif %}
-	{% include teaser.html entry=post class=teaser_class %}
+	{% include teaser.html entry=post mod='blog' %}
 {% endfor %}
 		</section>
-		<section class="linkbait">
-			<h2 class="linkbait__title">Useful Links</h2>
+		<section block="linkbait">
+			<h2 elem="title">Useful Links</h2>
 			<ul>
 {% for item in site.data.links-main %}
-				<li><a class="linkbait__link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
+				<li><a elem="link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
 {% endfor %}
 			</ul>
 		</section>

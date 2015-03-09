@@ -68,6 +68,21 @@ module.exports = function(grunt) {
 				dest: '_site/feed/'
 			}
 		},
+		beml: {
+			options: {
+				elemPrefix: '__',
+				modPrefix: '--'
+			},
+			files: {
+				expand: true,
+				cwd: '_site/',
+				src: [
+					'**/index.html',
+					'errors/*.html'
+				],
+				dest: '_site/'
+			}
+		},
 		connect: {
 			task: {
 				options: {
@@ -112,7 +127,7 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'jekyll:limit',
-					'htmlmin'
+					'html'
 				]
 			},
 			livereload: {
@@ -183,10 +198,15 @@ module.exports = function(grunt) {
 		'cssmin'
 	]);
 
+	grunt.registerTask('html', [
+		'htmlmin',
+		'beml'
+	]);
+
 	grunt.registerTask('default', [
 		'styles',
 		'jekyll:limit',
-		'htmlmin',
+		'html',
 		'connect',
 		'watch'
 	]);
@@ -194,7 +214,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [
 		'styles',
 		'jekyll:full',
-		'htmlmin',
+		'html',
 		'connect:task:keepalive'
 	]);
 

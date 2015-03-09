@@ -4,11 +4,11 @@ layout: default
 
 {% assign entries = site.posts | where: 'language', 'en' %}
 
-<main class="layout">
-	<div class="layout__content">
-		<section class="archive">
-			<h2 class="archive__title">Entries with “{{ page.tag }}” tag</h2>
-			<div data-columns class="archive__columns">
+<main block="layout">
+	<div elem="content">
+		<section block="archive">
+			<h2 elem="title">Entries with “{{ page.tag }}” tag</h2>
+			<div data-columns elem="columns">
 {% for entry in entries %}
 	{% for tag in entry.tags %}
 		{% if tag == page.tag %}
@@ -19,7 +19,7 @@ layout: default
 			</div>
 		</section>
 	</div>
-	<div class="layout__aside">
+	<div elem="aside">
 		{% include tags.html entries=entries %}
 	</div>
 </main>

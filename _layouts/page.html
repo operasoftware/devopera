@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<main class="layout">
-	<div class="layout__content">
-		<article role="main" class="content">
-			<h1 class="content__title">{{ page.title | markdownline }}</h1>
+<main block="layout">
+	<div elem="content">
+		<article elem="content" role="main">
+			<h1 elem="title">{{ page.title | markdownline }}</h1>
 			{{ content }}
 		</article>
 	</div>

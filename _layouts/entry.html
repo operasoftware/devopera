@@ -2,42 +2,42 @@
 layout: default
 ---
 
-<main class="layout">
-	<div class="layout__content layout__content--entry">
+<main block="layout">
+	<div elem="content" mod="entry">
 		<article role="main" lang="{{ page.language }}">
-			<h1 class="content__title">{{ page.title | markdownline }}</h1>
-			<div class="content">
+			<h1 elem="title">{{ page.title | markdownline }}</h1>
+			<div block="content">
 				{{ content }}
 			</div>
 		</article>
 	</div>
-	<div class="layout__aside">
+	<div elem="aside">
 		<p>{% include entry__author.html entry=page %}</p>
-		<p class="entry">
+		<p block="entry">
 
 			Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
 				{{ page.date | date: '%-d %B %Y' }}
 			</time>
 
-			in <a href="/{{ page.category }}/" class="entry__category">
+			in <a elem="category" href="/{{ page.category }}/">
 				{{ page.category | capitalize }}
 			</a>.
 
 			{% include entry__translations.html entry=page %}
 
 			{% if page.translator %}
-				{% if page.source %}<a href="{{ page.source }}" class="entry__link">{% endif %}
+				{% if page.source %}<a elem="link" href="{{ page.source }}">{% endif %}
 					Translated by {{ page.translator }}
 				{% if page.source %}</a>{% endif %}.
 			{% endif %}
 
-			<a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}" class="entry__link">
+			<a elem="link" href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">
 				Edit this article on GitHub
 			</a>.
 
 			<small>
 				Licensed under a
-				<a href="{{ site.data.licenses[page.license].link }}" class="entry__link">
+				<a elem="link" href="{{ site.data.licenses[page.license].link }}">
 					{{ site.data.licenses[page.license].text }}
 				</a> license.
 			</small>

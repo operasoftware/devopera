@@ -1,6 +1,6 @@
 {% assign entry = include.entry %}
 {% assign link = include.link %}
-{% assign class = include.class %}
+{% assign elem = include.elem %}
 
 {% assign site_authors = site.authors | sort %}
 
@@ -9,7 +9,7 @@
 		{% assign author_slug = author.url | split: '/' | last %}
 		{% if entry.authors contains author_slug %}
 			{% if link %}
-				<a href="{{ author.url }}"{{ class | prepend: ' class="' | append: '"' }}>
+				<a elem="{{ elem }}" href="{{ author.url }}">
 			{% endif %}
 					{{ author.title }}
 			{% if link %}

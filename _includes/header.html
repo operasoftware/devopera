@@ -15,17 +15,17 @@
 </head>
 <body>
 
-	<header class="header" role="banner">
+	<header block="header" role="banner">
 {% if page.url == '/index.html' %}
-		<h1 class="header__logo">
-			<span class="header__logo-type">
-				Dev.<span class="header__logo-opera">Opera</span>
+		<h1 elem="logo">
+			<span elem="logo-type">
+				Dev.<span elem="logo-opera">Opera</span>
 			</span>
 		</h1>
 {% else %}
-		<span class="header__logo">
-			<a href="/" class="header__logo-type">
-				Dev.<span class="header__logo-opera">Opera</span>
+		<span elem="logo">
+			<a elem="logo-type" href="/">
+				Dev.<span elem="logo-opera">Opera</span>
 			</a>
 		</span>
 {% endif %}
@@ -33,8 +33,8 @@
 			{% include menu.html items='Blog|Articles|Extensions|TV' %}
 		</nav>
 		<form action="/search/" method="get">
-			<fieldset class="header__search">
-				<input type="search" name="q" placeholder="Search Dev.Opera" class="header__search-field">
+			<fieldset elem="search">
+				<input elem="search-field" type="search" name="q" placeholder="Search Dev.Opera">
 			</fieldset>
 		</form>
 	</header>

@@ -4,18 +4,18 @@ layout: default
 
 {% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
 
-<main class="layout">
-	<div class="layout__content">
-		<section class="archive">
-			<h1 class="archive__title">{{ page.title }}</h1>
-			<div data-columns class="archive__columns">
+<main block="layout">
+	<div elem="content">
+		<section block="archive">
+			<h1 elem="title">{{ page.title }}</h1>
+			<div data-columns elem="columns">
 {% for entry in entries %}
 	{% include teaser.html entry=entry %}
 {% endfor %}
 			</div>
 		</section>
 	</div>
-	<div class="layout__aside">
+	<div elem="aside">
 		{% include tags.html entries=entries %}
 	</div>
 </main>
