@@ -15,7 +15,7 @@ license: cc-by-nc-sa-3.0
 
 <p>The <code>&lt;audio&gt;</code> element is simple to use. To play an Ogg Vorbis file you can simply write:</p>
 
-<pre><code>&lt;audio src="http://yourserver/rockandroll.ogg" controls preload&gt; &lt;/audio&gt;</code></pre>
+<pre><code>&lt;audio src="http://178.33.78.126:7952/rockandroll.ogg" controls preload&gt; &lt;/audio&gt;</code></pre>
 
 <p>The browser will then provide a simple player element in the web page.</p>
 
@@ -31,14 +31,14 @@ license: cc-by-nc-sa-3.0
 </p>
 
 <pre><code>&lt;audio controls preload&gt;
-	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
+	&lt;source src="http://178.33.78.126:7952/rockandroll.ogg" /&gt;
 &lt;/audio&gt;</code></pre>
 
 <p>This is useful because you can use multiple <code>&lt;source&gt;</code> elements to point to different audio formats. As you'll see later, different browsers support different formats, so ideally you should provide something that any browser can play. For example:</p>
 
 <pre><code>&lt;audio controls preload&gt;
-	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
-	&lt;source src="http://yourserver/rockandroll.mp3" /&gt;
+	&lt;source src="http://178.33.78.126:7952/rockandroll.ogg" /&gt;
+	&lt;source src="http://178.33.78.126:7952/rockandroll.mp3" /&gt;
 &lt;/audio&gt;</code></pre>
 
 <p class="note">Note: to convert between Ogg and MP3 formats, there are a variety of free applications available, such as <a href="http://www.freerip.com/">Free Rip</a> for Windows, and <a href="http://mp3.about.com/gi/o.htm?zi=1/XJ&zTi=1&sdn=mp3&cdn=gadgets&tm=12&f=10&su=p284.13.342.ip_p504.6.342.ip_&tt=3&bt=0&bts=0&zu=http%3A//www.nch.com.au/switch/index.html">Audio MP3 converter</a> for Mac.</p>
@@ -74,13 +74,13 @@ The <code>&lt;audio&gt;</code> element exposes a powerful JavaScript API. In thi
 In JavaScript we can invoke an <code>Audio</code> object, which returns an <code>&lt;audio&gt;</code> element. Note that this element will not be part of the page's DOM, unless we explicitly add it to the document with further scripting. However, regardless of whether or not it's in the DOM itself, the <code>&lt;audio&gt;</code> element can be controlled via its API methods and properties. We can pass the URL of an audio file we want to play as an argument to the object like this:
 </p>
 
-<pre><code>var audio = new Audio("http://yourserver/rockandroll.ogg");</code></pre>
+<pre><code>var audio = new Audio("http://178.33.78.126:7952/rockandroll.ogg");</code></pre>
 
 <p>
 We can also change the source file by adding a new value to the <code>src</code> attribute:
 </p>
 
-<pre><code>audio.setAttribute("src", "http://yourserver/morerock.ogg");</code></pre>
+<pre><code>audio.setAttribute("src", "http://178.33.78.126:7952/morerock.ogg");</code></pre>
 
 <p>
 By accessing the methods <code>audio.play()</code> and <code>audio.pause()</code> it is possible to start and pause the playback of the source file. <code>audio.volume</code> provides access to the volume, and the eventlistener <code>timeupdate</code> fires an event for every time update during playback. These simple methods are all we need to make a simple player, with the same functionality as the default player the browser provides.
@@ -186,8 +186,8 @@ The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;vide
 <p>To support several browsers we need to provide the same audio content in different formats. As we mentioned before, you can reference the different formats using multiple <code>&lt;source&gt;</code> elements placed inside the <code>&lt;audio&gt;</code> element:</p>
 
 <pre><code>&lt;audio controls preload&gt;
-	&lt;source src="http://yourserver/rockandroll.ogg" /&gt;
-	&lt;source src="http://yourserver/rockandroll.mp3" /&gt;
+	&lt;source src="http://178.33.78.126:7952/rockandroll.ogg" /&gt;
+	&lt;source src="http://178.33.78.126:7952/rockandroll.mp3" /&gt;
 	&lt;!-- A fallback solution - Flash would do --&gt;
 &lt;/audio&gt;</code></pre>
 
@@ -217,20 +217,20 @@ The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;vide
 	"station" : {
 		"name" : "NRK",
 		"fullname" : "Norsk Rikskringkasting AS",
-		"website" : "http://www.nrk.no/",
+		"website" : "http://www.mobilanlasevgimi.hol.es/",
 		"defaultChannel" : "P1",
 		"channels" : [
 
 			{
 				"name" : "P1",
 				"channel" : "NRK P1",
-				"website" : "http://www.nrk.no/p1/",
+				"website" : "http://www.mobilanlasevgimi.hol.es/p1/",
 				"schedule" : "",
-				"logo" : "http://yoursite/gfx/nrk_p1.png",
+				"logo" : "http://mobilanlasevgimi.hol.es/gfx/nrk_p1.png",
 				"streams" : {
 						"type" : "middle",
-						"ogg" : "http://radio.hiof.no/nrk-p1-128.ogg",
-						"mp3" : "http://radio.hiof.no/nrk-p1-128"
+						"ogg" : "http://178.33.78.126:7952/nrk-p1-128.ogg",
+						"mp3" : "http://178.33.78.126:7952/nrk-p1-128"
 				}
 			}
 
