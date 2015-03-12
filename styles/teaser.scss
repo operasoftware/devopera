@@ -25,8 +25,6 @@
 		width:100%;
 		max-width:100%;
 		}
-	&__content {
-		}
 		&__meta {
 			padding-bottom:18px;
 			font-size:12px;
@@ -75,17 +73,14 @@
 		margin-bottom:5px;
 		font-size:24px;
 		}
-	&__picture--featured {
-
-		}
-	&__content--featured {
-
-		}
 
 	// Lap to Desk
 
 	@include layout-breakpoint($lap-to-desk) {
 
+		&__title--featured {
+			font-size:30px;
+			}
 		&__picture--featured {
 			@include span(3 at 1 of 6);
 			margin-bottom:22px;
@@ -100,6 +95,9 @@
 
 	@include layout-breakpoint($desk-and-up) {
 
+		&__title--featured {
+			font-size:36px;
+			}
 		&__picture--featured {
 			@include span(3 at 1 of 6);
 			margin-bottom:22px;
