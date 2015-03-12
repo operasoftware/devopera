@@ -8,7 +8,9 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 2. Download and install [Node.js](http://nodejs.org) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
-5. Run `npm install grunt-cli -g` to install Grunt globally.
+5. Run `npm install bower -g` to install Bower globally.
+6. Run `bower install`.
+7. Run `npm install grunt-cli -g` to install Grunt globally.
 
 Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [.editorconfig](.editorconfig) file.
 
