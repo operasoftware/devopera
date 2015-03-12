@@ -96,6 +96,7 @@
 	@include layout-breakpoint($desk-and-up) {
 
 		&__title--featured {
+			margin-top:-7px;
 			font-size:36px;
 			}
 		&__picture--featured {
