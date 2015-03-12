@@ -42,7 +42,7 @@ Unfortunately, even if a browser supports the OpenType feature syntax it is not 
 Many web developers think of justification as a solved problem (or worse, one to avoid). Set `text-align` to `justify` and you’re done, right? Not quite. The algorithm used in all web browsers is actually a very ineffective justification implementation. Tools like TeX and InDesign use a more sophisticated line breaking algorithm that optimises break points over an entire paragraph, whereas browsers only look at a single line. This leads to suboptimal justification and large spaces between words.
 
 <figure block="figure">
-	<img src="{{ page.id }}/figure-3.png" alt="" elem"media">
+	<img src="{{ page.id }}/figure-3.png" alt="" elem="media">
 	<figcaption elem="caption">Left: a justified paragraph, middle: extraneous word spaces are highlighted, right: word spacing and justification is improved by enabling hyphenation.</figcaption>
 </figure>
 
