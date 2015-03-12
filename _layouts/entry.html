@@ -5,7 +5,7 @@ layout: default
 <main block="layout">
 	<div elem="content" mod="entry">
 		<article role="main" lang="{{ page.language }}">
-			<h1 elem="title">{{ page.title | markdownline }}</h1>
+			<h1 block="content" elem="title">{{ page.title | markdownline }}</h1>
 			<div block="content">
 				{{ content }}
 			</div>
