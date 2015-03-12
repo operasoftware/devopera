@@ -12,7 +12,7 @@ layout: default
 		</article>
 	</div>
 	<div elem="aside">
-		<p>{% include entry__author.html entry=page %}</p>
+		<p block="authors" mod="fixed">{% include entry__author.html entry=page %}</p>
 		<p block="entry">
 
 			Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">

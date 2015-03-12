@@ -1,0 +1,44 @@
+// -------------------------------
+// Author
+// -------------------------------
+
+.authors {
+
+	margin:0 auto 16px;
+	text-align:center;
+
+	// Fixed
+
+	&--fixed {
+		width:8em;
+		}
+
+	// Link
+
+	&__link {
+
+		@extend %link--blue;
+
+		display:block;
+
+		& + & {
+			margin-top:16px;
+			}
+
+		}
+
+	// Picture
+
+	&__picture {
+
+		max-width:100%;
+
+		// Mods
+
+		&--rounded {
+			border-radius:50%;
+			}
+
+		}
+
+	}

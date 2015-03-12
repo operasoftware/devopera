@@ -5,8 +5,8 @@
 	{% for author in site_authors %}
 		{% assign author_slug = author.url | split: '/' | last %}
 		{% if entry.authors contains author_slug %}
-			<a href="{{ author.url }}" block="author">
-				<img elem="picture" src="/authors/{{ author_slug }}.jpg" alt="{{ author.title }}">
+			<a elem="link" href="{{ author.url }}">
+				<img elem="picture" mod="rounded" src="/authors/{{ author_slug }}.jpg" alt="{{ author.title }}">
 				<span elem="name">{{ author.title }}</span>
 			</a>
 		{% endif %}

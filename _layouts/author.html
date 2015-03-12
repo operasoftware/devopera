@@ -22,6 +22,10 @@ layout: default
 		</article>
 	</div>
 	<div elem="aside">
-		<img src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
+		<p block="authors">
+			<a href="{{ page.link }}">
+				<img elem="picture" src="/authors/{{ page.url | split: '/' | last }}.jpg" alt="{{ page.title }}">
+			</a>
+		</p>
 	</div>
 </main>
