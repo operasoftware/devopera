@@ -4,13 +4,41 @@
 
 .linkbait {
 
-	padding:0 15px;
+	margin-bottom:24px;
+
+	// Title
 
 	&__title {
 		@include offscreen;
 		}
+
+	// Item
+
+	&__item {
+
+		margin-bottom:10px;
+		padding-left:12px;
+		line-height:1.3;
+
+		&:before {
+			position:absolute;
+			margin-left:-12px;
+			content:'\2022';
+			color:$grey-40;
+			}
+
+		}
+
+	// Link
+
 	&__link {
 		@extend %link--blue;
+		}
+
+	// Lap and Up
+
+	@include layout-breakpoint($lap-and-up) {
+		padding:0 15px;
 		}
 
 	}

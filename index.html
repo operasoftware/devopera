@@ -43,7 +43,7 @@ layout: default
 			<h2 elem="title">Useful Links</h2>
 			<ul>
 {% for item in site.data.links-main %}
-				<li><a elem="link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
+				<li elem="item"><a elem="link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
 {% endfor %}
 			</ul>
 		</section>
