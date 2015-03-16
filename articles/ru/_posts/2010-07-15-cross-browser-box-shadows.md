@@ -109,9 +109,9 @@ CSS3-свойство `box-shadow` хорошо поддержкивается �
 
 Визуальное отображаение показано на рисунке 1.
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/IEbefore.png" alt="Просто синий блок" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Рисунок 1: Простой `<div>` с фиксированной высотой и шириной</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/IEbefore.png" alt="Просто синий блок">
+	<figcaption elem="caption" markdown="span">Рисунок 1: Простой `<div>` с фиксированной высотой и шириной</figcaption>
 </figure>
 
 Добавим к нему фильтр `blur` с силой размытия 5, используя следующий фильтр:
@@ -128,9 +128,9 @@ CSS3-свойство `box-shadow` хорошо поддержкивается �
 
 Теперь блок отображается с размытием, что идентично тени, используемой в CSS `box-shadow`. Результат показан на рисунке 2.
 
-<figure class="figure__media">
-	<img src="/articles/cross-browser-box-shadows/IEblured.png" alt="Синий блок с размытием в Internet Explorer" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Рисунок 2: Наш простой `<div>` с примененным размытием</figcaption>
+<figure elem="media">
+	<img elem="media" src="/articles/cross-browser-box-shadows/IEblured.png" alt="Синий блок с размытием в Internet Explorer">
+	<figcaption elem="caption" markdown="span">Рисунок 2: Наш простой `<div>` с примененным размытием</figcaption>
 </figure>
 
 ## Создание выпадающей тени в IE и в других браузерах {#IEandNormal}
@@ -164,9 +164,9 @@ CSS3-свойство `box-shadow` хорошо поддержкивается �
 
 Результат показан на рисунке 3:
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/ieShadowForComparison.png" alt="CSS box-shadow в IE" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Рисунок 3: Выпадающая тень для IE, показанная без родительского блока, по отношению к которому она применяется</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/ieShadowForComparison.png" alt="CSS box-shadow в IE">
+	<figcaption elem="caption" markdown="span">Рисунок 3: Выпадающая тень для IE, показанная без родительского блока, по отношению к которому она применяется</figcaption>
 </figure>
 
 ## Соединяя примеры вместе {#realization}
@@ -253,9 +253,9 @@ CSS3-свойство `box-shadow` хорошо поддержкивается �
 
 После того, как всё сказано и сделано, конечный результат представлен на рисунке 4:
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/outsetPrimer.png" alt="Результат кроссбраузерной box-shadow тени в разных браузерах" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Рисунок 4: Финальный пример, показывающий выпадающую тень в современных браузерах и в текущих версиях IE</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/outsetPrimer.png" alt="Результат кроссбраузерной box-shadow тени в разных браузерах">
+	<figcaption elem="caption" markdown="span">Рисунок 4: Финальный пример, показывающий выпадающую тень в современных браузерах и в текущих версиях IE</figcaption>
 </figure>
 
 ## Внутренняя тень {#inner}
@@ -330,9 +330,9 @@ CSS3-свойство `box-shadow` хорошо поддержкивается �
 
 Код приведенный выше дает нам следующий результат, показанный на Рисунке 5.
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/insetPrimer.png" alt="Результат кроссбраузерной box-shadow тени в разных браузерах" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Рисунок 5: Финальный пример с внутренней тенью, показывающий тень в современных браузерах и в текущих версиях IE</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/insetPrimer.png" alt="Результат кроссбраузерной box-shadow тени в разных браузерах">
+	<figcaption elem="caption" markdown="span">Рисунок 5: Финальный пример с внутренней тенью, показывающий тень в современных браузерах и в текущих версиях IE</figcaption>
 </figure>
 
 ## Заключение {#summary}

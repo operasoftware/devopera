@@ -15,9 +15,9 @@ With that said, my team has recently started employing scrolling animation with 
 [1]: http://yourlocalsecurity.com/resources/adt-timeline
 [2]: https://github.com/Prinzhorn/skrollr
 
-<figure class="figure">
-	<img src="{{ page.id }}/wd-screen-resized.png" alt="Main Zombie Graphic" class="figure__media">
-	<figcaption class="figure__caption">Main Zombie Graphic</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/wd-screen-resized.png" alt="Main Zombie Graphic">
+	<figcaption elem="caption">Main Zombie Graphic</figcaption>
 </figure>
 
 Simply defined, Skrollr is a plugin that allows you to create precise scroll-based animations (parallax or otherwise) using just HTML and CSS. There are a lot of advantages to this, which you can learn more about in the [Skrollr documentation][4]. In this tutorial, we’ll also use JavaScript and some sprites to create a simple walk cycle animation that responds forwards and backwards to the user’s scrolling. By the end of this tutorial, we’ll have a character walking through a parallax environment, transforming from human to zombie.
@@ -189,9 +189,9 @@ You can [check out the progress we have achieved so far][7]. It’s pretty nice,
 
 Now it’s time to give our character some life. I’ve provided a .png sprite with all of the necessary frames for our character’s walk cycle, first as a human, and then as a zombie. We’re going to write some JavaScript to cycle through these frames in our background image, based on the user’s scrolling. We’ll have it work forwards and backwards, which should give the piece a very game-like feel.
 
-<figure class="figure">
-	<img src="{{ page.id }}/zombifysprites-resized.jpg" alt="Sprite showing zombification" class="figure__media">
-	<figcaption class="figure__caption">Sprite showing zombification</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/zombifysprites-resized.jpg" alt="Sprite showing zombification">
+	<figcaption elem="caption">Sprite showing zombification</figcaption>
 </figure>
 
 While it would be possible to have Skrollr animate the background image using `data-*` attributes, that would require us to write dozens of them, so instead we’ll write our own function. This will give us a little more flexibility, and obviously make the code a lot more maintainable. When we call `skrollr.init()` we’ll pass our function in as a parameter, specifically as the `beforerender` listener function, which is automatically called right before Skrollr renders each frame of animations. (You can read more about `beforerender` and Skrollr’s other options in the docs.) `beforerender` is passed an object with a property called `curTop` that will be especially helpful for us, as it contains the current scroll top offset, or in other words, the number of pixels the user has scrolled from the top of the page. We’ll use this to determine if we need to shift to the next or previous sprite in our background image, or if it is time to transition from human to zombie.

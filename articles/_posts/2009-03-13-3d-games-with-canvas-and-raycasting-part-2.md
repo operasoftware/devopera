@@ -23,9 +23,9 @@ This is my second article about creating Wolfenstein-like games with JavaScript,
 [3]: /articles/3d-games-with-canvas-and-raycasting-part-1/
 [4]: {{ page.id }}/step-4-enemies.htm
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/game-layout.png" alt="The finished example, as built up throughout the rest of this article" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The finished example, as built up throughout the rest of this article</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/game-layout.png" alt="The finished example, as built up throughout the rest of this article">
+	<figcaption elem="caption">Figure 1: The finished example, as built up throughout the rest of this article</figcaption>
 </figure>
 
 The full (MIT licensed) sample [code is available for download here][6].
@@ -265,11 +265,11 @@ The player can now smoothly slide along the walls and will retain a minimum dist
 
 With that out of the way, let’s turn to adding a bit of detail to the world. So far it’s just been open space and walls, so it’s about time we got some interior decorating done. I’ll be using the sprite images shown below:
 
-<figure class="figure">
-	<img src="{{ page.id }}/table-chairs.png" alt="Table and chairs sprite" class="figure__media">
-	<img src="{{ page.id }}/armor.png" alt="Suit of armour sprite" class="figure__media">
-	<img src="{{ page.id }}/plant-green.png" alt="Plant sprite" class="figure__media">
-	<img src="{{ page.id }}/lamp.png" alt="Lamp sprite" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/table-chairs.png" alt="Table and chairs sprite">
+	<img elem="media" src="{{ page.id }}/armor.png" alt="Suit of armour sprite">
+	<img elem="media" src="{{ page.id }}/plant-green.png" alt="Plant sprite">
+	<img elem="media" src="{{ page.id }}/lamp.png" alt="Lamp sprite">
 </figure>
 
 First I’ll define the available item types. This can be done with a simple array of objects containing two pieces of info, the path to the image and a boolean value that defines whether or not this item type blocks the player from going through it.
@@ -420,9 +420,9 @@ And now, finally, I’ll turn my attention to the actual rendering of the sprite
 
 Optionally, an approach similar to the one used in the raycasting with an `oldStyles` object can be implemented for sprites as well, possibly gaining a bit of extra performance. Anyway, now the sprites are placed correctly on the screen and only those that are in the player’s view are shown. However, as seen in Figure 2 things are a bit messed up since I haven’t dealt with the z-order of the elements on the screen yet.
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/figure-z-issues.png" alt="Sprites with z-index issues" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Sprites with z-index issues</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/figure-z-issues.png" alt="Sprites with z-index issues">
+	<figcaption elem="caption">Figure 2: Sprites with z-index issues</figcaption>
 </figure>
 
 If we were actually drawing the walls and sprites pixel by pixel, we would have to sort these objects according to how far away there were and draw the most distant ones first to keep objects that should be occluded from rendering in front of closer objects. Fortunately the situation is much simpler as we are dealing with HTML elements. This means we have a powerful tool to solve this problem, the CSS `zIndex` property. I can simply set the `zIndex` property to a value proportional to the distance to the sprite or wall strip in question. Then the browser will take care of the rest and save us from having to do any sorting at all.
@@ -446,9 +446,9 @@ If we were actually drawing the walls and sprites pixel by pixel, we would have 
 
 And now the sprites and walls are layered in the correct order, as seen in Figure 3. Since a high `zIndex` means the DOM element will be displayed on top of lower-indexed elements we use the negative value of the distance. Since the distances are rather small numerically, we also multiply by 1000 (or some other high number) to get sufficiently different integer values.
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/figure-z-fixed.png" alt="The z-index has now been fixed" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 3: Sprites and walls in z-index harmony][15]</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/figure-z-fixed.png" alt="The z-index has now been fixed">
+	<figcaption elem="caption" markdown="span">[Figure 3: Sprites and walls in z-index harmony][15]</figcaption>
 </figure>
 
 [15]: {{ page.id }}/step-3-sprites.htm
@@ -467,9 +467,9 @@ Finally, the `isBlocking` function is altered to also take blocking sprites into
 
 So far our little castle has been quite safe, so how about we add a little excitement? To do this, the first thing I need to do is add a second kind of sprite, one that is capable of moving around the level in the same way as the player. Figure 4 shows the enemy sprite image I’ll be using (this is a set of CSS sprites — all one image):
 
-<figure class="figure" id="figure-4">
-	<img src="{{ page.id }}/guard.png" alt="Single image containing all 13 guard sprites" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: Guard sprite with 13 states</figcaption>
+<figure block="figure" id="figure-4">
+	<img elem="media" src="{{ page.id }}/guard.png" alt="Single image containing all 13 guard sprites">
+	<figcaption elem="caption">Figure 4: Guard sprite with 13 states</figcaption>
 </figure>
 
 I will define the enemy types and the locations of enemies on the map in much same way as I did with the static sprites. Each enemy type (so far there’s just the one guard type) has a few properties such as movement speed, rotation speed and the total number of “states”. The states correspond to each image in the sprite set above — so an enemy in state 0 is standing still while an enemy in state 10 is lying dead on the floor. In this article I’ll only be using the first 5 states to make the guards chase us around the map. I’ll save combat for another day.
@@ -608,9 +608,9 @@ As you can see, the `oldStyles` object is once again used to make sure the `styl
 
 So, that gives us a couple of enemies standing around, looking at us suspiciously but not doing much else, as shown in Figure 5.
 
-<figure class="figure" id="figure-5">
-	<img src="{{ page.id }}/figure-static-enemy.png" alt="The guards don’t want to move yet" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: The guards don’t want to move yet</figcaption>
+<figure block="figure" id="figure-5">
+	<img elem="media" src="{{ page.id }}/figure-static-enemy.png" alt="The guards don’t want to move yet">
+	<figcaption elem="caption">Figure 5: The guards don’t want to move yet</figcaption>
 </figure>
 
 Time for some AI! Ok, intelligence might be stretching it, but let’s see if we can’t at least get them to move a bit. In the `gameCycle` I’ll add a call to an `ai` function, which will take care of evaluating the enemy actions. Next I’ll make a small modification to the `move` function. Until now, it’s been tied to the `player` object so let’s change it so it takes two arguments, the `timeDelta` I introduced earlier and a new `entity`, which is any object that has the properties needed to move it (ie `x`, `y`, `moveSpeed`, `rot`, etc). The `move` function is then modified to use this object instead of the `player` object and our call in `gameCycle` is changed accordingly. This means that I can now use the same function to move other things — like enemies.
@@ -653,9 +653,9 @@ This is also where I set the `state` property used above in the `renderEnemies` 
 
 And there we have it! As illustrated in Figure 6, the guards will now run after the player until they are within a certain distance. Admittedly, this is not the most advanced AI yet, but it’s a start. Trying to trap them in corners makes for good fun, for a few minutes anyway!
 
-<figure class="figure" id="figure-6">
-	<img src="{{ page.id }}/figure-chased-by-enemies.png" alt="Being chased by evil guards" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 6: Being chased by evil guards][19]</figcaption>
+<figure block="figure" id="figure-6">
+	<img elem="media" src="{{ page.id }}/figure-chased-by-enemies.png" alt="Being chased by evil guards">
+	<figcaption elem="caption" markdown="span">[Figure 6: Being chased by evil guards][19]</figcaption>
 </figure>
 
 [19]: {{ page.id }}/step-4-enemies.htm

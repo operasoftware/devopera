@@ -89,9 +89,9 @@ For Web browsers that do not currently support `<video>`, it’s possible to inc
 		Download my awesome video in <a href=myVideo.webm>WebM</a> or <a href=myVideo.mp4>MP4</a> format
 	</video>
 
-<figure class="figure">
-	<img src="{{ page.id }}/opera-standard-video-controls.jpg" alt="Default video element with standard Opera controls" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">A `<video>` element with native browser controls in Opera</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/opera-standard-video-controls.jpg" alt="Default video element with standard Opera controls">
+	<figcaption elem="caption" markdown="span">A `<video>` element with native browser controls in Opera</figcaption>
 </figure>
 
 There are more attributes we’re not covering in our examples. They are:
@@ -238,9 +238,9 @@ This certainly won’t win any design awards, and the page doesn’t really degr
 
 [22]: {{ page.id }}/fancy-controls/
 
-<figure class="figure">
-	<img src="{{ page.id }}/fancy-javascript-controls.jpg" alt="Custom video controls" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Custom `<video>` controls, using nothing more than HTML, CSS and JavaScript</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/fancy-javascript-controls.jpg" alt="Custom video controls">
+	<figcaption elem="caption" markdown="span">Custom `<video>` controls, using nothing more than HTML, CSS and JavaScript</figcaption>
 </figure>
 
 The JavaScript has become a lot more verbose, and would benefit from a bit of a clean-up and refactoring but it hopefully gives a glimpse of the new powerful possibilities that HTML5 video opens up: with just a bit of web standards knowledge, it’s now easy for web developers to create custom video controls that perfectly complement their site designs, without the need to create bespoke Flash video players.
@@ -340,9 +340,9 @@ Looking past the slightly strange return values of this method, we can see how, 
 
 If we now combine this approach (and keep in mind that this is only a very simplified example – there are many more elegant ways to solve this particular problem) with our more visually appealing custom controller, we already have the basis for a rather nifty video player…all put together with nothing more than pure web standards and the power of the new HTML5 native video support.
 
-<figure class="figure">
-	<img src="{{ page.id }}/fancy-swap.jpg" alt="A basic video gallery" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">A basic video gallery/playlist using the `<video>` element</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/fancy-swap.jpg" alt="A basic video gallery">
+	<figcaption elem="caption" markdown="span">A basic video gallery/playlist using the `<video>` element</figcaption>
 </figure>
 
 [Example 4: fancy video swap][26].

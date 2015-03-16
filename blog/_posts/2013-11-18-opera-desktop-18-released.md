@@ -32,9 +32,9 @@ Note how the tab that’s accessing your video or audio has a pulsing red beacon
 [5]: http://www.webrtc.org
 [6]: http://www.appear.in/
 
-<figure class="figure">
-	<img src="{{ page.id }}/webcam.jpg" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Read more about the technology behind appear.in][8]</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/webcam.jpg">
+	<figcaption elem="caption" markdown="span">[Read more about the technology behind appear.in][8]</figcaption>
 </figure>
 
 [8]: http://comoyo.github.io/blog/2013/08/05/video-meetings-in-the-browser-using-webrtc-and-angularjs/

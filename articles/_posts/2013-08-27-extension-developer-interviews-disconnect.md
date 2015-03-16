@@ -26,9 +26,9 @@ Brian: [Disconnect][4] is a browser extension that lets you visualize and block 
 
 [4]: https://addons.opera.com/en/extensions/details/disconnect/
 
-<figure class="figure">
-	<img src="{{ page.id }}/team.jpg" alt="The Disconnect team" class="figure__media">
-	<figcaption class="figure__caption">The Disconnect team</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/team.jpg" alt="The Disconnect team">
+	<figcaption elem="caption">The Disconnect team</figcaption>
 </figure>
 
 **How many people work on Disconnect? Where are you based?**

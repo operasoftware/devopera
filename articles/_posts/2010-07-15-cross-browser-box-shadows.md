@@ -111,9 +111,9 @@ I have learnt a lot about CSS-filters in IE recently. First of all, the [blur fi
 
 This looks like figure 1.
 
-<figure class="figure">
-	<img src="{{ page.id }}/IEbefore.png" alt="Just blue layer" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 1: A simple `<div>` element with fixed dimensions</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/IEbefore.png" alt="Just blue layer">
+	<figcaption elem="caption" markdown="span">Figure 1: A simple `<div>` element with fixed dimensions</figcaption>
 </figure>
 
 We can give this a blur radius of 5 pixels in IE using the following filter:
@@ -130,9 +130,9 @@ We can give this a blur radius of 5 pixels in IE using the following filter:
 
 This gives the effect shown in figure 2 when applied to our example.
 
-<figure class="figure">
-	<img src="{{ page.id }}/IEblured.png" alt="Blue layer with blur in Internet Explorer" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 2: Our simple `<div>` element with a blur filter applied</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/IEblured.png" alt="Blue layer with blur in Internet Explorer">
+	<figcaption elem="caption" markdown="span">Figure 2: Our simple `<div>` element with a blur filter applied</figcaption>
 </figure>
 
 ## Creating the drop shadow in IE and in other browsers {#IEandNormal}
@@ -166,9 +166,9 @@ To replicate this effect in IE, we include a special “ghost” `<div>` element
 
 The result of this is shown in figure 3:
 
-<figure class="figure">
-	<img src="{{ page.id }}/ieShadowForComparison.png" alt="CSS box-shadow in IE" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: The IE drop shadow, shown on its own without the content it is shadowing</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/ieShadowForComparison.png" alt="CSS box-shadow in IE">
+	<figcaption elem="caption">Figure 3: The IE drop shadow, shown on its own without the content it is shadowing</figcaption>
 </figure>
 
 ## Putting the example together {#realization}
@@ -255,9 +255,9 @@ So in the code, we need to use positioning to emulate the shadow offsets created
 
 So, after all is said and done, the final result we are left with is similar to that shown in figure 4:
 
-<figure class="figure">
-	<img src="{{ page.id }}/outsetPrimer.png" alt="Obtained result of cross-browser box-shadow in different browsers" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: The final example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/outsetPrimer.png" alt="Obtained result of cross-browser box-shadow in different browsers">
+	<figcaption elem="caption">Figure 4: The final example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
 </figure>
 
 ## Inner shadow {#inner}
@@ -332,9 +332,9 @@ Again, the same peculiarities of calculating values of `left`, `top`, `right`, `
 
 The code above gives us the rendering shown in figure 5.
 
-<figure class="figure">
-	<img src="{{ page.id }}/insetPrimer.png" alt="Obtained result of cross-browser box-shadow in different browsers" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: The final inner shadow example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/insetPrimer.png" alt="Obtained result of cross-browser box-shadow in different browsers">
+	<figcaption elem="caption">Figure 5: The final inner shadow example, showing the drop shadow in modern browsers and in current versions of IE</figcaption>
 </figure>
 
 ## Summary {#summary}

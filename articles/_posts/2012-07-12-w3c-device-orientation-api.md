@@ -25,9 +25,9 @@ In this article we’ll look at the basics of how device orientation works, alon
 
 ## Our Co-ordinate system
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/device-axes.png" alt="Explanation of coordinate system" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A diagram of the coordinate system used by device orientation</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/device-axes.png" alt="Explanation of coordinate system">
+	<figcaption elem="caption">Figure 1: A diagram of the coordinate system used by device orientation</figcaption>
 </figure>
 
 We need a frame of reference to compare the change in direction and orientation whenever a device is moved. For this purpose, we’ll assume a standard XYZ co-ordinate system. If you get your device and put it flat on a level surface like a table, with the screen facing up, you can imagine the X axis running from side to side (left to right) on the device (cutting the space horizontally into a lower half and an upper half), the Y axis running from bottom to top (cutting the space vertically into a left half and a right half), and the Z axis being a line running from the surface of the screen up to the sky. This axis system is illustrated in Figure 1.
@@ -36,23 +36,23 @@ Now that we have the co-ordinate system in place, we can make sense of rotating 
 
 - **Alpha:** The amount of rotation around the Z axis is known as alpha. To better understand it, consider the example of a set of helicopter blades rotating. They are not going up or down, or moving to the side. They are just rotating along the Z-axis by `alpha` degrees per microsecond. The range is from 0 to 360 degrees.
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/device-alpha.png" alt="Device rotated along Z axis" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Device rotated along Z axis</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/device-alpha.png" alt="Device rotated along Z axis">
+	<figcaption elem="caption">Figure 2: Device rotated along Z axis</figcaption>
 </figure>
 
 - **Beta:** The amount of rotation around the X-axis is known as beta. For example, when a plane is taking off from the runway, it is going in a straight line but in an upward direction. In that case, it is turning along the X-axis. The range is from -180 to 180 degrees.
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/device-beta.png" alt="Device rotated along X axis" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: Device rotated along X axis</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/device-beta.png" alt="Device rotated along X axis">
+	<figcaption elem="caption">Figure 3: Device rotated along X axis</figcaption>
 </figure>
 
 - **Gamma:** The amount of rotation around the Y-Axis is known as gamma. For example, if a plane is going straight (with wings parallel to the ground), but then wants to make a turn, it rotates with one wing moving towards the ground and the other wing moving further away. The range is from -90 to 90 degrees.
 
-<figure class="figure" id="figure-4">
-	<img src="{{ page.id }}/device-gamma.png" alt="Device rotated along Y axis" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: Device rotated along Y axis</figcaption>
+<figure block="figure" id="figure-4">
+	<img elem="media" src="{{ page.id }}/device-gamma.png" alt="Device rotated along Y axis">
+	<figcaption elem="caption">Figure 4: Device rotated along Y axis</figcaption>
 </figure>
 
 ## The `deviceorientation` event

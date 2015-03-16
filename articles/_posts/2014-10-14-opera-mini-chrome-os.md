@@ -8,14 +8,14 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure">
-	<img src="{{ page.id }}/great-success.jpg" alt="Opera Mini running on a Chromebook" class="figure__media">
-	<figcaption class="figure__caption">Opera Mini running on a Chromebook</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/great-success.jpg" alt="Opera Mini running on a Chromebook">
+	<figcaption elem="caption">Opera Mini running on a Chromebook</figcaption>
 </figure>
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/installing.jpg" alt="Opera Mini installing on Chrome OS" class="figure__media">
-	<figcaption class="figure__caption">Opera Mini installing on Chrome OS</figcaption>
+<figure block="figure" mod="right">
+	<img elem="media" src="{{ page.id }}/installing.jpg" alt="Opera Mini installing on Chrome OS">
+	<figcaption elem="caption">Opera Mini installing on Chrome OS</figcaption>
 </figure>
 
 This summer Google previewed a way to run Android applications on Chromebooks using ARC — App Runtime for Chrome. At this time there are only a handful of applications that work on Chrome OS through official channels. However, there are tools and workarounds that allow users to run their favorite Android applications on Chromebooks. One of the applications that works well on Chrome OS is the Opera Mini browser.
@@ -26,9 +26,9 @@ It might sound a bit insane at first — why would you want to run a browser ins
 
 Here’s the fastest way to get Opera Mini running on your Chromebook, using an Android device and a custom runtime called _ARChon_ (the difference in runtimes is explained later in the article):
 
-<figure class="figure">
-	<iframe src="https://www.youtube.com/embed/FA2UDyTB7lI" width="570" height="320" allowfullscreen class="figure__media"></iframe>
-	<figcaption class="figure__caption">Quick demo of Opera Mini with ARC</figcaption>
+<figure block="figure">
+	<iframe src="https://www.youtube.com/embed/FA2UDyTB7lI" width="570" height="320" allowfullscreen elem="media"></iframe>
+	<figcaption elem="caption">Quick demo of Opera Mini with ARC</figcaption>
 </figure>
 
 1. [Download Opera Mini](https://play.google.com/store/apps/details?id=com.opera.mini.android&hl=en) and [the ARChon Packager](https://play.google.com/store/apps/details?id=me.bpear.archonpackager&hl=en) onto your Android device from Google Play. (Alternatively, [the Opera Mini APK can be downloaded here](http://www.opera.com/mobile/download/versions/).)
@@ -37,25 +37,25 @@ Here’s the fastest way to get Opera Mini running on your Chromebook, using an 
 4. Unpack both ZIP files (the runtime and the application), navigate to
  `chrome://extensions/`, enable “Developer mode” and load the two unpacked directories as “Unpacked extensions”. Make sure to load the runtime first. After you load the two directories just press “Launch” in the Opera Mini extension. The application will also be added to your Chrome OS launcher.
 
-<figure class="figure">
-	<img src="{{ page.id }}/chrome-os-launcher.jpg" alt="Chrome OS launcher integration" class="figure__media">
-	<figcaption class="figure__caption">Chrome OS launcher integration</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/chrome-os-launcher.jpg" alt="Chrome OS launcher integration">
+	<figcaption elem="caption">Chrome OS launcher integration</figcaption>
 </figure>
 
 If you already use the official Android applications on Chrome OS, [follow the instructions on GitHub](https://github.com/vladikoff/chromeos-apk#setup-for-chrome-os--app-conversion) to get Opera Mini working with the official runtime. At this time the official runtime can only run up to four applications on Chrome OS. If you do not have an Android device, then obtain the Opera Mini APK file and follow the instructions of the [`chromeos-apk`](https://github.com/vladikoff/chromeos-apk) project to get Opera Mini working using a Node.js conversion tool.
 
-<figure class="figure">
-	<img src="{{ page.id }}/opera-mini-web-page.jpg" alt="Opera Mini browsing in style" class="figure__media">
-	<figcaption class="figure__caption">Opera Mini browsing in style</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/opera-mini-web-page.jpg" alt="Opera Mini browsing in style">
+	<figcaption elem="caption">Opera Mini browsing in style</figcaption>
 </figure>
 
 Most Opera Mini features, such as “Downloads” and “Find in page” work really well on Chrome OS. When you restart the application, your settings and history get saved. If you remove and reinstall the application, you get a fresh copy with all settings reset.
 
 Most of the screenshots in this article are taken on a Chromebook Pixel. However, using the ARChon runtime for 32-bit and ARM devices you can try out Opera Mini on older hardware. This screenshot below is taken on a 32-bit Samsung Series 5 Chromebook from 2011:
 
-<figure class="figure">
-	<img src="{{ page.id }}/old-hardware.jpg" alt="Opera Mini on older Chromebooks" class="figure__media">
-	<figcaption class="figure__caption">Opera Mini on older Chromebooks</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/old-hardware.jpg" alt="Opera Mini on older Chromebooks">
+	<figcaption elem="caption">Opera Mini on older Chromebooks</figcaption>
 </figure>
 
 ## The Technology

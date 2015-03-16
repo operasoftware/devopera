@@ -25,9 +25,9 @@ license: cc-by-3.0
 
 ## 简介
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/tvstore.png" alt="" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Opera电视商店界面</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/tvstore.png" alt="">
+	<figcaption elem="caption" markdown="span">Opera电视商店界面</figcaption>
 </figure>
 
 Opera电视商店向用户提供了一个基于HTML5应用程序的发布平台。
@@ -60,9 +60,9 @@ Opera电视商店向用户提供了一个基于HTML5应用程序的发布平台�
 
 ## 用户距离
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/10feetUx2.png" alt="10-feet UX" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">10-英尺的用户体验: 用户坐在距离电视10英尺的沙发上.</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/10feetUx2.png" alt="10-feet UX">
+	<figcaption elem="caption" markdown="span">10-英尺的用户体验: 用户坐在距离电视10英尺的沙发上.</figcaption>
 </figure>
 
 电视界面也被称为10英尺的用户界面，因为10英尺(3米)是用户离电视的大概距离。对于设计师来说，这意味着“大屏幕”不能真正的被认为是“大”,你要保持和开发移动应用程序一样的考虑。
@@ -75,9 +75,9 @@ Opera电视商店向用户提供了一个基于HTML5应用程序的发布平台�
 - 在电视上，深色背景上的浅色内容通常更易读。
 - 不要试图认为大屏幕意味着你可以包含更多的内容。少就是多。只包括相关内容,保持在每个界面的内容降到最低。
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/comparisonTvMobile.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">一个远距离观看的电视和一个近距离使用的手机没什么不同。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/comparisonTvMobile.png">
+	<figcaption elem="caption" markdown="span">一个远距离观看的电视和一个近距离使用的手机没什么不同。</figcaption>
 </figure>
 
 虽然电视的察觉类似于移动设备尺寸,但设计一个移动应用并期望它在电视上也能用是不实际的：
@@ -87,9 +87,9 @@ Opera电视商店向用户提供了一个基于HTML5应用程序的发布平台�
 
 ## 分辨率和过扫描
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/overscan.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">如果您忽视了过扫瞄，您的应用程序可能部分在电视屏幕之外不可见。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/overscan.png">
+	<figcaption elem="caption" markdown="span">如果您忽视了过扫瞄，您的应用程序可能部分在电视屏幕之外不可见。</figcaption>
 </figure>
 
 Opera电视商店运行在1280×720像素的分辨率上。但是，因为过扫描的关系，你必须保证您的应用程序在1216×684像素下也显示良好。
@@ -111,28 +111,28 @@ Opera电视商店运行在1280×720像素的分辨率上。但是，因为过扫
 
 在设计应用程序的布局时，我们建议您对屏幕上元素最多分为2组：菜单和内容。你也可以将菜单单独放在一个屏幕上，在另一个屏幕上对内容进行全屏设计。
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-justContent.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">例子：内容和菜单分布在不同屏幕上。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/layout-justContent.png">
+	<figcaption elem="caption" markdown="span">例子：内容和菜单分布在不同屏幕上。</figcaption>
 </figure>
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-horizontal.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">例子：横向布局的电视应用程序。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/layout-horizontal.png">
+	<figcaption elem="caption" markdown="span">例子：横向布局的电视应用程序。</figcaption>
 </figure>
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/layout-vertical.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">例子：纵向布局的电视应用程序。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/layout-vertical.png">
+	<figcaption elem="caption" markdown="span">例子：纵向布局的电视应用程序。</figcaption>
 </figure>
 
 ## 导航
 
 电视用户普遍受遥控器上 只有四个方向的导航键限制： (上, 下, 左, 右) 。
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/remote.jpg" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">保证所有内容用方向键，确认键 和 退出键 (在某些遥控器上也可能是 返回键) 可访问。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/remote.jpg">
+	<figcaption elem="caption" markdown="span">保证所有内容用方向键，确认键 和 退出键 (在某些遥控器上也可能是 返回键) 可访问。</figcaption>
 </figure>
 
 尽管一个全面的电视浏览器可能支持方向导航和虚拟鼠标的使用，但在Opera电视商店上只支持方向导航。
@@ -151,18 +151,18 @@ Opera电视商店运行在1280×720像素的分辨率上。但是，因为过扫
 
 在某个你经常用到，却需要很多次点击的操作上，你可以去使用颜色快捷键。但注意，并不是要用上所有的颜色键，因为用户只可能记住1,2个而不是所有的4个快捷键的用途。用4个用户可能一个都记不住，再根据您的应用程序来判断用几个快捷键。
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/shortcuts.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">例子：颜色快捷键提示信息的位置。</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/shortcuts.png">
+	<figcaption elem="caption" markdown="span">例子：颜色快捷键提示信息的位置。</figcaption>
 </figure>
 
 ## 文本输入
 
 基本来说，电视和用户的互动很少，除了必要的音量调整和更换频道。尽管现在的摇控器拥有更多功能，但对于文本输入还是很原始，基本没有优化。
 
-<figure class="figure">
-	<img src="/articles/design-considerations-for-opera-tv-store-applications/remote2.jpg" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">电视摇控器</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/design-considerations-for-opera-tv-store-applications/remote2.jpg">
+	<figcaption elem="caption" markdown="span">电视摇控器</figcaption>
 </figure>
 
 某些电视会附带外加键盘，但用户基本还是只使用摇控器。我们建议您设计应用程序时候，尽量避免文本输入。以下是一些建议：

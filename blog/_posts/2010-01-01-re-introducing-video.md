@@ -31,9 +31,9 @@ While the core codec support remains the same, almost everything else has change
 * Selecting source depending on codec and environment (e.g. `<source src="video-720p.ogv" type="video/ogg" media="(min-device-height: 720px)">`)
 * Scripted codec detection (e.g. `canPlayType('video/ogg; codecs=vorbis,theora')`)
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/html5-video-spec-length.png" alt="HTML5 video section then and now (rotated 90°; scale 1:73)" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">HTML5 `<video>` section then and now (rotated 90°; scale 1:73)</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/html5-video-spec-length.png" alt="HTML5 video section then and now (rotated 90°; scale 1:73)">
+	<figcaption elem="caption" markdown="span">HTML5 `<video>` section then and now (rotated 90°; scale 1:73)</figcaption>
 </figure>
 
 As this is a pre-alpha, there are also some parts that are not finished. Most importantly, we don't support seeking at all yet. As a side effect we don't have the duration of files until we have played through to the end, so the seekbar isn't very useful right now. This is at the top of our list of things to fix before a final release. We are also working on improving bandwidth management so that we will be able to honor (the absence of) the `autobuffer` attribute.
@@ -48,9 +48,9 @@ On Windows we have made a minimal GStreamer configuration which keeps only the f
 
 Many thanks to the developers of the GStreamer and Xiph projects, for excellent software and the occasional bit of advice on IRC.
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/video-controls.png" alt="Native controls in Opera 10.50 pre-alpha" class="figure__media">
-	<figcaption class="figure__caption">Native controls in Opera 10.50 pre-alpha</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/video-controls.png" alt="Native controls in Opera 10.50 pre-alpha">
+	<figcaption elem="caption">Native controls in Opera 10.50 pre-alpha</figcaption>
 </figure>
 
 ### The future

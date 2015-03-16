@@ -29,8 +29,8 @@ To add a page or extension to Speed Dial, simply click on the big plus sign. You
 
 If you have a lot of Speed Dial items, you can click the search icon in the top right corner. Start typing in the field that appears, and your bookmarked sites will be filtered in real-time.
 
-<figure class="figure">
-	<img src="{{ page.id }}/add-to-speed-dial.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/add-to-speed-dial.png">
 </figure>
 
 ### Stash
@@ -39,8 +39,8 @@ Do you sometimes find yourself browsing the web, and coming across pages you wan
 
 Simply hit the heart icon when you’re on a page you like and whenever you want to return to it, open your Stash from the start page (open a new tab or click the Start Page icon to the left of the address field). When a page has already been added to your Stash, the address field icon will be highlighted to reflect that. You can click the highlighted icon to remove the page from your Stash.
 
-<figure class="figure">
-	<img src="{{ page.id }}/stash.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/stash.png">
 </figure>
 
 To adjust the size of your stashed items, use the slider to the right. If you have a lot of stashed items, you can click the search icon in the top right corner of the Stash page, and just like with Speed Dial, filter your stashed sites in real-time.
@@ -49,16 +49,16 @@ To adjust the size of your stashed items, use the slider to the right. If you ha
 
 Discover is another new feature to Opera 14 for Android and Opera 15 for Computers, which helps you find interesting content to jump straight into browsing. Click the cog to change settings - select your language and location, and select subjects depending on your interests. For launch there are 13 categories in 32 languages.
 
-<figure class="figure">
-	<img src="{{ page.id }}/discover.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/discover.png">
 </figure>
 
 ### Combined address and search field
 
 Opera 15 for Computers has a combined address and search bar, showing suggestions (that can be turned off via Settings > Privacy and Security) and multiple search providers.
 
-<figure class="figure">
-	<img src="{{ page.id }}/smartbox.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/smartbox.png">
 </figure>
 
 ### Off-road mode

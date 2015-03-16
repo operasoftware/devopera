@@ -11,9 +11,9 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/intro.jpg" class="figure__media" width="256">
-	<figcaption class="figure__caption">Opera Mini for iOS</figcaption>
+<figure block="figure" mod="right">
+	<img src="{{ page.id }}/intro.jpg" elem="media" width="256">
+	<figcaption elem="caption">Opera Mini for iOS</figcaption>
 </figure>
 
 Today, we released [Opera Mini 8 for iOS](https://itunes.apple.com/app/id363729560). It’s a completely redesigned product that, for the first time, offers three different browser modes, two of which save time and money for the consumer — or get them connected on slow networks that other browsers can’t handle. More details for consumers are available [on mobile team blog](http://blogs.opera.com/mobile/2014/06/download-the-new-opera-mini-for-iphone-ipad/).
@@ -36,9 +36,9 @@ If you rely on some sort of Geo IP tool for detecting a visitor’s location, no
 
 ## Turbo mode
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/turbo.jpg" class="figure__media" width="256">
-	<figcaption class="figure__caption">Browser modes switcher with advanced compression settings</figcaption>
+<figure block="figure" mod="right">
+	<img src="{{ page.id }}/turbo.jpg" elem="media" width="256">
+	<figcaption elem="caption">Browser modes switcher with advanced compression settings</figcaption>
 </figure>
 
 Opera Turbo mode is very different from Opera Mini mode. In this mode, rendering is done on the iPhone/ iPad, but some images and media are compressed through our servers. CSS and JavaScript behave as normal. HTTPS pages are not sent through our Turbo servers, even if Turbo mode is enabled.
@@ -57,9 +57,9 @@ This mode does no compression at all; everything happens on the client device. T
 
 ## QR Codes!
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/qr.png" class="figure__media" width="256">
-	<figcaption class="figure__caption"><a href="https://addons.opera.com/en/extensions/details/qr-codematic/">QR Codematic</a> extension for Opera</figcaption>
+<figure block="figure" mod="right">
+	<img src="{{ page.id }}/qr.png" elem="media" width="256">
+	<figcaption elem="caption"><a href="https://addons.opera.com/en/extensions/details/qr-codematic/">QR Codematic</a> extension for Opera</figcaption>
 </figure>
 
 Opera Mini 8 for iOS includes a QR code reader to save you from having to type an address. Check it out by tapping the address bar: above the keyboard a QR code icon is shown, which spawns a full QR code reader.
@@ -70,9 +70,9 @@ We thought it would be nice to bring this QR Code based sharing mechanism also t
 
 ## Power user tips
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/toggle.png" class="figure__media" width="256">
-	<figcaption class="figure__caption">Address bar navigation toggle</figcaption>
+<figure block="figure" mod="right">
+	<img src="{{ page.id }}/toggle.png" elem="media" width="256">
+	<figcaption elem="caption">Address bar navigation toggle</figcaption>
 </figure>
 
 Not strictly for web developers, but some useful power-user tips to speed up your testing in Opera Mini 8 for iOS:

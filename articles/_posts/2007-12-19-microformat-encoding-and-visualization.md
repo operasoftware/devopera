@@ -96,9 +96,9 @@ The W3C SIMILE project has a [JavaScript timeline application][5], which is easi
 
 [5]: http://simile.mit.edu/timeline/
 
-<figure class="figure">
-	<img src="{{ page.id }}/image001.jpg" alt="The Wikipedia article represented on the timeline" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The Wikipedia article represented on the Timeline</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image001.jpg" alt="The Wikipedia article represented on the timeline">
+	<figcaption elem="caption">Figure 1: The Wikipedia article represented on the Timeline</figcaption>
 </figure>
 
 ## Converting the data
@@ -115,9 +115,9 @@ These two web services allow you to take an hCalendar and transform it into diff
 
 Anything that has a date can be a candidate for mapping to a timeline. The web 2.0 poster child Twitter is a tool that could benefit from being mapped onto a timeline. When you look at a friend’s twitter feed, you see all the posts in reverse consecutive order. Each entry has a timestamp that can be plotted on a timeline. You can begin to see things that were not visible as a simple list. Trends emerge, such as posting more or less frequently on the weekends or evenings. These new alternative visualisations present some answers, but more often they lead to more questions. That giant gap on my friend’s timeline where there were no posts at all — what was happening there? Were they busy, on vacation, or maybe something else? You can begin to do statistical analysis and get the average number of hours between posts and predict when the next one will appear. Figure 2 shows some twitter data plotted on the JavaScript timeline application.
 
-<figure class="figure">
-	<img src="{{ page.id }}/image002.jpg" alt="Twitter data on the timeline" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Twitter data plotted on the JavaScript timeline application</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image002.jpg" alt="Twitter data on the timeline">
+	<figcaption elem="caption">Figure 2: Twitter data plotted on the JavaScript timeline application</figcaption>
 </figure>
 
 ## Graph Visualization
@@ -126,9 +126,9 @@ XFN is a microformat that defines relationships between you and another person. 
 
 [10]: http://services.alphaworks.ibm.com/manyeyes/view/S8_UXHsOtha6I3EtDXWYH2-
 
-<figure class="figure">
-	<img src="{{ page.id }}/image004.jpg" alt="An XFN links map" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: tantek.com’s XFN links represented at a crawl depth of 3, with Brian Suda highlighted</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image004.jpg" alt="An XFN links map">
+	<figcaption elem="caption">Figure 3: tantek.com’s XFN links represented at a crawl depth of 3, with Brian Suda highlighted</figcaption>
 </figure>
 
 The above example takes [tantek.com][12] and spiders the site for XFN links. These are links to friends of Tantek. It finds the links marked up with XFN and follows them where it continues to look for more XFN links on each successive site. It does this to a depth of 3 and creates a graph of nodes, which are URLs, and edges, which are the XFN links between the nodes. Rather than see a list of links on an HTML page, you can now begin to visualize them on a graph. You can see how many inbound and outbound links each site has. The more connections in and out of a node, the more links that person has. By following the links, you can begin to connect yourself to anyone else on the graph through other people’s URLs. It is possible to create your own [Kevin Bacon Game][13] with A-List bloggers and technologists. How many steps are there between Bill Gates and myself?
@@ -159,16 +159,16 @@ Now you can go to [maps.google.com][20], paste that URL into the search box, and
 
 	http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=http:%2F%2Fsuda.co.uk%2Fprojects%2Fmicroformats%2Fgeo%2Fget-geo.php%3Ftype%3Dkml%26uri%3Dhttp:%2F%2Fwww.bbc.co.uk%2Fworldservice%2Fbangladeshboat%2F&ie=UTF8&ll=22.973567,90.351563&spn=2.098716,3.735352&t=p&z=8&om=1
 
-<figure class="figure">
-	<img src="{{ page.id }}/image005.jpg" alt="Geo data from the BBC web page displayed in Google Maps" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: The BBC page marked-up with geo microformat and displayed in Google Maps</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image005.jpg" alt="Geo data from the BBC web page displayed in Google Maps">
+	<figcaption elem="caption">Figure 4: The BBC page marked-up with geo microformat and displayed in Google Maps</figcaption>
 </figure>
 
 Your screen output should now look something like Figure 4.
 
-<figure class="figure">
-	<img src="{{ page.id }}/image005.jpg" alt="Geo data from the BBC web page displayed in Google Maps" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: The BBC page marked-up with geo microformat and displayed in Google Maps</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image005.jpg" alt="Geo data from the BBC web page displayed in Google Maps">
+	<figcaption elem="caption">Figure 4: The BBC page marked-up with geo microformat and displayed in Google Maps</figcaption>
 </figure>
 
 Using techniques like this, you can begin to visualize geo content in a more spatial manner. You can see that Dacca is pretty far from Daulatpur, but when you are reading it in the text, you will have no sense of scale. The geo to map visualizations provide yet another way to view microformatted content outside the box of what was originally intended.

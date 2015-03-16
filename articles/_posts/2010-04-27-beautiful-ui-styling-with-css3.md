@@ -123,7 +123,7 @@ First up, I’ll set a basic core colour for the button, and give it rounded cor
 
 The result of this code is as follows:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-1">Test</button>
 	<style>
 		#demo-1 {
@@ -157,7 +157,7 @@ Next I’ll add two box shadows to the button, to make it look 3D: raised up, an
 
 Here’s the result of this addition:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-2">Test</button>
 	<style>
 		#demo-2 {
@@ -202,7 +202,7 @@ Finally, I’ll give the button text a more fitting colour, and give it a lighte
 
 Here is our final result:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-3">Test</button>
 	<style>
 		#demo-3 {
@@ -250,7 +250,7 @@ Here is our final result:
 
 The result is as follows:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-4">Test</button>
 	<style>
 		#demo-4 {
@@ -301,7 +301,7 @@ The result is as follows:
 
 This looks like so:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-5">Test</button>
 	<style>
 		#demo-5 {
@@ -352,7 +352,7 @@ This looks like so:
 
 This gives us the following result:
 
-<figure class="figure">
+<figure block="figure">
 	<button id="demo-6">Test</button>
 	<style>
 		#demo-6 {
@@ -405,7 +405,7 @@ This is a blue box with some cyan highlights and a light drop shadow.
 
 Here is the result:
 
-<figure class="figure">
+<figure block="figure">
 	<div id="demo-7"></div>
 	<style>
 		#demo-7 {
@@ -450,7 +450,7 @@ In this case, the effect is obtained with creative use of an inner shadow.
 
 This gives us the following effect:
 
-<figure class="figure">
+<figure block="figure">
 	<div id="demo-8"></div>
 	<style>
 		#demo-8 {
@@ -506,7 +506,7 @@ Here I’ve applied rgba colours to the shadows, so most of this box is semi-tra
 
 Here’s the result:
 
-<figure class="figure">
+<figure block="figure">
 	<div id="demo-9">
 		<div></div>
 	</div>
@@ -560,9 +560,9 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 ### Media player {#mediaplayer}
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/media-player.png" alt="A screenshot of a CSS3 media player UI example" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The media player example</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/media-player.png" alt="A screenshot of a CSS3 media player UI example">
+	<figcaption elem="caption">Figure 1: The media player example</figcaption>
 </figure>
 
 [View the media player][24] running live.
@@ -571,9 +571,9 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 ### A certain phone home screen {#phone}
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/phone-home-screen.png" alt="A screenshot of a CSS3 mobile phone UI example" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: A rather nice phone UI created using just CSS3</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/phone-home-screen.png" alt="A screenshot of a CSS3 mobile phone UI example">
+	<figcaption elem="caption">Figure 2: A rather nice phone UI created using just CSS3</figcaption>
 </figure>
 
 [View the phone UI example][26] running live.
@@ -582,9 +582,9 @@ Hopefully you are completely blown away by the power of the new CSS properties b
 
 ### A Windows desktop {#windowsdesktop}
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: A Windows desktop-style UI</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/windows-desktop.png" alt="A screenshot of a CSS3 Windows desktop-style UI example">
+	<figcaption elem="caption">Figure 3: A Windows desktop-style UI</figcaption>
 </figure>
 
 [View the Windows desktop example][28] running live.

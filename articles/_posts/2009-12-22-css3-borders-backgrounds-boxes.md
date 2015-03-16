@@ -38,7 +38,7 @@ The first CSS3 property that we’ll introduce is `background-clip`. This proper
 
 There are two options, the default `border-box` and `padding-box`. When `border-box` is used, the background image will extend to the border and will therefore show up behind the border, as in Figure 1. The other option is `padding-box` which means the background image won’t stretch to the border. The image will simply appear until the edge of the padding, as shown in Figure 2.
 
-<figure class="figure" id="figure-1">
+<figure block="figure" id="figure-1">
 	<div id="figure-1-demo" markdown="span">
 		`background-clip:border-box`
 	</div>
@@ -54,10 +54,10 @@ There are two options, the default `border-box` and `padding-box`. When `border-
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 1: `background-clip:border-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 1: `background-clip:border-box`</figcaption>
 </figure>
 
-<figure class="figure" id="figure-2">
+<figure block="figure" id="figure-2">
 	<div id="figure-2-demo" markdown="span">
 		`background-clip:padding-box`
 	</div>
@@ -74,7 +74,7 @@ There are two options, the default `border-box` and `padding-box`. When `border-
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 2: `background-clip:padding-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 2: `background-clip:padding-box`</figcaption>
 </figure>
 
 In essence, `padding-box` clips the background image to the padding box while `border-box` clips the background image to the border. [Screenshots of `background-clip` and `background-origin`][12] show you how it looks if your browser does not support this CSS3 property.
@@ -91,7 +91,7 @@ When you position a background image, `background-origin` allows you to specify 
 
 For example, a background image positioned 10 pixels from the left and top will show in the following positions using the different values for `background-origin`:
 
-<figure class="figure" id="figure-3">
+<figure block="figure" id="figure-3">
 	<div id="figure-3-demo" markdown="span">
 		`background-origin:border-box`
 	</div>
@@ -108,10 +108,10 @@ For example, a background image positioned 10 pixels from the left and top will 
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 3: `background-origin:border-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 3: `background-origin:border-box`</figcaption>
 </figure>
 
-<figure class="figure" id="figure-4">
+<figure block="figure" id="figure-4">
 	<div id="figure-4-demo" markdown="span">
 		`background-origin:padding-box`
 	</div>
@@ -128,10 +128,10 @@ For example, a background image positioned 10 pixels from the left and top will 
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 4: `background-origin:padding-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 4: `background-origin:padding-box`</figcaption>
 </figure>
 
-<figure class="figure" id="figure-5">
+<figure block="figure" id="figure-5">
 	<div id="figure-5-demo" markdown="span">
 		`background-clip:padding-box` and `background-origin:border-box`
 	</div>
@@ -149,10 +149,10 @@ For example, a background image positioned 10 pixels from the left and top will 
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 5: `background-clip:padding-box` and `background-origin:border-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 5: `background-clip:padding-box` and `background-origin:border-box`</figcaption>
 </figure>
 
-<figure class="figure" id="figure-6">
+<figure block="figure" id="figure-6">
 	<div id="figure-6-demo" markdown="span">
 		`background-clip:padding-box` and `background-origin:padding-box`
 	</div>
@@ -170,7 +170,7 @@ For example, a background image positioned 10 pixels from the left and top will 
 			font-weight:bold;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 6: `background-clip:padding-box` and `background-origin:padding-box`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 6: `background-clip:padding-box` and `background-origin:padding-box`</figcaption>
 </figure>
 
 If your browser does not support this feature yet, you can take a look at the [`background-clip` and `background-origin` screenshots][13].
@@ -191,11 +191,11 @@ CSS3 allows multiple backgrounds on a single element. This is done by defining m
 
 In the first example, we show you how to merge three background images into one using the `background` property.
 
-<figure class="figure" id="figure-7">
+<figure block="figure" id="figure-7">
 	<img src="{{ page.id }}/driedrose.png" alt="Dried rose">
 	<img src="{{ page.id }}/rose.png" alt="Rose">
 	<img src="{{ page.id }}/fieldsky.jpg" alt="Field and sky scenery">
-	<figcaption class="figure__caption">Figure 7: Three individual background images</figcaption>
+	<figcaption elem="caption">Figure 7: Three individual background images</figcaption>
 </figure>
 
 By defining the background images in order, they overlap each other. The [W3C spec says][18]:
@@ -208,9 +208,9 @@ You can view the [multiple background image example here][19]. The results can b
 
 [19]: http://people.opera.com/zibin/background/multiple_background_image.html
 
-<figure class="figure" id="figure-8">
-	<img src="{{ page.id }}/multiple-background.jpg" class="figure__media">
-	<figcaption class="figure__caption">Figure 8: Screenshot of a combined background image using multiple background images</figcaption>
+<figure block="figure" id="figure-8">
+	<img elem="media" src="{{ page.id }}/multiple-background.jpg">
+	<figcaption elem="caption">Figure 8: Screenshot of a combined background image using multiple background images</figcaption>
 </figure>
 
 	background:
@@ -227,9 +227,9 @@ In this second example we show you how to create the [sliding doors technique][2
 [21]: http://www.alistapart.com/articles/slidingdoors/
 [22]: http://people.opera.com/patrickl/experiments/css3/sliding-doors/
 
-<figure class="figure" id="figure-9">
-	<img src="{{ page.id }}/multiple-background-slidingdoor.png" class="figure__media">
-	<figcaption class="figure__caption">Figure 9: Screenshot of the sliding doors technique using multiple background images</figcaption>
+<figure block="figure" id="figure-9">
+	<img elem="media" src="{{ page.id }}/multiple-background-slidingdoor.png">
+	<figcaption elem="caption">Figure 9: Screenshot of the sliding doors technique using multiple background images</figcaption>
 </figure>
 
 	background-image:url(left.png), url(right.png), url(main.png);
@@ -244,9 +244,9 @@ See [Vadim Makeev’s `background-attachment` demo][24]. He has created three se
 
 [24]: http://people.opera.com/pepelsbey/experiments/bga/
 
-<figure class="figure" id="figure-10">
-	<img src="{{ page.id }}/background-attachment.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 10: Screenshot of our `background-attachment` example</figcaption>
+<figure block="figure" id="figure-10">
+	<img elem="media" src="{{ page.id }}/background-attachment.png">
+	<figcaption elem="caption" markdown="span">Figure 10: Screenshot of our `background-attachment` example</figcaption>
 </figure>
 
 The `local` value for `background-attachment` is new in the [W3C’s CSS3 border and background specification][26]. At the time of writing, it is not yet supported in public releases of Firefox.
@@ -263,9 +263,9 @@ There are a few things to be aware of when using the new background shorthand. I
 
 In the following demo the `background` shorthand has been used to specify three images to illustrate the CSS box model. All values have been specified, even if they are the same as the default, to show how they can be defined. Each image has a different `background-origin` to place the image in the border box, padding box and content box respectively.
 
-<figure class="figure" id="figure-11">
-	<img src="{{ page.id }}/background-screenshot.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 11: Screenshot of the box model example created using the `background` shorthand, including various CSS3 properties</figcaption>
+<figure block="figure" id="figure-11">
+	<img elem="media" src="{{ page.id }}/background-screenshot.png">
+	<figcaption elem="caption" markdown="span">Figure 11: Screenshot of the box model example created using the `background` shorthand, including various CSS3 properties</figcaption>
 </figure>
 
 See the [background shorthand demo][29] in action.
@@ -289,7 +289,7 @@ Box shadow allows shadow effects on elements. This property takes several values
 
 Additionally, you can give the shadow `color`, `spread` and `offset` values. Let’s look at some examples:
 
-<figure class="figure" id="figure-12">
+<figure block="figure" id="figure-12">
 	<div id="figure-12-demo"></div>
 	<style>
 		#figure-12-demo {
@@ -301,10 +301,10 @@ Additionally, you can give the shadow `color`, `spread` and `offset` values. Let
 			color:#ffffff;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 12: `box-shadow:10px 10px 20px #000`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 12: `box-shadow:10px 10px 20px #000`</figcaption>
 </figure>
 
-<figure class="figure" id="figure-13">
+<figure block="figure" id="figure-13">
 	<div id="figure-13-demo"></div>
 	<style>
 		#figure-13-demo {
@@ -316,12 +316,12 @@ Additionally, you can give the shadow `color`, `spread` and `offset` values. Let
 			color:#ffffff;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 13: blur radius is set to just 1 pixel</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 13: blur radius is set to just 1 pixel</figcaption>
 </figure>
 
 	box-shadow:10px 10px 1px #000;
 
-<figure class="figure" id="figure-14">
+<figure block="figure" id="figure-14">
 	<div id="figure-14-demo"></div>
 	<style>
 		#figure-14-demo {
@@ -334,13 +334,13 @@ Additionally, you can give the shadow `color`, `spread` and `offset` values. Let
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 14: sexied up with pink</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 14: sexied up with pink</figcaption>
 </figure>
 
 	box-shadow:10px 10px 20px #FE2E2E;
 	border-radius:20px;
 
-<figure class="figure" id="figure-15">
+<figure block="figure" id="figure-15">
 	<div id="figure-15-demo"></div>
 	<style>
 		#figure-15-demo {
@@ -352,12 +352,12 @@ Additionally, you can give the shadow `color`, `spread` and `offset` values. Let
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 15: the spread value set to 10 pixels making the shadow bigger</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 15: the spread value set to 10 pixels making the shadow bigger</figcaption>
 </figure>
 
 	box-shadow:20px 20px 10px 10px;
 
-<figure class="figure" id="figure-16">
+<figure block="figure" id="figure-16">
 	<div id="figure-16-demo"></div>
 	<style>
 		#figure-16-demo {
@@ -369,7 +369,7 @@ Additionally, you can give the shadow `color`, `spread` and `offset` values. Let
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 16: the inset value creates an inner shadow</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 16: the inset value creates an inner shadow</figcaption>
 </figure>
 
 	box-shadow:-10px -10px 20px inset;
@@ -386,9 +386,9 @@ If you like a kick in your tea, add some `box-shadow`, [transforms, transitions]
 [32]: https://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/
 [33]: http://people.opera.com/pepelsbey/experiments/bsh/
 
-<figure class="figure" id="figure-17">
+<figure block="figure" id="figure-17">
 	<img src="{{ page.id }}/box-shadow-tea.png">
-	<figcaption class="figure__caption" markdown="span">Figure 17: Teacup using `box-shadow` and other CSS3 effects</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 17: Teacup using `box-shadow` and other CSS3 effects</figcaption>
 </figure>
 
 The `box-shadow` property only works on Gecko and WebKit with a `-moz-` and `-webkit-` prefix, respectively.
@@ -403,16 +403,16 @@ The [`box-decoration-break` property][36] allows you to define how these boxes b
 
 [36]: http://www.w3.org/TR/css3-background/#the-box-decoration-break
 
-<figure class="figure" id="figure-18">
+<figure block="figure" id="figure-18">
 	<img src="{{ page.id }}/box-decoration-slice.png">
-	<figcaption class="figure__caption" markdown="span">Figure 18: A screenshot showing `box-decoration-break:slice` applied to inline elements. This is default behaviour</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 18: A screenshot showing `box-decoration-break:slice` applied to inline elements. This is default behaviour</figcaption>
 </figure>
 
 The `clone` value applies the `padding`, `border`, `border-radius`, `-o-border-image` and `box-shadow` to each box independently. This means that where the box breaks, such as at the start and end of a line, the `border`, `border-radius` and so on will be drawn, so that it looks like each box is its own element. If a background image is applied and set to `no-repeat`, it will be drawn once for each box See figure 14 for a visual demonstration of inline blocks with `box-decoration-break:clone` applied.
 
-<figure class="figure" id="figure-19">
+<figure block="figure" id="figure-19">
 	<img src="{{ page.id }}/box-decoration-clone.png">
-	<figcaption class="figure__caption" markdown="span">Figure 19: A screenshot showing `box-decoration-break:clone` applied to inline elements. Note how the `border-radius` and `box-shadow` is applied at the end and start of the line</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 19: A screenshot showing `box-decoration-break:clone` applied to inline elements. Note how the `border-radius` and `box-shadow` is applied at the end and start of the line</figcaption>
 </figure>
 
 Check out the [box-decoration-break demo][39] in Opera 10.60 or above to see this in action.
@@ -432,7 +432,7 @@ The highly-awaited `border-radius` has arrived! We can now create rounded corner
 
 Let’s dive into some examples.
 
-<figure class="figure" id="figure-20">
+<figure block="figure" id="figure-20">
 	<div id="figure-20-demo">Four rounded corners</div>
 	<style>
 		#figure-20-demo {
@@ -444,12 +444,12 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 20: Four rounded corners</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 20: Four rounded corners</figcaption>
 </figure>
 
 	border-radius:25px;
 
-<figure class="figure" id="figure-21">
+<figure block="figure" id="figure-21">
 	<div id="figure-21-demo">Two rounded corners</div>
 	<style>
 		#figure-21-demo {
@@ -462,13 +462,13 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 21: Two rounded corners</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 21: Two rounded corners</figcaption>
 </figure>
 
 	border-bottom-left-radius:40px;
 	border-bottom-right-radius:40px;
 
-<figure class="figure" id="figure-22">
+<figure block="figure" id="figure-22">
 	<div id="figure-22-demo">Four rounded corners</div>
 	<style>
 		#figure-22-demo {
@@ -483,7 +483,7 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 22: Four rounded corners, the bottom corners with a 40 pixel radius and the top corners with a 10 pixel radius</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 22: Four rounded corners, the bottom corners with a 40 pixel radius and the top corners with a 10 pixel radius</figcaption>
 </figure>
 
 	border-bottom-left-radius:40px;
@@ -491,7 +491,7 @@ Let’s dive into some examples.
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 
-<figure class="figure" id="figure-23">
+<figure block="figure" id="figure-23">
 	<div id="figure-23-demo">One rounded corner</div>
 	<style>
 		#figure-23-demo {
@@ -503,12 +503,12 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 23: One rounded corner with a radius of 120 pixels</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 23: One rounded corner with a radius of 120 pixels</figcaption>
 </figure>
 
 	border-bottom-right-radius:120px;
 
-<figure class="figure" id="figure-24">
+<figure block="figure" id="figure-24">
 	<div id="figure-24-demo">Four rounded corners</div>
 	<style>
 		#figure-24-demo {
@@ -520,12 +520,12 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 24: Four rounded corners, two with a radius of 20 pixels and the other two with a radius of 120 pixels</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 24: Four rounded corners, two with a radius of 20 pixels and the other two with a radius of 120 pixels</figcaption>
 </figure>
 
 	border-radius:120px 20px;
 
-<figure class="figure" id="figure-25">
+<figure block="figure" id="figure-25">
 	<div id="figure-25-demo">Rounded corners</div>
 	<style>
 		#figure-25-demo {
@@ -537,12 +537,12 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 25: Rounded corners with a radius of 120 pixels along the X-axis and 20 pixels along the Y-axis</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 25: Rounded corners with a radius of 120 pixels along the X-axis and 20 pixels along the Y-axis</figcaption>
 </figure>
 
 	border-radius:120px / 20px;
 
-<figure class="figure" id="figure-26">
+<figure block="figure" id="figure-26">
 	<div id="figure-26-demo">Rounded corners</div>
 	<style>
 		#figure-26-demo {
@@ -555,7 +555,7 @@ Let’s dive into some examples.
 			color:#FFFFFF;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 26: Rounded corners with a background image</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 26: Rounded corners with a background image</figcaption>
 </figure>
 
 	border-radius:30px;
@@ -573,7 +573,7 @@ Gecko still uses the `border-radius` properties with the `-moz-` prefix. Gecko a
 
 Using the `-o-border-image` property, you can use an image to act as an element’s border. Images can be set to `stretch`, `repeat` or `round`.
 
-<figure class="figure" id="figure-27">
+<figure block="figure" id="figure-27">
 	<div id="figure-27-demo">Border Image</div>
 	<style>
 		#figure-27-demo {
@@ -584,12 +584,12 @@ Using the `-o-border-image` property, you can use an image to act as an element�
 			border-image:url({{ page.id }}/molecule.png) 50 repeat;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 27: Border Image with `repeat`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 27: Border Image with `repeat`</figcaption>
 </figure>
 
 	border-image:url(molecule.png) 50 stretch;
 
-<figure class="figure" id="figure-28">
+<figure block="figure" id="figure-28">
 	<div id="figure-28-demo">Border Image</div>
 	<style>
 		#figure-28-demo {
@@ -600,7 +600,7 @@ Using the `-o-border-image` property, you can use an image to act as an element�
 			border-image:url({{ page.id }}/molecule.png) 50 stretch;
 			}
 	</style>
-	<figcaption class="figure__caption" markdown="span">Figure 28: Border Image `stretch`</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 28: Border Image `stretch`</figcaption>
 </figure>
 
 	-o-border-image:url(molecule.png) 50 stretch;
@@ -609,14 +609,14 @@ The `stretch` and `repeat` values are fairly self-explanatory. The `round` value
 
 [43]: http://people.opera.com/pepelsbey/experiments/bdi/
 
-<figure class="figure" id="figure-29">
+<figure block="figure" id="figure-29">
 	<img src="{{ page.id }}/border-image-stretch.png">
-	<figcaption class="figure__caption" markdown="span">Figure 29: `-o-border-image:stretch` screenshot</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 29: `-o-border-image:stretch` screenshot</figcaption>
 </figure>
 
-<figure class="figure" id="figure-30">
+<figure block="figure" id="figure-30">
 	<img src="{{ page.id }}/border-image-repeat.png">
-	<figcaption class="figure__caption" markdown="span">Figure 30: `-o-border-image:repeat` screenshot</figcaption>
+	<figcaption elem="caption" markdown="span">Figure 30: `-o-border-image:repeat` screenshot</figcaption>
 </figure>
 
 Opera 11.50 requires the `-o-` prefix for `border-image`. While the CSS3 Backgrounds and Borders module is fairly stable, the `border-image` spec has changed substantially since we implemented it (including becoming a short hand for a number of individual `border-image` properties). As such we introduced the vendor prefix until the implementation matches the new spec. It is no longer supported prefixless at the time of writing. WebKit and Gecko also currently require their respective prefix.

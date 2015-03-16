@@ -16,7 +16,7 @@ Typography has a long and rich history, but much has been lost in the transition
 Typeface designers often put extra features in a font that can be used to customise text rendering. These are called OpenType features and include character spacing, alignment, ligatures, alternative characters, and so on. There are in fact [more than 140 registered OpenType features](https://www.microsoft.com/typography/otspec/featurelist.htm). Many of these features are optional, but some are actually required to properly render text (e.g. kerning and required ligatures). OpenType features are reasonably well supported by modern web browsers, but still come with a lot of caveats that make them hard to use.
 
 <figure block="figure">
-	<img src="{{ page.id }}/figure-2.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/figure-2.png" alt="">
 	<figcaption elem="caption">From left to right: contextual alternates set in Caflisch Script Pro, ligatures set in Warnock Pro, and small caps set in Chaparral Pro.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Unfortunately, even if a browser supports the OpenType feature syntax it is not 
 Many web developers think of justification as a solved problem (or worse, one to avoid). Set `text-align` to `justify` and you’re done, right? Not quite. The algorithm used in all web browsers is actually a very ineffective justification implementation. Tools like TeX and InDesign use a more sophisticated line breaking algorithm that optimises break points over an entire paragraph, whereas browsers only look at a single line. This leads to suboptimal justification and large spaces between words.
 
 <figure block="figure">
-	<img src="{{ page.id }}/figure-3.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/figure-3.png" alt="">
 	<figcaption elem="caption">Left: a justified paragraph, middle: extraneous word spaces are highlighted, right: word spacing and justification is improved by enabling hyphenation.</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ Until the `font-rendering` property is implemented we can use [the CSS Font Load
 This is just the tip of the iceberg. To compete with and surpass the typographic quality of print publications we need support for drop caps, colour fonts, advanced layout (akin to shapes, exclusions and regions), sizing text to fit a container, widows and orphans, balanced text, math typesetting (though MathML is now an officially recommended standard, [Chromium](https://www.chromestatus.com/features/5240822173794304) and [Internet Explorer](https://status.modern.ie/mathml) have no plans to support it), and so on. Clearly, we need to do better and push browser vendors for these features if we want to improve the web’s reading experience. You can help out by participating in the W3C mailing lists, building demos, implementing polyfills and drafting specifications for features _you_ want to see. Don’t worry about getting it right the first time. Sometimes the best thing to come out of a specification is a new and better specification.
 
 <figure block="figure">
-	<a href="http://stateofwebtype.com/"><img src="{{ page.id }}/figure-1.png" alt="" elem="media"></a>
+	<a href="http://stateofwebtype.com/"><img elem="media" src="{{ page.id }}/figure-1.png" alt=""></a>
 </figure>
 
 Another way to contribute is to draw attention to partially implemented specifications and bugs by keeping track of what works and what doesn’t. That’s why I recently launched a new project called the [State of Web Type](http://stateofwebtype.com/). Its goal is to contain up to date browser support data for all type and typography features on the web. The project is [open source](https://github.com/bramstein/stateofwebtype) and contributions and corrections are more than welcome. Let’s work together to make the web a better platform for publishing and reading!

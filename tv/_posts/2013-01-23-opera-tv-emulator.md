@@ -50,9 +50,9 @@ The Opera TV Emulator is provided as a preconfigured [Oracle VirtualBox][5] mach
 [6]: http://www.virtualbox.org/wiki/Downloads
 [7]: http://www.opera.com/business/tv/emulator/
 
-<figure class="figure">
-	<img src="{{ page.id }}/virtualbox-vbox-vdi-files.png" alt="The Opera TV Emulator .vbox and .vdi files from the extracted package" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Emulator .vbox and .vdi files from the extracted package</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/virtualbox-vbox-vdi-files.png" alt="The Opera TV Emulator .vbox and .vdi files from the extracted package">
+	<figcaption elem="caption">The Opera TV Emulator .vbox and .vdi files from the extracted package</figcaption>
 </figure>
 
 You can also install the emulator from within the VirtualBox Manager itself: in the **Machine** menu, choose **Add** and open the `.vbox` file.
@@ -68,9 +68,9 @@ The Opera TV Emulator is, in essence, a self-contained generic web browser, equi
 [10]: http://www.opera.com/business/devices/
 [11]: http://www.opera.com/business/tv/store/
 
-<figure class="figure">
-	<img src="{{ page.id }}/tv-emulator-start-page.png" alt="The Opera TV Emulator start page" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Emulator start page</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/tv-emulator-start-page.png" alt="The Opera TV Emulator start page">
+	<figcaption elem="caption">The Opera TV Emulator start page</figcaption>
 </figure>
 
 The emulator’s start page — itself just a web page — provides a direct link to the [Opera TV Store demo server][13] at `http://demo.tvstore.opera.com`. This demo store can be used to test Opera TV Store applications. See our article on [Testing your app inside the Opera TV Store][14] for further information.
@@ -82,9 +82,9 @@ The emulator’s start page — itself just a web page — provides a direct lin
 
 For legal reasons, the Opera TV Emulator does not come with any H.264 codec preinstalled. As this codec is widely used for TV applications, you will need to install it the first time you run the emulator.
 
-<figure class="figure">
-	<img src="{{ page.id }}/codec-install.png" alt="The H.264 codec installation prompt on the Opera TV Emulator start page" class="figure__media">
-	<figcaption class="figure__caption">The H.264 codec installation prompt on the Opera TV Emulator start page</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/codec-install.png" alt="The H.264 codec installation prompt on the Opera TV Emulator start page">
+	<figcaption elem="caption">The H.264 codec installation prompt on the Opera TV Emulator start page</figcaption>
 </figure>
 
 To do this, simply choose the Install option on the start page. This will download the necessary codec, install it, and restart Opera.
@@ -114,16 +114,16 @@ The emulator uses the following keyboard controls:
 
 In addition to basic keyboard controls, the Opera TV Emulator also provides a more comprehensive web-based remote control that also simulates the colored keys (red, green, yellow, blue) and a set of media controls (play/pause, stop, rewind, fast-forward).
 
-<figure class="figure">
-	<img src="{{ page.id }}/web-based-remote.png" alt="The Opera TV Emulator’s web-based remote control on localhost:5555" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Emulator’s web-based remote control on localhost:5555</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/web-based-remote.png" alt="The Opera TV Emulator’s web-based remote control on localhost:5555">
+	<figcaption elem="caption">The Opera TV Emulator’s web-based remote control on localhost:5555</figcaption>
 </figure>
 
 When the emulator is running, the Oracle VirtualBox machine is configured to expose a local server on the host machine on port `5555`. To access the web-based remote, simply launch your regular browser on the development machine and point it to `http://localhost:5555`.
 
-<figure class="figure">
-	<img src="{{ page.id }}/port-forwarding.png" alt="VirtualBox’s settings for Port Forwarding" class="figure__media">
-	<figcaption class="figure__caption">VirtualBox’s settings for Port Forwarding</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/port-forwarding.png" alt="VirtualBox’s settings for Port Forwarding">
+	<figcaption elem="caption">VirtualBox’s settings for Port Forwarding</figcaption>
 </figure>
 
 In order to use the web-based remote control, please ensure that no other application is currently running on your development machine using port `5555`. If this is not possible, you can change the port number used by the VirtualBox machine by going to the Network section in the machine’s settings and modifying the Port Forwarding host port.
@@ -138,18 +138,18 @@ If you have a server (such as the [Apache HTTP Server][19]) running on your deve
 
 [19]: http://projects.apache.org/projects/http_server.html
 
-<figure class="figure">
-	<img src="{{ page.id }}/local-server.png" alt="Running WAMP as a local server on the machine: in a browser on the host environment, the server can simply be accessed from http://localhost. In the Opera TV Emulator, the IP address of the host machine itself has to be used" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Running WAMP as a local server on the machine: in a browser on the host environment, the server can simply be accessed from `http://localhost`. In the Opera TV Emulator, the IP address of the host machine itself has to be used</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/local-server.png" alt="Running WAMP as a local server on the machine: in a browser on the host environment, the server can simply be accessed from http://localhost. In the Opera TV Emulator, the IP address of the host machine itself has to be used">
+	<figcaption elem="caption" markdown="span">Running WAMP as a local server on the machine: in a browser on the host environment, the server can simply be accessed from `http://localhost`. In the Opera TV Emulator, the IP address of the host machine itself has to be used</figcaption>
 </figure>
 
 Instead, you should use the IP address of your development machine — the emulator will then establish a connection to your server from within the virtual machine.
 
 ### Shared folders {#shared-folders}
 
-<figure class="figure">
-	<img src="{{ page.id }}/shared-folder.png" alt="VirtualBox’s setup for Shared Folders" class="figure__media">
-	<figcaption class="figure__caption">VirtualBox’s setup for Shared Folders</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/shared-folder.png" alt="VirtualBox’s setup for Shared Folders">
+	<figcaption elem="caption">VirtualBox’s setup for Shared Folders</figcaption>
 </figure>
 
 Particularly for static files that do not require any server-side functionality, another option is to add a local folder on your development machine as a shared folder inside the emulator’s Linux environment. This can be done from the Oracle VirtualBox Manager:
@@ -158,18 +158,18 @@ Particularly for static files that do not require any server-side functionality,
 2. Go to the emulator’s Settings… (either by right-clicking on the emulator or from the Machine menu)
 3. In the Shared Folders section, add your local folder, making sure the Auto-mount option is checked
 
-<figure class="figure">
-	<img src="{{ page.id }}/shared-folder-2.png" alt="The Opera TV Emulator, showing the shared folder being displayed from the relevant file://localhost/mydata location" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Emulator, showing the shared folder being displayed from the relevant file://localhost/mydata location</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/shared-folder-2.png" alt="The Opera TV Emulator, showing the shared folder being displayed from the relevant file://localhost/mydata location">
+	<figcaption elem="caption">The Opera TV Emulator, showing the shared folder being displayed from the relevant file://localhost/mydata location</figcaption>
 </figure>
 
 Your shared folder will be available under `file://localhost/mydata/sf_[name of your folder]` the next time you start the emulator.
 
 ## Debugging with Opera Dragonfly {#debugging}
 
-<figure class="figure">
-	<img src="{{ page.id }}/remote-debug-setup.png" alt="A standard debugging setup: Opera TV Emulator, a browser showing the web-based remote control, and an undocked Opera Dragonfly window set to remotely debug the emulator" class="figure__media">
-	<figcaption class="figure__caption">A standard debugging setup: Opera TV Emulator, a browser showing the web-based remote control, and an undocked Opera Dragonfly window set to remotely debug the emulator</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/remote-debug-setup.png" alt="A standard debugging setup: Opera TV Emulator, a browser showing the web-based remote control, and an undocked Opera Dragonfly window set to remotely debug the emulator">
+	<figcaption elem="caption">A standard debugging setup: Opera TV Emulator, a browser showing the web-based remote control, and an undocked Opera Dragonfly window set to remotely debug the emulator</figcaption>
 </figure>
 
 [Opera Dragonfly][24] is a comprehensive set of web developer tools integrated with the Opera desktop browser. Using the remote debugging functionality of Opera Dragonfly, it is possible to debug web pages and applications running in the Opera TV Emulator:
@@ -179,16 +179,16 @@ Your shared folder will be available under `file://localhost/mydata/sf_[name of 
 1. Set Opera Dragonfly to listen for incoming remote debugging connections.
 2. Press the Connect to Dragonfly button on the emulator’s web-based remote control.
 
-<figure class="figure">
-	<img src="{{ page.id }}/tv-emulator-remote-dragonfly.png" alt="The web remote control’s “Connect to Dragonfly” button" class="figure__media">
-	<figcaption class="figure__caption">The web remote control’s “Connect to Dragonfly” button</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/tv-emulator-remote-dragonfly.png" alt="The web remote control’s “Connect to Dragonfly” button">
+	<figcaption elem="caption">The web remote control’s “Connect to Dragonfly” button</figcaption>
 </figure>
 
 Note that using the Connect to Dragonfly button is the only way to establish a remote debugging connection. Entering `opera:debug` in the Opera TV Emulator’s address bar will not work.
 
-<figure class="figure">
-	<img src="{{ page.id }}/debugging-context.png" alt="Opera Dragonfly’s Debugging Context button" class="figure__media">
-	<figcaption class="figure__caption">Opera Dragonfly’s Debugging Context button</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/debugging-context.png" alt="Opera Dragonfly’s Debugging Context button">
+	<figcaption elem="caption">Opera Dragonfly’s Debugging Context button</figcaption>
 </figure>
 
 When the connection is established, make sure that the debugging context is set to the web page / application that you want to debug, rather than the Opera TV Emulator’s status page or navigation bar.
@@ -201,9 +201,9 @@ For more information, please refer to the [Opera Dragonfly documentation][27].
 
 The Opera TV Emulator offers a few customisation options that can be configured via the Settings button on the web remote control.
 
-<figure class="figure">
-	<img src="{{ page.id }}/web-remote-settings.png" alt="The web-based remote control, showing the settings popup dialog" class="figure__media">
-	<figcaption class="figure__caption">The web-based remote control, showing the settings popup dialog</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/web-remote-settings.png" alt="The web-based remote control, showing the settings popup dialog">
+	<figcaption elem="caption">The web-based remote control, showing the settings popup dialog</figcaption>
 </figure>
 
 ### General
@@ -239,9 +239,9 @@ To immediately apply changes, choose Apply — this will store the settings and 
 
 ## Closing the emulator {#closing}
 
-<figure class="figure">
-	<img src="{{ page.id }}/shutdown.png" alt="VirtualBox’s “Close Virtual Machine” dialog, with the “Send the shutdown signal” option checked" class="figure__media">
-	<figcaption class="figure__caption">VirtualBox’s “Close Virtual Machine” dialog, with the “Send the shutdown signal” option checked</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/shutdown.png" alt="VirtualBox’s “Close Virtual Machine” dialog, with the “Send the shutdown signal” option checked">
+	<figcaption elem="caption">VirtualBox’s “Close Virtual Machine” dialog, with the “Send the shutdown signal” option checked</figcaption>
 </figure>
 
 When closing the emulator, please choose the Send the shutdown signal option. This will ensure that the Linux environment in the emulator is properly powered down.

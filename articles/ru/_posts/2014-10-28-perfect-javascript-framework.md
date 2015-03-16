@@ -113,8 +113,8 @@ license: cc-by-3.0
 
 Вот, что у нас из этого вышло:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-1.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-1.jpg" alt="">
 </figure>
 
 Чтобы продемонстрировать слабую сторону такого подхода мы добавим на страницу ссылку и назначим на ней обработчик события `click`. Функция снова вызовет метод `update`, но с другими элементами списка:
@@ -125,8 +125,8 @@ license: cc-by-3.0
 
 Мы передаём почти те же самые данные, поменялся только первый элемент массива. Но из-за того, что мы используем `innerHTML`, перерисовка происходит после каждого клика. Браузер не знает, что нам надо поменять только первую строку. Он перерисовывает весь список. Давайте запустим DevTools браузера Opera и запустим профилирование. Посмотрите на этом анимированном GIF, что происходит:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-2.gif" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-2.gif" alt="">
 </figure>
 
 Заметьте, после каждого клика весь контент перерисовывается. Это проблема, особенно, если такая техника применяется во многих местах на странице.
@@ -169,8 +169,8 @@ license: cc-by-3.0
 
 Вот результат:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-3.gif" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-3.gif" alt="">
 </figure>
 
 Браузер перерисовывает только ту часть, которая изменилась.

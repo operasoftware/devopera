@@ -10,8 +10,8 @@ license: cc-by-nc-sa-2.5
 
 ## Introduction
 
-<figure class="figure">
-	<img src="{{ page.id }}/filters.jpg" alt="Filter image" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/filters.jpg" alt="Filter image">
 </figure>
 
 I came across this nice [Photoshop tutorial][2] the other day. Looking at this, and the other tutorials available there made me want to try to recreate the same effects, not using Photoshop however, just SVG. Read on for my take on the above tutorial. To better follow the steps in my article I recommend reading these side by side.

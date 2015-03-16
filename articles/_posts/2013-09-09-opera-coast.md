@@ -12,8 +12,8 @@ Web apps are the center of the Opera Coast browsing experience.
 
 Opera Coast takes advantage of mobile browsing by supporting and encouraging development for touch-based web design. There are many resources available online for developers to optimize their sites to this end.
 
-<figure class="figure">
-	<img src="{{ page.id }}/coast-ipad.png" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/coast-ipad.png" alt="">
 </figure>
 
 ## Design web apps for Opera Coast

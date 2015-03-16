@@ -27,9 +27,9 @@ Adblock Plus is an open source project that blocks annoying ads on the web. Sinc
 
 We have 19 employees. Of those, 15 are based in Germany, one in Utah and one in the Ukraine. Roughly two-thirds of us work in the office in Cologne, the rest remotely.
 
-<figure class="figure">
-	<img src="{{ page.id }}/team.jpg" alt="The Adblock Plus team" class="figure__media">
-	<figcaption class="figure__caption">The Adblock Plus team</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/team.jpg" alt="The Adblock Plus team">
+	<figcaption elem="caption">The Adblock Plus team</figcaption>
 </figure>
 
 **How did you come up with the idea for Adblock Plus? How did it start?**

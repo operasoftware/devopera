@@ -18,7 +18,7 @@ The [W3C Web Notifications API][1] allows your web browser to display notificati
 [1]: http://www.w3.org/TR/notifications/
 
 <figure block="figure">
-	<img src="{{ page.id }}/web-notification-screen.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/web-notification-screen.png" alt="">
 </figure>
 
 Web Notifications have been supported by Opera since version 25. The article [Web Notifications in Opera Developer 25][3] describes the basic use of the API.
@@ -34,7 +34,7 @@ Today, I am going to show you how to use Web Notifications by creating an intera
 [4]: http://www.pubnub.com
 
 <figure block="figure">
-	<img src="{{ page.id }}/pubnub-publish-subscribe-paradigms.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/pubnub-publish-subscribe-paradigms.png" alt="">
 	<figcaption elem="caption">Common publish/subscribe messaging paradigms</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ For this exercise, let’s just simply terminate the app when the browser doesn�
 Each browser provides a built-in permission UI for the Web Notification API, so that you can control which web pages can send you notifications. When your page is loaded for the first time, a browser-specific permission dialog is shown to the user. After the user has granted permission, your page can send notifications, otherwise (denied), it can’t.
 
 <figure block="figure">
-	<img src="{{ page.id }}/web-notification-permission.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/web-notification-permission.png" alt="">
 </figure>
 
 	Notification.requestPermission(function() {
@@ -77,7 +77,7 @@ Each browser provides a built-in permission UI for the Web Notification API, so 
 Try for yourself and see. You can always reset the permission setting by going to opera://settings, selecting Websites from the left column, and scrolling down to the Notifications section.
 
 <figure block="figure">
-	<img src="{{ page.id }}/web-notification-permission-preference.gif" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/web-notification-permission-preference.gif" alt="">
 </figure>
 
 ## Connecting users using PubNub Data Stream
@@ -161,7 +161,7 @@ When somebody sends the user a message, the web app will trigger the browser to 
 To make to this demo very simple, rather than establishing a 1-to-1 private connection, we let our web app broadcast messages to all users simultaneously. However, only a designated person will receive a web notification.
 
 <figure block="figure">
-	<img src="{{ page.id }}/publish-subscribe-oi.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/publish-subscribe-oi.png" alt="">
 </figure>
 
 To retrieve the live messages, you simply use PubNub subscribe() API. If the message is sent to a particular user, that user will see a notification.
@@ -205,7 +205,7 @@ The tag member is used by each instance to coordinate how many notifications to 
 	}
 
 <figure block="figure">
-	<img src="{{ page.id }}/web-notification.png" alt="" elem="media">
+	<img elem="media" src="{{ page.id }}/web-notification.png" alt="">
 </figure>
 
 Ta-da! Now you can annoy random strangers online by sending them an "Oi!" message. The entire source code is available on [GitHub][15].

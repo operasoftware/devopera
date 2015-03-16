@@ -19,8 +19,8 @@ I’ve presented my findings during the lightning talks session at SVG Open, and
 
 [2]: https://www.youtube.com/watch?v=YAK5el8Uvrg
 
-<figure class="figure">
-	<iframe width="420" height="315" src="https://www.youtube.com/embed/YAK5el8Uvrg" allowfullscreen class="figure__media"></iframe>
+<figure block="figure">
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/YAK5el8Uvrg" allowfullscreen elem="media"></iframe>
 </figure>
 
 Referenced demos:

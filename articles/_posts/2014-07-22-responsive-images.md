@@ -44,9 +44,9 @@ Before you start using responsive images in your design, you always have to answ
 
 In the examples below, we’re referring to these questions with the keywords **sizes**, **dpi**, **mime** and **art**, respectively, and then for each combination of answers, we show a snippet of example code with a short explanation. When creating these examples, I had [this night shot of the Oslo Opera house](http://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg) in my head — it might be useful for your reference.
 
-<figure class="figure">
-	<img src="{{ page.id }}/opera-house.jpg" alt="The Opera House in Oslo at night" class="figure__media">
-	<figcaption class="figure__caption">The Opera House in Oslo at night</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/opera-house.jpg" alt="The Opera House in Oslo at night">
+	<figcaption elem="caption">The Opera House in Oslo at night</figcaption>
 </figure>
 
 ## Things to keep in mind

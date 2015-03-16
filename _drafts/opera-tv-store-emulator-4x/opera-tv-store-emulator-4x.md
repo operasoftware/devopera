@@ -43,9 +43,9 @@ For SDK 3.x emulation, please use the older [Opera TV Emulator 3.4][2].
 
 After a successful installation of the Opera TV Store Emulator extension, the extension's button will be available in the top right corner of the address bar.
 
-<figure class="figure">
-	<img src="{{ page.id }}/toolbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner" class="figure__media">
-	<figcaption class="figure__caption">Opera TV Store Emulator extension in browser</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/toolbar.png" alt="Opera TV Store Emulator extension, a small icon of the extension will be available in the URL bar in the top right corner">
+	<figcaption elem="caption">Opera TV Store Emulator extension in browser</figcaption>
 </figure>
 
 ## Navigation {#navigation}
@@ -58,9 +58,9 @@ For keyboard navigation, refer to the mapping below:
 
 In addition to basic keyboard controls, the Opera TV Emulator also provides a more comprehensive remote control widget that simulates the colored keys (red, green, yellow, blue) and a set of media controls (play/pause, stop, rewind, fast-forward).
 
-<figure class="figure">
-	<img src="{{ page.id }}/RemoteController4x.png" alt="The Opera TV Store Emulator’s remote control" class="figure__media">
-	<figcaption class="figure__caption">The Opera TV Store Emulator’s remote control</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/RemoteController4x.png" alt="The Opera TV Store Emulator’s remote control">
+	<figcaption elem="caption">The Opera TV Store Emulator’s remote control</figcaption>
 </figure>
 
 ## Notes {#notes}

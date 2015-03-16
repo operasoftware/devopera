@@ -9,9 +9,9 @@ cover: jpg
 license: cc-by-3.0
 ---
 
-<figure class="figure figure--right">
-	<img src="{{ page.id }}/hakon-wium-lie.jpg" alt="Håkon Wium Lie" class="figure__media">
-	<figcaption class="figure__caption">Opera’s CTO Håkon Wium Lie</figcaption>
+<figure block="figure" mod="right">
+	<img elem="media" src="{{ page.id }}/hakon-wium-lie.jpg" alt="Håkon Wium Lie">
+	<figcaption elem="caption">Opera’s CTO Håkon Wium Lie</figcaption>
 </figure>
 
 Twenty years ago today, Opera’s CTO Håkon Wium Lie published [Cascading HTML style sheets – a proposal](http://www.w3.org/People/howcome/p/cascade.html).

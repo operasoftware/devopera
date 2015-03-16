@@ -29,9 +29,9 @@ I’ve created a [test theme][3] for you to play with. Just download and unzip i
 
 [3]: {{ page.id }}/yellow_sf.zip
 
-<figure class="figure">
-	<img src="{{ page.id }}/yellow_sf.jpg" alt="Screenshot of Opera 18 with Yellow SF theme" class="figure__media">
-	<figcaption class="figure__caption">Yellow SF theme applied on Opera 18</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/yellow_sf.jpg" alt="Screenshot of Opera 18 with Yellow SF theme">
+	<figcaption elem="caption">Yellow SF theme applied on Opera 18</figcaption>
 </figure>
 
 ## Images

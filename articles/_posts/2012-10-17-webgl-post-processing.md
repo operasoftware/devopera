@@ -25,9 +25,9 @@ The good news is that the WebGL API lets you apply all these effects directly vi
 
 The first step to do then is to render a simple 2D rectangle on the screen, and then play a bit with the fragment shader code and see what happens. Check out my [simple shaded rectangle](https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/simple.html) example (also seen in Figure 1). You’ll find the code for the JavaScript that does all the heavy lifting example file below the canvas in the example page.
 
-<figure class="figure">
-	<img src="{{ page.id }}/webgl-shaded-rectangle.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A simple quad in which some color interpolation is being performed to create a linear gradient.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/webgl-shaded-rectangle.png" alt="">
+	<figcaption elem="caption">Figure 1: A simple quad in which some color interpolation is being performed to create a linear gradient.</figcaption>
 </figure>
 
 To create this example, the first step was to check for WebGL availability and then create a program out of two shaders, a vertex and a fragment shader:
@@ -88,9 +88,9 @@ Note: For information on how to grab data from the camera, read [getUserMedia: a
 
 Our [edge detection example](https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/texImage2D.html) looks like Figure 2:
 
-<figure class="figure">
-	<img src="{{ page.id }}/webgl-edge-detection.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Post processing an image in WebGL using Sobel-based edge detection.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/webgl-edge-detection.png" alt="">
+	<figcaption elem="caption">Figure 2: Post processing an image in WebGL using Sobel-based edge detection.</figcaption>
 </figure>
 
 In this example we need to provide an image to the GPU so that we can do some pixel manipulation on it. This is done by creating a texture object and setting the image to it. Here's how you create a texture:
@@ -119,16 +119,16 @@ Uploading the video requires binding the created texture first, and then using *
 
 Sometimes we’d like to apply more than one transformation to the image and we cannot combine those on the same fragment shader. One classic example of this is the [Bloom effect](http://en.wikipedia.org/wiki/Bloom_(shader_effect)). The Bloom effect first blurs the input image (e.g. with a [gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur)), and then blends the blurred image with the original image to provide something like a neon effect. For the blurring stage a straight [gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur) would average the current pixel value with many levels of surrounding pixels. This is very costly (even for a fragment shader), and thus the blur effect is split into two passes: one pass that averages the current pixel with neighboring pixels in the x-axis, and then a second pass that does the same thing for the y-axis (see Figure 3).
 
-<figure class="figure">
-	<img src="{{ page.id }}/bloom-pass.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: An image with a bloom effect applied to it.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/bloom-pass.png" alt="">
+	<figcaption elem="caption">Figure 3: An image with a bloom effect applied to it.</figcaption>
 </figure>
 
 In other words, with two post-processing passes we reduce the complexity of a per pixel algorithm from O(N^2) to O(2N). Finally, after the blurring operations we apply a blending operation that also adds an exposure and vignette effects. A summary of the full algorithm can be found in [Real-Time 3D Scene Post-processing](http://developer.amd.com/media/gpu_assets/Oat-ScenePostprocessing.pdf), a slide deck presented at GDC Europe by ATI’s Chris Oat. The flow for the post-processing is summarised in Figure 4, and the bulleted list below.
 
-<figure class="figure">
-	<img src="{{ page.id }}/post-processing.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: Post processing workflow for a bloom effect pass.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/post-processing.png" alt="">
+	<figcaption elem="caption">Figure 4: Post processing workflow for a bloom effect pass.</figcaption>
 </figure>
 
 1. The first step (horizontal blur) applies the x-axis gaussian blur effect to the original input image.
@@ -137,9 +137,9 @@ In other words, with two post-processing passes we reduce the complexity of a pe
 
 You can [view the bloom effect example here](https://dev.opera.com/static/articles/2012/webgl-postprocessing/webgl-pp/multipass.html). Play with the different stages of the pipeline by toggling the options in the checkboxes. Figure 5 shows an image of the effect.
 
-<figure class="figure">
-	<img src="{{ page.id }}/webgl-bloom-effect.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: Our WebGL version of the bloom effect in action; a post processed image with blur and blending applied.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/webgl-bloom-effect.jpg" alt="">
+	<figcaption elem="caption">Figure 5: Our WebGL version of the bloom effect in action; a post processed image with blur and blending applied.</figcaption>
 </figure>
 
 In order to have multiple passes, we will need to store the intermediate results somewhere. The way to do this is to use extra textures. In order to store them we will also need a special type of buffer called a framebuffer. The framebuffer is a structure holding some metadata that can be bound to a texture and used to render the scene to it instead of rendering it to the screen. We will use one framebuffer to store the x-axis blur effect, and another one to store the y-axis blur effect. A framebuffer is created like this:

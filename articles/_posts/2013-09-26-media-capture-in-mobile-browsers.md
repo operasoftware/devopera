@@ -81,12 +81,12 @@ I have written a simple [HTML Media Capture demo][7], which can be used to test 
 
 [7]: /articles/media-capture-in-mobile-browsers/demo/
 
-<figure class="figure">
-	<a href="{{ page.id }}/1.png"><img src="{{ page.id }}/1--thumb.png" class="figure__media" alt=""></a>
-	<a href="{{ page.id }}/2.png"><img src="{{ page.id }}/2--thumb.png" class="figure__media" alt=""></a>
-	<a href="{{ page.id }}/3.png"><img src="{{ page.id }}/3--thumb.png" class="figure__media" alt=""></a>
-	<a href="{{ page.id }}/4.png"><img src="{{ page.id }}/4--thumb.png" class="figure__media" alt=""></a>
-	<a href="{{ page.id }}/5.png"><img src="{{ page.id }}/5--thumb.png" class="figure__media" alt=""></a>
+<figure block="figure">
+	<a href="{{ page.id }}/1.png"><img src="{{ page.id }}/1--thumb.png" elem="media" alt=""></a>
+	<a href="{{ page.id }}/2.png"><img src="{{ page.id }}/2--thumb.png" elem="media" alt=""></a>
+	<a href="{{ page.id }}/3.png"><img src="{{ page.id }}/3--thumb.png" elem="media" alt=""></a>
+	<a href="{{ page.id }}/4.png"><img src="{{ page.id }}/4--thumb.png" elem="media" alt=""></a>
+	<a href="{{ page.id }}/5.png"><img src="{{ page.id }}/5--thumb.png" elem="media" alt=""></a>
 </figure>
 
 Here are some considerations, which I would hope to see changed in the future:

@@ -40,14 +40,14 @@ I have created a [simple viewport demo](vw-units.html) that includes a main head
 
 If you load this up in a supporting browser and try adjusting the viewport width, you’ll see that the main heading and navigation menu’s text sizes adjust accordingly to keep them fitting inside the design (Figure 2)! This is very cool, and works because they are sized relative to the viewport width — when it changes, they change.
 
-<figure class="figure">
-	<img src="{{ page.id }}/vwunit1.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A simple web page layout with a main heading, navigation menu and three columns of body copy, using the `vw` unit.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/vwunit1.jpg" alt="">
+	<figcaption elem="caption">Figure 1: A simple web page layout with a main heading, navigation menu and three columns of body copy, using the `vw` unit.</figcaption>
 </figure>
 
-<figure class="figure">
-	<img src="{{ page.id }}/vwunit2.jpg" alt="A simple web page layout with a main heading and navigation menu, and one column of body copy. The viewport width has been decreased and the text size decreases accordingly." class="figure__media">
-	<figcaption class="figure__caption">Figure 2: When the viewport width is decreased, the heading and nav items decrease text size accordingly.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/vwunit2.jpg" alt="A simple web page layout with a main heading and navigation menu, and one column of body copy. The viewport width has been decreased and the text size decreases accordingly.">
+	<figcaption elem="caption">Figure 2: When the viewport width is decreased, the heading and nav items decrease text size accordingly.</figcaption>
 </figure>
 
 The code used for this is as follows:

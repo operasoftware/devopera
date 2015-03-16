@@ -20,26 +20,26 @@ The topics I covered in these talks included:
 
 In the introduction to both presentations, I also went for a short trip down memory lane, and talked about the fascinating work of [Karl Gerstner](http://de.wikipedia.org/wiki/Karl_Gerstner), a Swiss graphic designer and type pioneer who published an influential book called “[Programme entwerfen](http://www.lars-mueller-publishers.com/en/programme-entwerfen)” (1964), exploring the role of design in the early days of the computer era. The photo below shows you some of his experiments with programmatic design, and, to me at least, they are an early precursor of the whole “responsive design” concept. Visionary stuff!
 
-<figure class="figure">
-	<img src="{{ page.id }}/gerstner.jpg" alt="Boîte à musique example" class="figure__media">
-	<figcaption class="figure__caption">Karl Gerstner’s “Boîte à musique” example. From “Programme entwerfen”, 1964.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/gerstner.jpg" alt="Boîte à musique example">
+	<figcaption elem="caption">Karl Gerstner’s “Boîte à musique” example. From “Programme entwerfen”, 1964.</figcaption>
 </figure>
 
 You can find the full videos and slides of these talks below.
 
-<figure class="figure">
-	<iframe src="https://www.youtube.com/embed/r5zWh7-SMpk" width="690" height="388" allowfullscreen class="figure__media"></iframe>
-	<figcaption class="figure__caption">“Responsive Web Design with @viewport and Other New CSS Features” video (Fluent 2014)</figcaption>
+<figure block="figure">
+	<iframe src="https://www.youtube.com/embed/r5zWh7-SMpk" width="690" height="388" allowfullscreen elem="media"></iframe>
+	<figcaption elem="caption">“Responsive Web Design with @viewport and Other New CSS Features” video (Fluent 2014)</figcaption>
 </figure>
 
-<figure class="figure">
-	<iframe src="https://player.vimeo.com/video/93347108" width="690" height="388" allowfullscreen class="figure__media"></iframe>
-	<figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” video (State of the Browser 2014)</figcaption>
+<figure block="figure">
+	<iframe src="https://player.vimeo.com/video/93347108" width="690" height="388" allowfullscreen elem="media"></iframe>
+	<figcaption elem="caption"> “Intro to @viewport & other new Responsive Web Design CSS features” video (State of the Browser 2014)</figcaption>
 </figure>
 
-<figure class="figure">
-	<iframe src="https://www.slideshare.net/slideshow/embed_code/34076556" width="690" height="436" allowfullscreen class="figure__media"></iframe>
-	<figcaption class="figure__caption"> “Intro to @viewport & other new Responsive Web Design CSS features” slides (State of the Browser 2014)</figcaption>
+<figure block="figure">
+	<iframe src="https://www.slideshare.net/slideshow/embed_code/34076556" width="690" height="436" allowfullscreen elem="media"></iframe>
+	<figcaption elem="caption"> “Intro to @viewport & other new Responsive Web Design CSS features” slides (State of the Browser 2014)</figcaption>
 </figure>
 
 Enjoy!

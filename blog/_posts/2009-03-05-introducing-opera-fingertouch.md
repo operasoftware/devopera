@@ -35,23 +35,23 @@ This challenge led to us creating Fingertouch. The first realization we had was 
 
 [3]: http://www.opera.com/download/get.pl?sub=+devices+&mobile=1&id=32030&location=270&nothanks=true
 
-<figure class="figure">
-	<img src="{{ page.id }}/zoom01.jpg" alt="A sample page in UIQ" class="figure__media">
-	<img src="{{ page.id }}/zoom02.jpg" alt="The sample page with the links zoomed in for easier selection" class="figure__media">
-	<img src="{{ page.id }}/zoom03.jpg" alt="the final selection flys out of the screen" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/zoom01.jpg" alt="A sample page in UIQ">
+	<img elem="media" src="{{ page.id }}/zoom02.jpg" alt="The sample page with the links zoomed in for easier selection">
+	<img elem="media" src="{{ page.id }}/zoom03.jpg" alt="the final selection flys out of the screen">
 </figure>
 
 The other aspect of Fingertouch is helping users select what they want when they come across lots of links or other selectable elements close together. The images below further illustrate how Fingertouch helps in such a situation:
 
-<figure class="figure">
-	<img src="{{ page.id }}/myo1.png" alt="A sample page with links close together" class="figure__media">
-	<img src="{{ page.id }}/myo2.png" alt="The sample page with links zoomed in" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/myo1.png" alt="A sample page with links close together">
+	<img elem="media" src="{{ page.id }}/myo2.png" alt="The sample page with links zoomed in">
 </figure>
 
 The solution also works nicely with forms.
 
-<figure class="figure">
-	<img src="{{ page.id }}/fb1.png" alt="A sample page containing an HTML form" class="figure__media">
-	<img src="{{ page.id }}/fb2.png" alt="The sample form page with select menus zoomed in" class="figure__media">
-	<img src="{{ page.id }}/fb3.png" alt="The sample form page with a select menu zoomed in and expended" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/fb1.png" alt="A sample page containing an HTML form">
+	<img elem="media" src="{{ page.id }}/fb2.png" alt="The sample form page with select menus zoomed in">
+	<img elem="media" src="{{ page.id }}/fb3.png" alt="The sample form page with a select menu zoomed in and expended">
 </figure>

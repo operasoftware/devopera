@@ -225,9 +225,9 @@ In Opera’s implementation, if a file from the file system is dragged into a pa
 
 [10]: http://fontdragr.com/
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/promt.png" alt="Screenshot showing the dialog that prompts the user to allow a page to interact with a dropped file from the filesystem" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: Our dialog box, which prompts the user to allow a page to interact with a dropped file from the filesystem</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/promt.png" alt="Screenshot showing the dialog that prompts the user to allow a page to interact with a dropped file from the filesystem">
+	<figcaption elem="caption">Figure 1: Our dialog box, which prompts the user to allow a page to interact with a dropped file from the filesystem</figcaption>
 </figure>
 
 ### Exposing event origin

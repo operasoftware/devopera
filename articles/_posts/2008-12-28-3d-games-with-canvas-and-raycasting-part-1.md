@@ -55,9 +55,9 @@ The first thing we need is a map format. One easy way to store this data is in a
 
 The basic map looks like Figure 1.
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/minimap.png" alt="Static top-down minimap" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 1: Static top-down minimap][10]</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/minimap.png" alt="Static top-down minimap">
+	<figcaption elem="caption" markdown="span">[Figure 1: Static top-down minimap][10]</figcaption>
 </figure>
 
 [10]: {{ page.id }}/2dmap-test.htm
@@ -199,9 +199,9 @@ As you can see, movement and rotation is based on whether or not the `player.dir
 
 As seen in Figure 2 (check also the linked example), we now have the player moving around.
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/player-in.png" alt="Player movement with no collision detection as yet" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 2: Player movement, no collision detection as yet][12]</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/player-in.png" alt="Player movement with no collision detection as yet">
+	<figcaption elem="caption" markdown="span">[Figure 2: Player movement, no collision detection as yet][12]</figcaption>
 </figure>
 
 [12]: {{ page.id }}/2dmap-movement.htm
@@ -348,9 +348,9 @@ The `castRays()` function is called once per game cycle after the rest of the ga
 
 The test for the horizontal walls is almost indentical to the vertical test, so I won’t go into detail about that part; I’ll just add that if a wall is found in both runs, we take the one with the shortest distance. At the end of the raycasting we draw the actual ray on the minimap. This is only temporary and for testing purposes. It takes a fair bit of CPU in some browsers, so we’ll remove the ray drawing once we start rendering the 3D view of the world. I won’t include the code for that here but you can find it in the sample code. The result so far looks something like Figure 3.
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/2d-raycast.png" alt="2D raycasting on minimap" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 3: 2D raycasting on minimap][16]</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/2d-raycast.png" alt="2D raycasting on minimap">
+	<figcaption elem="caption" markdown="span">[Figure 3: 2D raycasting on minimap][16]</figcaption>
 </figure>
 
 [16]: {{ page.id }}/2dmap-raycast.htm
@@ -359,9 +359,9 @@ The test for the horizontal walls is almost indentical to the vertical test, so 
 
 Before we go any further, let’s take a look at the textures we’ll be using. Since my previous projects were heavily inspired by Wolfenstein 3D, we’ll stick to that and use a small selection of wall textures from that game. Each wall texture is 64x64 pixels and with the wall type indices in the map arrays, it’s easy to locate the correct texture for a specific map block, ie if a map block has wall type 2 that means we should be looking at the part of the image that goes from 64px to 128px in the vertical direction. Later when we start stretching the texture to simulate distance and height, this gets a little more complicated but the principle stays the same. As you can see in Figure 4, there are two versions of each texture, a regular one and a slightly darker one. It’s relatively easy to fake a bit of shading by making all walls facing north or east use one set of textures and all walls facing south or west use the other set, but I’ll leave that as an exercise for the reader.
 
-<figure class="figure" id="figure-4">
-	<img src="{{ page.id }}/walls.png" alt="Sample wall textures" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: The sample wall textures used in my implementation</figcaption>
+<figure block="figure" id="figure-4">
+	<img elem="media" src="{{ page.id }}/walls.png" alt="Sample wall textures">
+	<figcaption elem="caption">Figure 4: The sample wall textures used in my implementation</figcaption>
 </figure>
 
 ## Opera and image interpolation
@@ -419,9 +419,9 @@ Let’s go back to the rendering loop now. In the raycasting loops we now need t
 
 We have already figured out the squared distance to the wall, so we take the square root of the saved “distance” to get the actual distance to the wall. While this is the real distance to the point on the wall that was hit by the ray, we need to adjust it a bit lest we get something commonly referred to as the “fish-eye” effect. This effect is best explained by seeing it (Figure 5).
 
-<figure class="figure" id="figure-5">
-	<img src="{{ page.id }}/fisheye.png" alt="Rendering without adjusting for “fish-eye” effect" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: Rendering without adjusting for the “fish-eye” effect</figcaption>
+<figure block="figure" id="figure-5">
+	<img elem="media" src="{{ page.id }}/fisheye.png" alt="Rendering without adjusting for “fish-eye” effect">
+	<figcaption elem="caption">Figure 5: Rendering without adjusting for the “fish-eye” effect</figcaption>
 </figure>
 
 Notice how the walls seem to be “bend”. Fortunately, the fix is easy — we simply need to get the distance perpendicular to the wall we hit. This is done by multiplying the distance to the wall by the cosine of the relative ray angle. See [the “Finding distance to walls” page of Permadi’s tutorial][20] for further details.
@@ -479,9 +479,9 @@ Now we can calculate the projected wall height; since the wall blocks are cubes,
 
 And that’s about it; see Figure 6 for the final result! Well, not really — there’s still plenty of things to do before this can be called a game but the first big hurdle is done with and there’s a 3D world ready to be expanded upon. The last thing needed is to add a floor and a ceiling but this part is trivial if we make both a solid color. Simply add two `div` elements, each taking up half the screen space. Position them underneath the strips using `z-index` as appropriate and colour them as needed.
 
-<figure class="figure" id="figure-6">
-	<img src="{{ page.id }}/textured.png" alt="Pseudo 3d raycasting with textured walls" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">[Figure 6: Pseudo-3D raycasting with textured walls][22]</figcaption>
+<figure block="figure" id="figure-6">
+	<img elem="media" src="{{ page.id }}/textured.png" alt="Pseudo 3d raycasting with textured walls">
+	<figcaption elem="caption" markdown="span">[Figure 6: Pseudo-3D raycasting with textured walls][22]</figcaption>
 </figure>
 
 [22]: {{ page.id }}/3d-texture.htm

@@ -20,9 +20,9 @@ In previous versions of Opera’s core, `innerHTML` was quite forgiving when inj
 
 To see this in action, here’s a [simple test case]({{ page.id}}/innerhtml-in-xml.xml "Test case for injecting malformed content via innerHTML in an XHTML document") using `innerHTML` to inject the classic `<b><i>…</b></i>` set of misnested tags into an XHTML document. If you take a peek at the DOM after the page was loaded you’ll see how the misnested tags have been silently fixed in the current stable version of Opera, while the same test case will fail in other browsers such as Chrome and Firefox.
 
-<figure class="figure">
-	<img src="{{ page.id }}/innerhtml-xhtml-result.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Opera Dragonfly showing how the misnested markup has been silently fixed in the DOM</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/innerhtml-xhtml-result.png" alt="">
+	<figcaption elem="caption">Opera Dragonfly showing how the misnested markup has been silently fixed in the DOM</figcaption>
 </figure>
 
 Following the fix to CORE-4336, Opera’s core is now aligned with the stricter behavior of other browsers, which has been formally specified in [WHATWG](https://whatwg.org/)’s [DOM Parsing and Serialization](https://html.spec.whatwg.org/multipage/infrastructure.html#dom-innerhtml):
