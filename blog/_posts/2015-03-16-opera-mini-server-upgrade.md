@@ -8,6 +8,7 @@ tags:
 - css
 - javascript
 - opera
+- opera-mini
 license: cc-by-3.0
 ---
 
@@ -72,7 +73,7 @@ Previously, the Opera Mini clusters were running a version of Opera Presto analo
 
 ## Design considerations
 
-* If you use CSS gradients as backgrounds to text/buttons, set a sensible  `background-color` that contrasts well with the text so that it can be read without the gradient.
+* If you use CSS gradients as backgrounds to text/buttons, set a sensible `background-color` that contrasts well with the text so that it can be read without the gradient.
 * Don’t rely on icon fonts, as web fonts aren’t downloaded. Instead, use an SVG `<img>`. These can be made responsive; see [How Media Queries Allow You to Optimize SVG Icons for Several Sizes](https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/).
 * If you rely on some sort of Geo IP tool for detecting a visitor’s location, note that the IP address you find in the headers is that of our compression proxy. The user’s original IP address is passed on via the `X-Forwarded-For` header.
 * Ask yourself [“Do Websites Need to Look Exactly the Same in Every Browser”](http://dowebsitesneedtolookexactlythesameineverybrowser.com/) and remember that your content is the reason that visitors come to your site.
