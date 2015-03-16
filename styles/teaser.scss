@@ -75,17 +75,25 @@
 
 	// Lap to Desk
 
+	@include layout-breakpoint($lap-and-up) {
+
+		&__picture--featured {
+			@include span(3 at 1 of 6);
+			margin-top:2px;
+			margin-bottom:22px;
+			}
+		&__content--featured {
+			@include span(3 at 4 of 6);
+			}
+
+		}
+
+	// Lap to Desk
+
 	@include layout-breakpoint($lap-to-desk) {
 
 		&__title--featured {
 			font-size:30px;
-			}
-		&__picture--featured {
-			@include span(3 at 1 of 6);
-			margin-bottom:22px;
-			}
-		&__content--featured {
-			@include span(3 at 4 of 6 last);
 			}
 
 		}
@@ -97,13 +105,6 @@
 		&__title--featured {
 			margin-top:-7px;
 			font-size:36px;
-			}
-		&__picture--featured {
-			@include span(3 at 1 of 6);
-			margin-bottom:22px;
-			}
-		&__content--featured {
-			@include span(3 at 4 of 6);
 			}
 
 		}
