@@ -4,8 +4,8 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 
 ## Environment setup
 
-1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll stringex sass` on the command line.
-2. Download and install [Node.js](http://nodejs.org) with the default installer options.
+1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll stringex` on the command line.
+2. Download and install [Node.js](http://nodejs.org) or [io.js](https://iojs.org/) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
 5. Run `npm install bower -g` to install Bower globally.
@@ -19,15 +19,7 @@ Please install [EditorConfig](http://editorconfig.org/#download) plugin for your
 If you’ve set up all the above at some point in the past, and want to update your installation, these are the steps to follow:
 
 1. Run `sudo gem update` to install the latest Ruby gems.
-2. Run `npm install` inside the `devopera` folder.
-
-## Opening
-
-To open Dev.Opera locally, simply run `grunt`. It will take up to 1 minute to:
-
-1. Build the site in “limited mode” with only the latest 150 posts.
-2. Start local server at `http://0.0.0.0:33310` address.
-3. Open it in your default browser.
+2. Run `npm install` & `bower install` inside the `devopera` folder.
 
 ## Development
 
@@ -38,7 +30,7 @@ To start developing Dev.Opera run `grunt dev`, it would take up to 1 minute to:
 3. Open it in your default browser.
 4. Launch a `watch` task for all files.
 
-So now every time you change project files, Dev.Opera will be rebuilt and you browser will update. For HTML and MD files it will still take up to 1 minute, for CSS it will be much faster (please request the same fast track for JS or anything else if needed).
+So now every time you change project files, Dev.Opera will be rebuilt and you browser will update. For HTML and Markdown files it will still take up to 1 minute, for CSS it will be much faster (please request the same fast track for JS or anything else if needed).
 
 # Full build and deploy
 
