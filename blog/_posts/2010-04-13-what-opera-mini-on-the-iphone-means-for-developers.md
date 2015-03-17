@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure block="figure" mod="left">
+<figure block="figure" mod="left-half">
 	<img elem="media" src="{{ page.id }}/OperaMini5_iPhone.jpg" alt="">
 	<figcaption></figcaption>
 </figure>

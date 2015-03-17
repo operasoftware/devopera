@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img src="{{ page.id }}/intro.jpg" elem="media" width="256">
 	<figcaption elem="caption">Opera Mini for iOS</figcaption>
 </figure>
@@ -36,7 +36,7 @@ If you rely on some sort of Geo IP tool for detecting a visitor’s location, no
 
 ## Turbo mode
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img src="{{ page.id }}/turbo.jpg" elem="media" width="256">
 	<figcaption elem="caption">Browser modes switcher with advanced compression settings</figcaption>
 </figure>
@@ -57,7 +57,7 @@ This mode does no compression at all; everything happens on the client device. T
 
 ## QR Codes!
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img src="{{ page.id }}/qr.png" elem="media" width="256">
 	<figcaption elem="caption"><a href="https://addons.opera.com/en/extensions/details/qr-codematic/">QR Codematic</a> extension for Opera</figcaption>
 </figure>
@@ -70,7 +70,7 @@ We thought it would be nice to bring this QR Code based sharing mechanism also t
 
 ## Power user tips
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img src="{{ page.id }}/toggle.png" elem="media" width="256">
 	<figcaption elem="caption">Address bar navigation toggle</figcaption>
 </figure>

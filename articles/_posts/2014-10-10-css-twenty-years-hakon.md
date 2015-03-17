@@ -9,7 +9,7 @@ cover: jpg
 license: cc-by-3.0
 ---
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img elem="media" src="{{ page.id }}/hakon-wium-lie.jpg" alt="Håkon Wium Lie">
 	<figcaption elem="caption">Opera’s CTO Håkon Wium Lie</figcaption>
 </figure>

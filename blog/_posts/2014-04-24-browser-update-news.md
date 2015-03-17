@@ -15,7 +15,7 @@ What better way to celebrate the new redesigned Dev.Opera than with a round-up o
 
 ## Opera Coast for iPhone released!
 
-<figure block="figure" mod="right">
+<figure block="figure" mod="right-half">
 	<img elem="media" src="{{ page.id }}/screenshot-iphonesearch-angled-white.jpg" alt="Opera Coast on iPhone">
 </figure>
 
