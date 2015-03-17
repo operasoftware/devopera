@@ -10,7 +10,7 @@ cover: png
 license: cc-by-3.0
 ---
 
-<figure block="figure" mod="right-half">
+<figure block="figure" mod="right">
 	<img elem="media" src="{{ page.id }}/cellphone.png" alt="Opera Mini in Microemulator">
 </figure>
 
