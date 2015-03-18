@@ -467,9 +467,8 @@ Hardware and electronics interfacing might be daunting at first, but the good ne
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/img/nodeboats.jpg" alt="">
+	<figcaption elem="caption">[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant’s boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five.</figcaption>
 </figure>
-
-_[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant’s boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five._
 
 I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challenging at start, but seeing your code literally come to life in the physical world will be immensely rewarding.
 
