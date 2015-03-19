@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us the web developers? This article will explore 2 common wireless protocol, [Wi-Fi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
+The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us web developers? This article will explore two common wireless protocols, [Wi-Fi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
 In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](/code). It will be fun!
 
@@ -177,7 +177,7 @@ In the next couple of sections we will go through two examples. These two exampl
 
 ### 2. Sensing photocell values
 
-Blink the on-board `D7` led.
+Blink the on-board `D7` LED.
 
 As the very first step, we will learn how to blink an LED. This is the `hello world` of electronics. [Open the Spark web editor](https://www.spark.io/build) and [copy the simple blinking LED code](code/spark-blinky/blinky.ino). Here it uses a [simple firmware code](http://docs.spark.io/firmware/) to blink the on-board LED `D7` every 1 second. To flash the firmware code onto your Spark Core, click the `flash` icon at the top of the left sidebar and wait for the LED on board to come back to the breathing cyan pattern. You should see the LED `D7` blinking.
 
@@ -265,7 +265,7 @@ This is just the start in playing with the [Spark JavaScript API](http://docs.sp
 
 ### 3. Control a Servo
 
-Let’s wireup the breadboard with a servo this time!
+Let’s wire up the breadboard with a servo this time!
 
 We will use a servo motor and a capacitor. Wire up the Black / Brown wire to the `Gnd` pin of the Spark Core, Orange / Red to the `Vin` of the Spark Core and finally the Yellow wire will be used to wire up to the analog pin `A0` of the Spark Core. We will also use a capacitor between the `Vin` of the Spark Core and `Gnd` of the Spark Core to stabilize the power to the servo. Capacitor is optional, but it’s good to have it for stability.
 
@@ -357,7 +357,7 @@ This example is just the tip of the iceberg in how you can control many other de
 
 ## TI Sensor Tag and BLE
 
-In this section, we will use with the Bluetooth Low Energy (BLE) protocol with the [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag), which is designed for developers to play with various sensors and BLE. The SensorTag comes with a BLE chip on-board along with sensors such as IR temperature sensor, humidity sensor, pressure sensor, accelerometer, etc in a compact handy device. The advantage of using BLE is its low power consumption. The SensorTag can be powered with just a coin cell potentially for years.
+In this section, we will use the Bluetooth Low Energy (BLE) protocol with the [TI SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag), which is designed for developers to play with various sensors and BLE. The SensorTag comes with a BLE chip on-board along with sensors such as IR temperature sensor, humidity sensor, pressure sensor, accelerometer, etc in a compact handy device. The advantage of using BLE is its low power consumption. The SensorTag can be powered with just a coin cell potentially for years.
 
 To play with the TI SensorTag, you need a couple of things:
 
@@ -451,7 +451,7 @@ That is just a tiny example on how to interface with a BLE device. To dabble mor
 
 ## More resources
 
-The easiest way to get started in learning to interface web technologies with electronics is to choose a hardware platform which already comes with a JavaScript API. Here are some examples of more such platforms other than the Spark and SensorTag that we covered:
+The easiest way to start learning to interface web technologies with electronics is to choose a hardware platform which already comes with a JavaScript API. Here are some examples of more such platforms other than the Spark and SensorTag that we covered:
 
 - [Tessel](https://tessel.io/) — [hardware api](https://tessel.io/docs/hardwareAPI)
 - [Arduino Yun](http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN) — [Johnny-Five](https://github.com/rwaldron/johnny-five)
