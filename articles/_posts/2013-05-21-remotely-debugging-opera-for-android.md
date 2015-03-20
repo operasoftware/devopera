@@ -76,7 +76,7 @@ In your computer's terminal, navigate to the directory into which you extracted 
 
 To start the debugging bridge, Type in the following terminal command:
 
-	adb forward tcp:9222 localabstract:opera_devtools_remote
+	adb forward tcp:9222 localabstract:com.opera.browser.devtools
 
 You should see a message output along the lines of the following:
 
