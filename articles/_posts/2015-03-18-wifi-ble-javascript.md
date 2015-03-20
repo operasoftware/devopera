@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Wi-Fi, BLE and JavaScript
+title: Electronics for the JavaScript Developer using Wi-Fi and Bluetooth LE
 authors:
 - sayanee-basu
 intro: 'The Internet of Things is gaining momentum in the recent years as more embedded devices are being connected to the Internet. What does this mean for the web developers? This article explores 2 common wireless protocol, Wi-Fi and BLE, and gives practical examples to start playing with them with JavaScript and some sensors.'
