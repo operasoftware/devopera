@@ -67,7 +67,7 @@ Not all browsers hide text while downloading web fonts. For example Internet Exp
 
 The above table shows the usage of the FOUT and FOIT across browsers. Note that Safari (and older Android WebKit versions) do not have a timeout. On these browsers, text won’t render until fonts have completely loaded.
 
-Browser vendors are working on a proposal for a new CSS property to control font loading and rendering. It is meant to give developers more control over the blocking and swapping behaviour of web fonts. [The proposed `font-rendering` property](https://github.com/KenjiBaheux/css-font-rendering) accepts three parameters:
+Browser vendors are working on a proposal for a new CSS property to control font loading and rendering. It is meant to give developers more control over the blocking and swapping behaviour of web fonts. [The proposed `font-rendering` property](https://tabatkins.github.io/specs/css-font-rendering/) accepts three parameters:
 
 * `block`: block rendering of the text while fonts are downloading with an optional timeout;
 * `swap`: use a fallback font and render the font when it becomes available with an optional timeout;
