@@ -378,7 +378,7 @@ Remember that the network and decoding requests are asynchronous, so
 we have to wait until they are completed before we can create the
 `HiHat` that uses the loaded buffer:
 
-    sampleLoader('/hihat.wav', context, function(buffer) {
+    sampleLoader('./hihat.wav', context, function(buffer) {
         var hihat = new HiHat(context, buffer);
         hihat.trigger(0);
     });
