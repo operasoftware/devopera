@@ -195,8 +195,8 @@ solve this by wrapping the code we’ve written in a simple object:
         this.osc.frequency.setValueAtTime(150, time);
         this.gain.gain.setValueAtTime(1, time);
 
-        this.osc.frequency.exponentialRampToValueAtTime(0.001, time + 0.5);
-        this.gain.gain.exponentialRampToValueAtTime(0.001, time + 0.5);
+        this.osc.frequency.exponentialRampToValueAtTime(0.01, time + 0.5);
+        this.gain.gain.exponentialRampToValueAtTime(0.01, time + 0.5);
 
         this.osc.start(time);
 
