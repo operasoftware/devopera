@@ -50,11 +50,11 @@ To generate audio using the Web Audio API, your browser needs to know
 about the sound producing devices available to your computer, and what
 capabilities. This information is contained in the `AudioContext`.
 
-	var context = new AudioContext;
-	console.log(context.sampleRate);
-	// → 44100
-	console.log(context.destination.channelCount);
-	// → 2
+    var context = new AudioContext;
+    console.log(context.sampleRate);
+    // → 44100
+    console.log(context.destination.channelCount);
+    // → 2
 
 We can describe audio digitally as a series of numbers. Each number
 describes the amplitude of the sound at a particular point in time. We
@@ -73,12 +73,12 @@ drum. But the Web Audio API makes the process easier by providing us
 with a higher level, declarative set of commands to describe to the
 computer how to make the sound we want.
 
-	var oscillator = context.createOscillator();
-	oscillator.frequency = 261.6;
+    var oscillator = context.createOscillator();
+    oscillator.frequency = 261.6;
 
-	oscillator.connect(context.destination);
+    oscillator.connect(context.destination);
 
-	oscillator.start(0);
+    oscillator.start(0);
 
 If you type the code above into your developer console, you should
 hear a low-pitched, single frequency tone at 261.6Hz (if you’re a
@@ -86,7 +86,7 @@ musician, that’s a middle C).
 
 Make it stop? OK.
 
-	oscillator.stop(0);
+    oscillator.stop(0);
 
 There’s a few things to note in the code above. Firstly
 `createOscillator` is a method on `context` — it needs to know about
@@ -100,8 +100,8 @@ call `oscillator` and `destination` instances of “nodes” and by
 connecting them together we create a graph[^1].
 
 <figure class="figure">
-	<img src="{{ page.id }}/context-oscillator.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Node graph of oscillator connected to destination</figcaption>
+    <img src="{{ page.id }}/context-oscillator.png" alt="" class="figure__media">
+    <figcaption class="figure__caption">Node graph of oscillator connected to destination</figcaption>
 </figure>
 
 Thirdly, calls to `start` and `stop` take the time as an argument. `0`
@@ -109,8 +109,8 @@ means to perform the operation immediately, but we can supply any
 argument and it will be interpreted as the number of seconds from
 now. What time is now?
 
-	console.log(context.currentTime);
-	// → 1182.5980952380953
+    console.log(context.currentTime);
+    // → 1182.5980952380953
 
 If you’ve worked with other timing mechanisms in JavaScript before,
 such as `setTimeout`, this concept of time may be slightly
@@ -131,24 +131,24 @@ decreases. Once we’ve struck the drum there’s nothing to keep
 producing sound so it simply decays. Let’s tackle the latter part, the
 “envelope” of the sound, first.
 
-	var oscillator = context.createOscillator();
-	oscillator.frequency = 150;
+    var oscillator = context.createOscillator();
+    oscillator.frequency = 150;
 
-	var gain = context.createGain();
+    var gain = context.createGain();
 
-	oscillator.connect(gain);
-	gain.connect(context.destination);
+    oscillator.connect(gain);
+    gain.connect(context.destination);
 
-	gain.gain.setValueAtTime(1, 0);
-	gain.gain.exponentialRampToValueAtTime(0.001, 0.5);
-	osc.start(0);
-	osc.stop(0.5);
+    gain.gain.setValueAtTime(1, 0);
+    gain.gain.exponentialRampToValueAtTime(0.001, 0.5);
+    oscillator.start(0);
+    oscillator.stop(0.5);
 
 In the code above, we’ve created this audio graph:
 
 <figure class="figure">
-	<img src="{{ page.id }}/oscillator-envelope.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Node graph for an oscillator with an envelope</figcaption>
+    <img src="{{ page.id }}/oscillator-envelope.png" alt="" class="figure__media">
+    <figcaption class="figure__caption">Node graph for an oscillator with an envelope</figcaption>
 </figure>
 
 A `gain` node is like a volume control. We can use that to control the
@@ -160,15 +160,15 @@ zero over the next `0.5` seconds. Any parameter on any node in the Web
 Audio API can be automated in this way if it implements the
 `AudioParam` interface:
 
-	console.log(gain.gain);
-	// → AudioParam { defaultValue: 1, value: 1, setValueAtTime: function, linearRampToValueAtTime: function, exponentialRampToValueAtTime: function… }
+    console.log(gain.gain);
+    // → AudioParam { defaultValue: 1, value: 1, setValueAtTime: function, linearRampToValueAtTime: function, exponentialRampToValueAtTime: function… }
 
 Armed with this knowledge, we now know how to complete our kick drum
 synthesis: by dropping the frequency of the oscillator rapidly after
 the initial attack.
 
-	oscillator.frequency.setValueAtTime(150, 0);
-	oscillator.frequency.exponentialRampToValueAtTime(0.001, 0.5);
+    oscillator.frequency.setValueAtTime(150, 0);
+    oscillator.frequency.exponentialRampToValueAtTime(0.001, 0.5);
 
 If you’ve been following along with the code in this article, you may
 have noticed that once you call `stop` on an oscillator, it’s
@@ -178,39 +178,39 @@ graphs — but it does make working with these drum sounds more
 complicated as we’d like a way to trigger them multiple times. We can
 solve this by wrapping the code we’ve written in a simple object:
 
-	function Kick(context) {
-		this.context = context;
-	};
+    function Kick(context) {
+        this.context = context;
+    };
 
-	Kick.prototype.setup = function() {
-		this.osc = this.context.createOscillator();
-		this.gain = this.context.createGain();
-		this.osc.connect(this.gain);
-		this.gain.connect(this.context.destination)
-	};
+    Kick.prototype.setup = function() {
+        this.osc = this.context.createOscillator();
+        this.gain = this.context.createGain();
+        this.osc.connect(this.gain);
+        this.gain.connect(this.context.destination)
+    };
 
-	Kick.prototype.trigger = function(time) {
-		this.setup();
+    Kick.prototype.trigger = function(time) {
+        this.setup();
 
-		this.osc.frequency.setValueAtTime(150, time);
-		this.gain.gain.setValueAtTime(1, time);
+        this.osc.frequency.setValueAtTime(150, time);
+        this.gain.gain.setValueAtTime(1, time);
 
-		this.osc.frequency.exponentialRampToValueAtTime(0.001, time + 0.5);
-		this.gain.gain.exponentialRampToValueAtTime(0.001, time + 0.5);
+        this.osc.frequency.exponentialRampToValueAtTime(0.001, time + 0.5);
+        this.gain.gain.exponentialRampToValueAtTime(0.001, time + 0.5);
 
-		this.osc.start(time);
+        this.osc.start(time);
 
-		this.osc.stop(time + 0.5);
-	};
+        this.osc.stop(time + 0.5);
+    };
 
 We store a reference to the audio context when we create the kick, and
 then each time we trigger the kick sound we can pass in a time, which
 creates the audio graph and schedules the parameter changes.
 
-	kick = new Kick(context);
-	kick.trigger(0);
-	kick.trigger(0.5);
-	kick.trigger(1);
+    kick = new Kick(context);
+    kick.trigger(0);
+    kick.trigger(0.5);
+    kick.trigger(1);
 
 ### The Snare Drum
 
@@ -224,21 +224,21 @@ First, the rattle of the wire snare underneath the drum can be
 synthesised using a burst of noise. We can create noise using a random
 number generator.
 
-	function Snare(context) {
-		this.context = context;
-	};
+    function Snare(context) {
+        this.context = context;
+    };
 
-	Snare.prototype.noiseBuffer = function() {
-		var bufferSize = this.context.sampleRate;
-		var buffer = this.context.createBuffer(1, bufferSize, this.context.sampleRate);
-		var output = buffer.getChannelData(0);
+    Snare.prototype.noiseBuffer = function() {
+        var bufferSize = this.context.sampleRate;
+        var buffer = this.context.createBuffer(1, bufferSize, this.context.sampleRate);
+        var output = buffer.getChannelData(0);
 
-		for (var i = 0; i < bufferSize; i++) {
-			output[i] = Math.random() * 2 - 1;
-		}
+        for (var i = 0; i < bufferSize; i++) {
+            output[i] = Math.random() * 2 - 1;
+        }
 
-		return buffer;
-	};
+        return buffer;
+    };
 
 In this code we create a “buffer” of individual samples, which we can
 later trigger at a precise time. The call to `createBuffer` specifies
@@ -253,27 +253,27 @@ with equal energy at every frequency. Removing some of the highest
 frequency sound from this noise creates a more realistic sounding
 snare. We can do that using a filter:
 
-	Snare.prototype.setup = function() {
-		this.noise = this.context.createBufferSource();
-		this.noise.buffer = this.noiseBuffer();
-		var noiseFilter = this.context.createBiquadFilter();
-		noiseFilter.type = 'highpass';
-		noiseFilter.frequency.value = 1000;
-		this.noise.connect(noiseFilter);
-		// …
-	};
+    Snare.prototype.setup = function() {
+        this.noise = this.context.createBufferSource();
+        this.noise.buffer = this.noiseBuffer();
+        var noiseFilter = this.context.createBiquadFilter();
+        noiseFilter.type = 'highpass';
+        noiseFilter.frequency.value = 1000;
+        this.noise.connect(noiseFilter);
+        // …
+    };
 
 We set the cutoff `frequency` of the filter at 1000 Hz. This means
 noise above 1000 Hz will be removed. We also need to shape the
 amplitude of the noise burst using an envelope, as we did before with
 the snare drum.
 
-	// …
-	this.noiseEnvelope = this.context.createGain();
-	noiseFilter.connect(this.noiseEnvelope);
+    // …
+    this.noiseEnvelope = this.context.createGain();
+    noiseFilter.connect(this.noiseEnvelope);
 
-	this.noiseEnvelope.connect(this.context.destination);
-	// …
+    this.noiseEnvelope.connect(this.context.destination);
+    // …
 
 A short burst of filtered noise on its own doesn’t create a very good
 sounding snare. Adding a sharp “snap” to the front of the sound helps
@@ -281,40 +281,40 @@ to make the snare sound more percussive. We can achieve this using an
 oscillator set to generate a triangle waveform, and again shape that
 using a `GainNode` as an envelope.
 
-	// …
-	this.osc = this.context.createOscillator();
-	this.osc.type = 'triangle';
+    // …
+    this.osc = this.context.createOscillator();
+    this.osc.type = 'triangle';
 
-	this.oscEnvelope = this.context.createGain();
-	this.osc.connect(this.oscEnvelope);
-	this.oscEnvelope.connect(this.context.destination);
+    this.oscEnvelope = this.context.createGain();
+    this.osc.connect(this.oscEnvelope);
+    this.oscEnvelope.connect(this.context.destination);
 
 We have created this graph of nodes for our snare sound:
 
 <figure class="figure">
-	<img src="{{ page.id }}/snare.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Node graph for an synthesised snare</figcaption>
+    <img src="{{ page.id }}/snare.png" alt="" class="figure__media">
+    <figcaption class="figure__caption">Node graph for an synthesised snare</figcaption>
 </figure>
 
 Now we just need to provide some parameters for each of the
 nodes. After some fiddling, I found these parameters created quite a
 satisfying, snappy snare:
 
-	Snare.prototype.trigger = function(time) {
-		this.setup();
+    Snare.prototype.trigger = function(time) {
+        this.setup();
 
-		this.noiseEnvelope.gain.setValueAtTime(1, time);
-		this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.2);
-		this.noise.start(time)
+        this.noiseEnvelope.gain.setValueAtTime(1, time);
+        this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.2);
+        this.noise.start(time)
 
-		this.osc.frequency.setValueAtTime(100, time);
-		this.oscEnvelope.gain.setValueAtTime(0.7, time);
-		this.oscEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.1);
-		this.osc.start(time)
+        this.osc.frequency.setValueAtTime(100, time);
+        this.oscEnvelope.gain.setValueAtTime(0.7, time);
+        this.oscEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.1);
+        this.osc.start(time)
 
-		this.osc.stop(time + 0.2);
-		this.noise.stop(time + 0.2);
-	};
+        this.osc.stop(time + 0.2);
+        this.noise.stop(time + 0.2);
+    };
 
 ### The hi-hat
 
@@ -329,21 +329,21 @@ can be achieved with the Web Audio API.
 
 Our basic instrument is simple:
 
-	function HiHat(context, buffer) {
-		this.context = context;
-		this.buffer = buffer;
-	};
+    function HiHat(context, buffer) {
+        this.context = context;
+        this.buffer = buffer;
+    };
 
-	HiHat.prototype.setup = function() {
-		this.source = this.context.createBufferSource();
-		this.source.buffer = this.buffer;
-		this.source.connect(this.context.destination);
-	};
+    HiHat.prototype.setup = function() {
+        this.source = this.context.createBufferSource();
+        this.source.buffer = this.buffer;
+        this.source.connect(this.context.destination);
+    };
 
-	HiHat.prototype.trigger = function(time) {
-		this.setup();
-		this.source.start(time);
-	};
+    HiHat.prototype.trigger = function(time) {
+        this.setup();
+        this.source.start(time);
+    };
 
 When we instantiate the `HiHat` object, we give it a buffer of
 samples. The `setup` function assigns the buffer of samples to a
@@ -354,17 +354,17 @@ Where do we get our source buffer of samples from? Remember from our
 snare drum example earlier, we generated a buffer using a random
 number generator. But we can also create one by loading a file:
 
-	var sampleLoader = function(url, context, callback) {
-		var request = new XMLHttpRequest();
-		request.open('get', url, true);
-		request.responseType = 'arraybuffer';
-		request.onload = function() {
-			context.decodeAudioData(request.response, function(buffer) {
-				callback(buffer);
-			});
-		};
-		request.send();
-	};
+    var sampleLoader = function(url, context, callback) {
+        var request = new XMLHttpRequest();
+        request.open('get', url, true);
+        request.responseType = 'arraybuffer';
+        request.onload = function() {
+            context.decodeAudioData(request.response, function(buffer) {
+                callback(buffer);
+            });
+        };
+        request.send();
+    };
 
 This function takes a URL of a sound file and makes an asynchronous
 GET request for it using `XMLHttpRequest`. Then the data is loaded,
@@ -378,10 +378,10 @@ Remember that the network and decoding requests are asynchronous, so
 we have to wait until they are completed before we can create the
 `HiHat` that uses the loaded buffer:
 
-	sampleLoader('/hihat.wav', context, function(buffer) {
-		var hihat = new HiHat(context, buffer);
-		hihat.trigger(0);
-	});
+    sampleLoader('/hihat.wav', context, function(buffer) {
+        var hihat = new HiHat(context, buffer);
+        hihat.trigger(0);
+    });
 
 ## Timing
 
@@ -414,38 +414,38 @@ developers have taken these ideas and wrapped them up in libraries
 that make working with time in Web Audio applications much easier:
 
 - [WAAClock](https://github.com/sebpiq/WAAClock) packages the ideas
-	from Chris Wilson’s article into a library, with a simple interface
-	and some clear examples.
+    from Chris Wilson’s article into a library, with a simple interface
+    and some clear examples.
 - [Dilla](https://github.com/adamrenklint/dilla) is a timing library
-	specialised for building drum machines. It models the concept of
-	beats, bars, and loops and has a notation language for describing
-	the timing of sounds in the loop.
+    specialised for building drum machines. It models the concept of
+    beats, bars, and loops and has a notation language for describing
+    the timing of sounds in the loop.
 - [Tone.js](https://github.com/TONEnoTONE/Tone.js) is a comprehensive
-	set of libraries for making all kinds of sounds. As well as a timing
-	library, it also has built-in synthesisers and effects processors
-	which provide abstractions over more complicated Web Audio node
-	graphs.
+    set of libraries for making all kinds of sounds. As well as a timing
+    library, it also has built-in synthesisers and effects processors
+    which provide abstractions over more complicated Web Audio node
+    graphs.
 
 All of these libraries make it easy to build a simple loop, and it’s a
 fun exercise to try each one and see which one is the best fit for you
 and the application you are building. As an example, I’ll use
 `Tone.js` to build a simple loop.
 
-	var play = function(buffer) {
-		var kick = new Kick(context);
-		var snare = new Snare(context);
-		var hihat = new HiHat(context, buffer);
+    var play = function(buffer) {
+        var kick = new Kick(context);
+        var snare = new Snare(context);
+        var hihat = new HiHat(context, buffer);
 
-		Tone.Transport.bpm.value = 120;
+        Tone.Transport.bpm.value = 120;
 
-		Tone.Transport.setInterval(function(time){ kick.trigger(time) }, "4n");
-		Tone.Transport.setInterval(function(time){ snare.trigger(time) }, "2n");
-		Tone.Transport.setInterval(function(time){ hihat.trigger(time) }, "8t");
+        Tone.Transport.setInterval(function(time){ kick.trigger(time) }, "4n");
+        Tone.Transport.setInterval(function(time){ snare.trigger(time) }, "2n");
+        Tone.Transport.setInterval(function(time){ hihat.trigger(time) }, "8t");
 
-		Tone.Transport.start();
-	};
+        Tone.Transport.start();
+    };
 
-	sampleLoader('/hihat.wav', context, play);
+    sampleLoader('/hihat.wav', context, play);
 
 In this code, `Tone.Transport` is the interface to the `Tone.js`
 [timing library](https://github.com/TONEnoTONE/Tone.js/wiki/Transport). We
@@ -481,19 +481,19 @@ We’ve only scratched the surface of drum synthesis in this article.
 For further details you might find these resources helpful:
 
 - The Synth Secrets series from Sound on Sound magazine is a goldmine
-	of interesting articles on synthesis using hardware
-	synthesisers. With some thought, many of the techniques can be
-	recreated using the nodes provided by the Web Audio API. The
-	articles on synthesising a
-	[snare drum](http://www.soundonsound.com/sos/Mar02/articles/synthsecrets0302.asp),
-	[kick drum](http://www.soundonsound.com/sos/Feb02/articles/synthsecrets0202.asp)
-	and
-	[cymbal](http://www.soundonsound.com/sos/jul02/articles/synthsecrets0702.asp)
-	were very useful for this blog post.
+    of interesting articles on synthesis using hardware
+    synthesisers. With some thought, many of the techniques can be
+    recreated using the nodes provided by the Web Audio API. The
+    articles on synthesising a
+    [snare drum](http://www.soundonsound.com/sos/Mar02/articles/synthsecrets0302.asp),
+    [kick drum](http://www.soundonsound.com/sos/Feb02/articles/synthsecrets0202.asp)
+    and
+    [cymbal](http://www.soundonsound.com/sos/jul02/articles/synthsecrets0702.asp)
+    were very useful for this blog post.
 - The
-	[Dance Music Manual](http://www.amazon.co.uk/gp/product/0415825644/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0415825644&linkCode=as2&tag=chrislowis-21&linkId=JVUM7JCHQB7DC7XO)
-	by Rick Snoman is an in-depth look at electronic music production
-	and has a very informative section of drum machine synthesis.
+    [Dance Music Manual](http://www.amazon.co.uk/gp/product/0415825644/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0415825644&linkCode=as2&tag=chrislowis-21&linkId=JVUM7JCHQB7DC7XO)
+    by Rick Snoman is an in-depth look at electronic music production
+    and has a very informative section of drum machine synthesis.
 
 [^1]: This diagram was generated using the Web Audio developer tools in Firefox Developer Edition.
 [^2]: “Sampling” gets its name from the process of turning a recording of a real sound into a series of samples.
