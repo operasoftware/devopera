@@ -141,8 +141,8 @@ producing sound so it simply decays. Let’s tackle the latter part, the
 
 	gain.gain.setValueAtTime(1, 0);
 	gain.gain.exponentialRampToValueAtTime(0.001, 0.5);
-	osc.start(0);
-	osc.stop(0.5);
+	oscillator.start(0);
+	oscillator.stop(0.5);
 
 In the code above, we’ve created this audio graph:
 
@@ -195,8 +195,8 @@ solve this by wrapping the code we’ve written in a simple object:
 		this.osc.frequency.setValueAtTime(150, time);
 		this.gain.gain.setValueAtTime(1, time);
 
-		this.osc.frequency.exponentialRampToValueAtTime(0.001, time + 0.5);
-		this.gain.gain.exponentialRampToValueAtTime(0.001, time + 0.5);
+		this.osc.frequency.exponentialRampToValueAtTime(0.01, time + 0.5);
+		this.gain.gain.exponentialRampToValueAtTime(0.01, time + 0.5);
 
 		this.osc.start(time);
 
@@ -304,12 +304,12 @@ satisfying, snappy snare:
 		this.setup();
 
 		this.noiseEnvelope.gain.setValueAtTime(1, time);
-		this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.2);
+		this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.01, time + 0.2);
 		this.noise.start(time)
 
 		this.osc.frequency.setValueAtTime(100, time);
 		this.oscEnvelope.gain.setValueAtTime(0.7, time);
-		this.oscEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.1);
+		this.oscEnvelope.gain.exponentialRampToValueAtTime(0.01, time + 0.1);
 		this.osc.start(time)
 
 		this.osc.stop(time + 0.2);
@@ -367,7 +367,7 @@ number generator. But we can also create one by loading a file:
 	};
 
 This function takes a URL of a sound file and makes an asynchronous
-GET request for it using `XMLHttpRequest`. Then the data is loaded,
+GET request for it using `XMLHttpRequest`. When the data is loaded,
 the call to `context.decodeAudioData` turns the audio file into a
 buffer of samples, and triggers a callback. The file formats that
 `decodeAudioData` understand are the same as those supported by the
@@ -378,7 +378,7 @@ Remember that the network and decoding requests are asynchronous, so
 we have to wait until they are completed before we can create the
 `HiHat` that uses the loaded buffer:
 
-	sampleLoader('/hihat.wav', context, function(buffer) {
+	sampleLoader('./hihat.wav', context, function(buffer) {
 		var hihat = new HiHat(context, buffer);
 		hihat.trigger(0);
 	});
@@ -470,7 +470,7 @@ and combine them as a loop. We’ve learnt the basics of the Web Audio
 API and seen how to solve some common problems. If you’d like to play
 with the code and hear it in action, I’ve
 [put it on GitHub](https://chrislo.github.io/drum_synthesis/), and if
-this article has peaked your interest in the Web Audio API, you might
+this article has piqued your interest in the Web Audio API, you might
 be interested in my weekly newsletter
 [Web Audio Weekly](http://blog.chrislowis.co.uk/waw.html) where I
 share links, tips and news from the Web Audio community.
