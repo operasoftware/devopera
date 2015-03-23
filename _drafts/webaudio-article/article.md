@@ -304,12 +304,12 @@ satisfying, snappy snare:
         this.setup();
 
         this.noiseEnvelope.gain.setValueAtTime(1, time);
-        this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.2);
+        this.noiseEnvelope.gain.exponentialRampToValueAtTime(0.01, time + 0.2);
         this.noise.start(time)
 
         this.osc.frequency.setValueAtTime(100, time);
         this.oscEnvelope.gain.setValueAtTime(0.7, time);
-        this.oscEnvelope.gain.exponentialRampToValueAtTime(0.001, time + 0.1);
+        this.oscEnvelope.gain.exponentialRampToValueAtTime(0.01, time + 0.1);
         this.osc.start(time)
 
         this.osc.stop(time + 0.2);
