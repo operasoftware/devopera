@@ -470,7 +470,7 @@ and combine them as a loop. We’ve learnt the basics of the Web Audio
 API and seen how to solve some common problems. If you’d like to play
 with the code and hear it in action, I’ve
 [put it on GitHub](https://chrislo.github.io/drum_synthesis/), and if
-this article has peaked your interest in the Web Audio API, you might
+this article has piqued your interest in the Web Audio API, you might
 be interested in my weekly newsletter
 [Web Audio Weekly](http://blog.chrislowis.co.uk/waw.html) where I
 share links, tips and news from the Web Audio community.
