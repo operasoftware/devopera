@@ -367,7 +367,7 @@ number generator. But we can also create one by loading a file:
     };
 
 This function takes a URL of a sound file and makes an asynchronous
-GET request for it using `XMLHttpRequest`. Then the data is loaded,
+GET request for it using `XMLHttpRequest`. When the data is loaded,
 the call to `context.decodeAudioData` turns the audio file into a
 buffer of samples, and triggers a callback. The file formats that
 `decodeAudioData` understand are the same as those supported by the
