@@ -88,6 +88,11 @@ In order to support multi-input scenarios, where different inputs may have diffe
 | `any-hover:on-demand` | **true**    | **true**            | false          | **true**                     |
 | `any-hover:hover`     | false       | **true**            | **true**       | **true**                     |
 
+<figure block="figure" mod="right-half">
+	<img elem="media" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
+	<figcaption elem="caption">Interaction Media Features in Opera on an Android phone with paired bluetooth mouse</figcaption>
+</figure>
+
 **Note:** you can [see how the interactive media features are evaluated](http://patrickhlauke.github.io/touch/pointer-hover-any-pointer-any-hover/) on your specific device. Currently, interaction media features are supported in Blink (since M-21 for `pointer`/`hover` — [Issue 123062: Support pointer and hover CSS media features for touch screens](https://code.google.com/p/chromium/issues/detail?id=123062) — and M-41 for `any-pointer`/`any-hover` — [Issue 398943: Ship `any-pointer` and `any-hover` Media Queries](https://code.google.com/p/chromium/issues/detail?id=398943)) and the preview release of Internet Explorer/Spartan [status.modern.ie](https://status.modern.ie/mediaquerieslevel4interactionmediafeaturespointerandhover)). Safari should have support for these soon ([Changeset 179055](http://trac.webkit.org/changeset/179055)). There does not appear to be any movement on implementing these features in Firefox. Note that the [Media Queries Level 4 Interaction Media Features](http://www.w3.org/TR/2014/WD-mediaqueries-4-20140605/#mf-interaction) are still at the Working Draft stage, so some of the wording/functionality may still change before they become stable recommendations.
 
 ## Potential for incorrect assumptions
