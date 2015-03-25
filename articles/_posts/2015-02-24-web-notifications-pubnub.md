@@ -8,7 +8,6 @@ tags:
 - communication
 cover: jpg
 license: cc-by-3.0
-featured: featured
 ---
 
 Notifications are a great way for apps to indicate that they have something to tell you, for example, that you’ve received a new Twitter message.
