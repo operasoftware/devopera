@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 The [Media Queries Level 4 Interaction Media Features](http://dev.w3.org/csswg/mediaqueries-4/#mf-interaction) — `pointer`, `hover` and the more recent `any-pointer` and `any-hover` — are meant to allow sites to implement different styles and functionality (either CSS-specific interactivity like `:hover`, or even JavaScript behaviours, when queried using `window.matchMedia`), depending on the particular characteristics of a user’s input modalities.
 
-**Note:** the [Media Queries Level 4 Interaction Media Features](http://dev.w3.org/csswg/mediaqueries-4/#mf-interaction) are still at the Working Draft stage, so some of the wording/functionality – as well as the way in which it is implemented in browsers – may still change before they become stable recommendations.
+**Note:** the [Media Queries Level 4 Interaction Media Features](http://dev.w3.org/csswg/mediaqueries-4/#mf-interaction) are still at the Working Draft stage, so some of the wording/functionality – as well as the way in which it is implemented in browsers – may still change before they become stable recommendations. This article is based on the specification's *Editor's Draft, 24 March 2015*.
 
 Common use cases cited for interaction media features are often “make controls bigger/smaller depending on whether the users has a touchscreen device or is using a mouse/stylus” and “only use a CSS dropdown menu if the user has an input that allows `:hover`-based interactions”.
 
