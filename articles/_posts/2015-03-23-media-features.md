@@ -2,12 +2,12 @@
 title: Interaction Media Features and their potential (for incorrect assumptions)
 authors:
 - patrick-lauke
-intro: 'You can check input device capabilities with Media Queries Level 4 … but first, you should understand their current limitations'
+intro: 'You can check input device capabilities with Media Queries Level 4… but first, you should understand their current limitations'
 tags:
 - css
 - media-queries
-published: false
 cover: jpg
+featured: featured
 license: cc-by-3.0
 ---
 
@@ -45,7 +45,7 @@ Common use cases cited for interaction media features are often “make controls
 
 One of the problems with `pointer` and `hover` is that, by design, they only expose the characteristics of what a browser deems to be the *primary* input device – and current browser implementations may, in some cases, not be as smart as they should in making this assessment, since what constitutes a primary input may not always be obvious.
 
-Traditionally, we could say that a phone/tablet’s primary input is the touchscreen. But on desktop/laptop devices, any hard distinction already becomes blurry: these devices usually have both a keyboard and mouse/trackpad. What is the *primary* input in this case? Currently, browsers make the assumption that in these situations, it’s the mouse/trackpad. But what if I’m actually a user who navigates only using the keyboard (which, depending on how things are coded, can be considered a `pointer:fine` — for focusable elements like links and buttons — or `pointer:none` device — in the case of custom interfaces, reliant on JavaScript events with coordinates, such as a `<canvas>` — lacking `:hover`)? This particular case is (sort of) aknowledged in the spec:
+Traditionally, we could say that a phone/tablet’s primary input is the touchscreen. But on desktop/laptop devices, any hard distinction already becomes blurry: these devices usually have both a keyboard and mouse/trackpad. What is the *primary* input in this case? Currently, browsers make the assumption that in these situations, it’s the mouse/trackpad. But what if I’m actually a user who navigates only using the keyboard (which, depending on how things are coded, can be considered a `pointer:fine` — for focusable elements like links and buttons — or `pointer:none` device — in the case of custom interfaces, reliant on JavaScript events with coordinates, such as a `<canvas>` — lacking `:hover`)? This particular case is (sort of) acknowledged in the spec:
 
 > For accessibility reasons, even on devices whose pointing device can be described as fine, the UA may give a value of coarse or none to this media query, to indicate that the user has difficulties manipulating the input device accurately or at all.
 
@@ -144,7 +144,7 @@ Since we cannot know for sure which input is currently being used, I would sugge
 
 </figure>
 
-Instead of testing for the presence of a particular capability, we could of course test for the *absence* of less capable inputs, and suppress styles that would otherwise be needed if those limited input types were present. However, the limited way in which the logical `not`  works in [Media Queries Level 3](http://www.w3.org/TR/css3-mediaqueries/#media0) (which don’t support chaining multiple tests together with a comma — the logical `or` — and negating the whole resulting expression) makes this unnecessarily cumbersome, since we can effectively only test for the absence of *one* of the values at a time:
+Instead of testing for the presence of a particular capability, we could of course test for the *absence* of less capable inputs, and suppress styles that would otherwise be needed if those limited input types were present. However, the limited way in which the logical `not` works in [Media Queries Level 3](http://www.w3.org/TR/css3-mediaqueries/#media0) (which don’t support chaining multiple tests together with a comma — the logical `or` — and negating the whole resulting expression) makes this unnecessarily cumbersome, since we can effectively only test for the absence of *one* of the values at a time:
 
 <figure block="figure" markdown="block">
 
