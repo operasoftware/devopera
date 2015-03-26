@@ -12,6 +12,7 @@ license: cc-by-3.0
 
 <p>The Developer Relations Team is on the road speaking at different events and venues this April, including our first in Bulgaria. Come meet us!</p>
 
+<div block="table">
 <table id="apriltalklist">
 <caption>April Talks List</caption>
 <tr><th>Conference</th><th>Location</th><th>Date</th><th>Title</th><th>Speaker</th></tr>
@@ -44,3 +45,4 @@ license: cc-by-3.0
 <tr><td><a href="http://www.addconf.ru/">Application Developer Days</a></td><td>Saint Petersburg, Russia</td><td>April 29-30th</td><td>
 	Extensions in Opera 11</td><td><a href="https://dev.opera.com/author/163437" title="Vadim Makeev">Vadim Makeev</a></td></tr>
 </table>
+</div>

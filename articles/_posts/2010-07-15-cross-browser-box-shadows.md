@@ -43,6 +43,7 @@ The CSS3 `box-shadow` property has good support across most modern browsers, alt
 
 Browser support summary (as of July 2010):
 
+<div block="table">
 <table>
 <thead>
 <tr>
@@ -92,6 +93,7 @@ Browser support summary (as of July 2010):
 </tr>
 </tbody>
 </table>
+</div>
 
 Data about IE9 taken from IE9 Developer Preview 3.
 

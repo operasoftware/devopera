@@ -12,6 +12,8 @@ license: cc-by-3.0
 ---
 
 <p>It&#39;s Autumn and the conference season is in full swing! As the Opera Developer Relations team has quite a number of Open Web talks planned for the next couple of months, we thought we&#39;d give you an overview of what&#39;s coming up. Maybe we&#39;ll see you at one of these events!</p>
+
+<div block="table">
 <table id="events">
 	<tr>
 		<th>Date</th>
@@ -355,6 +357,6 @@ license: cc-by-3.0
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
 </table>
-
+</div>
 
 <p>You can also follow us Twitter: here&#39;s a handy <a href="http://twitter.com/andreasbovens/opera-developer-relations/members">list of all people in the team</a>.</p>

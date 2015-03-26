@@ -63,6 +63,7 @@ To demonstrate the general concepts I’ll build a client-side include system th
 
 A few things immediately stand out as possible candidates to move out of the code and into a configuration file — the URL of the file I want to include and the id of the element whose content I am going to replace. Also, generic error messages written during development sometimes end up being used in production code — moving these messages into the configuration file should ensure we get higher quality and more user friendly messages. The name value pairs to be represented in JSON are as follows:
 
+<div block="table">
 <table>
 <tr>
 	<th>Variable</th>
@@ -85,6 +86,7 @@ A few things immediately stand out as possible candidates to move out of the cod
 	<td>“There was a problem including the file”</td>
 </tr>
 </table>
+</div>
 
 In JSON you can write this like so:
 

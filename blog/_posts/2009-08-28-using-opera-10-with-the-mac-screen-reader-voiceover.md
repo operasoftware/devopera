@@ -75,7 +75,9 @@ license: cc-by-3.0
 <p>As mentioned above all elements can be accessed using either Spatial Navigation (Shift+Arrow keys) or single key shortcuts.</p>
 
 <p>What follows is a list of main keyboard shortcuts. Where I have said &quot;Navigate to get VO feedback&quot; it means the function can be carried out but VoiceOver does not give feedback. Instead you need to start navigating in order to hear feedback.,</p>
-<table border="1" width="651">
+
+<div block="table">
+<table>
 <thead>
 <tr>
 <th width="311">Function and comments</th>
@@ -174,7 +176,10 @@ license: cc-by-3.0
 <td>Shift + Z</td>
 <td>Navigate to get VO feedback</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+
 <p>I&#39;m not familiar enough with VoiceOver as a technology but I&#39;m told by our engineers that occasionally things lack feedback because it is hard to see what should be spoken and can be recognised. For example VoiceOver seems to have no concept of zoom level for instance.</p>
 
 <p>I wonder also if this is because VoiceOver has been built with Safari in mind. Reading through the documentation you certainly get that impression. That said there is definitely more fine-tuning that we want to do our end.</p>

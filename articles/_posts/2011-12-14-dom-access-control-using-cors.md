@@ -47,7 +47,8 @@ license: cc-by-3.0
 
 <p>CORS consists of three request headers, and six response headers (see <a href="#fig1">Table 1</a> below). Browsers automatically set request headers for some cross-origin requests, such as those made using the <code>XMLHttpRequest</code> object.</p>
 
-<table id="fig1" style="margin-top: 10px;">
+<div block="table">
+<table id="fig1">
 <caption>Figure 1: A table of cross-origin resource sharing headers</caption>
 <thead>
 	<tr>
@@ -87,6 +88,7 @@ license: cc-by-3.0
 	</tr>
 </tbody>
 </table>
+</div>
 
 <p>Response headers, of course, are returned by the URI in question. You can set them in your server configuration file or per URI using a server-side language. Which approach you choose will depend on the kind of application you're building. We'll cover each response header in the <a href="#SendingResponseHeaders">Sending CORS Response Headers</a> section.</p>
 

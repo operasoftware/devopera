@@ -59,6 +59,8 @@ So, right out of the gate, the fact that `pointer` and `hover` only relate to wh
 
 Fundamentally then, the problem with the original `pointer` and `hover` is that they don’t always adequately cover multi-input scenarios, and rely on the browser to be able to be able to correctly pick a single *primary* input. A user may for instance have paired a bluetooth mouse to their phone/tablet — suddenly, instead of a pointing device with `pointer:coarse` and `hover:none`, they have an additional `pointer:fine`, `hover:hover` capable one. But in all current implementations, browsers will still regard the touchscreen as the *primary* input. If a web developer relies purely on `pointer` and `hover` to add specific styling or functionality, no extra media queries based on these capabilities would kick in.
 
+<div block="table" markdown="block">
+
 | feature            | touchscreen | touchscreen + mouse | desktop/laptop | desktop/laptop + touchscreen |
 |--------------------|-------------|---------------------|----------------|------------------------------|
 | `pointer:none`     | false       | false               | false          | false                        |
@@ -67,6 +69,8 @@ Fundamentally then, the problem with the original `pointer` and `hover` is that 
 | `hover:none`       | false       | false               | false          | false                        |
 | `hover:on-demand`  | **true**    | **true**            | false          | false                        |
 | `hover:hover`      | false       | false               | **true**       | **true**                     |
+
+</div>
 
 **Note:** from my (admittedly limited to Android/Blink) testing, it seems that on touchscreen devices, `hover:on-demand`, rather than `hover:none`, returns true — probably a conscious decision on the part of Blink, related to the fact that `:hover` (and even compatibility mouse events like `mouseover`) can be triggered by a touchscreen “tap”.
 
@@ -86,6 +90,8 @@ In order to support multi-input scenarios, where different inputs may have diffe
 
 (compared to `pointer` and `hover`, which only ever refer to the capabilities of the *primary* input). In current implementations, these media features evaluate as follows:
 
+<div block="table" markdown="block">
+
 | feature               | touchscreen | touchscreen + mouse | desktop/laptop | desktop/laptop + touchscreen |
 |-----------------------|-------------|---------------------|----------------|------------------------------|
 | `any-pointer:none`    | false       | false               | false          | false                        |
@@ -95,7 +101,9 @@ In order to support multi-input scenarios, where different inputs may have diffe
 | `any-hover:on-demand` | **true**    | **true**            | false          | **true**                     |
 | `any-hover:hover`     | false       | **true**            | **true**       | **true**                     |
 
-<figure block="figure" mod="right-half">
+</div>
+
+<figure block="figure" mod="right, half">
 	<img elem="media" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
 	<figcaption elem="caption">Interaction Media Features in Opera on an Android phone with paired bluetooth mouse</figcaption>
 </figure>

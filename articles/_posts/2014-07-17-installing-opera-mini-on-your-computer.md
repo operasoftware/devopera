@@ -30,7 +30,7 @@ Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downl
 
 ### Special Mac instructions
 
-<figure block="figure" mod="right-half">
+<figure block="figure" mod="right, half">
 	<img elem="media" src="{{ page.id }}/open.png" alt="Security dialog on Mac">
 </figure>
 
@@ -42,7 +42,7 @@ Right-click _microemulator.jar_ and select _Properties_, _Permissions_ and tick 
 
 ## Making the emulator resizable
 
-<figure block="figure" mod="right-half">
+<figure block="figure" mod="right, half">
 	<img elem="media" src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini">
 </figure>
 

@@ -57,9 +57,7 @@
 		// Floats
 
 		&--left,
-		&--left-half,
-		&--right,
-		&--right-half {
+		&--right {
 			margin-top:4px;
 			}
 		&--left {
@@ -68,8 +66,7 @@
 		&--right {
 			float:right;
 			}
-		&--left &__caption,
-		&--left-half &__caption {
+		&--left &__caption {
 			text-align:right;
 			}
 
@@ -93,11 +90,8 @@
 		&--right {
 			margin-left:gutter(4);
 			}
-		&--left-half {
-			@include span(2 of 4 float);
-			}
-		&--right-half {
-			@include span(2 of 4 float rtl);
+		&--half {
+			width:span(2 of 4);
 			}
 
 		// Double
@@ -123,11 +117,8 @@
 		&--right {
 			margin-left:gutter(8);
 			}
-		&--left-half {
-			@include span(4 of 8 float);
-			}
-		&--right-half {
-			@include span(4 of 8 float rtl);
+		&--half {
+			width:span(4 of 8);
 			}
 
 		// Double

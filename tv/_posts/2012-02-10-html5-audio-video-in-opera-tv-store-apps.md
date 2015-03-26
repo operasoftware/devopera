@@ -50,6 +50,7 @@ We recommend using bitrates from 2Mbps (lowest to get minimum video quality) to 
 
 At the time of publication, the following container formats and codecs are supported for Opera TV Store applications:
 
+<div block="table">
 <table>
 <tr>
 	<th width="50%">Audio or video codec</th>
@@ -77,6 +78,7 @@ At the time of publication, the following container formats and codecs are suppo
 	<td>Yes</td>
 </tr>
 </table>
+</div>
 
 ### Using MPEG-4 AVC (H.264) video
 - Main and High Profiles,
@@ -129,6 +131,7 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 - Microsoft Smooth Streaming (MSS) — VOD and Live profiles
 - MPEG-DASH — Live profile only (recommended)
 
+<div block="table">
 <table>
 <tr>
 	<th width="50%">Adaptive Bitrate Format</th>
@@ -151,7 +154,9 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 	<td>No</td>
 </tr>
 </table>
+</div>
 
+<div block="table">
 <table>
 <tr>
 	<th width="50%">DRM Format</th>
@@ -164,6 +169,7 @@ Adaptive bitrate streaming formats supported in the Opera TV Store are as follow
 	<td>No</td>
 </tr>
 </table>
+</div>
 
 The DRM format supported in the Opera TV Store is Microsoft PlayReady 1.2 in combination with MSS (recommended) or MPEG-DASH.
 
@@ -227,6 +233,7 @@ Example player code:
 
 ## Subtitles
 
+<div block="table">
 <table>
 <tr>
 	<th width="50%">Format</th>
@@ -239,6 +246,7 @@ Example player code:
 	<td>Yes</td>
 </tr>
 </table>
+</div>
 
 Opera TV Store supports out-of-band subtitles through HTML5's `<track>` tag and a WebVTT (Web Video Text Tracks) file format. Out-of-band means subtitles are delivered in addition to the media file.
 

@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure block="figure" mod="right-half">
+<figure block="figure" mod="right, half">
 	<img src="{{ page.id }}/intro.jpg" elem="media" width="256">
 	<figcaption elem="caption">Opera Mini for iOS</figcaption>
 </figure>

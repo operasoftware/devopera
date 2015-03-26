@@ -73,6 +73,7 @@ Two different types of prefixes are supported:
 
 The properties that have been aliased in this way are:
 
+<div block="table">
 <table>
 <tr>
 	<th><code>-o-</code></th>
@@ -131,6 +132,7 @@ The properties that have been aliased in this way are:
 	<td><code>-webkit-transition-timing-function</code></td>
 </tr>
 </table>
+</div>
 
 ## How did you choose these?
 

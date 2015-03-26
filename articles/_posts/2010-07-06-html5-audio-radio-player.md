@@ -140,6 +140,7 @@ audio.addEventListener("timeupdate", function() {
 <p>
 The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;video&gt;</code> element in HTML5. There have been a lot of debates and disagreements as to which video format to use (read our <a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> for more details), and audio has undergone the same kinds of discussions. Currently the support for audio codecs across the major browsers is as follows:</p>
 
+<div block="table">
 <table>
 	<thead>
 	<tr>
@@ -182,6 +183,7 @@ The <code>&lt;audio&gt;</code> element goes hand in hand with the <code>&lt;vide
 	</tr>
 	</tbody>
 </table>
+</div>
 
 <p>To support several browsers we need to provide the same audio content in different formats. As we mentioned before, you can reference the different formats using multiple <code>&lt;source&gt;</code> elements placed inside the <code>&lt;audio&gt;</code> element:</p>
 

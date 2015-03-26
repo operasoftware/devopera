@@ -214,6 +214,7 @@ As mentioned before, Opera Mini versions 5.0 and upwards support progressive loa
 
 Mini supports DOM events, but only a subset. Much of this is dictated by hardware; some phones lack keyboards, for example. Below is a table of events and event attributes supported in Opera desktop or Opera Mobile that Opera Mini does not support.
 
+<div block="table">
 <table id="unsupportedbymini">
 <thead>
 <tr>
@@ -292,6 +293,7 @@ Mini supports DOM events, but only a subset. Much of this is dictated by hardwar
 </tr>
 </tbody>
 </table>
+</div>
 
 As you can see, **key events** such as `keypress` and `keyup` are not supported. Neither are `touch` and `scroll` events.
 

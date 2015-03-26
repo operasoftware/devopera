@@ -24,6 +24,7 @@ This article assumes that you are already an intermediate to advanced level Java
 
 One of the reasons why [Spark](https://www.spark.io/) is a great platform especially for any electronics beginner are its [detailed documentation](http://docs.spark.io/) as well as the [community forum](https://community.spark.io/). In this section, we will play with a light sensor and then control a servo from the web browser. Let’s first list the electronics components you will need so that you can buy them if you want to physically follow through the examples:
 
+<div block="table">
 <table>
 <tr>
 	<th width="4%">#</th>
@@ -137,6 +138,7 @@ One of the reasons why [Spark](https://www.spark.io/) is a great platform especi
 	<td></td>
 </tr>
 </table>
+</div>
 
 ### 1. Setup
 
