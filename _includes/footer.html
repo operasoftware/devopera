@@ -1,6 +1,11 @@
 	<footer block="footer">
 		<p elem="copy">Copyright © 2006—{{ site.time | date: '%Y' }} Opera Software ASA. Some rights reserved. <a href="https://github.com/operasoftware/devopera/blob/master/CONTRIBUTING.md" elem="link" mod="contribute">Contribute!</a></p>
 	</footer>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js')
+		}
+	</script>
 {% if page.categories contains 'articles' or page.categories contains 'tv' or page.categories contains 'blog' %}
 	<script src="/scripts/highlight.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
