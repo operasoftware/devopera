@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-A few weeks ago, Tomomi published an inspiring article about building a simple messaging service. We really liked the idea of being able to send and receive messages through a simple API, and decided to take it a step further: why not build on this API to allow people to send massages to each other, subscribe to massage channels, and so on? Indeed, as Marshall McLuhan wrote in 1967: “The medium is the massage.”
+A few weeks ago, Tomomi published an inspiring article about [building a simple messaging service](/articles/web-notifications-pubnub/). We really liked the idea of being able to send and receive messages through a simple API, and decided to take it a step further: why not build on this API to allow people to send massages to each other, subscribe to massage channels, and so on? Indeed, as [Marshall McLuhan wrote](http://en.wikipedia.org/wiki/The_Medium_Is_the_Massage) in 1967: “The medium is the massage.”
 
 So we started working on tackling this problem, and came up with the following basic API.
 
@@ -55,3 +55,4 @@ So, this is an initial idea, but we couldn’t wait any longer, and felt like we
 
 
 
+[]()
