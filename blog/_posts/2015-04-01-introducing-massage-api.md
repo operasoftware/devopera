@@ -6,7 +6,6 @@ intro: 'Tomomi recently wrote about building a simple messaging service. We real
 tags:
 - html5
 - standards
-published: false
 license: cc-by-3.0
 ---
 
@@ -18,7 +17,7 @@ Note that this proposal is still in an early draft stage, and mainly consists of
 
 ## Sending massages
 
-First we need to populate a list with users who are present for a massage. When the user clicks a username in the list, the app will dispatch a massage. The dispatch() function is used to send a massage to all subscribers of a channel. You can simply pass an object as a massage payload. In this demo, only `from` and `to` info is passed but you can send any massage type in the object.
+First we need to populate a list with users who are present for a massage. When the user clicks a username in the list, the app will dispatch a massage. The `dispatch()` function is used to send a massage to all subscribers of a channel. You can simply pass an object as a massage payload. In this demo, only `from` and `to` info is passed but you can send any massage type in the object.
 
 	var list = document.querySelector('.list');
 	list.addEventListener('click', function(event) {
@@ -39,7 +38,7 @@ You can pass an object with any data you want as the massage. So instead of the 
 When somebody sends the user a massage, the web app will trigger the browser to display a notification.
 To make to this demo very simple, rather than establishing a 1-to-1 private connection, we let our web app dispatch massages to all users simultaneously. However, only a designated person will receive a web notification.
 
-To retrieve the massages, you simply use subscribe() API. If the massage is sent to a particular user, that user will see a notification that he or she can get a massage.
+To retrieve the massages, you simply use the `subscribe()` API. If the massage is sent to a particular user, that user will see a notification that he or she can get a massage.
 
 	operaMassage.subscribe({
 		channel: channel,
