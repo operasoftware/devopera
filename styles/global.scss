@@ -1,14 +1,26 @@
 // -------------------------------
 // Global
 // -------------------------------
+
+* {
+	&, &:before, &:after {
+		box-sizing:border-box;
+		}
+	}
+html {
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	}
+
+// Body
+
 body {
-	margin:auto;
-	padding:0 24px;
-	max-width:1200px;
+	@include container;
+	padding:0 20px;
 	background:#FFF;
 	color:#000;
-	font:16px/1.6 Helvetica, Arial, sans-serif;
+	font:16px/1.5 Helvetica, Arial, sans-serif;
 	}
-a {
-	text-decoration:none;
-	}
+	a {
+		text-decoration:none;
+		}

@@ -422,9 +422,9 @@ Inside this attribute you list all the CSS properties and their values (each pro
 
 If you open this example in a browser you will see that the paragraph with the `style` attribute is blue with white text and has a different size to the others, as shown in Figure 1.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-1.png" alt="Screenshot of the Opera browser showing an applied inline style sheet" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: Opera shows the paragraph with the applied inline styles differently to the others</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-1.png" alt="Screenshot of the Opera browser showing an applied inline style sheet">
+	<figcaption elem="caption">Figure 1: Opera shows the paragraph with the applied inline styles differently to the others</figcaption>
 </figure>
 
 The benefit of inline styles is that the browser will be forced to use these settings. Any other styles defined in other style sheets or even embedded in the `<head>` of the document will be overridden by these styles.
@@ -449,9 +449,9 @@ Embedded styles are placed in the `<head>` of the document inside a `<style>` el
 
 If you open the above link in a browser you’ll see that the defined styles get applied to all the paragraphs in the document, as shown in Figure 2. Also try looking at the example page’s source to see the CSS inside the `head`.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-2.png" alt="Screenshot of the Opera browser showing how an embedded style sheet affects a lot of elements" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Opera shows all paragraphs with the styles defined in the embedded style sheet</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-2.png" alt="Screenshot of the Opera browser showing how an embedded style sheet affects a lot of elements">
+	<figcaption elem="caption">Figure 2: Opera shows all paragraphs with the styles defined in the embedded style sheet</figcaption>
 </figure>
 
 The benefit with embedded styles is that you don’t need to add a `style` attribute to each paragraph—you can style them all with one single definition. This also means that if you need to change the look and feel of all paragraphs, you can do it in one single location, however this is still limited to one document—what if you want to define the look of paragraphs for a whole site in one go? Enter external style sheets.
@@ -467,9 +467,9 @@ External style sheets means putting all your CSS definitions in their own file, 
 
 We’ve talked about the `<link>` element before in this course. Just to recap: the `href` attribute points to the CSS file, the `media` attribute defines which media should get these styles applied to it (`screen` in this case as we don’t want a printout to look like this) and the `type` defines what the linked resource is (a file extension is not enough to determine that).
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-3.png" alt="Screenshot of the Opera browser showing how an external style sheet affects a lot of elements" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: Opera shows the styles defined in the external style sheet when it is linked with a <code>&lt;link&gt;</code> element</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-3.png" alt="Screenshot of the Opera browser showing how an external style sheet affects a lot of elements">
+	<figcaption elem="caption">Figure 3: Opera shows the styles defined in the external style sheet when it is linked with a <code>&lt;link&gt;</code> element</figcaption>
 </figure>
 
 This is the best of all worlds: you keep your look and feel definitions all in one single file, which means that you can make site-wide changes by changing one file, and the browser can load that once and then cache it for all other documents that reference it, meaning less to download.

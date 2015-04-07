@@ -17,9 +17,9 @@ license: cc-by-3.0
 
 Much of the reason for Mini’s popularity is that it is capable of rendering complex web pages, even on low-spec devices. It does this by using a proxy-based architecture (see Figure 1). Requests from the user’s handset pass through the carrier’s internet gateway on their way to Opera’s transcoding servers. These servers then forward the request to the server.
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/architecture.png" alt="Opera Mini requests pass through Opera’s servers" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: Opera Mini’s architecture</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/architecture.png" alt="Opera Mini requests pass through Opera’s servers">
+	<figcaption elem="caption">Figure 1: Opera Mini’s architecture</figcaption>
 </figure>
 
 The server sends the response back as normal — when this is received by the Opera transcoding servers, they parse the markup and styles, execute the JavaScript, and transcode the data into Opera Binary Markup Language (OBML). This OBML data is progressively loaded by Opera Mini on the user’s device. Think of it as an interactive snapshot of a document’s state, which is similar in form to a PDF.
@@ -44,9 +44,9 @@ Unlike [Opera Mobile][8], Opera Mini does not have a standalone emulator, and it
 [9]: http://code.google.com/p/microemu/downloads/list
 [10]: http://m.opera.com/
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/microemulator.png" alt="MicroEmulator screen shot" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: How to start an Opera Mini instance with MicroEmulator</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/microemulator.png" alt="MicroEmulator screen shot">
+	<figcaption elem="caption">Figure 2: How to start an Opera Mini instance with MicroEmulator</figcaption>
 </figure>
 
 Note: If opening the JAD file in the MicroEmulator doesn’t work, you can access the Opera Mini JAR file directly, as follows: open the JAD file with a text editor, find the _MIDlet-Jar-URL:_ line, then copy the URL from that line and enter it into your browser to allow you to directly download the Opera Mini JAR file. Now try selecting this file using the MicroEmulator.
@@ -115,9 +115,9 @@ In Opera Mini, the `mouseover`, `mousedown`, `mouseup`, and `click` events are a
 
 [15]: https://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig3.html
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/mouse-events.png" alt="How mouse events work in Opera Mini" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: How mouse events work in Opera Mini view <a href="https://www.youtube.com/watch?v=mp5IFTPhV20" title="A video showing how mouse events work in Opera Mini">a video</a></figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/mouse-events.png" alt="How mouse events work in Opera Mini">
+	<figcaption elem="caption">Figure 3: How mouse events work in Opera Mini view <a href="https://www.youtube.com/watch?v=mp5IFTPhV20" title="A video showing how mouse events work in Opera Mini">a video</a></figcaption>
 </figure>
 
 ### Form events in Opera Mini
@@ -126,9 +126,9 @@ In a similar fashion, form fields can receive `focus`, `click`, `change`, and `b
 
 [18]: https://dev.opera.com/articles/view/opera-mini-and-javascript/javascript-opera-mini-fig4.html
 
-<figure class="figure" id="figure-4">
-	<img src="{{ page.id }}/form-events.png" alt="How form events work in Opera Mini" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: How form events work in Opera Mini <a href="https://www.youtube.com/watch?v=DWbr3cV9hbg" title="A video showing how form events work in Opera Mini">view a video</a></figcaption>
+<figure block="figure" id="figure-4">
+	<img elem="media" src="{{ page.id }}/form-events.png" alt="How form events work in Opera Mini">
+	<figcaption elem="caption">Figure 4: How form events work in Opera Mini <a href="https://www.youtube.com/watch?v=DWbr3cV9hbg" title="A video showing how form events work in Opera Mini">view a video</a></figcaption>
 </figure>
 
 Unlike desktop browsers, `focus` and `blur` events **only apply to form input elements** in Opera Mini. The `click` event is the only mouse event supported for `input` elements.
@@ -214,6 +214,7 @@ As mentioned before, Opera Mini versions 5.0 and upwards support progressive loa
 
 Mini supports DOM events, but only a subset. Much of this is dictated by hardware; some phones lack keyboards, for example. Below is a table of events and event attributes supported in Opera desktop or Opera Mobile that Opera Mini does not support.
 
+<div block="table">
 <table id="unsupportedbymini">
 <thead>
 <tr>
@@ -292,6 +293,7 @@ Mini supports DOM events, but only a subset. Much of this is dictated by hardwar
 </tr>
 </tbody>
 </table>
+</div>
 
 As you can see, **key events** such as `keypress` and `keyup` are not supported. Neither are `touch` and `scroll` events.
 
@@ -335,9 +337,9 @@ Opera Mini offers two development utilities:
 
 Entering `server:source` into the address bar after a page has been rendered will reveal the server-generated source code for the page (see Figure 5).
 
-<figure class="figure" id="figure-5">
-	<img src="{{ page.id }}/server-source.png" alt="The source code for Opera.com" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: The <code>server:source</code> for the Opera home page</figcaption>
+<figure block="figure" id="figure-5">
+	<img elem="media" src="{{ page.id }}/server-source.png" alt="The source code for Opera.com">
+	<figcaption elem="caption">Figure 5: The <code>server:source</code> for the Opera home page</figcaption>
 </figure>
 
 You can also export this source to a script on your server. Enter `server:source?post=http://your.server.com/script` in the address bar. This will send three fields — `url`, `host`, and `html` as a POST request. Your script can then write this code to a file or a database.
@@ -348,7 +350,7 @@ Opera Mini’s JavaScript console supports a subset of the [Console API][26]. Ja
 
 [26]: https://developers.google.com/chrome-developer-tools/docs/console-api
 
-<figure class="figure" id="figure-6">
-	<img src="{{ page.id }}/server-console.png" alt="The console output for Opera.com" class="figure__media">
-	<figcaption class="figure__caption">Figure 6: The <code>server:console</code> for the Opera home page</figcaption>
+<figure block="figure" id="figure-6">
+	<img elem="media" src="{{ page.id }}/server-console.png" alt="The console output for Opera.com">
+	<figcaption elem="caption">Figure 6: The <code>server:console</code> for the Opera home page</figcaption>
 </figure>

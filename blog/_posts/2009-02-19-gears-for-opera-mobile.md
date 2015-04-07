@@ -12,8 +12,8 @@ license: cc-by-3.0
 
 Over at [Opera Labs](http://labs.opera.com/news/2009/02/20/), we’ve just announced an [Opera Mobile 9.5 technology preview build](http://www.opera.com/mobile/download/) with support for [Gears](http://gears.google.com/), which allows you to store data locally in a searchable database, run JavaScript in the background, and integrate web applications with the desktop.
 
-<figure class="figure">
-	<img src="{{ page.id }}/logo_153x43.gif" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/logo_153x43.gif" alt="">
 </figure>
 
 You can find the technological nitty-gritty, including installation instructions in [the Opera Labs article](http://labs.opera.com/news/2009/02/20/).

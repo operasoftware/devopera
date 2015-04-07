@@ -1,120 +1,50 @@
 // -------------------------------
-// Main
+// Layout
 // -------------------------------
-.layout-main {
-	@extend %grid;
-	// Elements
-	&__blog {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--one-third;
-		@extend %desk--one-quarter;
-		}
-	&__articles {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--two-thirds;
-		@extend %desk--three-quarters;
-		}
-	&__title {
-		@include offscreen;
-		}
-	}
 
-// -------------------------------
-// Archive
-// -------------------------------
-.layout-archive {
-	@extend %grid;
-	@extend %grid--rev;
-	// Elements
-	&__aside {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--one-quarter;
-		@extend %desk--one-quarter;
-		}
+.layout {
+
+	@include clearfix;
+
+	&__aside,
 	&__content {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--two-thirds;
-		@extend %desk--two-thirds;
+		padding-bottom:24px;
 		}
-	&__title {
-		@include offscreen;
-		}
-	}
 
-// -------------------------------
-// Entry
-// -------------------------------
-.layout-entry {
-	@extend %grid;
-	@extend %grid--rev;
-	// Elements
-	&__aside {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--one-quarter;
-		@extend %desk--one-quarter;
-		}
-	&__content {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--three-quarters;
-		@extend %desk--seven-twelfths;
-		}
-	}
+	// Palm to Lap: 3 columns
 
+	@include layout-breakpoint($palm-to-lap) {
+		&__aside {
+			@include span(1 at 1);
+			}
+		&__content {
+			@include span(2 at 2);
+			}
+		}
 
-// -------------------------------
-// Search
-// -------------------------------
-.layout-search {
-	@extend %grid;
-	// Elements
-	&__content {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--three-quarters;
-		@extend %desk--two-thirds;
-		@extend %push--lap--one-quarter;
-		@extend %push--desk--one-quarter;
-		}
-	}
+	// Lap to Desk: 6 columns
 
-// -------------------------------
-// Author
-// -------------------------------
-.layout-author {
-	@extend %grid;
-	// Elements
-	&__aside {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--one-quarter;
-		@extend %desk--one-quarter;
+	@include layout-breakpoint($lap-to-desk) {
+		&__aside {
+			@include span(2 at 1);
+			}
+		&__content {
+			@include span(4 at 3);
+			}
 		}
-	&__content {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--three-quarters;
-		@extend %desk--two-thirds;
-		}
-	}
 
-// -------------------------------
-// Page
-// -------------------------------
-.layout-page {
-	@extend %grid;
-	// Elements
-	&__content {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--three-quarters;
-		@extend %desk--two-thirds;
-		@extend %push--lap--one-quarter;
-		@extend %push--desk--one-quarter;
+	// Desk and up: 12 columns
+
+	@include layout-breakpoint($desk-and-up) {
+		&__aside {
+			@include span(3 at 1);
+			}
+		&__content {
+			@include span(9 at 4);
+			}
+		&__content--entry {
+			@include span(8 at 4);
+			}
 		}
+
 	}

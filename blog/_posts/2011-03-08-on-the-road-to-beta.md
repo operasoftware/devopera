@@ -7,8 +7,8 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure">
-	<img src="{{ page.id }}/closer-to-beta.png" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/closer-to-beta.png" alt="">
 </figure>
 
 With [SxSW](http://sxsw.com/interactive) around the corner, The Opera Dragonfly team is hard at work preparing for the beta release. We have just updated the [experimental branch](https://dev.opera.com/blog/getting-opera-dragonfly-ready-for-opera-11/) with a new build, which includes a number of bug fixes. One of the main reasons for this release is to test out the new minification procedure.

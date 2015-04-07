@@ -77,9 +77,9 @@ Finally we’ll create an HTML page that calls these two scripts:
 
 When accessed by a [browser that supports `window.onerror`](#browser), a pop-up will appear displaying the type of error, the line number where the error occurs and in which file — see Figure 1. This is very useful for debugging.
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/error-message.jpg" alt="Error message in Opera" class="figure__media">
-	<figcaption class="figure__media">Figure 1: Our simple error massage shown in Opera</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/error-message.jpg" alt="Error message in Opera">
+	<figcaption elem="media">Figure 1: Our simple error massage shown in Opera</figcaption>
 </figure>
 
 `onerror` has been attached to `window` for historical reasons. It could be defined anywhere and would still be working the same way. Script errors might occur in places that have no relation to the document tree at all, such as `setTimeout('oops()', 10)`.

@@ -33,9 +33,9 @@ The first value sets the color for the shadow. In the example shown in Figure 1 
 
 [2]: text-shadows01.html
 
-<figure class="figure">
-	<img src="{{ page.id }}/image1.gif" alt="A text shadow applied to the heading" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The <code>text-shadow</code> property applied to a heading.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image1.gif" alt="A text shadow applied to the heading">
+	<figcaption elem="caption">Figure 1: The <code>text-shadow</code> property applied to a heading.</figcaption>
 </figure>
 
 The second value sets the x-coordinates for the shadow. The greater the value, the further away from the right of the text the shadow is placed. A negative value pulls the shadow to the left.
@@ -48,9 +48,9 @@ In the Figure 2 ([text-shadows02.html][4]), a value of 20 pixels is used for the
 		text-shadow: #555 20px 3px 2px;
 	}
 
-<figure class="figure">
-	<img src="{{ page.id }}/image2.gif" alt="The text shadow has moved to the right of the text" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: The shadow moves to the right</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image2.gif" alt="The text shadow has moved to the right of the text">
+	<figcaption elem="caption">Figure 2: The shadow moves to the right</figcaption>
 </figure>
 
 The third value sets the y-coordinates for the shadow. The greater the value, the further below the text the shadow is placed. A negative value pulls the shadow above the text.
@@ -63,9 +63,9 @@ In the Figure 3 ([text-shadows03.html][6]), a value of 20 pixels is used for the
 		text-shadow: #555 3px 20px 2px;
 	}
 
-<figure class="figure">
-	<img src="{{ page.id }}/image3.gif" alt="The text shadow has moved below the text" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: The shadow moved to the bottom</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image3.gif" alt="The text shadow has moved below the text">
+	<figcaption elem="caption">Figure 3: The shadow moved to the bottom</figcaption>
 </figure>
 
 The last value sets the blur radius of the shadow. The greater the value, the more diffuse the blur effect. In Figure 4 ([text-shadows04.html][8]), a value of 20 pixels is used for the blur radius:
@@ -76,9 +76,9 @@ The last value sets the blur radius of the shadow. The greater the value, the mo
 		text-shadow: #555 3px 3px 20px;
 	}
 
-<figure class="figure">
-	<img src="{{ page.id }}/image4.gif" alt="More blur on the text shadow" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: A large diffuse drop shadow</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image4.gif" alt="More blur on the text shadow">
+	<figcaption elem="caption">Figure 4: A large diffuse drop shadow</figcaption>
 </figure>
 
 While the `text-shadow` property allows for an easy addition of a graphic effect to a Web page, some restraint should be applied.
@@ -89,9 +89,9 @@ I’d recommend one to two pixels depth at most for effects like text shadow. Th
 
 Lastly, make sure to bulletproof your design so that it takes into account browsers that don’t support `text-shadow`. For example, don’t set the color of the headline text to be the same as the background otherwise browsers that don’t support the `text-shadow` property will appear to display a blank area, as shown in Figure 5, leaving your site’s visitors without legible text.
 
-<figure class="figure">
-	<img src="{{ page.id }}/image5.gif" alt="No text shadow in Firefox" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: The heading appears gone in the Firefox browser</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image5.gif" alt="No text shadow in Firefox">
+	<figcaption elem="caption">Figure 5: The heading appears gone in the Firefox browser</figcaption>
 </figure>
 
 ### Support for Text-Shadow
@@ -110,9 +110,9 @@ As elements can be resized, perfectly sized background images can show their edg
 
 [12]: {{ page.id }}/background-sizing01.html
 
-<figure class="figure">
-	<img src="{{ page.id }}/image6.gif" alt="This background image is overrun by text" class="figure__media">
-	<figcaption class="figure__caption">Figure 6: The background image is overrun by text</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image6.gif" alt="This background image is overrun by text">
+	<figcaption elem="caption">Figure 6: The background image is overrun by text</figcaption>
 </figure>
 
 In CSS3, there’s a property that can help do just that: `background-size`. It should probably be called `background-stretching` instead, since it can expand an image to fill the background of an element as shown in Figure 7 ([background-sizing02.html][14]):
@@ -126,9 +126,9 @@ In CSS3, there’s a property that can help do just that: `background-size`. It 
 		border: 1px solid #466900;
 	}
 
-<figure class="figure">
-	<img src="{{ page.id }}/image7.gif" alt="The image resizes to the width of the element" class="figure__media">
-	<figcaption class="figure__caption">Figure 7: The background image resizes to the width of the element</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image7.gif" alt="The image resizes to the width of the element">
+	<figcaption elem="caption">Figure 7: The background image resizes to the width of the element</figcaption>
 </figure>
 
 The first value for the `background-size` property sets the width and the second one sets the height. If there is only one value, its value is applied to both the width and height. The `background-size` property accepts percentage and length values as well as `auto`.
@@ -144,9 +144,9 @@ An interesting effect is to tile out the images perfectly in the background. In 
 		margin-top: 30%;
 	}
 
-<figure class="figure">
-	<img src="{{ page.id }}/image8.gif" alt="Background sizing in action" class="figure__media">
-	<figcaption class="figure__caption">Figure 8: Perfectly placing two images in the background</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/image8.gif" alt="Background sizing in action">
+	<figcaption elem="caption">Figure 8: Perfectly placing two images in the background</figcaption>
 </figure>
 
 What’s happening is that the first value of background-size splits the width of an element in half and tells the browser to showcase two images in the available space. The second value of auto tells the browser to use as much space as needed for the height so that the aspect ratio of the image is kept in place.

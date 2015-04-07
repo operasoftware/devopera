@@ -70,7 +70,9 @@ For example, common practice today is to add skip links at the top of the page t
 <p>The accessibility layout has most text formatting disabled and replaced by basic formatting. Font size, word, letter, and line spacing are increased and the page width is limited. A lime green background gives good contrast with black text and linked images are outlined by a black border. Links are also outlined in a blue box when tabbed onto for better visibility.</p>
 <p>You can switch to the Accessibility Layout via <em>View &gt; Style &gt; Accessibility</em> layout.</p>
 <h3>Table of keyboard shortcuts</h3>
-<table border="1" width="554">
+
+<div block="table">
+<table>
 <thead>
 <tr>
 <th width="200" scope="col">Action</th>
@@ -166,6 +168,8 @@ For example, common practice today is to add skip links at the top of the page t
 </tr>
 </tbody>
 </table>
+</div>
+
 <ul>
 <li>Full list of <a href="http://help.opera.com/Windows/9.50/en/keyboard.html">Windows shortcuts</a></li>
 <li><a href="http://www.opera.com/browser/tutorials/nomouse/">Using Opera without a mouse</a></li>

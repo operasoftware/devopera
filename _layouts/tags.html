@@ -2,41 +2,25 @@
 layout: default
 ---
 
-{% capture tag %}
-	{% for post in site.posts %}
-		{% for tag in post.tags %}
-			{% if tag == page.tag %}
-				{% unless post.categories[1] %}
-					<article class="teaser">
-						<h2 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h2>
-						<p class="meta meta--teaser">
-							<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
-							by {% include author-name.html object=post link=true class='meta__author' %}
-							in <a href="/{{ post.categories[0] }}/" class="meta__category">{{ post.categories[0] | capitalize }}</a>
-						</p>
-{% if post.intro %}
-						<p class="teaser__intro">{{ post.intro | markdownline }}</p>
-{% endif %}
-					</article>(•)
-				{% endunless %}
-			{% endif %}
-		{% endfor %}
+{% assign entries = site.posts | where: 'language', 'en' %}
+
+<main block="layout">
+	<div elem="content">
+		<section block="archive">
+			<h2 elem="title">Entries with “{{ page.tag }}” tag</h2>
+			<div data-columns elem="columns">
+{% for entry in entries %}
+	{% for tag in entry.tags %}
+		{% if tag == page.tag %}
+			{% include teaser.html entry=entry %}
+		{% endif %}
 	{% endfor %}
-{% endcapture %}
-
-{% assign tag = tag | split: '(•)' %}
-
-<main>
-	<article role="main" class="layout-archive">
-		<section class="layout-archive__content">
-			<div class="columns columns--archive">
-{% for post in tag %}
-	{{ post }}
 {% endfor %}
 			</div>
 		</section>
-		<section class="layout-archive__aside">
-			<h1>Entries with “{{ page.tag }}” tag</h1>
-		</section>
-	</article>
+	</div>
+	<div elem="aside">
+		{% include tags.html entries=entries %}
+	</div>
 </main>
+<script src="/scripts/salvattore.js"></script>

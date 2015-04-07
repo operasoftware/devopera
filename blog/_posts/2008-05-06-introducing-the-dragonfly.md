@@ -8,8 +8,8 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure">
-	<img src="{{ page.id }}/1dragonfly.gif" alt="Opera Dragonfly" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/1dragonfly.gif" alt="Opera Dragonfly">
 </figure>
 
 <p>Today we released the first alpha of our new web developer tool. The objective for this first alpha release is to get feedback and of course allow you to start using it. You should expect it to be buggy and even missing some key features, but that is what alpha means.</p>

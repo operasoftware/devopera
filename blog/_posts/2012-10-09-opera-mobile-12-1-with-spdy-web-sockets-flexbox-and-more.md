@@ -54,6 +54,7 @@ Of course, this also has an effect on any related JavaScript events and properti
 
 If you’re interested in the absolute minutiae, here is a handy cut-out-and-keep chart you can put in your anorak pocket (dixit Bruce).
 
+<div block="table">
 <table id="prefixes">
 <thead>
 <tr>
@@ -132,6 +133,7 @@ If you’re interested in the absolute minutiae, here is a handy cut-out-and-kee
 </tr>
 </tbody>
 </table>
+</div>
 
 For linear gradients, “old syntax” refers to the previous syntax of specifying “bottom left” for a linear gradient as opposed to the standardized syntax “to top right”, which is supported without a prefix.
 

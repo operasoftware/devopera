@@ -17,7 +17,7 @@ Next week, we&#39;ll be joining the <a href="http://webexpotour.net/">WebExpo To
 </p>
 <p>
 <a href="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Bratislava,+Slovakia&amp;daddr=Budapest,+Hungary+to:Vienna,+Austria&amp;hl=en&amp;geocode=&amp;mra=ls&amp;sll=37.0625,-95.677068&amp;sspn=33.764224,73.828125&amp;ie=UTF8&amp;z=8">
-<img style="box-shadow: 2px 2px 15px #000;" src="/blog/opera-on-the-road-in-bratislava-budapest-vienna/webexpo_tour.png" alt="WebExpo Tour map" />
+<img src="/blog/opera-on-the-road-in-bratislava-budapest-vienna/webexpo_tour.png" alt="WebExpo Tour map" />
 </a>
 </p>
 <p>
@@ -30,6 +30,7 @@ Shwetank Dixit and I will be talking about <em>The Web on the bleeding edge: HTM
 Geeks on the Road is organized by the same people who brought us <a href="http://webexpo.net/">WebExpo</a> in Czech Republic. For more information, visit <a href="http://webexpotour.net/">WebExpo Tour | Geeks on the road</a>.
 </p>
 
+<div block="table">
 <table>
 <thead>
 <tr>
@@ -74,6 +75,7 @@ Vienna
 </tr>
 </tbody>
 </table>
+</div>
 
 <p>
 So if you&#39;re in town, come join us.

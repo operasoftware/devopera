@@ -13,9 +13,9 @@ license: cc-by-3.0
 
 ## Introduction
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/image-0.jpg" alt="Three dimensional castle model" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: An image of the finished example for this article</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/image-0.jpg" alt="Three dimensional castle model">
+	<figcaption elem="caption">Figure 1: An image of the finished example for this article</figcaption>
 </figure>
 
 In the [first part of our WebGL series][2], we walked through a very simple introduction to WebGL, explaining what it is and how it can be used, and dissected a simple code example. From here on in, we will start looking at WebGL in more detail, focussing on individual tasks and techniques. This time, we’ll look at drawing more complicated models in 3D graphics editing applications, and porting them to WebGL.
@@ -73,9 +73,9 @@ Once you have your model, you need to export it to Wavefront OBJ. If you only wa
 - Export texture maps
 - Swap YZ coordinates (Y is up)
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/image-1.jpg" alt="SketchUp Pro Export Options dialog box" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: The SketchUp Pro Export Options dialog box, showing the options we need</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/image-1.jpg" alt="SketchUp Pro Export Options dialog box">
+	<figcaption elem="caption">Figure 2: The SketchUp Pro Export Options dialog box, showing the options we need</figcaption>
 </figure>
 
 If you selected a particular object to export in the previous step, choose “export only current selection” to avoid exporting everything else (of course, export everything if you wish.)
@@ -123,16 +123,16 @@ One thing to bear in mind when using Blender is that textures may not managed au
 
 1. On the _UV view_ (where you draw textures), save the texture as an image file once you’ve finished designing it — see Figure 3 for a visual representation.
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/save-texture-blender.jpg" alt="UV view save texture as image screenshot" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: The Blender UV view “save texture as image” option</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/save-texture-blender.jpg" alt="UV view save texture as image screenshot">
+	<figcaption elem="caption">Figure 3: The Blender UV view “save texture as image” option</figcaption>
 </figure>
 
 2. Once you have saved the image, apply the image as a texture checking it in the _in the Textures tab, found in the Default view_, as seen in Figure 4.
 
-<figure class="figure">
-	<img src="{{ page.id }}/apply-texture-blender.jpg" alt="Default view, Textures tab apply image as texture screenshot" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: The Blender Default view, Textures tab “apply image as texture” options</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/apply-texture-blender.jpg" alt="Default view, Textures tab apply image as texture screenshot">
+	<figcaption elem="caption">Figure 4: The Blender Default view, Textures tab “apply image as texture” options</figcaption>
 </figure>
 
 3. When you export to OBJ and get your OBJ and MTL files, your MTL file will then already point to the right image files, and the only thing you’ll need to do is include these image files in a subdirectory inside your working directory when carrying out the later steps.
@@ -168,9 +168,9 @@ You can find some [information about what these options mean in the Blender wiki
 
 [35]: http://wiki.blender.org/index.php/Extensions:2.5/Py/Scripts/Import-Export/Wavefront_OBJ
 
-<figure class="figure" id="figure-5">
-	<img src="{{ page.id }}/export-blender.png" alt="Blender Export OBJ dialog box" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: The Blender “Export OBJ” dialog box</figcaption>
+<figure block="figure" id="figure-5">
+	<img elem="media" src="{{ page.id }}/export-blender.png" alt="Blender Export OBJ dialog box">
+	<figcaption elem="caption">Figure 5: The Blender “Export OBJ” dialog box</figcaption>
 </figure>
 
 If everything goes well, you should now have an OBJ file and an MTL file to go with all the image files that make up your textures.
@@ -196,9 +196,9 @@ To create an OBJ version of a model in Shade, open it up, then select _File > Ex
 - Create texture folder
 - OS (choose your OS)
 
-<figure class="figure" id="figure-6">
-	<img src="{{ page.id }}/export-shade.png" alt="Shade Export dialog box" class="figure__media">
-	<figcaption class="figure__caption">Figure 6: The Shade “Export” dialog box</figcaption>
+<figure block="figure" id="figure-6">
+	<img elem="media" src="{{ page.id }}/export-shade.png" alt="Shade Export dialog box">
+	<figcaption elem="caption">Figure 6: The Shade “Export” dialog box</figcaption>
 </figure>
 
 As you can see, Shade offers the possibility of exporting materials by creating a texture folder so the images for the textures are exported automatically. Here, we’ve selected to export all objects as _Output_, but you can choose to export only selected items if that’s what you want. All the other choices are necessary for compatibility with the next steps of the process of rendering them in WebGL.

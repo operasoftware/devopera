@@ -44,6 +44,7 @@ CSS3 `box-shadow` プロパティは殆どのモダンブラウザがよく対�
 
 ブラウザによるサポートのまとめ:
 
+<div block="table">
 <table>
 <thead>
 <tr>
@@ -93,6 +94,7 @@ CSS3 `box-shadow` プロパティは殆どのモダンブラウザがよく対�
 </tr>
 </tbody>
 </table>
+</div>
 
 IE9 に関する情報は IE9 Developer Preview 3 を元にしています。
 
@@ -112,9 +114,9 @@ IE9 に関する情報は IE9 Developer Preview 3 を元にしています。
 
 これは 図1 のようになります。
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/IEbefore.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">図1: 固定領域を持つ簡単な `<div>` 要素</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/IEbefore.png">
+	<figcaption elem="caption" markdown="span">図1: 固定領域を持つ簡単な `<div>` 要素</figcaption>
 </figure>
 
 次のフィルターを使って、 IE で半径 5 ピクセルをぼやかすことができます:
@@ -131,9 +133,9 @@ IE9 に関する情報は IE9 Developer Preview 3 を元にしています。
 
 これが適用されると 図2 のような効果がでます。
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/IEblured.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">図2: blur フィルターが適用された簡単な `<div>` 要素</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/IEblured.png">
+	<figcaption elem="caption" markdown="span">図2: blur フィルターが適用された簡単な `<div>` 要素</figcaption>
 </figure>
 
 ## IE と他のブラウザで陰影をつける {#IEandNormal}
@@ -167,9 +169,9 @@ IE9 に関する情報は IE9 Developer Preview 3 を元にしています。
 
 これは 図3 のようになります:
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/ieShadowForComparison.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">図3: IE における陰影(影のみが単独で表示されており内容は含まれない)</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/ieShadowForComparison.png">
+	<figcaption elem="caption" markdown="span">図3: IE における陰影(影のみが単独で表示されており内容は含まれない)</figcaption>
 </figure>
 
 ## 例を組み合わせる {#realization}
@@ -256,9 +258,9 @@ IE の `left`, `top`, `right` and `bottom` の各値の算出にはいくつか�
 
 これで完了です。最終的には 図4 に示されたものと似たものになります:
 
-<figure class="figure">
-	<img src="/articles/cross-browser-box-shadows/outsetPrimer.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">図4: モダンなブラウザと従来バージョンの IE における陰影を示している最終的な例</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/cross-browser-box-shadows/outsetPrimer.png">
+	<figcaption elem="caption" markdown="span">図4: モダンなブラウザと従来バージョンの IE における陰影を示している最終的な例</figcaption>
 </figure>
 
 ## 内側の影 {#inner}
@@ -333,9 +335,9 @@ IE の `left`, `top`, `right` and `bottom` の各値の算出にはいくつか�
 
 上のコードは 図5 に示されたような描画を与えます。
 
-<figure class="figure__media">
-	<img src="/articles/cross-browser-box-shadows/insetPrimer.png" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">図5: モダンブラウザと従来バージョンの IE での陰影を示している内側の影の最終的な例</figcaption>
+<figure elem="media">
+	<img elem="media" src="/articles/cross-browser-box-shadows/insetPrimer.png">
+	<figcaption elem="caption" markdown="span">図5: モダンブラウザと従来バージョンの IE での陰影を示している内側の影の最終的な例</figcaption>
 </figure>
 
 ## 要旨 {#summary}

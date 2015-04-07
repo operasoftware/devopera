@@ -33,16 +33,16 @@ Notice how we’ve split up the `n` and `fn` properties: For the purposes of thi
 
 The default rendering of the contact information is shown in Figure 1.
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard01.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The default rendering of the hCard content.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard01.jpg" alt="">
+	<figcaption elem="caption">Figure 1: The default rendering of the hCard content.</figcaption>
 </figure>
 
 This contact card is, at best functional, but uninspiring. Let’s style this hCard with some CSS and make it a bit more impressive. There are many directions we could take here, but we are going to take inspiration from the old-fashioned Rolodex card. When we’re finished the hCard will be styled as seen in Figure 2:
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard02.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: The finalized version of the hCard style.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard02.png" alt="">
+	<figcaption elem="caption">Figure 2: The finalized version of the hCard style.</figcaption>
 </figure>
 
 Check out [the first example running live]({{ page.id }}/demo-1.html).
@@ -77,9 +77,9 @@ Next, we add dimensions to this element, and a background color:
 
 Our contact card now looks like Figure 3.
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard03.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 3. Styling the main parts of the hCard.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard03.jpg" alt="">
+	<figcaption elem="caption">Figure 3. Styling the main parts of the hCard.</figcaption>
 </figure>
 
 Note that we’ve added quite a bit of vertical space at the bottom of the card. The importance of this comes later.
@@ -98,9 +98,9 @@ Next we want to create the Rolodex “tab” — we do this by targeting the  `c
 
 This rule sets the dimensions of the `div`, makes the font bold so it stands out, and sets the background and font colour. Now our contact card is beginning to look more like a Rolodex card – check out Figure 4.
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard04.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 4. Now the tab appears on the hCard.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard04.jpg" alt="">
+	<figcaption elem="caption">Figure 4. Now the tab appears on the hCard.</figcaption>
 </figure>
 
 ### Adding rounded corners
@@ -124,9 +124,9 @@ This first targets the `fn` `div` (the top tab) and gives it large round corners
 
 After putting this in place, our card now looks like Figure 5.
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard05.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 5. Rounded edges on the hCard.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard05.jpg" alt="">
+	<figcaption elem="caption">Figure 5. Rounded edges on the hCard.</figcaption>
 </figure>
 
 ### The background image
@@ -135,9 +135,9 @@ It’s getting close! All that remains now is to add the background image for th
 
 The image is 420 pixels wide, the same width as the `div` - see Figure 6.
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard06.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 6. The background image for the hCard.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard06.jpg" alt="">
+	<figcaption elem="caption">Figure 6. The background image for the hCard.</figcaption>
 </figure>
 
 So, the background image is attached to the `vcardmain div` using the following CSS rule:
@@ -158,9 +158,9 @@ For our second example, let’s create something a bit more understated. Footers
 
 Our second footer example - as shown in Figure 7 - not only has an hCard in the footer, it also contains a link that allows a user to download our hCard as a working vCard, which can then be easily imported into their address book application (eg Mac Address Book or Microsoft Outlook on Windows.)
 
-<figure class="figure">
-	<img src="{{ page.id }}/hcard07.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 7. An hCard styled to fit into a Web page’s footer.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/hcard07.jpg" alt="">
+	<figcaption elem="caption">Figure 7. An hCard styled to fit into a Web page’s footer.</figcaption>
 </figure>
 
 Check out [the second example running live]({{ page.id }}/demo-2.html).

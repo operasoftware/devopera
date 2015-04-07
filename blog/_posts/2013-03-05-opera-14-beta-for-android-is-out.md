@@ -12,8 +12,8 @@ intro: 'Yes, that’s right: 14. We think that the engine switch from Presto to 
 license: cc-by-3.0
 ---
 
-<figure class="figure">
-	<img src="{{ page.id }}/screenshot-o14-2.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/screenshot-o14-2.png">
 </figure>
 
 Yes, that’s right: **14**. We think that the [engine switch from Presto to WebKit][1] that we announced a few weeks ago is such a big step that we decided to skip the 13 number altogether, and go straight to 14! But there’s more than just the engine to talk about: you’ll also notice a **total overhaul of the UI** in native code, making it fit well with the latest Android design guidelines. Go get the beta [from Google Play][2] or point your browser to [m.opera.com][3], and give it a spin!

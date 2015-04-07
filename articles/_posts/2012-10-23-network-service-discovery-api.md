@@ -24,8 +24,8 @@ license: cc-by-3.0
 
 ## Introduction {#intro}
 
-<figure class="figure">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/dujaAWwGVB4" allowfullscreen class="figure__media"></iframe>
+<figure block="figure">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dujaAWwGVB4" allowfullscreen elem="media"></iframe>
 </figure>
 
 [According to Nielsen][1], as of 2009 nearly 60% people in the US used their TV and internet simultaneously for an average of 2.5 hours per person per month. That’s around 128 million people and just over 19 billion minutes of simultaneous viewing per month! It’s not surprising, then, that we’ve seen a surge of interest in multi-screen development recently. As part of this, we’ve submitted a draft specification to the W3C entitled [Network Service Discovery API][2] which aims to ease discovering and sharing data between devices.
@@ -65,8 +65,8 @@ Note: For this API to work, you **must** enable two features in this build:
 1. Go to <a href="opera:config#UserPrefs|EnableServiceDiscoveryAPI"><code>opera:config</code> -> Enable Service Discovery API</a>, check the box and click Save.
 2. Go to <a href="opera:config#Network|AllowCrossNetworkNavigation"><code>opera:config</code> -> Allow Cross Network Navigation</a>, check the box and click Save.
 
-<figure class="figure">
-	<img src="{{ page.id }}/opera-config-service-discovery.png" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/opera-config-service-discovery.png" alt="">
 </figure>
 
 ## What does this build do? {#whatdoes}
@@ -130,12 +130,12 @@ We’ve prepared a couple of simple demos to demonstrate the discovery concept. 
 [30]: https://dev.opera.com/static/articles/2012/snoopnp/
 [31]: http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
 
-<figure class="figure">
-	<a href="{{ page.id }}/nsd-demo/"><img src="{{ page.id }}/upnp-web-demo.png" alt="" class="figure__media"></a>
+<figure block="figure">
+	<a href="{{ page.id }}/nsd-demo/"><img elem="media" src="{{ page.id }}/upnp-web-demo.png" alt=""></a>
 </figure>
 
-<figure class="figure">
-	<a href="{{ page.id }}/snoopnp/"><img src="{{ page.id }}/javascript-upnp-inspector.png" alt="" class="figure__media"></a>
+<figure block="figure">
+	<a href="{{ page.id }}/snoopnp/"><img elem="media" src="{{ page.id }}/javascript-upnp-inspector.png" alt=""></a>
 </figure>
 
 ## Are these builds production-ready? {#production}

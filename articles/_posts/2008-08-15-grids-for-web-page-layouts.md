@@ -25,16 +25,16 @@ That said, too many columns can result in excessive complexity, so when working 
 
 Note that it’s best to set the gutter widths to an odd number of pixels, because then a one-pixel dividing line can be placed between two columns. If a gutter’s width is an even number of pixels, a one-pixel line can’t sit centrally between two columns.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-1.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A 12-column grid system showing a few of the potential available divisions</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-1.png" alt="">
+	<figcaption elem="caption">Figure 1: A 12-column grid system showing a few of the potential available divisions</figcaption>
 </figure>
 
 By using guides in your graphic design software package, you should be able to work up layouts rapidly, positioning elements such as sidebars and content areas with ease, since your basic grid is already catered for. In Figure 2, the layout has been divided into three main components. At the top, the masthead spans the entire design’s width. Below, the main content area spans eight columns, and a sidebar spans four. Within the sidebar, yellow areas denote potential positions for blocks of content: a full-width piece, an Mid-Page Unit (MPU), and two columns for item lists or advertising. Within the main content area, the grid has enabled us to start dividing up the space for chunks of content, without having to make decisions regarding how wide each block content should be–the grid takes care of that. This speeds up the design process, but also ensures site-wide harmony–assuming the grid is adhered to, a common language will be maintained regarding component sizes. ([Download a 12-column Photoshop grid document here]({{ page.id }}/grids-63-17.psd).)
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-2.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: A basic layout scamp for a sites home-page content structure</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-2.png" alt="">
+	<figcaption elem="caption">Figure 2: A basic layout scamp for a sites home-page content structure</figcaption>
 </figure>
 
 ## Taking grids to the Web
@@ -75,9 +75,9 @@ CSS can then be used to define specific settings (such as background colors or i
 
 When it comes to CSS, gutters make things a little complicated. Each content box within a typical page is a floated box, and gutters either have to form part of that box (by being included in its `width` value or by adding on the gutter to the column width via `padding`) or be set adjacent to it by using a margin. The required method depends on the component being styled.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-3.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: Taking grids online using basic HTML divs and CSS styling</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-3.png" alt="">
+	<figcaption elem="caption">Figure 3: Taking grids online using basic HTML divs and CSS styling</figcaption>
 </figure>
 
 In Figure 3 (above), the styled page is shown. (Note that this figure again does _not_ denote the same layout as Figure 2.) In our example, the grid has 12 columns and a 960-pixel width, as already explained. Therefore, each column/gutter pair is 80px. The gutter is 17px, meaning each column is 63px wide. When a content area spans *n* columns, it also spans *n-1* gutters, and so a two-column box has a width of 143px (63+17+63), a four-column box has a width of 303px (63+17+63+17+63+17+63), and so on. An easier means of calculating the widths is just to multiply 80px by the number of columns the box needs to span and then subtract a gutter width of 17px.
@@ -130,9 +130,9 @@ For containing divs, we need a different method. Although the sidebar width shou
 
 For many designs, the mark-up will need further additions, slightly disrupting the “harmony” of the pure grid-oriented code. When heights of floated elements differ, they stack linearly, and this can mess up the layout, as shown in Figure 4.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-4.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 4: Broken stacking due to inconsistent heights of floated elements</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-4.png" alt="">
+	<figcaption elem="caption">Figure 4: Broken stacking due to inconsistent heights of floated elements</figcaption>
 </figure>
 
 To get around this, surround each “row” of boxes/content blocks in a clearing div as follows:
@@ -143,9 +143,9 @@ To get around this, surround each “row” of boxes/content blocks in a clearin
 
 Then, set the CSS for `.rowContainer` to `clear: left;`. This will fix flow issues in all major browsers.  (Note that future CSS will enable you to solve this problem without clearing divs, perhaps via the use of `display: table`. However, with support in current versions of Internet Explorer unavailable, manual clearing is needed for the time being.)
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-5.png" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 5: Repaired stacking by using a clearing mechanism</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-5.png" alt="">
+	<figcaption elem="caption">Figure 5: Repaired stacking by using a clearing mechanism</figcaption>
 </figure>
 
 ## Summary
@@ -154,9 +154,9 @@ By creating a flexible grid, you should be able to more easily work up designs. 
 
 A final tip is to use temporary background images to ensure your page is adhering to your grid. Export the relevant layers of your graphic design document and apply the grid as a background to your site’s wrapper or body, as shown in Figure 6.
 
-<figure class="figure">
-	<img src="{{ page.id }}/figure-6.jpg" alt="" class="figure__media">
-	<figcaption class="figure__caption">Figure 6: The Snub Communications Web site with its underlying grid image activated</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/figure-6.jpg" alt="">
+	<figcaption elem="caption">Figure 6: The Snub Communications Web site with its underlying grid image activated</figcaption>
 </figure>
 
 Leave the rule in your CSS and comment it out prior to launching your site. This will enable you to rapidly “turn on” the visual grid when you make updates, ensuring your common site-wide language isn’t polluted by items breaking the grid and messing up your design.

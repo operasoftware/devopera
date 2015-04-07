@@ -14,7 +14,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p class="note" id="note" style="background-color:#ccc;border-radius:15px;moz-border-radius:15px;webkit-border-radius:15px;padding:5px">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
+<p class="note">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 
 <p>We&#39;re proud to announce that today we released a preview build of <a href="http://labs.opera.com/news/2010/05/11/">Opera Mobile 10 for Nokia N900 and N800/N810</a>.</p>
 
@@ -24,10 +24,10 @@ license: cc-by-3.0
 <p>If you want to get some light-hearted, behind-the-scenes information around today&#39;s release, check out our <a href="http://my.opera.com/ODIN/blog/2010/05/11/5-questions-for-the-opera-mobile-10-maemo-team">5 questions for the Opera Mobile 10 Maemo team</a>.</p>
 <p>For an in-depth look at our standards support, please check out <a href="http://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="http://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a> – but as a quick reference, here&#39;s an update to our <a href="http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart">Opera browser standards support chart</a> that gives an overview of the Maemo preview build&#39;s improvements.</p>
 
-<div id="self">
-<table border="1">
-<col span="2" />
-<col span="1" style="background-color: #CCE6FF;" />
+<div block="table">
+<table>
+<col span="2"/>
+<col span="1"/>
 <thead>
 <tr border="10px">
 <td></td>
@@ -38,7 +38,7 @@ license: cc-by-3.0
 </tr>
 </thead>
 <tbody>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.opera.com/docs/specs/presto25/#css">CSS3</a> general</td>
 <td></td>
 <td></td>
@@ -46,34 +46,34 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Web Fonts</td>
+<td>Web Fonts</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Media Queries</td>
+<td>Media Queries</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">text-shadow (incl. multiple text-shadow)</td>
+<td>text-shadow (incl. multiple text-shadow)</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" />*</td>
 </tr>
 <tr>
-<td style="padding-left:20px;">selectors</td>
+<td>selectors</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.w3.org/TR/css3-background/">CSS3 Backgrounds and Borders</a></td>
 <td></td>
 <td></td>
@@ -81,55 +81,55 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">border-radius</td>
+<td>border-radius</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">background-clip</td>
+<td>background-clip</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">background-origin</td>
+<td>background-origin</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">multiple background images</td>
+<td>multiple background images</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">background-attachment</td>
+<td>background-attachment</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">box-shadow</td>
+<td>box-shadow</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">border-image</td>
+<td>border-image</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
 <td></td>
 <td></td>
@@ -137,69 +137,69 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">transition-property</td>
+<td>transition-property</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">transition-duration</td>
+<td>transition-duration</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">transition-delay</td>
+<td>transition-delay</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">transition-timing-function</td>
+<td>transition-timing-function</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:40px;">ease</td>
+<td>ease</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:40px;">linear</td>
+<td>linear</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:40px;">ease-in</td>
+<td>ease-in</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:40px;">ease-out</td>
+<td>ease-out</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:40px;">ease-in-out</td>
+<td>ease-in-out</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
 <td></td>
 <td></td>
@@ -207,55 +207,55 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">translate</td>
+<td>translate</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">translateX</td>
+<td>translateX</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">translateY</td>
+<td>translateY</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">scale</td>
+<td>scale</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">skew</td>
+<td>skew</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">rotate</td>
+<td>rotate</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">transform-origin</td>
+<td>transform-origin</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.w3.org/TR/css3-color/">CSS3 Color</a></td>
 <td></td>
 <td></td>
@@ -263,20 +263,20 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">rgba()</td>
+<td>rgba()</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">hsla()</td>
+<td>hsla()</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td><a href="http://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
 <td></td>
 <td></td>
@@ -284,27 +284,27 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Video</td>
+<td>Video</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" />	†</td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Audio</td>
+<td>Audio</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" />	†</td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Web Forms</td>
+<td>Web Forms</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td>Storage</td>
 <td></td>
 <td></td>
@@ -312,27 +312,27 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Web Storage - Local Storage</td>
+<td>Web Storage - Local Storage</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Web Storage - Session Storage</td>
+<td>Web Storage - Session Storage</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Web SQL Storage</td>
+<td>Web SQL Storage</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td>Graphics</td>
 <td></td>
 <td></td>
@@ -341,20 +341,20 @@ license: cc-by-3.0
 </tr>
 
 <tr>
-<td style="padding-left:20px;">Canvas</td>
+<td>Canvas</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /> ‡</td>
 </tr>
 <tr>
-<td style="padding-left:20px;">SVG</td>
+<td>SVG</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" />	‡</td>
 </tr>
-<tr style="background-color: #ebebeb">
+<tr>
 <td>Miscellaneous</td>
 <td></td>
 <td></td>
@@ -362,25 +362,25 @@ license: cc-by-3.0
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Selectors API</td>
+<td>Selectors API</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" />	¶</td>
 </tr>
 <tr>
-<td style="padding-left:20px;">Viewport META tag</td>
+<td>Viewport META tag</td>
 <td>N/A</td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
-
 </tbody>
 </table>
+</div>
 
 <p>* Blur radius is not supported.</p>
 <p>† Opera on Windows and Mac support the Ogg container format and the Theora and Vorbis codecs, as well as the WAVE container format and PCM codec. Opera on Linux and FreeBSD supports the container formats and codecs that are installed in the system&#39;s GStreamer.</p>
 <p>‡ Opera Mini uses the same engine as other Opera products, but it is special as it consists of an Opera Mini thin client on the phone and an Opera Server on the back-end. Because of this particular architecture, Opera Mini does not support asynchronous operations or user interaction such as mouseover events in SVG and Canvas.</p>
 <p>¶ Due to Opera Mini&#39;s nature as a thin client, Selectors API function calls that require user interaction, such as mouseover events, will not work. The selector queried should also be loaded before the JavaScript that does the querying, which can be done by placing the script just before the <code>body</code> close tag.</p>
-<p>Icons by <a href="http://www.famfamfam.com">famfamfam</a></p></div>
+<p>Icons by <a href="http://www.famfamfam.com">famfamfam</a></p>

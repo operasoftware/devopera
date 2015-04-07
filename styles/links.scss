@@ -1,10 +1,9 @@
 // -------------------------------
 // Links
 // -------------------------------
-%link--hover {
-	transition:color 0.3s;
-	}
+
 // Blue
+
 %link--blue {
 	color:$blue;
 	&:hover,
@@ -12,7 +11,15 @@
 		color:lighten($blue, 10%);
 		}
 	}
+%link--blue-hover {
+	&:hover,
+	&:focus {
+		color:$blue;
+		}
+	}
+
 // Green
+
 %link--green {
 	color:$green;
 	&:hover,
@@ -20,41 +27,32 @@
 		color:lighten($green, 6%);
 		}
 	}
+
 // Grey
+
 %link--grey {
 	color:$grey;
-	&:hover,
-	&:focus {
-		color:$blue;
-		}
 	}
+
 // Black
+
 %link--black {
 	color:#000;
-	&:hover,
-	&:focus {
-		color:$blue;
-		}
 	}
-%link--black-visited {
-	&:visited {
-		color:lighten(#000, 45%);
-		&:hover {
-			color:$blue;
-			}
-		}
-	}
-// Content
-%link--content {
-	color:$blue;
+
+// Visited
+
+%link--visited {
 	&:visited {
 		color:$violet;
 		&:hover {
-			color:lighten($violet, 13%);
+			color:lighten($violet, 12%);
 			}
 		}
-	&:hover,
-	&:focus {
-		color:lighten($blue, 10%);
-		}
+	}
+
+// Hover
+
+%link--hover {
+	transition:color 0.3s;
 	}

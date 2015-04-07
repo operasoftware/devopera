@@ -1,38 +1,42 @@
 // -------------------------------
 // Footer
 // -------------------------------
+
 .footer {
-	padding:36px 0;
+
+	@include clearfix;
+
+	padding-bottom:24px;
 	color:$grey;
 	font-size:14px;
-	@extend %grid;
-	p {
-		@extend %grid__item;
-		@extend %one-whole;
-		@extend %lap--three-quarters;
-		@extend %desk--seven-twelfths;
-		@extend %push--desk--one-quarter;
-		}
-	a {
+
+	// Link
+
+	&__link {
 		@extend %link--grey;
-		}
-	&__contribute {
-		white-space:nowrap;
-		&:before {
-			position:relative;
-			top:-2px;
-			display:inline-block;
-			margin-right:0.15em;
-			width:18px;
-			height:18px;
-			background:#A2A4A3 url(/images/github.svg) 50% no-repeat;
-			vertical-align:middle;
-			content:'';
-			}
-		&:hover {
+		@extend %link--blue-hover;
+		&--contribute {
+			padding-left:20px;
 			&:before {
+				position:absolute;
+				margin:1px 0 0 -20px;
+				width:18px;
+				height:18px;
+				background:$grey url(/images/github.svg) no-repeat;
+				content:'';
+				}
+			&:hover:before {
 				background-color:$blue;
 				}
 			}
 		}
+
+	// Desk and up: 12 columns
+
+	@include layout-breakpoint($desk-and-up) {
+		&__copy {
+			@include span(9 at 4);
+			}
+		}
+
 	}

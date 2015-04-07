@@ -1,0 +1,97 @@
+// -------------------------------
+// Colors
+// -------------------------------
+
+$red:#CC0F16;
+$green:#00A700;
+$violet:#7957BC;
+
+$blue:#1096D5;
+$blue-5:mix($blue, white, 5%);
+$blue-15:mix($blue, white, 15%);
+
+$grey:#A2A4A3;
+$grey-40:mix($grey, white, 40%);
+$grey-20:mix($grey, white, 20%);
+
+// -------------------------------
+// Breakpoints
+// -------------------------------
+
+$palm:569px;
+$lap:768px;
+$desk:1024px;
+
+$up-to-palm:max-width ($palm - 1px);
+$palm-to-lap:$palm ($lap - 1px);
+$up-to-lap:max-width ($lap - 1px);
+$lap-and-up:$lap;
+$lap-to-desk:$lap ($desk - 1px);
+$up-to-desk:max-width ($desk - 1px);
+$desk-and-up:$desk;
+
+$layouts:(
+	$up-to-palm:2 1/8,
+	$palm-to-lap:3 1/8,
+	$lap-to-desk:6 1/6,
+	$desk-and-up:12 1/4
+	);
+
+@mixin layout-breakpoint($query) {
+	@include susy-breakpoint($query, map-get($layouts, $query)) {
+		@content;
+		}
+	}
+
+// -------------------------------
+// Grid
+// -------------------------------
+
+$susy:(
+	container:1200px,
+	math:fluid,
+	output:isolate,
+	global-box-sizing:border-box,
+	use-custom:(
+		clearfix:true
+		)
+	);
+
+// -------------------------------
+// Mixins
+// -------------------------------
+
+// Retina
+
+@mixin retina {
+	@media (-webkit-min-device-pixel-ratio:2),
+		(min-resolution:192dpi) {
+		@content;
+		}
+	}
+
+// Clearfix
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		display:block;
+		content:'';
+		}
+	&:after {
+		clear:both;
+		}
+	}
+
+// Offscreen
+
+@mixin offscreen {
+	position:absolute;
+	clip:rect(0 0 0 0);
+	overflow:hidden;
+	margin:-1px;
+	padding:0;
+	width:1px;
+	height:1px;
+	border:0;
+	}

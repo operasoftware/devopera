@@ -31,9 +31,9 @@ To demonstrate how regions work, let’s look at an example. You can [test the r
 
 [4]: {{ page.id }}/regions-modernizr.html
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/regions-1.png" alt="A css regions example showing a complicated layout with content flowed into different boxes" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A complicated layout achieved using CSS regions</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/regions-1.png" alt="A css regions example showing a complicated layout with content flowed into different boxes">
+	<figcaption elem="caption">Figure 1: A complicated layout achieved using CSS regions</figcaption>
 </figure>
 
 In effect, we are completely separating out our content from any kind of layout, bringing the original intention of CSS to a welcome extreme. The content can be flowed into your layout containers regardless of how they are sized and positioned, and will reflow when those containers change size. Try viewing the live example and changing the browser window size. Any content that doesn’t fit in the first three region boxes will end up in the fourth box at the bottom, which I’m using as a kind of overflow box (without this, the content would just messily overflow out of the third box and off the bottom of the screen). The content flows into the regions in the order they appear in the original source.
@@ -221,9 +221,9 @@ Next I can add in some alternative styling to provide a simplified layout to bro
 
 Here I’ve simply hidden the layout containers using `display: none;`, and then provided the two articles with a float, width and padding, so that non-supporting browsers will be left with something usable that doesn’t look too terrible (see Figure 2). You are of course welcome to produce something far more interesting!
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/regions-2.png" alt="A simple two column layout provided as a fallback for browsers that don’t support CSS regions" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: A simple two column layout, provided as a fallback for browsers that don’t support CSS regions, via Modernizr</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/regions-2.png" alt="A simple two column layout provided as a fallback for browsers that don’t support CSS regions">
+	<figcaption elem="caption">Figure 2: A simple two column layout, provided as a fallback for browsers that don’t support CSS regions, via Modernizr</figcaption>
 </figure>
 
 ## Summary

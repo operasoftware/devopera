@@ -27,128 +27,128 @@ Blend Modes are basically a set of different ways to determine what the final co
 
 ### Normal
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_normal.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_normal.jpg" alt="">
 </figure>
 
 The _normal_ blend mode just produces the source image without any visible effect.
 
 ### Multiply
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_multiply.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_multiply.jpg" alt="">
 </figure>
 
 As the name suggests, the _multiply_ blend mode multiplies the colors of the source image and the background image to get the final color. This typically results in a darkened image.
 
 ### Screen
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_screen.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_screen.jpg" alt="">
 </figure>
 
 This is the opposite of _multiply_. The compliment (i.e, “1.0 — the color value”) of the source and the backdrop layers are multiplied, and then its compliment is taken to form the final color of the pixel.
 
 ### Overlay
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_overlay.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_overlay.jpg" alt="">
 </figure>
 
 The _overlay_ blend mode applies the _screen_ blend mode to lighter pixels and _multiply_ blend mode to darker pixels. This in effect means that it makes lighter pixels even lighter, and darker pixels even darker.
 
 ### Darken
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_darken.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_darken.jpg" alt="">
 </figure>
 
 This mode applies whichever color tone is darker between the source and the backdrop colors.
 
 ### Lighten
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_lighten.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_lighten.jpg" alt="">
 </figure>
 
 This mode is the opposite of _darken_. It applies whichever color tone is lighter between the source and the backdrop colors.
 
 ### Color-Dodge
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_colordodge.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_colordodge.jpg" alt="">
 </figure>
 
 The _Color-Dodge_ mode brightens the backdrop color, resulting in an image with stark contrast.
 
 ### Color-Burn
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_colorburn.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_colorburn.jpg" alt="">
 </figure>
 
 This mode darkens the backdrop color, and increases the contrast between the source and the backdrop color.
 
 ### Hard-Light
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_hardlight.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_hardlight.jpg" alt="">
 </figure>
 
 This is the opposite of _overlay_. It applies _multiply_ on the lighter pixels and _screen_ on the darker ones.
 
 ### Soft-Light
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_softlight.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_softlight.jpg" alt="">
 </figure>
 
 This applies _multiply_ on darker values and _screen_ on lighter values. It is similar to _overlay_, but works slightly differently.
 
 ### Hue
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_hue.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_hue.jpg" alt="">
 </figure>
 
 This mode applies the saturation and luminosity of the backdrop color, but with the hue of the source color.
 
 ### Saturation
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_saturation.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_saturation.jpg" alt="">
 </figure>
 
 _Saturation_ produces a color with the saturation of the source color, and blends the hue and luminosity of the background color.
 
 ### Color
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_color.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_color.jpg" alt="">
 </figure>
 
 The _color_ blend mode produces a color with the hue and saturation of the source color, and luminosity of the background color.
 
 ###Luminosity
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_luminosity.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_luminosity.jpg" alt="">
 </figure>
 
 This produces a color with the luminosity of the source color, and blends the hue and saturation of the background color.
 
 ### Difference
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_difference.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_difference.jpg" alt="">
 </figure>
 
 The _difference_ blend mode subtracts the darker of the two colors from the lighter color, forming a kind of _photo negative_ effect. Black is not affected, white is inverted absolutely, and the rest of colors are affected based on their brightness levels.
 
 ### Exclusion
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/blendmode_exclusion.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/blendmode_exclusion.jpg" alt="">
 </figure>
 
 The _exclusion_ blend mode produces a lower-contrast version of the effect produced by _difference_ mode.
@@ -163,8 +163,8 @@ Some might not find it convenient to remember how each and every blend mode work
 
 ## Working with `mix-blend-mode`
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/mixblend.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/mixblend.jpg" alt="">
 </figure>
 
 The `mix-blend-mode` property specifies how the source element will mix colors with the backdrop. The backdrop could be any element underneath the source element (for example a heading could be a source element and its container `<div>` the backdrop.). Using it is as simple as writing something like:
@@ -215,8 +215,8 @@ In the above example, the image _sample1.png_ will get the _screen_ blend mode a
 
 You can also use all these modes in combination with gradients and masks to form interesting effects in your designs. One of the most promising use cases that I foresee for this is the use of radial gradients for images. For example, the following image:
 
-<figure class="figure">
-	<img src="{{ page.id }}/images/radialgradient.png" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/images/radialgradient.png" alt="">
 </figure>
 
 You can see a working demonstration of the above effect on the [demo page]({{ page.id }}/demo_blendmodes_gradients.html). All we have done in that demo is to have a transparent-to-black radial gradient (in the case of the linear gradient, its transparent-to-yellow) and on top we have placed the image and applied a _multiply_ blend mode using `mix-blend-mode: multiply`. When the user hovers over the picture, we use `mix-blend-mode: normal` to remove the effect.

@@ -2,7 +2,7 @@
 title: Introducing Rollercoaster.io
 authors:
 - andreas-bovens
-intro: '[Coast by Opera](http://coastbyopera.com/) has been out for 2 weeks now. During that time, we’ve been browsing a lot on our iPads and we’ve noticed that there are still relatively few sites that are really optimized for tablet browsing: Coast by Opera gives you a good experience on non-optimized sites as well, but still, things can always be better. So, we started working on a **simple site that highlights pretty, tablet-optimized sites and best design practices:** the result is [Rollercoaster.io](http://rollercoaster.io/).'
+intro: '[Coast by Opera](http://coastbyopera.com/) has been out for 2 weeks now. During that time, we’ve been browsing a lot on our iPads and we’ve noticed that there are still relatively few sites that are really optimized for tablet browsing: Coast by Opera gives you a good experience on non-optimized sites as well, but still, things can always be better. So, we started working on a simple site that highlights pretty, tablet-optimized sites and best design practices: the result is [Rollercoaster.io](http://rollercoaster.io/).'
 tags:
 - coast
 - best-practices
@@ -16,8 +16,8 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure">
-	<a href="http://rollercoaster.io/"><img src="{{ page.id }}/rollercoaster-250.jpg" alt="Rollercoaster screenshot" class="figure__media"></a>
+<figure block="figure">
+	<a href="http://rollercoaster.io/"><img elem="media" src="{{ page.id }}/rollercoaster-250.jpg" alt="Rollercoaster screenshot"></a>
 </figure>
 
 [Coast by Opera][3] has been out for 2 weeks now. During that time, we’ve been browsing a lot on our iPads and we’ve noticed that there are still relatively few sites that are really optimized for tablet browsing: Coast by Opera gives you a good experience on non-optimized sites as well, but still, things can always be better. So, we started working on a **simple site that highlights pretty, tablet-optimized sites and best design practices**: the result is [Rollercoaster.io][4].

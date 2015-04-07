@@ -29,9 +29,9 @@ In the TV Store we require submission of a 512px × 512px, 24bit PNG file, but i
 
 We don’t expect compliance with any specific style guidelines in your app icons, but we do expect you to think carefully about your icon’s content. It is recommended that you keep your icons consistent with the style of your apps. For example, a photorealistic, serious design will not be a good representation of a cartoony kids app.
 
-<figure class="figure">
-	<img src="{{ page.id }}/1.png" alt="A set of clock icons with a check and cross showing that a flat, clear clock icon is a better look than a tilted, stylised icon" class="figure__media">
-	<figcaption class="figure__caption">A set of clock icons with a check and cross showing that a flat, clear clock icon is a better look than a tilted, stylised icon</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/1.png" alt="A set of clock icons with a check and cross showing that a flat, clear clock icon is a better look than a tilted, stylised icon">
+	<figcaption elem="caption">A set of clock icons with a check and cross showing that a flat, clear clock icon is a better look than a tilted, stylised icon</figcaption>
 </figure>
 
 Well designed icons in general are simple, recognisable and intuitive. Also remember that they should be legible on small TVs as well as larger ones. Think about the content of your icon. You only really have space to focus on one concept in an icon, and it will generally be one of three things:
@@ -40,9 +40,9 @@ Well designed icons in general are simple, recognisable and intuitive. Also reme
 2. **An ideogram:** An idea of something, such as trust, information, learning, or speed.
 3. **An arbitrary invention:** These don’t commonly exist in real life, but sometimes you’ll want a more abstract invention to represent your app. For example, your app might be represented by some kind of abstract shape or strange invention.
 
-<figure class="figure">
-	<img src="{{ page.id }}/2.jpg" alt="Three icons: A die representing a pictogram, a heart with waves going through it representing an ideogram — pulse or heartbeat, and an abstract design with letters inside it representing an abstract icon" class="figure__media">
-	<figcaption class="figure__caption">Three icons: A die representing a pictogram, a heart with waves going through it representing an ideogram — pulse or heartbeat, and an abstract design with letters inside it representing an abstract icon</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/2.jpg" alt="Three icons: A die representing a pictogram, a heart with waves going through it representing an ideogram — pulse or heartbeat, and an abstract design with letters inside it representing an abstract icon">
+	<figcaption elem="caption">Three icons: A die representing a pictogram, a heart with waves going through it representing an ideogram — pulse or heartbeat, and an abstract design with letters inside it representing an abstract icon</figcaption>
 </figure>
 
 Next, use established, recognised conventions where possible. Think of well-known icons for “information”, “play” and “shopping cart”, for example. Using such conventions will immediately make your icon more intuitive and recognisable. [The Noun project](http://thenounproject.com/) is a great place for researching icon styles and conventions.
@@ -53,18 +53,18 @@ Another general tip is to just make your TV app icons fun! Most apps on TV are p
 
 An icon needs to be simple so it will work at small sizes — don’t employ too many complex shapes in your icon, and stay away from using too much text. Anything more than a simple, short word will reduce clarity below an acceptable level.
 
-<figure class="figure">
-	<img src="{{ page.id }}/3.jpg" alt="Two copies of a thermometer icon. The one on the right is cluttered with text, and clearly less effective than the simple uncluttered version on the left" class="figure__media">
-	<figcaption class="figure__caption">Two copies of a thermometer icon. The one on the right is cluttered with text, and clearly less effective than the simple uncluttered version on the left</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/3.jpg" alt="Two copies of a thermometer icon. The one on the right is cluttered with text, and clearly less effective than the simple uncluttered version on the left">
+	<figcaption elem="caption">Two copies of a thermometer icon. The one on the right is cluttered with text, and clearly less effective than the simple uncluttered version on the left</figcaption>
 </figure>
 
 ### Effects
 
 Moving on from “Less is more”, think carefully about graphics effects you use in your icons. Drop shadows, heavy bevels, glows and halos will not replace drawing skills, metaphors, and great ideas, and may reduce clarity.
 
-<figure class="figure">
-	<img src="{{ page.id }}/4.jpg" alt="Four similar music-related icons. The first one is simple and flat, and more effective than the other three, which have drop shadows, glow effects and distortion" class="figure__media">
-	<figcaption class="figure__caption">Four similar music-related icons. The first one is simple and flat, and more effective than the other three, which have drop shadows, glow effects and distortion</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/4.jpg" alt="Four similar music-related icons. The first one is simple and flat, and more effective than the other three, which have drop shadows, glow effects and distortion">
+	<figcaption elem="caption">Four similar music-related icons. The first one is simple and flat, and more effective than the other three, which have drop shadows, glow effects and distortion</figcaption>
 </figure>
 
 If you decide to use shadows, highlights and reflections in your icons, be consistent with the direction of light, otherwise the icon will look terrible. Unnecessary perspective for a two dimensional icon can also spoil the effect.
@@ -73,9 +73,9 @@ If you decide to use shadows, highlights and reflections in your icons, be consi
 
 Make sure there is a good degree of contrast between your icon and the background it appears on. All icons in store are presented on top of dark placeholders — if you use PNG icons with alpha channels, or dark icons, your icon could become almost invisible. If you are planning on designing a dark icon, you should consider mounting it on top of your own custom background color.
 
-<figure class="figure">
-	<img src="{{ page.id }}/5.jpg" alt="Four icons. Two are light coloured so look good on the TV store default dark background, and two are dark, so don’t look good on the dark background" class="figure__media">
-	<figcaption class="figure__caption">Four icons. Two are light coloured so look good on the TV store default dark background, and two are dark, so don’t look good on the dark background</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/5.jpg" alt="Four icons. Two are light coloured so look good on the TV store default dark background, and two are dark, so don’t look good on the dark background">
+	<figcaption elem="caption">Four icons. Two are light coloured so look good on the TV store default dark background, and two are dark, so don’t look good on the dark background</figcaption>
 </figure>
 
 ## Thumbnails
@@ -96,72 +96,72 @@ You have a lot more space to play with when designing a thumbnail, but again mak
 
 Thumbnails are displayed on pre-designed placeholders, so there’s no need to shape your thumbnails in any way. Any additional effects applied to thumbnails — such as bevels or shadows — are not allowed.
 
-<figure class="figure">
-	<img src="{{ page.id }}/6.jpg" alt="Two thumbnail icons, one simple flat icon, and one with a drop shadow and bevel. The simple icon looks better" class="figure__media">
-	<figcaption class="figure__caption">Two thumbnail icons, one simple flat icon, and one with a drop shadow and bevel. The simple icon looks better</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/6.jpg" alt="Two thumbnail icons, one simple flat icon, and one with a drop shadow and bevel. The simple icon looks better">
+	<figcaption elem="caption">Two thumbnail icons, one simple flat icon, and one with a drop shadow and bevel. The simple icon looks better</figcaption>
 </figure>
 
 ### Less is more
 
 By reducing the amount of extraneous content, you can emphasise more important elements of your composition. Less is more in many cases.
 
-<figure class="figure">
-	<img src="{{ page.id }}/7.jpg" alt="A die, with dice written in the background and a loud gradient. Just the die would be more effective" class="figure__media">
-	<figcaption class="figure__caption">A die, with dice written in the background and a loud gradient. Just the die would be more effective</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/7.jpg" alt="A die, with dice written in the background and a loud gradient. Just the die would be more effective">
+	<figcaption elem="caption">A die, with dice written in the background and a loud gradient. Just the die would be more effective</figcaption>
 </figure>
 
 ### Crop
 
 When deciding what to show in a thumbnail, you should consider focusing just on the most important details or features. If your thumbnail is a screenshot of your app’s main UI, consider cropping it down to just show the most important bit, rather than the whole lot.
 
-<figure class="figure">
-	<img src="{{ page.id }}/8.jpg" alt="Two representations of the same interface. One is zoomed out, and one is cropped to show just the most important feature of the interface" class="figure__media">
-	<figcaption class="figure__caption">Two representations of the same interface. One is zoomed out, and one is cropped to show just the most important feature of the interface</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/8.jpg" alt="Two representations of the same interface. One is zoomed out, and one is cropped to show just the most important feature of the interface">
+	<figcaption elem="caption">Two representations of the same interface. One is zoomed out, and one is cropped to show just the most important feature of the interface</figcaption>
 </figure>
 
 ### Text
 
 If you decide to include text on your thumbnail, limit it to a title, or a single sentence. Including too much text will look messy and lose clarity.
 
-<figure class="figure">
-	<img src="{{ page.id }}/9.jpg" alt="Two icons for a backgammon game: One has just the game title, while the other contains far more text and looks cluttered" class="figure__media">
-	<figcaption class="figure__caption">Two icons for a backgammon game: One has just the game title, while the other contains far more text and looks cluttered</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/9.jpg" alt="Two icons for a backgammon game: One has just the game title, while the other contains far more text and looks cluttered">
+	<figcaption elem="caption">Two icons for a backgammon game: One has just the game title, while the other contains far more text and looks cluttered</figcaption>
 </figure>
 
 ### Colour
 
 There is no better way to give your artwork life than a tasty colour palette. Look around you and get inspiration from a wide variety of sources, online and in nature. There are also a lot of tools around that can help you choose a stunning colour set, for example colorlovers.com.
 
-<figure class="figure">
-	<img src="{{ page.id }}/10.jpg" alt="A colour palette" class="figure__media">
-	<figcaption class="figure__caption">A colour palette</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/10.jpg" alt="A colour palette">
+	<figcaption elem="caption">A colour palette</figcaption>
 </figure>
 
 ### Contrast
 
 Contrast between foreground and background colours is important in your thumbnails, however in a larger graphic contrast can also be controlled by size, position, form, light and shadow.
 
-<figure class="figure__media">
-	<img src="{{ page.id }}/11.jpg" alt="Two side by side images showing an example of good and bad colour contrast between background and foreground" class="figure__media">
-	<figcaption class="figure__caption">Two side by side images showing an example of good and bad colour contrast between background and foreground</figcaption>
+<figure elem="media">
+	<img elem="media" src="{{ page.id }}/11.jpg" alt="Two side by side images showing an example of good and bad colour contrast between background and foreground">
+	<figcaption elem="caption">Two side by side images showing an example of good and bad colour contrast between background and foreground</figcaption>
 </figure>
 
 ### White space
 
 It is also important to consider the space in between your graphic elements. Not having enough whitespace can make everything seem messy and cluttered, and reduce the impact your thumbnails have.
 
-<figure class="figure">
-	<img src="{{ page.id }}/12.jpg" alt="A pixel grid with the word “blocks” spelled out by some of the pictures, plus a pair of 3D glasses" class="figure__media">
-	<figcaption class="figure__caption">A pixel grid with the word “blocks” spelled out by some of the pictures, plus a pair of 3D glasses</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/12.jpg" alt="A pixel grid with the word “blocks” spelled out by some of the pictures, plus a pair of 3D glasses">
+	<figcaption elem="caption">A pixel grid with the word “blocks” spelled out by some of the pictures, plus a pair of 3D glasses</figcaption>
 </figure>
 
 ### Extending the thumbnail
 
 You may notice from time to time that people around you don’t recognise even perfectly known and famous brands. Extending your thumbnail with some content may help improving people’s understanding of what the app is about. Check out examples below. Can you tell what the apps on the left side are about? The ones on the right are better at communicating what the user can expect from the app in question.
 
-<figure class="figure">
-	<img src="{{ page.id }}/13.jpg" alt="Examples of well designed thumbnails, and their extended versions" class="figure__media">
-	<figcaption class="figure__caption">Examples of well designed thumbnails, and their extended versions</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/13.jpg" alt="Examples of well designed thumbnails, and their extended versions">
+	<figcaption elem="caption">Examples of well designed thumbnails, and their extended versions</figcaption>
 </figure>
 
 ## Screenshots

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
+
+<main block="layout">
+	<div elem="content">
+		<section block="archive">
+			<h1 elem="title">{{ page.title }}</h1>
+			<div data-columns elem="columns">
+{% for entry in entries %}
+	{% include teaser.html entry=entry %}
+{% endfor %}
+			</div>
+		</section>
+	</div>
+	<div elem="aside">
+		{% include tags.html entries=entries %}
+	</div>
+</main>
+<script src="/scripts/salvattore.js"></script>

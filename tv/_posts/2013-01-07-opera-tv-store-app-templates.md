@@ -21,9 +21,9 @@ On any platform, news and entertainment are among the most popular types of cont
 
 ## Video player template
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/video-app-template.jpg" alt="Screenshot showing the video player TV app in use" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: The video player TV template in use</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/video-app-template.jpg" alt="Screenshot showing the video player TV app in use">
+	<figcaption elem="caption">Figure 1: The video player TV template in use</figcaption>
 </figure>
 
 ### Overview
@@ -54,9 +54,9 @@ For visual customization, all images are contained in the `images` directory and
 
 ## RSS reader template
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/rss-app-template.jpg" alt="Screenshot showing the RSS reader TV app in use" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: The RSS reader TV template in use</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/rss-app-template.jpg" alt="Screenshot showing the RSS reader TV app in use">
+	<figcaption elem="caption">Figure 2: The RSS reader TV template in use</figcaption>
 </figure>
 
 ### Overview

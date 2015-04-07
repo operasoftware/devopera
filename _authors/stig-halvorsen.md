@@ -1,0 +1,3 @@
+---
+title: Stig Halvorsen
+---

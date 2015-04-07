@@ -110,8 +110,8 @@ This little framework generates an unordered list with given data. We send the D
 
 The result after running the code is as follows:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-1.jpg" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-1.jpg" alt="">
 </figure>
 
 In order to illustrate why this is bad design, we will add a link to the page and will attach a `click` event listener. The function will call the `update` method again but with different items.
@@ -122,8 +122,8 @@ In order to illustrate why this is bad design, we will add a link to the page an
 
 We’re sending almost the same data; we only change the first element of the array. However, because we are using `innerHTML`, a repaint is triggered after each click. The browser does not know that we need to modify only the first row. It repaints the whole list. Let’s use Opera’s DevTools and run the profile. Check out the following animated GIF demonstrating the result:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-2.gif" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-2.gif" alt="">
 </figure>
 
 Notice that after each click the whole content is repainted. This is a problem, especially if we use the same technique heavily on the page.
@@ -166,8 +166,8 @@ The first `for` loop goes through the data that is passed in and creates `<li>` 
 
 Here is the result:
 
-<figure class="figure">
-	<img src="{{ page.id }}/repaint-3.gif" alt="" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/repaint-3.gif" alt="">
 </figure>
 
 The browser repaints only the part that is changed.

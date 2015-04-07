@@ -1,0 +1,22 @@
+{% assign entry = include.entry %}
+{% assign link = include.link %}
+{% assign elem = include.elem %}
+
+{% assign site_authors = site.authors | sort %}
+
+{% capture entry_authors %}
+	{% for author in site_authors %}
+		{% assign author_slug = author.url | split: '/' | last %}
+		{% if entry.authors contains author_slug %}
+			{% if link %}
+				<a elem="{{ elem }}" href="{{ author.url }}">
+			{% endif %}
+					{{ author.title }}
+			{% if link %}
+				</a>
+			{% endif %}(•)
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{{ entry_authors | remove: '	' | strip_newlines | split: '(•)' | join: ', ' }}

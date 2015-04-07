@@ -1,0 +1,10 @@
+{
+  "name": "sensor-tag",
+  "version": "1.0.0",
+  "description": "sensor-tag demo",
+  "main": "sensortag.js",
+  "dependencies": {
+    "async": "0.9.0",
+    "sensortag": "0.1.11"
+  }
+}

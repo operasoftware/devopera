@@ -1,4 +1,4 @@
-﻿---
+---
 title: Functional Key Handling in Opera TV Store Applications
 authors:
 - patrick-lauke
@@ -40,6 +40,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 
 ## List of available functional buttons {#functional-buttons}
 
+<div block="table">
 <table>
 <thead>
 <tr>
@@ -398,6 +399,7 @@ For maximum control, authors may also choose to handle the navigation of their a
 </tr>
 </tbody>
 </table>
+</div>
 
 **Note:** `CONFIRM`, `EXIT` and directional buttons are mandatory for device manufacturers to implement, so they are always available for the end user via the remote control of any device that the Opera TV Store is integrated with. The `EXIT` key is handled by the Opera TV Store browser itself, to ensure that each application can be closed. For this reason `VK_EXIT` will not be sent to the application. Not all keys from the table above are always present in various remote controllers (see Availability column). It is important to take this into account when designing an app. For example, it should be possible to play and pause video, even if the PLAY or PAUSE buttons are not available.
 

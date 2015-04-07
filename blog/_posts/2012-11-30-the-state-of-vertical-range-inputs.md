@@ -12,8 +12,8 @@ license: cc-by-3.0
 
 Yesterday I found myself needing to write a silly demo to sketch out some code (to be used in a larger project). The idea was to dump a ton of `<input type=range>` elements on a page, alternate between horizontal and vertical orientations, and manipulate the `value` property in various magical ways.
 
-<figure class="figure">
-	<img src="{{ page.id }}/rangesss.png" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/rangesss.png">
 </figure>
 
 The default rendering of `type=range` is a horizontal slider widget. To see it yourself quickly, put the following in your browser URL bar: `

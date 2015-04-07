@@ -9,8 +9,8 @@ tags:
 license: cc-by-3.0
 ---
 
-<figure class="figure figure--left">
-	<img src="{{ page.id }}/OperaMini5_iPhone.jpg" alt="" class="figure__media">
+<figure block="figure" mod="left, half">
+	<img elem="media" src="{{ page.id }}/OperaMini5_iPhone.jpg" alt="">
 	<figcaption></figcaption>
 </figure>
 

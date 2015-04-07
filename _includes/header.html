@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js ie6 oldie"><![endif]-->
-<!--[if IE 7]><html class="no-js ie7 oldie"><![endif]-->
-<!--[if IE 8]><html class="no-js ie8 oldie"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
 	<title>{{ site.title }}{% if page.title %} — {{ page.title | markdownline | strip_html }}{% endif %}</title>
 	<meta charset="utf-8">
@@ -10,35 +7,34 @@
 {% if page.url == '/index.html' %}
 	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
 {% endif %}
-	<link rel="stylesheet" href="/styles/screen.css">
+	<link rel="stylesheet" href="/styles/screen.css?v=fresh">
 	<link href="/feed/" rel="alternate" type="application/atom+xml" title="Dev.Opera">
 	<link href="/feed/articles/" rel="alternate" type="application/atom+xml" title="Dev.Opera Articles">
 	<link href="/feed/blog/" rel="alternate" type="application/atom+xml" title="Dev.Opera Blog">
 	<link href="/feed/tv/" rel="alternate" type="application/atom+xml" title="Dev.Opera TV">
 </head>
 <body>
-	<header class="header" role="banner">
-		<div class="header__logo">
+
+	<header block="header" role="banner">
 {% if page.url == '/index.html' %}
-			<h1 class="logo">
-				<span class="logo__wrapper">
-					Dev.<span class="logo__thinner">Opera</span>
-				</span>
-			</h1>
+		<h1 elem="logo">
+			<span elem="logo-type">
+				Dev.<span elem="logo-opera">Opera</span>
+			</span>
+		</h1>
 {% else %}
-			<p class="logo">
-				<a href="/" class="logo__wrapper">
-					Dev.<span class="logo__thinner">Opera</span>
-				</a>
-			</p>
+		<span elem="logo">
+			<a elem="logo-type" href="/">
+				Dev.<span elem="logo-opera">Opera</span>
+			</a>
+		</span>
 {% endif %}
-		</div>
-		<nav class="header__menu">
+		<nav>
 			{% include menu.html items='Blog|Articles|Extensions|TV' %}
 		</nav>
-		<form class="header__search" action="/search/" method="get">
-			<fieldset class="search">
-				<input type="search" name="q" placeholder="Search Dev.Opera" class="search__field">
+		<form action="/search/" method="get">
+			<fieldset elem="search">
+				<input elem="search-field" type="search" name="q" placeholder="Search Dev.Opera">
 			</fieldset>
 		</form>
 	</header>

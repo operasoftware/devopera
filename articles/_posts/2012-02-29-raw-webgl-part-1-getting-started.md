@@ -74,9 +74,9 @@ Next, we will use two WebGL-specific methods:
 
 If you save and run this page, it should give you a blank canvas, with a default colour of blue, like you specified above — see Figure 1.
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/figure1.png" alt="A very simple WebGL output" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: A very simple WebGL output</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/figure1.png" alt="A very simple WebGL output">
+	<figcaption elem="caption">Figure 1: A very simple WebGL output</figcaption>
 </figure>
 
 Note: The canvas has been created with dimensions of 300×150 pixels — this is the default if you don’t specify your own width and height.
@@ -91,9 +91,9 @@ With this basic setup under our belt, let’s go forward and start by drawing an
 
 [10]: {{ page.id }}/minimal-draw.html
 
-<figure class="figure">
-	<img src="{{ page.id }}/pipeline.jpg" alt="A diagram of the ES2.0 programmable pipeline WebGL uses" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 2: The ES2.0 programmable pipeline ([view an SVG version][12])</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/pipeline.jpg" alt="A diagram of the ES2.0 programmable pipeline WebGL uses">
+	<figcaption elem="caption" markdown="span">Figure 2: The ES2.0 programmable pipeline ([view an SVG version][12])</figcaption>
 </figure>
 
 [12]: http://emoller.github.com/WebGL101/documents/programmable-pipeline.html
@@ -211,9 +211,9 @@ This function accepts two inputs — a string and a type, and returns a shader o
 
 Save and run the code, and you should now have your very own green triangle, as seen in Figure 3 - woo hoo!
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/figure3.png" alt="A WebGL green triangle" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: A WebGL green triangle of your very own</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/figure3.png" alt="A WebGL green triangle">
+	<figcaption elem="caption">Figure 3: A WebGL green triangle of your very own</figcaption>
 </figure>
 
 To get here, we used the following logical process: bear in mind that the data and program are kept separate throughout.

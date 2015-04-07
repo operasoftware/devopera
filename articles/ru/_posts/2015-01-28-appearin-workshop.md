@@ -14,9 +14,9 @@ license: cc-by-3.0
 
 В начале декабря 2014 года мы пригласили команду блестящего сервиса для видеозвонков на WebRTC [appear.in](https://appear.in/) в офис Opera в Осло на однодневный мастер-класс: инженеры, дизайнеры и менеджеры продуктов из обеих компаний собрались провели вместе около шести часов, на одном только кофе и печенье. В итоге родились несколько экспериментов с использованием [appear.in](https://appear.in/).
 
-<figure class="figure">
-	<img src="{{ page.id }}/panorama.jpg" alt="Appear.in and Opera team workshop" class="figure__media">
-	<figcaption class="figure__caption">Мастер-класс appear.in и Opera в декабре</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/panorama.jpg" alt="Appear.in and Opera team workshop">
+	<figcaption elem="caption">Мастер-класс appear.in и Opera в декабре</figcaption>
 </figure>
 
 Несколько этих экспериментов были направлены на различные улучшения на бэкенде, но мы также пришли к некоторым идеям для фронтенда: большинство из них были реализованы в виде расширений, которые позволяеют быстро прототипировать возможности на основе существующего сервиса appear.in, без необходимости менять что-то в оригинальном коде.
@@ -29,9 +29,9 @@ license: cc-by-3.0
 
 Это простое расширение позволяет быстро создавать комнату в appear.in. Просто нажмите на иконку appear.in и затем «Перейти в комнату». Расширение запоминает три последних комнаты и позволяет изменить предложенное название комнаты на более подходящее вам. Очень простое, но очень удобное расширение, чтобы начать звонок в appear.in в считанные секунды.
 
-<figure class="figure">
-	<img src="{{ page.id }}/pop.jpg" alt="The Appear.in Pop extension" class="figure__media">
-	<figcaption class="figure__caption">Расширение Appear.in Pop в действии</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/pop.jpg" alt="The Appear.in Pop extension">
+	<figcaption elem="caption">Расширение Appear.in Pop в действии</figcaption>
 </figure>
 
 ## Appear.in Social
@@ -40,9 +40,9 @@ license: cc-by-3.0
 
 Расширение добавляет небольшую иконку в чат Facebook и в личные сообщения Twitter, которую вы можете использовать для создания ссылки на appear.in и тут же отправить собеседнику. Один видеозвонок вместо тысячи букв!
 
-<figure class="figure">
-	<img src="{{ page.id }}/social.jpg" alt="The Appear.in Social extension" class="figure__media">
-	<figcaption class="figure__caption">Расширение Appear.in Social, встроенное в чат Facebook</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/social.jpg" alt="The Appear.in Social extension">
+	<figcaption elem="caption">Расширение Appear.in Social, встроенное в чат Facebook</figcaption>
 </figure>
 
 ## Appear.in Handoff
@@ -51,8 +51,8 @@ license: cc-by-3.0
 
 Расширение позволяет легко перевести текущий видеоразговор в appear.in с компьютера на мобильный телефон на Android. Видео ниже демонстрирует как работает передача звонка на мобильный:
 
-<figure class="figure">
-	<iframe src="https://www.youtube.com/embed/d7hQIgj13UE" width="570" height="320" allowfullscreen class="figure__media"></iframe>
+<figure block="figure">
+	<iframe src="https://www.youtube.com/embed/d7hQIgj13UE" width="570" height="320" allowfullscreen elem="media"></iframe>
 </figure>
 
 ## Всё в ваших руках!

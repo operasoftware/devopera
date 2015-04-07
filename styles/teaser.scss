@@ -1,41 +1,112 @@
 // -------------------------------
 // Teaser
 // -------------------------------
+
 .teaser {
-	margin:0 0 12px;
-	padding:0 0 14px;
-	border-bottom:1px solid #DDD;
-	break-inside:avoid;
-	font-size:15px;
-	// Elements
-	&__title {
-		margin:0 0 8px;
-		font-weight:lighter;
-		font-size:18px;
-		&--featured {
-			font-size:24px;
-			}
-		}
+
+	@include clearfix;
+
+	margin-bottom:16px;
+	border-bottom:1px solid $grey-20;
+
 	&__link {
 		@extend %link--black;
-		@extend %link--hover;
+		@extend %link--blue-hover;
 		}
-	&__cover {
-		display:block;
-		margin:0 0 12px;
+		&__title {
+			padding-bottom:6px;
+			line-height:1.3;
+			font-weight:100;
+			font-size:21px;
+			}
+	&__picture {
+		margin-top:5px;
+		margin-bottom:4px;
 		width:100%;
 		max-width:100%;
 		}
-	&__intro {
-		margin:12px 0 0;
-		a {
-			@extend %link--blue;
+		&__meta {
+			padding-bottom:18px;
+			font-size:12px;
+			color:$grey;
 			}
-		}
-	// Featured
-	&--links {
-		a {
-			@extend %link--blue;
+			&__author {
+				@extend %link--blue;
+				}
+			&__category {
+				@extend %link--green;
+				}
+		&__intro {
+			padding-bottom:16px;
+			a {
+				@extend %link--blue;
+				}
 			}
+
+	}
+
+// Modifiers
+
+.teaser {
+
+	// Blog
+
+	&--blog {
+		border-bottom-color:$blue-15;
 		}
+
+	// Last
+
+	&:last-child {
+		margin-bottom:-1px;
+		border-bottom:none;
+		}
+
+	}
+
+// Featured
+
+.teaser {
+
+	&__title--featured {
+		margin-bottom:5px;
+		font-size:24px;
+		}
+
+	// Lap to Desk
+
+	@include layout-breakpoint($lap-and-up) {
+
+		&__picture--featured {
+			@include span(3 at 1 of 6);
+			margin-top:2px;
+			margin-bottom:22px;
+			}
+		&__content--featured {
+			@include span(3 at 4 of 6);
+			}
+
+		}
+
+	// Lap to Desk
+
+	@include layout-breakpoint($lap-to-desk) {
+
+		&__title--featured {
+			font-size:30px;
+			}
+
+		}
+
+	// Desk and Up
+
+	@include layout-breakpoint($desk-and-up) {
+
+		&__title--featured {
+			margin-top:-7px;
+			font-size:36px;
+			}
+
+		}
+
 	}

@@ -48,9 +48,9 @@ license: cc-by-3.0
 
 これから紹介するサンプルコードには、**サイズ**、**DPI**、**MIME**、**アート** のキーワードがひとつもしくは複数つけられています。これらのキーワードは、上の問いにそれぞれ対応しています。それぞれのサンプルコードには簡単な説明もあります。私はサンプルコードを書くにあたって、[夜の Oslo Opera House の写真](http://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg)を考えていました。こちらも参考になれば。
 
-<figure class="figure">
-	<img src="/articles/responsive-images/opera-house.jpg" alt="夜の Oslo Opera House" class="figure__media">
-	<figcaption class="figure__caption">夜の Oslo Opera House</figcaption>
+<figure block="figure">
+	<img elem="media" src="/articles/responsive-images/opera-house.jpg" alt="夜の Oslo Opera House">
+	<figcaption elem="caption">夜の Oslo Opera House</figcaption>
 </figure>
 
 ## とりあえず覚えておくこと

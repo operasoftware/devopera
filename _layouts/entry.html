@@ -2,33 +2,47 @@
 layout: default
 ---
 
-<main>
-	<article role="main" lang="{{ page.language }}" class="layout-entry">
-		<div class="layout-entry__content">
-			<div class="content">
-				<h1 class="content__title">{{ page.title | markdownline }}</h1>
+<main block="layout">
+	<div elem="content" mod="entry">
+		<article role="main" lang="{{ page.language }}">
+			<h1 block="content" elem="title">{{ page.title | markdownline }}</h1>
+			<div block="content">
 				{{ content }}
 			</div>
-		</div>
-		<div class="layout-entry__aside">
-			<div class="content">
-				<p>
-{% include author-picture.html object=page class='meta__picture' %}
+		</article>
+	</div>
+	<div elem="aside">
+		<p block="authors" mod="fixed">{% include entry__author.html entry=page %}</p>
+		<p block="entry">
 
-<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time>
+			Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+				{{ page.date | date: '%-d %B %Y' }}
+			</time>
 
-by {% include author-name.html object=page link=true class='meta__author' %}
-in <a href="/{{ page.category }}/">{{ page.category | capitalize }}</a>.
+			in <a elem="category" href="/{{ page.category }}/">
+				{{ page.category | capitalize }}
+			</a>.
 
-{% if page.translator %}
-	{% if page.source %}<a href="{{ page.source }}">{% endif %}Translated by {{ page.translator }}{% if page.source %}</a>{% endif %}.
-{% endif %}
-				</p>
-				<p>Tags: {% include tags.html object=page %}</p>
-				{% include translations.html %}
-				<p rel="license">{% include license.html license=page.license %}</p>
-				<p><a href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">Edit this article on GitHub</a></p>
-			</div>
-		</div>
-	</article>
+			{% include entry__translations.html entry=page %}
+
+			{% if page.translator %}
+				{% if page.source %}<a elem="link" href="{{ page.source }}">{% endif %}
+					Translated by {{ page.translator }}
+				{% if page.source %}</a>{% endif %}.
+			{% endif %}
+
+			<a elem="link" href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">
+				Edit this article on GitHub
+			</a>.
+
+			<small>
+				Licensed under a
+				<a elem="link" href="{{ site.data.licenses[page.license].link }}">
+					{{ site.data.licenses[page.license].text }}
+				</a> license.
+			</small>
+
+		</p>
+		{% include tags.html tags=page.tags %}
+	</div>
 </main>

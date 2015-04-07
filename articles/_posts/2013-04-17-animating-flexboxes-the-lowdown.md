@@ -17,9 +17,9 @@ license: cc-by-3.0
 
 On a recent plane flight, I starting noodling around with combining Flexbox properties, animations and transitions. I came to the conclusion that, for simple accordion-type UI features (see Figure 1), this can be quite useful. Sure, it is tricky to get it working the same across all browsers, but using Modernizr you can feed legacy properties to older browsers that support the 2009 legacy Flexbox syntax, and then provide something completely different to those geriatric browsers we are still called upon to support that have no Flexbox support at all — like a simple tabbed interface perhaps.
 
-<figure class="figure" id="figure-1">
-	<img src="{{ page.id }}/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 1: A simple accordion interface created with Flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/figure-1.png" alt="The final web site interface — 5 columns, with one column is expanded wider than the others, with text shown inside it">
+	<figcaption elem="caption" markdown="span">Figure 1: A simple accordion interface created with Flexbox, transitions and a touch of JavaScript. [run the final example here][2]</figcaption>
 </figure>
 
 [2]: {{ page.id }}/transition-js/
@@ -71,9 +71,9 @@ I happily saw that it worked fine (In Opera and Chrome anyway, other browsers do
 
 Following on from this I created a better looking example, and continued to play (see Figure 2).
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it" class="figure__media">
-	<figcaption class="figure__caption" markdown="span">Figure 2: A simple accordion interface created with Flexbox and transitions [run the transitions example][5]</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/figure-2.png" alt="A simple web site interface with 5 columns. one column is expanded wider than the others, with text shown inside it">
+	<figcaption elem="caption" markdown="span">Figure 2: A simple accordion interface created with Flexbox and transitions [run the transitions example][5]</figcaption>
 </figure>
 
 [5]: {{ page.id }}/transition.html

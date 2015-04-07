@@ -35,8 +35,8 @@ The syntax above is that of the Watir API, a Ruby test tool originally developed
 
 Below is a video of the script running in the desktop version of our browser. We’ve had to slow it down significantly for you to be able to see what’s going on — the test normally takes a few hundred milliseconds.
 
-<figure class="figure">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/6jbEpYjWisU" allowfullscreen class="figure__media"></iframe>
+<figure block="figure">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/6jbEpYjWisU" allowfullscreen elem="media"></iframe>
 </figure>
 
 Through scripts like these, we can automatically test many of the things our millions of users do every day. If we break anything and a test fails, our scripts will instantly notify us so that we can fix it.
@@ -45,8 +45,8 @@ But testing these things on our x86 test builds is not enough. We ship on hundre
 
 When using the scope protocol, it doesn't really matter if you’re talking to an Opera instance locally or remotely; it was built for working on any device. Here’s the exact same script running on a mobile phone:
 
-<figure class="figure">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/taqqlReb7pA" allowfullscreen class="figure__media"></iframe>
+<figure block="figure">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/taqqlReb7pA" allowfullscreen elem="media"></iframe>
 </figure>
 
 Shortly after we started working on this tool, we figured that this might not just be useful for us testing our browser engine, but for Web developers testing their own Web applications, too. Our new tools are still in a pre-alpha stage, but as they mature over the coming months, we would like to make them available to all of you as well.

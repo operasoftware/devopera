@@ -1,36 +1,135 @@
 // -------------------------------
 // Figure
 // -------------------------------
+
 .figure {
-	margin-bottom:16px;
-	// Align
-	&--left,
-	&--right {
-		margin-top:4px;
-		max-width:33%;
-		}
-	&--left {
-		float:left;
-		margin-right:24px;
-		}
-	&--right {
-		float:right;
-		margin-left:24px;
-		}
-	// Media
+
+	padding-top:1px;
+	padding-bottom:17px;
+
 	&__media {
-		display:inline-block;
+		display:block;
 		max-width:100%;
-		border:none;
 		}
-	// Caption
+	&__media + &__media {
+		margin-top:24px;
+		}
+
 	&__caption {
-		margin-top:8px;
-		color:#777;
+		padding-top:9px;
+		color:#888;
 		font-style:italic;
-		font-size:12px;
-		&--center {
-			text-align:center;
-			}
+		font-size:14px;
 		}
+
+	// Center
+
+	&--center &__media {
+		margin:auto;
+		}
+	&--center &__caption {
+		text-align:center;
+		}
+
+	// Full
+
+	&--full &__media {
+		width:100%;
+		}
+
+	// Double
+
+	&--double {
+		@include clearfix;
+		}
+	&--double &__caption {
+		clear:both;
+		}
+
+	// Video
+
+	// TODO: proper scaling
+
+	// Lap and Up
+
+	@include breakpoint($lap-and-up) {
+
+		// Floats
+
+		&--left,
+		&--right {
+			margin-top:4px;
+			}
+		&--left {
+			float:left;
+			}
+		&--right {
+			float:right;
+			}
+		&--left &__caption {
+			text-align:right;
+			}
+
+		// Double
+
+		&--double &__media:nth-of-type(2) {
+			margin-top:0;
+			}
+
+		}
+
+	// Lap to Desk
+
+	@include layout-breakpoint($lap-to-desk) {
+
+		// Floats
+
+		&--left {
+			margin-right:gutter(4);
+			}
+		&--right {
+			margin-left:gutter(4);
+			}
+		&--half {
+			width:span(2 of 4);
+			}
+
+		// Double
+
+		&--double &__media:nth-of-type(1) {
+			@include span(2 at 1 of 4 float);
+			}
+		&--double &__media:nth-of-type(2) {
+			@include span(2 at 3 of 4 float);
+			}
+
+		}
+
+	// Desk and Up
+
+	@include layout-breakpoint($desk-and-up) {
+
+		// Floats
+
+		&--left {
+			margin-right:gutter(8);
+			}
+		&--right {
+			margin-left:gutter(8);
+			}
+		&--half {
+			width:span(4 of 8);
+			}
+
+		// Double
+
+		&--double &__media:nth-of-type(1) {
+			@include span(4 at 1 of 8 float);
+			}
+		&--double &__media:nth-of-type(2) {
+			@include span(4 at 5 of 8 float);
+			}
+
+		}
+
 	}

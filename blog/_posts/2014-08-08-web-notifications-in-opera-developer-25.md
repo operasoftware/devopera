@@ -18,14 +18,14 @@ So the notifications you have on Opera will feel like native notifications (i.e.
 
 A very simple notification on the Mac platform would look like this:
 
-<figure class="figure">
-	<img src="{{ page.id }}/notification.png" alt="Simple notification on Mac" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/notification.png" alt="Simple notification on Mac">
 </figure>
 
 You can of course, include an image as well, like so:
 
-<figure class="figure">
-	<img src="{{ page.id }}/notification-image.png" alt="Notification with image on Mac" class="figure__media">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/notification-image.png" alt="Notification with image on Mac">
 </figure>
 
 To give you a quick overview of web notitifcations, it’s really quite simple. The first thing you need check if the browser supports notifications, if so, to ask the user for permission to show notifications.

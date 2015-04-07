@@ -2,54 +2,51 @@
 layout: default
 ---
 
-{% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
 {% assign articles = site.posts | where: 'category', 'articles' | where: 'language', 'en' %}
+{% assign articles_regular = articles | where: 'featured', null %}
+{% assign articles_featured = articles | where: 'featured', 'featured' | last %}
 
-<main class="layout-main">
-	<section class="layout-main__blog">
-		<article class="teaser teaser--links">
+{% assign blog = site.posts | where: 'category', 'blog' | where: 'language', 'en' %}
+
+<main block="layout">
+	<div elem="content">
+		<section block="featured">
+			<h2 elem="title">Featured</h2>
+			<div elem="article">
+{% if articles_featured %}
+	{% include teaser.html entry=articles_featured mod='featured' %}
+{% endif %}
+			</div>
+			<div elem="tags">
+				{% include tags.html tags=site.data.tags-featured mod='featured' %}
+			</div>
+		</section>
+		<section block="archive">
+			<h2 elem="title">
+				<a href="/articles/">Articles</a>
+			</h2>
+			<div data-columns elem="columns">
+{% for article in articles_regular limit:16 %}
+	{% include teaser.html entry=article %}
+{% endfor %}
+			</div>
+		</section>
+	</div>
+	<div elem="aside">
+		<section block="blog">
+			<h2 elem="title"><a href="/blog/">Blog</a></h2>
+{% for post in blog limit:6 %}
+	{% include teaser.html entry=post mod='blog' %}
+{% endfor %}
+		</section>
+		<section block="linkbait">
+			<h2 elem="title">Useful Links</h2>
 			<ul>
 {% for item in site.data.links-main %}
-				<li><a href="{{ item.link | escape }}">{{ item.text }}</a></li>
+				<li elem="item"><a elem="link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
 {% endfor %}
 			</ul>
-		</article>
-		<h2 class="layout-main__title"><a href="/blog/">Blog</a></h2>
-{% for post in blog limit:6 %}
-		<article class="teaser">
-			<h3 class="teaser__title"><a href="{{ post.url }}" class="teaser__link">{{ post.title | markdownline }}</a></h3>
-			<p class="meta meta--teaser">
-				<time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="meta__time">{{ post.date | date: '%-d %B %Y' }}</time>
-				by {% include author-name.html object=post link=true class='meta__author' %}
-				in <a href="/{{ post.category }}/" class="meta__category">{{ post.category | capitalize }}</a>
-			</p>
-{% if post.intro %}
-			<p class="teaser__intro">{{ post.intro | markdownline }}</p>
-{% endif %}
-		</article>
-{% endfor %}
-	</section>
-	<section class="layout-main__articles">
-		<h2 class="layout-main__title"><a href="/articles/">Articles</a></h2>
-		<div class="columns columns--main">
-{% for article in articles limit:12 %}
-			<article class="teaser">
-				<h3 class="teaser__title"><a href="{{ article.url }}" class="teaser__link">{{ article.title | markdownline }}</a></h3>
-{% if article.cover %}
-				<a href="{{ article.url }}">
-					<img src="{{ article.url }}cover.{{ article.cover }}" alt="{{ article.title | markdownline | strip_html }}" class="teaser__cover">
-				</a>
-{% endif %}
-				<p class="meta meta--teaser">
-					<time datetime="{{ article.date | date: '%Y-%m-%d' }}" class="meta__time">{{ article.date | date: '%-d %B %Y' }}</time>
-					by {% include author-name.html object=article link=true class='meta__author' %}
-					in <a href="/{{ article.category }}/" class="meta__category">{{ article.category | capitalize }}</a>
-				</p>
-{% if article.intro %}
-				<p class="teaser__intro">{{ article.intro | markdownline }}</p>
-{% endif %}
-			</article>
-{% endfor %}
-		</div>
-	</section>
+		</section>
+	</div>
 </main>
+<script src="/scripts/salvattore.js"></script>

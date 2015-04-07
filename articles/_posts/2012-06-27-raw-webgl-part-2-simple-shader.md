@@ -50,9 +50,9 @@ Next, we take our `gl.drawArrays` line (the bottom line of script) and change it
 
 These changes will result in our exciting green triangle being changed into an even more exciting green rectangle — see Figure 1!
 
-<figure class="figure" id="figure">
-	<img src="{{ page.id }}/figure1.png" alt="A WebGL-rendered green rectangle" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: An exciting green rectangle, rendered using WebGL</figcaption>
+<figure block="figure" id="figure">
+	<img elem="media" src="{{ page.id }}/figure1.png" alt="A WebGL-rendered green rectangle">
+	<figcaption elem="caption">Figure 1: An exciting green rectangle, rendered using WebGL</figcaption>
 </figure>
 
 ## Making our example more flexible
@@ -110,9 +110,9 @@ This makes our program use the information from the shaders.
 
 Now try testing your code — you should end up with an altogether more colourful rectangle, as shown in Figure 2:
 
-<figure class="figure" id="figure-2">
-	<img src="{{ page.id }}/figure2.png" alt="A WebGL-rendered rectangle with a colourful gradient" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: Our rectangle now has a much more exciting look to it</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/figure2.png" alt="A WebGL-rendered rectangle with a colourful gradient">
+	<figcaption elem="caption">Figure 2: Our rectangle now has a much more exciting look to it</figcaption>
 </figure>
 
 ## Offsetting the texture coordinates
@@ -139,9 +139,9 @@ The `offsetUniform` identifies which variable from inside the shaders the values
 
 This should now offset the gradient and give us an altogether more yellowy look, as seen in Figure 3:
 
-<figure class="figure" id="figure-3">
-	<img src="{{ page.id }}/figure3.png" alt="A WebGL-rendered rectangle with a colourful gradient, the texture offset for a more colourful effect" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: Offsetting the gradient texture gives us a nicer, more yellowy effect</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/figure3.png" alt="A WebGL-rendered rectangle with a colourful gradient, the texture offset for a more colourful effect">
+	<figcaption elem="caption">Figure 3: Offsetting the gradient texture gives us a nicer, more yellowy effect</figcaption>
 </figure>
 
 ## Reusing code

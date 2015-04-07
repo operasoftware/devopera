@@ -190,116 +190,118 @@ The basis for a resource-based schedule is some sort of feature-list. Even thoug
 I’ve authored a simple example of a resource-based plan spanning nine weeks with three milestones — each occurring during a “pink” week — see [Figure 2](#figure-2). At the start of the project, based on initial discussions of scope (and, perhaps, following a separate Discovery project, in which the project requirements and goals are established), I sit down and make assumptions about which resources are needed (in this case, seven of them), and what their weekly allocations will be (you could take this down to the daily level if you want to). The result is the number of hours required from each resource, each week, and the total number of hours available to execute the project.
 
 <figure id="figure-2">
-	<table>
-	<tr>
-		<th scope="col">Resource</th>
-		<th scope="col">1</th>
-		<th scope="col">2</th>
-		<th scope="col">3</th>
-		<th scope="col">4</th>
-		<th scope="col">5</th>
-		<th scope="col">6</th>
-		<th scope="col">7</th>
-		<th scope="col">8</th>
-		<th scope="col">9</th>
-		<th scope="col">T</th>
-	</tr>
-	<tr>
-		<td>Producer</td>
-		<td>32</td>
-		<td>32</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>30</td>
-		<td>30</td>
-		<td>20</td>
-		<td>20</td>
-		<td>284</td>
-	</tr>
-	<tr>
-		<td>Project Manager</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>360</td>
-	</tr>
-	<tr>
-		<td>User Experience Designer</td>
-		<td>40</td>
-		<td>40</td>
-		<td>20</td>
-		<td>16</td>
-		<td>16</td>
-		<td>8</td>
-		<td>8</td>
-		<td>8</td>
-		<td>0</td>
-		<td>156</td>
-	</tr>
-	<tr>
-		<td>Software Architect</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>360</td>
-	</tr>
-	<tr>
-		<td>Engineer 1</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>40</td>
-		<td>360</td>
-	</tr>
-	<tr>
-		<td>Engineer 2</td>
-		<td>0</td>
-		<td>10</td>
-		<td>40</td>
-		<td>40</td>
-		<td>24</td>
-		<td>20</td>
-		<td>20</td>
-		<td>20</td>
-		<td>20</td>
-		<td>194</td>
-	</tr>
-	<tr>
-		<td>QA</td>
-		<td>0</td>
-		<td>0</td>
-		<td>0</td>
-		<td>32</td>
-		<td>32</td>
-		<td>32</td>
-		<td>32</td>
-		<td>0</td>
-		<td>0</td>
-		<td>128</td>
-	</tr>
-	<tr>
-		<td colspan="10">Total Hours</td>
-		<td>1842</td>
-	</tr>
-	</table>
+	<div block="table">
+		<table>
+		<tr>
+			<th scope="col">Resource</th>
+			<th scope="col">1</th>
+			<th scope="col">2</th>
+			<th scope="col">3</th>
+			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
+			<th scope="col">7</th>
+			<th scope="col">8</th>
+			<th scope="col">9</th>
+			<th scope="col">T</th>
+		</tr>
+		<tr>
+			<td>Producer</td>
+			<td>32</td>
+			<td>32</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>30</td>
+			<td>30</td>
+			<td>20</td>
+			<td>20</td>
+			<td>284</td>
+		</tr>
+		<tr>
+			<td>Project Manager</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>360</td>
+		</tr>
+		<tr>
+			<td>User Experience Designer</td>
+			<td>40</td>
+			<td>40</td>
+			<td>20</td>
+			<td>16</td>
+			<td>16</td>
+			<td>8</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+			<td>156</td>
+		</tr>
+		<tr>
+			<td>Software Architect</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>360</td>
+		</tr>
+		<tr>
+			<td>Engineer 1</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>40</td>
+			<td>360</td>
+		</tr>
+		<tr>
+			<td>Engineer 2</td>
+			<td>0</td>
+			<td>10</td>
+			<td>40</td>
+			<td>40</td>
+			<td>24</td>
+			<td>20</td>
+			<td>20</td>
+			<td>20</td>
+			<td>20</td>
+			<td>194</td>
+		</tr>
+		<tr>
+			<td>QA</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>32</td>
+			<td>32</td>
+			<td>32</td>
+			<td>32</td>
+			<td>0</td>
+			<td>0</td>
+			<td>128</td>
+		</tr>
+		<tr>
+			<td colspan="10">Total Hours</td>
+			<td>1842</td>
+		</tr>
+		</table>
+	</div>
 	<figcaption>Figure 2: A simple resource-based project plan</figcaption>
 </figure>
 
@@ -313,232 +315,236 @@ In order to maintain vigilance over progress, you must be able to track the time
 Following on the simple example above, each week the Project Manager tallies the actual hours, enters them into the spreadsheet. By the end of your project, you have the actual number of hours consumed on the project – see Figure 3.
 
 <figure id="figure-3">
-	<table>
-	<tr>
-		<th scope="col">Resource</th>
-		<th scope="col">1</th>
-		<th scope="col">2</th>
-		<th scope="col">3</th>
-		<th scope="col">4</th>
-		<th scope="col">5</th>
-		<th scope="col">6</th>
-		<th scope="col">7</th>
-		<th scope="col">8</th>
-		<th scope="col">9</th>
-		<th scope="col">T</th>
-	</tr>
-	<tr>
-		<td>Producer</td>
-		<td>21.5</td>
-		<td>38.9</td>
-		<td>44.4</td>
-		<td>37.8</td>
-		<td>37.9</td>
-		<td>27.9</td>
-		<td>33</td>
-		<td>16.8</td>
-		<td>17.2</td>
-		<td>275.4</td>
-	</tr>
-	<tr>
-		<td>Project Manager</td>
-		<td>39.7</td>
-		<td>51.5</td>
-		<td>35.1</td>
-		<td>44</td>
-		<td>36.1</td>
-		<td>43.2</td>
-		<td>39.3</td>
-		<td>44.9</td>
-		<td>41.6</td>
-		<td>375.4</td>
-	</tr>
-	<tr>
-		<td>User Experience Designer</td>
-		<td>39.9</td>
-		<td>34.4</td>
-		<td>23.7</td>
-		<td>20.4</td>
-		<td>16.8</td>
-		<td>6.8</td>
-		<td>10.4</td>
-		<td>8.6</td>
-		<td>3.9</td>
-		<td>164.8</td>
-	</tr>
-	<tr>
-		<td>Software Architect</td>
-		<td>39.2</td>
-		<td>33.5</td>
-		<td>35.5</td>
-		<td>35.9</td>
-		<td>41.7</td>
-		<td>40.6</td>
-		<td>42.2</td>
-		<td>44</td>
-		<td>36.3</td>
-		<td>348.9</td>
-	</tr>
-	<tr>
-		<td>Engineer 1</td>
-		<td>32.5</td>
-		<td>20.8</td>
-		<td>38</td>
-		<td>38.2</td>
-		<td>37</td>
-		<td>37.7</td>
-		<td>44.7</td>
-		<td>35.4</td>
-		<td>36.9</td>
-		<td>321.3</td>
-	</tr>
-	<tr>
-		<td>Engineer 2</td>
-		<td>35</td>
-		<td>19</td>
-		<td>43.4</td>
-		<td>39.8</td>
-		<td>25.9</td>
-		<td>18.9</td>
-		<td>15.4</td>
-		<td>22.5</td>
-		<td>18.3</td>
-		<td>238.2</td>
-	</tr>
-	<tr>
-		<td>QA</td>
-		<td>0</td>
-		<td>0</td>
-		<td>0</td>
-		<td>34.6</td>
-		<td>30.4</td>
-		<td>36.1</td>
-		<td>29</td>
-		<td>3.8</td>
-		<td>2.7</td>
-		<td>136.4</td>
-	</tr>
-	<tr>
-		<td colspan="10">Total Hours</td>
-		<td>1860</td>
-	</tr>
-	</table>
+	<div block="table">
+		<table>
+		<tr>
+			<th scope="col">Resource</th>
+			<th scope="col">1</th>
+			<th scope="col">2</th>
+			<th scope="col">3</th>
+			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
+			<th scope="col">7</th>
+			<th scope="col">8</th>
+			<th scope="col">9</th>
+			<th scope="col">T</th>
+		</tr>
+		<tr>
+			<td>Producer</td>
+			<td>21.5</td>
+			<td>38.9</td>
+			<td>44.4</td>
+			<td>37.8</td>
+			<td>37.9</td>
+			<td>27.9</td>
+			<td>33</td>
+			<td>16.8</td>
+			<td>17.2</td>
+			<td>275.4</td>
+		</tr>
+		<tr>
+			<td>Project Manager</td>
+			<td>39.7</td>
+			<td>51.5</td>
+			<td>35.1</td>
+			<td>44</td>
+			<td>36.1</td>
+			<td>43.2</td>
+			<td>39.3</td>
+			<td>44.9</td>
+			<td>41.6</td>
+			<td>375.4</td>
+		</tr>
+		<tr>
+			<td>User Experience Designer</td>
+			<td>39.9</td>
+			<td>34.4</td>
+			<td>23.7</td>
+			<td>20.4</td>
+			<td>16.8</td>
+			<td>6.8</td>
+			<td>10.4</td>
+			<td>8.6</td>
+			<td>3.9</td>
+			<td>164.8</td>
+		</tr>
+		<tr>
+			<td>Software Architect</td>
+			<td>39.2</td>
+			<td>33.5</td>
+			<td>35.5</td>
+			<td>35.9</td>
+			<td>41.7</td>
+			<td>40.6</td>
+			<td>42.2</td>
+			<td>44</td>
+			<td>36.3</td>
+			<td>348.9</td>
+		</tr>
+		<tr>
+			<td>Engineer 1</td>
+			<td>32.5</td>
+			<td>20.8</td>
+			<td>38</td>
+			<td>38.2</td>
+			<td>37</td>
+			<td>37.7</td>
+			<td>44.7</td>
+			<td>35.4</td>
+			<td>36.9</td>
+			<td>321.3</td>
+		</tr>
+		<tr>
+			<td>Engineer 2</td>
+			<td>35</td>
+			<td>19</td>
+			<td>43.4</td>
+			<td>39.8</td>
+			<td>25.9</td>
+			<td>18.9</td>
+			<td>15.4</td>
+			<td>22.5</td>
+			<td>18.3</td>
+			<td>238.2</td>
+		</tr>
+		<tr>
+			<td>QA</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>34.6</td>
+			<td>30.4</td>
+			<td>36.1</td>
+			<td>29</td>
+			<td>3.8</td>
+			<td>2.7</td>
+			<td>136.4</td>
+		</tr>
+		<tr>
+			<td colspan="10">Total Hours</td>
+			<td>1860</td>
+		</tr>
+		</table>
+	</div>
 	<figcaption>Figure 3: Actual hours worked on a project</figcaption>
 </figure>
 
 Taking this one step further, you can simply subtract your actual hours from your planned hours, and see where all the deviations come from – see Figure 4. In this sample, I’ve applied color-formatting rules to each cell to quickly indicate if the resource came in under or over hours for the week. In this example, while there was a lot of variation for each resource each week, overall, we came in 18 hours over budget (a negative variance of just under 1%, which is not too bad).
 
 <figure id="figure-4">
-	<table>
-	<tr>
-		<th scope="col">Resource</th>
-		<th scope="col">1</th>
-		<th scope="col">2</th>
-		<th scope="col">3</th>
-		<th scope="col">4</th>
-		<th scope="col">5</th>
-		<th scope="col">6</th>
-		<th scope="col">7</th>
-		<th scope="col">8</th>
-		<th scope="col">9</th>
-		<th scope="col">T</th>
-	</tr>
-	<tr>
-		<td>Producer</td>
-		<td>10.5</td>
-		<td>–6.9</td>
-		<td>–4.4</td>
-		<td>2.2</td>
-		<td>2.1</td>
-		<td>2.1</td>
-		<td>–3</td>
-		<td>2.2</td>
-		<td>2.8</td>
-		<td>8.6</td>
-	</tr>
-	<tr>
-		<td>Project Manager</td>
-		<td>0.3</td>
-		<td>–11.5</td>
-		<td>4.9</td>
-		<td>–4</td>
-		<td>3.9</td>
-		<td>–3.2</td>
-		<td>0.7</td>
-		<td>–4.9</td>
-		<td>–1.6</td>
-		<td>–15.4</td>
-	</tr>
-	<tr>
-		<td>User Experience Designer</td>
-		<td>0.1</td>
-		<td>5.6</td>
-		<td>–3.7</td>
-		<td>–4.4</td>
-		<td>–0.8</td>
-		<td>1.2</td>
-		<td>–2.4</td>
-		<td>–0.6</td>
-		<td>–3.9</td>
-		<td>–8.8</td>
-	</tr>
-	<tr>
-		<td>Software Architect</td>
-		<td>0.8</td>
-		<td>6.5</td>
-		<td>4.5</td>
-		<td>4.1</td>
-		<td>–1.7</td>
-		<td>–0.6</td>
-		<td>–2.2</td>
-		<td>–4</td>
-		<td>3.7</td>
-		<td>11.1</td>
-	</tr>
-	<tr>
-		<td>Engineer 1</td>
-		<td>7.5</td>
-		<td>19.3</td>
-		<td>2</td>
-		<td>1.8</td>
-		<td>3</td>
-		<td>2.3</td>
-		<td>–4.7</td>
-		<td>4.6</td>
-		<td>3.1</td>
-		<td>38.7</td>
-	</tr>
-	<tr>
-		<td>Engineer 2</td>
-		<td>–35</td>
-		<td>–9</td>
-		<td>–3.4</td>
-		<td>0.2</td>
-		<td>–1.9</td>
-		<td>1.1</td>
-		<td>4.6</td>
-		<td>–2.5</td>
-		<td>1.7</td>
-		<td>–44.2</td>
-	</tr>
-	<tr>
-		<td>QA</td>
-		<td>0</td>
-		<td>0</td>
-		<td>0</td>
-		<td>–2.6</td>
-		<td>1.6</td>
-		<td>–4.1</td>
-		<td>3</td>
-		<td>–3.8</td>
-		<td>–2.7</td>
-		<td>–8.4</td>
-	</tr>
-	<tr>
-		<td colspan="10">Total Hours</td>
-		<td>1842</td>
-	</tr>
-	</table>
+	<div block="table">
+		<table>
+		<tr>
+			<th scope="col">Resource</th>
+			<th scope="col">1</th>
+			<th scope="col">2</th>
+			<th scope="col">3</th>
+			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
+			<th scope="col">7</th>
+			<th scope="col">8</th>
+			<th scope="col">9</th>
+			<th scope="col">T</th>
+		</tr>
+		<tr>
+			<td>Producer</td>
+			<td>10.5</td>
+			<td>–6.9</td>
+			<td>–4.4</td>
+			<td>2.2</td>
+			<td>2.1</td>
+			<td>2.1</td>
+			<td>–3</td>
+			<td>2.2</td>
+			<td>2.8</td>
+			<td>8.6</td>
+		</tr>
+		<tr>
+			<td>Project Manager</td>
+			<td>0.3</td>
+			<td>–11.5</td>
+			<td>4.9</td>
+			<td>–4</td>
+			<td>3.9</td>
+			<td>–3.2</td>
+			<td>0.7</td>
+			<td>–4.9</td>
+			<td>–1.6</td>
+			<td>–15.4</td>
+		</tr>
+		<tr>
+			<td>User Experience Designer</td>
+			<td>0.1</td>
+			<td>5.6</td>
+			<td>–3.7</td>
+			<td>–4.4</td>
+			<td>–0.8</td>
+			<td>1.2</td>
+			<td>–2.4</td>
+			<td>–0.6</td>
+			<td>–3.9</td>
+			<td>–8.8</td>
+		</tr>
+		<tr>
+			<td>Software Architect</td>
+			<td>0.8</td>
+			<td>6.5</td>
+			<td>4.5</td>
+			<td>4.1</td>
+			<td>–1.7</td>
+			<td>–0.6</td>
+			<td>–2.2</td>
+			<td>–4</td>
+			<td>3.7</td>
+			<td>11.1</td>
+		</tr>
+		<tr>
+			<td>Engineer 1</td>
+			<td>7.5</td>
+			<td>19.3</td>
+			<td>2</td>
+			<td>1.8</td>
+			<td>3</td>
+			<td>2.3</td>
+			<td>–4.7</td>
+			<td>4.6</td>
+			<td>3.1</td>
+			<td>38.7</td>
+		</tr>
+		<tr>
+			<td>Engineer 2</td>
+			<td>–35</td>
+			<td>–9</td>
+			<td>–3.4</td>
+			<td>0.2</td>
+			<td>–1.9</td>
+			<td>1.1</td>
+			<td>4.6</td>
+			<td>–2.5</td>
+			<td>1.7</td>
+			<td>–44.2</td>
+		</tr>
+		<tr>
+			<td>QA</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>–2.6</td>
+			<td>1.6</td>
+			<td>–4.1</td>
+			<td>3</td>
+			<td>–3.8</td>
+			<td>–2.7</td>
+			<td>–8.4</td>
+		</tr>
+		<tr>
+			<td colspan="10">Total Hours</td>
+			<td>1842</td>
+		</tr>
+		</table>
+	</div>
 	<figcaption>Figure 4: The variance on our project — how the actual hours differ from our estimates</figcaption>
 </figure>
 
@@ -565,116 +571,118 @@ In our task-based example, simply enter rates for each resource into the resourc
 In our resource-based example, we can calculate the budget by multiplying each resources hours, by his rate. Let’s assume for simplicity that everyone’s rate is US$100 per hour, in which case our total budget is $184,200, as we can see in Figure 5:
 
 <figure id="figure-5">
-	<table>
-	<tr>
-		<th scope="col">Resource</th>
-		<th scope="col">1</th>
-		<th scope="col">2</th>
-		<th scope="col">3</th>
-		<th scope="col">4</th>
-		<th scope="col">5</th>
-		<th scope="col">6</th>
-		<th scope="col">7</th>
-		<th scope="col">8</th>
-		<th scope="col">9</th>
-		<th scope="col">T</th>
-	</tr>
-	<tr>
-		<td>Producer</td>
-		<td>$3,200</td>
-		<td>$3,200</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$3,000</td>
-		<td>$3,000</td>
-		<td>$2,000</td>
-		<td>$2,000</td>
-		<td>$28,400</td>
-	</tr>
-	<tr>
-		<td>Project Manager</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$36,000</td>
-	</tr>
-	<tr>
-		<td>User Experience Designer</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$2,000</td>
-		<td>$1,600</td>
-		<td>$1,600</td>
-		<td>$8,00</td>
-		<td>$8,00</td>
-		<td>$8,00</td>
-		<td>0</td>
-		<td>$15,600</td>
-	</tr>
-	<tr>
-		<td>Software Architect</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4000</td>
-		<td>$36,000</td>
-	</tr>
-	<tr>
-		<td>Engineer 1</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$36,000</td>
-	</tr>
-	<tr>
-		<td>Engineer 2</td>
-		<td>0</td>
-		<td>$1,000</td>
-		<td>$4,000</td>
-		<td>$4,000</td>
-		<td>$2,400</td>
-		<td>$2,000</td>
-		<td>$2,000</td>
-		<td>$2,000</td>
-		<td>$2,000</td>
-		<td>$19,400</td>
-	</tr>
-	<tr>
-		<td>QA</td>
-		<td>0</td>
-		<td>0</td>
-		<td>0</td>
-		<td>$3,200</td>
-		<td>$3,200</td>
-		<td>$3,200</td>
-		<td>$3,200</td>
-		<td>0</td>
-		<td>0</td>
-		<td>$12,800</td>
-	</tr>
-	<tr>
-		<td colspan="10">Total Hours</td>
-		<td>$184,200</td>
-	</tr>
-	</table>
+	<div block="table">
+		<table>
+		<tr>
+			<th scope="col">Resource</th>
+			<th scope="col">1</th>
+			<th scope="col">2</th>
+			<th scope="col">3</th>
+			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
+			<th scope="col">7</th>
+			<th scope="col">8</th>
+			<th scope="col">9</th>
+			<th scope="col">T</th>
+		</tr>
+		<tr>
+			<td>Producer</td>
+			<td>$3,200</td>
+			<td>$3,200</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$3,000</td>
+			<td>$3,000</td>
+			<td>$2,000</td>
+			<td>$2,000</td>
+			<td>$28,400</td>
+		</tr>
+		<tr>
+			<td>Project Manager</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$36,000</td>
+		</tr>
+		<tr>
+			<td>User Experience Designer</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$2,000</td>
+			<td>$1,600</td>
+			<td>$1,600</td>
+			<td>$8,00</td>
+			<td>$8,00</td>
+			<td>$8,00</td>
+			<td>0</td>
+			<td>$15,600</td>
+		</tr>
+		<tr>
+			<td>Software Architect</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4000</td>
+			<td>$36,000</td>
+		</tr>
+		<tr>
+			<td>Engineer 1</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$36,000</td>
+		</tr>
+		<tr>
+			<td>Engineer 2</td>
+			<td>0</td>
+			<td>$1,000</td>
+			<td>$4,000</td>
+			<td>$4,000</td>
+			<td>$2,400</td>
+			<td>$2,000</td>
+			<td>$2,000</td>
+			<td>$2,000</td>
+			<td>$2,000</td>
+			<td>$19,400</td>
+		</tr>
+		<tr>
+			<td>QA</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>$3,200</td>
+			<td>$3,200</td>
+			<td>$3,200</td>
+			<td>$3,200</td>
+			<td>0</td>
+			<td>0</td>
+			<td>$12,800</td>
+		</tr>
+		<tr>
+			<td colspan="10">Total Hours</td>
+			<td>$184,200</td>
+		</tr>
+		</table>
+	</div>
 	<figcaption>Figure 5: Calculating the cost of all our resources</figcaption>
 </figure>
 

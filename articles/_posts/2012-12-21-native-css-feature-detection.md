@@ -71,19 +71,19 @@ The last thing to note about `@supports` syntax is that you are not allowed to m
 
 To demonstrate a real world usage of `@supports`, I’m going to rewrite an example I first wrote for my book ([Practical CSS3: develop and design](http://www.amazon.com/Practical-CSS3-Develop-Chris-Mills/dp/0321823729)) — a simple 3D rotating card flipper example that uses Modernizr to provide an alternative experience to browsers that don't support 3D transforms (like Opera, at the time of writing; we've got it in the pipeline!) or 2D transforms (I just apply a lot of left padding to the front of the card on hover to show the back.) You can [view the Modernizr card flipper example running live]({{ page.id }}/example-with-modernizr/two-faced-cheek-modernizr.html), and see the difference between the experience for different support levels in Figures 1-3.
 
-<figure class="figure">
-	<img src="{{ page.id }}/css-supports-rule_3d-transform.jpg" alt="A business card created using CSS3. In browsers that do support 3D transforms the card flips over with a nice animation" class="figure__media">
-	<figcaption class="figure__caption">Figure 1: In browsers that do support 3D transforms the card flips over with a nice animation.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/css-supports-rule_3d-transform.jpg" alt="A business card created using CSS3. In browsers that do support 3D transforms the card flips over with a nice animation">
+	<figcaption elem="caption">Figure 1: In browsers that do support 3D transforms the card flips over with a nice animation.</figcaption>
 </figure>
 
-<figure class="figure">
-	<img src="{{ page.id }}/css-supports-rule_2d-transform.jpg" alt="A business card created using CSS3. In browsers that don’t support 3D transforms but do support 2D transforms, the front of the card moves over with a nice animation to reveal the back" class="figure__media">
-	<figcaption class="figure__caption">Figure 2: In browsers that don’t support 3D transforms but do support 2D transforms, the front of the card moves over with a nice animation to reveal the back.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/css-supports-rule_2d-transform.jpg" alt="A business card created using CSS3. In browsers that don’t support 3D transforms but do support 2D transforms, the front of the card moves over with a nice animation to reveal the back">
+	<figcaption elem="caption">Figure 2: In browsers that don’t support 3D transforms but do support 2D transforms, the front of the card moves over with a nice animation to reveal the back.</figcaption>
 </figure>
 
-<figure class="figure">
-	<img src="{{ page.id }}/css-supports-rule_basic-move.jpg" alt="A business card created using CSS3. In browsers that don’t support 3D or 2D transforms the front of the card just moves to show the back with no animation" class="figure__media">
-	<figcaption class="figure__caption">Figure 3: In browsers that don’t support 3D or 2D transforms, the front of the card just moves to show the back with no animation.</figcaption>
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/css-supports-rule_basic-move.jpg" alt="A business card created using CSS3. In browsers that don’t support 3D or 2D transforms the front of the card just moves to show the back with no animation">
+	<figcaption elem="caption">Figure 3: In browsers that don’t support 3D or 2D transforms, the front of the card just moves to show the back with no animation.</figcaption>
 </figure>
 
 In my Modernizr example, I am working backwards, providing fallback code for browsers that don’t support 3D transforms, then providing a really basic experience for browsers that don't support 2D transforms either. In the @supports example, I work the other way around with more of progressive enhancement approach, first providing a really basic experience to show both sides of the business card that works in pretty much all browsers:

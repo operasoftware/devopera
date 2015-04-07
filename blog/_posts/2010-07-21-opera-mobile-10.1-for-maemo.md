@@ -22,9 +22,9 @@ We have also included support for Geolocation. This means that sites can now use
 
 [3]: http://html5demos.com/geo
 
-<figure class="figure">
-	<a href="{{ page.id }}/sunspider-full.png"><img src="{{ page.id }}/sunspider-full-t.png" alt="Sunspider test page" class="figure__media"></a>
-	<a href="{{ page.id }}/sunspider-zoomed.png"><img src="{{ page.id }}/sunspider-zoomed-t.png" alt="Sunspider test page, zoomed" class="figure__media"></a>
+<figure block="figure">
+	<a href="{{ page.id }}/sunspider-full.png"><img elem="media" src="{{ page.id }}/sunspider-full-t.png" alt="Sunspider test page"></a>
+	<a href="{{ page.id }}/sunspider-zoomed.png"><img elem="media" src="{{ page.id }}/sunspider-zoomed-t.png" alt="Sunspider test page, zoomed"></a>
 </figure>
 
 ## Changelog:

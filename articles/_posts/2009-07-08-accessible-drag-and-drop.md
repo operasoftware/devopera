@@ -56,6 +56,7 @@ WAI-ARIA provides two properties to help make drag and drop accessible to users 
 
 The `aria-grabbed` property is used to determine whether an element is in a grabbed state for a drag and drop operation.
 
+<div block="table">
 <table>
 <caption markdwond="span">`aria-grabbed` values</caption>
 <thead>
@@ -75,6 +76,7 @@ The `aria-grabbed` property is used to determine whether an element is in a grab
 </tr>
 </tbody>
 </table>
+</div>
 
 If an element does not have an `aria-grabbed` property at all, the element cannot be dragged.
 
@@ -86,6 +88,7 @@ The `aria-grabbed` attribute in the following example indicates that the list it
 
 The `aria-dropeffect` property is a state that indicates the type of operation that will occur when an object taking part in a drag and drop operation is released on the target. More than one value can be provided as a space-separated list of tokens. The following table lists the possible values for `aria-dropeffect`.
 
+<div block="table">
 <table>
 <caption markdwond="span">`aria-dropeffect` values</caption>
 <thead>
@@ -121,6 +124,7 @@ The `aria-dropeffect` property is a state that indicates the type of operation t
 </tr>
 </tbody>
 </table>
+</div>
 
 The `aria-dropeffect` attribute in the following example indicates that the effect of dropping an object on this unordered list would be to remove the object from its current location, and copy it into this list.
 
@@ -138,6 +142,7 @@ HTML 5 has a [`draggable` attribute][8] to indicate whether an object can take p
 
 [8]: http://dev.w3.org/html5/spec/Overview.html#dom-draggable
 
+<div block="table">
 <table>
 <caption markdwond="span">`draggable` values</caption>
 <thead>
@@ -161,6 +166,7 @@ HTML 5 has a [`draggable` attribute][8] to indicate whether an object can take p
 </tr>
 </tbody>
 </table>
+</div>
 
 The HTML 5 drag and drop event model does not have a property that indicates whether an object has been selected to take part in a drag and drop operation, but it does have a [`dragstart` event][9] to initiate a drag and drop operation.
 
@@ -182,6 +188,7 @@ The [`DataTransfer`][10] object manages the attributes for the drag and drop ope
 [10]: http://dev.w3.org/html5/spec/Overview.html#datatransfer
 [11]: http://dev.w3.org/html5/spec/Overview.html#dom-datatransfer-dropeffect
 
+<div block="table">
 <table>
 <caption markdwond="span">`dropEffect` values</caption>
 <thead>
@@ -209,6 +216,7 @@ The [`DataTransfer`][10] object manages the attributes for the drag and drop ope
 </tr>
 </tbody>
 </table>
+</div>
 
 	objEvent.dataTransfer.dropEffect='move';
 

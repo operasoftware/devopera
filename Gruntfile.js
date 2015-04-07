@@ -5,29 +5,38 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		sass: {
-			compile: {
-				options: {
-					style: 'compressed'
-				},
-				files: {
-					'styles/screen.css': 'styles/screen.scss'
-				}
+			task: {
+				files: [{
+					expand: true,
+					cwd: 'styles',
+					src: [
+						'screen.scss',
+						'search.scss'
+					],
+					dest: 'styles',
+					ext: '.css'
+				}]
 			}
 		},
-		cssshrink: {
-			shrink: {
-				files: {
-					'styles/screen.css': 'styles/screen.css'
-				}
+		cssmin: {
+			task: {
+				files: [{
+					expand: true,
+					cwd: 'styles',
+					src: '*.css',
+					dest: 'styles'
+				}]
 			}
 		},
 		autoprefixer: {
-			prefix: {
-				src: 'styles/screen.css'
+			task: {
+				src: 'styles/*.css'
 			}
 		},
 		jekyll: {
-			full: {},
+			full: {
+				//
+			},
 			limit: {
 				options: {
 					limit_posts: 150
@@ -53,9 +62,25 @@ module.exports = function(grunt) {
 					collapseWhitespace: true,
 					keepClosingSlash: true
 				},
-				files: {
-					'_site/feed/index.xml': '_site/feed/index.xml'
-				}
+				expand: true,
+				cwd: '_site/feed/',
+				src: '**/index.xml',
+				dest: '_site/feed/'
+			}
+		},
+		beml: {
+			options: {
+				elemPrefix: '__',
+				modPrefix: '--'
+			},
+			files: {
+				expand: true,
+				cwd: '_site/',
+				src: [
+					'**/index.html',
+					'errors/*.html'
+				],
+				dest: '_site/'
 			}
 		},
 		connect: {
@@ -72,9 +97,7 @@ module.exports = function(grunt) {
 			styles: {
 				files: 'styles/*.scss',
 				tasks: [
-					'sass',
-					'autoprefixer',
-					'cssshrink',
+					'styles',
 					'copy'
 				]
 			},
@@ -104,7 +127,7 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'jekyll:limit',
-					'htmlmin'
+					'html'
 				]
 			},
 			livereload: {
@@ -113,19 +136,21 @@ module.exports = function(grunt) {
 				},
 				files: [
 					'_site/**/*.html',
-					'_site/styles/screen.css'
+					'_site/styles/*.css'
 				]
 			}
 		},
 		copy: {
-			css: {
-				files: {
-					'_site/styles/screen.css' : 'styles/screen.css'
-				}
+			task: {
+				files: [{
+					expand: true,
+					src: 'styles/*.css',
+					dest: '_site/'
+				}]
 			}
 		},
 		replace: {
-			remote: {
+			task: {
 				src: '.htaccess',
 				dest: '_site/',
 				replacements: [{
@@ -167,34 +192,35 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', [
+	grunt.registerTask('styles', [
 		'sass',
 		'autoprefixer',
-		'cssshrink',
-		'jekyll:limit',
-		'htmlmin',
-		'connect:task:keepalive'
+		'cssmin'
 	]);
 
-	grunt.registerTask('dev', [
-		'sass',
-		'autoprefixer',
-		'cssshrink',
-		'jekyll:limit',
+	grunt.registerTask('html', [
 		'htmlmin',
+		'beml'
+	]);
+
+	grunt.registerTask('default', [
+		'styles',
+		'jekyll:limit',
+		'html',
 		'connect',
 		'watch'
 	]);
 
 	grunt.registerTask('build', [
-		'sass',
-		'autoprefixer',
-		'cssshrink',
+		'styles',
 		'jekyll:full',
-		'htmlmin',
+		'html',
 		'connect:task:keepalive'
 	]);
 
-	grunt.registerTask('deploy', ['replace', 'rsync']);
+	grunt.registerTask('deploy', [
+		'replace',
+		'rsync'
+	]);
 
 };

@@ -1,0 +1,21 @@
+// -------------------------------
+// Entry
+// -------------------------------
+
+.entry {
+
+	margin-bottom:16px;
+
+	// Link
+
+	&__link {
+		@extend %link--blue;
+		}
+
+	// Category
+
+	&__category {
+		@extend %link--green;
+		}
+
+	}

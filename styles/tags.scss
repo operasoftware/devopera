@@ -1,14 +1,43 @@
 // -------------------------------
 // Tags
 // -------------------------------
+
 .tags {
-	line-height:1.8;
-	font-size:13px;
-	&__caption {
-		color:#000;
+
+	padding-bottom:16px;
+
+	&__item {
+		display:inline-block;
+		&:not(:last-child):after {
+			color:$grey;
+			content:'\00A0\2219\00A0';
+			}
 		}
+
 	&__link {
 		@extend %link--blue;
-		white-space:nowrap;
 		}
+
+	&--featured {
+
+		margin-top:-6px;
+		padding-bottom:12px;
+		font-size:18px;
+
+		@include breakpoint($palm-to-lap) {
+			font-size:20px;
+			}
+		@include breakpoint($lap-to-desk) {
+			font-size:22px;
+			}
+		@include breakpoint($up-to-desk) {
+			padding-top:12px;
+			border-top:1px solid $grey-20;
+			}
+		@include breakpoint($desk-and-up) {
+			font-size:24px;
+			}
+
+		}
+
 	}
