@@ -85,6 +85,8 @@ The `aria-label` attribute can be used to easily add a proper name to the elemen
 
 It’s still the wrong type of element because it’s a link and launching a missile at one’s own face is not a _linking action_, but at least the name tells you what the interactive element will do. Now screen reader users get the same warning that the button will launch a self destructive missile.
 
+Support for `aria-label` is also dependable, making our missile warning system still more robust. The 'aria-label` attribute works across the full gamut of popular browser and screen reader combinations including NVDA, JAWS and VoiceOver paired with Internet Explorer, Firefox, Chrome and others.  
+
 ## Providing _better_ text with `aria-label`
 
 As I already covered, `aria-label` is favored in accessible name calculation. Apart from `aria-labelledby`, it will override all additional naming methods. This means you can use it to provide _better_ text for assistive technologies without altering text intended for visual users.
