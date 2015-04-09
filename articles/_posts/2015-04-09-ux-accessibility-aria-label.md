@@ -115,7 +115,7 @@ Now, when you focus that button using JAWS it will read “button equals menu”
 
 You could use the global `aria-hidden` property to clear up confusion by eliminating the “equals” announcement:
 
-	<button><span aria-hidden="false">≡</span> menu</button>
+	<button><span aria-hidden="true">≡</span> menu</button>
 
 But I prefer to exploit an opportunity to give some extra context:
 
