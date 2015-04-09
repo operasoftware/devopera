@@ -3,15 +3,16 @@
 <head>
 	<title>{{ site.title }}{% if page.title %} — {{ page.title | markdownline | strip_html }}{% endif %}</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 {% if page.url == '/index.html' %}
 	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
 {% endif %}
 	<link rel="stylesheet" href="/styles/screen.css?v=fresh">
-	<link href="/feed/" rel="alternate" type="application/atom+xml" title="Dev.Opera">
-	<link href="/feed/articles/" rel="alternate" type="application/atom+xml" title="Dev.Opera Articles">
-	<link href="/feed/blog/" rel="alternate" type="application/atom+xml" title="Dev.Opera Blog">
-	<link href="/feed/tv/" rel="alternate" type="application/atom+xml" title="Dev.Opera TV">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="alternate" href="/feed/" type="application/atom+xml" title="Dev.Opera">
+	<link rel="alternate" href="/feed/articles/" type="application/atom+xml" title="Dev.Opera Articles">
+	<link rel="alternate" href="/feed/blog/" type="application/atom+xml" title="Dev.Opera Blog">
+	<link rel="alternate" href="/feed/tv/" type="application/atom+xml" title="Dev.Opera TV">
 </head>
 <body>
 
