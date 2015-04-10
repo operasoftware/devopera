@@ -6,6 +6,8 @@ intro: '`aria-label` is a useful tool to ensure a good user experience for assis
 tags:
 - accessibility
 - wai-aria
+cover: jpg
+featured: featured
 license: cc-by-3.0
 ---
 
@@ -85,7 +87,7 @@ The `aria-label` attribute can be used to easily add a proper name to the elemen
 
 It’s still the wrong type of element because it’s a link and launching a missile at one’s own face is not a _linking action_, but at least the name tells you what the interactive element will do. Now screen reader users get the same warning that the button will launch a self destructive missile.
 
-Support for `aria-label` is also dependable, making our missile warning system still more robust. The 'aria-label` attribute works across the full gamut of popular browser and screen reader combinations including NVDA, JAWS and VoiceOver paired with Internet Explorer, Firefox, Chrome and others.  
+Support for `aria-label` is also dependable, making our missile warning system still more robust. The 'aria-label` attribute works across the full gamut of popular browser and screen reader combinations including NVDA, JAWS and VoiceOver paired with Internet Explorer, Firefox, Chrome and others.
 
 ## Providing _better_ text with `aria-label`
 

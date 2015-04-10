@@ -7,7 +7,6 @@ tags:
 - css
 - media-queries
 cover: jpg
-featured: featured
 license: cc-by-3.0
 ---
 
