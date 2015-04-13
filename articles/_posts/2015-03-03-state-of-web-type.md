@@ -22,7 +22,7 @@ Typeface designers often put extra features in a font that can be used to custom
 
 An important caveat is that not all fonts include all 140+ OpenType features. Most fonts only contain a small subset of features, such as kerning and ligatures. Others may include discretionary features, such as swashes and alternate characters. With the proliferation of web font and subsetting services we can’t always rely on information about OpenType features and character support provided by typeface designers. We need better tools to look inside our font files to see which features and characters are supported and which are not.
 
-If a font includes the features you wish to use, you still need to check if your target browsers support OpenType features. While most modern browsers support either the low-level `font-feature-settings` syntax or the high level `font-variant-*` syntax, there are still several browsers in common use that don’t support either syntax. Notable examples are Internet Explorer versions 6 to 9 and all versions of Android WebKit until 4.4. Luckily, the fallback behaviour for most OpenType features is graceful: text is still readable without them.
+If a font includes the features you wish to use, you still need to check if your target browsers support OpenType features. While most modern browsers support either the low-level `font-feature-settings` syntax or the high level `font-variant-*` syntax, there are still several browsers in common use that don’t support either syntax. Notable examples are Internet Explorer versions 6 to 9 and all versions of Android WebKit until 4.4. Fortunately, the fallback behaviour for most OpenType features is graceful: text is still readable without them.
 
 <div block="table" markdown="block">
 
@@ -39,7 +39,7 @@ If a font includes the features you wish to use, you still need to check if your
 
 The above table summarizes browser support for the `font-feature-settings` property and a select number of OpenType features. You can find more browser [support data for common OpenType features on the State of Web Type](http://stateofwebtype.com/#opentype%20features).
 
-Unfortunately, even if a browser supports the OpenType feature syntax it is not always guaranteed that it will support all individual features. A good (or rather bad) example of this is Safari which technically supports the `font-feature-settings` syntax, but ignores any value. Instead it explicitly enables a select number of features which you have no way of turning off.
+Unfortunately, even if a browser supports the OpenType feature syntax it is not always guaranteed that it will support all individual features. A good (or rather bad) example is Safari which technically supports the `font-feature-settings` syntax, but ignores any value. Instead it explicitly enables a select number of features which you have no way of turning off.
 
 ## Justification & Hyphenation
 
@@ -66,7 +66,7 @@ The [`hyphens` property is supported by almost all modern browsers](http://state
 
 Web font usage has increased significantly in the past couple years. This is great news. However, it also means that web fonts have become a critical part of web sites and, by extension, a performance bottleneck. You may have experienced the dreaded Flash Of Invisible Text (FOIT) while visiting a website on a slow network connection. The decision by some browsers to block rendering of text until web fonts have downloaded is opposite to the tenets of progressive enhancement. Content should come first and web fonts are an enhancement. After all, you can still read the text, even though it might not render in the intended font (well, unless your browser hides text while it is downloading fonts — better pray it uses a timeout).
 
-Not all browsers hide text while downloading web fonts. For example Internet Explorer always renders text in a fallback font while it is downloading fonts. This has been dubbed the Flash Of Unstyled Text (FOUT). This misnomer. FOUT is a feature and a condition everyone should anticipate and design for. Selecting and testing fallback fonts is an important task while designing and building a site.
+Not all browsers hide text while downloading web fonts. For example Internet Explorer always renders text in a fallback font while it is downloading fonts. This has been dubbed the Flash Of Unstyled Text (FOUT). This is a misnomer. The FOUT is a feature and a condition everyone should anticipate and design for. Selecting and testing fallback fonts is an important task while designing and building a site.
 
 <div block="table" markdown="block">
 
@@ -79,7 +79,7 @@ Not all browsers hide text while downloading web fonts. For example Internet Exp
 
 The above table shows the usage of the FOUT and FOIT across browsers. Note that Safari (and older Android WebKit versions) do not have a timeout. On these browsers, text won’t render until fonts have completely loaded.
 
-Browser vendors are working on a proposal for a new CSS property to control font loading and rendering. It is meant to give developers more control over the blocking and swapping behaviour of web fonts. [The proposed `font-rendering` property](https://tabatkins.github.io/specs/css-font-rendering/) accepts three parameters:
+Browser vendors are working on a proposal for a new CSS property to control font loading and rendering. It is meant to give developers more control over the blocking and swapping behaviour of web fonts. The [proposed `font-rendering` property](https://tabatkins.github.io/specs/css-font-rendering/) accepts three parameters:
 
 * `block`: block rendering of the text while fonts are downloading with an optional timeout;
 * `swap`: use a fallback font and render the font when it becomes available with an optional timeout;
@@ -91,7 +91,7 @@ These parameters can also be used to develop custom font loading schemes. For ex
 
 Browsers should standardize the default font loading behaviour once the `font-rendering` property is implemented. Ideally the default value should be `block 0s swap infinite` as used by Internet Explorer (i.e. the Flash of Unstyled Text). Blocking text rendering while loading fonts should be opt-in and not a default. Browser should treat web fonts as progressive enhancement by default and make content available as soon as possible. Opting out of that behaviour is the responsibility of a web developer and not the browser.
 
-Until the `font-rendering` property is implemented we can use [the CSS Font Loading API](https://dev.opera.com/articles/better-font-face/) to implement the same behaviour in JavaScript. The Font Loading API is supported by Chrome, Opera, and soon Firefox. There is also [a Font Loading API polyfill](https://github.com/bramstein/fontloader) for browsers that do not support it natively.
+Until the `font-rendering` property is implemented we can use the [CSS Font Loading API](https://dev.opera.com/articles/better-font-face/) to implement the same behaviour in JavaScript. The Font Loading API is supported by Chrome, Opera, and soon Firefox. There is also a [Font Loading API polyfill](https://github.com/bramstein/fontloader) for browsers that do not support it natively.
 
 ## Looking to the Future
 
