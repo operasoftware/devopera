@@ -14,7 +14,7 @@ Opera Mini uses a number of custom, unregistered HTTP headers. Most of these are
 
 The User-Agent header contains the browser UA string information, divided up into tokens. To start with, here is an example of an User-Agent header:
 
-	User-Agent: Opera/9.80 (J2ME/MIDP; Opera Mini/6.1.25378/25.692; U; en) Presto/2.5.25 Version/10.54
+	User-Agent: Opera/9.80 (Android; Opera Mini/8.0.1807/36.1609; U; en) Presto/2.12.423 Version/12.16
 
 This is broken up into tokens, as follows:
 
