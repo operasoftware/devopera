@@ -23,121 +23,104 @@ This article assumes that you are already an intermediate to advanced level Java
 
 One of the reasons why [Spark](https://www.spark.io/) is a great platform especially for any electronics beginner are its [detailed documentation](http://docs.spark.io/) as well as the [community forum](https://community.spark.io/). In this section, we will play with a light sensor and then control a servo from the web browser. Let’s first list the electronics components you will need so that you can buy them if you want to physically follow through the examples:
 
-<div block="table">
-<table>
-<tr>
-	<th width="4%">#</th>
-	<th width="25%">Name & Notes</th>
-	<th width="25%">Schematic</th>
-	<th width="25%">Photo</th>
-	<th width="6%">Where to buy</th>
-</tr>
-<tr>
-	<td>1</td>
-	<td>
-		<strong>Spark Core</strong>
-		<ul>
-			<li><a href="http://docs.spark.io/assets/images/spark-pinout.jpg">pinout diagram</a></li>
-			<li><a href="http://docs.spark.io/start/#step-3-connect-your-core-to-the-cloud">LED colors/actions and their meanings</a></li>
-		</ul>
-	</td>
-	<td><img height="150" src="{{ page.id }}/img/spark.jpg"></td>
-	<td><img height="150" src="{{ page.id }}/img/spark-pic.jpg"></td>
-	<td><a href="https://store.spark.io/?product=spark-core">Spark store</a></td>
-</tr>
-<tr>
-	<td>2</td>
-	<td>
-		<strong><a href="http://en.wikipedia.org/wiki/Breadboard">Breadboard</a></strong>
-		<ul>
-			<li>Wiring pattern in a breadboard<br><img src="{{ page.id }}/img/wiring.jpg"></li>
-			<li>
-				<strong>Horizontal rows</strong>
-				<br>Red: HIGH or Vin (~6V)
-				<br>Blue / Black: LOW or Ground (0V)
-			</li>
-		</ul>
-	</td>
-	<td><img height="150" src="{{ page.id }}/img/breadboard.jpg"></td>
-	<td><img height="150" src="{{ page.id }}/img/breadboard-pic.jpg"></td>
-	<td>You will <a href="http://docs.spark.io/start/">get a breadboard when you buy the Spark Core</a></td>
-</tr>
-<tr>
-	<td>3</td>
-	<td>
-		<strong><a href="http://www.amazon.com/Micro-USB-to-Cable/dp/B004GETLY2">Micro-B to USB cable</a></strong>
-	</td>
-	<td></td>
-	<td><img height="150" src="{{ page.id }}/img/usb.jpg"></td>
-	<td>You will <a href="http://docs.spark.io/start/">get this cable when you buy the Spark Core</a> or this might be your mobile charger.</td>
-</tr>
-<tr>
-	<td>4</td>
-	<td>
-		<strong>jumper cables</strong>
-		<ul>
-			<li><strong>Tip: </strong>Use the same color wires as the schematic so that it will be faster to trace the wires for debugging. E.g. use <strong>RED</strong> for power and <strong>BLACK</strong> for ground.</li>
-		</ul>
-	</td>
-	<td><img height="150" src="{{ page.id }}/img/cables.jpg"></td>
-	<td><img height="150" src="{{ page.id }}/img/cables-pic.jpg"></td>
-	<td><a href="http://www.adafruit.com/product/758">Adafruit</a> or <a href="https://www.sparkfun.com/products/8431">Sparkfun</a></td>
-</tr>
-<tr>
-	<td>5</td>
-	<td>
-		<strong>light dependent resistor (LDR or photocell)</strong>
-		<ul>
-			<li><strong>Tip:</strong> LDR has no polarity, so either leg can be connected to the analog pin or the ground</li>
-		</ul>
-	</td>
-	<td><img height="150" src="{{ page.id }}/img/ldr-schematic.jpg"></td>
-	<td><img height="150" src="{{ page.id }}/img/ldr.jpg"></td>
-	<td><a href="http://www.adafruit.com/product/161">Adafruit</a> and <a href="https://www.sparkfun.com/products/9088">Sparkfun</a></td>
-</tr>
-<tr>
-	<td>6</td>
-	<td>
-		<strong>1 k ohm resistor</strong>
-		<ul>
-			<li><strong>Tip:</strong> Resistor has no polarity, so either leg can be connected to the analog pin or the ground.
-			</li>
-		</ul>
-	</td>
-	<td><img height="150" src="{{ page.id }}/img/resistor-schematic.jpg"></td>
-	<td></td>
-	<td><a href="https://www.sparkfun.com/products/8980">Sparkfun</a></td>
-</tr>
-<tr>
-	<td>7</td>
-	<td>
-		<strong>Servo</strong>
-		<ul>
-			<li><a href="http://en.wikipedia.org/wiki/Servo_(radio_control)">Wikipedia</a></li>
-			<li><a href="http://docs.spark.io/shields/#setting-up-the-shield-8-micro-servo-1">Spark and servo</a></li>
-			<li><strong>Tip: </strong>For wiring — <em>Yellow</em> is Signal, <em>Orange</em> is +5V (VIN), <em>Brown</em> is ground</li>
-		</ul>
-	</td>
-	<td><img src="{{ page.id }}/img/servo.jpg"></td>
-	<td><img src="{{ page.id }}/img/servo-pic.jpg"></td>
-	<td><a href="http://www.adafruit.com/product/169">Adafruit</a> or <a href="https://www.sparkfun.com/products/9065">Sparkfun</a></td>
-</tr>
-<tr>
-	<td>8</td>
-	<td>
-		<strong>10 micro Farad Capacitor</strong>
-		<ul>
-			<li><a href="http://en.wikipedia.org/wiki/Capacitor">Wikipedia</a></li>
-			<li><a href="http://docs.spark.io/shields/#setting-up-the-shield-2-electrolytic-capacitor-100uf-5">Capacitors</a></li>
-			<li><strong>Tip: </strong> Capacitors have polarity. On the plastic above one of the pins you’ll see a light colored strip with a negative sign "-" on it. Always connect that pin to GND pins or rails </li>
-		</ul>
-	</td>
-	<td><img src="{{ page.id }}/img/capacitor.jpg"></td>
-	<td><img src="{{ page.id }}/img/capacitor-pic.jpg"></td>
-	<td></td>
-</tr>
-</table>
-</div>
+### Spark Core
+
+- [Pinout diagram](http://docs.spark.io/assets/images/spark-pinout.jpg)
+- [LED colors/actions and their meanings](http://docs.spark.io/start/#step-3-connect-your-core-to-the-cloud)
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/spark.jpg">
+	<img elem="media" src="{{ page.id }}/img/spark-pic.jpg">
+</figure>
+
+[Spark store](https://store.spark.io/?product=spark-core)
+
+### Breadboard
+
+[Wikipedia](http://en.wikipedia.org/wiki/Breadboard)
+
+Horizontal rows
+
+- Red: HIGH or Vin (~6V)
+- Blue / Black: LOW or Ground (0V)
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/wiring.jpg" alt="">
+	<figcaption elem="caption">Wiring pattern in a breadboard.</figcaption>
+</figure>
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/breadboard.jpg">
+	<img elem="media" src="{{ page.id }}/img/breadboard-pic.jpg">
+</figure>
+
+You will <a href="http://docs.spark.io/start/">get a breadboard when you buy the Spark Core</a>
+
+### [Micro-B to USB cable](http://www.amazon.com/Micro-USB-to-Cable/dp/B004GETLY2)
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/usb.jpg">
+</figure>
+
+You will <a href="http://docs.spark.io/start/">get this cable when you buy the Spark Core</a> or this might be your mobile charger.
+
+### Jumper cables
+
+**Tip:** Use the same color wires as the schematic so that it will be faster to trace the wires for debugging. E.g. use _Red_ for power and _Black_ for ground.
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/cables.jpg">
+	<img elem="media" src="{{ page.id }}/img/cables-pic.jpg">
+</figure>
+
+[Adafruit](http://www.adafruit.com/product/758) or [Sparkfun](https://www.sparkfun.com/products/8431)
+
+### Light dependent resistor: LDR or photocell
+
+**Tip:** LDR has no polarity, so either leg can be connected to the analog pin or the ground.
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/ldr-schematic.jpg">
+	<img elem="media" src="{{ page.id }}/img/ldr.jpg">
+</figure>
+
+[Adafruit](http://www.adafruit.com/product/161) and [Sparkfun](https://www.sparkfun.com/products/9088)
+
+### 1k ohm resistor
+
+**Tip:** Resistor has no polarity, so either leg can be connected to the analog pin or the ground.
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/resistor-schematic.jpg">
+</figure>
+
+[Sparkfun](https://www.sparkfun.com/products/8980)
+
+### Servo
+
+- [Wikipedia](http://en.wikipedia.org/wiki/Servo_(radio_control))
+- [Spark and servo](http://docs.spark.io/shields/#setting-up-the-shield-8-micro-servo-1)
+
+**Tip:** For wiring — _Yellow_ is Signal, _Orange_ is +5V (VIN), _Brown_ is ground
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/servo.jpg">
+	<img elem="media" src="{{ page.id }}/img/servo-pic.jpg">
+</figure>
+
+[Adafruit](http://www.adafruit.com/product/169) or [Sparkfun](https://www.sparkfun.com/products/9065)
+
+### 10 micro Farad Capacitor
+
+- [Wikipedia](http://en.wikipedia.org/wiki/Capacitor)
+- [Capacitors](http://docs.spark.io/shields/#setting-up-the-shield-2-electrolytic-capacitor-100uf-5)
+
+**Tip:** Capacitors have polarity. On the plastic above one of the pins you’ll see a light colored strip with a negative sign `–` on it. Always connect that pin to GND pins or rails
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/img/capacitor.jpg">
+	<img elem="media" src="{{ page.id }}/img/capacitor-pic.jpg">
+</figure>
 
 ### 1. Setup
 
@@ -217,14 +200,16 @@ Here’s now the fun part and we will query the sensor values using the simple s
 		password: process.env.PASSWORD
 	}).then(
 		function(token) {
-			// your program can successfully connect to the published data from the sensor
+			// your program can successfully connect
+			// to the published data from the sensor
 			console.log('Connected to your light sensor successfully!');
 			// console.log('Access Token: ' + token.access_token);
 			spark.listDevices().then(
 				function(devices){
 					// console.log('\nDevices: ', devices);
 					var device = devices[0];
-					// with every published event "getLight", display the sensor value
+					// with every published event getLight,
+					// display the sensor value
 					device.onEvent('getLight', function(reply) {
 						var now = new Date();
 						if (reply && reply.data) {
@@ -350,9 +335,11 @@ Run the code with the node server and click the angles to make the servo move in
 	<img elem="media" src="{{ page.id }}/img/servo-output.jpg" alt="">
 </figure>
 
-<video controls loop>
-	<source src="{{ page.id }}/servo.mp4" type="video/mp4">
-</video>
+<figure block="figure">
+	<video elem="media" controls loop>
+		<source src="{{ page.id }}/servo.mp4" type="video/mp4">
+	</video>
+</figure>
 
 This example is just the tip of the iceberg in how you can control many other devices such as motors and switch with the web interface. I find the [Johnny-Five](https://github.com/rwaldron/johnny-five/tree/master/lib) library files very useful to peek into many more things we can hook up and play with!
 
@@ -393,6 +380,7 @@ Create a file `sensortag.js`, connect, discover and then disconnect the device:
 				sensorTag.disconnect(callback);
 			}
 		]);
+
 	});
 
 Because the events `connect`, `discovered` and `disconnected` should happen sequentially when the previous event is done, we will use the npm module `async` to deal with callbacks.
@@ -403,6 +391,7 @@ Read the IR Temperature once between the events `discovered` and `disconnected`:
 		console.log('IR Temperature enabled');
 		sensorTag.enableIrTemperature(callback);
 	},
+
 	function(callback) {
 		console.log('readIrTemperature');
 		sensorTag.readIrTemperature(function(objectTemperature, ambientTemperature) {
@@ -419,9 +408,11 @@ Finally, we will add in the gyroscope reading and when the SensorTag is physical
 		console.log('Gyroscope enabled');
 		sensorTag.enableGyroscope(callback);
 	},
+
 	function(callback) {
 		setTimeout(callback, 1000);
 	},
+
 	function(callback) {
 		sensorTag.on('gyroscopeChange', function(x, y, z) {
 			console.log('On Gyrosope change: '
@@ -434,10 +425,11 @@ Finally, we will add in the gyroscope reading and when the SensorTag is physical
 			console.log('Start tracking gyroscope!');
 		});
 	}
+
 	// comment out disconnect
 	// function(callback) {
-	//	console.log('Disconnected');
-	//	sensorTag.disconnect(callback);
+	// 	console.log('Disconnected');
+	// 	sensorTag.disconnect(callback);
 	// }
 
 You can refer to the [entire code here]({{ page.id }}/code/senstor-tag/). Let’s run it!
