@@ -6,7 +6,6 @@ intro: 'The Internet of Things is gaining momentum in the recent years as more e
 tags:
 - javascript
 - hardware
-published: false
 license: cc-by-3.0
 ---
 
@@ -14,7 +13,7 @@ license: cc-by-3.0
 
 The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us web developers? This article will explore two common wireless protocols, [Wi-Fi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
-In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](/code). It will be fun!
+In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example]({{ page.id }}/code/). It will be fun!
 
 ### Pre-requisites
 
@@ -469,7 +468,7 @@ Hardware and electronics interfacing might be daunting at first, but the good ne
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/img/nodeboats.jpg" alt="">
-	<figcaption elem="caption">[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant’s boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five.</figcaption>
+	<figcaption elem="caption" markdown="span">[Shurthi](https://twitter.com/shurru), [NodeBoats workshop](https://www.facebook.com/media/set/?set=a.615900415180712.1073741830.224477610989663&type=3) facilitator at [JS Conf Asia 2014](http://2014.jsconf.asia/), tracking a participant’s boat controlled with Spark Core, VoodooSpark, Spark-io and Johnny Five.</figcaption>
 </figure>
 
 I hope this article gave you not only the initial steps for getting started, but plenty of resource to hack on your own or even get involved with the community! It might be challenging at start, but seeing your code literally come to life in the physical world will be immensely rewarding.
