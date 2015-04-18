@@ -41,7 +41,7 @@ Because different machines can all read and write text, information can be inter
 
 ## Accessible names
 
-HTML elements have roles and names. These are both bits of text. If you were to think of them as people, you could say their role is _who they are_ and their name is _what they have to say_. Regarding interactive elements like `<button>`s, names are important because they tell you what the element is for and what it will do. Their role is “button” and their name might be “press me to do x”.
+HTML elements have roles and names. These are both bits of text. If you were to think of them as people, you could say their role is _who they are_ and their name is _what they have to say_. Regarding interactive elements like `<button>`s, names are important because they tell you what the element is for and what it will do. Their role is “button” and their name might be “do x”.
 
 The “button” role piece of text is provided simply by using the `<button>` element, but the name must be written manually, by the author. The easiest (and best) way to supply a name for an element is to **write some text between the opening and closing tags**, like so:
 
