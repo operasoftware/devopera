@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us web developers? This article will explore two common wireless protocols, [Wi-Fi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
-In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example]({{ page.id }}/code/). It will be fun!
+In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](https://github.com/operasoftware/devopera/tree/master/articles/wifi-ble-javascript/code/c). It will be fun!
 
 ### Pre-requisites
 
@@ -439,7 +439,7 @@ Finally, we will add in the gyroscope reading and when the SensorTag is physical
 	// 	sensorTag.disconnect(callback);
 	// }
 
-You can refer to the [entire code here]({{ page.id }}/code/senstor-tag/). Let’s run it!
+You can refer to the [entire code here](https://github.com/operasoftware/devopera/tree/master/articles/wifi-ble-javascript/code/sensor-tag). Let’s run it!
 
 	$ node sensortag.js
 
@@ -455,7 +455,7 @@ The easiest way to start learning to interface web technologies with electronics
 
 - [Tessel](https://tessel.io/) — [hardware api](https://tessel.io/docs/hardwareAPI)
 - [Arduino Yun](http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN) — [Johnny-Five](https://github.com/rwaldron/johnny-five)
-- [Raspberry PI](http://www.raspberrypi.org/) — [node.js build for Linux arm pi](https://nodejs.org/dist/v0.10.28/), [io.js v1.4.1 build for armv6l and armv7l](https://iojs.org/dist/v1.4.1/)
+- [Raspberry PI](http://www.raspberrypi.org/) — [node.js build for Linux arm pi](https://nodejs.org/dist/v0.10.28/), [io.js builds for armv6l and armv7l](https://iojs.org/dist/)
 
 Hardware and electronics interfacing might be daunting at first, but the good news is there are many community events, forums, blog posts and modules/libraries available online. Here are some to check out:
 
