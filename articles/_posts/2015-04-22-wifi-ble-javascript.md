@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 The [Internet of Things](http://en.wikipedia.org/wiki/Internet_of_Things) is gaining momentum in the recent years as more embedded computing devices are being connected to the Internet. What does this mean for us web developers? This article will explore two common wireless protocols, [Wi-Fi](http://en.wikipedia.org/wiki/Wi-Fi) and [BLE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and will take you through the starting steps in connecting sensors and servo motors to the Internet. Then we will learn how to control these devices and access the sensor data using JavaScript!
 
-In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](https://github.com/operasoftware/devopera/tree/master/articles/wifi-ble-javascript/code/c). It will be fun!
+In this article we will explore two platforms: [Spark](https://www.spark.io/) for Wi-Fi and [TI Sensor Tag](http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag) for BLE with practical examples. At any time, you can also look at the [complete annotated code for each example](https://github.com/operasoftware/devopera/tree/master/articles/wifi-ble-javascript/code). It will be fun!
 
 ### Pre-requisites
 
