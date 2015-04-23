@@ -22,12 +22,12 @@ It’s important to improve both the static footprint (code and data) and run-ti
 
 Our early work was a set of patches to reduce memory usage throughout the codebase. Through profiling and re-applying knowledge from Presto about where potential memory hogs might hide, some targeted local changes to the codebase were made. Some are subsumed into other work, others are upstreamed — for example:
 
-- [Reduce footprint of registry controlled domain table](https://codereview.chromium.org/197183002/) shrinks the pre-zip binary by 512KB.
-- [Documents with many lines overallocated pagination info](https://codereview.chromium.org/200053007/) saves 3-5 MB of memory for big text documents.
-- [More perfect hashes for CSS strings](https://codereview.chromium.org/196413006/) reduces binary size by 12K
-- [Reduce size of `cc::ResourceProvider::Resource` class](http://src.chromium.org/viewvc/chrome?revision=259319&view=revision) reduces the memory usage by up to 9 KB .
-- [Smaller CSSParser UTF16 buffers for escaped strings](https://codereview.chromium.org/196353018/) fixed bad logic that used 700K to store a single escaped character in an ASCII stylesheet.
-- [Put histogram code in `disk_cache` on a diet](https://codereview.chromium.org/196383016/) shrank the binary by 132K.
+- [Reduce footprint of registry controlled domain table](https://codereview.chromium.org/197183002/) shrinks the pre-zip binary by 512 KB.
+- [Documents with many lines overallocated pagination info](https://codereview.chromium.org/200053007/) saves 3-5 MB of memory for big text documents.
+- [More perfect hashes for CSS strings](https://codereview.chromium.org/196413006/) reduces binary size by 12 KB
+- [Reduce size of `cc::ResourceProvider::Resource` class](http://src.chromium.org/viewvc/chrome?revision=259319&view=revision) reduces the memory usage by up to 9 KB.
+- [Smaller CSSParser UTF16 buffers for escaped strings](https://codereview.chromium.org/196353018/) fixed bad logic that used 700 KB to store a single escaped character in an ASCII stylesheet.
+- [Put histogram code in `disk_cache` on a diet](https://codereview.chromium.org/196383016/) shrank the binary by 132 KB.
 
 ## Current efforts
 
