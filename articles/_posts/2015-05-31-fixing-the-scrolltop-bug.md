@@ -72,7 +72,7 @@ Problem: This doesn’t work if the document is not scrollable.
 
 ### Determining the scrolling element in an `iframe`
 
-This is what [@mathiasbynens’ `scrollingElement` polyfill](https://github.com/mathiasbynens/document.scrollingElement/blob/master/scrollingelement.js#L50) does. It works regardless of the document itself since it checks in an iframe.
+This is what [@mathiasbynens’ `scrollingElement` polyfill](https://github.com/mathiasbynens/document.scrollingElement/blob/master/scrollingelement.js#L50) does. It works regardless of the document itself since it checks in an `iframe`.
 
 Problem: It is complex/expensive.
 
