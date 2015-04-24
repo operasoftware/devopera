@@ -52,9 +52,7 @@ With graphics-intense sites a lot of memory (generic RAM and/or GPU RAM) will be
 
 The compression will add some extra latency when generating the tiles. This could introduce more “whiteboarding” when playing animations or panning a page very quickly. We believe this can be addressed by either implementing a threshold that will disable compression for tiles with high bin priority or using timestamps on tiles to detect animations.
 
-[All the nerdy details](https://docs.google.com/document/d/1WdA0ir5J5gzhJ1yizDOigVG1lIQRolaLtI4CWEWcj5g/edit).
-
-Texture compression ships in Opera for Android.
+Texture compression ships in Opera for Android. [All the nerdy details](https://docs.google.com/document/d/1WdA0ir5J5gzhJ1yizDOigVG1lIQRolaLtI4CWEWcj5g/edit).
 
 ### Opera Devices SDK
 
@@ -73,6 +71,6 @@ And we’re experimenting with more improvements, even now, in our labs in a hol
 ## Read more
 
 - Read more about Opera and Blink in our [Blinkon report](https://dev.opera.com/blog/blinkon-report/).
-- See all [Opera’s upstreamed contributuions to Chromium, Blink and V8](https://operasoftware.github.io/upstreamtools/).
+- See all [Opera’s upstreamed contributions to Chromium, Blink and V8](https://operasoftware.github.io/upstreamtools/).
 
 Thanks to Sigbjørn Finne, other members of Opera’s Web Technology team and Mostyn Bramley-Moore for helping collate this information.
