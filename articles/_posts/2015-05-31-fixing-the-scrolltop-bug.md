@@ -41,7 +41,7 @@ There are several strategies for dealing with this interoperability problem, but
 
 Problem: `scrollX`/`scrollY`/`pageXOffset`/`pageYOffset` are not supported in IE8 and below.
 
-#### Using both elements
+### Using both elements
 
 For example, for getting:
 
