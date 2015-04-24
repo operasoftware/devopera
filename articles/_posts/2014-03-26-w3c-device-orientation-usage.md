@@ -543,7 +543,7 @@ Applying everything we have covered in this article we can now create virtual re
 
 We have created [a demonstration virtual reality viewer web application][35] that utilizes both quaternions and rotation matrix rotation representations and uses the [three.js][36] JavaScript library to render a cubemap-based scene.
 
-[35]: http://people.opera.com/richt/release/demos/orientation/virtualreality/
+[35]: https://richtr.github.io/Full-Tilt/examples/vr_test.html
 [36]: http://threejs.org
 
 Here are a couple of screenshots from our demo virtual reality viewer running in [Opera 20 for Android][37]:
@@ -558,10 +558,10 @@ Here are a couple of screenshots from our demo virtual reality viewer running in
 	<img elem="media" src="{{ page.id }}/virtualreality_2.png" alt="Virtual Reality Web Application — Screenshot 2">
 </figure>
 
-You can find a live version of this virtual reality demonstration [here][40] (best viewed on mobile) and the source code can be found [on Github][41].
+You can find a live version of this virtual reality demonstration [here][40] (best viewed on mobile) and the source code along with a helper library can be found [on Github][41].
 
-[40]: http://people.opera.com/richt/release/demos/orientation/virtualreality/
-[41]: https://github.com/richtr/threeVR
+[40]: https://richtr.github.io/Full-Tilt/examples/vr_test.html
+[41]: https://github.com/richtr/Full-Tilt
 
 ## Cross browser compatibility {#xbrowser}
 
