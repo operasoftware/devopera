@@ -68,11 +68,11 @@ We hope this overview gives you an idea of some of the work we’re doing to mak
 
 Many of the ideas we’ve implemented come from knowledge gained over 15 years developing our Presto engine (which continues to power Opera Mini and was [recently upgraded](https://dev.opera.com/blog/opera-mini-server-upgrade/)).
 
-And we’re experimenting with more improvements, even now, in our labs in a hollowed-out volcano in the Scandinavian tundra and a deserted temple deep in the Poland rainforests.
+And we’re experimenting with more improvements, even now, in our labs in a hollowed-out volcano in the Scandinavian tundra and a deserted temple deep in Poland's rainforests.
 
 ## Read more
 
 - Read more about Opera and Blink in our [Blinkon report](https://dev.opera.com/blog/blinkon-report/).
 - See all [Opera’s upstreamed contributuions to Chromium, Blink and V8](https://operasoftware.github.io/upstreamtools/).
 
-Thansk to Sigbjørn Finne, other members of Opera’s Web Technology team and Mostyn Bramley-Moore for helping collate this information.
+Thanks to Sigbjørn Finne, other members of Opera’s Web Technology team and Mostyn Bramley-Moore for helping collate this information.
