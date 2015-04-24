@@ -7,7 +7,6 @@ tags:
 - blink
 - presto
 license: cc-by-3.0
-published: false
 ---
 
 In his recent blogpost marking [ten years of Opera Mini](http://blogs.opera.com/news/2015/04/opera-mini-history-new-version-android/), PM Christian Uribe wrote:
