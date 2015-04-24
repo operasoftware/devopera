@@ -1,8 +1,8 @@
 ---
-title: Fixing the scrollTop bug
+title: Fixing the `scrollTop` bug
 authors:
 - zcorpan
-intro: 'Which element scrolls the viewport when using `scrollTop`? This article explains what “the scrollTop bug” is and what we need to do to get it fixed. Your help is needed!'
+intro: 'Which element scrolls the viewport when using `scrollTop`? This article explains what “the `scrollTop` bug” is and what we need to do to get it fixed. Your help is needed!'
 tags:
 - compatibility
 - css
@@ -15,7 +15,7 @@ The [CSSOM View](http://dev.w3.org/csswg/cssom-view/) specification has a handfu
 
 However, WebKit (Safari) and Blink (Chrome and Opera) do not behave this way. They make the `body` element reflect the viewport instead, and the root element returns `0` and does nothing on setting. IE11 and Firefox follow the specification. This is an interoperability problem that Web developers have to work around in some way, possibly by UA sniffing.
 
-We want to fix this bug, but we will need your help to fix sites that rely on the bug based on UA sniffing.
+We want to fix this bug, but **we need your help** to fix sites that rely on the bug based on UA sniffing.
 
 ## What’s bad about the WebKit/Blink behavior?
 
@@ -37,7 +37,7 @@ There are several strategies for dealing with this interoperability problem, but
 
 ### Using APIs on `window` instead
 
-`scrollX`/`scrollY` or `pageXOffset`/`pageYOffset` give the viewport’s scroll position and `window.scrollTo(x, y)` scrolls the viewport. This is what e.g. [jQuery](https://github.com/jquery/jquery/blob/74ae5444832b2fb966768a97281d2ad8c088bc58/src/offset.js#L170) does.
+`scrollX`/`scrollY` or `pageXOffset`/`pageYOffset` give the viewport’s scroll position and `window.scrollTo(x, y)` scrolls the viewport. This is what e.g. [jQuery](https://github.com/jquery/jquery/blob/002240a6eb1cee2fcd886d5cf44893eb67f246f1/src/offset.js#L169-L192) does.
 
 Problem: `scrollX`/`scrollY`/`pageXOffset`/`pageYOffset` are not supported in IE8 and below.
 
@@ -45,22 +45,22 @@ Problem: `scrollX`/`scrollY`/`pageXOffset`/`pageYOffset` are not supported in IE
 
 For example, for getting:
 
-    var y = document.documentElement.scrollTop || document.body.scrollTop;
+	var y = document.documentElement.scrollTop || document.body.scrollTop;
 
 or
 
-    var y = document.documentElement.scrollTop + document.body.scrollTop;
+	var y = document.documentElement.scrollTop + document.body.scrollTop;
 
 and setting:
 
-    document.documentElement.scrollTop = y;
-    document.body.scrollTop = y;
+	document.documentElement.scrollTop = y;
+	document.body.scrollTop = y;
 
 Problem: it is annoying to have to use both elements.
 
 ### Setting `offsetTop` on `document.body` and checking if it caused scrolling, then reverting the scroll position
 
-This is what e.g. [@mathiasbynens’ jquery-smooth-scrolling script](https://github.com/mathiasbynens/jquery-smooth-scrolling/blob/master/jquery.smoothscroll.js#L4) does.
+This is what e.g. [@mathiasbynens’ jquery-smooth-scrolling script](https://github.com/mathiasbynens/jquery-smooth-scrolling/blob/da4e3636000a37c96f96b9a5ae93923d00179ac0/jquery.smoothscroll.js#L4-L21) does.
 
 Problem: This is expensive and can cause a visual flash.
 
@@ -72,7 +72,7 @@ Problem: This doesn’t work if the document is not scrollable.
 
 ### Determining the scrolling element in an `iframe`
 
-This is what [@mathiasbynens’ `scrollingElement` polyfill](https://github.com/mathiasbynens/document.scrollingElement/blob/master/scrollingelement.js#L50) does. It works regardless of the document itself since it checks in an `iframe`.
+This is what [@mathiasbynens’ `scrollingElement` polyfill](https://github.com/mathiasbynens/document.scrollingElement/blob/b936f521b86e01512922ac3f51ca9773bea1f1ee/scrollingelement.js#L50-L59) does. It works regardless of the document itself since it checks in an `iframe`.
 
 Problem: It is complex/expensive.
 
