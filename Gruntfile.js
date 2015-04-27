@@ -97,8 +97,7 @@ module.exports = function(grunt) {
 			styles: {
 				files: 'styles/*.scss',
 				tasks: [
-					'styles',
-					'copy'
+					'styles'
 				]
 			},
 			limit: {
@@ -127,7 +126,8 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'jekyll:limit',
-					'html'
+					'html',
+					'styles'
 				]
 			},
 			livereload: {
@@ -195,7 +195,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('styles', [
 		'sass',
 		'autoprefixer',
-		'cssmin'
+		'cssmin',
+		'copy'
 	]);
 
 	grunt.registerTask('html', [
@@ -204,9 +205,9 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('default', [
-		'styles',
 		'jekyll:limit',
 		'html',
+		'styles',
 		'connect',
 		'watch'
 	]);
