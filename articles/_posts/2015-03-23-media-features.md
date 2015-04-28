@@ -102,8 +102,8 @@ In order to support multi-input scenarios, where different inputs may have diffe
 
 </figure>
 
-<figure block="figure" mod="right, half">
-	<img elem="media" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
+<figure block="figure" mod="right">
+	<img elem="media" mod="half" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
 	<figcaption elem="caption">Interaction Media Features in Opera on an Android phone with paired bluetooth mouse</figcaption>
 </figure>
 

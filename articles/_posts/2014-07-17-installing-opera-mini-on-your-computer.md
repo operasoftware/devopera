@@ -30,8 +30,8 @@ Go to the [MicroEmulator download page](https://code.google.com/p/microemu/downl
 
 ### Special Mac instructions
 
-<figure block="figure" mod="right, half">
-	<img elem="media" src="{{ page.id }}/open.png" alt="Security dialog on Mac">
+<figure block="figure" mod="right">
+	<img elem="media" mod="half" src="{{ page.id }}/open.png" alt="Security dialog on Mac">
 </figure>
 
 Right-click _microemulator.jar_ and choose _Open_ from the context menu. Next, you will get a warning that this application is from an unidentified developer. Click _Open_ button to launch the application.
@@ -42,8 +42,8 @@ Right-click _microemulator.jar_ and select _Properties_, _Permissions_ and tick 
 
 ## Making the emulator resizable
 
-<figure block="figure" mod="right, half">
-	<img elem="media" src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini">
+<figure block="figure" mod="right">
+	<img elem="media" mod="half" src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini">
 </figure>
 
 Once MicroEmulator is launched, go to _Options > Select device._ Select _Resizable device_ and choose _Set as default._ This setting will give you a resizable (and more usable) emulator window.

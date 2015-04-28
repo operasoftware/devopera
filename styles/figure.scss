@@ -3,8 +3,19 @@
 // -------------------------------
 
 .figure {
+
 	max-width:100%;
 	overflow:auto;
+
+	// Floats
+
+	&--left {
+		float:left;
+		}
+	&--right {
+		float:right;
+		}
+
 	}
 
 // Media
