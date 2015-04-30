@@ -104,7 +104,7 @@ You will <a href="http://docs.spark.io/start/">get this cable when you buy the S
 - [Wikipedia](http://en.wikipedia.org/wiki/Capacitor)
 - [Capacitors](http://docs.spark.io/shields/#setting-up-the-shield-2-electrolytic-capacitor-100uf-5)
 
-**Tip:** Capacitors have polarity. On the plastic above one of the pins you’ll see a light colored strip with a negative sign `–` on it. Always connect that pin to GND pins or rails.
+**Tip:** The capacitor used in this example has polarity. On the plastic above one of the pins you’ll see a light colored strip with a negative sign `–` on it. Always connect that pin to GND pins or rails.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/img/capacitor.jpg">
