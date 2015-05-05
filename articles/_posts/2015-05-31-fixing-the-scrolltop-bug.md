@@ -97,9 +97,8 @@ In order to have a reliable alternative to UA sniffing, we are introducing a new
 
 ## Testing
 
-1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](http://www.opera.com/en/developer), based on Chromium 44 or later.
-2. Type `about:flags` in the address bar. Find “Enable experimental Web Platform features” and click the “Enable” button. Restart the browser. This enables native `document.scrollingElement` support.
-3. Check that your site still works.
+1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](http://www.opera.com/en/developer), based on Chromium 44 or later. These browsers have native `document.scrollingElement` support.
+2. Check that your site still works.
 
 ## Reporting issues
 
