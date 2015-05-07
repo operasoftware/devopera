@@ -102,7 +102,7 @@ In order to have a reliable alternative to UA sniffing, we are introducing a new
 
 ## Reporting issues
 
-If you notice that a JS library uses UA sniffing to get “the scrolling element”, or that a site is broken with the `--enable-blink-features=ScrollTopLeftInterop` runtime flag, please file an issue in [Chromium’s bug tracker](https://code.google.com/p/chromium/issues/list). Include “ScrollTopLeftInterop” in the summary. Thank you!
+If you notice that a JS library uses UA sniffing to get “the scrolling element”, or that a site is broken with `chrome://flags/#scroll-top-left-interop` enabled in Chrome or Opera, please file an issue in [Chromium’s bug tracker](https://code.google.com/p/chromium/issues/list). Include “ScrollTopLeftInterop” in the summary. Thank you!
 
 ## Summary
 
