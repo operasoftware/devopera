@@ -21,6 +21,7 @@ exclude:
 - 'LICENSE.md'
 - 'CONTRIBUTING.md'
 - '*.scss'
+- '*.map'
 
 collections:
   authors:
