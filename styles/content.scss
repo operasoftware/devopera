@@ -26,7 +26,13 @@
 		font-weight:bold;
 		font-size:18px;
 		}
-	h2, h3 {
+	h4 {
+		padding-top:15px;
+		margin-bottom:6px;
+		font-weight:bold;
+		font-style:italic;
+		}
+	h2, h3, h4 {
 		code {
 			font-family:inherit;
 			}
