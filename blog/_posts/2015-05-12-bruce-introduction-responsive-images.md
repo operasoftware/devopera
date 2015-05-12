@@ -14,7 +14,7 @@ You’ve read the articles ([Responsive Images: Use Cases and Documented Code Sn
 now see the movie!
 
 <figure block="figure">
-	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/watch?v=bPwTnc-pwps" allowfullscreen></iframe>
+	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/bPwTnc-pwps" allowfullscreen></iframe>
 </figure>
 
 Language may be not safe for work, so [slides are available](http://brucelawson.github.io/talks/2015/respimg/).
