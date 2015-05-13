@@ -6,7 +6,6 @@ intro: 'Over the last couple of months, we’ve been working hard to improve our
 tags:
 - widgets
 - opera-mobile
-- labs
 license: os-asa
 ---
 

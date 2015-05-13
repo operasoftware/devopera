@@ -3,7 +3,7 @@ title: Ragnarök — Viking Browser With HTML5 Parser!
 authors:
 - stig-halvorsen
 tags:
-- opera-11
+- opera-presto
 - html5
 - core
 - webstandards

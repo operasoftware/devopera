@@ -7,7 +7,6 @@ tags:
 - event
 - talk
 - conference
-- odin
 license: cc-by-3.0
 ---
 

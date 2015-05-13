@@ -4,13 +4,8 @@ authors:
 - mike-taylor
 intro: 'The newest version of ECMAScript to get widespread browser support, ES5, brings with it many useful changes from ES3 and new additions to the language. In this introductory article we’ll review these, showing what is available.'
 tags:
-- array-extras
+- javascript
 - ecmascript
-- es5
-- function.prototype.bind
-- json
-- object-additions
-- strict-mode
 license: cc-by-3.0
 ---
 

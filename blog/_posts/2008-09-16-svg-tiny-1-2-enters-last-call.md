@@ -5,8 +5,6 @@ authors:
 tags:
 - w3c
 - svg
-- news
-- odin
 license: cc-by-3.0
 ---
 

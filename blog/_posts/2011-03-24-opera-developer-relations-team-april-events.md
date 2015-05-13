@@ -6,7 +6,6 @@ tags:
 - event
 - talk
 - odevrel
-- odin
 license: cc-by-3.0
 ---
 

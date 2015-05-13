@@ -8,7 +8,6 @@ tags:
 - html5
 - audio
 - multimedia
-- odin
 license: cc-by-3.0
 ---
 Fate took me five miles up the road to Aston University for a <a href="http://www.ukoln.ac.uk/events/devcsi/accessibility_hackdays/">DevCSI Accessibility Hack Day</a> where I spoke on HTML5 multimedia accessibility. Here are my slides:

@@ -8,7 +8,6 @@ tags:
 - activex
 - ev
 - npapi
-- odin
 license: cc-by-3.0
 ---
 

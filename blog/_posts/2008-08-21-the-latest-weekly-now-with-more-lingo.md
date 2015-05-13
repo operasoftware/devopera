@@ -3,8 +3,8 @@ title: The latest weekly, now with more lingo
 authors:
 - david-storey
 tags:
-- localisation
-- localization
+- l10n
+- l10n
 - dragonfly
 license: cc-by-3.0
 ---

@@ -5,8 +5,7 @@ authors:
 tags:
 - page-visibility
 - html5
-- opera-12
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

@@ -5,7 +5,7 @@ authors:
 tags:
 - css3
 - open-web
-- opera-11
+- opera-presto
 language: ja
 translator: Masataka Yakura
 license: cc-by-nc-sa-3.0

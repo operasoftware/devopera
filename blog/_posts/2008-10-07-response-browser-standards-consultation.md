@@ -6,8 +6,6 @@ tags:
 - browser-sniffing
 - testing
 - one-web
-- progressive-enhancement
-- odin
 license: cc-by-3.0
 ---
 

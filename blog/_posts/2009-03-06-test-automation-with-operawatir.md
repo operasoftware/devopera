@@ -3,7 +3,6 @@ title: Test automation with OperaWatir
 authors:
 - wilhelm-andersen
 tags:
-- core-qa
 - test-automation
 - watir
 - coreblog

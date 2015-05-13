@@ -9,7 +9,6 @@ tags:
 - developer
 - community
 - oslo
-- odin
 license: cc-by-3.0
 ---
 

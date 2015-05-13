@@ -5,10 +5,9 @@ authors:
 tags:
 - opera-mobile
 - testing
-- opera-10
+- opera-presto
 - opera-mini
 - standards
-- odin
 license: cc-by-3.0
 ---
 

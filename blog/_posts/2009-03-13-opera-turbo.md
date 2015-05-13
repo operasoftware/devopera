@@ -5,7 +5,6 @@ authors:
 intro: 'We are launching our time-limited test phase for Opera Turbo, a server-side optimization and compression technology that provides significant improvements in browsing speeds over slow connections by compressing network traffic.'
 tags:
 - turbo
-- labs
 license: os-asa
 ---
 

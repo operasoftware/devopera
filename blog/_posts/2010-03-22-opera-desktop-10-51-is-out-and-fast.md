@@ -4,11 +4,9 @@ authors:
 - zi-bin-cheah
 tags:
 - browsers
-- opera-10
-- peacekeeper
+- opera-presto
 - sputnik
 - benchmark
-- odin
 license: cc-by-3.0
 ---
 

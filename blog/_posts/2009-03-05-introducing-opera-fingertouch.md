@@ -6,7 +6,6 @@ intro: 'Today we introduce _Fingertouch_, a technology designed to make interact
 tags:
 - fingertouch
 - opera-mobile
-- labs
 license: os-asa
 ---
 

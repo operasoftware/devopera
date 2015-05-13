@@ -10,7 +10,6 @@ tags:
 - performance
 - operawatir
 - qa
-- odin
 license: cc-by-3.0
 ---
 

@@ -8,7 +8,6 @@ tags:
 - one-web
 - html5
 - standards
-- odin
 license: cc-by-3.0
 ---
 

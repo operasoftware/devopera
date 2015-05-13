@@ -8,7 +8,6 @@ tags:
 - standards
 - css3
 - html5
-- odin
 license: cc-by-3.0
 ---
 

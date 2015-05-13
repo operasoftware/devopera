@@ -6,8 +6,7 @@ intro: 'To really make a splash on the Web, video needs an open solution that ca
 tags:
 - video
 - open-web
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

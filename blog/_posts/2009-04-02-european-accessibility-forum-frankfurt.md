@@ -12,7 +12,6 @@ tags:
 - eafra
 - mobile
 - wai-aria
-- odin
 license: cc-by-3.0
 ---
 

@@ -3,14 +3,9 @@ title: A Look Under the Hood of Opera 9.6
 authors:
 - david-storey
 tags:
-- opera-9
+- opera-presto
 - estonia
-- india
-- ukraine
-- indonesia
 - release
-- russia
-- odin
 license: cc-by-3.0
 ---
 

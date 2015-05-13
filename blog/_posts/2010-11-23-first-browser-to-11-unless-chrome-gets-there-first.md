@@ -5,10 +5,9 @@ authors:
 tags:
 - dragonfly
 - dom
-- opera-11
+- opera-presto
 - css3
 - html5
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,7 +4,6 @@ authors:
 - andreas-bovens
 intro: 'We’re happy to release a new, totally refactored version of Dev.Opera today. Under the hood, you’ll find Jekyll, Sass, Grunt, and more, and submitting articles is as simple as doing a pull request.'
 tags:
-- devopera
 - redesign
 license: cc-by-3.0
 ---

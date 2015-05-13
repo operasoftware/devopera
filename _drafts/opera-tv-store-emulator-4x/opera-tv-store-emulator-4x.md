@@ -4,7 +4,7 @@ authors:
 - krystian-gorski
 intro: 'The Opera TV Store Emulator allows web developers to check how their HTML5-based applications look and behave in the Opera TV Store.'
 tags:
-- developer-tools
+- dev-tools
 - tv-emulator
 - emulator
 - tv

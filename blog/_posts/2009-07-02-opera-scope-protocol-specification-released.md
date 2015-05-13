@@ -6,7 +6,6 @@ tags:
 - specifications
 - dragonfly
 - scope
-- odin
 license: cc-by-3.0
 ---
 

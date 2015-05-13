@@ -3,11 +3,9 @@ title: Opera India University Tour
 authors:
 - bruce-lawson
 tags:
-- india
 - html5
 - standards
 - university
-- odin
 license: cc-by-3.0
 ---
 

@@ -3,14 +3,8 @@ title: ECMAScript 5.1’e Giriş
 authors:
 - mike-taylor
 tags:
-- array-extras
+- javascript
 - ecmascript
-- ecmascript-5.1
-- es5
-- function.prototype.bind
-- json
-- object-additions
-- strict-mode
 language: tr
 translator: Çağlar Yeşilyurt
 license: cc-by-3.0

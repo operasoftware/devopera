@@ -3,7 +3,7 @@ title: Expandable Objects in the Console, and more
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - dragonfly
 license: cc-by-3.0
 ---

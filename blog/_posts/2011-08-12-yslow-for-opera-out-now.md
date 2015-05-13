@@ -9,7 +9,6 @@ tags:
 - performance
 - speed
 - yslow
-- odin
 license: cc-by-3.0
 ---
 

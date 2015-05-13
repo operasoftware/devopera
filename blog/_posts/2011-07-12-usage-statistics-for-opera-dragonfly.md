@@ -3,7 +3,7 @@ title: Usage statistics for Opera Dragonfly
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - dragonfly
 - usage-tracker
 license: cc-by-3.0

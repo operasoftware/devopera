@@ -5,7 +5,6 @@ authors:
 tags:
 - css
 - box-shadow
-- odin
 license: cc-by-3.0
 ---
 

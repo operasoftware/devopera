@@ -7,7 +7,6 @@ tags:
 - testing
 - dragonfly
 - methodology
-- odin
 license: cc-by-3.0
 ---
 

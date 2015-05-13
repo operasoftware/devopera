@@ -6,9 +6,8 @@ tags:
 - beta
 - mac
 - widgets
-- opera-10
+- opera-presto
 - video
-- odin
 license: cc-by-3.0
 ---
 

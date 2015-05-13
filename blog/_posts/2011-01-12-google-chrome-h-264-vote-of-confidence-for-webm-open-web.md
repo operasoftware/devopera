@@ -13,7 +13,6 @@ tags:
 - vp8
 - open-web
 - mp4
-- odin
 license: cc-by-3.0
 ---
 

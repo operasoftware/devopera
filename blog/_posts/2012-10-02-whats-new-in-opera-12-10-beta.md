@@ -10,7 +10,6 @@ tags:
 - icc
 - extensions
 - prefixes
-- odin
 license: cc-by-3.0
 ---
 

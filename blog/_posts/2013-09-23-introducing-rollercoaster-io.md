@@ -12,7 +12,6 @@ tags:
 - ipad
 - browser
 - design
-- odin
 license: cc-by-3.0
 ---
 

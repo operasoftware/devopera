@@ -6,8 +6,7 @@ intro: 'Opera 9 is built on a new version of Opera’s rendering engine, featuri
 tags:
 - svg
 - open-web
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

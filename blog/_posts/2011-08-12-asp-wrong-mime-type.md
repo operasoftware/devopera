@@ -12,7 +12,6 @@ tags:
 - interoperability
 - mime-type
 - bug
-- odin
 license: cc-by-3.0
 ---
 

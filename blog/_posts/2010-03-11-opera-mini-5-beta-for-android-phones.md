@@ -6,7 +6,6 @@ tags:
 - beta
 - opera-mini
 - android
-- odin
 license: cc-by-3.0
 ---
 

@@ -3,14 +3,13 @@ title: 'Opera 10 Alpha: Web Fonts, Acid 3 and More'
 authors:
 - bruce-lawson
 tags:
-- opera-10
+- opera-presto
 - css3
 - web-fonts
 - svg
 - acid
 - dragonfly
 - selectors-api
-- odin
 license: cc-by-3.0
 ---
 

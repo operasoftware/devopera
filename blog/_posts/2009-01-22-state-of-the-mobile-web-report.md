@@ -5,7 +5,6 @@ authors:
 tags:
 - sns
 - opera-mini
-- odin
 license: cc-by-3.0
 ---
 

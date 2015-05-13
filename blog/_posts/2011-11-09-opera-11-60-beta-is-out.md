@@ -3,11 +3,10 @@ title: Opera 11.60 Beta Is Out!
 authors:
 - divya-manian
 tags:
-- opera-11
+- opera-presto
 - beta
 - desktop
 - browser
-- odin
 license: cc-by-3.0
 ---
 Our Core developers have been hard at work to bring you the next version of Opera for Desktop. First, go <a href="http://www.opera.com/browser/beta/" target="_blank">download Opera 11.60 Beta</a>. Here are some of the interesting features you can enjoy:

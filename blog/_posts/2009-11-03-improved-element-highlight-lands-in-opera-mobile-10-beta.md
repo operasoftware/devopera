@@ -3,7 +3,6 @@ title: Improved element highlight lands in Opera Mobile 10 Beta
 authors:
 - david-storey
 tags:
-- opera-mobile-10
 - highlight
 - dragonfly
 license: cc-by-3.0

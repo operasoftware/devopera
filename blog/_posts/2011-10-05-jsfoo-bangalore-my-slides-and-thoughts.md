@@ -6,7 +6,6 @@ tags:
 - mobile-web
 - mobile
 - javascript
-- odin
 license: cc-by-3.0
 ---
 

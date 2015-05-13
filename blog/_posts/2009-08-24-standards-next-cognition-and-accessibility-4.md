@@ -3,9 +3,7 @@ title: 'Standards.Next: Cognition and Accessibility'
 authors:
 - henny-swan
 tags:
-- standards.next
 - accessibility
-- odin
 license: cc-by-3.0
 ---
 

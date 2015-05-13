@@ -3,12 +3,9 @@ title: A New Dev.Opera
 authors:
 - andreas-bovens
 tags:
-- labs
 - articles
-- dev.opera
 - redesign
 - update
-- odin
 license: cc-by-3.0
 ---
 

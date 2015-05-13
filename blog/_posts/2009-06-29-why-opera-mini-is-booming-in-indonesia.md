@@ -3,9 +3,7 @@ title: Why Is Opera Mini Booming in Indonesia?
 authors:
 - zi-bin-cheah
 tags:
-- indonesia
 - opera-mini
-- odin
 license: cc-by-3.0
 ---
 

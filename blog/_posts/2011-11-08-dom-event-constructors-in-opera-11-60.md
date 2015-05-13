@@ -3,13 +3,11 @@ title: DOM Event Constructors in Opera 11.60
 authors:
 - tiffany-brown
 tags:
-- eventtarget
 - event
 - constructors
 - domcore
 - dom
 - web-standards
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,7 +4,7 @@ authors:
 - andreas-bovens
 intro: 'This is an initial release of OperaChromiumDriver, a WebDriver implementation that enables test automation of Chromium-based Opera products.'
 tags:
-- developer-tools
+- dev-tools
 - testing
 license: cc-by-3.0
 ---

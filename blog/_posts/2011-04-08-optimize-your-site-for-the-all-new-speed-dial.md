@@ -4,11 +4,9 @@ authors:
 - andreas-bovens
 tags:
 - view-mode
-- barracuda
 - opera
 - speed-dial
 - minimized
-- odin
 license: cc-by-3.0
 ---
 

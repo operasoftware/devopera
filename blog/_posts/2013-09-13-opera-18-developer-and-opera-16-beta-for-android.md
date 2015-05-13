@@ -5,10 +5,8 @@ authors:
 intro: 'On Wednesday, we’ve [announced](http://my.opera.com/desktopteam/blog/2013/09/11/opera-18-developer-stream) our first Opera 18 build in the Developer Stream — it comes with a lot of [bug fixes](/blog/opera-18-developer-and-opera-16-beta-for-android/Opera_initial_18_dev_changelog.txt), and showcases some of the features we’re working on: themes support, quick access bar, improved tab handling (you can now drag tabs between browser windows), and under the hood you’ll find Chromium 31. If you have Opera Developer installed, the update will be applied automatically: check opera:about if you want to double check.'
 tags:
 - opera
-- opera-developer
 - android
 - off-road
-- odin
 license: cc-by-3.0
 ---
 

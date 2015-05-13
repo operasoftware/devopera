@@ -3,7 +3,7 @@ title: Further progress on Opera Dragonfly 1.1
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - dragonfly
 license: cc-by-3.0
 ---

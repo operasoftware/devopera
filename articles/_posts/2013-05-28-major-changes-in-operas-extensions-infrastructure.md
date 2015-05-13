@@ -5,7 +5,7 @@ authors:
 intro: 'With Opera switching from Presto to Chromium and a complete UI remake, our extensions infrastructure has also gotten a major overhaul: from Opera 15 onward, Opera 11 & 12’s extension format is no longer supported, and instead, we’ve switched to Chromium’s extension model.'
 tags:
 - extensions
-- opera-15
+- opera-presto
 license: cc-by-3.0
 ---
 

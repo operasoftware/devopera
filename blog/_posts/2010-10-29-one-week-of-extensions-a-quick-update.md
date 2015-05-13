@@ -6,7 +6,6 @@ tags:
 - opera
 - extensions
 - update
-- odin
 license: cc-by-3.0
 ---
 

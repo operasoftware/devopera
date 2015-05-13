@@ -6,8 +6,7 @@ intro: 'In this article Hallvord Steen provides a warning about browser sniffing
 tags:
 - acid
 - sniffing
-- opera-9
-- tinymce
+- opera-presto
 license: cc-by-nc-sa-2.5
 ---
 

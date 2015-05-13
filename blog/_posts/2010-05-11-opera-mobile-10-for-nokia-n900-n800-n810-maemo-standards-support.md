@@ -3,14 +3,11 @@ title: Opera Mobile 10 for Nokia N900 and N800/N810 (Maemo) — Standards Suppor
 authors:
 - zi-bin-cheah
 tags:
-- n900
 - nokia
 - opera-mobile
-- maemo
 - chart
 - standards
 - testing
-- odin
 license: cc-by-3.0
 ---
 

@@ -8,7 +8,6 @@ tags:
 - html5
 - svg
 - mobile
-- odin
 license: cc-by-3.0
 ---
 

@@ -11,7 +11,7 @@ tags:
 - box-decoration-break
 - box-shadow
 - open-web
-- opera-11
+- opera-presto
 license: cc-by-nc-sa-3.0
 ---
 

@@ -8,7 +8,6 @@ tags:
 - video
 - html5
 - audio
-- odin
 license: cc-by-3.0
 ---
 

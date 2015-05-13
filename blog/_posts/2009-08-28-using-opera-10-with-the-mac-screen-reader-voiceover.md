@@ -6,7 +6,6 @@ tags:
 - accessibility
 - voiceover
 - screenreader
-- odin
 license: cc-by-3.0
 ---
 

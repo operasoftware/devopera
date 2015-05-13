@@ -7,8 +7,7 @@ tags:
 - video
 - file-io
 - canvas
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

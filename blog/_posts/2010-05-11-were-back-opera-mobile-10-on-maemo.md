@@ -4,9 +4,7 @@ authors:
 - fredrik-ohrn
 intro: 'We’re proud to present the first preview build of Opera Mobile 10 for Nokia N900 and N800/N810.'
 tags:
-- maemo
 - opera-mobile
-- labs
 license: os-asa
 ---
 

@@ -3,11 +3,9 @@ title: Social Innovation Camp Nigeria + University of Lagos
 authors:
 - zi-bin-cheah
 tags:
-- africa
-- nigeria
+- css
 - media-queries
 - viewport
-- odin
 license: cc-by-3.0
 ---
 

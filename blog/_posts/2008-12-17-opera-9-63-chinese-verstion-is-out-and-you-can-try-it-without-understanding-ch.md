@@ -6,7 +6,6 @@ tags:
 - china
 - desktop
 - ibis
-- odin
 license: cc-by-3.0
 ---
 

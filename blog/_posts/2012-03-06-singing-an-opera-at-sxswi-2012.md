@@ -8,7 +8,6 @@ tags:
 - panel
 - talk
 - opera
-- odin
 license: cc-by-3.0
 ---
 

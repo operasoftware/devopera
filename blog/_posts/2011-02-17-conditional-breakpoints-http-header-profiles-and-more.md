@@ -3,7 +3,6 @@ title: Conditional Breakpoints, HTTP header profiles and more
 authors:
 - david-storey
 tags:
-- conditional-breakpoints
 - dragonfly
 license: cc-by-3.0
 ---

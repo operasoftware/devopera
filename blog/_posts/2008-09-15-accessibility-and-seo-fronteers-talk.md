@@ -5,8 +5,6 @@ authors:
 tags:
 - accessibility
 - google
-- seo
-- odin
 license: cc-by-3.0
 ---
 

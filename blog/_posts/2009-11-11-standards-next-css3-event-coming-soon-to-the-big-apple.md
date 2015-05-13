@@ -5,10 +5,8 @@ authors:
 tags:
 - css3
 - nyc
-- standards.next
 - events
 - html5
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,7 +4,6 @@ authors:
 - david-storey
 tags:
 - roadmap
-- debugger
 - dragonfly
 license: cc-by-3.0
 ---

@@ -8,8 +8,7 @@ tags:
 - performance
 - ecmascript
 - javascript
-- opera-10
-- labs
+- opera-presto
 license: os-asa
 ---
 

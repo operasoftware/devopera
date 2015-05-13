@@ -3,7 +3,7 @@ title: Opera Dragonfly 1.1 release candidate 1
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - release-candidate
 - dragonfly
 license: cc-by-3.0

@@ -4,7 +4,7 @@ authors:
 - david-storey
 tags:
 - experimental
-- opera-11
+- opera-presto
 - dragonfly
 license: cc-by-3.0
 ---

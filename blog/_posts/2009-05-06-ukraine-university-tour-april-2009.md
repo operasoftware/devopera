@@ -8,13 +8,8 @@ tags:
 - tour
 - css3
 - html5
-- kiev
 - standards
 - opera
-- donetsk
-- ukraine
-- kharkov
-- odin
 license: cc-by-3.0
 ---
 

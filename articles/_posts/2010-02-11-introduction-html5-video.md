@@ -11,7 +11,7 @@ tags:
 - html5
 - multimedia
 - open-web
-- opera-10
+- opera-presto
 - video
 cover: jpg
 license: cc-by-nc-sa-3.0

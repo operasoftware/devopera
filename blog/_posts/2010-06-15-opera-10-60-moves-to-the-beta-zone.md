@@ -6,12 +6,11 @@ tags:
 - beta
 - webm
 - opera
-- opera-10
+- opera-presto
 - video
 - geolocation
 - app-cache
 - web-workers
-- odin
 license: cc-by-3.0
 ---
 

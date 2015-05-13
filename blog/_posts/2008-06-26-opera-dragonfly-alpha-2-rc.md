@@ -3,7 +3,7 @@ title: Opera Dragonfly alpha 2 RC
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - dragonfly
 license: cc-by-3.0
 ---

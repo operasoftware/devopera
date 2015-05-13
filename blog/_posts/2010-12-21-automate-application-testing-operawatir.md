@@ -6,7 +6,6 @@ tags:
 - opera
 - testing
 - watir
-- odin
 license: cc-by-3.0
 ---
 

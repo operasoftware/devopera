@@ -3,7 +3,7 @@ title: Opera Dragonfly alpha 3, update 2
 authors:
 - david-storey
 tags:
-- localisation
+- l10n
 - dragonfly
 license: cc-by-3.0
 ---

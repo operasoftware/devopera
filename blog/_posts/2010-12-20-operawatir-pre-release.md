@@ -3,7 +3,6 @@ title: OperaWatir Pre-Release
 authors:
 - andreas-tolfsen
 tags:
-- core-qa
 - test-automation
 - operawatir
 - watir

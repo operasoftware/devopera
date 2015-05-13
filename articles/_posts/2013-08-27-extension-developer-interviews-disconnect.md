@@ -5,10 +5,8 @@ authors:
 intro: 'We sat down with Brian from Disconnect, and asked him about his team, extension development tools and UX processes, where the service’s revenue comes from, and much more.'
 tags:
 - browser
-- disconnect
 - extensions
 - interview
-- extinterview
 - privacy
 cover: png
 license: cc-by-3.0

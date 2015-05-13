@@ -4,16 +4,8 @@ authors:
 - rich-tibbett
 intro: 'The W3C device orientation API allows us to determine the orientation of a device in physical space. In this advanced tutorial we cover some of the pitfalls and propose some new ways of working with this data for developing practical device-orientation-aware web applications on mobile devices.'
 tags:
-- angles
-- augmented-reality
-- deviceorientation
-- euler-angles
-- orientationchange
-- quaternion
-- rotation-matrix
-- screen-orientation
-- tait-bryan-angles
-- virtual-reality
+- javascript
+- mobile
 license: cc-by-3.0
 ---
 

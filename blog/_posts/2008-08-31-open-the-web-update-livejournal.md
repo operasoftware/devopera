@@ -4,10 +4,6 @@ authors:
 - david-storey
 tags:
 - otw
-- news
-- livejornal
-- russia
-- odin
 license: cc-by-3.0
 ---
 

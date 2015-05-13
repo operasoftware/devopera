@@ -7,7 +7,6 @@ tags:
 - javascript
 - html5
 - canvas
-- odin
 license: cc-by-3.0
 ---
 

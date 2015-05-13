@@ -8,7 +8,6 @@ tags:
 - bratislava
 - vienna
 - tour
-- odin
 license: cc-by-3.0
 ---
 

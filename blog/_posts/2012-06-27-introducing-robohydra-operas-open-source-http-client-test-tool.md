@@ -8,7 +8,6 @@ tags:
 - opera
 - testing
 - robohydra
-- odin
 license: cc-by-3.0
 ---
 

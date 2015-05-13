@@ -3,9 +3,7 @@ title: Standards.Next — “Mobile and Devices”, Manchester
 authors:
 - bruce-lawson
 tags:
-- standards.next
 - conference
-- odin
 license: cc-by-3.0
 ---
 

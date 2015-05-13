@@ -4,7 +4,6 @@ authors:
 - bruce-lawson
 tags:
 - presentation
-- odin
 license: cc-by-3.0
 ---
 

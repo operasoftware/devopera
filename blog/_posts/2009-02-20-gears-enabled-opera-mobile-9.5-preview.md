@@ -6,7 +6,6 @@ intro: 'We’re happy to announce our Opera Mobile 9.5 technology preview with s
 tags:
 - gears
 - opera-mobile
-- labs
 license: os-asa
 ---
 

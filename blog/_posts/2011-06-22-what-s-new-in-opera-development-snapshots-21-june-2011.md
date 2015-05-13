@@ -4,7 +4,6 @@ authors:
 - divya-manian
 tags:
 - opera-next
-- odin
 license: cc-by-3.0
 ---
 	<p>Another Tuesday, <a href="http://my.opera.com/desktopteam/blog/2011/06/21/another-happy-tuesday">snapshot</a> (&amp; <a href="http://my.opera.com/desktopteam/blog/2011/06/20/presto-2-9">more</a>). Let&#39;s see what&#39;s new.</p>

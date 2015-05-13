@@ -4,8 +4,6 @@ authors:
 - bruce-lawson
 intro: 'As announced on the [Choose Opera](http://my.opera.com/chooseopera) blog, we’re closing the my.Opera blogging platform in five months’ time. This change also affects the ODIN blog. (If you use my.Opera to host any personal blogs or photos, be sure to read the post on how to export your data.)'
 tags:
-- my.opera
-- odin
 license: cc-by-3.0
 ---
 

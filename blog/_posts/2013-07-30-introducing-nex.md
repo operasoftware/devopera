@@ -6,7 +6,6 @@ tags:
 - chromium
 - nex
 - extensions
-- odin
 license: cc-by-3.0
 ---
 

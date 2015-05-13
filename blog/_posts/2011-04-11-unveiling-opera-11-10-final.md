@@ -5,7 +5,7 @@ authors:
 tags:
 - gradients
 - multi-column
-- opera-11
+- opera-presto
 - woff
 - webp
 - linux
@@ -15,7 +15,6 @@ tags:
 - mac
 - speed-dial
 - extensions
-- odin
 license: cc-by-3.0
 ---
 

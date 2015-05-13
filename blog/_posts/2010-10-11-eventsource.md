@@ -3,7 +3,6 @@ title: The Long Journey of Server-Sent Events (EventSource)
 authors:
 - anne-van-kesteren
 tags:
-- eventsource
 - html5
 - testsuite
 - coreblog

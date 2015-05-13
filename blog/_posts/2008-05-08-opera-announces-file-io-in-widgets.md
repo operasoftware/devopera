@@ -4,8 +4,7 @@ authors:
 - chris-mills
 intro: 'Opera has just released a public version of it new specification for File I/O access in widgets, along with a special build, documentation and examples. Find out more in this note.'
 tags:
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

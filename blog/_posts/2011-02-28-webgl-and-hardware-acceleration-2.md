@@ -4,7 +4,6 @@ authors:
 - tim-johansson
 tags:
 - webgl
-- hardware-acceleration
 - 3d
 - opera
 - canvas

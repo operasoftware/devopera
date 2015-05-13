@@ -7,7 +7,6 @@ tags:
 - canvas
 - web-standards
 - innovation
-- odin
 license: cc-by-3.0
 ---
 

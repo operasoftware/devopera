@@ -6,7 +6,7 @@ intro: 'Traditionally, Mathematical formulas have been hard to represent using g
 tags:
 - html
 - mathml
-- opera-9
+- opera-presto
 license: cc-by-nc-sa-2.5
 ---
 

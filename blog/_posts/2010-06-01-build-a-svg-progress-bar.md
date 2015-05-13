@@ -7,7 +7,6 @@ tags:
 - web-directions
 - wai-aria
 - svg
-- odin
 license: cc-by-3.0
 ---
 

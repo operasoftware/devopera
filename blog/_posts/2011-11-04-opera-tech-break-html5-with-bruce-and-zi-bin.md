@@ -5,7 +5,6 @@ authors:
 tags:
 - video
 - html5
-- odin
 license: cc-by-3.0
 ---
 

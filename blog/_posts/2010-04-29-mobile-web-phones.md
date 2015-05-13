@@ -8,7 +8,6 @@ tags:
 - dragonfly
 - opera-mini
 - mobile
-- odin
 license: cc-by-3.0
 ---
 

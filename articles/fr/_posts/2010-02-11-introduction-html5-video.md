@@ -10,7 +10,7 @@ tags:
 - html5
 - multimedia
 - open-web
-- opera-10
+- opera-presto
 - video
 language: fr
 translator: Nicolas Chevallier

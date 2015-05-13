@@ -6,7 +6,6 @@ tags:
 - opera-mobile
 - one-web
 - widgets
-- odin
 license: cc-by-3.0
 ---
 

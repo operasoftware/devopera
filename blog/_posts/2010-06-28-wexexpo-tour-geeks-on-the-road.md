@@ -3,13 +3,11 @@ title: WebExpo Tour — Geeks on the Road
 authors:
 - zi-bin-cheah
 tags:
-- prague
 - webexpo
 - budapest
 - bratislava
 - tour
 - vienna
-- odin
 license: cc-by-3.0
 ---
 

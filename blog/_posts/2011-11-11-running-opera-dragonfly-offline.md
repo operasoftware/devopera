@@ -4,7 +4,7 @@ authors:
 - daniel-herzog
 tags:
 - performance
-- developer-tools
+- dev-tools
 - offline
 - dragonfly
 license: cc-by-3.0

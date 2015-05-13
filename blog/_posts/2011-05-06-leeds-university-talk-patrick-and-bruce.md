@@ -13,7 +13,6 @@ tags:
 - widgets
 - w3c
 - open-web
-- odin
 license: cc-by-3.0
 ---
 

@@ -7,8 +7,7 @@ tags:
 - gradients
 - woff
 - webp
-- opera-11
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

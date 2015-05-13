@@ -5,14 +5,9 @@ authors:
 intro: 'The death of the feature phone is widely reported and greatly exaggerated. “Although we see a huge market ‘hype’ around smartphones, the fact remains that the India mobile handset market is still dominated by shipments of feature phones. On the other hand, smartphone shipments are growing fast” analyst [Faisal Kawoosa said](http://articles.timesofindia.indiatimes.com/2013-04-02/telecom/38216822_1_handset-market-cybermedia-research-smartphone-shipments) in a Times of India article reporting that smartphones comprise just 7% of the overall Indian handset market.'
 tags:
 - asia
-- nepal
-- india
 - bangladesh
 - opera-mini
-- indonesia
 - android
-- progressive-enhancement
-- odin
 license: cc-by-3.0
 ---
 

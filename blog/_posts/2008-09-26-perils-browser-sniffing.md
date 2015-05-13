@@ -5,7 +5,6 @@ authors:
 tags:
 - browser-sniffing
 - masking
-- odin
 license: cc-by-3.0
 ---
 

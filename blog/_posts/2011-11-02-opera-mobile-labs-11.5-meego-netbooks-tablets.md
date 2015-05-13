@@ -8,7 +8,6 @@ tags:
 - intel
 - meego
 - opera-mobile
-- labs
 license: cc-by-3.0
 ---
 

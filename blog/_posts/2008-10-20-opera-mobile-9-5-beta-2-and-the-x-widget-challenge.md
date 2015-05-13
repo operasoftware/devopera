@@ -8,7 +8,6 @@ tags:
 - sdk
 - dragonfly
 - x-device
-- odin
 license: cc-by-3.0
 ---
 
