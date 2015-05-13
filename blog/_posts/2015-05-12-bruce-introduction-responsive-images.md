@@ -5,8 +5,9 @@ authors:
 intro: 'I was invited to give a talk at DrupalJam Utrecht (April 2015). Here’s the 30 minute video.'
 tags:
 - html5
-- standards
-published: false
+- media
+- picture
+- rwd
 license: cc-by-3.0
 ---
 
