@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-You’ve read the articles ([Responsive Images: Use Cases and Documented Code Snippets to Get You Started](https://dev.opera.com/articles/responsive-images/), and [Native Responsive Images](https://dev.opera.com/articles/native-responsive-images/) —
+You’ve read the articles ([Responsive Images: Use Cases and Documented Code Snippets to Get You Started](https://dev.opera.com/articles/responsive-images/), and [Native Responsive Images](https://dev.opera.com/articles/native-responsive-images/)) —
 now see the movie!
 
 <figure block="figure">
