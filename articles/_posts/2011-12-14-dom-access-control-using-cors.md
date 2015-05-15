@@ -47,7 +47,7 @@ license: cc-by-3.0
 
 <p>CORS consists of three request headers, and six response headers (see <a href="#fig1">Table 1</a> below). Browsers automatically set request headers for some cross-origin requests, such as those made using the <code>XMLHttpRequest</code> object.</p>
 
-<div block="table">
+<figure block="figure">
 <table id="fig1">
 <caption>Figure 1: A table of cross-origin resource sharing headers</caption>
 <thead>
@@ -65,30 +65,25 @@ license: cc-by-3.0
 		<td><code>Access-Control-Request-Method</code>: Included when the HTTP method used is one that may cause a side-effect (such as <code>PUT</code> or DELETE).</td>
 		<td><a href="#AccessControlAllowMethods"><code>Access-Control-Allow-Methods</code></a>: Lets the referer know what HTTP methods are allowed, i.e. if the one(s) specified in <code>Access-Control-Request-Method</code> are okay.</td>
 	</tr>
-
 	<tr>
 		<td><code>Access-Control-Request-Headers</code>: Included when the header is a complex header, such as <code>If-Modified-Since</code>, or a custom header such as Opera Mini's <code>X-Forwarded-For</code>.</td>
 		<td><a href="#AccessControlAllowHeaders"><code>Access-Control-Allow-Headers</code></a>: Lets the referer know if the headers it sent are okay.</td>
 	</tr>
-
 	<tr>
 		<td>&nbsp;</td>
 		<td><a href="#AccessControlMaxAge"><code>Access-Control-Max-Age</code></a>: Explicitly informs the referer how many seconds it should store the preflight result. Within this time, it can just send the request, and doesn't need to bother sending the preflight request again.</td>
 	</tr>
-
 	<tr>
 		<td>&nbsp;</td>
 		<td><a href="#AccessControlAllowCredentials"><code>Access-Control-Allow-Credentials</code></a>: This tells the host whether the request can include user credentials.</a></td>
-
 	</tr>
-
 	<tr>
 		<td>&nbsp;</td>
 		<td><a href="#AccessControlExposeHeaders"><code>Access-Control-Expose-Headers</code></a>: Lets the host know exactly which headers it can expose to the referring application. A header white-list.</td>
 	</tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>Response headers, of course, are returned by the URI in question. You can set them in your server configuration file or per URI using a server-side language. Which approach you choose will depend on the kind of application you're building. We'll cover each response header in the <a href="#SendingResponseHeaders">Sending CORS Response Headers</a> section.</p>
 

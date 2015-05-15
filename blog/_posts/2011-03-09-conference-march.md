@@ -24,7 +24,7 @@ Tiffany Brown,
 
 <p><a href="https://dev.opera.com/author/1766230">Zi Bin Cheah</a> will be joined by <a href="http://twitter.com/syndare">Sangwhan Moon</a> and <a href="http://my.opera.com/ting0619">Peko Wan</a>, and together they will be touring Taiwan speaking to universities and leading companies about HTML5 and Opera Widgets.</p>
 
-<div block="table">
+<figure block="figure">
 <table id="marchtalklist">
 <caption>March Talks List</caption>
 <tr><th>Conference</th><th>Date</th><th>Title</th><th>Speaker</th></tr>
@@ -48,4 +48,4 @@ Tiffany Brown,
 
 <tr><td><a href="http://www.www2011india.com/">20th International World Wide Web Conference</a></td><td>Wednesday, March 30 3:30PM</td><td>Mobile and devices: Making the most of W3C technologies</td><td><a href="http://www.shwetankdixit.com/">Shwetank Dixit</a></td></tr>
 </table>
-</div>
+</figure>

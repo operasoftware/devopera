@@ -15,7 +15,7 @@ license: cc-by-3.0
 
 <p>That was back then in 2008; long before Carakan (Opera’s modern JIT based JavaScript engine) had even started development. A JavaScript performance race has waged since then. JavaScript is only one factor in performance (although the most visible PR wise), and other subsystems in Opera have also improved performance immensely in the same time period.  Examples of this include layout, painting (Opera included Vega at the same time as Carakan) and DOM performance. Opera Dragonfly is a perfect example of a complex modern application which benefits from these improvements. Benchmarks are all well and nice, but how much does Opera Dragonfly benefit from such improvements? We’ve produced a test to judge performance when performing tokenising and syntax highlighting on the large files we may encounter when debugging complex pages. The improvements are quite amazing.</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 		<thead>
 				<tr>
@@ -58,7 +58,7 @@ license: cc-by-3.0
 				</tr>
 		</tbody>
 </table>
-</div>
+</figure>
 
 <p>The following tests results (in ms) are the average of 50 runs using a 250kb JavaScript file on a Windows XP machine. You can run the tests yourself by following the link to our <a href="http://scope.bitbucket.org/tests/js-highlight-performance/index.html">JavaScript tokenise and highlight performance test</a>. Your mileage may vary depending on platform and hardware specs.</p>
 

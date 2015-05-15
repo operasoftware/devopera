@@ -46,7 +46,7 @@ This article takes things further, showing how to use these properties to create
 
 Support for these CSS3 features was introduced in Opera 10.50, and you’ll also be able to rely on most of them in the latest versions of Firefox, Safari and Chrome.
 
-<div block="table">
+<figure block="figure">
 <table>
 <tr>
 	<th scope="row">Browser</th>
@@ -94,7 +94,7 @@ Support for these CSS3 features was introduced in Opera 10.50, and you’ll also
 	<td>No</td>
 </tr>
 </table>
-</div>
+</figure>
 
 Of course, in the real web most of us are stuck having to support Internet Explorer, which doesn’t yet support any of these properties. The best place to use them is therefore an environment where you can control what browser will be used. A prime example here is [Opera Widgets][20], which run on the Opera core engine and therefore include modern browser features. An intranet is also a good example, so long as you can get your staff or society members all using a good modern browser!
 

@@ -239,7 +239,7 @@ Note: There has been discussion about what to do with the [Modernizr Flexbox IE1
 
 The following table provides a summary of modern Flexbox syntax, and its equivalent in the 2009, and 2011 hybrid syntax:
 
-<div block="table">
+<figure block="figure">
 <table>
 <caption>Table showing the different Flexbox syntaxes supported across different browsers, and what the equivalents are for different properties.</caption>
 <tr>
@@ -273,7 +273,7 @@ The following table provides a summary of modern Flexbox syntax, and its equival
 	<td>flex: 1</td>
 </tr>
 </table>
-</div>
+</figure>
 
 Note: There is a `box-lines` property in the 2009 spec, which looks like an equivalent of `flex-wrap`, but unfortunately this doesn’t seem to be supported by any of the legacy syntax-supporting browsers. My example therefore wouldn’t work, so I had to simplify it for older browsers.
 

@@ -12,23 +12,23 @@ A while ago I was asked to do quality assurance on our upcoming <a href="http://
 
 At this point our implementation is considered ready for release, and I&#39;m pretty excited about it - it was a pleasure to test, and Opera&#39;s native JSON support is going to be fast, strict, safe and standards-compliant. According to our tests our implementation is the fastest one at parsing -
 
-<div block="table">
+<figure block="figure">
 <table><tr><th colspan="2"><a href="http://testsuites.opera.com/JSON/performance/001.html" target="_blank">Simple parse</a></th></tr>
 <tr><td>Opera</td><td>150 000 times/second</td></tr>
 <tr><td>Safari</td><td>127 000 times/second</td></tr>
 <tr><td>IE</td><td>41 000 times/second</td></tr>
 <tr><td>Firefox</td><td>37 500 times/second</td></tr></table>
-</div>
+</figure>
 
 though we&#39;re a bit slower than the others at serializing:
 
-<div block="table">
+<figure block="figure">
 <table><tr><th colspan="2"><a href="http://testsuites.opera.com/JSON/performance/002.html" target="_blank">Simple stringify</a></th></tr>
 <tr><td>Safari</td><td>71 000 times/second</td></tr>
 <tr><td>Firefox</td><td>61 800 times/second</td></tr>
 <tr><td>IE</td><td>57 000 times/second</td></tr>
 <tr><td>Opera</td><td>55 800 times/second</td></tr></table>
-</div>
+</figure>
 
 ..so there is a bit of work left on optimizing that. Keep in mind that this is with our existing JavaScript engine - the new <a href="http://my.opera.com/core/blog/2009/02/04/carakan" target="_blank">Carakan engine</a> gives JSON parsing a solid boost too!
 

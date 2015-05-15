@@ -21,7 +21,7 @@ license: cc-by-3.0
 <p>If you want to get some light-hearted, behind-the-scenes information around today&#39;s release, check out our <a href="http://my.opera.com/ODIN/blog/2010/05/11/5-questions-for-the-opera-mobile-10-maemo-team">5 questions for the Opera Mobile 10 Maemo team</a>.</p>
 <p>For an in-depth look at our standards support, please check out <a href="http://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="http://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a> – but as a quick reference, here&#39;s an update to our <a href="http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart">Opera browser standards support chart</a> that gives an overview of the Maemo preview build&#39;s improvements.</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 <col span="2"/>
 <col span="1"/>
@@ -374,7 +374,7 @@ license: cc-by-3.0
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>* Blur radius is not supported.</p>
 <p>† Opera on Windows and Mac support the Ogg container format and the Theora and Vorbis codecs, as well as the WAVE container format and PCM codec. Opera on Linux and FreeBSD supports the container formats and codecs that are installed in the system&#39;s GStreamer.</p>

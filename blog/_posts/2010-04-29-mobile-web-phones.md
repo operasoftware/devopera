@@ -18,7 +18,7 @@ license: cc-by-3.0
 <p>If you’ve decided it is important to test on a wide range of devices, which should you look into? A quick first step is to download the <a href="http://www.opera.com/developer/tools/">Opera Mobile emulator</a>. This will give you an idea of how your page will render in Opera Mobile. It isn&#39;t a substitute for testing on a real device, but it gives you a good first idea before taking it to the device for periodical and final testing. The default mode is touch screen, but you can change this from the command line with the <kbd>-notouch</kbd> flag.
 The article <a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop">Opera Mobile 10 and the Opera Widgets Mobile Emulator on your desktop</a> steps you through this and how to use it with <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> for debugging your pages. Although Opera Mini uses the same Opera Presto rendering engine, there are some differences due to the client/server approach, so it is important to test for Opera Mini too. The following table shows the top twenty mobiles used by Opera Mini users, along with the important characteristics:</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 						<caption>Opera Mini top 20 global handsets</caption>
 		<thead>
@@ -50,7 +50,7 @@ The article <a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets
 			<tr><td>Sony Ericsson K550i</td><td>176 x 220 pixels</td><td>1.9 inches</td><td>GPRS/EDGE</td><td>Keypad</td><td>Sony Ericsson JP-7</td></tr>
 		</tbody>
 </table>
-</div>
+</figure>
 
 <p>The top 20 Opera Mini phones are dominated by QVGA (either in portrait 240 x 320 in the case of most S40 phones, or landscape 320 x 240 in the case of the E Series S60 phones) resolution phones. This is not just common on Nokia phones, but is also often found on many Sony Ericsson, LG and Samsung feature phones as well  the BlackBerry Curve (in landscape mode). The screen sizes vary from 2.0 to 2.4 inches. I&#39;d recommend having access to at least one QVGA phone – the screen size doesn&#39;t matter so much, as it is mainly the resolution you are interested in and the difference is small. Any in this list would be ok, but if you test on a 3G device, remember to also test with 3G disabled, as many phones (including the top 3, and top 6 feature phones) only have EDGE and GPRS. Many phones allow you to rotate the display, so you can test both portrait and landscape modes. It is the width of the screen you are generally interested in when designing web pages.</p>
 

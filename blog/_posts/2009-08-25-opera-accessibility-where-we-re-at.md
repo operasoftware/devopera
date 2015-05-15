@@ -70,7 +70,7 @@ For example, common practice today is to add skip links at the top of the page t
 <p>You can switch to the Accessibility Layout via <em>View &gt; Style &gt; Accessibility</em> layout.</p>
 <h3>Table of keyboard shortcuts</h3>
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -167,7 +167,7 @@ For example, common practice today is to add skip links at the top of the page t
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <ul>
 <li>Full list of <a href="http://help.opera.com/Windows/9.50/en/keyboard.html">Windows shortcuts</a></li>

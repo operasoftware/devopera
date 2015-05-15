@@ -150,30 +150,33 @@ To try it out, replace the contents of `roboexamples/robohydra/plugins/simple/in
 
 One very powerful feature we haven’t talked about yet is the `next` function. Remember how when a request comes, RoboHydra tries to match the request with the first head, then the second, etc. until it finds a matching head. That means that even if there is more than one head matching the request, only the first one gets to serve it. However, the `next` function, which is passed as an optional third parameter to the `handler` function, allows a head to call the next head that matches the request. Let’s see this with an example. Imagine you have a RoboHydra server with the following heads:
 
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Path</th>
-			</tr>
-		</thead>
+<figure block="figure">
+<table>
+	<thead>
 		<tr>
-			<td>onlyFoo</td>
-			<td>/foo</td>
+			<th>Name</th>
+			<th>Path</th>
 		</tr>
-		<tr>
-			<td>onlyBar</td>
-			<td>/bar</td>
-		</tr>
-		<tr>
-			<td>atLeastFoo</td>
-			<td>/foo.*</td>
-		</tr>
-		<tr>
-			<td>catchAll</td>
-			<td>/.*</td>
-		</tr>
-	</table>
+	</thead>
+	<tr>
+		<td>onlyFoo</td>
+		<td>/foo</td>
+	</tr>
+	<tr>
+		<td>onlyBar</td>
+		<td>/bar</td>
+	</tr>
+	<tr>
+		<td>atLeastFoo</td>
+		<td>/foo.*</td>
+	</tr>
+	<tr>
+		<td>catchAll</td>
+		<td>/.*</td>
+	</tr>
+</table>
+</figure>
+
 
 When a request for `/foo` comes, RoboHydra will process the request with the head `onlyFoo`, even though also `atLeastFoo` matches. However, if the `onlyFoo` calls the `next` function, the head `atLeastFoo` will process the request. Once it’s finished, the `onlyFoo` will be able to inspect the response `atLeastFoo` produced, and decide if it wants to return that response, or tweak it and then return it, or ignore it completely.
 

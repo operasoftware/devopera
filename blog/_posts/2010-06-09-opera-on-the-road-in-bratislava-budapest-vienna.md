@@ -29,7 +29,7 @@ Shwetank Dixit and I will be talking about <em>The Web on the bleeding edge: HTM
 Geeks on the Road is organized by the same people who brought us <a href="http://webexpo.net/">WebExpo</a> in Czech Republic. For more information, visit <a href="http://webexpotour.net/">WebExpo Tour | Geeks on the road</a>.
 </p>
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -74,7 +74,7 @@ Vienna
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>
 So if you&#39;re in town, come join us.
