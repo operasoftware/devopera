@@ -7,7 +7,7 @@ tags:
 - html5
 - multimedia
 - open-web
-- opera-10
+- opera-presto
 - accessibility
 - video
 language: ja

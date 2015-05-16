@@ -3,12 +3,10 @@ title: 'My WebJam 8 Presentation on Builder AU: Cool Things With HTML5, SVG and 
 authors:
 - andreas-bovens
 tags:
-- smil
 - webjam8
 - video
 - html5
 - svg
-- odin
 license: cc-by-3.0
 ---
 

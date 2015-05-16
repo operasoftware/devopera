@@ -7,7 +7,6 @@ tags:
 - wot
 - extensions
 - interview
-- extinterview
 - opera
 cover: jpg
 license: cc-by-3.0

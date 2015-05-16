@@ -4,7 +4,7 @@ authors:
 - david-storey
 tags:
 - dom
-- developer-tools
+- dev-tools
 - dragonfly
 license: cc-by-3.0
 ---

@@ -8,7 +8,6 @@ tags:
 - javascript
 - w3c
 - video
-- core-qa
 - gstreamer
 - vorbis
 - canvas

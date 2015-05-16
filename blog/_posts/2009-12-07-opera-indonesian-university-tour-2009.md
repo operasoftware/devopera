@@ -3,9 +3,7 @@ title: Opera Indonesian University Tour 2009
 authors:
 - bruce-lawson
 tags:
-- indonesia
 - university
-- odin
 license: cc-by-3.0
 ---
 

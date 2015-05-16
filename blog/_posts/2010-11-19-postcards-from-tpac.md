@@ -10,7 +10,6 @@ tags:
 - webapps
 - w3c
 - standards
-- odin
 license: cc-by-3.0
 ---
 

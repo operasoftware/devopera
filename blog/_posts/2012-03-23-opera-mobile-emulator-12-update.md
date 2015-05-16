@@ -6,9 +6,7 @@ tags:
 - mobile-first
 - opera-mobile
 - emulator
-- debugging
 - mobile
-- odin
 license: cc-by-3.0
 ---
 

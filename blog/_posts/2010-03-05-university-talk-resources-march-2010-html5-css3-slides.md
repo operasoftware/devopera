@@ -6,7 +6,6 @@ tags:
 - css3
 - html5
 - university
-- odin
 license: cc-by-3.0
 ---
 

@@ -5,7 +5,6 @@ authors:
 tags:
 - fowd
 - demo
-- odin
 license: cc-by-3.0
 ---
 

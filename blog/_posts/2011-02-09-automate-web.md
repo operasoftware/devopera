@@ -9,7 +9,6 @@ tags:
 - testing
 - user-scenario
 - web-agency
-- odin
 license: cc-by-3.0
 ---
 

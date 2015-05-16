@@ -5,10 +5,8 @@ authors:
 tags:
 - css3
 - html5
-- evolution
 - svg
 - standards
-- odin
 license: cc-by-3.0
 ---
 

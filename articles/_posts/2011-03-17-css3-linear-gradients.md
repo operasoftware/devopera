@@ -4,7 +4,7 @@ authors:
 - chris-mills
 intro: 'This article shows you how to use CSS3 linear gradients, newly supported in Opera 11.10, to add special effects to your design work.'
 tags:
-- opera-11
+- opera-presto
 - gradients
 - css3
 license: cc-by-3.0

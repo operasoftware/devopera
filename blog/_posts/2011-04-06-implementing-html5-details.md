@@ -5,8 +5,7 @@ authors:
 tags:
 - accessibility
 - html5
-- internationalisation
-- odin
+- i18n
 license: cc-by-3.0
 ---
 

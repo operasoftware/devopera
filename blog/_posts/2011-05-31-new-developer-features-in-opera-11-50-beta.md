@@ -4,12 +4,11 @@ authors:
 - andreas-bovens
 tags:
 - dataset
-- opera-11
+- opera-presto
 - speed-dial
 - classlist
 - time
 - video
-- odin
 license: cc-by-3.0
 ---
 

@@ -5,7 +5,6 @@ authors:
 intro: 'A long time ago, in an office far far away… Opera released a custom build showing an implementation of a 3D canvas context. Now, more than 3 years later, we are releasing the first public build with a standards-based 3D canvas implementation using WebGL for Windows…'
 tags:
 - webgl
-- labs
 license: os-asa
 ---
 

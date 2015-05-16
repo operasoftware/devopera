@@ -3,8 +3,7 @@ title: A Colourful Opera 12.50 Snapshot
 authors:
 - patrick-lauke
 tags:
-- opera-12
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

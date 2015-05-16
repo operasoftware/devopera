@@ -3,9 +3,8 @@ title: Are You a Browser Sniffer? Get Your Site Ready for a New Smell
 authors:
 - david-storey
 tags:
-- opera-10
+- opera-presto
 - browser-sniffing
-- odin
 license: cc-by-3.0
 ---
 

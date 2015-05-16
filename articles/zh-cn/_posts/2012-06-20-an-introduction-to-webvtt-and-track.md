@@ -94,7 +94,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 
 这些 Cue 的设置能够定义文本的位置和对齐方式，设置选项如下：
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -136,7 +136,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 注意：如果没有设置 Cue 选项，默认位置是底部居中。
 
@@ -156,7 +156,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 
 除此之外，你可以用 "WebVTT Cue 内联样式" 来给实际 Cue 文本添加样式。这些内联样式类似于 HTML 元素，可以用来添加语义及样式。可用的内联样式如下列出：
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -192,7 +192,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 一个内联样式的实际应用例子如下：
 
@@ -230,7 +230,7 @@ WebVTT Cue 允许你指定特定时间戳范围内的文字（如字幕）。你
 
 HTML5 的 `<track>` 元素可以把外部轨道文件链接到特定资源上。`<track>` 元素的属性如下：
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -287,7 +287,7 @@ HTML5 的 `<track>` 元素可以把外部轨道文件链接到特定资源上。
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 `<track>` 元素是 `<audio>` 或 `<video>` 的子元素，可定义多个 `<track>` 元素：每个提供不同语言的字幕或不同的文本轨道。一个包含英文德文字幕和英文章节的视频例子如下：
 

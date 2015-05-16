@@ -4,9 +4,7 @@ authors:
 - chris-mills
 tags:
 - opera
-- naconf
 - conference
-- odin
 license: cc-by-3.0
 ---
 

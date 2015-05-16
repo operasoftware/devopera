@@ -3,11 +3,10 @@ title: 'Over the Air 2011 Slides — Web Anywhere: Mobile Optimisation With HTML
 authors:
 - bruce-lawson
 tags:
-- ota11
-- overtheair
-- one-web
 - mobile
-- odin
+- html
+- css3
+- javascript
 license: cc-by-3.0
 ---
 

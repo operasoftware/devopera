@@ -3,7 +3,7 @@ title: Extensions in Opera
 authors:
 - peter-krefting
 tags:
-- opera-11
+- opera-presto
 - extensions
 - coreblog
 license: cc-by-3.0

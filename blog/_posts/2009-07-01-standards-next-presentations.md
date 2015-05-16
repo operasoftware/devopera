@@ -5,8 +5,6 @@ authors:
 tags:
 - browsers
 - event
-- standards.next
-- odin
 license: cc-by-3.0
 ---
 

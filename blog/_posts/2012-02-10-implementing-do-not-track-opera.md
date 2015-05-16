@@ -9,7 +9,6 @@ tags:
 - w3c
 - dnt
 - implementation
-- odin
 license: cc-by-3.0
 ---
 

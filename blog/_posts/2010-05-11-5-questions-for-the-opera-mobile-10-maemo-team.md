@@ -5,9 +5,7 @@ authors:
 tags:
 - opera-mobile
 - nokia
-- maemo
 - interview
-- odin
 license: cc-by-3.0
 ---
 

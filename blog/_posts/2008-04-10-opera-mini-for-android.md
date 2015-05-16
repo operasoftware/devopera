@@ -6,7 +6,6 @@ intro: 'This article takes a look at one of Opera’s latest and greatest projec
 tags:
 - opera-mini
 - android
-- labs
 license: os-asa
 ---
 

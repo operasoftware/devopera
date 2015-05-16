@@ -5,7 +5,6 @@ authors:
 tags:
 - widgets
 - svg
-- odin
 license: cc-by-3.0
 ---
 

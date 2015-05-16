@@ -5,7 +5,6 @@ authors:
 tags:
 - cors
 - opera-next
-- odin
 license: cc-by-3.0
 ---
 

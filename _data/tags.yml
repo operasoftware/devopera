@@ -38,6 +38,7 @@
     - wai-aria
 - http
 - i18n
+- l10n
 - javascript:
   - canvas
   - communication:

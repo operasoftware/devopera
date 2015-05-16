@@ -4,8 +4,7 @@ authors:
 - daniel-davis
 tags:
 - widgets
-- opera-10
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

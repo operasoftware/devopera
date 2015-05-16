@@ -8,7 +8,6 @@ tags:
 - conference
 - standards
 - education
-- odin
 license: cc-by-3.0
 ---
 

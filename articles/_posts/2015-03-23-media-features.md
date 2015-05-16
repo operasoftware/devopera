@@ -18,6 +18,10 @@ Common use cases cited for interaction media features are often “make controls
 
 <figure block="figure" markdown="block">
 
+<figcaption elem="caption" markdown="span">
+	Some classic use cases for `pointer` or `hover`
+</figcaption>
+
 	@media (pointer:fine) {
 		/* ok to use small buttons/controls */
 	}
@@ -33,10 +37,6 @@ Common use cases cited for interaction media features are often “make controls
 	@media (hover:none), (hover:on-demand) {
 		/* suppress :hover-based menus */
 	}
-
-<figcaption elem="caption" markdown="span">
-	Some classic use cases for `pointer` or `hover`
-</figcaption>
 
 </figure>
 
@@ -58,7 +58,7 @@ So, right out of the gate, the fact that `pointer` and `hover` only relate to wh
 
 Fundamentally then, the problem with the original `pointer` and `hover` is that they don’t always adequately cover multi-input scenarios, and rely on the browser to be able to be able to correctly pick a single *primary* input. A user may for instance have paired a bluetooth mouse to their phone/tablet — suddenly, instead of a pointing device with `pointer:coarse` and `hover:none`, they have an additional `pointer:fine`, `hover:hover` capable one. But in all current implementations, browsers will still regard the touchscreen as the *primary* input. If a web developer relies purely on `pointer` and `hover` to add specific styling or functionality, no extra media queries based on these capabilities would kick in.
 
-<div block="table" markdown="block">
+<figure block="figure" markdown="block">
 
 | feature            | touchscreen | touchscreen + mouse | desktop/laptop | desktop/laptop + touchscreen |
 |--------------------|-------------|---------------------|----------------|------------------------------|
@@ -69,7 +69,7 @@ Fundamentally then, the problem with the original `pointer` and `hover` is that 
 | `hover:on-demand`  | **true**    | **true**            | false          | false                        |
 | `hover:hover`      | false       | false               | **true**       | **true**                     |
 
-</div>
+</figure>
 
 **Note:** from my (admittedly limited to Android/Blink) testing, it seems that on touchscreen devices, `hover:on-demand`, rather than `hover:none`, returns true — probably a conscious decision on the part of Blink, related to the fact that `:hover` (and even compatibility mouse events like `mouseover`) can be triggered by a touchscreen “tap”.
 
@@ -89,7 +89,7 @@ In order to support multi-input scenarios, where different inputs may have diffe
 
 (compared to `pointer` and `hover`, which only ever refer to the capabilities of the *primary* input). In current implementations, these media features evaluate as follows:
 
-<div block="table" markdown="block">
+<figure block="figure" markdown="block">
 
 | feature               | touchscreen | touchscreen + mouse | desktop/laptop | desktop/laptop + touchscreen |
 |-----------------------|-------------|---------------------|----------------|------------------------------|
@@ -100,10 +100,10 @@ In order to support multi-input scenarios, where different inputs may have diffe
 | `any-hover:on-demand` | **true**    | **true**            | false          | **true**                     |
 | `any-hover:hover`     | false       | **true**            | **true**       | **true**                     |
 
-</div>
+</figure>
 
-<figure block="figure" mod="right, half">
-	<img elem="media" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
+<figure block="figure" mod="right">
+	<img elem="media" mod="half" src="{{ page.id }}/android-touchscreen-mouse.png" alt="Interaction Media Features in Opera on an Android phone with paired bluetooth mouse">
 	<figcaption elem="caption">Interaction Media Features in Opera on an Android phone with paired bluetooth mouse</figcaption>
 </figure>
 
@@ -117,15 +117,15 @@ Take the example of a phone/tablet with a paired mouse: `any-hover:hover` will b
 
 <figure block="figure" markdown="block">
 
+<figcaption elem="caption" markdown="span">
+	Assumptions based on `any-pointer` or `any-hover`
+</figcaption>
+
 	@media (any-pointer:fine) and (any-hover:hover) {
 		/* at least one device is mouse-like…
 		we can use small buttons and :hover-based menus, right?
 		what if they’re using a touchscreen… */
 	}
-
-<figcaption elem="caption" markdown="span">
-	Assumptions based on `any-pointer` or `any-hover`
-</figcaption>
 
 </figure>
 
@@ -134,6 +134,10 @@ Take the example of a phone/tablet with a paired mouse: `any-hover:hover` will b
 Since we cannot know for sure which input is currently being used, I would suggest that `any-pointer` and `any-hover` are most valuable for checking the *lowest common denominator*, the least “capable” input. In the example of the phone/tablet with a paired mouse, we’d still only be able to use the information provided by `any-pointer` and `any-hover` to determine that yes, even though there are different inputs available, one of them is still coarse and does not support hover.
 
 <figure block="figure" markdown="block">
+
+<figcaption elem="caption" markdown="span">
+	Use `any-pointer` or `any-hover` for lowest common denominator
+</figcaption>
 
 	@media (any-pointer:coarse) {
 		/* at least one input is “coarse”
@@ -145,15 +149,15 @@ Since we cannot know for sure which input is currently being used, I would sugge
 		“on-demand” hover suppress :hover-based menus */
 	}
 
-<figcaption elem="caption" markdown="span">
-	Use `any-pointer` or `any-hover` for lowest common denominator
-</figcaption>
-
 </figure>
 
 Instead of testing for the presence of a particular capability, we could of course test for the *absence* of less capable inputs, and suppress styles that would otherwise be needed if those limited input types were present. However, the limited way in which the logical `not` works in [Media Queries Level 3](http://www.w3.org/TR/css3-mediaqueries/#media0) (which don’t support chaining multiple tests together with a comma — the logical `or` — and negating the whole resulting expression) makes this unnecessarily cumbersome, since we can effectively only test for the absence of *one* of the values at a time:
 
 <figure block="figure" markdown="block">
+
+<figcaption elem="caption" markdown="span">
+	Explicitly test for absence of “less capable” inputs
+</figcaption>
 
 	@media not all and (any-pointer:coarse) {
 		/* no inputs are “coarse”
@@ -170,10 +174,6 @@ Instead of testing for the presence of a particular capability, we could of cour
 		they either have “hover” or “on-demand” */
 	}
 
-<figcaption elem="caption" markdown="span">
-	Explicitly test for absence of “less capable” inputs
-</figcaption>
-
 </figure>
 
 **Note:** normally, the `all and` part would be superfluous, but it seems that in many current browser implementations, `not` only works correctly with an explicit media type as part of the query.
@@ -181,6 +181,10 @@ Instead of testing for the presence of a particular capability, we could of cour
 We could try to work around the limitations of `not` by using [nested `@media` blocks](http://www.w3.org/TR/css3-conditional/#contents-of), but this further increases complexity and has the potential for cross-browser incompatibilities at this point:
 
 <figure block="figure" markdown="block">
+
+<figcaption elem="caption" markdown="span">
+	Nested `@media` queries
+</figcaption>
 
 	@media not all and (any-hover:none) {
 		@media not all and (any-hover:on-demand) {
@@ -191,24 +195,20 @@ We could try to work around the limitations of `not` by using [nested `@media` b
 		}
 	}
 
-<figcaption elem="caption" markdown="span">
-	Nested `@media` queries
-</figcaption>
-
 </figure>
 
 Lastly, we could wait for the “full boolean algebra” approach of [Media Queries Level 4 media conditions](http://dev.w3.org/csswg/mediaqueries-4/#media-conditions) — but this is not currently supported in any browser:
 
 <figure block="figure" markdown="block">
 
+<figcaption elem="caption" markdown="span">
+	MQ Level 4 full boolean algebra media condition
+</figcaption>
+
 	@media not ((any-pointer:none) or (any-pointer:on-demand)) {
 		/* as above, but far more readable
 		sadly, not supported in any browser yet */
 	}
-
-<figcaption elem="caption" markdown="span">
-	MQ Level 4 full boolean algebra media condition
-</figcaption>
 
 </figure>
 

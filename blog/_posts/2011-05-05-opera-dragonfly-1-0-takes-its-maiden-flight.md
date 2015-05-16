@@ -4,7 +4,6 @@ authors:
 - david-storey
 tags:
 - dragonfly
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,8 +4,7 @@ authors:
 - david-storey
 tags:
 - dragonfly
-- developer-tools
-- odin
+- dev-tools
 license: cc-by-3.0
 ---
 

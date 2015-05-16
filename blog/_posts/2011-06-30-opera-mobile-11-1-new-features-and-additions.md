@@ -6,7 +6,6 @@ tags:
 - opera-mobile
 - opera-mini
 - viewport
-- odin
 license: cc-by-3.0
 ---
 

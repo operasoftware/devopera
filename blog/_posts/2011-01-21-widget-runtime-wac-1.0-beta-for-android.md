@@ -7,7 +7,6 @@ tags:
 - wac
 - widgets
 - android
-- labs
 license: os-asa
 ---
 

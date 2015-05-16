@@ -246,7 +246,7 @@ setInterval(function () {
 
 		<h3>Advantages</h3>
 
-<div block="table">
+<figure block="figure">
 		<table summary="This table lists the advantages of SVG and HTML5 Canvas.">
 				<tr>
 				 <th width="50%">Canvas</th>
@@ -289,11 +289,11 @@ setInterval(function () {
 				</td>
 			</tr>
 	 </table>
-</div>
+</figure>
 
 	 <h3>Disadvantages</h3>
 
-<div block="table">
+<figure block="figure">
 	 <table summary="This table lists the advantages of SVG and HTML5 Canvas">
 			<tr>
 				 <th width="50%">Canvas</th>
@@ -339,7 +339,7 @@ setInterval(function () {
 				</td>
 			</tr>
 		</table>
-</div>
+</figure>
 
 <p class="note">Note: If accessibility is a concern, HTML might be better
 		suited than SVG, being that it has more tools available for enabling and testing accessibility.

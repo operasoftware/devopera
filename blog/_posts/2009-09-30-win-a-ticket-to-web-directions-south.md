@@ -3,12 +3,11 @@ title: Win a Ticket to Web Directions South!
 authors:
 - chris-mills
 tags:
-- opera-10
+- opera-presto
 - showcase
 - web-standards
 - wds09
 - web-directions-south
-- odin
 license: cc-by-3.0
 ---
 

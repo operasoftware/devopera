@@ -5,7 +5,6 @@ authors:
 tags:
 - open-the-web
 - job
-- odin
 license: cc-by-3.0
 ---
 

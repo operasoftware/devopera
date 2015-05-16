@@ -3,7 +3,7 @@ title: Opera Dragonfly 1.1 Beta
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - beta
 - dragonfly
 license: cc-by-3.0

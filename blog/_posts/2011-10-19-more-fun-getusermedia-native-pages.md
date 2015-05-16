@@ -6,7 +6,6 @@ intro: 'This time we are making available a very exciting build indeed, with sup
 tags:
 - getusermedia
 - opera-mobile
-- labs
 license: os-asa
 ---
 

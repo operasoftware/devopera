@@ -3,11 +3,10 @@ title: '`@font-Face` Web Fonts Resources'
 authors:
 - bruce-lawson
 tags:
-- opera-10
+- opera-presto
 - css
 - fonts
 - web-fonts
-- odin
 license: cc-by-3.0
 ---
 

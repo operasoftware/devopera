@@ -6,7 +6,6 @@ tags:
 - dragonfly
 - weekly
 - release
-- odin
 license: cc-by-3.0
 ---
 

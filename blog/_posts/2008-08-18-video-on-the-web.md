@@ -6,8 +6,6 @@ tags:
 - video
 - w3c
 - audio
-- news
-- odin
 license: cc-by-3.0
 ---
 

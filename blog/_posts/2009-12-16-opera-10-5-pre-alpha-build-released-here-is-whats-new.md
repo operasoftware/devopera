@@ -9,8 +9,7 @@ tags:
 - offline-storage
 - carakan
 - css3
-- opera-10
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

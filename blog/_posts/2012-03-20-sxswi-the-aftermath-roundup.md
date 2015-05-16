@@ -16,8 +16,7 @@ tags:
 - mp3
 - audio
 - stuff
-- developer-tools
-- odin
+- dev-tools
 license: cc-by-3.0
 ---
 

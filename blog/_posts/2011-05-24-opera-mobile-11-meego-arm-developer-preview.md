@@ -7,7 +7,6 @@ tags:
 - meego
 - arm
 - opera-mobile
-- labs
 license: os-asa
 ---
 

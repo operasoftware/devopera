@@ -6,7 +6,6 @@ intro: 'Last year it became clear that the procedures for verifying data used to
 tags:
 - security
 - certificates
-- labs
 license: os-asa
 ---
 

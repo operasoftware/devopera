@@ -4,8 +4,6 @@ authors:
 - bruce-lawson
 tags:
 - html5
-- london-web-standards
-- odin
 license: cc-by-3.0
 ---
 

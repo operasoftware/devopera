@@ -6,7 +6,6 @@ tags:
 - open-source
 - opera
 - github
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,10 +4,8 @@ authors:
 - andreas-bovens
 tags:
 - panel
-- mobilism
 - opera
 - mobile
-- odin
 license: cc-by-3.0
 ---
 

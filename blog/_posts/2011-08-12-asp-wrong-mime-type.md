@@ -12,7 +12,6 @@ tags:
 - interoperability
 - mime-type
 - bug
-- odin
 license: cc-by-3.0
 ---
 
@@ -25,7 +24,7 @@ license: cc-by-3.0
 <li><p>If someone from Microsoft is listening, please please please, send a fix to Web developers using ASP.net on their Web sites. I suspect it is a rogue library doing very bad user agent sniffing in ASP.Net. These developers will love you. They will not have to suffer me anymore ;) </p></li>
 </ol>
 
-<div block="table">
+<figure block="figure">
 <table>
 	<caption>Web sites serving HTML as application/xhtml+xml to Opera</caption>
 	<thead>
@@ -89,4 +88,4 @@ license: cc-by-3.0
 		X-AspNet-Version: 2.0.50727</pre></td></tr>
 		<tr><td><a href="http://www.ellamoss.com/">Ella Moss Official Store</a></td><td><pre>X-OS-Node: 22.5.4</pre></td></tr>    </tbody>
 </table>
-</div>
+</figure>

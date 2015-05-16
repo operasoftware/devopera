@@ -4,13 +4,12 @@ authors:
 - andreas-bovens
 tags:
 - widgets
-- opera-10
+- opera-presto
 - dragonfly
 - video
 - css3
 - html5
 - standards
-- odin
 license: cc-by-3.0
 ---
 

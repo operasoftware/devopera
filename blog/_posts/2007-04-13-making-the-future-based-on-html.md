@@ -5,9 +5,7 @@ authors:
 intro: 'The W3C recently renewed its HTML activity. Opera joined the new HTML Working Group to help shape the future of the web and so can you. The HTML Working Group allows virtually everyone to participate.'
 tags:
 - w3c
-- htmlwg
 - whatwg
-- labs
 license: os-asa
 ---
 

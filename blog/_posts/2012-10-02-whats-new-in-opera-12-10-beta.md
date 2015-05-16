@@ -10,7 +10,6 @@ tags:
 - icc
 - extensions
 - prefixes
-- odin
 license: cc-by-3.0
 ---
 
@@ -70,7 +69,7 @@ Of course, this also has an effect on any related JavaScript events and properti
 
 If you’re interested in the absolute minutiae, here is a handy cut-out-and-keep chart you can keep in your anorak pocket.
 
-<div block="table">
+<figure block="figure">
 <table>
  <thead>
 	<tr>
@@ -143,7 +142,7 @@ If you’re interested in the absolute minutiae, here is a handy cut-out-and-kee
 	</tr>
  </tbody>
 </table>
-</div>
+</figure>
 
 “Old syntax” refers to the previous syntax of specifying “bottom left” for a linear gradient as opposed to the standardised syntax “to top right”, which is supported without a prefix. `-o-` prefixed linear gradients used to support a ‘semi-new’ syntax accepting the `to` keyword which has now been removed. In Opera 12.02 `-o-linear-gradient(bottom, red, green)` and `-o-linear-gradient(to top, red, green)` both worked, while in Opera 12.10+ and SDK 3.5+ only `-o-linear-gradient(bottom, red, green)` works.
 

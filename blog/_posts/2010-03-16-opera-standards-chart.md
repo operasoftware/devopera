@@ -5,10 +5,9 @@ authors:
 tags:
 - opera-mobile
 - testing
-- opera-10
+- opera-presto
 - opera-mini
 - standards
-- odin
 license: cc-by-3.0
 ---
 
@@ -22,10 +21,10 @@ Opera 10.5x for Desktop runs on the Presto 2.5 rendering engine, while Opera Min
 For an engine-specific (and more exhaustive) overview of our standards support, please check out <a href="http://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="http://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a>.
 </p>
 
-<div block="table">
-<table border="1">
+<figure block="figure">
+<table>
 <thead>
-<tr border="10px">
+<tr>
 <td></td>
 <td>Desktop 10.5x</td>
 <td>Mobile 10</td>
@@ -323,7 +322,7 @@ For an engine-specific (and more exhaustive) overview of our standards support, 
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>
 * Blur radius is not supported.

@@ -6,7 +6,6 @@ intro: 'Today, we are bringing Opera Widgets for desktop to center stage, empowe
 tags:
 - widgets
 - webapps
-- labs
 license: os-asa
 ---
 

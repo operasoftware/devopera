@@ -3,7 +3,7 @@ title: 'Opera 10: We’ve Only Just Begun'
 authors:
 - molly-holzschlag
 tags:
-- opera-10
+- opera-presto
 - browsers
 - rgb
 - hsl
@@ -12,7 +12,6 @@ tags:
 - standards
 - ui
 - hsla
-- odin
 license: cc-by-3.0
 ---
 

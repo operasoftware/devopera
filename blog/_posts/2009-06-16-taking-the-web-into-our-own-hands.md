@@ -5,7 +5,6 @@ authors:
 intro: 'This article explains what is Opera Unite, discusses “the Internet’s unfulfilled promise” and explains how it led to us creating Opera Unite, and shares some inspirational ideas to illustrate what you can do with it.'
 tags:
 - unite
-- labs
 license: os-asa
 ---
 

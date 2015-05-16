@@ -4,11 +4,9 @@ authors:
 - zi-bin-cheah
 tags:
 - webexpo
-- prague
 - viewport
 - mobile
 - media-queries
-- odin
 license: cc-by-3.0
 ---
 

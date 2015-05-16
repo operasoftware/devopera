@@ -6,7 +6,6 @@ intro: 'The big news today is that WebM will join the list of open and freely us
 tags:
 - webm
 - video
-- labs
 license: os-asa
 ---
 

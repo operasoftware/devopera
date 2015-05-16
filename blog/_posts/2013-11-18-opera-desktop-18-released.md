@@ -6,10 +6,8 @@ intro: '[Opera Desktop 18 for Mac and Windows](http://www.opera.com/computer) is
 tags:
 - getusermedia
 - webrtc
-- opera-18
 - themes
 - extensions
-- odin
 license: cc-by-3.0
 ---
 

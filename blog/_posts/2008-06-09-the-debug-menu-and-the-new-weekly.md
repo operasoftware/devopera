@@ -3,7 +3,6 @@ title: The “Debug Menu” and the new weekly
 authors:
 - shwetank-dixit
 tags:
-- debug-menu
 - dragonfly
 - weekly
 license: cc-by-3.0

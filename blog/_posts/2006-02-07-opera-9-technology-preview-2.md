@@ -4,8 +4,7 @@ authors:
 - hakon-wium-lie
 intro: 'The latest technology preview of Opera 9 is available today. We’ve added several big features – including BitTorrent support and Widgets.'
 tags:
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

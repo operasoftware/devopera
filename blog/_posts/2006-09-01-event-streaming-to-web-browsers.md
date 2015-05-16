@@ -5,8 +5,7 @@ authors:
 intro: 'One cool feature we added to Opera 9 is Server-Sent Events from the WHATWG Web Applications 1.0 specification. Using SSE you can push DOM events continously from your web server to the visitor’s browser. This creates a lot of exciting opportunities for web application authors.'
 tags:
 - server-sent-events
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

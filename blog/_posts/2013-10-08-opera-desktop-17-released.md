@@ -6,10 +6,8 @@ intro: '[Opera 17 for desktop is released](http://my.opera.com/desktopteam/blog/
 tags:
 - extensions
 - opera
-- opera-17
 - canvas
 - api
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,11 +4,10 @@ authors:
 - karlcow
 tags:
 - search
-- developer-tools
+- dev-tools
 - web-inspector
 - dom
 - dragonfly
-- odin
 license: cc-by-3.0
 ---
 

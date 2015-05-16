@@ -5,7 +5,7 @@ authors:
 tags:
 - alpha
 - command-line
-- opera-11
+- opera-presto
 - dragonfly
 license: cc-by-3.0
 ---

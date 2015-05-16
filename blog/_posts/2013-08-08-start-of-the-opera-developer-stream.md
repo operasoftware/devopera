@@ -3,10 +3,8 @@ title: Start of the Opera Developer Stream
 authors:
 - andreas-bovens
 tags:
-- opera-developer
 - flags
 - opera
-- odin
 license: cc-by-3.0
 ---
 

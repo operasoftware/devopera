@@ -8,10 +8,8 @@ tags:
 - iphone
 - opera-mobile
 - opera-mini
-- rit
 - mobile
 - ipad
-- odin
 license: cc-by-3.0
 ---
 

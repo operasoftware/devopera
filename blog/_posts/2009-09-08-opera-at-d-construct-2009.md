@@ -6,7 +6,6 @@ tags:
 - dconstruct
 - opera
 - conference
-- odin
 license: cc-by-3.0
 ---
 

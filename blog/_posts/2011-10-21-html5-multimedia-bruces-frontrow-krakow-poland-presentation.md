@@ -6,7 +6,6 @@ tags:
 - video
 - html5
 - multimedia
-- odin
 license: cc-by-3.0
 ---
 

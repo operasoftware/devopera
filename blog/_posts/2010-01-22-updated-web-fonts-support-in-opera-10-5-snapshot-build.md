@@ -3,10 +3,9 @@ title: Updated Web Fonts Support in Opera 10.5 Snapshot Build
 authors:
 - andreas-bovens
 tags:
-- opera-10
+- opera-presto
 - web-fonts
 - font-face
-- odin
 license: cc-by-3.0
 ---
 

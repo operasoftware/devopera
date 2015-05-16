@@ -5,9 +5,7 @@ authors:
 intro: 'Our lead SVG developer explains how to check that the SVG graphics you create really is compatible and working as intended.'
 tags:
 - svg
-- debugging
-- opera-9
-- labs
+- opera-presto
 license: os-asa
 ---
 

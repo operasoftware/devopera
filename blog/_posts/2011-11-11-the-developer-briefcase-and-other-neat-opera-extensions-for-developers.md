@@ -3,10 +3,8 @@ title: “The Developer Briefcase” and Other Neat Opera Extensions for Develop
 authors:
 - shwetank-dixit
 tags:
-- the-developer-briefcase
 - extensions
 - developers
-- odin
 license: cc-by-3.0
 ---
 

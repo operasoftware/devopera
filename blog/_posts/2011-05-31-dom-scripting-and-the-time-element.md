@@ -7,7 +7,6 @@ tags:
 - html5
 - dom
 - javascript
-- odin
 license: cc-by-3.0
 ---
 

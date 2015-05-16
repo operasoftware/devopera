@@ -3,8 +3,6 @@ title: Search Engine Optimisation Tool for Opera
 authors:
 - bruce-lawson
 tags:
-- seo
-- odin
 license: cc-by-3.0
 ---
 

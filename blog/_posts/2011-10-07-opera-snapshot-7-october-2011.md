@@ -3,13 +3,11 @@ title: 'What’s New in Opera’s Snapshots: 7 October 2011'
 authors:
 - chris-mills
 tags:
-- linear-gradients
-- ragnarok
-- opera
-- snapshot
 - css3
-- html5-parser
-- odin
+- gradients
+- html
+- html5
+- opera-presto
 license: cc-by-3.0
 ---
 

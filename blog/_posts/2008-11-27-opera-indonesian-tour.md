@@ -3,9 +3,6 @@ title: Opera Indonesian Tour
 authors:
 - bruce-lawson
 tags:
-- south-east-asia
-- indonesia
-- odin
 license: cc-by-3.0
 ---
 

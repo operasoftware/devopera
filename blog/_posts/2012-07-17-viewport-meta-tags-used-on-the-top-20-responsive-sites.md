@@ -8,7 +8,6 @@ tags:
 - mobile
 - responsive
 - meta
-- odin
 license: cc-by-3.0
 ---
 

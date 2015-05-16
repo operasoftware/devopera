@@ -3,6 +3,9 @@ title: Opera Mini and JavaScript
 authors:
 - tiffany-brown
 intro: 'Opera Mini is one of the world’s foremost mobile browsers, which runs on pretty much any device, even low-powered ones. It is a proxy-based browser, which has many advantages, including reducing the size of pages downloaded onto the user’s phone by up to 90%. On the downside, JavaScript can behave in unexpected ways when requested by Opera Mini. In this article we’ll discuss exactly what this means for your development work, in detail.'
+tags:
+- javascript
+- opera-mini
 license: cc-by-3.0
 ---
 
@@ -214,7 +217,7 @@ As mentioned before, Opera Mini versions 5.0 and upwards support progressive loa
 
 Mini supports DOM events, but only a subset. Much of this is dictated by hardware; some phones lack keyboards, for example. Below is a table of events and event attributes supported in Opera desktop or Opera Mobile that Opera Mini does not support.
 
-<div block="table">
+<figure block="figure">
 <table id="unsupportedbymini">
 <thead>
 <tr>
@@ -293,7 +296,7 @@ Mini supports DOM events, but only a subset. Much of this is dictated by hardwar
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 As you can see, **key events** such as `keypress` and `keyup` are not supported. Neither are `touch` and `scroll` events.
 

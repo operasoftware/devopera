@@ -6,7 +6,6 @@ intro: 'A bit more than a month after the release of Opera Mobile 10 for Windows
 tags:
 - opera-mobile
 - emulator
-- labs
 license: os-asa
 ---
 

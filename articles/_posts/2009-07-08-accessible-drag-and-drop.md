@@ -56,7 +56,7 @@ WAI-ARIA provides two properties to help make drag and drop accessible to users 
 
 The `aria-grabbed` property is used to determine whether an element is in a grabbed state for a drag and drop operation.
 
-<div block="table">
+<figure block="figure">
 <table>
 <caption markdwond="span">`aria-grabbed` values</caption>
 <thead>
@@ -76,7 +76,7 @@ The `aria-grabbed` property is used to determine whether an element is in a grab
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 If an element does not have an `aria-grabbed` property at all, the element cannot be dragged.
 
@@ -88,7 +88,7 @@ The `aria-grabbed` attribute in the following example indicates that the list it
 
 The `aria-dropeffect` property is a state that indicates the type of operation that will occur when an object taking part in a drag and drop operation is released on the target. More than one value can be provided as a space-separated list of tokens. The following table lists the possible values for `aria-dropeffect`.
 
-<div block="table">
+<figure block="figure">
 <table>
 <caption markdwond="span">`aria-dropeffect` values</caption>
 <thead>
@@ -124,7 +124,7 @@ The `aria-dropeffect` property is a state that indicates the type of operation t
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 The `aria-dropeffect` attribute in the following example indicates that the effect of dropping an object on this unordered list would be to remove the object from its current location, and copy it into this list.
 
@@ -142,7 +142,7 @@ HTML 5 has a [`draggable` attribute][8] to indicate whether an object can take p
 
 [8]: http://dev.w3.org/html5/spec/Overview.html#dom-draggable
 
-<div block="table">
+<figure block="figure">
 <table>
 <caption markdwond="span">`draggable` values</caption>
 <thead>
@@ -166,7 +166,7 @@ HTML 5 has a [`draggable` attribute][8] to indicate whether an object can take p
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 The HTML 5 drag and drop event model does not have a property that indicates whether an object has been selected to take part in a drag and drop operation, but it does have a [`dragstart` event][9] to initiate a drag and drop operation.
 
@@ -188,7 +188,7 @@ The [`DataTransfer`][10] object manages the attributes for the drag and drop ope
 [10]: http://dev.w3.org/html5/spec/Overview.html#datatransfer
 [11]: http://dev.w3.org/html5/spec/Overview.html#dom-datatransfer-dropeffect
 
-<div block="table">
+<figure block="figure">
 <table>
 <caption markdwond="span">`dropEffect` values</caption>
 <thead>
@@ -216,7 +216,7 @@ The [`DataTransfer`][10] object manages the attributes for the drag and drop ope
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 	objEvent.dataTransfer.dropEffect='move';
 
@@ -230,9 +230,9 @@ I have created a simple application to demonstrate drag and drop with ARIA and o
 
 [13]: http://www.w3.org/WAI/PF/aria-practices/#dragdrop
 
-<figure id="figure-1">
-	<img src="{{ page.id }}/screenshot.gif" alt="List of artists with three targets favourites tolerable rejected">
-	<figcaption>Figure 1: List of artists with three targets: favourites, tolerable, rejected</figcaption>
+<figure block="figure" id="figure-1">
+	<img elem="media" src="{{ page.id }}/screenshot.gif" alt="List of artists with three targets favourites tolerable rejected">
+	<figcaption elem="caption">Figure 1: List of artists with three targets: favourites, tolerable, rejected</figcaption>
 </figure>
 
 You can [check out the drag and drop example running live][15], or [download the source code][16] and play with it yourself.
@@ -297,9 +297,9 @@ The CSS class simply sets the background colour on the list to make it visually 
 		color:#000;
 		}
 
-<figure id="figure-2">
-	<img src="{{ page.id }}/highlighttarget.gif" alt="List targets visually identified with a red background">
-	<figcaption>Figure 2: List targets visually identified with a red background</figcaption>
+<figure block="figure" id="figure-2">
+	<img elem="media" src="{{ page.id }}/highlighttarget.gif" alt="List targets visually identified with a red background">
+	<figcaption elem="caption">Figure 2: List targets visually identified with a red background</figcaption>
 </figure>
 
 ### Ensure drop can be executed using the keyboard
@@ -312,9 +312,9 @@ In the demonstration, only one item can be dragged at a time. As pressing the `S
 
 When an artist is selected with the keyboard for dragging, a dialog for the user to select a target is automatically presented, as shown in Figure 3.
 
-<figure id="figure-3">
-	<img src="{{ page.id }}/popup.gif" alt="Popup with two targets to choose from">
-	<figcaption>Figure 3: Popup with two targets to choose from</figcaption>
+<figure block="figure" id="figure-3">
+	<img elem="media" src="{{ page.id }}/popup.gif" alt="Popup with two targets to choose from">
+	<figcaption elem="caption">Figure 3: Popup with two targets to choose from</figcaption>
 </figure>
 
 If more than one operation is allowable, such as `copy` or `move`, an ARIA-enabled dialog should be provided whereby keyboard users can choose the operation they want to perform, and the targets should use an `aria-dropeffect` property of `popup`.

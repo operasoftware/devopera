@@ -4,9 +4,8 @@ authors:
 - chris-mills
 intro: 'Originally published just before Christmas 2011, and now updated with a new set of builds on February 9th 2012, Opera is proud to present a new labs release featuring 64-bit builds and out-of-process plug-ins.'
 tags:
-- 64-bit
 - oopp
-- opera-12
+- opera-presto
 - plugins
 - security
 license: cc-by-3.0

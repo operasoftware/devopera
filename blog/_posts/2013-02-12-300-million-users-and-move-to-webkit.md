@@ -4,7 +4,6 @@ authors:
 - bruce-lawson
 tags:
 - webkit
-- odin
 license: cc-by-3.0
 ---
 

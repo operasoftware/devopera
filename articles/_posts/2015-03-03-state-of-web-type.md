@@ -24,7 +24,7 @@ An important caveat is that not all fonts include all 140+ OpenType features. Mo
 
 If a font includes the features you wish to use, you still need to check if your target browsers support OpenType features. While most modern browsers support either the low-level `font-feature-settings` syntax or the high level `font-variant-*` syntax, there are still several browsers in common use that don’t support either syntax. Notable examples are Internet Explorer versions 6 to 9 and all versions of Android WebKit until 4.4. Fortunately, the fallback behaviour for most OpenType features is graceful: text is still readable without them.
 
-<div block="table" markdown="block">
+<figure block="figure" markdown="block">
 
 | Feature                          | IE10 | IE11 | Chrome | Firefox | Safari | Opera |
 |----------------------------------|------|------|--------|---------|--------|-------|
@@ -35,7 +35,7 @@ If a font includes the features you wish to use, you still need to check if your
 | Contextual alternates (`calt`)   | Yes  | Yes  | Yes    | Yes     | Yes    | Yes   |
 | Small caps (`smcp`)              | Yes  | Yes  | Yes    | Yes     | No     | Yes   |
 
-</div>
+</figure>
 
 The above table summarizes browser support for the `font-feature-settings` property and a select number of OpenType features. You can find more browser [support data for common OpenType features on the State of Web Type](http://stateofwebtype.com/#opentype%20features).
 
@@ -52,13 +52,13 @@ Many web developers think of justification as a solved problem (or worse, one to
 
 Browsers could implement the same line breaking algorithm as used in TeX, but have decided not to for performance reasons. This is an odd reason — TeX was developed and runs on computers much less powerful than those commonly used in mobile phones. Another way to improve poor line breaking is by hyphenating words. This introduces more potential line break points and reduces the chance of awkward line breaks. A common misunderstanding is that hyphenation is only useful for justified text. This is not true. Hyphenation is also a useful tool to control the raggedness of center, left, and right aligned text. The CSS `hyphens` property can be used to control hyphenation. Setting it to `auto` will enable hyphenation (provided the document or element specifies a language using the `lang` attribute), while setting it to `none` disables hyphenation.
 
-<div block="table" markdown="block">
+<figure block="figure" markdown="block">
 
 | IE8 | IE9 | IE10 | IE11 | Chrome | Firefox | Safari | Opera |
 |-----|-----|------|------|--------|---------|--------|-------|
 | No  | No  | Yes  | Yes  | No     | Yes     | Yes    | No    |
 
-</div>
+</figure>
 
 The [`hyphens` property is supported by almost all modern browsers](http://stateofwebtype.com/#hyphens) except those based on the Blink rendering engine. Chrome and Opera previously supported the `hyphens` syntax but neither browser shipped with hyphenation dictionaries. In a surprising move they recently dropped support for the `hyphens` syntax completely. The Blink developers decided to [remove the `hyphens` property](https://groups.google.com/a/chromium.org/d/topic/blink-dev/STiDJjDwVF8/discussion) because it was never fully implemented and broke feature detection. While such regressions are not common, they are worrisome. A feature required for correct text layout should be supported everywhere. So, for now, you’ll need to rely on either server-side hyphenation or one of the two client-side hyphenation libraries: [Hypher](https://github.com/bramstein/hypher) and [Hyphenator](https://code.google.com/p/hyphenator/).
 
@@ -68,14 +68,14 @@ Web font usage has increased significantly in the past couple years. This is gre
 
 Not all browsers hide text while downloading web fonts. For example Internet Explorer always renders text in a fallback font while it is downloading fonts. This has been dubbed the Flash Of Unstyled Text (FOUT). This is a misnomer. The FOUT is a feature and a condition everyone should anticipate and design for. Selecting and testing fallback fonts is an important task while designing and building a site.
 
-<div block="table" markdown="block">
+<figure block="figure" markdown="block">
 
 |                | IE9  | IE10 | IE11 | Chrome | Firefox | Safari | Opera |
 |----------------|------|------|------|--------|---------|--------|-------|
 | font rendering | FOUT | FOUT | FOUT | FOIT   | FOIT    | FOIT   | FOIT  |
 | timeout        | n/a  | n/a  | n/a  | 3 sec. | 3 sec.  | ∞      | 3 sec.|
 
-</div>
+</figure>
 
 The above table shows the usage of the FOUT and FOIT across browsers. Note that Safari (and older Android WebKit versions) do not have a timeout. On these browsers, text won’t render until fonts have completely loaded.
 

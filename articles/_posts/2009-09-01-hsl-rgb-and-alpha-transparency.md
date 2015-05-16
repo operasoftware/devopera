@@ -24,7 +24,7 @@ license: cc-by-nc-sa-2.5
 
 <p class="note">Note: You can hover over each of the individual table cells to get information on what their color values are.</p>
 
-<div block="table">
+<figure block="figure">
 <table id="rgb" summary="visual table showing rgb color values">
 
 <caption>Table 1. RGB Colors Using integers and percentages</caption>
@@ -99,7 +99,7 @@ license: cc-by-nc-sa-2.5
 	<td title="rgb(50%, 0%, 0%)" style="background-color: rgb(50%, 0%, 0%);" class="rgb-red5-as"> </td>
 </tr>
 </table>
-</div>
+</figure>
 
 <h2>HSL: Hue, Saturation, Lightness Samples</h2>
 
@@ -133,7 +133,7 @@ license: cc-by-nc-sa-2.5
 
 <p>As a result, it becomes extremely easy to select a hue and then modify it by simply modifying its saturation and lightness values. This gives a range of options to the designer and developer that are very intuitive (Table 2).</p>
 
-<div block="table">
+<figure block="figure">
 <table summary="visual table showing hsl and rgb color values as CSS3">
 <caption>Table 2: HSL: Base Hue, Saturation, &amp; Lightness</caption>
 <tr>
@@ -221,7 +221,7 @@ license: cc-by-nc-sa-2.5
 	<td title="hsl(0, 0%, 45%)" style="background-color: hsl(0, 0%, 45%);" class="hsl-red5-ls"> </td>
 </tr>
 </table>
-</div>
+</figure>
 
 <p>With a bit of study, it should become clear to you that whether you're looking to increase or decrease lightness and saturation, or choose harmonious colors, using HSL is far more intuitive and easy to use.</p>
 
@@ -238,7 +238,7 @@ license: cc-by-nc-sa-2.5
 
 <p>Table 3 shows one column of RGBA and one of HSLA opacity in use.</p>
 
-<div block="table">
+<figure block="figure">
 <table summary="Table visually describing opacity and transparency in HSLA and RGBA">
 <caption>Table 3: Alpha transparency in RGBA and HSLA</caption>
 <tr>
@@ -260,7 +260,7 @@ license: cc-by-nc-sa-2.5
 	<td title="rgba(0,255,0,1)" style="background-color: rgba(0,255,0,1);" class="green4"> </td>
 </tr>
 </table>
-</div>
+</figure>
 
 <h2>Conclusion</h2>
 

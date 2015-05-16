@@ -7,7 +7,6 @@ tags:
 - education
 - tour
 - germany
-- odin
 license: cc-by-3.0
 ---
 

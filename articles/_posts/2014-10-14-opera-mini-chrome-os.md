@@ -13,8 +13,8 @@ license: cc-by-3.0
 	<figcaption elem="caption">Opera Mini running on a Chromebook</figcaption>
 </figure>
 
-<figure block="figure" mod="right, half">
-	<img elem="media" src="{{ page.id }}/installing.jpg" alt="Opera Mini installing on Chrome OS">
+<figure block="figure" mod="right">
+	<img elem="media" mod="half" src="{{ page.id }}/installing.jpg" alt="Opera Mini installing on Chrome OS">
 	<figcaption elem="caption">Opera Mini installing on Chrome OS</figcaption>
 </figure>
 

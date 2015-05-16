@@ -6,7 +6,7 @@ intro: 'An introduction to the new `object-fit` and `object-position` CSS3 prope
 tags:
 - css3
 - open-web
-- opera-11
+- opera-presto
 license: cc-by-nc-sa-3.0
 ---
 

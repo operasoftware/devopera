@@ -5,7 +5,6 @@ authors:
 tags:
 - bangladesh
 - opera-mini
-- odin
 license: cc-by-3.0
 ---
 

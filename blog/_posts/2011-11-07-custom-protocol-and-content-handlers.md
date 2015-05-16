@@ -5,8 +5,7 @@ authors:
 tags:
 - html5
 - protocols
-- opera-11
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

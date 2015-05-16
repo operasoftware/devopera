@@ -5,14 +5,13 @@ authors:
 tags:
 - devicePixelRatio
 - opera-mobile
-- odin
 license: cc-by-3.0
 ---
 
 <p>I&#39;ve been enjoying <a href="http://www.quirksmode.org/blog/archives/2012/06/devicepixelrati.html"><abbr title="Peter-Paul Koch">PPK</abbr>&#39;s recent look at <cite>devicePixelRatio</cite></a> and <a href="http://www.quirksmode.org/blog/archives/2012/07/more_about_devi.html"><cite>More about devicePixelRatio</cite></a>, but one detail in the latter post caught my eye: discussing the <code>devicePixelRatio</code> on the Galaxy Nexus, he notes that Opera Mobile goes for a ratio of <code>2.25</code>, while other browser use a ratio of <code>2</code>.</p>
 <p>By default, the <code>devicePixelRatio</code> in Opera Mobile is determined by the device&#39;s reported resolution:</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr><th>Resolution</th><th><code>devicePixelRatio</code></th><th></th></tr>
@@ -26,7 +25,7 @@ license: cc-by-3.0
 <tr><td>&gt; 320dpi</td><td>2.25</td></tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>Now, the Galaxy Nexus has a nominal resolution of 316dpi, so it should actually end up with a <code>devicePixelRatio</code> of <code>2</code>...but perhaps the OS is reporting it as 320dpi, triggering the slightly higher ratio.</p>
 <img src="{{ page.id }}/opera-mobile-zoom-settings.png" alt="Opera Mobile&#39;s Zoom settings" />

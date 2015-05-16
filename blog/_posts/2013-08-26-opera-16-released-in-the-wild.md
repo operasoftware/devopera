@@ -5,11 +5,8 @@ authors:
 tags:
 - stable
 - flags
-- opera-16
 - extensions
 - geolocation
-- disconnect
-- odin
 license: cc-by-3.0
 ---
 

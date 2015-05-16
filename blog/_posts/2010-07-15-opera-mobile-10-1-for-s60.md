@@ -7,7 +7,6 @@ tags:
 - carakan
 - mobile
 - vega
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,10 +4,8 @@ authors:
 - andreas-bovens
 intro: 'We sat down with the developers behind the novel cottonTracks extension, and asked them some questions over a (virtual) coffee. We talked about what the cottonTracks extension is all about, what their development workflow is, what they have learned thus far, and much more.'
 tags:
-- cottontracks
 - extensions
 - interview
-- extinterview
 - opera
 cover: png
 license: cc-by-3.0

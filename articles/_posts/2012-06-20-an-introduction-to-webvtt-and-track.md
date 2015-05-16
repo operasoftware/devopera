@@ -93,7 +93,7 @@ There are a number of settings that can be set per cue, and these are specified 
 
 These cue settings allow you to specify the position and alignment of the cue text, and the following options are available:
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -135,7 +135,7 @@ These cue settings allow you to specify the position and alignment of the cue te
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 Note: if no cue settings are set, the positioning default to the middle, at the bottom of the frame.
 
@@ -155,7 +155,7 @@ In this short example, the cue for `Cue-8` is aligned to the start of the line, 
 
 In addition to all this, you can use “WebVTT cue components” to add further information to the actual cue text itself. These components are similar to HTML elements, and can be used to add semantics and styling to the actual text strings. A list of the different components available is given below:
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -191,7 +191,7 @@ In addition to all this, you can use “WebVTT cue components” to add further 
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 An example of some of the components in action can be seen below:
 
@@ -229,7 +229,7 @@ Note: There is a [Live WebVTT validator][6] available, for when you want to chec
 
 HTML5’s `<track>` element allows you to link external track files with a particular resource. The `<track>` element takes a number of attributes, which are listed below:
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -286,7 +286,7 @@ HTML5’s `<track>` element allows you to link external track files with a parti
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 The `<track>` element is specified as a child of an `<audio>` or `<video>` element, and there can of course be more than one `<track>` element defined: each one may provide subtitles for different languages and/or different kinds of text tracks. An example of a video that has subtitles and chapters defined for it in both English and German is given below:
 

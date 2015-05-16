@@ -3,9 +3,8 @@ title: A Quick Look at What’s in Opera 12 Beta for Developers
 authors:
 - andreas-bovens
 tags:
-- opera-12
+- opera-presto
 - beta
-- odin
 license: cc-by-3.0
 ---
 

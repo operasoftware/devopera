@@ -3,7 +3,7 @@ title: Opera Dragonfly 1.1 RC6 is ready
 authors:
 - daniel-herzog
 tags:
-- developer-tools
+- dev-tools
 - release-candidate
 - dragonfly
 license: cc-by-3.0

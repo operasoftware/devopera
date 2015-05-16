@@ -4,9 +4,7 @@ authors:
 - bruce-lawson
 tags:
 - chromium
-- opera-15
 - blink
-- odin
 license: cc-by-3.0
 ---
 

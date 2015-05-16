@@ -5,10 +5,8 @@ authors:
 tags:
 - opera
 - getusermedia
-- operanext
 - camera
 - webapi
-- odin
 license: cc-by-3.0
 ---
 

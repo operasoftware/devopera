@@ -6,7 +6,6 @@ tags:
 - wcag
 - wai-aria
 - accessibility
-- odin
 license: cc-by-3.0
 ---
 

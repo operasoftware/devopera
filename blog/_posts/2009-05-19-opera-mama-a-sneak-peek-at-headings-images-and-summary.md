@@ -9,7 +9,6 @@ tags:
 - headings
 - summary
 - standards
-- odin
 license: cc-by-3.0
 ---
 

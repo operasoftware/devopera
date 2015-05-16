@@ -3,7 +3,7 @@ title: Latest weekly now live
 authors:
 - david-storey
 tags:
-- developer-tools
+- dev-tools
 - weekly
 - dragonfly
 license: cc-by-3.0

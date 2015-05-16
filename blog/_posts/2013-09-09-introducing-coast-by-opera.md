@@ -8,7 +8,6 @@ tags:
 - apps
 - ipad
 - browser
-- odin
 license: cc-by-3.0
 ---
 

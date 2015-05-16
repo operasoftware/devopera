@@ -7,8 +7,7 @@ tags:
 - gradients
 - prefixes
 - prefixes
-- opera-12
-- odin
+- opera-presto
 license: cc-by-3.0
 ---
 

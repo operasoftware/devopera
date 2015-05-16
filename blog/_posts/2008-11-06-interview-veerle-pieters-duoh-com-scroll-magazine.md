@@ -3,12 +3,9 @@ title: Interview With Veerle Pieters of Duoh.com and Scroll Magazine
 authors:
 - bruce-lawson
 tags:
-- belgian
 - print
-- belgium
 - veerle
 - mobile
-- odin
 license: cc-by-3.0
 ---
 

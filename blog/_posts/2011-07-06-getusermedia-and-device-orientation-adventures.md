@@ -9,7 +9,6 @@ tags:
 - camera
 - opera-mobile
 - android
-- odin
 license: cc-by-3.0
 ---
 

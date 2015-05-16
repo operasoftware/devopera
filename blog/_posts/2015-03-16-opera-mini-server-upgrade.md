@@ -71,11 +71,13 @@ Previously, the Opera Mini clusters were running a version of Opera Presto analo
 * CSS web fonts are not downloaded; instead the device’s system fonts are used. This is because many devices don’t allow other fonts to be installed; web fonts can be a large download that slows down rendering, and system fonts tend to be carefully optimised for the display they’re on so they give a better experience.
 * CSS and SVG animations don’t show; only the first frame is rendered.
 
+The Opera Mini UA string has been updated to reflect the new server version: it currently reads `Presto/2.12.423`. See more about the [Opera Mini request headers](/articles/opera-mini-request-headers/).
+
 ## Design considerations
 
 * If you use CSS gradients as backgrounds to text/buttons, set a sensible `background-color` that contrasts well with the text so that it can be read without the gradient.
 * Don’t rely on icon fonts, as web fonts aren’t downloaded. Instead, use an SVG `<img>`. These can be made responsive; see [How Media Queries Allow You to Optimize SVG Icons for Several Sizes](https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/).
-* If you rely on some sort of Geo IP tool for detecting a visitor’s location, note that the IP address you find in the headers is that of our compression proxy. The user’s original IP address is passed on via the `X-Forwarded-For` header.
+* If you rely on some sort of Geo IP tool for detecting a visitor’s location, note that the IP address you find in the headers is that of our compression proxy. The user’s original IP address is passed on via the `X-Forwarded-For` header. (Read more about [Opera Mini request headers](/articles/opera-mini-request-headers/).)
 * Ask yourself [“Do Websites Need to Look Exactly the Same in Every Browser”](http://dowebsitesneedtolookexactlythesameineverybrowser.com/) and remember that your content is the reason that visitors come to your site.
 
 ## Testing
@@ -100,4 +102,4 @@ Many developers choose to use [ngrok](https://ngrok.com/) to securely expose a l
 
 ## Conclusion
 
-After months of planning and testing, we’re delighted to bring the magic of ES5, HTML5 Parsing, CSS Flexbox and the glory of the `rem` unit to more than a quarter of a billion users. Meanwhile, we continue to work to make Opera Mini faster and [more widely-available](http://www.operasoftware.com/press/releases/mobile/2014-08-21) to ensure that *everyone* has access to the Web.
+After months of planning and testing, we’re delighted to bring the magic of ES5, HTML5 Parsing, CSS Flexbox and the glory of the `rem` unit to more than a quarter of a billion users. Meanwhile, we continue to work to make Opera Mini faster and [more widely-available](http://www.operasoftware.com/press/releases/mobile/2014-08-21) to ensure that [*everyone* has access to the Web](http://blogs.opera.com/news/2015/04/opera-mini-history-new-version-android/).

@@ -1,14 +1,19 @@
 'use strict';
 
-const OFFLINE_CACHE = 'offline';
+const OFFLINE_CACHE = 'qjmp8amy4kou8tuvg7tt23bn';
 const OFFLINE_URL = '/errors/offline.html';
+
+importScripts('/scripts/sw-cache-polyfill.js');
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(OFFLINE_CACHE).then(function(cache) {
 			return cache.addAll([
 				OFFLINE_URL,
-				'/styles/screen.css?v=fresh',
+				'/styles/qjmp8amy4kou8tuvg7tt23bn.css',
+				'/images/github.svg',
+				'/images/logo.png',
+				'/images/logo@2x.png',
 				'/scripts/highlight.js',
 				'/scripts/salvattore.js'
 			]);
@@ -22,7 +27,7 @@ self.addEventListener('fetch', function(event) {
 		event.request.headers.get('accept').includes('text/html')
 	) {
 		// It’s a GET request for an HTML document.
-		console.log('Handling fetch event for', event.request.url);
+		//console.log('Handling fetch event for', event.request.url);
 		event.respondWith(
 			fetch(event.request).catch(function(exception) {
 				// The `catch` is only triggered if `fetch()` throws an exception,
@@ -37,11 +42,9 @@ self.addEventListener('fetch', function(event) {
 			})
 		);
 	} else {
-		console.log('else');
 		event.respondWith(
 			caches.match(event.request).then(function(response) {
-				console.log('response: ', response);
-				return response || event.default();
+				return response || fetch(event.request);
 			})
 		);
 	}

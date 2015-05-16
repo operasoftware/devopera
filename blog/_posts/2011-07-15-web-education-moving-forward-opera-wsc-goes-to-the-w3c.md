@@ -12,7 +12,6 @@ tags:
 - opera
 - w3c
 - web-standards-curriculum
-- odin
 license: cc-by-3.0
 ---
 

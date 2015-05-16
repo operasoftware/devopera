@@ -88,7 +88,7 @@ Opera TV Emulator を使うことで、ローカルコンピューター上に�
 
 Opera TV Emulator では以下の audio/video メディアフォーマットをサポートしています。
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -178,7 +178,7 @@ Opera TV Emulator では以下の audio/video メディアフォーマットを�
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 ### H.264 デコーダーのインストール
 

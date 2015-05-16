@@ -5,7 +5,6 @@ authors:
 tags:
 - full-frontal
 - conference
-- odin
 license: cc-by-3.0
 ---
 

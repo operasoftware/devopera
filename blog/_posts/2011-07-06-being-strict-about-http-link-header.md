@@ -5,14 +5,12 @@ authors:
 tags:
 - user-interaction
 - ux
-- daisycms
 - browser
 - http
 - interoperability
 - opera
 - link
 - bug
-- odin
 license: cc-by-3.0
 ---
 

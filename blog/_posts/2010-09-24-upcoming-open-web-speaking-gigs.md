@@ -7,13 +7,12 @@ tags:
 - event
 - talk
 - conference
-- odin
 license: cc-by-3.0
 ---
 
 <p>It&#39;s Autumn and the conference season is in full swing! As the Opera Developer Relations team has quite a number of Open Web talks planned for the next couple of months, we thought we&#39;d give you an overview of what&#39;s coming up. Maybe we&#39;ll see you at one of these events!</p>
 
-<div block="table">
+<figure block="figure">
 <table id="events">
 	<tr>
 		<th>Date</th>
@@ -22,7 +21,6 @@ license: cc-by-3.0
 		<th>Talk</th>
 		<th>Speaker</th>
 	</tr>
-
 	<tr>
 		<td>9/25</td>
 		<td>Prague, Czech Republic</td>
@@ -30,7 +28,6 @@ license: cc-by-3.0
 		<td>Designing for the Mobile Web</td>
 		<td><a href="http://twitter.com/zibin/">Zi Bin</a></td>
 	</tr>
-
 	<tr>
 		<td>9/28</td>
 		<td>Mumbai, India</td>
@@ -38,7 +35,6 @@ license: cc-by-3.0
 		<td>The Societal Value of Mobile Networks: A Global Overview</td>
 		<td><a href="http://twitter.com/shwetank/">Shwetank</a></td>
 	</tr>
-
 	<tr>
 		<td>9/29</td>
 		<td>Manchester, UK</td>
@@ -46,7 +42,6 @@ license: cc-by-3.0
 		<td>HTML5 workshop</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>9/30</td>
 		<td>Lancashire, UK</td>
@@ -54,7 +49,6 @@ license: cc-by-3.0
 		<td>University talk: mobile web development</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>10/4</td>
 		<td>London, UK</td>
@@ -62,7 +56,6 @@ license: cc-by-3.0
 		<td>HTML5 for Web Developers</td>
 		<td><a href="http://twitter.com/mollydotcom/">Molly</a></td>
 	</tr>
-
 	<tr>
 		<td>10/9</td>
 		<td>Samara, Russia</td>
@@ -70,7 +63,6 @@ license: cc-by-3.0
 		<td>Веб в кривых. Второе рождение SVG</td>
 		<td><a href="http://twitter.com/pepelsbey/">Vadim</a></td>
 	</tr>
-
 	<tr>
 		<td>10/9</td>
 		<td>Bangalore, India</td>
@@ -78,7 +70,6 @@ license: cc-by-3.0
 		<td>All about CSS3</td>
 		<td><a href="http://twitter.com/shwetank/">Shwetank</a></td>
 	</tr>
-
 	<tr>
 		<td>10/12</td>
 		<td>Mainz, Germany</td>
@@ -86,7 +77,6 @@ license: cc-by-3.0
 		<td>Die schöne neue Welt von HTML5</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>10/12</td>
 		<td>Mainz, Germany</td>
@@ -94,7 +84,6 @@ license: cc-by-3.0
 		<td>Webseiten fuer mobile geraete optimieren</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>10/12</td>
 		<td>London, UK</td>
@@ -102,7 +91,6 @@ license: cc-by-3.0
 		<td>Advising UK government on accessibility and web education legislation</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>10/14</td>
 		<td>Sydney, Australia</td>
@@ -110,7 +98,6 @@ license: cc-by-3.0
 		<td>Widgets – Why Should I Care?</td>
 		<td><a href="http://twitter.com/ourmaninjapan/">Daniel</a></td>
 	</tr>
-
 	<tr>
 		<td>10/14</td>
 		<td>Timisoara, Romania</td>
@@ -132,7 +119,6 @@ license: cc-by-3.0
 		<td>Is these a bug?, or how to contribute to the jQuery project through better bug reporting.</td>
 		<td><a href="http://twitter.com/miketaylr/">Mike</a></td>
 	</tr>
-
 	<tr>
 		<td>10/18</td>
 		<td>London, UK</td>
@@ -140,7 +126,6 @@ license: cc-by-3.0
 		<td>A Web sized education problem?</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>10/20</td>
 		<td>Dubai, UAE</td>
@@ -148,7 +133,6 @@ license: cc-by-3.0
 		<td>Mobile apps and content - highlighting new trends</td>
 		<td><a href="http://twitter.com/shwetank/">Shwetank</a></td>
 	</tr>
-
 	<tr>
 		<td>10/21</td>
 		<td>Brooklyn, NY, USA</td>
@@ -156,7 +140,6 @@ license: cc-by-3.0
 		<td>HTML5 Kickstart</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>10/26</td>
 		<td>Brisbane, Australia</td>
@@ -164,7 +147,6 @@ license: cc-by-3.0
 		<td>Mobile web development: pleasure or pain?</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>10/28</td>
 		<td>Stafford, UK</td>
@@ -172,7 +154,6 @@ license: cc-by-3.0
 		<td>Introduction to HTML5 and CSS 3</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/2</td>
 		<td>Oak Ridge, TN, USA</td>
@@ -194,7 +175,7 @@ license: cc-by-3.0
 		<td>Open Web Standards: A Progress Report</td>
 		<td><a href="http://twitter.com/ourmaninjapan/">Daniel</a></td>
 	</tr>
-<tr>
+	<tr>
 		<td>11/8</td>
 		<td>Bandung, Indonesia</td>
 		<td><a href="http://www.comlabs.itb.ac.id/?p=687">OPERA Workshop – The Emerging Open Web</a></td>
@@ -208,7 +189,7 @@ license: cc-by-3.0
 		<td>Brave new world of HTML5</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-<tr>
+	<tr>
 		<td>11/8</td>
 		<td>Bandung, Indonesia</td>
 		<td><a href="http://mitcc.itmaranatha.org/?mnu=2">Seminar Teknologi Informasi</a></td>
@@ -222,14 +203,14 @@ license: cc-by-3.0
 		<td>Mobile Web Development: Technologies, Techniques and Tools</td>
 		<td><a href="http://twitter.com/shwetank/">Shwetank</a></td>
 	</tr>
-<tr>
+	<tr>
 		<td>11/11</td>
 		<td>Jakarta, Indonesia</td>
 		<td>Universitas Budi Luhur</td>
 		<td>Browsers &amp; Open Web Standards</td>
 		<td><a href="http://twitter.com/zibin/">Zi Bin</a></td>
 	</tr>
-<tr>
+	<tr>
 		<td>11/12</td>
 		<td>Jakarta, Indonesia</td>
 		<td>Universitas Katolik Indonesia Atma Jaya</td>
@@ -243,7 +224,6 @@ license: cc-by-3.0
 		<td>HTML5: semantics and structure</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/15</td>
 		<td>Nottingham, UK</td>
@@ -251,7 +231,6 @@ license: cc-by-3.0
 		<td>Making your sites mobile-friendly</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>11/15</td>
 		<td>Tokyo, Japan</td>
@@ -259,7 +238,6 @@ license: cc-by-3.0
 		<td>Be an Iron Chef of HTML5</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/17</td>
 		<td>New York City, NY, USA</td>
@@ -267,7 +245,6 @@ license: cc-by-3.0
 		<td>HTML5 and CSS3 workshop</td>
 		<td><a href="http://twitter.com/mollydotcom/">Molly</a></td>
 	</tr>
-
 	<tr>
 		<td>11/17</td>
 		<td>Manchester, UK</td>
@@ -275,7 +252,6 @@ license: cc-by-3.0
 		<td>Making your sites mobile-friendly</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>11/19</td>
 		<td>Oxford, UK</td>
@@ -283,7 +259,6 @@ license: cc-by-3.0
 		<td>HTML5</td>
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
-
 	<tr>
 		<td>11/19</td>
 		<td>Oxford, UK</td>
@@ -291,7 +266,6 @@ license: cc-by-3.0
 		<td>CSS3</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>11/23</td>
 		<td>Sydney, Australia</td>
@@ -299,7 +273,6 @@ license: cc-by-3.0
 		<td>HTML5, ARIA, Accessibility</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/24</td>
 		<td>Canberra, Australia</td>
@@ -307,7 +280,6 @@ license: cc-by-3.0
 		<td>HTML5, ARIA, Accessibility</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/24</td>
 		<td>Manchester, UK</td>
@@ -315,7 +287,6 @@ license: cc-by-3.0
 		<td>HTML5 workshop repeat</td>
 		<td><a href="http://twitter.com/chrisdavidmills/">Chris</a></td>
 	</tr>
-
 	<tr>
 		<td>11/25</td>
 		<td>Melbourne, Australia</td>
@@ -323,7 +294,6 @@ license: cc-by-3.0
 		<td>HTML5, ARIA, Accessibility</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>11/29</td>
 		<td>Perth, Australia</td>
@@ -331,7 +301,6 @@ license: cc-by-3.0
 		<td>HTML5, ARIA, Accessibility</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>12/1</td>
 		<td>Brisbane, Australia</td>
@@ -339,7 +308,6 @@ license: cc-by-3.0
 		<td>HTML5, ARIA, Accessibility</td>
 		<td><a href="http://twitter.com/brucel/">Bruce</a></td>
 	</tr>
-
 	<tr>
 		<td>12/1</td>
 		<td>Fort Lauderdale, FL, USA</td>
@@ -348,7 +316,6 @@ license: cc-by-3.0
 		<td>Demystifying HTML5</td>
 		<td><a href="http://twitter.com/mollydotcom/">Molly</a></td>
 	</tr>
-
 	<tr>
 		<td>12/2</td>
 		<td>London, UK</td>
@@ -357,6 +324,6 @@ license: cc-by-3.0
 		<td><a href="http://twitter.com/patrick_h_lauke/">Patrick</a></td>
 	</tr>
 </table>
-</div>
+</figure>
 
 <p>You can also follow us Twitter: here&#39;s a handy <a href="http://twitter.com/andreasbovens/opera-developer-relations/members">list of all people in the team</a>.</p>

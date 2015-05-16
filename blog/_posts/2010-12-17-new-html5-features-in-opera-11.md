@@ -3,9 +3,8 @@ title: New HTML5 Features in Opera 11
 authors:
 - bruce-lawson
 tags:
-- opera-11
+- opera-presto
 - html5
-- odin
 license: cc-by-3.0
 ---
 

@@ -4,7 +4,6 @@ authors:
 - patrick-lauke
 tags:
 - xml
-- odin
 license: cc-by-3.0
 ---
 

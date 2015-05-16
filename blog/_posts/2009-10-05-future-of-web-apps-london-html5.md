@@ -9,7 +9,6 @@ tags:
 - canvas
 - html5
 - svg
-- odin
 license: cc-by-3.0
 ---
 

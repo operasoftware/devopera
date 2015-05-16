@@ -6,7 +6,6 @@ tags:
 - accessibility
 - voiceover
 - screenreader
-- odin
 license: cc-by-3.0
 ---
 
@@ -76,7 +75,7 @@ license: cc-by-3.0
 
 <p>What follows is a list of main keyboard shortcuts. Where I have said &quot;Navigate to get VO feedback&quot; it means the function can be carried out but VoiceOver does not give feedback. Instead you need to start navigating in order to hear feedback.,</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 <thead>
 <tr>
@@ -178,7 +177,7 @@ license: cc-by-3.0
 </tr>
 </tbody>
 </table>
-</div>
+</figure>
 
 <p>I&#39;m not familiar enough with VoiceOver as a technology but I&#39;m told by our engineers that occasionally things lack feedback because it is hard to see what should be spoken and can be recognised. For example VoiceOver seems to have no concept of zoom level for instance.</p>
 

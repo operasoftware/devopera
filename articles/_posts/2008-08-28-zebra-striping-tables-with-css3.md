@@ -51,7 +51,7 @@ license: cc-by-nc-sa-2.5
 
 <p>In this example as shown in Table 1, you can see that the second child element is matched, then the seventh, then the twelfth, and so on, until we’ve run out of elements.</p>
 
-<div block="table">
+<figure block="figure">
 <table>
 <tr>
 	<th colspan="4" scope="col">Which child element gets selected?</th>
@@ -145,7 +145,7 @@ license: cc-by-nc-sa-2.5
 	<td>Y</td>
 </tr>
 </table>
-</div>
+</figure>
 
 <p class="comment">Table 1. Demonstrating which child element is selected</p>
 <h2>Calculating zebra stripes</h2>
@@ -154,7 +154,7 @@ license: cc-by-nc-sa-2.5
 
 <pre>tr:nth-child(2n)</pre>
 
-<div block="table">
+<figure block="figure">
 <table border="1">
 <tr>
 	<th colspan="3" scope="col">Which child element gets selected?</th>
@@ -234,7 +234,7 @@ license: cc-by-nc-sa-2.5
 	<td>Y</td>
 </tr>
 </table>
-</div>
+</figure>
 
 <p class="comment">Table 2. Demonstrating that only even-numbered of rows are selected</p>
 <p>To target all odd rows, we would compose the following selector:</p>
@@ -243,7 +243,7 @@ license: cc-by-nc-sa-2.5
 
 <p>This selector matches the first row within a table, and every second row after that—all of the odd rows as shown in Table 3.</p>
 
-<div block="table">
+<figure block="figure">
 <table border="1">
 <tr>
 	<th colspan="4" scope="col">Which child element gets selected?</th>
