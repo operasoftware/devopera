@@ -32,6 +32,10 @@ Our goal is to reach as many people as possible with the books they need to succ
 
 **Proxy based browsers like Opera Mini are really popular amongst the target demographic of Worldreader. What steps did you take to ensure a great reading experience, especially for proxy browsers like Opera Mini?**
 
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/worldreader_web_app.png" alt="Worldreader on Opera Mini">
+</figure>
+
 Proxy browsers are commonly used on small-screen devices, so we took that into account when laying out the book for reading. We formatted the text so that it didn’t have any large tables or images that would break the layout. The user interaction capabilities also needed to be taken into account; everything was to be formatted in a single column to avoid the need for horizontal scrolling and, on keypad devices, keeping the scrolling consistent with link selection. The goal was to make it so you only have to use the down and center buttons to read a book. In addition, we added some tips to Opera Mini’s shortcuts to remind people how to scroll one page at a time.
 
 The buttons were designed in such a way that accommodates how fast users can scroll from the top of the page to the buttons. This was mainly for the bracket-based navigation, which is still used in older versions. We placed one menu link at the top of the page instead of multiple links to avoid users having to press a new button to skip each link before being able to scroll. Many of our users have inexpensive mobile devices with lower quality touchscreens and so, to ensure the experience remained optimal for these users, we produced larger buttons that facilitate navigation on all devices.
