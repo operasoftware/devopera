@@ -7,24 +7,24 @@ tags:
 - opera-mini
 - mobile
 license: cc-by-3.0
-published: false
+cover: jpg
 ---
 
 I recently got to ask some questions with the team from [Worldreader](http://worldreader.org) — a non-profit organization which provides free e-books to people in developing countries. It’s fascinating work, and something which presents its own challenges and rewards. Their target demographic is unusual for most web developers, especially those who live in developed economies.
 
-The following interview will highlight some aspects of their work and their organization. The heading are my questions, followed by the response from the Worldreader team.
-
-**Please let our readers know about what Worldreader is, as an organization?**
+The following interview will highlight some aspects of their work and their organization.
 
 <figure block="figure">
 	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/PzRt7xTa4hE" allowfullscreen></iframe>
 </figure>
 
+**Please let our readers know about what Worldreader is, as an organization?**
+
 Worldreader is a global non-profit organization providing access to free e-books in the developing world, be that digital textbooks in schools, children’s leveled readers in libraries, or novels and short stories on mobile phones. The organization was established in 2010 and has since built a digital library of over 15,000 culturally relevant books, distributed on nearly 10,000 Kindles to students across sub-Saharan Africa, and via two mobile phone apps that have been downloaded on more than 2 million low-end feature and smart phones across the world. Through our efforts and our partnerships with device manufacturers, mobile operators, teachers, governments, and the communities where we work, Worldreader is working towards a world in which every child and her family have the books they need to improve their lives, the practice of reading is commonplace, and where illiteracy is a thing of the past.
 
 **What is your app, Worldreader Mobile, all about?**
 
-Worldreader Mobile is a single place to discover, read, and collect free e-books in a variety of languages, from different parts of the world. It’s an app that enables reading anywhere, anytime since it’s available on any internet-enabled mobile phone, including the simplest of feature phones. Readers from all over the world, and especially in areas facing poor connectivity and shortage of physical books, can enjoy a library of digital books in 70 genres and 44 languages. From textbooks, to fiction novels, to health information, to short stories-- all books on Worldreader Mobile are designed to empower and improve people’s lives.
+Worldreader Mobile is a single place to discover, read, and collect free e-books in a variety of languages, from different parts of the world. It’s an app that enables reading anywhere, anytime since it’s available on any internet-enabled mobile phone, including the simplest of feature phones. Readers from all over the world, and especially in areas facing poor connectivity and shortage of physical books, can enjoy a library of digital books in 70 genres and 44 languages. From textbooks, to fiction novels, to health information, to short stories — all books on Worldreader Mobile are designed to empower and improve people’s lives.
 
 **You already have native applications for Worldreader, but now you’ve placed heavy emphasis on the web platform too. What, in your opinion, makes the web such an attractive platform, especially for an application like yours? What are the advantages that the web provides, compared to other platforms?**
 
