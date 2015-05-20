@@ -38,7 +38,7 @@ There are several strategies for dealing with this interoperability problem, but
 
 `scrollX`/`scrollY` or `pageXOffset`/`pageYOffset` give the viewport’s scroll position and `window.scrollTo(x, y)` scrolls the viewport. This is what e.g. [jQuery](https://github.com/jquery/jquery/blob/002240a6eb1cee2fcd886d5cf44893eb67f246f1/src/offset.js#L169-L192) does.
 
-Problem: `scrollX`/`scrollY`/`pageXOffset`/`pageYOffset` are not supported in IE8 and below.
+Problem: `scrollX`, `scrollY`, `pageXOffset`, and `pageYOffset` are not supported in IE8 and below.
 
 ### Using both elements
 
