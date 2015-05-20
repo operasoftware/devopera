@@ -1,14 +1,13 @@
 ---
 title: Fixing the `scrollTop` bug
 authors:
-- zcorpan
+- simon-pieters
 intro: 'Which element scrolls the viewport when using `scrollTop`? This article explains what “the `scrollTop` bug” is and what we need to do to get it fixed. Your help is needed!'
 tags:
 - compatibility
 - css
 - javascript
 license: cc-by-3.0
-published: false
 ---
 
 The [CSSOM View](http://dev.w3.org/csswg/cssom-view/) specification has a handful of widely-implemented properties on the `Element` interface related to scrolling: `scrollTop`, `scrollLeft`, `scrollWidth`, `scrollHeight`. These give the current scroll position of the element, and the size of the scrolling area. `scrollTop` and `scrollLeft` can also be set to cause a scroll. When these are used on the root element, they instead reflect the scroll position and scroll area of the viewport. The `clientWidth` and `clientHeight` properties similarly reflect the viewport dimensions instead of the element’s dimensions for the root element.
