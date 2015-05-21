@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 The [CSSOM View](http://dev.w3.org/csswg/cssom-view/) specification has a handful of widely-implemented properties on the `Element` interface related to scrolling: `scrollTop`, `scrollLeft`, `scrollWidth`, `scrollHeight`. These give the current scroll position of the element, and the size of the scrolling area. `scrollTop` and `scrollLeft` can also be set to cause a scroll. When these are used on the root element, they instead reflect the scroll position and scroll area of the viewport. The `clientWidth` and `clientHeight` properties similarly reflect the viewport dimensions instead of the element’s dimensions for the root element.
 
-However, WebKit (Safari) and Blink (Chrome and Opera) do not behave this way. They make the `body` element reflect the viewport instead, and the root element returns `0` and does nothing on setting. IE11 and Firefox follow the specification. This is an interoperability problem that Web developers have to work around in some way, possibly by UA sniffing.
+However, [WebKit](https://bugs.webkit.org/show_bug.cgi?id=5991) (Safari) and [Blink](https://code.google.com/p/chromium/issues/detail?id=157855) (Chrome and Opera) do not behave this way. They make the `body` element reflect the viewport instead, and the root element returns `0` and does nothing on setting. IE11 and Firefox follow the specification. This is an interoperability problem that Web developers have to work around in some way, possibly by UA sniffing.
 
 We want to fix this bug, but **we need your help** to fix sites that rely on the bug based on UA sniffing.
 
