@@ -22,9 +22,9 @@ In general, we want to avoid special-casing the `body` element and just let the 
 
 Both WebKit and Blink have previously tried to fix this bug, but had to revert because there were Web pages that expected the buggy behavior when the browser identified as “WebKit”.
 
-### Project Spartan
+### Project Spartan / Edge
 
-Microsoft’s latest browser engine, codenamed [Project Spartan](http://blogs.windows.com/bloggingwindows/2015/03/30/introducing-project-spartan-the-new-browser-built-for-windows-10/), also identifies as “WebKit”, like WebKit and Blink, and so they have to copy WebKit/Blink’s bugs in order to be compatible with the Web.
+Microsoft’s latest browser engine, codenamed [Project Spartan](http://blogs.windows.com/bloggingwindows/2015/03/30/introducing-project-spartan-the-new-browser-built-for-windows-10/) and used in the upcoming Edge browser, also identifies as “WebKit”, like WebKit and Blink, and so they have to copy WebKit/Blink’s bugs in order to be compatible with the Web.
 
 ## Quirks mode
 
@@ -96,7 +96,7 @@ In order to have a reliable alternative to UA sniffing, we are introducing a new
 
 ## Testing
 
-1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](http://www.opera.com/en/developer), based on Chromium 44 or later. These browsers have native `document.scrollingElement` support.
+1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](http://www.opera.com/en/developer), based on Chromium 44 or later, or [Microsoft Edge](http://windows.microsoft.com/en-us/windows/preview-download). These browsers have native `document.scrollingElement` support.
 2. Check that your site still works.
 
 ## Reporting issues
