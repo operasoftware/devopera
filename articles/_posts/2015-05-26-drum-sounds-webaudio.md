@@ -4,10 +4,10 @@ authors:
 - chris-lowis
 intro: 'Learn the basics of the Web Audio API by creating some classic electronic drum sounds.'
 tags:
+- javascript
+- media
 - audio
-cover: png
 license: cc-by-3.0
-published:false
 ---
 
 ## The Web Audio API
