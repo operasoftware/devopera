@@ -34,7 +34,7 @@ We’ll kick off with the basis of all good drum loops, the kick drum. To genera
 	console.log(context.destination.channelCount);
 	// → 2
 
-We can describe audio digitally as a series of numbers. Each number describes the amplitude of the sound at a particular point in time. We call each one of these numbers a “sample”[^2]. Calling `context.sampleRate` tells us how many samples per second our device can produce. A typical sample rate is 44,100 samples/second, as this is sufficient to reproduce sounds at frequencies as high as we humans can perceive. `context.destination.channelCount` gives the number of simultaneous channels of audio our device can produce — on my computer that’s two: one for the left speaker, and one for the right.
+We can describe audio digitally as a series of numbers. Each number describes the amplitude of the sound at a particular point in time. We call each one of these numbers a “sample”. (“Sampling” gets its name from the process of turning a recording of a real sound into a series of samples.) Calling `context.sampleRate` tells us how many samples per second our device can produce. A typical sample rate is 44,100 samples/second, as this is sufficient to reproduce sounds at frequencies as high as we humans can perceive. `context.destination.channelCount` gives the number of simultaneous channels of audio our device can produce — on my computer that’s two: one for the left speaker, and one for the right.
 
 It would be possible, but not very user-friendly, to create the sound we want to make by giving the computer 44,100 numbers per second, if we knew which numbers to give it to create the sound of a kick drum. But the Web Audio API makes the process easier by providing us with a higher level, declarative set of commands to describe to the computer how to make the sound we want.
 
@@ -53,7 +53,7 @@ Make it stop? OK.
 
 There’s a few things to note in the code above. Firstly `createOscillator` is a method on `context` — it needs to know about the audio environment it’s operating in to generate the sound. All of the applications you build with Web Audio will work within an `AudioContext`.
 
-Secondly, we `connect` the oscillator to the `destination` of the `context`. This is an important concept within the Web Audio API. We call `oscillator` and `destination` instances of “nodes” and by connecting them together we create a graph[^1].
+Secondly, we `connect` the oscillator to the `destination` of the `context`. This is an important concept within the Web Audio API. We call `oscillator` and `destination` instances of “nodes” and by connecting them together we create a graph. (This diagram was generated using the Web Audio developer tools in Firefox Developer Edition.)
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/context-oscillator.png" alt="Node graph of oscillator connected to destination">
@@ -306,6 +306,3 @@ We’ve only scratched the surface of drum synthesis in this article. For furthe
 
 - The Synth Secrets series from Sound on Sound magazine is a goldmine of interesting articles on synthesis using hardware synthesisers. With some thought, many of the techniques can be recreated using the nodes provided by the Web Audio API. The articles on synthesising a [snare drum](http://www.soundonsound.com/sos/Mar02/articles/synthsecrets0302.asp), [kick drum](http://www.soundonsound.com/sos/Feb02/articles/synthsecrets0202.asp) and [cymbal](http://www.soundonsound.com/sos/jul02/articles/synthsecrets0702.asp) were very useful for this blog post.
 - The [Dance Music Manual](http://www.amazon.co.uk/gp/product/0415825644/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0415825644&linkCode=as2&tag=chrislowis-21&linkId=JVUM7JCHQB7DC7XO) by Rick Snoman is an in-depth look at electronic music production and has a very informative section of drum machine synthesis.
-
-[^1]: This diagram was generated using the Web Audio developer tools in Firefox Developer Edition.
-[^2]: “Sampling” gets its name from the process of turning a recording of a real sound into a series of samples.
