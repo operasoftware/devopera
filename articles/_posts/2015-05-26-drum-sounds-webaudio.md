@@ -135,7 +135,7 @@ We store a reference to the audio context when we create the kick, and then each
 
 ### The Snare Drum
 
-A snare drum has a rigid shell holding two, taught drum membranes. When the top membrane is struck, a series of wire springs held underneath the lower membrane rattle in sympathy. There’s a complexity to the snare sound that makes it more challenging to synthesise. But we can tackle it in stages to make the process easier.
+A snare drum has a rigid shell holding two, taut drum membranes. When the top membrane is struck, a series of wire springs held underneath the lower membrane rattle in sympathy. There’s a complexity to the snare sound that makes it more challenging to synthesise. But we can tackle it in stages to make the process easier.
 
 First, the rattle of the wire snare underneath the drum can be synthesised using a burst of noise. We can create noise using a random number generator.
 
