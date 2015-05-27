@@ -122,5 +122,6 @@
 	"testing-your-app-inside-the-opera-tv-store": "tv/testing-your-app-inside-opera-tv-store",
 	"tweaking-spatial-navigation-for-tv-browsing": "tv/tweaking-spatial-navigation-for-tv-browsing",
 
-	"web-notifications-in-opera-developer-24": "web-notifications-in-opera-developer-25"
+	"web-notifications-in-opera-developer-24": "web-notifications-in-opera-developer-25",
+	"mini": "blog/opera-mini-server-upgrade"
 }
