@@ -293,11 +293,11 @@ All of these libraries make it easy to build a simple loop, and it’s a fun exe
         Tone.Transport.start();
     };
 
-    sampleLoader('/hihat.wav', context, play);
+    sampleLoader('./hihat.wav', context, play);
 
 In this code, `Tone.Transport` is the interface to the `Tone.js` [timing library](https://github.com/TONEnoTONE/Tone.js/wiki/Transport). We set a tempo for our loop using the `bpm` property — here 120 beats per minute. The `Transport.setInterval` method is used to schedule repeating events. We can think of it as working like a regular `setInterval` but for scheduling of events relative to the audio clock. The time value passed to `Transport.setInterval` can be expressed, as here, in a musical way rather than in seconds. `4n` means 4 beats to the bar, `2n is two beats` and `8t` creates eighth-note triplets on the hi-hat. The value is converted into seconds and passed in as the `time` parameter to our `trigger` methods, so we don’t need to modify our code to work with this library.
 
-Finally, we call the `play` method when the hi-hat sample has loaded, which starts our loop.
+Finally, we call the `play` method when the hi-hat sample has loaded, which starts our loop. We haven't loaded `Tone.js` into this page, so if you're following along in the console, try the code [on the demo site](https://chrislo.github.io/drum_synthesis/).
 
 ## Conclusion
 
