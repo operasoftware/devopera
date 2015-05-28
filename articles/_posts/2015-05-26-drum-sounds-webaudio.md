@@ -260,7 +260,7 @@ Remember that the network and decoding requests are asynchronous, so we have to 
 
     sampleLoader('./hihat.wav', context, function(buffer) {
         var hihat = new HiHat(context, buffer);
-        hihat.trigger(0);
+        hihat.trigger(context.currentTime);
     });
 
 ## Timing
