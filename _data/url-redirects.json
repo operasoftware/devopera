@@ -107,6 +107,7 @@
 	"labs-widget-runtime-wac-1-0-supporting-beta-2-for-android": "blog/widget-runtime-wac-1.0-beta-2-for-android",
 	"labs-widgets-runtime-wac-1-0-supporting-alpha-for-android": "blog/widget-runtime-wac-1.0-alpha-for-android",
 	"labs-widgets-runtime-wac-1-0-supporting-beta-for-android": "blog/widget-runtime-wac-1.0-beta-for-android",
+	"web-notifications-in-opera-developer-24": "blog/web-notifications-in-opera-developer-25",
 
 	"building-applications-for-the-opera-tv-store": "tv/building-applications-for-the-opera-tv-store",
 	"creating-tv-store-icons-thumbnails-and-screenshots": "tv/tv-store-icons-thumbnails-and-screenshots",
@@ -120,8 +121,5 @@
 	"opera-tv-emulator-getting-started": "tv/opera-tv-emulator-getting-started",
 	"opera-tv-store-app-templates": "tv/opera-tv-store-app-templates",
 	"testing-your-app-inside-the-opera-tv-store": "tv/testing-your-app-inside-opera-tv-store",
-	"tweaking-spatial-navigation-for-tv-browsing": "tv/tweaking-spatial-navigation-for-tv-browsing",
-
-	"web-notifications-in-opera-developer-24": "web-notifications-in-opera-developer-25",
-	"mini": "blog/opera-mini-server-upgrade"
+	"tweaking-spatial-navigation-for-tv-browsing": "tv/tweaking-spatial-navigation-for-tv-browsing"
 }
