@@ -77,10 +77,12 @@ Back to our kick drum. A lot of people have researched the acoustics of drums an
     oscillator.connect(gain);
     gain.connect(context.destination);
 
-    gain.gain.setValueAtTime(1, 0);
-    gain.gain.exponentialRampToValueAtTime(0.001, 0.5);
-    oscillator.start(0);
-    oscillator.stop(0.5);
+    var now = context.currentTime;
+
+    gain.gain.setValueAtTime(1, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+    oscillator.start(now);
+    oscillator.stop(now + 0.5);
 
 In the code above, we’ve created this audio graph:
 
@@ -96,8 +98,8 @@ A `gain` node is like a volume control. We can use that to control the amplitude
 
 Armed with this knowledge, we now know how to complete our kick drum synthesis: by dropping the frequency of the oscillator rapidly after the initial attack.
 
-    oscillator.frequency.setValueAtTime(150, 0);
-    oscillator.frequency.exponentialRampToValueAtTime(0.001, 0.5);
+    oscillator.frequency.setValueAtTime(150, now);
+    oscillator.frequency.exponentialRampToValueAtTime(0.001, now + 0.5);
 
 If you’ve been following along with the code in this article, you may have noticed that once you call `stop` on an oscillator, it’s impossible to call `start` again. This is intentional — it allows the browser to garbage-collect the nodes more efficiently in large audio graphs — but it does make working with these drum sounds more complicated as we’d like a way to trigger them multiple times. We can solve this by wrapping the code we’ve written in a simple object:
 
@@ -128,10 +130,11 @@ If you’ve been following along with the code in this article, you may have not
 
 We store a reference to the audio context when we create the kick, and then each time we trigger the kick sound we can pass in a time, which creates the audio graph and schedules the parameter changes.
 
-    kick = new Kick(context);
-    kick.trigger(0);
-    kick.trigger(0.5);
-    kick.trigger(1);
+    var kick = new Kick(context);
+    var now = context.currentTime;
+    kick.trigger(now);
+    kick.trigger(now + 0.5);
+    kick.trigger(now + 1);
 
 ### The Snare Drum
 
