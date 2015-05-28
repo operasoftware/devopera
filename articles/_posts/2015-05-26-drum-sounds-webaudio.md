@@ -26,7 +26,7 @@ In this article we’ll try and create something that sounds a bit like the clas
 
 ### The kick
 
-We’ll kick off with the basis of all good drum loops, the kick drum. To generate audio using the Web Audio API, your browser needs to know about the sound producing devices available to your computer, and what capabilities. This information is contained in the `AudioContext`.
+We’ll kick off with the basis of all good drum loops, the kick drum. To generate audio using the Web Audio API, your browser needs to know about the sound producing device available to your computer, and what capabilities it has. This information is contained in the `AudioContext`.
 
     var context = new AudioContext;
     console.log(context.sampleRate);
