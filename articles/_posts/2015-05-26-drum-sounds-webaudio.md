@@ -160,7 +160,7 @@ First, the rattle of the wire snare underneath the drum can be synthesised using
 
 In this code we create a “buffer” of individual samples, which we can later trigger at a precise time. The call to `createBuffer` specifies that the buffer has a single channel, 44100 individual samples, at a sample rate of 44100 Hz. That is, 1 second of audio in total. This should be sufficient for our purposes since the sound of an individual snare hit is very short.
 
-We fill the buffer with random numbers between `-1` and `1`. This even distribution of random numbers creates “white” noise, which is noise with equal energy at every frequency. Removing some of the highest frequency sound from this noise creates a more realistic sounding snare. We can do that using a filter:
+We fill the buffer with random numbers between `-1` and `1`. This even distribution of random numbers creates “white” noise, which is noise with equal energy at every frequency. Removing some of the lowest frequency sound from this noise creates a more realistic sounding snare. We can do that using a filter:
 
     Snare.prototype.setup = function() {
         this.noise = this.context.createBufferSource();
@@ -172,7 +172,7 @@ We fill the buffer with random numbers between `-1` and `1`. This even distribut
         // …
     };
 
-We set the cutoff `frequency` of the filter at 1000 Hz. This means noise above 1000 Hz will be removed. We also need to shape the amplitude of the noise burst using an envelope, as we did before with the snare drum.
+We set the cutoff `frequency` of the filter at 1000 Hz. This means noise below 1000 Hz will be removed. We also need to shape the amplitude of the noise burst using an envelope, as we did before with the snare drum.
 
     // …
     this.noiseEnvelope = this.context.createGain();
