@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-The Opera browser is available on a wide range of platforms, in a number of flavors with different modes, engines and levels of standards support. As things can get somewhat confusing — did you know that Opera Mini on iOS comes with three rendering modes, one of which is powered by UIWebView & Opera Turbo? — we decided to create a simple product overview that details some of these technical differences.
+The Opera browser is available on a wide range of platforms, in a number of flavors with different modes, engines and levels of standards support. As things can get somewhat confusing — did you know that Opera Mini on iOS comes with three rendering modes, one of which is powered by `UIWebView` & Opera Turbo? — we decided to create a simple product overview that details some of these technical differences.
 
 We’ll keep this table as up-to-date as possible, so be sure to bookmark this page for later reference!
 
