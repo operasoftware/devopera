@@ -1,5 +1,5 @@
 ---
-title: Opera Browsers, Modes & Engines
+title: Opera Browsers, Modes & Engines
 authors:
 - andreas-bovens
 intro: 'The Opera browser is available on a wide range of platforms, in a number of flavors with different modes, engines and levels of standards support. As things can get somewhat confusing, we decided to create a simple product overview that details some of these technical differences.'
