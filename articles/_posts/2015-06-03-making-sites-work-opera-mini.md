@@ -69,11 +69,11 @@ Opera Mini is sent a black background for the white text, and so the button’s 
 
 ### Test your site without JavaScript
 
-Test your HTML and CSS site with JavaScript disabled. (In Opera Desktop, for example, open the Developer Tools (right-click anywhere, choose “inspect element”, click the settings cog icon, check “Disable JavaScript”).
+Test your HTML and CSS site with JavaScript disabled. In Opera Desktop, for example, open the Developer Tools (right-click anywhere, choose “inspect element”, click the settings cog icon, check “Disable JavaScript”).
 
 Everything should still work, although it will probably be much more clunky. That’s OK; if your site works clunkily and your competitors’ sites don’t work at all, you’ll get the business.
 
-Ensuring your site functions without JavaScript doesn’t only benefit proxy browser users; research by GDS, the UK Government’s Digital Services agency, shows that [1.1% of browsers don’t run JavaScript](https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/) for various reasons: the user may have disabled it, or corporate firefwalls block it, for example.
+Ensuring your site functions without JavaScript doesn’t only benefit proxy browser users; research by GDS, the UK Government’s Digital Services agency, shows that [1.1% of browsers don’t run JavaScript](https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/) for various reasons: the user may have disabled it, or corporate firewalls block it, for example.
 
 Opera Mini runs some JavaScript on page load, but JavaScript-only APIs don’t work. Treat JavaScript as an enhancement to your core HTML site, not as a pre-requisite.
 
