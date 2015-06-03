@@ -6,6 +6,9 @@ intro: 'How to make websites that work well on Opera Mini—and everywhere else!
 tags:
 - html5
 - opera-mini
+- compatibility
+- css
+- gradients
 license: cc-by-3.0
 ---
 
