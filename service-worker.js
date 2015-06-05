@@ -1,6 +1,6 @@
 'use strict';
 
-const OFFLINE_CACHE = 'qjmp8amy4kou8tuvg7tt23bn';
+const OFFLINE_CACHE = '';
 const OFFLINE_URL = '/errors/offline.html';
 
 importScripts('/scripts/sw-cache-polyfill.js');
@@ -10,7 +10,7 @@ self.addEventListener('install', function(event) {
 		caches.open(OFFLINE_CACHE).then(function(cache) {
 			return cache.addAll([
 				OFFLINE_URL,
-				'/styles/qjmp8amy4kou8tuvg7tt23bn.css',
+				'/styles/screen.css',
 				'/images/github.svg',
 				'/images/logo.png',
 				'/images/logo@2x.png',
