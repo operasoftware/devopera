@@ -242,7 +242,7 @@ AngularJS идёт немного дальше и предоставляет н�
 	myModule.factory('greeter', function($window) {
 		return {
 			'greet': function(text) {
-				alert(text);
+				$window.alert(text);
 			}
 		};
 	});
