@@ -14,7 +14,7 @@ license: cc-by-3.0
 
 The Web Audio API is a new way of working with audio on the web. It provides a way to playback pre-recorded audio, synthesise arbitrary new sounds and control the precise moment of sound generation accurately and reliably, irrespective of what else is happening in your application.
 
-In this article, we’re going to learn more about the API by building a simple drum machine. We’ll learn just enough about the API to play a simple loop constructed from sounds we synthesise ourselves, and we’ll see how to use recordings of real-life sounds too. From these bare bones, you’ll be able to extend the machine yourself, or apply the techniques you’ve learnt to other applications. Let’s get started!
+In this article, we’re going to learn more about the API by building [a simple drum machine](https://chrislo.github.io/drum_synthesis/). We’ll learn just enough about the API to play a simple loop constructed from sounds we synthesise ourselves, and we’ll see how to use recordings of real-life sounds too. From these bare bones, you’ll be able to extend the machine yourself, or apply the techniques you’ve learnt to other applications. Let’s get started!
 
 ### Sampling or synthesising?
 
@@ -26,7 +26,7 @@ In this article we’ll try and create something that sounds a bit like the clas
 
 ### The kick
 
-We’ll kick off with the basis of all good drum loops, the kick drum. To generate audio using the Web Audio API, your browser needs to know about the sound producing devices available to your computer, and what capabilities. This information is contained in the `AudioContext`.
+We’ll kick off with the basis of all good drum loops, the kick drum. To generate audio using the Web Audio API, your browser needs to know about the sound producing device available to your computer, and what capabilities it has. This information is contained in the `AudioContext`.
 
 	var context = new AudioContext;
 	console.log(context.sampleRate);
@@ -77,10 +77,12 @@ Back to our kick drum. A lot of people have researched the acoustics of drums an
 	oscillator.connect(gain);
 	gain.connect(context.destination);
 
-	gain.gain.setValueAtTime(1, 0);
-	gain.gain.exponentialRampToValueAtTime(0.001, 0.5);
-	oscillator.start(0);
-	oscillator.stop(0.5);
+	var now = context.currentTime;
+
+	gain.gain.setValueAtTime(1, now);
+	gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+	oscillator.start(now);
+	oscillator.stop(now + 0.5);
 
 In the code above, we’ve created this audio graph:
 
@@ -96,8 +98,8 @@ A `gain` node is like a volume control. We can use that to control the amplitude
 
 Armed with this knowledge, we now know how to complete our kick drum synthesis: by dropping the frequency of the oscillator rapidly after the initial attack.
 
-	oscillator.frequency.setValueAtTime(150, 0);
-	oscillator.frequency.exponentialRampToValueAtTime(0.001, 0.5);
+	oscillator.frequency.setValueAtTime(150, now);
+	oscillator.frequency.exponentialRampToValueAtTime(0.001, now + 0.5);
 
 If you’ve been following along with the code in this article, you may have noticed that once you call `stop` on an oscillator, it’s impossible to call `start` again. This is intentional — it allows the browser to garbage-collect the nodes more efficiently in large audio graphs — but it does make working with these drum sounds more complicated as we’d like a way to trigger them multiple times. We can solve this by wrapping the code we’ve written in a simple object:
 
@@ -128,10 +130,11 @@ If you’ve been following along with the code in this article, you may have not
 
 We store a reference to the audio context when we create the kick, and then each time we trigger the kick sound we can pass in a time, which creates the audio graph and schedules the parameter changes.
 
-	kick = new Kick(context);
-	kick.trigger(0);
-	kick.trigger(0.5);
-	kick.trigger(1);
+	var kick = new Kick(context);
+	var now = context.currentTime;
+	kick.trigger(now);
+	kick.trigger(now + 0.5);
+	kick.trigger(now + 1);
 
 ### The Snare Drum
 
@@ -157,7 +160,7 @@ First, the rattle of the wire snare underneath the drum can be synthesised using
 
 In this code we create a “buffer” of individual samples, which we can later trigger at a precise time. The call to `createBuffer` specifies that the buffer has a single channel, 44100 individual samples, at a sample rate of 44100 Hz. That is, 1 second of audio in total. This should be sufficient for our purposes since the sound of an individual snare hit is very short.
 
-We fill the buffer with random numbers between `-1` and `1`. This even distribution of random numbers creates “white” noise, which is noise with equal energy at every frequency. Removing some of the highest frequency sound from this noise creates a more realistic sounding snare. We can do that using a filter:
+We fill the buffer with random numbers between `-1` and `1`. This even distribution of random numbers creates “white” noise, which is noise with equal energy at every frequency. Removing some of the lowest frequency sound from this noise creates a more realistic sounding snare. We can do that using a filter:
 
 	Snare.prototype.setup = function() {
 		this.noise = this.context.createBufferSource();
@@ -169,7 +172,7 @@ We fill the buffer with random numbers between `-1` and `1`. This even distribut
 		// …
 	};
 
-We set the cutoff `frequency` of the filter at 1000 Hz. This means noise above 1000 Hz will be removed. We also need to shape the amplitude of the noise burst using an envelope, as we did before with the snare drum.
+We set the cutoff `frequency` of the filter at 1000 Hz. This means noise below 1000 Hz will be removed. We also need to shape the amplitude of the noise burst using an envelope, as we did before with the snare drum.
 
 	// …
 	this.noiseEnvelope = this.context.createGain();
@@ -257,7 +260,7 @@ Remember that the network and decoding requests are asynchronous, so we have to 
 
 	sampleLoader('./hihat.wav', context, function(buffer) {
 		var hihat = new HiHat(context, buffer);
-		hihat.trigger(0);
+		hihat.trigger(context.currentTime);
 	});
 
 ## Timing
@@ -290,11 +293,11 @@ All of these libraries make it easy to build a simple loop, and it’s a fun exe
 		Tone.Transport.start();
 	};
 
-	sampleLoader('/hihat.wav', context, play);
+	sampleLoader('./hihat.wav', context, play);
 
 In this code, `Tone.Transport` is the interface to the `Tone.js` [timing library](https://github.com/TONEnoTONE/Tone.js/wiki/Transport). We set a tempo for our loop using the `bpm` property — here 120 beats per minute. The `Transport.setInterval` method is used to schedule repeating events. We can think of it as working like a regular `setInterval` but for scheduling of events relative to the audio clock. The time value passed to `Transport.setInterval` can be expressed, as here, in a musical way rather than in seconds. `4n` means 4 beats to the bar, `2n is two beats` and `8t` creates eighth-note triplets on the hi-hat. The value is converted into seconds and passed in as the `time` parameter to our `trigger` methods, so we don’t need to modify our code to work with this library.
 
-Finally, we call the `play` method when the hi-hat sample has loaded, which starts our loop.
+Finally, we call the `play` method when the hi-hat sample has loaded, which starts our loop. We haven't loaded `Tone.js` into this page, so if you're following along in the console, try the code [on the demo site](https://chrislo.github.io/drum_synthesis/).
 
 ## Conclusion
 

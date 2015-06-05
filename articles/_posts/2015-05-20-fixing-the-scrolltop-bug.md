@@ -84,7 +84,7 @@ Problem: This prevents browsers from fixing the bug. We need to fix this!
 ## How do I know if my site is affected?
 
 1. Is your page in quirks mode? Check `document.compatMode` in the console in the browser’s web developer tools. If it says `BackCompat`, you’re not affected (but you [should not use quirks mode](https://hsivonen.fi/doctype/#choosing)!).
-2. Run Chrome or Opera with this runtime flag: `--enable-blink-features=ScrollTopLeftInterop`. See [Run Chromium with flags](http://www.chromium.org/developers/how-tos/run-chromium-with-flags) for instructions for your OS. This makes Chrome/Opera use `html` as the scrolling element (in standards mode).
+2. Run Chrome or Opera with this setting enabled: `chrome://flags/#scroll-top-left-interop`. This makes Chrome/Opera use `html` as the scrolling element (in standards mode).
 3. See if your site still works. If something is now broken, possibly your site is using UA sniffing to determine `html` vs `body` for scrolling APIs.
 
 ## Towards a fix: `document.scrollingElement`
