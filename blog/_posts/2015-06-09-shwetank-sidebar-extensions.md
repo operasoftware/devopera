@@ -12,11 +12,11 @@ license: cc-by-3.0
 
 With Opera 30, we finally have support for sidebar extensions in the stable build! In other types of extensions, say, ones with popups, the popup window gets closed quickly, it's cumbersome to open and close it all the time in case you use it often. 
 
-There are certain types of extensions where you might want it open all the time, and we've added support for it in the form of sidebar extensions. The sidebar is a place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the icons list on the left hand side of the sidebar and the clicking on an incon from the icons list will open it’s corresponding panel.
+There are certain types of extensions where you might want it open all the time (or at least, a lot of the time), and we've added support for it in the form of sidebar extensions. The sidebar is a place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the icons list on the left hand side of the sidebar and the clicking on an incon from the icons list will open it’s corresponding panel.
 
-The panel is an html page specified inside the extension which will house the main content of the extension. Every sidebar action must have a panel page specified. You don't need to define any special permission in the manifest to make a sidebar extension, though you do have to define details regarding it in the manifest (just like you do with browser actions). In fact, for sidebar extension, we call them *sidebar actions*.
+The panel is an html page specified inside the extension which will house the main content of the extension. Every sidebar action must have a panel page specified. You don't need to define any special permission in the manifest to make a sidebar extension, though you do have to define details regarding it in the manifest (just like you do with browser actions). In fact, for sidebar extensions, we call them *sidebar actions*.
 
-Also note that it is possible to have extensions which have a button on the toolbar, as well as a sidebar. So you can have your existing extenion which uses, say, a popup and add support for it in the sidebar as well.
+Also note that it is possible to have extensions which have a button on the toolbar, as well as a sidebar. So you can have your existing extension which uses, say, a popup *and* add support for it in the sidebar as well.
 
 For more information, read our [tutorial on how to build sidebar extessions](https://dev.opera.com/extensions/tut_sidebar_actions.html) and check out the [sidebar extension API](https://dev.opera.com/extensions/sidebarAction.html). 
 
