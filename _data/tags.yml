@@ -25,7 +25,8 @@
   - rwd
 - dev-tools
 - events
-- extensions
+- extensions:
+  - sidebar
 - html:
   - forms
   - html5
