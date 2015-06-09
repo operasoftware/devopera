@@ -2,13 +2,18 @@
 title: 'New in Opera 30: Sidebar Extensions!'
 authors:
 - shwetank-dixit
-intro: 'With Opera 30, we have made it possible to have extensions on the browser sidebar!'
+intro: 'With Opera 30, we have made it possible to have extensions on the browser sidebar! Check out the goodness'
 published: false
 tags:
 - extensions
 - sidebar
 license: cc-by-3.0
 ---
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/sidebar-extensions.png" alt="Opera 30 running sidebar extensions">
+	<figcaption elem="caption">Opera 30 running sidebar extensions</figcaption>
+</figure>
 
 With Opera 30, we finally have support for sidebar extensions in the stable build! In other types of extensions, say, ones with popups, the popup window gets closed quickly, it's cumbersome to open and close it all the time in case you use it often. 
 
