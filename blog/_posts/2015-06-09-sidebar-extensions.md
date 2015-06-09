@@ -3,7 +3,6 @@ title: 'New in Opera 30: Sidebar Extensions!'
 authors:
 - shwetank-dixit
 intro: 'With Opera 30, we have made it possible to have extensions on the browser sidebar! Check out the goodness'
-published: false
 tags:
 - extensions
 - sidebar
