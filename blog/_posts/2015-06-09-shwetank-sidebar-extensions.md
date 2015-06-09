@@ -27,10 +27,6 @@ For more information, read our [tutorial on how to build sidebar extessions](htt
 
 We've had support for sidebar extensions in the Developer and Beta channels for a while now, and some people in the extension community have already made some great extensions with sidebar support. A few of them worth checking out are:
 
-## Raindrop.io
-
-[Raindrop.io](http://raindrop.io) is a great extension for marking and organizing your favourite websites to save and share. 
-
 ## Site Settings Sidebar
 
 [Site Settings Sidebar](https://addons.opera.com/en/extensions/details/site-settings-sidebar/) enabled you to control site specific settings from the sidebar itself. It makes it really conveneient to change such things like geolocation, zoom and camera settings etc.
