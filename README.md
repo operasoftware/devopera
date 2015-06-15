@@ -23,7 +23,7 @@ If you’ve set up all the above at some point in the past, and want to update y
 
 ## Development
 
-To start developing Dev.Opera run `grunt dev`, it would take up to 1 minute to:
+To start developing Dev.Opera run `grunt`, it would take up to 1 minute to:
 
 1. Build site in a limited mode with only latest 150 posts.
 2. Start local server on `http://0.0.0.0:33310` address.
