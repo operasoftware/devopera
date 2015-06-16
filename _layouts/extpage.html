@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<main block="layout">
+	<div elem="content">
+		<article block="content" role="main">
+			<h1 elem="title">{{ page.title | markdownline }}</h1>
+			{% if page.author %} <h2>By {{page.author}}</h2> {% endif %}
+			{{ content }}
+		</article>
+	</div>
+	{% include sidebar.html %}
+</main>
