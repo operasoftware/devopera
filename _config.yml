@@ -37,6 +37,13 @@ defaults:
     layout: 'entry'
     language: 'en'
 - scope:
+    path: 'ext'
+    type: 'posts'
+  values:
+    category: 'ext'
+    layout: 'extpage'
+    language: 'en'
+- scope:
     path: 'blog'
     type: 'posts'
   values:
