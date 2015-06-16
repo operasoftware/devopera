@@ -123,9 +123,9 @@ module.exports = function(grunt) {
 					'!install.sh',
 					'!styles/*',
 
-					'!{articles,blog,tv}/**',
-						'{articles,blog,tv}/index.html',
-						'{articles,blog,tv}/**/_posts/*.md'
+					'!{articles,blog,tv,ext}/**',
+						'{articles,blog,tv,ext}/index.html',
+						'{articles,blog,tv,ext}/**/_posts/*.md'
 				],
 				tasks: [
 					'jekyll:limit',
