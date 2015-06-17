@@ -37,10 +37,10 @@ defaults:
     layout: 'entry'
     language: 'en'
 - scope:
-    path: 'ext'
+    path: 'addons'
     type: 'posts'
   values:
-    category: 'ext'
+    category: 'addons'
     layout: 'extpage'
     language: 'en'
 - scope:
