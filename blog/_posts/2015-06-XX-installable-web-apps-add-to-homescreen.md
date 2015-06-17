@@ -46,7 +46,7 @@ In this labs build, site visitors can save a page to the homescreen by tapping t
 
 [!! screenshot]
 
-In future release, we’ll make it more discoverable: under certain circumstances Opera will prompt the user to and offer to Add to Homescreen.
+In a future release, we’ll make it more discoverable: under certain circumstances Opera will prompt the user to and offer to Add to Homescreen.
 
 
 
