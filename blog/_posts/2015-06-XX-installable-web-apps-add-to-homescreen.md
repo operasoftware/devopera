@@ -16,7 +16,7 @@ Today, we're launching a labs build of Opera for Android with a new feature, pro
 
 ## Why? 
 
-Alex Russell of the Google Chrome team has an excellent write-up called [Progressive Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/comment-page-1/#comment-25492) that explains many of the advantages from both a developer and consuemr perspective.
+Alex Russell of the Google Chrome team has an excellent write-up called [Progressive Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/comment-page-1/#comment-25492) that explains many of the advantages from both a developer and consumer perspective.
 
 Two more that appeal to us:
 
