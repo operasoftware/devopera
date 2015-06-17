@@ -7,7 +7,7 @@ tags:
 - android
 - opera-mini
 license: cc-by-3.0
-published: none	
+published: false	
 ---
 
 # Installable Web Apps and Add To Homescreen
