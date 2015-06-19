@@ -150,7 +150,7 @@ module.exports = function(grunt) {
 			}
 		},
 		replace: {
-			task: {
+			htaccess: {
 				src: '.htaccess',
 				dest: '_site/',
 				replacements: [{
@@ -158,6 +158,56 @@ module.exports = function(grunt) {
 					from: 'RewriteEngine On\n\n',
 					to: 'RewriteEngine On\n\nRewriteCond %{HTTP_HOST} !^dev\\.opera\\.com [NC]\nRewriteRule ^(.*)$ https://dev.opera.com%{REQUEST_URI} [R=301,L]\n\nRewriteCond %{HTTPS} off\nRewriteRule ^(.*)$ https://dev.opera.com%{REQUEST_URI} [R=301,L]\n\n'
 				}]
+			},
+			htmlLinks: {
+				src: [
+					'_site/**/*.html'
+				],
+				overwrite: true,
+				replacements: [{
+					from: /(<link rel="stylesheet" href="\/styles\/)(screen)(\.css">)/g,
+					to: '$1' + require('hash-files').sync({
+						files: [
+							'_site/styles/screen.css'
+						]
+					}).substring(0, 8) + '$3'
+				}]
+			},
+			cachedFiles: {
+				src: [
+					'_site/service-worker.js'
+				],
+				overwrite: true,
+				replacements: [{
+					from: /(const OFFLINE_CACHE = ')(';)/g,
+					to: '$1' + require('hash-files').sync({
+						files: [
+							'_site/styles/screen.css',
+							'_site/images/github.svg',
+							'_site/images/logo.png',
+							'_site/images/logo@2x.png',
+							'_site/scripts/highlight.js',
+							'_site/scripts/salvattore.js'
+						]
+					}).substring(0, 8) + '$2'
+				},{
+					from: /('\/styles\/)(screen)(\.css',)/g,
+					to: '$1' + require('hash-files').sync({
+						files: [
+							'_site/styles/screen.css'
+						]
+					}).substring(0, 8) + '$3'
+				}]
+			}
+		},
+		rename: {
+			cachedStyles: {
+				src: '_site/styles/screen.css',
+				dest: '_site/styles/' + require('hash-files').sync({
+					files: [
+						'_site/styles/screen.css'
+					]
+				}).substring(0, 8) + '.css'
 			}
 		},
 		rsync: {
@@ -204,10 +254,17 @@ module.exports = function(grunt) {
 		'beml'
 	]);
 
+	grunt.registerTask('cache', [
+		'replace:htmlLinks',
+		'replace:cachedFiles',
+		'rename:cachedStyles'
+	]);
+
 	grunt.registerTask('default', [
 		'jekyll:limit',
 		'html',
 		'styles',
+		'cache',
 		'connect',
 		'watch'
 	]);
@@ -216,11 +273,12 @@ module.exports = function(grunt) {
 		'styles',
 		'jekyll:full',
 		'html',
+		'cache',
 		'connect:task:keepalive'
 	]);
 
 	grunt.registerTask('deploy', [
-		'replace',
+		'replace:htaccess',
 		'rsync'
 	]);
 
