@@ -30,7 +30,7 @@ With Installable Web Apps, the app is actually on your web server, so the instan
 
 The [average app user has 36 apps on their smartphone (PDF)](https://think.storage.googleapis.com/docs/mobile-app-marketing-insights.pdf). 25% are used daily (social/ comms/ gaming); 25% are never used.
 
-Those occasionally-used apps are taking up a lot of storage on a device that may be inexpensive and therefore have little space. We know from the [2015 Google I/O keynote](http://www.singjupost.com/google-io-2015-keynote-full-transcript/7/) that
+Those occasionally-used apps are taking up a lot of storage on a device that may be inexpensive and therefore have little space. We know from the [2015 Google I/O keynote](https://www.youtube.com/watch?v=7V-fIGMDsmE&feature=youtu.be&t=1h21m30s) that
 
 > over a quarter of new Android devices have only 512 MB of RAM
 
