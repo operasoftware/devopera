@@ -58,7 +58,7 @@ In this labs build, site visitors can add a website to their Home screen by tapp
 	</video>
 </figure>
 
-In a future release, we’ll make it more discoverable: under certain circumstances Opera will prompt the user to the site they’re visiting to the Home screen.
+In a future release, we’ll make it more discoverable: under certain circumstances Opera will prompt the user to add the site they’re visiting to the Home screen.
 
 ## Defining icon and start-up characteristics
 
