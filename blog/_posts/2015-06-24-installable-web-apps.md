@@ -11,7 +11,7 @@ license: cc-by-3.0
 published: false
 ---
 
-Today, we’re excited to release a [special labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer ) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
+Today, we’re excited to release a [special labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
 
 When a user clicks “Add to Home screen” after loading your site in Opera, a shortcut to your site is placed on the Home screen of their device, allowing for direct access and increased visibility.
 
@@ -29,7 +29,7 @@ Here are two more that appeal to us:
 
 With a centralised app store distribution model, the user receives a notification that a new version of your app is available; they download it and install it. However, in many parts of the world, data is expensive or WiFi is a luxury, so people don’t update over their mobile connections. This means that outdated versions of your app continue to be used long after you’ve released an update. If the outdated version has a security flaw, this is a problem.
 
-With Installable Web Apps, the app is actually on your web server, so the instant you update it, everybody gets it, at the time they need it - there's no update distribution lag, and the user isn’t wasting their precious data to download a complete new version of your app.
+With Installable Web Apps, the app is actually on your web server, so the instant you update it, everybody gets it, at the time they need it — there’s no update distribution lag, and the user isn’t wasting their precious data to download a complete new version of your app.
 
 ### Less storage space required
 
@@ -37,7 +37,7 @@ The [average app user has 36 apps on their smartphone (PDF)](https://think.stora
 
 Those occasionally used apps are taking up a lot of storage on a device that may be inexpensive and therefore have little space. We know from the [2015 Google I/O keynote](https://www.youtube.com/watch?v=7V-fIGMDsmE&feature=youtu.be&t=1h21m30s) that
 
-> over a quarter of new Android devices have only 512 MB of RAM
+> Over a quarter of new Android devices have only 512 MB of RAM
 
 and, according to [Techrepublic](vhttp://www.techrepublic.com/article/ram-a-lama-dont-be-a-ding-ding-about-android-storage/),
 
@@ -47,9 +47,14 @@ Installable Web Apps only store an icon, a text-based JSON manifest and some cac
 
 ## Installation mechanisms
 
-In this labs build, site visitors can add a website to their Home screen by tapping the "+" icon on the left of the address bar.
+In this labs build, site visitors can add a website to their Home screen by tapping the **+** icon on the left of the address bar.
 
-[!! screenshot]
+<figure block="figure">
+	<video elem="media" width="640" height="480" controls>
+		<source src="{{ page.id }}/screen.mp4" type="video/mp4">
+		<source src="{{ page.id }}/screen.webm" type="video/webm">
+	</video>
+</figure>
 
 In a future release, we’ll make it more discoverable: under certain circumstances Opera will prompt the user to the site they’re visiting to the Home screen.
 
@@ -67,9 +72,9 @@ The specification defines [display modes](https://w3c.github.io/manifest/#displa
 
 Opera for Android supports
 
-* `fullscreen` - the app will take all the screen; hardware keys and the status bar will not be shown. Note, this is not the same as HTML5 `fullscreen` mode.
-* `standalone` - no browser UI is shown, but the hardware keys and status bar will be displayed.
-* `browser` - the app will be shown with normal browser UI, ie. as a normal website. Note that custom orientations are not yet supported in this mode.
+- `fullscreen` — the app will take all the screen; hardware keys and the status bar will not be shown. Note, this is not the same as HTML5 `fullscreen` mode.
+- `standalone` — no browser UI is shown, but the hardware keys and status bar will be displayed.
+- `browser` — the app will be shown with normal browser UI, ie. as a normal website. Note that custom orientations are not yet supported in this mode.
 
 The `minimal-ui` mode is not supported; it falls back to `browser` as the spec requires.
 
