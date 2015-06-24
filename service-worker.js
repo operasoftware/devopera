@@ -42,6 +42,8 @@ self.addEventListener('fetch', function(event) {
 			})
 		);
 	} else {
+		// It’s not a request for an HTML document, but rather for a CSS or SVG
+		// file or whatever…
 		event.respondWith(
 			caches.match(event.request).then(function(response) {
 				return response || fetch(event.request);
