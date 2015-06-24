@@ -71,6 +71,17 @@ Opera (and Chrome) for Android require
 
 !! check - do we implement all of this???
 
+### Display modes
+
+The specification defines [display modes](https://w3c.github.io/manifest/#display-modes) different ways to show your web app.
+
+Opera for Android supports
+
+* `fullscreen` - the app will take all the screen; hardware keys and the status bar will not be shown. Note, this is not the same as HTML5 `fullscreen` mode.
+* `standalone` - no browser chrome is shown, but hardware keys and status bar will be displayed.
+* `browser` - the app will be shown with browser chrome, eg as a normal website.
+
+The `minimal-ui` mode is not supported; it falls  back to `browser`as the spec requires.
 
 ## Navigating outside the App’s scope
 
