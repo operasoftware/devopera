@@ -7,8 +7,10 @@ intro: 'This labs build of Opera for Android begins to bridge the gap between th
 tags:
 - android
 - opera
+- javascript
+- offline
+- service-workers
 license: cc-by-3.0
-published: false
 ---
 
 Today, we’re excited to release a [special labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
@@ -50,7 +52,7 @@ Installable Web Apps only store an icon, a text-based JSON manifest and some cac
 In this labs build, site visitors can add a website to their Home screen by tapping the **+** icon on the left of the address bar.
 
 <figure block="figure">
-	<video elem="media" width="640" height="480" controls>
+	<video elem="media" mod="center" width="360" height="640" controls>
 		<source src="{{ page.id }}/screen.mp4" type="video/mp4">
 		<source src="{{ page.id }}/screen.webm" type="video/webm">
 	</video>
