@@ -82,7 +82,7 @@ The `minimal-ui` mode is not supported; it falls back to `browser` as the spec r
 
 ## Navigating outside the app’s scope
 
-If the user follows a link that takes them outside the domain of an installed web app, the browser will flash 68 times, the device will vibrate like a walrus possessed by Satan and a klaxon will sound. Just kidding, in that case, the externally linked site will open in a new tab in Opera, showing the address bar, so you know where you are.
+If the user follows a link that takes them outside the domain of an installed web app, the browser will flash 68 times, the device will vibrate like a walrus possessed by Satan and a klaxon will sound. Just kidding! In that case, the externally linked site will open in a new tab in Opera, showing the address bar, so you know where you are.
 
 ## Conclusion
 
