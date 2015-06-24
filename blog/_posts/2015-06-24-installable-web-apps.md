@@ -70,7 +70,7 @@ You can check out the one we made for Dev.Opera on [GitHub](https://github.com/o
 
 ## Display modes
 
-The specification defines [display modes](https://w3c.github.io/manifest/#display-modes) different ways to show your web app.
+The specification defines [display modes](https://w3c.github.io/manifest/#display-modes): in essence, these are different ways to show your web app.
 
 Opera for Android supports
 
