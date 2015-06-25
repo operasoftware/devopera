@@ -23,7 +23,7 @@ There is more though: “Add to Home screen” also supports the new [Web Manife
 
 We’re very excited about Installable Web Apps, as it bridges the gap between native and web apps in a most elegant way: it allows you to build applications using the full web stack that run in the browser as well as outside of it, without sacrificing crucial functionality like hyperlinking, and without the need for app stores or gatekeepers.
 
-If you want to read more about why this is an exciting evolution, Alex Russell of the Google Chrome team has an excellent write-up called [Progressive Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/comment-page-1/#comment-25492) that explains many of the advantages from both a developer and a consumer perspective.
+If you want to read more about why this is an exciting evolution, Alex Russell of the Google Chrome team has an excellent write-up called [Progressive Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) that explains many of the advantages from both a developer and a consumer perspective.
 
 Here are two more that appeal to us:
 
