@@ -1,6 +1,8 @@
 'use strict';
 
-const OFFLINE_CACHE = '';
+const PREFIX = 'devopera';
+const HASH = ''; // Calculated when running `grunt`.
+const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/errors/offline.html';
 
 importScripts('/scripts/sw-cache-polyfill.js');
@@ -17,6 +19,25 @@ self.addEventListener('install', function(event) {
 				'/scripts/highlight.js',
 				'/scripts/salvattore.js'
 			]);
+		})
+	);
+});
+
+self.addEventListener('activate', function(event) {
+	// Delete old asset caches.
+	event.waitUntil(
+		caches.keys().then(function(keys) {
+			return Promise.all(
+				keys.map(function(key) {
+					if (
+						key != staticCacheName &&
+						key.startsWith(`${PREFIX}-`) &&
+						!key.startsWith(`${PREFIX}-article-`)
+					) {
+						return caches.delete(key);
+					}
+				})
+			);
 		})
 	);
 });

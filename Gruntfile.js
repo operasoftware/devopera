@@ -179,7 +179,7 @@ module.exports = function(grunt) {
 				],
 				overwrite: true,
 				replacements: [{
-					from: /(const OFFLINE_CACHE = ')(';)/g,
+					from: /(const HASH = ')(';)/g,
 					to: '$1' + require('hash-files').sync({
 						files: [
 							'_site/styles/screen.css',
