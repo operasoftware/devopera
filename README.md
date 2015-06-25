@@ -1,18 +1,18 @@
 # Dev.Opera
 
-We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by Jekyll, Sass and Grunt. In this repository, you find all the source files and content to build the site, [make improvements](CONTRIBUTING.md#code-improvements), and [submit new articles](CONTRIBUTING.md#article-suggestions--contributions).
+We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by Jekyll, Sass, and Grunt. In this repository, you find all the source files and content to build the site, [make improvements](CONTRIBUTING.md#code-improvements), and [submit new articles](CONTRIBUTING.md#article-suggestions--contributions).
 
 ## Environment setup
 
-1. Install Jekyll, Sass and all needed gems by running `sudo gem install jekyll stringex` on the command line.
-2. Download and install [Node.js](http://nodejs.org) or [io.js](https://iojs.org/) with the default installer options.
+1. Install Jekyll, Sass, and all needed gems by running `sudo gem install jekyll sass stringex` on the command line.
+2. Download and install [Node.js](http://nodejs.org/) or [io.js](https://iojs.org/) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
 4. Run `npm install` inside the `devopera` folder.
 5. Run `npm install bower -g` to install Bower globally.
 6. Run `bower install`.
 7. Run `npm install grunt-cli -g` to install Grunt globally.
 
-Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [.editorconfig](.editorconfig) file.
+Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`.editorconfig`](.editorconfig) file.
 
 ## Environment update
 
