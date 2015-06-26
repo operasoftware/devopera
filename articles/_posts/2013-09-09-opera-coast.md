@@ -156,11 +156,16 @@ If you'd like to keep a more seamless flow between your app and the web, Opera C
 
 To add a callback for web links that open in Opera Coast, use the following schema:
 
-`coast://x-callback-url/open?x-source=<name of source app>&x-success=<url to go back to source app>&url=<url to be opened in Coast>`
+	coast://x-callback-url/open?x-source=<X>&x-success=<Y>&url=<Z>
+
+Where `X` is a name of source app, `Y` is url to go back to source app, and `Z` is url to be opened in Coast.
 
 For example:
 
-`coast://x-callback-url/open?x-source=KickAssApp&x-success=com.KickAssApp.callback%3A%2F%2F&url=http%3A%2F%2Fwww.operacoast.com`
+	coast://x-callback-url/open?
+		x-source=KickAssApp&
+		x-success=com.KickAssApp.callback%3A%2F%2F&
+		url=http%3A%2F%2Fwww.operacoast.com
 
 ## Debug your app with Safari
 
