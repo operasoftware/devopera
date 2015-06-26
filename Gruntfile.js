@@ -33,6 +33,9 @@ module.exports = function(grunt) {
 				src: 'styles/*.css'
 			}
 		},
+		clean: [
+			'_site'
+		],
 		jekyll: {
 			full: {
 				//
@@ -261,6 +264,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('default', [
+		'clean',
 		'jekyll:limit',
 		'html',
 		'styles',
@@ -270,6 +274,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('build', [
+		'clean',
 		'styles',
 		'jekyll:full',
 		'html',
