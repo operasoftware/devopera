@@ -146,9 +146,21 @@ The border color for web apps is determined by the dominant color in the icon.
 
 Opera Coast will look for common icons names on your root directory. For example, `example.com/favicon.ico` or `example.com/apple-touch-icon.png`. If Opera Coast cannot find an icon on your root directory, the web-app image is created by assigning a color and adding text. Opera Coast will remember these assignments until it detects that an icon has been added to the site’s mark-up.
 
-## Open Opera Coast from 3rd party apps
+## Open links in Opera Coast from 3rd party apps
 
 If you want to open URLs in Opera Coast, you can use the prefix `coast-http://` or `coast-https://`.
+
+### Use x-callback-url to get back to your app
+
+If you'd like to keep a more seamless flow between your app and the web, Opera Coast supports x-callback-url. The x-callback-url schema guides users back to your native app when they follow a link that opens in Opera Coast.
+
+To add a callback for web links that open in Opera Coast, use the following schema:
+
+`coast://x-callback-url/open?x-source=<name of source app>&x-success=<url to go back to source app>&url=<url to be opened in Coast>`
+
+For example:
+
+`coast://x-callback-url/open?x-source=KickAssApp&x-success=com.KickAssApp.callback%3A%2F%2F&url=http%3A%2F%2Fwww.operacoast.com`
 
 ## Debug your app with Safari
 
