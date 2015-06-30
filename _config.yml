@@ -24,6 +24,9 @@ exclude:
 - '*.map'
 
 collections:
+  extensions:
+    output: true
+    permalink: /extensions/:path/
   authors:
     output: true
     permalink: /authors/:path/
@@ -35,13 +38,6 @@ defaults:
   values:
     category: 'articles'
     layout: 'entry'
-    language: 'en'
-- scope:
-    path: 'addons'
-    type: 'posts'
-  values:
-    category: 'addons'
-    layout: 'extpage'
     language: 'en'
 - scope:
     path: 'blog'
@@ -57,6 +53,11 @@ defaults:
     category: 'tv'
     layout: 'entry'
     language: 'en'
+- scope:
+    path: ''
+    type: 'extensions'
+  values:
+    layout: 'extension'
 - scope:
     path: ''
     type: 'authors'
