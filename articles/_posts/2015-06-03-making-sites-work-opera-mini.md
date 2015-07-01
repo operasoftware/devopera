@@ -42,7 +42,7 @@ Opera Mini doesn’t download web fonts; these are often large files, and are fo
 
 However, icon fonts are sometimes used by developers and these won’t be displayed; this can mean some important information or navigation items are invisible. Use SVG images instead; these can be compressed to become smaller than icon fonts, and can be made [responsive with media queries](https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/).
 
-This doesn’t just benefit Opera Mini users; many people with mild dyslexia have a [special system font](http://en.wikipedia.org/wiki/Dyslexie#Research) to aid legibility, which breaks icon fonts.
+This doesn’t just benefit Opera Mini users; many people with mild dyslexia have a [special system font](http://en.wikipedia.org/wiki/Dyslexie#Research) to aid legibility, which breaks icon fonts. See Seren Davies' presentation [Death to icon fonts](https://speakerdeck.com/ninjanails/death-to-icon-fonts) which explains how icon fonts impact her dyslexia. 
 
 ### Style your HTML with CSS
 
@@ -102,6 +102,12 @@ For development and testing purposes, it can be useful to install Opera Mini on 
 ### Test local web sites using ngrok
 
 Many developers choose to use [ngrok](https://ngrok.com/) to securely expose a local web server to the internet. As their website explains, “ngrok creates a tunnel from the public internet (`https://subdomain.ngrok.com/`) to a port on your local machine. You can give this URL to anyone to allow them to try out a web site you’re developing without doing any deployment”. Then you simply point Opera Mini at `subdomain.ngrok.com` to test your site. ngrok is open source, and also provides a paid-for service.
+
+### Alternatives to ngrok
+
+An alternative to ngrok is [localtunnel.me](http://localtunnel.me/).
+
+Some people might want to do their SSH tunnelling. Read [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html) for information on how to do this.
 
 ## Conclusion
 
