@@ -23,6 +23,6 @@ On Saturday, it was time for Edge Conference, which is a “day of group discuss
 For those interested, Bruce’s raw notes of the breakout are available on [Google Drive](https://docs.google.com/document/d/1i0E5FYU8jjme-vDb7jCgtDA4XmyCRK-0yszvFff8dOQ/edit#).
 
 
-As a final note, we'd be very interested in talking to any developers who are implementing add to Homescreen, serviceWorker or Push Notifications on real, commercial websited, with a view to publishing an article on dev.Opera (we even pay!).
+As a final note, we'd be very interested in talking to any developers who are implementing add to Homescreen, serviceWorker or Push Notifications on real, commercial websites, with a view to publishing an article on dev.Opera (we even pay!). Tweet us at [@odevrel](http://twitter.com/odevrel).
 
 
