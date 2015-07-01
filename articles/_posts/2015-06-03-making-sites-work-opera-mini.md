@@ -42,7 +42,7 @@ Opera Mini doesn’t download web fonts; these are often large files, and are fo
 
 However, icon fonts are sometimes used by developers and these won’t be displayed; this can mean some important information or navigation items are invisible. Use SVG images instead; these can be compressed to become smaller than icon fonts, and can be made [responsive with media queries](https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/).
 
-This doesn’t just benefit Opera Mini users; many people with mild dyslexia have a [special system font](http://en.wikipedia.org/wiki/Dyslexie#Research) to aid legibility, which breaks icon fonts. See Seren Davies' presentation [Death to icon fonts](https://speakerdeck.com/ninjanails/death-to-icon-fonts) which explains how icon fonts impact her dyslexia. 
+This doesn’t just benefit Opera Mini users; many people with mild dyslexia have a [special system font](http://en.wikipedia.org/wiki/Dyslexie#Research) to aid legibility, which breaks icon fonts. See Seren Davies’ presentation [Death to icon fonts](https://speakerdeck.com/ninjanails/death-to-icon-fonts) which explains how icon fonts impact her dyslexia.
 
 ### Style your HTML with CSS
 
@@ -105,9 +105,9 @@ Many developers choose to use [ngrok](https://ngrok.com/) to securely expose a l
 
 ### Alternatives to ngrok
 
-An alternative to ngrok is [localtunnel.me](http://localtunnel.me/).
+An alternative to ngrok is [localtunnel](http://localtunnel.me/).
 
-Some people might want to do their SSH tunnelling. Read [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html) for information on how to do this.
+Some people might want to do their SSH tunnelling. Read [SSH Tunnel — Local and Remote Port Forwarding Explained With Examples](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html) for information on how to do this.
 
 ## Conclusion
 
