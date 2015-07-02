@@ -1,4 +1,9 @@
 sudo: false
+language: ruby
+rvm:
+- 2.2
+install: 'bundle install && npm install && npm install bower -g && bower install'
+script: 'grunt ci'
 deploy:
   provider: codedeploy
   access_key_id: "AKIAILZS2G2NCXNE4U2A"
@@ -8,3 +13,6 @@ deploy:
   key: latest/devopera.zip
   application: dev-opera
   deployment_group: dev-opera
+branches:
+  only:
+  - master

@@ -273,12 +273,16 @@ module.exports = function(grunt) {
 		'watch'
 	]);
 
-	grunt.registerTask('build', [
+	grunt.registerTask('ci', [
 		'clean',
 		'styles',
 		'jekyll:full',
 		'html',
-		'cache',
+		'cache'
+	]);
+
+	grunt.registerTask('build', [
+		'ci',
 		'connect:task:keepalive'
 	]);
 
