@@ -5,7 +5,3 @@ os: linux
 files:
   - source: _site
     destination: /var/www/html
-
-hooks:
-  AfterInstall:
-    - location: /usr/local/bin/reload-apache
