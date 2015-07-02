@@ -1,5 +1,4 @@
 ---
- 
 title: Optional permissions
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/extensions/permissions.html

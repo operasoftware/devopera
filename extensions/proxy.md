@@ -1,5 +1,4 @@
 ---
- 
 title: Using the Proxy API
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/extensions/proxy.html
@@ -13,12 +12,12 @@ to use the proxy settings API.
 For example:</p>
 <pre data-filename="manifest.json">
 {
-  "name": "My extension",
-  ...
-  <b>"permissions": [
-    "proxy"
-  ]</b>,
-  ...
+	"name": "My extension",
+	...
+	<b>"permissions": [
+		"proxy"
+	]</b>,
+	...
 }
 </pre>
 
@@ -29,7 +28,7 @@ Proxy settings are defined in a
 <a href="https://developer.chrome.com/extensions/proxy#type-ProxyConfig">ProxyConfig</a> object. Depending on
 Chrome's proxy settings, the settings may contain
 <a href="https://developer.chrome.com/extensions/proxy#type-ProxyRules">ProxyRules</a> or a
-  <a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a>.
+	<a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a>.
 </p>
 
 <h3 id="proxy_modes">Proxy modes</h3>
@@ -39,41 +38,41 @@ A ProxyConfig object's <code>mode</code> attribute determines the overall
 behavior of Chrome with regards to proxy usage. It can take the following
 values:
 <dl>
-  <dt><code>direct</code></dt>
-  <dd>In <code>direct</code> mode all connections are created directly, without
-  any proxy involved. This mode allows no further parameters in the
-  <code>ProxyConfig</code> object.</dd>
+	<dt><code>direct</code></dt>
+	<dd>In <code>direct</code> mode all connections are created directly, without
+	any proxy involved. This mode allows no further parameters in the
+	<code>ProxyConfig</code> object.</dd>
 
-  <dt><code>auto_detect</code></dt>
-  <dd>In <code>auto_detect</code> mode the proxy configuration is determined by
-  a PAC script that can be downloaded at
-  <a href="http://wpad/wpad.dat">http://wpad/wpad.dat</a>.
-  This mode allows no further parameters in the <code>ProxyConfig</code>
-  object.</dd>
+	<dt><code>auto_detect</code></dt>
+	<dd>In <code>auto_detect</code> mode the proxy configuration is determined by
+	a PAC script that can be downloaded at
+	<a href="http://wpad/wpad.dat">http://wpad/wpad.dat</a>.
+	This mode allows no further parameters in the <code>ProxyConfig</code>
+	object.</dd>
 
-  <dt><code>pac_script</code></dt>
-  <dd>In <code>pac_script</code> mode the proxy configuration is determined by
-  a PAC script that is either retrieved from the URL specified in the
-  <a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a> object or
-  taken literally from the <code>data</code> element specified in the
-  <a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a> object.
-  Besides this, this mode allows no further parameters in the
-  <code>ProxyConfig</code> object.</dd>
+	<dt><code>pac_script</code></dt>
+	<dd>In <code>pac_script</code> mode the proxy configuration is determined by
+	a PAC script that is either retrieved from the URL specified in the
+	<a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a> object or
+	taken literally from the <code>data</code> element specified in the
+	<a href="https://developer.chrome.com/extensions/proxy#type-PacScript">PacScript</a> object.
+	Besides this, this mode allows no further parameters in the
+	<code>ProxyConfig</code> object.</dd>
 
-  <dt><code>fixed_servers</code></dt>
-  <dd>In <code>fixed_servers</code> mode the proxy configuration is codified in
-  a <a href="https://developer.chrome.com/extensions/proxy#type-ProxyRules">ProxyRules</a>
-  object. Its structure is described in <a href="#proxy_rules">Proxy rules</a>.
-  Besides this, the <code>fixed_servers</code> mode allows no further parameters
-  in the <code>ProxyConfig</code> object.</dd>
+	<dt><code>fixed_servers</code></dt>
+	<dd>In <code>fixed_servers</code> mode the proxy configuration is codified in
+	a <a href="https://developer.chrome.com/extensions/proxy#type-ProxyRules">ProxyRules</a>
+	object. Its structure is described in <a href="#proxy_rules">Proxy rules</a>.
+	Besides this, the <code>fixed_servers</code> mode allows no further parameters
+	in the <code>ProxyConfig</code> object.</dd>
 
-  <dt><code>system</code></dt>
-  <dd>In <code>system</code> mode the proxy configuration is taken from the
-  operating system. This mode allows no further parameters in the
-  <code>ProxyConfig</code> object. Note that the <code>system</code> mode is
-  different from setting no proxy configuration. In the latter case, Chrome
-  falls back to the system settings only if no command-line options influence
-  the proxy configuration.</dd>
+	<dt><code>system</code></dt>
+	<dd>In <code>system</code> mode the proxy configuration is taken from the
+	operating system. This mode allows no further parameters in the
+	<code>ProxyConfig</code> object. Note that the <code>system</code> mode is
+	different from setting no proxy configuration. In the latter case, Chrome
+	falls back to the system settings only if no command-line options influence
+	the proxy configuration.</dd>
 </dl>
 </p>
 
@@ -112,11 +111,11 @@ If no <code>port</code> is defined in a
 <a href="https://developer.chrome.com/extensions/proxy#type-ProxyServer">ProxyServer</a> object, the port is
 derived from the scheme. The default ports are:
 <table>
-  <tr><th>Scheme</th><th>Port</th></tr>
-  <tr><td>http</td><td>80</td></tr>
-  <tr><td>https</td><td>443</td></tr>
-  <tr><td>socks4</td><td>1080</td></tr>
-  <tr><td>socks5</td><td>1080</td></tr>
+	<tr><th>Scheme</th><th>Port</th></tr>
+	<tr><td>http</td><td>80</td></tr>
+	<tr><td>https</td><td>443</td></tr>
+	<tr><td>socks4</td><td>1080</td></tr>
+	<tr><td>socks5</td><td>1080</td></tr>
 </table>
 </p>
 
@@ -126,53 +125,53 @@ derived from the scheme. The default ports are:
 Individual servers may be excluded from being proxied with the
 <code>bypassList</code>. This list may contain the following entries:
 <dl>
-  <dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;host-pattern&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
-  <dd>Match all hostnames that match the pattern <em>&lt;host-pattern&gt;</em>.
-  A leading <code>"."</code> is interpreted as a <code>"*."</code>.<br>
-  Examples: <code>"foobar.com", "*foobar.com", "*.foobar.com", "*foobar.com:99",
-    "https://x.*.y.com:99"</code>.<br>
-  <table>
-    <tr>
-      <th>Pattern
-      <th>Matches
-      <th>Does not match
-    <tr>
-      <td><code>".foobar.com"</code>
-      <td><code>"www.foobar.com"</code>
-      <td><code>"foobar.com"</code>
-    <tr>
-      <td><code>"*.foobar.com"</code>
-      <td><code>"www.foobar.com"</code>
-      <td><code>"foobar.com"</code>
-    <tr>
-      <td><code>"foobar.com"</code>
-      <td><code>"foobar.com"</code>
-      <td><code>"www.foobar.com"</code>
-    <tr>
-      <td><code>"*foobar.com"</code>
-      <td><code>"foobar.com"</code>, <code>"www.foobar.com"</code>,
-          <code>"foofoobar.com"</code>
-      <td>
-  </table>
-  </dd>
+	<dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;host-pattern&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
+	<dd>Match all hostnames that match the pattern <em>&lt;host-pattern&gt;</em>.
+	A leading <code>"."</code> is interpreted as a <code>"*."</code>.<br>
+	Examples: <code>"foobar.com", "*foobar.com", "*.foobar.com", "*foobar.com:99",
+		"https://x.*.y.com:99"</code>.<br>
+	<table>
+		<tr>
+			<th>Pattern
+			<th>Matches
+			<th>Does not match
+		<tr>
+			<td><code>".foobar.com"</code>
+			<td><code>"www.foobar.com"</code>
+			<td><code>"foobar.com"</code>
+		<tr>
+			<td><code>"*.foobar.com"</code>
+			<td><code>"www.foobar.com"</code>
+			<td><code>"foobar.com"</code>
+		<tr>
+			<td><code>"foobar.com"</code>
+			<td><code>"foobar.com"</code>
+			<td><code>"www.foobar.com"</code>
+		<tr>
+			<td><code>"*foobar.com"</code>
+			<td><code>"foobar.com"</code>, <code>"www.foobar.com"</code>,
+					<code>"foofoobar.com"</code>
+			<td>
+	</table>
+	</dd>
 
-  <dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;ip-literal&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
-  <dd>Match URLs that are IP address literals.<br>
-  Conceptually this is the similar to the first case, but with special cases
-  to handle IP literal canonicalization. For example, matching
-  on "[0:0:0::1]" is the same as matching on "[::1]" because
-  the IPv6 canonicalization is done internally.<br>
-  Examples: <code>"127.0.1", "[0:0::1]", "[::1]", "http://[::1]:99"</code></dd>
+	<dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;ip-literal&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
+	<dd>Match URLs that are IP address literals.<br>
+	Conceptually this is the similar to the first case, but with special cases
+	to handle IP literal canonicalization. For example, matching
+	on "[0:0:0::1]" is the same as matching on "[::1]" because
+	the IPv6 canonicalization is done internally.<br>
+	Examples: <code>"127.0.1", "[0:0::1]", "[::1]", "http://[::1]:99"</code></dd>
 
-  <dt><code><em>&lt;ip-literal&gt;</em>/<em>&lt;prefix-length-in-bits&gt;</em></code></dt>
-  <dd>Match any URL containing an IP literal within the given range. The IP
-  range is specified using CIDR notation.<br>
-  Examples: <code>"192.168.1.1/16", "fefe:13::abc/33"</code></dd>
+	<dt><code><em>&lt;ip-literal&gt;</em>/<em>&lt;prefix-length-in-bits&gt;</em></code></dt>
+	<dd>Match any URL containing an IP literal within the given range. The IP
+	range is specified using CIDR notation.<br>
+	Examples: <code>"192.168.1.1/16", "fefe:13::abc/33"</code></dd>
 
-  <dt><code>&lt;local&gt;</code></dt>
-  <dd>Match local addresses. An address is local if the host is "127.0.0.1",
-  "::1", or "localhost".<br>
-  Example: <code>"&lt;local&gt;"</code></dd>
+	<dt><code>&lt;local&gt;</code></dt>
+	<dd>Match local addresses. An address is local if the host is "127.0.0.1",
+	"::1", or "localhost".<br>
+	Example: <code>"&lt;local&gt;"</code></dd>
 </dl>
 
 
@@ -183,23 +182,23 @@ The following code sets a SOCKS 5 proxy for HTTP connections to all servers but
 foobar.com and uses direct connections for all other protocols. The settings
 apply to regular and incognito windows, as incognito windows inherit settings
 from regular windows. Please also consult the <a
-  href="https://developer.chrome.com/extensions/types">Types API</a> documentation.
+	href="https://developer.chrome.com/extensions/types">Types API</a> documentation.
 </p>
 
 <pre>
 var config = {
-  mode: "fixed_servers",
-  rules: {
-    proxyForHttp: {
-      scheme: "socks5",
-      host: "1.2.3.4"
-    },
-    bypassList: ["foobar.com"]
-  }
+	mode: "fixed_servers",
+	rules: {
+		proxyForHttp: {
+			scheme: "socks5",
+			host: "1.2.3.4"
+		},
+		bypassList: ["foobar.com"]
+	}
 };
 chrome.proxy.settings.set(
-    {value: config, scope: 'regular'},
-    function() {});
+		{value: config, scope: 'regular'},
+		function() {});
 </pre>
 
 <p>
@@ -208,30 +207,30 @@ The following code sets a custom PAC script.
 
 <pre>
 var config = {
-  mode: "pac_script",
-  pacScript: {
-    data: "function FindProxyForURL(url, host) {\n" +
-          "  if (host == 'foobar.com')\n" +
-          "    return 'PROXY blackhole:80';\n" +
-          "  return 'DIRECT';\n" +
-          "}"
-  }
+	mode: "pac_script",
+	pacScript: {
+		data: "function FindProxyForURL(url, host) {\n" +
+					"  if (host == 'foobar.com')\n" +
+					"    return 'PROXY blackhole:80';\n" +
+					"  return 'DIRECT';\n" +
+					"}"
+	}
 };
 chrome.proxy.settings.set(
-    {value: config, scope: 'regular'},
-    function() {});
+		{value: config, scope: 'regular'},
+		function() {});
 </pre>
 
 <p>
 The next snippet queries the currently effective proxy settings. The effective
 proxy settings can be determined by another extension or by a policy. See the <a
-  href="https://developer.chrome.com/extensions/types">Types API</a> documentation for details.
+	href="https://developer.chrome.com/extensions/types">Types API</a> documentation for details.
 </p>
 
 <pre>
 chrome.proxy.settings.get(
-    {'incognito': false},
-    function(config) {console.log(JSON.stringify(config));});
+		{'incognito': false},
+		function(config) {console.log(JSON.stringify(config));});
 </pre>
 
 <p>

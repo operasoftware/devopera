@@ -1,38 +1,37 @@
 ---
- 
 title: "Formats: Manifest Files" # this title needs quotes
 support: 15
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/trunk/extensions/manifest.html
 ---
-       <div id="toc">
-          <h2>Contents</h2>
-          <ol>
-            <li>
-              <a href="manifest.html#overview"> Field summary </a>
-            </li>
-            <li>
-              <a href="manifest.html#field_details">Field details</a>
-              <ol>
-                <li><a href="manifest.html#default_locale">default_locale</a></li>
-                <li><a href="manifest.html#description">description</a></li>
-                <li><a href="manifest.html#developer">developer</a></li>
-                <li><a href="manifest.html#homepage_url">homepage_url</a></li>
-                <li><a href="manifest.html#icons">icons</a></li>
-                <li><a href="manifest.html#incognito">incognito</a></li>
-                <li><a href="manifest.html#key">key</a></li>
-                <li><a href="manifest.html#minimum_opera_version">minimum_opera_version</a></li>
-                <li><a href="manifest.html#name">name</a></li>
-                <li><a href="manifest.html#permissions">permissions</a></li>
-                <li><a href="manifest.html#requirements">requirements</a></li>
-                <li><a href="manifest.html#version">version</a></li>
-                <li><a href="manifest.html#manifest_version">manifest_version</a></li>
-                <li><a href="manifest.html#web_accessible_resources">web_accessible_resources</a></li>
-                <li><a href="manifest.html#sandbox">sandbox</a></li>
-              </ol>
-            </li>
-          </ol>
-        </div>
+			 <div id="toc">
+					<h2>Contents</h2>
+					<ol>
+						<li>
+							<a href="manifest.html#overview"> Field summary </a>
+						</li>
+						<li>
+							<a href="manifest.html#field_details">Field details</a>
+							<ol>
+								<li><a href="manifest.html#default_locale">default_locale</a></li>
+								<li><a href="manifest.html#description">description</a></li>
+								<li><a href="manifest.html#developer">developer</a></li>
+								<li><a href="manifest.html#homepage_url">homepage_url</a></li>
+								<li><a href="manifest.html#icons">icons</a></li>
+								<li><a href="manifest.html#incognito">incognito</a></li>
+								<li><a href="manifest.html#key">key</a></li>
+								<li><a href="manifest.html#minimum_opera_version">minimum_opera_version</a></li>
+								<li><a href="manifest.html#name">name</a></li>
+								<li><a href="manifest.html#permissions">permissions</a></li>
+								<li><a href="manifest.html#requirements">requirements</a></li>
+								<li><a href="manifest.html#version">version</a></li>
+								<li><a href="manifest.html#manifest_version">manifest_version</a></li>
+								<li><a href="manifest.html#web_accessible_resources">web_accessible_resources</a></li>
+								<li><a href="manifest.html#sandbox">sandbox</a></li>
+							</ol>
+						</li>
+					</ol>
+				</div>
 
 
 
@@ -55,36 +54,36 @@ are <b>name</b> and <b>version</b>.
 
 <pre class="prettyprint">
 {
-  <em>// Required</em>
-  "<a href="manifest.html#name">name</a>": "<em>My Extension</em>",
-  "<a href="manifest.html#version">version</a>": "<em>versionString</em>",
-  "<a href="manifest.html#manifest_version">manifest_version</a>": 2,
+	<em>// Required</em>
+	"<a href="manifest.html#name">name</a>": "<em>My Extension</em>",
+	"<a href="manifest.html#version">version</a>": "<em>versionString</em>",
+	"<a href="manifest.html#manifest_version">manifest_version</a>": 2,
 
-  <em>// Recommended</em>
-  "<a href="manifest.html#description">description</a>": "<em>A plain text description</em>",
-  "<a href="manifest.html#developer">developer</a>": { ... },
-  "<a href="manifest.html#icons">icons</a>": { ... },
-  "<a href="manifest.html#default_locale">default_locale</a>": "<em>en</em>",
+	<em>// Recommended</em>
+	"<a href="manifest.html#description">description</a>": "<em>A plain text description</em>",
+	"<a href="manifest.html#developer">developer</a>": { ... },
+	"<a href="manifest.html#icons">icons</a>": { ... },
+	"<a href="manifest.html#default_locale">default_locale</a>": "<em>en</em>",
 
-  <em>// Pick one (or none)</em>
-  "<a href="browserAction.html">browser_action</a>": {...},
-  "<a href="pageAction.html">page_action</a>": {...},
+	<em>// Pick one (or none)</em>
+	"<a href="browserAction.html">browser_action</a>": {...},
+	"<a href="pageAction.html">page_action</a>": {...},
 
-  <em>// Add any of these that you need</em>
-  "<a href="tut_architecture_overview.html#the-background-process">background</a>": {"persistent": false, ...},
-  "<a href="tut_architecture_overview.html#the-background-process">background</a>": {"persistent": true, ...},
-  "<a href="tut_content_scripts.html">content_scripts</a>": [...],
-  "<a href="tut_architecture_overview.html#permissions-and-privileges">content_security_policy</a>": "<em>policyString</em>",
-  "<a href="manifest.html#homepage_url">homepage_url</a>": "http://<em>path/to/homepage</em>",
-  "<a href="manifest.html#incognito">incognito</a>": "spanning" <em>or</em> "split",
-  "<a href="manifest.html#key">key</a>": "<em>publicKey</em>",
-  "<a href="manifest.html#minimum_opera_version">minimum_opera_version</a>": "<em>versionString</em>",
-  "<a href="tut_architecture_overview.html#the-options-page">options_page</a>": "<em>aFile</em>.html",
-  "<a href="declare_permissions.html">permissions</a>": [...],
-  "<a href="manifest.html#requirements">requirements</a>": {...},
-  "update_url": "http://<em>path/to/updateInfo</em>.xml",
-  "<a href="manifest.html#web_accessible_resources">web_accessible_resources</a>": [...],
-  "<a href="manifest.html#sandbox">sandbox</a>": [...]
+	<em>// Add any of these that you need</em>
+	"<a href="tut_architecture_overview.html#the-background-process">background</a>": {"persistent": false, ...},
+	"<a href="tut_architecture_overview.html#the-background-process">background</a>": {"persistent": true, ...},
+	"<a href="tut_content_scripts.html">content_scripts</a>": [...],
+	"<a href="tut_architecture_overview.html#permissions-and-privileges">content_security_policy</a>": "<em>policyString</em>",
+	"<a href="manifest.html#homepage_url">homepage_url</a>": "http://<em>path/to/homepage</em>",
+	"<a href="manifest.html#incognito">incognito</a>": "spanning" <em>or</em> "split",
+	"<a href="manifest.html#key">key</a>": "<em>publicKey</em>",
+	"<a href="manifest.html#minimum_opera_version">minimum_opera_version</a>": "<em>versionString</em>",
+	"<a href="tut_architecture_overview.html#the-options-page">options_page</a>": "<em>aFile</em>.html",
+	"<a href="declare_permissions.html">permissions</a>": [...],
+	"<a href="manifest.html#requirements">requirements</a>": {...},
+	"update_url": "http://<em>path/to/updateInfo</em>.xml",
+	"<a href="manifest.html#web_accessible_resources">web_accessible_resources</a>": [...],
+	"<a href="manifest.html#sandbox">sandbox</a>": [...]
 }
 </pre>
 
@@ -131,7 +130,7 @@ see <a href="i18n.html">Internationalization</a> for details.
 Contains information about author of the extension. It can contain the fields <code>"name"</code> and <code>"url"</code>. For example,
 <pre class="prettyprint">
 "developer": { "name": "John Doe",
-               "url": "http://www.example.org" },
+							 "url": "http://www.example.org" },
 </pre>
 </p>
 
@@ -165,8 +164,8 @@ Here's an example of specifying the icons:
 
 <pre class="prettyprint">
 "icons": { "16": "icon16.png",
-           "48": "icon48.png",
-          "128": "icon128.png" },
+					 "48": "icon48.png",
+					"128": "icon128.png" },
 </pre>
 
 <div class="note">
@@ -249,9 +248,9 @@ see <a href="i18n.html">Internationalization</a> for details.
 <p>You need to declare your intent to use certain features by listing them in the <code>"permissions"</code> field. A typical example of it would be like so:</p>
 <pre class="prettyprint">
 "permissions": [
-    "tabs",
-    "http://*.opera.com",
-    "contextMenus"
+		"tabs",
+		"http://*.opera.com",
+		"contextMenus"
 ]
 </pre>
 <p>You can use match patterns to specify if the extension wants the code to run on certain pages. Please see the <a href="tut_match_patterns.html">article on match patterns</a> for more details.</p>
@@ -271,9 +270,9 @@ as demonstrated in the following example:
 
 <pre class="prettyprint">
 "requirements": {
-  "3D": {
-    "features": ["webgl"]
-  }
+	"3D": {
+		"features": ["webgl"]
+	}
 }
 </pre>
 
@@ -293,10 +292,10 @@ Here are some examples of valid versions:
 </p>
 
 <ul>
-  <li> <code>"version": "1"</code> </li>
-  <li> <code>"version": "1.0"</code> </li>
-  <li> <code>"version": "2.10.2"</code> </li>
-  <li> <code>"version": "3.1.2.4567"</code> </li>
+	<li> <code>"version": "1"</code> </li>
+	<li> <code>"version": "1.0"</code> </li>
+	<li> <code>"version": "2.10.2"</code> </li>
+	<li> <code>"version": "3.1.2.4567"</code> </li>
 </ul>
 
 <p>
@@ -351,14 +350,14 @@ etc.) as follows:
 </p>
 
 <pre class="prettyprint">{
-  ...
-  "web_accessible_resources": [
-    "images/my-awesome-image1.png",
-    "images/my-amazing-icon1.png",
-    "style/double-rainbow.css",
-    "script/double-rainbow.js"
-  ],
-  ...
+	...
+	"web_accessible_resources": [
+		"images/my-awesome-image1.png",
+		"images/my-amazing-icon1.png",
+		"style/double-rainbow.css",
+		"script/double-rainbow.js"
+	],
+	...
 }</pre>
 
 <p>
@@ -394,37 +393,37 @@ with them. Being in a sandbox has two implications:
 direct access to non-sandboxed pages (it may communicate with them via
 <code>postMessage()</code>).</li>
 <li>
-  <p>A sandboxed page is not subject to the
-  <a href="tut_architecture_overview.html#permissions_and_privileges">Content Security Policy
-  (CSP)</a> used by the rest of the extension (it has its own separate
-  CSP value). This means that, for example, it can use inline script and
-  <code>eval</code>.</p>
+	<p>A sandboxed page is not subject to the
+	<a href="tut_architecture_overview.html#permissions_and_privileges">Content Security Policy
+	(CSP)</a> used by the rest of the extension (it has its own separate
+	CSP value). This means that, for example, it can use inline script and
+	<code>eval</code>.</p>
 
-  <p>For example, here's how to specify that two extension pages are to be
-  served in a sandbox with a custom CSP:</p>
+	<p>For example, here's how to specify that two extension pages are to be
+	served in a sandbox with a custom CSP:</p>
 
-  <pre class="prettyprint">{
-  ...
-  "sandbox": {
-    "pages": [
-      "page1.html",
-      "directory/page2.html"
-    ]
-    <i>// content_security_policy is optional.</i>
-    "content_security_policy":
-        "sandbox allow-scripts; script-src https://www.google.com"
-  ],
-  ...
+	<pre class="prettyprint">{
+	...
+	"sandbox": {
+		"pages": [
+			"page1.html",
+			"directory/page2.html"
+		]
+		<i>// content_security_policy is optional.</i>
+		"content_security_policy":
+				"sandbox allow-scripts; script-src https://www.google.com"
+	],
+	...
 }</pre>
 
-  <p>
-  If not specified, the default <code>content_security_policy</code> value is
-  <code>sandbox allow-scripts allow-forms</code>. You can specify your CSP
-  value to restrict the sandbox even further, but it must have the <code>sandbox</code>
-  directive and may not have the <code>allow-same-origin</code> token (see
-  <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox">the
-  HTML5 specification</a> for possible sandbox tokens).
-  </p>
+	<p>
+	If not specified, the default <code>content_security_policy</code> value is
+	<code>sandbox allow-scripts allow-forms</code>. You can specify your CSP
+	value to restrict the sandbox even further, but it must have the <code>sandbox</code>
+	directive and may not have the <code>allow-same-origin</code> token (see
+	<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox">the
+	HTML5 specification</a> for possible sandbox tokens).
+	</p>
 </li>
 </ol>
 

@@ -1,5 +1,4 @@
 ---
- 
 title: opr.sidebarAction
 author: shwetankdixit
 copyright: opera-ccby

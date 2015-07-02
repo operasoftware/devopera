@@ -1,5 +1,4 @@
 ---
- 
 title: NPAPI Plugins
 support: 16
 copyright: opera-google-ccby
@@ -30,54 +29,54 @@ Once you have an NPAPI plugin, follow these steps to get your extension using it
 </p>
 
 <ol>
-  <li>
-    Add a section to your extension's <code>manifest.json</code>
-    that describes where to find the plugin,
-    along with other properties about it:
+	<li>
+		Add a section to your extension's <code>manifest.json</code>
+		that describes where to find the plugin,
+		along with other properties about it:
 
 <pre class="prettyprint">{
-  "name": "My extension",
-  ...
-  <b>"plugins": [
-    { "path": "extension_plugin.dll" }
-  ]</b>,
-  ...
+	"name": "My extension",
+	...
+	<b>"plugins": [
+		{ "path": "extension_plugin.dll" }
+	]</b>,
+	...
 }</pre>
 
-    <p>
-    The "path" property specifies the path to your plugin,
-    relative to the manifest file.
-    The "public" property specifies whether
-    your plugin can be accessed by regular web pages;
-    the default is false,
-    meaning only your extension can load the plugin. Add
-    <code>"public": true</code> to make your plugin accessible on
-    regular web pages and content scripts. But
-    <a href="#security-considerations">be careful</a> — any
-    web page will then be able to call into your plugin.
-    </p>
-   </li>
+		<p>
+		The "path" property specifies the path to your plugin,
+		relative to the manifest file.
+		The "public" property specifies whether
+		your plugin can be accessed by regular web pages;
+		the default is false,
+		meaning only your extension can load the plugin. Add
+		<code>"public": true</code> to make your plugin accessible on
+		regular web pages and content scripts. But
+		<a href="#security-considerations">be careful</a> — any
+		web page will then be able to call into your plugin.
+		</p>
+	 </li>
 
-   <li>
-     Create an HTML file that loads your plugin by mime-type.
-     Assuming your mime-type is "application/x-my-extension":
+	 <li>
+		 Create an HTML file that loads your plugin by mime-type.
+		 Assuming your mime-type is "application/x-my-extension":
 
 <pre class="prettyprint">
 &lt;embed type="application/x-my-extension" id="pluginId"></embed>
 &lt;script>
-  var plugin = document.getElementById("pluginId");
-  var result = plugin.myPluginMethod();  // call a method in your plugin
-  console.log("my plugin returned: " + result);
+	var plugin = document.getElementById("pluginId");
+	var result = plugin.myPluginMethod();  // call a method in your plugin
+	console.log("my plugin returned: " + result);
 &lt;/script></pre>
 
-     <p>
-     This can be inside a background page
-     or any other HTML page used by your extension.
-     If your plugin is "public",
-     you can even use a content script to programmatically
-     insert your plugin into a web page.
-     </p>
-   </li>
+		 <p>
+		 This can be inside a background page
+		 or any other HTML page used by your extension.
+		 If your plugin is "public",
+		 you can even use a content script to programmatically
+		 insert your plugin into a web page.
+		 </p>
+	 </li>
 </ol>
 
 <h2 id="security-considerations">Security considerations</h2>

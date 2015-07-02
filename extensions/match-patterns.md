@@ -1,11 +1,10 @@
 ---
- 
 title: Match patterns
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/trunk/extensions/match_patterns.html
 ---
 
-      <div id="gc-pagecontent">
+			<div id="gc-pagecontent">
 
 <h2>Introduction</h2>
 
@@ -36,27 +35,27 @@ Each match pattern has 3 parts:</p>
 </p>
 
 <ul>
-  <li> <em>scheme</em> &mdash;
-    for example, <code>http</code> or <code>file</code>
-    or <code>*</code>
-    <p class="note">
-    <b>Note:</b>
-    Access to <code>file</code> URLs isn't automatic.
-    The user must visit the extensions management page
-    and opt in to <code>file</code> access for each extension that requests it.
-    </p>
-  </li>
-  <li> <em>host</em> &mdash;
-    for example, <code>www.google.com</code>
-    or <code>*.google.com</code>
-    or <code>*</code>;
-    if the scheme is <code>file</code>,
-    there is no <em>host</em> part
-  </li>
-  <li> <em>path</em> &mdash;
-    for example, <code>/*</code>, <code>/foo* </code>,
-    or <code>/foo/bar </code>
-  </li>
+	<li> <em>scheme</em> &mdash;
+		for example, <code>http</code> or <code>file</code>
+		or <code>*</code>
+		<p class="note">
+		<b>Note:</b>
+		Access to <code>file</code> URLs isn't automatic.
+		The user must visit the extensions management page
+		and opt in to <code>file</code> access for each extension that requests it.
+		</p>
+	</li>
+	<li> <em>host</em> &mdash;
+		for example, <code>www.google.com</code>
+		or <code>*.google.com</code>
+		or <code>*</code>;
+		if the scheme is <code>file</code>,
+		there is no <em>host</em> part
+	</li>
+	<li> <em>path</em> &mdash;
+		for example, <code>/*</code>, <code>/foo* </code>,
+		or <code>/foo/bar </code>
+	</li>
 </ul>
 
 <h2>Match pattern syntax</h2>
@@ -88,146 +87,146 @@ The following table shows some valid patterns.
 <table class="simple">
 <tbody>
 <tr>
-  <th style="margin-left:0; padding-left:0">Pattern</th>
-  <th style="margin-left:0; padding-left:0">What it does</th>
-  <th style="margin-left:0; padding-left:0">Examples of matching URLs</th>
+	<th style="margin-left:0; padding-left:0">Pattern</th>
+	<th style="margin-left:0; padding-left:0">What it does</th>
+	<th style="margin-left:0; padding-left:0">Examples of matching URLs</th>
 </tr>
 
 <tr>
-  <td>
-    <code>http://*/*</code>
-  </td>
+	<td>
+		<code>http://*/*</code>
+	</td>
 
-  <td>Matches any URL that uses the <code>http</code> scheme</td>
+	<td>Matches any URL that uses the <code>http</code> scheme</td>
 
-  <td>
-    http://www.google.com/<br>
-    http://example.org/foo/bar.html
-  </td>
+	<td>
+		http://www.google.com/<br>
+		http://example.org/foo/bar.html
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>http://*/foo*</code>
-  </td>
+	<td>
+		<code>http://*/foo*</code>
+	</td>
 
-  <td>
-    Matches any URL that uses the <code>http</code> scheme, on any host,
-    as long as the path starts with <code>/foo</code>
-  </td>
+	<td>
+		Matches any URL that uses the <code>http</code> scheme, on any host,
+		as long as the path starts with <code>/foo</code>
+	</td>
 
-  <td>
-    http://example.com/foo/bar.html<br>
-    http://www.google.com/foo<b></b>
-  </td>
+	<td>
+		http://example.com/foo/bar.html<br>
+		http://www.google.com/foo<b></b>
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>https://*.google.com/foo*bar </code>
-  </td>
+	<td>
+		<code>https://*.google.com/foo*bar </code>
+	</td>
 
-  <td>
-    Matches any URL that uses the <code>https</code> scheme,
-    is on a google.com host
-    (such as www.google.com, docs.google.com, or google.com),
-    as long as the path starts with <code>/foo</code>
-    and ends with <code>bar</code>
-  </td>
+	<td>
+		Matches any URL that uses the <code>https</code> scheme,
+		is on a google.com host
+		(such as www.google.com, docs.google.com, or google.com),
+		as long as the path starts with <code>/foo</code>
+		and ends with <code>bar</code>
+	</td>
 
-  <td>
-    http://www.google.com/foo/baz/bar<br>
-    http://docs.google.com/foobar
-  </td>
+	<td>
+		http://www.google.com/foo/baz/bar<br>
+		http://docs.google.com/foobar
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>http://example.org/foo/bar.html </code>
-  </td>
+	<td>
+		<code>http://example.org/foo/bar.html </code>
+	</td>
 
-  <td>Matches the specified URL</td>
+	<td>Matches the specified URL</td>
 
-  <td>
-    http://example.org/foo/bar.html
-  </td>
+	<td>
+		http://example.org/foo/bar.html
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>file:///foo*</code>
-  </td>
+	<td>
+		<code>file:///foo*</code>
+	</td>
 
-  <td>Matches any local file whose path starts with <code>/foo</code>
-  </td>
+	<td>Matches any local file whose path starts with <code>/foo</code>
+	</td>
 
-  <td>
-    file:///foo/bar.html<br>
-    file:///foo
-  </td>
+	<td>
+		file:///foo/bar.html<br>
+		file:///foo
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>http://127.0.0.1/*</code>
-  </td>
+	<td>
+		<code>http://127.0.0.1/*</code>
+	</td>
 
-  <td>
-    Matches any URL that uses the <code>http</code> scheme
-    and is on the host 127.0.0.1
-  </td>
-  <td>
-    http://127.0.0.1/<br>
-    http://127.0.0.1/foo/bar.html
-  </td>
+	<td>
+		Matches any URL that uses the <code>http</code> scheme
+		and is on the host 127.0.0.1
+	</td>
+	<td>
+		http://127.0.0.1/<br>
+		http://127.0.0.1/foo/bar.html
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>*://mail.google.com/* </code>
-  </td>
+	<td>
+		<code>*://mail.google.com/* </code>
+	</td>
 
-  <td>
-    Matches any URL that starts with
-    <code>http://mail.google.com</code> or
-    <code>https://mail.google.com</code>.
-  </td>
+	<td>
+		Matches any URL that starts with
+		<code>http://mail.google.com</code> or
+		<code>https://mail.google.com</code>.
+	</td>
 
-  <td>
-    http://mail.google.com/foo/baz/bar<br>
-    https://mail.google.com/foobar
-  </td>
+	<td>
+		http://mail.google.com/foo/baz/bar<br>
+		https://mail.google.com/foobar
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>chrome-extension://*/* </code>
-  </td>
+	<td>
+		<code>chrome-extension://*/* </code>
+	</td>
 
-  <td>
-    Matches any URL pointing to an extension (the first <code>*</code>
-    represents a filter for extension IDs, the second for paths).
-  </td>
+	<td>
+		Matches any URL pointing to an extension (the first <code>*</code>
+		represents a filter for extension IDs, the second for paths).
+	</td>
 
-  <td>
-    chrome-extension://askla...asdf/options.html
-  </td>
+	<td>
+		chrome-extension://askla...asdf/options.html
+	</td>
 </tr>
 
 <tr>
-  <td>
-    <code>&lt;all_urls&gt;</code>
-  </td>
+	<td>
+		<code>&lt;all_urls&gt;</code>
+	</td>
 
-  <td>
-    Matches any URL that uses a permitted scheme.
-    (See the beginning of this section for the list of permitted
-    schemes.)
-  </td>
-  <td>
-    http://example.org/foo/bar.html<br>
-    file:///bar/baz.html
-  </td>
+	<td>
+		Matches any URL that uses a permitted scheme.
+		(See the beginning of this section for the list of permitted
+		schemes.)
+	</td>
+	<td>
+		http://example.org/foo/bar.html<br>
+		file:///bar/baz.html
+	</td>
 </tr>
 </tbody>
 </table>
@@ -239,33 +238,33 @@ Here are some examples of <em>invalid</em> pattern matches:
 <table class="simple">
 <tbody>
 <tr>
-  <th style="margin-left:0; padding-left:0">Bad pattern</th>
-  <th style="margin-left:0; padding-left:0">Why it's bad</th>
+	<th style="margin-left:0; padding-left:0">Bad pattern</th>
+	<th style="margin-left:0; padding-left:0">Why it's bad</th>
 </tr>
 
 <tr>
-  <td><code>http://www.google.com</code></td>
-  <td>No <em>path</em></td>
+	<td><code>http://www.google.com</code></td>
+	<td>No <em>path</em></td>
 </tr>
 
 <tr>
-  <td><code>http://*foo/bar</code></td>
-  <td>'*' in the <em>host</em> can be followed only by a '.' or '/'</td>
+	<td><code>http://*foo/bar</code></td>
+	<td>'*' in the <em>host</em> can be followed only by a '.' or '/'</td>
 </tr>
 
 <tr>
-  <td><code>http://foo.*.bar/baz&nbsp; </code></td>
-  <td>If '*' is in the <em>host</em>, it must be the first character</td>
-  </tr>
+	<td><code>http://foo.*.bar/baz&nbsp; </code></td>
+	<td>If '*' is in the <em>host</em>, it must be the first character</td>
+	</tr>
 
 <tr>
-  <td><code>http:/bar</code></td>
-  <td>Missing <em>scheme</em> separator ("/" should be "//")</td>
+	<td><code>http:/bar</code></td>
+	<td>Missing <em>scheme</em> separator ("/" should be "//")</td>
 </tr>
 
 <tr>
-  <td><code>foo://*</code></td>
-  <td>Invalid <em>scheme</em></td>
+	<td><code>foo://*</code></td>
+	<td>Invalid <em>scheme</em></td>
 </tr>
 </tbody>
 </table>
@@ -273,4 +272,4 @@ Here are some examples of <em>invalid</em> pattern matches:
 <p>
 Some schemes are not supported in all contexts.
 </p>
-      </div>
+			</div>

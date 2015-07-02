@@ -1,5 +1,4 @@
 ---
- 
 title: Publishing guidelines
 author: andreasbovens
 copyright: opera-ccby

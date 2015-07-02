@@ -1,5 +1,4 @@
 ---
- 
 title: Removing browsing data
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/extensions/browsingData.html

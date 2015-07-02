@@ -1,5 +1,4 @@
 ---
- 
 title: Permissions declarations
 copyright: opera-google-ccby
 originalsource: http://developer.chrome.com/extensions/declare_permissions.html
