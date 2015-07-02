@@ -1,0 +1,9 @@
+deploy:
+  provider: codedeploy
+  access_key_id: "AKIAILZS2G2NCXNE4U2A"
+  secret_access_key:
+    secure: "AuuSW98B2/0cVv/qKwGCBujfIB7bIgtfySVZKZ2yiG06I0AJwQawpaPcI92hMjZ6aTtFD2SdhshDlcUdh7BNsMoJzs4SQIRukCnikvoYsWR2+3FDFwffLj7ijFyreAIHbq9ydcB0I/x/a2A3grNEtvgURydurxow+f7IWfn8GmA="
+  bucket: "S3 Bucket"
+  key: latest/devopera.zip
+  application: dev-opera
+  deployment_group: dev-opera
