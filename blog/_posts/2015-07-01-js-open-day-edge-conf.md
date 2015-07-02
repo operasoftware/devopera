@@ -19,7 +19,7 @@ On Friday, Microsoft invited me to speak about installable web apps at their fir
 	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/uDn-C6IGdVE" allowfullscreen></iframe>
 </figure>
 
-On Saturday, it was time for [Edge Conference](https://edgeconf.com/2015-london), which is a “day of group discussion and debate on advanced web technologies for developers and browser vendors.” I moderated the “installing web apps” breakout session, which turned out to be an excellent one hour discussion with various browser representatives and mobile web developers, covering “add to Home screen” functionality, its UX, permissions, OS integration, and much more. It got the best rating of all Edge sessions, so you can tell we had a blast :)
+On Saturday, it was time for [Edge Conference](https://edgeconf.com/2015-london), which is a “day of group discussion and debate on advanced web technologies for developers and browser vendors.” I moderated the “installing web apps” breakout session, which turned out to be an excellent one hour discussion with various browser representatives and mobile web developers, covering “add to Home screen” functionality, its UX, permissions, OS integration, and much more. It got the [best rating](http://labs.ft.com/2015/07/edge-5-here-we-go-again/) of all Edge sessions, so you can tell we had a blast :)
 
 For those interested, Bruce’s raw notes of the breakout are available on [Google Drive](https://docs.google.com/document/d/1i0E5FYU8jjme-vDb7jCgtDA4XmyCRK-0yszvFff8dOQ/edit#) and here’s an image of the session as well.
 
