@@ -3,8 +3,8 @@
 	"name": "Dev.Opera",
 	"icons": [
 		{
-			"src": "apple-touch-icon-144x144.png",
-			"sizes": "144x144",
+			"src": "apple-touch-icon.png",
+			"sizes": "180x180",
 			"type": "image/png"
 		}
 	],
