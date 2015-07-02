@@ -7,7 +7,7 @@ install:
   - "npm install"
   - "npm install bower -g"
   - "bower install"
-script: "grunt ci"
+script: "travis_wait grunt ci"
 deploy:
   provider: codedeploy
   access_key_id: "AKIAILZS2G2NCXNE4U2A"
