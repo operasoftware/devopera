@@ -4,13 +4,14 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 
 ## Environment setup
 
-1. Install Jekyll, Sass, and all needed gems by running `sudo gem install jekyll sass stringex` on the command line.
+1. Install Bundler by running `gem install bundler` on the command line.
 2. Download and install [Node.js](http://nodejs.org/) or [io.js](https://iojs.org/) with the default installer options.
-3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git`.
-4. Run `npm install` inside the `devopera` folder.
-5. Run `npm install bower -g` to install Bower globally.
-6. Run `bower install`.
-7. Run `npm install grunt-cli -g` to install Grunt globally.
+3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git` and `cd` into the `devopera` folder.
+4. Install Jekyll, Sass, and all needed gems by running `bundle install`.
+5. Run `npm install` inside the `devopera` folder.
+6. Run `npm install bower -g` to install Bower globally.
+7. Run `bower install`.
+8. Run `npm install grunt-cli -g` to install Grunt globally.
 
 Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`.editorconfig`](.editorconfig) file.
 
