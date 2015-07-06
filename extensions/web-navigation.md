@@ -1,7 +1,7 @@
 ---
 title: Using webNavigation
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/webNavigation.html
+source: http://developer.chrome.com/extensions/webNavigation.html
+license: cc-by-3.0
 ---
 
 

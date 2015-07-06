@@ -1,8 +1,8 @@
 ---
 title: NPAPI Plugins
 support: 16
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/npapi.html
+source: http://developer.chrome.com/extensions/npapi.html
+license: cc-by-3.0
 ---
 <p class="alert"><strong>Warning:</strong> NPAPI support will be deprecated from Opera 20 onward. We recommend converting your extension to use other extension APIs or <a href="tut_message_passing.html#native_messaging">native messaging</a> instead.</p>
 

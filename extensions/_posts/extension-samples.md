@@ -1,8 +1,8 @@
 ---
-
-title: Extension templates and samples
-author: shwetankdixit
-copyright: opera-ccby
+title: Extension Templates and Samples
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

@@ -1,37 +1,38 @@
 ---
-title: "Formats: Manifest Files" # this title needs quotes
+title: 'Formats: Manifest Files'
 support: 15
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/trunk/extensions/manifest.html
+source: http://developer.chrome.com/trunk/extensions/manifest.html
+license: cc-by-3.0
 ---
-			 <div id="toc">
-					<h2>Contents</h2>
-					<ol>
-						<li>
-							<a href="manifest.html#overview"> Field summary </a>
-						</li>
-						<li>
-							<a href="manifest.html#field_details">Field details</a>
-							<ol>
-								<li><a href="manifest.html#default_locale">default_locale</a></li>
-								<li><a href="manifest.html#description">description</a></li>
-								<li><a href="manifest.html#developer">developer</a></li>
-								<li><a href="manifest.html#homepage_url">homepage_url</a></li>
-								<li><a href="manifest.html#icons">icons</a></li>
-								<li><a href="manifest.html#incognito">incognito</a></li>
-								<li><a href="manifest.html#key">key</a></li>
-								<li><a href="manifest.html#minimum_opera_version">minimum_opera_version</a></li>
-								<li><a href="manifest.html#name">name</a></li>
-								<li><a href="manifest.html#permissions">permissions</a></li>
-								<li><a href="manifest.html#requirements">requirements</a></li>
-								<li><a href="manifest.html#version">version</a></li>
-								<li><a href="manifest.html#manifest_version">manifest_version</a></li>
-								<li><a href="manifest.html#web_accessible_resources">web_accessible_resources</a></li>
-								<li><a href="manifest.html#sandbox">sandbox</a></li>
-							</ol>
-						</li>
-					</ol>
-				</div>
+
+<div id="toc">
+	<h2>Contents</h2>
+	<ol>
+		<li>
+			<a href="manifest.html#overview"> Field summary </a>
+		</li>
+		<li>
+			<a href="manifest.html#field_details">Field details</a>
+			<ol>
+				<li><a href="manifest.html#default_locale">default_locale</a></li>
+				<li><a href="manifest.html#description">description</a></li>
+				<li><a href="manifest.html#developer">developer</a></li>
+				<li><a href="manifest.html#homepage_url">homepage_url</a></li>
+				<li><a href="manifest.html#icons">icons</a></li>
+				<li><a href="manifest.html#incognito">incognito</a></li>
+				<li><a href="manifest.html#key">key</a></li>
+				<li><a href="manifest.html#minimum_opera_version">minimum_opera_version</a></li>
+				<li><a href="manifest.html#name">name</a></li>
+				<li><a href="manifest.html#permissions">permissions</a></li>
+				<li><a href="manifest.html#requirements">requirements</a></li>
+				<li><a href="manifest.html#version">version</a></li>
+				<li><a href="manifest.html#manifest_version">manifest_version</a></li>
+				<li><a href="manifest.html#web_accessible_resources">web_accessible_resources</a></li>
+				<li><a href="manifest.html#sandbox">sandbox</a></li>
+			</ol>
+		</li>
+	</ol>
+</div>
 
 
 

@@ -1,8 +1,8 @@
 ---
-
-title: Working with Off-Road Mode
-author: shwetankdixit
-copyright: opera-ccby
+title: Working With Off-Road Mode
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

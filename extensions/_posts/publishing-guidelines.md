@@ -1,8 +1,10 @@
 ---
-title: Publishing guidelines
-author: andreasbovens
-copyright: opera-ccby
+title: Publishing Guidelines
+authors:
+- andreas-bovens
+license: cc-by-3.0
 ---
+
 <h2>Contents</h2>
 <ol class="toc">
 	<li><a href="#intro">Introduction</a></li>

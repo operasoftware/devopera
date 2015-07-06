@@ -1,8 +1,8 @@
 ---
-
-title: Working with tabs and windows
-author: shwetankdixit
-copyright: opera-ccby
+title: Working With Tabs and Windows
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ##Introduction

@@ -1,7 +1,7 @@
 ---
 title: Content Scripts
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/trunk/extensions/content_scripts.html
+source: http://developer.chrome.com/trunk/extensions/content_scripts.html
+license: cc-by-3.0
 ---
 
 ## Contents

@@ -1,7 +1,7 @@
 ---
-title: Controlling privacy features
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/privacy.html
+title: Controlling Privacy Features
+source: http://developer.chrome.com/extensions/privacy.html
+license: cc-by-3.0
 ---
 
 

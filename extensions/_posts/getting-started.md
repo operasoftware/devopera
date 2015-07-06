@@ -1,8 +1,8 @@
 ---
-
-title: Getting started
-author: shwetankdixit
-copyright: opera-ccby
+title: Getting Started
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

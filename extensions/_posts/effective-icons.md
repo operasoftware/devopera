@@ -1,7 +1,8 @@
 ---
 title: Creating Effective Icons
-author: demonstro
-copyright: opera-ccby
+authors:
+- christian-sinding
+license: cc-by-3.0
 ---
 
 ## Contents

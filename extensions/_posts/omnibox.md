@@ -1,8 +1,8 @@
 ---
-
-title: Creating address bar extensions
-author: shwetankdixit
-copyright: opera-ccby
+title: Creating Address Bar Extensions
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

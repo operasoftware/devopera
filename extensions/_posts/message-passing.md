@@ -1,9 +1,9 @@
 ---
-
-title: Passing messages in extensions
-author: shwetankdixit
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/messaging.html
+title: Passing Messages in Extensions
+authors:
+- shwetank-dixit
+source: http://developer.chrome.com/extensions/messaging.html
+license: cc-by-3.0
 ---
 
 ## Introduction

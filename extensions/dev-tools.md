@@ -1,10 +1,8 @@
 ---
-
 title: Extending DevTools
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/devtools.html
+source: http://developer.chrome.com/extensions/devtools.html
+license: cc-by-3.0
 ---
-
 
 <div id="gc-pagecontent">
 	<div id="toc">

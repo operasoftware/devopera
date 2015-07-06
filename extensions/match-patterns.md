@@ -1,7 +1,7 @@
 ---
-title: Match patterns
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/trunk/extensions/match_patterns.html
+title: Match Patterns
+source: http://developer.chrome.com/trunk/extensions/match_patterns.html
+license: cc-by-3.0
 ---
 
 			<div id="gc-pagecontent">

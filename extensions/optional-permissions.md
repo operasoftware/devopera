@@ -1,7 +1,7 @@
 ---
-title: Optional permissions
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/permissions.html
+title: Optional Permissions
+source: http://developer.chrome.com/extensions/permissions.html
+license: cc-by-3.0
 ---
 <h2>Introduction</h2>
 <p>You can use the <a href="https://developer.chrome.com/extensions/permissions"><code>chrome.permissions</code> API</a> to request <a href="#manifest">declared optional permissions</a> at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.</p>

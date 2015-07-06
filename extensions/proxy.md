@@ -1,7 +1,7 @@
 ---
 title: Using the Proxy API
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/proxy.html
+source: http://developer.chrome.com/extensions/proxy.html
+license: cc-by-3.0
 ---
 
 

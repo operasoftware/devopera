@@ -1,8 +1,8 @@
 ---
-
-title: Speed Dial extensions
-author: shwetankdixit
-copyright: opera-ccby
+title: Speed Dial Extensions
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

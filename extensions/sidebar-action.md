@@ -1,7 +1,6 @@
 ---
 title: opr.sidebarAction
-author: shwetankdixit
-copyright: opera-ccby
+license: cc-by-3.0
 ---
 
 		<div id="gc-container">

@@ -1,7 +1,7 @@
 ---
 title: opr.speeddial
 support: 15
-copyright: opera-ccby
+license: cc-by-3.0
 ---
 
 			<div id="gc-pagecontent">

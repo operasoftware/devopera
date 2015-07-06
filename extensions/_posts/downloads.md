@@ -1,8 +1,8 @@
 ---
-
-title: Working with downloads
-author: shwetankdixit
-copyright: opera-ccby
+title: Working With Downloads
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ## Introduction

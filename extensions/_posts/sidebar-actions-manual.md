@@ -1,8 +1,8 @@
 ---
-
-title: Creating extensions for the sidebar
-author: shwetankdixit
-copyright: opera-ccby
+title: Creating Extensions For The Sidebar
+authors:
+- shwetank-dixit
+license: cc-by-3.0
 ---
 
 ##Introduction
@@ -12,9 +12,9 @@ This article describes how to use the [sidebarAction API](http://localhost:1337/
 ##The Sidebar
 ![The Sidebar](https://dev.opera.com/extensions/static/images/sidebar-illustration.png)
 
-In the latest (developer) builds of Opera you enable the browser sidebar. This is a  place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the *icons list* on the left hand side of the sidebar and the clicking on an incon from the icons list will open it's corresponding *panel*. 
+In the latest (developer) builds of Opera you enable the browser sidebar. This is a  place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the *icons list* on the left hand side of the sidebar and the clicking on an incon from the icons list will open it's corresponding *panel*.
 
-The panel is an html page specified inside the extension which will house the main content of the extension. Every sidebar action *must* have a panel page specified. 
+The panel is an html page specified inside the extension which will house the main content of the extension. Every sidebar action *must* have a panel page specified.
 
 ##The Manifest
 
@@ -39,13 +39,13 @@ You can also specify a series of sizes and icon paths as keys and values, instea
 ##The SidebarAction API
 We've made the [sidebarAction API](sidebarAction.html) to be similar to the [browserAction API](tut_browser_actions.html) so that extension authors could easily grasp the API and have an easier time porting their existing extisting extensions to a sidebar extension, should they choose to do so.
 
-Though a bit similar in terms of the architecture, sidebar extensions should be viewed as different from extensions which use browser actions. The extensions which live on the sidebar are more long-lived. 
+Though a bit similar in terms of the architecture, sidebar extensions should be viewed as different from extensions which use browser actions. The extensions which live on the sidebar are more long-lived.
 
 
 ##Maintaining state
 The panel page works similar to any other web page. So if the user closes the panel, it is the same as any other page whose tab is closed - this means the next time the user opens a panel, it starts from scratch - just like a web page which has been refreshed.
 
-However, given that panels are supposed to be long-lived apps, there needs to be a way to maintain state - which means having a way for data to persist no matter how many times the user opens or closes the panel. This can be accomplished by sending data entered in the popup to the background script. 
+However, given that panels are supposed to be long-lived apps, there needs to be a way to maintain state - which means having a way for data to persist no matter how many times the user opens or closes the panel. This can be accomplished by sending data entered in the popup to the background script.
 
 For example, let's take the case of a simple `<textarea>`. We would like to make sure that whatever data is entered by the user is still there no matter how many times the panel is opened or closed. The code for the panel page can be like so:
 
@@ -71,11 +71,11 @@ function save(){
 
 function show(){
 	theValue = chrome.extension.getBackgroundPage().getValue();
-	
+
 	if (!theValue){
 		theValue = &quot;&quot;;
 	}
-	
+
 	maintext.value = theValue;
 }
 
@@ -96,7 +96,7 @@ function getValue(){
 
 function setValue(theValue){
 	localStorage.setItem('maintext', theValue);
-}</pre> 
+}</pre>
 
 Keep in mind that the extensions panel page can be considered as 'closed' if the panel is not open, but it's background will always be running. So you can maintain state by making sure that the background script either stores data to localStorage, or if it stores the data in the background script itself.
 
@@ -111,7 +111,7 @@ There might be situations where you would want to detect whether the user has fo
 }
 window.onblur = function() {
 	console.log('The user has left focus from the panel page.');
-}</pre> 
+}</pre>
 
 Now that you know how to make sidebar extensions, here is hoping you quickly submit some great extensions to the [addons store](https://addons.opera.com).
 

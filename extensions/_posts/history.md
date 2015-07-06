@@ -1,9 +1,9 @@
 ---
-
-title: Working with the browser history
-copyright: opera-google-ccby
-author: shwetankdixit
-originalsource: http://developer.chrome.com/extensions/history.html
+title: Working With the Browser History
+authors:
+- shwetank-dixit
+source: http://developer.chrome.com/extensions/history.html
+license: cc-by-3.0
 ---
 
 ## Introduction

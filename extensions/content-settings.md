@@ -1,7 +1,7 @@
 ---
-title: Site-specific customization
-copyright: opera-google-ccby
-originalsource: http://developer.chrome.com/extensions/contentSettings.html
+title: Site-specific Sustomization
+source: http://developer.chrome.com/extensions/contentSettings.html
+license: cc-by-3.0
 ---
 
 
