@@ -1,0 +1,39 @@
+sudo: false
+language: ruby
+rvm:
+- 2.2
+install:
+  - "bundle install --jobs=3 --retry=3"
+  - "npm install"
+  - "npm install bower -g"
+  - "bower install"
+script: "travis_wait grunt ci"
+before_deploy:
+  - mkdir _codedeploy
+  - tar czf _codedeploy/dev-opera.tar.gz appspec.yml _site
+after_deploy:
+  - rm -rf _codedeploy
+deploy:
+  - provider: s3
+    region: us-west-2
+    access_key_id: "AKIAILZS2G2NCXNE4U2A"
+    secret_access_key:
+      secure: "AuuSW98B2/0cVv/qKwGCBujfIB7bIgtfySVZKZ2yiG06I0AJwQawpaPcI92hMjZ6aTtFD2SdhshDlcUdh7BNsMoJzs4SQIRukCnikvoYsWR2+3FDFwffLj7ijFyreAIHbq9ydcB0I/x/a2A3grNEtvgURydurxow+f7IWfn8GmA="
+    local_dir: _codedeploy
+    bucket: dev-opera
+    upload-dir: latest
+    skip_cleanup: true
+
+  - provider: codedeploy
+    region: us-west-2
+    access_key_id: "AKIAILZS2G2NCXNE4U2A"
+    secret_access_key:
+      secure: "AuuSW98B2/0cVv/qKwGCBujfIB7bIgtfySVZKZ2yiG06I0AJwQawpaPcI92hMjZ6aTtFD2SdhshDlcUdh7BNsMoJzs4SQIRukCnikvoYsWR2+3FDFwffLj7ijFyreAIHbq9ydcB0I/x/a2A3grNEtvgURydurxow+f7IWfn8GmA="
+    application: DevOpera
+    deployment_group: MainBackends
+    bucket: dev-opera
+    key: latest/dev-opera.tar.gz
+    bundle_type: tgz
+branches:
+  only:
+  - master

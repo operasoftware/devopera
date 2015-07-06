@@ -1,0 +1,7 @@
+# CodeDeploy version, not application version.
+version: 0.0
+os: linux
+
+files:
+  - source: _site
+    destination: /var/www/html
