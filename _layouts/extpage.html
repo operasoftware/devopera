@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <main block="layout">
 	<div elem="content">
 		<article block="content" role="main">
@@ -9,5 +10,7 @@ layout: default
 			{{ content }}
 		</article>
 	</div>
-	{% include sidebar.html %}
+	<div elem="aside">
+		{% include sidebar.html %}
+	</div>
 </main>
