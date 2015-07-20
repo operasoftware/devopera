@@ -1,5 +1,5 @@
 ---
-title: Buttons, popups and badges (browser actions)
+title: 'Browser Actions: Buttons, Popups and Badges'
 authors:
 - shwetank-dixit
 license: cc-by-3.0
