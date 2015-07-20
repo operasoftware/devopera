@@ -27,6 +27,9 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
+  extensions:
+    output: true
+    permalink: /extensions/:path/
 
 defaults:
 # Articles
@@ -45,14 +48,6 @@ defaults:
     category: 'blog'
     layout: 'entry'
     language: 'en'
-# Extensions
-- scope:
-    path: 'extensions'
-    type: 'posts'
-  values:
-    category: 'extensions'
-    layout: 'entry'
-    language: 'en'
 # TV
 - scope:
     path: 'tv'
@@ -67,3 +62,9 @@ defaults:
     type: 'authors'
   values:
     layout: 'author'
+# Extensions
+- scope:
+    path: ''
+    type: 'extensions'
+  values:
+    layout: 'extension'
