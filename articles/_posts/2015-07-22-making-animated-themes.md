@@ -14,11 +14,11 @@ license: cc-by-3.0
 
 This tutorial will tell you about animated themes, how to make them, and where to upload them for distribution.
 
-##Animated Themes
+## Animated Themes
 
 Support for themes has been there for [quite a long time](https://dev.opera.com/articles/themes-in-opera-18-and-higher/), but it was using JPG, PNG or other such non-animated images. However with Opera 32 and above, you have support for animated themes in which you can use a WebM video file.
 
-The maximum file size supported for a WebM images in themes is 50 MB.
+The maximum file size supported for a WebM videos in themes is 50 MB.
 
 ## Making an animated theme
 
