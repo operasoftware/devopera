@@ -25,7 +25,9 @@
   - rwd
 - dev-tools
 - events
-- extensions:
+- addons:
+  - extensions
+  - themes
   - sidebar
 - html:
   - forms
