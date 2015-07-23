@@ -123,7 +123,7 @@ module.exports = function(grunt) {
 					'!install.sh',
 					'!styles/*',
 
-					'!{articles,blog,tv,ext}/**',
+					'!{articles,blog,tv,extensions}/**',
 						'{articles,blog,tv,extensions}/index.html',
 						'{articles,blog,tv,extensions}/**/_posts/*.md'
 				],
