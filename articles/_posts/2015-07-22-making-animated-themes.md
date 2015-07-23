@@ -10,15 +10,17 @@ tags:
 license: cc-by-3.0
 ---
 
-## Introduction
+Support for themes has been there for [quite a long time](https://dev.opera.com/articles/themes-in-opera-18-and-higher/), but it was using JPG, PNG or other such non-animated images. However with Opera 32 and above, you have support for animated themes in which you can use a WebM video file or an animated PNG file.
 
-This tutorial will tell you about animated themes, how to make them, and where to upload them for distribution.
+In the video below, you can see an example of animated themes in action. 
 
-##Animated Themes
+<figure block="figure">
+	<video elem="media" controls>
+		<source src="{{ page.id }}/lakeandnyan.webm" type="video/webm">
+	</video>
+</figure>
 
-Support for themes has been there for [quite a long time](https://dev.opera.com/articles/themes-in-opera-18-and-higher/), but it was using JPG, PNG or other such non-animated images. However with Opera 32 and above, you have support for animated themes in which you can use a WebM video file.
-
-The maximum file size supported for a WebM images in themes is 50 MB.
+The maximum file size supported for WebM and animated PNGs in themes is 50 MB. Animated GIFs are not supported. 
 
 ## Making an animated theme
 
@@ -78,8 +80,16 @@ You can includes comments in the `Persona.ini` page as well. They need to be in 
 
 Keep in mind you can set different resources for the Start Page and the Web UI pages. So you can have, say, a video file for the Start Page (this will also be reflected in the history, tabs, bookmarks page and themes management page) and another video (or even image) for the Web UI pages (which will be reflected on the downloads, settings, plug-ins, password management page, and extension management page).
 
+It is important to note that the video or animated PNG only consumes resources when it is in view. When you are not browsing an Opera internal page, then the theme will not be visible, and hence will not consume resources. 
+
+## Choosing the right background animation
+
+There are a few things to consider when making an animated theme. The video being used should look nice as a background, and preferebly should look good when played in a loop. If you are intend to submit the theme to the [Opera Addons Catalog](https://addons.opera.com/), then it should abide by all the relevant [acceptance criteria](https://dev.opera.com/extensions/tut_publishing_guidelines.html#acceptance-criteria). If the source video requires attribution, then please provide that in the description text in the addons page (and if you want, then as a comment in the `Persona.ini` file as well.)
+
+There are a lot of resources on the internet where you can find high-quality videos to use in your animated themes. For example, check out [Vimeo's Creative Commons Page](https://vimeo.com/creativecommons), [Open Footage](http://www.openfootage.net), [Archive.org]( https://archive.org/details/movies), [Pexels](https://videos.pexels.com/), [Mazwai](http://mazwai.com/) and [Gfycat](http://gfycat.com).
+
 ## Testing and uploading to the Opera Add-ons catalog
 
-Once you have zipped up the `Persona.ini` file and required `.webm` files, and have tested it out by installing the theme in your local Opera install, you’re ready to publish it on the [Opera Add-ons catalog](https://addons.opera.com/en/).
+Once you have zipped up the `Persona.ini` file and required `.webm` files, and have tested it out by installing the theme in your local Opera install, you’re ready to publish it on the [Opera Add-ons catalog](https://addons.opera.com/).
 
 Just head over to the [Upload Add-on](https://addons.opera.com/developer/upload/) section of the Opera Add-ons catalog, and submit your theme. Once the moderator approves, it will be published on the Opera Add-ons catalog.
