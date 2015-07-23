@@ -15,7 +15,7 @@ Support for themes has been there for [quite a long time](https://dev.opera.com/
 In the video below, you can see an example of animated themes in action.
 
 <figure block="figure">
-	<video elem="media" width="640" height="480" controls>
+	<video elem="media" controls>
 		<source src="{{ page.id }}/video.mp4" type="video/mp4">
 		<source src="{{ page.id }}/video.webm" type="video/webm">
 	</video>
