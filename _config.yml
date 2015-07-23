@@ -23,6 +23,7 @@ exclude:
 - '*.scss'
 - '*.map'
 
+# Collections
 collections:
   authors:
     output: true
@@ -65,6 +66,6 @@ defaults:
 # Extensions
 - scope:
     path: ''
-    type: 'extensions'
+    type: 'documentation'
   values:
-    layout: 'extension'
+    layout: 'document'
