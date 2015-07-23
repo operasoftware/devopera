@@ -13,7 +13,7 @@ In this article we’ll put together a simple example extension to show you how 
 
 ## What’s in an Opera extension?
 
-An Opera extension contains a *manifest file* which defines metadata like the name of the extension, its author, etc. It also lists the various API permissions we want the extension to have. It will also typically have a *background page* or *background script*, which is responsible for communicating with the browser UI. Apart from that, it could have a *content script* which deals with changes to web pages. You could also need some other HTML (and related CSS and JavaScript) files for button popups or an options page.
+An Opera extension contains a _manifest file_ which defines metadata like the name of the extension, its author, etc. It also lists the various API permissions we want the extension to have. It will also typically have a _background page_ or _background script_, which is responsible for communicating with the browser UI. Apart from that, it could have a _content script_ which deals with changes to web pages. You could also need some other HTML (and related CSS and JavaScript) files for button popups or an options page.
 
 Apart from all the JS and HTML files, you’ll also need to put in some images for the extension icons.
 

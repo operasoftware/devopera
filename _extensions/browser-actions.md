@@ -1,7 +1,5 @@
 ---
 title: 'Browser Actions: Buttons, Popups and Badges'
-authors:
-- shwetank-dixit
 license: cc-by-3.0
 ---
 
@@ -23,10 +21,10 @@ However, if you don’t want the UI element to appear all the time, rather only 
 
 To display a button in the browser UI, we simply mention it in the extension manifest like so:
 
-	'browser_action': {
-		'default_icon': 'icon.png',
+	"browser_action": {
+		"default_icon": "icon.png",
 		// Optional; shown in tooltip
-		'default_title': 'My Sample Extension'
+		"default_title": "My Sample Extension"
 	}
 
 Providing the default icon size in 19px or 38px size will allow the browser to automatically adjust the icon size according to the pixel density of the user’s display.
@@ -39,20 +37,20 @@ To do that, you need to use add an event listener which listens to the click eve
 		console.log('This button was clicked!');
 	});
 
-[Download our sample button extension](samples/BrowserActions-button.nex) to see a very simple button example.
+[Download our sample button extension]({{ page.id }}/browser-actions-button.nex) to see a very simple button example.
 
 ### Popups
 
 To create a popup, you just need to make an HTML file (lets call it ‘popup.html’) which will be the web page displayed when the popup is opened. All you need to do is to mention this the extension manifest like so:
 
-	'browser_action': {
-		'default_icon': 'icon.png',
+	"browser_action": {
+		"default_icon": "icon.png",
 		// Optional; shown in tooltip
-		'default_title': 'My Sample Extension',
-		'default_popup': 'popup.html'
+		"default_title": "My Sample Extension",
+		"default_popup": "popup.html"
 	}
 
-Go ahead and [download our sample extension](samples/BrowserActions-Popup.nex), which has a very simple popup being displayed.
+Go ahead and [download our sample extension]({{ page.id }}/browser-actions-popup.nex), which has a very simple popup being displayed.
 
 ### Badges
 
@@ -88,21 +86,21 @@ Just like Browser Actions, you can make buttons and popups for Page Actions too,
 
 To get to display a button, simply mention it in the extension manifest like so:
 
-	'page_action': {
-		'default_icon': 'icon.png',
+	"page_action": {
+		"default_icon": "icon.png",
 		// Optional; shown in tooltip
-		'default_title': 'My Sample Extension',
+		"default_title": "My Sample Extension",
 	}
 
 ### Popups
 
 To display a popup, you just need to make an HTML file (lets call it ‘popup.html’) which will be the web page displayed when the popup is opened. All you need to do is to mention this the extension manifest like so:
 
-	'page_action': {
-		'default_icon': 'icon.png',
+	"page_action": {
+		"default_icon": "icon.png",
 		// Optional; shown in tooltip
-		'default_title': 'My Sample Extension',
-		'default_popup': 'popup.html'
+		"default_title": "My Sample Extension",
+		"default_popup": "popup.html"
 	}
 
 ## Displaying a Page Action
