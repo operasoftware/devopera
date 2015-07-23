@@ -66,6 +66,6 @@ defaults:
 # Extensions
 - scope:
     path: ''
-    type: 'documentation'
+    type: 'extensions'
   values:
     layout: 'document'
