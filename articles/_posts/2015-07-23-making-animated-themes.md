@@ -1,5 +1,5 @@
 ---
-title: 'Making animated themes for Opera'
+title: 'Making Animated Themes For Opera'
 authors:
 - shwetank-dixit
 intro: 'You can now make animated themes in Opera. This guide tells you how.'
@@ -21,11 +21,11 @@ In the video below, you can see an example of animated themes in action.
 	</video>
 </figure>
 
-You can download the [Still Lake]({{ page.id }}/still-lake.zip) (6 MB) & [Silent Forest]({{ page.id }}/forest.zip) (10 MB) animated themes used in the video above. Feel free to check out the contents of the theme files. The videos used in those themes are courtesy of [NatureClip](http://natureclip.co.nr/), and have been shared under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
+You can download the [Still Lake]({{ page.id }}/still-lake.zip) (6 MB) & [Silent Forest]({{ page.id }}/forest.zip) (10 MB) animated themes used in the video above. Feel free to check out the contents of the theme files. The videos used in those themes are courtesy of [NatureClip](http://natureclip.co.nr/), and have been shared under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-In the above video, you can see the *Still Lake* animated theme being installed by dragging the .zip file to the `opera:themes` page, after which you can see the theme in action when we go to the speed dial page. Later in the video, we open up the preferences page. You will notice that the background theme is applied there too. In fact, the background theme will be visible on all such internal pages.
+In the above video, you can see the _Still Lake_ animated theme being installed by dragging the .zip file to the [opera://themes](opera://themes) page, after which you can see the theme in action when we go to the speed dial page. Later in the video, we open up the preferences page. You will notice that the background theme is applied there too. In fact, the background theme will be visible on all such internal pages.
 
-All themes you install will be visible in the *My Themes* section of the `opera:themes` page. 
+All themes you install will be visible in the _My Themes_ section of the [opera://themes](opera://themes) page.
 
 The maximum file size supported for WebM and animated WebP files in themes is 50 MB. Animated GIFs and animated PNGs are not supported.
 
@@ -33,10 +33,10 @@ The maximum file size supported for WebM and animated WebP files in themes is 50
 
 There are four simple steps to make your animated theme and to test it out on your local machine:
 
-1. Add the required `.webm` or animated WebP file(s) in a directory.
+1. Add the required WebM or animated WebP file(s) in a directory.
 2. Specify details about the theme in a `persona.ini` file.
-3. Zip up the `persona.ini` file along with the `.webm` or animated WebP file(s).
-4. Goto `opera:themes`. Drag and drop the `.zip` file to the window.
+3. Zip up the `persona.ini` file along with the WebM or animated WebP file(s).
+4. Go to [opera://themes](opera://themes). Drag and drop the `.zip` file to the window.
 
 If all things are valid, your theme should be installed in the Opera browser running on your local machine.
 
@@ -44,7 +44,7 @@ You can easily make an animated theme using the _theme creator_ in Opera.
 
 1. Open Opera and go to [opera://themes](opera://themes).
 2. On the left hand side menu, click on _Create your theme_.
-3. Enter relevant details and select the `.webm` or animated WebP file you want.
+3. Enter relevant details and select the WebM or animated WebP file you want.
 4. Click on the _Create_ button.
 
 ### The `persona.ini` file
