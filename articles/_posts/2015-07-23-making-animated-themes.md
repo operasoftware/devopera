@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Support for themes has been there for [quite a long time](https://dev.opera.com/articles/themes-in-opera-18-and-higher/), but it was using JPG, PNG or other such non-animated images. However with Opera 32 and above, you have support for animated themes in which you can use a WebM video file or an animated PNG file.
+Support for themes has been there for [quite a long time](https://dev.opera.com/articles/themes-in-opera-18-and-higher/), but it was using JPG, PNG or other such non-animated images. However with Opera 32 and above, you have support for animated themes in which you can use a WebM video file or an animated WebP file.
 
 In the video below, you can see an example of animated themes in action.
 
@@ -22,17 +22,21 @@ In the video below, you can see an example of animated themes in action.
 </figure>
 
 Videos by [NatureClip](http://natureclip.co.nr/) Licensed under CC-BY
-[Silent Forest]({{ page.id }}/forest.zip) (10 MB) & [Still Lake]({{ page.id }}/still-lake.zip) (6 MB)
+[Still Lake]({{ page.id }}/still-lake.zip) (6 MB) & [Silent Forest]({{ page.id }}/forest.zip) (10 MB).
 
-The maximum file size supported for WebM and animated PNGs in themes is 50 MB. Animated GIFs are not supported.
+In the above video, you can see the *Still Lake* animated theme being installed by dragging the .zip file to the `opera:themes` page, after which you can see the theme in action when we go to the speed dial page. Later in the video, we open up the preferences page. You will notice that the background theme is applied there too. In fact, the background theme will be visible on all such internal pages.
+
+All themes you install will be visible in the *My Themes* section of the `opera:themes` page. 
+
+The maximum file size supported for WebM and animated WebP files in themes is 50 MB. Animated GIFs and animated PNGs are not supported.
 
 ## Making an animated theme
 
 There are four simple steps to make your animated theme and to test it out on your local machine:
 
-1. Add the required `.webm` file(s) in a directory.
+1. Add the required `.webm` or animated WebP file(s) in a directory.
 2. Specify details about the theme in a `persona.ini` file.
-3. Zip up the `persona.ini` file along with the `.webm` file(s).
+3. Zip up the `persona.ini` file along with the `.webm` or animated WebP file(s).
 4. Goto `opera:themes`. Drag and drop the `.zip` file to the window.
 
 If all things are valid, your theme should be installed in the Opera browser running on your local machine.
@@ -41,7 +45,7 @@ You can easily make an animated theme using the _theme creator_ in Opera.
 
 1. Open Opera and go to [opera://themes](opera://themes).
 2. On the left hand side menu, click on _Create your theme_.
-3. Enter relevant details and select the `.webm` file you want.
+3. Enter relevant details and select the `.webm` or animated WebP file you want.
 4. Click on the _Create_ button.
 
 ### The `persona.ini` file
@@ -87,7 +91,7 @@ You can includes comments in the `persona.ini` page as well. They need to be in 
 
 Keep in mind you can set different resources for the Start Page and the Web UI pages. So you can have, say, a video file for the Start Page (this will also be reflected in the history, tabs, bookmarks page and themes management page) and another video (or even image) for the Web UI pages (which will be reflected on the downloads, settings, plug-ins, password management page, and extension management page).
 
-It is important to note that the video or animated PNG only consumes resources when it is in view. When you are not browsing an Opera internal page, then the theme will not be visible, and hence will not consume resources.
+It is important to note that the video or animated WebP only consumes resources when it is in view. When you are not browsing an Opera internal page, then the theme will not be visible, and hence will not consume resources.
 
 ## Choosing the right background animation
 
@@ -97,6 +101,6 @@ There are a lot of resources on the internet where you can find high-quality vid
 
 ## Testing and uploading to the Opera Add-ons catalog
 
-Once you have zipped up the `persona.ini` file and required `.webm` files, and have tested it out by installing the theme in your local Opera install, you’re ready to publish it on the [Opera Add-ons catalog](https://addons.opera.com/).
+Once you have zipped up the `persona.ini` file along with required `.webm` or animated WebP files, and have tested it out by installing the theme in your local Opera install, you’re ready to publish it on the [Opera Add-ons catalog](https://addons.opera.com/).
 
 Just head over to the [Upload Add-on](https://addons.opera.com/developer/upload/) section of the Opera Add-ons catalog, and submit your theme. Once the moderator approves, it will be published on the Opera Add-ons catalog.
