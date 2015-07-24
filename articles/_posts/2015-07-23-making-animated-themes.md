@@ -91,7 +91,7 @@ It is important to note that the video or animated PNG only consumes resources w
 
 ## Choosing the right background animation
 
-There are a few things to consider when making an animated theme. The video being used should look nice as a background, and preferebly should look good when played in a loop. If you are intend to submit the theme to the [Opera Addons Catalog](https://addons.opera.com/), then it should abide by all the relevant [acceptance criteria](https://dev.opera.com/extensions/tut_publishing_guidelines.html#acceptance-criteria). If the source video requires attribution, then please provide that in the description text in the addons page (and if you want, then as a comment in the `persona.ini` file as well.)
+There are a few things to consider when making an animated theme. The video being used should look nice as a background, and preferebly should look good when played in a loop. If you intend to submit the theme to the [Opera Addons Catalog](https://addons.opera.com/), then it should abide by all the relevant [acceptance criteria](https://dev.opera.com/extensions/tut_publishing_guidelines.html#acceptance-criteria). If the source video requires attribution, then please provide that in the description text in the addons page (and if you want, then as a comment in the `persona.ini` file as well.)
 
 There are a lot of resources on the internet where you can find high-quality videos to use in your animated themes. For example, check out [Vimeo’s Creative Commons Page](https://vimeo.com/creativecommons), [Open Footage](http://www.openfootage.net), [Archive.org]( https://archive.org/details/movies), [Pexels](https://videos.pexels.com/), [Mazwai](http://mazwai.com/) and [Gfycat](http://gfycat.com).
 
