@@ -2,21 +2,26 @@
 layout: default
 ---
 
-{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
+{% assign documents = site.extensions %}
+{% assign documents_featured = documents | where: 'featured', 'featured' %}
 
 <main block="layout">
 	<div elem="content">
 		<section block="archive">
 			<h1 elem="title">{{ page.title }}</h1>
 			<div data-columns elem="columns">
-{% for entry in entries %}
-	{% include teaser.html entry=entry %}
+{% for document in documents_featured %}
+	{% include teaser.html entry=document %}
 {% endfor %}
 			</div>
 		</section>
 	</div>
 	<div elem="aside">
-		[aside]
+{% for document in documents %}
+		<ul>
+			<li><a href="{{ document.url }}">{{ document.title | markdownline }}</a></li>
+		</ul>
+{% endfor %}
 	</div>
 </main>
 <script src="/scripts/salvattore.js"></script>
