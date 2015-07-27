@@ -2,6 +2,7 @@
 title: Architecture Overview
 authors:
 - shwetank-dixit
+featured: featured
 license: cc-by-3.0
 ---
 
