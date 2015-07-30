@@ -1,11 +1,14 @@
 ---
 title: 'Browser Actions: Buttons, Popups and Badges'
+authors:
+- shwetank-dixit
+featured: featured
 license: cc-by-3.0
 ---
 
 ## Introduction
 
-In the [architecture overview](tut_architecture_overview.html), we covered the various UI elements that can be included in Opera extensions: these fall into two categories, *Page Actions* and *Browser Actions*.
+In the [architecture overview](tut_architecture_overview.html), we covered the various UI elements that can be included in Opera extensions: these fall into two categories, _Page Actions_ and _Browser Actions_.
 
 In this article, we’ll get to see how to put these UI elements into action in an extension.
 
@@ -13,9 +16,9 @@ Getting to display any of these UI elements on the browser is extremely simple. 
 
 ## Browser Actions
 
-*Browser actions* are used to put UI elements on the extensions toolbar. These UI elements can be a button (with or without a badge) or a popup. Use browser actions if you want the UI element to appear all the time.
+_Browser actions_ are used to put UI elements on the extensions toolbar. These UI elements can be a button (with or without a badge) or a popup. Use browser actions if you want the UI element to appear all the time.
 
-However, if you don’t want the UI element to appear all the time, rather only wanting it to appear in specific pages, then it’s recommended to use *Page Actions*, which is explained later in the article. You cannot use both *Browser Actions* and *Page Actions* at the same time.
+However, if you don’t want the UI element to appear all the time, rather only wanting it to appear in specific pages, then it’s recommended to use _Page Actions_, which is explained later in the article. You cannot use both _Browser Actions_ and _Page Actions_ at the same time.
 
 ### Buttons
 

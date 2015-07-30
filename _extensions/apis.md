@@ -100,11 +100,11 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/management">Management</a></td>
-	<td>Opera does not support the <code>LaunchType</code> type and the<code> getSelf()</code>, <code>createAppShortCut()</code>, <code>setLaunchType()</code> and <code>generateAppForLink()</code> methods.</td>
+	<td>Opera does not support the <code>LaunchType</code> type and the <code>getSelf()</code>, <code>createAppShortCut()</code>, <code>setLaunchType()</code> and <code>generateAppForLink()</code> methods.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/notifications">Notifications</a></td>
-	<td>In <code>TemplateTypes,</code>, Opera does not support the <code>Image</code>, <code>List</code> or <code>Progress</code> types. Also, on Mac, the <code>update()</code> method will not work for now.</td>
+	<td>In <code>TemplateTypes</code>, Opera does not support the <code>Image</code>, <code>List</code> or <code>Progress</code> types. Also, on Mac, the <code>update()</code> method will not work for now.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/omnibox">Omnibox</a></td>

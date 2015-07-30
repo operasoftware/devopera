@@ -1,7 +1,8 @@
 ---
-title: The basics of making an extension
+title: The Basics of Making an Extension
 authors:
 - shwetank-dixit
+featured: featured
 license: cc-by-3.0
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: opr.addons
+title: Opera Add-ons API
 support: 20
 license: cc-by-3.0
 ---
