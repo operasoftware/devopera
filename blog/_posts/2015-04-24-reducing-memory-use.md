@@ -13,7 +13,7 @@ In his recent blogpost marking [ten years of Opera Mini](http://blogs.opera.com/
 
 > Our vision is still the same: get the web into the hands of everyone, regardless of their device.
 
-That vision is shared throughout Opera. We know that the vast majority of the world isn’t using the latest greatest laptop or smartphone, so one of the projects that our engineers are working on is improving the memory use of Chromium processes. Blink recently established a [memory team](https://sites.google.com/a/chromium.org/dev/blink/memory-team); Opera’s Sigbjørn Finne is the only non-Google member of that team.
+That vision is shared throughout Opera. The vast majority of the world isn’t using the latest greatest laptop or smartphone (for example, we know from the [Google I/O 2015 keynote](https://www.youtube.com/watch?v=7V-fIGMDsmE&feature=youtu.be&t=1h21m30s) that over a quarter of new Android devices have only 512 MB of RAM) so one of the projects that our engineers are working on is improving the memory use of Chromium processes. Blink recently established a [memory team](https://sites.google.com/a/chromium.org/dev/blink/memory-team); Opera’s Sigbjørn Finne is the only non-Google member of that team.
 
 It’s important to improve both the static footprint (code and data) and run-time size so that Opera can fit and work well on memory-constrained devices, older computers and the like. That way, we can better serve our existing customers in territories where lower-powered devices are the majority, and make Blink better for everyone.
 
