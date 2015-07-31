@@ -4,143 +4,100 @@ source: http://developer.chrome.com/extensions/browsingData.html
 license: cc-by-3.0
 ---
 
-<h2>Introduction</h2>
-<p>You can use the <a href="https://developer.chrome.com/extensions/browsingData">chrome.browsingData API</a> to remove browsing data from a user's local profile.</p>
+## Introduction
 
-<h2 id="manifest">Manifest</h2>
+You can use the [chrome.browsingData API](https://developer.chrome.com/extensions/browsingData) to remove browsing data from a user’s local profile.
 
-<p>
-You must declare the "browsingData" permission in the
-<a href="manifest.html">extension manifest</a> to use this API.
-</p>
+## Manifest
 
-<pre class="prettyprint" data-filename="manifest.json">
-{
-"name": "My extension",
-...
-<b>"permissions": [
-"browsingData",
-]</b>,
-...
-}
-</pre>
+You must declare the `browsingData` permission in the [extension manifest](/extensions/manifest/) to use this API.
 
-<h2 id="usage">Usage</h2>
+	{
+		"name": "My extension",
+		"permissions": [
+			"browsingData",
+		]
+	}
 
-<p>
-The simplest use-case for the <a href="https://developer.chrome.com/extensions/browsingData">chrome.browsingData API</a> is a a time-based mechanism for clearing a
-user's browsing data. Your code should provide a timestamp which indicates the
-historical date after which the user's browsing data should be removed. This
-timestamp is formatted as the number of milliseconds since the Unix epoch
-(which can be retrieved from a JavaScript <code>Date</code> object via the
-<code>getTime</code> method).
-</p>
+## Usage
 
-<p>
-For example, to clear all of a user's browsing data from the last week, you
-might write code as follows:
-</p>
+The simplest use-case for the [chrome.browsingData API](https://developer.chrome.com/extensions/browsingData) is a a time-based mechanism for clearing a user’s browsing data. Your code should provide a timestamp which indicates the historical date after which the user’s browsing data should be removed. This timestamp is formatted as the number of milliseconds since the Unix epoch (which can be retrieved from a JavaScript `Date` object via the `getTime` method).
 
-<pre class="prettyprint">var callback = function () {
-// Do something clever here once data has been removed.
-};
+For example, to clear all of a user’s browsing data from the last week, you might write code as follows:
 
-var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
-var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
-chrome.browsingData.remove({
-"since": oneWeekAgo
-}, {
-"appcache": true,
-"cache": true,
-"cookies": true,
-"downloads": true,
-"fileSystems": true,
-"formData": true,
-"history": true,
-"indexedDB": true,
-"localStorage": true,
-"pluginData": true,
-"passwords": true,
-"webSQL": true
-}, callback);</pre>
+	var callback = function () {
+		// Do something clever here once data has been removed.
+	};
 
-<p>
-The <code>chrome.browsingData.remove</code> method allows you to remove
-various types of browsing data with a single call, and will be much faster
-than calling multiple more specific methods. If, however, you only want to
-clear one specific type of browsing data (cookies, for example), the more
-granular methods offer a readable alternative to a call filled with JSON.
-</p>
+	var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+	var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+	chrome.browsingData.remove({
+		'since': oneWeekAgo
+	}, {
+		'appcache': true,
+		'cache': true,
+		'cookies': true,
+		'downloads': true,
+		'fileSystems': true,
+		'formData': true,
+		'history': true,
+		'indexedDB': true,
+		'localStorage': true,
+		'pluginData': true,
+		'passwords': true,
+		'webSQL': true
+		},
+	callback);
 
-<pre class="prettyprint">var callback = function () {
-// Do something clever here once data has been removed.
-};
+The `chrome.browsingData.remove` method allows you to remove various types of browsing data with a single call, and will be much faster than calling multiple more specific methods. If, however, you only want to clear one specific type of browsing data (cookies, for example), the more granular methods offer a readable alternative to a call filled with JSON.
 
-var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
-var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
-chrome.browsingData.removeCookies({
-"since": oneWeekAgo
-}, callback);</pre>
+	var callback = function () {
+		// Do something clever here once data has been removed.
+	};
 
-<p class="caution">
-<strong>Important</strong>: Removing browsing data involves a good deal of
-heavy lifting in the background, and can take <em>tens of seconds</em> to
-complete, depending on a user's profile. You should use the callback mechanism
-to keep your users up to date on the removal's status.
-</p>
+	var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+	var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+	chrome.browsingData.removeCookies({
+		'since': oneWeekAgo
+	}, callback);
 
-<h2 id="origin_types">Origin Types</h2>
+**Important:** Removing browsing data involves a good deal of heavy lifting in the background, and can take _tens of seconds_ to complete, depending on a user’s profile. You should use the callback mechanism to keep your users up to date on the removal’s status.
 
-<p>
-Adding an <code>originTypes</code> property to the API's options object allows
-you to specify which types of origins ought to be effected. Currently, origins
-are divided into three categories:
-</p>
-<ul>
-<li>
-<code>unprotectedWeb</code> covers the general case of websites that users
-visit without taking any special action. If you don't specify an
-<code>originTypes</code>, the API defaults to removing data from unprotected
-web origins.
-</li>
-<li>
-<code>extension</code> covers origins under the
-<code>chrome-extensions:</code> scheme. Removing extension data is, again,
-something you should be very careful about.
-</li>
-</ul>
-<p>
-We could adjust the previous example to remove only data from unprotected
-websites as follows:
-</p>
-<pre class="prettyprint">var callback = function () {
-// Do something clever here once data has been removed.
-};
+## Origin Types
 
-var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
-var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
-chrome.browsingData.remove({
-"since": oneWeekAgo,
-<b>"originTypes": {
-"unprotectedWeb": true
-}</b>
-}, {
-"appcache": true,
-"cache": true,
-"cookies": true,
-"downloads": true,
-"fileSystems": true,
-"formData": true,
-"history": true,
-"indexedDB": true,
-"localStorage": true,
-"serverBoundCertificates": true,
-"pluginData": true,
-"passwords": true,
-"webSQL": true
-}, callback);</pre>
+Adding an `originTypes` property to the API’s options object allows you to specify which types of origins ought to be effected. Currently, origins are divided into three categories:
 
-<p class="caution">
-<strong>Seriously</strong>: Be careful when using this functionality. Your users will write you angry emails if they're not well-informed about what to
-expect when your extension removes data on their behalf.
-</p>
+- `unprotectedWeb` covers the general case of websites that users visit without taking any special action. If you don’t specify an `originTypes`, the API defaults to removing data from unprotected web origins.
+- `extension` covers origins under the `chrome-extensions` scheme. Removing extension data is, again, something you should be very careful about.
+
+We could adjust the previous example to remove only data from unprotected websites as follows:
+
+	var callback = function () {
+		// Do something clever here once data has been removed.
+	};
+
+	var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+	var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+	chrome.browsingData.remove({
+		'since': oneWeekAgo,
+		'originTypes': {
+			'unprotectedWeb': true
+		}
+	}, {
+		'appcache': true,
+		'cache': true,
+		'cookies': true,
+		'downloads': true,
+		'fileSystems': true,
+		'formData': true,
+		'history': true,
+		'indexedDB': true,
+		'localStorage': true,
+		'serverBoundCertificates': true,
+		'pluginData': true,
+		'passwords': true,
+		'webSQL': true
+		},
+	callback);
+
+**Seriously:** Be careful when using this functionality. Your users will write you angry emails if they’re not well-informed about what to expect when your extension removes data on their behalf.
