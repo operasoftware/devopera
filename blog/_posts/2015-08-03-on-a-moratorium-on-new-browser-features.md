@@ -83,7 +83,7 @@ XHR is hardly a beautiful API, and will be replaced by the [Fetch Standard](http
 
 Modern Standards are all about explaining the platform to simplify development, and ensuring a solid, understandable foundation upon which to build. 
 
-This is built on a design philosophy called the Extensible Web Manifesto. It’s too much to explore here, buttThe Chair of the W3C Extensible Web Community Group, Brian Kardell, wrote us an article about it called [Sex, Houdini and the Extensible Web](https://dev.opera.com/articles/houdini/).
+This is built on a design philosophy called the Extensible Web Manifesto. It’s too much to explore here, but The Chair of the W3C Extensible Web Community Group, Brian Kardell, wrote us an article about it called [Sex, Houdini and the Extensible Web](https://dev.opera.com/articles/houdini/).
 
 ## Immediacy
 
