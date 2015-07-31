@@ -89,7 +89,7 @@ This is built on a design philosophy called the Extensible Web Manifesto. It’s
 
 A central pillar of the Web that PPK doesn’t mention is what I call “immediacy”. When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have wifi, they’ll update it. Maybe.
 
-Installable Web Apps give us an App-like experience — an icon on the homescreen, potentially working even while offline, but retain the immediacy of the Web because the app is hosted on a server. In fact, the App is actually — wait for it — *a web site* with a URL pointed to by the homescreen icon. We combine the strengths of the Web with the User Experience of native.
+Installable Web Apps give us an App-like experience — an icon on the homescreen, potentially working even while offline —  but retain the immediacy of the Web because the app is hosted on a server. In fact, the App is actually — wait for it — *a web site* with a URL pointed to by the homescreen icon. We combine the strengths of the Web with the User Experience of native.
 
 ## Conclusion
 
