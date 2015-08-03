@@ -72,7 +72,7 @@ One example is HTML5 Parsing. For years, developers had to deal with the differe
 
 HTML5 changed that, and now all browsers worth shaking an angle bracket at produce the same DOM regardless of the validity of the markup. This has produced a huge boost in interoperability, benefitting consumers and saving developers megatons of heartache.
 
-A more current example is `XmlHttpRequest` which was never formalised and standardised until years after Microsoft implemented it and everyone else reverse-engineered it and copied it.
+A more current example is `XMLHttpRequest` which was never formalised and standardised until years after Microsoft implemented it and everyone else reverse-engineered it and copied it.
 
 XHR is hardly a beautiful API, and will be replaced by the [Fetch Standard](https://fetch.spec.whatwg.org/) which aims to simplify and unify network requests. Its preface says
 
