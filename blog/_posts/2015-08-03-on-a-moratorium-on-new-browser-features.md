@@ -62,11 +62,11 @@ Modern standards are designed to preserve URLs. Take Service Worker, for example
 
 Similarly, the [Web Manifest spec](http://html5doctor.com/web-manifest-specification/) defines a web app’s start and scope in terms of good old-fashioned vitally-important URLs. The proposed [Upgrade Insecure Requests spec](https://w3c.github.io/webappsec/specs/upgrade/) tries to ensure that no links break if a developer upgrades their server to HTTPS in order to provide a better (more secure) user experience.
 
-There’s a lot the web can learn from native (without slavishly _emulating_ it), but linkability is something that native needs to emulate from the web; see the Rube Goldberg machine-like [App Links](https://developers.facebook.com/docs/applinks) proposal to see how Facebook is trying to bring “deep linking to content in your mobile app”. We have URLs; PPK is right that we need to jealously preserve them, so modern standards attempt to do just that.
+There’s a lot the web can learn from native (without slavishly _emulating_ it), but linkability is something that native needs to emulate from the web; see the Rube Goldberg machine-like [App Links](https://developers.facebook.com/docs/applinks) proposal to see how Facebook is trying to bring “deep linking to content in your mobile app.” We have URLs; PPK is right that we need to jealously preserve them, so modern standards attempt to do just that.
 
 ## Simplicity
 
-There’s a deeper complexity to the modern web platform that the sheer volume of features. It’s to do with the way the specs were written, the timescale over which they’ve been written and the fact that some features that we rely on have never been specified at all.
+There’s a deeper complexity to the modern web platform than the sheer volume of features. It’s to do with the way the specs were written, the timescale over which they’ve been written and the fact that some features that we rely on have never been specified at all.
 
 One example is HTML5 Parsing. For years, developers had to deal with the different DOMs that browsers constructed from invalid markup (which, as we know, is the vast majority of the web). This was allowed because HTML 4 never specified what to do with bad markup, so browsers were free to do as they saw fit.
 
@@ -86,7 +86,7 @@ This is built on a design philosophy called the Extensible Web Manifesto. It’s
 
 ## Immediacy
 
-A central pillar of the web that PPK doesn’t mention is what I call “immediacy”. When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have wifi, they’ll update it. Maybe.
+A central pillar of the web that PPK doesn’t mention is what I call “immediacy.” When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have wifi, they’ll update it. Maybe.
 
 Installable Web Apps give us an app-like experience — an icon on the homescreen, potentially working even while offline — but retain the immediacy of the web because the app is hosted on a server. In fact, the app is actually — wait for it — _a web site_ with a URL pointed to by the homescreen icon. We combine the strengths of the web with the user experience of native.
 
@@ -96,9 +96,9 @@ At Opera, a lot our developers work on bringing the web to people who otherwise 
 
 We know that the [fastest growing mobile phone markets don’t use apps](http://qz.com/466089/the-fastest-growing-mobile-phone-markets-barely-use-apps/), so by artificially slowing the pace of evolution on the web, we’re deciding that these people should get a second-class online experience.
 
-It’s imperative, we believe, for the web to continue to add new features — like Service Workers and Installable Web Apps, just as we added native video, the Audio API, the `<picture>` element, Storage APIs — that extend what the web can do so that it continues to grow and provide the reach that PPK wants, and that we want.
+It’s imperative, we believe, for the web to continue to add new features — like Service Workers and Installable Web Apps, just as we added native video, the Audio API, the `<picture>` element, Storage APIs — that extend what the web can do so that it continues to grow and provide the reach that PPK wants and that we want.
 
-Opera welcomes new developments that make the web better for end-users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
+Opera welcomes new developments that make the web better for end users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
 
 _This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team._
 
