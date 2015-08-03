@@ -11,7 +11,7 @@ license: cc-by-3.0
 
 ## Methods {#methods}
 
-### installExtension {#installExtension}
+### installExtension {#method-installextension}
 
 	opr.addons.installExtension(
 		string id,

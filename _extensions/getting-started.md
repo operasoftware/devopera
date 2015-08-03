@@ -16,7 +16,7 @@ Note: If you haven’t done so already, then head over to the [Opera extensions 
 
 ## Already developed Chrome Extensions?
 
-If you have already developed extensions for Chrome then you will feel right at home making extensions for Opera. Opera is based on Chromium, which means it is possible to run CRX files in Opera. For a list of which *chrome.\** APIs we support, please check the [API Docs section](apis.html) in the sidebar of this page.
+If you have already developed extensions for Chrome then you will feel right at home making extensions for Opera. Opera is based on Chromium, which means it is possible to run CRX files in Opera. For a list of which `chrome.*` APIs we support, please check the [API Docs section](apis.html) in the sidebar of this page.
 
 ## Learn the basics
 
