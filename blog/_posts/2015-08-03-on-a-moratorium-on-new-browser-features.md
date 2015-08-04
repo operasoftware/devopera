@@ -100,7 +100,7 @@ It’s imperative, we believe, for the web to continue to add new features — l
 
 Opera welcomes new developments that make the web better for users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
 
-_This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team._
+_This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team. Disagree? Please, write a commentary post and [tweet us](http://twitter.com./odevrel) the link!_
 
 Added 4 August: Simultaneously with our publishing, Google Chrome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
 
