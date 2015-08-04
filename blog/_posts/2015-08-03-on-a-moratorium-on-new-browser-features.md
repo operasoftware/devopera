@@ -102,5 +102,5 @@ Opera welcomes new developments that make the web better for users. We’re the 
 
 _This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team._
 
-Added 4 August: Simultaneously with our publishing, Google Chome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
+Added 4 August: Simultaneously with our publishing, Google Chrome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
 
