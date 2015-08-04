@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Famed developer and commentator Peter Paul Koch (PPK) recently called for “a moratorium on new browser features for about a year or so.” If you haven’t read his article [Stop pushing the web forward](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html), give it a look; he raises interesting points, as he always does.
+Famed developer and commentator Peter Paul Koch (PPK) recently called for “a moratorium on new browser features for about a year or so”. If you haven’t read his article [Stop pushing the web forward](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html), give it a look; he raises interesting points, as he always does.
 
 (Let us say now: we’re all big fans of PPK; he’s undergone [personal attacks](https://twitter.com/ppk/status/626849503321149440) for his article — we’re going to disagree with his central thesis, while continuing to love him deeply, and thanking him for starting this discussion.)
 
@@ -98,7 +98,9 @@ We know that the [fastest growing mobile phone markets don’t use apps](http://
 
 It’s imperative, we believe, for the web to continue to add new features — like Service Workers and Installable Web Apps, just as we added native video, the Audio API, the `<picture>` element, Storage APIs — that extend what the web can do so that it continues to grow and provide the reach that PPK wants, and that we want.
 
-Opera welcomes new developments that make the web better for end-users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
+Opera welcomes new developments that make the web better for users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
 
-_This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team._
+_This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team. Disagree? Please, write a commentary post and [tweet us](https://twitter.com/odevrel) the link!_
+
+Added 4 August: Simultaneously with our publishing, Google Chrome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
 
