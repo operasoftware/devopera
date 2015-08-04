@@ -90,7 +90,7 @@ alert(1)>>>/abc/</code></pre>
 
 <h2>Throw, Delete what?</h2>
 
-<p>You can use the <code>delete</code> operator in ways that you wouldn't at first expect, which results in some pretty wacky syntax. Lets see what happens if we combine the <code>throw</code>, <code>delete</code>, <code>not</code> and <code>typeof</code> operators?</p>
+<p>You can use the <code>delete</code> operator in ways that you wouldn't at first expect, which results in some pretty wacky syntax. Let’s see what happens if we combine the <code>throw</code>, <code>delete</code>, <code>not</code> and <code>typeof</code> operators?</p>
 
 <pre><code>throw delete~typeof~alert(1)</code></pre>
 

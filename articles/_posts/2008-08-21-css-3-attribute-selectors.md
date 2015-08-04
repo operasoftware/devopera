@@ -35,7 +35,7 @@ license: cc-by-nc-sa-2.5
 }</pre>
 
 <h2>Adding contextual icons</h2>
-<p>Now, lets move into a trickier example. Suppose we want to identify every link to a video file by placing a film icon next to the links.</p>
+<p>Now, let’s move into a trickier example. Suppose we want to identify every link to a video file by placing a film icon next to the links.</p>
 <p>Now, we could do this by adding a class called &quot;movie&quot; to each relevant link and by adding a CSS rule applying to all links with that class. But this can be tedious—particularly if you have numerous links that need classifying—and it&rsquo;s unnecessary.</p>
 
 <p>There is already a unique identifier in the link address itself: the &quot;.mov&quot; file extension (or &quot;.avi,&quot; or whatever particular extension applies to the video file type you are referring to).  How can we use CSS to pick out a link address based on the extension at the end of the link?</p>

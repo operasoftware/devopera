@@ -15,7 +15,7 @@ Usually, when you right-click (or <kbd>Ctrl</kbd>-click on Mac) on something in 
 
 ## How do we customize the context menu?
 
-There are a number of steps for us to take if we want to create an extension that customizes the context menu in some way. Lets go through these steps now.
+There are a number of steps for us to take if we want to create an extension that customizes the context menu in some way. Let’s go through these steps now.
 
 ### Declare it in the manifest
 
@@ -39,7 +39,7 @@ The manifest would look like so:
 
 We can create a context menu item by calling the `create()` function. As an argument, this function takes an object that details which kind of context menu item we want to create.
 
-Lets for example create a context menu item that will only appear when a user right/ctrl-clicks some highlighted text; it will open a new tab, load [Google](http://www.google.com) in it, and perform a Google search for the selected text.
+Let’s for example create a context menu item that will only appear when a user right/ctrl-clicks some highlighted text; it will open a new tab, load [Google](http://www.google.com) in it, and perform a Google search for the selected text.
 
 To set up the context menu, we would write something like this in the background.js script:
 

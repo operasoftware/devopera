@@ -40,7 +40,7 @@ function v_success(stream){
 
 <p>Its that simple! Now you have a the output of your camera  inside the page. But we want to do more. We want to create a button, which upon click, takes a snapshot of the camera stream, and outputs it to a canvas element, thereby taking our picture.</p>
 
-<p>Lets get the button and add a click event handler:</p>
+<p>Let’s get the button and add a click event handler:</p>
 
 <pre>var button = document.querySelector(&#39;#button&#39;);
 button.addEventListener(&#39;click&#39;,snapshot, false);</pre>
@@ -61,9 +61,9 @@ button.addEventListener(&#39;click&#39;,snapshot, false);</pre>
 
 <p>This is a demo, in which some values in a form are pre-entered, and if you shake the device you have, then it will clear the text entered in the form. It also changes the background color based on the orientation of your device....so you can just move your device around with your hand, and it will change the background color. Pretty cool, huh? It uses just some simple web forms (in my case, some html5 web forms but it could be any kind of web form) and the device orientation events as mentioned in the <a href="http://dev.w3.org/geo/api/spec-source-orientation.html" target="_blank">W3C Device Orientation Events spec</a>.</p>
 
-<p>There are two key events to note here: The <code>deviceorientation</code> event and the <code>devicemotion</code> event. The former, as the name suggests, tells you about the orientation of the device in terms of alpha, beta and gamma values (a bit like the x, y and z x co-ordinates). The latter, once again as the name suggests, provides motion related information on the device. Whenever the device is moved, these events are fired. Now lets see some interesting stuff to do with them, starting with <code>deviceorientation</code>.</p>
+<p>There are two key events to note here: The <code>deviceorientation</code> event and the <code>devicemotion</code> event. The former, as the name suggests, tells you about the orientation of the device in terms of alpha, beta and gamma values (a bit like the x, y and z x co-ordinates). The latter, once again as the name suggests, provides motion related information on the device. Whenever the device is moved, these events are fired. Now let’s see some interesting stuff to do with them, starting with <code>deviceorientation</code>.</p>
 
-<p>Here, we&#39;ll get the alpha, beta and gamma values of the current orientation of the device, and put those values as an RGB color as the background color. Which means, everytime the device is moved, there will be a different color applied to the background, based on the orientation of the device. Lets see how. First lets add an event listener to the window.</p>
+<p>Here, we&#39;ll get the alpha, beta and gamma values of the current orientation of the device, and put those values as an RGB color as the background color. Which means, everytime the device is moved, there will be a different color applied to the background, based on the orientation of the device. Let’s see how. First let’s add an event listener to the window.</p>
 
 <pre>window.addEventListener(&#39;deviceorientation&#39;, update, true);</pre>
 
@@ -73,11 +73,11 @@ button.addEventListener(&#39;click&#39;,snapshot, false);</pre>
 
 <p>Next comes the part where we need to clear the form if the device is shaken. The <code>devicemotion</code> event has a property called &#39;acceleration&#39; (for x, y and z axises). We&#39;ll just see if the acceleration is above a certain threshold, and if so, we figure that the device has been given a good enough shake ... and if so, then we&#39;ll clear the form.</p>
 
-<p>Lets first look at the event handler.</p>
+<p>Let’s first look at the event handler.</p>
 
 <pre>window.addEventListener(&#39;devicemotion&#39;, update_dm, true);</pre>
 
-<p>Now lets look at the <code>update_dm()</code> function</p>
+<p>Now let’s look at the <code>update_dm()</code> function</p>
 
 <pre>function update_dm(event){
    var acc_x = Math.abs(event.acceleration.x);

@@ -35,7 +35,7 @@ license: cc-by-3.0
 
 <p>This is achieved using HTML5 Application Cache (also known as AppCache). To use this we first define a manifest file containing the references to the files needed to run that app offline.</p>
 
-<p>Lets look at an example: <code>demo.manifest</code>.</p>
+<p>Let’s look at an example: <code>demo.manifest</code>.</p>
 
 <pre><code>CACHE MANIFEST
 
@@ -64,7 +64,7 @@ index.htm</code></pre>
 
 <p>There are a lot of places in the world where electricity goes off frequently, and people are offline for quite a while before the power comes back on again. Imagine if someone living in such a region is filling out a multi-page form, or writing a long blog post, or composing an important email? If the power suddenly goes off (or their computer runs out of battery), they would lose all that data. Wouldn’t it be nice if the next time they are online, they could go to the URL and have that information available again, to carry on with?</p>
 
-<p>Lets look at how we can do this with a simple page containing a <code>&lt;textarea&gt;</code>. This page should save whatever we type into local storage every few seconds so if it is closed and reopened, it should load up the last saved text.</p>
+<p>Let’s look at how we can do this with a simple page containing a <code>&lt;textarea&gt;</code>. This page should save whatever we type into local storage every few seconds so if it is closed and reopened, it should load up the last saved text.</p>
 
 <p>Our page contains a <code>&lt;textarea&gt;</code> with an <code>id</code> of <code>draft</code>:</p>
 
@@ -188,7 +188,7 @@ db.transaction(
 
 <h4>Inserting values into the tables</h4>
 
-<p>Tasks like inserting and querying data within tables is pretty straight forward with WebSQL. Lets take the following example:</p>
+<p>Tasks like inserting and querying data within tables is pretty straight forward with WebSQL. Let’s take the following example:</p>
 
 <pre><code>var food_name = "pizza";
 var amount_of_calories = 320;
@@ -202,7 +202,7 @@ db.transaction(
 
 <p>Here, the first <code>?</code> will map to <code>food_name</code>, the second one to <code>amount_of_calories</code> and the third to <code>serving_size</code>. This code will create a new row in the <code>cal_list</code> table with values of <code>pizza</code>, <code>320</code> and <code>one slice</code> in each respective column.</p>
 
-<p>Lets take another example, this time querying a table:</p>
+<p>Let’s take another example, this time querying a table:</p>
 
 <pre><code>var min_cal_amount = 300;
 ...

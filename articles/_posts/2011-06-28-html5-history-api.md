@@ -50,7 +50,7 @@ license: cc-by-3.0
 
 <h2>A real example</h2>
 
-<p>Now we've seen the basics, lets look at a real example. This particular example is a web-based file explorer to help you find a URI of a particular image (<a href="http://people.opera.com/miket/2011/6/viewer.html">view the example running live</a>), with a simple JavaScript-based expanding/collapsing folder structure. When you select a file in the folder, the image is dynamically updated on the screen.</p>
+<p>Now we've seen the basics, let’s look at a real example. This particular example is a web-based file explorer to help you find a URI of a particular image (<a href="http://people.opera.com/miket/2011/6/viewer.html">view the example running live</a>), with a simple JavaScript-based expanding/collapsing folder structure. When you select a file in the folder, the image is dynamically updated on the screen.</p>
 
 <p><img src="example.png" alt="sample app making use of the HTML5 history API so that you can still maintain a proper usable history even with dynamic content"></p>
 

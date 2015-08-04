@@ -49,7 +49,7 @@ license: cc-by-nc-sa-3.0
 
 <p>The first thing you should think about when designing your content is consistency. Users should be able to learn what to expect from each new page of your site — the various features should be consistent with previous pages, in terms of style, location and function.</p>
 
-<p>What, in particular, should we be aiming to make consistent? Lets go through them.</p>
+<p>What, in particular, should we be aiming to make consistent? Let’s go through them.</p>
 
 <h4>Navigation</h4>
 

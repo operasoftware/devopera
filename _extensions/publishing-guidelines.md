@@ -120,7 +120,7 @@ You need to provide screenshots of your extension. We recommend one screenshot t
 
 You **should:**
 
-- Have a screenshot size of 612 × 408 pixels. This is the preferable screenshot size. The maximum you go can go with it is 800 × 600 pixels (though we would recommend you stick with 612 × 408 pixels if possible).
+- Have a screenshot size of 612×408 pixels. This is the preferable screenshot size. The maximum you go can go with it is 800×600 pixels (though we would recommend you stick with 612×408 pixels if possible).
 - Take your screenshots with a white background.
 - Disable other extensions you have installed, so that yours can take center stage.
 - Make sure to include the relevant part of your functionality.
@@ -130,7 +130,7 @@ You **should:**
 
 You **should not:**
 
-- Make the screenshots larger than 800 × 600 pixels.
+- Make the screenshots larger than 800×600 pixels.
 - Show any page or background tab that is not relevant to the extension.
 - Include superfluous content.
 - Show other extensions or other customizations.
@@ -175,7 +175,7 @@ Your extension must satisfy the following acceptance criteria:
 
 If the above criteria are satisfied, your extension undergoes additional testing, to see that it works on all platforms (Windows, Mac and Linux).
 
-An extension that does not satisfy the criteria or fails the testing will be rejected, and you will be given information on the [Submitted extensions](https://addons.opera.com/developer/) page. After you have fixed the problems, you can resubmit the extension by clicking the “Upgrade” button next to the package name.
+An extension that does not satisfy the criteria or fails the testing will be rejected, and you will be given information on the [Submitted extensions](https://addons.opera.com/developer/) page. After you have fixed the problems, you can resubmit the extension by clicking the _Upgrade_ button next to the package name.
 
 ## 5. When the extension satisfies all criteria, it will be published {#published}
 

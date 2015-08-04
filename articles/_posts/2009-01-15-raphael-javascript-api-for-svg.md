@@ -13,7 +13,7 @@ license: cc-by-nc-sa-2.5
 
 <h2>A simple first example</h2>
 
-<p>Lets see how it all works by looking at a simple example - let's create a typical "progress <a href="http://en.wikipedia.org/wiki/Throbber">throbber</a>", as seen in Apple interfaces, and copied by many. It is often used in collaboration with Ajax, or complex calculations on the client side. A progress throbber usually looks like that seen in Figure 1:</p>
+<p>Let’s see how it all works by looking at a simple example - let's create a typical "progress <a href="http://en.wikipedia.org/wiki/Throbber">throbber</a>", as seen in Apple interfaces, and copied by many. It is often used in collaboration with Ajax, or complex calculations on the client side. A progress throbber usually looks like that seen in Figure 1:</p>
 
 <img src="spin2.png" width="150" height="150" alt="Spin2">
 <p class="comment">Figure 1: A typical progress throbber.</p>

@@ -11,7 +11,7 @@ Testing and debugging is an important part of the development process. Let’s t
 
 ## Developer Mode
 
-The first thing to do is to enable developer mode. You can do it by going to the [opera:extensions](opera://extensions/) page and then clicking on _Developer Mode_.
+The first thing to do is to enable developer mode. You can do it by going to the `opera:extensions` page and then clicking on _Developer Mode_.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/inactive-mode.png" alt="Developer mode inactive">
@@ -51,15 +51,15 @@ Clicking on that will open the Developer Tools for Opera, and will give you all 
 	<figcaption elem="caption">Debugging with web inspector</figcaption>
 </figure>
 
-The developer tools give you a lot of power when it comes to debugging as you can set breakpoints, go step-by-step and analyze various variables, change things in the page to see how it would look like, etc.
+The Developer Tools give you a lot of power when it comes to debugging as you can set breakpoints, go step-by-step and analyze various variables, change things in the page to see how it would look like, etc.
 
 ## Inspecting a popup
 
-If your extension happens to have a popup page, then you can also inspect elements within that page. Just open the popup as you normally would by clicking on the Browser (or Page) action button. Once that popup page is open, just right-click anywhere on the page and select _Inspect Element_.
+If your extension happens to have a popup page, then you can also inspect elements within that page. Just open the popup as you normally would by clicking on the _Browser_ (or _Page_) action button. Once that popup page is open, just right-click anywhere on the page and select _Inspect Element_.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/inspecting-popup.png" alt="Inspecting an extension popup page">
 	<figcaption elem="caption">Inspecting an extension popup page</figcaption>
 </figure>
 
-This will open up the developer tools for the context of the popup page, which will enable you to debug the popup page.
+This will open up the Developer Tools for the context of the popup page, which will enable you to debug the popup page.

@@ -73,7 +73,7 @@ The background script once again listens for a message from the content script r
 		}
 	);
 
-Feel free to [download the extension](samples/MessagePassing.nex) and examine it further.
+Feel free to [download the extension](/extensions/extension-samples/message-passing.nex) and examine it further.
 
 ## Cross-extension messaging
 
@@ -106,7 +106,7 @@ Listening for incoming requests and connections is similar to the internal case,
 Likewise, sending a message to another extension is similar to sending one within your extension. The only difference is that you must pass the ID of the extension you want to communicate with. For example:
 
 	// The ID of the extension we want to talk to
-	var laserExtensionId = 'abcdefghijklmnoabcdefhijklmnoabc';
+	var laserExtensionId = '<sample extension id>';
 
 	// Make a simple request
 	chrome.runtime.sendMessage(laserExtensionId, { getTargetData: true },
@@ -133,7 +133,7 @@ Similar to cross-extension messaging, your app or extension can receive and resp
 This will expose the messaging API to any page which matches the URL patterns you specify. The URL pattern must contain at least a second-level domain — that is, hostname patterns like `*`, `*.com`, `*.co.uk`, and `*.appspot.com` are prohibited. From the web page, use the `runtime.sendMessage` or `runtime.connect` APIs to send a message to a specific app or extension. For example:
 
 	// The ID of the extension we want to talk to
-	var editorExtensionId = 'abcdefghijklmnoabcdefhijklmnoabc';
+	var editorExtensionId = '<sample extension id>';
 
 	// Make a simple request
 	chrome.runtime.sendMessage(editorExtensionId, { openUrlInEditor: url },
@@ -180,6 +180,7 @@ In order to register a native messaging host the application must install a mani
 
 Native messaging host manifest file contains the following fields:
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Name</th>
@@ -206,6 +207,7 @@ Native messaging host manifest file contains the following fields:
 	<td>List of extensions that should have access to the native messaging host.</td>
 </tr>
 </table>
+</figure>
 
 Location of the manifest file depends on the platform:
 

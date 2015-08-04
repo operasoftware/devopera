@@ -46,7 +46,7 @@ With some practice you will start to spot microformattable data all over the pla
 	Spanish, Portuguese), referring to the application of computers to store
 	and process information.
 
-Did you see them all? Lets take a look at those paragraphs again — this time I will point out and mark-up some of the microformats.
+Did you see them all? Let’s take a look at those paragraphs again — this time I will point out and mark-up some of the microformats.
 
 	<p class="vcard vevent">
 		<span class="description">In

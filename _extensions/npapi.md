@@ -19,7 +19,9 @@ How to develop an NPAPI plugin is outside the scope of this document. See [Mozil
 
 Once you have an NPAPI plugin, follow these steps to get your extension using it.
 
-**1.** Add a section to your extension’s `manifest.json` that describes where to find the plugin, along with other properties about it:
+### 1. Manifest
+
+Add a section to your extension’s `manifest.json` that describes where to find the plugin, along with other properties about it:
 
 	{
 		"name": "My Extension",
@@ -30,7 +32,9 @@ Once you have an NPAPI plugin, follow these steps to get your extension using it
 
 The `path` property specifies the path to your plugin, relative to the manifest file. The `public` property specifies whether your plugin can be accessed by regular web pages; the default is `false`, meaning only your extension can load the plugin. Add `"public": true` to make your plugin accessible on regular web pages and content scripts. But be careful — any web page will then be able to call into your plugin.
 
-**2.** Create an HTML file that loads your plugin by mime-type. Assuming your mime-type is `application/x-my-extension`
+### 2. HTML file
+
+Create an HTML file that loads your plugin by mime-type. Assuming your mime-type is `application/x-my-extension`
 
 	<embed type="application/x-my-extension" id="pluginId">
 	<script>

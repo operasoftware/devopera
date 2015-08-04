@@ -211,7 +211,7 @@ In order to render the model in WebGL we can use [Three.js][41]. Three.js is a J
 
 ### Converting OBJ to JSON
 
-Files can be converted from OBJ to the JSON format expected by Three.js using [convert_obj_three.py][42], written by [AlteredQualia][43]. The script includes detailed instructions on how to use it. The defaults should simply work, so lets just run it like this:
+Files can be converted from OBJ to the JSON format expected by Three.js using [convert_obj_three.py][42], written by [AlteredQualia][43]. The script includes detailed instructions on how to use it. The defaults should simply work, so let’s just run it like this:
 
 [42]: https://github.com/mrdoob/three.js/blob/master/utils/exporters/obj/convert_obj_three.py
 [43]: http://alteredqualia.com/

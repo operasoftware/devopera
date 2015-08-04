@@ -25,7 +25,7 @@ license: cc-by-3.0
 	14. [web_accessible_resources](#web_accessible_resources)
 	15. [sandbox](#sandbox)
 
-Every extension, installable web app, and theme has a [JSON](http://www.json.org)-formatted manifest file, named _manifest.json_, that provides important information.
+Every extension, installable web app, and theme has a [JSON](http://www.json.org)-formatted manifest file, named `manifest.json`, that provides important information.
 
 ## Field summary {#overview}
 
@@ -117,7 +117,7 @@ As a rule of thumb, if your extension needs to load a tab in an incognito browse
 
 This value can be used to control the unique ID of an extension when it is loaded during development.
 
-**Note:** You don’t usually need to use this value. Instead, write your code so that the key value doesn’t matter by using relative paths and [extension.getURL](extension.html#method-getURL).
+**Note:** You don’t usually need to use this value. Instead, write your code so that the key value doesn’t matter by using relative paths and [`extension.getURL`](extension.html#method-getURL).
 
 To get a suitable key value, first install your extension from a `.crx` file. Then, in your user data directory, look in the file `Default/Extensions/<extensionId>/<versionString>/manifest.json`. You will see the key value filled in there.
 

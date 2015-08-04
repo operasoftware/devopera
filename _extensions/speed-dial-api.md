@@ -12,6 +12,7 @@ license: cc-by-3.0
 	1. [`get`](#method-get)
 	2. [`update`](#method-update)
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Description</th>
@@ -24,6 +25,7 @@ license: cc-by-3.0
 	<td><a href="/extensions/speed-dial-manual/">Speed Dial Extensions</a></td>
 </tr>
 </table>
+</figure>
 
 ## Types {#types}
 
@@ -55,7 +57,7 @@ Retrieves details about the extension’s Speed Dial entry.
 
 #### Callback
 
-The _callback_ parameter would return an object with the speed dial’s title and URL.
+The `callback` parameter would return an object with the Speed Dial’s title and URL.
 
 For example:
 
@@ -66,13 +68,11 @@ For example:
 		);
 	});
 
-	SpeedDial (SpeedDial)
-
 ### `update` {#method-update}
 
 	opr.speeddial.update(object SpeedDial)
 
-Modifies the properties of the Speed Dial entry, namely its URL and Title.
+Modifies the properties of the Speed Dial entry, namely its URL and title.
 
 #### Parameters
 

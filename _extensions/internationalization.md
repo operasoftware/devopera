@@ -112,7 +112,7 @@ To help you in internationalization, please take a look at the `chrome.i18n.*` m
 
 One of the most common use cases for this API would be to translate the text in the html files (like the popup files, the options files etc). An interesting way to do this is to mark up the text you want translated using a `data-*` attribute.
 
-For example, lets say we have an extension which has a popup. This popup has some text in it, which we would like to be translated in other languages too. We will have the text in the messages.json files like so:
+For example, let’s say we have an extension which has a popup. This popup has some text in it, which we would like to be translated in other languages too. We will have the text in the messages.json files like so:
 
 The `messages.json` file in the `_locales/en_GB` folder
 
@@ -176,4 +176,4 @@ But when the locale is set to Spanish, then it will display Spanish text like so
 	<img elem="media" src="{{ page.id }}/popup-es.png" alt="Popup in Spanish">
 </figure>
 
-You can [download a sample extension](samples/i18nExtension.nex) which uses i18n API and take a closer look.
+You can [download a sample extension](/extensions/extension-samples/i18n-extension.nex) which uses i18n API and take a closer look.

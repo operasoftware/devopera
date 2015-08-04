@@ -29,6 +29,7 @@ Here’s the basic syntax:
 
 The meaning of `*` depends on whether it’s in the `scheme`, `host`, or `path` part. If the `scheme` is `*`, then it matches either `http` or `https`. If the `host` is just `*`, then it matches any host. If the `host` is `*.hostname`, then it matches the specified host or any of its subdomains. In the `path` section, each `*` matches 0 or more characters. The following table shows some valid patterns.
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Pattern</th>
@@ -81,9 +82,11 @@ The meaning of `*` depends on whether it’s in the `scheme`, `host`, or `path` 
 	<td><code>http://example.org/foo/bar.html</code>, <code>file:///bar/baz.html</code></td>
 </tr>
 </table>
+</figure>
 
 Here are some examples of _invalid_ pattern matches:
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Bad pattern</th>
@@ -110,5 +113,6 @@ Here are some examples of _invalid_ pattern matches:
 	<td>Invalid <code>scheme</code></td>
 </tr>
 </table>
+</figure>
 
 Some schemes are not supported in all contexts.

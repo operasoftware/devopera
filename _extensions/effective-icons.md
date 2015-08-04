@@ -32,9 +32,16 @@ This article provides a tutorial and some hints and tips on creating effective i
 
 You should download our icon template if you want to follow along with the tutorial, or if you just want to speed up your own icon creation work.
 
-- [Photoshop (PSD) icon template](user-icon.psd)
-- [Inkscape SVG icon template](user-icon.svg)
-- There is also an extension icons screencast available covering how to use an older version of the Inkscape template. Watch this for more details: [Extension icons screencast (WebM)](static/videos/svg_template_tutorial.webm)
+- [Photoshop (PSD) icon template]({{ page.id }}/user-icon.psd)
+- [Inkscape SVG icon template]({{ page.id }}/user-icon.svg)
+- There is also an extension icons screencast available covering how to use an older version of the Inkscape template. Watch this for more details:
+
+<figure block="figure">
+	<video elem="media" controls>
+		<source src="{{ page.id }}/tutorial.mp4" type="video/mp4">
+		<source src="{{ page.id }}/tutorial.webm" type="video/webm">
+	</video>
+</figure>
 
 ## Quick hints and tips {#hints-tips}
 
@@ -52,7 +59,7 @@ Your icon should be simple and effective, and it should reflect the style and pu
 A unique shape or silhouette will help users to identify your extension quickly. Combining objects or shapes is generally not advised, as this tends to complicate your icon, diluting its message (see Figure 2.) Furthermore: to make the icon balance well, imagine that the shape has a physical weight. When centered on an imaginary pillar, the icon should not tip to the right or left; it should balance. **Do not apply a shadow to outline shapes**. Instead, put the shape on a background.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/clean-shape.png.png" alt="Image showing good and bad examples of icon shapes — you should go for a single clear shape in the center of the icon">
+	<img elem="media" src="{{ page.id }}/clean-shape.png" alt="Image showing good and bad examples of icon shapes — you should go for a single clear shape in the center of the icon">
 	<figcaption elem="caption">Figure 2: A single, centered shape communicates better than combined shapes. Unbalanced icons are visually troublesome</figcaption>
 </figure>
 
@@ -61,14 +68,14 @@ A unique shape or silhouette will help users to identify your extension quickly.
 Consider getting a professional graphic designer or illustrator to help you create your icon. If you aim for realism by making an icon that represents a real life object, it is advisable to use a single light source located directly above you, in front of the object. The perspective should be either straight on for flat objects like picture frames and windows, or from slightly above — as if the object were sitting on your desk, producing a shadow directly below and behind the object. Colors help the user to identify the icon’s significance, but should not be used to grab attention. Gradients should be conservative and smooth. See Figure 3 for a good example versus some not so good ones.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/shadow.png.png" alt="An image showing good and bad examples of gradients and perspective">
+	<img elem="media" src="{{ page.id }}/shadow.png" alt="An image showing good and bad examples of gradients and perspective">
 	<figcaption elem="caption">Figure 3: The perspective should be that of an object sitting on the desk in front of you. The lighting is above and slightly in front of the object, creating gradients and shadow.</figcaption>
 </figure>
 
 Do not use system icons or other application icons in your work — see Figure 4 for some examples.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/dont-use.png.png" alt="Examples of system icons and software vendor icons that you should not use">
+	<img elem="media" src="{{ page.id }}/dont-use.png" alt="Examples of system icons and software vendor icons that you should not use">
 	<figcaption elem="caption">Figure 4: System icons or icons from other software vendors are not allowed</figcaption>
 </figure>
 
@@ -79,7 +86,7 @@ Reducing the size of a bitmap image results in a loss of information. Details wi
 As you scale an icon down, details may end up in between pixels. Think of the pixels as a mosaic. If you need to draw a tiny dot, you cannot move the mosaic tiles to fit where you want the dot. You must either move the dot slightly, or make the surrounding tiles imply there is a dot by coloring all of them. This last approach is common to all graphics software, and it will make the dot appear blurry or unsharp. If your icon loses sharpness, you should consider redrawing it: tweak your design to align with the pixel grid or remove details to simplify the information.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/scaling.png.png" alt="An image showing good and bad examples of scaling an image down to a small size">
+	<img elem="media" src="{{ page.id }}/scaling.png" alt="An image showing good and bad examples of scaling an image down to a small size">
 	<figcaption elem="caption">Figure 5: Starting from a big icon design, scaling down to 64×64 pixels should not yield many problems. When scaling further, the details get lost and the edges get blurry</figcaption>
 </figure>
 
@@ -98,13 +105,13 @@ Note that Interlaced PNG-files are currently not supported, due to a [limitation
 1. Icons should be scaled nicely (no deformation, blurring or loss of intended details).
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/dont-blur.png.png" alt="Scaling and blur">
+	<img elem="media" src="{{ page.id }}/dont-blur.png" alt="Scaling and blur">
 </figure>
 
 2. Icon edges should be clean (no blur on straight lines and no pixeled corners).
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/dont-grid.png.png" alt="Clean edges">
+	<img elem="media" src="{{ page.id }}/dont-grid.png" alt="Clean edges">
 </figure>
 
 3. Icons with transparent backgrounds must be centered. The icon must not conflict with the Opera UI button.
@@ -135,7 +142,7 @@ Note that Interlaced PNG-files are currently not supported, due to a [limitation
 
 Note: Even though this tutorial is written with Photoshop in mind, you can still get some useful tips if you decide to use a different graphics package.
 
-First of all, open the [Photoshop (PSD) icon template](user-icon.psd) and save it with a different filename. You can work on your own icon inside this file. This tutorial is written with complete beginners in mind, but even Photoshop veterans may be able to pick up a thing or two.
+First of all, open the [Photoshop (PSD) icon template]({{ page.id }}/user-icon.psd) and save it with a different filename. You can work on your own icon inside this file. This tutorial is written with complete beginners in mind, but even Photoshop veterans may be able to pick up a thing or two.
 
 ### Selecting an icon {#selecting-icon}
 

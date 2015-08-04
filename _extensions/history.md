@@ -20,6 +20,7 @@ The first thing to note is to declare it in the `permissions` field in the maini
 
 _Transition Type_ is a term used to describe the way in which a particular URL has been navigated to. For example, a transition type of `link` will refer to the fact that the URL was navigated through by clicking on a hyperlink in a web page. The transition type of `typed` would mean that the user went to that page by explicitly typing that URL in the address bar, for instance. The full list of transition types are below:
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Transition type</th>
@@ -71,6 +72,7 @@ _Transition Type_ is a term used to describe the way in which a particular URL h
 	<td>Corresponds to a visit generated for a keyword. See also <a href="#tt_keyword"><code>keyword</code></a>.</td>
 </tr>
 </table>
+</figure>
 
 Each and every visit to any URL will be recorded in the history as a [`VisitItem`](https://developer.chrome.com/extensions/history#type-VisitItem). This item, besides holding detailed information about every visit, such as the URL visited, the time at which the visit occurred etc, will also hold information regarding the _transition type_, that is, how the user reached the webpage. Thus each and every visit to a web page will have a _transition type_ associated with it.
 
@@ -101,7 +103,7 @@ In our example, we’ll create a _browser action_, which when clicked, will upda
 
 In the above piece of code, we are getting the URL of the currently active tab. Then we pass the function [`getVisits()`](https://developer.chrome.com/extensions/history#method-getVisits). This will return a callback function which will return an array of [`visitItem`](https://developer.chrome.com/extensions/history#type-VisitItem) objects for that particular URL (A `visitItem` object is generated any time a URL is visited). We can count these objects to get a number of the times the user visited that URL, and then update the badge with that number.
 
-[Download the extension](samples/HistoryAPI-1.nex) for the example above and install it to see it work.
+[Download the extension](/extensions/extension-samples/history-api-1.nex) for the example above and install it to see it work.
 
 ## Removing URLs from the history
 
@@ -113,7 +115,7 @@ One of the most common use cases regarding the browser history, is to remove par
 		});
 	});
 
-You can [download the extension](samples/HistoryAPI-2.nex) for this example and see it in action. You can go further and create a list of URLs and then remove them by looping over that list and calling the `deleteUrl()` method for each of those URLs.
+You can [download the extension](/extensions/extension-samples/history-api-2.nex) for this example and see it in action. You can go further and create a list of URLs and then remove them by looping over that list and calling the `deleteUrl()` method for each of those URLs.
 
 If you want to remove URLs within a specified time range, then you can use the [`deleteRange()`](https://developer.chrome.com/extensions/history#method-deleteRange) method, and finally, if you want to remove all the URLs in history, you can simply call the [`deleteAll()`](https://developer.chrome.com/extensions/history#method-deleteAll) method.
 

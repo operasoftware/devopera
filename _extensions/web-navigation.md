@@ -6,10 +6,10 @@ license: cc-by-3.0
 
 ## Manifest
 
-All `chrome.webNavigation` methods and events require you to declare the "webNavigation" permission in the [extension manifest](manifest.html). For example:
+All `chrome.webNavigation` methods and events require you to declare the `webNavigation` permission in the [extension manifest](/extensions/manifest/). For example:
 
 	{
-		"name": "My extension",
+		"name": "My Extension",
 		"permissions": [
 			"webNavigation"
 		]
@@ -34,13 +34,13 @@ If the history API is used to modify the state of a frame (e.g. using `history.p
 
 ## Relation to `webRequest` events
 
-There is no defined ordering between events of the [`webRequest` API](https://developer.chrome.com/extensions/webRequest) and the events of the [`webNavigation` API](https://developer.chrome.com/extensions/webNavigation). It is possible that webRequest events are still received for frames that already started a new navigation, or that a navigation only proceeds after the network resources are already fully loaded.
+There is no defined ordering between events of the [`webRequest` API](https://developer.chrome.com/extensions/webRequest) and the events of the [`webNavigation` API](https://developer.chrome.com/extensions/webNavigation). It is possible that `webRequest` events are still received for frames that already started a new navigation, or that a navigation only proceeds after the network resources are already fully loaded.
 
-In general, the webNavigation events are closely related to the navigation state that is displayed in the UI, while the webRequest events correspond to the state of the network stack which is generally opaque to the user.
+In general, the `webNavigation` events are closely related to the navigation state that is displayed in the UI, while the webRequest events correspond to the state of the network stack which is generally opaque to the user.
 
 ## A note about timestamps
 
-It's important to note that some technical oddities in the OS's handling of distinct Opera processes can cause the clock to be skewed between the browser itself and extension processes. That means that WebNavigation's events' `timeStamp` property is only guaranteed to be _internally_ consistent. Comparing one event to another event will give you the correct offset between them, but comparing them to the current time inside the extension (via `(new Date()).getTime()`, for instance) might give unexpected results.
+It’s important to note that some technical oddities in the OS's handling of distinct Opera processes can cause the clock to be skewed between the browser itself and extension processes. That means that `WebNavigation`’s events’ `timeStamp` property is only guaranteed to be _internally_ consistent. Comparing one event to another event will give you the correct offset between them, but comparing them to the current time inside the extension (via `(new Date()).getTime()`, for instance) might give unexpected results.
 
 ## A note about frame and process IDs
 
@@ -50,10 +50,11 @@ Also note that during a provisional load the process might be switched several t
 
 ## Transition types and qualifiers
 
-The webNavigation API's `onCommitted` event has a `transitionType` and a `transitionQualifiers` property. The _transition type_ is the same as used in the [history API](tut_hist.html#transition_types) describing how the browser navigated to this particular URL. In addition, several _transition qualifiers_ can be returned that further define the navigation.
+The `webNavigation` API’s `onCommitted` event has a `transitionType` and a `transitionQualifiers` property. The _transition type_ is the same as used in the [history API](/extensions/history/) describing how the browser navigated to this particular URL. In addition, several _transition qualifiers_ can be returned that further define the navigation.
 
 The following transition qualifiers exist:
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Transition qualifier</th>
@@ -76,3 +77,4 @@ The following transition qualifiers exist:
 	<td>The user initiated the navigation from the address bar.</td>
 </tr>
 </table>
+</figure>

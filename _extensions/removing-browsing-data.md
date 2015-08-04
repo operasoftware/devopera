@@ -6,7 +6,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-You can use the [chrome.browsingData API](https://developer.chrome.com/extensions/browsingData) to remove browsing data from a user’s local profile.
+You can use the [`chrome.browsingData` API](https://developer.chrome.com/extensions/browsingData) to remove browsing data from a user’s local profile.
 
 ## Manifest
 
@@ -15,13 +15,13 @@ You must declare the `browsingData` permission in the [extension manifest](/exte
 	{
 		"name": "My extension",
 		"permissions": [
-			"browsingData",
+			"browsingData"
 		]
 	}
 
 ## Usage
 
-The simplest use-case for the [chrome.browsingData API](https://developer.chrome.com/extensions/browsingData) is a a time-based mechanism for clearing a user’s browsing data. Your code should provide a timestamp which indicates the historical date after which the user’s browsing data should be removed. This timestamp is formatted as the number of milliseconds since the Unix epoch (which can be retrieved from a JavaScript `Date` object via the `getTime` method).
+The simplest use-case for the [`chrome.browsingData` API](https://developer.chrome.com/extensions/browsingData) is a a time-based mechanism for clearing a user’s browsing data. Your code should provide a timestamp which indicates the historical date after which the user’s browsing data should be removed. This timestamp is formatted as the number of milliseconds since the Unix epoch (which can be retrieved from a JavaScript `Date` object via the `getTime` method).
 
 For example, to clear all of a user’s browsing data from the last week, you might write code as follows:
 
@@ -57,6 +57,7 @@ The `chrome.browsingData.remove` method allows you to remove various types of br
 
 	var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
 	var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+
 	chrome.browsingData.removeCookies({
 		'since': oneWeekAgo
 	}, callback);
@@ -78,6 +79,7 @@ We could adjust the previous example to remove only data from unprotected websit
 
 	var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
 	var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+
 	chrome.browsingData.remove({
 		'since': oneWeekAgo,
 		'originTypes': {

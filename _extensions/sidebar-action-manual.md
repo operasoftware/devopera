@@ -11,9 +11,11 @@ This article describes how to use the [`sidebarAction` API](/extensions/sidebar-
 
 ## The Sidebar
 
-<img src="static/images/sidebar-illustration.png" alt="The sidebar">
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/scheme.png" alt="The sidebar">
+</figure>
 
-In the latest (developer) builds of Opera you can enable the browser sidebar. This is a place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the _icons list_ on the left hand side of the sidebar and the clicking on an icon from the icons list will open its corresponding _panel_.
+Since Opera 30 you can enable the browser sidebar. This is a place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the _icons list_ on the left hand side of the sidebar and the clicking on an icon from the icons list will open its corresponding _panel_.
 
 The panel is an HTML page specified inside the extension which will house the main content of the extension. Every sidebar action _must_ have a panel page specified.
 
@@ -63,19 +65,19 @@ For example, let’s take the case of a simple `<textarea>`. We would like to ma
 		var maintext = document.querySelector('#maintext');
 		var theValue;
 
-		maintext.onchange = function(){
+		maintext.onchange = function() {
 			save();
 		}
 
-		function save(){
+		function save() {
 			theValue = maintext.value;
 			chrome.extension.getBackgroundPage().setValue(theValue);
 		}
 
-		function show(){
+		function show() {
 			theValue = chrome.extension.getBackgroundPage().getValue();
 
-			if (!theValue){
+			if (!theValue) {
 				theValue = '';
 			}
 
@@ -85,7 +87,7 @@ For example, let’s take the case of a simple `<textarea>`. We would like to ma
 		document.addEventListener('DOMContentLoaded', show, false);
 	</script>
 
-Above, we make sure we call the `save()` function whenever there is a change in the  text area (this will be called when the panel is closed too) by listening to the `onchange` event.
+Above, we make sure we call the `save()` function whenever there is a change in the text area (this will be called when the panel is closed too) by listening to the `onchange` event.
 
 Whenever the page is loaded, we listen to the `DOMContentLoaded` event, and make sure to retrieve the value from the background script and put it back in the text area.
 
@@ -104,7 +106,7 @@ The background script will look like so:
 
 Keep in mind that the extensions panel page can be considered as “closed” if the panel is not open, but its background will always be running. So you can maintain state by making sure that the background script either stores data to localStorage, or if it stores the data in the background script itself.
 
-You can [download the sample sidebar extension](samples/sidebar-maintain-state.zip) and have a look at the code.
+You can [download the sample sidebar extension](/extensions/extension-samples/sidebar-maintain-state.nex) and have a look at the code.
 
 ## Detecting user focus on the panel
 
@@ -117,4 +119,4 @@ There might be situations where you would want to detect whether the user has fo
 		console.log('The user has left focus from the panel page');
 	}
 
-Now that you know how to make sidebar extensions, here is hoping you quickly submit some great extensions to the [Opera Add-ons catalog](https://addons.opera.com).
+Now that you know how to make sidebar extensions, here is hoping you quickly submit some great extensions to the [Opera Add-ons catalog](https://addons.opera.com/extensions/?tag=sidebar).

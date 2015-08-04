@@ -38,7 +38,7 @@ There are two reserved commands called `_execute_browser_action` (which will ope
 		}
 	}
 
-Besides the commands for opening popups for browser and page actions, we can define shortcuts for our own commands too. For example, lets make a command called `test`. We’ll define it in the manifest like so:
+Besides the commands for opening popups for browser and page actions, we can define shortcuts for our own commands too. For example, let’s make a command called `test`. We’ll define it in the manifest like so:
 
 	'commands': {
 		'test': {

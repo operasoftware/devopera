@@ -57,6 +57,6 @@ You can enable or disable Off-Road Mode through your extension by calling the `o
 
 	opr.offroad.enabled.set({
 		'value': true
-	}, function(){});
+	});
 
 Feel free to [download the sample extension](samples/offroad.nex) and try it out yourself.
