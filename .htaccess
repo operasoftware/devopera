@@ -170,6 +170,7 @@ RewriteRule ^articles/view/tweaking-spatial-navigation-for-tv-browsing/?$ tv/twe
 
 RewriteRule ^blog/opera-19-released blog/opera-19/ [R=301,L]
 RewriteRule ^articles/showmodaldialog blog/showmodaldialog/ [R=301,L]
+RewriteRule ^blog/on-a-moratorium-on-new-browser-features articles/on-a-moratorium-on-new-browser-features/ [R=301,L]
 
 # Redirect all `/articles/view/*` to `/articles/*`
 RewriteRule ^articles/view/(.+)$ articles/$1 [R=301,L]

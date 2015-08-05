@@ -6,6 +6,8 @@ intro: 'Developer PPK called for a moratorium on new browser features. We explai
 tags:
 - offline
 - service-workers
+cover: jpg
+featured: featured
 license: cc-by-3.0
 ---
 
