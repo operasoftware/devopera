@@ -6,6 +6,9 @@ intro: 'Разработчик PPK призывает к мораторию на
 tags:
 - offline
 - service-workers
+language: ru
+translator: Ilya Streltsyn
+source: http://css-live.ru/
 license: cc-by-3.0
 ---
 
