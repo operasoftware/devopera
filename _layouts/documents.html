@@ -17,11 +17,7 @@ layout: default
 		</section>
 	</div>
 	<div elem="aside">
-{% for document in documents %}
-		<ul>
-			<li><a href="{{ document.url }}">{{ document.title | markdownline }}</a></li>
-		</ul>
-{% endfor %}
+		{% include documents__sidebar.html %}
 	</div>
 </main>
 <script src="/scripts/salvattore.js"></script>

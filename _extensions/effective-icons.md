@@ -2,6 +2,7 @@
 title: Creating Effective Icons
 authors:
 - christian-sinding
+featured: featured
 license: cc-by-3.0
 ---
 

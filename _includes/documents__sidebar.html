@@ -1,0 +1,14 @@
+{% assign documents = site.extensions %}
+{% if include.document %}
+	{% assign current = include.document %}
+{% endif %}
+
+<ul>
+{% for document in documents %}
+	<li>
+		{% unless document.url == current.url %}<a href="{{ document.url }}">{% endunless %}
+			{{ document.title | markdownline }}
+		{% unless document.url == current.url %}</a>{% endunless %}
+	</li>
+{% endfor %}
+</ul>
