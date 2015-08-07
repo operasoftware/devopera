@@ -104,5 +104,10 @@ Opera welcomes new developments that make the web better for users. We’re the 
 
 _This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team. Disagree? Please, write a commentary post and [tweet us](https://twitter.com/odevrel) the link!_
 
-Added 4 August: Simultaneously with our publishing, Google Chrome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
+Other people have been commenting, too:
+
+* Simultaneously with our publishing, Google Chrome evangelist Jake Archibald wrote [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/)
+* Paul Kinlan wrote [SLICE: the web](https://paul.kinlan.me/slice-the-web/) on the positive aspects of the web as a platform for users and developers</li>
+* Nicolas Bevacqua wrote [Fast-forwarding the Web Platform](http://ponyfoo.com/articles/fast-forwarding-the-web-platform)
+* Mariano Viola wrote [Mobile Web Isn’t Broken, Yet](http://www.marianoviola.com/blog/mobile-web-isnt-broken-yet)
 
