@@ -39,35 +39,35 @@ PPK приводит пример:
 
 > Приложения продолжают укреплять свои ведущие позиции, и занимают 86% активности среднестатистического американского мобильного пользователя, или 2 часа 19 минут в день. Время, проводимое в мобильном вебе, продолжает сокращаться, и в среднем составляет лишь 14% активности американского мобильного пользователя или 22 минуты в день.
 
-Многие из новых «фич», появляющихся в вебе, напр. like [Service Worker](https://jakearchibald.com/2014/service-worker-first-draft/) или [устанавливаемые веб-приложения](https://dev.opera.com/blog/installable-web-apps/), созданы обогащать впечатления конечных пользователей от пользования вебом — впечатления, к которым они привыкли по нативным приложениям, но которые прежде не были доступны в вебе. Это победа.
+Многие из новых «фич», появляющихся в вебе, напр. [Service Worker](https://jakearchibald.com/2014/service-worker-first-draft/) или [устанавливаемые веб-приложения](https://dev.opera.com/blog/installable-web-apps/), созданы обогащать впечатления конечных пользователей от пользования вебом — впечатления, к которым они привыкли по нативным приложениям, но которые прежде не были доступны в вебе. Это победа.
 
-We also respectfully disagree with PPK that there’s a dichotomy between adding native-like user experiences and protecting the web’s core strengths of simplicity, URLs and reach.
+Также при всём уважении мы не согласны с PPK, что добавление похожего на нативные приложения пользовательского опыта и защита простоты, URL-ов и общедоступности как фундаментальных ценностей веба однозначно противоречат друг другу.
 
-Let’s address those core strengths in reverse order:
+Давайте рассмотрим эти фундаментальные ценности в обратном порядке:
 
-## Reach
+## Общедоступность
 
-We’re reaching the point when some organisations are willing to forfeit the reach of the web because they want the features of native. For instance, Myntra does this — and its parent company Flipkart is planning to do so soon as well; they have disabled their site on mobile and urge people to use the app (although you can still use the site on desktop).
+Всё ближе момент, когда некоторые организации захотят поступиться доступностью веба, потому что хотят возможностей нативных приложений. Например, это уже делает Myntra — и планирует вот-вот сделать их родительская компания Flipkart; они отключили свой сайт для мобильников и убеждают людей пользоваться приложением (хотя сайтом по-прежнему можно пользоваться на компьютерах).
 
-Uber’s service is only available through the app. Arguably, that’s understandable because sometimes the Geolocation API is not very accurate on web, and really accurate location info is critical to a taxi hailing service. But that’s an argument for making the Geolocation API better, rather than stopping development.
+Служба Uber доступна только через приложение. Может быть, это можно понять, потому что API геолокации в вебе иногда не слишком точен, а точное определение местоположения критически важно для службы вызова такси. Но это аргумент за улучшение API геолокации, а не за прекращение разработки.
 
-If we slow development of the web, we risk losing more services to native, thereby diminishing the web’s reach.
+Если мы замедлим разработку веба, мы рискуем, что нативные приложения отберут у нас еще больше сервисов, тем самым уменьшая общедоступные возможности веба.
 
-## URLs
+## URL-ы
 
-If you get a great big saucepan, and boil the web in it all weekend, periodically skimming off the scum of YouTube comments, porn and photographs of horrible kittens (tautology?), when you look under the lid on Sunday night you’ll find you’re left with URLs. (Or URIs. Or URNs. Who cares what the difference is?)
+Если взять огромную кастрюлю и кипятить в ней веб все выходные напролет, периодически снимая пену из ютьюбовских комментов, порнухи и фоточек мерзких котят (тавтология?), то, заглянув под крышку в воскресенье вечером, вы найдете в остатке лишь URL-ы (или URI-шки, или URN-ки... неужели кого-то заботит эта разница?).
 
-It’s called “the web” because it’s a network that joins resources together, and those resources are individually addressable.
+Он и называется «вебом», т.е. «паутиной», потому что это сеть, связывающая ресурсы воедино, и к каждому ресурсу можно обратиться по своему индивидуальному адресу.
 
-Modern standards are designed to preserve URLs. Take Service Worker, for example; the explainer document for Navigation Controller (the previous name for what’s become Service Worker) [says](https://github.com/sole/NavigationController/blob/master/explainer.md)
+Современные стандарты разрабатываются для сохранения URL-ов. Взять Service Worker, например — поясняющий документ для контроллера навигации (старое название того, что позже выросло в Service Worker) [говорит](https://github.com/sole/NavigationController/blob/master/explainer.md):
 
-> It forces you to have URLs! Some modern apps platforms have foresaken this core principle of the web and suffer for it. The web should never make the same mistake.
+> Это вынуждает вас иметь URL-ы! Некоторые современные платформы для приложений поступились этим фундаментальным принципом веба и страдают от этого. Веб никогда не должен повторять той же ошибки.
 
-Similarly, the [Web Manifest spec](http://html5doctor.com/web-manifest-specification/) defines a web app’s start and scope in terms of good old-fashioned vitally-important URLs. The proposed [Upgrade Insecure Requests spec](https://w3c.github.io/webappsec/specs/upgrade/) tries to ensure that no links break if a developer upgrades their server to HTTPS in order to provide a better (more secure) user experience.
+Аналогично, [спецификация Web Manifest](http://html5doctor.com/web-manifest-specification/) определяет начало и область видимости приложения в терминах добрых старых жизненно важных URL-ов. Предложенная [спецификация апгрейда незащищенных запросов](https://w3c.github.io/webappsec/specs/upgrade/) пытается обеспечить непрерывность ссылок при переходе сервера на HTTPS, чтобы улучшить (сделать безопаснее) пользовательский опыт.
 
-There’s a lot the web can learn from native (without slavishly _emulating_ it), but linkability is something that native needs to emulate from the web; see the Rube Goldberg machine-like [App Links](https://developers.facebook.com/docs/applinks) proposal to see how Facebook is trying to bring “deep linking to content in your mobile app”. We have URLs; PPK is right that we need to jealously preserve them, so modern standards attempt to do just that.
+Веб много чему может научиться у нативных приложений (для этого не нужно рабски _эмулировать_ их), но возможность ссылаться — то, в чем нативным приложениям нужно эмулировать веб. См. смахивающее на  «заумную машину Голдберга» предложение [App Links](https://developers.facebook.com/docs/applinks) — вот как Facebook старается привнести «глубокую линковку контента в ваше мобильное приложение». У нас есть URL-ы; PPK прав, что нам нужно беречь их как зеницу ока, что современные стандарты и стараются делать.
 
-## Simplicity
+## Простота
 
 There’s a deeper complexity to the modern web platform than the sheer volume of features. It’s to do with the way the specs were written, the timescale over which they’ve been written and the fact that some features that we rely on have never been specified at all.
 
