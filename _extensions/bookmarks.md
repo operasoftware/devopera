@@ -79,7 +79,7 @@ Our popup.html page looks like:
 
 In the above code we have used a recursive function to go through all bookmark nodes. Whenever it finds a bookmark folder, it will go through its child nodes until it finds bookmark entries. It will keep adding the bookmark folders and bookmark entries along the way as it goes through them.
 
-You can [download the working extension]({{ page.id }}/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
+You can [download the working extension]({{ page.url }}/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
 
 ### Creating new bookmark entries
 
