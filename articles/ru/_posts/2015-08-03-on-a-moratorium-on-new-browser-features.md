@@ -12,34 +12,34 @@ source: http://css-live.ru/
 license: cc-by-3.0
 ---
 
-Famed developer and commentator Peter Paul Koch (PPK) recently called for “a moratorium on new browser features for about a year or so”. If you haven’t read his article [Stop pushing the web forward](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html), give it a look; he raises interesting points, as he always does.
+Знаменитый разработчик и автор статей Питер Пол Кох (PPK) недавно призвал к «мораторию на новые браузерные функции на год или около того». Если вы не читали его статью [«Хватит толкать веб вперед»](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html) ([в переводе](http://css-live.ru/articles/xvatit-tolkat-veb-vpered.html)), просмотрите ее: он выдвигает интересные тезисы, как всегда.
 
-(Let us say now: we’re all big fans of PPK; he’s undergone [personal attacks](https://twitter.com/ppk/status/626849503321149440) for his article — we’re going to disagree with his central thesis, while continuing to love him deeply, and thanking him for starting this discussion.)
+(Нужно сказать сразу: мы все — большие поклонники таланта PPK: ему достались и [личные нападки]( https://twitter.com/ppk/status/626849503321149440) за ту статью — мы собираемся возразить на его главный тезис, но мы по-прежнему замечательно относимся к нему и благодарим его за начало этого обсуждения.)
 
-In many ways, we Opera devrel folks feel his pain. Each of us is familiar with the feeling of coming back from a vacation and not understanding the Twitter conversations about specs that were launched in the fortnight we were lounging next to a pool / winning hearts with our bachata / touring ancient ruins / having it large in Magaluf / doing emoji poos and wishing we hadn’t eaten so many `U+1F364`s last night. (Delete as appropriate depending if you’re Bruce, Shwetank, Mathias, Vadim, or Andreas.)
+Во многом мы, специалисты Opera по связям с разработчиками, разделяем его боль. Каждому из нас знакомо чувство, когда по возвращении из отпуска мы не можем понять беседы в твиттере о спецификации, появившейся в тот недавний вечер, когда мы нежились у бассейна/покоряли сердца зажигательной бачатой/бродили по древним руинам/отрывались в Магалуфе/выражали значками эмодзи в виде какашки своё сожаление об излишке съеденных накануне `U+1F364` (зачеркните нужное в зависимости от того, кто вы — Брюс, Шветанк, Матиас, Вадим или Андреас).
 
-There’s a lot to learn, and the web platform is becoming more complex. Even Ian Hickson, the editor of HTML5, [said](http://html5doctor.com/interview-with-ian-hickson-html-editor/):
+Всегда есть чему учиться, и веб-платформа становится всё сложнее. Даже Иэн Хиксон, редактор HTML5, [сказал]( http://html5doctor.com/interview-with-ian-hickson-html-editor/):
 
-> The platform has been too complex for any one person to fully understand for a long time already. Heck, there are parts of the Web platform that I haven’t even tried to grok — for example, WebGL or IndexDB — and parts that I continually find to be incredibly complicated despite my efforts at understanding them
+> Платформа уже слишком сложна, чтобы один человек долго мог понимать ее полностью. Блин, у веб-платформы есть части, в которые и я даже не пытался вникнуть — например, WebGL или IndexDB — и части, которые постоянно оказываются невероятно сложными для меня, несмотря на все мои старания их понять
 
-…and that was two and a half years ago!
+...и это сказано два с половиной года назад!
 
-But it’s not necessary to remember the minutiae of every specification. It’s necessary to know what’s possible, and have access to a search engine to find the spec or tutorials to find details. How many of us memorise the syntax for CSS gradients, or remember every piece of the Web Audio API syntax? But that doesn’t stop us using them when we need to.
+Но не требуется помнить все нюансы каждой спецификации. Нужно знать то, что можно, и иметь доступ к поисковику, чтобы находить нужные подробности в спецификациях или обучающих материалах. Многие ли из нас знают наизусть синтаксис CSS-градиентов, или помнят все тонкости синтаксиса Web Audio API? Но это не мешает нам пользоваться этим при необходимости.
 
-But PPK’s complaint isn’t primarily about complexity:
+Но главная жалоба PPK вовсе не на сложность:
 
-> We should focus on the web’s strengths: simplicity, URLs and reach. The innovation machine is running at full speed in the wrong direction.
+> Нам надо бы сосредоточиться на сильных сторонах веба: простоте, URLах и доступности. Машина инноваций на всех парах мчит не туда.
 
-PPK cites an example:
+PPK приводит пример:
 
-> To me, Navigation Transitions exemplifies what’s wrong with new browser features today. Its purpose is to allow for a smooth transition from one web page to another, to the point of synchronising the animations on the source and destination pages … We’ve done without for years. More importantly, end users have done without for years, and are quite used to a slight delay when they load another page …
-But why do web developers want navigation transitions? In order to emulate native apps, of course. To me, that’s not good enough.
+> Для меня переходы между страницами олицетворяют всё то, что сегодня с браузерными функциями не так. Их задача — позволять плавно переходить с одной страницы на другую, вплоть до синхронизации анимаций на исходной и конечной страницах. ... Мы годами обходились без этого. Что еще важнее, конечные пользователи годами обходились без этого и вполне привыкли к легкой задержке при загрузке новой страницы...
+Но зачем это понадобилось веб-разработчикам? Чтобы эмулировать нативные приложения, конечно же. По-моему, этого недостаточно.
 
-But the point here is that users _do_ want such things, because they’ve now become used to experiences available in native apps. And we know that consumers love the app experience; in April 2014, the mobile analytics firm [Flurry reported](http://flurrymobile.tumblr.com/post/115191864580/apps-solidify-leadership-six-years-into-the-mobile)
+Но фокус тут в том, что пользователи _хотят_ подобных штук, потому что уже привыкли к возможностям нативных приложений. И мы знаем, что потребителям нравятся возможности приложений — в апреле 2014-го специализирующаяся на мобильной аналитике фирма [Flurry сообщила](http://flurrymobile.tumblr.com/post/115191864580/apps-solidify-leadership-six-years-into-the-mobile):
 
->Apps continued to cement their lead, and commanded 86% of the average US mobile consumer’s time, or 2 hrs and 19 minutes per day. Time spent on the mobile web continued to decline and averaged just 14% of the US mobile consumer’s time, or 22 minutes per day.
+> Приложения продолжают укреплять свои ведущие позиции, и занимают 86% активности среднестатистического американского мобильного пользователя, или 2 часа 19 минут в день. Время, проводимое в мобильном вебе, продолжает сокращаться, и в среднем составляет лишь 14% активности американского мобильного пользователя или 22 минуты в день.
 
-Many of the new “features” coming to the web, like [Service Worker](https://jakearchibald.com/2014/service-worker-first-draft/) or [Installable Web Apps](https://dev.opera.com/blog/installable-web-apps/), are designed to enhance the web experience for end users — experiences they’ve become accustomed to from native apps but weren’t achievable previously on the web. That’s a win.
+Многие из новых «фич», появляющихся в вебе, напр. like [Service Worker](https://jakearchibald.com/2014/service-worker-first-draft/) или [устанавливаемые веб-приложения](https://dev.opera.com/blog/installable-web-apps/), созданы обогащать впечатления конечных пользователей от пользования вебом — впечатления, к которым они привыкли по нативным приложениям, но которые прежде не были доступны в вебе. Это победа.
 
 We also respectfully disagree with PPK that there’s a dichotomy between adding native-like user experiences and protecting the web’s core strengths of simplicity, URLs and reach.
 
