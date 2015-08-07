@@ -1,12 +1,12 @@
-{% assign documents = site.extensions %}
+{% assign entries = site.extensions %}
 {% if include.document %}
 	{% assign current = include.document %}
 {% endif %}
 
-<ul>
+<ul block="sidebar">
 {% for document in documents %}
-	<li>
-		{% unless document.url == current.url %}<a href="{{ document.url }}">{% endunless %}
+	<li elem="item">
+		{% unless document.url == current.url %}<a href="{{ document.url }}" elem="link">{% endunless %}
 			{{ document.title | markdownline }}
 		{% unless document.url == current.url %}</a>{% endunless %}
 	</li>

@@ -1,5 +1,25 @@
 ---
 title: Extensions Documentation
 category: extensions
-layout: documents
+layout: default
 ---
+
+{% assign documents = site.extensions %}
+{% assign documents_featured = documents | where: 'featured', 'featured' %}
+
+<main block="layout">
+	<div elem="content">
+		<section block="archive">
+			<h1 elem="title">{{ page.title }}</h1>
+			<div data-columns elem="columns">
+{% for document in documents_featured %}
+	{% include teaser.html entry=document %}
+{% endfor %}
+			</div>
+		</section>
+	</div>
+	<div elem="aside">
+		{% include sidebar.html entries=documents %}
+	</div>
+</main>
+<script src="/scripts/salvattore.js"></script>

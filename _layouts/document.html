@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign documents = site.extensions %}
+
 <main block="layout">
 	<div elem="content" mod="entry">
 		<article role="main" lang="{{ page.language }}">
@@ -12,6 +14,6 @@ layout: default
 		</article>
 	</div>
 	<div elem="aside">
-		{% include documents__sidebar.html document=page %}
+		{% include sidebar.html entries=documents entry=page %}
 	</div>
 </main>
