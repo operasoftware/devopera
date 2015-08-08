@@ -14,13 +14,13 @@ license: cc-by-3.0
 
 Знаменитый разработчик и автор статей Питер Пол Кох (PPK) недавно призвал к «мораторию на новые браузерные функции на год или около того». Если вы не читали его статью [«Хватит толкать веб вперед»](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html) ([в переводе](http://css-live.ru/articles/xvatit-tolkat-veb-vpered.html)), просмотрите ее: он выдвигает интересные тезисы, как всегда.
 
-(Нужно сказать сразу: мы все — большие поклонники таланта PPK: ему достались и [личные нападки]( https://twitter.com/ppk/status/626849503321149440) за ту статью — мы собираемся возразить на его главный тезис, но мы по-прежнему замечательно относимся к нему и благодарим его за начало этого обсуждения.)
+(Нужно сказать сразу: мы все — большие поклонники таланта PPK: ему достались и [личные нападки]( https://twitter.com/ppk/status/626849503321149440) за ту статью — мы собираемся возразить на его главный тезис, но мы по-прежнему замечательно относимся к нему и благодарим его за начало этого обсуждения.)
 
-Во многом мы, специалисты Opera по связям с разработчиками, разделяем его боль. Каждому из нас знакомо чувство, когда по возвращении из отпуска мы не можем понять беседы в твиттере о спецификации, появившейся в тот недавний вечер, когда мы нежились у бассейна/покоряли сердца зажигательной бачатой/бродили по древним руинам/отрывались в Магалуфе/выражали значками эмодзи в виде какашки своё сожаление об излишке съеденных накануне `U+1F364` (зачеркните нужное в зависимости от того, кто вы — Брюс, Шветанк, Матиас, Вадим или Андреас).
+Во многом мы, специалисты Opera по связям с разработчиками, разделяем его боль. Каждому из нас знакомо чувство, когда по возвращении из отпуска мы не можем понять беседы в твиттере о спецификации, появившейся в тот недавний вечер, когда мы нежились у бассейна/покоряли сердца зажигательной бачатой/бродили по древним руинам/отрывались в Магалуфе/выражали значками эмодзи в виде какашки своё сожаление об излишке съеденных накануне `U+1F364` (зачеркните нужное в зависимости от того, кто вы — Брюс, Шветанк, Матиас, Вадим или Андреас).
 
 Всегда есть чему учиться, и веб-платформа становится всё сложнее. Даже Иэн Хиксон, редактор HTML5, [сказал]( http://html5doctor.com/interview-with-ian-hickson-html-editor/):
 
-> Платформа уже слишком сложна, чтобы один человек долго мог понимать ее полностью. Блин, у веб-платформы есть части, в которые и я даже не пытался вникнуть — например, WebGL или IndexDB — и части, которые постоянно оказываются невероятно сложными для меня, несмотря на все мои старания их понять
+> Платформа уже слишком сложна, чтобы один человек долго мог понимать ее полностью. Блин, у веб-платформы есть части, в которые и я даже не пытался вникнуть — например, WebGL или IndexDB — и части, которые постоянно оказываются невероятно сложными для меня, несмотря на все мои старания их понять
 
 ...и это сказано два с половиной года назад!
 
@@ -32,7 +32,7 @@ license: cc-by-3.0
 
 PPK приводит пример:
 
-> Для меня переходы между страницами олицетворяют всё то, что сегодня с браузерными функциями не так. Их задача — позволять плавно переходить с одной страницы на другую, вплоть до синхронизации анимаций на исходной и конечной страницах. ... Мы годами обходились без этого. Что еще важнее, конечные пользователи годами обходились без этого и вполне привыкли к легкой задержке при загрузке новой страницы...
+> Для меня переходы между страницами олицетворяют всё то, что сегодня с браузерными функциями не так. Их задача — позволять плавно переходить с одной страницы на другую, вплоть до синхронизации анимаций на исходной и конечной страницах. ... Мы годами обходились без этого. Что еще важнее, конечные пользователи годами обходились без этого и вполне привыкли к легкой задержке при загрузке новой страницы...
 Но зачем это понадобилось веб-разработчикам? Чтобы эмулировать нативные приложения, конечно же. По-моему, этого недостаточно.
 
 Но фокус тут в том, что пользователи _хотят_ подобных штук, потому что уже привыкли к возможностям нативных приложений. И мы знаем, что потребителям нравятся возможности приложений — в апреле 2014-го специализирующаяся на мобильной аналитике фирма [Flurry сообщила](http://flurrymobile.tumblr.com/post/115191864580/apps-solidify-leadership-six-years-into-the-mobile):
@@ -69,31 +69,31 @@ PPK приводит пример:
 
 ## Простота
 
-There’s a deeper complexity to the modern web platform than the sheer volume of features. It’s to do with the way the specs were written, the timescale over which they’ve been written and the fact that some features that we rely on have never been specified at all.
+У современной веб-платформы есть и более глубинная сложность, чем просто количество функций. Это связано с тем, как писались спецификации, на каких временных масштабах они писались, а также с тем фактом, что для некоторых возможностей, на которые мы полагаемся, вообще никогда не было спецификаций.
 
-One example is HTML5 Parsing. For years, developers had to deal with the different DOMs that browsers constructed from invalid markup (which, as we know, is the vast majority of the web). This was allowed because HTML 4 never specified what to do with bad markup, so browsers were free to do as they saw fit.
+Один из примеров — парсинг HTML5. Годами разработчикам приходилось иметь дело с разными вариантами DOM, что браузеры строили по невалидной разметке (которая, как мы знаем, составляет основную массу веба). Это допускалось, поскольку HTML 4 никогда не уточнял, как быть с неправильной разметкой, так что браузеры были вольны делать что им угодно.
 
-HTML5 changed that, and now all browsers worth shaking an angle bracket at produce the same DOM regardless of the validity of the markup. This has produced a huge boost in interoperability, benefitting consumers and saving developers megatons of heartache.
+HTML5 это изменил, и теперь все браузеры, заслуживающие пожатия угловой скобки, получают одну и ту же DOM вне зависимости от валидности разметки. Это дало колоссальное улучшение совместимости, что радует потребителей и сберегает сотни километров разработческих нервов.
 
-A more current example is `XMLHttpRequest` which was never formalised and standardised until years after Microsoft implemented it and everyone else reverse-engineered it and copied it.
+Более свежий пример — `XMLHttpRequest`, формальное описание и стандарт для которого появились лишь спустя годы после того, как Microsoft его реализовал, а все остальные разобрали эту реализацию и скопировали ее.
 
-XHR is hardly a beautiful API, and will be replaced by the [Fetch Standard](https://fetch.spec.whatwg.org/) which aims to simplify and unify network requests. Its preface says
+XHR едва ли можно назвать красивым API, и его заменит [стандарт Fetch](https://fetch.spec.whatwg.org/), стремящийся упростить и привести к единому виду сетевые запросы. В его преамбуле сказано:
 
-> At a high level, fetching a resource is a fairly simple operation. A request goes in, a response comes out. The details of that operation are however quite involved and used to not be written down carefully and differ from one API to the next.
+> На высоком уровне загрузка ресурса — весьма простая операция. Приходит запрос, возвращается ответ. Но детали этой операции достаточно сложны, не были прежде подробно описаны и различаются между одним API и другим.
 
-> Numerous APIs provide the ability to fetch a resource, e.g. HTML’s `img` and `script` element, CSS’ `cursor` and `list-style-image`, the `navigator.sendBeacon()` and `self.importScripts()` JavaScript APIs. The Fetch Standard provides a unified architecture for these features so they are all consistent when it comes to various aspects of fetching, such as redirects and the CORS protocol.
+> Множество API позволяет загружать ресурсы, напр. элементы `img` и `script` в HTML, `cursor` и `list-style-image` в CSS,  `navigator.sendBeacon()` и `self.importScripts()` в JavaScript. Стандарт Fetch предоставляет унифицированную архитектуру для таких функций, чтобы все они стали единообразны в том, что касается различных аспектов загрузки, напр. редиректов и протокола CORS.
 
-Modern standards are all about explaining the platform to simplify development, and ensuring a solid, understandable foundation upon which to build.
+Все современные стандарты связаны с прояснением работы платформы для упрощения разработки и обеспечивают прочную, понятную основу, на которой можно строить всё.
 
-This is built on a design philosophy called the Extensible Web Manifesto. It’s too much to explore here, but The Chair of the W3C Extensible Web Community Group, Brian Kardell, wrote us an article about it called [Sex, Houdini and the Extensible Web](https://dev.opera.com/articles/houdini/).
+Всё это строится на философии разработки под названием «Манифест расширяемого веба». Это практически необъятная тема, но глава общественной группы W3C по расширяемому вебу, Брайан Карделл, написал нам статью об этом под названием [«Секс, Гудини и расширяемый веб»](https://dev.opera.com/articles/houdini/).
 
-## Immediacy
+## Безотлагательность
 
-A central pillar of the web that PPK doesn’t mention is what I call “immediacy”. When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have wifi, they’ll update it. Maybe.
+Центральный столп веба, который PPK не упомянул — то, что я называю «безотлагательностью». Если вы что-то поменяете на сайте, следующий посетитель сразу же получит обновленную версию. С нативными приложениями, которые нужно публиковать через App Store, пользователь лишь получит всплывающее уведомление, что есть свежая версия, и что при подключении к wifi приложение обновится. Может быть.
 
-Installable Web Apps give us an app-like experience — an icon on the homescreen, potentially working even while offline — but retain the immediacy of the web because the app is hosted on a server. In fact, the app is actually — wait for it — _a web site_ with a URL pointed to by the homescreen icon. We combine the strengths of the web with the user experience of native.
+Устанавливаемые веб-приложения для пользователя выглядят как приложения — иконка на домашнем экране, потенциально работают даже без подключения к интернету — но сохраняют безотлагательность веба, поскольку само приложение хранится на сервере. Фактически, приложение на самом деле является — приготовьтесь — _сайтом_, с URL-ом, на который указывает иконка на домашнем экране. Мы объединяем преимущества веба с привычным видом и поведением нативного приложения.
 
-## Conclusion
+## Заключение
 
 At Opera, a lot our developers work on bringing the web to people who otherwise wouldn’t get it, [either with Opera Mini](https://dev.opera.com/articles/making-sites-work-opera-mini/), or by [reducing Chromium’s memory consumption](https://dev.opera.com/blog/reducing-memory-use/) so that it works on the lower-specification devices that most of the world uses.
 
