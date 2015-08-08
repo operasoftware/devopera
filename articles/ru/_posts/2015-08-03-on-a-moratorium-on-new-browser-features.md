@@ -16,9 +16,9 @@ license: cc-by-3.0
 
 (Нужно сказать сразу: мы все — большие поклонники таланта PPK: ему достались и [личные нападки]( https://twitter.com/ppk/status/626849503321149440) за ту статью — мы собираемся возразить на его главный тезис, но мы по-прежнему замечательно относимся к нему и благодарим его за начало этого обсуждения.)
 
-Во многом мы, специалисты Opera по связям с разработчиками, разделяем его боль. Каждому из нас знакомо чувство, когда по возвращении из отпуска мы не можем понять беседы в твиттере о спецификации, появившейся в тот недавний вечер, когда мы нежились у бассейна/покоряли сердца зажигательной бачатой/бродили по древним руинам/отрывались в Магалуфе/выражали значками эмодзи в виде какашки своё сожаление об излишке съеденных накануне `U+1F364` (зачеркните нужное в зависимости от того, кто вы — Брюс, Шветанк, Матиас, Вадим или Андреас).
+Во многом мы, специалисты Opera по связям с разработчиками, разделяем его боль. Каждому из нас знакомо чувство, когда по возвращении из отпуска мы не можем понять беседы в твиттере о спецификации, появившейся в тот недавний вечер, когда мы нежились у бассейна/покоряли сердца зажигательной бачатой/бродили по древним руинам/отрывались в Магалуфе/выражали значками-эмодзи в виде какашки своё сожаление об излишке съеденных накануне `U+1F364` (зачеркните нужное в зависимости от того, кто вы — Брюс, Шветанк, Матиас, Вадим или Андреас).
 
-Всегда есть чему учиться, и веб-платформа становится всё сложнее. Даже Иэн Хиксон, редактор HTML5, [сказал]( http://html5doctor.com/interview-with-ian-hickson-html-editor/):
+Всегда есть чему учиться, и веб-платформа становится всё сложнее. Даже Иэн Хиксон, редактор HTML5, [сказал](http://html5doctor.com/interview-with-ian-hickson-html-editor/):
 
 > Платформа уже слишком сложна, чтобы один человек долго мог понимать ее полностью. Блин, у веб-платформы есть части, в которые и я даже не пытался вникнуть — например, WebGL или IndexDB — и части, которые постоянно оказываются невероятно сложными для меня, несмотря на все мои старания их понять
 
@@ -28,7 +28,7 @@ license: cc-by-3.0
 
 Но главная жалоба PPK вовсе не на сложность:
 
-> Нам надо бы сосредоточиться на сильных сторонах веба: простоте, URLах и доступности. Машина инноваций на всех парах мчит не туда.
+> Нам надо бы сосредоточиться на сильных сторонах веба: простоте, URLах и общедоступности. Машина инноваций на всех парах мчит не туда.
 
 PPK приводит пример:
 
@@ -95,11 +95,13 @@ XHR едва ли можно назвать красивым API, и его за
 
 ## Заключение
 
-At Opera, a lot our developers work on bringing the web to people who otherwise wouldn’t get it, [either with Opera Mini](https://dev.opera.com/articles/making-sites-work-opera-mini/), or by [reducing Chromium’s memory consumption](https://dev.opera.com/blog/reducing-memory-use/) so that it works on the lower-specification devices that most of the world uses.
+Наши разработчики в Opera много трудятся над тем, чтобы дать доступ к вебу тем, кому он недоступен другими средствами, [либо с Opera Mini](https://dev.opera.com/articles/making-sites-work-opera-mini/), либо путем [уменьшения потребления памяти Chromium’ом](https://dev.opera.com/blog/reducing-memory-use/), чтобы он работал даже на бюджетных устройствах, которыми пользуется большинство населения земного шара.
 
-We know that the [fastest growing mobile phone markets don’t use apps](http://qz.com/466089/the-fastest-growing-mobile-phone-markets-barely-use-apps/), so by artificially slowing the pace of evolution on the web, we’re deciding that these people should get a second-class online experience.
+Мы знаем, что [самые быстрорастущие рынки мобильных телефонов не пользуются приложениями](http://qz.com/466089/the-fastest-growing-mobile-phone-markets-barely-use-apps/), так что, искусственно замедляя темп эволюции веба, мы обрекаем этих людей на онлайн-сервис второго сорта.
 
-It’s imperative, we believe, for the web to continue to add new features — like Service Workers and Installable Web Apps, just as we added native video, the Audio API, the `<picture>` element, Storage APIs — that extend what the web can do so that it continues to grow and provide the reach that PPK wants, and that we want.
+Мы полагаем, что дальнейшее существование веба немыслимо без добавления новых функций — вроде Service Workers и устанавливаемых веб-приложений, в точности как мы добавили нативное видео, API аудио, элемент `<picture>`, API хранилищ — которые раздвигают границы возможного для веба и дают общедоступность, которой жаждет PPK и которой хотим мы.
+
+Opera приветствует новых разработчиков, делающих веб лучше для пользователей. Мы — единственная разрабатывающая браузер компания, которая не пытается заодно продавать операционную систему или закрытое устройство. Поэтому для нас жизненно важно, чтобы веб и дальше процветал — и мы полагаем, что жто важно для всех. 
 
 Opera welcomes new developments that make the web better for users. We’re the only browser manufacturer that isn’t also trying to sell an Operating System or locked-down device. So for us, it’s vital that the web continues to thrive — and we believe it’s vital for everybody.
 
