@@ -6,6 +6,8 @@ intro: 'Developer PPK called for a moratorium on new browser features. We explai
 tags:
 - offline
 - service-workers
+cover: jpg
+featured: featured
 license: cc-by-3.0
 ---
 
@@ -29,12 +31,11 @@ But PPK’s complaint isn’t primarily about complexity:
 
 PPK cites an example:
 
-> To me, Navigation Transitions exemplifies what’s wrong with new browser features today. Its purpose is to allow for a smooth transition from one web page to another, to the point of synchronising the animations on the source and destination pages … We’ve done without for years. More importantly, end users have done without for years, and are quite used to a slight delay when they load another page …
-But why do web developers want navigation transitions? In order to emulate native apps, of course. To me, that’s not good enough.
+> To me, Navigation Transitions exemplifies what’s wrong with new browser features today. Its purpose is to allow for a smooth transition from one web page to another, to the point of synchronising the animations on the source and destination pages […] We’ve done without for years. More importantly, end users have done without for years, and are quite used to a slight delay when they load another page […] But why do web developers want navigation transitions? In order to emulate native apps, of course. To me, that’s not good enough.
 
 But the point here is that users _do_ want such things, because they’ve now become used to experiences available in native apps. And we know that consumers love the app experience; in April 2014, the mobile analytics firm [Flurry reported](http://flurrymobile.tumblr.com/post/115191864580/apps-solidify-leadership-six-years-into-the-mobile)
 
->Apps continued to cement their lead, and commanded 86% of the average US mobile consumer’s time, or 2 hrs and 19 minutes per day. Time spent on the mobile web continued to decline and averaged just 14% of the US mobile consumer’s time, or 22 minutes per day.
+> Apps continued to cement their lead, and commanded 86% of the average US mobile consumer’s time, or 2 hrs and 19 minutes per day. Time spent on the mobile web continued to decline and averaged just 14% of the US mobile consumer’s time, or 22 minutes per day.
 
 Many of the new “features” coming to the web, like [Service Worker](https://jakearchibald.com/2014/service-worker-first-draft/) or [Installable Web Apps](https://dev.opera.com/blog/installable-web-apps/), are designed to enhance the web experience for end users — experiences they’ve become accustomed to from native apps but weren’t achievable previously on the web. That’s a win.
 
@@ -86,7 +87,7 @@ This is built on a design philosophy called the Extensible Web Manifesto. It’s
 
 ## Immediacy
 
-A central pillar of the web that PPK doesn’t mention is what I call “immediacy”. When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have wifi, they’ll update it. Maybe.
+A central pillar of the web that PPK doesn’t mention is what I call “immediacy”. When you make a change to a web site, the next visitor gets the updated version immediately. With native apps you have to publish to an App Store, your user is alerted that there’s an updated version and, when they have Wi-Fi, they’ll update it. Maybe.
 
 Installable Web Apps give us an app-like experience — an icon on the homescreen, potentially working even while offline — but retain the immediacy of the web because the app is hosted on a server. In fact, the app is actually — wait for it — _a web site_ with a URL pointed to by the homescreen icon. We combine the strengths of the web with the user experience of native.
 
@@ -102,5 +103,10 @@ Opera welcomes new developments that make the web better for users. We’re the 
 
 _This was written by Bruce Lawson, with input from the rest of Opera’s Developer Relations team. Disagree? Please, write a commentary post and [tweet us](https://twitter.com/odevrel) the link!_
 
-Added 4 August: Simultaneously with our publishing, Google Chrome evangelist Jake Archibald published [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) on the same subject.
+Other people have been commenting, too:
 
+- Simultaneously with our publishing, Google Chrome evangelist Jake Archibald wrote [If we stand still, we go backwards](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/)
+- Paul Kinlan wrote [SLICE: the web](https://paul.kinlan.me/slice-the-web/) on the positive aspects of the web as a platform for users and developers</li>
+- Nicolas Bevacqua wrote [Fast-forwarding the Web Platform](http://ponyfoo.com/articles/fast-forwarding-the-web-platform)
+- Mariano Viola wrote [Mobile Web Isn’t Broken, Yet](http://www.marianoviola.com/blog/mobile-web-isnt-broken-yet)
+- [Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web](http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/) is Aaron Gustafson’s take on it. (Microsoft)
