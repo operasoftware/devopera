@@ -24,11 +24,11 @@ Here are some examples of what content scripts can do:
 
 However, content scripts have some limitations. They **cannot**:
 
-- Use chrome.* APIs (except for parts of [`chrome.extension`](https://developer.chrome.com/extensions/extension))
+- Use `chrome.*` APIs (except for parts of [`chrome.extension`](https://developer.chrome.com/extensions/extension))
 - Use variables or functions defined by their extension’s pages
 - Use variables or functions defined by web pages or by other content scripts
 
-These limitations aren’t as bad as they sound. Content scripts can _indirectly_ use the chrome.* APIs, get access to extension data, and request extension actions by exchanging [messages](/extensions/message-passing/) with their parent extension. Content scripts can also make cross-site XMLHttpRequests to the same sites as their parent extensions, and they can communicate with web pages using the shared DOM. For more insight into what content scripts can and can’t do, learn about the execution environment.
+These limitations aren’t as bad as they sound. Content scripts can _indirectly_ use the `chrome.*` APIs, get access to extension data, and request extension actions by exchanging [messages](/extensions/message-passing/) with their parent extension. Content scripts can also make cross-site `XMLHttpRequests` to the same sites as their parent extensions, and they can communicate with web pages using the shared DOM. For more insight into what content scripts can and can’t do, learn about the execution environment.
 
 ## Manifest {#registration}
 
@@ -36,30 +36,27 @@ If your content script’s code should always be injected, register it in the [e
 
 	{
 		"name": "My extension",
-		…
 		"content_scripts": [
 			{
 				"matches": ["http://www.google.com/*"],
 				"css": ["mystyles.css"],
 				"js": ["jquery.js", "myscript.js"]
 			}
-		],
-		…
+		]
 	}
 
 If you want to inject the code only sometimes, use the [`permissions`](/extensions/manifest/#permissions) field instead, as described in Programmatic injection.
 
 	{
 		"name": "My extension",
-		…
 		"permissions": [
 			"tabs", "http://www.google.com/*"
-		],
-		…
+		]
 	}
 
 Using the `content_scripts` field, an extension can insert multiple content scripts into a page; each of these content scripts can have multiple JavaScript and CSS files. Each item in the `content_scripts` array can have the following properties:
 
+<figure block="figure">
 <table>
 <tr>
 	<th>Name</th>
@@ -123,6 +120,7 @@ Using the `content_scripts` field, an extension can insert multiple content scri
 	</td>
 </tr>
 </table>
+</figure>
 
 ### Match patterns and globs {#match-patterns-globs}
 
@@ -157,20 +155,19 @@ Once you have permissions set up, you can inject JavaScript into a page by calli
 
 The following code (from the [make_page_red](http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/extensions/docs/examples/api/browserAction/make_page_red/) example) reacts to a user click by inserting JavaScript into the current tab’s page and executing the script.
 
-	/* in background.html */
+	// in background.html
 	chrome.browserAction.onClicked.addListener(function(tab) {
-		chrome.tabs.executeScript(null,
-		{
-			code: 'document.body.bgColor = "red"'
+		chrome.tabs.executeScript(null,	{
+			code: 'document.body.style.color = "red"'
 		});
 	});
 
-	/* in manifest.json */
+	// in manifest.json
 	"permissions": [
 		"tabs", "http://*/*"
 	],
 
-When the browser is displaying an HTTP page and the user clicks this extension’s browser action, the extension sets the page’s `bgcolor` property to `'red'`. The result, unless the page has CSS that sets the background color, is that the page turns red.
+When the browser is displaying an HTTP page and the user clicks this extension’s browser action, the extension sets the page’s `color` property to `red`. The result is that the page turns red.
 
 Usually, instead of inserting code directly (as in the previous sample), you put the code in a file. You inject the file’s contents like this:
 
@@ -201,12 +198,12 @@ For example, consider this simple page:
 
 Now, suppose this content script was injected into hello.html:
 
-	/* contentscript.js */
-	var greeting = "hola, ";
-	var button = document.getElementById("mybutton");
-	button.person_name = "Roberto";
+	// contentscript.js
+	var greeting = 'hola, ';
+	var button = document.getElementById('mybutton');
+	button.person_name = 'Roberto';
 	button.addEventListener("click", function() {
-		alert(greeting + button.person_name + ".");
+		alert(greeting + button.person_name + '.');
 	}, false);
 
 Now, if the button is pressed, you will see both greetings.
@@ -221,7 +218,7 @@ Although the execution environments of content scripts and the pages that host t
 
 An example can be accomplished using `window.postMessage` (or `window.webkitPostMessage` for Transferable objects):
 
-	/* contentscript.js */
+	// contentscript.js
 	var port = chrome.runtime.connect();
 
 	window.addEventListener('message', function(event) {
@@ -236,7 +233,7 @@ An example can be accomplished using `window.postMessage` (or `window.webkitPost
 		}
 	}, false);
 
-	/* http://foo.com/example.html */
+	// http://foo.com/example.html
 	document.getElementById('theButton').addEventListener('click', function() {
 		window.postMessage({
 			type: 'FROM_PAGE',
@@ -244,32 +241,32 @@ An example can be accomplished using `window.postMessage` (or `window.webkitPost
 		}, '*');
 	}, false);
 
-In the above example, example.html (which is not a part of the extension) posts messages to itself, which are intercepted and inspected by the content script, and then posted to the extension process. In this way, the page establishes a line of communication to the extension process. The reverse is possible through similar means.
+In the above example, `example.html` (which is not a part of the extension) posts messages to itself, which are intercepted and inspected by the content script, and then posted to the extension process. In this way, the page establishes a line of communication to the extension process. The reverse is possible through similar means.
 
 ## Security considerations {#security-considerations}
 
-When writing a content script, you should be aware of two security issues. First, be careful not to introduce security vulnerabilities into the web site your content script is injected into. For example, if your content script receives content from another web site (for example, by making an XMLHttpRequest), be careful to filter that content for [cross-site scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks before injecting the content into the current page. For example, prefer to inject content via innerText rather than innerHTML. Be especially careful when retrieving HTTP content on an HTTPS page because the HTTP content might have been corrupted by a network [“man-in-the-middle”](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) if the user is on a hostile network.
+When writing a content script, you should be aware of two security issues. First, be careful not to introduce security vulnerabilities into the web site your content script is injected into. For example, if your content script receives content from another web site (for example, by making an XMLHttpRequest), be careful to filter that content for [cross-site scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks before injecting the content into the current page. For example, prefer to inject content via `innerText` rather than `innerHTML`. Be especially careful when retrieving HTTP content on an HTTPS page because the HTTP content might have been corrupted by a network [“man-in-the-middle”](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) if the user is on a hostile network.
 
 Second, although running your content script in an isolated world provides some protection from the web page, a malicious web page might still be able to attack your content script if you use content from the web page indiscriminately. For example, the following patterns are dangerous:
 
-	/* contentscript.js */
+	// contentscript.js
 	var data = document.getElementById('json-data')
 	// WARNING! Might be evaluating an evil script!
 	var parsed = eval('(' + data + ')')
 
-	/* contentscript.js */
+	// contentscript.js
 	var elmt_id = …
 	// WARNING! elmt_id might be '); … evil script … //'!
 	window.setTimeout('animate(' + elmt_id + ')', 200);
 
 Instead, prefer safer APIs that do not run scripts:
 
-	/* contentscript.js */
+	// contentscript.js
 	var data = document.getElementById('json-data')
 	// JSON.parse does not evaluate the attacker’s scripts.
 	var parsed = JSON.parse(data)
 
-	/* contentscript.js */
+	// contentscript.js
 	var elmt_id = …
 	// The closure form of setTimeout does not evaluate scripts
 	window.setTimeout(function() {
