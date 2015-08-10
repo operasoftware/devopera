@@ -9,6 +9,7 @@ license: cc-by-3.0
 
 Below are is the list of extension APIs supported in Opera. Since most of these APIs are in common with Chrome, we are linking each of those APIs with the appropriate documentation page (most of them link to the relavent chrome extension API page) and also mentioning whatever differences (if any) that our implementation of an API has vis-a-vis Chrome’s.
 
+<figure block="figure">
 <table>
 <tr>
 	<th>API Name</th>
@@ -191,3 +192,4 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 	<td>Only in Opera</td>
 </tr>
 </table>
+</figure>
