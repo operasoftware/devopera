@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<main block="layout">
+	<div elem="content" mod="entry">
+		<article role="main" lang="{{ page.language }}">
+			<h1 block="content" elem="title">{{ page.title | markdownline }}</h1>
+			<div block="content">
+				{{ content }}
+			</div>
+		</article>
+	</div>
+	<div elem="aside">
+		<p block="authors" mod="fixed">{% include entry__author.html entry=page %}</p>
+		<p block="entry">
+
+			Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+				{{ page.date | date: '%-d %B %Y' }}
+			</time>
+
+			in <a elem="category" href="/{{ page.category }}/">
+				{{ page.category | capitalize }}
+			</a>.
+
+			{% include entry__translations.html entry=page %}
+
+			{% if page.translator %}
+				{% if page.source %}<a elem="link" href="{{ page.source }}">{% endif %}
+					Translated by {{ page.translator }}
+				{% if page.source %}</a>{% endif %}.
+			{% endif %}
+
+			<a elem="link" href="https://github.com/operasoftware/devopera/edit/master/{{ page.path }}">
+				Edit this article on GitHub
+			</a>.
+
+			<small>
+				Licensed under a
+				<a elem="link" href="{{ site.data.licenses[page.license].link }}">
+					{{ site.data.licenses[page.license].text }}
+				</a> license.
+			</small>
+
+		</p>
+		{% include tags.html tags=page.tags %}
+	</div>
+</main>
