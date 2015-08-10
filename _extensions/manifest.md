@@ -1,7 +1,7 @@
 ---
 title: 'Manifest Files'
 support: 15
-source: http://developer.chrome.com/trunk/extensions/manifest.html
+source: https://developer.chrome.com/extensions/manifest
 license: cc-by-3.0
 ---
 

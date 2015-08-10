@@ -1,7 +1,7 @@
 ---
 title: NPAPI Plugins
 support: 16
-source: http://developer.chrome.com/extensions/npapi.html
+source: https://developer.chrome.com/extensions/npapi
 license: cc-by-3.0
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Permissions Declarations
-source: http://developer.chrome.com/extensions/declare_permissions.html
+source: https://developer.chrome.com/extensions/declare_permissions
 license: cc-by-3.0
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Content Scripts
-source: http://developer.chrome.com/trunk/extensions/content_scripts.html
+source: https://developer.chrome.com/extensions/content_scripts
 license: cc-by-3.0
 ---
 

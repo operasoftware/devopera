@@ -1,6 +1,6 @@
 ---
 title: Extending DevTools
-source: http://developer.chrome.com/extensions/devtools.html
+source: https://developer.chrome.com/extensions/devtools
 license: cc-by-3.0
 ---
 

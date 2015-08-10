@@ -1,6 +1,6 @@
 ---
 title: Removing Browsing Data
-source: http://developer.chrome.com/extensions/browsingData.html
+source: https://developer.chrome.com/extensions/browsingData
 license: cc-by-3.0
 ---
 

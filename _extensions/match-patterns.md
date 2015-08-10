@@ -1,6 +1,6 @@
 ---
 title: Match Patterns
-source: http://developer.chrome.com/trunk/extensions/match_patterns.html
+source: https://developer.chrome.com/extensions/match_patterns
 license: cc-by-3.0
 ---
 

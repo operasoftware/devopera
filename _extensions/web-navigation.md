@@ -1,6 +1,6 @@
 ---
 title: Using `webNavigation`
-source: http://developer.chrome.com/extensions/webNavigation.html
+source: https://developer.chrome.com/extensions/webNavigation
 license: cc-by-3.0
 ---
 

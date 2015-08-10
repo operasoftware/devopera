@@ -2,7 +2,7 @@
 title: Passing Messages in Extensions
 authors:
 - shwetank-dixit
-source: http://developer.chrome.com/extensions/messaging.html
+source: https://developer.chrome.com/extensions/messaging
 license: cc-by-3.0
 ---
 

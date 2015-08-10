@@ -1,6 +1,6 @@
 ---
 title: Controlling Privacy Features
-source: http://developer.chrome.com/extensions/privacy.html
+source: https://developer.chrome.com/extensions/privacy
 license: cc-by-3.0
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Optional Permissions
-source: http://developer.chrome.com/extensions/permissions.html
+source: https://developer.chrome.com/extensions/permissions
 license: cc-by-3.0
 ---
 
