@@ -61,31 +61,32 @@ For example, let’s take the case of a simple `<textarea>`. We would like to ma
 		exactly as you had typed it, even if you close and re-open the panel.
 	</p>
 	<textarea id="maintext"></textarea>
-	<script>
-		var maintext = document.querySelector('#maintext');
-		var theValue;
 
-		maintext.onchange = function() {
-			save();
+And script for the HTML above:
+
+	var maintext = document.querySelector('#maintext');
+	var theValue;
+
+	maintext.onchange = function() {
+		save();
+	}
+
+	function save() {
+		theValue = maintext.value;
+		chrome.extension.getBackgroundPage().setValue(theValue);
+	}
+
+	function show() {
+		theValue = chrome.extension.getBackgroundPage().getValue();
+
+		if (!theValue) {
+			theValue = '';
 		}
 
-		function save() {
-			theValue = maintext.value;
-			chrome.extension.getBackgroundPage().setValue(theValue);
-		}
+		maintext.value = theValue;
+	}
 
-		function show() {
-			theValue = chrome.extension.getBackgroundPage().getValue();
-
-			if (!theValue) {
-				theValue = '';
-			}
-
-			maintext.value = theValue;
-		}
-
-		document.addEventListener('DOMContentLoaded', show, false);
-	</script>
+	document.addEventListener('DOMContentLoaded', show, false);
 
 Above, we make sure we call the `save()` function whenever there is a change in the text area (this will be called when the panel is closed too) by listening to the `onchange` event.
 
