@@ -26,10 +26,6 @@ license: cc-by-3.0
 
 There are some additional elements in the browser that we need to understand in the context of sidebar extensions. These are the _sidebar_, which consists of a _buttons list_ on the left hand side (which contains the icons for sidebar extensions). Clicking on each icon will open up its corresponding _panel_ on the right hand side of the sidebar.
 
-<figure block="figure">
-	<img elem="media" src="/sidebar-action-manual/scheme.png" alt="The sidebar">
-</figure>
-
 ## Manifest
 
 These would be the changes in the manifest:

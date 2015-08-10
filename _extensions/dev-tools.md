@@ -26,7 +26,7 @@ A DevTools extension adds functionality to the Web Inspector included with Opera
 A DevTools extension is structured like any other extension: it can have a background page, content scripts, and other items. In addition, each DevTools extension has a DevTools page, which has access to the DevTools APIs.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/devtools-extension.png" alt="Architecture diagram showing DevTools page communicating with the inspected window and the background page. The background page is shown communicating with the content scripts and accessing extension APIs. The DevTools page has access to the DevTools APIs, for example, creating panels.">
+	<img elem="media" src="{{ page.url }}/extension.png" alt="Architecture diagram showing DevTools page communicating with the inspected window and the background page. The background page is shown communicating with the content scripts and accessing extension APIs. The DevTools page has access to the DevTools APIs, for example, creating panels.">
 </figure>
 
 ## The DevTools page {#devtools-page}
@@ -63,7 +63,7 @@ In addition to the usual extension UI elements, such as browser actions, context
 - A _sidebar pane_ presents supplementary UI related to a panel. The Styles, Computed Styles, and Event Listeners panes on the Elements panel are examples of sidebar panes. Currently your extension can only add sidebar panes to the Elements panel. (Note that the appearance of sidebar panes may not match the image, depending on the version of Opera you’re using, and where the DevTools window is docked.)
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/devtools-extension-ui.png" alt="DevTools window showing Elements panel and Styles sidebar pane.">
+	<img elem="media" src="{{ page.url }}/extension-ui.png" alt="DevTools window showing Elements panel and Styles sidebar pane.">
 </figure>
 
 Each panel is its own HTML file, which can include other resources (JavaScript, CSS, images, and so on). Creating a basic panel looks like this:
@@ -73,7 +73,7 @@ Each panel is its own HTML file, which can include other resources (JavaScript, 
 		'my-panel-icon.png',
 		'panel.html',
 		function(panel) {
-			// code invoked on panel creation
+			// Сode invoked on panel creation
 		}
 	);
 

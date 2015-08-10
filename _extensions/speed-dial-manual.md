@@ -98,7 +98,7 @@ An example of such an implementation is below:
 	</head>
 	<body>
 	<div id="cont">
-		<img src="Opera-icon-low-res.png" alt="Opera Icon">
+		<img src="opera-icon-low-res.png" alt="Opera Icon">
 	</div>
 	</body>
 	</html>
