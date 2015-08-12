@@ -30,7 +30,7 @@ self.addEventListener('activate', function(event) {
 			return Promise.all(
 				keys.map(function(key) {
 					if (
-						key != staticCacheName &&
+						key != OFFLINE_CACHE &&
 						key.startsWith(`${PREFIX}-`) &&
 						!key.startsWith(`${PREFIX}-article-`)
 					) {
