@@ -81,7 +81,7 @@ Read more about [Opera Mini and JavaScript](https://dev.opera.com/articles/opera
 
 ### Make your site performant
 
-Making sure your site loads *fast* is a must — for all browsers, not justy Opera Mini. To help you, Google published [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/index?hl=en) in their Web Fundamentals course.
+Making sure your site loads *fast* is a must — for all browsers, not just Opera Mini. To help you, Google published [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/index?hl=en) in their Web Fundamentals course.
 
 ### Other considerations
 
