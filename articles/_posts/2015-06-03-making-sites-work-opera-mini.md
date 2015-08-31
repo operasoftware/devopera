@@ -79,6 +79,10 @@ Opera Mini runs some JavaScript on page load, but JavaScript-only APIs don’t w
 
 Read more about [Opera Mini and JavaScript](https://dev.opera.com/articles/opera-mini-and-javascript/).
 
+### Make your site performant
+
+Making sure your site loads *fast* is a must — for all browsers, not just Opera Mini. To help you, Google published [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/index?hl=en) in their Web Fundamentals course.
+
 ### Other considerations
 
 If you rely on some sort of Geo IP tool for detecting a visitor’s location, note that the IP address you find in the headers is that of our compression proxy. The user’s original IP address is passed on via the `X-Forwarded-For` HTTP header. (Read more about [Opera Mini request headers](/articles/opera-mini-request-headers/).)
