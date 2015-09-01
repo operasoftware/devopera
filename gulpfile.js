@@ -21,26 +21,26 @@ gulp.task('default', ['jekyll-limited', 'html', 'styles'], function() {
 	sync.init({
 		notify: false,
 		server: {
-			baseDir: 'destination'
+			baseDir: 'dest'
 		}
 	});
 
 	gulp.watch(
-		'source/styles/*.scss', ['styles']);
+		'src/styles/*.scss', ['styles']);
 	gulp.watch([
-		'source/**/*.md',
-		'source/**/*.html'
+		'src/**/*.md',
+		'src/**/*.html'
 	], ['html', 'jekyll-limited']);
 });
 
 // Styles
 
 gulp.task('styles', function () {
-	return gulp.src('source/styles/screen.scss')
+	return gulp.src('src/styles/screen.scss')
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(cssmin())
-		.pipe(gulp.dest('destination/styles/'))
+		.pipe(gulp.dest('dest/styles/'))
 		.pipe(sync.stream());
 });
 
@@ -48,8 +48,8 @@ gulp.task('styles', function () {
 
 gulp.task('html', function() {
 	gulp.src([
-		'./destination/**/index.html',
-		'./destination/errors/*.html'
+		'./dest/**/index.html',
+		'./dest/errors/*.html'
 		])
 		.pipe(beml({
 			elemPrefix: '__',
@@ -58,13 +58,13 @@ gulp.task('html', function() {
 			removeComments: true,
 			collapseWhitespace: true
 		}))
-		.pipe(gulp.dest('./destination/'))
+		.pipe(gulp.dest('./dest/'))
 		.pipe(sync.stream());
 });
 
 // Jekyll
 
-var jekyll = 'jekyll build --source source --destination destination'
+var jekyll = 'jekyll build --source src --destination dest'
 
 gulp.task('jekyll-limited', shell.task([
 	jekyll + ' --limit_posts 50'
@@ -86,39 +86,39 @@ gulp.task('html-style-links', function() {
 	gulp.src([
 		'./**/index.html',
 		'./errors/*.html'
-		], { cwd: 'destination' })
+		], { cwd: 'dest' })
 		.pipe(replace(
 			/(<link rel="stylesheet" href="\/styles\/)(screen)(\.css">)/g,
-			'$1' + hashEight(['destination/styles/screen.css']) + '$3'
+			'$1' + hashEight(['dest/styles/screen.css']) + '$3'
 		))
-		.pipe(gulp.dest('destination/'));
+		.pipe(gulp.dest('dest/'));
 });
 
 gulp.task('service-worker', function() {
-	gulp.src('destination/service-worker.js')
+	gulp.src('dest/service-worker.js')
 		.pipe(replace(
 			/(const HASH = ')(';)/g,
 			'$1' + hashEight([
-				'destination/styles/screen.css',
-				'destination/images/github.svg',
-				'destination/images/logo.png',
-				'destination/images/logo@2x.png',
-				'destination/scripts/highlight.js',
-				'destination/scripts/salvattore.js']) + '$2'
+				'dest/styles/screen.css',
+				'dest/images/github.svg',
+				'dest/images/logo.png',
+				'dest/images/logo@2x.png',
+				'dest/scripts/highlight.js',
+				'dest/scripts/salvattore.js']) + '$2'
 		))
 		.pipe(replace(
 			/('\/styles\/)(screen)(\.css',)/g,
-			'$1' + hashEight(['destination/styles/screen.css']) + '$3'
+			'$1' + hashEight(['dest/styles/screen.css']) + '$3'
 		))
-		.pipe(gulp.dest('destination/'));
+		.pipe(gulp.dest('dest/'));
 });
 
 gulp.task('screen-file', function() {
-	gulp.src('destination/styles/screen.css')
+	gulp.src('dest/styles/screen.css')
 		.pipe(rename(function(path) {
-			path.basename = hashEight(['destination/styles/screen.css'])
+			path.basename = hashEight(['dest/styles/screen.css'])
 		}))
-		.pipe(gulp.dest('destination/styles/'));
+		.pipe(gulp.dest('dest/styles/'));
 });
 
 // Build
