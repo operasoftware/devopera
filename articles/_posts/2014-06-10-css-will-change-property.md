@@ -192,7 +192,7 @@ As mentioned before, some properties will have no effect when specified in `will
 
 ## Browser Support
 
-At the time of writing of this article, only Chrome Canary 36+, Opera Developer 23+, and Firefox Nightly support the `will-change` property. There is [an intent to ship it to the stable channel](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/LwvyVCMQx1k) too. And word says that it won’t be long before it is supported in all modern browsers.
+As of August 2015, Chrome 36+, Opera 24+, and Firefox 36+ support the `will-change` property. Safari is [currently implementing](https://bugs.webkit.org/show_bug.cgi?id=147772) `will-change` and Edge lists it as ["under consideration"](https://dev.modern.ie/platform/status/csswillchange/?filter=f3e0000bf&search=will-change).
 
 ## Final Words
 
