@@ -31,7 +31,10 @@ If you already have *Developer Options* enabled in Android, proceed to the next 
 
 ## Step 2: Enable USB debugging
 
-**insert image**
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/usbdebuggingoption.png" alt="USB Debugging option in Android">
+</figure>
+
 
 Go to *Developer Options* and enable *USB Debugging*. 
 
@@ -52,13 +55,19 @@ Note: At this point, make sure you have Opera for Android and Opera for Computer
 2. Type 'opera://inspect' in the address bar
 3. Select the option *Discover Devices*.
 
-**insert image**
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/allowusbdebugging.png" alt="Allow USB Debugging">
+</figure>
+
 
 Once you do that, a pop up will once again appear asking you to allow USB debugging. Tap on 'OK'. 
 
 Once that happens, the computer will ask Opera for Android for all open tabs on it, and will display them in a list. Below is a screenshot of how it looks.
 
-**insert image**
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/inspectscreen.png" alt="The Opera inspect screen">
+</figure>
+
 
 You'll notice that it tells you the name of the device, the browser being used, and all the open tabs being used in the mobile device for that browser.
 
@@ -68,6 +77,31 @@ Below each site, there are the following options
 - *focus tab*: Clicking on this will bring the tab in focus in Opera for Android.
 - *reload*: Reloads the tab in Opera for Android.
 - *close*: Closes the tab in Opera for Android.
+
+Below is a screenshot of how the developer tools looks when inspecting a tab on Opera for Android using USB debugging
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/devtools.png" alt="Inspecting tab on Opera for Androiud using the desktop browser">
+</figure>
+
+
+## Port Forwarding
+
+
+Sometimes you are developing in your local environment, or within the company intranet, and thus, don't have a public URL for your page. In that case, you can use port forwarding to map a TCP port on your mobile device to a TCP port on your local machine. 
+
+Using this, if you have something running on your local server on say, '127.0.0.1:9999' you can still open it up on your mobile device and debug it there. 
+
+To do this, 
+1. First click on the *port forwarding* button in the `opera://inspect` page. 
+2. Enter the port number you want Opera to listen to. (By default, it is 8080) 
+3. In the `Host` field, enter the IP address with port name (for example, 127.0.0.1:9999)
+4. Check the *Enable port forwading* checkbox.
+5. Click 'Done'.
+
+Now go to Opera for Android and enter the server along with port name (for example, localhost:8080). This should open up the corresponding host you had entered. Now you can debug it just like any other tab.
+
+
 
 
 
