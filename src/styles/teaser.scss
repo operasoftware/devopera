@@ -73,40 +73,36 @@
 		font-size:24px;
 		}
 
-	// Lap to Desk
+	// From Lap
 
-	@include layout-breakpoint($lap-and-up) {
-
-		&__picture--featured {
-			@include span(3 at 1 of 6);
-			margin-top:2px;
-			margin-bottom:22px;
-			}
-		&__content--featured {
-			@include span(3 at 4 of 6);
-			}
-
+	@include mq($from:lap) {
+		// @include layout($layout:6) {
+			&__picture--featured {
+				@include span(3 at 1 of 6);
+				margin-top:2px;
+				margin-bottom:22px;
+				}
+			&__content--featured {
+				@include span(3 at 4 of 6);
+				}
+			// }
 		}
 
 	// Lap to Desk
 
-	@include layout-breakpoint($lap-to-desk) {
-
+	@include mq($from:lap, $until:desk) {
 		&__title--featured {
 			font-size:30px;
 			}
-
 		}
 
-	// Desk and Up
+	// From Desk
 
-	@include layout-breakpoint($desk-and-up) {
-
+	@include mq($from:desk) {
 		&__title--featured {
 			margin-top:-7px;
 			font-size:36px;
 			}
-
 		}
 
 	}

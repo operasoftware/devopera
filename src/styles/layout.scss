@@ -13,37 +13,43 @@
 
 	// Palm to Lap: 3 columns
 
-	@include layout-breakpoint($palm-to-lap) {
-		&__aside {
-			@include span(1 at 1);
-			}
-		&__content {
-			@include span(2 at 2);
+	@include mq($from:palm, $until:lap) {
+		@include layout($layout:3) {
+			&__aside {
+				@include span(1 at 1);
+				}
+			&__content {
+				@include span(2 at 2);
+				}
 			}
 		}
 
 	// Lap to Desk: 6 columns
 
-	@include layout-breakpoint($lap-to-desk) {
-		&__aside {
-			@include span(2 at 1);
-			}
-		&__content {
-			@include span(4 at 3);
+	@include mq($from:lap, $until:desk) {
+		@include layout($layout:6) {
+			&__aside {
+				@include span(2 at 1);
+				}
+			&__content {
+				@include span(4 at 3);
+				}
 			}
 		}
 
 	// Desk and up: 12 columns
 
-	@include layout-breakpoint($desk-and-up) {
-		&__aside {
-			@include span(3 at 1);
-			}
-		&__content {
-			@include span(9 at 4);
-			}
-		&__content--entry {
-			@include span(8 at 4);
+	@include mq($from:desk) {
+		@include layout($layout:12) {
+			&__aside {
+				@include span(3 at 1);
+				}
+			&__content {
+				@include span(9 at 4);
+				}
+			&__content--entry {
+				@include span(8 at 4);
+				}
 			}
 		}
 

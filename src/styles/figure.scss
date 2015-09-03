@@ -53,7 +53,7 @@
 
 	// Lap and Up
 
-	@include layout-breakpoint($lap-and-up) {
+	@include mq($from:lap) {
 
 		// Halfs
 
@@ -72,32 +72,31 @@
 
 		// Lap to Desk
 
-		@include layout-breakpoint($lap-to-desk) {
-			width:span(2 of 4);
+		@include mq($from:lap, $until:desk) {
+			@include layout($layout:6) {
+				width:span(2 of 4);
+				}
 			}
 
 		// Desk and Up
 
-		@include layout-breakpoint($desk-and-up) {
-			width:span(4 of 8);
+		@include mq($from:desk) {
+			@include layout($layout:12) {
+				width:span(4 of 8);
+				}
 			}
 
 		// Lap and Up
 
-		@include layout-breakpoint($lap-and-up) {
-
-			// Gap
-
+		@include mq($from:lap) {
 			& + & {
 				margin-top:0;
 				}
-
 			}
 
 		}
 
 	}
-
 
 // Tables
 

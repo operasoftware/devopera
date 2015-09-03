@@ -2,8 +2,8 @@
 // Imports
 // -------------------------------
 
-@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
-@import '../bower_components/susy/sass/susy';
+@import '../../node_modules/sass-mq/mq';
+@import '../../bower_components/susy/sass/susy';
 
 @import 'defaults';
 @import 'reset';

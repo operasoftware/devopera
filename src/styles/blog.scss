@@ -14,13 +14,13 @@
 
 	// Palm to Lap
 
-	@include layout-breakpoint($palm-to-lap) {
+	@include mq($from:palm, $until:lap) {
 		margin-right:0;
 		}
 
-	// Lap and Up
+	// From Lap
 
-	@include layout-breakpoint($lap-and-up) {
+	@include mq($from:lap) {
 		margin-left:0;
 		margin-right:0;
 		padding:15px 15px 0;

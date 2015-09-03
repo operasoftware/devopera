@@ -35,9 +35,9 @@
 		@extend %link--blue;
 		}
 
-	// Lap and Up
+	// From Lap
 
-	@include layout-breakpoint($lap-and-up) {
+	@include mq($from:lap) {
 		padding:0 15px;
 		}
 

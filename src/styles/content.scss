@@ -90,7 +90,7 @@
 
 	// Lap and Up
 
-	@include breakpoint($lap-and-up) {
+	@include mq($from:lap) {
 
 		&__title {
 			padding-bottom:14px;
@@ -109,7 +109,7 @@
 
 	// Desk and Up
 
-	@include breakpoint($desk-and-up) {
+	@include mq($from:desk) {
 
 		&__title {
 			margin-top:-7px;

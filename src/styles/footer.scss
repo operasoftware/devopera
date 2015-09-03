@@ -33,9 +33,11 @@
 
 	// Desk and up: 12 columns
 
-	@include layout-breakpoint($desk-and-up) {
-		&__copy {
-			@include span(9 at 4);
+	@include mq($from:desk) {
+		@include layout($layout:12) {
+			&__copy {
+				@include span(9 at 4);
+				}
 			}
 		}
 

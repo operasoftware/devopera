@@ -24,17 +24,17 @@
 		padding-bottom:12px;
 		font-size:18px;
 
-		@include breakpoint($palm-to-lap) {
+		@include mq($from:palm, $until:lap) {
 			font-size:20px;
 			}
-		@include breakpoint($lap-to-desk) {
+		@include mq($from:lap, $until:desk) {
 			font-size:22px;
 			}
-		@include breakpoint($up-to-desk) {
+		@include mq($until:desk) {
 			padding-top:12px;
 			border-top:1px solid $grey-20;
 			}
-		@include breakpoint($desk-and-up) {
+		@include mq($from:desk) {
 			font-size:24px;
 			}
 
