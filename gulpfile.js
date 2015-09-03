@@ -1,6 +1,5 @@
 'use strict';
 
-
 var autoprefixer = require('gulp-autoprefixer'),
 	beml = require('gulp-beml'),
 	changed = require('gulp-changed'),
@@ -17,7 +16,7 @@ var autoprefixer = require('gulp-autoprefixer'),
 
 // Default
 
-gulp.task('default', ['jekyll-limited', 'html', 'styles'], function() {
+gulp.task('default', ['jekyll', 'html', 'styles'], function() {
 	sync.init({
 		notify: false,
 		server: {
@@ -25,31 +24,20 @@ gulp.task('default', ['jekyll-limited', 'html', 'styles'], function() {
 		}
 	});
 
-	gulp.watch(
-		'src/styles/*.scss', ['styles']);
+	gulp.watch([
+		'src/styles/*.scss'
+	], ['styles']);
+
 	gulp.watch([
 		'src/**/*.md',
 		'src/**/*.html'
-	], ['html', 'jekyll-limited']);
+	], ['jekyll', 'html']);
 });
 
-// Styles
-
-gulp.task('styles', function () {
-	return gulp.src('src/styles/screen.scss')
-		.pipe(sass())
-		.pipe(autoprefixer())
-		.pipe(cssmin())
-		.pipe(gulp.dest('dest/styles/'))
-		.pipe(sync.stream());
-});
-
-// HTML
-
-gulp.task('html', function() {
-	gulp.src([
-		'./dest/**/index.html',
-		'./dest/errors/*.html'
+gulp.task('html', ['jekyll'], function() {
+	return gulp.src([
+		'dest/**/index.html',
+		'dest/errors/*.html'
 		])
 		.pipe(beml({
 			elemPrefix: '__',
@@ -58,21 +46,28 @@ gulp.task('html', function() {
 			removeComments: true,
 			collapseWhitespace: true
 		}))
-		.pipe(gulp.dest('./dest/'))
+		.pipe(gulp.dest('dest/'))
 		.pipe(sync.stream());
 });
 
 // Jekyll
 
-var jekyll = 'jekyll build --source src --destination dest'
+var jekyll = 'jekyll build --source src --destination dest';
 
-gulp.task('jekyll-limited', shell.task([
+gulp.task('jekyll', shell.task([
 	jekyll + ' --limit_posts 50'
 ]));
 
-gulp.task('jekyll', shell.task([
-	jekyll
-]));
+// Styles
+
+gulp.task('styles', ['jekyll'], function () {
+	return gulp.src('src/styles/screen.scss')
+		.pipe(sass())
+		.pipe(autoprefixer())
+		.pipe(cssmin())
+		.pipe(gulp.dest('dest/styles/'))
+		.pipe(sync.stream());
+});
 
 // Cache
 
@@ -84,8 +79,8 @@ function hashEight(files) {
 
 gulp.task('html-style-links', function() {
 	gulp.src([
-		'./**/index.html',
-		'./errors/*.html'
+		'**/index.html',
+		'errors/*.html'
 		], { cwd: 'dest' })
 		.pipe(replace(
 			/(<link rel="stylesheet" href="\/styles\/)(screen)(\.css">)/g,
@@ -119,16 +114,4 @@ gulp.task('screen-file', function() {
 			path.basename = hashEight(['dest/styles/screen.css'])
 		}))
 		.pipe(gulp.dest('dest/styles/'));
-});
-
-// Build
-
-gulp.task('build', ['jekyll', 'html', 'styles'], function() {
-	//
-});
-
-// Deploy
-
-gulp.task('deploy', function() {
-	//
 });
