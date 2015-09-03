@@ -49,11 +49,11 @@ Nevertheless, Ian Kilpatrick (the editor), said that Google have a prototype of 
 
 The [Custom layout API](https://drafts.css-houdini.org/css-layout-api/) has a minimum set of features balancing making it useful for authors while not striking terror into the hearts of implementors: 
 
- * Expose minInlineContent/maxInlineContent
- * AbsPos is handled automatically (in the same fashion as flex/grid).
- * The custom layout container establishes a formatting context, which implies that:
-** Floats cannot intrude into the custom layout
-** Margins do not collapse
+* Expose minInlineContent/maxInlineContent
+* AbsPos is handled automatically (in the same fashion as flex/grid).
+* The custom layout container establishes a formatting context, which implies that:
+  * Floats cannot intrude into the custom layout
+  * Margins do not collapse
 * Blockify all children (similar to flex/grid)
 * Float does not have any effect on children of a custom layout container (similar to flex/grid).
 * No changing paint order (like the CSS order property on flex/grid).
