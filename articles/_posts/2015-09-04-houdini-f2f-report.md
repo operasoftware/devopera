@@ -7,21 +7,18 @@ tags:
 - css
 - standards
 - w3c
-cover: png
-featured: featured
 license: cc-by-3.0
 ---
 
-Houdini is a joint W3C technical architecture group and CSS WG initiative to specify hooks into existing CSS. Its primary aim isn’t to give us “new CSS” but to add API hooks into the browsers’ built-in CSS capability so developers can hook into it, use the native implementation where we want (rather than duplicate it) and extend it. It’s applying the Extensible Web Manifesto’s philosophy to CSS. (If you’d like to know more about the aims and back story, read [Sex, Houdini and the Extensible Web by Brian Kardell](https://dev.opera.com/articles/houdini/).)
+Houdini is a joint W3C Technical Architecture Group and CSS Working Group initiative to specify hooks into existing CSS. Its primary aim isn’t to give us “new CSS” but to add API hooks into the browsers’ built-in CSS capability so developers can hook into it, use the native implementation where we want (rather than duplicate it) and extend it. It’s applying the Extensible Web Manifesto’s philosophy to CSS. (If you’d like to know more about the aims and back story, read [Sex, Houdini and the Extensible Web by Brian Kardell](https://dev.opera.com/articles/houdini/).)
 
 The Houdini Task Force held [its first meeting](https://wiki.css-houdini.org/planning/sydney-2015) in Sydney in February 2015 and a follow-up in the beautiful offices of Mozilla, Paris in August 2015.
 
 I attended as an observer, as I’ve been excited and intrigued by the project since its inception. In attendance were delegates from Apple, Opera, Mozilla, Microsoft, Google, Adobe, HP, and invited experts like Florian Rivoal and Lea Verou. (See the full [participants list](https://wiki.css-houdini.org/planning/paris-2015#participants).)
 
-
 What follows isn’t a full record of the meeting, but my notes on the main questions I had; much of the meeting was taken up with discussion of implementation details and, as I wasn’t representing an implementor, they weren’t of primary interest to me. [Simon Pieters](http://twitter.com/zcorpan) was formally representing Opera.
 
-(You can read the full IRC logs of [day 1](http://logs.csswg.org/irc.w3.org/houdini/2015-08-28/) and [day 2](http://logs.csswg.org/irc.w3.org/houdini/2015-08-29/)).
+(You can read the full IRC logs of [day 1](http://logs.csswg.org/irc.w3.org/houdini/2015-08-28/) and [day 2](http://logs.csswg.org/irc.w3.org/houdini/2015-08-29/).)
 
 It’s important to note that many of the [specs discussed](https://drafts.css-houdini.org/) are very nascent; some of them are little more than boilerplate prose.
 
@@ -30,7 +27,7 @@ I came to the meeting with a concrete set of use-cases that developers had told 
 Sample questions I had:
 
 - Will I be able to do sane (but currently impossible) layouts that depend on arbitrary element foo “knowing about” arbitrary element bar and match it/ react to it?
-- Will I be able to do something as simple and desirable as the proposed (and rejected) [text-wrap: balance](https://blogs.adobe.com/webplatform/2013/01/30/balancing-text-for-better-readability/)?
+- Will I be able to do something as simple and desirable as the proposed (and rejected) [text-wrap: balance](https://blogs.adobe.com/webplatform/2013/01/30/balancing-text-for-better-readability/)? (Update: I'm wrong; it wasn't rejected. It's in [CSS Text Level 4](https://drafts.csswg.org/css-text-4/).)
 - Will I be able to do the much-requested h1 {font-size: just-make-it-big-enough-and-kern-it-pleasingly-so-that-it-fits-the-width} (For example, see [fittext.js](http://fittextjs.com/).)
 - Can I polyfill [CSS Regions](http://www.w3.org/TR/css-regions-1/)?
 
@@ -43,7 +40,7 @@ It’s an “API for running scripts in stages of the rendering pipeline indepen
 There was concern over performance; Simon Fraser
  (from Apple) was reluctant to add too many hooks into CSS that people can hang JavaScript on and slow down the pages, preferring to see declarative methods of achieving effects that the browser can optimise.
 
-I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, “CSS and `<p>` zero days are a lot rarer than JavaScript zero days”.
+I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (Also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, "CSS and `<p>` zero days are a lot rarer than JavaScript zero days".)
 
 But that ship’s already sailed — already, sane additions to HTML like [`<table sortable>`](https://html.spec.whatwg.org/multipage/tables.html#table-sorting-model) are already [batted away](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/07v_yMErc_A/vMaLz90VOJkJ) with “someone should create a web components library”.
 
@@ -68,7 +65,7 @@ I initially read the latter point (no changing paint order) to suggest that I co
 
 The difference with Houdini is that you don’t have to emulate _everything_. You can get the information you need about boxes, heights, widths etc direct from the CSS Engine, via Houdini APIs, rather than have to jump through horrible hacky hoops with JavaScript. Ian Kilpatrick mentioned a previous version of Google Docs in which a font was copied to an off-screen iframe and then measured with JS; in the future™, that information will be available with the Houdini APIs.
 
-Ian explained (after the meeting): “the iframe in Google Docs is subtle. It’s not just specific to Docs. The iframe is used to limit the amount of layout work that is needed to query the element’s width/height. Docs & others who perform layout use this “trick” to contain the amount of layout work, (as the browser only has to layout a small iframe, rather than a large page). They can’t use a trick like FastDom as these layouts are usually iterative. So to do the custom layout, they layout thrash, but only on a small DOM. Custom layout you are performing this layout as part of the layout pass so, querying a childs width/height is contained to just that subtree. (and hence fast)”
+Ian explained (after the meeting): “the iframe in Google Docs is subtle. It’s not just specific to Docs. The iframe is used to limit the amount of layout work that is needed to query the element’s width/height. Docs & others who perform layout use this “trick” to contain the amount of layout work, (as the browser only has to layout a small iframe, rather than a large page). They can’t use a trick like FastDom as these layouts are usually iterative. So to do the custom layout, they layout thrash, but only on a small DOM. Custom layout you are performing this layout as part of the layout pass so, querying a childs width/height is contained to just that subtree (and hence fast).”
 
 Then you plug in whatever custom things that CSS doesn’t currently support, and the browser’s CSS parser continues doing its job, but with knowledge of what you’ve done. Instead of doing all the work yourself, you’re just plugging the hole rather than replicating the entire CSS in JavaScript.
 
