@@ -7,6 +7,8 @@ tags:
 - css
 - standards
 - w3c
+cover: png
+featured: featured
 license: cc-by-3.0
 ---
 
@@ -27,7 +29,7 @@ I came to the meeting with a concrete set of use-cases that developers had told 
 Sample questions I had:
 
 - Will I be able to do sane (but currently impossible) layouts that depend on arbitrary element foo “knowing about” arbitrary element bar and match it/ react to it?
-- Will I be able to do something as simple and desirable as the proposed (and rejected) [text-wrap: balance](https://blogs.adobe.com/webplatform/2013/01/30/balancing-text-for-better-readability/)? (Update: I'm wrong; it wasn't rejected. It's in [CSS Text Level 4](https://drafts.csswg.org/css-text-4/).)
+- Will I be able to do something as simple and desirable as the proposed (and rejected) [text-wrap: balance](https://blogs.adobe.com/webplatform/2013/01/30/balancing-text-for-better-readability/)? (Update: I’m wrong; it wasn’t rejected. It’s in [CSS Text Level 4](https://drafts.csswg.org/css-text-4/).)
 - Will I be able to do the much-requested h1 {font-size: just-make-it-big-enough-and-kern-it-pleasingly-so-that-it-fits-the-width} (For example, see [fittext.js](http://fittextjs.com/).)
 - Can I polyfill [CSS Regions](http://www.w3.org/TR/css-regions-1/)?
 
@@ -40,7 +42,7 @@ It’s an “API for running scripts in stages of the rendering pipeline indepen
 There was concern over performance; Simon Fraser
  (from Apple) was reluctant to add too many hooks into CSS that people can hang JavaScript on and slow down the pages, preferring to see declarative methods of achieving effects that the browser can optimise.
 
-I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (Also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, "CSS and `<p>` zero days are a lot rarer than JavaScript zero days".)
+I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (Also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, “CSS and `<p>` zero days are a lot rarer than JavaScript zero days”.)
 
 But that ship’s already sailed — already, sane additions to HTML like [`<table sortable>`](https://html.spec.whatwg.org/multipage/tables.html#table-sorting-model) are already [batted away](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/07v_yMErc_A/vMaLz90VOJkJ) with “someone should create a web components library”.
 
@@ -61,7 +63,7 @@ The [Custom layout API](https://drafts.css-houdini.org/css-layout-api/) has a mi
 
 I initially read the latter point (no changing paint order) to suggest that I couldn’t lay out stuff independent of source order (thinking “no” forbade an equivalent to CSS order property). That would be pretty lame; it’s hard to think of an exciting new layout that slavishly follows source order. But I’m a buffoon and W3C’s [Chris Lilley set me right](https://twitter.com/svgeesus/status/637287345105018880): “paint order meaning order in which overlapping items are painted; not layout position.”
 
-[Stuart Langridge grumbled](https://twitter.com/sil/status/637179440640999424) “hrm. That’s scripting. I already have scripting. Providing more hooks for js to use is nice, but it’s not CSS”. That’s true; any kind of polyfill/ prollyfill uses script to simulate a native implementation.
+[Stuart Langridge grumbled](https://twitter.com/sil/status/637179440640999424) “hrm. That’s scripting. I already have scripting. Providing more hooks for js to use is nice, but it’s not CSS”. That’s true; any kind of polyfill/prollyfill uses script to simulate a native implementation.
 
 The difference with Houdini is that you don’t have to emulate _everything_. You can get the information you need about boxes, heights, widths etc direct from the CSS Engine, via Houdini APIs, rather than have to jump through horrible hacky hoops with JavaScript. Ian Kilpatrick mentioned a previous version of Google Docs in which a font was copied to an off-screen iframe and then measured with JS; in the future™, that information will be available with the Houdini APIs.
 
