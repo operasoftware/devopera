@@ -146,6 +146,8 @@ I’m all for APIs that give us a common representation of browsers’ different
 
 ## Conclusion
 
+When it came to prioritisation, I said (from a highly unscientific process of reading what was said by people geeky enough to be tweeting me on a warm Saturday afternoon) that authors seemed most enthused by Custom Paint, Custom Layout, and Font Metrics.
+
 Many attendees expressed concerns about potentially requiring them to re-factor code to homogenise implementations (rather than simply adding hooks to expose information within their current implementations), and all were wary of performance implications of shipping foot-guns.
 
 The ultimate end-result, of paramount importance to me, is that Houdini doesn’t stop development of declarative CSS by batting all new proposals to scripting against Houdini. I hope it functions as a method for developers to try out ideas which are then rolled back into the declarative language for native implementation and optimisation. Time will tell.
