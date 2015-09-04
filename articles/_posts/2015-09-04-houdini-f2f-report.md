@@ -7,6 +7,8 @@ tags:
 - css
 - standards
 - w3c
+cover: png
+featured: featured
 license: cc-by-3.0
 ---
 
@@ -41,7 +43,7 @@ It’s an “API for running scripts in stages of the rendering pipeline indepen
 There was concern over performance; Simon Fraser
  (from Apple) was reluctant to add too many hooks into CSS that people can hang JavaScript on and slow down the pages, preferring to see declarative methods of achieving effects that the browser can optimise.
 
-I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, "CSS and `<p>` zero days are a lot rarer than JavaScript zero days".
+I agree, primarily because declarative methods are easier for authors; for sought-after use cases, we shouldn’t require developers to start scripting CSS or downloading libraries. (also, as [Andrea Moreati told me](https://twitter.com/moreati/status/637176796811759616) as I was live-tweeting, “CSS and `<p>` zero days are a lot rarer than JavaScript zero days”.
 
 But that ship’s already sailed — already, sane additions to HTML like [`<table sortable>`](https://html.spec.whatwg.org/multipage/tables.html#table-sorting-model) are already [batted away](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/07v_yMErc_A/vMaLz90VOJkJ) with “someone should create a web components library”.
 
