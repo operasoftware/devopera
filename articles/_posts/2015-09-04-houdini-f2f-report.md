@@ -35,7 +35,7 @@ Sample questions I had:
 
 ## CSS Script API
 
-The first thing on the agenda was the [CSS Script API](http://bfgeek.com/css-houdini-drafts/css-script-api/), AKA “CSS Worker” (or maybe “Isolated Worker”; bikeshedding continues) which is a bedrock that much of Houdini depends.
+The first thing on the agenda was the [CSS Script API](http://bfgeek.com/css-houdini-drafts/css-script-api/Overview.html), AKA “CSS Worker” (or maybe “Isolated Worker”; bikeshedding continues) which is a bedrock that much of Houdini depends.
 
 It’s an “API for running scripts in stages of the rendering pipeline independent of the main execution environment. This allows other APIs such as Style/Layout/Paint which effect [sic] different parts of the rendering pipeline to be exposed to the author safely, without major changes to the main execution environment APIs.” Similar to Service Worker, “the CSSWorkerGlobalScope may be destroyed / created at anytime. “
 
