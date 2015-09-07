@@ -37,33 +37,6 @@ $layouts:(
 		}
 	}
 
-// $palm:569px;
-// $lap:768px;
-// $desk:1024px;
-// $breakpoints:(
-// 	'up-to-palm':max-width ($palm - 1px),
-// 	'palm-to-lap':$palm ($lap - 1px),
-// 	'up-to-lap':max-width ($lap - 1px),
-// 	'lap-and-up':$lap,
-// 	'lap-to-desk':$lap ($desk - 1px),
-// 	'up-to-desk':max-width ($desk - 1px),
-// 	'desk-and-up':$desk
-// 	);
-// @include susy-breakpoint($query, map-get($layouts, $query)) {
-// 	@content;
-// 	}
-// $layouts:(
-// 	'up-to-palm':2 1/8,
-// 	'palm-to-lap':3 1/8,
-// 	'lap-to-desk':6 1/6,
-// 	'desk-and-up':12 1/4
-// 	);
-// @mixin layout-breakpoint($query) {
-// 	@include susy-breakpoint($query, map-get($layouts, $query)) {
-// 		@content;
-// 		}
-// 	}
-
 // -------------------------------
 // Grid
 // -------------------------------

@@ -2,29 +2,29 @@
 // Imports
 // -------------------------------
 
-@import '../../node_modules/sass-mq/mq';
-@import '../../bower_components/susy/sass/susy';
+@import
+	'../../bower_components/susy/sass/susy',
+	'../../node_modules/sass-mq/mq';
 
-@import 'defaults';
-@import 'reset';
+@import
+	'defaults',
+	'reset';
 
-@import 'global';
-@import 'links';
-
-@import 'header';
-@import 'teaser';
-@import 'tags';
-@import 'layout';
-@import 'archive';
-@import 'sidebar';
-@import 'featured';
-@import 'blog';
-@import 'linkbait';
-@import 'entry';
-@import 'content';
-@import 'figure';
-@import 'authors';
-@import 'highlight';
-@import 'footer';
-
-// @import 'grid';
+@import
+	'modules/global',
+	'modules/links',
+	'modules/header',
+	'modules/teaser',
+	'modules/tags',
+	'modules/layout',
+	'modules/archive',
+	'modules/sidebar',
+	'modules/featured',
+	'modules/blog',
+	'modules/linkbait',
+	'modules/entry',
+	'modules/content',
+	'modules/figure',
+	'modules/authors',
+	'modules/highlight',
+	'modules/footer';
