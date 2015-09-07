@@ -154,7 +154,7 @@ Observing the addition or removal of child nodes is pretty straightforward. Weâ€
 
 		// Since allmutations is an array,
 		// we can use JavaScript Array methods.
-		allmutations.map( functions(mr) {
+		allmutations.map( function(mr) {
 			// Log the type of mutation
 			var mt = 'Mutation type: ' + mr.type;
 			// Log the node affected.
@@ -196,7 +196,7 @@ Observing changes to attributes works much the same way. The main difference is 
 	var callback = function(allmutations){
 		// Since allmutations is an array,
 		// we can use array functions
-		allmutations.map( functions(mr){
+		allmutations.map( function(mr){
 			// Log the previous value of the attribute.
 			var attr = 'Previous attribute value: ' + mr.oldValue;
 			console.log(attr);
