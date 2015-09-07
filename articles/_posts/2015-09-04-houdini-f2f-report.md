@@ -103,7 +103,7 @@ The script to accomplish this is:
 		}
 	});
 
-Of, you could do with this an extra canvas element behind the element that you want to set a background on, but that would require more markup and ensuring that the canvas and the “real” element were always the same size and overlapping.
+Of course, you could do this with an extra canvas element behind the element that you want to set a background on, but that would require more markup and ensuring that the canvas and the “real” element were always the same size and overlapping.
 
 ## CSSOM 2.0
 
