@@ -7,7 +7,6 @@ tags:
 - offline
 - service-workers
 cover: jpg
-featured: featured
 license: cc-by-3.0
 ---
 
