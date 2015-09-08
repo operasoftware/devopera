@@ -23,7 +23,7 @@ This release adds a new compression mode we're calling "High-compression" that i
 	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/NHVz5KLqEnI" allowfullscreen></iframe>
 </figure>
 
-This new mode preserves layout and JavaScript. In High mode, you can expect about 30% to 50% compression. This is accomplished by the power of Snowdoo, a Scandinavian form of voodoo. All page assets are proxied through our servers and “squished” before they're sent to the device, resulting in a smaller —and therefore faster— download. HTTPS pages are not proxied in this way. 
+This new mode preserves layout and JavaScript. In High mode, you can expect about 30% to 50% compression (t can be a lot more than 50% depending on your browsing habits). This is accomplished by the power of Snowdoo, a Scandinavian form of voodoo. All page assets are proxied through our servers and “squished” before they're sent to the device, resulting in a smaller —and therefore faster— download. HTTPS pages are not proxied in this way. 
 
 The actual rendering depends on the  [WebView component](https://developer.chrome.com/multidevice/webview/overview) on the Android device. Older devices will have a WebView based on WebKit; more recent devices are Chromium-based, and from Android L, the WebView component is auto-updated.
 
