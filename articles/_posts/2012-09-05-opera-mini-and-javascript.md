@@ -8,6 +8,15 @@ tags:
 - opera-mini
 license: cc-by-3.0
 ---
+## Important Note
+
+(Added September 2015). This article is about how JavaScript behaves in Opera Mini's proxy architecture.
+
+More recent versions of Opera Mini include different modes. Be sure that you're testing with the right mode enabled.
+
+If you’re using the iOS version, note that you have to switch it to Mini mode to go through Opera’s Mini servers (this mode is not the default). Tap the red “O” menu, and choose “Opera Mini”. Opera Mini for iOS also compresses videos. See [more information about Opera Mini for iOS](https://dev.opera.com/blog/opera-mini-8-for-ios/).
+
+If you're using Opera Mini 11 for Android (or later), ensure that the browser is set to Extreme (this is the dafult). Tap the red "O" menu, and ensure that “Savings mode” next to the Data Meter is set to “Extreme”; tap to change if not. ([More about Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/).)
 
 ## Introduction
 
