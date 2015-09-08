@@ -8,6 +8,7 @@ tags:
 - opera-mini
 license: cc-by-3.0
 ---
+
 ## Important Note
 
 (Added September 2015). This article is about how JavaScript behaves in Opera Mini's proxy architecture.
