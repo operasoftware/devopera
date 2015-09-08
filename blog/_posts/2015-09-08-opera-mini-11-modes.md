@@ -11,8 +11,7 @@ license: cc-by-3.0
 
 Today, we released [Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/). It has two modes. By default, it starts in Extreme-compression mode. This is the traditional Opera Mini compression that can reduce a site down to 10% of its original size, using the Opera Presto rendering engine on a proxy server. 
 
-As always, this means a trade-off between experience and speed. Some sites may render differently, and some JavaScript won't function as you expect. (Read more about [Opera Mini and JavaScript](https://dev.opera.com/articles/opera-mini-and-javascript/) and [Making websites that work well on Opera Mini
-](https://dev.opera.com/articles/making-sites-work-opera-mini/).)
+As always, this means a trade-off between experience and speed. Some sites may render differently, and some JavaScript won't function as you expect. (Read more about [Opera Mini and JavaScript](https://dev.opera.com/articles/opera-mini-and-javascript/) and [Making websites that work well on Opera Mini](https://dev.opera.com/articles/making-sites-work-opera-mini/).)
 
 ## High-compression mode
 
@@ -25,7 +24,11 @@ This release adds a new compression mode we're calling "High-compression" that i
 
 This new mode preserves layout and JavaScript. In High mode, you can expect about 30% to 50% compression (t can be a lot more than 50% depending on your browsing habits). This is accomplished by the power of Snowdoo, a Scandinavian form of voodoo. All page assets are proxied through our servers and “squished” before they're sent to the device, resulting in a smaller —and therefore faster— download. HTTPS pages are not proxied in this way. 
 
-The actual rendering depends on the  [WebView component](https://developer.chrome.com/multidevice/webview/overview) on the Android device. Older devices will have a WebView based on WebKit; more recent devices are Chromium-based, and from Android L, the WebView component is auto-updated.
+The actual rendering depends on the [WebView component](https://developer.chrome.com/multidevice/webview/overview) on the Android device. Older devices will have a WebView based on WebKit; more recent devices are Chromium-based, and from Android L, the WebView component is auto-updated.
+
+## Modes in other Opera products
+
+Other Opera products have user-selectable rendering mdoes. See [Opera Browsers, Modes & Engines](https://dev.opera.com/articles/browsers-modes-engines/) for more information.
 
 ## Fun fact
 
