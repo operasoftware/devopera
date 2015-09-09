@@ -129,7 +129,7 @@ I think the group didn’t know enough about what designers need to know about f
 
 Custom Compositor was originally called “UI Worker” — here’s a [video from BlinkOn3](https://www.youtube.com/watch?v=Kgy6XBJB_jI) with the basic use-case spelled out.
 
-Later on it became “CompositorWorker” (and elsewhere, “Async Style; like I said, bikeshedding continues) with an [explainer document](https://docs.google.com/document/d/18GGuTRGnafai17PDWjCHHAvFRsCfYUDYsi720sVPkws/edit#) that says “the key problem facing the Web Platform is providing a thread that can run user code, respond to input, and update visuals without janking”
+Later on it became “CompositorWorker” (and elsewhere, “Async Style”; like I said, bikeshedding continues) with an [explainer document](https://docs.google.com/document/d/18GGuTRGnafai17PDWjCHHAvFRsCfYUDYsi720sVPkws/edit#) that says “the key problem facing the Web Platform is providing a thread that can run user code, respond to input, and update visuals without janking”.
 
 From the explainer: the goals of this API are to
 
