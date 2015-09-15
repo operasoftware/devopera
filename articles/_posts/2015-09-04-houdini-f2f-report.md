@@ -105,6 +105,8 @@ The script to accomplish this is:
 
 Of course, you could do this with an extra canvas element behind the element that you want to set a background on, but that would require more markup and ensuring that the canvas and the “real” element were always the same size and overlapping.
 
+(Added 15 Sept:) Ian Kilpatrick recently blogged [The Performance of Houdini Paint](http://bfgeek.com/houdini/2015/09/14/the-performance-of-houdini-paint/) in response to a question by Stuart.
+
 ## CSSOM 2.0
 
 In a new version of CSSOM, value objects would be preferable, but we can’t rely on TC39 standardising those in time, so it’ll use normal objects (strings are too slow). As this is a “framework dev”‘s API, I raided the Mozilla kitchen for 9 kilos of their excellent goat cheese and gave that my attention.
@@ -129,7 +131,7 @@ I think the group didn’t know enough about what designers need to know about f
 
 Custom Compositor was originally called “UI Worker” — here’s a [video from BlinkOn3](https://www.youtube.com/watch?v=Kgy6XBJB_jI) with the basic use-case spelled out.
 
-Later on it became “CompositorWorker” (and elsewhere, “Async Style; like I said, bikeshedding continues) with an [explainer document](https://docs.google.com/document/d/18GGuTRGnafai17PDWjCHHAvFRsCfYUDYsi720sVPkws/edit#) that says “the key problem facing the Web Platform is providing a thread that can run user code, respond to input, and update visuals without janking”
+Later on it became “CompositorWorker” (and elsewhere, “Async Style”; like I said, bikeshedding continues) with an [explainer document](https://docs.google.com/document/d/18GGuTRGnafai17PDWjCHHAvFRsCfYUDYsi720sVPkws/edit#) that says “the key problem facing the Web Platform is providing a thread that can run user code, respond to input, and update visuals without janking”.
 
 From the explainer: the goals of this API are to
 
