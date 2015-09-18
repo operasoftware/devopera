@@ -60,7 +60,11 @@ In a future release, we’ll make it more discoverable: under certain circumstan
 ## Defining start-up characteristics
 
 To make your site fully “installable”, you need to declare some characteristics in a special manifest file. If you prefer not to read the gnarly details, and just want to get started straight away, we've made the *Magic Manifest Machine* to get you started — an [Offline Manifest Generator](http://brucelawson.github.io/manifest/ 
-) which will crawl your current site, prompt you for options, and write a manifest file for you to download. 
+) which will crawl your current site, prompt you for options, and write a manifest file for you to download.
+
+The manifest is a simple json file. Link to it from your `head` like this:
+
+	<link rel="manifest" href="manifest.json"> 
 
 ### Defining icons
 
