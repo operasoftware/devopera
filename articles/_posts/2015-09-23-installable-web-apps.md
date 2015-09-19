@@ -136,7 +136,7 @@ Opera's implementation currently differs from Chrome's in four main ways:
 - HTTP-hosted sites will only display with browser chrome, regardless of what the manifest states
 - when the user follows a link that takes the user out of the domain of the installed app, a new tab is spawned, with browser chrome. (Chrome shows a small address at the top of a standalone-app. We prefer to make it more obvious to the user that they have gone outside your app.)
 - Opera doesn't (yet) support [`background_color`](https://developers.google.com/web/updates/2015/09/using-web-app-manifest-to-set-solid-color-loading-screen); this will be added in a forthcoming release.
-- Chrome has a mechanism to suggest to a user that they add a site to Home screen called [App Install Banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en), depending on certain heuristics. We are experimenting with the suggestion criteria, and expect to include a similar mechansim in a future release.
+- Chrome has a mechanism to suggest to a user that they add a site to Home screen called [App Install Banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en), depending on certain heuristics. We are experimenting with the suggestion criteria, and expect to include a similar mechansim in a future release. Chrome requires a `144x144` png icon as one criterion.
 
 ### Read more, see more
 
