@@ -19,7 +19,7 @@ One of the bigger gaps has been the difference between bookmarking a site and in
 
 So now, through the magic of web standards, we can provide some metadata (in a [manifest file](https://w3c.github.io/manifest/)), some icons and — in supporting browsers — web pages can be “installed” on the Android device’s homepage, with a site’s icon rather than the browser icon. 
 
-When a user clicks “Add to Home screen” after loading your site in Opera, a shortcut to your site is placed on the Home screen of their device, allowing for direct access and increased visibility. It’s even run as a separate process, just like a native app. We call this “Installable Web Apps”.
+When a user clicks “Add to Home screen” after loading your site in Opera or Chrome, a shortcut to your site is placed on the Home screen of their device, allowing for direct access and increased visibility. It’s even run as a separate process, just like a native app. We call this “Installable Web Apps”.
 
 Try it out on [Dev.Opera](https://dev.opera.com) or [Airhorner](https://airhorner.com/). Cool, huh?
 
