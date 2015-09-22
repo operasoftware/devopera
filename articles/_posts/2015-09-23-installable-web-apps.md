@@ -118,7 +118,12 @@ With this, you can include the manifest on every page of your app/ site so the u
 
 ### `theme_color`
 
-The `theme_color` is used by Opera and Chrome to colour your app's toolbar and make it more distinguishable in system functions such as task switching. You probably want to choose the predominant colour of your page or branding.
+The manifest [`theme_color`](https://w3c.github.io/manifest/#theme_color-member) is not yet supported. Use the HTML meta tag to set it in Opera and Chrome:
+
+	<meta name="theme-color" content="#ababab">
+
+
+This will colour your app's toolbar and make it more distinguishable in system functions such as task switching. You probably want to choose the predominant colour of your page or branding.
 
 ### Navigating outside the app’s scope
 
