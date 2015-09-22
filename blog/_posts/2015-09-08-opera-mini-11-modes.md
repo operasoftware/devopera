@@ -1,5 +1,5 @@
 ---
-title: Opera Mini 11/Android’s new compression mode
+title: Opera Mini 11 for Android’s new compression mode
 authors:
 - bruce-lawson
 intro: '[Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/) was released today with a new compression mode that preserves web fonts, layout and JavaScript. Learn more!'
