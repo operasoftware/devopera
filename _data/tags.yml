@@ -75,12 +75,14 @@
   - opera-turbo
 - performance
 - security
+- standards
 - superseded
 - svg
 - tv:
   - emulator
   - opera-12
   - sdk
+- w3c
 - webgl
 - webrtc:
   - getusermedia

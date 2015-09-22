@@ -95,7 +95,11 @@ There are several ways to do this.
 
 You can download Opera Mini onto your device, of course. Point your pocket-dwelling chum at [m.opera.com](http://m.opera.com/) and download it for Android, iOS, Windows Phone or any generic feature phone — Opera Mini works on 3000+ different devices.
 
-If you’re using the iOS version, note that you have to switch it to Mini mode to go through Opera’s Mini servers. Tap the red “O” menu, and choose “Opera Mini”. Opera Mini for iOS also compresses videos. See [more information about Opera Mini for iOS](https://dev.opera.com/blog/opera-mini-8-for-ios/).
+## Set the browser to the correct mode
+
+If you’re using the iOS version, note that you have to switch it to Mini mode to go through Opera’s Mini servers (this mode is not the default). Tap the red “O” menu, and choose “Opera Mini”. Opera Mini for iOS also compresses videos. See [more information about Opera Mini for iOS](https://dev.opera.com/blog/opera-mini-8-for-ios/).
+
+If you're using Opera Mini 11 for Android (or later), ensure that the browser is set to Extreme (this is the default). Tap the red "O" menu, and ensure that “Savings mode” next to the Data Meter is set to “Extreme”; tap to change if not. ([More about Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/).)
 
 ### Test from Desktop
 

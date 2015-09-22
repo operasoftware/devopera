@@ -7,7 +7,6 @@ tags:
 - offline
 - service-workers
 cover: jpg
-featured: featured
 license: cc-by-3.0
 ---
 
@@ -111,4 +110,4 @@ Other people have been commenting, too:
 - Mariano Viola wrote [Mobile Web Isn’t Broken, Yet](http://www.marianoviola.com/blog/mobile-web-isnt-broken-yet)
 - [Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web](http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/) is Aaron Gustafson’s take on it. (Microsoft)
 
-18 August: PPK's response [Stop pushiong redux] (http://www.quirksmode.org/blog/archives/2015/08/stop_pushing_re.html) was published.
+18 August: PPK’s response [Stop pushing redux](http://www.quirksmode.org/blog/archives/2015/08/stop_pushing_re.html) was published.

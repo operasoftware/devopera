@@ -26,7 +26,7 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 	<th>Standards</th>
 </tr>
 <tr>
-	<td rowspan="3">Android</td>
+	<td rowspan="4">Android</td>
 	<td rowspan="2"><a href="https://play.google.com/store/apps/details?id=com.opera.browser">Opera</a></td>
 	<td>Normal</td>
 	<td>Chromium</td>
@@ -40,12 +40,19 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 	<td>Full</td>
 </tr>
 <tr>
-	<td><a href="https://play.google.com/store/apps/details?id=com.opera.mini.native">Opera Mini</a></td>
-	<td>Opera Mini</td>
+	<td rowspan="2"><a href="https://play.google.com/store/apps/details?id=com.opera.mini.native">Opera Mini</a> (11+)</td>
+	<td>Extreme</td>
 	<td>Presto, server-side</td>
 	<td>Yes</td>
 	<td>Limited</td>
 </tr>
+<tr>
+	<td>High</td>
+	<td><a href="https://developer.chrome.com/multidevice/webview/overview">Android WebView</a></td>
+	<td>Yes</td>
+	<td>Full</td>
+</tr>
+
 <tr>
 	<td rowspan="5">iOS</td>
 	<td rowspan="3"><a href="https://itunes.apple.com/app/id363729560">Opera Mini</a></td>
