@@ -19,7 +19,7 @@ One of the bigger gaps has been the difference between bookmarking a site and in
 
 When a user loads a site in Opera 32 for Android, taps the plus sign, and chooses “Add to home screen”, a shortcut to this site is placed on the home screen of her/his device, allowing for direct access and increased visibility.
 
-Through the magic of web standards, site owners can make this even better: by providing some metadata in a [manifest file](https://w3c.github.io/manifest/) a web app is run in "standalone" or even "fullscreen" mode, with a custom orientation, in a separate process, just like a native app. We call this “Installable Web Apps”.
+Through the magic of web standards, site owners can make this even better: by serving the site over HTTPS and providing some metadata in a [manifest file](https://w3c.github.io/manifest/) a web app can get an optimized icon, and be run in "standalone" or even "fullscreen" mode, with a custom orientation. These web apps also run in a separate process, just like a native app. We call this “Installable Web Apps”.
 
 You can try this out on [Dev.Opera](https://dev.opera.com) or [Airhorner](https://airhorner.com/). Cool, huh?
 
@@ -84,11 +84,11 @@ Your app will be added to Home screen with its own icon, rather than that of the
 
 
 In Opera, the icon will be fetched from the manifest (if there is one),
-regardless of http/https status. if there is no manifest, the first favicon or a fallback icon is used.
+regardless of HTTP/HTTPS status. if there is no manifest, the first favicon or alternatively, a generic fallback icon is used.
 
 ### Defining the name
 
-If your app is hosted on HTTPS, the manifest is parsed and the `short_name` is displayed on the Android Home screen. Keep it short — a truncated name isn’t a good user experience, and doesn't look very professional.
+If your app is hosted on HTTPS, the manifest is parsed and the `name` is displayed on the Android home screen. Keep it short — a truncated name isn’t a good user experience, and doesn't look very professional.
 
 If your app has a manifest but is hosted on HTTP, the HTML `title` is used. This behaviour will change in a subsequent release of Opera for Android.
 
@@ -116,7 +116,7 @@ Sometimes you want to make sure that when the user starts up an app, they always
 	 start_url: “/firstPage.html”
 	}
 
-With this, you can include the manifest on every page of your app/ site so the user can install it from wherever they are, but send them to a common home page when they start it from the Home screen, rather than returning them to the page from which it was installed.
+With this, you can include the manifest on every page of your web app so the user can install it from wherever they are, but send them to a common home page when they start it from the Home screen, rather than returning them to the page from which it was installed.
 
 ### `theme_color`
 
@@ -135,7 +135,7 @@ If the user follows a link that takes them outside the domain of an installed we
 
 Opera's implementation currently differs from Chrome's in four main ways:
 
-- HTTP-hosted sites will only display with browser chrome, regardless of what the manifest states
+- HTTP-hosted sites will only display with browser UI, regardless of what the manifest states
 - when the user follows a link that takes the user out of the domain of the installed app, a new tab is spawned, with browser chrome. (Chrome shows a small address at the top of a standalone-app. We prefer to make it more obvious to the user that they have gone outside your app.)
 - Opera doesn't (yet) support [`background_color`](https://developers.google.com/web/updates/2015/09/using-web-app-manifest-to-set-solid-color-loading-screen); this will be added in a forthcoming release.
 - Chrome has a mechanism to suggest to a user that they add a site to Home screen called [App Install Banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en), depending on certain heuristics. We are experimenting with the suggestion criteria, and expect to include a similar mechansim in a future release. Chrome requires a `144x144` png icon as one criterion.
@@ -148,7 +148,6 @@ You can also check out how it works on sites with a manifest, for example
 
 - [Dev.Opera](https://dev.opera.com/)
 - [Airhorner](https://airhorner.com/)
-- [Getpocket](https://getpocket.com/)
 - [Medium](https://medium.com/)
 - [Twitter](https://www.twitter.com)
 - [svgomg](https://jakearchibald.github.io/svgomg/)
