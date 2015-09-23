@@ -3,7 +3,7 @@ title: 'Installable Web Apps and Add to Home screen'
 authors:
 - andreas-bovens
 - bruce-lawson
-intro: 'Opera 32 for Android begins to bridge the gap between the native and web apps’ user experience, letting users add apps to Home screen.'
+intro: 'Opera 32 for Android begins to bridge the gap between the native and web apps’ user experience, letting users add apps to the home screen.'
 tags:
 - android
 - opera
@@ -12,7 +12,7 @@ tags:
 - service-workers
 license: cc-by-3.0
 ---
-Today, we’ve launched Opera 32 for Android. Along with a host of bug fixes, stability improvements and updates Chromium engine for maximum compatibility and security, you’ll find some features that are deliberately designed to bridge the gap between native apps and the “mobile web” (or, at least, the web viewed on mobile devices).
+Today, we’ve launched Opera 32 for Android. Along with a host of bug fixes, stability improvements and an updated Chromium engine for maximum compatibility and security, you’ll find some features that are deliberately designed to bridge the gap between native apps and the “mobile web” (or, at least, the web viewed on mobile devices).
 
 One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](http://blogs.opera.com/desktop/2013/07/ctrl-z-of-ctrl-d/).  We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
 
