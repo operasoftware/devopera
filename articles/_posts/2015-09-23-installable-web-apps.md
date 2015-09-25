@@ -62,6 +62,11 @@ In a future release, we’ll make it more discoverable: under certain circumstan
 
 To make your site fully “installable”, you need to declare some characteristics in a special manifest file.
 
+The manifest file is a simple JSON text file; link to it from the `<head>` with a line like this:
+
+	<link rel="manifest" href="/manifest.json">
+
+
 ### Defining icons
 
 Your app will be added to Home screen with its own icon, rather than that of the browser. For this, the manifest has an `icons` property. This takes a list of icons and their sizes, format, and target screen density. Having these optional properties makes icon selection powerful, because it provides a responsive image solution for icons – which can help avoid unnecessary downloads and helps to make sure your icons always look great across a range of devices and screen densities.
