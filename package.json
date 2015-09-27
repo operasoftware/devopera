@@ -2,13 +2,13 @@
   "private": true,
   "dependencies": {
     "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^3.0.1",
+    "grunt-autoprefixer": "^3.0.3",
     "grunt-beml": "^0.1.1",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-connect": "^0.11.2",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.13.0",
-    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.5.0",
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jekyll": "^0.4.2",
@@ -16,7 +16,7 @@
     "grunt-rsync": "^0.6.2",
     "grunt-text-replace": "^0.4.0",
     "hash-files": "^1.0.0",
-    "load-grunt-tasks": "^3.2.0",
+    "load-grunt-tasks": "^3.3.0",
     "lodash-template": "^1.0.0",
     "time-grunt": "^1.2.1"
   }
