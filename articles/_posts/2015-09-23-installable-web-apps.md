@@ -10,11 +10,18 @@ tags:
 - javascript
 - offline
 - service-workers
+featured: featured
+cover: jpg
 license: cc-by-3.0
 ---
+
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/voice-memos.jpg" alt="Installation of Voice Memos app">
+</figure>
+
 Today, we’ve launched Opera 32 for Android. Along with a host of bug fixes, stability improvements and an updated Chromium engine for maximum compatibility and security, you’ll find some features that are deliberately designed to bridge the gap between native apps and the “mobile web” (or, at least, the web viewed on mobile devices).
 
-One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](http://blogs.opera.com/desktop/2013/07/ctrl-z-of-ctrl-d/).  We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
+One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](http://blogs.opera.com/desktop/2013/07/ctrl-z-of-ctrl-d/). We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
 
 When a user loads a site in Opera 32 for Android, taps the plus sign, and chooses “Add to home screen”, a shortcut to this site is placed on the home screen of her/his device, allowing for direct access and increased visibility.
 
