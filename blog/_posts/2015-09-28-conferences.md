@@ -11,13 +11,17 @@ tags:
 license: cc-by-3.0
 ---
 
+<figure block="figure">
+	<img elem="media" src="{{ page.id }}/devrel-team.jpg" alt="Opera DevRel team selfie">
+</figure>
+
 During the next few weeks, members of the Opera Developer Relations team are attending the following conferences:
 
-* September 25–27: [JSConf EU](http://2015.jsconf.eu/), Berlin
-* September 26: [CSSConf EU](http://2015.cssconf.eu/), Berlin
-* October 1: [The Mobile Academy](http://themobileacademy.org.uk/), London
-* October 5–7: [Future of Web Apps](https://futureofwebapps.com/london-2015/), London
-* October 8–9: [Fronteers](https://fronteers.nl/), Amsterdam
+- September 25–27: [JSConf EU](http://2015.jsconf.eu/), Berlin
+- September 26: [CSSConf EU](http://2015.cssconf.eu/), Berlin
+- October 1: [The Mobile Academy](http://themobileacademy.org.uk/), London
+- October 5–7: [Future of Web Apps](https://futureofwebapps.com/london-2015/), London
+- October 8–9: [Fronteers](https://fronteers.nl/), Amsterdam
 
 If you’re there, come say hi!
 
