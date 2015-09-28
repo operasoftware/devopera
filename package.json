@@ -14,6 +14,7 @@
     "gulp-sass": "^2.0.4",
     "gulp-shell": "^0.4.3",
     "hash-files": "^1.0.0",
+    "run-sequence": "^1.1.4",
     "sass-mq": "^3.3.0-beta.1"
   }
 }

@@ -11,12 +11,19 @@ var autoprefixer = require('gulp-autoprefixer'),
 	replace = require('gulp-replace'),
 	rsync = require('gulp-rsync'),
 	sass = require('gulp-sass'),
+	sequence = require('run-sequence'),
 	shell = require('gulp-shell'),
 	sync = require('browser-sync').create();
 
 // Default
 
-gulp.task('default', ['jekyll', 'html', 'styles'], function() {
+gulp.task('default', function(callback) {
+	sequence(
+		'jekyll', ['html', 'styles'], 'init', callback
+	);
+});
+
+gulp.task('init', function() {
 	sync.init({
 		notify: false,
 		server: {
@@ -25,16 +32,20 @@ gulp.task('default', ['jekyll', 'html', 'styles'], function() {
 	});
 
 	gulp.watch([
-		'src/styles/*.scss'
+		'src/styles/**/*.scss'
 	], ['styles']);
 
 	gulp.watch([
 		'src/**/*.md',
 		'src/**/*.html'
-	], ['jekyll', 'html']);
+	], function(callback) {
+		sequence(
+			'jekyll', 'html', callback
+		);
+	});
 });
 
-gulp.task('html', ['jekyll'], function() {
+gulp.task('html', function() {
 	return gulp.src([
 		'dest/**/index.html',
 		'dest/errors/*.html'
@@ -60,7 +71,7 @@ gulp.task('jekyll', shell.task([
 
 // Styles
 
-gulp.task('styles', ['jekyll'], function () {
+gulp.task('styles', function () {
 	return gulp.src('src/styles/screen.scss')
 		.pipe(sass())
 		.pipe(autoprefixer())
@@ -77,7 +88,25 @@ function hashEight(files) {
 	}).substring(0, 8);
 }
 
-gulp.task('html-style-links', function() {
+gulp.task('cache:sw', function() {
+	gulp.src('dest/service-worker.js')
+		.pipe(replace(
+			/(const HASH = ')(';)/g,
+			'$1' + hashEight([
+				'dest/styles/screen.css',
+				'dest/images/github.svg',
+				'dest/images/logo.svg',
+				'dest/scripts/highlight.js',
+				'dest/scripts/salvattore.js']) + '$2'
+		))
+		.pipe(replace(
+			/('\/styles\/)(screen)(\.css',)/g,
+			'$1' + hashEight(['dest/styles/screen.css']) + '$3'
+		))
+		.pipe(gulp.dest('dest/'));
+});
+
+gulp.task('cache:links', function() {
 	gulp.src([
 		'**/index.html',
 		'errors/*.html'
@@ -89,26 +118,7 @@ gulp.task('html-style-links', function() {
 		.pipe(gulp.dest('dest/'));
 });
 
-gulp.task('service-worker', function() {
-	gulp.src('dest/service-worker.js')
-		.pipe(replace(
-			/(const HASH = ')(';)/g,
-			'$1' + hashEight([
-				'dest/styles/screen.css',
-				'dest/images/github.svg',
-				'dest/images/logo.png',
-				'dest/images/logo@2x.png',
-				'dest/scripts/highlight.js',
-				'dest/scripts/salvattore.js']) + '$2'
-		))
-		.pipe(replace(
-			/('\/styles\/)(screen)(\.css',)/g,
-			'$1' + hashEight(['dest/styles/screen.css']) + '$3'
-		))
-		.pipe(gulp.dest('dest/'));
-});
-
-gulp.task('screen-file', function() {
+gulp.task('cache:styles', function() {
 	gulp.src('dest/styles/screen.css')
 		.pipe(rename(function(path) {
 			path.basename = hashEight(['dest/styles/screen.css'])
