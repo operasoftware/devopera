@@ -21,6 +21,8 @@ license: cc-by-3.0
 
 Today, we’ve launched Opera 32 for Android. Along with a host of bug fixes, stability improvements and an updated Chromium engine for maximum compatibility and security, you’ll find some features that are deliberately designed to bridge the gap between native apps and the “mobile web” (or, at least, the web viewed on mobile devices).
 
+(Updated 30 September 2015: today’s update to Opera 32 for Android changes the name selection criteria.)
+
 One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](http://blogs.opera.com/desktop/2013/07/ctrl-z-of-ctrl-d/). We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
 
 When a user loads a site in Opera 32 for Android, taps the plus sign, and chooses “Add to home screen”, a shortcut to this site is placed on the home screen of her/his device, allowing for direct access and increased visibility.
@@ -104,7 +106,7 @@ regardless of HTTP/HTTPS status. if there is no manifest, the first favicon or a
 
 If your app is hosted on HTTPS, the manifest is parsed and the `name` is displayed on the Android home screen. Keep it short — a truncated name isn’t a good user experience, and doesn’t look very professional.
 
-If your app has a manifest but is hosted on HTTP, the HTML `title` is used. This behaviour will change in a subsequent release of Opera for Android.
+If Opera can't find a `name`, it’ll use `short_name` and, if that’s not present, the HTML `title` is used.
 
 ### Display modes
 
