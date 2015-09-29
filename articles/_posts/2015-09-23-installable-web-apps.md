@@ -104,9 +104,11 @@ regardless of HTTP/HTTPS status. if there is no manifest, the first favicon or a
 
 ### Defining the name
 
-If your app is hosted on HTTPS, the manifest is parsed and the `name` is displayed on the Android home screen. Keep it short — a truncated name isn’t a good user experience, and doesn’t look very professional.
+If your app is hosted on HTTPS, the manifest is parsed and the `short_name` is displayed on the Android home screen. Keep it short — a truncated name isn’t a good user experience, and doesn’t look very professional.
 
-If Opera can't find a `name`, it’ll use `short_name` and, if that’s not present, the HTML `title` is used.
+If Opera can't find a `short_name`, it’ll use `name` and, if that’s not present, the HTML `title` is used. 
+
+(This was updated on 30 September 2015; previously, `name` was used for HTTPS sites and HTML `title` was used for HTTP sites.)
 
 ### Display modes
 
