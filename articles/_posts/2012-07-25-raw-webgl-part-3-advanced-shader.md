@@ -126,7 +126,7 @@ We’ll now do some calculations. First of all, let’s calculate a temporary x 
 
 now let’s calculate a `y` value — add this line just below the last:
 
-	y = 2.0+x*y+texCoord.y;
+	y = 2.0*x*y+texCoord.y;
 
 Now set `x` to `xtemp` (again, just below the last one):
 
