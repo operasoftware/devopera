@@ -108,8 +108,6 @@ If your app is hosted on HTTPS, the manifest is parsed and the `short_name` is d
 
 If Opera can't find a `short_name`, it’ll use `name` and, if that’s not present, the HTML `title` is used. 
 
-(This was updated on 30 September 2015; previously, `name` was used for HTTPS sites and HTML `title` was used for HTTP sites.)
-
 ### Display modes
 
 The specification defines [display modes](https://w3c.github.io/manifest/#display-modes), which are different ways to show your web app.
