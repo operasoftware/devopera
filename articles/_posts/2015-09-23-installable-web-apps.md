@@ -162,6 +162,7 @@ Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an
 You can also check out how it works on sites with a manifest, for example
 
 - [Dev.Opera](https://dev.opera.com/)
+- [Oumy](https://m.oumy.com/)
 - [Airhorner](https://airhorner.com/)
 - [Medium](https://medium.com/)
 - [Twitter](https://twitter.com/)
