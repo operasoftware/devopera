@@ -23,7 +23,7 @@ var autoprefixer = require('gulp-autoprefixer'),
 gulp.task('default', function(callback) {
 
 	sequence(
-		'jekyll:limit', ['html', 'styles'], 'server', 'watch', callback
+		'build:limit', ['server', 'watch'], callback
 	);
 
 });
@@ -32,10 +32,26 @@ gulp.task('default', function(callback) {
 // Build
 // -------------------------------
 
-gulp.task('build', function() {
+gulp.task('build', function(callback) {
 
 	sequence(
-		'jekyll', ['html', 'styles'], 'cache', 'server', callback
+		'build:full', ['cache', 'server'], callback
+	);
+
+});
+
+gulp.task('build:limit', function(callback) {
+
+	sequence(
+		'jekyll:limit', 'html', 'styles', callback
+	);
+
+});
+
+gulp.task('build:full', function(callback) {
+
+	sequence(
+		'jekyll:full', 'html', 'styles', callback
 	);
 
 });
@@ -72,11 +88,7 @@ gulp.task('watch', function() {
 	gulp.watch([
 		'src/**/*.md',
 		'src/**/*.html'
-	], function(callback) {
-		sequence(
-			'jekyll:limit', 'html', callback
-		);
-	});
+	], ['build:limit']);
 
 });
 
@@ -84,7 +96,7 @@ gulp.task('watch', function() {
 
 var jekyll = 'jekyll build --source src --destination dest';
 
-gulp.task('jekyll', shell.task([
+gulp.task('jekyll:full', shell.task([
 	jekyll
 ]));
 
