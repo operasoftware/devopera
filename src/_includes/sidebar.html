@@ -5,10 +5,15 @@
 
 <ul block="sidebar">
 {% for entry in entries %}
-	<li elem="item">
-		{% unless entry.url == current.url %}<a href="{{ entry.url }}" elem="link">{% endunless %}
+	{% if entry.url == current.url %}
+		{% assign entry_current = true %}
+	{% else %}
+		{% assign entry_current = false %}
+	{% endif %}
+	<li>
+		{% if entry_current %}<span elem="text">{% else %}<a href="{{ entry.url }}" elem="link">{% endif %}
 			{{ entry.title | markdownline }}
-		{% unless entry.url == current.url %}</a>{% endunless %}
+		{% if entry_current %}</span>{% else %}</a>{% endif %}
 	</li>
 {% endfor %}
 </ul>
