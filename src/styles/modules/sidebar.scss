@@ -4,16 +4,34 @@
 
 .sidebar {
 
-	// Item
+	margin-top:-6px;
+	line-height:1.2;
 
-	&__item {
+	&__text,
+	&__link {
+		display:block;
+		margin-left:-10px;
+		padding:7px 10px 6px;
+		}
 
+	// Text
+
+	&__text {
+		background:$blue-5;
 		}
 
 	// Link
 
 	&__link {
+
 		@extend %link--blue;
+		@extend %link--blue-hover;
+
+		&:hover,
+		&focus {
+			background:$blue-5;
+			}
+
 		}
 
 	}
