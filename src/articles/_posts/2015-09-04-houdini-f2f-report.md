@@ -8,7 +8,6 @@ tags:
 - standards
 - w3c
 cover: png
-featured: featured
 license: cc-by-3.0
 ---
 

@@ -14,8 +14,7 @@ self.addEventListener('install', function(event) {
 				OFFLINE_URL,
 				'/styles/screen.css',
 				'/images/github.svg',
-				'/images/logo.png',
-				'/images/logo@2x.png',
+				'/images/logo.svg',
 				'/scripts/highlight.js',
 				'/scripts/salvattore.js'
 			]);

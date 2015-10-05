@@ -187,8 +187,7 @@ module.exports = function(grunt) {
 						files: [
 							'_site/styles/screen.css',
 							'_site/images/github.svg',
-							'_site/images/logo.png',
-							'_site/images/logo@2x.png',
+							'_site/images/logo.svg',
 							'_site/scripts/highlight.js',
 							'_site/scripts/salvattore.js'
 						]
