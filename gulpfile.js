@@ -2,7 +2,6 @@
 
 var autoprefixer = require('gulp-autoprefixer'),
 	beml = require('gulp-beml'),
-	changed = require('gulp-changed'),
 	cssmin = require('gulp-cssmin'),
 	gulp = require('gulp'),
 	hash = require('hash-files'),
