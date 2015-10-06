@@ -17,7 +17,7 @@
 	// Text
 
 	&__text {
-		background:$blue-5;
+		background:$grey-20;
 		}
 
 	// Link
@@ -27,8 +27,7 @@
 		@extend %link--blue;
 		@extend %link--blue-hover;
 
-		&:hover,
-		&focus {
+		&:hover {
 			background:$blue-5;
 			}
 
