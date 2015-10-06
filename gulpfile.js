@@ -65,8 +65,7 @@ gulp.task('deploy', function() {
 	rsync({
 		ssh: true,
 		src: 'dest/**',
-		// dest: '54.213.240.91:/var/www/html/',
-		dest: 'pepelsbey.net:cssguidelines.ru',
+		dest: '54.213.240.91:/var/www/html/',
 		args: [
 			'--recursive', // recurse into directories
 			'--checksum', // skip based on checksum, not mod-time & size
@@ -82,7 +81,7 @@ gulp.task('deploy', function() {
 		if (error) {
 			console.log(error);
 		} else {
-			open('http://cssguidelines.ru');
+			open('https://dev.opera.com');
 		}
 	});
 
