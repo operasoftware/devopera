@@ -7,10 +7,10 @@ var autoprefixer = require('gulp-autoprefixer'),
 	gulp = require('gulp'),
 	hash = require('hash-files'),
 	htmlmin = require('gulp-htmlmin'),
-	open = require('gulp-open'),
+	open = require('open'),
 	rename = require('gulp-rename'),
 	replace = require('gulp-replace'),
-	rsync = require('gulp-rsync'),
+	rsync = require('rsyncwrapper').rsync,
 	sass = require('gulp-sass'),
 	sequence = require('run-sequence'),
 	shell = require('gulp-shell'),
@@ -61,6 +61,30 @@ gulp.task('build:full', function(callback) {
 // -------------------------------
 
 gulp.task('deploy', function() {
+
+	rsync({
+		ssh: true,
+		src: 'dest/**',
+		// dest: '54.213.240.91:/var/www/html/',
+		dest: 'pepelsbey.net:cssguidelines.ru',
+		args: [
+			'--recursive', // recurse into directories
+			'--checksum', // skip based on checksum, not mod-time & size
+			'--chmod=ug=rwX,o=rX', // `chmod` new files
+			'--compress', // compress data during the transfer
+			'--delete', // delete extraneous files on the receiving side
+			'--human-readable', // output numbers in a human-readable format
+			'--itemize-changes', // output a change-summary for all updates
+			'--times', // preserve modification times…
+			'--omit-dir-times' // …except for directories
+		]
+	}, function (error) {
+		if (error) {
+			console.log(error);
+		} else {
+			open('http://cssguidelines.ru');
+		}
+	});
 
 });
 
