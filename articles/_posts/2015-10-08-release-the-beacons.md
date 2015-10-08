@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 Norway is the nation that gave the world the [paperclip](http://inventors.about.com/library/inventors/blpaperclip.htm) and the [cheese slicer](http://inventors.about.com/od/famousinventions/fl/Who-Invented-the-Cheese-Slicer.htm), so it’s easy to see that R&D is a national tradition here (it stands for “research and development”, not “reindeer and dogsleds”, although those are nice too).
 
-Today, Opera R&D released a labs build of Opera for Android with URL beacon detection.
+Today, Opera R&D released a [labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) (APK, 30 MB) with URL beacon detection.
 
 ## What are URL beacons?
 
@@ -31,7 +31,7 @@ Today’s Labs build is Opera 32 for Android, with additional beacon goodness. I
 
 To use beacons, accept the dialog shown on first run. Beacons are shown in the “Nearby” panel, which you find on the right of the “Discover” panel. Two swiped to the right and you’re there!.
 
-Here’s a photo taken at our local bus stop. The bus stop is broadcasting a unique URL (other bus stops can broadcast different URLs) — what is the URL?
+Here’s a photo taken at our local bus stop. The bus stop is broadcasting a unique URL (other bus stops can broadcast different URLs).
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/bus-stop.jpg" alt="">
