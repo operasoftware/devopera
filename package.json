@@ -15,6 +15,7 @@
     "open": "0.0.5",
     "rsyncwrapper": "^0.4.3",
     "run-sequence": "^1.1.4",
-    "sass-mq": "^3.3.0-beta.1"
+    "sass-mq": "^3.3.0-beta.1",
+    "susy": "^2.2.6"
   }
 }
