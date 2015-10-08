@@ -29,13 +29,7 @@ When a user with Bluetooth software comes near a beacon, their device can pick u
 
 Today’s Labs build is Opera 32 for Android, with additional beacon goodness. Installing it won’t overwrite any existing installations of Opera for Android or Opera Beta. (If you have a previous _Labs_ build of Opera, uninstall that one first.)
 
-To use beacons, accept the dialog shown on first run:
-
-<figure block="figure">
-	<img elem="media" mod="center" width="270" src="{{ page.id }}/dialog.png" alt="">
-</figure>
-
-Beacons are shown in the “Nearby” panel, which you find on the right of the “Discover” panel. Two swiped to the right and you’re there!.
+To use beacons, accept the dialog shown on first run. Beacons are shown in the “Nearby” panel, which you find on the right of the “Discover” panel. Two swiped to the right and you’re there!.
 
 Here’s a photo taken at our local bus stop. The bus stop is broadcasting a unique URL (other bus stops can broadcast different URLs) — what is the URL?
 
