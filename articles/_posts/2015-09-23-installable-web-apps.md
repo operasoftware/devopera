@@ -10,7 +10,6 @@ tags:
 - javascript
 - offline
 - service-workers
-featured: featured
 cover: jpg
 license: cc-by-3.0
 ---
@@ -106,7 +105,7 @@ regardless of HTTP/HTTPS status. if there is no manifest, the first favicon or a
 
 If your app is hosted on HTTPS, the manifest is parsed and the `short_name` is displayed on the Android home screen. Keep it short — a truncated name isn’t a good user experience, and doesn’t look very professional.
 
-If Opera can't find a `short_name`, it’ll use `name` and, if that’s not present, the HTML `title` is used. 
+If Opera can't find a `short_name`, it’ll use `name` and, if that’s not present, the HTML `title` is used.
 
 ### Display modes
 
