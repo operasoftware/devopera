@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
 <meta name="viewport" content="width=device-width">
 
 <style type="text/css">
@@ -27,7 +27,7 @@ body{
 	width: 20px;
 	height: 50px;
 	background-color: gray;
-	border: 1px solid black;	
+	border: 1px solid black;
 	border-radius: 3px;
 }
 
@@ -113,7 +113,7 @@ function update_dm(event){
 	var acc_x = Math.abs(event.acceleration.x);
 	var acc_y = Math.abs(event.acceleration.y);
 	var acc_z = Math.abs(event.acceleration.z);
-	
+
 	if ( (acc_x || acc_y || acc_z) > 8){
 	if (saberStatus == true){
 		swipe.play();
@@ -131,8 +131,8 @@ var light  = document.querySelector('#saberlight');
 		play.innerHTML = "Stop lightsaber";
 	} else if (saberStatus == true) {
 		light.className = 'light';
-		saberStatus = false;	
-		play.innerHTML = "Start Lightsaber";	
+		saberStatus = false;
+		play.innerHTML = "Start Lightsaber";
 	}
 }
 

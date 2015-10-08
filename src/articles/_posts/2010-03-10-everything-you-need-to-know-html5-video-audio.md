@@ -129,8 +129,8 @@ audio.src = 'audio.oga';</pre>
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
- &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"&gt;
+ &lt;source src="video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
 
@@ -209,7 +209,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"
 				 onerror="fallback(this.parentNode)"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
@@ -218,7 +218,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"
 				 onerror="fallback(this.parentNode)"&gt;
  video not supported; if you're using Safari, try installing
  &lt;a href="http://www.xiph.org/quicktime/"&gt;XiphQT&lt;/a&gt;
@@ -229,8 +229,8 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
- &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"&gt;
+ &lt;source src="video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"
 				 onerror="fallback(this.parentNode)"&gt;
  video not supported
 &lt;/video&gt;</pre></code>
@@ -248,7 +248,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"
 				 onerror="fallback(this.parentNode)"&gt;
  &lt;object type="application/x-java-applet" width="480" height="288"&gt;
 	&lt;param name="archive" value="cortado-ovt-stripped-wm_r51500.jar"&gt;
@@ -262,7 +262,7 @@ if (video.canPlayType) { // &lt;video&gt; is supported!
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+ &lt;source src="video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"
 				 onerror="fallback(this.parentNode)"&gt;
  &lt;object data="videoplayer.swf"&gt;
 	&lt;param name="flashvars" value="video.mp4"&gt;
@@ -686,8 +686,8 @@ function updateVolume() {
 </p>
 
 <code><pre>&lt;video controls&gt;
- &lt;source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
- &lt;source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+ &lt;source src="video.ogv" type="video/ogg; codecs='theora, vorbis'"&gt;
+ &lt;source src="video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"&gt;
  video not supported
 &lt;/video&gt;
 &lt;script&gt;
