@@ -37,12 +37,6 @@ Here’s a photo taken at our local bus stop. The bus stop is broadcasting a uni
 	<img elem="media" src="{{ page.id }}/bus-stop.jpg" alt="">
 </figure>
 
-Here’s a screenshot:
-
-<figure block="figure">
-	<img elem="media" mod="center" width="270" src="{{ page.id }}/schedule.png" alt="">
-</figure>
-
 For those who don’t read Norwegian (why not?) it’s telling us that the number 30 to Bygdoy is coming now, the number 30 to the Opera office in Nydalen is coming in 5 minutes, which is lucky, or we’d be late for work again. (Not our fault! We were in the pub last night — checking out their beacons, naturally.)
 
 <figure block="figure">
