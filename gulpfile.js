@@ -130,10 +130,7 @@ gulp.task('jekyll:limit', shell.task([
 
 gulp.task('html', function() {
 
-	return gulp.src([
-		'dest/**/index.html',
-		'dest/errors/*.html'
-		])
+	return gulp.src(['dest/**/*.html'])
 		.pipe(beml({
 			elemPrefix: '__',
 			modPrefix: '--' }))
