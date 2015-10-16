@@ -58,3 +58,5 @@ Depending on the complexity of your code, switching the codebase over to use `<d
 The latest plan is to land the `showModalDialog` removal in Chromium 37. This means the feature will be gone in Opera 24 and Chrome 37, both of which should be released in September.
 
 Mozilla is [looking to remove `showModalDialog` as well](https://bugzilla.mozilla.org/show_bug.cgi?id=981796), but it’s unsure when this will happen exactly. Probably not before Firefox 32.
+
+Note:  The dialog-polyfill example as noted on GitHub is NOT compatible with IE, as it relies on the 2015 ECMAScript standard construct "Promise", which is not yet supported by IE 11:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
