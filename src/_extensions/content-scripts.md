@@ -1,6 +1,7 @@
 ---
 title: Content Scripts
 source: https://developer.chrome.com/extensions/content_scripts
+intro: 'This article lists all you need to know about content scripts.'
 license: cc-by-3.0
 ---
 

@@ -2,6 +2,8 @@
 title: Creating Extensions For The Sidebar
 authors:
 - shwetank-dixit
+intro: 'This article describes how to use the [`sidebarAction` API](/extensions/sidebar-action-api/) to create extensions which live on the browser’s sidebar.'
+featured: featured
 license: cc-by-3.0
 ---
 

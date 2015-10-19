@@ -2,6 +2,7 @@
 title: Working with the context menu
 authors:
 - shwetank-dixit
+intro: 'The context menu is the menu which comes up after you right-click on a page. Integrating your extension into this menu might provide useful functionality.'
 license: cc-by-3.0
 ---
 

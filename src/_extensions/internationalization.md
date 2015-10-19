@@ -2,6 +2,7 @@
 title: Internationalization
 authors:
 - shwetank-dixit
+intro: 'Any decently popular extension will be used by people all over the world. Supporting internationalization can often be key to growing your userbase. Let us see how to support it in Opera extensions.'
 license: cc-by-3.0
 ---
 

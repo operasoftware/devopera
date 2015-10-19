@@ -2,6 +2,7 @@
 title: Speed Dial Extensions
 authors:
 - shwetank-dixit
+intro: 'Back in 2007 we introduced the concept of _Speed Dial_ to browsers. It has since turned out to be a hugely popular feature, so it makes sense to give extension authors the ability to add to it by giving them the ability to make Speed Dial extensions.'
 license: cc-by-3.0
 ---
 

@@ -2,7 +2,7 @@
 title: Architecture Overview
 authors:
 - shwetank-dixit
-intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+intro: 'We will take a look at the architecture of Opera extensions. This will cover the various building blocks of an extension and how they all fit together.'
 featured: featured
 license: cc-by-3.0
 ---

@@ -2,7 +2,7 @@
 title: 'Browser Actions: Buttons, Popups and Badges'
 authors:
 - shwetank-dixit
-intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+intro: 'Buttons, popups and badges are one of most used UI elements in browser extensions. In this tutorial, we will go through all these various UI elements and see how to make use of them in an Opera extension.'
 featured: featured
 license: cc-by-3.0
 ---

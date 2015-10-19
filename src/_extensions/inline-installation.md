@@ -2,6 +2,7 @@
 title: Inline Installation of Extensions
 authors:
 - shwetank-dixit
+intro: 'Want your website visitors to install Opera extensions without leaving your web page? Let us see how to get this done easily by using the process of inline installation.'
 license: cc-by-3.0
 ---
 

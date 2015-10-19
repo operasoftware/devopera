@@ -1,5 +1,5 @@
 ---
-title: Working With Off-Road Mode
+title: Working With Off-Road (Opera Turbo) Mode
 authors:
 - shwetank-dixit
 license: cc-by-3.0
@@ -7,7 +7,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-One of Opera’s most popular features is “Off-Road Mode”, which is a setting which, when enabled, speeds up your web loading by passing content through Opera’s servers, thereby greatly compressing the content.
+One of Opera’s most popular features is “Off-Road Mode” (Also known as "Opera Turbo Mode"), which is a setting which, when enabled, speeds up your web loading by passing content through Opera’s servers, thereby greatly compressing the content.
 
 We’ve enabled extension developers to access this setting, which gives the ability to determine if Off-Road Mode is enabled or not, or to set or clear it. You can also listen to changes to this setting by adding event handlers.
 
