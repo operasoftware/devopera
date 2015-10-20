@@ -6,15 +6,24 @@ layout: default
 
 {% assign documents = site.extensions %}
 {% assign documents_featured = documents | where: 'featured', 'featured' %}
+{% assign articles = site.posts | where: 'language', 'en' | where: 'category', 'articles' %}
 
 <main block="layout">
 	<div elem="content">
 		<section block="archive">
 			<h1 elem="title">{{ page.title }}</h1>
 			<div data-columns elem="columns">
+
 {% for document in documents_featured %}
 	{% include teaser.html entry=document %}
 {% endfor %}
+
+{% for article in articles %}
+	{% if article.tags contains 'interview' %}
+		{% include teaser.html entry=article %}
+	{% endif %}
+{% endfor %}
+
 			</div>
 		</section>
 	</div>
