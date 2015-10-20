@@ -139,7 +139,7 @@ gulp.task('html', function() {
 			collapseWhitespace: true
 		}))
 		.pipe(gulp.dest('dest/'))
-		.pipe(sync.stream());
+		.pipe(sync.stream({once:true}));
 
 });
 
