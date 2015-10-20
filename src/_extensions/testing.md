@@ -1,5 +1,5 @@
 ---
-title: Testing and Debugging Your Extensions
+title: Testing and Debugging
 authors:
 - shwetank-dixit
 intro: 'Testing and debugging is an important part of the development process. Let’s take a look at how to debug and test extensions in Opera.'
