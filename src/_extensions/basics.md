@@ -2,7 +2,7 @@
 title: The Basics of Making an Extension
 authors:
 - shwetank-dixit
-intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+intro: 'With the use of step-by-step instructions, we will cover how to make a basic Opera extension.'
 featured: featured
 license: cc-by-3.0
 ---

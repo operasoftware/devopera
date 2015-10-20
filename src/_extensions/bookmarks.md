@@ -2,6 +2,7 @@
 title: Working With Bookmarks
 authors:
 - shwetank-dixit
+intro: 'This tutorial will guide you on how to access the browser bookmarks in an extension.'
 license: cc-by-3.0
 ---
 

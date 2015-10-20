@@ -2,6 +2,8 @@
 title: Extension APIs Supported in Opera
 authors:
 - shwetank-dixit
+intro: 'This is a list of all the extension APIs supported by Opera.'
+featured: featured
 license: cc-by-3.0
 ---
 

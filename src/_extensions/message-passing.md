@@ -3,6 +3,7 @@ title: Passing Messages in Extensions
 authors:
 - shwetank-dixit
 source: https://developer.chrome.com/extensions/messaging
+intro: 'Communicating and passing messages around is an essential part in developing extensions. Let’s take a look at the different ways to do that using the Opera Extensions API.'
 license: cc-by-3.0
 ---
 

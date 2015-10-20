@@ -2,6 +2,7 @@
 title: Adding keyboard shortcuts
 authors:
 - shwetank-dixit
+intro: 'This short tutorial covers how to use keyboard shortcuts in extensions.'
 license: cc-by-3.0
 ---
 

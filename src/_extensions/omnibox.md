@@ -2,6 +2,7 @@
 title: Creating Address Bar Extensions
 authors:
 - shwetank-dixit
+intro: 'Address bar (or “omnibox”) extensions are extensions which kick in when you enter a keyword as the first word in the address bar. When you enter that word, then whatever text you enter next will interact solely with that extension. You can then take that text and give the user suggestions in the address bar, or you can process that text and send the user to a specified page. There are quite a few interesting use cases that open up with this functionality.'
 license: cc-by-3.0
 ---
 

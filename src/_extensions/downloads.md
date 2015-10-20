@@ -2,6 +2,7 @@
 title: Working With Downloads
 authors:
 - shwetank-dixit
+intro: 'Get your extension to initiate, close, search or monitor downloads.'
 license: cc-by-3.0
 ---
 

@@ -2,7 +2,7 @@
 title: Creating Effective Icons
 authors:
 - christian-sinding
-intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+intro: 'This article provides a tutorial and some hints and tips on creating effective icons for your extensions.'
 featured: featured
 license: cc-by-3.0
 ---
