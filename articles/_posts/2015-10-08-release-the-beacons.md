@@ -6,6 +6,7 @@ intro: 'Norway is the nation that gave the world the [paperclip](http://inventor
 tags:
 - android
 - opera
+- labs
 featured: featured
 cover: jpg
 license: cc-by-3.0

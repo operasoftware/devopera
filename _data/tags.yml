@@ -42,6 +42,7 @@
 - http
 - i18n
 - l10n
+- labs
 - javascript:
   - canvas
   - communication:
