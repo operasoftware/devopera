@@ -123,7 +123,7 @@ gulp.task('jekyll:full', shell.task([
 ]));
 
 gulp.task('jekyll:limit', shell.task([
-	jekyll + ' --limit_posts 50'
+	jekyll + ' --limit_posts 150'
 ]));
 
 // HTML
