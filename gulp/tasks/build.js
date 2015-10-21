@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	sequence = require('run-sequence');
+	sequence = require('run-sequence').use(gulp);
 
 // Build
 
