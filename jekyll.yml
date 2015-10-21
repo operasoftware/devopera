@@ -11,18 +11,6 @@ kramdown:
 include:
 - '.htaccess'
 exclude:
-- 'appspec.yml'
-- 'node_modules'
-- 'package.json'
-- 'bower_components'
-- 'bower.json'
-- 'Gemfile'
-- 'Gemfile.lock'
-- 'Gruntfile.js'
-- 'install.sh'
-- 'README.md'
-- 'LICENSE.md'
-- 'CONTRIBUTING.md'
 - '*.scss'
 - '*.map'
 
