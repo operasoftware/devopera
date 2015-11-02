@@ -11,7 +11,7 @@ We use pull requests for article and translation submissions and code improvemen
 
 If you have an idea for an article, [file an issue](https://github.com/operasoftware/devopera/issues/new) with an `article idea` label, where we can discuss further details.
 
-It’s important that you write your article in [Markdown](http://en.wikipedia.org/wiki/Markdown) format. Once the article is finished, create a new folder under [devopera/articles/_drafts](https://github.com/operasoftware/devopera/tree/master/_drafts), place the article and all its external resources (images, etc.) inside, and do a pull request.
+It’s important that you write your article in [Markdown](http://en.wikipedia.org/wiki/Markdown) format. Once the article is finished, create a new folder under [devopera/_drafts](https://github.com/operasoftware/devopera/tree/master/_drafts), place the article and all its external resources (images, etc.) inside, and do a pull request.
 
 We’ll then review your submission, possibly request you to make some changes, and once the article is found to be of sufficient quality, we’ll publish it on Dev.Opera.
 
