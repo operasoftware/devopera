@@ -6,13 +6,20 @@ layout: default
 
 {% assign documents = site.extensions %}
 {% assign documents_featured = documents | where: 'featured', 'featured' %}
-{% assign articles = site.posts | where: 'language', 'en' | where: 'category', 'articles' %}
+{% assign documents_intro = documents | where: 'id', '/extensions/getting-started' | last %}
 
 <main block="layout">
 	<div elem="content">
+		<section block="featured">
+			<h2 elem="title">Featured</h2>
+			<div elem="article">
+{% include teaser.html entry=documents_intro mod='featured' %}
+			</div>
+		</section>
 		<section block="archive">
 			<h1 elem="title">{{ page.title }}</h1>
 			<div elem="columns" mod="separator" data-columns>
+				<h2 elem="title">Featured Articles</h2>
 
 {% for document in documents_featured %}
 	{% include teaser.html entry=document %}
@@ -20,11 +27,21 @@ layout: default
 
 			</div>
 			<div elem="columns" data-columns>
+				<h2 elem="title">Extension Developer Interviews</h2>
 
-{% for article in articles limit:3 %}
-	{% if article.tags contains 'interview' %}
-		{% include teaser.html entry=article %}
-	{% endif %}
+{% capture interviews %}
+	{% assign articles = site.posts | where: 'language', 'en' | where: 'category', 'articles' %}
+	{% for article in articles %}
+		{% if article.tags contains 'interview' %}
+			{% include teaser.html entry=article %}(•)
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% assign interviews = interviews | remove: '	' | strip_newlines | split: '(•)' %}
+
+{% for interview in interviews limit:3 %}
+	{{ interview }}
 {% endfor %}
 
 			</div>
