@@ -1,0 +1,43 @@
+// -------------------------------
+// Tags
+// -------------------------------
+
+.tags {
+
+	padding-bottom:16px;
+
+	&__item {
+		display:inline-block;
+		&:not(:last-child):after {
+			color:$grey;
+			content:'\00A0\2219\00A0';
+			}
+		}
+
+	&__link {
+		@extend %link--blue;
+		}
+
+	&--featured {
+
+		margin-top:-6px;
+		padding-bottom:12px;
+		font-size:18px;
+
+		@include mq($from:palm, $until:lap) {
+			font-size:20px;
+			}
+		@include mq($from:lap, $until:desk) {
+			font-size:22px;
+			}
+		@include mq($until:desk) {
+			padding-top:12px;
+			border-top:1px solid $grey-20;
+			}
+		@include mq($from:desk) {
+			font-size:24px;
+			}
+
+		}
+
+	}

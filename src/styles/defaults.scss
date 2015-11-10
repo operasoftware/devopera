@@ -1,0 +1,91 @@
+// -------------------------------
+// Colors
+// -------------------------------
+
+$red:#CC0F16;
+$green:#00A700;
+$violet:#7957BC;
+
+$blue:#1096D5;
+$blue-5:mix($blue, white, 5%);
+$blue-15:mix($blue, white, 15%);
+
+$grey:#A2A4A3;
+$grey-40:mix($grey, white, 40%);
+$grey-20:mix($grey, white, 20%);
+
+// -------------------------------
+// Breakpoints
+// -------------------------------
+
+$mq-breakpoints: (
+	palm:569px,
+	lap:768px,
+	desk:1024px
+);
+
+$layouts:(
+	2:1/8,
+	3:1/8,
+	6:1/6,
+	12:1/4
+	);
+
+@mixin layout($layout) {
+	@include with-layout($layout map-get($layouts, $layout)) {
+		@content;
+		}
+	}
+
+// -------------------------------
+// Grid
+// -------------------------------
+
+$susy:(
+	container:1200px,
+	math:fluid,
+	output:isolate,
+	global-box-sizing:border-box,
+	use-custom:(
+		clearfix:true
+		)
+	);
+
+// -------------------------------
+// Mixins
+// -------------------------------
+
+// Retina
+
+@mixin retina {
+	@media (-webkit-min-device-pixel-ratio:2),
+		(min-resolution:192dpi) {
+		@content;
+		}
+	}
+
+// Clearfix
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		display:block;
+		content:'';
+		}
+	&:after {
+		clear:both;
+		}
+	}
+
+// Offscreen
+
+@mixin offscreen {
+	position:absolute;
+	clip:rect(0 0 0 0);
+	overflow:hidden;
+	margin:-1px;
+	padding:0;
+	width:1px;
+	height:1px;
+	border:0;
+	}

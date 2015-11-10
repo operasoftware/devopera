@@ -5,12 +5,10 @@ rvm:
 install:
   - "bundle install --jobs=3 --retry=3"
   - "npm install"
-  - "npm install bower -g"
-  - "bower install"
 script: "travis_wait grunt ci"
 before_deploy:
   - mkdir _codedeploy
-  - tar czf _codedeploy/dev-opera.tar.gz appspec.yml _site
+  - tar czf _codedeploy/dev-opera.tar.gz appspec.yml dest
 after_deploy:
   - rm -rf _codedeploy
 deploy:

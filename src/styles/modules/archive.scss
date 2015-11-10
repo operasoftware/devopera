@@ -1,0 +1,83 @@
+// -------------------------------
+// Archive
+// -------------------------------
+
+.archive {
+
+	// Title
+
+	&__title {
+		@include offscreen;
+		}
+
+	// Columns
+
+	&__columns {
+
+		@include clearfix;
+
+		// Lap to Desk: 6 columns
+
+		@include mq($from:lap, $until:desk) {
+			@include layout($layout:6) {
+				&[data-columns]::before {
+					content:'2 .archive__column';
+					}
+				}
+			}
+
+		// Desk and up: 12 columns
+
+		@include mq($from:desk) {
+			@include layout($layout:12) {
+				&[data-columns]::before {
+					content:'3 .archive__column';
+					}
+				}
+			}
+
+		// Separator
+
+		&--separator {
+			margin-bottom:16px;
+			border-bottom:1px solid $grey-20;
+			}
+
+		}
+
+	// Column
+
+	&__column {
+
+		// Lap to Desk: 6 columns
+
+		@include mq($from:lap, $until:desk) {
+			@include layout($layout:6) {
+				&:nth-child(1) {
+					@include span(2 at 1 of 4);
+					}
+				&:nth-child(2) {
+					@include span(2 at 3 of 4);
+					}
+				}
+			}
+
+		// Desk and up: 12 columns
+
+		@include mq($from:desk) {
+			@include layout($layout:12) {
+				&:nth-child(1) {
+					@include span(3 at 1 of 9);
+					}
+				&:nth-child(2) {
+					@include span(3 at 4 of 9);
+					}
+				&:nth-child(3) {
+					@include span(3 at 7 of 9);
+					}
+				}
+			}
+
+		}
+
+	}

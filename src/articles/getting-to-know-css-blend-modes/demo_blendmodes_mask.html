@@ -1,0 +1,248 @@
+<html>
+<head>
+	<title>CSS Masks with Blend Modes</title>
+	<script src="https://use.edgefonts.net/open-sans-condensed:n3,i3,n7:all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<style type="text/css">
+
+@-webkit-keyframes my-move {
+	0%, 100% {
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+
+	50% {
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+@-moz-keyframes my-move {
+	0%, 100% {
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+
+	50% {
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+@keyframes my-move {
+	0%, 100% {
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+
+	50% {
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+body {
+	font-family: 'Helvetica';
+	font-family: open-sans-condensed, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: url('images/arkhamvillians.jpg');
+	background-color: #2c3e50;
+	background-size: contain;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+}
+
+p{
+	margin-left: 1%;
+}
+
+header {
+	text-align: center;
+}
+
+header > h1 {
+ 	font-size: 3.0em;
+ 	display: inline-block;
+ 	line-height: 0.0;
+ 	text-shadow: 3px 3px 3px #000;
+ }
+
+header > h2 {
+	display: inline-block;
+	margin-left: 1.0em;
+	line-height: 0.0;
+}
+
+main {
+	margin-top: 3%;
+	background-image: url('images/batmancave2.jpg');
+	background-position: -25px;
+	-webkit-mask-image: url('images/batman3_1000.png');
+	-moz-mask-image: url('images/batman3_1000.png');
+	-ms-mask-image: url('images/batman3_1000.png');
+	mask-image: url('images/batman3_1000.png');
+	background-size: cover;
+	max-width: 1000px;
+	max-height: 420px;
+	-webkit-animation: my-move 4s infinite;
+	-moz-animation: my-move 4s infinite;
+	-ms-animation: my-move 4s infinite;
+	animation: my-move 4s infinite;
+	mix-blend-mode: hard-light;
+}
+
+main:hover {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-ms-animation-play-state: paused;
+	animation-play-state: paused;
+	cursor: default;
+}
+
+#batmantext {
+	font-size: 18.0em;
+	margin-left: 10%;
+	text-shadow: 1px 1px 1px #333;
+	mix-blend-mode: difference;
+	line-height: 1.4;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	-webkit-transition: 2.75s -webkit-filter ease-in-out;
+	-moz-transition: 2.75s -moz-filter ease-in-out;
+	-ms-transition: 2.75s -ms-filter ease-in-out;
+
+}
+
+#batmantext:hover {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-ms-filter: blur(0px);
+	filter: blur(0px);
+}
+
+.super {
+	min-height: 800px;
+}
+
+#theimage, #imagemask {
+	padding: 5px;
+	border: 2px dotted #fff;
+	max-width: 1200px;
+	background-color: #fff;
+	color: #333;
+	box-shadow: 1px 1px 3px #000;
+	margin-left: 2%;
+}
+
+#explain h2, #explain p {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 2px;
+}
+
+@media all and (min-width: 1200px){
+	.super {
+	min-height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	width: 80%;
+	}
+
+}
+
+code {
+	background-color: #333;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+#warning {
+	background-color: #e74c3c;
+	color: #fff;
+	font-size: 1.4em;
+	padding: 1%;
+	box-shadow: 2px 2px 5px #ccc;
+	display: none;
+}
+
+#warning p, ul {
+	margin: -2px;
+}
+
+#warning li {
+	font-size: 0.9em;
+}
+
+#warning span {
+	text-transform: capitalize;
+	padding: 0px 2px 0px 2px;
+	background-color: #fff;
+	color: red;
+}
+</style>
+<script src="modernizr-custom.js"></script>
+</head>
+<body>
+<aside id="warning"></aside>
+<header><h1>CSS Masks and Blend Modes Demo - Batman Edition</h1> <h2>By <a href="http://twitter.com/shwetank">@shwetank</a></h2><p>Scroll down for original image and the image mask</p></header>
+<div class="super">
+
+	<main>
+		<div id="batmantext">BATMAN</div>
+	</main>
+
+</div>
+
+
+<div id="explain">
+	<div id="theimage">
+	<h2>Actual batman image</h2>
+	<img src="images/batmancave2.jpg" width="1200">
+	</div>
+	<br>
+	<div id="imagemask">
+	<h2>Image Mask</h2>
+	<img src="images/batman3_1200.png">
+	</div>
+
+<p>The Batman image and the background image of the villians are courtesy of the <a href="https://www.batmanarkhamorigins.com/#media">Batman: Arkham Origins Site</a>. </p>
+</div>
+<script>
+	function detect(){
+		var supportsMixBlendMode = Modernizr.testProp('mixBlendMode');
+    	var supportsBackgroundBlendMode =  Modernizr.testProp('backgroundBlendMode');
+		var aside = document.querySelector("#warning");
+
+		if (!supportsMixBlendMode || !supportsBackgroundBlendMode){
+			aside.style.display="block";
+			aside.innerHTML = "<p>Looks like this browser does not support CSS Blend Modes. Please run this demo in a browser which does and make sure support for it is enabled.</p><ul><li>Is <code>mix-blend-mode</code> supported by this browser?: <span>"+supportsMixBlendMode+"</span></li><li>Is <code>background-blend-mode</code> supported by this browser?: <span>"+supportsBackgroundBlendMode+"</span></li></ul>";
+		}
+
+	}
+
+	detect();
+
+</script>
+</body>
+</html>

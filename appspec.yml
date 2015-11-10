@@ -3,5 +3,5 @@ version: 0.0
 os: linux
 
 files:
-  - source: _site
+  - source: dest
     destination: /var/www/html

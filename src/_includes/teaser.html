@@ -1,0 +1,35 @@
+{% assign entry = include.entry %}
+{% assign mod--blog = '' %}
+{% assign mod--featured = '' %}
+
+{% if include.mod %}
+	{% if include.mod == 'blog' %}
+		{% assign mod--blog = 'blog' %}
+	{% endif %}
+	{% if include.mod == 'featured' %}
+		{% assign mod--featured = 'featured' %}
+	{% endif %}
+{% endif %}
+
+<article block="teaser" mod="{{ mod--blog }}">
+	<a elem="link" href="{{ entry.url }}">
+		<h3 elem="title" mod="{{ mod--featured }}">{{ entry.title | markdownline }}</h3>
+{% if entry.cover %}
+		<img elem="picture" mod="{{ mod--featured }}" src="{{ entry.url }}cover.{{ entry.cover }}" alt="{{ entry.title | markdownline | strip_html }}">
+{% endif %}
+	</a>
+	<div elem="content" mod="{{ mod--featured }}">
+		<p elem="meta">
+{% if entry.date %}
+			<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time>
+{% endif %}
+{% if entry.authors %}
+			by {% include authors.html entry=entry link=true elem='author' %}
+{% endif %}
+{% if entry.category %}
+			in <a href="/{{ entry.category }}/" elem="category">{{ entry.category | capitalize }}</a>
+{% endif %}
+		</p>
+		<p elem="intro" mix="block:content">{{ entry.intro | markdownline }}</p>
+	</div>
+</article>

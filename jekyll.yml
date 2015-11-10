@@ -1,0 +1,62 @@
+title: Dev.Opera
+url: https://dev.opera.com/
+permalink: /:categories/:title/
+future: false
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  transliterated_header_ids: true
+
+include:
+- '.htaccess'
+exclude:
+- '*.scss'
+- '*.map'
+
+# Collections
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  extensions:
+    output: true
+    permalink: /extensions/:path/
+
+defaults:
+# Articles
+- scope:
+    path: 'articles'
+    type: 'posts'
+  values:
+    category: 'articles'
+    layout: 'entry'
+    language: 'en'
+# Blog
+- scope:
+    path: 'blog'
+    type: 'posts'
+  values:
+    category: 'blog'
+    layout: 'entry'
+    language: 'en'
+# TV
+- scope:
+    path: 'tv'
+    type: 'posts'
+  values:
+    category: 'tv'
+    layout: 'entry'
+    language: 'en'
+# Authors
+- scope:
+    path: ''
+    type: 'authors'
+  values:
+    layout: 'author'
+# Extensions
+- scope:
+    path: ''
+    type: 'extensions'
+  values:
+    layout: 'document'

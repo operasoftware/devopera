@@ -1,0 +1,152 @@
+// -------------------------------
+// Figure
+// -------------------------------
+
+.figure {
+
+	max-width:100%;
+	overflow:auto;
+
+	// Floats
+
+	&--left {
+		float:left;
+		}
+	&--right {
+		float:right;
+		}
+
+	}
+
+// Media
+
+.figure__media {
+
+	display:block;
+	margin-bottom:16px;
+	max-width:100%;
+
+	// Gap
+
+	& + & {
+		margin-top:22px;
+		}
+
+	// Center
+
+	&--center {
+		margin-left:auto;
+		margin-right:auto;
+		}
+
+	// Full
+
+	&--full {
+		width:100%;
+		}
+
+	}
+
+// Halfs
+
+.figure__media {
+
+	// Lap and Up
+
+	@include mq($from:lap) {
+
+		// Halfs
+
+		&--first {
+			float:left;
+			}
+		&--second {
+			float:right;
+			}
+
+		}
+
+	// Half
+
+	&--half {
+
+		// Lap to Desk
+
+		@include mq($from:lap, $until:desk) {
+			@include layout($layout:6) {
+				width:span(2 of 4);
+				}
+			}
+
+		// Desk and Up
+
+		@include mq($from:desk) {
+			@include layout($layout:12) {
+				width:span(4 of 8);
+				}
+			}
+
+		// Lap and Up
+
+		@include mq($from:lap) {
+			& + & {
+				margin-top:0;
+				}
+			}
+
+		}
+
+	}
+
+// Tables
+
+.figure {
+
+	table {
+		margin-bottom:16px;
+		width:100%;
+		border-collapse:collapse;
+		border-spacing:0;
+		}
+	th, td {
+		padding:8px;
+		}
+	th {
+		background:lighten($grey, 30%);
+		text-align:left;
+		font-weight:bold;
+		}
+	td {
+		border-top:1px solid $grey-40;
+		}
+	tr:first-child td {
+		border:none;
+		}
+
+	}
+
+// Caption
+
+.figure__caption {
+
+	// Top
+
+	margin-bottom:16px;
+	font-weight:bold;
+
+	// Bottom
+
+	* + & {
+		margin-top:16px;
+		color:#888;
+		font-size:14px;
+		font-weight:normal;
+		}
+
+	// Center
+
+	&--center {
+		text-align:center;
+		}
+
+	}

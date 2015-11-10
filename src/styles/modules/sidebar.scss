@@ -1,0 +1,36 @@
+// -------------------------------
+// Sidebar
+// -------------------------------
+
+.sidebar {
+
+	margin-top:-6px;
+	line-height:1.2;
+
+	&__text,
+	&__link {
+		display:block;
+		margin-left:-10px;
+		padding:7px 10px 6px;
+		}
+
+	// Text
+
+	&__text {
+		background:$grey-20;
+		}
+
+	// Link
+
+	&__link {
+
+		@extend %link--blue;
+		@extend %link--blue-hover;
+
+		&:hover {
+			background:$blue-5;
+			}
+
+		}
+
+	}

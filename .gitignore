@@ -1,9 +1,9 @@
+.DS_Store
+Thumbs.db
+dest
 .jekyll-metadata
-_site
-styles/*.css
-styles/*.map
 .sass-cache
 node_modules
 bower_components
-.DS_Store
-Thumbs.db
+src/styles/*.css
+src/styles/*.map

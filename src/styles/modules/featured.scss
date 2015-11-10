@@ -1,0 +1,32 @@
+// -------------------------------
+// Featured
+// -------------------------------
+
+.featured {
+
+	@include clearfix;
+
+	padding-bottom:14px;
+
+	&__title {
+		@include offscreen;
+		}
+
+	// Desk and up: 12 columns
+
+	@include mq($from:desk) {
+		@include layout($layout:12) {
+			&__article {
+				@include span(6 at 1 of 9);
+				}
+			&__tags {
+				@include span(3 at 7 of 9);
+				}
+			}
+		}
+
+	&:after {
+		border-bottom:1px solid $grey-20;
+		}
+
+	}

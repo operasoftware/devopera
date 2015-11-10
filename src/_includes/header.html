@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{ site.title }}{% if page.title %} — {{ page.title | markdownline | strip_html }}{% endif %}</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="/styles/screen.css">
+{% if jekyll.environment == 'production' %}
+	<link rel="manifest" href="/devopera.webmanifest">
+{% endif %}
+	<link rel="alternate" href="/feed/" type="application/atom+xml" title="Dev.Opera">
+	<link rel="alternate" href="/feed/articles/" type="application/atom+xml" title="Dev.Opera Articles">
+	<link rel="alternate" href="/feed/blog/" type="application/atom+xml" title="Dev.Opera Blog">
+	<link rel="alternate" href="/feed/tv/" type="application/atom+xml" title="Dev.Opera TV">
+{% if page.url == '/index.html' %}
+	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
+{% endif %}
+</head>
+<body>
+
+	<header block="header" role="banner">
+{% if page.url == '/index.html' %}
+		<h1 elem="logo">
+			<span elem="logo-type">
+				Dev.<span elem="logo-opera">Opera</span>
+			</span>
+		</h1>
+{% else %}
+		<span elem="logo">
+			<a elem="logo-type" href="/">
+				Dev.<span elem="logo-opera">Opera</span>
+			</a>
+		</span>
+{% endif %}
+		<nav>
+			{% include menu.html items='Blog|Articles|Extensions|TV' %}
+		</nav>
+		<form action="/search/" method="get">
+			<fieldset elem="search">
+				<input elem="search-field" type="search" name="q" placeholder="Search Dev.Opera" required>
+			</fieldset>
+		</form>
+	</header>

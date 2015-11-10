@@ -1,0 +1,90 @@
+- accessibility
+- augmented-reality
+- browsers:
+  - chrome
+  - firefox
+  - ie
+  - safari
+  - webkit
+- business
+- compatibility
+- content
+- css:
+  - animations
+  - css3
+  - flexbox
+  - gradients:
+    - linear
+    - radial
+  - grids
+  - media-queries
+  - prefixes
+  - regions
+  - shapes
+- design
+  - rwd
+- dev-tools
+- events
+- addons:
+  - extensions
+  - themes
+  - sidebar
+- html:
+  - forms
+  - html5
+  - media:
+    - audio
+    - picture
+    - video
+  - semantics:
+    - microdata
+    - wai-aria
+- http
+- i18n
+- l10n
+- labs
+- javascript:
+  - canvas
+  - communication:
+    - eventsource
+    - web-sockets
+  - dom
+  - ecmascript
+  - jquery
+  - offline:
+    - appcache
+    - service-workers
+  - storage:
+    - indexeddb
+    - localstorage
+    - websql
+  - v8
+  - web-components
+  - web-workers
+  - hardware
+- mobile:
+  - android
+  - firefox-os
+  - ios
+- opera:
+  - opera-blink
+  - opera-coast
+  - opera-max
+  - opera-mini
+  - opera-mobile
+  - opera-presto
+  - opera-turbo
+- performance
+- security
+- standards
+- superseded
+- svg
+- tv:
+  - emulator
+  - opera-12
+  - sdk
+- w3c
+- webgl
+- webrtc:
+  - getusermedia
+  - peer-api

@@ -1,0 +1,44 @@
+// -------------------------------
+// Footer
+// -------------------------------
+
+.footer {
+
+	@include clearfix;
+
+	padding-bottom:24px;
+	color:$grey;
+	font-size:14px;
+
+	// Link
+
+	&__link {
+		@extend %link--grey;
+		@extend %link--blue-hover;
+		&--contribute {
+			padding-left:20px;
+			&:before {
+				position:absolute;
+				margin:1px 0 0 -20px;
+				width:18px;
+				height:18px;
+				background:$grey url(/images/github.svg) no-repeat;
+				content:'';
+				}
+			&:hover:before {
+				background-color:$blue;
+				}
+			}
+		}
+
+	// Desk and up: 12 columns
+
+	@include mq($from:desk) {
+		@include layout($layout:12) {
+			&__copy {
+				@include span(9 at 4);
+				}
+			}
+		}
+
+	}
