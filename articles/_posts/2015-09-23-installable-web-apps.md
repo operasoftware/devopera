@@ -161,6 +161,7 @@ Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an
 You can also check out how it works on sites with a manifest, for example
 
 - [Dev.Opera](https://dev.opera.com/)
+- [Flipkart Lite](http://www.flipkart.com/) (also see their [engineering blog](http://tech-blog.flipkart.net/2015/11/progressive-web-app/) on how they made it)
 - [Oumy](https://m.oumy.com/)
 - [Airhorner](https://airhorner.com/)
 - [Medium](https://medium.com/)

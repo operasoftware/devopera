@@ -12,6 +12,7 @@ tags:
 - service-workers
 license: cc-by-3.0
 ---
+*Please note: this article is superseded by [Installable Web Apps and Add to Home screen](/articles/installable-web-apps/) because the functionality described was released in Opera 32 for Android.*
 
 Today, we’re excited to release a [special labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
 
