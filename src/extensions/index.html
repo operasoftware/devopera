@@ -12,11 +12,14 @@ layout: default
 	<div elem="content">
 		<section block="archive">
 			<h1 elem="title">{{ page.title }}</h1>
-			<div data-columns elem="columns">
+			<div elem="columns" mod="separator" data-columns>
 
 {% for document in documents_featured %}
 	{% include teaser.html entry=document %}
 {% endfor %}
+
+			</div>
+			<div elem="columns" data-columns>
 
 {% for article in articles %}
 	{% if article.tags contains 'interview' %}

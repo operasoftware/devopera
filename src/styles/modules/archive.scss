@@ -14,6 +14,8 @@
 
 	&__columns {
 
+		@include clearfix;
+
 		// Lap to Desk: 6 columns
 
 		@include mq($from:lap, $until:desk) {
@@ -32,6 +34,13 @@
 					content:'3 .archive__column';
 					}
 				}
+			}
+
+		// Separator
+
+		&--separator {
+			margin-bottom:16px;
+			border-bottom:1px solid $grey-20;
 			}
 
 		}
