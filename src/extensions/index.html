@@ -21,7 +21,7 @@ layout: default
 			</div>
 			<div elem="columns" data-columns>
 
-{% for article in articles %}
+{% for article in articles limit:3 %}
 	{% if article.tags contains 'interview' %}
 		{% include teaser.html entry=article %}
 	{% endif %}
