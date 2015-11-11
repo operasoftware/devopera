@@ -4,8 +4,5 @@ dest
 .jekyll-metadata
 .sass-cache
 node_modules
-bower_components
 src/styles/*.css
 src/styles/*.map
-_site
-_styles
