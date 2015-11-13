@@ -18,7 +18,7 @@ layout: default
 		</section>
 		<section block="archive">
 			<h1 elem="title">{{ page.title }}</h1>
-			<div elem="columns" mod="separator" data-columns>
+			<div elem="columns" data-columns>
 				<h2 elem="title">Featured Articles</h2>
 
 {% for document in documents_featured %}
@@ -48,7 +48,8 @@ layout: default
 		</section>
 	</div>
 	<div elem="aside">
-		{% include sidebar.html entries=documents %}
+		{% include sidebar.html entries=documents collection='tutorials' %}
+		{% include sidebar.html entries=documents collection='apis' %}
 	</div>
 </main>
 <script src="/scripts/salvattore.js"></script>
