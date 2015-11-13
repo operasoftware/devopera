@@ -42,7 +42,7 @@ layout: default
 		<section block="linkbait">
 			<h2 elem="title">Useful Links</h2>
 			<ul>
-{% for item in site.data.links-main %}
+{% for item in site.data.links.main %}
 				<li elem="item"><a elem="link" href="{{ item.link | escape }}">{{ item.text }}</a></li>
 {% endfor %}
 			</ul>
