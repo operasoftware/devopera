@@ -81,7 +81,7 @@ Developer tools are available behind a setting (More Tools > Enable developer to
 With Opera switching to Chromium and this complete UI remake, our [URL=https://dev.opera.com/articles/view/major-changes-in-operas-extensions-infrastructure/]extensions infrastructure has also undergone a major overhaul[/URL]: from Opera 15 onward, Opera 11 and 12’s extension format is no longer supported (and we’ve [archived its documentation on GitHub][5]), and instead, **we’ve switched to Chromium’s extension model**. At this point, Opera 15 supports a subset of the Chromium extension APIs — with more to come — as well as our own [Speed Dial API][6].
 
 [5]: https://github.com/operasoftware/operaextensions.js/tree/master/docs
-[6]: https://dev.opera.com/extension-docs/tut_sd_extensions.html
+[6]: https://dev.opera.com/extensions/speed-dial-manual/
 
 If you’re a Chromium extensions developer, be sure to submit your extensions to [our extensions catalog][7]! Extension developers like Evernote, Feedly, Disconnect, LastPass, WOT, Ghostery, and the very cool cottonTracks have already done this, and you can find their extensions [in the catalog][8].
 
@@ -90,7 +90,7 @@ If you’re a Chromium extensions developer, be sure to submit your extensions t
 
 If you’re new to Chromium extension development, we’ve prepared a [number of tutorials][9] and have included relevant API documentation as well. We’ve also built a [URL=https://github.com/operasoftware/oex2nex]conversion utility [/URL]into the developer interface of [our extensions catalog][10] to make the transition from the old to the new format as smooth as possible.
 
-[9]: https://dev.opera.com/extension-docs/
+[9]: https://dev.opera.com/extensions/
 [10]: http://addons.opera.com/extensions/
 
 ### What is not (yet) in Opera 15 for Computers?

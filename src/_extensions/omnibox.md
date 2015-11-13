@@ -49,7 +49,7 @@ For our example, we will use the [`onInputEntered`](https://developer.chrome.com
 
 	chrome.omnibox.onInputEntered.addListener(
 		function(text) {
-			var qString = 'http://dev.opera.com/extension-docs/search.html?q=' + encodeURIComponent(text);
+			var qString = 'http://dev.opera.com/extension/?q=' + encodeURIComponent(text);
 			chrome.tabs.query({
 				'currentWindow': true,
 				'active': true
@@ -73,7 +73,7 @@ The API also enables developers to provide suggestions to the user in the addres
 		function(text, suggest) {
 			var suggestionsList = [
 				{
-					'content': 'http://dev.opera.com/extension-docs/search.html?q=' + encodeURIComponent(text),
+					'content': 'http://dev.opera.com/extensions/?q=' + encodeURIComponent(text),
 					'description': 'Search Opera Extensions Documentation'
 				},
 				{
@@ -110,7 +110,7 @@ One thing to keep in mind is that when the user selects the default suggestion, 
 			// (thus not having an 'http' at the beginning of the string),
 			// so we will have to append a URL to it again.
 			if (text.substr(0, 4) != 'http') {
-				var qString = 'http://dev.opera.com/extension-docs/search.html?q=' + encodeURIComponent(text);
+				var qString = 'http://dev.opera.com/extensions/?q=' + encodeURIComponent(text);
 			} else {
 				var qString = text;
 			}

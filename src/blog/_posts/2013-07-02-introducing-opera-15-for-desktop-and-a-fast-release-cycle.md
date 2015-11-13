@@ -83,13 +83,13 @@ Developer tools are available behind a setting (Enable Developer Tools). Once en
 
 ### Extensions
 
-With Opera switching to Chromium and this complete UI remake, our [extensions infrastructure has also undergone a major overhaul](https://dev.opera.com/articles/view/major-changes-in-operas-extensions-infrastructure/): from Opera 15 onward, Opera 11 and 12’s extension format is no longer supported (and we’ve [archived its documentation on GitHub](https://github.com/operasoftware/operaextensions.js/tree/master/docs)), and instead, **we’ve switched to Chromium’s extension model**. At this point, Opera 15 supports a subset of the Chromium extension APIs — with more to come — as well as our own [Speed Dial API](https://dev.opera.com/extension-docs/tut_sd_extensions.html).
+With Opera switching to Chromium and this complete UI remake, our [extensions infrastructure has also undergone a major overhaul](https://dev.opera.com/articles/view/major-changes-in-operas-extensions-infrastructure/): from Opera 15 onward, Opera 11 and 12’s extension format is no longer supported (and we’ve [archived its documentation on GitHub](https://github.com/operasoftware/operaextensions.js/tree/master/docs)), and instead, **we’ve switched to Chromium’s extension model**. At this point, Opera 15 supports a subset of the Chromium extension APIs — with more to come — as well as our own [Speed Dial API](https://dev.opera.com/extensions/speed-dial-manual/).
 
 If you’re a Chromium extensions developer, be sure to submit your extensions to [our extensions catalog](http://addons.opera.com/extensions/)! Extension developers like Pinterest, Pocket, Wunderlist, Evernote, Feedly, Disconnect, LastPass, WOT, Ghostery, cottonTracks, and over a 100 more have already done this, and you can find their extensions [in our extensions catalog](https://addons.opera.com/en/extensions/).
 
 ![Extensions catalog]({{ page.id }}/extensions.png)
 
-If you’re new to Chromium extension development, we’ve prepared a [fresh set of extension dev tutorials](https://dev.opera.com/extension-docs/) and have included relevant API documentation as well. We’ve also built a [conversion utility](https://github.com/operasoftware/oex2nex) into the developer interface of [our extensions catalog](http://addons.opera.com/extensions/) to make the transition from the old to the new format as smooth as possible. [This guide](https://dev.opera.com/extension-docs/tut_conversion.html) walks you through the process step-by-step.
+If you’re new to Chromium extension development, we’ve prepared a [fresh set of extension dev tutorials](https://dev.opera.com/extensions/) and have included relevant API documentation as well. We’ve also built a [conversion utility](https://github.com/operasoftware/oex2nex) into the developer interface of [our extensions catalog](http://addons.opera.com/extensions/) to make the transition from the old to the new format as smooth as possible.
 
 ### What is not (yet) in Opera 15 for Computers?
 
