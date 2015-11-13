@@ -1,0 +1,36 @@
+main:
+  - text: Opera DevRel on Twitter
+    link: https://twitter.com/odevrel
+  - text: Opera Software on GitHub
+    link: https://github.com/operasoftware
+  - text: Opera questions on Stack Overflow
+    link: https://stackoverflow.com/questions/tagged/opera
+  - text: Opera’s events on Lanyrd
+    link: http://lanyrd.com/opera/events/
+  - text: WebPlatform.org
+    link: http://webplatform.org/
+  - text: Compare browsers on Can I use…
+    link: http://caniuse.com/#comparison
+  - text: Opera’s Chromium/Blink/V8 commits
+    link: https://operasoftware.github.io/upstreamtools/
+  - text: Chromium dashboard
+    link: http://www.chromestatus.com/features
+  - text: Opera bug wizard
+    link: https://bugs.opera.com/wizard/
+  - text: Chromium bug wizard
+    link: https://chromiumbugs.appspot.com/
+  - text: Opera TV Emulator
+    link: http://www.operasoftware.com/products/tv-emulator
+  - text: Opera Mini Simulator
+    link: https://dev.opera.com/articles/installing-opera-mini-on-your-computer/
+  - text: Extensions for web developers
+    link: https://addons.opera.com/en/extensions/category/developer-tools/?order=popular&language=en
+tv:
+  - text: Opera TV Store
+    link: http://www.operasoftware.com/products/tv-store
+  - text: Opera TV Store forums
+    link: https://forums.opera.com/categories/en-opera-tv-store
+  - text: Opera TV Emulator
+    link: http://www.operasoftware.com/products/tv-emulator
+  - text: Opera TV Store Submission Portal
+    link: https://publish.tvstore.opera.com/
