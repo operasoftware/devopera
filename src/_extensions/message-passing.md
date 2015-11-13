@@ -212,8 +212,15 @@ Native messaging host manifest file contains the following fields:
 
 Location of the manifest file depends on the platform:
 
-- **Windows:** The manifest file can be located anywhere in the file system. The application installer must create registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application` and set default value of that key to the full path to the manifest file.
-- **OSX**: The manifest file must be placed at `/Library/Google/Chrome/NativeMessagingHosts/com.my_company.my_application.json`.
+**Windows:** The manifest file can be located anywhere in the file system. The application installer must create registry key
+
+	HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application
+
+and set default value of that key to the full path to the manifest file.
+
+**OSX**: The manifest file must be placed at
+
+	/Library/Google/Chrome/NativeMessagingHosts/com.my_company.my_application.json`.
 
 Opera starts each native messaging host in a separate process and communicates with it using standard input (`stdin`) and standard output (`stdout`). The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
 
