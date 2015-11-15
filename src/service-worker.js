@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'devopera';
-const HASH = ''; // Calculated when running `grunt`.
+const HASH = ''; // Calculated when running `gulp`.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/errors/offline.html';
 
