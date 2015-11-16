@@ -1,19 +1,32 @@
 {% assign entries = include.entries %}
+{% assign collection = include.collection %}
 {% if include.entry %}
 	{% assign current = include.entry %}
 {% endif %}
 
 <ul block="sidebar">
-{% for entry in entries %}
-	{% if entry.url == current.url %}
-		{% assign entry_current = true %}
-	{% else %}
-		{% assign entry_current = false %}
-	{% endif %}
+{% for item in site.data.sidebar[collection] %}
+	{% for entry in entries %}
+		{% if entry.url contains item %}
+			{% if entry.url == current.url %}
+				{% assign entry_current = true %}
+			{% else %}
+				{% assign entry_current = false %}
+			{% endif %}
 	<li>
-		{% if entry_current %}<span elem="text">{% else %}<a href="{{ entry.url }}" elem="link">{% endif %}
-			{{ entry.title | markdownline }}
-		{% if entry_current %}</span>{% else %}</a>{% endif %}
+			{% if entry_current %}
+				<span elem="text">
+			{% else %}
+				<a elem="link" href="{{ entry.url }}">
+			{% endif %}
+				{{ entry.title | markdownline }}
+			{% if entry_current %}
+				</span>
+			{% else %}
+				</a>
+			{% endif %}
 	</li>
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 </ul>

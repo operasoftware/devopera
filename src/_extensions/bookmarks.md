@@ -93,7 +93,7 @@ You can create new bookmark entries (these can be either bookmarks or bookmark f
 		}, function (newEntry) {
 			chrome.bookmarks.create({
 				'title': 'Opera Extensions Documentation',
-				'url': 'http://dev.opera.com/extension-docs/',
+				'url': 'http://dev.opera.com/extension/',
 				'parentId': newEntry.id
 			});
 			chrome.bookmarks.create({

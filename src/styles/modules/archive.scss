@@ -16,6 +16,9 @@
 
 		@include clearfix;
 
+		margin-bottom:16px;
+		border-bottom:1px solid $grey-20;
+
 		// Lap to Desk: 6 columns
 
 		@include mq($from:lap, $until:desk) {
@@ -36,11 +39,11 @@
 				}
 			}
 
-		// Separator
+		// Separator Off
 
-		&--separator {
-			margin-bottom:16px;
-			border-bottom:1px solid $grey-20;
+		& + & {
+			margin-bottom:0;
+			border-bottom:none;
 			}
 
 		}

@@ -14,7 +14,8 @@ layout: default
 		</article>
 	</div>
 	<div elem="aside">
-		{% include sidebar.html entries=documents entry=page %}
+		{% include sidebar.html entries=documents entry=page collection='tutorials' %}
+		{% include sidebar.html entries=documents entry=page collection='apis' %}
 	</div>
 </main>
 <script src="/scripts/highlight.js"></script>

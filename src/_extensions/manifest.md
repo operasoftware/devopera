@@ -119,7 +119,11 @@ This value can be used to control the unique ID of an extension when it is loade
 
 **Note:** You don’t usually need to use this value. Instead, write your code so that the key value doesn’t matter by using relative paths and [`extension.getURL`](extension.html#method-getURL).
 
-To get a suitable key value, first install your extension from a `.crx` file. Then, in your user data directory, look in the file `Default/Extensions/<extensionId>/<versionString>/manifest.json`. You will see the key value filled in there.
+To get a suitable key value, first install your extension from a `.crx` file. Then, in your user data directory, look in the file:
+
+	Default/Extensions/<extensionId>/<versionString>/manifest.json
+
+You will see the key value filled in there.
 
 ### `minimum_opera_version` {#minimum_opera_version}
 

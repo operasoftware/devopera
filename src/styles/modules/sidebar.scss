@@ -4,8 +4,20 @@
 
 .sidebar {
 
-	margin-top:-6px;
+	padding-bottom:8px;
+	margin-bottom:8px;
+	border-bottom:1px solid $grey-20;
 	line-height:1.2;
+
+	// Separator
+
+	& + & {
+		padding-bottom:0;
+		margin-bottom:0;
+		border-bottom:none;
+		}
+
+	// Elements
 
 	&__text,
 	&__link {
