@@ -59,4 +59,4 @@ You can enable or disable Off-Road Mode through your extension by calling the `o
 		'value': true
 	});
 
-Feel free to [download the sample extension](samples/offroad.nex) and try it out yourself.
+Feel free to [download the sample extension](/extensions/extension-samples/off-road.nex) and try it out yourself.

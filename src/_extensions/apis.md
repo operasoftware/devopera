@@ -35,7 +35,7 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/commands">Commands</a></td>
-	<td>From Opera 29 onwards, it will be possible to assign shortcuts to open sidebar extensions by defining the shortcut in the manifest under the <code>_execute_sidebar_action</code> field. You can define shortcuts in the same way you do for browser and page actions.</td>
+	<td>It is possible to assign shortcuts to open sidebar extensions by defining the shortcut in the manifest under the <code>_execute_sidebar_action</code> field. You can define shortcuts in the same way you do for browser and page actions.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/contentSettings">Content Settings</a></td>
@@ -43,7 +43,7 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/contextMenus">Context Menus</a></td>
-	<td><code>chrome.contextmenus.create()</code> and <code>chrome.contextmenus.update()</code> will support an additional <code>enum</code> type of <code>sidebar_action</code> from Opera 29 onwards.</td>
+	<td><code>chrome.contextmenus.create()</code> and <code>chrome.contextmenus.update()</code> supports an additional <code>enum</code> type of <code>sidebar_action</code>.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/cookies">Cookies</a></td>
@@ -56,6 +56,10 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/declarativeContent">Declarative Content</a></td>
 	<td>None</td>
+</tr>
+<tr>
+	<td><a href="https://developer.chrome.com/extensions/desktopCapture">Desktop Capture</a></td>
+	<td>Supported from Opera 34 onwards.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/devtools_inspectedWindow">devtools.inspectedWindow</a></td>
@@ -182,15 +186,15 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 	<td>None</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/addons.html">Addons</a></td>
+	<td><a href="/extensions/addons-api/">Addons</a></td>
 	<td>Only in Opera</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/speeddial.html">Speed Dial</a></td>
+	<td><a href="/extensions/speed-dial-api/">Speed Dial</a></td>
 	<td>Only in Opera</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/sidebarAction.html">sidebarAction</a></td>
+	<td><a href="/extensions/sidebar-action-api/">sidebarAction</a></td>
 	<td>Only in Opera</td>
 </tr>
 </table>

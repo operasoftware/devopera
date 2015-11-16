@@ -92,7 +92,7 @@ As you scale an icon down, details may end up in between pixels. Think of the pi
 	<figcaption elem="caption">Figure 5: Starting from a big icon design, scaling down to 64×64 pixels should not yield many problems. When scaling further, the details get lost and the edges get blurry</figcaption>
 </figure>
 
-Note that Interlaced PNG-files are currently not supported, due to a [limitation of the image library](http://www.pythonware.com/library/pil/handbook/format-png.htm) we’re using. Avoid this effect in your screenshots.
+Note that Interlaced PNG-files are currently not supported, due to a [limitation of the image library](http://effbot.org/imagingbook/format-png.htm) we’re using. Avoid this effect in your screenshots.
 
 ### Problems and solutions {#icons-problems}
 

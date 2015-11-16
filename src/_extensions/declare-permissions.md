@@ -18,10 +18,10 @@ It is required to first declare which permissions you would like the browser to 
 
 The following is an overview of the various permissions declarations possible in extensions in Opera, and what they mean.
 
-- `match pattern`: Specifies a host permission. Required if the extension or app wants to interact with the code running on pages. Many capabilities, such as cross-origin XMLHttpRequests, programmatically injected content scripts, etc., require host permissions. For details on the syntax, see [Match Patterns](tut_match_patterns.html).
+- `match pattern`: Specifies a host permission. Required if the extension or app wants to interact with the code running on pages. Many capabilities, such as cross-origin XMLHttpRequests, programmatically injected content scripts, etc., require host permissions. For details on the syntax, see [Match Patterns](/extensions/match-patterns/).
 - `activeTab`: The activeTab permission gives an extension temporary access to the currently active tab when the user invokes the extension - for example by clicking its browser action. Access to the tab lasts until the tab is navigated or closed. This serves as an alternative for many uses of `<all_urls>`, but displays no warning message during installation
 - `alarms`: Required if the extension or app uses the [chrome.alarms](https://developer.chrome.com/extensions/alarms) API.
-- `background`: You typically use the background permission with a [background page or event page](tut_architecture_overview.html#the_background_process).
+- `background`: You typically use the background permission with a [background page or event page](/extensions/architecture-overview/#the_background_process).
 - `bookmarks`: Gives your extension access to the [chrome.bookmarks](https://developer.chrome.com/extensions/bookmarks) API.
 - `browsingData`: Gives your extension access to the [chrome.browsingData](https://developer.chrome.com/extensions/browsingData) API.
 - `contextMenus`: Required if the extension or app uses the [chrome.contextMenus](https://developer.chrome.com/extensions/contextMenus) API.
@@ -33,7 +33,7 @@ The following is an overview of the various permissions declarations possible in
 - `identity`: Required if the extension or app uses the [chrome.identity](https://developer.chrome.com/extensions/identity) API.
 - `idle`: Required if the extension or app uses the [chrome.idle](https://developer.chrome.com/extensions/idle) API.
 - `management`: Required if the extension uses the [chrome.management](https://developer.chrome.com/extensions/management) API.
-- `offroad`: Gives the extension access to the [Off-Road Mode](tut_offroad.html).
+- `offroad`: Gives the extension access to the [Off-Road Mode](/extensions/off-road/).
 - `pageCapture`: Gives the extension access to the [chrome.pageCapture](https://developer.chrome.com/extensions/pageCapture) API.
 - `power`: Required if the extension or app uses the [chrome.power](https://developer.chrome.com/extensions/power) API.
 - `proxy`: Required if the extension or app uses the [chrome.proxy](https://developer.chrome.com/extensions/proxy) API.
@@ -41,8 +41,8 @@ The following is an overview of the various permissions declarations possible in
 - `tabs`: Required if the extension uses the [chrome.tabs](https://developer.chrome.com/extensions/tabs) or [chrome.windows](https://developer.chrome.com/extensions/windows) API.
 - `webNavigation`: Gives your extension access to the [chrome.webNavigation](https://developer.chrome.com/extensions/webNavigation) API.
 - `webRequest`: Required if the extension uses the [chrome.webRequest](https://developer.chrome.com/extensions/webNavigation) API.
-- `speeddial`:  Required if the extension uses the [opr.speeddial](speeddial.html) API.
+- `speeddial`:  Required if the extension uses the [opr.speeddial](/extensions/speed-dial-api/) API.
 
 ## Optional permissions
 
-You can use the [`chrome.permissions` API](https://developer.chrome.com/extensions/permissions) to request [declared optional permissions](tut_optional_permissions.html#manifest) at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
+You can use the [`chrome.permissions` API](https://developer.chrome.com/extensions/permissions) to request [declared optional permissions](/extensions/optional-permissions/#manifest) at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.

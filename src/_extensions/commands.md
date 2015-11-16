@@ -67,4 +67,4 @@ For example, in the background script, we can write:
 		}
 	});
 
-As always, you can [download a sample extension](samples/Commands-1.nex) which utilizes the commands API to create keyboard shortcuts and look through its code.
+As always, you can [download a sample extension](/extensions/extension-samples/commands-1.nex) which utilizes the commands API to create keyboard shortcuts and look through its code.

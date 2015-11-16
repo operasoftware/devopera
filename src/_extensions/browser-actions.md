@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-In the [architecture overview](tut_architecture_overview.html), we covered the various UI elements that can be included in Opera extensions: these fall into two categories, _Page Actions_ and _Browser Actions_.
+In the [architecture overview](/extensions/architecture-overview/), we covered the various UI elements that can be included in Opera extensions: these fall into two categories, _Page Actions_ and _Browser Actions_.
 
 In this article, we’ll get to see how to put these UI elements into action in an extension.
 
@@ -41,7 +41,7 @@ To do that, you need to use add an event listener which listens to the click eve
 		console.log('This button was clicked!');
 	});
 
-[Download our sample button extension]({{ page.url }}/browser-actions-button.nex) to see a very simple button example.
+[Download our sample button extension](/extensions/extension-samples/browser-actions-button.nex to see a very simple button example.
 
 ### Popups
 
@@ -54,7 +54,7 @@ To create a popup, you just need to make an HTML file (let’s call it ‘popup.
 		"default_popup": "popup.html"
 	}
 
-Go ahead and [download our sample extension]({{ page.url }}/browser-actions-popup.nex), which has a very simple popup being displayed.
+Go ahead and [download our sample extension](/extensions/extension-samples/browser-actions-button.nex), which has a very simple popup being displayed.
 
 ### Badges
 
@@ -122,4 +122,4 @@ For this, you will also need to know the Tab ID of the current visible tab. Thus
 	}
 	chrome.tabs.onUpdated.addListener(checkURL);
 
-Go ahead and [download the source for this extension](samples/PageActions.nex), to check out the code required for making it work.
+Go ahead and [download the source for this extension](/extensions/extension-samples/page-actions.nex), to check out the code required for making it work.
