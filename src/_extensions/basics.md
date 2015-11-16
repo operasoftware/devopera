@@ -19,7 +19,7 @@ An Opera extension contains a _manifest file_ which defines metadata like the na
 
 Apart from all the JS and HTML files, you’ll also need to put in some images for the extension icons.
 
-All of this is wrapped in a ZIP file format with a special header and the .nex file extension. To know more about the architecture of extensions in Opera, please read the [associated article](tut_architecture_overview.html), which describes it in detail.
+All of this is wrapped in a ZIP file format with a special header and the .nex file extension. To know more about the architecture of extensions in Opera, please read the [associated article](/extensions/architecture-overview/), which describes it in detail.
 
 ## Your first extension
 
@@ -65,7 +65,7 @@ The background script is very important — this is where anything to do with ma
 
 ### Step 3: Including icons and other assets
 
-You’ll need an icon for the toolbar button, and represent the extension in other places. For icons, we would recommend you [read our article on it](tut_icons.html), where we discuss the appropriate sizes and best practices for great looking icons in extensions.
+You’ll need an icon for the toolbar button, and represent the extension in other places. For icons, we would recommend you [read our article on it](/extensions/effective-icons/), where we discuss the appropriate sizes and best practices for great looking icons in extensions.
 
 You may also need other files such as images, fonts, videos etc. You can include them in the parent directory, or create a separate folder (for example, a folder named `media`) or two, and place them there.
 

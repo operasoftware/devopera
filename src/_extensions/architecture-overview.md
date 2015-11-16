@@ -29,17 +29,17 @@ Currently, there are four types of extensions in Opera.
 
 You can use Browser Actions or Page Actions to put UI elements in the browser window. Browser Actions are used to put UI elements in the top right side of the browser _next_ to the address bar. This is different from Page Actions which are used to place a UI element _inside_ the address bar.
 
-Page actions are used to put a UI element specific to just a page or a limited set of pages fitting a certain criteria. If you would like the UI element to be there for all pages, then you should use Browser Actions for that purpose. The UI elements you can use are buttons, badges and popups. To know more on how to create and use these in extensions, please read the article on [creating buttons, badges and popups](tut_browser_actions.html).
+Page actions are used to put a UI element specific to just a page or a limited set of pages fitting a certain criteria. If you would like the UI element to be there for all pages, then you should use Browser Actions for that purpose. The UI elements you can use are buttons, badges and popups. To know more on how to create and use these in extensions, please read the article on [creating buttons, badges and popups](/extensions/browser-actions/).
 
 Note: There can only be a maximum of 6 extensions installed at a time in the toolbar using browser actions, and only up to 4 which are based on page actions.
 
 ### 2. Context Menu extensions
 
-As the name implies, they are extensions to the context menu of the page. You can bring up the context menu by either right-clicking an element in the page, or by using the appropriate shortcuts using your keyboard (varies according to your platform). We’ve created an article on [how to create context menu extensions](tut_context_menus.html).
+As the name implies, they are extensions to the context menu of the page. You can bring up the context menu by either right-clicking an element in the page, or by using the appropriate shortcuts using your keyboard (varies according to your platform). We’ve created an article on [how to create context menu extensions](/extensions/context-menus/).
 
 ### 3. Speed Dial extensions
 
-You can also create extensions for the Speed Dial in Opera. Keep in mind that to create Speed Dial extensions, you need to use the `opr` object, and will only run in an NEX file extension. Go ahead and check out [how to create Speed Dial extensions](tut_sd_extensions.html).
+You can also create extensions for the Speed Dial in Opera. Keep in mind that to create Speed Dial extensions, you need to use the `opr` object, and will only run in an NEX file extension. Go ahead and check out [how to create Speed Dial extensions](/extensions/speed-dial-manual/).
 
 ### 4. Extensions with no UI
 
@@ -53,7 +53,7 @@ An example of this could be an extension which listens to keyboard input, and pe
 
 Every extension _must_ contain a manifest file. The manifest file provides basic information like the name of the extension and the author, as well as some important information like the APIs the extensions wants to access, which is listed in the `permissions` field. If the extension manifest is not correctly defined, the extension will not run at all. Another important thing to note is the `developer` field, where you can include the extension author’s name.
 
-To know more about the extension manifest, [read the API doc](manifest.html) on it.
+To know more about the extension manifest, [read the API doc](/extensions/manifest/) on it.
 
 ### The Background Process
 
@@ -81,7 +81,7 @@ Event pages are loaded when:
 - The extension is installed, restarted started or updated to a new version.
 - An event is dispatched which the event page was listening for.
 - When another part of the extension (like a popup) calls it (for example, using `runtime.getBackgroundPage`).
-- When another part of the extension sends a message (using `runtime.sendMessage()` or using long-lived connections. You can read more on message passing in our [article](tut_message_passing.html)).
+- When another part of the extension sends a message (using `runtime.sendMessage()` or using long-lived connections. You can read more on message passing in our [article](/extensions/message-passing/)).
 
 The primary difference between background pages and event pages is that event pages are intended to handle events only. So you’d register event listeners in the eventpage.js and the browser will optimize the way it stores and runs these events at runtime. Anything not wrapped in event listeners will be handled on load and then only kept around by the engine if the variables and functions are referenced in any way inside any event listeners.
 
@@ -91,13 +91,13 @@ In other words, try to **use an event page whenever feasible, as it will lead to
 
 If you want to make any change to the web page itself, then you need to use a content script. The content script has access to the DOM of the web page, but access to variables and functions is confined to only itself. For example, content scripts cannot access variables defined in the web page, or even in other content scripts.
 
-The content script does not have _direct_ access to the variables and functions in the background scripts too. The same applies for access to API functions. However, you can use [message passing](tut_message_passing.html) to communicate between various parts of the extensions, be it background scripts or popups. So, you could call your functions in the background script and then communicate to the content script to do a certain task involving the host page’s DOM.
+The content script does not have _direct_ access to the variables and functions in the background scripts too. The same applies for access to API functions. However, you can use [message passing](/extensions/message-passing/) to communicate between various parts of the extensions, be it background scripts or popups. So, you could call your functions in the background script and then communicate to the content script to do a certain task involving the host page’s DOM.
 
-More details on it can be found in our [article on content scripts](tut_content_scripts.html).
+More details on it can be found in our [article on content scripts](/extensions/content-scripts/).
 
 ### The Popup Page
 
-Sometimes extensions will have a popup which, well, pops up when you click an extension button. This is defined by an HTML page, and needs to be specified in the manifest. Read the [buttons, badges and popups](tut_browser_actions.html) article to learn more.
+Sometimes extensions will have a popup which, well, pops up when you click an extension button. This is defined by an HTML page, and needs to be specified in the manifest. Read the [buttons, badges and popups](/extensions/browser-actions/) article to learn more.
 
 ### The Options Page
 

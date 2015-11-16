@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 ## Introduction
 
-This is a repository of all the example extensions to help you get started with making Opera extensions. These could be useful for just looking through the code and learning about extensions, or you could take any of these as a starting point and then edit them and build upon them for your own extensions. If you haven’t done so already, we highly recommend that you read through the [architecture overview](tut_architecture_overview.html) before proceeding.
+This is a repository of all the example extensions to help you get started with making Opera extensions. These could be useful for just looking through the code and learning about extensions, or you could take any of these as a starting point and then edit them and build upon them for your own extensions. If you haven’t done so already, we highly recommend that you read through the [architecture overview](/extensions/architecture-overview/) before proceeding.
 
 ## Browser and Page Actions
 

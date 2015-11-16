@@ -155,7 +155,7 @@ Your extension must satisfy the following acceptance criteria:
 - There should be no obvious bugs.
 - Icons of all sizes should be similar in style.
 - Icons should not just consist of one or more words on a colored background. Refer to our [icon guidelines](/extensions/effective-icons/) for tips on how to make good icons.
-- The icons, screenshots and graphic design must be of acceptable quality. Anti-aliased PNGs with transparent backgrounds are preferred. Note that interlaced PNG-files are currently not supported, due to a [limitation of the image library](http://www.pythonware.com/library/pil/handbook/format-png.htm) we’re using. Avoid this effect in your screenshots.
+- The icons, screenshots and graphic design must be of acceptable quality. Anti-aliased PNGs with transparent backgrounds are preferred. Note that interlaced PNG-files are currently not supported, due to a [limitation of the image library](http://effbot.org/imagingbook/format-png.htm) we’re using. Avoid this effect in your screenshots.
 - Icons inside the address bar (page actions) cannot have a padlock shape.
 - If defined, the support webpage must be relevant to the extension.
 - It must not collect private information without authorization from the user.

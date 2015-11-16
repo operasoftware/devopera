@@ -17,7 +17,7 @@ license: cc-by-3.0
 	<td>Add actions in the browser sidebar. In addition to its <a href="#icon">icon</a>, a sidebar action can also have a <a href="#tooltip">tooltip</a>, a <a href="#badge">badge</a>, and a <a href="#panel">panel</a>.</td>
 	<td>For Opera 30 and onwards.</td>
 	<td><code>"sidebar_action": { … }</code></td>
-	<td><a href="/extensions/sidebar-actions-manual/">Creating extensions for the sidebar</a>.</td>
+	<td><a href="/extensions/sidebar-action-manual/">Creating extensions for the sidebar</a>.</td>
 </tr>
 </table>
 </figure>

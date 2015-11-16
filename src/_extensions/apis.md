@@ -186,15 +186,15 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 	<td>None</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/addons.html">Addons</a></td>
+	<td><a href="/extensions/addons-api/">Addons</a></td>
 	<td>Only in Opera</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/speeddial.html">Speed Dial</a></td>
+	<td><a href="/extensions/speed-dial-api/">Speed Dial</a></td>
 	<td>Only in Opera</td>
 </tr>
 <tr>
-	<td><a href="https://dev.opera.com/extensions/sidebarAction.html">sidebarAction</a></td>
+	<td><a href="/extensions/sidebar-action-api/">sidebarAction</a></td>
 	<td>Only in Opera</td>
 </tr>
 </table>

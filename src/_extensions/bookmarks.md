@@ -80,7 +80,7 @@ Our popup.html page looks like:
 
 In the above code we have used a recursive function to go through all bookmark nodes. Whenever it finds a bookmark folder, it will go through its child nodes until it finds bookmark entries. It will keep adding the bookmark folders and bookmark entries along the way as it goes through them.
 
-You can [download the working extension]({{ page.url }}/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
+You can [download the working extension](/extensions/extension-samples/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
 
 ### Creating new bookmark entries
 
@@ -107,4 +107,4 @@ You can create new bookmark entries (these can be either bookmarks or bookmark f
 
 The above code will create a new folder called “Opera Extensions Resources” and then create two bookmarks within that folder. Note that we mentioned the `parentId` as `1` so that the folder is placed on the main quick access bar. Upon creation, a callback function is fired, where we can get the `id` of the newly created bookmark entry. In the above code we create two bookmarks and the set the `parentId` of it to the `id` of the bookmark folder we just created. This places the two bookmarks inside the newly created bookmark folder.
 
-You can [download the sample extension](samples/BookmarksAPI-2.nex) for the above and tinker with the code yourself.
+You can [download the sample extension](/extensions/extension-samples/bookmarks-api-2.nex) for the above and tinker with the code yourself.

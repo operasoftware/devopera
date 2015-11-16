@@ -69,4 +69,4 @@ Once the user clicks on the menu item, we need it to do something. In our exampl
 
 The function handles an `info` object of type [`OnClickData`](https://developer.chrome.com/extensions/contextMenus#type-OnClickData) — This is an object which stores a bunch of relevant information when a context menu item is clicked. In our case, it will contain information about the text we selected. We can get this by using `info.selectionText`. After that it is just a simple matter of appending that text to Google’s query URL as a query string, creating a new tab, and loading the URL you just assembled in the new tab.
 
-You can [download the context menu extension example](samples/ContextMenu-SelectedText.nex) described above and take a better look at the code.
+You can [download the context menu extension example](/extensions/extension-samples/context-menu-selected-text.nex) described above and take a better look at the code.

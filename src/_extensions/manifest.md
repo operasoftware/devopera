@@ -74,7 +74,7 @@ Specifies the subdirectory of `_locales` that contains the default strings for t
 
 ### `description` {#description}
 
-A plain text string (no HTML or other formatting; no more than 132 characters) that describes the extension. The description should be suitable for both the browser’s extension management UI and the Opera addons site. You can specify locale-specific strings for this field; see [Internationalization](internationalization) for details.
+A plain text string (no HTML or other formatting; no more than 132 characters) that describes the extension. The description should be suitable for both the browser’s extension management UI and the Opera addons site. You can specify locale-specific strings for this field; see [Internationalization](/extensions/internationalization/) for details.
 
 ### `developer` {#developer}
 
@@ -117,7 +117,7 @@ As a rule of thumb, if your extension needs to load a tab in an incognito browse
 
 This value can be used to control the unique ID of an extension when it is loaded during development.
 
-**Note:** You don’t usually need to use this value. Instead, write your code so that the key value doesn’t matter by using relative paths and [`extension.getURL`](extension.html#method-getURL).
+**Note:** You don’t usually need to use this value. Instead, write your code so that the key value doesn’t matter by using relative paths and [`runtime.getURL`](https://developer.chrome.com/extensions/runtime#method-getURL).
 
 To get a suitable key value, first install your extension from a `.crx` file. Then, in your user data directory, look in the file:
 
@@ -131,7 +131,7 @@ The version of Opera that your extension requires, if any. The format for this s
 
 ### `name` {#name}
 
-A short, plain text string (no more than 45 characters) that identifies the extension. The name is used in the install dialog, extension management UI, and the Opera extensions catalog. You can specify locale-specific strings for this field; see [Internationalization](internationalization) for details.
+A short, plain text string (no more than 45 characters) that identifies the extension. The name is used in the install dialog, extension management UI, and the Opera extensions catalog. You can specify locale-specific strings for this field; see [Internationalization](/extensions/internationalization/) for details.
 
 ### `permissions` {#permissions}
 
@@ -143,7 +143,7 @@ You need to declare your intent to use certain features by listing them in the `
 		"contextMenus"
 	]
 
-You can use match patterns to specify if the extension wants the code to run on certain pages. Please see the [article on match patterns](tut_match_patterns.html) for more details.
+You can use match patterns to specify if the extension wants the code to run on certain pages. Please see the [article on match patterns](/extensions/match-patterns/) for more details.
 
 **Note:** If you want to display the favicon of a page, you would need to mention it in the permissions field as `opera://favicon`. Once you declare it in the permissions field, then you can use it like so:
 
@@ -193,7 +193,7 @@ An array of strings specifying the paths (relative to the package root) of packa
 		"script/double-rainbow.js"
 	]
 
-These resources would then be available in a webpage via the URL `opera-extension://[PACKAGE ID]/[PATH]`, which can be generated with the [extension.getURL](extension.html#method-getURL) method. Whitelisted resources are served with appropriate [CORS](http://www.w3.org/TR/cors/) headers, so they’re available via mechanisms like XHR.
+These resources would then be available in a webpage via the URL `opera-extension://[PACKAGE ID]/[PATH]`, which can be generated with the [runtime.getURL](https://developer.chrome.com/extensions/runtime#method-getURL) method. Whitelisted resources are served with appropriate [CORS](http://www.w3.org/TR/cors/) headers, so they’re available via mechanisms like XHR.
 
 Injected content scripts themselves do not need to be whitelisted.
 
@@ -204,7 +204,7 @@ Resources inside of packages using [`manifest_version`](#manifest_version) 2 or 
 Defines an collection of extension pages that are to be served in a sandboxed unique origin, and optionally a Content Security Policy to use with them. Being in a sandbox has two implications:
 
 1. A sandboxed page will not have access to extension APIs, or direct access to non-sandboxed pages (it may communicate with them via `postMessage()`).
-2. A sandboxed page is not subject to the [Content Security Policy (CSP)](tut_architecture_overview.html#permissions_and_privileges) used by the rest of the extension (it has its own separate CSP value). This means that, for example, it can use inline script and `eval`.
+2. A sandboxed page is not subject to the [Content Security Policy (CSP)](/extensions/architecture-overview/#permissions_and_privileges) used by the rest of the extension (it has its own separate CSP value). This means that, for example, it can use inline script and `eval`.
 
 For example, here’s how to specify that two extension pages are to be served in a sandbox with a custom CSP:
 
@@ -218,6 +218,6 @@ For example, here’s how to specify that two extension pages are to be served i
 			"sandbox allow-scripts; script-src https://www.google.com"
 	]
 
-If not specified, the default `content_security_policy` value is `sandbox allow-scripts allow-forms`. You can specify your CSP value to restrict the sandbox even further, but it must have the `sandbox` directive and may not have the `allow-same-origin` token (see [the HTML5 specification](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox) for possible sandbox tokens).
+If not specified, the default `content_security_policy` value is `sandbox allow-scripts allow-forms`. You can specify your CSP value to restrict the sandbox even further, but it must have the `sandbox` directive and may not have the `allow-same-origin` token (see [the HTML5 specification](http://www.w3.org/TR/html5/embedded-content-0.html#attr-iframe-sandbox) for possible sandbox tokens).
 
 Note that you only need to list pages that you expected to be loaded in windows or frames. Resources used by sandboxed pages (e.g. stylesheets or JavaScript source files) do not need to appear in the `sandboxed_page` list, they will use the sandbox of the page that embeds them.
