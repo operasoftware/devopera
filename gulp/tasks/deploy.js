@@ -1,30 +1,17 @@
 var gulp = require('gulp'),
-	open = require('open'),
-	rsync = require('rsyncwrapper').rsync;
+	rsync = require('gulp-rsync');
 
-// Deploy
+// Deploying all files
+// from dest folder to server
 
 gulp.task('deploy', function() {
-	rsync({
-		ssh: true,
-		src: 'dest/**',
-		dest: '54.213.240.91:/var/www/html/',
-		args: [
-			'--recursive', // recurse into directories
-			'--checksum', // skip based on checksum, not mod-time & size
-			'--chmod=ug=rwX,o=rX', // `chmod` new files
-			'--compress', // compress data during the transfer
-			'--delete', // delete extraneous files on the receiving side
-			'--human-readable', // output numbers in a human-readable format
-			'--itemize-changes', // output a change-summary for all updates
-			'--times', // preserve modification times…
-			'--omit-dir-times' // …except for directories
-		]
-	}, function (error) {
-		if (error) {
-			console.log(error);
-		} else {
-			open('https://dev.opera.com');
-		}
-	});
+	return gulp.src('dest/**')
+		.pipe(rsync({
+			root: 'dest',
+			hostname: '54.213.240.91',
+			destination: '/var/www/html/',
+			recursive: true,
+			clean: true,
+			incremental: true
+		}));
 });

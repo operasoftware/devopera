@@ -3,6 +3,7 @@ title: Getting Started
 authors:
 - shwetank-dixit
 intro: 'New to extensions in Opera? Let us see how to learn more about the platform. It is super-easy!'
+featured: featured
 license: cc-by-3.0
 ---
 
