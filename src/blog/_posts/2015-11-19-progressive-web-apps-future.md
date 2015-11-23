@@ -13,7 +13,7 @@ tags:
 license: cc-by-3.0
 ---
 
-The two-day Chrome Dev Summit at Google’s headquarters in Mountain View is a wrap! Vadim and I had a great time attending the summit, and this year, I even had the pleasure to share the stage with Alex Russell (thank you!) to speak about Progressive Web Apps, and specifically web manifests, which we’ve [recently shipped](https://dev.opera.com/articles/installable-web-apps/) support for in Opera for Android.
+The two-day Chrome Dev Summit at Google’s headquarters in Mountain View is a wrap! Vadim and I had a great time attending the summit, and this year, I even had the pleasure to share the stage with Alex Russell (thank you!) to speak about Progressive Web Apps, and specifically web manifests, which we’ve [recently shipped](https://dev.opera.com/articles/installable-web-apps/) support for in Opera for Android. (Since this was first published, [Firefox announced plans](https://blog.mozilla.org/futurereleases/2015/11/17/extending-the-webs-capabilities-in-firefox-and-beyond/) to support Progressive Web Apps, too!)
 
 You can check out the full video of our talk below:
 
