@@ -14,7 +14,7 @@ This article describes how to use the [`sidebarAction` API](/extensions/sidebar-
 ## The Sidebar
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/scheme.png" alt="The sidebar">
+	<img elem="media" src="{{ page.id }}/scheme.png" alt="The sidebar">
 </figure>
 
 Since Opera 30 you can enable the browser sidebar. This is a place on the left side of the browser which has room for additional functionality for the user. The sidebar consists of the _icons list_ on the left hand side of the sidebar and the clicking on an icon from the icons list will open its corresponding _panel_.

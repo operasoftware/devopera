@@ -29,7 +29,7 @@ license: cc-by-3.0
 ## Introduction
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/publishing-process.png" alt="Overview of the publishing process — development, submission, testing, then publishing">
+	<img elem="media" src="{{ page.id }}/publishing-process.png" alt="Overview of the publishing process — development, submission, testing, then publishing">
 	<figcaption elem="caption">Figure 1: Overview of the publishing process — development, submission, testing, and publishing.</figcaption>
 </figure>
 
