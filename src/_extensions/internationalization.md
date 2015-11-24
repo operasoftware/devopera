@@ -17,7 +17,7 @@ You can support multiple locales in Opera extensions. The first thing to do is t
 In each of each of these subdirectories, you will need to create a file called `messages.json`, which will store the list of translated text strings needed.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/file-structure.png" alt="File structure of i18n enabled extension">
+	<img elem="media" src="{{ page.id }}/file-structure.png" alt="File structure of i18n enabled extension">
 </figure>
 
 Above you can see how the file structure of an opera extension with i18n support will look like.
@@ -61,7 +61,7 @@ Now, we are going to change the `manifest.json` file to add i18n support. It wil
 Here, `__MSG_extensionName__` will refer to the `extensionName` field. If the user’s locale is set to Spanish, then it will display the Spanish text.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/spanish.png" alt="Spanish internationalization example">
+	<img elem="media" src="{{ page.id }}/spanish.png" alt="Spanish internationalization example">
 </figure>
 
 When writing CSS for your extensions, you can refer to various translated strings in the same way using the `__MSG_<messagename>__` convention.
@@ -168,13 +168,13 @@ Here you can see that we have used a `data-*` attribute which we have named as `
 This will ensure that when the locale is set to English, then the text in the popup will display in English, like so:
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/popup-en.png" alt="Popup in English">
+	<img elem="media" src="{{ page.id }}/popup-en.png" alt="Popup in English">
 </figure>
 
 But when the locale is set to Spanish, then it will display Spanish text like so:
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/popup-es.png" alt="Popup in Spanish">
+	<img elem="media" src="{{ page.id }}/popup-es.png" alt="Popup in Spanish">
 </figure>
 
 You can [download a sample extension](/extensions/extension-samples/i18n-extension.nex) which uses i18n API and take a closer look.

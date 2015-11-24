@@ -11,7 +11,7 @@ license: cc-by-3.0
 Usually, the way users install extensions is by going to the [Opera Addons Catalog](http://addons.opera.com) and selecting an extension there. However, at times, you might want a way for a person to click on a link on your own web page, and install it without having to go the addons catalog. This process is known as “inline installation” of extensions.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.url }}/installation.png" alt="">
+	<img elem="media" src="{{ page.id }}/installation.png" alt="">
 </figure>
 
 Inline installation is especially useful for extension authors who have a dedicated webpage or site for the extension, from where they would like the peple visiting that page to install it without having to leave their site. With “inline installation” of extensions, you can have the browser prompt the user to install the extension from the current web page itself. Keep in mind that the extension is still served and installed from the [Opera Addons Catalog](http://addons.opera.com), but the user will not be required to go there, and can install the extension through the prompt right from your web page.
