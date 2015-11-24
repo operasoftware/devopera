@@ -11,7 +11,7 @@ Share the word that your app, extension or theme is available in the [Opera add-
 
 It could also be a good idea to use [inline installation](/extensions/inline-installation) along with this badge on your website. 
 
-<img elem="media" src="{{ page.url }}addons_206x58_en@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_en@2x.png" alt="Opera add-ons badge" width="206">
 
 While pre-approval is not required for you to use this badge, be sure that your use of the badge is consistent with the Opera add-ons [terms of use](https://addons.opera.com/developer/terms/) and these branding guidelines; otherwise, we may request that you modify or cease your use of the badge.
 
@@ -23,37 +23,37 @@ If you wan to download the Opera add-ons badge just for a particular language on
 
 ### English
 
-<img elem="media" src="{{ page.url }}addons_206x58_en@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_en@2x.png" alt="Opera add-ons badge in English" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_en.zip) the set of badges for English in various sizes.
 
 ### Russian
 
-<img elem="media" src="{{ page.url }}addons_206x58_ru@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_ru@2x.png" alt="Opera add-ons badge in Russian" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_ru.zip) the set of badges for Russian in various sizes.
 
 ### German
 
-<img elem="media" src="{{ page.url }}addons_206x58_de@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_de@2x.png" alt="Opera add-ons badge in German" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_de.zip) the set of badges for German in various sizes.
 
 ### Ukranian
 
-<img elem="media" src="{{ page.url }}addons_206x58_uk@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_uk@2x.png" alt="Opera add-ons badge in Ukranian" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_uk.zip) the set of badges for Ukranian in various sizes.  
 
 ### French
 
-<img elem="media" src="{{ page.url }}addons_206x58_fr@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_fr@2x.png" alt="Opera add-ons badge in French" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_fr.zip) the set of badges for French in various sizes.
 
 ### Polish
 
-<img elem="media" src="{{ page.url }}addons_206x58_pl@2x.png" alt="Overview of the publishing process — development, submission, testing, then publishing" width="206">
+<img elem="media" src="{{ page.url }}addons_206x58_pl@2x.png" alt="Opera add-ons badge in Polish" width="206">
 
 [Download](branding-guidelines/opera_addons_badge_pl.zip) the set of badges for Polish in various sizes.
 
