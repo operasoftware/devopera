@@ -17,7 +17,7 @@ While pre-approval is not required for you to use this badge, be sure that your 
 
 ### Badges (Multiple Languages)
 
-[Download the badge in multiple languages](branding-guidelines/opera_addons_badge_multiple_languages.zip) (English, Russian, German, Ukranian, French and Polish). Badges for each of these languages are available in multiple sizes.
+[Download the badge in multiple languages](opera_addons_badge_multiple_languages.zip) (English, Russian, German, Ukranian, French and Polish). Badges for each of these languages are available in multiple sizes.
 
 If you wan to download the Opera add-ons badge just for a particular language only, then please look below.
 
@@ -25,37 +25,37 @@ If you wan to download the Opera add-ons badge just for a particular language on
 
 <img elem="media" src="{{ page.url }}addons_206x58_en@2x.png" alt="Opera add-ons badge in English" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_en.zip) the set of badges for English in various sizes.
+[Download](opera_addons_badge_en.zip) the set of badges for English in various sizes.
 
 ### Russian
 
 <img elem="media" src="{{ page.url }}addons_206x58_ru@2x.png" alt="Opera add-ons badge in Russian" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_ru.zip) the set of badges for Russian in various sizes.
+[Download](opera_addons_badge_ru.zip) the set of badges for Russian in various sizes.
 
 ### German
 
 <img elem="media" src="{{ page.url }}addons_206x58_de@2x.png" alt="Opera add-ons badge in German" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_de.zip) the set of badges for German in various sizes.
+[Download](opera_addons_badge_de.zip) the set of badges for German in various sizes.
 
 ### Ukranian
 
 <img elem="media" src="{{ page.url }}addons_206x58_uk@2x.png" alt="Opera add-ons badge in Ukranian" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_uk.zip) the set of badges for Ukranian in various sizes.  
+[Download](opera_addons_badge_uk.zip) the set of badges for Ukranian in various sizes.  
 
 ### French
 
 <img elem="media" src="{{ page.url }}addons_206x58_fr@2x.png" alt="Opera add-ons badge in French" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_fr.zip) the set of badges for French in various sizes.
+[Download](opera_addons_badge_fr.zip) the set of badges for French in various sizes.
 
 ### Polish
 
 <img elem="media" src="{{ page.url }}addons_206x58_pl@2x.png" alt="Opera add-ons badge in Polish" width="206">
 
-[Download](branding-guidelines/opera_addons_badge_pl.zip) the set of badges for Polish in various sizes.
+[Download](opera_addons_badge_pl.zip) the set of badges for Polish in various sizes.
 
 
 **Note**: If you need a logo translated to a different language from those available, please tweet us [@ODevRel](https://twitter.com/odevrel).
