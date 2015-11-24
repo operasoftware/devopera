@@ -56,18 +56,19 @@ The `persona.ini` file is just a file which lists essential details about the th
 	; http://natureclip.co.nr/
 
 	[Info]
-	Name			= Still Lake
-	Author			= Vadim Makeev
-	Author URL		= http://pepelsbey.net
-	Version			= 2
+	Name				= Still Lake
+	Author				= Vadim Makeev
+	Author URL			= http://pepelsbey.net
+	Version				= 2
 
 	[Start Page]
-	Background		= video.webm
-	Position		= center bottom
+	Background			= video.webm
+	Position			= center bottom
+	First Frame Image 	= firstframe.jpg
 
 	[Web UI Pages]
-	Background		= cover.jpg
-	Position		= center bottom
+	Background			= cover.jpg
+	Position			= center bottom
 
 The `[Info]` section contains all the information about the extension. The things you lists under it are the following:
 
@@ -80,11 +81,14 @@ The `[Start Page]` category lists the details required for the theme when start 
 
 - **Background**: File name of the image that goes behind Speed Dial.
 - **Position**: Position of the start page image — optional, any CSS keyword for position: `left`, `top`, `right`, `bottom`, `center`.
+- **First Frame Image**: An image of the first frame of the video. This is usefull as a fallback image in case the video takes a bit of lag-time to come up. (Note: This fallback image will automatically created by the server if you have upload your animated theme to the [Opera add-ons catalog](https://addons.opera.com), so you only really need to mention this if you don't plan to share your animated theme through the [add-ons catalog](https://addons.opera.com).)
 
 The `[Web UI Pages]` section lists the things needed for the other web UI pages. For example, the the downloads, settings, and extension management pages.
 
 - **Background**: File name of the image that goes behind other pages.
 - **Position**: See above for positioning details.
+
+In the above section, we just used a *.jpg* image here. However, we could use another video here too (and even include a *First Frame Image* file as a fallback for it if we desire).
 
 You can includes comments in the `persona.ini` page as well. They need to be in a seperate line of their own, and need to be started by a semi-colon `;`.
 
