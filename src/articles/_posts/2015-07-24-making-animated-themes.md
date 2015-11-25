@@ -81,7 +81,7 @@ The `[Start Page]` category lists the details required for the theme when start 
 
 - **Background**: File name of the image that goes behind Speed Dial.
 - **Position**: Position of the start page image — optional, any CSS keyword for position: `left`, `top`, `right`, `bottom`, `center`.
-- **First Frame Image**: An image of the first frame of the video. This is usefull as a fallback image in case the video takes a bit of lag-time to come up. (Note: This fallback image will automatically created by the server if you have upload your animated theme to the [Opera add-ons catalog](https://addons.opera.com), so you only really need to mention this if you don't plan to share your animated theme through the [add-ons catalog](https://addons.opera.com).)
+- **First Frame Image**: An image of the first frame of the video. This is usefull as a fallback image in case the video takes a bit of lag-time to come up. (Note: This fallback image will automatically created by the server if you have upload your animated theme to the [Opera add-ons catalog](https://addons.opera.com), so you only really need to mention this if you don't plan to share your animated theme through the [add-ons catalog](https://addons.opera.com)). This is available on Opera 35 and above. 
 
 The `[Web UI Pages]` section lists the things needed for the other web UI pages. For example, the the downloads, settings, and extension management pages.
 
