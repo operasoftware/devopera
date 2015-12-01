@@ -1,7 +1,6 @@
 # Note: The configurations provided by the Apache Server Configs project
-# <https://github.com/h5bp/server-configs-apache/> are used on the server
-# as `/var/www/conf/1-h5bp-server-config.conf`. Those settings are only
-# loaded when Apache starts, not once for each request.
+# <https://github.com/h5bp/server-configs-apache/> are used on the server.
+# Those settings are only loaded when Apache starts, not once for each request.
 #
 # This file, on the other hand, should only be used for Dev.Opera-specific
 # settings (if any) and rewrite rules.

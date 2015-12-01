@@ -150,7 +150,7 @@ As you may have noticed in the examples above, any time the state of the documen
 
 ### Event Delegation in Opera Mini
 
-Until recently,Event delegation didn’t work in Opera Mini. Now it’s implemented by the Server sending clickable areas to the client for anything with `cursor:pointer`. Delegation mostly works as expected with click events with the exception of form elements; it’s rather hard to detect whether using them should trigger an event (and thus a server round trip) or not, unless an event listener is attached directly to them. A workaround is to add a dummy event listener to required form element.
+Until recently, event delegation didn’t work in Opera Mini. Now it’s implemented by the Server sending clickable areas to the client for anything with `cursor:pointer`. Delegation mostly works as expected with click events with the exception of form elements; it’s rather hard to detect whether using them should trigger an event (and thus a server round-trip) or not, unless an event listener is attached directly to them. A workaround is to add a dummy event listener to every required form element.
 
 ### JavaScript execution limits
 
