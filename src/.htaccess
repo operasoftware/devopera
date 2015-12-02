@@ -9,8 +9,8 @@
 Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
 
 # Use custom error documents.
-ErrorDocument 403 /errors/403.html
-ErrorDocument 404 /errors/404.html
+ErrorDocument 403 /errors/403/index.html
+ErrorDocument 404 /errors/404/index.html
 
 # Prevent `mod_rewrite` from prepending the full system file path to the
 # resulting rewrite rule.
