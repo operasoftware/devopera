@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 gulp.task('build', function(callback) {
 	sequence(
-		'build:full', ['cache', 'server'], callback
+		'build:full', 'server', callback
 	);
 });
 
@@ -21,6 +21,6 @@ gulp.task('build:limit', function(callback) {
 
 gulp.task('build:full', function(callback) {
 	sequence(
-		'jekyll:full', 'html', 'styles', callback
+		'jekyll:full', 'html', 'styles', 'cache', callback
 	);
 });
