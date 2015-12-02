@@ -1,4 +1,4 @@
-# Dev.Opera
+# Dev.Opera [![Build status](https://travis-ci.org/operasoftware/devopera.svg?branch=master)](https://travis-ci.org/operasoftware/devopera)
 
 We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by Jekyll, Sass, and Grunt. In this repository, you find all the source files and content to build the site, [make improvements](CONTRIBUTING.md#code-improvements), and [submit new articles](CONTRIBUTING.md#article-suggestions--contributions).
 
