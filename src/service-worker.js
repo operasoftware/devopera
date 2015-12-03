@@ -3,9 +3,7 @@
 const PREFIX = 'devopera';
 const HASH = ''; // Calculated when running `gulp`.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
-const OFFLINE_URL = '/errors/offline.html';
-
-importScripts('/scripts/sw-cache-polyfill.js');
+const OFFLINE_URL = '/errors/offline/index.html';
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
