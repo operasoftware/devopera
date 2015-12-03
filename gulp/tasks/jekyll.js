@@ -3,12 +3,12 @@ var gulp = require('gulp'),
 
 // Jekyll
 
-var jekyll = 'jekyll build --config jekyll.yml --source src --destination dest';
+var command = 'jekyll build --config jekyll.yml --source src --destination dest';
 
 gulp.task('jekyll:full', shell.task([
-	jekyll + ' JEKYLL_ENV=production'
+	'JEKYLL_ENV=production ' + command
 ]));
 
 gulp.task('jekyll:limit', shell.task([
-	jekyll + ' --limit_posts 150' + ' JEKYLL_ENV=development'
+	'JEKYLL_ENV=development ' + command + ' --limit_posts 150'
 ]));
