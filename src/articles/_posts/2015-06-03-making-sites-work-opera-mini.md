@@ -87,6 +87,14 @@ Making sure your site loads *fast* is a must — for all browsers, not just Oper
 
 If you rely on some sort of Geo IP tool for detecting a visitor’s location, note that the IP address you find in the headers is that of our compression proxy. The user’s original IP address is passed on via the `X-Forwarded-For` HTTP header. (Read more about [Opera Mini request headers](/articles/opera-mini-request-headers/).)
 
+### A note on version numbers
+
+Because Opera Mini renders on our servers, all Opera Mini clients use the same server version, so all use the same Presto version. JavaScript and CSS support is therefore identical on all clients, with the exception that user may enable Small Screen Rendering which removes a lot of CSS rules.
+
+Version numbers refer to different versions of the client UI and capabilities (whether it supports night mode, private tabs, progressive loading, etc.)
+
+Opera Mini 4.x cients load the whole transcoded page at once, as they have no progressive loading. This slightly reduces the [time allowed for JavaScript execution](https://dev.opera.com/articles/opera-mini-and-javascript/) (including XHRs). With newer clients, the transcoder is more generous, since it is able to send the compressed page to the client in chunks.
+
 ## Testing in Opera Mini
 
 There are several ways to do this.
