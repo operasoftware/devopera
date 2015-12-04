@@ -93,7 +93,7 @@ Because Opera Mini renders on our servers, all Opera Mini clients use the same s
 
 Version numbers refer to different versions of the client UI and capabilities (whether it supports night mode, private tabs, progressive loading, etc.)
 
-Opera Mini 4.x cients load the whole transcoded page at once, as they have no progressive loading. This slightly reduces the [time allowed for JavaScript execution](https://dev.opera.com/articles/opera-mini-and-javascript/) (including XHRs). With newer clients, the transcoder is more generous, since it is able to send the compressed page to the client in chunks.
+Opera Mini 4.x clients load the whole transcoded page at once, as they have no progressive loading. This slightly reduces the [time allowed for JavaScript execution](https://dev.opera.com/articles/opera-mini-and-javascript/) (including XHRs). With newer clients, the transcoder is more generous, since it is able to send the compressed page to the client in chunks.
 
 ## Testing in Opera Mini
 
