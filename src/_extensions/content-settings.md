@@ -1,5 +1,5 @@
 ---
-title: Site-specific Sustomization
+title: Site-specific Customization
 source: https://developer.chrome.com/extensions/contentSettings
 license: cc-by-3.0
 ---
