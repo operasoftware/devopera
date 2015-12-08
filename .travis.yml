@@ -35,6 +35,8 @@ deploy:
     bucket: dev-opera
     key: latest/dev-opera.tar.gz
     bundle_type: tgz
+git:
+  depth: 1
 branches:
   only:
   - master
