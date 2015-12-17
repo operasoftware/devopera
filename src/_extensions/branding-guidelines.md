@@ -83,7 +83,7 @@ If you wan to download the Opera add-ons badge just for a particular language on
 * Don’t use the badge on a page that contains or displays adult content, promotes gambling, promotes violence, contains hate speech, involves the sale of tobacco or alcohol to persons under twenty-one years of age, violates other applicable laws or regulations or is otherwise objectionable.
 * Make sure that clicking the badge always links to your page in the Opera add-ons catalog, and that your extension or theme is available in the catalog at all times that you use the badge.
 * Don't use any Opera trademarks or any confusingly similar marks as the name of your application or company without written permission from us.
-* You may state that your product is compatible with a Opera product by using text such as "for," "for use with" or "compatible with."  Such as "YOUR PRODUCT compatible with Opera Software."
+* You may state that your product is compatible with a Opera product by using text such as "for," "for use with" or "compatible with."  Such as "YOUR PRODUCT compatible with Opera."
 * You can use an Opera trademark in combination with your logo, but the Opera trademark should be smaller in size than your logo.
 * If you do use an Opera trademark - give us attribution.  "Opera is a trademark of Opera Software ASA.  Use of the Opera trademark is subject to its Guidelines."
 
