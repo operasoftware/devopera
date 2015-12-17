@@ -19,7 +19,7 @@ While pre-approval is not required for you to use this badge, be sure that your 
 
 ### Badges (Multiple Languages)
 
-[Download the badge in multiple languages](opera_addons_badge_multiple_languages.zip) (English, Russian, German, Ukranian, French and Polish). Badges for each of these languages are available in multiple sizes.
+[Download the badge in multiple languages](opera_addons_badge_multiple_languages.zip) (English, Russian, German, Ukrainian, French and Polish). Badges for each of these languages are available in multiple sizes.
 
 If you wan to download the Opera add-ons badge just for a particular language only, then please look below.
 
@@ -47,13 +47,13 @@ If you wan to download the Opera add-ons badge just for a particular language on
 
 [Download](opera_addons_badge_de.zip) the set of badges for German in various sizes.
 
-### Ukranian
+### Ukrainian
 
 <figure block="figure">
-<img elem="media" src="{{ page.id }}/addons_206x58_uk@2x.png" alt="Opera add-ons badge in Ukranian" width="206">
+<img elem="media" src="{{ page.id }}/addons_206x58_uk@2x.png" alt="Opera add-ons badge in Ukrainian" width="206">
 </figure>
 
-[Download](opera_addons_badge_uk.zip) the set of badges for Ukranian in various sizes.  
+[Download](opera_addons_badge_uk.zip) the set of badges for Ukrainian in various sizes.  
 
 ### French
 
