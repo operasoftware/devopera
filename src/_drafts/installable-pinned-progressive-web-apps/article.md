@@ -118,12 +118,12 @@ but the application name was too long so I added a short name:
 Here is how the installation process works using Opera 34:
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/00.portfolio.png" alt="portfolio">
-	<img elem="media" src="{{ page.id }}/01.menu.png" alt="menu">
-	<img elem="media" src="{{ page.id }}/02.add-to-home-screen.png" alt="add to home screen">
-	<img elem="media" src="{{ page.id }}/03.added-to-home-screen.png" alt="added to home screen">
-	<img elem="media" src="{{ page.id }}/04-shortcut-created.png" alt="shortcut created">
-	<img elem="media" src="{{ page.id }}/05-icon-on-home-screen.png" alt="icon on home screen">
+	<img elem="media" src="00.portfolio.png" alt="portfolio">
+	<img elem="media" src="01.menu.png" alt="menu">
+	<img elem="media" src="02.add-to-home-screen.png" alt="add to home screen">
+	<img elem="media" src="03.added-to-home-screen.png" alt="added to home screen">
+	<img elem="media" src="04-shortcut-created.png" alt="shortcut created">
+	<img elem="media" src="05-icon-on-home-screen.png" alt="icon on home screen">
 	<figcaption elem="caption">Installation process in Opera 34</figcaption>
 </figure>
 
@@ -150,9 +150,9 @@ Then I set the application to load in full screen:
 In fullscreen mode a splash screen is automatically displayed after tapping the icon on the Home Screen, and after that the web application gets its own windows (it does not run inside Opera).
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/06-splashscreen-portrait.png" alt="splashscreen portrait">
-	<img elem="media" src="{{ page.id }}/07-fullscreen-portrait.png" alt="fullscreen portrait">
-	<img elem="media" src="{{ page.id }}/08-installed-web-app.png" alt="installed web app">
+	<img elem="media" src="06-splashscreen-portrait.png" alt="splashscreen portrait">
+	<img elem="media" src="07-fullscreen-portrait.png" alt="fullscreen portrait">
+	<img elem="media" src="08-installed-web-app.png" alt="installed web app">
 	<figcaption elem="caption">Running an installed web app in full screen</figcaption>
 </figure>
 
@@ -180,8 +180,8 @@ Finally, I set the application to load with a landscape orientation:
 With this web manifest my web site loads in full screen and landscape orientation.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/09-splashscreen-landscape.png" alt="splashscreen landscape">
-	<img elem="media" src="{{ page.id }}/10-fullscreen-landscape.png" alt="fullscreen landscape">
+	<img elem="media" src="09-splashscreen-landscape.png" alt="splashscreen landscape">
+	<img elem="media" src="10-fullscreen-landscape.png" alt="fullscreen landscape">
 	<figcaption elem="caption">Running an installed web app in full screen and orientation landscape</figcaption>
 </figure>
 
