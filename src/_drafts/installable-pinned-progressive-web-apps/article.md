@@ -118,14 +118,15 @@ but the application name was too long so I added a short name:
 Here is how the installation process works using Opera 34:
 
 <figure block="figure">
-	<img elem="media" src="00.portfolio.png" alt="portfolio" width="30%">
-	<img elem="media" src="01.menu.png" alt="menu" width="30%">
-	<img elem="media" src="02.add-to-home-screen.png" alt="add to home screen" width="30%">
-	<img elem="media" src="03.added-to-home-screen.png" alt="added to home screen" width="30%">
-	<img elem="media" src="04-shortcut-created.png" alt="shortcut created" width="30%">
-	<img elem="media" src="05-icon-on-home-screen.png" alt="icon on home screen" width="30%">
-	<figcaption elem="caption">Installation process in Opera 34</figcaption>
+	<img elem="media" src="how-to-add-to-home-screen.png" alt="how to add to home screen">
+	<figcaption elem="caption">How to add to home screen</figcaption>
 </figure>
+
+<figure block="figure">
+	<img elem="media" src="adding-to-home-screen.png" alt="adding to home screen">
+	<figcaption elem="caption">Adding to home screen</figcaption>
+</figure>
+
 
 Notice that the *short_name* (not the extended application *name*), is displayed on the Home Screen.
 
@@ -150,11 +151,10 @@ Then I set the application to load in full screen:
 In fullscreen mode a splash screen is automatically displayed after tapping the icon on the Home Screen, and after that the web application gets its own windows (it does not run inside Opera).
 
 <figure block="figure">
-	<img elem="media" src="06-splashscreen-portrait.png" alt="splashscreen portrait" width="30%">
-	<img elem="media" src="07-fullscreen-portrait.png" alt="fullscreen portrait" width="30%">
-	<img elem="media" src="08-installed-web-app.png" alt="installed web app" width="30%">
-	<figcaption elem="caption">Running an installed web app in full screen</figcaption>
+	<img elem="media" src="web-app-running-fullscreen.png" alt="web app running fullscreen">
+	<figcaption elem="caption">Web app running fullscreen</figcaption>
 </figure>
+
 
 Notice how the *short_name* is used in the Home Screen, while in the splash screen the extended application name is displayed together with the icon.
 
@@ -180,10 +180,10 @@ Finally, I set the application to load with a landscape orientation:
 With this web manifest my web site loads in full screen and landscape orientation.
 
 <figure block="figure">
-	<img elem="media" src="09-splashscreen-landscape.png" alt="splashscreen landscape" width="47%">
-	<img elem="media" src="10-fullscreen-landscape.png" alt="fullscreen landscape" width="47%">
-	<figcaption elem="caption">Running an installed web app in full screen and orientation landscape</figcaption>
+	<img elem="media" src="web-app-running-fullscreen-lanscape.png" alt="web app running fullscreen and with landscape orientation">
+	<figcaption elem="caption">Web app running fullscreen and with landscape orientation</figcaption>
 </figure>
+
 
 The screenshots are taken using Opera on an Android Samsung Galaxy S4, but you get the same behaviour using Chrome. The only difference between Opera and Chrome is that Opera requires the web application to be requested using a secure protocol (HTTPS) in order to enable the fullscreen and landscape features.
 
