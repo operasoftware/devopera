@@ -203,7 +203,7 @@ A new interesting concept in terms of *discoverability* comes from Mozilla, that
 
 A problem with installable web apps is in fact that they are not easily discoverable by browsing the web, so at the moment browser vendors are trying to offer marketplaces for Web Apps, providing a similar experience to how native apps are discovered. The concept of *Pinned Apps* tries to go beyond the marketplace, giving to the browser itself the power to discover apps.
 
-## Progressive Apps
+### Progressive Apps
 
 In 2015 Alex Russell (Google) listed the attributes of a *new* class of applications: [progressive apps](https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955#.xx59riwcv).
 
