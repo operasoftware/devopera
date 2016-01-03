@@ -71,8 +71,8 @@ To do so I initially configured my web manifest this way:
 
 ```json
 {
- "name": "Francesco Iovine’s portfolio",
- "start_url": "index.html"
+  "name": "Francesco Iovine’s portfolio",
+  "start_url": "index.html"
 }
 ```
 
@@ -86,15 +86,15 @@ Then I added an icon to be displayed on the Home Screen:
 
 ```json
 {
- "name": "Francesco Iovine’s portfolio",
- "icons": [
- {
- "src": "layout/icons/144.transparent.icon.png",
- "sizes": "144x144",
- "type": "image/png"
- }
- ],
- "start_url": "index.html"
+  "name": "Francesco Iovine’s portfolio",
+  "icons": [
+  {
+  "src": "layout/icons/144.transparent.icon.png",
+  "sizes": "144x144",
+  "type": "image/png"
+  }
+  ],
+  "start_url": "index.html"
 }
 ```
 
@@ -102,16 +102,16 @@ but the application name was too long so I added a short name:
 
 ```json
 {
- "short_name": "Francesco Iovine",
- "name": "Francesco Iovine’s portfolio",
- "icons": [
- {
- "src": "layout/icons/144.transparent.icon.png",
- "sizes": "144x144",
- "type": "image/png"
- }
- ],
- "start_url": "index.html"
+  "short_name": "Francesco Iovine",
+  "name": "Francesco Iovine’s portfolio",
+  "icons": [
+  {
+  "src": "layout/icons/144.transparent.icon.png",
+  "sizes": "144x144",
+  "type": "image/png"
+  }
+  ],
+  "start_url": "index.html"
 }
 ```
 
@@ -141,17 +141,17 @@ Then I set the application to load in full screen:
 
 ```json
 {
- "short_name": "Francesco Iovine",
- "name": "Francesco Iovine’s portfolio",
- "display": "fullscreen",
- "icons": [
- {
- "src": "layout/icons/144.transparent.icon.png",
- "sizes": "144x144",
- "type": "image/png"
- }
- ],
- "start_url": "index.html"
+  "short_name": "Francesco Iovine",
+  "name": "Francesco Iovine’s portfolio",
+  "display": "fullscreen",
+  "icons": [
+  {
+  "src": "layout/icons/144.transparent.icon.png",
+  "sizes": "144x144",
+  "type": "image/png"
+  }
+  ],
+  "start_url": "index.html"
 }
 ```
 
@@ -181,18 +181,18 @@ Finally, I set the application to load with a landscape orientation:
 
 ```json
 {
- "short_name": "Francesco Iovine",
- "name": "Francesco Iovine’s portfolio",
- "display": "fullscreen",
- "orientation": "landscape",
- "icons": [
- {
- "src": "layout/icons/144.transparent.icon.png",
- "sizes": "144x144",
- "type": "image/png"
- }
- ],
- "start_url": "index.html"
+  "short_name": "Francesco Iovine",
+  "name": "Francesco Iovine’s portfolio",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "icons": [
+  {
+  "src": "layout/icons/144.transparent.icon.png",
+  "sizes": "144x144",
+  "type": "image/png"
+  }
+  ],
+  "start_url": "index.html"
 }
 ```
 
@@ -226,7 +226,7 @@ Installing web apps in a standard way is a very important step that enables a se
 
 ### Pinned Apps
 
-A new interesting concept in terms of *discoverability* comes from Mozilla, that at the end of 2014 introduced a new app model: [Pinned Apps](https://wiki.mozilla.org/Firefox_OS/Pinned_Apps). 
+A new interesting concept in terms of *discoverability* comes from Mozilla, that at the end of 2014 introduced a new app model: [Pinned Apps](https://wiki.mozilla.org/Firefox_OS/Pinned_Apps).
 
 *Pinning* means that it’s the browser itself that is used as a portal, a gateway, to discover apps:
 
@@ -236,7 +236,7 @@ A problem with installable web apps is in fact that they are not easily discover
 
 ## Progressive Apps
 
-In 2015 Alex Russell (Google) listed the attributes of a *new* class of applications: [progressive apps](https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955#.xx59riwcv). 
+In 2015 Alex Russell (Google) listed the attributes of a *new* class of applications: [progressive apps](https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955#.xx59riwcv).
 
 > Every browser is likely to implement their own version of Progressive Apps. It’s a general pattern (like "AJAX"), not a specific implementation.
 
