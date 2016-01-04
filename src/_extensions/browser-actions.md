@@ -41,7 +41,7 @@ To do that, you need to use add an event listener which listens to the click eve
 		console.log('This button was clicked!');
 	});
 
-[Download our sample button extension](/extensions/extension-samples/browser-actions-button.nex to see a very simple button example.
+[Download our sample button extension](/extensions/extension-samples/browser-actions-button.nex) to see a very simple button example.
 
 ### Popups
 
@@ -54,7 +54,7 @@ To create a popup, you just need to make an HTML file (let’s call it ‘popup.
 		"default_popup": "popup.html"
 	}
 
-Go ahead and [download our sample extension](/extensions/extension-samples/browser-actions-button.nex), which has a very simple popup being displayed.
+Go ahead and [download our sample extension](/extensions/extension-samples/browser-actions-popup.nex), which has a very simple popup being displayed.
 
 ### Badges
 
