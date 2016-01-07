@@ -26,7 +26,7 @@ layout: default
 				<a href="/articles/">Articles</a>
 			</h2>
 			<div data-columns elem="columns">
-{% for article in articles_regular limit:16 %}
+{% for article in articles_regular limit:10 %}
 	{% include teaser.html entry=article %}
 {% endfor %}
 			</div>
@@ -35,7 +35,7 @@ layout: default
 	<div elem="aside">
 		<section block="blog">
 			<h2 elem="title"><a href="/blog/">Blog</a></h2>
-{% for post in blog limit:6 %}
+{% for post in blog limit:3 %}
 	{% include teaser.html entry=post mod='blog' %}
 {% endfor %}
 		</section>
