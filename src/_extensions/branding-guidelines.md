@@ -21,7 +21,7 @@ While pre-approval is not required for you to use this badge, be sure that your 
 
 [Download the badge in multiple languages](opera_addons_badge_multiple_languages.zip) (English, Russian, German, Ukrainian, French and Polish). Badges for each of these languages are available in multiple sizes.
 
-If you wan to download the Opera add-ons badge just for a particular language only, then please look below.
+If you want to download the Opera add-ons badge just for a particular language only, then please look below.
 
 ### English
 
