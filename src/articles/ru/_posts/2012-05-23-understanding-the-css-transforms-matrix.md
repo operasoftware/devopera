@@ -45,7 +45,7 @@ CSS-трансформации «растут» из линейной алгеб
 [8]: http://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0_%28%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%29
 
 <figure id="figure-1">
-	<img src="/articles/understanding-the-css-transforms-matrix/1.gif" alt="Сетка с цифрами 3×3: верхний ряд 1, 2, 8; средний ряд: 10, 3, 9; нижний ряд: 7, 4, 0">
+	<img src="/articles/understanding-the-css-transforms-matrix/1.png" alt="Сетка с цифрами 3×3: верхний ряд 1, 2, 8; средний ряд: 10, 3, 9; нижний ряд: 7, 4, 0">
 	<figcaption markdown="span">Рис. 1. Пример матрицы</figcaption>
 </figure>
 
@@ -64,14 +64,14 @@ CSS-трансформации «растут» из линейной алгеб
 Когда трансформация применяется к объекту, она создает локальную систему координат. По умолчанию начало локальных координат — точка `(0,0)` — лежит в центре объекта, или на 50% ширины и 50% высоты ([рис. 2](#figure-2)).
 
 <figure id="figure-2">
-	<img src="/articles/understanding-the-css-transforms-matrix/2.gif" alt="Пример локальной системы координат">
+	<img src="/articles/understanding-the-css-transforms-matrix/2.png" alt="Пример локальной системы координат">
 	<figcaption markdown="span">Рис.2. Локальная система координат</figcaption>
 </figure>
 
 Мы можем изменить начало локальной системы координат подгонкой свойства `transform-origin` ([рис. 3](#figure-3)). Задание `transform-origin: 50px 70px;`, например, помещает начало координат в 50 пикселях от левого края объекта и в 70 пикселях от его верха. Трансформации каждой точки в локальной системе координат объекта рассчитываются относительно этого начала.
 
 <figure id="figure-3">
-	<img src="/articles/understanding-the-css-transforms-matrix/4.gif" alt="Пример локальной системы координат">
+	<img src="/articles/understanding-the-css-transforms-matrix/4.png" alt="Пример локальной системы координат">
 	<figcaption markdown="span">Рис. 3. Локальная система координат, с началом в точке `(50px,70px)`. Также показана точка `(30px,30px)`</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ CSS-трансформации «растут» из линейной алгеб
 [20]: http://www.w3.org/TR/css3-transforms/#mathematical-description
 
 <figure id="figure-4">
-	<img src="/articles/understanding-the-css-transforms-matrix/3.gif" alt="Сетка с цифрами 3×3. Верхний ряд: a, c, e; средний ряд: b, d, f; нижний ряд: 0, 0, 1">
+	<img src="/articles/understanding-the-css-transforms-matrix/3.png" alt="Сетка с цифрами 3×3. Верхний ряд: a, c, e; средний ряд: b, d, f; нижний ряд: 0, 0, 1">
 	<figcaption markdown="span">Рис. 4. Матрица двумерной CSS-трансформации</figcaption>
 </figure>
 
@@ -96,14 +96,14 @@ CSS-трансформации «растут» из линейной алгеб
 Чтобы найти координаты после трансформации, мы умножаем каждый элемент каждой строки матрицы на соответствующую ему строку вектора. Затем складываем произведения ([рис. 5](#figure-5)).
 
 <figure id="figure-5">
-	<img src="/articles/understanding-the-css-transforms-matrix/5.gif" alt="При умножении матрицы на вектор, результат это сумма результатов каждого элемента матрицы, помноженного на соответствующий элемент вектора">
+	<img src="/articles/understanding-the-css-transforms-matrix/5.png" alt="При умножении матрицы на вектор, результат это сумма результатов каждого элемента матрицы, помноженного на соответствующий элемент вектора">
 	<figcaption markdown="span">Рис. 5. Умножение матрицы на вектор</figcaption>
 </figure>
 
 Я знаю, что это выглядит как куча бессмысленных цифр и букв. Но, как отмечено выше, у каждого типа трансформаций — своя собственная матрица. [Рис. 6](#figure-6) показывает матрицу для трансформации сдвига.
 
 <figure id="figure-6">
-	<img src="/articles/understanding-the-css-transforms-matrix/6.gif" alt="Матрица сдвига">
+	<img src="/articles/understanding-the-css-transforms-matrix/6.png" alt="Матрица сдвига">
 	<figcaption markdown="span">Рис. 6. Матрица сдвига</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ CSS-трансформации «растут» из линейной алгеб
 Кстати, это эквивалентно `transform: translate(150px,150px)`. Давайте рассчитаем результат этой трансформации для точки с координатами `(220px,220px)` ([Рис. 8](#figure-8)).
 
 <figure id="figure-8">
-	<img src="/articles/understanding-the-css-transforms-matrix/7.gif" alt="Вычисление трансформации сдвига">
+	<img src="/articles/understanding-the-css-transforms-matrix/7.png" alt="Вычисление трансформации сдвига">
 	<figcaption markdown="span">Рис. 8. Вычисление трансформации сдвига</figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ CSS-трансформации «растут» из линейной алгеб
 Выше мы рассмотрели матрицу переноса 3×3. Давайте возьмем другой пример, с использованием матрицы 4×4 для масштабирования ([рис. 10](#figure-10)).
 
 <figure id="figure-10">
-	<img src="/articles/understanding-the-css-transforms-matrix/8.gif" alt="Матрица 4×4 для масштабирования">
+	<img src="/articles/understanding-the-css-transforms-matrix/8.png" alt="Матрица 4×4 для масштабирования">
 	<figcaption markdown="span">Рис. 10. Матрица 4×4 для масштабирования</figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ CSS-трансформации «растут» из линейной алгеб
 Если умножить эту матрицу на координатный вектор `[150,150,1]`, ([рис. 12](#figure-12)), мы получим такие новые координаты нашей точки: `(120,75,1)`.
 
 <figure id="figure-12">
-	<img src="/articles/understanding-the-css-transforms-matrix/9.gif" alt="Вычисление трансформации масштабирования">
+	<img src="/articles/understanding-the-css-transforms-matrix/9.png" alt="Вычисление трансформации масштабирования">
 	<figcaption markdown="span">Рис. 12: Вычисление трансформации масштабирования</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ CSS-трансформации «растут» из линейной алгеб
 Матрица поворота, выраженная в виде вектора — `[cos(a) sin(a) -sin(a) cos(a) 0 0]`, где _a_ — угол. Для масштабирования понадобится матрица `[sx 0 0 sy 0 0]`. Чтобы объединить их, умножим матрицу поворота на матрицу масштабирования, как показано на [рис. 13](#figure-13) (синус и косинус 45° оба равны 0,7071).
 
 <figure id="figure-13">
-	<img src="/articles/understanding-the-css-transforms-matrix/10.gif" alt="Вычисление матрицы составной трансформации">
+	<img src="/articles/understanding-the-css-transforms-matrix/10.png" alt="Вычисление матрицы составной трансформации">
 	<figcaption markdown="span">Рис. 13: Вычисление матрицы составной трансформации</figcaption>
 </figure>
 
@@ -201,7 +201,7 @@ CSS-трансформации «растут» из линейной алгеб
 Теперь рассчитаем новые координаты в области просмотра для точки `(298,110)`, как показано на [рис. 15](#figure-15).
 
 <figure id="figure-15">
-	<img src="/articles/understanding-the-css-transforms-matrix/11.gif" alt="Применение трансформации">
+	<img src="/articles/understanding-the-css-transforms-matrix/11.png" alt="Применение трансформации">
 	<figcaption markdown="span">Рис. 15. Применение трансформации</figcaption>
 </figure>
 
