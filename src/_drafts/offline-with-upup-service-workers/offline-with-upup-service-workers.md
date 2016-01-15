@@ -32,7 +32,7 @@ UpUp allows you to define exactly what you want to show your users when they are
 
 The content you show your users can be as simple as one page (e.g. your business’ info, address, etc.), all the way to fully customized offline experiences with data customized for each user (e.g. a travel site’s user could browse his bookings, and get details on each booking, even while offline).
 
-The best part of all, UpUp let’s you do all of this in just a few lines of code:
+The best part of all, UpUp lets you do all of this in just a few lines of code:
 
   <script src="/upup.min.js"></script>
   <script>
@@ -41,7 +41,7 @@ The best part of all, UpUp let’s you do all of this in just a few lines of cod
     });
   </script>
 
-In this article we will first look at how you can use UpUp to add offline capabilities to your site in under 10 minutes. We will then dive deeper behind the scenes, and see how UpUp achieves all of this.
+In this article we’ll first look at how you can use UpUp to add offline capabilities to your site in under 10 minutes. We will then dive deeper behind the scenes, and see how UpUp achieves all of this.
 
 ## 10 minute tutorial
 
