@@ -22,7 +22,7 @@ Every day we find ourselves without a working internet connection. Even in count
 
 Now think of your users, and their dependence on the information you provide them. Are you running a travel site offering online hotel bookings? What would your users do if they just landed in Tokyo, without a local data plan, but they needed to access your site in order to find their hotel’s address? Does your store have a website? What would your users do if they were riding the elevator down to the parking lot while trying to find out your store’s opening hours?
 
-Luckily we are living in very exciting times for web development. New technologies are coming out every day, unleashing new possibilities, and changing our perception of what is and isn’t possible in the browser. Two of the most important technologies to come out in recent years — ServiceWorkers and CacheStorage — allow us an amazing level of control over the user’s browsing experience — even when their internet connection fails.
+Luckily we are living in very exciting times for web development. New technologies are coming out every day, unleashing new possibilities, and changing our perception of what is and isn’t possible in the browser. Two of the most important technologies to come out in recent years — service workers and the CacheStorage API — allow us an amazing level of control over the user’s browsing experience — even when their internet connection fails.
 
 ## Taking control of the offline experience
 
