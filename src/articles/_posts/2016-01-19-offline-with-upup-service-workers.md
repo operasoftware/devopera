@@ -8,11 +8,14 @@ tags:
 - offline
 - caching
 - javascript
+featured: featured
 cover: png
 license: cc-by-3.0
 ---
 
-<img src="{{ page.id }}/upup-phone-anim.gif" align="right" width="171" alt="Offline content demo">
+<figure block="figure" mod="right" style="margin-left:20px">
+	<img elem="media" src="{{ page.id }}/upup-phone-anim.gif" alt="Offline content demo">
+</figure>
 
 We are living in an increasingly mobile world. We rely on our phones to keep us connected wherever we go, and to provide us with the information we need to get through our day.
 
@@ -26,7 +29,7 @@ Luckily we are living in very exciting times for web development. New technologi
 
 ## Taking control of the offline experience
 
-One library to provide an easy solution for the connectivity problem is called [UpUp](https://www.talater.com/upup/). *(Editor’s note: Tal is the developer of the UpUp library)*
+One library to provide an easy solution for the connectivity problem is called [UpUp](https://www.talater.com/upup/). _(Editor’s note: Tal is the developer of the UpUp library.)_
 
 UpUp allows you to define exactly what you want to show your users when they are offline, while handling all of the logic of intercepting requests, detecting when they fail, returning the right content from cache, managing that cache, and generally dealing with all the headaches of cross-browser compatibility.
 
@@ -34,12 +37,12 @@ The content you show your users can be as simple as one page (e.g. your business
 
 The best part of all, UpUp lets you do all of this in just a few lines of code:
 
-  <script src="/upup.min.js"></script>
-  <script>
-    UpUp.start({
-      'content-url': 'offline.html'
-    });
-  </script>
+	<script src="/upup.min.js"></script>
+	<script>
+		UpUp.start({
+			'content-url': 'offline.html'
+		});
+	</script>
 
 In this article we’ll first look at how you can use UpUp to add offline capabilities to your site in under 10 minutes. We will then dive deeper behind the scenes, and see how UpUp achieves all of this.
 
@@ -50,15 +53,15 @@ Let’s begin with a simple site, and add offline features to it:
 	<!DOCTYPE html>
 	<html>
 	<head>
-	  <meta charset="utf-8">
-	  <title>Lonely Globe Advisor</title>
+		<meta charset="utf-8">
+		<title>Lonely Globe Advisor</title>
 	</head>
 	<body>
-	  <h1>Top Hotels in Rome</h1>
-	  <ol>
-	    <li>Villa Domus - Via Piacenza 9, Rome, Italy</li>
-	    <li>Hotel Trivelli - Piazza Barberini 11, Rome, Italy</li>
-	  </ol>
+		<h1>Top Hotels in Rome</h1>
+		<ol>
+			<li>Villa Domus — Via Piacenza 9, Rome, Italy</li>
+			<li>Hotel Trivelli — Piazza Barberini 11, Rome, Italy</li>
+		</ol>
 	</body>
 	</html>
 
@@ -68,26 +71,17 @@ But what happens if our user just landed in Rome and doesn’t have a local data
 
 We can improve on this experience by loading UpUp, and telling it what content we want it to show the user if she is offline.
 
-  <!DOCTYPE html>
-	<html>
-	<head>
-	  <meta charset="utf-8">
-	  <title>Lonely Globe Advisor</title>
-	</head>
-	<body>
-	  <h1>Top Hotels in Rome</h1>
-	  <ol>
-	    <li>Villa Domus - Via Piacenza 9, Rome, Italy</li>
-	    <li>Hotel Trivelli - Piazza Barberini 11, Rome, Italy</li>
-	  </ol>
-	  <script src="/upup.min.js"></script>
-	  <script>
-	    UpUp.start({
-	      'content-url': '/offline.html'
-	    });
-	  </script>
-	</body>
-	</html>
+	<h1>Top Hotels in Rome</h1>
+	<ol>
+		<li>Villa Domus — Via Piacenza 9, Rome, Italy</li>
+		<li>Hotel Trivelli — Piazza Barberini 11, Rome, Italy</li>
+	</ol>
+	<script src="/upup.min.js"></script>
+	<script>
+		UpUp.start({
+			'content-url': '/offline.html'
+		});
+	</script>
 
 With just this tiny bit of code, we’ve added an offline experience for our site, and allowed our users to see the best hotels in Rome… even when they can’t access the web.
 
@@ -95,32 +89,26 @@ Any user that visited our site in the past, and is now trying to access it again
 
 The sample above just shows a simple html page. You can improve on your offline content by including stylesheets, images, or even videos in your `offline.html`. You just need to make sure to tell UpUp what files you’re using, and it will cache them so they are available for your users when they are offline.
 
-  <!DOCTYPE html>
-	<html>
-	<head>
-	  <meta charset="utf-8">
-	  <title>Lonely Globe Advisor</title>
-	</head>
-	<body>
-	  <h1>Top Hotels in Rome</h1>
-	  <ol>
-	    <li>Villa Domus - Via Piacenza 9, Rome, Italy</li>
-	    <li>Hotel Trivelli - Piazza Barberini 11, Rome, Italy</li>
-	  </ol>
-	  <script src="/upup.min.js"></script>
-	  <script>
-	    UpUp.start({
-	      'content-url': 'offline.html',
-	      'assets': ['css/bootstrap.min.css', 'img/trivelli.jpg', 'mov/intro.mp4']
-	    });
-	  </script>
-	</body>
-	</html>
+	<h1>Top Hotels in Rome</h1>
+	<ol>
+		<li>Villa Domus — Via Piacenza 9, Rome, Italy</li>
+		<li>Hotel Trivelli — Piazza Barberini 11, Rome, Italy</li>
+	</ol>
+	<script src="/upup.min.js"></script>
+	<script>
+		UpUp.start({
+			'content-url': 'offline.html',
+			'assets': [
+				'css/bootstrap.min.css',
+				'img/trivelli.jpg',
+				'mov/intro.mp4'
+			]
+		});
+	</script>
 
 With just one command and a couple of settings, we can create rich offline experiences for our users. These can be as simple as the example above, or as robust as a full single page application using frameworks like AngularJS, with content customized for each user, videos and files the user can access while offline.
 
 There’s a more [detailed tutorial](https://www.talater.com/upup/getting-started-with-offline-first.html) available on the official site, as well as complete documentation of [UpUp’s API](https://github.com/TalAter/UpUp/blob/master/docs/README.md).
-
 
 ## How does it work?
 
@@ -168,7 +156,7 @@ To the browser’s window, responses returned from the server or from the cache 
 
 ##### Where does the offline content come from?
 
-The final piece of the puzzle is the new caching technology used by UpUp - CacheStorage. Note: don’t confuse this with the browser’s own cache, or with that [douchebag](http://alistapart.com/article/application-cache-is-a-douchebag), the Application Cache. This is something new and much more powerful.
+The final piece of the puzzle is the new caching technology used by UpUp — CacheStorage. Note: don’t confuse this with the browser’s own cache, or with that [douchebag](http://alistapart.com/article/application-cache-is-a-douchebag), the Application Cache. This is something new and much more powerful.
 
 When we first registered our ServiceWorker, we told it what content to store in cache for later (we defined this in the `content-url` and `assets` settings). The UpUp ServiceWorker script went ahead and fetched that content, and stored it using the CacheStorage interface.
 
@@ -197,7 +185,6 @@ For security reasons, the browser only lets UpUp’s ServiceWorker see network r
 The scope that the ServiceWorker can affect is determined by where you’ve placed `upup.min.js` and `upup.sw.min.js`. For example, if you place it on `https://yoursite.com/js/upup.sw.min.js`, UpUp will only be able to show your offline content when users try to look at the /js/ directory.
 
 This is why it’s important to place both files on the same server as your content, and not in a subdirectory. This should ideally be in the root of your site (e.g. `https://yoursite.com/upup.min.js`).
-
 
 ## What’s Next?
 
