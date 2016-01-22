@@ -5,10 +5,6 @@
 # This file, on the other hand, should only be used for Dev.Opera-specific
 # settings (if any) and rewrite rules.
 
-# Let Apache know the server uses HTTPS (although HTTPS is actually handled at
-# the load balancer level).
-SetEnvIf X-Forwarded-Port ^443$ HTTPS
-
 # Enable HSTS for `dev.opera.com` (no further subdomains).
 Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
 
