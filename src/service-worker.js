@@ -41,19 +41,18 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
 	if (
-		event.request.method == 'GET' &&
-		event.request.headers.get('accept').includes('text/html')
+		event.request.mode == 'navigate' ||
+		( // Fallback for Chromium 48 / Opera 35 and older:
+			event.request.method == 'GET' &&
+			event.request.headers.get('accept').includes('text/html')
+		)
 	) {
-		// It’s a GET request for an HTML document.
-		// TODO: check `event.request.mode == 'navigate'` as soon as it’s supported.
-		// Chromium bug: https://code.google.com/p/chromium/issues/detail?id=580526
 		console.log('Handling fetch event for', event.request.url);
 		console.log(event.request);
 		event.respondWith(
 			fetch(event.request).catch(function(exception) {
 				// The `catch` is only triggered if `fetch()` throws an exception,
 				// which most likely happens due to the server being unreachable.
-				// FIXME: it’s also triggered for redirects (e.g. `/tv` → `/tv/`).
 				console.error(
 					'Fetch failed; returning offline page instead.',
 					exception
