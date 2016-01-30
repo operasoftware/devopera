@@ -119,7 +119,7 @@ Opera for Android supports
 
 The `minimal-ui` mode is not supported; it falls back to `browser` as the spec requires.
 
-In Opera for Android, only sites on HTTPS can be displayed in `fullscreen` or `standalone` mode. Insecure sites are always displayed in `browser` mode, regardless of the manifest definition, to better protet the user; we show the URL bar so the user can always see the real address of insecure sites (hackers could, for example, spoof a bank site). Note that this is different from the behaviour of the current Chrome for Android (Chrome 45).
+In Opera for Android, only sites on HTTPS can be displayed in `fullscreen` or `standalone` mode. Insecure sites are always displayed in `browser` mode, regardless of the manifest definition, to better protect the user; we show the URL bar so the user can always see the real address of insecure sites (hackers could, for example, spoof a bank site). Note that this is different from the behaviour of the current Chrome for Android (Chrome 45).
 
 In modes without browser UI, Opera supports pull-to-refresh, making it feel more app-like.
 
