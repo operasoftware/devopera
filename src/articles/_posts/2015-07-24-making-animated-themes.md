@@ -81,16 +81,16 @@ The `[Start Page]` category lists the details required for the theme when start 
 
 - **Background**: File name of the image that goes behind Speed Dial.
 - **Position**: Position of the start page image — optional, any CSS keyword for position: `left`, `top`, `right`, `bottom`, `center`.
-- **First Frame Image**: An image of the first frame of the video. This is usefull as a fallback image in case the video takes a slight delay to come up. (Note: This fallback image will automatically created by the server if you have upload your animated theme to the [Opera add-ons catalog](https://addons.opera.com), so you only really need to mention this if you don't plan to share your animated theme through the [add-ons catalog](https://addons.opera.com)). This is available on Opera 35 and above. 
+- **First Frame Image**: An image of the first frame of the video. This is useful as a fallback image in case the video takes a slight delay to come up. (Note: This fallback image will automatically created by the server if you have upload your animated theme to the [Opera add-ons catalog](https://addons.opera.com), so you only really need to mention this if you don't plan to share your animated theme through the [add-ons catalog](https://addons.opera.com)). This is available on Opera 35 and above. 
 
-The `[Web UI Pages]` section lists the things needed for the other web UI pages. For example, the the downloads, settings, and extension management pages.
+The `[Web UI Pages]` section lists the things needed for the other web UI pages. For example, the downloads, settings, and extension management pages.
 
 - **Background**: File name of the image that goes behind other pages.
 - **Position**: See above for positioning details.
 
 In the above section, we just used a *.jpg* image here. However, we could use another video here too (and even include a *First Frame Image* file as a fallback for it if we desire).
 
-You can includes comments in the `persona.ini` page as well. They need to be in a seperate line of their own, and need to be started by a semi-colon `;`.
+You can includes comments in the `persona.ini` page as well. They need to be in a separate line of their own, and need to be started by a semi-colon `;`.
 
 Keep in mind you can set different resources for the Start Page and the Web UI pages. So you can have, say, a video file for the Start Page (this will also be reflected in the history, tabs, bookmarks page and themes management page) and another video (or even image) for the Web UI pages (which will be reflected on the downloads, settings, plug-ins, password management page, and extension management page).
 
@@ -98,7 +98,7 @@ It is important to note that the video or animated WebP only consumes resources 
 
 ## Choosing the right background animation
 
-There are a few things to consider when making an animated theme. The video being used should look nice as a background, and preferebly should look good when played in a loop. If you intend to submit the theme to the [Opera Addons Catalog](https://addons.opera.com/), then it should abide by all the relevant [acceptance criteria](https://dev.opera.com/extensions/tut_publishing_guidelines.html#acceptance-criteria). If the source video requires attribution, then please provide that in the description text in the addons page (and if you want, then as a comment in the `persona.ini` file as well.)
+There are a few things to consider when making an animated theme. The video being used should look nice as a background, and preferably should look good when played in a loop. If you intend to submit the theme to the [Opera Addons Catalog](https://addons.opera.com/), then it should abide by all the relevant [acceptance criteria](https://dev.opera.com/extensions/tut_publishing_guidelines.html#acceptance-criteria). If the source video requires attribution, then please provide that in the description text in the addons page (and if you want, then as a comment in the `persona.ini` file as well.)
 
 There are a lot of resources on the internet where you can find high-quality videos to use in your animated themes. For example, check out [Vimeo’s Creative Commons Page](https://vimeo.com/creativecommons), [Open Footage](http://www.openfootage.net), [Archive.org]( https://archive.org/details/movies), [Pexels](https://videos.pexels.com/), [Mazwai](http://mazwai.com/) and [Gfycat](http://gfycat.com).
 
