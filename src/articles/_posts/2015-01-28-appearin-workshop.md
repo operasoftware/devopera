@@ -19,7 +19,7 @@ In early December 2014, we invited the team behind the fantastic WebRTC-powered 
 	<figcaption elem="caption">The Appear.in and Opera workshop in December</figcaption>
 </figure>
 
-A number of these experiments focused on various backend improvements, but we also looked at a number of interesting frontend tweaks: most of these were implemented as extensions as this allowed us to to quickly prototype functionality on top of the existing appear.in service, without making major changes to the underlying code.
+A number of these experiments focused on various backend improvements, but we also looked at a number of interesting frontend tweaks: most of these were implemented as extensions as this allowed us to quickly prototype functionality on top of the existing appear.in service, without making major changes to the underlying code.
 
 We’ve polished these extensions a bit more and have published them to the Opera extensions catalog. Here’s an overview.
 
