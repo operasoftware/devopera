@@ -21,7 +21,7 @@ What better way to celebrate the new redesigned Dev.Opera than with a round-up o
 
 Since Opera Coast was released for iPad last year, people have been asking us when it’ll be available for iPhone. Ta-da! [Coast 3 is in the App Store](https://itunes.apple.com/app/opera-coast/id674024845) today.
 
-Homescreen, recent sites and search have been redesigned for iPhone, while both iPhone and iPad versions have speed, security and stability enhancements, a new design for context menus (long press in web pages) and a more discoverable design for the sharing menu in the recent sites. Developers can make [site tile icons for Opera Coast](http://operacoast.com/developer#icon), or it will use heuristics to choose an site tile icons automatically.
+Homescreen, recent sites and search have been redesigned for iPhone, while both iPhone and iPad versions have speed, security and stability enhancements, a new design for context menus (long press in web pages) and a more discoverable design for the sharing menu in the recent sites. Developers can make [site tile icons for Opera Coast](http://operacoast.com/developer#icon), or it will use heuristics to choose a site tile icons automatically.
 
 The idea is to close the UX gap between native apps and the web on iOS devices. As [Time said in its review](http://time.com/74803/opera-coast/), “As before, Coast is polished, fun and fluid — and on the iPhone, you can pretty much navigate the whole experience with your thumb. It’s fascinating to see what a web browser looks like when all the cruft that browsers have built up over the years gets stripped away in one fell swoop.”
 

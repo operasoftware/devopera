@@ -28,7 +28,7 @@ You can of course, include an image as well, like so:
 	<img elem="media" src="{{ page.id }}/notification-image.png" alt="Notification with image on Mac">
 </figure>
 
-To give you a quick overview of web notitifcations, it’s really quite simple. The first thing you need check if the browser supports notifications, if so, to ask the user for permission to show notifications.
+To give you a quick overview of web notifications, it’s really quite simple. The first thing you need check if the browser supports notifications, if so, to ask the user for permission to show notifications.
 
 You can do this by the writing something like the following:
 
@@ -57,7 +57,7 @@ Often the title is not enough for a notification. The `body` attribute is used t
 
 Apart from the `body` and `icon` attributes, you also have the `dir` attribute (you can specify `ltr`, `rtl` or `auto` depending on the language you want the notification to be in) and the `lang` attribute. The former is about specifying the direction of the text in the notification and the latter is about specifying the primary language of the notification (you need to specify it as done in the [BCP-47](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) document series).
 
-There is also the `tag` attribute — which is about specifying that particular type of notification. For example, if you have a social networking site open in two seperate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
+There is also the `tag` attribute — which is about specifying that particular type of notification. For example, if you have a social networking site open in two separate tabs and you get a new message from your friend — it shouldn’t happen that both tabs produce a notification about the same thing. So if the notifications share the same tag, then multiple instances of it will be counted as one — thus you will only get the notification one time, no matter how many pages of the site you have open in different tabs.
 
 ## Working with notification events
 

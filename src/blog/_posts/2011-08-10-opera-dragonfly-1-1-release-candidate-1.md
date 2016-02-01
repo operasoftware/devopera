@@ -32,7 +32,7 @@ license: cc-by-3.0
 	<li>SVG presentational attributes in Style Inspector</li>
 </ul>
 
-<h4>Storage Inpsector 1.1</h4>
+<h4>Storage Inspector 1.1</h4>
 
 <ul>
 	<li>Upgrade Local Storage, Session Storage and Widgets Preferences to the new Cookie UI</li>

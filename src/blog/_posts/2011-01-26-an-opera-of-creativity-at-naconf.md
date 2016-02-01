@@ -48,7 +48,7 @@ the part of the brain that deals with emotional responses, and is
 therefore heavily involved in our response to design, before we even
 read any language involved in the design. He went through some
 interesting ideas on emotional design, but my favourite point was when
-he fought back against Seth Godin&#39;s constant advice about surpressing
+he fought back against Seth Godin&#39;s constant advice about suppressing
 the lizard brain, because it gets in the way of efficiency and
 organization. Jon pointed out that emotional responses are important to
 really appreciate design work.</p></li>

@@ -12,4 +12,4 @@ license: cc-by-3.0
 <img src="{{ page.id }}/0new.png" alt="The new and improved color picker dialog window" />
 <p>But it&#39;s not all just about the colors. In this release, we also improved inspection of getters. They will now be presented as <em>getter</em> in italic, and clicking this text will evaluate the getter and show the according value.</p>
 <img src="{{ page.id }}/getter.gif" alt="Animation showing the new getter evaluation: clicking on the &#39;getter&#39; string triggers the evaluation, and the according value is displayed in its place" />
-<p>In the Network panel, we&#39;ve updated the UA presets for global header overrides in the options tab to reflect some of the latest browers. And, as a final tweak for this build, Opera Dragonfly will now use the system&#39;s application font for its interface elements.</p>
+<p>In the Network panel, we&#39;ve updated the UA presets for global header overrides in the options tab to reflect some of the latest browsers. And, as a final tweak for this build, Opera Dragonfly will now use the system&#39;s application font for its interface elements.</p>

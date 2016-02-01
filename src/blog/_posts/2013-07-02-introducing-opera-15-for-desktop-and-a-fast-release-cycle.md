@@ -26,7 +26,7 @@ Just like in Opera for Android, we’ve merged bookmarks into Speed Dial, which 
 
 To add a page or extension to Speed Dial, simply click on the big plus sign. You can also do this while you’re browsing, of course: just click the "Add to Speed Dial" icon in the top right  corner of the address bar, and the page in question will be added to Speed Dial.
 
-If you want to save all your open tabs into one Speed Dial folder (you’ve been doing some research, or looking at holidays), simply right-click anywhere in in the tab bar and choose "Save tabs as Speed Dial group". To re-open them all, simply right-click on the Speed Dial folder and choose Open all.
+If you want to save all your open tabs into one Speed Dial folder (you’ve been doing some research, or looking at holidays), simply right-click anywhere in the tab bar and choose "Save tabs as Speed Dial group". To re-open them all, simply right-click on the Speed Dial folder and choose Open all.
 
 If you have a lot of Speed Dial entries, you can click the search icon in the top right corner. Start typing in the field that appears, and your bookmarked sites will be filtered in real-time.
 

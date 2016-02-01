@@ -11,7 +11,7 @@ Pssst! Yes, you. You like CSS? Interested in some HTML5? Want some hot ECMAScrip
 <h2 id="html5">HTML5</h2>
 
 <ul>
-<li><p>This build introduces initial support for <a href="http://dev.w3.org/html5/spec/dnd.html">HTML5 Drag and Drop</a>. With DnD, Web pages can natively drag elements, selections and microdata from one page onto another, or drag files from the operating system and drop them onto a Web page. Have a play with this <a href="http://people.opera.com/miket/2012/3/dnddemo.html">simple demo</a>. <a href="http://people.opera.com/miket/2012/3/">Another demo</a> presents a list of fruit that you can drag around&#x2014;have a look at the code and see how you can break this in iteresting ways, and try to figure out why the words and rows are draggable, but the fruit images aren&#39;t. </p>
+<li><p>This build introduces initial support for <a href="http://dev.w3.org/html5/spec/dnd.html">HTML5 Drag and Drop</a>. With DnD, Web pages can natively drag elements, selections and microdata from one page onto another, or drag files from the operating system and drop them onto a Web page. Have a play with this <a href="http://people.opera.com/miket/2012/3/dnddemo.html">simple demo</a>. <a href="http://people.opera.com/miket/2012/3/">Another demo</a> presents a list of fruit that you can drag around&#x2014;have a look at the code and see how you can break this in interesting ways, and try to figure out why the words and rows are draggable, but the fruit images aren&#39;t. </p>
 
 <p>Currently, we&#x2019;ve got some bugs and limitations with this initial HTML5 Drag and Drop support, such as issues with dragging to and from external applications. Please give us your feedback and report any DnD-specific issues <a href="http://my.opera.com/community/forums/topic.dml?id=1340612">here</a>.</p></li>
 <li><p>Previously, Opera did not expose how much of a video was preloaded in the native controls that are associated with a video element. This has now been added. Here is <a href="http://people.opera.com/miket/2012/3/buffer.html">a demonstration of that effect</a>.</p></li>
@@ -35,7 +35,7 @@ Pssst! Yes, you. You like CSS? Interested in some HTML5? Want some hot ECMAScrip
 <h2>EcmaScript</h2>
 
 <ul>
-<li><p>We now correctly support the TypedArray contructor of the form <code>TypedArray(TypedArray array)</code>, e.g., <code>var x = new Uint32Array(uint8Array);</code>.</p></li>
+<li><p>We now correctly support the TypedArray constructor of the form <code>TypedArray(TypedArray array)</code>, e.g., <code>var x = new Uint32Array(uint8Array);</code>.</p></li>
 <li><p><a href="http://es5.github.com/#x15.5.4.14">ES5.1 defines</a> special handling for <code>String.prototype.split(undefined)</code>. Previously we aligned with V8, but as the latest JS engines in Firefox and IE are now compliant we&#x2019;ve fixed this to match the spec.</p></li>
 </ul>
 
@@ -46,7 +46,7 @@ Pssst! Yes, you. You like CSS? Interested in some HTML5? Want some hot ECMAScrip
 <li><p>Appending a <code>&lt;foreignObject&gt;</code> element in SVG or modifying its contents via script never resulted in a reflow, therefore the changes never got painted. Fixed now!</p></li>
 <li><p>Not too long ago, support for <code>window.event</code>, <code>attachEvent</code>, and <code>detachEvent</code> was necessary for the &#x201C;Best seen in Internet Explorer&#x201D; class of sites to work. Thankfully, these days are mostly behind us. As such, we&#x2019;re hiding our support for these IE-isms. What this means is code like <code>if (window.event)</code> will return false, but existing code will work if it relies on it.</p></li>
 <li><p>Another IE-ism that we&#x2019;re removing is <code>readystatechange</code> events on the <code>&lt;script&gt;</code> element. This was causing a handful of sites to break as we supported both this and <code>script.onload</code>.</p></li>
-<li><p>Previously, in Opera, if the properties of an element changed such that a pseudo-element was no longer generated (Psuedo-elements are generated if a pseudo-element selector matches the element), the pseudo-elements still persisted. <a href="http://people.opera.com/miket/2012/3/pseudo.html">This is now fixed</a>.</p></li>
+<li><p>Previously, in Opera, if the properties of an element changed such that a pseudo-element was no longer generated (Pseudo-elements are generated if a pseudo-element selector matches the element), the pseudo-elements still persisted. <a href="http://people.opera.com/miket/2012/3/pseudo.html">This is now fixed</a>.</p></li>
 </ul>
 
 

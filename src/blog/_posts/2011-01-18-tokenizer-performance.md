@@ -74,7 +74,7 @@ license: cc-by-3.0
 <dt>webworker</dt>
 <dd>Uses <code>innerHTML</code>.  Layout and creating the DOM use different processes with a WebWorker</dd>
 <dt>no_highlight</dt>
-<dd>The source is dirrectly rendered without tokenising and highlighting</dd>
+<dd>The source is directly rendered without tokenising and highlighting</dd>
 </dl>
 
 <p>Although we do not have full benchmark results from Opera at the time Opera Dragonfly was originally released, at that time a file of the same size took 8 seconds to tokenise and highlight. This is a real world performance boost which is enabling us to do things that were not possible only 3 years ago. The Open Web platform has come a long way in this time. Opera is the fastest browser of those tested in all tests but one: Web Workers. FireFox 4 is also competitive compared to Chrome 10 in 3 out of the 5 tests. The reason for Opera’s performance (a slight slow down) with Web Workers is quite clear. Opera currently doesn&#39;t use separate processes for Web Workers as it has traditionally been single threaded, due in the most part to the requirement of working cross platform, including on very resource constraint devices. BREW for example is one platform that is single threaded. As you can see from the Chrome results, Web Workers gives a significant performance increase for this kind of task when using multiple processes.</p>
