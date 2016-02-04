@@ -117,7 +117,7 @@ license: cc-by-3.0
 Заметки:
 
 - Режим Opera Turbo сжимает трафик до 80%, режим Opera Mini — до 90%.
-- Для Opera Turbo, отмеченного звёздочкой, также есть опция [Video Boost](http://blogs.opera.com/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) для сжатия видео.
+- Для Opera Turbo, отмеченного звёздочкой, также есть опция [Video Boost](http://www.opera.com/blogs/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) для сжатия видео.
 - Если вы определяете положение пользователей на основе IP-адреса, обязательно проверяйте заголовок `X-Forwarded-For`. Таким образом вы сможете верно определить откуда пользователь открыл ваш сайт в браузере, который использует прокси Opera Mini и Opera Turbo.
 - Поддержка стандартов в Opera Mini «ограничена», это значит, что сложный JavaScript, CSS и другие динамические элементы могут работать не так, как вы ожидаете из-за особенностей серверной отрисовки и ограниченным возможностям устройств.
 - Старые браузеры Opera на движке Presto, например, Opera 12 для компьютеров, Opera Mobile Classic, и т.д. уже не поддерживаются и в этом списке не приведены.

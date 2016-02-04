@@ -12,7 +12,7 @@ Here it is — [Opera 15 for computers](http://www.opera.com/computer): your fas
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" frameborder="0" allowfullscreen></iframe>
 
-Opera 15 for computers also commences our new [fast release cycle](http://blogs.opera.com/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
+Opera 15 for computers also commences our new [fast release cycle](http://www.opera.com/blogs/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
 
 ### So what’s new?
 

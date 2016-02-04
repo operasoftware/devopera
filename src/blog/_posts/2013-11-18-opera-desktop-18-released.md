@@ -89,4 +89,4 @@ In the next two weeks, we’ll promote the experimental [Opera developer stream]
 
 [29]: http://opera.com/developer
 [30]: http://opera.com/next
-[31]: http://blogs.opera.com/desktop/
+[31]: http://www.opera.com/blogs/desktop/

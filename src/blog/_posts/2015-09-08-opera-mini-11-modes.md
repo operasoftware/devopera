@@ -2,14 +2,14 @@
 title: Opera Mini 11 for Android’s new compression mode
 authors:
 - bruce-lawson
-intro: '[Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/) was released today with a new compression mode that preserves web fonts, layout and JavaScript. Learn more!'
+intro: '[Opera Mini 11 for Android](http://www.opera.com/blogs/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/) was released today with a new compression mode that preserves web fonts, layout and JavaScript. Learn more!'
 tags:
 - javascript
 - opera-mini
 license: cc-by-3.0
 ---
 
-Today, we released [Opera Mini 11 for Android](http://blogs.opera.com/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/). It has two modes. By default, it starts in Extreme-compression mode. This is the traditional Opera Mini compression that can reduce a site down to 10% of its original size, using the Opera Presto rendering engine on a proxy server.
+Today, we released [Opera Mini 11 for Android](http://www.opera.com/blogs/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/). It has two modes. By default, it starts in Extreme-compression mode. This is the traditional Opera Mini compression that can reduce a site down to 10% of its original size, using the Opera Presto rendering engine on a proxy server.
 
 As always, this means a trade-off between experience and speed. Some sites may render differently, and some JavaScript won’t function as you expect. (Read more about [Opera Mini and JavaScript](https://dev.opera.com/articles/opera-mini-and-javascript/) and [Making websites that work well on Opera Mini](https://dev.opera.com/articles/making-sites-work-opera-mini/).)
 

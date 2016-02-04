@@ -16,7 +16,7 @@ license: cc-by-3.0
 	<figcaption elem="caption">Opera Mini for iOS</figcaption>
 </figure>
 
-Today, we released [Opera Mini 8 for iOS](https://itunes.apple.com/app/id363729560). It’s a completely redesigned product that, for the first time, offers three different browser modes, two of which save time and money for the consumer — or get them connected on slow networks that other browsers can’t handle. More details for consumers are available [on mobile team blog](http://blogs.opera.com/mobile/2014/06/download-the-new-opera-mini-for-iphone-ipad/).
+Today, we released [Opera Mini 8 for iOS](https://itunes.apple.com/app/id363729560). It’s a completely redesigned product that, for the first time, offers three different browser modes, two of which save time and money for the consumer — or get them connected on slow networks that other browsers can’t handle. More details for consumers are available [on mobile team blog](http://www.opera.com/blogs/mobile/2014/06/download-the-new-opera-mini-for-iphone-ipad/).
 
 If you’ve upgraded from the previous version, it will start in Mini mode. New installs will open in Turbo mode. The browser mode can be switched using the “O” button on the right of the toolbar.
 
