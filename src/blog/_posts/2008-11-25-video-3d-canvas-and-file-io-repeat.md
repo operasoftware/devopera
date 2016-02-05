@@ -53,7 +53,7 @@ Second, this release is all about being able to build applications that can run 
 
 ## 3D Canvas
 
-Third, using this build you can run cool 3D applcations created using [our 3D Canvas implementation][8], which is included in this build.
+Third, using this build you can run cool 3D applications created using [our 3D Canvas implementation][8], which is included in this build.
 
 [8]: http://my.opera.com/timjoh/blog/2007/11/13/taking-the-canvas-to-another-dimension
 

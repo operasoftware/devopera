@@ -39,7 +39,7 @@ license: cc-by-3.0
 
 <h2>Friday</h2>
 
-<p>After a pleasent breakfast, I headed on in, and got settled. It was nice to say hi to Jon Gibbins, and I also got stalked on Twitter for a short time by that Patrick Lauke bloke, before having a really good long chat to him later on.</p>
+<p>After a pleasant breakfast, I headed on in, and got settled. It was nice to say hi to Jon Gibbins, and I also got stalked on Twitter for a short time by that Patrick Lauke bloke, before having a really good long chat to him later on.</p>
 
 <h3>Keynote</h3>
 
@@ -53,7 +53,7 @@ license: cc-by-3.0
 
 <h3>Accessibility and mobile</h3>
 
-<p>The second panel was all about mobile accessibility. First up was Dominique Hazaël-Massieux (Activity Lead, W3C Mobile Web Initiative) talking about how the W3C has drafted a set of documents showing the <a href="http://www.w3.org/WAI/mobile/">relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> — there is a lot of overlap there. Our very own Miss Swan then had her chance to talk about a variety of mobile accessibility issues, including similarities between browsing on a desktop with low-vision and small screens on a mobile, issues around mobility and navigation on a desktop and mobile, and the benefits of mobile browsing for people with disabilities. Henny then went on to further clarify the cross over by talking about solutions for improved browsing for both groups such as geolocation, personalisation, customisation and media quesries. Thomas Caspers rounded off the individual talks by playing devil&#39;s advocate. He disagreed with a few of Henny&#39;s points, saying that it is really hard to provide a single (one web) solution with alternative content for some applications.</p>
+<p>The second panel was all about mobile accessibility. First up was Dominique Hazaël-Massieux (Activity Lead, W3C Mobile Web Initiative) talking about how the W3C has drafted a set of documents showing the <a href="http://www.w3.org/WAI/mobile/">relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> — there is a lot of overlap there. Our very own Miss Swan then had her chance to talk about a variety of mobile accessibility issues, including similarities between browsing on a desktop with low-vision and small screens on a mobile, issues around mobility and navigation on a desktop and mobile, and the benefits of mobile browsing for people with disabilities. Henny then went on to further clarify the cross over by talking about solutions for improved browsing for both groups such as geolocation, personalisation, customisation and media queries. Thomas Caspers rounded off the individual talks by playing devil&#39;s advocate. He disagreed with a few of Henny&#39;s points, saying that it is really hard to provide a single (one web) solution with alternative content for some applications.</p>
 
 <p>The main example was maps - content needs to be changed for both the visual content AND any alternative content. Does the user want to get from A to B, or find the nearest bank, or get contour information, or political information? You can say so much about a map that you need to provide just the relevant stuff for that user, otherwise there is so much of it that it becomes useless. Henny&#39;s response was that better personalisation and customisation is needed, something that is a benefit for all users regardless of ability, disability or whether they are on a desktop or mobile.</p>
 

@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Opera is not an open source company, but we contribute to the community in other ways, such as releasing Opera Dragonfly under a BSD licence. The thought of sharing with the open source community what we are doing crossed my mind. The opportunity came when Azizat, the coordinator or the <a href="http://planet.foss.org.my">MYOSS</a>, contacted me. Finally, I got the chance to talk (to the open source guys) about another kind of openess: Open Standards.</p>
+<p>Opera is not an open source company, but we contribute to the community in other ways, such as releasing Opera Dragonfly under a BSD licence. The thought of sharing with the open source community what we are doing crossed my mind. The opportunity came when Azizat, the coordinator or the <a href="http://planet.foss.org.my">MYOSS</a>, contacted me. Finally, I got the chance to talk (to the open source guys) about another kind of openness: Open Standards.</p>
 
 <p>Taking que from David&#39;s wonderful <a href="http://my.opera.com/ODIN/blog/web-standards-presentation-at-tsukuba-university-japan">OpenWeb presentation slides from Japan</a>, I decided to talk about the Open Standards, the OpenWeb platform and Opera&#39;s work in Open the Web.</p>
 

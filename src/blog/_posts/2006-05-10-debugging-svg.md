@@ -11,7 +11,7 @@ license: os-asa
 
 Opera 9 has a lot of new features to help developing content. Here is an example of debugging SVG.
 
-The basic plan is to have an HTML page that has a clock in it. If you look at the [broken clock][1] it simply doesn’t appear due to bugs in the code. This might seem frustrasting, but it is a good reminder that you need to get at least the minimum right or browsers will have to include megabyutes of bug correction, and spend their developers’ time fixing authors’ bugs instead of making a better browser.
+The basic plan is to have an HTML page that has a clock in it. If you look at the [broken clock][1] it simply doesn’t appear due to bugs in the code. This might seem frustrating, but it is a good reminder that you need to get at least the minimum right or browsers will have to include megabyutes of bug correction, and spend their developers’ time fixing authors’ bugs instead of making a better browser.
 
 [1]: {{ page.id }}/svg-clock-broken.svg
 

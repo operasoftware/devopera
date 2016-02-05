@@ -25,7 +25,7 @@ There are also practical reasons — the Opera Mini browser renders web pages th
 
 ## How did we do it?
 
-How did we do it? We decided to use the existing Opera Mini code base (even the binary package) instead of creating a separate port, to save on resourses. We created a special wrapper that translates Java ME (mostly MIDP) API calls into Android API calls. The tool used was [MicroEmulator][2] - this is an open source (LGPL) implementation of Java ME that runs on top of Java SE. The lead Opera Mini Android developer is also the lead developer of MicroEmulator, so it was an inspired choice! The Android platform is similar to Java SE, with the exception of several libraries normally included in Java SE (like AWT/Swing - these are excluded because they would likely be too heavy to fit into the embedded environment.) It is therefore fairly simple to port MicroEmulator to run inside Android environment. The only major task was to replace the AWT/Swing graphics backend of MicroEmulator with Android specific APIs.
+How did we do it? We decided to use the existing Opera Mini code base (even the binary package) instead of creating a separate port, to save on resources. We created a special wrapper that translates Java ME (mostly MIDP) API calls into Android API calls. The tool used was [MicroEmulator][2] - this is an open source (LGPL) implementation of Java ME that runs on top of Java SE. The lead Opera Mini Android developer is also the lead developer of MicroEmulator, so it was an inspired choice! The Android platform is similar to Java SE, with the exception of several libraries normally included in Java SE (like AWT/Swing - these are excluded because they would likely be too heavy to fit into the embedded environment.) It is therefore fairly simple to port MicroEmulator to run inside Android environment. The only major task was to replace the AWT/Swing graphics backend of MicroEmulator with Android specific APIs.
 
 [2]: http://www.microemu.org/
 
@@ -33,6 +33,6 @@ How did we do it? We decided to use the existing Opera Mini code base (even the 
 
 This section details the issues we faced when making the Opera Mini port over to Android:
 
-1. First, the Android platform is a comparitively fresh set of APIs. There was not much information available on the web when we were doing the original development, and the community around Android was just forming, so sometimes it was difficult to find an answer if something during development was proving difficult.
+1. First, the Android platform is a comparatively fresh set of APIs. There was not much information available on the web when we were doing the original development, and the community around Android was just forming, so sometimes it was difficult to find an answer if something during development was proving difficult.
 2. Android was not a finished product during the original development, and there was no hardware available that would run Android at that time.
 3. Integration between the Eclipse IDE and the Android SDK is seamless, making for a nice coding experience. The Android emulator however runs inside QEMU, which is a bit to slow even on fast desktops.
