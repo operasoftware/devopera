@@ -12,7 +12,7 @@ license: cc-by-nc-sa-2.5
 
 ## Introduction
 
-When writing documents, it is often useful to number sections and have a table of contents. You can number these by hand, directly in the markup, but this can be time consuming if the order changes and you have to edit all the numbers. CSS 2.1 gives us a automated way to generate numbers using CSS counters, and this article will walk you through how to use them. One word of note before we start is that CSS counters are not yet implemented in IE, although they are on the roadmap for IE8.
+When writing documents, it is often useful to number sections and have a table of contents. You can number these by hand, directly in the markup, but this can be time consuming if the order changes and you have to edit all the numbers. CSS 2.1 gives us an automated way to generate numbers using CSS counters, and this article will walk you through how to use them. One word of note before we start is that CSS counters are not yet implemented in IE, although they are on the roadmap for IE8.
 
 ## Setting up the counter
 
@@ -22,7 +22,7 @@ The first step is to reset the counter to its base value and give it a name. Thi
 		counter-reset:section;
 		}
 
-This says that the counter will be reset to zero on the `<body>` element, and the counter identifier is section. This can be any name that you wish. The property can also take a optional second value that sets the starting value of the counter. If you’d like the counter to start counting from 5 upwards, you can specify it like so:
+This says that the counter will be reset to zero on the `<body>` element, and the counter identifier is section. This can be any name that you wish. The property can also take an optional second value that sets the starting value of the counter. If you’d like the counter to start counting from 5 upwards, you can specify it like so:
 
 	body {
 		counter-reset:section 4;

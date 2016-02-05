@@ -122,7 +122,7 @@ There are two general categories of elements in HTML, which correspond to the ty
 
 Block level means a higher level element, normally informing the structure of the document. It may help to think of block level elements being those that start on a new line, breaking away from what went before. Some common block level elements include paragraphs, list items, headings and tables.
 
-Inline elements are those that are contained within block level structural elements and surround only small parts of the document’s content, not entire paragrahs and groupings of content. An inline element will not cause a new line to appear in the document, they are the kind of elements that would appear in a paragraph of text. Some common inline elements include hypertext links, highlighted words or phrases and short quotations.
+Inline elements are those that are contained within block level structural elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document, they are the kind of elements that would appear in a paragraph of text. Some common inline elements include hypertext links, highlighted words or phrases and short quotations.
 
 ## Character references {#characterreferences}
 

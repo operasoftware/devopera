@@ -97,7 +97,7 @@ function dropBomb(event, obj) {
 
 <h2>Speed, more speed!</h2>
 
-<p>I was surprised at how fast desktop browsers handled the video manipulation but unlike Sean's original demo, we're also targetting mobile devices so we should strive for any performance improvement possible. Fortunately there are a couple of quick ways we can speed things up a bit. Firstly, we look for the most intensive part of the script and in this case, it's clearly the <code>processFrame()</code> function which is repeated every 33 milliseconds. Within this there is a <code>for</code> loop which loops through an array of tiles, calculating the length of the array with each iteration. Caching the array length at the start of the loop would be more efficient, like so:</p>
+<p>I was surprised at how fast desktop browsers handled the video manipulation but unlike Sean's original demo, we're also targeting mobile devices so we should strive for any performance improvement possible. Fortunately there are a couple of quick ways we can speed things up a bit. Firstly, we look for the most intensive part of the script and in this case, it's clearly the <code>processFrame()</code> function which is repeated every 33 milliseconds. Within this there is a <code>for</code> loop which loops through an array of tiles, calculating the length of the array with each iteration. Caching the array length at the start of the loop would be more efficient, like so:</p>
 
 <pre><code>// Standard for loop
 for(var i = 0; i &lt; tiles.length; i++){

@@ -30,7 +30,7 @@ license: cc-by-3.0
 
 <h2 id="introduction">Introduction</h2>
 
-<p>In this article we’ll look at the functionality made available by the new methods of <em>array objects</em> standardized in ECMA-262 5th edition (aka <abbr title="ECMAScript 5">ES5</abbr>). Most of the methods dicussed below are <em>higher-order</em> (we’ll clarify this term shortly below), and related to functional programming. In addition, most of them have been added to different JavaScript implementations since version 1.6 (SpiderMonkey), although these were only standardised in ES5.</p>
+<p>In this article we’ll look at the functionality made available by the new methods of <em>array objects</em> standardized in ECMA-262 5th edition (aka <abbr title="ECMAScript 5">ES5</abbr>). Most of the methods discussed below are <em>higher-order</em> (we’ll clarify this term shortly below), and related to functional programming. In addition, most of them have been added to different JavaScript implementations since version 1.6 (SpiderMonkey), although these were only standardised in ES5.</p>
 
 <p class="note">Unless stated otherwise, all the methods discussed below were introduced in JavaScript 1.6.</p>
 

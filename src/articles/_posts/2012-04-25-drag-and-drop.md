@@ -78,7 +78,7 @@ Even with a `dropzone` element declared, in order to accept a drop the drop targ
 
 What makes HTML5 Drag and Drop more interesting than a run-of-the-mill JavaScript drag and drop library is the concept of the _drag data store._ At the core of every drag and drop operation lies a bucket of information that can be passed around. The data store consists of a data store item list, listing each piece of dragged data. These drag items all have a kind (either `Text` or `File`), a type (a string, usually given as a MIME type), the actual data (a unicode or binary string), and some other information that can be used by the browser to give UI feedback.
 
-The `dataTransfer` object of a drag event is how we get access to read from, write to, and clear the data in this data store. Each `dataTransfer` object is also linked to a `dataTransferItemList` object (accesible via the `items` getter), which contains one or more `dataTransferItem` objects (accessible via the index of the `dataTransferItemList` object).
+The `dataTransfer` object of a drag event is how we get access to read from, write to, and clear the data in this data store. Each `dataTransfer` object is also linked to a `dataTransferItemList` object (accessible via the `items` getter), which contains one or more `dataTransferItem` objects (accessible via the index of the `dataTransferItemList` object).
 
 ### Drag and drop events
 

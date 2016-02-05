@@ -99,7 +99,7 @@ It is easier to wrap the whole thing in an anonymous function and protect the sc
 		}
 	}();
 
-Again, this appproach is not without issues. None of these are available from the outside at all any more. If you want to make them available you need to wrap the things you want to make public in a `return` statement:
+Again, this approach is not without issues. None of these are available from the outside at all any more. If you want to make them available you need to wrap the things you want to make public in a `return` statement:
 
 	myNameSpace = function() {
 		var current = null;
@@ -420,7 +420,7 @@ By having all your functions only perform one task you can have a main `init()` 
 
 ## Enhance progressively {#progressiveenhancement}
 
-Progressive Enhancement as a development practice is discussed in detail in the [Graceful degredation versus progressive enhancement][6]. In essence what you should do is write code that works regardless of available technology. In the case of JavaScript, this means that when scripting is not available (say on a BlackBerry, or because of an over-zealous security policy) your web products should still allow users to reach a certain goal, not block them because of the lack of JavaScript which they can’t turn on, or don’t want to.
+Progressive Enhancement as a development practice is discussed in detail in the [Graceful degradation versus progressive enhancement][6]. In essence what you should do is write code that works regardless of available technology. In the case of JavaScript, this means that when scripting is not available (say on a BlackBerry, or because of an over-zealous security policy) your web products should still allow users to reach a certain goal, not block them because of the lack of JavaScript which they can’t turn on, or don’t want to.
 
 [6]: http://dev.opera.com/articles/view/graceful-degradation-progressive-enhancement/
 
@@ -721,7 +721,7 @@ The last point I want to make is not about JavaScript itself but about how it fi
 
 There are a lot of clever tricks you can apply to JavaScript to make it perform great. Most of them come with the drawback of making your code hard to understand and maintain.
 
-In order to write secure, working JavaScript we need to break this cycle and stop optimizing code for machines rather than other developers. Most — something that is very common in other languages but not as well known amongts JavaScripters. A build script can remove whitespace, comments, replace strings with Array lookups (to avoid MSIE creating a string object for every single instance of a string — even in conditions) and do all the other small tweaks needed to make our JavaScript fly in browsers.
+In order to write secure, working JavaScript we need to break this cycle and stop optimizing code for machines rather than other developers. Most — something that is very common in other languages but not as well known amongst JavaScripters. A build script can remove whitespace, comments, replace strings with Array lookups (to avoid MSIE creating a string object for every single instance of a string — even in conditions) and do all the other small tweaks needed to make our JavaScript fly in browsers.
 
 If we concentrate more on making the initial code easy to understand and extend by other developers we can create the perfect build script. If we keep optimizing prematurely we’ll never get there. Do not build for yourself or the browser — build for the next developer who takes over from you.
 

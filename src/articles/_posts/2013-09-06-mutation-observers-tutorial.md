@@ -133,7 +133,7 @@ I mentioned above that the mutation callback receives an array of mutation recor
 
 A mutation record is an object that reports a single change to the document tree. Mutation record objects are defined by the `MutationRecord` interface, and contain the following items.
 
-- `type` the type of of mutation observed, either `attribute`, `characterData` or `childList`.
+- `type` the type of mutation observed, either `attribute`, `characterData` or `childList`.
 - `target` the node affected by the mutation.
 - `addedNodes` a NodeList of elements, attributes, and text nodes added to the tree.
 - `removedNodes` a NodeList of elements, attributes, and text nodes removed from the tree.
@@ -254,6 +254,6 @@ To learn more about mutation observers, try the following resources.
 [12]: http://code.google.com/p/mutation-summary/wiki/DOMMutationObservers
 [13]: http://www.w3.org/2008/webapps/wiki/MutationReplacement
 
-_Cover photo by [gerlos][14]. Used under a Attribution-ShareAlike 2.0 Generic license._
+_Cover photo by [gerlos][14]. Used under an Attribution-ShareAlike 2.0 Generic license._
 
 [14]: http://www.flickr.com/photos/gerlos/3119891607

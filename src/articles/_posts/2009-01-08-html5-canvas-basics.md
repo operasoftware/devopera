@@ -122,7 +122,7 @@ color values you can use are the same as in <abbr title="Cascading Style
 Sheet">CSS</abbr>: hex codes, <abbr title="red, green, blue">rgb</abbr>(),
 <abbr title="red, green, blue, alpha">rgba</abbr>() and even <abbr
 title="hue, saturation, light, alpha">hsla</abbr>() if the browser
-supports it (for example this feature is supportd in Opera 10.00 and later).</p>
+supports it (for example this feature is supported in Opera 10.00 and later).</p>
 <p>With <code>fillRect</code> you can draw filled rectangles. With
 <code>strokeRect</code> you can draw rectangles only using borders, without
 filling. If you want to clear some part of the canvas, you can use

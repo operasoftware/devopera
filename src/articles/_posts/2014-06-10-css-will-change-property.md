@@ -29,7 +29,7 @@ For quite some time now, we’ve been using what has been known as the `translat
 
 	transform: translate3d(0, 0, 0);
 
-Hardware-accelerating an operation results in the creation of what is known as a compositor layer that is uploaded to and composited by the GPU. However, force-hacking layer creation may not always be the solution to certain performance bottlenecks on a page. Layer creation techniques can boost page speed, but they come with a cost: they take up memory in system RAM and on the GPU (particularly limited on mobile devices) and having lots of them can have a bad impact (especially on mobile devices), so they must be used wisely and you need to make sure that hardware-accelerating your operation will really help the performance of your page, and that a performance bootleneck is not being caused by another operation on your page.
+Hardware-accelerating an operation results in the creation of what is known as a compositor layer that is uploaded to and composited by the GPU. However, force-hacking layer creation may not always be the solution to certain performance bottlenecks on a page. Layer creation techniques can boost page speed, but they come with a cost: they take up memory in system RAM and on the GPU (particularly limited on mobile devices) and having lots of them can have a bad impact (especially on mobile devices), so they must be used wisely and you need to make sure that hardware-accelerating your operation will really help the performance of your page, and that a performance bottleneck is not being caused by another operation on your page.
 
 In order to avoid layer-creation hacks, a new CSS property has been introduced, that allows us to inform the browser ahead of time of what kinds of changes we are likely to make to an element, thus allowing it to optimize how it handles the element ahead of time, performing potentially-expensive work preparing for an operation such as an animation, for example, before the animation actually begins. This property is the new `will-change` property.
 
@@ -37,7 +37,7 @@ In order to avoid layer-creation hacks, a new CSS property has been introduced, 
 
 The `will-change` property allows you to inform the browser ahead of time of what kinds of changes you are likely to make to an element, so that it can set up the appropriate optimizations before they’re needed, therefore avoiding a non-trivial start-up cost which can have a negative effect on the responsiveness of a page. The elements can be changed and rendered faster, and the page will be able to update snappily, resulting in a smoother experience.
 
-For example, when using CSS 3D Transforms on an element, the element and its contents might be promoted to a layer, as we mentioned earlier, before they are composited in (drawn onto the screen) later. However, setting up the element in a fresh layer is a relatively expensive operation, which can delay the start of a transform animation by a noticeable fraction of a second, causing that noticable “flicker”.
+For example, when using CSS 3D Transforms on an element, the element and its contents might be promoted to a layer, as we mentioned earlier, before they are composited in (drawn onto the screen) later. However, setting up the element in a fresh layer is a relatively expensive operation, which can delay the start of a transform animation by a noticeable fraction of a second, causing that noticeable “flicker”.
 
 In order to avoid this delay, you can inform the browser about the changes some time *before* they actually happen. That way, it will have some time to prepare for these changes, so that when these changes occur, the element’s layer will be ready and the transform animation can be performed and then the element can be rendered and the page updated in quickly.
 
@@ -45,7 +45,7 @@ Using `will-change`, hinting to the browser about an upcoming transformation can
 
 	will-change: transform;
 
-You can also declare to the browser your intention to change an element’s scroll position (the element’s position in the visible scroll window and how much of it is visible within that window), its contents, or one or more of its CSS property values by specifying the name of the properties you’re expecting to change. If you expect or plan to change mutliple values/aspects of an element, you can provide a list of comma-separated values. For example, if you’re expecting the element to be animated and moved (its position changed), you can declare that to the browser like so:
+You can also declare to the browser your intention to change an element’s scroll position (the element’s position in the visible scroll window and how much of it is visible within that window), its contents, or one or more of its CSS property values by specifying the name of the properties you’re expecting to change. If you expect or plan to change multiple values/aspects of an element, you can provide a list of comma-separated values. For example, if you’re expecting the element to be animated and moved (its position changed), you can declare that to the browser like so:
 
 	will-change: transform, opacity;
 
@@ -128,7 +128,7 @@ However, hovering the ancestor does not always indicate that the element will be
 
 ### Remove `will-change` After the Changes Are Done
 
-The optimizations that the browser makes for changes that are about to occur are usually costly and, as we mentioned earlier, can take up much of the machine’s resources. The usual browser behavior for optimizations that it makes is to remove these optimzations and revert back to normal behavior as soon as it can. However, `will-change` **overrides this behavior** maintaining the optimizations for much longer than the browser would otherwise do.
+The optimizations that the browser makes for changes that are about to occur are usually costly and, as we mentioned earlier, can take up much of the machine’s resources. The usual browser behavior for optimizations that it makes is to remove these optimizations and revert back to normal behavior as soon as it can. However, `will-change` **overrides this behavior** maintaining the optimizations for much longer than the browser would otherwise do.
 
 As such, you should always remember to *remove* `will-change` after the element is done changing, so the browser can recover whatever resources the optimizations are claiming.
 

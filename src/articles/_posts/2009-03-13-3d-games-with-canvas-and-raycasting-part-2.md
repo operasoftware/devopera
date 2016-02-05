@@ -488,7 +488,7 @@ I will define the enemy types and the locations of enemies on the map in much sa
 		{type : 0, x : 25.5, y : 16.5}
 	];
 
-Next I’ll need an `initEnemies` function, which will be called from `init` along with the rest. This function works a bit like the `initSprites` function I just made, but it is also different in a number of ways. Whereas the static sprites could all be tied to a specific tile on the map, the enemies are of course free to go whereever they want so we can’t use the same two-dimensional map structure to store their locations. Instead I’ll take the easy way out and simply keep all the enemies in a single array, even if this does mean I’ll have to traverse this array on each frame to determine which ones to render. Since I won’t be dealing with a lot of enemies (yet, at least) this shouldn’t too big of a problem for now.
+Next I’ll need an `initEnemies` function, which will be called from `init` along with the rest. This function works a bit like the `initSprites` function I just made, but it is also different in a number of ways. Whereas the static sprites could all be tied to a specific tile on the map, the enemies are of course free to go wherever they want so we can’t use the same two-dimensional map structure to store their locations. Instead I’ll take the easy way out and simply keep all the enemies in a single array, even if this does mean I’ll have to traverse this array on each frame to determine which ones to render. Since I won’t be dealing with a lot of enemies (yet, at least) this shouldn’t too big of a problem for now.
 
 	var enemies = [];
 	function initEnemies() {
