@@ -1,13 +1,6 @@
 ---
 layout: none
 ---
-
-{% if page.category %}
-	{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
-{% else %}
-	{% assign entries = site.posts | where: 'language', 'en' %}
-{% endif %}
-
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Dev.Opera</title>
@@ -19,6 +12,11 @@ layout: none
 		<name>Dev.Opera editors</name>
 		<email></email>
 	</author>
+{% if page.category %}
+	{% assign entries = site.posts | where: 'language', 'en' | where: 'category', page.category %}
+{% else %}
+	{% assign entries = site.posts | where: 'language', 'en' %}
+{% endif %}
 {% for entry in entries limit:25 %}
 	<entry>
 		<id>https://dev.opera.com{{ entry.url }}</id>
