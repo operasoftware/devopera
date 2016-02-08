@@ -13,6 +13,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-shell": "^0.5.1",
     "hash-files": "^1.0.0",
+    "merge-stream": "^1.0.0",
     "open": "0.0.5",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
