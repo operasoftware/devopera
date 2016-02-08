@@ -25,7 +25,7 @@ layout: none
 		<published>{{ entry.date | date_to_xmlschema }}</published>
 		<updated>{{ entry.date | date_to_xmlschema }}</updated>
 		<author>
-			<name>{% include authors.html entry=entry %}</name>
+			<name>{% capture authors %}{% include authors.html %}{% endcapture %}{{ authors | strip }}</name>
 		</author>
 		<content type="html" xml:base="https://dev.opera.com/"><![CDATA[{{ entry.content }}]]></content>
 	</entry>
