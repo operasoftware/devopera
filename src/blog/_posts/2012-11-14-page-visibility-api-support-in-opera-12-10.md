@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Our recent [Opera 12.10 release](http://www.opera.com/browser/download/) added partial support for the [Page Visibility API](http://www.w3.org/TR/page-visibility/). It’s a simple API, but a mighty one because it allows developers to specify what a document should do when it becomes hidden. If you’ve ever been embarrassed at the office while trying to determine which of your 200 tabs is playing unexpected sound, you’ll appreciate the utility of the Page Visibility API.
+Our recent [Opera 12.10 release](https://www.opera.com/browser/download/) added partial support for the [Page Visibility API](http://www.w3.org/TR/page-visibility/). It’s a simple API, but a mighty one because it allows developers to specify what a document should do when it becomes hidden. If you’ve ever been embarrassed at the office while trying to determine which of your 200 tabs is playing unexpected sound, you’ll appreciate the utility of the Page Visibility API.
 
 ## How it works
 

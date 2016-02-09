@@ -18,8 +18,8 @@ This guide has been updated to cover the Opera TV Emulator 3.4. For previous ver
 
 The Opera TV Emulator allows web developer to test HTML5 and CE-HTML content for TVs and other appliances running the [Opera Devices SDK][2], as well as HTML-based applications for the [Opera TV Store][3]. It comes packaged as an [Oracle VirtualBox][4] image and can be run on Windows, Mac and Linux.
 
-[2]: http://www.opera.com/business/devices/
-[3]: http://www.opera.com/business/tv/store/
+[2]: https://www.opera.com/business/devices/
+[3]: https://www.opera.com/business/tv/store/
 [4]: https://www.virtualbox.org/
 
 - [Installation](#install)
@@ -48,7 +48,7 @@ The Opera TV Emulator is provided as a preconfigured [Oracle VirtualBox][5] mach
 4. Open the `.vbox` file from the package. This will automatically add the virtual machine to the Oracle VirtualBox Manager and start the emulator.
 
 [6]: http://www.virtualbox.org/wiki/Downloads
-[7]: http://www.opera.com/business/tv/emulator/
+[7]: https://www.opera.com/business/tv/emulator/
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/virtualbox-vbox-vdi-files.png" alt="The Opera TV Emulator .vbox and .vdi files from the extracted package">
@@ -65,8 +65,8 @@ Some Linux distributions already ship with an open source version of VirtualBox.
 
 The Opera TV Emulator is, in essence, a self-contained generic web browser, equivalent to what you would find on devices running the [Opera Devices SDK][10]. In addition, the emulator contains specific functionality that is only present in [Opera TV Store][11] client application.
 
-[10]: http://www.opera.com/business/devices/
-[11]: http://www.opera.com/business/tv/store/
+[10]: https://www.opera.com/business/devices/
+[11]: https://www.opera.com/business/tv/store/
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/tv-emulator-start-page.png" alt="The Opera TV Emulator start page">
@@ -174,7 +174,7 @@ Your shared folder will be available under `file://localhost/mydata/sf_[name of 
 
 [Opera Dragonfly][24] is a comprehensive set of web developer tools integrated with the Opera desktop browser. Using the remote debugging functionality of Opera Dragonfly, it is possible to debug web pages and applications running in the Opera TV Emulator:
 
-[24]: http://www.opera.com/dragonfly/
+[24]: https://www.opera.com/dragonfly/
 
 1. Set Opera Dragonfly to listen for incoming remote debugging connections.
 2. Press the Connect to Dragonfly button on the emulator’s web-based remote control.
@@ -195,7 +195,7 @@ When the connection is established, make sure that the debugging context is set 
 
 For more information, please refer to the [Opera Dragonfly documentation][27].
 
-[27]: http://www.opera.com/dragonfly/documentation/
+[27]: https://www.opera.com/dragonfly/documentation/
 
 ## Settings {#settings}
 

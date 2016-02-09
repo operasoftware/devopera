@@ -14,7 +14,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p><p>There have been some exciting developments in web standards education of late. I&#39;ve pretty much got the core of the <a href="http://www.opera.com/wsc/" rel="nofollow">Web Standards Curriculum</a> published, and there are translations on the way. I have also contributed to the <a href="http://interact.webstandards.org" rel="nofollow">WaSP InterAct</a> project, which currently has 11 courses available and promises more in the next year or so. And these initiatives are being brought together along with others under the umbrella of the <a href="http://www.w3.org/2005/Incubator/owea/charter-20090617.html" rel="nofollow">Open Web Education Alliance</a>, which promises to provide a worldwide standard for teaching web design and development that provides educators with all the tools and resources they need to start teaching web standards and best practices in their courses.</p>
+<p><p>There have been some exciting developments in web standards education of late. I&#39;ve pretty much got the core of the <a href="https://www.opera.com/wsc/" rel="nofollow">Web Standards Curriculum</a> published, and there are translations on the way. I have also contributed to the <a href="http://interact.webstandards.org" rel="nofollow">WaSP InterAct</a> project, which currently has 11 courses available and promises more in the next year or so. And these initiatives are being brought together along with others under the umbrella of the <a href="http://www.w3.org/2005/Incubator/owea/charter-20090617.html" rel="nofollow">Open Web Education Alliance</a>, which promises to provide a worldwide standard for teaching web design and development that provides educators with all the tools and resources they need to start teaching web standards and best practices in their courses.</p>
 
 <p>Although at an early stage (we had the <a href="http://webeducationrocks.com/" rel="nofollow">first OWEA summit</a> in Tennessee in early August 2009), this promises great things for web standards education and therefore adoption. But I have a worry - it will be easier to integrate our courses with higher education, where they at least have some existing courses covering &quot;web stuff&quot; in some capacity. But what about kids at high schools, and even below that age group?</p> ... </p><!--more--><h2>The issue as I see it</h2>
 
@@ -61,9 +61,9 @@ license: cc-by-3.0
 <p>I&#39;m not the world authority on this though - I&#39;d just like to start a conversation, and I&#39;d like to hear your thoughts.</p>
 
 <ul>
-  <li>Do you think I&#39;m right, or wrong?</li>
-  <li>Are you a student who wants to learn web design/development? What resources have you got available to you?</li>
-  <li>Would you like to teach students web design/development?</li>
-  <li>Would you like to help in some other way, eg purely with outreach?</li>
-  <li>Are there any other outreach methods that should be considered?</li>
+	<li>Do you think I&#39;m right, or wrong?</li>
+	<li>Are you a student who wants to learn web design/development? What resources have you got available to you?</li>
+	<li>Would you like to teach students web design/development?</li>
+	<li>Would you like to help in some other way, eg purely with outreach?</li>
+	<li>Are there any other outreach methods that should be considered?</li>
 </ul>

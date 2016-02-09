@@ -23,8 +23,8 @@ To run Opera Extensions, you’ll need an Opera 11 Labs build that supports them
 - [Opera 11 Extensions build for Mac][2]
 - [Opera 11 Extensions build for Linux/FreeBSD][3]
 
-[1]: http://www.opera.com/download/get.pl?id=33277&location=270&thanks=true&sub=true
-[2]: http://www.opera.com/download/get.pl?id=33278&location=270&thanks=true&sub=true
+[1]: https://www.opera.com/download/get.pl?id=33277&location=270&thanks=true&sub=true
+[2]: https://www.opera.com/download/get.pl?id=33278&location=270&thanks=true&sub=true
 [3]: http://snapshot.opera.com/unix/alpha1-with-extensions_11.00-1029/
 
 Note that the current release is an experimental labs build, therefore the implementation, architecture and design may change before the final release. If you create a complex extension, it may require updates as our APIs mature.

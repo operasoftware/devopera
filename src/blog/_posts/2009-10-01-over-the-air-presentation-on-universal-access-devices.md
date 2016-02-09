@@ -16,7 +16,7 @@ license: cc-by-3.0
 
 <p>It was all about widgets and a heavy emphasis on web standards and the buzz was around who could build the best widget in a number of categories ranging from best Doctor Who hack to location aware hack. You can check out the <a href="http://overtheair.org/blog/competition/">competition winners</a> on the Over the Air blog.</p>
 
-<p>It was good to be able to show the potential of widgets for all users and just how easy <a href="http://widgets.opera.com/">Opera widgets</a> are to build with plain old HTML, CSS and XML - no added programing languages needed. I demoed how to build, test and deploy a widget using our <a href="https://dev.opera.com/articles/view/widget-emulator/">widget emulator</a> and <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> for remote debugging.
+<p>It was good to be able to show the potential of widgets for all users and just how easy <a href="http://widgets.opera.com/">Opera widgets</a> are to build with plain old HTML, CSS and XML - no added programing languages needed. I demoed how to build, test and deploy a widget using our <a href="https://dev.opera.com/articles/view/widget-emulator/">widget emulator</a> and <a href="https://www.opera.com/dragonfly/">Opera Dragonfly</a> for remote debugging.
 
 Below is the presentation which is also available in the following formats:
 

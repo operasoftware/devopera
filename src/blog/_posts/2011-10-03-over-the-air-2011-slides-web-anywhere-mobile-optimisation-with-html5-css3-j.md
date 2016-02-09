@@ -16,13 +16,13 @@ license: cc-by-3.0
 <p>Here are my slides:</p>
 
 <div style="width:425px" id="__ss_9518141"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/brucelawson/web-anywhere-mobile-optimisation-with-html5-css3-javascript-9518141" title="Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript " target="_blank">Web Anywhere: Mobile Optimisation With HTML5, CSS3, JavaScript </a></strong> <object id="__sse9518141" width="425" height="355"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-opera-ota11-111003022050-phpapp01&amp;stripped_title=web-anywhere-mobile-optimisation-with-html5-css3-javascript-9518141&amp;userName=brucelawson" /> <param name="allowFullScreen" value="true" /> <param name="allowScriptAccess" value="never" /> <embed name="__sse9518141" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-opera-ota11-111003022050-phpapp01&amp;stripped_title=web-anywhere-mobile-optimisation-with-html5-css3-javascript-9518141&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" /> </object> </div>
-<p>The slides might not make that much sense by themselves (sorry) but here are some resources I mentioned or which might just help you. The country-specific lists  of top 10 websites visited and handsets used are from our monthly <a href="http://www.opera.com/smw/" target="_blank">State of the Mobile Web reports</a>.</p>
+<p>The slides might not make that much sense by themselves (sorry) but here are some resources I mentioned or which might just help you. The country-specific lists  of top 10 websites visited and handsets used are from our monthly <a href="https://www.opera.com/smw/" target="_blank">State of the Mobile Web reports</a>.</p>
 
 <h4>Mobile-specific resources</h4>
 <ul>
 <li>
 <a rel="nofollow" href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
-<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
+<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="https://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
 <li><a href="https://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/">Opera Mini: web content authoring guidelines</a></li>
 <li>
 <a rel="nofollow" href="http://www.w3.org/TR/mwbp-wcag/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> (If you design so people with disabilities can use your content, it has good side-effects for mobile users)</li>

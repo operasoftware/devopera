@@ -49,9 +49,9 @@ The full-screen web applications themselves are not hosted directly on Opera's s
 
 Applications for the Opera TV Store are, in essence, regular web applications, which are rendered by a customised version of [Opera Devices SDK][13] browsing environment on the user's TV. As such, developers can tap into all the traditional web technologies (HTML5, CSS 3, JavaScript, SVG) supported by the Opera browser. See our documentation on [web specifications supported by Opera][14] (and in particular our comparison of [support in different Opera product lines][15]) for a thorough breakdown.
 
-[13]: http://www.opera.com/business/devices/
-[14]: http://www.opera.com/docs/specs/
-[15]: http://www.opera.com/docs/specs/productspecs/
+[13]: https://www.opera.com/business/devices/
+[14]: https://www.opera.com/docs/specs/
+[15]: https://www.opera.com/docs/specs/productspecs/
 
 Although the Opera Devices SDK is built on the same core rendering engine as our desktop browsers, there are still platform-specific APIs and subtle integration differences that developers need to be aware of. For this reason, it is recommended that developers test their applications on an actual TV running the Opera TV Store and/or with the [Opera TV Emulator][16].
 
@@ -101,7 +101,7 @@ There are known limitations in some of the current devices that are shipping wit
 
 Once your application is ready, it can be submitted to the Opera TV Store. Log in to the [Opera TV Store – Submission portal][21] and follow the steps required in the submission dialog.
 
-[21]: http://publish.tvstore.opera.com/
+[21]: https://publish.tvstore.opera.com/
 
 This article summarises the most important guidelines that applications need to follow for inclusion in the Opera TV Store. Further restrictions and requirements are listed in the **acceptance criteria** of the [Opera TV Store application publishing guidelines][22]. Please ensure that your application fulfills those criteria – as well as the best practices and suggestions laid out in our developer articles – before submitting your application.
 

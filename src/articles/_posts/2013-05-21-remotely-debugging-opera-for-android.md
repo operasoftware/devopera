@@ -42,11 +42,11 @@ You'll need a Chromium-based desktop browser. Use Opera 15+, Google Chrome, Chro
 Ensure that you have a USB cable available to connect your Android device to your computer (the USB power cable should be fine) and [Opera for Android][3] installed on it (see the [Opera for Android user guide][4] for installation help, if needed.) Keep the phone disconnected from your computer just for now.
 
 [3]: https://play.google.com/store/apps/details?id=com.opera.browser
-[4]: http://www.opera.com/help/mobile
+[4]: https://www.opera.com/help/mobile
 
 Note that you can't remotely debug Opera Mini from desktop, as the rendering is done on our Mini servers and only displayed on the device. ([Opera Mini FAQs][5])
 
-[5]: http://www.opera.com/help/mini/faq
+[5]: https://www.opera.com/help/mini/faq
 
 Next, you need to [enable USB debugging on your device][6]. Check the "USB debugging" checkbox in Developer Options.
 

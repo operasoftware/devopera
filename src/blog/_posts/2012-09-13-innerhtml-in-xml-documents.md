@@ -13,7 +13,7 @@ A recent example of this is the rather innocently titled <q>CORE-4336: Setting i
 
 Being a hip and happening developer, you may be thinking “XML? HTML5 is where it’s at!”… so it may come as a shock to you that in the vast reaches of the web, there are still a sizeable number of sites that use XML/XHTML.
 
-While the release of Opera 12.10 is still a bit away, one of Opera’s products that already does include many of these core changes, including CORE-4336, is the newly released [Opera Device SDK 3.4](http://www.opera.com/business/tv/), which is used by many TV and set-top box device manufacturers to provide web browsing functionality. And it’s on this platform that some of our customers have started to report issues with the latest SDK relating to this particular core change.
+While the release of Opera 12.10 is still a bit away, one of Opera’s products that already does include many of these core changes, including CORE-4336, is the newly released [Opera Device SDK 3.4](https://www.opera.com/business/tv/), which is used by many TV and set-top box device manufacturers to provide web browsing functionality. And it’s on this platform that some of our customers have started to report issues with the latest SDK relating to this particular core change.
 
 In previous versions of Opera’s core, `innerHTML` was quite forgiving when injecting markup into XML/XHTML documents. As with regular HTML pages, when trying to add malformed content, Opera silently error-corrected the injected fragment according to its HTML parsing algorithm.
 

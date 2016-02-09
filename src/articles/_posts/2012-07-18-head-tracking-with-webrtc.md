@@ -7,7 +7,7 @@ license: cc-by-3.0
 ---
 <h2>Introduction</h2>
 
-<p>The <a href="http://www.w3.org/TR/webrtc/">WebRTC standard</a> allows supporting browsers to stream video and audio content directly from native devices such as a webcam. One rather exciting use case for WebRTC is <em>head tracking</em> — detecting the movement of your head (or other appendages) in relation to a webcam — which in turn allows us to create gesture-based controls. We created a demo employing head tracking to coincide with the <a href="http://www.opera.com/browser/">Opera 12</a> release (this marked the first desktop browser to support camera access via the <code>getUserMedia</code> API) — <a href="http://www.shinydemos.com/facekat/">FaceKat</a>.  Please try it out if you haven't done so already!</p>
+<p>The <a href="http://www.w3.org/TR/webrtc/">WebRTC standard</a> allows supporting browsers to stream video and audio content directly from native devices such as a webcam. One rather exciting use case for WebRTC is <em>head tracking</em> — detecting the movement of your head (or other appendages) in relation to a webcam — which in turn allows us to create gesture-based controls. We created a demo employing head tracking to coincide with the <a href="https://www.opera.com/browser/">Opera 12</a> release (this marked the first desktop browser to support camera access via the <code>getUserMedia</code> API) — <a href="http://www.shinydemos.com/facekat/">FaceKat</a>.  Please try it out if you haven't done so already!</p>
 
 <p><img src="head-tracking-demo.jpg" alt="an image of the headtracking video demonstration in action - user using their head to move around a 3D object on screen"></p>
 <p class="caption">Figure 1: head tracking video demonstration <a href="http://player.vimeo.com/video/44049736" title="Head tracking video demonstration">(see the video)</a>.</p>
@@ -51,8 +51,8 @@ license: cc-by-3.0
 
 <pre><code class="javascript">// this event listener picks up head tracking events and sets some variables
 document.addEventListener("headtrackingEvent", function(e) {
-  mouseX = e.x*20;
-  mouseY = -e.y*20;
+	mouseX = e.x*20;
+	mouseY = -e.y*20;
 }, false);
 
 ... snip ...

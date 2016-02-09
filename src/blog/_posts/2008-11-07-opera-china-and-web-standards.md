@@ -50,5 +50,5 @@ Opera is committed in spreading web standards awareness into different communiti
 </p>
 </blockquote>
 <p>
-To find out more about web standards check out the Opera <a href="http://www.opera.com/wsc/">Web Standards Curriculum</a>.
+To find out more about web standards check out the Opera <a href="https://www.opera.com/wsc/">Web Standards Curriculum</a>.
 </p>

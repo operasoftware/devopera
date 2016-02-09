@@ -48,17 +48,17 @@ We have implemented this API in an [Opera Labs][3] build for desktop, available 
 - Opera desktop for Linux: [i386 (deb)][7], [amd64 (deb)][8], [i386 (RPM)][9], [x86_64 (RPM)][10], [i386 (.xz)][11], [x86_64 (.xz)][12]
 - Opera desktop for FreeBSD: [i386][13], [amd64][14]
 
-[4]: http://www.opera.com/download/get.pl?id=35124&sub=true&nothanks=yes&location=360
-[5]: http://www.opera.com/download/get.pl?id=35125&sub=true&nothanks=yes&location=360
-[6]: http://www.opera.com/download/get.pl?id=35126&sub=true&nothanks=yes&location=360
-[7]: http://www.opera.com/download/get.pl?id=35121&sub=true&nothanks=yes&location=360
-[8]: http://www.opera.com/download/get.pl?id=35120&sub=true&nothanks=yes&location=360
-[9]: http://www.opera.com/download/get.pl?id=35123&sub=true&nothanks=yes&location=360
-[10]: http://www.opera.com/download/get.pl?id=35122&sub=true&nothanks=yes&location=360
-[11]: http://www.opera.com/download/get.pl?id=35118&sub=true&nothanks=yes&location=360
-[12]: http://www.opera.com/download/get.pl?id=35119&sub=true&nothanks=yes&location=360
-[13]: http://www.opera.com/download/get.pl?id=35117&sub=true&nothanks=yes&location=360
-[14]: http://www.opera.com/download/get.pl?id=35116&sub=true&nothanks=yes&location=360
+[4]: https://www.opera.com/download/get.pl?id=35124&sub=true&nothanks=yes&location=360
+[5]: https://www.opera.com/download/get.pl?id=35125&sub=true&nothanks=yes&location=360
+[6]: https://www.opera.com/download/get.pl?id=35126&sub=true&nothanks=yes&location=360
+[7]: https://www.opera.com/download/get.pl?id=35121&sub=true&nothanks=yes&location=360
+[8]: https://www.opera.com/download/get.pl?id=35120&sub=true&nothanks=yes&location=360
+[9]: https://www.opera.com/download/get.pl?id=35123&sub=true&nothanks=yes&location=360
+[10]: https://www.opera.com/download/get.pl?id=35122&sub=true&nothanks=yes&location=360
+[11]: https://www.opera.com/download/get.pl?id=35118&sub=true&nothanks=yes&location=360
+[12]: https://www.opera.com/download/get.pl?id=35119&sub=true&nothanks=yes&location=360
+[13]: https://www.opera.com/download/get.pl?id=35117&sub=true&nothanks=yes&location=360
+[14]: https://www.opera.com/download/get.pl?id=35116&sub=true&nothanks=yes&location=360
 
 Note: For this API to work, you **must** enable two features in this build:
 

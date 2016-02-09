@@ -41,13 +41,13 @@ Opera TV Store のアプリケーションはダッシュボードでは静的�
 
 Opera TV Store 向けのアプリケーションは本質的には一般的な Web アプリケーションであり、ユーザーのテレビ上のカスタマイズされた [Opera Devices SDK][12] のブラウジング環境によりレンダリングされます。このため、開発者は Opera ブラウザでサポートされている従来の Web テクノロジー（HTML5、CSS 3、JavaScript、SVG）をすべて利用できます。詳細に関しては、[Opera でサポートされる Web 仕様][13]（特に [Opera の各製品におけるサポートの比較][14]）のドキュメントを参照してください。
 
-[12]: http://www.opera.com/business/devices/
-[13]: http://www.opera.com/docs/specs/
-[14]: http://www.opera.com/docs/specs/productspecs/
+[12]: https://www.opera.com/business/devices/
+[13]: https://www.opera.com/docs/specs/
+[14]: https://www.opera.com/docs/specs/productspecs/
 
 Opera Devices SDK は、デスクトップ版 Opera ブラウザと同じコアレンダリングをベースとしていますが、プラットフォーム特有の API があり、微妙なインテグレーションの違いがあります。このため開発者の方々には、Opera TV Store が動作する実際のテレビ上で（また / あるいは [Opera TV Emulator][15] を使用して）開発しているアプリケーションをテストされることをお勧めします。
 
-[15]: http://www.opera.com/developer/tools/
+[15]: https://www.opera.com/developer/tools/
 
 テレビ向けの Web コンテンツの開発には、ユーザー操作における違いから、デバイスの機能やパフォーマンスの最適化の考慮まで、さまざまな取り組みが伴います。必要とされる調整や技術に関しては、[テレビ向け Web コンテンツの作成][16] および [TV セクション][17] 内の各記事をご覧ください。
 
@@ -91,7 +91,7 @@ Opera TV Store は、リモートコントロールにある基本的な 4 方�
 
 アプリケーションが完成しましたら、Opera TV Store に提出することができます。[Opera TV Store - Submission portal][20] にアクセスし、ダイアログに表示される手順に従ってください。
 
-[20]: http://publish.tvstore.opera.com/
+[20]: https://publish.tvstore.opera.com/
 
 この記事は Opera TV Store 向けのアプリケーションに求められる最重要のガイドラインについてまとめたものです。詳しい制限や要件は、**acceptance criteria （承認基準）** / [Opera TV Store application publishing guidelines][21] を参照してください。アプリケーションを提出する前に、これらの基準を満たしているか、また記事内の実践方法や提案に沿って作成されているかを必ず確認してください。
 

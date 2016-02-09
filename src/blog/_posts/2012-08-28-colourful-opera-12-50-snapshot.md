@@ -31,7 +31,7 @@ license: cc-by-3.0
 
 <p>They grow up so quickly...only last month we released an <a href="https://dev.opera.com/articles/view/opera-spdy-build/">Opera Labs build with SPDY support</a>, and now it graduated to our main branch, on track for inclusion in our next stable release.</p>
 
-<p>As a bonus, this snapshot also comes bundled with a <a href="https://addons.opera.com/en/extensions/details/spdy-indicator/">SPDY indicator extension</a> that shows you when a site uses SPDY...no more hunting around in <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a>&#39;s network panel for those extra headers!</p>
+<p>As a bonus, this snapshot also comes bundled with a <a href="https://addons.opera.com/en/extensions/details/spdy-indicator/">SPDY indicator extension</a> that shows you when a site uses SPDY...no more hunting around in <a href="https://www.opera.com/dragonfly/">Opera Dragonfly</a>&#39;s network panel for those extra headers!</p>
 
 <p class="note">If you previously installed extensions in Opera Next, the bundled extension may not show up automatically. Either reinstall this snapshot with a clean profile, or simply grab the <a href="https://addons.opera.com/en/extensions/details/spdy-indicator/">SPDY indicator extension</a> from the addons site.</p>
 

@@ -38,7 +38,7 @@ license: cc-by-3.0
 
 <h2 id="important">Why is it important for Opera?</h2>
 
-<p>This work is very important for Opera for two reasons. We are both a browser implementer and a service provider. The recently released build will help us to understand the interactions and the issues it might create when a user is activating the <code>DNT: 1</code> header. We would like to see how implementable the Working Group suggestions are on the server side too. Our social network, <a href="http://my.opera.com/">My.Opera</a>, and the very <a href="http://www.opera.com/mobile/">useful Opera Mini</a> browser have to be tested against the specification.</p>
+<p>This work is very important for Opera for two reasons. We are both a browser implementer and a service provider. The recently released build will help us to understand the interactions and the issues it might create when a user is activating the <code>DNT: 1</code> header. We would like to see how implementable the Working Group suggestions are on the server side too. Our social network, <a href="http://my.opera.com/">My.Opera</a>, and the very <a href="https://www.opera.com/mobile/">useful Opera Mini</a> browser have to be tested against the specification.</p>
 
 <span class='imgcenter'><img alt='' src='/blog/implementing-do-no-track-opera/dnt-wg-europe.jpg' /></span>
 Last Working Group Meeting in Brussels in January 2012

@@ -13,7 +13,7 @@ license: cc-by-3.0
 Hurrah! Hot on the heels of the release of [Opera 14 for Android][1] (based on Chromium 26), here’s a first peek at our all new Opera for Computers. It’s called [Opera Next 15][2] and it’s based on Chromium 28 — which means that it comes with [Blink][3] on board — but as it’s an evergreen browser with a [URL=http://my.opera.com/desktopteam/blog/opera-features-and-release-cycle]fast release cycle[/URL], we don’t recommend reading too much into the digits — it’s what’s in it that counts!
 
 [1]: /blog/opera-14-for-android-is-out
-[2]: http://www.opera.com/next/
+[2]: https://www.opera.com/next/
 [3]: http://www.chromium.org/blink
 
 This is a stable build — we’ve been using it as our main browser for a while now —, but it isn’t the final release - you can expect rapid updates in the weeks to come. Note that this Next build is available for Windows and Mac. A Linux version is coming later, but we wanted as many people to have a peek as soon as possible.
@@ -68,7 +68,7 @@ Just because you have a computer rather than a mobile device doesn’t mean that
 
 One of Opera’s classic features, [mouse gestures][4], let you perform common browsing actions with small, quick mouse movements. Note that on Mac they are by default disabled, since Mac has native support for system touch gestures.
 
-[4]: http://www.opera.com/help/tutorials/gestures/
+[4]: https://www.opera.com/help/tutorials/gestures/
 
 Advanced keyboard shortcuts are also available, but are off by default. To enable them, go to Settings > Browser > Enable advanced keyboard shortcuts. And while your at it, have a look at the other advanced settings on opera:settings.
 

@@ -26,7 +26,7 @@ license: cc-by-3.0
 <li>
 <a href="http://www.modernizr.com">modernizr</a> - a small <abbr>HTML</abbr>5 capability detection library</li>
 </ul>
-<p>You can also <a href="http://www.opera.com/">download Opera 10</a> which I was using to demo.</p>
+<p>You can also <a href="https://www.opera.com/">download Opera 10</a> which I was using to demo.</p>
 
 <p>Opera Developer Network has some beginner&#39;s <code>canvas</code> tutorials available:</p>
 <ol>

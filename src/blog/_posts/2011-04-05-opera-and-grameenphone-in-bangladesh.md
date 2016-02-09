@@ -8,7 +8,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>At Opera we believe passionately that everyone has a right to the Web.  I&#39;m personally really pleased that we&#39;ve announced a partnership with <a href="http://www.grameenphone.com/">Grameenphone</a> in Bangladesh to release a <a href="http://www.opera.com/press/releases/2011/04/05/">co-branded version of Opera Mini</a>, because I visited to Bangladesh 17 years ago and really enjoyed myself.</p>
+<p>At Opera we believe passionately that everyone has a right to the Web.  I&#39;m personally really pleased that we&#39;ve announced a partnership with <a href="http://www.grameenphone.com/">Grameenphone</a> in Bangladesh to release a <a href="https://www.opera.com/press/releases/2011/04/05/">co-branded version of Opera Mini</a>, because I visited to Bangladesh 17 years ago and really enjoyed myself.</p>
 
 <p>And we&#39;re partnering with the good guys too: 34% of Grameenphone is <a href="http://www.grameenphone.com/about-us/corporate-information/ownership-structure">owned</a>  by a non-profit sister concern of <a href="http://www.grameen-info.org/index.php?option=com_content&amp;task=view&amp;id=26&amp;Itemid=175">Grameen Bank</a>, a Nobel Prize-winning Bangladeshi institution that gives microloans to the rural poor (mostly women) to help them out of poverty. 95% of the bank is owned by its borrowers, of whom 97%  are women.</p>
 
@@ -28,7 +28,7 @@ license: cc-by-3.0
 <p>The Opera Developer Relations Team have been to speak in India, Indonesia, <a href="http://my.opera.com/ODIN/blog/social-innovation-camp-nigeria-opera">Nigeria</a>, China and other emerging economies where the Web acts as a force for economic self-empowerment for individuals as well as companies and governments.</p>
 
 
-<p>You can see from our monthly <a href="http://www.opera.com/smw/">State of the Mobile Web reports</a> that we&#39;re passionately interested in the whole world, not just the wealthy areas.</p>
+<p>You can see from our monthly <a href="https://www.opera.com/smw/">State of the Mobile Web reports</a> that we&#39;re passionately interested in the whole world, not just the wealthy areas.</p>
 
 <h3>Opera Mini Resources</h3>
 <ul>

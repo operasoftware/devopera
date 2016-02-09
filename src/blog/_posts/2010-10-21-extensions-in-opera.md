@@ -11,7 +11,7 @@ license: cc-by-3.0
 
 <p><p>
 An
-<a href="http://www.opera.com/browser/next/" rel="nofollow">alpha of Opera 11 for desktop</a>
+<a href="https://www.opera.com/browser/next/" rel="nofollow">alpha of Opera 11 for desktop</a>
 was just released by the
 <a href="http://my.opera.com/desktopteam/blog/" rel="nofollow">Desktop team</a>.
 One of the major new changes in this version is
@@ -30,7 +30,7 @@ family of specifications was particularly well-suited for the task.
 Unlike the packaging formats that other browser makers are using, these specifications give us a W3C standardized way of
 <a href="http://www.w3.org/TR/widgets/" rel="nofollow">packaging</a>
 software based on
-<a href="http://www.opera.com/docs/specs/" rel="nofollow">web technologies</a> such as
+<a href="https://www.opera.com/docs/specs/" rel="nofollow">web technologies</a> such as
 HTML, CSS and JavaScript. ... </p></p></p><!--more--><h3>
 Background
 </h3>
@@ -80,12 +80,12 @@ of the media type.
 Just being able to install and uninstall them was not very interesting,
 so we looked at what kind of &quot;extensions&quot; we already have available today.
 In the most basic form of Browser Extensions, we use them just for packaging
-<a href="http://www.opera.com/docs/userjs/">User JavaScripts</a>.
+<a href="https://www.opera.com/docs/userjs/">User JavaScripts</a>.
 
 <p>
 Support for these technologies has been around for a while, and while they
 are relatively easy to develop, they can be
-<a href="http://www.opera.com/docs/userjs/using/#writingscripts">difficult to install</a>,
+<a href="https://www.opera.com/docs/userjs/using/#writingscripts">difficult to install</a>,
 distribute and share.
 By allowing Browser Extensions to
 package JavaScript
@@ -159,7 +159,7 @@ it over your Opera window.
 <p>
 You can easily tests your scripts before creating the extensions using
 the standard
-<a href="http://www.opera.com/docs/userjs/">User JavaScripts feature</a>.
+<a href="https://www.opera.com/docs/userjs/">User JavaScripts feature</a>.
 
 <p>
 If you want to play with buttons, there is more work to be done.

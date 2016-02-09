@@ -42,7 +42,7 @@ Tiffany Brown,
 <tr><td>Yahoo! Developer Network</td><td>Wednesday, March 23 3:00PM</td><td>The State of HTML5</td><td><a href="http://zibin.me">Zi Bin</a></td></tr>
 <tr><td><a href="http://my.opera.com/ting0619/blog/2011/03/03/2011-opera">Uni Tour</a></td><td>Friday, March 25 2:00PM</td><td>HTML5 &amp; Opera Widgets @ YZU</td><td><a href="http://zibin.me">Zi Bin</a> &amp; <a href="http://twitter.com/syndare">Sangwhan</a></td></tr>
 
-<tr><td><a href="http://www.ciol.com/sparkit/2011/">SparkIT 2011</a></td><td>Friday, March 18 9:00AM</td><td>Keynote</td><td><a href="http://www.opera.com/company/speakers/krogh/">Christen Krogh</a></td></tr>
+<tr><td><a href="http://www.ciol.com/sparkit/2011/">SparkIT 2011</a></td><td>Friday, March 18 9:00AM</td><td>Keynote</td><td><a href="https://www.opera.com/company/speakers/krogh/">Christen Krogh</a></td></tr>
 
 <tr><td><a href="http://www.ciol.com/sparkit/2011/">SparkIT 2011</a></td><td>Friday, March 18 11:25AM</td><td>The Web of the future with HTML5: Tools, techniques, browsers and devices</td><td><a href="http://www.shwetankdixit.com/">Shwetank Dixit</a></td></tr>
 

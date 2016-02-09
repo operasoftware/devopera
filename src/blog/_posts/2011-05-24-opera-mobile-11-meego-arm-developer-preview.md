@@ -24,7 +24,7 @@ To catch the Opera Mobile 11 MeeGo ARM edition running at the MeeGo conference, 
 
 [Download Opera Mobile 11 MeeGo ARM edition][4]
 
-[4]: http://www.opera.com/download/get.pl?sub=++++&id=33726&location=320&nothanks=yes
+[4]: https://www.opera.com/download/get.pl?sub=++++&id=33726&location=320&nothanks=yes
 
 Opera Mobile 11 MeeGo ARM is a generic MeeGo 1.2 build supporting ARM-based devices. Developers of MeeGo ARM devices are encouraged to download and try Opera Mobile today.
 

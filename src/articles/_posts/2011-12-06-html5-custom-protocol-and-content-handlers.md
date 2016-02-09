@@ -7,7 +7,7 @@ license: cc-by-3.0
 ---
 <h2>Introduction</h2>
 
-<p>Since the <a href="http://www.opera.com/browser/">Opera 11.60 snapshot release</a>, we have had support for the <a href="https://html.spec.whatwg.org/#custom-handlers">HTML5 custom scheme and content handlers</a>. Their purpose is pretty simple. Your site can offer to handle certain MIME types or schemes (aka &#8220;protocols&#8221;) and the user has the option of opting in. One obvious use case is webmail, for example a service like Fastmail.fm or Gmail could tell your browser to open its "Compose" page if you click on a <code>mailto:</code> link, rather than opening a native desktop mail application.</p>
+<p>Since the <a href="https://www.opera.com/browser/">Opera 11.60 snapshot release</a>, we have had support for the <a href="https://html.spec.whatwg.org/#custom-handlers">HTML5 custom scheme and content handlers</a>. Their purpose is pretty simple. Your site can offer to handle certain MIME types or schemes (aka &#8220;protocols&#8221;) and the user has the option of opting in. One obvious use case is webmail, for example a service like Fastmail.fm or Gmail could tell your browser to open its "Compose" page if you click on a <code>mailto:</code> link, rather than opening a native desktop mail application.</p>
 
 <p>Of course, there are reasons why you wouldn&#8217;t want to pass off every type of content to a web app! We want JavaScript and CSS to be handled by the browser, for example, so a <a href="https://html.spec.whatwg.org/multipage/timers.html#type-blacklist">blacklist exists</a> to reconcile potential issues that may arise there. For <a href="http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-April/031220.html">security reasons</a>, there's also a <a href="https://html.spec.whatwg.org/multipage/timers.html#whitelisted-scheme">whitelist</a> for schemes, with the option to create a custom &#8220;web+&#8221; scheme).</p>
 
@@ -20,9 +20,9 @@ license: cc-by-3.0
 <p>To start with, we need to register new protocols we want to use: this is done using the <code>navigator.registerProtocolHandler</code> object. This takes three arguments: the protocol, a URL pointing to the custom handler application with a placeholder &#8220;%s&#8221;, and a title.</p>
 
 <pre><code>navigator.registerProtocolHandler (
-  "tel", //protocol
-  "/protocolhandler.html?%s", //handler
-  "Telephony" //title
+	"tel", //protocol
+	"/protocolhandler.html?%s", //handler
+	"Telephony" //title
 );</pre></code>
 
 <p>In a user-agent that supports this, the user will be prompted to allow this registration to happen. Figure 1 shows how this currently looks in Opera 11.60 alpha:</p>
@@ -42,9 +42,9 @@ license: cc-by-3.0
 <p>The next part of the puzzle is getting custom content registered: this is done with the <code>navigator.registerContentHandler</code> object, which takes three arguments: the content-type, a URL pointing to the custom content handler with a placeholder &#8220;%s&#8221;, and a title. In this example we'll be investigating how to handle a very important new web content type: <code>.cheeseburger</code>.</p>
 
 <pre><code>navigator.registerContentHandler (
-  "text/x-cheeseburger", //content-type
-  "cb.html?cb=%s", //handler
-  "Cheeseburger Parser" //title
+	"text/x-cheeseburger", //content-type
+	"cb.html?cb=%s", //handler
+	"Cheeseburger Parser" //title
 );</code></pre>
 
 <p>Just like with custom protocols and the <code>registerProtocolHandler</code> object, when the browser comes across custom content it will prompt the user to allow the content-type registration to happen, as shown in Figure 3.</p>

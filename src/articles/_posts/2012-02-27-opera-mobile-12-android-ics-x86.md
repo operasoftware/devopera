@@ -38,4 +38,4 @@ We are now proud to release our experimental x86 Android build of Opera Mobile p
 
 To install this experimental Opera 12 build, browse your x86 Android device to [Opera 12 for x86 Android devices][3].
 
-[3]: http://www.opera.com/download/get.pl?sub=++++&id=34411&location=270&nothanks=yes
+[3]: https://www.opera.com/download/get.pl?sub=++++&id=34411&location=270&nothanks=yes

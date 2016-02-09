@@ -36,7 +36,7 @@ The porting process described in this article involves drawing your model in [Go
 You can see an image of the end result in Figure 1: also [view the live demo here][7]. To see this demo you’ll need a browser that supports WebGL: a good choice is [the latest version of Opera][8]!
 
 [7]: {{ page.id }}/demo/
-[8]: http://www.opera.com/browser/next/
+[8]: https://www.opera.com/browser/next/
 
 **Note:** We have started with the Wavefront OBJ format because the process of porting OBJ files into WebGL (without using professional graphics editing software) is more stable than that involved with the alternative Collada DAE format. We will cover using DAE files (and animations) with WebGL in a later article.
 

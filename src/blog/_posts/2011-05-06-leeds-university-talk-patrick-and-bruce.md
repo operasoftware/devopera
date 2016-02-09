@@ -114,7 +114,7 @@ license: cc-by-3.0
 <ul>
 <li>
 <a rel="nofollow" href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
-<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="http://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
+<li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a rel="nofollow" href="https://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a rel="nofollow" href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
 <li>
 <a rel="nofollow" href="http://www.w3.org/TR/mwbp-wcag/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> (If you design so people with disabilities can use your content, it has good side-effects for mobile users)</li>
 </ul>

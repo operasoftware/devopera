@@ -16,9 +16,9 @@ In this article I will explain what Opera Unite is, discuss “the Internet’s 
 
 If you haven’t already, download the new Opera Unite builds available, and start playing.
 
-**Update:** Opera Unite is now part of the Opera browser. Please visit [http://www.opera.com/browser][2] for the latest downloads.
+**Update:** Opera Unite is now part of the Opera browser. Please visit [https://www.opera.com/browser][2] for the latest downloads.
 
-[2]: http://www.opera.com/browser
+[2]: https://www.opera.com/browser
 
 Let us know what you think!
 

@@ -23,7 +23,7 @@ This week we are pleased to announce the release an updated preview build of [Op
 [1]: https://dev.opera.com/articles/view/labs-more-fun-using-the-web-with-getusermedia-and-native-pages/
 [2]: http://my.opera.com/core/blog/2011/03/14/web-meet-device
 [3]: http://html5.org/tools/web-apps-tracker?from=5944&to=5945
-[4]: http://www.opera.com/mobile/
+[4]: https://www.opera.com/mobile/
 
 In addition to web camera streaming, Opera is also previewing support for the draft [W3C Orientation Events][5] specification. These capabilities open up some exciting possibilities for the future of the web itself.
 
@@ -45,7 +45,7 @@ To navigate back to this blog post, we added a camera icon on the Opera Speed Di
 
 This build will not replace the standard version of Opera Mobile installed on your Android device. Furthermore, this build supports remote debugging via [Opera Dragonfly][9]; please refer to [Dev.Opera][10] for more instructions.
 
-[9]: http://www.opera.com/dragonfly/
+[9]: https://www.opera.com/dragonfly/
 [10]: https://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/
 
 ## Interacting with the camera

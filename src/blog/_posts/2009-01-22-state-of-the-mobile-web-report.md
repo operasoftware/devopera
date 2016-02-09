@@ -8,7 +8,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Opera publishes a monthly report called [State of The Mobile Web](http://www.opera.com/smw/). It tells the world how the mobile web is shaping up by analyzing key metric data from Opera Mini usage across the globe.
+Opera publishes a monthly report called [State of The Mobile Web](https://www.opera.com/smw/). It tells the world how the mobile web is shaping up by analyzing key metric data from Opera Mini usage across the globe.
 
 We have had nine issues published so far, each having a different focus. Some focus on special interest, while others on geography. For example, our latest issue is all about Social Networking Sites usage and ranking.
 
@@ -26,4 +26,4 @@ The report shows us more and more people are browsing web pages on their mobile 
 
 Also, Opera Dragonfly is a developer tool that allows you to remotely debug your web pages for mobile and TV from the comfort of you computer.
 
-More findings in [State of The Mobile Web](http://www.opera.com/smw/).
+More findings in [State of The Mobile Web](https://www.opera.com/smw/).

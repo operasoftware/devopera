@@ -12,7 +12,7 @@ license: os-asa
 
 Note: the HTML5 parser is now available in our finished [Opera browser][1].
 
-[1]: http://www.opera.com/browser/
+[1]: https://www.opera.com/browser/
 
 In February, Stig showed us the [first Labs build of Ragnarök, Opera’s HTML5 parser][2]. Here’s a new build: note, this is not an Opera Next build but a Labs build with a different profile, different UA string, and outside of the Next auto-update cycle.
 

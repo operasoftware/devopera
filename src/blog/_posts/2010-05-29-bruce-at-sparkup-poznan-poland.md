@@ -42,8 +42,8 @@ I&#39;ve <a href="http://www.brucelawson.co.uk/2010/poland/">always wanted to vi
 <li><a href="http://www.html5doctor.com/">HTML5 Doctor</a></li>
 </li></ul>
 <h3>Mobile Development</h3>
-<ul><li><a href="http://www.opera.com/smw">State of the Mobile Web reports</a></li>
-<li><a href="http://www.opera.com/smw/2010/03">March 2010 Poland statistics</a></li>
+<ul><li><a href="https://www.opera.com/smw">State of the Mobile Web reports</a></li>
+<li><a href="https://www.opera.com/smw/2010/03">March 2010 Poland statistics</a></li>
 <li><a href="http://www.w3.org/TR/mobile-bp/">W3C Mobile Best Practices</a></li>
 <li><a href="http://people.opera.com/brucel/demo/MQ.html">Simple Media Queries demo</a></li>
 <li> <a href="http://people.opera.com/danield/css3/vangogh/">Sexy Media Queries demo</a></li>

@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Our latest releases of [Opera Mobile and Opera Mini](http://www.opera.com/mobile/) will include a new header: `Device-Stock-UA`. The value of this header matches that of the stock user agent bundled with the operating system on which Opera Mobile or Mini is running. Below is an example of what this header might look like on an Android device (a T-Mobile myTouch4G).
+Our latest releases of [Opera Mobile and Opera Mini](https://www.opera.com/mobile/) will include a new header: `Device-Stock-UA`. The value of this header matches that of the stock user agent bundled with the operating system on which Opera Mobile or Mini is running. Below is an example of what this header might look like on an Android device (a T-Mobile myTouch4G).
 
 	Device-Stock-UA: Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; myTouch4G Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
 

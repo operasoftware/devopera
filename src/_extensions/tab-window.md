@@ -24,11 +24,11 @@ To work with tabs in an extension you need to first specify the relevant permiss
 
 Creating a new tab is done using the `create()` method. Inside this method you can specify the properties of the tab you want to create (for example the URL, whether it should be an active tab, whether it should be a pinned tab or not, etc.)
 
-For example, to specify extension functionality that opens up a new pinned tab containing [opera.com](http://www.opera.com) when a button is clicked, you need to add this to the _background.js_ file:
+For example, to specify extension functionality that opens up a new pinned tab containing [opera.com](https://www.opera.com) when a button is clicked, you need to add this to the _background.js_ file:
 
 	chrome.browserAction.onClicked.addListener(function() {
 		chrome.tabs.create({
-			'url': 'http://www.opera.com'
+			'url': 'https://www.opera.com'
 		});
 	});
 
@@ -62,7 +62,7 @@ You can [download the WAVE extension](/extensions/extension-samples/win-tabs-wav
 
 You can modify existing tabs using the `update()` method, performing tasks such as changing the URL loaded, making tabs active, highlighting, or pinning them. The `query()` method explained above is used to select the tab(s) you want to affect.
 
-For example, imagine you wanted to create an extension that allows us to redirect all tabs on [Dev.Opera](http://dev.opera.com) (not just the front page, but various articles too) to the [Opera homepage](http://www.opera.com).
+For example, imagine you wanted to create an extension that allows us to redirect all tabs on [Dev.Opera](http://dev.opera.com) (not just the front page, but various articles too) to the [Opera homepage](https://www.opera.com).
 
 In the _background.js_, you would write something like:
 
@@ -82,7 +82,7 @@ This pattern will match all tabs that point to URLs on `dev.opera.com` including
 				// which is the Opera homepage
 				chrome.tabs.update(
 					tab[i].id, {
-						'url': 'http://www.opera.com'
+						'url': 'https://www.opera.com'
 					}
 				);
 			}
@@ -127,7 +127,7 @@ The most common and hence most important function to note, when it comes to wind
 You can achieve this by writing the following in the _background.js_:
 
 	var url_list = [
-		'http://www.opera.com',
+		'https://www.opera.com',
 		'http://www.wikipedia.org',
 		'http://www.google.com'
 	];

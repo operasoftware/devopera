@@ -19,7 +19,7 @@ This release is a “follow up”, including bugfixes, to our [Alpha release][1]
 
 Download the [Android build][3].
 
-[3]: http://www.opera.com/download/get.pl?sub=++++&id=33391&location=318&nothanks=yes
+[3]: https://www.opera.com/download/get.pl?sub=++++&id=33391&location=318&nothanks=yes
 
 This build has all WAC 1.0 APIs implemented and we started official WAC 1.0 compliance testing on the HTC Desire device (Android 2.2); preliminary results are available here: [compliance test results][4]. Please note that compliance testing is not finished yet, and significant volumes of tests haven’t been executed, for instance, the digital signatures tests, which are currently being adjusted by WAC. We also fixed some serious bugs, particularly in camera, messaging and audio.
 

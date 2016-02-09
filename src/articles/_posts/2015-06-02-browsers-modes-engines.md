@@ -88,7 +88,7 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 </tr>
 <tr>
 	<td>J2ME</td>
-	<td><a href="http://www.opera.com/mobile/mini/other">Opera Mini</a></td>
+	<td><a href="https://www.opera.com/mobile/mini/other">Opera Mini</a></td>
 	<td>Opera Mini</td>
 	<td>Presto, server-side</td>
 	<td>Yes</td>
@@ -104,7 +104,7 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 </tr>
 <tr>
 	<td rowspan="2">Desktop</td>
-	<td rowspan="2"><a href="http://www.opera.com/computer">Opera</a></td>
+	<td rowspan="2"><a href="https://www.opera.com/computer">Opera</a></td>
 	<td>Normal</td>
 	<td>Chromium</td>
 	<td>No</td>
@@ -123,7 +123,7 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 Notes:
 
 - Opera Turbo mode compresses data up to 80%. Opera Mini mode compresses data up to 90%.
-- Opera Turbo marked with asterisk also has a [Video Boost](http://www.opera.com/blogs/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) compression option.
+- Opera Turbo marked with asterisk also has a [Video Boost](https://www.opera.com/blogs/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) compression option.
 - If you’re doing IP-based geo-detection, you should always check if there is an `X-Forwarded-For` header. That way, you can also correctly locate browser users using proxy functionality, powered by Opera Mini and Opera Turbo.
 - Opera Mini comes with “limited” standards support: this means that advanced JavaScript, CSS and other dynamic elements might not work as expected, due to the peculiarities of server-side rendering and limited client capabilities.
 - Older Presto-powered Opera products that are no longer under active development, such as Opera 12 for computers, Opera Mobile Classic, etc. are not listed here.

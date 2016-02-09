@@ -9,8 +9,8 @@ license: cc-by-3.0
 ---
 
 <p>Who says that widgets can only be used for small, trivial apps? Certainly not Developer Relations&#39; own Vadim Makeev, who took the open source, web-based, JavaScript-driven <a href="http://code.google.com/p/svg-edit/">SVG-edit</a> project and turned it into an amazing standalone widget that can hold its own against traditional desktop applications.</p>
-<p class="note">Widgets have been a part of Opera for a long time, but traditionally they required the browser to be running. In <a href="http://www.opera.com/browser/next/">Opera 10.50 beta</a>, we effectively decoupled the widget engine, allowing for standalone widgets that install and run just like native applications.</p>
-<p><a href="http://widgets.opera.com/widget/15321/1.1/">SVG Edit by Pepelsbey</a> (requires <a href="http://www.opera.com/browser/next/">Opera 10.50 beta</a>)</p>
+<p class="note">Widgets have been a part of Opera for a long time, but traditionally they required the browser to be running. In <a href="https://www.opera.com/browser/next/">Opera 10.50 beta</a>, we effectively decoupled the widget engine, allowing for standalone widgets that install and run just like native applications.</p>
+<p><a href="http://widgets.opera.com/widget/15321/1.1/">SVG Edit by Pepelsbey</a> (requires <a href="https://www.opera.com/browser/next/">Opera 10.50 beta</a>)</p>
 <img src="{{ page.id }}/SVGEditPepelsbey.jpg" alt="SVG Edit by Pepelsbey" />
 <p>Key features of the widget include:</p>
 <ul>

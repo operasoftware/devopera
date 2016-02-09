@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>With <a href="http://www.opera.com/browser/next/">Opera 11 in Beta</a>, we are in the process of getting Opera Dragonfly updated for the final release. We now have a release candidate ready on the cutting-edge branch. Once Opera 11 is released, this branch will be pushed to the default path and will become the next alpha release of Opera Dragonfly.</p>
+<p>With <a href="https://www.opera.com/browser/next/">Opera 11 in Beta</a>, we are in the process of getting Opera Dragonfly updated for the final release. We now have a release candidate ready on the cutting-edge branch. Once Opera 11 is released, this branch will be pushed to the default path and will become the next alpha release of Opera Dragonfly.</p>
 
 <h3>Key features</h3>
 
@@ -40,9 +40,9 @@ license: cc-by-3.0
 <ul>
 	<li>Command Line is now available globally. Invoke/dismiss with the <kbd>Esc</kbd> key or the Command Line icon (upper right). The keyboard shortcut is currently broken on Mac, but will be fixed in the next push</li>
 	<li>Support for application wide context menus (right click)</li>
-   <li>Links to W3C specifications for CSS properties and DOM Interfaces (HTML and SVG) on context menus</li>
-   <li>Updated auto-complete values for SVG-specific CSS properties and new properties found in Opera 11</li>
-   <li>Various UI optimisations</li>
+	 <li>Links to W3C specifications for CSS properties and DOM Interfaces (HTML and SVG) on context menus</li>
+	 <li>Updated auto-complete values for SVG-specific CSS properties and new properties found in Opera 11</li>
+	 <li>Various UI optimisations</li>
 </ul>
 
 <p>The experimental branch is just that. It has features that are in progress, so may be incomplete (such as missing icons or not function as expected) and <strong>may break at any time</strong>.
