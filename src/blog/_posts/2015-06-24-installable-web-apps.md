@@ -42,7 +42,7 @@ Those occasionally used apps are taking up a lot of storage on a device that may
 
 > Over a quarter of new Android devices have only 512 MB of RAM
 
-and, according to [Techrepublic](vhttp://www.techrepublic.com/article/ram-a-lama-dont-be-a-ding-ding-about-android-storage/),
+and, according to [Techrepublic](http://www.techrepublic.com/article/ram-a-lama-dont-be-a-ding-ding-about-android-storage/),
 
 > Internal storage is particularly important, because this is where your apps are stored. If you buy a budget or entry-level phone, you’ll probably find around 512 MB of internal storage. With this low amount of storage, you’ll only be able to install a few apps.
 
@@ -67,7 +67,7 @@ To make your site “installable”, you need to declare some characteristics in
 
 Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname).
 
-You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/devopera.webmanifest).
+You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/src/.webmanifest).
 
 ## Display modes
 

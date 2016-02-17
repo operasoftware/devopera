@@ -156,9 +156,9 @@ Opera’s implementation currently differs from Chrome’s in four main ways:
 
 ### Read more, see more
 
-Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname). You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/devopera.webmanifest). The Chrome team has compiled a list of resources on [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps).
+Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname). You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/src/.webmanifest). The Chrome team has compiled a list of resources on [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps).
 
-You can also check out how it works on sites with a manifest, for example
+You can also check out how it works on sites with a manifest, for example:
 
 - [Dev.Opera](https://dev.opera.com/)
 - [Flipkart Lite](http://www.flipkart.com/) (also see their [engineering blog](http://tech-blog.flipkart.net/2015/11/progressive-web-app/) on how they made it)
