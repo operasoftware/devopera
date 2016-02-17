@@ -73,7 +73,7 @@ license: cc-by-3.0
 
 <h3>My panel - Web standards and accessibility in higher education</h3>
 
-<p>I was feeling rather more nervous than usual before our talk, but I ploughed on regardless. I think I did fairly well in delivering a quick synopsis of the current issues with teaching web design and development in higher education, and Opera&#39;s efforts to try and make things better - the <a href="http://www.opera.com/company/education/tours/">University tours</a> and the Opera <a href="http://www.opera.com/wsc/">Web Standards Curriculum</a>.</p>
+<p>I was feeling rather more nervous than usual before our talk, but I ploughed on regardless. I think I did fairly well in delivering a quick synopsis of the current issues with teaching web design and development in higher education, and Opera&#39;s efforts to try and make things better - the <a href="https://www.opera.com/company/education/tours/">University tours</a> and the Opera <a href="https://www.opera.com/wsc/">Web Standards Curriculum</a>.</p>
 
 <p>I was amused by being told to slow down early on in my presentation — too much coffee I think ;-)</p>
 

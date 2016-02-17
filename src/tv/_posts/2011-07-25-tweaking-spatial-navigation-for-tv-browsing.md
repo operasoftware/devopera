@@ -28,8 +28,8 @@ Beyond the browser on TVs and similar web-connected devices, spatial navigation 
 - In the [Opera desktop browser][1], hold down the Shift button and press the arrow keys.
 - In the [Opera Mobile emulator][2], select _Keypad_ in the launch settings window.
 
-[1]: http://www.opera.com/browser/
-[2]: http://www.opera.com/developer/tools/mobile/
+[1]: https://www.opera.com/browser/
+[2]: https://www.opera.com/developer/tools/mobile/
 
 An eye-opening exercise is to browse a few popular sites using only spatial navigation. Although it probably won’t be impossible, it is likely to be frustrating with the cursor seeming to focus on elements at random. Television adds an extra layer of frustration and that’s due to the infrared connection between the remote control and the TV. This causes a noticeable delay of up to half a second or so between pressing a button on the remote control and the cursor moving on the screen. Consequently, any mistake by the user or unexpected movement of the cursor is particularly expensive in terms of time wasted. Fortunately, we can alleviate a lot of this with CSS3.
 

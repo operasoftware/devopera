@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>With today’s <a href="http://www.opera.com/browser/">release of Opera 11</a>, we have pushed the <a href="http://my.opera.com/dragonfly/blog/2010/12/03/getting-opera-dragonfly-ready-for-opera-11">corresponding Opera Dragonfly version</a> to the default path. This means Opera 11 users will get this version automatically.</p>
+<p>With today’s <a href="https://www.opera.com/browser/">release of Opera 11</a>, we have pushed the <a href="http://my.opera.com/dragonfly/blog/2010/12/03/getting-opera-dragonfly-ready-for-opera-11">corresponding Opera Dragonfly version</a> to the default path. This means Opera 11 users will get this version automatically.</p>
 
 <p>Will this release out of the way, full Opera Dragonfly resources can be spent working towards the first stable release in the new year. We have pushed the current state of this work to the /experimental/ path (check the previous blog post for details on how to enable this) for you to try out. As well as work in progress, it includes a couple of experiments to try to gauge what the correct behaviour should be.</p>
 
@@ -20,17 +20,17 @@ license: cc-by-3.0
 <h4>Network Inspector updates</h4>
 
 <ul>
-    <li>Improved data accuracy due to getting more data directly from Scope</li>
-    <li>Displays HTTP request and response bodies (not visible yet in the current build) </li>
-    <li>Options to clear cache, disable cache and override HTTP headers</li>
-    <li>Craft new raw requests</li>
+		<li>Improved data accuracy due to getting more data directly from Scope</li>
+		<li>Displays HTTP request and response bodies (not visible yet in the current build) </li>
+		<li>Options to clear cache, disable cache and override HTTP headers</li>
+		<li>Craft new raw requests</li>
 </ul>
 
 <h4>Resource Inspector</h4>
 
 <ul>
-    <li>List of all resources that make up the page or application being debugged</li>
-    <li>Detail view for each resource, with custom view for each known resource type (image preview or code view for example)</li>
+		<li>List of all resources that make up the page or application being debugged</li>
+		<li>Detail view for each resource, with custom view for each known resource type (image preview or code view for example)</li>
 </ul>
 
 <p>As mentioned these are at an early stage and are a work in progress so they may break or fail to work entirely.</p>

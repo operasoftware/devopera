@@ -7,17 +7,17 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>The Opera Dragonfly team is proud to announce that <a href="http://www.opera.com/dragonfly/">Opera Dragonfly 1.0</a> launched this morning. At the want of not repeating myself, you can find out all the details on the <a href="http://my.opera.com/dragonfly/blog/opera-dragonfly-1-0-emerges">Opera Dragonfly blog</a>.</p>
+<p>The Opera Dragonfly team is proud to announce that <a href="https://www.opera.com/dragonfly/">Opera Dragonfly 1.0</a> launched this morning. At the want of not repeating myself, you can find out all the details on the <a href="http://my.opera.com/dragonfly/blog/opera-dragonfly-1-0-emerges">Opera Dragonfly blog</a>.</p>
 
 <img src="{{ page.id }}/dfl1odin.png" alt="" />
 
 <p>If you’d like to find out more you can:</p>
 
 <ul>
-  <li>View the <a href="http://www.opera.com/dragonfly/">Opera Dragonfly product pages</a></li>
-  <li>Read the <a href="http://www.opera.com/dragonfly/documentation/">Opera Dragonfly field guide</a></li>
-  <li>Watch the <a href="https://www.youtube.com/watch?v=BeTzJ-HGLo4">Opera Dragonfly introduction video</a></li>
-  <li>Check out the feedback on <a href="http://search.twitter.com/search?q=%23dfl1">Twitter</a>, or post your own with the #dfl1 hashtag</li>
+	<li>View the <a href="https://www.opera.com/dragonfly/">Opera Dragonfly product pages</a></li>
+	<li>Read the <a href="https://www.opera.com/dragonfly/documentation/">Opera Dragonfly field guide</a></li>
+	<li>Watch the <a href="https://www.youtube.com/watch?v=BeTzJ-HGLo4">Opera Dragonfly introduction video</a></li>
+	<li>Check out the feedback on <a href="http://search.twitter.com/search?q=%23dfl1">Twitter</a>, or post your own with the #dfl1 hashtag</li>
 </ul>
 
 <p>You can see a <a href="http://vimeo.com/23304859">quick 8 minute introduction to Opera Dragonfly</a> by Bruce Lawson below:</p>

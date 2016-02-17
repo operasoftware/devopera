@@ -14,10 +14,10 @@ license: cc-by-3.0
 <p>This is a very early Labs release and it's not quite certain at this point that extensions functionality will effectively make it into a future release of Opera Mobile; the design is also most definitely <strong>not final</strong>, and there are some rough edges here and there, but if that doesn't scare you away – and why should it! –, you can find an Opera Mobile Labs build with extensions support for Android below. In addition, we've released extension-enabled Opera Mobile Emulator Labs builds, so you can test your extensions in a desktop-based Opera Mobile instance as well.</p>
 
 <ul>
-<li><a href="http://www.opera.com/download/get.pl?id=34585&sub=true&nothanks=yes&location=360">Opera Mobile Labs build with extensions for Android (.apk)</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34588&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Windows (.zip)</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34586&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Mac (.dmg)</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34587&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Linux (.tar.gz)</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34585&sub=true&nothanks=yes&location=360">Opera Mobile Labs build with extensions for Android (.apk)</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34588&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Windows (.zip)</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34586&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Mac (.dmg)</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34587&sub=true&nothanks=yes&location=360">Opera Mobile Emulator Labs build with extensions for Linux (.tar.gz)</a></li>
 </ul>
 
 <p>Once you've downloaded a build, you'll want to head over to <a href="http://addons.opera.com/">the Opera Extensions site</a>, where you'll find plenty of extensions to play with. When doing so, please keep in mind the following known issues:</p>
@@ -38,7 +38,7 @@ license: cc-by-3.0
 
 <p>We have also added the option to load unzipped extensions for testing purposes, just like <a href="https://dev.opera.com/articles/view/opera-extensions-developer-workflow/#developermode">Opera desktop's Developer Mode</a>. This is very handy for development, as it saves you from zipping and installing your extension over and over again. In order to use this, load Opera Mobile on your device or PC, choose the earlier mentioned <em>Install extension</em> menu option and navigate to the config.xml file of your unzipped extension. The extension will then be loaded in developer mode, and its settings page has a handy <em>Reload</em> menu option, which you can click to reload the extension after you've made some changes to the code.</p>
 
-<p>And of course, you can use Opera Dragonfly's remote debugging functionality to inspect the inner workings of the installed extensions' JS, DOM and CSS. For detailed instructions on how to connect Opera Mobile with Opera Dragonfly, we refer to the <a href="http://www.opera.com/dragonfly/documentation/remote/">remote debugging section</a> in our Opera Dragonfly guide: it's as easy as clicking a few buttons.</p>
+<p>And of course, you can use Opera Dragonfly's remote debugging functionality to inspect the inner workings of the installed extensions' JS, DOM and CSS. For detailed instructions on how to connect Opera Mobile with Opera Dragonfly, we refer to the <a href="https://www.opera.com/dragonfly/documentation/remote/">remote debugging section</a> in our Opera Dragonfly guide: it's as easy as clicking a few buttons.</p>
 
 <img src="remote-debug-mobile-extension.png" alt="Remote debugging of an extension with Opera Dragonfly" width="660" height="322">
 

@@ -27,7 +27,7 @@ The big news today is that WebM will join the list of open and freely usable Web
 
 **Note:** WebM support is now rolled into [stable Opera release][9].
 
-[9]: http://www.opera.com/download/
+[9]: https://www.opera.com/download/
 
 You can also find more out about the WebM format and view some examples by reading our “[Opera supports the WebM video format][10]” Dev Opera article.
 

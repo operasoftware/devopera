@@ -96,7 +96,7 @@ In order to have a reliable alternative to UA sniffing, we are introducing a new
 
 ## Testing
 
-1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](http://www.opera.com/en/developer), based on Chromium 44 or later, or [Microsoft Edge](http://windows.microsoft.com/en-us/windows/preview-download). These browsers have native `document.scrollingElement` support.
+1. Use [Chrome Canary](https://www.google.com/chrome/browser/canary.html), or [Opera developer](https://www.opera.com/en/developer), based on Chromium 44 or later, or [Microsoft Edge](http://windows.microsoft.com/en-us/windows/preview-download). These browsers have native `document.scrollingElement` support.
 2. Check that your site still works.
 
 ## Reporting issues

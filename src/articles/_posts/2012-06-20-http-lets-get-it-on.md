@@ -81,7 +81,7 @@ In the Make Request tab, there are three areas:
 
 ### Let’s customize the HTTP request
 
-1. Copy `http://www.opera.com/` in the URL section
+1. Copy `https://www.opera.com/` in the URL section
 2. Copy and paste the following HTTP request into the “Request body” section of the network tab. We added the `Accept-Language` header to the previous minimal HTTP request.
 3. Then hit the “Send request” button.
 ^
@@ -105,7 +105,7 @@ This time server responds with French specified in the markup and the actual tex
 	<!DOCTYPE html>
 	<html lang="fr">
 
-We used exactly the same URI — `http://www.opera.com/` — and we received different answers only because we changed the HTTP `Accept-Language`. Note that the server replied with plenty of headers — giving us in return information on the resource status such as its type, etc. That will allow the client to adjust the processing of the document. You can try it with different languages: `ja` for Japanese, `de` for German, etc.
+We used exactly the same URI — `https://www.opera.com/` — and we received different answers only because we changed the HTTP `Accept-Language`. Note that the server replied with plenty of headers — giving us in return information on the resource status such as its type, etc. That will allow the client to adjust the processing of the document. You can try it with different languages: `ja` for Japanese, `de` for German, etc.
 
 What happens if we request a language that doesn’t exist on the server? Just try it: for example `zh` for Chinese:
 

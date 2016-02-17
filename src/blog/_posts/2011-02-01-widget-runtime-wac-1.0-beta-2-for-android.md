@@ -16,7 +16,7 @@ Today we are rolling out the next bugfix release of our Android widget runtime w
 
 Download the [Android build][1].
 
-[1]: http://www.opera.com/download/get.pl?sub=++++&id=33405&location=270&nothanks=yes
+[1]: https://www.opera.com/download/get.pl?sub=++++&id=33405&location=270&nothanks=yes
 
 Another focus feature of this release is Android’s home screen integration — now widgets can be added to the home screen. This is our initial version of integration, which we plan to expand further in the future.
 

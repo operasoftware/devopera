@@ -31,7 +31,7 @@ There is also a `speeddial` field in which you need to specify the title of the 
 		},
 		"speeddial": {
 			"title": "Sample Speed Dial",
-			"url": "http://www.opera.com",
+			"url": "https://www.opera.com",
 			"size_mode": "auto_zoom"
 		}
 	}

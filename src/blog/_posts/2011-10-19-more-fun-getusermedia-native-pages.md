@@ -11,7 +11,7 @@ license: os-asa
 
 Note: the features covered in this article are now available in a much more stable form in our latest [Opera Next][1] release.
 
-[1]: http://www.opera.com/browser/next/
+[1]: https://www.opera.com/browser/next/
 
 Another Opera labs release is upon us, esteemed friends in the land of Web! This time we are making available a very exciting build indeed, with support for both the `getUserMedia` method, enabling us to make use of video input from a user’s web cam, and native pages — codenamed Opera Reader — an innovative new set of CSS constructs that allow you to split pages up into paged media, revolutionising the Web reading experience. Want to know more? Read on.
 
@@ -27,7 +27,7 @@ To start off with, let’s get you acquainted with the new builds themselves. Yo
 [2]: http://snapshot.opera.com/labs/camera-and-pages/Opera-Labs-Camera-and-Pages-12.00-1113.dmg
 [3]: http://snapshot.opera.com/labs/camera-and-pages/Linux-FreeBSD/
 [4]: http://snapshot.opera.com/labs/camera-and-pages/Opera-Labs-Camera-and-Pages-12.00-1113.exe
-[5]: http://www.opera.com/download/get.pl?sub=++++&id=34184&location=360&nothanks=yes
+[5]: https://www.opera.com/download/get.pl?sub=++++&id=34184&location=360&nothanks=yes
 
 ## Native pages
 

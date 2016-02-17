@@ -13,7 +13,7 @@ tags:
 license: cc-by-3.0
 ---
 
-[Opera 12.10 beta](http://www.opera.com/browser/next/) streamlines and speeds up browsing for end-users, makes images more beautiful, and includes functionality that allows web developers to add user-friendly features to their pages and extensions.
+[Opera 12.10 beta](https://www.opera.com/browser/next/) streamlines and speeds up browsing for end-users, makes images more beautiful, and includes functionality that allows web developers to add user-friendly features to their pages and extensions.
 
 Previously, snapshots were versioned as “Opera 12.50”, but we’ve reduced the version number to Opera 12.10.
 

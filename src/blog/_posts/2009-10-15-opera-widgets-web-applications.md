@@ -33,8 +33,8 @@ To bypass that problem, we offer up the browser as a solution. At Opera, we have
 
 Just as products like [Opera Mini][2] and [Opera Turbo][3] are helping to bring the full Web to users who would otherwise lack access, Opera Widgets help to level the playing field — allowing anyone with a browser to use cutting-edge applications, even on underpowered devices.
 
-[2]: http://www.opera.com/mini/
-[3]: http://www.opera.com/browser/turbo/
+[2]: https://www.opera.com/mini/
+[3]: https://www.opera.com/browser/turbo/
 
 ### They are based on open standards
 

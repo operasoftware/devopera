@@ -55,7 +55,7 @@ Note that the short explanation sentence is completely optional and should be ig
 	<img elem="media" src="{{ page.id }}/coffee.png">
 </figure>
 
-Each time someone wants to visit Opera’s home page, a client requests a `http://www.opera.com/` by sending this kind of message:
+Each time someone wants to visit Opera’s home page, a client requests a `https://www.opera.com/` by sending this kind of message:
 
 	GET / HTTP/1.1
 	Host: www.opera.com

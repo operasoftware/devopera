@@ -9,7 +9,7 @@ license: cc-by-3.0
 
 <img src="{{ page.id }}/dfl10.png" alt="" />
 
-<p>This fine spring morning, Opera Dragonfly’s metamorphosis was completed. Emerging from the beta phase, we’re proud to launch <a href="http://www.opera.com/dragonfly">Opera Dragonfly 1.0</a> onto the world. Over the coming days, weeks, and months, we hope you’ll become increasingly familiar with each other. Opera Dragonfly 1.0 is the development tool we’ve always wanted to build. It is still young, and will grow as we nurture it and teach it new tricks in the coming versions, but it already packs a punch.</p>
+<p>This fine spring morning, Opera Dragonfly’s metamorphosis was completed. Emerging from the beta phase, we’re proud to launch <a href="https://www.opera.com/dragonfly">Opera Dragonfly 1.0</a> onto the world. Over the coming days, weeks, and months, we hope you’ll become increasingly familiar with each other. Opera Dragonfly 1.0 is the development tool we’ve always wanted to build. It is still young, and will grow as we nurture it and teach it new tricks in the coming versions, but it already packs a punch.</p>
 
 <h4>A modern app built on web technologies</h4>
 
@@ -17,7 +17,7 @@ license: cc-by-3.0
 
 <h4>Key Features</h4>
 
-<p>There are too many features packed into Opera Dragonfly to cover in this short blog post.  All tools you would expect are here, such as a JavaScript debugger, and a DOM and CSS Inspector. It is possible to view the data stored by your application, and monitor network traffic. A Resource Inspector allows you to preview the assets used in your site or application. We designed Opera Dragonfly from the outset to support remote debugging, so you don’t have to leave any of your tools behind when you move to the small, or the large screen. We’ve also built in design aids, such as colour pickers and guidelines in the element highlight. You can even chose the monospace font face and font size to the one you’re most comfortable with.  For a full lowdown on each of the features we’ve build into Opera Dragonfly, take a look at our <a href="http://www.opera.com/dragonfly/features/">features overview</a>.</p>
+<p>There are too many features packed into Opera Dragonfly to cover in this short blog post.  All tools you would expect are here, such as a JavaScript debugger, and a DOM and CSS Inspector. It is possible to view the data stored by your application, and monitor network traffic. A Resource Inspector allows you to preview the assets used in your site or application. We designed Opera Dragonfly from the outset to support remote debugging, so you don’t have to leave any of your tools behind when you move to the small, or the large screen. We’ve also built in design aids, such as colour pickers and guidelines in the element highlight. You can even chose the monospace font face and font size to the one you’re most comfortable with.  For a full lowdown on each of the features we’ve build into Opera Dragonfly, take a look at our <a href="https://www.opera.com/dragonfly/features/">features overview</a>.</p>
 
 <h4>Video preview</h4>
 
@@ -25,9 +25,9 @@ license: cc-by-3.0
 
 <h4>Getting started</h4>
 
-<p>If you already have Opera installed, you’re ready go. If not you can download it from <a href="http://www.opera.com/browser/">Opera.com</a>. Now all you have to do is right click on the page and select <q>Inspect element</q> if you wish to start up with your chosen element highlighted, or use the shortcut Ctrl+Shift+I on Windows and Linux, or ⌘+⌥+I on Mac, if you want to start up where you left of the last time.</p>
+<p>If you already have Opera installed, you’re ready go. If not you can download it from <a href="https://www.opera.com/browser/">Opera.com</a>. Now all you have to do is right click on the page and select <q>Inspect element</q> if you wish to start up with your chosen element highlighted, or use the shortcut Ctrl+Shift+I on Windows and Linux, or ⌘+⌥+I on Mac, if you want to start up where you left of the last time.</p>
 
-<p>There is a lot packed into Opera Dragonfly, so I’ll leave it to the <a href="http://www.opera.com/dragonfly/documentation/">Opera Dragonfly field guide</a> to teach you the ins and outs.</p>
+<p>There is a lot packed into Opera Dragonfly, so I’ll leave it to the <a href="https://www.opera.com/dragonfly/documentation/">Opera Dragonfly field guide</a> to teach you the ins and outs.</p>
 
 <h4>Feedback</h4>
 

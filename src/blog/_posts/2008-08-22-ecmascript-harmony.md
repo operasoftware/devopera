@@ -22,7 +22,7 @@ The executive summary from the meeting listed out these deliverables:</p>
 
 
 <ol>
-  <li> Focus work on ECMAScript 3.1 with full collaboration of all parties, and target two interoperable implementations by early next year.</li>
+	<li> Focus work on ECMAScript 3.1 with full collaboration of all parties, and target two interoperable implementations by early next year.</li>
 
  <li>Collaborate on the next step beyond ECMAScript 3.1, which will include syntactic extensions but which will be more modest than ECMAScript 4 in both semantic and syntactic innovation.</li>
 
@@ -31,5 +31,5 @@ The executive summary from the meeting listed out these deliverables:</p>
 </ol>
 
 <p>
-Opera 9.5 currently supports the entire ECMA-262 2nd and 3rd standards with no exceptions. (See the list of <a href="http://www.opera.com/docs/specs/">standards supported by Opera</a>.)
+Opera 9.5 currently supports the entire ECMA-262 2nd and 3rd standards with no exceptions. (See the list of <a href="https://www.opera.com/docs/specs/">standards supported by Opera</a>.)
 </p>

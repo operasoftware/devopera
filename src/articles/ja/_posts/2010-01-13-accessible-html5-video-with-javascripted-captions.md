@@ -44,7 +44,7 @@ JavaScript が有効になっている場合は、トランスクリプトを一
 これがそのテクニックを使用した、おバカなビデオのサンプル [“How to Leverage a Synergy”][3] になります。 ([Ogg ビデオが利用可能なブラウザー][4] が必要です。)
 
 [3]: http://people.opera.com/brucel/demo/video/accessible-html5-video-captions.html
-[4]: http://www.opera.com/browser/next/
+[4]: https://www.opera.com/browser/next/
 
 このコンセプトデモは Safari では動作しません。これは、Ogg という Opera や Firefox, Chrome がサポートするオープンなコーデックを Safari がサポートしていないからです。Safari のためにビデオをエンコードして、[`source` 要素][5] で複数のビデオ (Ogg と MP4) を指定すれば、このデモは動作します。なお、Internet Explorer は現時点で `video` 要素をサポートしていません。
 

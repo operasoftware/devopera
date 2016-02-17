@@ -12,7 +12,7 @@ It&#39;s not just Opera Mini, but the whole Mobile Web.
 </p>
 
 <p>
-As shown by <a href="http://www.opera.com/smw/" target="_blank">State of the Mobile Web Report</a>, Indonesians&#39; average page view is 400 odd pages and they also enjoy the second biggest Opera Mini user base after Russia.
+As shown by <a href="https://www.opera.com/smw/" target="_blank">State of the Mobile Web Report</a>, Indonesians&#39; average page view is 400 odd pages and they also enjoy the second biggest Opera Mini user base after Russia.
 </p>
 
 <p>

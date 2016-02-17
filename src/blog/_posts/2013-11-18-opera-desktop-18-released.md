@@ -2,7 +2,7 @@
 title: Opera Desktop 18 Released
 authors:
 - bruce-lawson
-intro: '[Opera Desktop 18 for Mac and Windows](http://www.opera.com/computer) is out, based on Chromium 31. ([See features and download](http://www.opera.com/computer))'
+intro: '[Opera Desktop 18 for Mac and Windows](https://www.opera.com/computer) is out, based on Chromium 31. ([See features and download](https://www.opera.com/computer))'
 tags:
 - getusermedia
 - webrtc
@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 [Opera Desktop 18 for Mac and Windows][1] is out, based on Chromium 31. ([See features and download][1])
 
-[1]: http://www.opera.com/computer
+[1]: https://www.opera.com/computer
 
 ### getUserMedia and WebRTC
 
@@ -89,4 +89,4 @@ In the next two weeks, we’ll promote the experimental [Opera developer stream]
 
 [29]: http://opera.com/developer
 [30]: http://opera.com/next
-[31]: http://www.opera.com/blogs/desktop/
+[31]: https://www.opera.com/blogs/desktop/

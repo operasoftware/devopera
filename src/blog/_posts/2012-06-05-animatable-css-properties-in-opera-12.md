@@ -13,7 +13,7 @@ license: cc-by-3.0
 ---
 
 <p>CSS3 transitions and animations don&#39;t just provide eye-candy for fancy demos &#x2014; they also improve usability and enhance the user experience (when used in the right places). Although still at an experimental stage and not meant for production sites yet, they are being used more and more on the web thanks to better and better browser support.</p>
-<p>At Opera, our core developers, locked away in a basement somewhere in Norway with only brown cheese to survive on, have been working hard to make our support even better. <a href="http://www.opera.com/browser/next/">Opera 12, currently in beta</a>, introduces keyframe animation support as well as an increase in the number of properties you can animate.</p>
+<p>At Opera, our core developers, locked away in a basement somewhere in Norway with only brown cheese to survive on, have been working hard to make our support even better. <a href="https://www.opera.com/browser/next/">Opera 12, currently in beta</a>, introduces keyframe animation support as well as an increase in the number of properties you can animate.</p>
 <p>Based on <a href="http://oli.jp/2010/css-animatable-properties/">Oli Studholme&#39;s exhaustive list</a>, here is a rundown of animatable CSS properties in Opera 12. As well as for reference, hopefully this list can also be used for inspiration to test and combine some of the more unusual animations and transitional effects.</p>
 <h3>Text properties</h3>
 <ul>

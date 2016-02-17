@@ -77,13 +77,13 @@ license: cc-by-3.0
 
 <h2>Using RoboHydra as a proxy</h2>
 
-<p>As we explained earlier, one of the situations in which RoboHydra can be useful is when you're developing the front end of a web application. Imagine you are one of the front end developers for <a href="http://www.opera.com">http://www.opera.com</a>. It would be convenient to be able to connect to some URL in your browser that behaves like opera.com, except that the front end files are served from your local filesystem, and the back end is hosted somewhere else — you don't actually need to have the whole opera.com backend on your local machine!</p>
+<p>As we explained earlier, one of the situations in which RoboHydra can be useful is when you're developing the front end of a web application. Imagine you are one of the front end developers for <a href="https://www.opera.com">https://www.opera.com</a>. It would be convenient to be able to connect to some URL in your browser that behaves like opera.com, except that the front end files are served from your local filesystem, and the back end is hosted somewhere else — you don't actually need to have the whole opera.com backend on your local machine!</p>
 
-<p>To achieve this you can create a simple RoboHydra web server that serves local files for any requests starting with a certain path containing your local code (for example <em>/js/</em>), and proxies every other request (e.g. <em>/developer/tools</em>) to http://www.opera.com.</p>
+<p>To achieve this you can create a simple RoboHydra web server that serves local files for any requests starting with a certain path containing your local code (for example <em>/js/</em>), and proxies every other request (e.g. <em>/developer/tools</em>) to https://www.opera.com.</p>
 
 <h3>Writing a proxy plugin</h3>
 
-<p>To achieve this, we'll have to write a RoboHydra plugin containing two heads: one to serve local files from <em>/js/</em> and another to proxy everything else to http://www.opera.com. The former will serve static files, and the latter will be a proxying head. The plugin code will look like this:</p>
+<p>To achieve this, we'll have to write a RoboHydra plugin containing two heads: one to serve local files from <em>/js/</em> and another to proxy everything else to https://www.opera.com. The former will serve static files, and the latter will be a proxying head. The plugin code will look like this:</p>
 
 <pre><code class="javascript">var heads                   = require('robohydra').heads,
 		RoboHydraHeadFilesystem = heads.RoboHydraHeadFilesystem,
@@ -110,7 +110,7 @@ exports.getBodyParts = function(config) {
 				{
 					name: 'proxy',
 					mountPath: '/',
-					proxyTo: 'http://www.opera.com',
+					proxyTo: 'https://www.opera.com',
 					setHostHeader: true
 				}
 			)

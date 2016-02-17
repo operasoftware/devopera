@@ -20,7 +20,7 @@ This Maemo version of Opera Mobile 10 was created as a hobby project by a small 
 
 The preview build contains the same features available in Opera Mobile 10 for Symbian and Windows Mobile smartphones. These include fast and economical browsing with Opera Turbo, bookmark and Speed Dial sync with other Opera products, and of course multiple tabs. For more information, see our rundown of [Opera Mobile 10 features][2].
 
-[2]: http://www.opera.com/mobile/features/
+[2]: https://www.opera.com/mobile/features/
 
 We have two additional treats for Maemo users: this is the first public release of Opera Mobile to include [Carakan — our new Javascript engine][3].
 
@@ -51,7 +51,7 @@ The fullscreen button on N800/N810 only affects the native titlebar and menu. Th
 
 [Download and install Opera Mobile 10][8] on your Nokia N800/N810/N900 using the phone’s default browser.
 
-[8]: http://www.opera.com/download/get.pl?sub=++++&id=32891&location=270&nothanks=yes
+[8]: https://www.opera.com/download/get.pl?sub=++++&id=32891&location=270&nothanks=yes
 
 In case you encounter problems, please report bugs and issues using our [bug wizard][9]. We also welcome feedback on our [forums][10].
 

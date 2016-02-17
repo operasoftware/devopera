@@ -16,7 +16,7 @@ license: cc-by-3.0
 
 <p><a href="{{ page.id }}/Indonesia%20Tour%20presentation-zibincheah.pdf">Zibin&#39;s slides: Web Browser Industry (PDF 1M)</a>. This presentation is about the mobile web industry -trends today and tomorrow. I&#39;ve also presented Opera&#39;s four main products. The slide about top ten sites transcoded by Opera Mini in Indonesia was the showstopper. Audience giggled upon finding out that friendster bandwidth was more than the 2nd to 10th spot combined.</p>
 
-<p>To celebrate the success of the Indonesian tour, we&#39;ve published a new State of the Mobile Web report focussing on <a href="http://www.opera.com/smw/2008/10/">South-East Asian mobile browsing</a>. Bad news for any web site that doesn&#39;t follow Web Standards, with data like this:</p>
+<p>To celebrate the success of the Indonesian tour, we&#39;ve published a new State of the Mobile Web report focussing on <a href="https://www.opera.com/smw/2008/10/">South-East Asian mobile browsing</a>. Bad news for any web site that doesn&#39;t follow Web Standards, with data like this:</p>
 <ul><li>Indonesia and Malaysia lead the way for mobile Web adoption, followed by Thailand and Brunei.
 Indonesia leads the top 9 countries in page views, with each user browsing 358 pages on average in October 2008, well above the global average.</li>
 <li>Growth rates are soaring: Malaysia leads the top 9 with 462.6% growth in users this year, followed by the Philippines (396.4% growth) and Indonesia (329.5% growth).</li>

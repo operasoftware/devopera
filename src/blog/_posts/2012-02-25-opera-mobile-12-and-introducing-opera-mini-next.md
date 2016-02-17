@@ -37,14 +37,14 @@ license: cc-by-3.0
 <li>For Android only, hardware-accelerated <a href="https://dev.opera.com/articles/view/an-introduction-to-webgl/">WebGL</a>  for all things 3D and web. With WebGL on mobile, it&#39;ll be even easier to make and distribute games that work cross-platform.</li>
 
 </ul>
-<p>Keen standards-spotters can check out our <a href="http://www.opera.com/docs/specs/productspecs/">Web specifications support in Opera products</a>.</p>
+<p>Keen standards-spotters can check out our <a href="https://www.opera.com/docs/specs/productspecs/">Web specifications support in Opera products</a>.</p>
 <h4>Loads of webapp wowzers for the browsers in your trousers!</h4>
 <p>Demos? You want demos? Try our new <a href="http://shinydemos.com/">Shiny Demos</a> in Opera Mobile 12 or any capable browsers (no 1998-era browser-sniffing here, thank you).</p>
 
 
 <h4>Testing Opera Mobile</h4>
-<p>In the early stages of a project, when you&#39;re constantly tweaking viewports and media queries, it can slow you down to continually deploy a site, then check on a phone. To help you, we&#39;ve packaged up the Opera Mobile codebase into a desktop app for Windows, Linux and Mac, so you can test locally. It&#39;s called <a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a>. (Note that the Opera Mobile 12 emulator will be released in the coming weeks)</p>
-<p>For sophisticated debugging, we have true remote debugging with <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> that allows you to inspect the DOM, change the CSS and set breakpoints in your device browser, from your desktop.</p>
+<p>In the early stages of a project, when you&#39;re constantly tweaking viewports and media queries, it can slow you down to continually deploy a site, then check on a phone. To help you, we&#39;ve packaged up the Opera Mobile codebase into a desktop app for Windows, Linux and Mac, so you can test locally. It&#39;s called <a href="https://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a>. (Note that the Opera Mobile 12 emulator will be released in the coming weeks)</p>
+<p>For sophisticated debugging, we have true remote debugging with <a href="https://www.opera.com/dragonfly/">Opera Dragonfly</a> that allows you to inspect the DOM, change the CSS and set breakpoints in your device browser, from your desktop.</p>
 <p>Patrick H. Lauke, Product Manager for Opera Dragonfly, explains more.</p>
 <object width="480" height="360"><param name="movie" value="https://www.youtube.com/v/YHwiaH8Z5vA?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="never" /><embed src="https://www.youtube.com/v/YHwiaH8Z5vA?version=3&amp;amp;hl=en_GB&amp;amp;rel=0" type="application/x-shockwave-flash" width="480" height="360" allowfullscreen="true" allowscriptaccess="never" /></object>
 <p>Have a look at <a href="http://opera.com/developer/tools">opera.com/developer/tools</a> for an overview of our developer tools – and if that&#39;s not enough, we also have <a href="http://my.opera.com/ODIN/blog/2011/11/11/the-developer-briefcase-and-other-neat-opera-extensions-for-developers">&#39;The Developer Briefcase&#39; and other neat Opera extensions for developers</a>.</p>

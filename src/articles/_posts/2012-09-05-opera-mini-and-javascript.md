@@ -17,16 +17,16 @@ More recent versions of Opera Mini include different modes. Be sure that you're 
 
 If you’re using the iOS version, note that you have to switch it to Mini mode to go through Opera’s Mini servers (this mode is not the default). Tap the red “O” menu, and choose “Opera Mini”. Opera Mini for iOS also compresses videos. See [more information about Opera Mini for iOS](https://dev.opera.com/blog/opera-mini-8-for-ios/).
 
-If you're using Opera Mini 11 for Android (or later), ensure that the browser is set to Extreme (this is the default). Tap the red "O" menu, and ensure that “Savings mode” next to the Data Meter is set to “Extreme”; tap to change if not. ([More about Opera Mini 11 for Android](http://www.opera.com/blogs/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/).)
+If you're using Opera Mini 11 for Android (or later), ensure that the browser is set to Extreme (this is the default). Tap the red "O" menu, and ensure that “Savings mode” next to the Data Meter is set to “Extreme”; tap to change if not. ([More about Opera Mini 11 for Android](https://www.opera.com/blogs/mobile/2015/09/choose-high-or-extreme-savings-new-opera-mini-android/).)
 
 ## Introduction
 
 [Opera Mini][1] is one of the world’s foremost mobile browsers, which runs on a range of devices and operating systems ranging from expensive smart phones and tablets to less expensive feature phones that are in common use across many parts of the world. In July 2012, there were [187 million Opera Mini users][2], an increase of 50% over July 2011. Opera Mini is growing strongly on smart phones; in the same period, the share of Opera Mini smartphone users in [Asia Pacific countries][3] increased from 9% to 32%; in Indonesia, the increase was more than 460%. (Our monthly [State Of the Mobile Web reports][4] give the latest statistics for different territories, lists of top ten handsets and websites.)
 
-[1]: http://www.opera.com/mobile/download/
-[2]: http://www.opera.com/smw/2012/07/#growth
-[3]: http://www.opera.com/smw/2012/07/
-[4]: http://www.opera.com/smw/
+[1]: https://www.opera.com/mobile/download/
+[2]: https://www.opera.com/smw/2012/07/#growth
+[3]: https://www.opera.com/smw/2012/07/
+[4]: https://www.opera.com/smw/
 
 Much of the reason for Mini’s popularity is that it is capable of rendering complex web pages, even on low-spec devices. It does this by using a proxy-based architecture (see Figure 1). Requests from the user’s handset pass through the carrier’s internet gateway on their way to Opera’s transcoding servers. These servers then forward the request to the server.
 
@@ -47,7 +47,7 @@ Note that in general I use “JavaScript” interchangeably with “DOM scriptin
 
 Unlike [Opera Mobile][8], Opera Mini does not have a standalone emulator, and it can be tedious to switch between a device and a computer during development. Fortunately, you can use **MicroEmulator**, an LGPL licensed J2ME environment to run your own instance of Opera Mini on your desktop machine. To use MicroEmulator, make sure you have Java installed first, and then:
 
-[8]: http://www.opera.com/developer/tools/mobile/
+[8]: https://www.opera.com/developer/tools/mobile/
 
 1. **[Download MicroEmulator][9]** and unzip it to a location of your choice.
 2. **Download the Opera Mini package**, and save it somewhere memorable. Go to the [Opera for mobile devices][10] download site and select the _Download Opera Mini 7_ link to give you a JAD installer file.

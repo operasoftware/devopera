@@ -82,7 +82,7 @@ When building web sites and applications accessed through a web-enabled TVs regu
 
 For more details, see the list of [web specifications supported in Opera][29]. Note that certain features (such as the Geolocation API and Offline Web Applications), though present in the specific Presto version, may still be disabled on certain platforms running the Opera SDK. In addition, web-enabled TVs and devices already in use will have older versions of the browser shipped as part of their firmware. Since end users can’t easily update their browser, unless it’s part of a firmware update provided by the device manufacturers, it is safe to assume that most current of these devices will be running an older browser version, and many of the latest features will not be present. Developers should employ techniques such as JavaScript feature/object detection to determine the capabilities of the user’s browser.
 
-[29]: http://www.opera.com/docs/specs/
+[29]: https://www.opera.com/docs/specs/
 
 Developers can find which Presto version is present in a particular Opera browser by checking the user agent identification string in the internal `opera:about` information page. In the case of the Opera SDK, the string is currently:
 
