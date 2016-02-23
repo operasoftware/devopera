@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 <h3>Fastest Browser</h3>
 <p>
-<a href="http://www.opera.com/browser/">Opera 10.51 final for Windows is out now </a> and is truly the fastest browser on earth.
+<a href="https://www.opera.com/browser/">Opera 10.51 final for Windows is out now </a> and is truly the fastest browser on earth.
 </p>
 <p>
 Opera 10.50 has already proven to provide users with a super-quick experience. Based on Peacekeeper&#39;s benchmark results, <a href="http://service.futuremark.com/peacekeeper/results.action?key=2tLP">Opera 10.51 for Windows takes the clear lead with a 27% increase in speed</a> from our most recent version.
@@ -22,7 +22,7 @@ Opera 10.50 has already proven to provide users with a super-quick experience. B
 </p>
 <i>Figure: Peacekeeper browser speed benchmark</i>
 <p>
-In this release, we have pushed to get as many fixes into 10.51, largely due to the terrific community feedback provided on 10.50. Thank you for your participation! If you&#39;d like more details on exactly what we&#39;ve done, see the <a href="http://www.opera.com/docs/changelogs/windows/1051/">Opera 10.51 Windows release change logs</a>
+In this release, we have pushed to get as many fixes into 10.51, largely due to the terrific community feedback provided on 10.50. Thank you for your participation! If you&#39;d like more details on exactly what we&#39;ve done, see the <a href="https://www.opera.com/docs/changelogs/windows/1051/">Opera 10.51 Windows release change logs</a>
 
 </p>
 <p>
@@ -49,5 +49,5 @@ We are not leaving our Unix and Mac friends behind, we already have <a href="htt
 </p>
 <h3>Now, try it out!</h3>
 <p>
-<a href="http://www.opera.com/browser/">Try out Opera 10.51 desktop for Windows today</a>, and you might even be interested to see if the Opera 10.51 on your machine can <a href="http://service.futuremark.com/peacekeeper/">beat the fastest machine benchmarked on Peacekeeper</a>!
+<a href="https://www.opera.com/browser/">Try out Opera 10.51 desktop for Windows today</a>, and you might even be interested to see if the Opera 10.51 on your machine can <a href="http://service.futuremark.com/peacekeeper/">beat the fastest machine benchmarked on Peacekeeper</a>!
 </p>

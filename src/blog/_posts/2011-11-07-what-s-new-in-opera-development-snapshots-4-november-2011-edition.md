@@ -7,7 +7,7 @@ tags:
 license: cc-by-3.0
 ---
 	<p>Most of the updates that will feature in Opera 12 are in a new intermediate version <a href="http://my.opera.com/desktopteam/blog/2011/11/04/opera-11-60">Opera 11.60, whose snapshot has just been released</a>.</p>
-	<p>Do note that unlike before, we have a build that is not in <a href="http://www.opera.com/browser/next/">Opera Next</a>. So, make sure you follow instructions so that <a href="http://my.opera.com/daniel/blog/2011/11/01/opera-mac-multiinstall">it does not erase your default install of Opera</a>.</p>
+	<p>Do note that unlike before, we have a build that is not in <a href="https://www.opera.com/browser/next/">Opera Next</a>. So, make sure you follow instructions so that <a href="http://my.opera.com/daniel/blog/2011/11/01/opera-mac-multiinstall">it does not erase your default install of Opera</a>.</p>
 	<p>Do note that hardware acceleration and WebGL have been disabled. But here are some of the new features/bug fixes you can play with:</p>
 	<ul>
 		<li>

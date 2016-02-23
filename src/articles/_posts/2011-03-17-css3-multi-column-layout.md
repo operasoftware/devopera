@@ -159,7 +159,7 @@ I encourage you to “just have fun with it,” but I also want to add that mult
 
 Opera 11.10+, Opera Mobile 11.10 and IE 10 have the most [complete support for Multicolumn layout module][8], while partial support can be found (via prefixes) for [Firefox 3.6+, Safari 3.2+, Chrome 10+][9]
 
-[8]: http://www.opera.com/docs/specs/presto28/css/multicolumnlayout/
+[8]: https://www.opera.com/docs/specs/presto28/css/multicolumnlayout/
 [9]: http://caniuse.com/#multicolumn
 
 ## Demos and further reading
@@ -173,5 +173,5 @@ Opera 11.10+, Opera Mobile 11.10 and IE 10 have the most [complete support for M
 [10]: http://people.opera.com/dstorey/multi-column/multicolumn-article.html
 [11]: http://people.opera.com/zibin/multicol/index.html
 [12]: http://people.opera.com/pepelsbey/experiments/multicol/
-[13]: http://www.opera.com/docs/specs/presto28/css/multicolumnlayout/
+[13]: https://www.opera.com/docs/specs/presto28/css/multicolumnlayout/
 [14]: http://www.w3.org/TR/css3-multicol/ (specification for CSS Multi-column Layout module)

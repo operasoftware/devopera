@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Today ushers in another interesting developer snapshot release of Opera desktop! As per usual, if you are using <a href="http://www.opera.com/browser/next/">Opera Next</a> you should already have this update — if not, <a href="http://my.opera.com/desktopteam/blog/2011/10/07/ragnarok-css3-radial-gradients">download the snapshot</a> separately.</p>
+<p>Today ushers in another interesting developer snapshot release of Opera desktop! As per usual, if you are using <a href="https://www.opera.com/browser/next/">Opera Next</a> you should already have this update — if not, <a href="http://my.opera.com/desktopteam/blog/2011/10/07/ragnarok-css3-radial-gradients">download the snapshot</a> separately.</p>
 
 <p>You can read a more detailed summary of the updates in the <a href="http://my.opera.com/desktopteam/blog/2011/10/07/ragnarok-css3-radial-gradients">snapshot changelog</a>; the most interesting new additions are as follows:</p>
 

@@ -35,48 +35,48 @@ Session Storage has one purpose: to remember all the data in your session, and f
 
 To set a key value pair in Session Storage, you just need to write a line like this:
 
-    sessionStorage.setItem(yourkey, yourvalue);
+		sessionStorage.setItem(yourkey, yourvalue);
 
 To retrieve the data again, you would write:
 
-    var item = sessionStorage.getItem(yourkey);
+		var item = sessionStorage.getItem(yourkey);
 
 To store the value <q>This is a sample sentence</q> in the Session Storage, you could write:
 
-    sessionStorage.setItem(1, 'This is a sample sentence');
+		sessionStorage.setItem(1, 'This is a sample sentence');
 
 Here, the key value is `1`, but that does not mean that it’s the first value as such. It just converts the number `1` in a string `'1'` and uses that as key, it does not put that key value pair in the first position as such.
 
 And to retrieve that sentence back inside a JavaScript alert, you’d write:
 
-    var item = sessionStorage.getItem(1);
-    alert(item);
+		var item = sessionStorage.getItem(1);
+		alert(item);
 
 Another example of `setItem()` could be:
 
-    sessionStorage.setItem('name', 'john');
+		sessionStorage.setItem('name', 'john');
 
 …and you could retrieve it using…
 
-    var name = sessionStorage.getItem('name');
+		var name = sessionStorage.getItem('name');
 
 #### Removing and clearing data
 
 There are also methods for removing and clearing data from the Session Storage. The `removeItem()` method is used to remove a particular item from the list:
 
-    var item = sessionStorage.removeItem(yourkey);
+		var item = sessionStorage.removeItem(yourkey);
 
 Bear in mind that you can also just reference a data item’s key and remove it from the list that way:
 
-    var items = sessionStorage.removeItem(1);
+		var items = sessionStorage.removeItem(1);
 
 The `clear()` method is used to clear all items in the list; you use it in the following way:
 
-    sessionStorage.clear();
+		sessionStorage.clear();
 
 And you can use the `length` attribute to find out of the number of key/value pairs in the storage, like this:
 
-    var no_of_items = sessionStorage.length;
+		var no_of_items = sessionStorage.length;
 
 ## Local Storage
 
@@ -116,7 +116,7 @@ In Opera 10.50+, there are a few ways you can do this. You can enter [`opera:web
 
 ![Screenshot of Opera Dragonfly providing Web Storage information for that page](storage_inspector.jpg)
 
-Opera 10.50+ has a new and improved [Opera Dragonfly](http://www.opera.com/dragonfly/) debugging tool included (which we recently released as an [open source project](http://bitbucket.org/scope/)). Amongst the fixes, improvements and new features is the Storage Inspector. This gives developers a separate tab to access information regarding cookies and the Local and Session Storage of a page. Open Opera Dragonfly and click on the _Storage_ tab to access it.
+Opera 10.50+ has a new and improved [Opera Dragonfly](https://www.opera.com/dragonfly/) debugging tool included (which we recently released as an [open source project](http://bitbucket.org/scope/)). Amongst the fixes, improvements and new features is the Storage Inspector. This gives developers a separate tab to access information regarding cookies and the Local and Session Storage of a page. Open Opera Dragonfly and click on the _Storage_ tab to access it.
 
 ## Important things to keep in mind regarding Web Storage
 

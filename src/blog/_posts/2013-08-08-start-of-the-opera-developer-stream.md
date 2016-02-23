@@ -12,7 +12,7 @@ As announced [on the Desktop Team Blog](http://my.opera.com/desktopteam/blog/ope
 
 ![Opera Developer logo]({{ page.id }}/opera-developer.png)
 
-Today marks the **release of our first Opera Developer build ([Mac](http://www.opera.com/download/get/?partner=www&opsys=MacOS&product=Opera%20Developer), [Windows](http://www.opera.com/download/get/?partner=www&opsys=Windows&product=Opera%20Developer))**. If you’re a web or extension developer, we recommend you to install this build, which will be auto-updated frequently from now on, and gives a peek at what we have in the pipeline, including but not limited to fresh web standards support.
+Today marks the **release of our first Opera Developer build ([Mac](https://www.opera.com/download/get/?partner=www&opsys=MacOS&product=Opera%20Developer), [Windows](https://www.opera.com/download/get/?partner=www&opsys=Windows&product=Opera%20Developer))**. If you’re a web or extension developer, we recommend you to install this build, which will be auto-updated frequently from now on, and gives a peek at what we have in the pipeline, including but not limited to fresh web standards support.
 
 What is the difference between Next and Developer? Opera Next is a preview of what will be in the next stable version of Opera, which at present is v16. Opera Developer on the other hand is more experimental: this build includes stuff that you may see in v17 or later, but possibly also features that never make it to stable.
 
@@ -25,9 +25,9 @@ To give a better feeling of this, here are some of the differences between the c
 * another `opera:settings` option allows you to set **custom search engines** and trigger them with a keyword
 * in `opera:flags`, you’ll find a whole bunch of extra, more experimental settings. Some of this is Chromium stuff that you’ll also find in Chrome Canary, while other bits are Opera-only flags. A selection:
 
-    * **Media capture** gives you microphone and camera support, which you can try out with [Web Audio Playground](http://webaudioplayground.appspot.com) and [Webcam Toy](http://webcamtoy.com).
-    * **Extension action context menu** adds a right-click menu to extension buttons, allowing for easy uninstalling of extensions and hiding of buttons.
-    * **Enable lazy session loading** allows you to start the browser quickly with multiple tabs, but it will only load those tabs when they are activated.
-    * **Theme installation** allows you to install themes from our [addons catalog](https://addons.opera.com/themes/). In a first phase, we’re supporting a subset of the old theme format; we’re working on an updated theme format where you can use a different background image for Speed Dial, Downloads, Settings, etc.
+		* **Media capture** gives you microphone and camera support, which you can try out with [Web Audio Playground](http://webaudioplayground.appspot.com) and [Webcam Toy](http://webcamtoy.com).
+		* **Extension action context menu** adds a right-click menu to extension buttons, allowing for easy uninstalling of extensions and hiding of buttons.
+		* **Enable lazy session loading** allows you to start the browser quickly with multiple tabs, but it will only load those tabs when they are activated.
+		* **Theme installation** allows you to install themes from our [addons catalog](https://addons.opera.com/themes/). In a first phase, we’re supporting a subset of the old theme format; we’re working on an updated theme format where you can use a different background image for Speed Dial, Downloads, Settings, etc.
 
 Give it a spin, and let us know what you think!

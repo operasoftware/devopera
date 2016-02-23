@@ -12,8 +12,8 @@ license: os-asa
 
 It’s here for historical purposes only. Download the [latest version of Opera][1] or see what’s coming soon in [Opera.Next][2].
 
-[1]: http://www.opera.com/browser/
-[2]: http://www.opera.com/browser/next/
+[1]: https://www.opera.com/browser/
+[2]: https://www.opera.com/browser/next/
 
 We’ve released a technology preview of Opera 9, codenamed Merlin, on Opera Labs. There are some very cool features we want you to try:
 

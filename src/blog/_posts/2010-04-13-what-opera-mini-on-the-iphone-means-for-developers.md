@@ -14,11 +14,11 @@ license: cc-by-3.0
 	<figcaption></figcaption>
 </figure>
 
-After 20 days of deliberation, [Apple has approved Opera Mini for the iPhone and iPod Touch](http://www.opera.com/press/releases/2010/04/13/) meaning it’s now available for free from the iTunes app store. Great news for users but also important for developers.
+After 20 days of deliberation, [Apple has approved Opera Mini for the iPhone and iPod Touch](https://www.opera.com/press/releases/2010/04/13/) meaning it’s now available for free from the iTunes app store. Great news for users but also important for developers.
 
 - For users, it means more choice when browsing the web on these devices and, because of the compression technology used, more freedom to surf the web when connections are slow or expensive.
 - For developers, it means mobile web usage increases further and catering for these users becomes even more important.
-Opera Mini is unique in that it offers a great browser experience combined with server-side compression. On the technical side, it uses a server-based version of our [Presto 2.4 rendering engine](http://www.opera.com/docs/specs/presto24/) and has some support for HTML5 and CSS3, as you can see in this [summary of Opera’s standards support](http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart). It also contains our Small Screen Rendering technology, if the user chooses to enable it.
+Opera Mini is unique in that it offers a great browser experience combined with server-side compression. On the technical side, it uses a server-based version of our [Presto 2.4 rendering engine](https://www.opera.com/docs/specs/presto24/) and has some support for HTML5 and CSS3, as you can see in this [summary of Opera’s standards support](http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart). It also contains our Small Screen Rendering technology, if the user chooses to enable it.
 
 While this means that mobile users can freely enjoy the desktop versions of their favourite websites, there may be times when you wish to optimize your site for more efficient browsing on a small screen. It’s now widely accepted that [browser-sniffing is not the best way of providing tailored content](http://my.opera.com/ODIN/blog/perils-browser-sniffing) and, thankfully, better ways to look after users of different devices have emerged. Our recommended approach, and one that is gaining traction among developers and browser makers, is [CSS3 Media Queries](http://www.w3.org/TR/css3-mediaqueries/). In effect they are conditional statements for CSS, enabling you to serve specific styles to certain types of devices, for example the following can be used for detecting small screen devices up to and including the iPhone/iPod Touch.
 
@@ -42,5 +42,5 @@ Please note that the User Agent is liable to change, as all User Agent strings a
 **Further resources:**
 
 - For more Opera Mini information aimed at content creators, we’ve compiled a [developer’s look at Opera Mini 5](https://dev.opera.com/articles/view/opera-mini-5-developers/).
-- We also have an [Opera Mini simulator](http://www.opera.com/mobile/demo/) that can be run from any desktop browser.
-- Don’t forget, Opera Mini is available for many platforms other than the iPhone/iPod Touch — [download Opera for your feature phone or smartphone here](http://www.opera.com/mobile/).
+- We also have an [Opera Mini simulator](https://www.opera.com/mobile/demo/) that can be run from any desktop browser.
+- Don’t forget, Opera Mini is available for many platforms other than the iPhone/iPod Touch — [download Opera for your feature phone or smartphone here](https://www.opera.com/mobile/).

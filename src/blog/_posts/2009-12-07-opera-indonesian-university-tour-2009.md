@@ -27,7 +27,7 @@ license: cc-by-3.0
  try slowly reducing the width of the browser</li>
 </ul>
 
-<p>You can also <a href="http://www.opera.com/">download Opera Desktop</a> which I was using to demo, and which includes Opera Unite, Opera Turbo and Opera Dragonfly.</p>
+<p>You can also <a href="https://www.opera.com/">download Opera Desktop</a> which I was using to demo, and which includes Opera Unite, Opera Turbo and Opera Dragonfly.</p>
 
 <p>Opera Developer Network has some beginner&#39;s <code>canvas</code> tutorials available:</p>
 <ol>

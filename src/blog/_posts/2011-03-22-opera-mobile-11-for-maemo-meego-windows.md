@@ -14,9 +14,9 @@ Today we are launching final versions of Opera Mobile 11 for Android and Symbian
 Download on your device now from [m.opera.com][1], or use the following direct links to the [Windows][2], [MeeGo (generic)][3] and [MeeGo (WeTab)][4] versions.
 
 [1]: http://m.opera.com/
-[2]: http://www.opera.com/download/get.pl?sub=++++&id=33519&location=360&nothanks=yes
-[3]: http://www.opera.com/download/get.pl?sub=++++&id=33520&location=360&nothanks=yes
-[4]: http://www.opera.com/download/get.pl?sub=++++&id=33521&location=360&nothanks=yes
+[2]: https://www.opera.com/download/get.pl?sub=++++&id=33519&location=360&nothanks=yes
+[3]: https://www.opera.com/download/get.pl?sub=++++&id=33520&location=360&nothanks=yes
+[4]: https://www.opera.com/download/get.pl?sub=++++&id=33521&location=360&nothanks=yes
 
 On MeeGo, you may need to install the downloaded RPM package by running `rpm -i` as root in a terminal window. On the WeTab a reboot is required before the Opera icon becomes visible.
 

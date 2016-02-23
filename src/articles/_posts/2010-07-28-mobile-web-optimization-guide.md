@@ -48,14 +48,14 @@ license: cc-by-nc-sa-3.0
 </ul>
 <h2 id="intro">Introduction</h2>
 <p>If I had a Euro for everyone who asks me at conferences how they can <q>mobilise</q> their web site, I'd be extraordinarily rich as well as breathtakingly handsome.</p>
-<p>It's easy to see why people wish to make their sites <q>mobile friendly</q>; <a href="http://www.gartner.com/it/page.jsp?id=1278413">Gartner research suggests</a> that by 2013, mobile phones will overtake PCs as the most common Web access device worldwide. And don't forget other visits from devices such as games consoles like Nintendo Wii, DSi, web-enabled TVs, <a href="http://www.opera.com/press/releases/2009/04/02_2/">in-car browsers</a> and the like.</p>
+<p>It's easy to see why people wish to make their sites <q>mobile friendly</q>; <a href="http://www.gartner.com/it/page.jsp?id=1278413">Gartner research suggests</a> that by 2013, mobile phones will overtake PCs as the most common Web access device worldwide. And don't forget other visits from devices such as games consoles like Nintendo Wii, DSi, web-enabled TVs, <a href="https://www.opera.com/press/releases/2009/04/02_2/">in-car browsers</a> and the like.</p>
 <p>Many customers are already using mobile devices as their main method of Web access, particularly in emerging markets — the <cite>July 2009 Statistical Report on Internet Development in China</cite> states that <q><q>the proportion of [people] accessing the Internet by mobile increased enormously from 39.5% in late 2008 to 46% in June 2009</q>, while the proportion of using desktops and laptops decreased</q>. That translates to 150 million people. In the developed world, many have a mobile device as their secondary method of accessing the Web while they're out and about.</p>
 <p>It's a truism that on the Web, there is always someone offering the same service as you are. And if you're not catering for the mobile user, you can be sure that your competitors are. In the current harsh economic climate, sending customers into the arms of the competition doesn't succeed as a business strategy.</p>
 <p>This article provides an overview of three different strategies to make your websites work across all devices. We'll call them <q>mobile-aware</q> websites, as they're not specifically for mobile sites, but they will work on mobile, as well as across different alternative browsing devices. These strategies are not mutually exclusive; you can mix and match as your project, budget and sanity allows.</p>
 <h2 id="xdevice">The difficulties of cross-device design</h2>
 <p>Why is it so difficult to find reliable information on how to code mobile-aware sites? After all, those of us who are adept at using web standards have a corpus of best practices that dates back years. The answer is that the market is still fragmented, although we're seeing more convergence as devices become more powerful (customers are also becoming more demanding, as a consequence.)</p>
 <p>Mobile devices have a wide variety of screen sizes and input methods that range from QWERTY keyboards to touch screens to traditional numeric keypads. Battery life is a problem too; no matter how killer your new web application is, if it eats your visitors' batteries, it's unlikely to be a success on devices.</p>
-<p>Then there is the simple fact that we have a huge variety of devices, and browsers running on those devices. Smartphones can run full Web browsers such as Opera Mobile or Safari/iPhone, while in the developing world we see much lower-end handsets that don't have an operating system but, if they can run Java they can use Opera Mini (a thin client for a proxy-based system that compresses pages down to about 10% of their original size before being sent to the handset for rendering). Opera's monthly <a href="http://www.opera.com/smw">State of the Mobile Web report</a> gives useful breakdowns of the different handsets in use across the world.</p>
+<p>Then there is the simple fact that we have a huge variety of devices, and browsers running on those devices. Smartphones can run full Web browsers such as Opera Mobile or Safari/iPhone, while in the developing world we see much lower-end handsets that don't have an operating system but, if they can run Java they can use Opera Mini (a thin client for a proxy-based system that compresses pages down to about 10% of their original size before being sent to the handset for rendering). Opera's monthly <a href="https://www.opera.com/smw">State of the Mobile Web report</a> gives useful breakdowns of the different handsets in use across the world.</p>
 <h2 id="remember">You must remember this…</h2>
 <p>The mantra for cross-device development is: <strong>one site for all is the ideal but it's not always possible</strong>. Whichever strategy you adopt, there is one vital point to remember:</p>
 <h3 id="taskfocused">Mobile users are task-focused users. And so are all users</h3>
@@ -95,46 +95,46 @@ license: cc-by-nc-sa-3.0
 <p>The heart of the technique is CSS Media Queries, which are supported by Opera Desktop, Opera Mini and Opera Mobile, Safari (desktop and iPhone/ iPad), Chrome and Firefox and Internet Explorer 9.</p>
 <p>Media Queries are a CSS3 feature that allow you to specify under what conditions a style sheet or a particular set of CSS rules should be applied. For instance, to limit a set of styles to only apply to a screen which is 480px wide or less, you could use the following Media Query:</p>
 <pre><code>@media screen and (max-width: 480px) {
-   background-color: red;
-   font-size: 1.5em;
+	 background-color: red;
+	 font-size: 1.5em;
 }</code></pre>
 <p>Obviously, you're unlikely to want to turn all the text red. But you might want to send a <q>wide</q> company logo to a header or footer on desktop-sized screens to use as a background image, but a narrow version to smaller screens:
 <pre><code>@media screen and (min-width: 800px {
-   #footer {background-image: url(wide-banner.png);}
+	 #footer {background-image: url(wide-banner.png);}
 }
 
 @media screen and (max-width: 800px {
-   #footer {background-image: url(narrow-banner.png);}
+	 #footer {background-image: url(narrow-banner.png);}
 }</code></pre>
 <p>Another common use is to reformat the layout. Here's a <a href="http://people.opera.com/brucel/demo/media-queries.html">simple Media Queries example</a> to demonstrate. On a widescreen, the page has three columns. If you narrow the screen, you'll see the page change layout to a two-column design (I also change the font to reinforce the fact that different CSS is pulled in). Narrowing the screen further gives you a single-column  layout, and at a really thin width, all the content is hidden with <code>{display:none;}</code> and instead, a lovely picture  is displayed.</p>
 <p>Several different queries are contained within one stylesheet:</p>
 <pre><code>@media screen and (min-width: 800px) {
-   @font-face {
+	 @font-face {
 	 font-family: "demand";
 	 src: url("demand.ttf") format("truetype");
-   }
-   h1 {font-family: demand, cursive}
+	 }
+	 h1 {font-family: demand, cursive}
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-   body {font-family:"Comic Sans MS", fantasy, cursive;}
+	 body {font-family:"Comic Sans MS", fantasy, cursive;}
 /* [etc] */
 }
 
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
-   body {font-family:"Courier New", Courier, monospace;}
+	 body {font-family:"Courier New", Courier, monospace;}
 /* [etc] */
 }
 
 
 @media screen and (max-width: 400px) {
-   #main {background-image: url(bruce.png); position: absolute; top: 0; text-indent: -10000em; height: 500px; width: 100%;}
-   h1, #sidebar, #footer, #pub {display: none;}
+	 #main {background-image: url(bruce.png); position: absolute; top: 0; text-indent: -10000em; height: 500px; width: 100%;}
+	 h1, #sidebar, #footer, #pub {display: none;}
 }</code></pre>
 <p>Note the relationship to the viewport width here: when the page is loaded in a desktop browser, the viewport width is the width of the browser window; when it is loaded in Opera Mobile, the viewport width defaults to 980 pixels unless overridden by the viewport <code>meta</code> tag.</p>
-<p>You can try this out for yourself by loading our <a href="/articles/view/opera-mobile-10-developers-introduction/mq-viewport.html">Media Queries + viewport example</a> in Opera Desktop and then on Opera Mobile, <a href="http://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> on your desktop, or Opera Mini. On desktop, we get a three column layout for browser widths wider than 800 pixels — the page gets a different layout when the browser is resized. In Opera Mobile running on a device with a physical screen that's less than 400 pixels wide (as an example, a Nokia 5800 in portrait mode has a width of 360 pixels), a viewport <code>meta</code> of <code>width=device-width</code> triggers the <code>@media screen and (max-width: 400px) { ... }</code> style rules, and the three column page turns into a single column page.</p>
+<p>You can try this out for yourself by loading our <a href="/articles/view/opera-mobile-10-developers-introduction/mq-viewport.html">Media Queries + viewport example</a> in Opera Desktop and then on Opera Mobile, <a href="https://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> on your desktop, or Opera Mini. On desktop, we get a three column layout for browser widths wider than 800 pixels — the page gets a different layout when the browser is resized. In Opera Mobile running on a device with a physical screen that's less than 400 pixels wide (as an example, a Nokia 5800 in portrait mode has a width of 360 pixels), a viewport <code>meta</code> of <code>width=device-width</code> triggers the <code>@media screen and (max-width: 400px) { ... }</code> style rules, and the three column page turns into a single column page.</p>
 <p>There are three important points to understand about Media Queries:</p>
 <ol>
 <li>The technique does not test for individual devices or browsers, just capabilities, so is inherently future-proof</li>
@@ -157,21 +157,21 @@ license: cc-by-nc-sa-3.0
 <li>Consider using <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data URI</a>s for images and CSS background images. This provides a way to include data inline inside web pages. For example:
 </p>
 <pre><code>&lt;img src="data:image/png;base64,
-   iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-   C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-   AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-   REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-   ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-   vr4MkhoXe0rZigAAAABJRU5ErkJggg==" alt="Red dot" /&gt;</code></pre>
+	 iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
+	 C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
+	 AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
+	 REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
+	 ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
+	 vr4MkhoXe0rZigAAAABJRU5ErkJggg==" alt="Red dot" /&gt;</code></pre>
 <p>This inserts a red dot onto the page, but no image is requested from the server because it's encoded in that string of letters and numbers. Ian Hickson has a <a href="http://software.hixie.ch/utilities/cgi/data/data">utility to encode Data URIs</a> (<a href="http://software.hixie.ch/utilities/cgi/data/data.pl">Utility source code</a>). This technique can bloat the file size, but that's often better than having to wait for the network to download the external image file.
 </li>
 </ul>
 <h3 id="svg">Use Scalable Vector Graphics for images</h3>
 <p><acronym title="Scalable Vector Graphics"><a href="https://dev.opera.com/articles/view/svg-evolution-not-revolution/?page=2">SVG</a></acronym> is a technology that allows pictures to be described mathematically for the browser to draw via markup. So instead of a bitmapped image of a circle and a rectangle, for example, you describe the shapes:</p>
 <pre><code>&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
-   xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
-   &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;30&quot; fill=&quot;blue&quot; stroke=&quot;red&quot;/&gt;
-   &lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;80&quot; height=&quot;40&quot; fill=&quot;yellow&quot; stroke=&quot;black&quot;/&gt;
+	 xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+	 &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;30&quot; fill=&quot;blue&quot; stroke=&quot;red&quot;/&gt;
+	 &lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;80&quot; height=&quot;40&quot; fill=&quot;yellow&quot; stroke=&quot;black&quot;/&gt;
 &lt;/svg&gt;</code></pre>
 <p>The browser then draws it like so:</p>
 <img src="http://devfiles.myopera.com/articles/22/shapes.svg" alt="blur circle and yellow box" />
@@ -179,18 +179,18 @@ license: cc-by-nc-sa-3.0
 <p>The size of the SVG file will generally be a fraction of the equivalent bitmapped image. In HTML5, you can just embed your SVG code into your markup, thereby saving an network request to grab that file.</p>
 <p>SVG files also work with CSS/Media Queries — here is a fragment of an SVG file that draws a circle and fills it with different colours according to its width (see <a href="http://people.opera.com/andreasb/demos/demos_svgopen2009/update/svgscalebasic.html">SVG/Media Queries coloured circle demo</a>):</p>
 <pre><code>@media screen and (max-width: 350px) {
-   #circle {fill:  #879758;}
+	 #circle {fill:  #879758;}
 }
 @media screen and (max-width: 200px) {
-   #circle {fill: #3b9557;}
+	 #circle {fill: #3b9557;}
 }</code></pre>
 <p>This technique can be used to simplify logos at smaller sizes. In the <a href="http://people.opera.com/andreasb/demos/demos_svgopen2009/update/svgscalelogo.html">SVG/Media Queries simplified logo demo</a>, the logo on the left uses Media Queries to remove the spiral when the logo is shrunk, and then remove the outer circle completely at very small sizes.</p>
 <pre><code>@media screen and (max-width: 256px) {
-   #spiral {display: none;}
+	 #spiral {display: none;}
 }
 
 @media screen and (max-width: 16px) {
-   #circle1, #circle2 {display: none;}
+	 #circle1, #circle2 {display: none;}
 }</code></pre>
 <p>The logic is contained within the SVG file itself, so once written it can be included anywhere and requires no scripting or changes to the pages CSS. (<a href="http://my.opera.com/ODIN/blog/2009/10/12/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes">Read more about this technique</a>.)</p>
 <h3 id="script">Put <code>script</code> elements as far down as possible in the source</h3>
@@ -218,12 +218,12 @@ height:auto; /* preserve aspect ratio */
 <h2 id="testing">Testing, testing, one two three…</h2>
 <p>To round off this article, I will give you tips for easier testing of websites on Mobile browsers.</p>
 <h3 id="testing-opera">Testing on Opera Mobile and Opera Mini</h3>
-<p><a href="http://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> can be <a href="https://dev.opera.com/articles/view/introducing-opera-mobile-10-for-desktop/">installed on your desktop</a> and you can therefore use it to test any files that are on your local machine or network before they go live. It's the full product — the same codebase — so you can be certain it's accurate. Opera Mobile emulator allows you to change the UA string to mimic several different popular browsers.</p>
-<p>If you don't have Opera Mini on your phone (and it's available for over 3000 different handsets, so there should be a version for you!) you can test your site using the web-based <a href="http://www.opera.com/mobile/demo/">Opera Mini Emulator</a>. Note that because of the nature of the product, pages viewed in Opera Mini must go through Opera's servers, so the pages you test must be on the Web somewhere (although you could put them behind a password so that no-one else can see your pre-production pages).</p>
+<p><a href="https://www.opera.com/developer/tools/#operamobile">Opera Mobile emulator</a> can be <a href="https://dev.opera.com/articles/view/introducing-opera-mobile-10-for-desktop/">installed on your desktop</a> and you can therefore use it to test any files that are on your local machine or network before they go live. It's the full product — the same codebase — so you can be certain it's accurate. Opera Mobile emulator allows you to change the UA string to mimic several different popular browsers.</p>
+<p>If you don't have Opera Mini on your phone (and it's available for over 3000 different handsets, so there should be a version for you!) you can test your site using the web-based <a href="https://www.opera.com/mobile/demo/">Opera Mini Emulator</a>. Note that because of the nature of the product, pages viewed in Opera Mini must go through Opera's servers, so the pages you test must be on the Web somewhere (although you could put them behind a password so that no-one else can see your pre-production pages).</p>
 <h3 id="testing-other">Testing on other handsets and browsers</h3>
 <p>We've teamed up with <a href="http://www.perfectomobile.com/portal/cms/opera.xhtml?key=OP631R89YL2">Perfecto Mobile</a> who have a service that allows you to test on different handsets remotely. Opera users can sign up for <a href="http://www.perfectomobile.com/portal/cms/opera.xhtml?key=OP631R89YL2">seven free hours of testing</a>. Additionally, companies like Apple and BlackBerry offer emulators for testing on their products.</p>
 <h3 id="debugging">Debugging devices with Opera Dragonfly</h3>
-<p>As with earlier Opera Mobile releases, <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a> allows you to debug web pages being displayed on your mobile phone remotely from your desktop. To debug pages in Opera Mobile, open Opera Dragonfly in Opera Desktop (<em>Page/View > Developer Tools > Opera Dragonfly</em>) and follow the instructions in our <a href="http://my.opera.com/ODIN/blog/opera-mobile-10-and-its-remote-debugging-party-trick">remote debugging article</a> (with <a href="https://www.youtube.com/watch?v=sZt-k93qLbg&feature=player_embedded">video (YouTube)</a> also available.)</p>
+<p>As with earlier Opera Mobile releases, <a href="https://www.opera.com/dragonfly/">Opera Dragonfly</a> allows you to debug web pages being displayed on your mobile phone remotely from your desktop. To debug pages in Opera Mobile, open Opera Dragonfly in Opera Desktop (<em>Page/View > Developer Tools > Opera Dragonfly</em>) and follow the instructions in our <a href="http://my.opera.com/ODIN/blog/opera-mobile-10-and-its-remote-debugging-party-trick">remote debugging article</a> (with <a href="https://www.youtube.com/watch?v=sZt-k93qLbg&feature=player_embedded">video (YouTube)</a> also available.)</p>
 <h2 id="summary">Summary</h2>
 <p>We hope you have found our mobile optimization guide useful. We have covered three different strategies for making your sites work better on mobile, numerous optimization tips and tricks, and debugging and testing advice.</p>
 <h2 id="resources">Resources</h2>

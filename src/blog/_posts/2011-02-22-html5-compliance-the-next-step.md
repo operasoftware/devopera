@@ -12,7 +12,7 @@ license: os-asa
 
 Note: the HTML5 parser is now available in our finished [Opera browser][1].
 
-[1]: http://www.opera.com/browser/
+[1]: https://www.opera.com/browser/
 
 Making its debut in a Labs build this week is [Ragnarök][2], our implementation of the HTML5 Parsing algorithm. We’d love you to try to break this and give us feedback, so please grab a copy to install on your machine from one of the download links below.
 

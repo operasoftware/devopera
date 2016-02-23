@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 **Update 2012-02-21:** This post has been edited with information about an updated build available [from our download server][1] as well as from the Intel AppUp store. For a Nokia N9 build, check our [A treat for Nokia N9 users][2] Opera Labs post.
 
-[1]: http://www.opera.com/download/get.pl?sub=++++&id=34191&location=270&nothanks=yes
+[1]: https://www.opera.com/download/get.pl?sub=++++&id=34191&location=270&nothanks=yes
 [2]: /articles/a-treat-for-nokia-n9-users-opera-mobile-labs-11-5/
 
 Since releasing [Opera Mobile 11.5 for Android][3] earlier this month, we have been working on an updated Labs release for MeeGo netbooks and tablets running Intel Atom processors.
@@ -24,14 +24,14 @@ Aside from the changes you may have seen on our Android release, this build cont
 
 As with other Labs releases, this build has not gone through full release testing, but it should work well enough to have some fun with. To install, [download this package][4], and run the following command in a root terminal on your device:
 
-[4]: http://www.opera.com/download/get.pl?sub=++++&id=34191&location=270&nothanks=yes
+[4]: https://www.opera.com/download/get.pl?sub=++++&id=34191&location=270&nothanks=yes
 
-    rpm -i Opera_Mobile-Labs-MeeGo-11.50-42.i386.rpm
+		rpm -i Opera_Mobile-Labs-MeeGo-11.50-42.i386.rpm
 
 Or, if you have a previous version of Opera Mobile installed:
 
-    rpm -e Opera_Mobile-MeeGo
-    rpm -U Opera_Mobile-Labs-MeeGo-11.50-42.i386.rpm
+		rpm -e Opera_Mobile-MeeGo
+		rpm -U Opera_Mobile-Labs-MeeGo-11.50-42.i386.rpm
 
 Alternatively, if your MeeGo install has the [Intel’s AppUp store][5], you should be able to find Opera Mobile there as a free download as well.
 

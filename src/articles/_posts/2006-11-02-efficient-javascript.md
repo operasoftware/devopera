@@ -587,7 +587,7 @@ Opera (and many other browsers) uses fast history navigation by default. When th
 
 Although Opera offers a way for [authors to control this behaviour][30], it is better to allow it to use fast history navigation mode wherever possible. This means that if possible, scripts should try to avoid damaging actions that would cause this behaviour to fail. This includes things such as disabling form controls when a form is submitted, a menu that stops working after an item has been clicked, or a page fadeout effect that leaves the page content obscured or invisible.
 
-[30]: http://www.opera.com/support/search/supsearch.dml?index=827
+[30]: https://www.opera.com/support/search/supsearch.dml?index=827
 
 A simple approach would be an onunload listener that resets the fading effect, or re-enables the form control. However, note that with some browsers, such as Firefox and Safari, adding a listener for the unload event will disable their fast history navigation. In addition, the act of disabling the submit button will be enough to disable fast history navigation in Opera.
 

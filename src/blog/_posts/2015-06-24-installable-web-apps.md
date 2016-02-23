@@ -14,7 +14,7 @@ license: cc-by-3.0
 ---
 *Please note: this article is superseded by [Installable Web Apps and Add to Home screen](/articles/installable-web-apps/) because the functionality described was released in Opera 32 for Android.*
 
-Today, we’re excited to release a [special labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
+Today, we’re excited to release a [special labs build of Opera for Android](https://www.opera.com/download/get/?partner=www&product=android&level=Developer) with an experimental new feature, called “Add to Home screen”, which you can find when clicking the small plus button on the left of the address bar.
 
 When a user clicks “Add to Home screen” after loading your site in Opera, a shortcut to your site is placed on the Home screen of their device, allowing for direct access and increased visibility.
 
@@ -42,7 +42,7 @@ Those occasionally used apps are taking up a lot of storage on a device that may
 
 > Over a quarter of new Android devices have only 512 MB of RAM
 
-and, according to [Techrepublic](vhttp://www.techrepublic.com/article/ram-a-lama-dont-be-a-ding-ding-about-android-storage/),
+and, according to [Techrepublic](http://www.techrepublic.com/article/ram-a-lama-dont-be-a-ding-ding-about-android-storage/),
 
 > Internal storage is particularly important, because this is where your apps are stored. If you buy a budget or entry-level phone, you’ll probably find around 512 MB of internal storage. With this low amount of storage, you’ll only be able to install a few apps.
 
@@ -67,7 +67,7 @@ To make your site “installable”, you need to declare some characteristics in
 
 Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname).
 
-You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/devopera.webmanifest).
+You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/src/.webmanifest).
 
 ## Display modes
 

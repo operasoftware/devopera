@@ -9,7 +9,7 @@ license: cc-by-nc-sa-3.0
 
 <p>Imagine visiting a city for the first time. You&apos;re hungry, but don&apos;t know where the nearest restaurants are and which of them are any good. Wouldn&apos;t it be nice if some app could detect your location and provide you with a list of restaurants closest to you, along with reviews and ratings for each one?</p>
 
-<p>And this is not the only consideration &mdash; could it detect your location accurately, keeping in mind your privacy as well? This is where the <a href="http://dev.w3.org/geo/api/spec-source.html">W3C Geolocation API</a> comes in, support for which is included in <a href="http://www.opera.com/desktop/">Opera 10.60 and above</a>.</p>
+<p>And this is not the only consideration &mdash; could it detect your location accurately, keeping in mind your privacy as well? This is where the <a href="http://dev.w3.org/geo/api/spec-source.html">W3C Geolocation API</a> comes in, support for which is included in <a href="https://www.opera.com/desktop/">Opera 10.60 and above</a>.</p>
 
 <h2>What is Geolocation?</h2>
 
@@ -107,9 +107,9 @@ function displayPosition(pos) {
 //Load Google Map
 var latlng = new google.maps.LatLng(mylat, mylong);
 	var myOptions = {
-	  zoom: 15,
-	  center: latlng,
-	  mapTypeId: google.maps.MapTypeId.HYBRID
+		zoom: 15,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.HYBRID
 	};
 
 var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);

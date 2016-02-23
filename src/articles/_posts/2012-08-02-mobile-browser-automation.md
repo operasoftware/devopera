@@ -8,7 +8,7 @@ license: cc-by-3.0
 
 **Update:** If you’re looking for the web driver for modern Opera releases (i.e. Opera v15+), then refer to [the OperaChromiumDriver project](https://github.com/operasoftware/operachromiumdriver) instead.
 
-Opera Mobile brings the Web to millions of people through their mobile phones and other non-desktop devices. Opera believes in giving people access to the full Web, and not making the distinction of a “mobile web”. Testing on mobile devices has always been hard for developers, though. That’s why we introduced the [Opera Mobile Emulator](http://www.opera.com/developer/tools/mobile/), which is our mobile browser packaged for installation on Windows, Mac and Linux desktops.
+Opera Mobile brings the Web to millions of people through their mobile phones and other non-desktop devices. Opera believes in giving people access to the full Web, and not making the distinction of a “mobile web”. Testing on mobile devices has always been hard for developers, though. That’s why we introduced the [Opera Mobile Emulator](https://www.opera.com/developer/tools/mobile/), which is our mobile browser packaged for installation on Windows, Mac and Linux desktops.
 
 To help automated mobile testing, we’ve updated the Opera Mobile Emulator so it can talk to our browser automation library, OperaPrestoDriver. OperaPrestoDriver is an implementation of the [W3C WebDriver specification](http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html) and part of the free software web testing framework [Selenium](http://seleniumhq.org/). Selenium provides a lightweight and elegant way of testing web apps by emulating user interaction with actual web browsers.
 
@@ -16,10 +16,10 @@ To help automated mobile testing, we’ve updated the Opera Mobile Emulator so i
 
 Since support for OperaPrestoDriver in Opera Mobile is fresh out of the lab, you’ll need to use a set of custom builds we’ve prepared:
 
-* [Windows](http://www.opera.com/download/get.pl?id=34969&sub=true&nothanks=yes&location=360)
-* [Mac](http://www.opera.com/download/get.pl?id=34970&sub=true&nothanks=yes&location=360)
-* [DEB](http://www.opera.com/download/get.pl?id=34967&sub=true&nothanks=yes&location=360)/[tarball](http://www.opera.com/download/get.pl?id=34968&sub=true&nothanks=yes&location=360) for Linux 64-bit
-* [DEB](http://www.opera.com/download/get.pl?id=34965&sub=true&nothanks=yes&location=360)/[tarball](http://www.opera.com/download/get.pl?id=34966&sub=true&nothanks=yes&location=360) Linux 32-bit
+* [Windows](https://www.opera.com/download/get.pl?id=34969&sub=true&nothanks=yes&location=360)
+* [Mac](https://www.opera.com/download/get.pl?id=34970&sub=true&nothanks=yes&location=360)
+* [DEB](https://www.opera.com/download/get.pl?id=34967&sub=true&nothanks=yes&location=360)/[tarball](https://www.opera.com/download/get.pl?id=34968&sub=true&nothanks=yes&location=360) for Linux 64-bit
+* [DEB](https://www.opera.com/download/get.pl?id=34965&sub=true&nothanks=yes&location=360)/[tarball](https://www.opera.com/download/get.pl?id=34966&sub=true&nothanks=yes&location=360) Linux 32-bit
 
 To play with this you also need to fetch a [fresh release of OperaPrestoDriver (0.16 or later)](https://github.com/operasoftware/operaprestodriver/downloads) because it hasn’t landed in any Selenium release yet. Built-in support for Opera Mobile should be available onwards from Selenium version 2.26, though.
 
@@ -46,7 +46,7 @@ You can learn more on how to use WebDriver from [Selenium’s excellent document
 
 ## Emulating a specific device
 
-The [Opera Mobile Emulator](http://www.opera.com/developer/tools/mobile/) combined with [Opera Dragonfly](http://www.opera.com/dragonfly/) lets you have a proper environment for mobile web development on your desktop. One of the exciting features is that you can tell it to emulate Opera on a specific device based on a list of ready-made profiles. This enables you to change the resolution of the screen, the pixel density, the UI, and to modify the user agent string.
+The [Opera Mobile Emulator](https://www.opera.com/developer/tools/mobile/) combined with [Opera Dragonfly](https://www.opera.com/dragonfly/) lets you have a proper environment for mobile web development on your desktop. One of the exciting features is that you can tell it to emulate Opera on a specific device based on a list of ready-made profiles. This enables you to change the resolution of the screen, the pixel density, the UI, and to modify the user agent string.
 
 For example, to use a tablet UI with a greater resolution you could do the following:
 

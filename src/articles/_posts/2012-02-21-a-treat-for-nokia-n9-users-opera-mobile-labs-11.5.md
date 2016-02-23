@@ -26,7 +26,7 @@ Some of the updates since the [Opera Mobile 11 MeeGo ARM developer preview][2] b
 You can [download and install Opera Mobile 11.5][3] using your phone’s default browser. However, if you prefer not to use Ovi store, you should enable this setting: _Settings → Applications → Installations → Allow installations from non-Store sources_, and then download the [deb package from our server][4].
 
 [3]: http://store.ovi.com/content/255196
-[4]: http://www.opera.com/download/get.pl?sub=++++&id=34409&location=270&nothanks=yes
+[4]: https://www.opera.com/download/get.pl?sub=++++&id=34409&location=270&nothanks=yes
 
 ## Known issues
 

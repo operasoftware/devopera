@@ -7,7 +7,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Effective from today, <a href="http://www.opera.com/dragonfly">Opera Dragonfly</a>&#39;s source code has officially moved from our old <a href="https://bitbucket.org/scope/" title="Opera Dragonfly&#39;s Bitbucket repository">Bitbucket repository</a> to a shiny new home over in the <a href="https://github.com/operasoftware">Opera Software account on GitHub</a>. This move aims to harmonise and gather Opera&#39;s various open source projects into a single, sensible location.</p>
+<p>Effective from today, <a href="https://www.opera.com/dragonfly">Opera Dragonfly</a>&#39;s source code has officially moved from our old <a href="https://bitbucket.org/scope/" title="Opera Dragonfly&#39;s Bitbucket repository">Bitbucket repository</a> to a shiny new home over in the <a href="https://github.com/operasoftware">Opera Software account on GitHub</a>. This move aims to harmonise and gather Opera&#39;s various open source projects into a single, sensible location.</p>
 
 <p><span class='imgright'><img alt='' src='/blog/opera-dragonfly-source-now-on-github/octocat.png' /></span>The four repositories that have been transferred are:</p>
 

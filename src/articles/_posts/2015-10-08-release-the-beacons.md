@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 Norway is the nation that gave the world the [paperclip](http://inventors.about.com/library/inventors/blpaperclip.htm) and the [cheese slicer](http://inventors.about.com/od/famousinventions/fl/Who-Invented-the-Cheese-Slicer.htm), so it’s easy to see that R&D is a national tradition here (it stands for “research and development”, not “reindeer and dogsleds”, although those are nice too).
 
-Today, Opera R&D released a [labs build of Opera for Android](http://www.opera.com/download/get/?partner=www&product=android&level=Developer) (APK, 30 MB) with URL beacon detection.
+Today, Opera R&D released a [labs build of Opera for Android](https://www.opera.com/download/get/?partner=www&product=android&level=Developer) (APK, 30 MB) with URL beacon detection.
 
 ## What are URL beacons?
 

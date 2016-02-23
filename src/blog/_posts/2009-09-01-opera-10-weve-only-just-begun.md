@@ -27,9 +27,9 @@ license: cc-by-3.0
 
 <ul>
 <li>Passing the <a href="http://acid3.acidtests.org/">Acid3 test</a> with a 100/100 score and perfect rendering</li>
-<li>Adding additions and improvements from CSS 3 to our <a href="http://www.opera.com/docs/specs/presto22/" target="_blank">standards-support</a></li>
+<li>Adding additions and improvements from CSS 3 to our <a href="https://www.opera.com/docs/specs/presto22/" target="_blank">standards-support</a></li>
 <li>Implementing aspects of HTML 5</li>
-<li>Improving our developer tool, <a href="http://www.opera.com/dragonfly/">Opera Dragonfly</a>, to assist developers in their workflow</li>
+<li>Improving our developer tool, <a href="https://www.opera.com/dragonfly/">Opera Dragonfly</a>, to assist developers in their workflow</li>
 </ul>
 
 <p>I&#39;m not the only one that&#39;s been having fun with Opera 10. Everyone on the Developer Relations team has gotten involved by working on showcases of new features and articles that will help you get the most out of Opera 10. Chris Mills&#39; introduction to Opera 10, <a href="https://dev.opera.com/articles/view/the-opera-10-experience/"><cite>The Opera 10 Experience</cite></a>, offers an exhaustive list of browser features and the various snapshots we&#39;ve put together. </p>
@@ -40,4 +40,4 @@ license: cc-by-3.0
 
 <p>Opera 10 marks a new time for our browser, with its sexy new <abbr title="User Interface">UI</abbr>, cherry-red restyled &quot;O&quot; logo, standards support including many advanced features not found elsewhere, and improved developer tools. Not only that, but to coin a silly Carpenter&#39;s song...&quot;we&#39;ve only just begun.&quot;</p>
 
-<p>Download <a href="http://www.opera.com/browser" target="_blank">the browser</a>, check out its features, and let us know what you think!</p>
+<p>Download <a href="https://www.opera.com/browser" target="_blank">the browser</a>, check out its features, and let us know what you think!</p>

@@ -12,9 +12,9 @@ license: cc-by-3.0
 
 It’s retained for historical purposes only. Download the [latest version of Opera][1] or see what’s coming soon in [Opera.Next][2]. See [Web specifications support in Opera][3].
 
-[1]: http://www.opera.com/browser/
-[2]: http://www.opera.com/browser/next/
-[3]: http://www.opera.com/docs/specs/
+[1]: https://www.opera.com/browser/
+[2]: https://www.opera.com/browser/next/
+[3]: https://www.opera.com/docs/specs/
 
 Another great Opera technology release is with us — we are delighted to release the first build of Opera with Geolocation API support — you can use this to expose the browser’s geographical position, and make use of it in your applications.
 
@@ -22,7 +22,7 @@ This article gives you some background information, plus usage details and links
 
 _Please note that the geolocation feature is now included in [stable Opera release][4]._
 
-[4]: http://www.opera.com/download/ (Download Opera browser)
+[4]: https://www.opera.com/download/ (Download Opera browser)
 
 ### History of geolocation
 

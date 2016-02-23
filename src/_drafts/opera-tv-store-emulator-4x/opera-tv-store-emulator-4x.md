@@ -20,7 +20,7 @@ The Opera TV Store Emulator is created as an extension for the Opera 24+ Desktop
 
 For SDK 3.x emulation, please use the older [Opera TV Emulator 3.4][2].
 
-[1]: http://www.opera.com/business/tv/store/
+[1]: https://www.opera.com/business/tv/store/
 [2]: https://dev.opera.com/tv/opera-tv-emulator/
 
 ## Features {#features}

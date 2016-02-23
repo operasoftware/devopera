@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p class="note">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
+<p class="note">Update: see the <a href="https://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 
 <p>We&#39;re proud to announce that today we released a preview build of <a href="http://labs.opera.com/news/2010/05/11/">Opera Mobile 10 for Nokia N900 and N800/N810</a>.</p>
 
@@ -19,7 +19,7 @@ license: cc-by-3.0
 <p>So what&#39;s the difference between generic Opera Mobile and it&#39;s Maemo-flavoured counterpart? Opera Mobile 10 for Maemo has been upgraded to use the Presto 2.5 rendering engine – the same engine used on Opera Desktop 10.5x releases. Coupled with the Mobile debut of our <a href="http://my.opera.com/core/blog/2009/02/04/vega">Vega rendering library</a>, this enables you to use many of the new CSS3-based effects, like rounded corners and 2D transforms, that were previously only available in Opera&#39;s desktop versions.</p>
 <p>This release is also the first public release of Opera Mobile to include <a href="http://my.opera.com/core/blog/2009/12/22/carakan-revisited">Carakan – our lightning-quick JavaScript engine</a> (note that JIT support for ARM was not yet stable enough to include).</p>
 <p>If you want to get some light-hearted, behind-the-scenes information around today&#39;s release, check out our <a href="http://my.opera.com/ODIN/blog/2010/05/11/5-questions-for-the-opera-mobile-10-maemo-team">5 questions for the Opera Mobile 10 Maemo team</a>.</p>
-<p>For an in-depth look at our standards support, please check out <a href="http://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="http://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a> – but as a quick reference, here&#39;s an update to our <a href="http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart">Opera browser standards support chart</a> that gives an overview of the Maemo preview build&#39;s improvements.</p>
+<p>For an in-depth look at our standards support, please check out <a href="https://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="https://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a> – but as a quick reference, here&#39;s an update to our <a href="http://my.opera.com/ODIN/blog/2010/03/16/opera-standards-chart">Opera browser standards support chart</a> that gives an overview of the Maemo preview build&#39;s improvements.</p>
 
 <figure block="figure">
 <table>
@@ -36,7 +36,7 @@ license: cc-by-3.0
 </thead>
 <tbody>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/#css">CSS3</a> general</td>
+<td><a href="https://www.opera.com/docs/specs/presto25/#css">CSS3</a> general</td>
 <td></td>
 <td></td>
 <td></td>
@@ -127,7 +127,7 @@ license: cc-by-3.0
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -197,7 +197,7 @@ license: cc-by-3.0
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -274,7 +274,7 @@ license: cc-by-3.0
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
 <td></td>
 <td></td>
 <td></td>

@@ -11,7 +11,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>This morning, we&#39;ve released the much anticipated <a href="http://www.opera.com/browser/">final version of Opera 10.50</a> for Windows — work on Mac and Linux versions is still ongoing, so <a href="http://my.opera.com/desktopteam/blog/">stay tuned</a>.</p>
+<p>This morning, we&#39;ve released the much anticipated <a href="https://www.opera.com/browser/">final version of Opera 10.50</a> for Windows — work on Mac and Linux versions is still ongoing, so <a href="http://my.opera.com/desktopteam/blog/">stay tuned</a>.</p>
 <p>Over the last couple of weeks, we&#39;ve gradually lifted the veil on new features and standards support, but here are a couple of highlights:</p>
 <ul>
 <li>Super-fast JavaScript with <strong><a href="http://my.opera.com/core/blog/2009/12/22/carakan-revisited">Carakan</a></strong>.</li>
@@ -24,5 +24,5 @@ license: cc-by-3.0
 <li><strong>Windows 7 tricks</strong>: Aero Peek, Jump List support and Aero Glass effects.</li>
 <li>And last but not least, the <code>@font-face</code> issues we&#39;ve had in the <a href="http://my.opera.com/ODIN/blog/2010/02/11/opera-10-50-beta-is-out">past</a> are now resolved :-)</li>
 </ul>
-<p>For those interested, there is a <a href="http://www.opera.com/docs/changelogs/windows/1050/">extensive changelog</a> available in the Documentation section on the (renewed) Opera site.</p>
-<p>If you haven&#39;t done so, <strong>grab Opera 10.50 from <a href="http://www.opera.com/browser/">our site</a></strong>, and let us know what you think!</p>
+<p>For those interested, there is a <a href="https://www.opera.com/docs/changelogs/windows/1050/">extensive changelog</a> available in the Documentation section on the (renewed) Opera site.</p>
+<p>If you haven&#39;t done so, <strong>grab Opera 10.50 from <a href="https://www.opera.com/browser/">our site</a></strong>, and let us know what you think!</p>

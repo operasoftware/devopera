@@ -9,7 +9,7 @@ license: cc-by-nc-sa-3.0
 
 <p>For richer user interfaces it is often desirable to include some animation to make an effect smoother or more appealing, or effects such as rotating elements and text. Traditionally in HTML pages the primary means to add animations was to use JavaScript to adjust the desired CSS property value over a given period of time. This works but can be slower as the JavaScript code is not hardware or software accelerated. What's more, using JavaScript for animations creates more code to maintain. It has not been possible to apply effects such as text at an angle without resorting to using images or SVG.</p>
 
-<p>In CSS3, these animations and transformations can be handed off to the browser and defined in the CSS layer using CSS3 transitions and transforms, which are supported in our <a href="http://www.opera.com/browser/">Opera 10.50 and later</a>. In this article, you'll learn about CSS3 transitions and transforms in Opera and see the <abbr title="Scalable Vector Graphics">SVG</abbr> and <abbr title="Synchronized Multimedia Integration Language">SMIL</abbr> corollaries to them, too.</p>
+<p>In CSS3, these animations and transformations can be handed off to the browser and defined in the CSS layer using CSS3 transitions and transforms, which are supported in our <a href="https://www.opera.com/browser/">Opera 10.50 and later</a>. In this article, you'll learn about CSS3 transitions and transforms in Opera and see the <abbr title="Scalable Vector Graphics">SVG</abbr> and <abbr title="Synchronized Multimedia Integration Language">SMIL</abbr> corollaries to them, too.</p>
 
 <h2>Contents</h2>
 

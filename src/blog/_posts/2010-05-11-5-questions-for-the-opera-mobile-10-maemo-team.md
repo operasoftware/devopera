@@ -26,7 +26,7 @@ license: cc-by-3.0
 <dt>Anders:</dt>
 <dd><blockquote>Fredrik Öhrn had been working on a port of Opera Mobile 10 to the N800 for his own use for a while when Nokia announced the N900. Several of us at the office immediately decided to buy one, and after that the idea to collaborate on a port of Opera Mobile came quickly. Building on the foundation Fredrik had already built, we quickly got an initial version up and running. After that, it was just a matter of smoothing out the edges and fixing all the annoyances we found when using it for ourselves.</blockquote></dd>
 <dt>Fredrik:</dt>
-<dd><blockquote>I&#39;ve been a long time happy N800 user and have always tinkered with running various iterations of Opera on it. My first attempts used our <a href="http://www.opera.com/business/solutions/devices/">Opera Devices SDK</a> product but creating a good user interface requires quite a bit of work. Thanks to Opera Mobile 10 it all became easy as pie.</blockquote></dd>
+<dd><blockquote>I&#39;ve been a long time happy N800 user and have always tinkered with running various iterations of Opera on it. My first attempts used our <a href="https://www.opera.com/business/solutions/devices/">Opera Devices SDK</a> product but creating a good user interface requires quite a bit of work. Thanks to Opera Mobile 10 it all became easy as pie.</blockquote></dd>
 </dl>
 
 <h3>Which piece of code took the longest to write?</h3>

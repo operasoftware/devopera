@@ -29,7 +29,7 @@ Some details, like the general UI (for example a green security toolbar, as sugg
 [3]: http://dot.kde.org/1132619164/
 [4]: http://blogs.msdn.com/ie/archive/2005/11/21/495507.aspx
 [5]: http://www.hecker.org/mozilla/ssl-ui
-[6]: http://web.archive.org/web/20081014112932/http://www.opera.com/security/toronto/
+[6]: http://web.archive.org/web/20081014112932/https://www.opera.com/security/toronto/
 
 That was the easy part.
 

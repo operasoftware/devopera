@@ -45,7 +45,7 @@ We have also included support for Geolocation. This means that sites can now use
 
 [Download and install Opera Mobile 10.1 beta][8] on your Nokia N800/N810/N900 using the phone’s default browser. If you have previously installed Opera Mobile 10 on your phone, Opera Mobile should be updated automatically through the Application Manager.
 
-[8]: http://www.opera.com/download/get.pl?sub=++++&id=32891&location=270&nothanks=yes
+[8]: https://www.opera.com/download/get.pl?sub=++++&id=32891&location=270&nothanks=yes
 
 In case you encounter problems, please report bugs and issues using our [bug wizard][9]. We also welcome feedback on our [forums][10]. We are especially interested in regressions (bugs that were not present in the previously released version).
 

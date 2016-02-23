@@ -10,12 +10,12 @@ license: cc-by-3.0
 ---
 
 <div>
-  <img src="{{ page.id }}/fig1.png" style="float: right; margin: 0 0 3px 10px;" alt="The new Opera Mobile 11.1" />
+	<img src="{{ page.id }}/fig1.png" style="float: right; margin: 0 0 3px 10px;" alt="The new Opera Mobile 11.1" />
 </div>
 
-<p>Today we had not one, but two product releases: <a href="http://www.opera.com/mobile/">Opera Mini 6.1</a> (for Android, Blackberry, J2ME and Symbian) and <a href="http://www.opera.com/mobile/">Opera Mobile 11.1</a> (for Android and Symbian). You can get them directly from <a href="http://m.opera.com">m.opera.com</a>.</p>
+<p>Today we had not one, but two product releases: <a href="https://www.opera.com/mobile/">Opera Mini 6.1</a> (for Android, Blackberry, J2ME and Symbian) and <a href="https://www.opera.com/mobile/">Opera Mobile 11.1</a> (for Android and Symbian). You can get them directly from <a href="http://m.opera.com">m.opera.com</a>.</p>
 
-<p>While Opera Mini 6.1 is primarily a security and stability release, Opera Mobile 11.1 has been updated to use the <a href="http://www.opera.com/docs/specs/presto28/">Opera Presto 2.8 rendering engine</a>. This boosts the browser&#39;s capabilities with a whole host of new HTML5 and CSS 3 features – many of which only just made their official desktop debut in the <a href="http://my.opera.com/ODIN/blog/2011/06/28/opera-11-50-released-speed-dial-extensions-improved-standards-support">Opera 11.50 release</a> two days ago.</p>
+<p>While Opera Mini 6.1 is primarily a security and stability release, Opera Mobile 11.1 has been updated to use the <a href="https://www.opera.com/docs/specs/presto28/">Opera Presto 2.8 rendering engine</a>. This boosts the browser&#39;s capabilities with a whole host of new HTML5 and CSS 3 features – many of which only just made their official desktop debut in the <a href="http://my.opera.com/ODIN/blog/2011/06/28/opera-11-50-released-speed-dial-extensions-improved-standards-support">Opera 11.50 release</a> two days ago.</p>
 
 <h3>Multi-column layout</h3>
 <p>The <a href="http://www.w3.org/TR/css3-multicol/">CSS Multi-column Layout Module</a> specification allows designers to finally create complex, print-like multi-column layouts without having to abuse <code>table</code> markup. See our <a href="https://dev.opera.com/articles/view/css3-multi-column-layout/">introduction to CSS3 Multi-column layouts</a> and check out the slightly modified <a href="http://people.opera.com/patrickl/experiments/multicol/newspaper/">newspaper-style multi-column layout</a>.</p>
@@ -42,7 +42,7 @@ license: cc-by-3.0
 
 
 <h3>WebP</h3>
-<p><a href="http://code.google.com/speed/webp/">WebP</a> is a new image format from Google, using the same VP8 codec as the <a href="http://www.webmproject.org/">WebM</a> video format. On average, WebP images are more than 30% smaller than JPEG files with only a minor reduction in quality, making them ideal for use in mobile devices. Beyond being able to display <a href="http://code.google.com/speed/webp/gallery.html">WebP images</a>, Opera Mobile 11.1 will now also use this new image format internally with <a href="http://www.opera.com/browser/turbo/">Opera Turbo</a> – making it even faster on slow connections.</p>
+<p><a href="http://code.google.com/speed/webp/">WebP</a> is a new image format from Google, using the same VP8 codec as the <a href="http://www.webmproject.org/">WebM</a> video format. On average, WebP images are more than 30% smaller than JPEG files with only a minor reduction in quality, making them ideal for use in mobile devices. Beyond being able to display <a href="http://code.google.com/speed/webp/gallery.html">WebP images</a>, Opera Mobile 11.1 will now also use this new image format internally with <a href="https://www.opera.com/browser/turbo/">Opera Turbo</a> – making it even faster on slow connections.</p>
 
 
 <h3>Linear gradients</h3>
@@ -55,12 +55,12 @@ license: cc-by-3.0
 <p>on a <code>480px</code> wide screen (on VGA, WVGA, XVGA devices), 160% zoom resulted in a viewport width of <code>480px / 1.6 = 300px</code>. However, many mobile-optimised sites – despite using <code>device-width</code> in their <code>viewport</code> definition – still seem to assume a width of <code>320px</code> (the default iPhone width) in their layouts. This resulted in an annoying <code>20px</code> horizontal scroll. In Opera Mobile 11.1 we&#39;ve changed the default zoom on high-DPI devices to 150%, which gives us increased compatibility with these badly coded sites.</p>
 
 <div>
-  <img src="{{ page.id }}/fig2.png" alt="The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly." />
-  <p class="caption">Figure 2: The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly.</p>
+	<img src="{{ page.id }}/fig2.png" alt="The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly." />
+	<p class="caption">Figure 2: The mobile version of Flickr with a zoom of 160%, showing the unsightly horizontal scrollbars, and now with 150%, fitting perfectly.</p>
 </div>
 
 <p>For further details, see <a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to <code>meta</code> <code>viewport</code> and <code>@viewport</code></a>, which has been updated to reflect this tweaked behavior.</p>
 
 <h3>...and much more</h3>
 
-<p>We&#39;ve only cherry-picked some of the new features in this release. For an overview of how the new <a href="http://www.opera.com/mobile/">Opera Mobile 11.1</a> stacks up in comparison to its previous version, have a look at the overview of <a href="http://www.opera.com/docs/specs/productspecs/">web specifications support in Opera products</a> and the detailed <a href="http://www.opera.com/docs/specs/presto28/">web specifications support in Opera Presto 2.8</a>. Enjoy!</p>
+<p>We&#39;ve only cherry-picked some of the new features in this release. For an overview of how the new <a href="https://www.opera.com/mobile/">Opera Mobile 11.1</a> stacks up in comparison to its previous version, have a look at the overview of <a href="https://www.opera.com/docs/specs/productspecs/">web specifications support in Opera products</a> and the detailed <a href="https://www.opera.com/docs/specs/presto28/">web specifications support in Opera Presto 2.8</a>. Enjoy!</p>

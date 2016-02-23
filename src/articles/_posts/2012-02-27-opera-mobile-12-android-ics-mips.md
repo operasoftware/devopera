@@ -42,4 +42,4 @@ We are proud to present you with a working Labs version of Opera Mobile 12 for A
 
 To install this experimental Opera 12 build, browse your MIPs Android device to [Opera 12 for MIPS Android devices][3].
 
-[3]: http://www.opera.com/download/get.pl?sub=++++&id=34410&location=270&nothanks=yes
+[3]: https://www.opera.com/download/get.pl?sub=++++&id=34410&location=270&nothanks=yes

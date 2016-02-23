@@ -23,7 +23,7 @@ So what’s wrong, and how do we fix it? First, let’s check for warnings. Sure
 
 Luckily, we can check that. Have a look at the table of [Opera 9’s supported SVG][3] elements, attributes, and DOM methods, and we see that `preserveAspectRatio` is supported. So it is likely that we have an error in our code. Either look for a tutorial on SVG, or look at the [specification][4] . Then we can see that there are various effects we can get. Since our clock makes sense so long as we can see the middle of it, looking at the pictures in the spec, or even from reading the text shows that we want to set the value as `XmidYMid slice`.
 
-[3]: http://www.opera.com/docs/specs/opera9/svg/
+[3]: https://www.opera.com/docs/specs/opera9/svg/
 [4]: http://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute
 
 So now we know what we want to do, how do we change it? Easily enough... look at the source in Opera 9’s built-in source editor. Make the edit we want in place. To check that it works, press “reload from cache”. If we were working on a locally saved file, this would save our version. When we have downloaded the page, we can also save a local copy (you guessed it, press the “save” button).

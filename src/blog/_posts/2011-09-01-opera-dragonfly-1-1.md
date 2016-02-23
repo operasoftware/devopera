@@ -15,7 +15,7 @@ license: cc-by-3.0
 
 <h3>What’s new?</h3>
 
-<p>There are a lot of new and polished features in Opera Dragonfly 1.1.  For full details see the <a href="http://www.opera.com/dragonfly/new/">what’s new</a> section.</p>
+<p>There are a lot of new and polished features in Opera Dragonfly 1.1.  For full details see the <a href="https://www.opera.com/dragonfly/new/">what’s new</a> section.</p>
 
 
 <h4>DOM Inspector</h4>
@@ -51,14 +51,14 @@ The Local Storage, Session Storage and Widgets Preferences panels have been upgr
 The old Error Log has been ripped out and replaced with a shiny upgraded version. It has quite a few enhancements including:
 
 <ul>
-     <li>UI redesign taking up less real estate</li>
-     <li>The resource type in  now shown in the overview instead of the severity level</li>
-     <li>Error badge matches currently active view rather than all errors</li>
-     <li>Less common error types have been merged into an Other panel</li>
-     <li>Linked up error line to the Resource line number</li>
-     <li>Replaced search with filter</li>
-     <li>Removed console.* entries (with option to add back)</li>
-     <li>Errors are shown from before Opera Dragonfly was open (Opera 12 only)</li>
+		 <li>UI redesign taking up less real estate</li>
+		 <li>The resource type in  now shown in the overview instead of the severity level</li>
+		 <li>Error badge matches currently active view rather than all errors</li>
+		 <li>Less common error types have been merged into an Other panel</li>
+		 <li>Linked up error line to the Resource line number</li>
+		 <li>Replaced search with filter</li>
+		 <li>Removed console.* entries (with option to add back)</li>
+		 <li>Errors are shown from before Opera Dragonfly was open (Opera 12 only)</li>
 </ul>
 
 <p>For those of you still using the native Error Console you might want to try using the Opera Dragonfly version, especially once Opera 12 comes out later this year when Opera Dragonfly will be able to access the errors from before it was opened.</p>
@@ -79,4 +79,4 @@ The old Error Log has been ripped out and replaced with a shiny upgraded version
 
 <h3>What next?</h3>
 
-<p>We&#39;re really excited about the refinements and new features we&#39;ve added to this release, and we hope developers will like them too. We constantly strive to make Opera Dragonfly better, but most importantly suited to the needs of our end users — so if you have any issues or suggestions, we&#39;d appreciate your <a href="http://www.opera.com/dragonfly/feedback/">feedback about Opera Dragonfly 1.1</a>.</p>
+<p>We&#39;re really excited about the refinements and new features we&#39;ve added to this release, and we hope developers will like them too. We constantly strive to make Opera Dragonfly better, but most importantly suited to the needs of our end users — so if you have any issues or suggestions, we&#39;d appreciate your <a href="https://www.opera.com/dragonfly/feedback/">feedback about Opera Dragonfly 1.1</a>.</p>

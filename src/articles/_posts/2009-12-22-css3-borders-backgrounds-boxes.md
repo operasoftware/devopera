@@ -20,7 +20,7 @@ license: cc-by-nc-sa-3.0
 In this article, we will showcase some examples made using the new properties in the [W3C’s CSS3 Backgrounds and Borders specification][1]. We recommend using [Opera 11 or later][2] to view these examples in their full glory.
 
 [1]: http://www.w3.org/TR/css3-background/
-[2]: http://www.opera.com/browser/
+[2]: https://www.opera.com/browser/
 
 - [`background-clip`](#background-clip)
 - [`background-origin`](#background-origin)
