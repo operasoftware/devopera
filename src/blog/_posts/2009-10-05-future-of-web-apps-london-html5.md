@@ -54,7 +54,7 @@ Some other useful resources:
 <li><a href="http://www.html5doctor.com/"><abbr>HTML</abbr>5 Doctor</a> (I&#39;m a co-curator of this site)</li>
 </ul>
 
-<p>You can also <a href="http://www.opera.com/">download Opera 10</a> which I was using to demo.</p>
+<p>You can also <a href="https://www.opera.com/">download Opera 10</a> which I was using to demo.</p>
 
 <p>There is a <a href="http://cnettv.cnet.com/news-future-web-apps-london/9742-1_53-50077840.html">snippet of an interview with me about <abbr>HTML</abbr>5 and mobile by Natali del Conte</a>.</p>
 <p>Finally, thanks to all those who came along and gave me great feedback. I was literally hoarse from chatting in the breaks, in the pub and everywhere else about <abbr>HTML</abbr>5. The biggest gripe (apart from those appalled by the fact that <a href="http://html5doctor.com/html-5-xml-xhtml-5/">you can use <abbr>XML</abbr> syntax or not, as you wish</a>) was the stylability of the new form elements and their error messages. I&#39;d love to hear your feedback on this.</p>

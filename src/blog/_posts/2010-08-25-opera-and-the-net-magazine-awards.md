@@ -11,7 +11,7 @@ license: cc-by-3.0
 <p>We&#39;re jolly pleased that <a href="http://www.netmag.co.uk/" target="_blank">.net magazine</a> (or Practical Web Design outside the UK) has nominated Opera product for four of their <a href="http://www.thenetawards.com/" target="_blank">annual awards</a>, all nominated by the magazine&#39;s readers.</p>
 
 <h3>Innovation of the Year</h3>
-<p><a href="http://www.opera.com/developer/tools/" target="_blank">Opera Mobile Emulator</a> is up for this gong.</p>
+<p><a href="https://www.opera.com/developer/tools/" target="_blank">Opera Mobile Emulator</a> is up for this gong.</p>
 
 <p>Testing mobile browsers usually requires Web developers to buy one or more devices on which they then can investigate how their Web sites perform. The Opera Mobile emulator is designed to make the whole testing effort a bit easier: you install a small, native application on the desktop platform of your choice, and load Web pages from the comfort of your desktop. You can even debug them using Opera Dragonfly. (<a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/" target="_blank">More about Opera Mobile Emulator</a>)</p>
 

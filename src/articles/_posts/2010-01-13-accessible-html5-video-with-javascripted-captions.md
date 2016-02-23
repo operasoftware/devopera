@@ -47,7 +47,7 @@ For those with JavaScript enabled, I want to show individual lines of the transc
 Here’s a silly sample video that shows the technique: [Example captioned video — How to Leverage a Synergy][4]. (You need to be using an [Ogg video-enabled browser][5].)
 
 [4]: http://people.opera.com/brucel/demo/video/accessible-html5-video-captions.html
-[5]: http://www.opera.com/browser/next/
+[5]: https://www.opera.com/browser/next/
 
 This proof-of-concept doesn’t work in Safari. That’s because Safari doesn’t support the open Ogg codec that Opera, Firefox and Chrome support. If you wish to encode the video for Safari too, and use multiple [`source` elements][6] (one for Ogg, one for MP4), the demo will work. Internet Explorer currently does not support the `video` element.
 

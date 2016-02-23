@@ -17,15 +17,15 @@ license: cc-by-nc-sa-3.0
 <p>You’ll probably already have read up on and experimented with the new HTML5 <code>&lt;video&gt;</code> element, which allows us to include video inside an HTML page without the need for plugins (if not, read our <a href="https://dev.opera.com/articles/view/introduction-html5-video/">Introduction to HTML5 video</a> before going any further.) You’ll probably also be aware that there is somewhat of a disagreement over codecs going on. Opera and Firefox currently support the Ogg Theora video codec, while Safari supports the H.264 codec. Google Chrome supports both, while Microsoft have announced support for H.264 in IE9. This is not ideal, as to implement a cross-browser video with HTML5 you would need to encode and reference multiple video formats. For example:</p>
 
 <pre><code>&lt;video controls="controls"&gt;
-   &lt;source src="theora.ogv" type="video/ogg; codecs='theora, vorbis'"&gt;
-   &lt;source src="h264.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"&gt;
-   &lt;p&gt;&lt;a href="h264.mp4"&gt;Download the video&lt;/a&gt;.&lt;/p&gt;
+	 &lt;source src="theora.ogv" type="video/ogg; codecs='theora, vorbis'"&gt;
+	 &lt;source src="h264.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'"&gt;
+	 &lt;p&gt;&lt;a href="h264.mp4"&gt;Download the video&lt;/a&gt;.&lt;/p&gt;
 &lt;/video&gt;</code></pre>
 
 <h2>Enter WebM</h2>
 
 <p>Help is just around the corner — Google has released the <a href="http://www.webmproject.org/">VP8 video codec and WebM container format</a> under royalty-free terms, with the aim of making a high quality, open video format available across different browsers and platforms. This was announced publicly at the <a href="http://code.google.com/events/io/2010/">2010 Google I/O conference</a>.</p>
-<p class="note">On the day of the announcement, Opera released an experimental WebM-enabled build. This feature is now part of the core functionality of <a href="http://www.opera.com/browser/">Opera 10.60</a> and all of our future desktop browser releases.</p>
+<p class="note">On the day of the announcement, Opera released an experimental WebM-enabled build. This feature is now part of the core functionality of <a href="https://www.opera.com/browser/">Opera 10.60</a> and all of our future desktop browser releases.</p>
 
 
 <p>Google’s <a href="https://www.youtube.com">YouTube</a> property now supports WebM/VP8 — new videos are being made available in this format.</p>
@@ -49,8 +49,8 @@ license: cc-by-nc-sa-3.0
 <p>There is nothing new that you need to know about the HTML5 <code>&lt;video&gt;</code> syntax to embed WebM videos into your web pages; you just need video in the right format, and some new codec information. For example:</p>
 
 <pre><code>&lt;video controls="controls"&gt;
-   &lt;source src="sunflower.webm" type="video/webm; codecs='vorbis,vp8'"&gt;
-   &lt;p&gt;&lt;a href="sunflower.webm"&gt;Download the video&lt;/a&gt;.&lt;/p&gt;
+	 &lt;source src="sunflower.webm" type="video/webm; codecs='vorbis,vp8'"&gt;
+	 &lt;p&gt;&lt;a href="sunflower.webm"&gt;Download the video&lt;/a&gt;.&lt;/p&gt;
 &lt;/video&gt;</code></pre>
 
 <p>You can see this code in action on our <a href="sunflower-webm.html">WebM simple example page</a> (you'll be able to run this provided you are using an HTML5 <code>&lt;video&gt;</code> and WebM-supporting browser).</p>

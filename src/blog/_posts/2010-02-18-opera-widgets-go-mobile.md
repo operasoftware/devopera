@@ -15,7 +15,7 @@ license: os-asa
 
 Over the last couple of months, we’ve been working hard to improve our Opera Widgets manager application for mobile phones — we basically rebuilt it from scratch, using the [cross-platform UI framework][2] that is also used in Opera Mobile and Opera Mini, and we have added a number of new features, providing a better and unified user experience across multiple mobile platforms.
 
-[2]: http://www.opera.com/press/releases/2009/12/10_2/
+[2]: https://www.opera.com/press/releases/2009/12/10_2/
 
 Widgets can best be understood as applications that are built with Web standards, such as HTML, CSS, JavaScript and SVG. This means that the barrier to development is very low, and common approaches and libraries used in classic Web development can be deployed, flattening the learning curve and drastically speeding up development time.
 
@@ -32,8 +32,8 @@ Be sure to try it out and [let us know what you think][3] .
 - [Windows Mobile][4]
 - [Symbian Series 60][5]
 
-[4]: http://www.opera.com/download/get.pl?sub=++++&id=32824&location=270&nothanks=yes
-[5]: http://www.opera.com/download/get.pl?sub=++++&id=32825&location=270&nothanks=yes
+[4]: https://www.opera.com/download/get.pl?sub=++++&id=32824&location=270&nothanks=yes
+[5]: https://www.opera.com/download/get.pl?sub=++++&id=32825&location=270&nothanks=yes
 
 These builds can be used by developers to start creating and testing their mobile applications on the most important mobile platforms. More platforms will be announced soon.
 
@@ -47,7 +47,7 @@ These builds can be used by developers to start creating and testing their mobil
 - When a widget is minimized, [`docked` mode][9] is invoked, which is a mode wherein the widget renders and displays in a minimized state with a smaller viewport, resulting in a so called “live icon”.
 - Widgets can be [debugged remotely][10] via the Opera Dragonfly developer tools.
 
-[6]: http://www.opera.com/docs/specs/presto24/
+[6]: https://www.opera.com/docs/specs/presto24/
 [8]: /articles/opera-widgets-specification-fourth-ed/#xml_icon
 [9]: /articles/opera-widgets-specification-fourth-ed/#widget_modes
 [10]: /articles/remote-debugging-with-opera-dragonfly/

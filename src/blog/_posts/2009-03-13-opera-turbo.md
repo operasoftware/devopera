@@ -12,8 +12,8 @@ license: os-asa
 
 It’s here for historical purposes only. Download the [latest version of Opera][1] or see what’s coming soon in [Opera.Next][2].
 
-[1]: http://www.opera.com/browser/
-[2]: http://www.opera.com/browser/next/
+[1]: https://www.opera.com/browser/
+[2]: https://www.opera.com/browser/next/
 
 At Opera, we love speed. We work hard to make our browser faster with features that speeds you up, but your connection also plays a big role on how fast you can go.
 

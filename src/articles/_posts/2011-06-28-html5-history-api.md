@@ -11,7 +11,7 @@ license: cc-by-3.0
 
 <p>Before the advent of HTML5, one thing that we &mdash; as web developers &mdash; were not able to control and manipulate is the session history of a particular browsing context. Not without incurring page reloads or relying on <code>location.hash</code> workarounds. This is all set to change however: the <a href="http://dev.w3.org/html5/spec/history.html">HTML5 history API</a> provides a means to perform tasks such as moving forward and backward in the session history, adding new entries into the history, and so on. In this article we'll look at the API's basic syntax along with a simple example to show you what's possible.</p>
 
-<p class="note"><a href="http://www.opera.com/browser/">Opera 11.50</a> and later support the complete API, including the <code>pushState()</code> and <code>replaceState()</code> methods, the <code>history.state</code> object, and the <code>popstate</code> event.</p>
+<p class="note"><a href="https://www.opera.com/browser/">Opera 11.50</a> and later support the complete API, including the <code>pushState()</code> and <code>replaceState()</code> methods, the <code>history.state</code> object, and the <code>popstate</code> event.</p>
 
 
 <h2>Basic concepts and syntax</h2>

@@ -22,7 +22,7 @@ Today, we’ve launched Opera 32 for Android. Along with a host of bug fixes, st
 
 (Updated 30 September 2015: today’s update to Opera 32 for Android changes the name selection criteria.)
 
-One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](http://www.opera.com/blogs/desktop/2013/07/ctrl-z-of-ctrl-d/). We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
+One of the bigger gaps has been the difference between bookmarking a site and installing an application. We know that, even on desktop, [most people don’t use bookmarks](https://www.opera.com/blogs/desktop/2013/07/ctrl-z-of-ctrl-d/). We also know that people love “installing” apps that live on a device’s homescreen, with a crystal-clear icon imploring them to tickle them into life with a tap of the finger.
 
 When a user loads a site in Opera 32 for Android, taps the plus sign, and chooses “Add to home screen”, a shortcut to this site is placed on the home screen of her/his device, allowing for direct access and increased visibility.
 
@@ -156,9 +156,9 @@ Opera’s implementation currently differs from Chrome’s in four main ways:
 
 ### Read more, see more
 
-Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname). You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/devopera.webmanifest). The Chrome team has compiled a list of resources on [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps).
+Spec author Marcos Cáceres and Bruce documented what goes in the manifest in an HTML5 Doctor article called [HTML App Manifest](http://html5doctor.com/web-manifest-specification/#appname). You can check out the one we made for Dev.Opera on [GitHub](https://github.com/operasoftware/devopera/blob/master/src/.webmanifest). The Chrome team has compiled a list of resources on [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps).
 
-You can also check out how it works on sites with a manifest, for example
+You can also check out how it works on sites with a manifest, for example:
 
 - [Dev.Opera](https://dev.opera.com/)
 - [Flipkart Lite](http://www.flipkart.com/) (also see their [engineering blog](http://tech-blog.flipkart.net/2015/11/progressive-web-app/) on how they made it)

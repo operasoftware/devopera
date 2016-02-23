@@ -8,7 +8,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>This morning, we&#39;ve released <a href="http://www.opera.com/browser/next/">Opera 12 beta</a> and as always, a new release comes with improved standards support and other developer features — a quick overview of the shiny:</p>
+<p>This morning, we&#39;ve released <a href="https://www.opera.com/browser/next/">Opera 12 beta</a> and as always, a new release comes with improved standards support and other developer features — a quick overview of the shiny:</p>
 
 <h3>Hardware acceleration and WebGL support</h3>
 
@@ -40,4 +40,4 @@ license: cc-by-3.0
 <h3>Themes</h3>
 <p>If you want to spice up your browsing experience, with, let&#39;s say, a cookie monster-themed browser UI, be sure to check out our <a href="https://addons.opera.com/en/themes/">new themes catalog</a>. Making themes is super easy, and the nitty-gritty details of Opera 12&#39;s new theming infrastructure are explained in our <a href="https://dev.opera.com/articles/view/operas-lightweight-themes/">Opera&#39;s lightweight themes article</a>.</p>
 
-<p>And last but not least, our <a href="http://www.opera.com/docs/specs/productspecs/">product specs overview page</a> has been updated as well, giving you an overview of what is supported where in all recent Opera products.</p></p>
+<p>And last but not least, our <a href="https://www.opera.com/docs/specs/productspecs/">product specs overview page</a> has been updated as well, giving you an overview of what is supported where in all recent Opera products.</p></p>

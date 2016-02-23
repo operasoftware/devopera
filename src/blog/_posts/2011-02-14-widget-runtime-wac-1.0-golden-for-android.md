@@ -21,7 +21,7 @@ It’s been a long trip, but we’ve finally arrived — today our lasting inten
 
 Download the [Android build][5].
 
-[5]: http://www.opera.com/download/get.pl?sub=++++&id=33469&location=270&nothanks=yes
+[5]: https://www.opera.com/download/get.pl?sub=++++&id=33469&location=270&nothanks=yes
 
 But that’s not all! We care about our fellow widget developers out there, so we have a sneak-peak of the next generation of our developer tools: [Eclipse packaging plug-in][6] and Opera Widget Desktop Emulator with WAC 1.0 APIs support:
 
@@ -29,11 +29,11 @@ But that’s not all! We care about our fellow widget developers out there, so w
 
 [Windows version][7]
 
-[7]: http://www.opera.com/download/get.pl?sub=++++&id=33470&location=270&nothanks=yes
+[7]: https://www.opera.com/download/get.pl?sub=++++&id=33470&location=270&nothanks=yes
 
 [Linux version][8]
 
-[8]: http://www.opera.com/download/get.pl?sub=++++&id=33471&location=270&nothanks=yes
+[8]: https://www.opera.com/download/get.pl?sub=++++&id=33471&location=270&nothanks=yes
 
 These tools ease the process of widgets development and allow developers to test and debug widgets before running them on the target devices.
 

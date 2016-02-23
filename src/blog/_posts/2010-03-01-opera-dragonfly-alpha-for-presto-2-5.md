@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p><a href="http://www.opera.com/browser/">Opera 10.50</a> has been released as a final version, which brings with it a new rendering engine — Opera Presto 2.5 — and a new version of <a href="http://dragonfly.opera.com/">Opera Dragonfly</a>, featuring some important new features and fixes. In this post I will take you through these Dragonfly updates.</p>
+<p><a href="https://www.opera.com/browser/">Opera 10.50</a> has been released as a final version, which brings with it a new rendering engine — Opera Presto 2.5 — and a new version of <a href="http://dragonfly.opera.com/">Opera Dragonfly</a>, featuring some important new features and fixes. In this post I will take you through these Dragonfly updates.</p>
 
 <p>The biggest change is an upgrade to the <a href="http://dragonfly.opera.com/app/scope-interface/scope-transport-protocol.html">STP/1 version of Scope</a>. This, combined with Carakan, Vega and other speed optimisations in Presto, make Opera Dragonfly noticeably faster, giving us a solid foundation to build more features on to in the future.</p>
 

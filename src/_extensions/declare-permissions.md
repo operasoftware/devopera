@@ -10,7 +10,7 @@ It is required to first declare which permissions you would like the browser to 
 
 	"permissions": [
 		"tabs",
-		"http://www.opera.com/",
+		"https://www.opera.com/",
 		"http://*.example.org/",
 	]
 

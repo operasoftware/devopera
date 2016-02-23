@@ -23,7 +23,7 @@ Making sure that your site looks great and works exactly as it should in mobile 
 
 Our [Opera Mobile Emulator][2] for Windows, Linux and Mac makes things a whole lot easier.
 
-[2]: http://www.opera.com/developer/tools/mobile/
+[2]: https://www.opera.com/developer/tools/mobile/
 
 It’s a small, native application that’s easy to install on your desktop machine and runs exactly the same code as its mobile phone version — that way, you can be assured that what you’re seeing on your test environment is practically identical to the experience your end users will get.
 
@@ -138,8 +138,8 @@ Also note that in all modes you can perform select all, cut, copy and paste acti
 
 In general usage, Opera Mobile Emulator offers the same functionality available on mobile phones and tablets, including integration of [Opera Turbo][6] and [Opera Link][7], which allows you to sync your bookmarks with our Opera Link servers and other Opera instances.
 
-[6]: http://www.opera.com/browser/turbo/
-[7]: http://www.opera.com/link/
+[6]: https://www.opera.com/browser/turbo/
+[7]: https://www.opera.com/link/
 
 <figure block="figure" id="figure-4">
 	<img elem="media" src="{{ page.id }}/settings.jpg" alt="Settings, Privacy and opera:config">
@@ -148,7 +148,7 @@ In general usage, Opera Mobile Emulator offers the same functionality available 
 
 As with [Opera Mobile][9] running on devices, the _Settings_ (Figure 4) give quick access to toggle various features and, under _Privacy_, to clear the history, passwords, cookies, cache and shared locations.
 
-[9]: http://www.opera.com/mobile/
+[9]: https://www.opera.com/mobile/
 
 Power-users can enter `opera:config` into the address bar for complete access to all configuration options.
 
@@ -156,7 +156,7 @@ Power-users can enter `opera:config` into the address bar for complete access to
 
 Using [Opera Dragonfly][10]’s remote debugging functionality, you can analyze and debug pages running in the Opera Mobile Emulator — see Figure 5.
 
-[10]: http://www.opera.com/dragonfly/
+[10]: https://www.opera.com/dragonfly/
 
 <figure block="figure" id="figure-5">
 	<img elem="media" src="{{ page.id }}/debugging.jpg" alt="Opera Dragonfly debugging a Web page in Opera Mobile Emulator">
@@ -165,7 +165,7 @@ Using [Opera Dragonfly][10]’s remote debugging functionality, you can analyze 
 
 Setting this up is a simple three-step process, which is explained in great detail in our [Opera Dragonfly documentation][12].
 
-[12]: http://www.opera.com/dragonfly/documentation/remote/
+[12]: https://www.opera.com/dragonfly/documentation/remote/
 
 Opera Mobile Emulator 12.1 is also able to talk to our browser automation library, OperaDriver. OperaDriver is an implementation of the [W3C WebDriver specification][13] and part of the free software web testing framework [Selenium][14]. Selenium provides a lightweight and elegant way of testing web apps by emulating user interaction with actual web browsers. For details on how to use this, see our [introducing mobile browser automation][15] Labs article.
 
@@ -177,4 +177,4 @@ Opera Mobile Emulator 12.1 is also able to talk to our browser automation librar
 
 We hope that with this release of the [Opera Mobile Emulator][16] we’ve made it even easier to develop, optimize and debug on mobile and tablets. Happy developing!
 
-[16]: http://www.opera.com/developer/tools/mobile/
+[16]: https://www.opera.com/developer/tools/mobile/

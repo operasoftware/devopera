@@ -38,7 +38,7 @@ To access WebGL content you need to have a browser that supports it.
 - [Firefox 4 and higher][9]
 - [Safari 5.1 or higher on Leopard, Snow Leopard, or Lion][10] (make sure you enable WebGL in Safari — go to _Preferences > Advanced_ and check “Show develop menu in menu bar”, then go to _Develop > Enable WebGL_)
 
-[5]: http://www.opera.com/browser/
+[5]: https://www.opera.com/browser/
 [6]: opera:config#UserPrefs|EnableWebGL
 [7]: opera:config#UserPrefs|EnableHardwareAcceleration
 [8]: http://www.google.com/chrome/
@@ -47,7 +47,7 @@ To access WebGL content you need to have a browser that supports it.
 
 Also, having a good graphics card will likely improve WebGL performance on your computer. If you don’t already have it, get the [latest Opera release][11] and check out the above video example running as a [live demo][12]. Another great demo to check out is [Hello Racer][13].
 
-[11]: http://www.opera.com/browser/next/
+[11]: https://www.opera.com/browser/next/
 [12]: http://aleksandarrodic.com/p/jellyfish
 [13]: http://helloracer.com/webgl
 

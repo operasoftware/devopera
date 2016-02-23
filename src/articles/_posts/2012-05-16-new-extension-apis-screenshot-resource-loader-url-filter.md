@@ -23,10 +23,10 @@ license: cc-by-3.0
 <p>We have builds available for:</p>
 
 <ul>
-<li><a href="http://www.opera.com/download/get.pl?id=34724&sub=true&nothanks=yes&location=360">Windows i386</a> | <a href="http://www.opera.com/download/get.pl?id=34725&sub=true&nothanks=yes&location=360">Windows x64</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34726&sub=true&nothanks=yes&location=360">Mac i386/x64</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34727&sub=true&nothanks=yes&location=360">Linux tar.xz i386</a> | <a href="http://www.opera.com/download/get.pl?id=34728&sub=true&nothanks=yes&location=360">Linux tar.xz x64</a> | <a href="http://www.opera.com/download/get.pl?id=34730&sub=true&nothanks=yes&location=360">Linux deb i386</a> | <a href="http://www.opera.com/download/get.pl?id=34729&sub=true&nothanks=yes&location=360">Linux deb x64</a></li>
-<li><a href="http://www.opera.com/download/get.pl?id=34723&sub=true&nothanks=yes&location=360">FreeBSD i386</a> | <a href="http://www.opera.com/download/get.pl?id=34722&sub=true&nothanks=yes&location=360">FreeBSD x64</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34724&sub=true&nothanks=yes&location=360">Windows i386</a> | <a href="https://www.opera.com/download/get.pl?id=34725&sub=true&nothanks=yes&location=360">Windows x64</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34726&sub=true&nothanks=yes&location=360">Mac i386/x64</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34727&sub=true&nothanks=yes&location=360">Linux tar.xz i386</a> | <a href="https://www.opera.com/download/get.pl?id=34728&sub=true&nothanks=yes&location=360">Linux tar.xz x64</a> | <a href="https://www.opera.com/download/get.pl?id=34730&sub=true&nothanks=yes&location=360">Linux deb i386</a> | <a href="https://www.opera.com/download/get.pl?id=34729&sub=true&nothanks=yes&location=360">Linux deb x64</a></li>
+<li><a href="https://www.opera.com/download/get.pl?id=34723&sub=true&nothanks=yes&location=360">FreeBSD i386</a> | <a href="https://www.opera.com/download/get.pl?id=34722&sub=true&nothanks=yes&location=360">FreeBSD x64</a></li>
 </ul>
 
 <h2 id="screenshot">The screenshot API</h2>

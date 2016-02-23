@@ -30,7 +30,7 @@ license: cc-by-3.0
 
 <p>To kick things off, we also have a new experimental release today. The focus has been on improving the UI framework. The dimension of panels will now be stored, and will be better preserved when resizing the application. Resizing performance in the scripts view has also been improved. And we’ve made some tweaks to overall text selection – for example, it’s not possible to accidentally select the text of tabs and various other UI elements anymore.</p>
 
-<p>We’ve also fixed an issue where Opera Dragonfly wouldn’t start in Opera 12 pre-alpha (<a href="http://www.opera.com/browser/next/">Opera Next</a> to its friends), as well as some other minor bugs. Lastly, we’ve added <kbd>Ctrl</kbd>-<kbd>R</kbd> and <kbd>⌘</kbd>-<kbd>R</kbd> as a handy shortcut for reloading the debug context.</p>
+<p>We’ve also fixed an issue where Opera Dragonfly wouldn’t start in Opera 12 pre-alpha (<a href="https://www.opera.com/browser/next/">Opera Next</a> to its friends), as well as some other minor bugs. Lastly, we’ve added <kbd>Ctrl</kbd>-<kbd>R</kbd> and <kbd>⌘</kbd>-<kbd>R</kbd> as a handy shortcut for reloading the debug context.</p>
 
 <p>See the <a href="http://dragonfly.opera.com/app/stp-1/experimental/logs/4981.83d21cc21b45.log" target="_blank">full changelog</a> for further details.</p>
 

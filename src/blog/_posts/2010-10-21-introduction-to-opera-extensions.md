@@ -33,9 +33,9 @@ license: cc-by-3.0
 <p>To run Opera extensions, you&#39;ll need an Opera 11 labs build that supports them:</p>
 
 	<ul>
-	  <li><a href="http://www.opera.com/download/get.pl?id=33277&amp;location=270&amp;thanks=true&amp;sub=true">Opera 11 extensions build for Windows</a></li>
-	  <li><a href="http://www.opera.com/download/get.pl?id=33278&amp;location=270&amp;thanks=true&amp;sub=true">Opera 11 extensions build for Mac</a></li>
-	  <li><a href="http://snapshot.opera.com/unix/alpha1-with-extensions_11.00-1029/">Opera 11 extensions build for Linux</a></li>
+		<li><a href="https://www.opera.com/download/get.pl?id=33277&amp;location=270&amp;thanks=true&amp;sub=true">Opera 11 extensions build for Windows</a></li>
+		<li><a href="https://www.opera.com/download/get.pl?id=33278&amp;location=270&amp;thanks=true&amp;sub=true">Opera 11 extensions build for Mac</a></li>
+		<li><a href="http://snapshot.opera.com/unix/alpha1-with-extensions_11.00-1029/">Opera 11 extensions build for Linux</a></li>
 	</ul>
 
 

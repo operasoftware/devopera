@@ -12,4 +12,4 @@ This week we released an exciting new beta release of Kestrel, the new Opera des
 
 You can download the beta and start playing around with it right away, and find more out about its features at the [Opera desktop product page][1].
 
-[1]: http://www.opera.com/products/desktop/next/
+[1]: https://www.opera.com/products/desktop/next/

@@ -23,4 +23,4 @@ In addition, we’ve added support for a number of new extension APIs, which you
 
 Consumer highlights are the ability to add custom searches, configure startup options, pinned tabs and (behind opera:flags) a new Quick Access Bar to house bookmarklets and bookmarks, powered by the chrome.bookmarks API.
 
-If you are interested in experimenting with features that are in the pipeline for future versions of the product, we recommend following our [Opera Developer stream](http://www.opera.com/developer).
+If you are interested in experimenting with features that are in the pipeline for future versions of the product, we recommend following our [Opera Developer stream](https://www.opera.com/developer).

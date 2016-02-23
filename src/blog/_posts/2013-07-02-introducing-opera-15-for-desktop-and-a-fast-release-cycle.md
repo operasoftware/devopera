@@ -8,11 +8,11 @@ tags:
 license: cc-by-3.0
 ---
 
-Here it is — [Opera 15 for computers](http://www.opera.com/computer): your fast, secure browser that doesn’t get in your way. Here’s a quick video introduction.
+Here it is — [Opera 15 for computers](https://www.opera.com/computer): your fast, secure browser that doesn’t get in your way. Here’s a quick video introduction.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" frameborder="0" allowfullscreen></iframe>
 
-Opera 15 for computers also commences our new [fast release cycle](http://www.opera.com/blogs/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
+Opera 15 for computers also commences our new [fast release cycle](https://www.opera.com/blogs/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
 
 ### So what’s new?
 
@@ -71,7 +71,7 @@ Just because you have a computer rather than a mobile device doesn’t mean that
 
 ### Mouse gestures
 
-One of Opera’s classic features, [mouse gestures](http://www.opera.com/help/tutorials/gestures/), let you perform common browsing actions with small, quick mouse movements. Note that on Mac they are by default disabled, since Mac has native support for system touch gestures.
+One of Opera’s classic features, [mouse gestures](https://www.opera.com/help/tutorials/gestures/), let you perform common browsing actions with small, quick mouse movements. Note that on Mac they are by default disabled, since Mac has native support for system touch gestures.
 
 Advanced keyboard shortcuts are also available, but are off by default. To enable them, go to Settings → Browser → Enable advanced keyboard shortcuts. And while you’re at it, have a look at the other advanced settings on `opera:settings`.
 
@@ -93,7 +93,7 @@ If you’re new to Chromium extension development, we’ve prepared a [fresh set
 
 ### What is not (yet) in Opera 15 for Computers?
 
-Opera 15 doesn’t include the M2 mail client. Not all current Opera customers use M2, so to simplify the UI even further and reduce the footprint of the program, we’ve split it out into a separate product. You’re cordially invited to grab yourself a freshly-baked copy of [Opera Mail](http://www.opera.com/computer/mail), which deals with multiple accounts, mailing lists and includes an RSS reader.
+Opera 15 doesn’t include the M2 mail client. Not all current Opera customers use M2, so to simplify the UI even further and reduce the footprint of the program, we’ve split it out into a separate product. You’re cordially invited to grab yourself a freshly-baked copy of [Opera Mail](https://www.opera.com/computer/mail), which deals with multiple accounts, mailing lists and includes an RSS reader.
 
 `getUserMedia` isn’t hooked up yet in Opera 15 and will be come back in a future release. W3C Geolocation is similarly dropped for the time being. It’s a feature most used with mobile browsers, hence it’s included in Opera  for Android. It will of course return in a future release.
 

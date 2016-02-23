@@ -14,7 +14,7 @@ license: cc-by-3.0
 <ul>
 <li><a href="https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An introduction to meta viewport and @viewport</a></li>
 <li><a href="http://dev.w3.org/csswg/css-device-adapt/">CSS Device Adaptation</a></li>
-<li>Web specs supported in <a href="http://www.opera.com/docs/specs/presto27/">Presto 2.7</a> (currently in Opera Mobile 11), <a href="http://www.opera.com/docs/specs/presto28/">Presto 2.8</a></li>
-<li><a href="http://www.opera.com/docs/specs/productspecs/">Web specs support in Opera products</a></li>
-<li><a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator 11</a> (updated link)</li>
+<li>Web specs supported in <a href="https://www.opera.com/docs/specs/presto27/">Presto 2.7</a> (currently in Opera Mobile 11), <a href="https://www.opera.com/docs/specs/presto28/">Presto 2.8</a></li>
+<li><a href="https://www.opera.com/docs/specs/productspecs/">Web specs support in Opera products</a></li>
+<li><a href="https://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator 11</a> (updated link)</li>
 </ul>

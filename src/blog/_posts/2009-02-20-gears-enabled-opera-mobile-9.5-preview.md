@@ -13,8 +13,8 @@ license: os-asa
 
 It’s here for historical purposes only. Download the [latest version of Opera][1] or see what’s coming soon in [Opera.Next][2].
 
-[1]: http://www.opera.com/browser/
-[2]: http://www.opera.com/browser/next/
+[1]: https://www.opera.com/browser/
+[2]: https://www.opera.com/browser/next/
 
 We’re happy to announce our Opera Mobile 9.5 technology preview with support for [Gears][3], a Google open source project that enables more powerful web applications. Besides this Opera Mobile 9.5 technology preview, Gears is currently available for Firefox 1.5+, IE 6.0+, Internet Explorer Mobile 4.01+, Safari 3.1.1, and Android.
 

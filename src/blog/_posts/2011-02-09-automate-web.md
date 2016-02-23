@@ -14,7 +14,7 @@ license: cc-by-3.0
 
 <p>The web helps us manage interactions and exchange messages. In many cases, these interactions happen from machine to machine. Sometimes we (humans) become the machine. If you have been working in a web agency, you know that. How many hours did you spend testing a website? Browsing each page one by one to check if everything was working accordingly to the notebook. How many times did you have to repeat the same process for checking the Web site for each release, each version of the back-end before pushing the site on production?</p>
 
-<p>Today, <a href="https://dev.opera.com/author/47773442">Stuart Knightley</a> published an article on <a href="https://dev.opera.com/articles/view/opera-watir-tutorial/">how to use OperaWatir</a>. <a href="http://www.opera.com/developer/tools/operawatir/">OperaWatir</a> is a tool to control the Opera browser with <a href="http://www.ruby-lang.org/">Ruby</a> scripts. Opera has been using OperaWatir for <a href="http://my.opera.com/core/blog/2009/03/06/test-automation-with-operawatir">testing the implementation</a> of our browser engine on many different platforms. This tool can be used in other contexts.</p>
+<p>Today, <a href="https://dev.opera.com/author/47773442">Stuart Knightley</a> published an article on <a href="https://dev.opera.com/articles/view/opera-watir-tutorial/">how to use OperaWatir</a>. <a href="https://www.opera.com/developer/tools/operawatir/">OperaWatir</a> is a tool to control the Opera browser with <a href="http://www.ruby-lang.org/">Ruby</a> scripts. Opera has been using OperaWatir for <a href="http://my.opera.com/core/blog/2009/03/06/test-automation-with-operawatir">testing the implementation</a> of our browser engine on many different platforms. This tool can be used in other contexts.</p>
 
 <p>Computers are good for repetitive tasks, let&#8217;s use them.</p>
 
@@ -60,4 +60,4 @@ license: cc-by-3.0
 
 <h3 id="what_about_you">What about you?</h3>
 
-<p>Tell us in the comments or on your blog about the way you are using or will use <a href="http://www.opera.com/developer/tools/operawatir/" title="OperaWatir | Opera Developer Tools">OperaWatir</a>. Be creative and do not lose time with repetitive tasks. </p>
+<p>Tell us in the comments or on your blog about the way you are using or will use <a href="https://www.opera.com/developer/tools/operawatir/" title="OperaWatir | Opera Developer Tools">OperaWatir</a>. Be creative and do not lose time with repetitive tasks. </p>

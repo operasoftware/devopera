@@ -12,8 +12,8 @@ license: cc-by-3.0
 
 This morning, we’ve spun out [Opera 16][1] stable from our [Opera Next][2] stream.
 
-[1]: http://www.opera.com/computer/
-[2]: http://www.opera.com/computer/next
+[1]: https://www.opera.com/computer/
+[2]: https://www.opera.com/computer/next
 
 Some of the bigger changes include advanced settings in [opera:flags][3], auto-fill support for forms, Geolocation support, start page options (e.g. you can disable Discover content preloading), and an engine update to Chromium 29 (Opera 15 was on Chromium 28).
 
@@ -35,5 +35,5 @@ To celebrate this release and the milestone of 300 extensions for Opera 15 and h
 
 [Give it a spin][10] and let us know what you think! And if you’re curious about what’s in the pipeline, check out our [Developer stream][11], which contains a lot of the features you’ll find in upcoming Opera versions.
 
-[10]: http://www.opera.com/computer/
-[11]: http://www.opera.com/developer/
+[10]: https://www.opera.com/computer/
+[11]: https://www.opera.com/developer/

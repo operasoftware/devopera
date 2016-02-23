@@ -44,9 +44,9 @@ In order to test this out, we have prepared Opera Mobile Emulator Labs builds wi
 - [Opera Mobile Emulator Labs build for Windows][9]
 - [Opera Mobile Emulator Labs build for Linux][10]
 
-[8]: http://www.opera.com/download/get.pl?id=34627&sub=true&nothanks=yes&location=360
-[9]: http://www.opera.com/download/get.pl?id=34629&sub=true&nothanks=yes&location=360
-[10]: http://www.opera.com/download/get.pl?id=34628&sub=true&nothanks=yes&location=360
+[8]: https://www.opera.com/download/get.pl?id=34627&sub=true&nothanks=yes&location=360
+[9]: https://www.opera.com/download/get.pl?id=34629&sub=true&nothanks=yes&location=360
+[10]: https://www.opera.com/download/get.pl?id=34628&sub=true&nothanks=yes&location=360
 
 ## Which prefixes are affected? {#whichones}
 

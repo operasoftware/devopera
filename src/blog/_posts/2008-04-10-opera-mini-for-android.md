@@ -13,7 +13,7 @@ license: os-asa
 
 This article is obsolete/out of date, so should no longer be treated as a current or reliable source of information. You can download the latest version of Opera Mini for Android, and find documentation and technical specs, at our [Opera for Android][1] page.
 
-[1]: http://www.opera.com/mobile/android/
+[1]: https://www.opera.com/mobile/android/
 
 This article takes a look at one of Opera’s latest and greatest projects - the creation of an Opera Mini version that will run on Google’s Android open mobile development platform. Over the course of the article, we’ll explain why we created it, how, challenges we faced, and how you can try it out for yourself. We’d like to encourage you to try it out, and give us as much feedback as you possibly can. Enjoy!
 

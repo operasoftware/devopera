@@ -13,7 +13,7 @@ license: cc-by-3.0
 
 Back in the Presto days, we released several versions of [OperaPrestoDriver](https://github.com/operasoftware/operaprestodriver) (formerly known as OperaDriver), a WebDriver implementation for running automated tests on Presto-based Opera instances on desktop and Android. After we switched our Opera for desktop and Opera for Android products to run on Chromium/Blink, such a WebDriver implementation was missing — until today, that is!
 
-[OperaChromiumDriver](https://github.com/operasoftware/operachromiumdriver) is a WebDriver implementation derived from [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) and adapted by [Opera](http://www.opera.com/) that enables programmatic automation of Chromium-based Opera products for the desktop and Android platforms. This initial beta release of OperaChromiumDriver can be used on Chromium-based versions of Opera starting from version 26 onward.
+[OperaChromiumDriver](https://github.com/operasoftware/operachromiumdriver) is a WebDriver implementation derived from [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) and adapted by [Opera](https://www.opera.com/) that enables programmatic automation of Chromium-based Opera products for the desktop and Android platforms. This initial beta release of OperaChromiumDriver can be used on Chromium-based versions of Opera starting from version 26 onward.
 
 ## About WebDriver
 

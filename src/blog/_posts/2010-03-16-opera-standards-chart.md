@@ -11,14 +11,14 @@ tags:
 license: cc-by-3.0
 ---
 
-<p class="note">Update: see the <a href="http://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
+<p class="note">Update: see the <a href="https://www.opera.com/docs/specs/productspecs/">latest browser support chart listing web standards support for Opera desktop, Opera Mobile and Opera Mini listed here</a>.</p>
 
 <p>Knowing the capabilities of each platform makes a huge difference in creating a great user experience across all platforms and devices. Many of you might be wondering about the capabilities supported on Opera Desktop, Mobile and Mini and how they differ from one another in that regard. We thought it would be nice to provide you with a comparative list of standards support across our three browsers.</p>
 <p>
 Opera 10.5x for Desktop runs on the Presto 2.5 rendering engine, while Opera Mini 5 and Opera Mobile 10 are running on Presto 2.4.
 </p>
 <p>
-For an engine-specific (and more exhaustive) overview of our standards support, please check out <a href="http://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="http://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a>.
+For an engine-specific (and more exhaustive) overview of our standards support, please check out <a href="https://www.opera.com/docs/specs/presto25/">Web specifications supported in Opera Presto 2.5</a> and <a href="https://www.opera.com/docs/specs/presto24/">Opera Presto 2.4</a>.
 </p>
 
 <figure block="figure">
@@ -33,7 +33,7 @@ For an engine-specific (and more exhaustive) overview of our standards support, 
 </thead>
 <tbody>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/#css">CSS3</a> general</td>
+<td><a href="https://www.opera.com/docs/specs/presto25/#css">CSS3</a> general</td>
 <td></td>
 <td></td>
 <td></td>
@@ -111,7 +111,7 @@ For an engine-specific (and more exhaustive) overview of our standards support, 
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/css/transitions/">CSS3 Transitions</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -171,7 +171,7 @@ For an engine-specific (and more exhaustive) overview of our standards support, 
 <td><img src="{{ page.id }}/delete.png" alt="not supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/css/transforms/">CSS3 2D Transforms</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -237,7 +237,7 @@ For an engine-specific (and more exhaustive) overview of our standards support, 
 <td><img src="{{ page.id }}/accept.png" alt="supported" /></td>
 </tr>
 <tr>
-<td><a href="http://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
+<td><a href="https://www.opera.com/docs/specs/presto25/html5/">HTML5</a></td>
 <td></td>
 <td></td>
 <td></td>

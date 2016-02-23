@@ -50,7 +50,7 @@ Once MicroEmulator is launched, go to _Options > Select device._ Select _Resizab
 
 ## Get Opera Mini
 
-Go to the [Opera Mini download page](http://www.opera.com/mobile/download/versions/), select “Opera Mini 8” and click on “View download link”. Then choose _opera-mini-latest-advanced-en.jar_ to start the download.
+Go to the [Opera Mini download page](https://www.opera.com/mobile/download/versions/), select “Opera Mini 8” and click on “View download link”. Then choose _opera-mini-latest-advanced-en.jar_ to start the download.
 
 ## Running Opera Mini inside MicroEmulator
 

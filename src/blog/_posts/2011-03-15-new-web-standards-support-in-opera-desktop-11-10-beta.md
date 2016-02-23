@@ -14,7 +14,7 @@ license: cc-by-3.0
 <h3>So many new features!</h3>
 
 <p>
-This is a season of plenty. Recently, we already announced an <a href="http://labs.opera.com/news/2011/02/22/">HTML5 parser labs build</a>, and a <a href="http://labs.opera.com/news/2011/02/28/">WebGL and Hardware acceleration labs build</a>. And now, we are happy to bring you the <a href="http://www.opera.com/browser/next/">Opera desktop 11.10 beta</a>, which includes support for several new web standards goodies. Let&#39;s take a look.
+This is a season of plenty. Recently, we already announced an <a href="http://labs.opera.com/news/2011/02/22/">HTML5 parser labs build</a>, and a <a href="http://labs.opera.com/news/2011/02/28/">WebGL and Hardware acceleration labs build</a>. And now, we are happy to bring you the <a href="https://www.opera.com/browser/next/">Opera desktop 11.10 beta</a>, which includes support for several new web standards goodies. Let&#39;s take a look.
 </p>
 
 <h4>Multi-column text layouts</h4>

@@ -10,7 +10,7 @@ license: os-asa
 
 **Note:** the features covered in this article are now available in a much more stable form in our latest [Opera Next][1] release.
 
-[1]: http://www.opera.com/browser/next/
+[1]: https://www.opera.com/browser/next/
 
 A long time ago, in an office far far away… Opera released a custom build showing an implementation of a [3D canvas context][2]. Now, more than 3 years later, we are releasing the first public build with a standards-based 3D Canvas implementation using [WebGL][3] for Windows.
 

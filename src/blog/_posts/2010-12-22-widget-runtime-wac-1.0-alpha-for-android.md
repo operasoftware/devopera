@@ -16,7 +16,7 @@ This build can be run on any Android 2.1+ device, and it allows widgets to acces
 
 To get started, grab the [Android build][1]. The build comes with the following widgets preinstalled:
 
-[1]: http://www.opera.com/download/get.pl?sub=++++&id=33389&location=270&nothanks=yes
+[1]: https://www.opera.com/download/get.pl?sub=++++&id=33389&location=270&nothanks=yes
 
 - Chicken Quake (WAC 1.0, Accelerometer API)
 - Level Tool (WAC 1.0, Accelerometer API)
@@ -40,7 +40,7 @@ For more details on how to develop WAC 1.0 widgets, we refer to the [WAC 1.0 spe
 
 This build supports remote debugging via [Opera Dragonfly][5] ; please refer to [Dev.Opera][6] for more instructions.
 
-[5]: http://www.opera.com/dragonfly/
+[5]: https://www.opera.com/dragonfly/
 [6]: https://dev.opera.com/articles/view/remote-debugging-of-widgets-on-mobile-devices/
 
 Play with the build, try to create your own WAC 1.0 widgets and let us know what you think on the [Opera Widgets forum][7].
@@ -53,6 +53,6 @@ Also, we’d like to share our intended roadmap with you: we plan to release a b
 
 There is a press release available as well: [Opera releases WAC-ready widget runtime for Android][8]
 
-[8]: http://www.opera.com/press/releases/2010/12/22/
+[8]: https://www.opera.com/press/releases/2010/12/22/
 
 Finally, we’d like to thank all the Opera teams who contributed to this release — you guys rock!

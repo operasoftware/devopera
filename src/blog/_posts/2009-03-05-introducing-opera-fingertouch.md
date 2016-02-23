@@ -15,7 +15,7 @@ Today we introduce **Fingertouch**, a technology designed to make interacting wi
 
 To see Fingertouch in action today, [download the new beta version of Opera Mobile for Symbian UiQ][1].
 
-[1]: http://www.opera.com/download/get.pl?sub=+devices+&mobile=1&id=32030&location=270&nothanks=true
+[1]: https://www.opera.com/download/get.pl?sub=+devices+&mobile=1&id=32030&location=270&nothanks=true
 
 We’d love to hear what you think about Fingertouch — we want to make it as useful as possible, so tell us what you think and ask questions on our [Mobile forums][2].
 
@@ -32,7 +32,7 @@ When loading a Web page made for a PC screen with Opera Mobile you will see a zo
 
 This challenge led to us creating Fingertouch. The first realization we had was that we needed to give users a lot more feedback when they hit something on a Web page. We chose to zoom in on the elements in question so it is clear that they are being focused on. The user then needs to click the element they want to select again to complete the selection process, which results in a nice smooth “fly out” animation to indicate success. You’ll get more of a feel for this by watching the video or trying [the build][3] out, but the screenshots below give you an idea.
 
-[3]: http://www.opera.com/download/get.pl?sub=+devices+&mobile=1&id=32030&location=270&nothanks=true
+[3]: https://www.opera.com/download/get.pl?sub=+devices+&mobile=1&id=32030&location=270&nothanks=true
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/zoom01.jpg" alt="A sample page in UIQ">

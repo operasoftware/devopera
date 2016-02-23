@@ -24,7 +24,7 @@ license: cc-by-3.0
 <li><a href="https://dev.opera.com/articles/view/introduction-html5-video/">Everything you need to know about HTML5 video and audio</a></li>
 <li><a href="https://dev.opera.com/articles/view/accessible-html5-video-with-javascripted-captions/">Accessible HTML5 Video with JavaScripted captions</a> (transcribed video demo)</li>
 
-<li><a href="http://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report</li>
+<li><a href="https://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report</li>
 <li><a href="http://people.opera.com/danield/css3/vangogh/">Media Queries Adaptive Content (Van Gogh example)</a> (narrow your browser window)</li>
 <li><a href="http://my.opera.com/ODIN/blog/screencast-mobile-web-development-techniques">Screencast: &quot;Mobile web development techniques&quot;</a> (18 mins)</li>
 <li><a href="http://www.peachpit.com/articles/article.aspx?p=1604236">Flexible Web Layouts with CSS3 Media Queries</a> tutorial</li>

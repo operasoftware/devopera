@@ -69,7 +69,7 @@ You can of course also query for sites from the redesigned navigation bar on top
 
 The red O button has moved to the top right of the screen (unless you put the Navigation bar at the bottom), just like in other Android applications, and it toggles a menu with [advanced options][11] such as Sharing, Find in Page, Downloads, Settings, and more.
 
-[11]: http://www.opera.com/help/mobile
+[11]: https://www.opera.com/help/mobile
 
 If you miss an Exit button or want to go back more than one page in the tab’s History, long-press the back button. To save a page to read off-line, hit the + icon at the left of the address bar.
 

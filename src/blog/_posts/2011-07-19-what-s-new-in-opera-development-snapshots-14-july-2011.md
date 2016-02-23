@@ -9,7 +9,7 @@ license: cc-by-3.0
 ---
 
 <p>Woo, <a href="http://my.opera.com/desktopteam/blog/2011/07/14/javascript-on-a-diet">we got some dramatic big updates this time</a>! Let&#39;s see what&#39;s new.</p>
-<p>As usual, your <a href="http://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.9.<b>181</b> Version/12.00&quot; under <i>Browser Identification</i>).</p>
+<p>As usual, your <a href="https://www.opera.com/browser/next/">Opera Next</a> should already have this update (checking <code>opera:about</code> should give you &quot;Presto/2.9.<b>181</b> Version/12.00&quot; under <i>Browser Identification</i>).</p>
 <ul>
 <li>
 	<h3>6-7% reduction in memory consumption</h3><p>The object model was completely rewritten which increases the overall performance and reduces Carakan&#x2019;s memory usage! Woo!</p></li>
