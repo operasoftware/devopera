@@ -5,7 +5,6 @@ authors:
 intro: 'From Opera 36, we are introducing a brand new look for the startpage. Let us take a look at what this means for theme developers and what you cando to tweak your theme even further.'
 tags:
 - themes
-cover: jpg
 license: cc-by-3.0
 ---
 
@@ -55,10 +54,10 @@ Now the image here is very light and provides very little contrast to the text, 
 
 
     [Start Page]
-    Background             = background.jpg
-    Position             = center
-    Use Overlay             = false;
-    Title Text Color     = #000000
+    Background				= background.jpg
+    Position				= center
+    Use Overlay				= false;
+    Title Text Color		= #000000
     
 This gives us the following result:
 
