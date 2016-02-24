@@ -44,7 +44,7 @@ Once you disable the overlay, it is up to you to make sure all the text and icon
 Let’s take the example of the following of a theme with a disabled overlay.
 
 <figure block="figure" mod="right" style="margin-left:20px">
-    <img elem="media" src="{{ page.id }}/birdtheme-disabled.png" alt="Bird theme with disabled overlay">
+    <img elem="media" src="{{ page.id }}/birdtheme-disabled.jpg" alt="Bird theme with disabled overlay">
 </figure>
 
 Now the image here is very light and provides very little contrast to the text, which is white in color. Let’s make it dark to provide it proper contrast. Let’s write the following:
@@ -58,7 +58,7 @@ Now the image here is very light and provides very little contrast to the text, 
 This gives us the following result:
 
 <figure block="figure" mod="right" style="margin-left:20px">
-    <img elem="media" src="{{ page.id }}/birdtheme-black.png" alt="Bird theme with black text and icon colors">
+    <img elem="media" src="{{ page.id }}/birdtheme-black.jpg" alt="Bird theme with black text and icon colors">
 </figure>
 
 This is much better. However, you could go ahead and provide more style which matches the color scheme (rather than the standard black) while still providing good contrast. Let’s change the text color like so:
@@ -68,7 +68,7 @@ This is much better. However, you could go ahead and provide more style which ma
 This results in the image having good contrast and matching the color scheme.
 
 <figure block="figure" mod="right" style="margin-left:20px">
-    <img elem="media" src="{{ page.id }}/birdtheme-main.png" alt="Bird theme with text and icon colors matching the color scheme">
+    <img elem="media" src="{{ page.id }}/birdtheme-main.jpg" alt="Bird theme with text and icon colors matching the color scheme">
 </figure>
 
 Keep in mind that, despite the name, using `Title Text Color` will affect the color of not just the text, but also the icons on the start page.
