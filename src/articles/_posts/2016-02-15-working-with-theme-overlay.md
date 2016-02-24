@@ -1,8 +1,8 @@
 ---
-title: 'The new start page: working with the theme overlay'
+title: 'The New Start Page: Working With the Theme Overlay'
 authors:
 - shwetank-dixit
-intro: 'From Opera 36, we are introducing a brand new look for the start page. Let us take a look at what this means for theme developers and what you can do to tweak your theme even further.'
+intro: 'From Opera 36, we are introducing a brand new look for the start page. Let’s take a look at what this means for theme developers and what you can do to tweak your theme even further.'
 tags:
 - themes
 license: cc-by-3.0
