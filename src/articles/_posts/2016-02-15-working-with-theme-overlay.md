@@ -24,8 +24,9 @@ However, if you would like the overlay not to be applied to your background imag
 
 ## Disabling the theme overlay
 
-<figure block="figure" mod="right" style="margin-left:20px">
+<figure block="figure">
     <img elem="media" src="{{ page.id }}/theme-comparison.gif" alt="Theme comparison">
+    <figcaption>Theme with overlay enabled and disabled</figcaption>
 </figure>
 
 We have introduced a new option in the Persona.ini file. You can now use `Use Overlay` to tell Opera whether to have it enabled or not. If you don’t want the overlay, simply write
@@ -43,7 +44,7 @@ Once you disable the overlay, it is up to you to make sure all the text and icon
 
 Let’s take the example of the following of a theme with a disabled overlay.
 
-<figure block="figure" mod="right" style="margin-left:20px">
+<figure block="figure">
     <img elem="media" src="{{ page.id }}/birdtheme-disabled.jpg" alt="Bird theme with disabled overlay">
 </figure>
 
@@ -57,7 +58,7 @@ Now the image here is very light and provides very little contrast to the text, 
 
 This gives us the following result:
 
-<figure block="figure" mod="right" style="margin-left:20px">
+<figure block="figure">
     <img elem="media" src="{{ page.id }}/birdtheme-black.jpg" alt="Bird theme with black text and icon colors">
 </figure>
 
@@ -67,7 +68,7 @@ This is much better. However, you could go ahead and provide more style which ma
 
 This results in the image having good contrast and matching the color scheme.
 
-<figure block="figure" mod="right" style="margin-left:20px">
+<figure block="figure">
     <img elem="media" src="{{ page.id }}/birdtheme-main.jpg" alt="Bird theme with text and icon colors matching the color scheme">
 </figure>
 
