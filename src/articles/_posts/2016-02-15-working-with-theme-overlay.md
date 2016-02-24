@@ -26,7 +26,7 @@ However, if you would like the overlay not to be applied to your background imag
 
 <figure block="figure">
     <img elem="media" src="{{ page.id }}/theme-comparison.gif" alt="Theme comparison">
-    <figcaption>Theme with overlay enabled and disabled</figcaption>
+    <figcaption elem="caption">Theme with overlay enabled and disabled</figcaption>
 </figure>
 
 We have introduced a new option in the Persona.ini file. You can now use `Use Overlay` to tell Opera whether to have it enabled or not. If you don’t want the overlay, simply write
