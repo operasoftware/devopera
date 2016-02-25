@@ -80,4 +80,4 @@ In the above image, you can notice how the icons have the color applied to it to
 
 The new start page for Opera features an all new re-design. This features a new overlay for images which makes it work with a lot of images, even *busy* images, while still providing readability for users. Theme designers get greater control over how they want their background images to be displayed.
 
-If they want to disable the overlay, they can use `User Overlay = false` in the `Persona.ini` file. If overlay is disabled, then theme designers should keep in mind readability for text and icons on the start page by specifying an appropriate color for them using `Title Text Color` in the `Persona.ini` file.
+If they want to disable the overlay, they can use `Use Overlay = false` in the `Persona.ini` file. If overlay is disabled, then theme designers should keep in mind readability for text and icons on the start page by specifying an appropriate color for them using `Title Text Color` in the `Persona.ini` file.
