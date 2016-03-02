@@ -6,6 +6,7 @@ intro: 'There is an explosion of electronic devices nowadays. What if we could c
 tags:
 - bluetooth
 - physicalweb
+cover: png
 license: cc-by-3.0
 ---
 
