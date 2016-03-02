@@ -5,19 +5,19 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 ## Environment setup
 
 1. Install Bundler by running `gem install bundler` on the command line.
-2. Download and install [Node.js](http://nodejs.org/) or [io.js](https://iojs.org/) with the default installer options.
+2. Download and install [Node.js](http://nodejs.org/) with the default installer options.
 3. Clone the project by running `git clone git@github.com:operasoftware/devopera.git` and `cd` into the `devopera` folder.
 4. Install Jekyll, Sass, and all needed gems by running `bundle install`.
 5. Run `npm install` inside the `devopera` folder.
 6. Run `npm install gulp -g` to install Gulp globally.
 
-Please install [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`.editorconfig`](.editorconfig) file.
+Please install the [EditorConfig](http://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`.editorconfig`](.editorconfig) file.
 
 ## Environment update
 
 If you’ve set up all the above at some point in the past, and want to update your installation, these are the steps to follow:
 
-1. Run `sudo gem update` to install the latest Ruby gems.
+1. Run `gem update` to install the latest Ruby gems.
 2. Run `npm install` inside the `devopera` folder.
 
 ## Development
