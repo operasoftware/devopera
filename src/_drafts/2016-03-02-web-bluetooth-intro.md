@@ -139,11 +139,7 @@ If you don’t have a device which exposes GATT services but still want to play 
 
 Different devices will expose different services and have documentation describing how to access those services. For example, the BB-8 Toy by Sphero has some of their documentation on how to do that [over here](https://github.com/orbotix/DeveloperResources/blob/master/docs/Sphero_API_1.50.pdf).
 
-Using this, it’s possible to create a [web app](https://operasoftware.github.io/bb8/) that can control the BB-8 toy! See it in action below.
-
-TODO(pepelsbey): **INSERT VIDEO OF BB-8**
-
-Check out the [code for it](https://github.com/operasoftware/bb8).
+Using this, it’s possible to create a [web app](https://operasoftware.github.io/bb8/) that can control the BB-8 toy! Check out the [code for it](https://github.com/operasoftware/bb8).
 
 Others have made web apps to [control drones](https://github.com/poshaughnessy/web-bluetooth-parrot-drone), [heart-rate sensors](https://github.com/WebBluetoothCG/demos/blob/gh-pages/heart-rate-sensor), [and more](https://github.com/WebBluetoothCG/demos). If you make a demo, be sure to add it to the list!
 
