@@ -18,7 +18,9 @@ license: cc-by-3.0
 	</video>
 </figure>
 
-There is an explosion of electronic devices nowadays, and with many of them, it's possible to interact with them via [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy), or BLE. However, installing a separate native app for interacting with every single bluetooth gadget is impractical. What if we could communicate with them through a web browser? The Web Bluetooth API aims to do exactly that with a promise-based API, which allows you to interact with many BLE enabled devices.
+There is an explosion of electronic devices nowadays, and with many of them, it's possible to interact with them via [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy), or BLE. However, installing a separate app for interacting with every single bluetooth gadget is impractical. What if we could communicate with them through a web browser? The Web Bluetooth API aims to do exactly that with a promise-based API, which allows you to interact with many BLE enabled devices. This is also great for companies intending to launch new gadgets, as instead of spending time and money on developing a separate app for multiple platforms, they can offer interaction with their gadget in a cross-platform manner, as it could be controlled directly from a web page.
+
+## The Web Bluetooth API
 
 So far, the ability to communicate with BLE devices has been possible only for native apps. The Web Bluetooth API aims to change that and brings this to web browsers as well. The [specification for the Web Bluetooth API](https://webbluetoothcg.github.io/web-bluetooth/) is not final yet, and you’re free to [share your feedback](https://github.com/WebBluetoothCG/web-bluetooth/issues) on what you would want in it as well.
 
