@@ -2,7 +2,7 @@
 title: 'An introduction to the Web Bluetooth API'
 authors:
 - shwetank-dixit
-intro: 'Let’s take a look at the Web Bluetooth API.'
+intro: 'There is an explosion of electronic devices nowadays. What if we could communicate with them through a web browser? The Web Bluetooth API allows you to interact with many Bluetooth Low Energy (BLE) enabled devices.'
 tags:
 - bluetooth
 - physicalweb
@@ -10,6 +10,13 @@ license: cc-by-3.0
 ---
 
 ## Introduction
+
+<figure block="figure" mod="right">
+	<video elem="media" controls cover="{{ page.id }}/video.jpg" width="360" height="640">
+		<source src="{{ page.id }}/video.mp4" type="video/mp4">
+		<source src="{{ page.id }}/video.webm" type="video/webm">
+	</video>
+</figure>
 
 There is an explosion of electronic devices nowadays. What if we could communicate with them through a web browser? The Web Bluetooth API aims to do exactly that with a promise-based API, which allows you to interact with many Bluetooth Low Energy (BLE) enabled devices.
 
