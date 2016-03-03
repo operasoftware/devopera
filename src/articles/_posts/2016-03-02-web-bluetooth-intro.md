@@ -119,12 +119,8 @@ Writing values would require entering the appropriate values to be parsed as a `
 		console.log('id:', device.id);
 		return device.gatt.connect();
 	})
-	.then(server => {
-		return server.getPrimaryService('heart_rate');
-	})
-	.then(service => {
-		return service.getCharacteristic('heart_rate_control_point');
-	})
+	.then(server => server.getPrimaryService('heart_rate'))
+	.then(service => service.getCharacteristic('heart_rate_control_point'))
 	.then(characteristic => {
 		const resetEnergyExpended = new Uint8Array([1]);
 		// A value of `1` is a signal to reset it.
