@@ -151,7 +151,7 @@ Others have made web apps to [control drones](https://github.com/poshaughnessy/w
 
 The implementation of the Web Bluetooth API in Chromium in definitely not complete yet. Check out the [list of issues regarding implementation](https://github.com/WebBluetoothCG/web-bluetooth/issues) in the spec. One of the most promising things to look forward to is the capability for websites to scan for [nearby BLE advertisements themselves](https://github.com/WebBluetoothCG/web-bluetooth/issues/191). Another thing to look out for would be [helper functions](https://github.com/WebBluetoothCG/web-bluetooth/issues/126) to allow developers to more easily read values.
 
-It would also be cool for websites to access the current RSSI (Received Signal Strength Indicator) and txPower levels, as well as any associated URLs shared through the [Eddystone protocol](https://en.wikipedia.org/wiki/Eddystone_(Google). All these exciting things are yet to come.
+It would also be cool for websites to access the current RSSI (Received Signal Strength Indicator) and txPower levels, as well as any associated URLs shared through the [Eddystone protocol](https://en.wikipedia.org/wiki/Eddystone_%28Google%29). All these exciting things are yet to come.
 
 You can check out the [implementation status on various platforms](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md) as well as a hardware compatibility list. If using Android, we recommend using the latest version for best and most consistent results.
 
