@@ -8,7 +8,6 @@ tags:
 - offline
 - caching
 - javascript
-featured: featured
 cover: png
 license: cc-by-3.0
 ---
