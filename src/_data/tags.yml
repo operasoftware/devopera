@@ -29,6 +29,8 @@
   - extensions
   - themes
   - sidebar
+- hardware
+  - bluetooth
 - html:
   - forms
   - html5
@@ -61,7 +63,6 @@
   - v8
   - web-components
   - web-workers
-  - hardware
 - mobile:
   - android
   - firefox-os

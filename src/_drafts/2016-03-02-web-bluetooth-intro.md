@@ -4,8 +4,9 @@ authors:
 - shwetank-dixit
 intro: 'There is an explosion of electronic devices nowadays. What if we could communicate with them through a web browser? The Web Bluetooth API allows you to interact with many Bluetooth Low Energy (BLE) enabled devices.'
 tags:
+- javascript
+- hardware
 - bluetooth
-- physicalweb
 cover: png
 license: cc-by-3.0
 ---
