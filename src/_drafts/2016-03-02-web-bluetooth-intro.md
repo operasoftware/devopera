@@ -19,7 +19,7 @@ license: cc-by-3.0
 	</video>
 </figure>
 
-There is an explosion of electronic devices nowadays, and with many of them, it's possible to interact with them via [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy), or BLE. However, installing a separate app for interacting with every single bluetooth gadget is impractical. What if we could communicate with them through a web browser? The Web Bluetooth API aims to do exactly that with a promise-based API, which allows you to interact with many BLE enabled devices. This is also great for companies intending to launch new gadgets, as instead of spending time and money on developing a separate app for multiple platforms, they can offer interaction with their gadget in a cross-platform manner, as it could be controlled directly from a web page.
+There is an explosion of electronic devices nowadays, and with many of them, it’s possible to interact with them via [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy), or BLE. However, installing a separate app for interacting with every single bluetooth gadget is impractical. What if we could communicate with them through a web browser? The Web Bluetooth API aims to do exactly that with a promise-based API, which allows you to interact with many BLE enabled devices. This is also great for companies intending to launch new gadgets, as instead of spending time and money on developing a separate app for multiple platforms, they can offer interaction with their gadget in a cross-platform manner, as it could be controlled directly from a web page.
 
 ## The Web Bluetooth API
 
@@ -29,8 +29,8 @@ Right now, the Web Bluetooth API is in [Opera for Android beta](https://play.goo
 
 ## Some prerequisites
 
-* **HTTPS only**: The API only works on pages served over HTTPS. Most privacy-sensitive web APIs are now switching over to the HTTPS-only model, and this one is no exception.
-* **Requires user action**: We want to make sure that the API doesn’t work in the background without the user knowing about it. That is why methods in this API only work when called in response to a user action (like responding to a `click` event).
+- **HTTPS only**: The API only works on pages served over HTTPS. Most privacy-sensitive web APIs are now switching over to the HTTPS-only model, and this one is no exception.
+- **Requires user action**: We want to make sure that the API doesn’t work in the background without the user knowing about it. That is why methods in this API only work when called in response to a user action (like responding to a `click` event).
 
 ## Getting Basic Device Information
 
