@@ -15,7 +15,7 @@ license: cc-by-3.0
 ## Introduction
 
 <figure block="figure" mod="right">
-	<video elem="media" controls cover="{{ page.id }}/video.jpg" width="360" height="640">
+	<video elem="media" controls cover="{{ page.id }}/video.jpg" width="360" height="640" style="margin: 0 0 15px 15px;">
 		<source src="{{ page.id }}/video.mp4" type="video/mp4">
 		<source src="{{ page.id }}/video.webm" type="video/webm">
 	</video>
