@@ -76,7 +76,7 @@ Some devices may not list their services in the standardized list of GATT servic
 
 ## Reading and writing GATT services
 
-Once we have connected to a device, the next step is of course, to read some useful data from it. To do that, we need to connect to the device’s GATT server by using the method `gatt.connect()`. Let’s take our previous code sample and extend it. This is based on the [Battery Level Sample Code](https://googlechrome.github.io/samples/web-bluetooth/battery-level.html) demo, which you can also check out. (Note however that it uses the `connectGATT()` method which is deprecated.)
+Once we have connected to a device, the next step is of course, to read some useful data from it. To do that, we need to connect to the device’s GATT server by using the method `gatt.connect()`. Let’s take our previous code sample and extend it. This is based on the [Battery Level Sample Code](https://googlechrome.github.io/samples/web-bluetooth/battery-level.html) demo, which you can also check out (Note however that it uses the `connectGATT()` method which is deprecated from Chromium 50 onwards).
 
 	navigator.bluetooth.requestDevice({
 		filters: [{
@@ -85,7 +85,7 @@ Once we have connected to a device, the next step is of course, to read some use
 	}).then(device => {
 		console.log('Got device:', device.name);
 		console.log('id:', device.id);
-		return device.gatt.connect();
+		return device.gatt.connect(); // Chromium 49 and below use `connectGATT()` but from Chromium 50 it will use gatt.connect();
 	})
 	.then(server => {
 		console.log('Getting Battery Service…');
@@ -109,7 +109,7 @@ Once we have connected to a device, the next step is of course, to read some use
 
 Here we are reading the [standardized battery level GATT characteristic](https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.battery_level.xml). Keep in mind that the value in the end is given as a [`DataView`](https://docs.webplatform.org/wiki/javascript/DataView) object which then needs to be parsed correctly to get the final value.
 
-Writing values would require entering the appropriate values to be parsed as a `DataView` object as well. For example, for resetting the `enerygyExpended` field in a heart rate monitor, we can use the [`writeValue()`](https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevalue) method like so:
+Writing values would typically require entering the appropriate values to be parsed as a `BufferSource`, which are either an `ArrayBuffer` or a view onto an `ArrayBuffer` like a `DataView` object (You can see a [list of buffer source types](https://heycam.github.io/webidl/#idl-buffer-source-types)). For example, for resetting the `enerygyExpended` field in a heart rate monitor, we can use the [`writeValue()`](https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevalue) method like so:
 
 	navigator.bluetooth.requestDevice({
 		filters: [{
@@ -146,9 +146,9 @@ Others have made web apps to [control drones](https://github.com/poshaughnessy/w
 
 ## What’s to come
 
-The implementation of the Web Bluetooth API in Chromium in definitely not complete yet. Check out the [list of issues regarding implementation](https://github.com/WebBluetoothCG/web-bluetooth/issues) in the spec. One of the most promising things to look forward to is the capability for websites to scan for [nearby BLE advertisements themselves](https://github.com/WebBluetoothCG/web-bluetooth/issues/191). Another thing to look out for would be [helper functions](https://github.com/WebBluetoothCG/web-bluetooth/issues/126) to allow developers to more easily read values.
+The implementation of the Web Bluetooth API in Chromium in definitely not complete yet. Check out the [list of issues regarding implementation](https://github.com/WebBluetoothCG/web-bluetooth/issues) in the spec. One of the most promising things to look forward to is the capability for websites to scan for [nearby BLE advertisements themselves](https://github.com/WebBluetoothCG/web-bluetooth/issues/191).
 
-It would also be cool for websites to access the current RSSI (Received Signal Strength Indicator) and txPower levels, as well as any associated URLs shared through the [Eddystone protocol](https://en.wikipedia.org/wiki/Eddystone_%28Google%29). All these exciting things are yet to come.
+It would also be cool for websites to access the current RSSI (Received Signal Strength Indicator) and txPower levels, as well as any associated URLs shared through the [Eddystone protocol](https://en.wikipedia.org/wiki/Eddystone_%28Google%29) without the need to pair with each individual device. All these exciting things are yet to come.
 
 You can check out the [implementation status on various platforms](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md) as well as a hardware compatibility list. If using Android, we recommend using the latest version for best and most consistent results.
 
