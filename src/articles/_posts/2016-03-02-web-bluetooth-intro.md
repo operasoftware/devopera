@@ -32,7 +32,7 @@ Right now, the Web Bluetooth API is in [Opera for Android beta](https://play.goo
 ## Some prerequisites
 
 - **HTTPS only**: The API only works on pages served over HTTPS. Most privacy-sensitive web APIs are now switching over to the HTTPS-only model, and this one is no exception.
-- **Requires user action**: We want to make sure that the API doesn’t work in the background without the user knowing about it. That is why methods in this API only work when called in response to a user action (like responding to a `click` event).
+- **Requires user action**: We want to make sure that the API doesn’t work in the background without the user knowing about it, which is why there is a prompt shown to user to choose which device to pair with. Additionally, we also don't want sites to show up this prompt straightaway without any user interaction. That is why methods in this API only work when called in response to a user action (like responding to a `click` event).
 
 ## Getting Basic Device Information
 
