@@ -96,7 +96,7 @@ license: cc-by-3.0
 <li><a href="https://dev.opera.com/articles/view/the-mobile-web-optimization-guide/">Mobile-friendly: The mobile web optimization guide</a> (by Yours Truly)</li>
 <li>Testing your mobile sites on desktop (Win/ Mac/ Linux) with <a href="https://www.opera.com/developer/tools/">Opera Mobile Emulator</a> (see <a href="https://dev.opera.com/articles/view/opera-mobile-10-widgets-mobile-emulator-desktop/">instructions</a>)</li>
 <li>
-<a href="https://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report (this <a href="https://www.opera.com/smw">monthly report</a> has breakdowns by territory of most-vsited sites and handsets)</li>
+<a href="https://www.opera.com/smw/2009/10/">1.6 billion people are online, yet more than 4 billion people — two out of every three people on Earth — have a mobile phone or access to one.</a> Opera State of the Mobile Web report (this <a href="https://www.opera.com/smw">monthly report</a> has breakdowns by territory of most-visited sites and handsets)</li>
 <li><a href="http://www.w3.org/TR/mwbp-wcag/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a> (If you design so people with disabilities can use your content, it has good side-effects for mobile users)</li>
 </ul>
 
@@ -112,4 +112,4 @@ license: cc-by-3.0
 
 
 
-<p>Personally, I found Over The Air to be the the best conference I&#39;ve attended this year in terms of delegate enthusiasm and how much I learned, so thanks to Jo Rabin, Dan Appelquist and the team for putting it on and inviting me to talk. I gave a copy of my HTML5 book to Sir Tim Berners-Lee who asked me to sign it, which I was thrilled by (&quot;Thanks for the Web. Bruce&quot;). The standout presentation for me was Bryan Rieger&#39;s <a href="http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu">Rethinking the Mobile Web</a>.</p>
+<p>Personally, I found Over The Air to be the best conference I&#39;ve attended this year in terms of delegate enthusiasm and how much I learned, so thanks to Jo Rabin, Dan Appelquist and the team for putting it on and inviting me to talk. I gave a copy of my HTML5 book to Sir Tim Berners-Lee who asked me to sign it, which I was thrilled by (&quot;Thanks for the Web. Bruce&quot;). The standout presentation for me was Bryan Rieger&#39;s <a href="http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu">Rethinking the Mobile Web</a>.</p>

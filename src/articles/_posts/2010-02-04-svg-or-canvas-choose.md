@@ -22,7 +22,7 @@ license: cc-by-nc-sa-3.0
 
 <h2 id="introduction">Introduction</h2>
 
-<p>New Web technologies are gaining support across browsers, with bridging solutions becoming available for those that don&apos;t, eg <a href="http://raphaeljs.com/">Raphaёl</a> for SVG, and <a href="http://code.google.com/p/explorercanvas/">ExCanvas</a> for Canvas. Even <a href="http://blogs.msdn.com/ie/archive/2010/02/01/w3c-svg-working-group-update-for-january-2010.aspx">Internet Explorer has started to flirt with SVG</a> (with support annouced for IE9), so we could see wider support in the future! This however causes a new problem to rear its ugly head &mdash; it has become harder to decide which technology is best for a new project.</p>
+<p>New Web technologies are gaining support across browsers, with bridging solutions becoming available for those that don&apos;t, eg <a href="http://raphaeljs.com/">Raphaёl</a> for SVG, and <a href="http://code.google.com/p/explorercanvas/">ExCanvas</a> for Canvas. Even <a href="http://blogs.msdn.com/ie/archive/2010/02/01/w3c-svg-working-group-update-for-january-2010.aspx">Internet Explorer has started to flirt with SVG</a> (with support announced for IE9), so we could see wider support in the future! This however causes a new problem to rear its ugly head &mdash; it has become harder to decide which technology is best for a new project.</p>
 
 <p><a href="https://html.spec.whatwg.org/multipage/the-canvas-element.html">HTML5 Canvas</a> and <a href="http://www.w3.org/TR/SVG/">SVG</a> are both Web technologies that allow you to create rich graphics inside the browser, but they are fundamentally different. In this article we explore those differences, giving you the knowledge needed to use SVG and Canvas effectively and appropriately.</p>
 
@@ -82,7 +82,7 @@ license: cc-by-nc-sa-3.0
 </ul>
 
 <p>The former is more established and is available in all the modern Web
-		browsers (again, with support annouced for IE9),
+		browsers (again, with support announced for IE9),
 		while the latter is in the early process of being defined, having only
 		a handful of experimental implementations.</p>
 

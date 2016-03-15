@@ -181,7 +181,7 @@ In [Figure 5](#backfacevis) above, the background color for both cards is transp
 
 #### Setting a transform-style {#transstyle}
 
-As with a paper drawing, three-dimensional transforms map three dimensions of coordinates into the two dimensions of a screen. By default, transformed objects behave as a single plane. To mimic depth and dimension, we need to explicitly change that behavior, with the the `transform-style` property. Valid values for the `transform-style` property are `flat` and `preserve-3d`. The default is `flat`.
+As with a paper drawing, three-dimensional transforms map three dimensions of coordinates into the two dimensions of a screen. By default, transformed objects behave as a single plane. To mimic depth and dimension, we need to explicitly change that behavior, with the `transform-style` property. Valid values for the `transform-style` property are `flat` and `preserve-3d`. The default is `flat`.
 
 In [Figure 6](#transformstyle) below, we have three objects whose positions have been translated in the z-direction. Their parent element has also been rotated slightly. When the value of `transform-style` — applied here to the parent element — is `preserve-3d`, we see that the transformation shows three elements in faux three dimensional space.
 

@@ -89,4 +89,4 @@ button.addEventListener(&#39;click&#39;,snapshot, false);</pre>
  	      age.value = &quot;&quot;;
  }</pre>
 
-<p>So there you have it. See the final <a href="http://www.experimenting.in/exp/gyroform.htm" target="_blank">demo of web forms which clear on shake</a> and look through the code. Once again, make sure to view this in a browser which supports device orientation, like our <a href="http://people.opera.com/richt/release/build/Opera_Mobile_11_LABS_device_orientation_preview_20110323.apk" target="_blank">experimental build of Opera Mobile for Android.</a>.</p>
+<p>So there you have it. See the final <a href="http://www.experimenting.in/exp/gyroform.htm" target="_blank">demo of web forms which clear on shake</a> and look through the code. Once again, make sure to view this in a browser which supports device orientation, like our <a href="http://people.opera.com/richt/release/build/Opera_Mobile_11_LABS_device_orientation_preview_20110323.apk" target="_blank">experimental build of Opera Mobile for Android.</a></p>

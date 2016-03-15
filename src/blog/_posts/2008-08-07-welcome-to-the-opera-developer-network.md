@@ -22,4 +22,4 @@ license: cc-by-3.0
 	<li><a href="https://www.opera.com/products/dragonfly/">Opera Dragonfly</a> - Opera’s developer tools</li>
 </ul>
 
-<p>We hope to add more as time goes on, such as overviews of what the Opera Core rendering engine supports, and different Opera technologies that relate to developers and designers.  The main reason that ODIN exists is to help you as a designer or developer, so if there is anything you think Opera can provide that wil help developing with Opera easier , or you just think it would be cool to have, then leave a note in the comments.</p>
+<p>We hope to add more as time goes on, such as overviews of what the Opera Core rendering engine supports, and different Opera technologies that relate to developers and designers.  The main reason that ODIN exists is to help you as a designer or developer, so if there is anything you think Opera can provide that will help developing with Opera easier , or you just think it would be cool to have, then leave a note in the comments.</p>

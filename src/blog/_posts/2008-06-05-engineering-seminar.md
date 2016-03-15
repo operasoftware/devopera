@@ -45,7 +45,7 @@ pages) in hardware.
 Rendering Opera in hardware also makes it possible to add visual effects
 without any additional CPU cost.</p>
 <p>This video shows a demo of Opera running fully hardware accelerated.
-The demo build used in this video is an interal Opera core technology
+The demo build used in this video is an internal Opera core technology
 reference build with hardware acceleration enabled.
 Hardware acceleration is still experimental and is not in any released
 or soon to be released products.

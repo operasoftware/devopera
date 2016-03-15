@@ -43,4 +43,4 @@ license: cc-by-3.0
 		</ul>
 	</li>
 </ul>
-<p>For those who need to make <abbr>EOT</abbr> files and don&#39;t run Windows, or do run Windows but, like me, can&#39;t get the cobwebbed <a href="http://www.microsoft.com/typography/web/embedding/weft3/">Microsoft WEFT conversion tool</a> to work, <a href="http://code.google.com/p/ttf2eot/">ttf2eot</a> is an command-line utility that does what it says on the tin.</p>
+<p>For those who need to make <abbr>EOT</abbr> files and don&#39;t run Windows, or do run Windows but, like me, can&#39;t get the cobwebbed <a href="http://www.microsoft.com/typography/web/embedding/weft3/">Microsoft WEFT conversion tool</a> to work, <a href="http://code.google.com/p/ttf2eot/">ttf2eot</a> is a command-line utility that does what it says on the tin.</p>

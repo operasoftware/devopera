@@ -165,7 +165,7 @@ This is the equivalent of `transform: scale3d(0.8, 0.5, 1)`. Because we are only
 	<figcaption elem="caption">Figure 11: A 300×300 pixel object after our scaling transform has been applied</figcaption>
 </figure>
 
-If we multiply this matrix by a coordinate vector `[150,150,1]`, ([Figure 12](#figure-12)), we get the our point’s new coordinates: `(120,75,1)`.
+If we multiply this matrix by a coordinate vector `[150,150,1]`, ([Figure 12](#figure-12)), we get our point’s new coordinates: `(120,75,1)`.
 
 <figure block="figure" id="figure-12">
 	<img elem="media" src="{{ page.id }}/9.png" alt="A scaling matrix where sx equals .8, sy equals .5, and sz equals 1 multiplied by the vector 150, 150, 1 produces coordinates of 120, 75, 1">

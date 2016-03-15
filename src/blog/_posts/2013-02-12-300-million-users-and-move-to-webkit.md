@@ -7,7 +7,7 @@ tags:
 license: cc-by-3.0
 ---
 
-On the same day as announcing that Opera has 300 million users, we’re also announcing that for all new products Opera will use WebKit as its rendering engine and V8 as its JavaScript engine. It’s built using the open-source Chromium browser as one of its components. Of course, a browser is much more than just a renderer and a JS engine, so this is primarily an “under the hood” change. Consumers will initially notice better site compatibilty, especially with mobile-facing sites — many of which have only been tested in WebKit browsers. The first product will be for Smartphones, which we’ll demonstrate at Mobile World Congress in Barcelona at the end of the month. Opera Desktop and other products will transition later.
+On the same day as announcing that Opera has 300 million users, we’re also announcing that for all new products Opera will use WebKit as its rendering engine and V8 as its JavaScript engine. It’s built using the open-source Chromium browser as one of its components. Of course, a browser is much more than just a renderer and a JS engine, so this is primarily an “under the hood” change. Consumers will initially notice better site compatibility, especially with mobile-facing sites — many of which have only been tested in WebKit browsers. The first product will be for Smartphones, which we’ll demonstrate at Mobile World Congress in Barcelona at the end of the month. Opera Desktop and other products will transition later.
 
 ### TL;DR
 

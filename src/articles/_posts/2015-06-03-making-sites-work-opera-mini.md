@@ -50,7 +50,7 @@ Opera Mini deliberately disables some CSS which would otherwise need to be conve
 
 Most notably, CSS `border-radius` isn’t rendered. CSS animations are similarly disabled, to preserve battery life.
 
-CSS gradients are also disabled. Ensure that, if you’re using a gradient as a backgound, that you also set a CSS color for the `background` that contrasts well with text. A common error is white text on a gradient and leaving the default white background unchanged; in Opera Mini this results in illegible white-on-white text. So, for example:
+CSS gradients are also disabled. Ensure that, if you’re using a gradient as a background, that you also set a CSS color for the `background` that contrasts well with text. A common error is white text on a gradient and leaving the default white background unchanged; in Opera Mini this results in illegible white-on-white text. So, for example:
 
 	button {
 		background: black;

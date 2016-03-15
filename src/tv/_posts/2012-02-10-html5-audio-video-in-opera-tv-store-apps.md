@@ -220,7 +220,7 @@ Technical details are as follows:
 - Source pointing to the MPD manifest
 - Source type set to `application/dash+xml`
 - PlayReady content will be supported here by future devices
-	- Such content can be embeded with the `ContentProtection` element as defined by the reactive licence acquisition method
+	- Such content can be embedded with the `ContentProtection` element as defined by the reactive licence acquisition method
 	- Some device may not support Security Levels (content with any security level required is played)
 	- DRM errors are signaled by the `MediaError` element of the video tag
 

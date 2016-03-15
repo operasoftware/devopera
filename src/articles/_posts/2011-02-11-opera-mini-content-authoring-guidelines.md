@@ -122,7 +122,7 @@ license: cc-by-3.0
 <li>
 <p>Desktop rendering renders pages in much the same way as a desktop browser, with the exception that it will try to force columns of text to not exceed the width of the screen, to reduce the need for horizontal scrolling.</p>
 
-<p>If the web page is wider than the device screen, a virtual mouse pointer is shown that the user can use to scroll around. If the page's width is greater than twice the width of the device's screen, then overview mode is triggered, which shows a zoomed-out view of the page that fits the screen horizontally and scrools vertically. The user can then choose an area to zoom in and read at full size.</p>
+<p>If the web page is wider than the device screen, a virtual mouse pointer is shown that the user can use to scroll around. If the page's width is greater than twice the width of the device's screen, then overview mode is triggered, which shows a zoomed-out view of the page that fits the screen horizontally and scrolls vertically. The user can then choose an area to zoom in and read at full size.</p>
 </li>
 
 <li>

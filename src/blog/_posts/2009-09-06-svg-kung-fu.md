@@ -9,7 +9,7 @@ license: cc-by-3.0
 ---
 
 <p>
-In conjuction with Opera 10, we have introduced <a href="https://dev.opera.com/articles/view/seven-web-fonts-showcases/" target="_blank">seven Web Fonts showcases</a> and other cool stuff in the <a href="https://dev.opera.com/articles/view/the-opera-10-experience/" target="_blank"> Opera 10 experience</a>.
+In conjunction with Opera 10, we have introduced <a href="https://dev.opera.com/articles/view/seven-web-fonts-showcases/" target="_blank">seven Web Fonts showcases</a> and other cool stuff in the <a href="https://dev.opera.com/articles/view/the-opera-10-experience/" target="_blank"> Opera 10 experience</a>.
 </p>
 <p>
 Today, I&#39;ve made a Web Fonts+SVG image tribute to Bruce Lee - the martial artist. The SVG image is edited in Inkscape, and retouched in a text editor to add animation using SVG element such as animate and set.

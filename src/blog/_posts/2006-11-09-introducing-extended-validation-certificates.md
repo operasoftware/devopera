@@ -13,7 +13,7 @@ Last year it became clear that the procedures for verifying data used to issue S
 
 Certificates are specially formatted documents used to identify certain entities — persons, companies or (in our case) Web sites — and associate them with a given public encryption key and its associated private key. A user can use this public key to verify documents digitally signed by the associated private key held by the identified entity. Alternatively, the user can use the public key to send encrypted information to the certificate’s owner that can only be decrypted by that private key.
 
-Certificates are valid for a certain period and are signed by a Certificate Authority (CA), whose name is identified in the Web site’s certificate. This certificate is either signed by another CA, or it is (self)signed by the CA itself, with the private key assiociated with the public key in the certificate. In the first case the CA is called an intermediate CA (one that has been authorized to act as a CA by another CA), in the other case the certificate is called selfsigned, and the CA is called a Root CA. The Root CA certificates are the certificates that are preinstalled in clients because your only way to verify the Root CA is to have your own copy that you can use as a reference.
+Certificates are valid for a certain period and are signed by a Certificate Authority (CA), whose name is identified in the Web site’s certificate. This certificate is either signed by another CA, or it is (self)signed by the CA itself, with the private key associated with the public key in the certificate. In the first case the CA is called an intermediate CA (one that has been authorized to act as a CA by another CA), in the other case the certificate is called selfsigned, and the CA is called a Root CA. The Root CA certificates are the certificates that are preinstalled in clients because your only way to verify the Root CA is to have your own copy that you can use as a reference.
 
 This sequence of Web site certificate, intermediate CAs and the Root CA is called a certificate chain. This certificate chain links the Web site’s certificate to a trusted root in the browser’s root certificate store through a chain of digital signatures. If it does not, your browser will tell you so.
 
@@ -22,7 +22,7 @@ To increase the usefulness of (in particular) SSL certificates and reduce the li
 [1]: http://www.webtrust.org/
 [2]: http://www.cabforum.org
 
-The forum’s goal is to create a set of guidelines for how certificates used for sensitive online transactions, such as payments, are created and how the information contained in them is checked before the certificate can be issued. The guidlines also specify what kind of controls browsers should perform before indicating that the certificates have been issued according to these guidelines.
+The forum’s goal is to create a set of guidelines for how certificates used for sensitive online transactions, such as payments, are created and how the information contained in them is checked before the certificate can be issued. The guidelines also specify what kind of controls browsers should perform before indicating that the certificates have been issued according to these guidelines.
 
 Some details, like the general UI (for example a green security toolbar, as suggested by Microsoft) and how the certificates should be identified were decided early, when the browser vendors met in Toronto [1][3], [2][4], [3][5], [4][6] last year.
 
@@ -41,7 +41,7 @@ The more difficult part was finding methods that to a reasonable and satisfactor
 
 All of these procedures must also be possible for an auditor to verify.
 
-There were some things that were not realistic to achieve, such as proving that the Web site owner is a law-abiding citizen, is trusthworty and reputable, and so on, or that it is safe to do business with the owner. These are critera that are far too subjective, and even if they are true at one point, that might change very quickly.
+There were some things that were not realistic to achieve, such as proving that the Web site owner is a law-abiding citizen, is trustworthy and reputable, and so on, or that it is safe to do business with the owner. These are criteria that are far too subjective, and even if they are true at one point, that might change very quickly.
 
 These guidelines are intended to raise the information quality of the certificates. For anyone wanting to engage in criminal activity, the guidelines also raise the bar in terms of cost, time-wise and financial, and the risk of getting caught.
 

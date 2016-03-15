@@ -20,7 +20,7 @@ license: cc-by-3.0
 
 <h3>Opera 9.6 Beta 1</h3>
 
-<p>This release polishes a number of features, adds features such a a RSS/ATOM feed preview and a low-bandwidth mode for Opera Mail, and improves Opera Link by adding custom search engines and typed history to the list of items that are synced between versions of Opera using this feature.  One interesting feature is the new scroll marker that is displayed on the page when scrolling to let the user know where the bottom or top of the screen was.  This is overlaid onto the page but has been designed to be as discreet as possible, so that it is still visible, but doesn’t interfere with the design of the page.</p>
+<p>This release polishes a number of features, adds features such a RSS/ATOM feed preview and a low-bandwidth mode for Opera Mail, and improves Opera Link by adding custom search engines and typed history to the list of items that are synced between versions of Opera using this feature.  One interesting feature is the new scroll marker that is displayed on the page when scrolling to let the user know where the bottom or top of the screen was.  This is overlaid onto the page but has been designed to be as discreet as possible, so that it is still visible, but doesn’t interfere with the design of the page.</p>
 
 <h3>Opera Devices SDK 9.6</h3>
 

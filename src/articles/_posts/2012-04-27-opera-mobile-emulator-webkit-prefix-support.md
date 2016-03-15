@@ -57,7 +57,7 @@ Two different types of prefixes are supported:
 `-webkit-linear-gradient` and `-o-linear-gradient` will behave identically and the following rules will be obeyed when evaluating styles.
 
 - Duplicate properties will not be preserved when both `-webkit-linear-gradient` and `-o-linear-gradient` are found. Whichever comes last will override the other.
-- Which name is in use will be tracked, so if the value is retreived from JavaScript, the prefix is remembered.
+- Which name is in use will be tracked, so if the value is retrieved from JavaScript, the prefix is remembered.
 
 ### Properties
 

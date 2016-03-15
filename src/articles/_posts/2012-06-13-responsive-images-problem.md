@@ -87,7 +87,7 @@ design, because it has an impact on our problems and how they might be solved:</
 <p>For responsive design in general it would be ideal if we could perform our environment tests in one place and re-use the results throughout our languages - rather than declaring the tests repeatedly whenever we need to create an element that adapts. This would benefit us in a couple of ways:</p>
 
 <ul>
-<li>It is programatically more efficient to reference a variable value than to
+<li>It is programmatically more efficient to reference a variable value than to
 perform multiple tests.</li>
 <li>It'd be much easier to adjust a design or add a new breakpoint if it only
 needed to be done in one place.</li>

@@ -206,8 +206,8 @@ or in CSS,
 
 This will give the page a viewport equal to the screen’s width — it will scale up the page content accordingly — and trigger our media query to be applied on devices that are as wide or narrower than 360px. Opera Mobile running on the Nokia 5800 (which is 360px wide in portrait mode) will thus show the images at 96% of their container, just like Safari on the 2nd gen iPod Touch (which is 320px wide). A screen with a 480px width however will not apply the media query (see Figure 5).
 
-<figure block="figure">
-	<a href="{{ page.id }}/media-queries.jpg"><img elem="media" src="{{ page.id }}/media-queries_small.jpg" alt="Screenshot of pages with media query not actived and activated"></a>
+<figure block="figure">activated
+	<a href="{{ page.id }}/media-queries.jpg"><img elem="media" src="{{ page.id }}/media-queries_small.jpg" alt="Screenshot of pages with media query not activated and activated"></a>
 	<figcaption elem="caption" markdown="span">Figure 5: in [this viewport example][18], the media query does not affect the 480px wide browser window on the left, but it is triggered on the 320px one on the right: this nicely illustrates how you can do layout adaptation for different screen sizes and form factors</figcaption>
 </figure>
 

@@ -44,7 +44,6 @@ license: cc-by-3.0
 <li>
 <a href="http://my.opera.com/core/blog/2011/03/23/webcam-orientation-preview" rel="nofollow">Accessing device camera from JavaScript</a> - Labs build of Opera/ Android that implements HTML5 <code>getUserMedia</code> with bonus link to the Magic HTML5 Moustache demo</li>
 <li><a href="https://dev.opera.com/articles/view/playing-with-html5-video-and-getusermedia-support/">Playing with HTML5 video and getUserMedia support</a> - tutorial article</li>
-<li>
-</li></ul>
+</ul>
 
 <p>Thanks to the organisers and attendees for the invitation and their attention. And to the Park Inn hotel for the first good hotal sauna in months.</p>

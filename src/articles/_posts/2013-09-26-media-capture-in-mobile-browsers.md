@@ -24,7 +24,7 @@ At the moment the [W3C Device APIs Working Group][1] is working on two different
 - HTML Media Capture
 - Media Capture and Streams
 
-The [HTML Media Capture specification][2] defines an HTML form extension, while the [Media Capture and Streams specification][3] specification defines a set of JavaScript APIs.
+The [HTML Media Capture specification][2] defines an HTML form extension, while the [Media Capture and Streams specification][3] defines a set of JavaScript APIs.
 
 [2]: http://www.w3.org/TR/2013/CR-html-media-capture-20130509/
 [3]: http://www.w3.org/TR/mediacapture-streams/

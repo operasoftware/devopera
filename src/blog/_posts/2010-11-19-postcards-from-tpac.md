@@ -141,14 +141,14 @@ The current Geolocation API specification is currently in <a href="http://en.wik
 </ul>
 <p>The ebook community, which needs to present books both horizontally
 	and vertically, have found a solution in <a href="http://lists.w3.org/Archives/Public/www-style/2010Oct/0618.html">alternative style sheets which describe horizontal/vertical presentations</a>. </p>
-<p>Also, there&#39;s a <a href="http://lists.w3.org/Archives/Public/www-style/2010Oct/0587.html">proposal for allowing &quot;logical&quot; values to the added tothe <code>margin</code> and <code>padding</code> shorthands</a>.</p>
+<p>Also, there&#39;s a <a href="http://lists.w3.org/Archives/Public/www-style/2010Oct/0587.html">proposal for allowing &quot;logical&quot; values to the added to the <code>margin</code> and <code>padding</code> shorthands</a>.</p>
 <p>For now, the css3-writing-modes draft will move forward without the
 	physical/logical parts. </p>
 <h4>WebFonts</h4>
 <p>The WebFonts group has a simple purpose in life: to get the <a href="http://dev.w3.org/webfonts/WOFF/spec/">WOFF</a> container to REC. The only controversial issue I can see is whether
 	the WOFF format should imply a Same-Origin-Restriction. This is
 	currently in the draft. I know there are different opinions inside
-	Opera on this. Personally, I think it&#39;s a useful restriction as will
+	Opera on this. Personally, I think it&#39;s a useful restriction as
 	will stop people from leeching bandwidth from unsuspecting web sites.
 	And CORS can be used to relax the requirement.</p>
 <h3 id="svg">SVG</h3>

@@ -10,7 +10,7 @@ tags:
 license: os-asa
 ---
 
-It’s time to make video a first-class citizen of the web. We, the users, have video cameras in our pockets and the bandwidth to tranfer more clips and streams than we can watch. What’s missing is a an easy way to integrate video into web pages, and native support for video in browsers. We, the web community, should address this by adding a [video element][1] to HTML.
+It’s time to make video a first-class citizen of the web. We, the users, have video cameras in our pockets and the bandwidth to transfer more clips and streams than we can watch. What’s missing is a an easy way to integrate video into web pages, and native support for video in browsers. We, the web community, should address this by adding a [video element][1] to HTML.
 
 [1]: https://html.spec.whatwg.org/#video
 
@@ -25,4 +25,4 @@ At Opera, we have built an [experimental version][4] that has native support for
 
 [4]: http://people.opera.com/howcome/2007/video/op950_8762_video_repack_with_lgpl_signed.exe
 
-**Do not choose to start Opera in the installation process. After installing, exit the installation process and start the the experimental build manually.**
+**Do not choose to start Opera in the installation process. After installing, exit the installation process and start the experimental build manually.**
