@@ -10,6 +10,7 @@ kramdown:
 
 include:
 - '.htaccess'
+- '.webmanifest'
 exclude:
 - '*.scss'
 - '*.map'
