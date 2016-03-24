@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 
 gulp.task('server', function() {
 	sync.init({
+		ui: false,
 		notify: false,
 		server: {
 			baseDir: 'dest'
