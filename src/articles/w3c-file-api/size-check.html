@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Size-restriction for CMS</title>
+<style>
+input {
+  display:block;
+}
+</style>
+<form>
+  <input type=file id=upload name=files>
+  <div id=message></div>
+  <input type=submit>
+</form>
+<script>
+if (window.File && window.Blob) {
+  var message = document.getElementById('message'),
+      submit = document.querySelector('input[type=submit]');
+
+  document.getElementById('upload').addEventListener('change', doStuff, false);
+
+  function doStuff(evt) {
+    var size = evt.target.files[0].size;
+
+    if ( size > 131072 ) { // 128 * 1024, eg 128K
+      message.innerHTML = size + ' is too big, you numpty';
+      submit.disabled = true;
+    } else {
+      message.innerHTML = size + ' is a lovely size';
+      submit.disabled = false;
+    }
+  }
+}
+</script>
