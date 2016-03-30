@@ -2,13 +2,13 @@
 title: Progressive Web Apps: the future of Apps
 authors:
 - bruce-lawson
-intro: 'On 26 March, I gave a presentation in Taipei about Progressive Web Apps. Here's the 20 minute video.'
+intro: 'On 26 March, I gave a presentation in Taipei about Progressive Web Apps. Here’s the 20 minute video.'
 tags:
 - PWA
 license: cc-by-3.0
 ---
 
-On 26 March, I gave a presentation at iWeb Summit 2016 in Taipei about Progressive Web Apps. Here's the 20 minute video.
+On 26 March, I gave a presentation at iWeb Summit 2016 in Taipei about Progressive Web Apps. Here’s the 20 minute video.
 
 
 <figure block="figure">
