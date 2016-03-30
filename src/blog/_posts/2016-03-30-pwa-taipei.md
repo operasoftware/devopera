@@ -19,5 +19,6 @@ If you don't like my voice, just [see the slides](http://www.slideshare.net/bruc
 ## More resources
 
 - [Non-technical guide to HTML Manifest](https://medium.com/net-magazine/html-manifest-402e6a8cc0e9#.kyg4r82s2) that I wrote for .net magazine
+- [Manifest generator](http://brucelawson.github.io/manifest/)
 - [New Progressive Web App helps Flipkart boost conversions 70%](https://developers.google.com/web/showcase/case-study/flipkart?hl=en) and other business benefits of PWAs.
 - [Installable Web Apps and Add to Home screen](/articles/installable-web-apps/): a longer tutorial on how to make a Progressive Web App.
