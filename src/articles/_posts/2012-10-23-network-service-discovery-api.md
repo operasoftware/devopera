@@ -114,7 +114,7 @@ It’s probably best to look at a basic example by breaking it down into a few s
 
 1. Call the `navigator.getNetworkServices()` method, passing it a list of well-known service types to look for.
 2. If successful, specify a callback function to execute. Its argument is an array of found services.
-3. Commands are sent to to your chosen service’s URL usually using an XMLHttpRequest (but the API also allows you to theoretically connect devices via Web Sockets).
+3. Commands are sent to your chosen service’s URL usually using an XMLHttpRequest (but the API also allows you to theoretically connect devices via Web Sockets).
 4. If necessary, the service’s response can be parsed and then acted upon by your web application.
 
 To simplify the process, we have also created the [Plug.Play library][27] which acts as a UPnP service layer abstraction on top of `navigator.getNetworkServices()`. The library’s [home page][28] includes a detailed breakdown of the steps mentioned briefly above — how to use `navigator.getNetworkServices()` and how to then, optionally, use the library to invoke UPnP actions and process responses.
@@ -142,7 +142,7 @@ We’ve prepared a couple of simple demos to demonstrate the discovery concept. 
 
 No. The main issue is that there is no UI or privacy mechanism at this point -- in other words, web pages have full access to all UPnP services on your local network and a call to getNetworkServices will return all services that match the requested service type. Because of this, the Service Discovery API needs to be enabled manually in <a href="opera:config#UserPrefs|EnableServiceDiscoveryAPI">opera:config</a> in the builds provided on this page, as mentioned earlier.
 
-Ultimately, this API will ship with a opt-in interface to allow users to authorize a web page to connect with one or more services that the page has requested. We are currently hard at work imagining this user interface. When we have a good user experience story to tell for this API we will provide updates on this blog.
+Ultimately, this API will ship with an opt-in interface to allow users to authorize a web page to connect with one or more services that the page has requested. We are currently hard at work imagining this user interface. When we have a good user experience story to tell for this API we will provide updates on this blog.
 
 ## Anything else to be aware of? {#other}
 

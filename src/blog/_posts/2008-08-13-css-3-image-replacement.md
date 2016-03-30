@@ -27,7 +27,7 @@ license: cc-by-3.0
 
 <p>You can see it in action on this <a href="{{ page.id }}/css3-image-replacement.htm">image replacement test page</a>.</p>
 
-<p>It&#39;s interesting to note how the <a href="{{ page.id }}/css3-image-replacement-styling.htm">browsers  style this differently</a>. To centre the logo, you need to style the <code>h1</code> with <code>text-align:center</code>, as if Opera centres the real text and then replaces it with the image. Safari will only centre the logo with margins, as if it replaces the text with an virtual <code>img</code> tag, which is then impervious to <code>text-align</code>.</p>
+<p>It&#39;s interesting to note how the <a href="{{ page.id }}/css3-image-replacement-styling.htm">browsers  style this differently</a>. To centre the logo, you need to style the <code>h1</code> with <code>text-align:center</code>, as if Opera centres the real text and then replaces it with the image. Safari will only centre the logo with margins, as if it replaces the text with a virtual <code>img</code> tag, which is then impervious to <code>text-align</code>.</p>
 
 <h3>What should browsers do if the image can&#39;t be shown?</h3>
 <p>I think, in any circumstance that a browser can&#39;t show an image, it should show the  content of the element in the natural position for that text. That would ensure that this <abbr>CSS</abbr> 3 image replacement technique degrades well when CSS and images are off.</p>

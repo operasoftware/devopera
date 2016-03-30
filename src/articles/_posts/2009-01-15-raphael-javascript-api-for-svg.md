@@ -97,7 +97,7 @@ beta = 2 * Math.PI / sectorsCount,  // angle between dashes</code></pre>
 
 <p>In this code we create a function called <code>ticker</code> and run it immediately. The first line of the function shifts elements in the opacity array forward. We then run over dashes stored in the <code>sectors</code> array and apply an <code>opacity</code> attribute to each of them. Doing this continuously will make an illusion of animation. <code>r.safari();</code> fixes some rendering bugs in Safari.</p>
 
-<p>At the end of the function we set <code>timeout</code> to run it again after a small amount of time, giving the appearence of the spinner's continuous rotation. It will make it run forever like a clock.</p>
+<p>At the end of the function we set <code>timeout</code> to run it again after a small amount of time, giving the appearance of the spinner's continuous rotation. It will make it run forever like a clock.</p>
 
 <p>The only thing left to do is to close the function, like so:</p>
 

@@ -61,11 +61,11 @@ license: cc-by-nc-sa-3.0
 <h2 id="formexample">Introducing our example</h2>
 
 <p>To illustrate some of the new features, this article comes with a <a href="html5-forms-example.html">basic HTML5 forms example</a>. It's not meant to represent a "real" form (as you'd be hard-pressed to find a situation where you need all the new features in a single form), but it should give you an idea of how the various new aspects look and behave.</p>
-<p class="note">Note: the look and feel of the new form controls and validation messages differs from brower to browser, so styling your forms to look reasonably consistent across browsers will still need careful consideration.</p>
+<p class="note">Note: the look and feel of the new form controls and validation messages differs from browser to browser, so styling your forms to look reasonably consistent across browsers will still need careful consideration.</p>
 
 <h2 id="newcontrols">New form controls</h2>
 
-<p>As forms are the main tool for data input in Web applications, and the data we want to collect has become more complex, it has been necessary to create an input element with more capabilities, to collect this data with more semantics and better definition, and allow for easier, more effective error mnagement and validation.</p>
+<p>As forms are the main tool for data input in Web applications, and the data we want to collect has become more complex, it has been necessary to create an input element with more capabilities, to collect this data with more semantics and better definition, and allow for easier, more effective error management and validation.</p>
 
 <h3 id="input-number"><code>&lt;input type="number"&gt;</code></h3>
 

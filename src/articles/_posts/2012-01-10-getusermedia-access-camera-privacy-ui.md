@@ -37,7 +37,7 @@ license: cc-bsd
 <h2>User Experience</h2>
 <p>Allowing a website access to the camera and microphone has obvious privacy implications. The <a href="http://dev.w3.org/geo/api/spec-source.html#security">Geolocation specification</a> requires that the user be informed which domain name is requesting access (because it may be in an iframe and therefore not corresponding with the address bar that a user can see).</p>
 <p>The getUserMedia specification currently has nothing to say on this matter, but we are experimenting with a UI that will easily allow the user to see all permissions she has granted a particular site at once (camera, microphone, geolocation etc), as well as its security record.</p>
-<p>Assume that you've come to a site that wants media access. You'll see a notification callout, pointing to the address bar badge next  next to the URL, which tells you that the site is asking for camera access and asking you to confirm or deny.</p>
+<p>Assume that you've come to a site that wants media access. You'll see a notification callout, pointing to the address bar badge next to the URL, which tells you that the site is asking for camera access and asking you to confirm or deny.</p>
 <p><img src="gum1c.gif" alt="notification callout" width="340" height="212" /></p>
 <p class="caption">Figure 1: Notification callout when a site requires access to your camera</p>
 <p>Information about the site's security record is provided by Netcraft and Phishtank. As with current desktop versions of Opera, clicking on the badge provides information about a site, and choosing &quot;details&quot; from the dialogue allows you to report a site for phishing or fraud.</p>

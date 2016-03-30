@@ -65,7 +65,7 @@ license: cc-by-nc-sa-3.0
 <li><p><strong><code>&lt;nav&gt;</code></strong>: Contains the navigation functionality for the page.</p></li>
 <li><p><strong><code>&lt;article&gt;</code></strong>: Contains a standalone piece of content that would make sense if syndicated as an RSS item, for example a news item.</p></li>
 <li><p><strong><code>&lt;section&gt;</code></strong>: Used to either group different articles into different purposes or subjects, or to define the different sections of a single article.</p></li>
-<li><p><strong><code>&lt;time&gt;</code></strong>: Used for for marking up times and dates.</p></li>
+<li><p><strong><code>&lt;time&gt;</code></strong>: Used for marking up times and dates.</p></li>
 <li><p><strong><code>&lt;aside&gt;</code></strong>: Defines a block of content that is related to the main content around it, but not central to the flow of it.</p></li>
 <li><p><strong><code>&lt;hgroup&gt;</code></strong>: Used to wrap more than one heading if you only want it to count as a single heading in the page's heading structure.</p></li>
 <li><p><strong><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></strong>: Used to encapsulate a figure as a single item, and contain a caption for the figure, respectively.</p></li>
@@ -184,7 +184,7 @@ license: cc-by-nc-sa-3.0
 	&lt;/table&gt;
 &lt;/aside&gt;</code></pre>
 
-<p>The <code>&lt;aside&gt;</code> element is for marking up pieces of content that are related to the main content, but don't fit directly into the main flow. For for example in this case we have a bunch of quick fire facts and statistics about the band, which wouldn't work so well shoehorned into the main content. Other suitable condidates for <code>&lt;aside&gt;</code> elements include lists of links to external related content, background information, pull quotes, and sidebars.</p>
+<p>The <code>&lt;aside&gt;</code> element is for marking up pieces of content that are related to the main content, but don't fit directly into the main flow. For for example in this case we have a bunch of quick fire facts and statistics about the band, which wouldn't work so well shoehorned into the main content. Other suitable candidates for <code>&lt;aside&gt;</code> elements include lists of links to external related content, background information, pull quotes, and sidebars.</p>
 
 		<h3 id="figure"><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></h3>
 
@@ -276,7 +276,7 @@ license: cc-by-nc-sa-3.0
 
 <h2 id="html-outline">HTML5 outlines, and the HTML5 heading algorithm</h2>
 
-<p>Before we carry on our journey towards mastery of HTML5, there is another important difference we should discuss between HTML5, and previous versions of the spec. In HTML, we have have the concept of the document outline, which is basically a breakdown of the document into it's headings, and their hierarchy relative to one another, exactly like when you are writing a document in a word processor and you look at your document in outline view. In effect, I have basically created a document outline for this document by nesting lists to create the table of contents at the start of the article. This article's document outline looks something like this:</p>
+<p>Before we carry on our journey towards mastery of HTML5, there is another important difference we should discuss between HTML5, and previous versions of the spec. In HTML, we have the concept of the document outline, which is basically a breakdown of the document into it's headings, and their hierarchy relative to one another, exactly like when you are writing a document in a word processor and you look at your document in outline view. In effect, I have basically created a document outline for this document by nesting lists to create the table of contents at the start of the article. This article's document outline looks something like this:</p>
 
 <pre><code>- New structural elements in HTML5
 	- Introducing HTML5 structural elements
@@ -325,7 +325,7 @@ license: cc-by-nc-sa-3.0
 
 			<ol>
 <li>You can have as many heading levels as you like — you are not limited to six.</li>
-<li>If your content is transplanted into someone else's CMS, and this results in the the h1, h2, h3, etc. levels going wrong, the algorithm will still work out the correct hierarchy regardless.</li>
+<li>If your content is transplanted into someone else's CMS, and this results in the h1, h2, h3, etc. levels going wrong, the algorithm will still work out the correct hierarchy regardless.</li>
 			</ol>
 
 			<div class="note">

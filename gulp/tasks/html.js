@@ -16,7 +16,7 @@ gulp.task('html', function() {
 			collapseWhitespace: true
 		}))
 		.pipe(gulp.dest('dest'))
-		.pipe(sync.stream());
+		.pipe(sync.stream({ once: true }));
 
 	var xml = gulp.src(['dest/feed/**/index.xml'])
 		.pipe(htmlmin({
@@ -24,7 +24,7 @@ gulp.task('html', function() {
 			keepClosingSlash: true
 		}))
 		.pipe(gulp.dest('dest/feed'))
-		.pipe(sync.stream());
+		.pipe(sync.stream({ once: true }));
 
 	return merge(html, xml);
 });

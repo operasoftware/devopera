@@ -65,7 +65,7 @@ license: cc-by-nc-sa-2.5
 
 <pre><code>eval('\\u'+'0061'+'lert(1)')</code></pre>
 
-<p>By avoiding normal function names like <code>alert</code>, we can fool XSS filters into injecting our code. This very example was used to bypass PHPIDS (an open source IDS system), which resulted in the rules subsequently being made much stronger. If you are considering decoding JavaScript for malware analysis at runtime you need to consider the possible ways that multiple levels of encoding can work; as you can see from this example it won't be a easy task.</p>
+<p>By avoiding normal function names like <code>alert</code>, we can fool XSS filters into injecting our code. This very example was used to bypass PHPIDS (an open source IDS system), which resulted in the rules subsequently being made much stronger. If you are considering decoding JavaScript for malware analysis at runtime you need to consider the possible ways that multiple levels of encoding can work; as you can see from this example it won't be an easy task.</p>
 
 <h2>JavaScript parser engine</h2>
 
@@ -103,7 +103,7 @@ alert(1)>>>/abc/</code></pre>
 <pre><code>delete~[a=alert]/delete a(1)
 delete [a=alert],delete a(1)</code></pre>
 
-<p>At first glance you'd think that they would raise a syntax error but when examining the code further it sorta makes sense. The parser finds a variable assignment first within a array, performs the assignment and then deletes the array. Likewise the delete is performed after a function call because it needs to know the result of the function before it can delete the returned object, even if it is null.</p>
+<p>At first glance you'd think that they would raise a syntax error but when examining the code further it sorta makes sense. The parser finds a variable assignment first within an array, performs the assignment and then deletes the array. Likewise the delete is performed after a function call because it needs to know the result of the function before it can delete the returned object, even if it is null.</p>
 
 <p>Again these examples have been used to defeat XSS filters because they are often trying to match valid syntax and they don't expect the obscure nature of the code. You should consider such examples when programming your application data validation.</p>
 
@@ -120,7 +120,7 @@ delete [a=alert],delete a(1)</code></pre>
 <pre><code>javascript : /is/^{ a : ' weird ' }[' & wonderful ']/" language "
 the_fun: ['never '] + stop['s']</code></pre>
 
-<p>We use the regular expression <code>/is/</code> with the operator <code>^</code> and then create a object <code>{ a : 'weird'}</code> (which has a property <code>a</code> and an assignment of <code>weird</code>.) Then we look for a property <code>' & wonderful '</code> within the object we just created, which is then divided by a string of <code>language</code>.</p>
+<p>We use the regular expression <code>/is/</code> with the operator <code>^</code> and then create an object <code>{ a : 'weird'}</code> (which has a property <code>a</code> and an assignment of <code>weird</code>.) Then we look for a property <code>' & wonderful '</code> within the object we just created, which is then divided by a string of <code>language</code>.</p>
 
 <p>Next we use a label called <code>the_fun</code> and an array with <code>never </code>, use a global function called <code>stop</code> and check for a property of <code>s</code> ... all of which is valid syntax.</p>
 

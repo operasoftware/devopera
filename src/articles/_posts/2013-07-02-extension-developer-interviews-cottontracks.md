@@ -57,7 +57,7 @@ Hadrien: We are impressed by the amount of data produced. Since bookmarking is u
 
 **Which tool has been particularly useful when developing cottonTracks?**
 
-Hadrien: Our object structure relies on John Resig’s [simple Class.js inheritance pattern][7]. [Secrets of the JavaScript Ninjas][8], from the very same author, is a excellent resource to read for better design, performance, and maintenance.
+Hadrien: Our object structure relies on John Resig’s [simple Class.js inheritance pattern][7]. [Secrets of the JavaScript Ninjas][8], from the very same author, is an excellent resource to read for better design, performance, and maintenance.
 
 [7]: http://ejohn.org/blog/simple-javascript-inheritance/
 [8]: http://www.amazon.com/gp/product/193398869X/

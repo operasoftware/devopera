@@ -19,7 +19,7 @@ license: cc-by-3.0
 </p>
 <h3>Outline elements with ARIA attributes</h3>
 
-<p>These are currently outlined in green. I thought about popping up informational boxes, but decided against it; it would make the page look even busier. To find out more, right click and choose <kbd>Inspect Element</kbd> to see the DOM, stylehseets and layout with Opera Dragonfly.
+<p>These are currently outlined in green. I thought about popping up informational boxes, but decided against it; it would make the page look even busier. To find out more, right click and choose <kbd>Inspect Element</kbd> to see the DOM, stylesheets and layout with Opera Dragonfly.
 </p>
 <h3>Outline roles</h3>
 <p>ARIA roles are outlined in rakish blue. (Actually, any roles.) These are likely to be an important part of your page, particularly your document landmark roles. (See Gez Lemon&#39;s <a href="https://dev.opera.com/articles/view/introduction-to-wai-aria/">Introduction to WAI ARIA</a> for more information.)</p>

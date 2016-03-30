@@ -97,7 +97,7 @@ license: cc-by-3.0
 <p>Many users of the most “popular  browser” made no conscious choice to use that browser. On the other  hand, we know that many Opera users choose Opera because of features  such as excellent keyboard support, the built-in voice browser,  intelligent zoom, and fit-to-width display, which are very useful for  people with disabilities. It is unreasonable and unfair to suggest  that they upgrade because a Webmaster has elected not to test in  Opera.</p>
 <h4>Potentially anti-competitive</h4>
 <p>Not only does this inconvenience the user, but we strongly believe  that this is anti-competitive.</p>
-<p>The guideines help perpetuate current market shares by encouraging  users of “unsupported” (in reality, “untested”) browsers to  replace their current browser with another.</p>
+<p>The guidelines help perpetuate current market shares by encouraging  users of “unsupported” (in reality, “untested”) browsers to  replace their current browser with another.</p>
 <p>(Disclosure: The EU Commission are opening an investigation into  an anti-trust complaint filed by Opera on 12 December 2007, regarding  Microsoft bundling Internet Explorer in the Operating System and not  implementing Web standards.)</p>
 <h3 id="best-practice">Guidelines do not promote best practices</h3>
 <p>The guidelines  are published because it is “impractical and  inefficient” to test in all browsers. Presumably this should  be interpreted as the <abbr>COI</abbr> suggesting that it is not cost-effective to  do so.  However, it is unnecessary to do so if best-practice Web  development is followed.</p>

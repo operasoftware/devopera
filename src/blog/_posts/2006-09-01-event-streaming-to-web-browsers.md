@@ -2,7 +2,7 @@
 title: Event Streaming to Web Browsers
 authors:
 - arve-bersvendsen
-intro: 'One cool feature we added to Opera 9 is Server-Sent Events from the WHATWG Web Applications 1.0 specification. Using SSE you can push DOM events continously from your web server to the visitor’s browser. This creates a lot of exciting opportunities for web application authors.'
+intro: 'One cool feature we added to Opera 9 is Server-Sent Events from the WHATWG Web Applications 1.0 specification. Using SSE you can push DOM events continuously from your web server to the visitor’s browser. This creates a lot of exciting opportunities for web application authors.'
 tags:
 - server-sent-events
 - opera-presto
@@ -38,7 +38,7 @@ Keep in mind that it is an experimental service, which means it may not always b
 
 ### How to use Server-Sent Events
 
-To use Server-Sent Events in a web application, add an `<event-source>` element to the document, with a src attribute pointing to a event source URL. This URL should provide a persistent HTTP connection that sends a data stream containing the events. The connection must use the content type `application/x-dom-event-stream`.
+To use Server-Sent Events in a web application, add an `<event-source>` element to the document, with a src attribute pointing to an event source URL. This URL should provide a persistent HTTP connection that sends a data stream containing the events. The connection must use the content type `application/x-dom-event-stream`.
 
 It is possible to send events with any name, and specify the properties of the event object. Opera 9.01 only supports the `data` property of the event, so this is what we are going to use in these examples.
 
@@ -91,7 +91,7 @@ The same example written in PHP:
 
 ### Opportunities
 
-In addition to the chat application we made, there are lots of different applications that can be made with Server-Sent Events. For instance games or instant messaging clients, such as MSN Messenger, Jabber or AIM. You could also build stock and news tickers, status and log file monitors, or anyhing _you_ can come up with.
+In addition to the chat application we made, there are lots of different applications that can be made with Server-Sent Events. For instance games or instant messaging clients, such as MSN Messenger, Jabber or AIM. You could also build stock and news tickers, status and log file monitors, or anything _you_ can come up with.
 
 What will you build? You can [join the discussion][6] on Opera Web Applications blog.
 

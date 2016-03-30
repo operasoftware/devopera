@@ -22,4 +22,4 @@ license: cc-by-3.0
 
 <p>As yet, these bubbles are not author stylable (because there are no hooks in any CSS specification yet, although that&#39;s being worked on) so it&#39;s particularly important that the default implementation doesn&#39;t make your eyes bleed.</p>
 
-<p>We have lots more on our wishlist for HTML5 forms error reporting, and this is just an experimental build. We can&#39;t say when it would be in a shipping browseror will ever ship in this format. But we&#39;re eager to hear your comments (you can comment anonymously below).</p>
+<p>We have lots more on our wishlist for HTML5 forms error reporting, and this is just an experimental build. We can&#39;t say when it would be in a shipping browser or will ever ship in this format. But we&#39;re eager to hear your comments (you can comment anonymously below).</p>

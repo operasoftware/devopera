@@ -83,7 +83,7 @@ Some more laws of simplicity:
 	<figcaption elem="caption">10-feet user experience: A user sits 10 feet away from the TV</figcaption>
 </figure>
 
-TV interfaces are also known as 10-foot user interfaces because 10 feet (3m) is the aproximate distance that users will sit from the TV. For designers, this means that the "big screen" cannot really be considered "big" but that you have to keep the same considerations that you have when making a mobile application:
+TV interfaces are also known as 10-foot user interfaces because 10 feet (3m) is the approximate distance that users will sit from the TV. For designers, this means that the "big screen" cannot really be considered "big" but that you have to keep the same considerations that you have when making a mobile application:
 
 - All application elements and text need to be bigger than those used for computers. We recommend a minimum text size of 22px, though you may be able to go as low as 18px if your design does not accommodate a bigger font. Considering that you need approximately 10px of padding for your buttons, we recommend them to be of a minimum size of 34px height.
 - Fonts should be big and clean. We recommend using simple sans-serif fonts.

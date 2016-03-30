@@ -308,7 +308,7 @@ Now let’s look at the JavaScript:
 		}
 	}
 
-This is very similar to before. I’m looping through all the `<article>`, but this time I’m adding an `onfocus` handler to them, not `onclick`. This means that the article can be keyboard accessible, so long as the `<article>`s can receive focus. I have handled that by adding an attribute of `tabindex="0"` to all of them. The one problem is that now you can’t close a chapter again by clicking on it when it is open. You can can only close a chapter by clicking on a different chapter. I’ve left this as a problem for another day.
+This is very similar to before. I’m looping through all the `<article>`, but this time I’m adding an `onfocus` handler to them, not `onclick`. This means that the article can be keyboard accessible, so long as the `<article>`s can receive focus. I have handled that by adding an attribute of `tabindex="0"` to all of them. The one problem is that now you can’t close a chapter again by clicking on it when it is open. You can only close a chapter by clicking on a different chapter. I’ve left this as a problem for another day.
 
 In the `toggleFlex()` function, I am looping through all of the `<article>`, and checking which one is being clicked by checking its ID value. The one that is clicked is opened up and the text inside made visible by giving it a different flex basis value (or a different width in the case of legacy Flexbox browsers, as they don’t have flex basis available, and I couldn’t get this to work in any other way) and high text opacity, plus it is given a `className` to set up a toggle:
 

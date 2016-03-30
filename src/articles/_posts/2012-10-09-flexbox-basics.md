@@ -169,7 +169,7 @@ You can also specify how spare space between multiple lines of Flexbox children 
 
 ### Altering the element layout order
 
-Traditionally it has always been a pain to change the order in which elements are displayed without messing around with the source order. Not with Flexbox. Flexbox allows you to set the `order` property on child elements to state how soon they will appear in the Flexbox row or column. This property takes a integer value — called an ordinal group — and the higher the ordinal group, the later the child will appear. So for example, going back to my [Flexible fat footer][18] example, the box of links is the second child element by default, as shown in Figure 5.
+Traditionally it has always been a pain to change the order in which elements are displayed without messing around with the source order. Not with Flexbox. Flexbox allows you to set the `order` property on child elements to state how soon they will appear in the Flexbox row or column. This property takes an integer value — called an ordinal group — and the higher the ordinal group, the later the child will appear. So for example, going back to my [Flexible fat footer][18] example, the box of links is the second child element by default, as shown in Figure 5.
 
 [18]: {{ page.id }}/flexbox-example.html
 

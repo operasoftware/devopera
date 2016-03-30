@@ -24,5 +24,5 @@ license: cc-by-3.0
 <li><strong>Windows 7 tricks</strong>: Aero Peek, Jump List support and Aero Glass effects.</li>
 <li>And last but not least, the <code>@font-face</code> issues we&#39;ve had in the <a href="http://my.opera.com/ODIN/blog/2010/02/11/opera-10-50-beta-is-out">past</a> are now resolved :-)</li>
 </ul>
-<p>For those interested, there is a <a href="https://www.opera.com/docs/changelogs/windows/1050/">extensive changelog</a> available in the Documentation section on the (renewed) Opera site.</p>
+<p>For those interested, there is an <a href="https://www.opera.com/docs/changelogs/windows/1050/">extensive changelog</a> available in the Documentation section on the (renewed) Opera site.</p>
 <p>If you haven&#39;t done so, <strong>grab Opera 10.50 from <a href="https://www.opera.com/browser/">our site</a></strong>, and let us know what you think!</p>

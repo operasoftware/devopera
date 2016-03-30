@@ -18,7 +18,7 @@ license: cc-by-3.0
 	<embed name="__sse9588237" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=bruce-lawson-fronteers-antfucker-111007023547-phpapp02&amp;stripped_title=you-too-can-be-a-bedwetting-antfucker-bruce-lawson-opera-fronteers-2011&amp;userName=brucelawson" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="355" allowscriptaccess="never" />
 </object>
 
-<p>As well as looking at some of the new semantics, I wonder whether we need more than the current spec allows, then wonder whether semantics matter anyway (tl,dr: yes, they do) and suggest that, if you&#39;re just squirting obfuscated JavaScript down a line with no real semantics, and targetting one single rendering engine, you&#39;re really just reinventing Flash but with the browser as  the plugin.</p>
+<p>As well as looking at some of the new semantics, I wonder whether we need more than the current spec allows, then wonder whether semantics matter anyway (tl,dr: yes, they do) and suggest that, if you&#39;re just squirting obfuscated JavaScript down a line with no real semantics, and targeting one single rendering engine, you&#39;re really just reinventing Flash but with the browser as  the plugin.</p>
 
 <p>Here&#39;s the <a href="http://vimeo.com/31380928">video of the presentation</a>.</p>
 <p>Links referenced in the presentation:</p>

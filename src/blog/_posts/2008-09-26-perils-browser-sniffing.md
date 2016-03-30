@@ -8,11 +8,11 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>Broswer sniffing doesn&#39;t work. Browser sniffing may have started out as a way to prevent browsers without proper features from accessing the sites, but now it often  keeps browsers away from sites which otherwise would have worked.</p>
+<p>Browser sniffing doesn&#39;t work. Browser sniffing may have started out as a way to prevent browsers without proper features from accessing the sites, but now it often  keeps browsers away from sites which otherwise would have worked.</p>
 
 <p>In the  old days, sniffing was often seen as a necessary way of coping with browser incompatibilities, but it was never meant to be a long-term solution. No sooner did you finish your site, a new version of an old browser came along to break it. </p>
 
-<p>Browser sniffing was invented because different browsers had wildly varying <abbr title="Document Object Models">DOMs</abbr> so authors neeeded to send one script to one browser, and another to a competing browser. The browser incompatabiliites eventually led to the Web Standards movement, which showed that correctly-written specs  and technologies that followed them is a more robust way for different browsers to interoperate.</p>
+<p>Browser sniffing was invented because different browsers had wildly varying <abbr title="Document Object Models">DOMs</abbr> so authors needed to send one script to one browser, and another to a competing browser. The browser incompatibilities eventually led to the Web Standards movement, which showed that correctly-written specs  and technologies that followed them is a more robust way for different browsers to interoperate.</p>
 
 <p>The reason that the old way was not robust was because it was because designing a site should be  like designing a car without worrying about driving on incompatible roads. Designers want to master their art, and browsers should make sure designers are given the right to express themselves in a standard way. When browser-of-the-day is not standard compliant, developers will design according to that dominant browser even if it is not compliant. This not only breaks other browsers, but future version of the same browser. So, for example, if Internet Explorer 8 were to run on its &quot;standard mode&quot;, it will break many sites that worked fine in previous versions of Internet Explorer.</p>
 

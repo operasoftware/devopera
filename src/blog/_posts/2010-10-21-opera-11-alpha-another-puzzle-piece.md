@@ -9,7 +9,7 @@ tags:
 license: os-asa
 ---
 
-Today we’re proud to announce the first Opera 11 alpha, an early snapshot of our upcoming Opera 11 release. In Opera 11 alpha our attention is first and foremost on one of the most anticipated features of Opera 11: extensions. More exciting functionality will be announced as we get closer the our final release of Opera 11.
+Today we’re proud to announce the first Opera 11 alpha, an early snapshot of our upcoming Opera 11 release. In Opera 11 alpha our attention is first and foremost on one of the most anticipated features of Opera 11: extensions. More exciting functionality will be announced as we get closer to our final release of Opera 11.
 
 Extensions are browser add-ons made using Opera application programming interfaces (APIs) and web standards like HTML5 and JavaScript. Extensions allow users to make their web browser their own by adding features and functionality directly into the browser itself, rather than as standalone Opera Widgets or Opera Unite applications.
 

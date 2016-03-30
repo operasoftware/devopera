@@ -60,4 +60,4 @@ license: cc-by-3.0
 <li><a href="http://github.com/gimite/web-socket-js/">List of HTML5 shivs and shims</a></li>
 </ul>
 
-<p>I&#39;ll be at the dinner tomorrow night (Wednesday) and will be delighed to answer any questions about the wondrous world of Open Web Standards and HTML5.</p>
+<p>I&#39;ll be at the dinner tomorrow night (Wednesday) and will be delighted to answer any questions about the wondrous world of Open Web Standards and HTML5.</p>

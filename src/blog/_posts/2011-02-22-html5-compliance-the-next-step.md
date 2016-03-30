@@ -71,7 +71,7 @@ Absolutely not. It’s still a vital QA tool, and just because the HTML5 parser 
 
 ## Opera’s implementation
 
-Our old HTML parser has basically been the same since Opera began 15 years ago. It’s been continually patched to keep up with changing standards and countless different ways people came up with to not follow the specifications. After all the changes here and there, the code really started to look like a over-decorated christmas tree, and adding more stuff without knocking over the tree was getting increasingly hard.
+Our old HTML parser has basically been the same since Opera began 15 years ago. It’s been continually patched to keep up with changing standards and countless different ways people came up with to not follow the specifications. After all the changes here and there, the code really started to look like an over-decorated christmas tree, and adding more stuff without knocking over the tree was getting increasingly hard.
 
 With the decision to rewrite the entire parser came the opportunity to clean up the design significantly.
 
@@ -84,7 +84,7 @@ Ragnarök also scores 11 out of 11 (plus two bonus points) on the somewhat non-c
 
 ### Memory consumption
 
-The main reason we kept our old parser for so long was its efficient memory usage when handling bad markup. Instead of duplicating nodes like the HTML5 specification states, our parser had a intricate system of pointers that indicated which nodes should have been duplicated. This saved it from allocating memory to actually duplicating the element data, but also made the code that traversed the data structure more complex. Now we have switched to copying the nodes, it uses slightly more memory. Before the final release we will minimize that side effect — Opera has always been about memory efficiency, and working on smaller devices too.
+The main reason we kept our old parser for so long was its efficient memory usage when handling bad markup. Instead of duplicating nodes like the HTML5 specification states, our parser had an intricate system of pointers that indicated which nodes should have been duplicated. This saved it from allocating memory to actually duplicating the element data, but also made the code that traversed the data structure more complex. Now we have switched to copying the nodes, it uses slightly more memory. Before the final release we will minimize that side effect — Opera has always been about memory efficiency, and working on smaller devices too.
 
 ### Performance
 

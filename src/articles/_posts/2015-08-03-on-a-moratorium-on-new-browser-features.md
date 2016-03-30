@@ -58,7 +58,7 @@ It’s called “the web” because it’s a network that joins resources togeth
 
 Modern standards are designed to preserve URLs. Take Service Worker, for example; the explainer document for Navigation Controller (the previous name for what’s become Service Worker) [says](https://github.com/sole/NavigationController/blob/master/explainer.md)
 
-> It forces you to have URLs! Some modern apps platforms have foresaken this core principle of the web and suffer for it. The web should never make the same mistake.
+> It forces you to have URLs! Some modern apps platforms have forsaken this core principle of the web and suffer for it. The web should never make the same mistake.
 
 Similarly, the [Web Manifest spec](http://html5doctor.com/web-manifest-specification/) defines a web app’s start and scope in terms of good old-fashioned vitally-important URLs. The proposed [Upgrade Insecure Requests spec](https://w3c.github.io/webappsec/specs/upgrade/) tries to ensure that no links break if a developer upgrades their server to HTTPS in order to provide a better (more secure) user experience.
 
