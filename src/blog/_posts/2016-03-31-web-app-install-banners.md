@@ -1,5 +1,5 @@
 ---
-title: Progressive web app install banners come to Opera for Android
+title: Progressive Web App install banners come to Opera for Android
 authors:
 - andreas-bovens
 intro: 'In Opera 36, we’ve started showing a “web app install banner” for sites that meet a set of criteria, qualifying them as a progressive web app.'
@@ -9,6 +9,10 @@ tags:
 - opera
 license: cc-by-3.0
 ---
+
+<figure block="figure" mod="right">
+	<img elem="media" src="{{ page.id }}/pd-1-banner.png" width="360" style="margin: 0 0 15px 15px" alt="PD-1 web app install banner">
+</figure>
 
 Since we first shipped support for web manifest and “add to home screen” in Opera 32 for Android [last year](https://dev.opera.com/articles/installable-web-apps/), we’ve seen an increasing amount of interest in progressive web apps.
 
