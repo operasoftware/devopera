@@ -23,8 +23,8 @@ However, one hurdle with our implementation thus far has been that, in order for
 That’s why in Opera 36, we’ve started showing a “progressive web app install banner” for sites that meet a set of criteria, qualifying them as a progressive web app. These criteria are as follows. The site must:
 
 - Be served over HTTPS
-- Have a manifest with a `short_name` and `name`, `start_url`, and 144×144 PNG icon
-- Have a Service Worker (making sure that the `start_url` functions offline)
+- Have a manifest with a `short_name` and `name`, `start_url`, and a PNG icon of at least 144×144 pixels
+- Have a service worker (making sure that the `start_url` functions offline)
 
 In addition, we also have a user engagement condition, so as to not show the install banner too aggressively. The condition there is that: the user has visited your site at least twice, with 5 minutes or more between visits. Careful readers will notice these conditions are the same as in [Chrome](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en), but we may change this in the future.
 
