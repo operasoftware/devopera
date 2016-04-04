@@ -7,6 +7,7 @@ tags:
 - browser
 - mobile
 - opera
+- pwa
 license: cc-by-3.0
 ---
 
