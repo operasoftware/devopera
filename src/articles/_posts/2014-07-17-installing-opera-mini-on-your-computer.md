@@ -43,7 +43,7 @@ Right-click _microemulator.jar_ and select _Properties_, _Permissions_ and tick 
 ## Making the emulator resizable
 
 <figure block="figure" mod="right">
-	<img elem="media" mod="half" src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini">
+	<img elem="media" src="{{ page.id }}/bbc.png" alt="BBC Sport in Opera Mini">
 </figure>
 
 Once MicroEmulator is launched, go to _Options > Select device._ Select _Resizable device_ and choose _Set as default._ This setting will give you a resizable (and more usable) emulator window.
