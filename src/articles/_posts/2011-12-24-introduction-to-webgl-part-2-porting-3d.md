@@ -18,7 +18,7 @@ license: cc-by-3.0
 	<figcaption elem="caption">Figure 1: An image of the finished example for this article</figcaption>
 </figure>
 
-In the [first part of our WebGL series][2], we walked through a very simple introduction to WebGL, explaining what it is and how it can be used, and dissected a simple code example. From here on in, we will start looking at WebGL in more detail, focussing on individual tasks and techniques. This time, we’ll look at drawing more complicated models in 3D graphics editing applications, and porting them to WebGL.
+In the [first part of our WebGL series][2], we walked through a very simple introduction to WebGL, explaining what it is and how it can be used, and dissected a simple code example. From here on in, we will start looking at WebGL in more detail, focusing on individual tasks and techniques. This time, we’ll look at drawing more complicated models in 3D graphics editing applications, and porting them to WebGL.
 
 [2]: /articles/introduction-to-webgl-part-1/
 
