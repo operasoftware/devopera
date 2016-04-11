@@ -351,8 +351,6 @@ Useful links for more information:
 [73]: http://learningwebgl.com/cookbook/index.php/WebGL:_Frequently_Asked_Questions
 [74]: http://learningwebgl.com/blog/
 
-Then the data in the vertex arrays is sent to the GPU by feeding it into a set of one or more /aThen the data in the vertex arrays is sent to the GPU by feeding it into a set of one or more
-
 Read part 2 of this series: [An Introduction to WebGL — Part 2: Porting 3D Graphics][75].
 
 [75]: /articles/introduction-to-webgl-part-2-porting-3d/
