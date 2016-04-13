@@ -3,6 +3,8 @@ main:
     link: https://twitter.com/odevrel
   - text: Opera Software on GitHub
     link: https://github.com/operasoftware
+  - text: List of Progressive Web Apps
+    link: https://pwa.rocks/
   - text: Opera questions on Stack Overflow
     link: https://stackoverflow.com/questions/tagged/opera
   - text: Opera’s events on Lanyrd
