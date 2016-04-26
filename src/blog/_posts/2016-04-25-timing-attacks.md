@@ -11,7 +11,11 @@ license: cc-by-3.0
 
 On April 1st, I spoke at the very first [Fronteers Spring Conference](https://fronteers.nl/congres/2016-spring). The theme of the whole conference was **performance**. For my presentation, I decided to try something a little bit different: instead of talking about techniques that lead to better client-side performance, I focused on security-sensitive situations in which performance can actually be a _bug_ rather than a feature.
 
-Check out the video below. [The slides are available too.](https://speakerdeck.com/mathiasbynens/front-end-performance-the-dark-side-at-fronteers-spring-conference-2016)
+View [the slides](https://speakerdeck.com/mathiasbynens/front-end-performance-the-dark-side-at-fronteers-spring-conference-2016) here:
+
+<script async class="speakerdeck-embed" data-id="63fc31552bd24a5dbf3bf22f9454c35f" data-ratio="1.77777777777778" src="https://speakerdeck.com/assets/embed.js"></script>
+
+Check out the video below.
 
 <figure block="figure">
 	<iframe elem="media" src="https://player.vimeo.com/video/163113209" width="640" height="360" frameborder="0" allowfullscreen></iframe>
