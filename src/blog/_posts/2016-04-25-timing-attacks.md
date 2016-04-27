@@ -13,18 +13,20 @@ On April 1st, I spoke at the very first [Fronteers Spring Conference](https://fr
 
 View [the slides](https://speakerdeck.com/mathiasbynens/front-end-performance-the-dark-side-at-fronteers-spring-conference-2016) here:
 
-<script async class="speakerdeck-embed" data-id="63fc31552bd24a5dbf3bf22f9454c35f" data-ratio="1.77777777777778" src="https://speakerdeck.com/assets/embed.js"></script>
+<figure block="figure">
+	<iframe elem="media" src="https://speakerdeck.com/player/63fc31552bd24a5dbf3bf22f9454c35f" width="767" height="493" allowfullscreen></iframe>
+</figure>
 
 Check out the video below.
 
 <figure block="figure">
-	<iframe elem="media" src="https://player.vimeo.com/video/163113209" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+	<iframe elem="media" src="https://player.vimeo.com/video/163113209" width="640" height="360" allowfullscreen></iframe>
 </figure>
 
 The Q&A session after the talk was recorded as well.
 
 <figure block="figure">
-	<iframe elem="media" src="https://player.vimeo.com/video/163232535" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+	<iframe elem="media" src="https://player.vimeo.com/video/163232535" width="640" height="360" allowfullscreen></iframe>
 </figure>
 
 The presentation walks through what _timing attacks_ are, explains how they can occur on the web through client-side code, and demonstrates how modern performance-related web APIs can sometimes have a negative security impact. To get the point across, I showcased some brilliant research by [Yan Zhu](https://zyan.scripts.mit.edu/sniffly/) and [Tom Van Goethem](https://vagosec.org/academic/#ccs2015-timing). My favorite demo was one of Tom’s, where a client-side timing attack (using nothing but JavaScript) is used to figure out the exact age of the current visitor. (This demo starts around 16:03 in the first video.)

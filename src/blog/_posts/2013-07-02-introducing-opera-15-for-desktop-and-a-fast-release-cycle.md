@@ -10,7 +10,9 @@ license: cc-by-3.0
 
 Here it is — [Opera 15 for computers](https://www.opera.com/computer): your fast, secure browser that doesn’t get in your way. Here’s a quick video introduction.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" frameborder="0" allowfullscreen></iframe>
+<figure block="figure">
+	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" allowfullscreen></iframe>
+</figure>
 
 Opera 15 for computers also commences our new [fast release cycle](https://www.opera.com/blogs/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
 

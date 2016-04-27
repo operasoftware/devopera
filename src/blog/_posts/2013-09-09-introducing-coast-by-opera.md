@@ -19,7 +19,9 @@ Since Mosaic, browsers have sported back buttons, menus, icons (many of which ha
 
 We want Coast to help close the user experience gap between traditional web browsers rendering web pages, and apps. We don’t want native apps to beat the web — we want the web to win.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PY23b1X9mAM" frameborder="0" allowfullscreen></iframe>
+<figure block="figure">
+	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/PY23b1X9mAM" allowfullscreen></iframe>
+</figure>
 
 ## For developers
 
