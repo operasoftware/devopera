@@ -22,7 +22,7 @@ I recently gave a keynote talk at Velocity conference called “Ensuring a Perfo
 
 The most common question I got in the hallways was “How can I make my site work well in Opera Mini?”. The answer is simple: use the development methodology known as Progressive Enhancement.
 
-*Note that throughout this article, when we refer to “Opera Mini” we mean the full proxy version: that is, Opera Mini/iOS in Opera Mini mode, Opera Mini/ Android in Extreme Mode, and any version of Opera Mini on Windows Phone or feature phones. When testing your sites on iOS or Android, please ensure your device is in these modes. ([More on Opera Mini modes](/articles/browsers-modes-engines/).)*
+*Note that throughout this article, when we refer to “Opera Mini” we mean the full proxy version: that is, Opera Mini/iOS in Opera Mini mode, Opera Mini/Android in Extreme Mode, and any version of Opera Mini on Windows Phone or feature phones. When testing your sites on iOS or Android, please ensure your device is in these modes. ([More on Opera Mini modes](https://dev.opera.com/articles/browsers-modes-engines/).)*
 
 ## Progressive Enhancement
 
