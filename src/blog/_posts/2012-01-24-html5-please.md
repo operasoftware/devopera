@@ -9,7 +9,7 @@ license: cc-by-3.0
 ---
 
 <figure block="figure">
-    <a href="http://html5please.us/"><img elem="media" src="{{ page.id }}/html5-please.png" alt="HTML5 Please"></a>
+	<a href="http://html5please.us/"><img elem="media" src="{{ page.id }}/html5-please.png" alt="HTML5 Please"></a>
 </figure>
 
 Several months ago, [Paul Irish](http://paulirish.com) and I got an idea to create a service that would give out recommendations on which HTML5 features to use and how to use them. Finally, yesterday, we pushed that site live: [html5please.us](http://html5please.com).
