@@ -1,6 +1,6 @@
 ---
 title: Vadim Makeev
-link: https://twitter.com/pepelsbey
+link: https://twitter.com/pepelsbey_
 ---
 
-Author of [pepelsbey.net blog](pepelsbey.net), advocating web standards, semantic coding and microformats. Permanent member of Russian IT conference movement as organizer and speaker. Web Evangelist, founder of "Web Standards" Russian development community.
+Web Evangelist at Opera Software, editor-in-chief of [Web Standards](https://web-standards.ru/) project, author of [pepelsbey.net](https://pepelsbey.net/) blog. Organizer of [RIT](http://ritfest.ru/) and [Web Standards Days](https://wsd.events/) conferences, speaker and active participant of many others. Author of Zen Coding project idea and Shower presentation engine. Previously worked for LiveJournal, Yandex and few other companies. Coding, writing, arguing, making world better, playing foosball, drinking port wine. Better known as Pepelsbey.
