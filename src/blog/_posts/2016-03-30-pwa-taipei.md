@@ -23,4 +23,4 @@ If you don't like my voice, just [see the slides](http://www.slideshare.net/bruc
 - [New Progressive Web App helps Flipkart boost conversions 70%](https://developers.google.com/web/showcase/case-study/flipkart?hl=en) and other business benefits of PWAs.
 - [Installable Web Apps and Add to Home screen](/articles/installable-web-apps/): a longer tutorial on how to make a Progressive Web App.
 - [Progressive Web App install banners come to Opera for Android](https://dev.opera.com/blog/web-app-install-banners/)
-- [List of good Progressive Web Apps](https://operasoftware.github.io/pwa-list/)
+- [List of good Progressive Web Apps](https://pwa.rocks/)
