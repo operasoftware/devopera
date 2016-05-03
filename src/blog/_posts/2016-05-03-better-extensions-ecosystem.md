@@ -1,5 +1,5 @@
 ---
-title: 'For A Better Extensions Ecosystem'
+title: 'For a Better Extensions Ecosystem'
 authors:
 - shwetank-dixit
 intro: 'A number of browser makers have started work on making browser extensions interoperable. This bodes well for the future of the extensions ecosystem.'
@@ -13,7 +13,7 @@ In 2013, when Opera desktop and Opera for Android switched over to Chromium, we 
 
 That is why we chose our extension packaging format as `.nex` which stands for ‘navigator extensions’, signifying our take on a vendor-neutral format for extensions. Back it 2013, [we wrote the following](https://dev.opera.com/blog/introducing-nex/):
 
-> ...NEX — a vendor-neutral packaging format for browser add-ons that we have initially implemented on top of the Chromium `.crx` format in Opera. We intend to further develop this as an open add-ons format through international standards bodies. Initially we intend to consolidate the differences between add-on execution environments themselves considering their current similarities. As a secondary objective we then aim to kick-start meaningful discussion around shared system and device-level APIs with a view to making browser add-ons first-class citizens of the web core.
+> …NEX — a vendor-neutral packaging format for browser add-ons that we have initially implemented on top of the Chromium `.crx` format in Opera. We intend to further develop this as an open add-ons format through international standards bodies. Initially we intend to consolidate the differences between add-on execution environments themselves considering their current similarities. As a secondary objective we then aim to kick-start meaningful discussion around shared system and device-level APIs with a view to making browser add-ons first-class citizens of the web core.
 
 Years later, it seems a lot of other browser makers are also on board with getting some common extension APIs which work cross-browser. In order to do this, [Opera, Microsoft, and Mozilla have begun work in the Extensions Community Group](https://lists.w3.org/Archives/Public/public-browserext/2016May/0000.html) where we will try to agree upon a set of common APIs, as well as a common manifest and packaging format for browser extensions. The goal is to enable extension developers to write one extension and have it work cross-browser.
 
