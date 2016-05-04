@@ -1,5 +1,5 @@
 ---
 title: Mathias Bynens
-link: https://mathiasbynens.be/
+link: https://twitter.com/mathias
 ---
-Mathias is a Belgian web standards freak. He likes HTML, CSS, JavaScript, Unicode, performance, and security. At [Opera Software](https://www.opera.com) he’s a member of the Developer Relations team.
+[Mathias](https://mathiasbynens.be/) is a Belgian web standards freak. He likes HTML, CSS, JavaScript, Unicode, performance, and security. At Opera Software he’s a member of the Developer Relations team.
