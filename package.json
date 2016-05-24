@@ -12,7 +12,7 @@
     "gulp-rsync": "0.0.6",
     "gulp-sass": "^2.3.1",
     "gulp-shell": "^0.5.2",
-    "hash-files": "^1.1.0",
+    "hash-files": "^1.1.1",
     "merge-stream": "^1.0.0",
     "open": "0.0.5",
     "require-dir": "^0.3.0",
