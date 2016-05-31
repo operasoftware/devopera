@@ -24,18 +24,18 @@ license: cc-by-3.0
 
 ## Introduction {#introduction}
 
-Opera TV Snap is an industry-first, end-to-end solution that allows content publishers to create and submit a Smart TV app into the Opera TV Store quickly and easily, for free. See [opera.com/tvsnap][1] for more details.
+Opera TV Snap is an industry-first, end-to-end solution that allows content publishers to create and submit a Smart TV app to the Opera TV Store quickly and easily, for free. See the [Opera TV Snap page][1] for more details.
 
 ### Basics {#basics}
 
-Specification you should be aware before preparing video feed for TV Snap Template:
+Specifications you should be aware of before preparing a video feed for the TV Snap Template:
 
 * RSS specification: [rssboard.org/rss-specification][2]
 * MRSS specification: [rssboard.org/media-rss][3]
 * Feed should validate: [rssboard.org/rss-validator][4]
 * Date and time format must comply with [RFC822][5]
 * [HTML5 Audio and Video Support in Opera TV Store Applications][6]
-* 16:9 thumbnail ratio is a must. 256 x 144 [px] is minimal and recommended for the best user experience . If image will be greater it will be scaled to 256 px.
+* 16:9 thumbnail ratio is a must. 256 x 144 px is minimal and recommended for the best user experience . If the image is greater, it will be scaled down to 256 px.
 
 ## Opera MRSS {#mrss}
 
