@@ -41,7 +41,7 @@ The four possible values of `object-fit` are as follows:
 - `contain`: if you have set an explicit `height` and `width` on a replaced element, `object-fit:contain` will cause the content (e.g. the image) to be resized so that it is fully displayed with intrinsic aspect ratio preserved, but still fits inside the dimensions set for the element.
 - `fill`: causes the element's content to expand to completely fill the dimensions set for it, even if this does break its intrinsic aspect ratio.
 - `cover`: preserves the intrinsic aspect ratio of the element content, but alters the width and height so that the content completely covers the element. The smaller of the two is made to fit the element exactly, and the larger overflows the element.
-- `none`: the content completely ignorse any height or weight set on the element, and just uses the replaced element's intrinsic dimensions.
+- `none`: the content completely ignore any height or weight set on the element, and just uses the replaced element's intrinsic dimensions.
 
 Although the value `none` was in the original specification and is supported in Opera, it has been removed in a later revision of the spec – but may well return in a future iteration.
 
@@ -107,7 +107,7 @@ See the [`-o-object-fit:cover` example][8].
 
 ## Overriding a video's aspect ratio
 
-This example goes in the opposite direction - this time we are taking a video with a broken aspect ratio, which is far too wide and stretches across the element in a nasty thin strip, and forcing it to change aspect ratio and nicely fill it up using `object-fit:fill`. Why would we want to do this? Maybe some of the videos your contents editors upload to your CMS have a a broken aspect ratio, and you want to fix them all on the fly, in one easy fell swoop?
+This example goes in the opposite direction - this time we are taking a video with a broken aspect ratio, which is far too wide and stretches across the element in a nasty thin strip, and forcing it to change aspect ratio and nicely fill it up using `object-fit:fill`. Why would we want to do this? Maybe some of the videos your contents editors upload to your CMS have a broken aspect ratio, and you want to fix them all on the fly, in one easy fell swoop?
 
 Note that normally videos with broken aspect ratio aren't this extreme: they might be 4:3 instead of 16:9, which is still annoying of course.
 

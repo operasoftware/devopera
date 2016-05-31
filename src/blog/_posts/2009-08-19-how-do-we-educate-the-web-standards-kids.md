@@ -52,7 +52,7 @@ license: cc-by-3.0
 
 <p>Should we be going any younger? <em>In vivo</em> Wifi?</p>
 
-<p>Of course, the exact ages are not important - the point here is to set a goal, and it shouldn&#39;t rely on age limits. I&#39;ve only included ages for illustative purposes - your exact exeriences will differ from mine, and the exact ages that kids can start playing with computers/the Web depends on such factors as locale and priviledge.</p>
+<p>Of course, the exact ages are not important - the point here is to set a goal, and it shouldn&#39;t rely on age limits. I&#39;ve only included ages for illustrative purposes - your exact experiences will differ from mine, and the exact ages that kids can start playing with computers/the Web depends on such factors as locale and privilege.</p>
 
 <h2>Summary</h2>
 

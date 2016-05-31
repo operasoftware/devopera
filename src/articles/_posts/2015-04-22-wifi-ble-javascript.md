@@ -143,9 +143,9 @@ In the next couple of sections we will go through two examples. These two exampl
 1. Sensing with an LDR (light dependent resistor) with:
 	- [firmware code](http://docs.spark.io/firmware/) that will publish the sensor values
 	- [spark npm module](https://www.npmjs.com/package/spark) to pick up the values periodically
-2. Moving a servor with buttons on a web browser with:
+2. Moving a servo with buttons on a web browser with:
 	- pre-built firmware code [voodootiki spark](https://github.com/voodootikigod/voodoospark)
-	- [express](https://www.npmjs.com/package/express), [spark-io](https://www.npmjs.com/package/spark-io) and [johnny-five](https://www.npmjs.com/package/johnny-five) npm modules to built a simple button that can turn the server from the browser
+	- [express](https://www.npmjs.com/package/express), [spark-io](https://www.npmjs.com/package/spark-io) and [johnny-five](https://www.npmjs.com/package/johnny-five) npm modules to built a simple button that can turn the servo from the browser
 
 ### 2. Sensing photocell values
 
@@ -244,7 +244,7 @@ You should next see a stream of sensor data. Shine a torch light on the LDR and 
 	<img elem="media" src="{{ page.id }}/img/ldr-result.jpg" alt="">
 </figure>
 
-This is just the start in playing with the [Spark JavaScript API](http://docs.spark.io/javascript/#getting-started-logging-in) for the server-side. There are many more [firmware code libraries](https://www.spark.io/build#libraries) available that you can instantly flash to the your SparkCore and collect the results via the [events api](http://docs.spark.io/javascript/#supported-commands-events).
+This is just the start in playing with the [Spark JavaScript API](http://docs.spark.io/javascript/#getting-started-logging-in) for the server-side. There are many more [firmware code libraries](https://www.spark.io/build#libraries) available that you can instantly flash to your SparkCore and collect the results via the [events api](http://docs.spark.io/javascript/#supported-commands-events).
 
 ### 3. Control a Servo
 

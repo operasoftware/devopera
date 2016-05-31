@@ -109,7 +109,7 @@ Unfortunately, when it comes to the types of video that browsers can handle, the
 
 (Chrome, Opera and Firefox also include support for a royalty-free codec called Ogg Theora, but this is superseded by.webm, so we don’t discuss it further.)
 
-What this means at the moment, though, is that we need to encode our videos twice if we want it to work in all current browsers: once as webM and once as H.264. Fortunately, the new `<video>` element allows us to specifiy different versions of our movies: if we add alternative `<source>` elements with appropriate `type` attributes to the video, the browser will choose and download the format that it can display. Note that in this case we do not provide a `src` attribute in the `<video>` element itself:
+What this means at the moment, though, is that we need to encode our videos twice if we want it to work in all current browsers: once as webM and once as H.264. Fortunately, the new `<video>` element allows us to specify different versions of our movies: if we add alternative `<source>` elements with appropriate `type` attributes to the video, the browser will choose and download the format that it can display. Note that in this case we do not provide a `src` attribute in the `<video>` element itself:
 
 	<video width=320 height=240 controls poster=image.jpg>
 		<source src=myVideo.webm type=video.webm>
@@ -187,7 +187,7 @@ All we need is a reference to our `<video>` object and we can control it directl
 
 In addition, media elements also fire a range of events as part of their processing model, which we can listen for and hook into. For our example, we will only look at a few of these:
 
-- `loadeddata` The browser has loaded enough video data to begin playback at the current position. `play` and `pause` Playback was started or paused. If we’re controlling the video from JavaScript, we want to listen out for these to ensure that calling the `play()` and `pause()` methods actually return succesfully.
+- `loadeddata` The browser has loaded enough video data to begin playback at the current position. `play` and `pause` Playback was started or paused. If we’re controlling the video from JavaScript, we want to listen out for these to ensure that calling the `play()` and `pause()` methods actually return successfully.
 - `timeupdate` The current playback position has changed because the movie is playing, a script changed it programmatically, or the user has decided to jump to a different point in the video.
 - `ended` We’ve reached the end of the movie, and the `<video>` element is not set to `loop` or play backwards (not covered in this article).
 

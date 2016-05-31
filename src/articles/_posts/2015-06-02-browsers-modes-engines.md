@@ -34,7 +34,7 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 	<td>Full</td>
 </tr>
 <tr>
-	<td>Opera Turbo</td>
+	<td>Data savings *</td>
 	<td>Chromium</td>
 	<td>Yes</td>
 	<td>Full</td>
@@ -47,9 +47,9 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 	<td>Limited</td>
 </tr>
 <tr>
-	<td>High</td>
+	<td>High *</td>
 	<td><a href="https://developer.chrome.com/multidevice/webview/overview">Android WebView</a></td>
-	<td>Yes</td>
+	<td>Yes †</td>
 	<td>Full</td>
 </tr>
 
@@ -122,8 +122,9 @@ We’ll keep this table as up-to-date as possible, so be sure to bookmark this p
 
 Notes:
 
+- * : these modes (powered by our Opera Turbo servers) also have a [Video Boost](https://www.opera.com/blogs/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) compression option.
+- † : when in High mode and connected to Wi-Fi, data savings are disabled, unless the user has explicitly opted in by activating the Wi-Fi data savings option in Settings.
 - Opera Turbo mode compresses data up to 80%. Opera Mini mode compresses data up to 90%.
-- Opera Turbo marked with asterisk also has a [Video Boost](https://www.opera.com/blogs/mobile/2014/11/new-opera-mini-for-iphone-ipad-less-buffering-free-download-appstore/) compression option.
 - If you’re doing IP-based geo-detection, you should always check if there is an `X-Forwarded-For` header. That way, you can also correctly locate browser users using proxy functionality, powered by Opera Mini and Opera Turbo.
-- Opera Mini comes with “limited” standards support: this means that advanced JavaScript, CSS and other dynamic elements might not work as expected, due to the peculiarities of server-side rendering and limited client capabilities.
+- Opera Mini comes with [“limited” standards support](https://dev.opera.com/articles/making-sites-work-opera-mini/): this means that advanced JavaScript, CSS and other dynamic elements might not work as expected, due to the peculiarities of server-side rendering and limited client capabilities.
 - Older Presto-powered Opera products that are no longer under active development, such as Opera 12 for computers, Opera Mobile Classic, etc. are not listed here.

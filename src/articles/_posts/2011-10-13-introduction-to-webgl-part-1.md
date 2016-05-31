@@ -78,7 +78,7 @@ You don’t need to fully understand the inner workings of WebGL. There are [sev
 
 [32]: https://dev.opera.com/articles/view/an-introduction-to-webgl/#webgllib
 
-When programming in WebGL, you are usually aiming to render a scene of some kind. This usually includes multiple subsequent draw jobs or “calls”, each of which is carried out in the GPU though a process called the rendering pipeline.
+When programming in WebGL, you are usually aiming to render a scene of some kind. This usually includes multiple subsequent draw jobs or “calls”, each of which is carried out in the GPU through a process called the rendering pipeline.
 
 In WebGL, like in most real-time 3D graphics, the triangle is the basic element with which models are drawn. Therefore, the process of drawing in WebGL involves using JavaScript to generate the information that specifies where and how these triangles will be created, and how they will look (colour, shades, textures, etc). This information is then fed to the GPU, which processes it, and returns a view of the scene. Next we will look in more detail at how this last bit happens.
 
@@ -350,8 +350,6 @@ Useful links for more information:
 [72]: http://www.khronos.org/message_boards/viewforum.php?f=34
 [73]: http://learningwebgl.com/cookbook/index.php/WebGL:_Frequently_Asked_Questions
 [74]: http://learningwebgl.com/blog/
-
-Then the data in the vertex arrays is sent to the GPU by feeding it into a set of one or more /aThen the data in the vertex arrays is sent to the GPU by feeding it into a set of one or more
 
 Read part 2 of this series: [An Introduction to WebGL — Part 2: Porting 3D Graphics][75].
 

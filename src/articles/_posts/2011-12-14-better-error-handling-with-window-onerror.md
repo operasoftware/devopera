@@ -58,7 +58,7 @@ If the return value is `true`, then the error is handled, else it is not handled
 
 Now let’s create a second script — `clumsy.js`:
 
-	document.alert('Ooops, I’m bad with paranthesis!'
+	document.alert('Ooops, I’m bad with parenthesis!'
 
 Finally we’ll create an HTML page that calls these two scripts:
 

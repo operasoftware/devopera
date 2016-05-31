@@ -26,7 +26,7 @@ license: cc-by-3.0
 <img src="{{ page.id }}/opera_about_opengl.png" alt="opera:about showing the new Vega backend entry" height="300" style="float:right;margin: 10px 0 10px 10px;" />
 
 <p>This build only has an OpenGL backend. That means your system must have an OpenGL 2.x compatible graphics card and related drivers for hardware acceleration and WebGL to work. In future builds we will also add a Direct3D backend, which will reduce the requirements on drivers and should work out of the box on most modern systems.</p>
-<p>So how can you tell if hardware acceleration is enabled? There are two easy ways to check. The first option is to load some WebGL content – if it works that means your hardware and drivers are compatbile, and hardware acceleration is enabled in the browser. Alternatively, you can check the new &quot;Vega backend&quot; entry in <code>opera:about</code> – if the backend listed is <i>OpenGL</i>, you have hardware acceleration enabled; otherwise, the entry will show that the browser is using <i>Software</i> backend.</p>
+<p>So how can you tell if hardware acceleration is enabled? There are two easy ways to check. The first option is to load some WebGL content – if it works that means your hardware and drivers are compatible, and hardware acceleration is enabled in the browser. Alternatively, you can check the new &quot;Vega backend&quot; entry in <code>opera:about</code> – if the backend listed is <i>OpenGL</i>, you have hardware acceleration enabled; otherwise, the entry will show that the browser is using <i>Software</i> backend.</p>
 
 <h2>Download it!</h2>
 <p>This preview build is currently only available for Windows – but builds for other operating systems are being worked on as well.</p>

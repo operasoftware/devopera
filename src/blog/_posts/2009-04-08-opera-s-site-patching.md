@@ -78,7 +78,7 @@ license: cc-by-3.0
 <p>It&#39;s an ambitious scope, probably much more ambitious than it might seem from the outside. The devices and platforms have very different requirements and problems. For example:</p>
 
 <ul>
-<li>On the Wii we have a minimum font size to keep things readable - but this often causes unexpected widths, wrapping and repositioning content in ways that don&#39;t happen on a Desktop browser. We patch several sites that have too rigid positioning to accomodate a slightly larger font size.</li>
+<li>On the Wii we have a minimum font size to keep things readable - but this often causes unexpected widths, wrapping and repositioning content in ways that don&#39;t happen on a Desktop browser. We patch several sites that have too rigid positioning to accommodate a slightly larger font size.</li>
 <li>Using an on-screen keyboard on the Wii and many mobile phones means the window resizes itself every time you focus a form element - to make room for the keyboard. When <a href="http://www.ba.com" title="the world&#39;s favourite reload implementation? Maybe not.">British Airways</a> re-loads the booking page <em>every time you resize it</em>, booking a ticket with a virtual keyboard becomes pretty hard...</li>
 <li>..and when <a href="http://www.ebay.fr/" title="Vive la France! But would you mind stop watching my keys?">eBay in France</a> tries to count your keydown events to make sure you don&#39;t cheat and <em>paste</em> your e-mail address into the registration form&#39;s &quot;re-type E-mail&quot; field it won&#39;t work with on-screen keyboards either. Some of them just don&#39;t support key events. Come on eBay, I really <em>did</em> type it in. I mean, REALLY! On hardware where cut-and-paste isn&#39;t even AVAILABLE!...</li>
 </ul>
@@ -111,7 +111,7 @@ license: cc-by-3.0
 
 <p>One of the things that surprised me most about browser.js work is how quickly the web changes. <em>By paying such close attention to specific sites we see the web as a whole evolve</em>, and it&#39;s iterating faster than I would have dared to expect. And contrary to what you might expect, we do see sites change to become more Opera-friendly <em>after</em> we&#39;ve patched them!</p>
 
-<p>That means <a href="http://my.opera.com/hallvors/blog/show.dml/103863" title="I came across this old blog post of mine so I might as well quote from it">site patcing works</a>. It works because it improves compatibility, thereby giving users a real choice in browsers and - as weird as it may sound - as a direct effect of that, it gives webmasters incentives to make sure their sites are Opera- and cross-browser-compatible.</p>
+<p>That means <a href="http://my.opera.com/hallvors/blog/show.dml/103863" title="I came across this old blog post of mine so I might as well quote from it">site patching works</a>. It works because it improves compatibility, thereby giving users a real choice in browsers and - as weird as it may sound - as a direct effect of that, it gives webmasters incentives to make sure their sites are Opera- and cross-browser-compatible.</p>
 
 <p>Welcome to the future - <em>made of and with standards, openness and site patching.</em></p>
 

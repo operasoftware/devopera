@@ -20,7 +20,7 @@ In the earlier tutorials of this course we talked about the content of web sites
 	- [Universal selectors](#universal)
 	- [Attribute selectors](#attribute)
 	- [Child selectors](#child)
-	- [Descendent selectors](#descendent)
+	- [Descendant selectors](#descendant)
 	- [Adjacent sibling selectors](#adjacent)
 	- [Pseudo-classes](#pseudoclasses)
 	- [Pseudo-elements](#pseudoelements)
@@ -97,7 +97,7 @@ You can add comments either between rules or inside the property block — for e
 		*/
 	}
 
-Unlike other languages, CSS only has block level comments — single line comments do not exist. You can of course constrain the comment to a single line if you wish, but you still need to include the opening and closing comment delimeters (`/*` and `*/`).
+Unlike other languages, CSS only has block level comments — single line comments do not exist. You can of course constrain the comment to a single line if you wish, but you still need to include the opening and closing comment delimiters (`/*` and `*/`).
 
 ### Grouping selectors {#groupingselectors}
 
@@ -139,7 +139,7 @@ In the above section, I introduced you to the most basic of CSS selectors, eleme
 - Universal selectors: universal selectors can be used to select every element on the page.
 - Attribute selectors: as their name suggests, attribute selectors allow you to select elements based on their attributes.
 - Child selectors: if you want to select specific elements that are children of other specific elements, use this selector.
-- Descendent selectors: if you want to select specific elements that are descendents of other specific elements (not just direct children, but further down in the tree as well), you can use this selector type.
+- Descendant selectors: if you want to select specific elements that are descendants of other specific elements (not just direct children, but further down in the tree as well), you can use this selector type.
 - Adjacent sibling selectors: if you want to select just specific elements that follow other specific elements, use these selectors.
 - Pseudo-classes: these allow you to style elements based not on what the elements are, but on more esoteric factors such as the states of links (e.g. if they are being hovered over, or have been visited already).
 - Pseudo-elements: these allow you to style specific parts of elements, rather than the whole element (eg the first letter within that element); they also allow you to insert content before or after specific elements.
@@ -186,9 +186,9 @@ You can use a child selector to select just specific elements that are children 
 
 Child selectors are not supported in IE6 or below.
 
-### Descendent selectors {#descendent}
+### Descendant selectors {#descendant}
 
-Descendent selectors are very similar to child selectors, except that child selectors only select **direct** descendents; descendent selectors select suitable elements anywhere in the element hierarchy, not just direct descendents. Let’s look at what this means more carefully. Consider the following HTML snippet:
+Descendant selectors are very similar to child selectors, except that child selectors only select **direct** descendants; descendant selectors select suitable elements anywhere in the element hierarchy, not just direct descendants. Let’s look at what this means more carefully. Consider the following HTML snippet:
 
 	<div>
 		<em>hello</em>
@@ -205,7 +205,7 @@ You could use a child selector to select just the `<em>` immediately inside the 
 		…
 	}
 
-If you instead used a descendent selector, as follows:
+If you instead used a descendant selector, as follows:
 
 	div em {
 		…
@@ -404,7 +404,7 @@ This is the equivalent of:
 
 	list-style: circle inside url(bullet.gif);
 
-Note that `#000` is a shorthand hexidecimal colour value; it is equivalent to the longhand `#000000`, seen earlier on. Let’s look at a more complicated example too; `#6C9` is the same as `#66CC99`.
+Note that `#000` is a shorthand hexadecimal colour value; it is equivalent to the longhand `#000000`, seen earlier on. Let’s look at a more complicated example too; `#6C9` is the same as `#66CC99`.
 
 ## Applying CSS to HTML {#applyingcsstohtml}
 

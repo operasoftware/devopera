@@ -78,7 +78,7 @@ _Event pages_ are exactly like background pages, except that they only loaded wh
 
 Event pages are loaded when:
 
-- The extension is installed, restarted started or updated to a new version.
+- The extension is installed, restarted, started or updated to a new version.
 - An event is dispatched which the event page was listening for.
 - When another part of the extension (like a popup) calls it (for example, using `runtime.getBackgroundPage`).
 - When another part of the extension sends a message (using `runtime.sendMessage()` or using long-lived connections. You can read more on message passing in our [article](/extensions/message-passing/)).

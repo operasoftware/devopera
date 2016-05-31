@@ -7,7 +7,7 @@ license: cc-by-nc-sa-2.5
 ---
 <h2>Introduction</h2>
 <p>Zebra striping—or, coloring or shading alternate rows on a table—is thought to enhance the usability of a table by guiding the user’s eye along a row. This method has been used in print for years, and many designers try to emulate this technique when making tables for the Web. CSS has made achieving zebra striping easier, but, up until CSS3, it still involved a bit of cumbersome coding.&nbsp;</p>
-<p>With the advent of CSS3’s <code>nth-child</code> selector, we are able to target multiple elements in a document by creating a &quot;counter&quot; that skips over&nbsp;specified children in the document tree. This allows us, specifically, to style only the odd or even rows of a table. This article details how to use <code>nth-child</code> sucessfully.</p>
+<p>With the advent of CSS3’s <code>nth-child</code> selector, we are able to target multiple elements in a document by creating a &quot;counter&quot; that skips over&nbsp;specified children in the document tree. This allows us, specifically, to style only the odd or even rows of a table. This article details how to use <code>nth-child</code> successfully.</p>
 
 <p><a href="zebra_striping_demos.zip">Download the sample code for this article</a>.</p>
 
@@ -341,7 +341,7 @@ license: cc-by-nc-sa-2.5
 
 <p class="comment">Table 3. Demonstrating that only odd-numbered of rows are selected</p>
 <h2>Illustrating zebra striping</h2>
-<p> Figure 1 shows a table listing various &quot;superfoods&quot; and their nutritional virtues as an demonstration of zebra striping.</p>
+<p> Figure 1 shows a table listing various &quot;superfoods&quot; and their nutritional virtues as a demonstration of zebra striping.</p>
 <p><img src="html-table_no-style.png" width="747" height="581" alt="a sample HTML table with no particular row styling"></p>
 <p class="comment">Figure 1: The HTML table</p>
 <p> In this demonstration, we want to color the background of the odd rows so that the table is easier to read. The declaration block is written as such:</p>
@@ -360,7 +360,7 @@ license: cc-by-nc-sa-2.5
 }</pre>
 
 <p>CSS3 provides us with a hassle-free technique for zebra-striping our tables, list items or forms, and so on.</p>
-<p>Unfortunately, the <code>nth-child</code> selector enjoys limited browser support. As of this writing, the nth-child selector works in Safari 3 and Opera 9.5. Sadly, you may want to stick to the more inefficient CSS coding method until support for the property is brought up to speed in other browsers. Or, if you want to support other browers like Internet Explorer with easy method of zebra striping, you can <a href="http://web.archive.org/web/20080730063636/http://15daysofjquery.com/examples/zebra/">&quot;patch&quot; up <code>nth-child</code> support</a> in those browsers. By using a JavaScript framework like <a href="http://jquery.com/">jQuery</a>, you can deliver a JavaScript-enabled solution through <a href="https://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">conditional comments</a> to just IE while the other browsers use the CSS rules to style the page.</p>
+<p>Unfortunately, the <code>nth-child</code> selector enjoys limited browser support. As of this writing, the nth-child selector works in Safari 3 and Opera 9.5. Sadly, you may want to stick to the more inefficient CSS coding method until support for the property is brought up to speed in other browsers. Or, if you want to support other browsers like Internet Explorer with easy method of zebra striping, you can <a href="http://web.archive.org/web/20080730063636/http://15daysofjquery.com/examples/zebra/">&quot;patch&quot; up <code>nth-child</code> support</a> in those browsers. By using a JavaScript framework like <a href="http://jquery.com/">jQuery</a>, you can deliver a JavaScript-enabled solution through <a href="https://dev.opera.com/articles/view/supporting-ie-with-conditional-comments/">conditional comments</a> to just IE while the other browsers use the CSS rules to style the page.</p>
 
 <h2>Superfoods table live example</h2>
 

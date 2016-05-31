@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Type-restriction for CMS</title>
+<style>
+input {
+  display:block;
+}
+</style>
+<form>
+  <input type=file id=upload name=files>
+  <div id=message></div>
+  <input type=submit>
+</form>
+<script>
+
+if (window.File && window.Blob) {
+  var message = document.getElementById('message'),
+      submit = document.querySelector('input[type=submit]');
+
+  document.getElementById('upload').addEventListener('change', doStuff, false);
+
+  function doStuff(evt) {
+    var type = evt.target.files[0].type;
+
+    if (type != 'image/png') {
+      message.innerHTML = type+' is not a PNG, you dweeb';
+      submit.disabled = true;
+    } else {
+      message.innerHTML = type + ' is a lovely type';
+      submit.disabled = false;
+    }
+  }
+}
+
+</script>

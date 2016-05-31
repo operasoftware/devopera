@@ -1,5 +1,5 @@
 ---
-title: The Fun Of Being Together — Developer Relations Team Meetup in Oslo
+title: The Fun of Being Together — Developer Relations Team Meetup in Oslo
 authors:
 - karlcow
 tags:
@@ -12,7 +12,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p>This is a story of places. Beijing (China), Birmingham (UK), Brooklyn (USA) , Chandigarh (India), Los Angeles (USA), Manchester (UK), Montreal (Canada), Oslo (Norway), Saint Petersburg (Russia), San Mateo (USA), Seattle (USA), Tokyo (Japan). For each of these cities, you may imagine food, architecture, colors, climate, and people. These are the cities, where we, the <a href="http://my.opera.com/ODIN/members/">Opera developer relations team</a>, are located in the world. After some departures and some hiring in the last year, we had never met altogether. Last week was <strong>our first time meeting</strong> altogether in Oslo (Norway).  </p>
+<p>This is a story of places. Beijing (China), Birmingham (UK), Brooklyn (USA) , Chandigarh (India), Los Angeles (USA), Manchester (UK), Montreal (Canada), Oslo (Norway), Saint Petersburg (Russia), San Mateo (USA), Seattle (USA), Tokyo (Japan). For each of these cities, you may imagine food, architecture, colors, climate, and people. These are the cities, where we, the <a href="http://my.opera.com/ODIN/members/">Opera developer relations team</a>, are located in the world. After some departures and some hiring in the last year, we had never met altogether. Last week was <strong>our first time meeting</strong> altogether in Oslo (Norway).</p>
 
 <p>This was an intense week of discussions addressing issues, challenges and starting new projects for the year to come.</p>
 
@@ -36,7 +36,9 @@ license: cc-by-3.0
 
 <p>We walked a bit in Norwegian Woods, where the moss swallowed our steps. There was a wonderful impromptu happening during our meeting with Andreas with a banjo, Daniel playing Ukulele, Bruce the guitar and vocal, Chris vocal. </p>
 
-<iframe allowfullscreen="allowfullscreen" frameborder="0" height="381" scrolling="no" src="http://embed.myopera.com/video/?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4Uir2MGC8g8%26feature%3Dyoutu.be%26hd%3D1&amp;height=375&amp;width=620" width="626" />
+<figure block="figure">
+	<iframe elem="media" allowfullscreen="allowfullscreen" height="381" src="http://embed.myopera.com/video/?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4Uir2MGC8g8%26feature%3Dyoutu.be%26hd%3D1&amp;height=375&amp;width=620" width="626" />
+</figure>
 
 
 <p>This week has been a unique opportunity to know each other and I&#8217;m looking forward the next one.</p>

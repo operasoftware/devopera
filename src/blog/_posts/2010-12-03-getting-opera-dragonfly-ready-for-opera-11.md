@@ -31,7 +31,7 @@ license: cc-by-3.0
 	 <li>Ability to configure keyboard shortcuts manually (under ”shortcut config” in the settings panel)</li>
 </ul>
 
-<p>As well as the abovefeatures, there have been many bug fixes for this release. A full change log since the last release can be found at the bottom of this post. This alpha release will be the last version before beta, when we move to the new Opera Dragonfly UI found in the experimental branch. Full resources will be diverted to getting Opera Dragonfly into final release quality, rather than updating the current version.</p>
+<p>As well as the above features, there have been many bug fixes for this release. A full change log since the last release can be found at the bottom of this post. This alpha release will be the last version before beta, when we move to the new Opera Dragonfly UI found in the experimental branch. Full resources will be diverted to getting Opera Dragonfly into final release quality, rather than updating the current version.</p>
 
 <h3>A note about Opera Dragonfly Experimental</h3>
 

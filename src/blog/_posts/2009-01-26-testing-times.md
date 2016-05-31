@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-Web design budgets are always tight but in economic downturns they tend to get slashed even further. One of the first things to get cut back, in my experience, is accessibility and user testing. The short term view seems to be that this is a outlay of cost that could be better used elsewhere and is a “nice to have”.
+Web design budgets are always tight but in economic downturns they tend to get slashed even further. One of the first things to get cut back, in my experience, is accessibility and user testing. The short term view seems to be that this is an outlay of cost that could be better used elsewhere and is a “nice to have”.
 
 I actually think quite the opposite. If you get it right at the start of a redesign or new build by including user feedback, especially feedback from users with disabilities, you’re more likely to have a slicker,  faster and more effective website than if you don’t user test. And we all know what that means: better <abbr title="Return on investment">ROI</abbr>, easier maintenance and a substantially bigger user base - all the things the money men like to hear about.
 

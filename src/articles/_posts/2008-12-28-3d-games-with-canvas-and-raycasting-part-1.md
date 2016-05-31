@@ -346,7 +346,7 @@ The `castRays()` function is called once per game cycle after the rest of the ga
 		drawRay(xHit, yHit);
 	}
 
-The test for the horizontal walls is almost indentical to the vertical test, so I won’t go into detail about that part; I’ll just add that if a wall is found in both runs, we take the one with the shortest distance. At the end of the raycasting we draw the actual ray on the minimap. This is only temporary and for testing purposes. It takes a fair bit of CPU in some browsers, so we’ll remove the ray drawing once we start rendering the 3D view of the world. I won’t include the code for that here but you can find it in the sample code. The result so far looks something like Figure 3.
+The test for the horizontal walls is almost identical to the vertical test, so I won’t go into detail about that part; I’ll just add that if a wall is found in both runs, we take the one with the shortest distance. At the end of the raycasting we draw the actual ray on the minimap. This is only temporary and for testing purposes. It takes a fair bit of CPU in some browsers, so we’ll remove the ray drawing once we start rendering the 3D view of the world. I won’t include the code for that here but you can find it in the sample code. The result so far looks something like Figure 3.
 
 <figure block="figure" id="figure-3">
 	<img elem="media" src="{{ page.id }}/2d-raycast.png" alt="2D raycasting on minimap">

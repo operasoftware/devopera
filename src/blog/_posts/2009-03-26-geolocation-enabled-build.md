@@ -10,7 +10,7 @@ tags:
 license: cc-by-3.0
 ---
 
-We are delighted to release the [first build of Opera with geolocation support](http://snapshot.opera.com/windows/opera_wingogi_geo.zip). The geolocation Working Group of the W3C has recently relased the [first Working Draft of the geolocation API specification](http://www.w3.org/TR/2008/WD-geolocation-API-20081222/), and we are now releasing the first Labs build with support for the API.
+We are delighted to release the [first build of Opera with geolocation support](http://snapshot.opera.com/windows/opera_wingogi_geo.zip). The geolocation Working Group of the W3C has recently released the [first Working Draft of the geolocation API specification](http://www.w3.org/TR/2008/WD-geolocation-API-20081222/), and we are now releasing the first Labs build with support for the API.
 
 The API is used in a web page’s JavaScript code to retrieve the current latitude and longitude of the browser. The following snippet shows how a web page would request the browser’s location:
 

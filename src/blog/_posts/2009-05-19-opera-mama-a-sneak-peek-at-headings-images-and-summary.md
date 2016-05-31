@@ -12,7 +12,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p><a href="https://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty  analysis.
+<p><a href="https://dev.opera.com/articles/view/mama/">MAMA</a> has been busy these last few weeks and we have some early results coming in. Based on <a href="http://www.iheni.com/ask-mama-what-the-web-is-made-of/">feedback and requests</a> here is a snapshot of what the Web&#39;s made of and some quick and dirty analysis.
 
 The results are based on 4,225,113 URLs tested from over 250 countries; more about the <a href="https://dev.opera.com/articles/view/mama-methodology/">methodology</a> can be found in Dev Opera. It&#39;s worth noting that the numbers do not all add up as URLs may fulfill a number of the criteria. Therefore, percentages are guidelines only.</p>
 
@@ -65,7 +65,7 @@ The results are based on 4,225,113 URLs tested from over 250 countries; more abo
 
 <blockquote>...if a layout table is used, then the <code>summary</code> attribute is not used or is null. The purpose of a layout table is simply to control the placement of content; the table itself is “transparent&quot; to the user. A <code>summary</code> would “break&quot; this transparency by calling attention to the table. A null <code>summary</code> (<code>summary=&quot;&quot;</code>) on layout tables is acceptable.</blockquote>
 
-Partly because of such bmisuse of the <code>summary</code> attribute on the web today the <abbr title="&quot;Hypertext">HTML</abbr> 5 Working Group are advocating the removal of <code>summary</code> from HTML5. This is something that is not a popular with many accessibility advocates who argue that if used correctly on data tables to provide information about the table contents <code>summary</code> is beneficial. Fellow Opera Evangelist <a href="http://www.brucelawson.co.uk/2009/html-5-politics-and-me/">Bruce Lawson</a> has some compelling ideas around <code>summary</code> in HTML5 as well as other accessibility implications for the new specification.
+Partly because of such misuse of the <code>summary</code> attribute on the web today the <abbr title="&quot;Hypertext">HTML</abbr> 5 Working Group are advocating the removal of <code>summary</code> from HTML5. This is something that is not a popular with many accessibility advocates who argue that if used correctly on data tables to provide information about the table contents <code>summary</code> is beneficial. Fellow Opera Evangelist <a href="http://www.brucelawson.co.uk/2009/html-5-politics-and-me/">Bruce Lawson</a> has some compelling ideas around <code>summary</code> in HTML5 as well as other accessibility implications for the new specification.
 
 
 <h3>Coming next</h3>

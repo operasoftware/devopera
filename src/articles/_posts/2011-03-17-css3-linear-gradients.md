@@ -121,7 +121,7 @@ So here we have one colour stop at 0%, and one at 100% of the way across the blo
 Here we are starting with a really light red, then going to a darker red at 50%, an even darker one at 75%, and then then a slightly lighter one at 100%. This gives us the result shown in Figure 3.
 
 <figure block="figure" id="figure-3">
-	<img elem="media" src="{{ page.id }}/multiple-stops.png" alt="A linear CSS gradient with multple colour stops">
+	<img elem="media" src="{{ page.id }}/multiple-stops.png" alt="A linear CSS gradient with multiple colour stops">
 	<figcaption elem="caption">Figure 3: A linear CSS gradient with multiple colour stops</figcaption>
 </figure>
 

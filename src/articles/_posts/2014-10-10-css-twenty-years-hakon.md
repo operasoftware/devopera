@@ -83,7 +83,7 @@ The original Acid test inspired [Acid2 and Acid3](http://www.acidtests.org/), wh
 
 **Why did you decide on the box model whereby margin, padding, border are added to declared width rather than the IE5 `box-sizing: border-box` model?**
 
-There are good use cases for both models, I believe. If you want want an image to stretch out to fill the whole content box, the original CSS box model is the one to use. However, if it’s important that padding and borders do not extend outside a certain area, the IE5 model is better. Personally I think there are more use cases for the CSS box model, but some people that I respect highly think otherwise. The conflict has been gracefully resolved by the addition of the `box-sizing` property which all browsers now support.
+There are good use cases for both models, I believe. If you want an image to stretch out to fill the whole content box, the original CSS box model is the one to use. However, if it’s important that padding and borders do not extend outside a certain area, the IE5 model is better. Personally I think there are more use cases for the CSS box model, but some people that I respect highly think otherwise. The conflict has been gracefully resolved by the addition of the `box-sizing` property which all browsers now support.
 
 **I’ve always disliked absolute positioning. Am I wrong? How did it come about in the spec?**
 

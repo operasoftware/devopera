@@ -399,7 +399,7 @@ When laying out content in CSS, boxes can be broken into two or more pieces in a
 
 [35]: http://www.w3.org/TR/css3-multicol/
 
-The [`box-decoration-break` property][36] allows you to define how these boxes behave. The `slice` value is the default value and behaves as if you do not not specify the property or it is not supported. Properties such as `border-radius`, `box-shadow`, `border` and `padding` are not applied where the box breaks. The edge will be straight as if there was no special decoration, almost as if you cut the box cleanly into pieces, and places the pieces in position, such as the next line, page or column. See figure 13 for a visual demonstration of inline blocks with `box-decoration-break:slice` applied.
+The [`box-decoration-break` property][36] allows you to define how these boxes behave. The `slice` value is the default value and behaves as if you do not specify the property or it is not supported. Properties such as `border-radius`, `box-shadow`, `border` and `padding` are not applied where the box breaks. The edge will be straight as if there was no special decoration, almost as if you cut the box cleanly into pieces, and places the pieces in position, such as the next line, page or column. See figure 13 for a visual demonstration of inline blocks with `box-decoration-break:slice` applied.
 
 [36]: http://www.w3.org/TR/css3-background/#the-box-decoration-break
 

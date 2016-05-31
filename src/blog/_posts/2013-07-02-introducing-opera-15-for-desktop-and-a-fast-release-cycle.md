@@ -10,7 +10,9 @@ license: cc-by-3.0
 
 Here it is — [Opera 15 for computers](https://www.opera.com/computer): your fast, secure browser that doesn’t get in your way. Here’s a quick video introduction.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" frameborder="0" allowfullscreen></iframe>
+<figure block="figure">
+	<iframe elem="media" width="560" height="315" src="https://www.youtube.com/embed/_mpF5aQpmow" allowfullscreen></iframe>
+</figure>
 
 Opera 15 for computers also commences our new [fast release cycle](https://www.opera.com/blogs/desktop/2013/05/opera-features-and-release-cycle/), so expect to see what’s in the next version very soon, too.
 
@@ -26,7 +28,7 @@ Just like in Opera for Android, we’ve merged bookmarks into Speed Dial, which 
 
 To add a page or extension to Speed Dial, simply click on the big plus sign. You can also do this while you’re browsing, of course: just click the "Add to Speed Dial" icon in the top right  corner of the address bar, and the page in question will be added to Speed Dial.
 
-If you want to save all your open tabs into one Speed Dial folder (you’ve been doing some research, or looking at holidays), simply right-click anywhere in in the tab bar and choose "Save tabs as Speed Dial group". To re-open them all, simply right-click on the Speed Dial folder and choose Open all.
+If you want to save all your open tabs into one Speed Dial folder (you’ve been doing some research, or looking at holidays), simply right-click anywhere in the tab bar and choose "Save tabs as Speed Dial group". To re-open them all, simply right-click on the Speed Dial folder and choose Open all.
 
 If you have a lot of Speed Dial entries, you can click the search icon in the top right corner. Start typing in the field that appears, and your bookmarked sites will be filtered in real-time.
 

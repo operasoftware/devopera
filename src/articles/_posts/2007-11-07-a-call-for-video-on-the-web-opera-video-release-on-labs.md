@@ -42,7 +42,7 @@ The Opera video build is currently at a very experimental stage, so not widely s
 
 ## How does it work?
 
-The simplest `<video>` element just uses a `src` attribute to point at the video you want to display, and a `controls` attribute, a boolean that specifies whether the user-agent should should provide controls for the video player (present,) or whether it shouldn’t, as that will be handled by the web developer creating the site (absent):
+The simplest `<video>` element just uses a `src` attribute to point at the video you want to display, and a `controls` attribute, a boolean that specifies whether the user-agent should provide controls for the video player (present,) or whether it shouldn’t, as that will be handled by the web developer creating the site (absent):
 
 	<video controls src="demo.ogg"></video>
 

@@ -118,7 +118,7 @@ main_image.jpg backup_image.jpg
 
 <h2>Using the application cache API and events to make sure the latest files are used in your cache</h2>
 
-<p>One of the great things about application cache is that now you, the programmer, have access to how the cache could behave. You have access to events which can tell you about the current state of the application cache, and have functions to asynchronously update the it too. For exampple, you can use <code>window.applicationCache</code> to find out if the browser supports application cache or not. Let's take a look at some other ways in which you can gain programmatic control over the application cache.</p>
+<p>One of the great things about application cache is that now you, the programmer, have access to how the cache could behave. You have access to events which can tell you about the current state of the application cache, and have functions to asynchronously update it too. For example, you can use <code>window.applicationCache</code> to find out if the browser supports application cache or not. Let's take a look at some other ways in which you can gain programmatic control over the application cache.</p>
 
 
 <h3>Statuses</h3>
@@ -126,7 +126,7 @@ main_image.jpg backup_image.jpg
 <p>You can check the current status of the application cache using <code>window.applicationCache.status</code>, which returns a numeric value mapped to the following states:</p>
 
 <dl>
-<dt><code>0 </code> - <code>uncached</code></dt><dd>If the page is not linked to the application cache. Also, the the very first time the application cache is being downloaded, then during the time it is being downloaded, the AppCache will have a status of <code>uncached</code>.</dd>
+<dt><code>0 </code> - <code>uncached</code></dt><dd>If the page is not linked to the application cache. Also, the very first time the application cache is being downloaded, then during the time it is being downloaded, the AppCache will have a status of <code>uncached</code>.</dd>
 <dt><code>1</code> - <code>idle</code></dt><dd>When the browser has the latest version of the AppCache, and there aren no updated versions to download, then the status is set to <code>Idle</code>.</dd>
 <dt><code>2</code> - <code>checking</code></dt><dd>The duration of when the page is checking for an updated manifest file, then the status is set to <code>Checking</code>.</dd>
 <dt><code>3</code> - <code>downloading</code></dt><dd>The duration of when the page is actually downloading a new cache (if an updated manifest file has been detected), the status is set to <code>downloading</code></dd>
@@ -154,7 +154,7 @@ main_image.jpg backup_image.jpg
 
 <li><p><code>window.applicationCache.update()</code>: This will trigger the application cache download process, which is nearly the same as reloading the page. It simply checks if the manifest has changed, and if so downloads a fresh version of all the content in the cache (respecting any cache headers). Note that even though a new cache is created with this, the page will continue to use the old cache. To make the page use the new cache you have just downloaded, you must use the <code>swapCache()</code> function.</p></li>
 
-<li><p><code>window.applicationCache.swapCache()</code>: This function tells the browser to start using the new cache data if it is available. It is important to note that even if there is a new manifest file, the application will still continue using the old cache (as specified in the old manifest file) untill <code>swapCache()</code> is called. Once <code>swapCache()</code> is called, then the cache will be used as specified from the new manifest file.</p></li>
+<li><p><code>window.applicationCache.swapCache()</code>: This function tells the browser to start using the new cache data if it is available. It is important to note that even if there is a new manifest file, the application will still continue using the old cache (as specified in the old manifest file) until <code>swapCache()</code> is called. Once <code>swapCache()</code> is called, then the cache will be used as specified from the new manifest file.</p></li>
 </ul>
 
 <p>Normally you won’t need to use the <code>update()</code> function, as the browser should automatically do this when reloading a page. Most commonly the <code>swapCache()</code> function will be used in conjunction with the <code>onupdateready</code> event.</p>

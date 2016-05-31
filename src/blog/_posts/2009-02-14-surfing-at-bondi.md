@@ -20,9 +20,9 @@ This specification brings a number of things to the table for web applications a
 
 <dl>
 	<dt>Application Invocation</dt>
-	<dd>This allows a application to launch a native application on a device, such as the phone or camera application.</dd>
+	<dd>This allows an application to launch a native application on a device, such as the phone or camera application.</dd>
 	<dt>Messaging</dt>
-	<dd>This allows a application to interact with the messaging functionality on a device, such as SMS, MMS, and e-mail.</dd>
+	<dd>This allows an application to interact with the messaging functionality on a device, such as SMS, MMS, and e-mail.</dd>
 	<dt>User Interaction</dt>
 	<dd>This allows the application UI to be more integrated into the expected device behaviour, such as respecting the alert settings, or minimise and maximise behaviour.</dd>
 	<dt>Persistent Data</dt>
@@ -36,9 +36,9 @@ This specification brings a number of things to the table for web applications a
 	<dt>Application Settings</dt>
 	<dd>This provides functionality to manage the application settings.</dd>
 	<dt>Location</dt>
-	<dd>This provides a API for geolocation, that is aligned with the W3C Geolocation spec.</dd>
+	<dd>This provides an API for geolocation, that is aligned with the W3C Geolocation spec.</dd>
 	<dt>Camera</dt>
-	<dd>This provides access to the device’s camera, so a application can take photos or movies.</dd>
+	<dd>This provides access to the device’s camera, so an application can take photos or movies.</dd>
 	<dt>Communications Log</dt>
 	<dd>This provides access to the call log, such as recently received and sent calls, SMS and so on.</dd>
 	<dt>Personal  Information Management</dt>

@@ -103,7 +103,7 @@ license: cc-by-nc-sa-2.5
 
 <h2>HSL: Hue, Saturation, Lightness Samples</h2>
 
-<p>HSL color, which is supported as part of the CSS 3 color module and has been implemented in Opera since 9.5, works very differently. Instead of adding amounts of red, green and blue (known as additive synthesis) to get a specific color, the hue is chosen as a base point. Then, the percentage of saturation and lightness can be independently modified using percentages, providing a much more intutive way for designers to work.</p>
+<p>HSL color, which is supported as part of the CSS 3 color module and has been implemented in Opera since 9.5, works very differently. Instead of adding amounts of red, green and blue (known as additive synthesis) to get a specific color, the hue is chosen as a base point. Then, the percentage of saturation and lightness can be independently modified using percentages, providing a much more intuitive way for designers to work.</p>
 
 <p>The HSL model attempts to recreate perceptual color. Using a 3d model, it's easier to see the geometric relationships that impact how color is perceived. At the center of the image, you can see the color wheel from which the hue is taken. Move toward lightness, and a lighter hue appears, move toward saturation, and greater saturation of the color becomes apparent (Figure 1).</p>
 

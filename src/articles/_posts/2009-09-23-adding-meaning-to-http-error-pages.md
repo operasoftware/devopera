@@ -164,7 +164,7 @@ Here’s an example of how to extract the keywords from a Google referral. An ex
 
 	http://www.google.co.uk/search?hl=en&q=barista+champion&btnG=Google+Search&meta=
 
-Using an appropriate server-side function such as Python’s `urlparse` module we can extract the relevant parts of the the query string:
+Using an appropriate server-side function such as Python’s `urlparse` module we can extract the relevant parts of the query string:
 
 	>>> import urlparse
 	>>> url = "http://www.google.co.uk/search?hl=en&q=barista+champion&btnG=Google+Search&meta="
@@ -214,7 +214,7 @@ Another approach is to provide a search box for users to use to find something r
 
 	http://caffeineftw.com/news/2009-world-barista-championships
 
-In this example, we can take the last part of the URL and split on the hyphen to get a nice set of search terms. We could also process out the [stop words][9] such as and and to, but this may not be necessary if our site’s search capability already takes care of that.
+In this example, we can take the last part of the URL and split on the hyphen to get a nice set of search terms. We could also process out the [stop words][9] such as and to, but this may not be necessary if our site’s search capability already takes care of that.
 
 [9]: http://en.wikipedia.org/wiki/Stop_words
 
@@ -236,7 +236,7 @@ As briefly mentioned above, sometimes it’s necessary to explicitly remove cont
 
 Ideally your content management system will not actually delete content when it’s removed, but retain it in its data store and only make it unreachable for outside users, Assuming that you can still access the original content behind the scenes, you can use that data and associated metadata in the 410 error page to once again feed a search or automatically find related content.
 
-As an example, you might have published an article about a celebrity wedding, which has then had to be removed due to legal reasons. The URL has now become a `410 GONE` error page, but your server-side code can still use its knowledge of what used to be displayed on that addess and feed a search with any stored tags or other metadata, so that you can at least provide a list of related content for the uses.
+As an example, you might have published an article about a celebrity wedding, which has then had to be removed due to legal reasons. The URL has now become a `410 GONE` error page, but your server-side code can still use its knowledge of what used to be displayed on that address and feed a search with any stored tags or other metadata, so that you can at least provide a list of related content for the uses.
 
 ### Bending the rules for SEO {#bending-rules}
 

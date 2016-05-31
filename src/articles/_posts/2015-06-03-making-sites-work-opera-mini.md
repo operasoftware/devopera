@@ -22,6 +22,8 @@ I recently gave a keynote talk at Velocity conference called “Ensuring a Perfo
 
 The most common question I got in the hallways was “How can I make my site work well in Opera Mini?”. The answer is simple: use the development methodology known as Progressive Enhancement.
 
+*Note that throughout this article, when we refer to “Opera Mini” we mean the full proxy version: that is, Opera Mini/iOS in Opera Mini mode, Opera Mini/Android in Extreme Mode, and any version of Opera Mini on Windows Phone or feature phones. When testing your sites on iOS or Android, please ensure your device is in these modes. ([More on Opera Mini modes](https://dev.opera.com/articles/browsers-modes-engines/).)*
+
 ## Progressive Enhancement
 
 [Progressive Enhancement](http://christianheilmann.com/2015/02/18/progressive-enhancement-is-not-about-javascript-availability/) is not a new technique; in fact, it’s built into the very fabric of the web’s original design, and ensures your website works everywhere — not just on Opera Mini and other proxy browsers.
@@ -50,7 +52,7 @@ Opera Mini deliberately disables some CSS which would otherwise need to be conve
 
 Most notably, CSS `border-radius` isn’t rendered. CSS animations are similarly disabled, to preserve battery life.
 
-CSS gradients are also disabled. Ensure that, if you’re using a gradient as a backgound, that you also set a CSS color for the `background` that contrasts well with text. A common error is white text on a gradient and leaving the default white background unchanged; in Opera Mini this results in illegible white-on-white text. So, for example:
+CSS gradients are also disabled. Ensure that, if you’re using a gradient as a background, that you also set a CSS color for the `background` that contrasts well with text. A common error is white text on a gradient and leaving the default white background unchanged; in Opera Mini this results in illegible white-on-white text. So, for example:
 
 	button {
 		background: black;

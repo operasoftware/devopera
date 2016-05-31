@@ -19,7 +19,7 @@ license: cc-by-nc-sa-3.0
 
 <p>The browser will then provide a simple player element in the web page.</p>
 
-<p><img src="native_player.png" alt="Native audio element in in Opera" /></p>
+<p><img src="native_player.png" alt="Native audio element in Opera" /></p>
 <p class="comment">Figure 1: a basic <code>&lt;audio&gt;</code> element rendered in Opera.</p>
 
 <p>The <code>&lt;audio&gt;</code> element has five attributes:</p>
@@ -353,13 +353,13 @@ var playerElement = jQuery("#player");</code></pre>
 });</code></pre>
 
 <p>
-When the AJAX request has fetched the data from the server it loops through each channel in the feed and adds them to a channel picker. The channel picker is just a list of image tags contaning the logo for each channel and a <code>onclick</code> event for changing the audio streams in the player when the user selects a channel.
+When the AJAX request has fetched the data from the server it loops through each channel in the feed and adds them to a channel picker. The channel picker is just a list of image tags containing the logo for each channel and an <code>onclick</code> event for changing the audio streams in the player when the user selects a channel.
 </p>
 
 <p><img src="channel_picker.png" alt="Channel picker" /></p>
 <p class="comment">Figure 2: The radio station channel picker.</p>
 
-<p>This is a simplification compared to the final player functionality, but the function attached as a <code>onclick</code> event on each image in the channel picker has a small method for clearing out the old stream set on the audio element and adding the stream the user selected as a new stream to the <code>&lt;audio&gt;</code> element:</p>
+<p>This is a simplification compared to the final player functionality, but the function attached as an <code>onclick</code> event on each image in the channel picker has a small method for clearing out the old stream set on the audio element and adding the stream the user selected as a new stream to the <code>&lt;audio&gt;</code> element:</p>
 
 <pre><code>changeChannel:function(){
 
