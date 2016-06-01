@@ -2,7 +2,7 @@
 
 const PREFIX = 'devopera';
 const HASH = ''; // Calculated when running `gulp`.
-const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
+const OFFLINE_CACHE = `${ PREFIX }-${ HASH }`;
 const OFFLINE_URL = '/errors/offline/index.html';
 
 self.addEventListener('install', function(event) {
@@ -26,11 +26,7 @@ self.addEventListener('activate', function(event) {
 		caches.keys().then(function(keys) {
 			return Promise.all(
 				keys.map(function(key) {
-					if (
-						key != OFFLINE_CACHE &&
-						key.startsWith(`${PREFIX}-`) &&
-						!key.startsWith(`${PREFIX}-article-`)
-					) {
+					if (key != OFFLINE_CACHE) {
 						return caches.delete(key);
 					}
 				})
@@ -40,15 +36,8 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-	if (
-		event.request.mode == 'navigate' ||
-		( // Fallback for Chromium 48 / Opera 35 and older:
-			event.request.method == 'GET' &&
-			event.request.headers.get('accept').includes('text/html')
-		)
-	) {
-		console.log('Handling fetch event for', event.request.url);
-		console.log(event.request);
+	if (event.request.mode == 'navigate') {
+		console.log(`Handling fetch event for ${ event.request.url }`);
 		event.respondWith(
 			fetch(event.request).catch(function(exception) {
 				// The `catch` is only triggered if `fetch()` throws an exception,
