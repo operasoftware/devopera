@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html><head>
+
+	<title>  Capability detection  </title>
+
+</head>
+<body>
+	
+	<h1>Capability detection demo</h1>
+	<p>This page demonstrates capability detection. See source for details. The output below includes all the normal information the browser provides with the <code>navigator</code> object and the custom properties we added.</p>
+
+	<p>This script is public domain. If you use it, do remove the bits that you do not need, and do consider sharing the bits that you add.</p>
+
+	<script type="text/javascript">
+	// If the browser does not support the navigator object we will make one
+	if( !window.navigator ) window.navigator = new Object(); 
+	
+	// Capability: DOM generation "0", e.g. accessing images, links and form elements
+	// If you really need this you are encouraged to enhance these tests..
+	//navigator.capDOM0 = (  document.images && document.links  ) ? true : false ;
+	
+	// Capability: DOM generation "0.5", the browser-proprietary APIs of Netscape 4 and IE 4. Deprecated!
+	navigator.capOldDOMIE = (  document.all && document.all.item && document.all.urns && document.all.namedItem && document.all.tags && document.all.tags('body')  ) ? true : false;
+	navigator.capOldDOMNN = ( document.layers  ) ? true : false ;
+	// I don't know enough about document.layers DOM to truly test for it.
+	
+	// Capability: DOM generation "2", e.g. accessing any element on the page, creating elements, changing contents
+	// You are encouraged to add in-depth tests for other parts of the DOM2 specification that your scripts depend on
+	navigator.capDOM2 = (  document.createElement && document.createElement('p') && (document.createElement('p')).appendChild ) ? true : false ;
+	
+	// Capability: DOM generation "2" document traversal
+	navigator.capDOM2Traversal = (  document.createNodeIterator && document.createNodeIterator(document.body, 1, null, false) && document.createNodeIterator(document.body, 1, null, false).nextNode  ) ? true : false ;
+	
+	// Capability: DOM generation "3" approach to loading / serializing data
+	navigator.capDOM3LS = (  document.implementation && document.implementation.createLSParser  && document.implementation.createLSParser(1, null) && document.implementation.createLSParser(1, null).parse  ) ? true : false ;
+	
+	// Capability: HTML element prototypes
+	navigator.capElementPrototypes = (  typeof HTMLElement != 'undefined' && HTMLElement.prototype ) ? true : false ;
+	
+	// Capability: text selection manipulation in forms
+	navigator.capTextSelection = false;
+	if(  navigator.capDOM2  ){
+		temp = document.createElement('textarea');
+		navigator.capTextSelection = (  temp.setSelectionRange  || temp.createTextRange ) ? true : false ;
+	}
+	
+	// Capability: wysiwyg editing 
+	navigator.capWYSIWYGedit = (  document.execCommand || document.designMode  ) ? true : false ;
+	
+	// Capability: VBScript
+	navigator.capVBScript = false;
+	document.open();document.write('<scr' + 'ipt type="text/vbscript">navigator.capVBScript = True</scr' + 'ipt>');document.close();
+	// Note: in an XHTML document you need to use DOM methods rather than document.write
+	
+	// Capability: plugin detection through navigator.plugins
+	navigator.capNPPluginDetect = ( navigator.plugins && navigator.plugins.length ) ? true : false ;
+	
+	// Capability: define getters and setters 
+	navigator.capDefineGetSet = ( window.__defineGetter__ ) ? true : false ;
+	
+	// Capability: CSS behaviors
+	var tmpdiv=document.createElement('div');
+	tmpdiv.innerHTML='<a style="behavior:url(#default#homepage)"></a>';
+	navigator.supportsBehaviors=(typeof tmpdiv.firstChild.style.behavior!='undefined')
+
+	
+	// Capability: use try...catch. 
+	// This must be last because browsers that do not support try...catch may terminate script here
+	navigator.capTryCatch = false;
+	eval('try{ navigator.capTryCatch = true; }catch(e){}');
+	</script>
+	
+	<script>
+	// Capability: request data from server
+	// Note: Depends on try...catch support, so we do this test in a separate SCRIPT tag or file
+	navigator.capDataRequests = (  ( window.XMLHttpRequest && new XMLHttpRequest()  && new XMLHttpRequest().open  ) || ( window.ActiveXObject && 
+	
+	( function ( progIDs ){
+		var test=function( progIDs ){ 
+			try{
+				return new ActiveXObject(progIDs.pop());
+			}catch(e){
+				return (progIDs.length) ? test(progIDs) : false;
+			}
+		}
+		return test(progIDs);
+	} )( ['Microsoft.XMLHTTP', 'MSXML2.XMLHTTP'])
+	
+	) ) ? true : false ;
+	</script>
+	
+	<script>
+		// Show all built-in and custom navigator properties..
+		for( a in  navigator ) document.write(  '<p>navigator.<b>' + a + '</b>: '+navigator[ a ] +'</p>' );
+	</script>
+
+</body></html>
