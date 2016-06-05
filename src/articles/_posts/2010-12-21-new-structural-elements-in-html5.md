@@ -70,17 +70,17 @@ license: cc-by-nc-sa-3.0
 <li><p><strong><code>&lt;hgroup&gt;</code></strong>: Used to wrap more than one heading if you only want it to count as a single heading in the page's heading structure.</p></li>
 <li><p><strong><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></strong>: Used to encapsulate a figure as a single item, and contain a caption for the figure, respectively.</p></li>
 </ul>
-	<!--
+<!--
 <p class="note">Note: The elements covered in this article are all supported in Opera 11 beta, except the <code>&lt;time&gt;</code> element, but this will follow soon.</p>
-	 -->
-		<h3 id="how-decided">How were the element names decided upon?</h3>
+-->
+<h3 id="how-decided">How were the element names decided upon?</h3>
 
 <p>During the creation of HTML5, editor Ian Hickson used Google's tools to mine data from over a billion web pages, surveying what ID and class names are most commonly used on the real world web. You can see one of the surveys published at <a href="http://code.google.com/webstats/2005-12/classes.html">Google Code: Web Authoring Statistics: Classes</a>. To cut a long story short, the element names seen in this article were taken from the 20 most popular IDs and class names found in Hickson's surveys.</p>
 
 
 <p class="note">Note: Opera did a similar study, of 3.5 million URLs, calling it <abbr title="Metadata Analysis and Mining Application">MAMA</abbr>. MAMA had a smaller URL set, but looked at a larger and wider variety of web page statistics. For more information, take a look at <a href="https://dev.opera.com/articles/view/mama-common-attributes">MAMA common attributes</a>, <a href="/articles/view/mama-common-attributes/idlist-url.htm">MAMA's id list</a>, and <a href="/articles/view/mama-common-attributes/classlist-url.htm">MAMA's class list</a>. For more options, go to the <a href="https://dev.opera.com/articles/view/mama/">MAMA home page</a>.</p>
 
-		<h3 id="why-no-content">Why isn't there a <code>&lt;content&gt;</code> element?</h3>
+<h3 id="why-no-content">Why isn't there a <code>&lt;content&gt;</code> element?</h3>
 
 <p>While this may seem like a glaring omission, it really isn't. The main content will be the top level block of content that isn't the <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> or <code>&lt;footer&gt;</code>, and depending on your particular circumstance, it might make more sense to mark the content up using an <code>&lt;article&gt;</code>, a <code>&lt;section&gt;</code>, or even a <code>&lt;div&gt;</code>. Bruce Lawson calls this <q>The Scooby Doo algorithm</q>, but to find out why, you'll have to ask him on Twitter, or at a conference!</p>
 
@@ -92,7 +92,7 @@ license: cc-by-nc-sa-3.0
 
 <p class="note">My example uses the traditional tried and tested wrapper <code>&lt;div&gt;</code> to center the content, but Kroc Camen has published a nice article showing <a href="http://camendesign.com/code/developpeurs_sans_frontieres">how to create centered designs without <code>&lt;div&gt;</code> wrappers</a>, so I thought I'd share that here also. It also usefully advises to not use HTML5 <code>&lt;section&gt;</code> elements as glorified wrappers in HTML5 pages - that is just plain wrong!</p>
 
-		<h3 id="meta-differences">Some meta-differences</h3>
+<h3 id="meta-differences">Some meta-differences</h3>
 
 <p>The first thing you'll notice is that the doctype is much simpler than in older versions of HTML:</p>
 
@@ -121,7 +121,7 @@ license: cc-by-nc-sa-3.0
 
 <p>You need to declare the character set of your document within the first 512 bytes, to protect against a <a href="http://code.google.com/p/doctype/wiki/ArticleUtf7">serious security risk</a>. Unless you have a really good reason not to, you should use <code>UTF-8</code>.</p>
 
-		<h3 id="header"><code>&lt;header&gt;</code></h3>
+<h3 id="header"><code>&lt;header&gt;</code></h3>
 
 <p>The document's header looks like this:</p>
 
@@ -135,11 +135,11 @@ license: cc-by-nc-sa-3.0
 <p>the purpose of the <code>&lt;header&gt;</code> element is to wrap the section of content that forms the header of the page, usually containing a company logo/graphic, main page title, etc.</p>
 
 
-		<h3 id="hgroup"><code>&lt;hgroup&gt;</code></h3>
+<h3 id="hgroup"><code>&lt;hgroup&gt;</code></h3>
 
 <p>You'll notice that in the above code, the only contents of my header are an <code>&lt;hgroup&gt;</code> element, wrapping two headings. What I want to do here is specify the document's top level heading, plus a subtitle/tag line. I only want the top level heading to count in the document heading hierarchy, and that's exactly what <code>&lt;hgroup&gt;</code> does — it causes a group of headings to only count as a single heading for the purposes of the document structure. you'll find more out about how heading hierarchies work in HTML5, in the <a href="#html-outline">HTML5 outlines, and the HTML5 heading algorithm</a> section, below.</p>
 
-		<h3 id="html5-footer"><code>&lt;footer&gt;</code></h3>
+<h3 id="html5-footer"><code>&lt;footer&gt;</code></h3>
 
 <p>If you go to the bottom of the document, you'll see this code:</p>
 
@@ -155,7 +155,7 @@ license: cc-by-nc-sa-3.0
 
 <p class="note">Note: You are not restricted to one header and footer per page &mdash; you could have a page containing multiple articles, and have a header and footer per article.</p>
 
-		<h3 id="nav"><code>&lt;nav&gt;</code></h3>
+<h3 id="nav"><code>&lt;nav&gt;</code></h3>
 
 <p>Further up the document again, you'll come across this structure:</p>
 
@@ -172,7 +172,7 @@ license: cc-by-nc-sa-3.0
 
 <p>The <code>&lt;nav&gt;</code> element is for marking up the navigation links or other constructs (eg a search form) that will take you to different pages of the current site, or different areas of the current page. Other links, such as sponsored links, do not count. You can of course include headings and other structuring elements inside the <code>&lt;nav&gt;</code>, but it's not compulsory.</p>
 
-			<h3 id="aside"><code>&lt;aside&gt;</code></h3>
+<h3 id="aside"><code>&lt;aside&gt;</code></h3>
 
 <p>Just underneath the document heading, we have the following:</p>
 
@@ -186,7 +186,7 @@ license: cc-by-nc-sa-3.0
 
 <p>The <code>&lt;aside&gt;</code> element is for marking up pieces of content that are related to the main content, but don't fit directly into the main flow. For for example in this case we have a bunch of quick fire facts and statistics about the band, which wouldn't work so well shoehorned into the main content. Other suitable candidates for <code>&lt;aside&gt;</code> elements include lists of links to external related content, background information, pull quotes, and sidebars.</p>
 
-		<h3 id="figure"><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></h3>
+<h3 id="figure"><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></h3>
 
 <p>The dynamic duo of <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> have been created to solve a very specific set of problems. For a start, doesn't it always feel a bit semantically dubious and unclean to mark up an image and its caption as two paragraphs, or a definition list pair, or something else? And second, what do you do when you want a figure to consist of an image, or two images, or two images and some text? <code>&lt;figure&gt;</code> is on hand to wrap around all the content you want to comprise a single figure, whether it is text, images, SVG, videos, or whatever. <code>&lt;figcaption&gt;</code> is then nested inside the <code>&lt;figure&gt;</code> element, and contains the descriptive caption for that figure. The figure I included in my example is a simple one, to get you started:</p>
 
@@ -197,7 +197,7 @@ license: cc-by-nc-sa-3.0
 	&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
-		<h3 id="time"><code>&lt;time&gt;</code></h3>
+<h3 id="time"><code>&lt;time&gt;</code></h3>
 
 <p>The <code>&lt;time&gt;</code> element allows you to define an unambiguous date and time value that is both human and machine readable. For example, I've marked up the release dates of the poppies' singles like so:</p>
 
@@ -217,7 +217,7 @@ license: cc-by-nc-sa-3.0
 
 <pre><code>&lt;time datetime="1989-03-13T13:00Z-08:00"&gt;One o'clock in the afternoon, on the 13th of March 1989&lt;/time&gt;</code></pre>
 
-		<h3 id="article-section"><code>&lt;article&gt;</code> and <code>&lt;section&gt;</code></h3>
+<h3 id="article-section"><code>&lt;article&gt;</code> and <code>&lt;section&gt;</code></h3>
 
 <p>Now we turn our attentions to probably the two most misunderstood elements in HTML5 &mdash; <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code>. When you first meet them, the difference might appear unclear, but it really isn't so bad.</p>
 
@@ -256,7 +256,7 @@ license: cc-by-nc-sa-3.0
 	&lt;!-- multiple article elements could go in here --&gt;
 &lt;/section&gt;</code></pre>
 
-		<h4 id="div">Where does that leave <code>&lt;div&gt;</code>?</h4>
+<h4 id="div">Where does that leave <code>&lt;div&gt;</code>?</h4>
 
 <p>So, with all these great new elements to use on our pages, the days of the humble <code>&lt;div&gt;</code> are numbered, surely? NO. In fact, the <code>&lt;div&gt;</code> still has a perfectly valid use. You should use it when there is no other more suitable element available for grouping an area of content, which will often be when you are purely using an element to group content together for styling/visual purposes. The example in my PWEI history is the <code>&lt;div id="wrapper"&gt;</code> I have wrapped around the whole of the content. The only reason it is here is so that I could use CSS to center the content in the browser:</p>
 
@@ -266,11 +266,11 @@ license: cc-by-nc-sa-3.0
 	margin: 0 auto;
 }</code></pre>
 
-		<h3 id="mark"><code>&lt;mark&gt;</code></h3>
+<h3 id="mark"><code>&lt;mark&gt;</code></h3>
 
 <p>The <code>&lt;mark&gt;</code> element is for highlighting terms of current relevance, or highlighting parts of content that you just want to draw attention to, but not change the semantic meaning of. It's like when you are going through a printed article and highlighting lines important to you with a highlighter pen. So for example, you might want to use this element to markup lines in a wiki that need to be given editorial attention, or to highlight instances of a search term that the user has just searched for on a page, and then give them appropriate styling in your CSS.</p>
 
-		<h3 id="hidden">The <code>hidden</code> attribute</h3>
+<h3 id="hidden">The <code>hidden</code> attribute</h3>
 
 <p>The <code>hidden</code> attribute, when applied to any element, hides it completely from any form of presentation/media, and should be used if you are intending to show content later on (for example, using JavaScript to remove the attribute) but don't wish to have it shown now. It shouldn't be used to hide content such as hidden tabs in a tabbed interface, because that is really a different way of presenting content in a smaller space, rather than hiding content altogether.</p>
 
@@ -323,16 +323,16 @@ license: cc-by-nc-sa-3.0
 
 <p>So the big question now is "why bother with all this"? Well, this new way of working out the document outline/heading hierarchy has two major advantages over the old way:</p>
 
-			<ol>
+<ol>
 <li>You can have as many heading levels as you like — you are not limited to six.</li>
 <li>If your content is transplanted into someone else's CMS, and this results in the h1, h2, h3, etc. levels going wrong, the algorithm will still work out the correct hierarchy regardless.</li>
-			</ol>
+</ol>
 
-			<div class="note">
+<div class="note">
 <p>Note: The HTML5 heading hierarchy is actually a really old idea, originally <a href="http://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html">envisaged by Tim Berners-Lee in 1991</a>:</p>
 
-			<blockquote cite="http://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html"><p>I would in fact prefer, instead of &lt;H1&gt;, &lt;H2&gt; etc for headings [those come from the AAP DTD] to have a nestable &lt;SECTION&gt;..&lt;/SECTION&gt; element, and a generic &lt;H&gt;..&lt;/H&gt; which at any level within the sections would produce the required level of heading.</p></blockquote>
-			</div>
+<blockquote cite="http://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html"><p>I would in fact prefer, instead of &lt;H1&gt;, &lt;H2&gt; etc for headings [those come from the AAP DTD] to have a nestable &lt;SECTION&gt;..&lt;/SECTION&gt; element, and a generic &lt;H&gt;..&lt;/H&gt; which at any level within the sections would produce the required level of heading.</p></blockquote>
+</div>
 
 <h2 id="older-browsers">How to get it working in older browsers</h2>
 
