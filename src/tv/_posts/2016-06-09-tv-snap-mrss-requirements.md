@@ -95,11 +95,18 @@ Optional tags:
 Item structure:
 
 	<item>
-		<media:title>Sam Smoothy Follows His Fathers Footsteps In The Andes | Lost…</title>
-		<media:description>Many years ago, Sam Smoothy’s father climbed in the Andes mountains (…)</description>
+		<media:title>
+			Sam Smoothy Follows His Fathers
+			Footsteps In The Andes | Lost…
+		</title>
+		<media:description>
+			Many years ago, Sam Smoothy’s father
+			climbed in the Andes mountains…
+		</description>
 		<media:category>Skiing</category>
 		<pubDate>Mon, 21 Mar 2016 11:00:01 GMT</pubDate>
-		<media:content url="video.mp4" type="video/mp4" bitrate="2200" duration="772"/>
+		<media:content url="video.mp4" type="video/mp4"
+			bitrate="2200" duration="772"/>
 		<media:thumbnail url="thumb.jpg" width="288" height="162"/>
 	</item>
 
