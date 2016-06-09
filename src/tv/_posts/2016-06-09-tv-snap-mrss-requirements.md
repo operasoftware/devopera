@@ -30,7 +30,7 @@ Specification you should be aware before preparing video feed for TV Snap Templa
 - [RSS specification](http://rssboard.org/rss-specification/).
 - [MRSS specification](http://rssboard.org/media-rss/).
 - [RSS feed validator](http://rssboard.org/rss-validator/).
-- [RFC822](http://rssboard.org/rss-validator/) for date and time format to comply with.
+- [RFC822](http://rssboard.org/rss-validator/) for date and time.
 - [HTML5 Audio and Video Support in Opera TV Store Applications](https://dev.opera.com/tv/html5-audio-video-in-opera-tv-store-apps/)
 - 16:9 thumbnail ratio is a must. 256 × 144 px is minimal and recommended for the best user experience. If image will be greater it will be scaled to 256 px.
 
@@ -62,10 +62,10 @@ Feed structure:
 		<channel>
 			<title></title>
 			<descrption></description>
-			<item><!-- see example in next section --></item>
+			<item><!-- See example in next section --></item>
 			<item><!-- … --></item>
-			<!-- more items -->
-			<link rel="next" href="http://link_to_next_results_page.com"/>
+			<!-- More items -->
+			<link rel="next" href="[next results page]"/>
 		</channel>
 	</rss>
 
@@ -99,8 +99,8 @@ Item structure:
 		<media:description>Many years ago, Sam Smoothy’s father climbed in the Andes mountains (…)</description>
 		<media:category>Skiing</category>
 		<pubDate>Mon, 21 Mar 2016 11:00:01 GMT</pubDate>
-		<media:content url="http://elisa.vo.llnwd.net/v1/stage/podcasts/extranet-604163_2M.mp4" type="video/mp4" bitrate="2200" duration="772"/>
-		<media:thumbnail url="http://edge.cdn.epictv.com/images/episode_604163_14566_288X162.jpg" width="288" height="162"/>
+		<media:content url="video.mp4" type="video/mp4" bitrate="2200" duration="772"/>
+		<media:thumbnail url="thumb.jpg" width="288" height="162"/>
 	</item>
 
 ### Visualization {#visualization}
