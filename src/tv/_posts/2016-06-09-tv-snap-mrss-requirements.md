@@ -4,12 +4,9 @@ authors:
 - oskar-furga
 intro: 'Specification of Opera MRSS format required to publish applications using TV Snap Template.'
 tags:
-- mrss
-- snap
-- store
-- template
-- tv
 - video
+- media
+- tv
 license: cc-by-3.0
 ---
 
