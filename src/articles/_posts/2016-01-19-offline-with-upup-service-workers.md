@@ -8,6 +8,7 @@ tags:
 - offline
 - caching
 - javascript
+- pwa
 cover: png
 license: cc-by-3.0
 ---
