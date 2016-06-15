@@ -10,6 +10,7 @@ tags:
 - javascript
 - offline
 - service-workers
+- pwa
 license: cc-by-3.0
 ---
 *Please note: this article is superseded by [Installable Web Apps and Add to Home screen](/articles/installable-web-apps/) because the functionality described was released in Opera 32 for Android.*
