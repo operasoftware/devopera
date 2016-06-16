@@ -47,7 +47,7 @@ _Constance:_ There are lots of exciting things about progressive web apps and th
 
 This is vitally important, as web apps finally now have a space on user home screens — so being slow to load or breaking because of network unreliability is not acceptable. And, in my part of the world, where getting good connectivity speeds on mobile is pretty difficult, service workers present an opportunity for developers to build apps that aren’t just fast, but which are also resilient.
 
-An example of the is [Konga’s PWA](http://www.konga.com/): when we detect that the user is offline and has items in their shopping cart, we provide them the option of going through an offline checkout experience, thereby preventing internet connectivity from becoming a bottleneck when they shop with us.
+An example of this is Konga’s PWA: when we detect that the user is offline and has items in their shopping cart, we provide them the option of going through an offline checkout experience, thereby preventing internet connectivity from becoming a bottleneck when they shop with us.
 
 **Constance, what are the characteristics of the Nigerian market that make PWAs an appealing development route?**
 
