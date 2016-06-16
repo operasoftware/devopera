@@ -7,6 +7,7 @@ tags:
 - pwa
 - interview
 - africa
+featured: featured
 cover: jpg
 license: cc-by-3.0
 ---
