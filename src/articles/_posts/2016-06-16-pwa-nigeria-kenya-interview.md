@@ -17,7 +17,7 @@ While keeping an eye on Twitter mentions of progressive web apps, I came across 
 **Hi! Please tell us a little about yourselves.**
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/constance-okoghenun.jpg" width="350" alt="Constance Okoghenun">
+	<img elem="media" src="{{ page.id }}/constance-okoghenun.jpg" width="200" alt="Constance Okoghenun">
 </figure>
 
 _Constance Okoghenun, [@okoghenun](https://twitter.com/okoghenun):_ I’m from Lagos, Nigeria. I work as a UI Specialist for [Konga](https://konga.com/), Nigeria’s largest online marketplace helping tens of thousands of merchants selling over 200,000 products on our platform. At Konga I help to build products that provide great shopping experiences for our customers. I also help organise and speak from time to time at [Usable](http://usable.ng/) (formerly UXLagos), where designers, developers and enthusiasts here in Lagos and, recently, Abuja Nigeria, have monthly conversations about how to improve the experiences we deliver to our customers.
@@ -25,7 +25,7 @@ _Constance Okoghenun, [@okoghenun](https://twitter.com/okoghenun):_ I’m from L
 I love the web and have been working on the web for about 5 years now. It has been a delight to see it mature and become better as a platform, enabling me and other developers and designers to offer increasingly better experiences to our users.
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/eugene-mutai.jpg" width="350" alt="Eugene Mutai">
+	<img elem="media" src="{{ page.id }}/eugene-mutai.jpg" width="200" alt="Eugene Mutai">
 </figure>
 
 _Eugene Mutai, [@kn9ts](https://twitter.com/kn9ts):_ I’m from Nairobi, Kenya. I’m currently working for/with [Andela](https://andela.com/). Andela is new startup, with a revolutionary model founded on the principle that brilliance is evenly distributed around the world, but opportunity is not. Andela is transforming the brightest minds in Africa into world-class developers, who then are fused into startups or Fortune 500 companies all over the world. I am currently working as a full-time full-stack developer for [RBI](http://www.rbi.com/), a Canadian multinational company (and one of the largest fast food brands in the world) whose brands include Burger King and Tim Hortons.
