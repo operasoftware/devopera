@@ -83,7 +83,7 @@ _Eugene:_ I’m been satisfactorily happy with the feedback I have got from my b
 
 **Do you think those Android developers’ concerns are justified? Do you see PWAs becoming dominant in the kind of markets that you work in?**
 
-_Eugene:_ Nom I don’t think they’re justified. First of all, awareness about PWAs is something that needs to be urgently addressed. Every time I give a talk on PWAs the facial response of the audience is like “Why didn’t I know about this? This is revolutionary!” and the question that always follows is “Where can I find more information and learn about PWAs?”
+_Eugene:_ No, I don’t think they’re justified. First of all, awareness about PWAs is something that needs to be urgently addressed. Every time I give a talk on PWAs the facial response of the audience is like “Why didn’t I know about this? This is revolutionary!” and the question that always follows is “Where can I find more information and learn about PWAs?”
 
 Furthermore, I don’t envision PWAs being dominant in the mobile apps space, but I see their presence vastly increasing once knowledge about them is in the hands of every web developer. PWAs solve a number of challenges for entrepreneurs: it’s a cross-platform solution, there’s very low friction compared to native apps, there’s no APK size limitation, and so on.
 
