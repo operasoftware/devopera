@@ -3,7 +3,7 @@ title: 'Progressive Web Apps in Nigeria and Kenya: a Double Interview'
 authors:
 - andreas-bovens
 - bruce-lawson
-intro: 'I came across a number of conversations between web developers in Nigeria and Kenya. Intrigued, I got in touch with them to hear their thoughts on progressive web apps, resulting in this double interview.'
+intro: 'I came across a number of conversations about progressive web apps between web developers in Nigeria and Kenya. Intrigued, I got in touch with them to hear their thoughts, resulting in this double interview.'
 tags:
 - pwa
 - interview
