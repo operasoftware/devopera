@@ -7,6 +7,8 @@ intro: 'I came across a number of conversations between web developers in Nigeri
 tags:
 - pwa
 - interview
+- nigeria
+- kenya
 - africa
 featured: featured
 cover: jpg
