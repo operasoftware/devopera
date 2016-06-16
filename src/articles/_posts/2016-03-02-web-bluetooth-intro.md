@@ -7,7 +7,6 @@ tags:
 - javascript
 - hardware
 - bluetooth
-featured: featured
 cover: png
 license: cc-by-3.0
 ---
