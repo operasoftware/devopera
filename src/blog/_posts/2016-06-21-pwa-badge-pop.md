@@ -12,7 +12,7 @@ license: cc-by-3.0
 ---
 
 <figure block="figure" mod="right">
-	<img elem="media" src="{{ page.id }}/picture.png" width="360" height="577" style="margin: 0 0 15px 15px" alt="Add to home screen badge in URL bar">
+	<img elem="media" src="{{ page.id }}/picture.png" width="360" style="margin: 0 0 15px 15px" alt="Add to home screen badge in URL bar">
 </figure>
 
 We’re excited to release a [Labs build of Opera](https://www.opera.com/download/get/?partner=www&product=android&level=Labs) for Android with support for two experimenal features that enhance the discoverability and use of progressive web apps.
@@ -32,7 +32,7 @@ Give it a spin on one of the sites listed on [pwa.rocks](https://pwa.rocks/) and
 ## Pop into browser
 
 <figure block="figure" mod="right">
-	<video elem="media" controls cover="{{ page.id }}/video.jpg" width="360" height="1000" style="margin: 0 0 15px 15px">
+	<video elem="media" controls cover="{{ page.id }}/video.jpg" width="360" style="margin: 0 0 15px 15px">
 		<source src="{{ page.id }}/video.mp4" type="video/mp4">
 		<source src="{{ page.id }}/video.webm" type="video/webm">
 	</video>
