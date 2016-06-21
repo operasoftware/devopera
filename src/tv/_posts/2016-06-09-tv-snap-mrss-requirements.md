@@ -81,16 +81,16 @@ Feed structure:
 
 Inside `<opera:metadata>` you can put `<opera:categoryData>` to define categories and collections (nested categories).
 
-**Important**: If you use metadata to define categories then in `<media:category>` you should use `path` instead of real category name (it will be taken from `categoryData`'s `label`)
+**Important**: If you use metadata to define categories then in `<media:category>` you should use `path` instead of real category name (it will be taken from `categoryData`’s `label`)
 
 Required attributes of `categoryData`:
-- `path` argument defines category nesting. For each nested category you should define exaclty one `categoryData` with correct `path`.
+- `path` argument defines category nesting. For each nested category you should define exactly one `categoryData` with correct `path`.
 - `label` is name of category
 
 Optional attributes of `categoryData`:
 - `description` is description of category.
-- `order` argument is optional. If it's not passed then order will be based on MRSS feed order.
-- `background` attribute replaces application's background whenever user visits the category. This image should be in jpg format, 1280x720.
+- `order` argument is optional. If it’s not passed then order will be based on MRSS feed order.
+- `background` attribute replaces application’s background whenever user visits the category. This image should be in jpg format, 1280x720.
 - `thumbnail`, `thumbnailwidth` & `thumbnailheight` are used to display category thumbnail.
 
 Example:
@@ -157,14 +157,14 @@ Item structure:
 
 ### Visualization {#visualization}
 
-Below is example application look with defined categories. Background and thumbnail of this app (right top corner) is provided through the [submission panel](https://publish.tvstore.opera.com/metadata/new/mrss) and is not a part of Opera MRSS format.
+Below is example application look with defined categories. _Latest_ and _Popular Videos_ categories are generated automatically. Background and thumbnail of this app (right top corner) is provided through the [submission panel](https://publish.tvstore.opera.com/metadata/new/mrss) and is not a part of Opera MRSS format.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/example-1.jpg" alt="Main page view">
 	<figcaption elem="caption">Main page view</figcaption>
 </figure>
 
-Example of TV Snap application with collections.
+Example of TV Snap player.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/example-2.jpg" alt="View with collections">
