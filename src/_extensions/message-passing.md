@@ -163,7 +163,7 @@ From your app or extension, you may listen to messages from web pages via the `r
 
 **Note**: This will be fully available from Opera 20 onwards.
 
-Extensions can exchange messages with native applications. Native applications that support this feature must register a native messaging host that knows how to communicate with the extension. Chrome starts the host in a separate process and communicates with it using standard input and standard output streams.
+Extensions can exchange messages with native applications. Native applications that support this feature must register a native messaging host that knows how to communicate with the extension. Opera starts the host in a separate process and communicates with it using standard input and standard output streams.
 
 ### Native messaging host
 
@@ -201,7 +201,7 @@ Native messaging host manifest file contains the following fields:
 </tr>
 <tr>
 	<td><code>type</code></td>
-	<td>Type of the interface used to communicate with the native messaging host. Currently there is only one possible value for this parameter: <code>stdio</code>. It indicates that Chrome should use <code>stdin</code> and <code>stdout</code> to communicate with the host.</td>
+	<td>Type of the interface used to communicate with the native messaging host. Currently there is only one possible value for this parameter: <code>stdio</code>. It indicates that Opera should use <code>stdin</code> and <code>stdout</code> to communicate with the host.</td>
 </tr>
 <tr>
 	<td><code>allowed_origins</code></td>
@@ -229,3 +229,5 @@ Opera starts each native messaging host in a separate process and communicates w
 In some situations you might want a more _persistent_ form of communication between the different parts of your extension, in which case you can open a message channel between your content script and the extension page using [`runtime.connect()`](https://developer.chrome.com/apps/runtime#method-connect) or [`tabs.connect()`](https://developer.chrome.com/extensions/tabs#method-connect).
 
 You can communicate between different extensions by using the [`runtime.onMessageExternal()`](https://developer.chrome.com/apps/runtime#event-onMessageExternal) and [`runtime.onConnectExternal()`](https://developer.chrome.com/apps/runtime#event-onConnectExternal) methods.
+
+
