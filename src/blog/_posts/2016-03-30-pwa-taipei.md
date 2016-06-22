@@ -4,7 +4,7 @@ authors:
 - bruce-lawson
 intro: 'On 26 March, I gave a presentation in Taipei about Progressive Web Apps. Here’s the 20 minute video.'
 tags:
-- PWA
+- pwa
 license: cc-by-3.0
 ---
 
