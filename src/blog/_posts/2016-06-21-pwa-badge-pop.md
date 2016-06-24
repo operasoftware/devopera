@@ -2,7 +2,7 @@
 title: 'Making progressive web apps even better: ambient badging and “pop into browser”'
 authors:
 - andreas-bovens
-intro: 'We’re excited to release a Labs build of Opera for Android with support for two experimenal features that enhance the discoverability and use of progressive web apps.'
+intro: 'We’re excited to release a Labs build of Opera for Android with support for two experimental features that enhance the discoverability and use of progressive web apps.'
 tags:
 - pwa
 - mobile
@@ -15,7 +15,7 @@ license: cc-by-3.0
 	<img elem="media" src="{{ page.id }}/picture.png" width="360" style="margin: 0 0 15px 15px" alt="Add to home screen badge in URL bar">
 </figure>
 
-We’re excited to release a [Labs build of Opera](https://www.opera.com/download/get/?partner=www&product=android&level=Labs) for Android with support for two experimenal features that enhance the discoverability and use of progressive web apps.
+We’re excited to release a [Labs build of Opera](https://www.opera.com/download/get/?partner=www&product=android&level=Labs) for Android with support for two experimental features that enhance the discoverability and use of progressive web apps.
 
 ## Ambient badging
 
