@@ -220,7 +220,7 @@ and set default value of that key to the full path to the manifest file.
 
 **OSX**: The manifest file must be placed at
 
-	/Library/Google/Chrome/NativeMessagingHosts/com.my_company.my_application.json`.
+	~/Library/Application Support/Google/Chrome/NativeMessagingHosts/
 
 Opera starts each native messaging host in a separate process and communicates with it using standard input (`stdin`) and standard output (`stdout`). The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
 
