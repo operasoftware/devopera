@@ -16,7 +16,7 @@
     "merge-stream": "^1.0.0",
     "open": "0.0.5",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.2.1",
+    "run-sequence": "^1.2.2",
     "sass-mq": "^3.3.0-beta.3",
     "susy": "^2.2.12"
   }
