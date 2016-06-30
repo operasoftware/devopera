@@ -1,38 +1,57 @@
-tutorials:
-  - getting-started
-  - architecture-overview
-  - basics
-  - browser-actions
-  - tab-window
-  - message-passing
-  - content-scripts
-  - match-patterns
-  - declare-permissions
-  - optional-permissions
-  - content-settings
-  - speed-dial-manual
-  - sidebar-action-manual
-  - context-menus
-  - commands
-  - bookmarks
-  - downloads
-  - omnibox
-  - history
-  - removing-browsing-data
-  - privacy
-  - web-navigation
-  - off-road
-  - internationalization
-  - testing
-  - dev-tools
-  - effective-icons
-  - publishing-guidelines
-  - inline-installation
-  - branding-guidelines
-  - extension-samples
-apis:
-  - apis
-  - addons-api
-  - sidebar-action-api
-  - speed-dial-api
-  - manifest
+- basics
+  title: Basics
+  items:
+    - getting-started
+    - architecture-overview
+    - basics
+- elements
+  title: UI Elements
+  items:
+    - browser-actions
+    - tab-window
+    - context-menus
+    - speed-dial-manual
+    - sidebar-action-manual
+    - bookmarks
+    - omnibox
+- other
+  title: Other Concepts
+  items:
+    - message-passing
+    - content-scripts
+    - match-patterns
+    - declare-permissions
+    - optional-permissions
+- features
+  title: Browser Features
+  items:
+    - commands
+    - downloads
+    - history
+    - removing-browsing-data
+    - off-road
+- advanced
+  title: Advanced Concepts
+  items:
+    - privacy
+    - web-navigation
+    - content-settings
+    - dev-tools
+- guidelines
+  title: Guidelines And Samples
+  items:
+    - internationalization
+    - testing
+    - effective-icons
+    - publishing-guidelines
+    - inline-installation
+    - branding-guidelines
+    - extension-samples
+- api
+  title: API Docs
+  items:
+    - apis
+    - addons-api
+    - sidebar-action-api
+    - speed-dial-api
+    - manifest
