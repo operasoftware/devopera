@@ -1,12 +1,10 @@
-- basics
-  title: Basics
-  items:
+- title: Basics
+  entries:
     - getting-started
     - architecture-overview
     - basics
-- elements
-  title: UI Elements
-  items:
+- title: UI Elements
+  entries:
     - browser-actions
     - tab-window
     - context-menus
@@ -14,32 +12,28 @@
     - sidebar-action-manual
     - bookmarks
     - omnibox
-- other
-  title: Other Concepts
-  items:
+- title: Other Concepts
+  entries:
     - message-passing
     - content-scripts
     - match-patterns
     - declare-permissions
     - optional-permissions
-- features
-  title: Browser Features
-  items:
+- title: Browser Features
+  entries:
     - commands
     - downloads
     - history
     - removing-browsing-data
     - off-road
-- advanced
-  title: Advanced Concepts
-  items:
+- title: Advanced Concepts
+  entries:
     - privacy
     - web-navigation
     - content-settings
     - dev-tools
-- guidelines
-  title: Guidelines And Samples
-  items:
+- title: Guidelines And Samples
+  entries:
     - internationalization
     - testing
     - effective-icons
@@ -47,9 +41,8 @@
     - inline-installation
     - branding-guidelines
     - extension-samples
-- api
-  title: API Docs
-  items:
+- title: API Docs
+  entries:
     - apis
     - addons-api
     - sidebar-action-api
