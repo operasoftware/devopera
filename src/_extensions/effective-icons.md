@@ -3,7 +3,6 @@ title: Creating Effective Icons
 authors:
 - christian-sinding
 intro: 'This article provides a tutorial and some hints and tips on creating effective icons for your extensions.'
-featured: featured
 license: cc-by-3.0
 ---
 

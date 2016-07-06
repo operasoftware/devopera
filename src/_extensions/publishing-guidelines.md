@@ -3,7 +3,6 @@ title: Publishing Guidelines
 authors:
 - andreas-bovens
 intro: 'This lists the publishing guidelines for extensions in Opera. These need to be followed in order an extension to be approved and published on the Opera Addons Catalog.'
-featured: featured
 license: cc-by-3.0
 ---
 
