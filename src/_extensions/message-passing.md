@@ -161,8 +161,6 @@ From your app or extension, you may listen to messages from web pages via the `r
 
 ## Native messaging
 
-**Note**: This will be fully available from Opera 20 onwards.
-
 Extensions can exchange messages with native applications. Native applications that support this feature must register a native messaging host that knows how to communicate with the extension. Opera starts the host in a separate process and communicates with it using standard input and standard output streams.
 
 ### Native messaging host
@@ -221,6 +219,10 @@ and set default value of that key to the full path to the manifest file.
 **OSX**: The manifest file must be placed at
 
 	~/Library/Application Support/Google/Chrome/NativeMessagingHosts/
+	
+**Linux**: The manifest file must be placed at
+
+	/etc/opt/chrome/native-messaging-hosts
 
 Opera starts each native messaging host in a separate process and communicates with it using standard input (`stdin`) and standard output (`stdout`). The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
 
