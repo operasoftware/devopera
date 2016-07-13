@@ -1,32 +1,33 @@
 ---
-title: Extensions Documentation
-category: extensions
 layout: default
 ---
 
-{% assign documents = site.extensions %}
-{% assign documents_featured = documents | where: 'featured', 'featured' %}
-{% assign documents_intro = documents | where: 'id', '/extensions/getting-started' | last %}
-
 <main block="layout">
-	<div elem="content">
-		<section block="archive">
-			<h1 elem="title">{{ page.title }}</h1>
-			<div elem="columns" data-columns>
-				<h2 elem="title">Featured Articles</h2>
+	<div elem="content" mod="entry">
+		<article block="intro" role="main" lang="{{ page.language }}">
+			<h1 block="content" elem="title">{{ page.title | markdownline }}</h1>
+			<div block="content">
 
-{% for document in documents_featured %}
+{{ content }}
+
+			</div>
+		</article>
+		<section block="archive">
+			<h2 elem="title">Featured Articles</h2>
+			<div elem="columns" data-columns="3">
+
+{% assign documents = site.extensions | where: 'featured', 'featured' %}
+{% for document in documents %}
 	{% include teaser.html entry=document %}
 {% endfor %}
 
 			</div>
-			<div elem="columns" data-columns>
-				<h2 elem="title">Extension Developer Interviews</h2>
+			<div elem="columns" data-columns="3">
 
 {% capture interviews %}
 	{% assign articles = site.posts | where: 'language', 'en' | where: 'category', 'articles' %}
 	{% for article in articles %}
-		{% if article.tags contains 'interview' %}
+		{% if article.tags contains 'interview' and article.tags contains 'extensions' %}
 			{% include teaser.html entry=article %}(•)
 		{% endif %}
 	{% endfor %}
@@ -42,7 +43,7 @@ layout: default
 		</section>
 	</div>
 	<div elem="aside">
-		{% include sidebar.html entries=documents %}
+		{% include sidebar.html entries=site.extensions %}
 	</div>
 </main>
 <script src="/scripts/salvattore.js"></script>

@@ -1,0 +1,15 @@
+// -------------------------------
+// Intro
+// -------------------------------
+
+.intro {
+
+	padding-bottom:14px;
+
+	&:after {
+		display:block;
+		content:'';
+		border-bottom:1px solid $grey-20;
+		}
+
+	}

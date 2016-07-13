@@ -3,7 +3,6 @@ title: The Basics of Making an Extension
 authors:
 - shwetank-dixit
 intro: 'With the use of step-by-step instructions, we will cover how to make a basic Opera extension.'
-featured: featured
 license: cc-by-3.0
 ---
 
