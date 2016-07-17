@@ -7,7 +7,6 @@ tags:
 - javascript
 language: ko
 translator: U-Yeong Ju, Hyunchul Kwak
-source: http://postd.cc/css-will-change-property/
 license: cc-by-3.0
 ---
 
