@@ -6,7 +6,7 @@ tags:
 - css
 - javascript
 language: ko
-translator: POSTD
+translator: U-Yeong Ju, Hyunchul Kwak
 source: http://postd.cc/css-will-change-property/
 license: cc-by-3.0
 ---
@@ -102,7 +102,7 @@ CSS 3D Transforms를 예로 들어보겠다. 「CPU, GPU, 하드웨어 가속」
 예를 들어 엘리먼트를 클릭한는 순간 변화한다면 마우스 커서를 올릴 때(hover) `will-change`를 설정하면 브라우저가 변경에 관해 최적화하는 시간을 벌 수 있다. 사용자가 엘리먼트에 마우스 커서를 올린 후 실제 클릭할 때까지의 시간 차는 브라우저가 충분히 최적화를 실시할 수 있는 시간이기 때문이다. 인간의 반응은 비교적 시간이 걸리기 때문에 실제 변경이 생기기 전 까지 약 200밀리세컨드의 시간이 브라우저에게 주어진다. 브라우저가 최적화를 하는데는 그만큼 시간이면 충분하다.
 
 	.element {
-		/* style rules */
+		/* 스타일 선언 */
 		transition: transform 1s ease-out;
 	}
 	.element:hover {
@@ -117,12 +117,11 @@ CSS 3D Transforms를 예로 들어보겠다. 「CPU, GPU, 하드웨어 가속」
 	.element {
 		transition: opacity .3s linear;
 	}
-	/* declare changes on the element when the mouse enters / hovers its ancestor */
-	/* 마우스 커서가 조상 엘리먼트에 오는 경우에 변경사항에 대해 선언한다 */
+		/* 마우스 커서가 조상 엘리먼트에 오는 경우에 변경사항에 대해 선언한다 */
 	.ancestor:hover .element {
 		will-change: opacity;
 	}
-	/* apply change when element is hovered */
+
 	/* 엘리먼트에 마우스 커서가 오는 경우의 변경 사항을 적용한다 */
 	.element:hover {
 		opacity: .5;
@@ -138,17 +137,16 @@ CSS 3D Transforms를 예로 들어보겠다. 「CPU, GPU, 하드웨어 가속」
 
 스타일시트에 선언한 `will-change`는 삭제할 수 없다. 따라서 대부분 자바스크립트를 사용해 설정 및 삭제하는 것을 권장한다. 스크립트에서 브라우저에 변경을 선언하고 그 변경이 종료될 때 즈음에 이벤트를 등록하면 변경이 종료된 후 `will-change`를 삭제할 수 있다. 예를 들어 앞 절에서 소개한 스타일 규칙과 동일하게 엘리먼트(또는 그 조상)에 `mouseenter` 이벤트를 이용해 마우스가 호버될 때를 리슨하여 `will-change`를 설정할 수 있다. 엘리먼트에 애니메이션을 적용하는 경우에는 DOM 이벤트의 animationEnd 이벤트를 사용해 애니메이션이 종료하여 animationEnd가 발생하면 will-change를 삭제한다.
 
-	// Rough generic example
-	// Get the element that is going to be animated on click, for example
+	// 간단한 예제
+	// 클릭할 때 애니메이션을 재생할 엘리먼트를 선택합니다.
 	var el = document.getElementById('element');
 
-	// Set will-change when the element is hovered
+	// 엘리먼트에 마우스 커서가 올라가면 will-change를 설정합니다.
 	el.addEventListener('mouseenter', hintBrowser);
 	el.addEventListener('animationEnd', removeHint);
 
 	function hintBrowser() {
-		// The optimizable properties that are going to change
-		// in the animation's keyframes block
+		// 애니메이션의 키프레임 블럭을 최적화할 수 있는 속성을 사용합니다.
 		this.style.willChange = 'transform, opacity';
 	}
 
