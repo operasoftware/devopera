@@ -59,6 +59,8 @@ For example, the `clip-path` property and the `opacity` property both lead to th
 
 Also, some properties can lead to the creation of a **containing block** for fixed-position elements. For example, a [transformed element creates a containing block for all its positioned descendants](http://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/), even those that have been set to `position: fixed`. So, if a property leads to the creation of a containing block, then specifying it as a value for `will-change` will also lead to the generation of a containing block for fixed-position elements.
 
+Lastly as stated before some changes of `will-change` result in the creation of a new compositor layer. The GPU however does not support subpixel antialiasing as done by the CPU in most browser, which will sometimes result in blurry content (especially with text).
+
 Other than that, the `will-change` property has no direct effect on the element it is applied to—it is merely a rendering hint to the browser allowing it to set up optimizations for the changes that will occur to that element. It has no direct effect on an element beyond the creation of stacking contexts and containing blocks in the situations mentioned above.
 
 ## Using `will-change`: The Do’s and The Don’ts
