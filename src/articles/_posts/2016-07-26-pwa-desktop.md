@@ -18,7 +18,7 @@ Browser makers are working on getting better support for PWAs in desktop, but it
 The goal of the PWAify project is to provide a solution for PWAs on desktop while we wait for browsers to develop support. In addition this project allows developers to experiment, give better feedback to browser makers, and improve the [Web App Manifest specification](https://www.w3.org/TR/appmanifest/).
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/android-vs-osx.jpg" alt="">
+	<img elem="media" src="{{ page.id }}/android-vs-osx.jpg" alt="Installed Air Horner app on Android and OS X">
 	<figcaption elem="caption">What the installed Air Horner app looks like on Android and OS X</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ When you run the `pwaify` command it fetches and processes the `manifest.json` f
 Here’s an example of [a simple progressive web app](https://voice-memos.appspot.com/) working on Windows, Ubuntu and OS X:
 
 <figure block="figure">
-	<img elem="media" src="{{ page.id }}/multi-platform.jpg" alt="">
+	<img elem="media" src="{{ page.id }}/multi-platform.jpg" alt="Voice Memos PWA running on Windows, Linux, and OS X">
 	<figcaption elem="caption">Voice Memos PWA running on Windows, Linux, and OS X</figcaption>
 </figure>
 
@@ -57,10 +57,10 @@ Recently [Microsoft announced](https://medium.com/web-on-the-edge/progressive-we
 
 Some future ideas for the PWAify project itself include:
 
-* implementing more of the Web App Manifest spec.
-* reloading `manifest.json` from the server, which would allow dynamically changing certain properties of the application by updating the `manifest.json` remotely.
-* experimenting with new manifest features, such as window size and minimal UI.
-* working with the Electron app community to make it easier to generate application icons for cross-platform use.
+- implementing more of the Web App Manifest spec.
+- reloading `manifest.json` from the server, which would allow dynamically changing certain properties of the application by updating the `manifest.json` remotely.
+- experimenting with new manifest features, such as window size and minimal UI.
+- working with the Electron app community to make it easier to generate application icons for cross-platform use.
 
 Tools like Electron and PWAify put yourself in control of application distribution while allowing you to use the latest web technologies. Write one awesome progressive web application for multiple distribution targets!
 
