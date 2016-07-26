@@ -6,7 +6,6 @@ intro: 'Progressive Web Apps are getting ready for desktop.'
 tags:
 - pwa
 license: cc-by-3.0
-published: false
 ---
 
 ## Progressive Web Apps are getting ready for desktop
