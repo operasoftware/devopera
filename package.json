@@ -3,7 +3,7 @@
   "dependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-beml": "^1.0.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-htmlmin": "^2.0.0",
