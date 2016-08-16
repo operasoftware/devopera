@@ -6,6 +6,8 @@ intro: 'Browsers based on the Opera Device SDK are generally designed to use the
 license: cc-by-3.0
 ---
 
+<font color="red"><b>Note: </b></font> Note that parts of this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, - but most devices shipped since 2015 are based on the newer Blink-based Opera product.
+
 <div class="note">
 This article offers advice for generic browsers based on the Opera Device SDK. For specific information about the Opera TV Store – which introduces further functionality, as well as additional requirements to authors – please refer to this separate article: [Functional key handling in Opera TV Store applications](/tv/functional-key-handling-in-opera-tv-store-applications/).
 </div>

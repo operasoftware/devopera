@@ -8,6 +8,8 @@ intro: 'The Opera TV Store browser comes with built-in support for the HTML5 `<a
 license: cc-by-3.0
 ---
 
+<font color="red"><b>Note: </b></font> Note that parts of this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, - but most devices shipped since 2015 are based on the newer Blink-based Opera product.
+
 Update history:
 
 - Article updated on 30 March 2012 to suggest explicit `<source>` workaround.
