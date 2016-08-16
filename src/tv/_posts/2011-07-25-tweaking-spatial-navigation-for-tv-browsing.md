@@ -11,6 +11,8 @@ tags:
 license: cc-by-nc-sa-3.0
 ---
 
+<p block="disclaimer"><strong elem="title">Please note</strong> that parts of this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, but most devices shipped since 2015 are based on the newer Blink-based Opera product.</p>
+
 One of the biggest challenges designing content for TVs is navigation. Not only are there several different methods that can be used to navigate a page, but none of them provide the perfect blend of convenience and practicality, at least not yet. At the time of writing, a user could be controlling their TV browsing session with any of the following devices:
 
 - A remote control with a D-pad (with keypad)

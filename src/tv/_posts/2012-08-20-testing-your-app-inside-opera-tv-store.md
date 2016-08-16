@@ -6,6 +6,8 @@ intro: 'This article introduces the concept of “Paired devices”, which allow
 license: cc-by-3.0
 ---
 
+<p block="disclaimer"><strong elem="title">Please note</strong> that this article refers to an older version of the Opera TV Store that (Opera TV Store 1.x), and may not be valid for Opera TV 2.0 or newer versions.
+
 <h2>Introduction</h2>
 
 <p>Before submitting an application to the Opera TV Store, developers need to ensure that it works as expected, to avoid a lengthy review process and potential delays.</p>
