@@ -163,6 +163,7 @@ Your extension must satisfy the following acceptance criteria:
 - It must not include “Opera” in the title or any other Opera branding that can indicate the extension was created by Opera Software.
 - It must comply with the [Terms of Service](https://addons.opera.com/developer/terms/).
 - No external JavaScript is allowed. All JavaScript code must be contained in the extension. External APIs are ok.
+- It must not specifically point to, or be related to, gambling or betting services. 
 - Values in `manifest.json` must be sound and valid.
 - Flash is not allowed.
 - Ads in content scripts are not allowed.
