@@ -9,7 +9,7 @@ tags:
 license: cc-by-3.0
 ---
 
-<p block="disclaimer"><strong elem="title">Please note</strong> that this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, but most devices shipped since 2015 are based on the newer Blink-based Opera product.</p>
+<p block="disclaimer"><strong>Please note</strong> that this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, but most devices shipped since 2015 are based on the newer Blink-based Opera product.</p>
 
 [Opera for Devices][1] provides powerful mechanisms to strictly limit the heap usage of Opera. Memory is an expensive commodity on many devices and different programs may compete for the limited resources with unpredictable consequences. With the Out of Memory (OOM) system it is possible to restrict Opera to a limited amount of memory while ensuring good functionality.
 

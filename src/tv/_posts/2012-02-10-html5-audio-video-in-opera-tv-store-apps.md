@@ -8,7 +8,7 @@ intro: 'The Opera TV Store browser comes with built-in support for the HTML5 `<a
 license: cc-by-3.0
 ---
 
-<p block="disclaimer"><strong elem="title">Please note</strong> that parts of this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, but most devices shipped since 2015 are based on the newer Blink-based Opera product.</p>
+<p block="disclaimer"><strong>Please note</strong> that parts of this article refers to older Presto-based versions of the Opera TV products (Opera TV SDK 3.x). These versions are still live in a lot of devices that are active in all markets, but most devices shipped since 2015 are based on the newer Blink-based Opera product.</p>
 
 Update history:
 
