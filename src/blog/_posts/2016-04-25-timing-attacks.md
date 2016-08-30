@@ -33,4 +33,4 @@ The presentation walks through what _timing attacks_ are, explains how they can 
 
 To me, this stuff is extremely interesting on a technical level. It’s also a little scary, however, to realize that malicious actors can use these techniques to invade your privacy while you’re browsing the web, without you ever knowing. Embedded third-party advertisements could be running timing attacks in the background, leaking pieces of private info (such as age, gender, location), which in turn enables them to serve you more targeted advertisements, fingerprint and track you across the web, or even de-anonymize you completely.
 
-The sad news is that, as a web developer, there’s no obvious way to prevent this type of attack. End users should consider using a content blocker (not just an ad blocker) in their browser.
+The sad news is that, as a web developer, there’s no obvious way to prevent this type of attack. End users should consider blocking third-party cookies, or using a content blocker (not just an ad blocker) in their browser.
