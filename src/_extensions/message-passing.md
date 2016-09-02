@@ -163,6 +163,10 @@ From your app or extension, you may listen to messages from web pages via the `r
 
 Extensions can exchange messages with native applications. Native applications that support this feature must register a native messaging host that knows how to communicate with the extension. Opera starts the host in a separate process and communicates with it using standard input and standard output streams.
 
+You need to declare the appropriate permission in the extension's manifest file. 
+
+	"permissions": [ "nativeMessaging" ]
+
 ### Native messaging host
 
 In order to register a native messaging host the application must install a manifest file that defines the native messaging host configuration. Below is an example of the manifest file:
@@ -176,8 +180,8 @@ In order to register a native messaging host the application must install a mani
 			"chrome-extension://knldjmfmopnpolahpmmgbagdohdnhkik/"
 		]
 	}
-
-Native messaging host manifest file contains the following fields:
+	
+The native messaging host manifest file contains the following fields:
 
 <figure block="figure">
 <table>
