@@ -33,7 +33,7 @@ The following is an overview of the various permissions declarations possible in
 - `identity`: Required if the extension or app uses the [chrome.identity](https://developer.chrome.com/extensions/identity) API.
 - `idle`: Required if the extension or app uses the [chrome.idle](https://developer.chrome.com/extensions/idle) API.
 - `management`: Required if the extension uses the [chrome.management](https://developer.chrome.com/extensions/management) API.
-- `nativeMessaging`: Required if the extension wants to use [native messaging](https://dev.opera.com/extensions/message-passing/#native-messaging). 
+- `nativeMessaging`: Required if the extension wants to use [native messaging](https://dev.opera.com/extensions/message-passing/#native-messaging).
 - `offroad`: Gives the extension access to the [Off-Road Mode](/extensions/off-road/).
 - `pageCapture`: Gives the extension access to the [chrome.pageCapture](https://developer.chrome.com/extensions/pageCapture) API.
 - `power`: Required if the extension or app uses the [chrome.power](https://developer.chrome.com/extensions/power) API.
@@ -48,5 +48,3 @@ The following is an overview of the various permissions declarations possible in
 ## Optional permissions
 
 You can use the [`chrome.permissions` API](https://developer.chrome.com/extensions/permissions) to request [declared optional permissions](/extensions/optional-permissions/#manifest) at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
-
-

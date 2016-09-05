@@ -82,7 +82,7 @@ In the above code we have used a recursive function to go through all bookmark n
 
 You can [download the working extension](/extensions/extension-samples/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
 
-We've also added a function called `getRootByName` which allows you to get the  object of some specific root folders. You can [visit its API page](/extensions/getrootbyname/) to know more about the page and see sample code.
+We’ve also added a function called `getRootByName` which allows you to get the object of some specific root folders. You can [visit its API page](/extensions/getrootbyname/) to know more about the page and see sample code.
 
 ### Creating new bookmark entries
 
@@ -107,7 +107,6 @@ You can create new bookmark entries (these can be either bookmarks or bookmark f
 		});
 	});
 
-The above code will create a new folder called “Opera Extensions Resources” and then create two bookmarks within that folder. Note that we mentioned the `parentId` as `1` so that the folder is placed on the main quick access bar. Upon creation, a callback function is fired, where we can get the `id` of the newly created bookmark entry. In the above code we create two bookmarks and the set the `parentId` of it to the `id` of the bookmark folder we just created. This places the two bookmarks inside the newly created bookmark folder.  
+The above code will create a new folder called “Opera Extensions Resources” and then create two bookmarks within that folder. Note that we mentioned the `parentId` as `1` so that the folder is placed on the main quick access bar. Upon creation, a callback function is fired, where we can get the `id` of the newly created bookmark entry. In the above code we create two bookmarks and the set the `parentId` of it to the `id` of the bookmark folder we just created. This places the two bookmarks inside the newly created bookmark folder.
 
 You can [download the sample extension](/extensions/extension-samples/bookmarks-api-2.nex) for the above and tinker with the code yourself.
-
