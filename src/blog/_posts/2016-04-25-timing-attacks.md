@@ -33,4 +33,6 @@ The presentation walks through what _timing attacks_ are, explains how they can 
 
 To me, this stuff is extremely interesting on a technical level. It’s also a little scary, however, to realize that malicious actors can use these techniques to invade your privacy while you’re browsing the web, without you ever knowing. Embedded third-party advertisements could be running timing attacks in the background, leaking pieces of private info (such as age, gender, location), which in turn enables them to serve you more targeted advertisements, fingerprint and track you across the web, or even de-anonymize you completely.
 
-The sad news is that, as a web developer, there’s no obvious way to prevent this type of attack. End users should consider blocking third-party cookies, or using a content blocker (not just an ad blocker) in their browser.
+The sad news is that, as a web developer, there’s no obvious way to prevent this type of attack. Using [`Same-Site` cookies](http://www.sjoerdlangkemper.nl/2016/04/14/preventing-csrf-with-samesite-cookie-attribute/) helps, but its `strict` mode seems a bit too aggressive for mainstream usage, and its `lax` mode might still not fully protect against timing attacks.
+
+End users should consider [blocking third-party cookies](opera://settings/?search=third-party%20cookies), or using a content blocker (not just an ad blocker) in their browser.
