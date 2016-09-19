@@ -20,15 +20,9 @@
 	</a>
 	<div elem="content" mod="{{ mod--featured }}">
 		<p elem="meta">
-{% if entry.date %}
-			<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time>
-{% endif %}
-{% if entry.authors %}
-			by {% include authors.html entry=entry link=true elem='author' %}
-{% endif %}
-{% if entry.category %}
-			in <a href="/{{ entry.category }}/" elem="category">{{ entry.category | capitalize }}</a>
-{% endif %}
+{% if entry.date %}<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time> {% endif %}
+{% if entry.authors %}by {% include authors.html entry=entry link=true elem='author' %} {% endif %}
+{% if entry.category %}in <a href="/{{ entry.category }}/" elem="category">{{ entry.category | capitalize }}</a>{% endif %}
 		</p>
 		<p elem="intro" mix="block:content">{{ entry.intro | markdownline }}</p>
 	</div>
