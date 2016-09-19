@@ -3,7 +3,6 @@ title: Extension Templates and Samples
 authors:
 - shwetank-dixit
 intro: 'This is a repository of all the example extensions to help you get started with making Opera extensions. These could be useful for just looking through the code and learning about extensions, or you could take any of these as a starting point and then edit them and build upon them for your own extensions.'
-featured: featured
 license: cc-by-3.0
 ---
 

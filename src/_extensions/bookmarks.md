@@ -82,6 +82,8 @@ In the above code we have used a recursive function to go through all bookmark n
 
 You can [download the working extension](/extensions/extension-samples/bookmarks-api-1.nex) and have a play with it. A good exercise would be to add clickable links to the list so that a person could open that URL in a new tab when someone clicks on it.
 
+We’ve also added a function called `getRootByName` which allows you to get the object of some specific root folders. You can [visit its API page](/extensions/getrootbyname/) to know more about the page and see sample code.
+
 ### Creating new bookmark entries
 
 You can create new bookmark entries (these can be either bookmarks or bookmark folders) by using the function `chrome.bookmarks.create()`. To create bookmarks on the first level, you will to have the specify the `parentId` as `1`. Let’s look at the following example:

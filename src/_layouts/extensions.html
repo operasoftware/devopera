@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<main block="layout">
+	<div elem="content" mod="entry">
+		<article block="intro" role="main" lang="{{ page.language }}">
+			<h1 block="content" elem="title">{{ page.title | markdownline }}</h1>
+			<div block="content">
+
+{{ content }}
+
+			</div>
+		</article>
+		<section block="archive">
+			<h2 elem="title">Featured Articles</h2>
+			<div elem="columns" data-columns="3">
+
+{% assign documents = site.extensions | where: 'featured', 'featured' %}
+{% for document in documents %}
+	{% include teaser.html entry=document %}
+{% endfor %}
+
+			</div>
+			<div elem="columns" data-columns="3">
+
+{% capture interviews %}
+	{% assign articles = site.posts | where: 'language', 'en' | where: 'category', 'articles' %}
+	{% for article in articles %}
+		{% if article.tags contains 'interview' and article.tags contains 'extensions' %}
+			{% include teaser.html entry=article %}(•)
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% assign interviews = interviews | remove: '	' | strip_newlines | split: '(•)' %}
+
+{% for interview in interviews limit:3 %}
+	{{ interview }}
+{% endfor %}
+
+			</div>
+		</section>
+	</div>
+	<div elem="aside">
+		{% include sidebar.html entries=site.extensions %}
+	</div>
+</main>
+<script src="/scripts/salvattore.js"></script>

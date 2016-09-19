@@ -1,9 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-beml": "^1.0.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-htmlmin": "^2.0.0",
@@ -16,7 +16,7 @@
     "merge-stream": "^1.0.0",
     "open": "0.0.5",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.2.1",
+    "run-sequence": "^1.2.2",
     "sass-mq": "^3.3.0-beta.3",
     "susy": "^2.2.12"
   }

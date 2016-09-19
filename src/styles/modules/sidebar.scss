@@ -6,15 +6,22 @@
 
 	padding-bottom:8px;
 	margin-bottom:8px;
-	border-bottom:1px solid $grey-20;
 	line-height:1.2;
 
-	// Separator
+	// Title
 
-	& + & {
-		padding-bottom:0;
-		margin-bottom:0;
-		border-bottom:none;
+	&__title {
+		padding:8px 0;
+		color:$grey;
+		letter-spacing:0.1em;
+		text-transform:uppercase;
+		font-size:12px;
+		}
+
+	// Pages
+
+	&__pages {
+		margin-bottom:8px;
 		}
 
 	// Elements

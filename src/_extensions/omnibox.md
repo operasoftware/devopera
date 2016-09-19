@@ -49,7 +49,7 @@ For our example, we will use the [`onInputEntered`](https://developer.chrome.com
 
 	chrome.omnibox.onInputEntered.addListener(
 		function(text) {
-			var qString = 'http://dev.opera.com/extension/?q=' + encodeURIComponent(text);
+			var qString = 'https://dev.opera.com/search/?q=' + encodeURIComponent(text);
 			chrome.tabs.query({
 				'currentWindow': true,
 				'active': true
@@ -73,7 +73,7 @@ The API also enables developers to provide suggestions to the user in the addres
 		function(text, suggest) {
 			var suggestionsList = [
 				{
-					'content': 'http://dev.opera.com/extensions/?q=' + encodeURIComponent(text),
+					'content': 'https://dev.opera.com/search/?q=' + encodeURIComponent(text),
 					'description': 'Search Opera Extensions Documentation'
 				},
 				{
@@ -110,7 +110,7 @@ One thing to keep in mind is that when the user selects the default suggestion, 
 			// (thus not having an 'http' at the beginning of the string),
 			// so we will have to append a URL to it again.
 			if (text.substr(0, 4) != 'http') {
-				var qString = 'http://dev.opera.com/extensions/?q=' + encodeURIComponent(text);
+				var qString = 'https://dev.opera.com/search/?q=' + encodeURIComponent(text);
 			} else {
 				var qString = text;
 			}
@@ -128,3 +128,5 @@ One thing to keep in mind is that when the user selects the default suggestion, 
 You can [download the extension](/extensions/extension-samples/omnibox-2.nex) — the keyword for this extension is _extdocs_, so type that followed by your search query — and see that the default suggestion is to search on the Opera Extensions documentation site. The next option is a search on StackOverflow with the tag `[opera-extension]`, followed by a Google search. Keep in mind that all other options apart from the default one are listed in alphabetical order of their descriptions.
 
 You can go further and have suggestions in the address bar by doing an AJAX request to your web service, with the suggestions executed in a similar manner as the one shown above. Making an address bar extension is pretty easy, so [check out the API](https://developer.chrome.com/extensions/omnibox) and get cracking!
+
+

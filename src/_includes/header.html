@@ -12,14 +12,14 @@
 	<link rel="alternate" href="/feed/articles/" type="application/atom+xml" title="Dev.Opera Articles">
 	<link rel="alternate" href="/feed/blog/" type="application/atom+xml" title="Dev.Opera Blog">
 	<link rel="alternate" href="/feed/tv/" type="application/atom+xml" title="Dev.Opera TV">
-{% if page.url == '/index.html' %}
+{% if page.url == '/' %}
 	<meta name="description" content="Dev.Opera covers current and future HTML, CSS and JavaScript features and implementations, responsive web design, browser extensions, and more.">
 {% endif %}
 </head>
 <body>
 
-	<header block="header" role="banner">
-{% if page.url == '/index.html' %}
+	<header block="header">
+{% if page.url == '/' %}
 		<h1 elem="logo">
 			<span elem="logo-type">
 				Dev.<span elem="logo-opera">Opera</span>

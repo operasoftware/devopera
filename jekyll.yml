@@ -14,6 +14,8 @@ include:
 exclude:
 - '*.scss'
 - '*.map'
+keep_files:
+- 'styles/*.css'
 
 # Collections
 collections:

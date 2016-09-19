@@ -23,7 +23,7 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/bookmarks">Bookmarks</a></td>
-	<td>None</td>
+	<td>We support an additional method called <code>getRootByName</code>. Read the <a href="/extensions/getrootbyname/">API documentation</a> for details.</td>
 </tr>
 <tr>
 	<td><a href="https://developer.chrome.com/extensions/browserAction">browserAction</a></td>

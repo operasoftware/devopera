@@ -3,7 +3,6 @@ title: Publishing Guidelines
 authors:
 - andreas-bovens
 intro: 'This lists the publishing guidelines for extensions in Opera. These need to be followed in order an extension to be approved and published on the Opera Addons Catalog.'
-featured: featured
 license: cc-by-3.0
 ---
 
@@ -161,9 +160,10 @@ Your extension must satisfy the following acceptance criteria:
 - It must not collect private information without authorization from the user.
 - It must not send private data to an external store, for example through XHR.
 - It must not unlawfully incorporate third party information, code or graphics.
-- It must not inclde “Opera” in the title or any other Opera branding that can indicate the extension was created by Opera Software.
+- It must not include “Opera” in the title or any other Opera branding that can indicate the extension was created by Opera Software.
 - It must comply with the [Terms of Service](https://addons.opera.com/developer/terms/).
 - No external JavaScript is allowed. All JavaScript code must be contained in the extension. External APIs are ok.
+- It must not specifically point to, or be related to, gambling or betting services. 
 - Values in `manifest.json` must be sound and valid.
 - Flash is not allowed.
 - Ads in content scripts are not allowed.
@@ -171,7 +171,7 @@ Your extension must satisfy the following acceptance criteria:
 - Extensions cannot just consist of a button linking to a website, or of a popup with some static links pointing to a website. Extensions must provide valuable functionality, such as e.g. a transformation applied on a page when a button is clicked, real-time info in a popup, etc.
 - Content inside popups must be optimized for display in a popup. The content must match the popup's size, and vertical scrolling should only be used if really necessary. Avoid horizontal scrolling inside popups.
 - While linking to your own or other sites from your extension is fine, such links should be relevant and have a clear function. Don't overload the extension with promotional links.
-- We must be able to review the code in a reasonable manner. Therefor, the code shouldn’t be obfuscated. Binary code is not ok.
+- We must be able to review the code in a reasonable manner. Therefore, the code shouldn’t be obfuscated. Binary code is not ok.
 - The summary must answer the question: what does your extension do? It must be composed of grammatically correct and complete sentences.
 - The description must answer: 1) How do you use the extension? 2) What does the extension look like?
 
