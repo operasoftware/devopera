@@ -121,7 +121,7 @@ The options parameter may include the following properties and values.
 - `subtree` true or false; observe mutations to all descendants of the target, including child nodes and “grandchild nodes” (or the child nodes of child nodes).
 - `attributeOldValue` true or false; if the attributes property is true, and you’d like to capture the value of the attribute before the mutation is recorded.
 - `characterDataOldValue` true or false; if the characterData property is true, and you’d like to capture the value of the data before the mutation is recorded.
-- `attributeFilter` a list of attributes to observe, enclosed in square brackets (example: `['class','src']`);
+- `attributeFilter` an array of attributes to observe (example: `['class','src']`);
 
 Either the `childList`, `attributes`, or `characterData` property _must_ be included, and set to `true` in order to observe a mutation.
 
@@ -222,7 +222,7 @@ The example above will capture all changes to any attribute of our target elemen
 
 ### Filtering which attributes are observed
 
-We can limit the which attributes we’d like to observe by adding the `attributeFilter` property to our options (Figure 7). The value of `attributeFilter` must be a comma-separated list of attributes to track, enclosed in square brackets (`[` and `]`).
+We can limit the which attributes we’d like to observe by adding the `attributeFilter` property to our options (Figure 7). The value of `attributeFilter` must be an array of attributes to track.
 
 <figure block="figure" id="figure-7">
 <div markdown="block">
