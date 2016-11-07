@@ -6,7 +6,6 @@ intro: 'We sat down with Ulla from Web of Trust, and asked her what makes WOT sp
 tags:
 - wot
 - extensions
-- interview
 - opera
 cover: jpg
 license: cc-by-3.0
