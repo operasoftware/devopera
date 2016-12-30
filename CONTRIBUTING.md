@@ -34,4 +34,4 @@ If you want to fix something yourself, fork the [devopera](https://github.com/op
 
 ## Contact us
 
-If you have any questions about the process, please ask [@odevrel](https://twitter.com/odevrel) or contact andreasbATopera.com.
+If you have any questions about the process, please ask [@odevrel](https://twitter.com/odevrel) or contact simonp@opera.com.
