@@ -95,6 +95,6 @@ Your NEX package will be generated in the parent directory of the one you had se
 
 ## What now?
 
-As you can see, making extensions for Opera is really easy. Through this tutorial, you’ve learn how to make a basic extension, load it in Developer Mode, test it out and finally package it.
+As you can see, making extensions for Opera is really easy. Through this tutorial, you’ve learned how to make a basic extension, load it in Developer Mode, test it out and finally package it.
 
 From here you should take a look at the other tutorials we’ve written, covering different parts of extension functionality in more detail (like Buttons, Tabs, Messaging, etc.) If you need a pure reference guide, check out the API Docs section in the sidebar.
