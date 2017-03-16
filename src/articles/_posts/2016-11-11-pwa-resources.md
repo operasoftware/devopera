@@ -38,7 +38,7 @@ One of the best things about PWAs are that they can be added to the home screen 
 - [The Google Team’s Overview of Adding to Home Screen](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android): A nice overview of the options available for various use cases when implementing ‘Add to Home Screen’ functionality.
 - [FLIP your animations](https://aerotwist.com/blog/flip-your-animations/): It’s important that your PWA runs smoothly. Paul Lewis explains how to implement smooth animations in your app.
 - [Jankfree](http://engineering.flipboard.com/2015/02/mobile-web/): A collection of resources all about improving web UI performance and reducing ‘Jank’.
-- [60fps on the Mobile Web](http://engineering.flipboard.com/2015/02/mobile-web/): The Flipboard team discusses how to get 60fps performance for your web frontend on mobile devices.
+- [60fps on the Mobile Web](http://engineering.flipboard.com/2015/02/mobile-web): The Flipboard team discusses how to get 60fps performance for your web frontend on mobile devices.
 - [The Web App Manifest Specification](https://w3c.github.io/manifest/).
 
 ## Offline
