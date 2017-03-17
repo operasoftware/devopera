@@ -29,6 +29,7 @@ These articles introduce the concept of Progressive Web apps and serve as a jump
 - [Progressive Web Apps on Google Web Fundamentals](https://developers.google.com/web/progressive-web-apps/): This is a comprehensive set of tutorials various aspects of developing PWAs from the Google Team.
 - [Getting Started with Progressive Web apps](https://addyosmani.com/blog/getting-started-with-progressive-web-apps/): Addy Osmani’s guide to getting started with PWAs
 - [A Beginner’s Guide to Progressive Web Apps](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/): A good intro article by Smashing Magazine
+- [Progressive Web Apps](https://hackerbits.com/interviews/pwa-app-are-they-the-future-of-the-internet/): An interview with PWA expert, Henrik Joreteg, who’s been working with his clients to architect, build and train teams on building performant mobile web apps.
 
 ## UI Concepts
 
