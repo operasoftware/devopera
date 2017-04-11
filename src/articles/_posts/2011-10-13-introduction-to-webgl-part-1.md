@@ -334,7 +334,6 @@ Now we add the moon to our scene, and draw it. For each frame in the scene, the 
 		scene.render();
 		// Animate
 		Fx.requestAnimationFrame(draw);
-		}
 	}
 
 ## Summary
