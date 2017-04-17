@@ -3,4 +3,4 @@ title: Francesco Iovine
 link: http://www.francesco.iovine.name/
 ---
 
-Francesco Iovine is a software engineer based in Rome, Italy, working in the web and mobile industry. Passionate about mobile web development, web standards and internet security. Outside work he likes good food, cooking and playing table football.
+Francesco Iovine is a front-end software engineer based in London with expertise in designing and developing web applications for different industries. Interested in web standards, contributor to the open web platform as a tech writer.
