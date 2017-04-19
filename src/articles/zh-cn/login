@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+  <meta http-equiv="Content-Language" content="en">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+  <meta name="theme-color" content="#f5f5f5">
+
+      <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="B6E81446:3CC5:132CD02:5773BC01" name="octolytics-dimension-request_id" />
+<meta content="mobile" name="octolytics-dimension-device" />
+
+
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+    <meta class="js-ga-set" name="dimension3" content="mobile">
+
+
+
+
+  <title>GitHub · Where software is built</title>
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/mobile-ecb39ea1acad240e8e798cedcc1edfbbd8cafb043f9ce10a0de48353069c1219.css" integrity="sha256-7LOeoaytJA6OeYztzB7fu9jK+wQ/nOEKDeSDUwacEhk=" media="all" rel="stylesheet" />
+  
+</head>
+<body class="">
+  <header class="nav-bar">
+    <div class="nav-bar-inner ">
+      <button class="header-button header-nav-button touchable js-show-global-nav" data-ga-click="Mobile, tap, location:header; text:Hamburger">
+        <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>
+      </button>
+
+      <div class="nav-bar-title-text">
+          <a class="brand-logo-wordmark" href="https://github.com/" data-ga-click="Mobile, tap, location:header; text:Logged out logo">
+            <svg aria-hidden="true" class="octicon octicon-logo-github" height="32" version="1.1" viewBox="0 0 45 16" width="90"><path d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 0 0-.146-.18zm23.696-2.2c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61H33.84c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"></path></svg>
+          </a>
+      </div>
+
+      
+
+    </div>
+
+
+    <nav class="nav-bar-tabs ">
+      <ul>
+          <li>
+            <a href="/explore" data-ga-click="Mobile, tap, location:header; text:Explore">
+              <svg aria-hidden="true" class="octicon octicon-telescope" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M8 9l3 6h-1l-2-4v5H7v-6l-2 5H4l2-5 2-1zM7 0H6v1h1V0zM5 3H4v1h1V3zM2 1H1v1h1V1zM.63 9a.52.52 0 0 0-.16.67l.55.92c.13.23.41.31.64.2l1.39-.66-1.16-2-1.27.86.01.01zm7.89-5.39l-5.8 3.95L3.95 9.7l6.33-3.03-1.77-3.06h.01zm4.22 1.28l-1.47-2.52a.51.51 0 0 0-.72-.17l-1.2.83 1.84 3.2 1.33-.64c.27-.13.36-.44.22-.7z"></path></svg>
+              Explore
+            </a>
+          </li>
+        <li>
+            <a href="/login?return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3De865e74c1d0a3e66003c%26redirect_uri%3Dhttps%253A%252F%252Fgitter.im%252Flogin%252Fcallback%26response_type%3Dcode%26scope%3Duser%253Aemail%252Cread%253Aorg%26state%3D8913ce08686383ca1162325cd3df7d3e4cf76deb58820d1cd6b9286cc26a76ce" data-ga-click="Mobile, tap, location:header; text:Sign in">
+              <svg aria-hidden="true" class="octicon octicon-sign-in" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 6.75V12h4V8h1v4c0 .55-.45 1-1 1H7v3l-5.45-2.72c-.33-.17-.55-.52-.55-.91V1c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v3h-1V1H3l4 2v2.25L10 3v2h4v2h-4v2L7 6.75z"></path></svg>
+              Sign in
+            </a>
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
+
+
+  <div id="js-flash-container">
+</div>
+
+
+    
+<div class="bubble auth-form-container">
+  <h3 class="bubble-title">Sign in to GitHub</h3>
+
+  <div class="bubble-content">
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/session" data-form-nonce="41e874597c55fa736f518d58dd2493636b7cf3ed" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FZ9nK+1zL41Hx2IoN7j7Eti362zoNZ6SKW5vIEUA1dhi4M+O9anMjFgKDdnuxpcapboKWJISuDDjWiP9CqVKow==" /></div>      <label for="login">Username or email</label>
+      <input class="form-control" type="email" name="login"
+        value=""
+        autocapitalize="off" autocorrect="off"
+         autofocus>
+
+      <label for="password">
+        Password
+        <a href="/password_reset">(forgot password)</a>
+      </label>
+      <input class="form-control" type="password" name="password"
+        value=""
+        >
+
+      <input class="form-control" id="return_to" name="return_to" type="hidden" value="/login/oauth/authorize?client_id=e865e74c1d0a3e66003c&amp;redirect_uri=https%3A%2F%2Fgitter.im%2Flogin%2Fcallback&amp;response_type=code&amp;scope=user%3Aemail%2Cread%3Aorg&amp;state=8913ce08686383ca1162325cd3df7d3e4cf76deb58820d1cd6b9286cc26a76ce" />      
+      <button type="submit" class="btn btn-block" data-disable-with="Signing in…">Sign in</button>
+</form>  </div>
+</div>
+
+
+
+
+  <footer class="clearfix">
+    <div class="container">
+      <a href="#"><svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+
+      <ul class="clearfix">
+        <li>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/site/mobile_preference" class="js-mobile-preference-form" data-form-nonce="41e874597c55fa736f518d58dd2493636b7cf3ed" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y9wvvmSF9LrZC4gXagsRDtMeeDGqEnBlfQm2qPAEFn6WKw+YNsjMf519xuHmeSc2fAWXbjs+AqPz8SKQADxC/g==" /></div>
+            <input type="hidden" name="mobile" value="false">
+            <input type="hidden" name="anchor" class="js-mobile-preference-anchor-field">
+
+            <button type="submit" class="switch-to-desktop" data-ga-click="Mobile, switch to desktop, switch button">
+              Desktop version
+            </button>
+</form>        </li>
+
+      </ul>
+    </div>
+  </footer>
+  
+  <script async="async" crossorigin="anonymous" integrity="sha256-NuMdADfc6c0hkkZ29XQ9QDiMTqjq9PBeeIFNziAxZ9M=" src="https://assets-cdn.github.com/assets/mobile-36e31d0037dce9cd21924676f5743d40388c4ea8eaf4f05e78814dce203167d3.js"></script>
+</body>
+</html>
