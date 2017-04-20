@@ -62,7 +62,7 @@ So common is the practice of not using text in **a medium principally designed f
 - The `aria-labelledby` attribute
 - Some text in a hidden `<span>` that’s been flung off the side of the screen by an excessive 9 million pixels just in case screen resolutions get so high that this floating bit of text becomes visible to the 8 people who can afford that super-high-resolution model of Apple™ computer.
 
-Some of the attributes are [incredibly unreliable](http://blog.silktide.com/2013/01/i-thought-title-text-improved-accessibility-i-was-wrong/) (`title`) and others can only legally — and successfully — be used on certain elements (`alt`), leaving the two dedicated ARIA attributes `aria-label` and `aria-labelledby`.
+Some of the attributes are [incredibly unreliable](https://silktide.com/i-thought-title-text-improved-accessibility-i-was-wrong/) (`title`) and others can only legally — and successfully — be used on certain elements (`alt`), leaving the two dedicated ARIA attributes `aria-label` and `aria-labelledby`.
 
 In [the calculation](http://www.w3.org/TR/html-aam-1.0/) of which bit of (remedial) text should take precedence when more than one is present, `aria-label` and `aria-labelledby` also rank most highly, overriding the other methods.
 
