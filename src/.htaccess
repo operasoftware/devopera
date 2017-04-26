@@ -213,3 +213,19 @@ RewriteRule ^blog/on-a-moratorium-on-new-browser-features /articles/on-a-morator
 RewriteRule ^articles/view/(.+)$ /articles/$1 [R=301,L]
 # Redirect all `/articles/tags/*` to `/tags/*`
 RewriteRule ^articles/tags/(.+)$ /tags/$1 [R=301,L]
+
+# Redirects for OperaTV
+RewriteRule ^tv/tv-snap-mrss-requirements(.*) https://wiki.operatv.tv/display/OTV/Opera+TV+Snap+Data+Format+Requirements [R=301,L]
+RewriteRule ^tv/opera-tv-store-app-templates(.*) https://wiki.operatv.tv/display/OTV/Building+apps [R=301,L]
+RewriteRule ^tv/html5-audio-video-in-opera-tv-store-apps(.*) https://wiki.operatv.tv/display/OTV/HTML5+Audio+and+Video+Support+in+Opera+TV+Store+Applications [R=301,L]
+RewriteRule ^tv/design-considerations-for-opera-tv-store-applications(.*) https://wiki.operatv.tv/display/OTV/Design+Considerations+for+Opera+TV+Store+Applications [R=301,L]
+RewriteRule ^tv/creating-web-content-for-tv(.*) https://wiki.operatv.tv/display/OTV/Creating+Web+Content+for+TV [R=301,L]
+RewriteRule ^tv/tv-store-icons-thumbnails-and-screenshots(.*) https://wiki.operatv.tv/display/OTV/Creating+TV+Store+Icons%2C+Thumbnails+and+Screenshots [R=301,L]
+RewriteRule ^tv/functional-keys-in-opera-tv-browsers(.*) https://wiki.operatv.tv/display/OTV/Functional+Key+Handling+in+Opera+Device+SDK+Based+TV+Browsers [R=301,L]
+RewriteRule ^tv/functional-key-handling-in-opera-tv-store-applications(.*) https://wiki.operatv.tv/display/OTV/Functional+Key+Handling+in+Opera+TV+Store+Applications [R=301,L]
+RewriteRule ^tv/opera-for-devices-out-of-memory-system(.*) https://wiki.operatv.tv/display/OTV/Writing+High+Performance+TV+Applications+using+the+Opera+TV+Emulator [R=301,L]
+RewriteRule ^tv/opera-tv-emulator(.*) https://wiki.operatv.tv/display/OTV/Opera+TV+Emulator+4x [R=301,L]
+RewriteRule ^tv/testing-your-app-inside-opera-tv-store(.*) https://wiki.operatv.tv/display/OTV/Testing+Your+App+Inside+the+Opera+TV+Store [R=301,L]
+RewriteRule ^tv/building-applications-for-the-opera-tv-store(.*) https://wiki.operatv.tv/display/OTV/Building+Applications+for+the+Opera+TV+Store [R=301,L]
+RewriteRule ^tv/tweaking-spatial-navigation-for-tv-browsing(.*) https://wiki.operatv.tv/display/OTV/Tweaking+Spatial+Navigation+for+TV+Browsing [R=301,L]
+RewriteRule ^tv([/?].*|$) https://dev.otvs.tv [R=301,L]
