@@ -81,15 +81,16 @@ If you save and run this page, it should give you a blank canvas, with a default
 
 Note: The canvas has been created with dimensions of 300×150 pixels — this is the default if you don’t specify your own width and height.
 
-Note: WebGL code will seem rather complicated to many of you: being based on OpenGL, it is actually close to C++ code. For those of you wanting to understand it in depth, you should consult a set of C++ tutorials such as [cplusplus.com/doc/tutorial][9].
+Note: WebGL code will seem rather complicated to many of you: being based on OpenGL, it is actually close to C++ code. For those of you wanting to understand it in depth, you should consult a set of C++ tutorials such as [cplusplus.com/doc/tutorial][9] or [Programiz.com][10].
 
 [9]: http://www.cplusplus.com/doc/tutorial/
+[10]: https://programiz.com/cpp-programming
 
 ## Drawing something meaningful
 
-With this basic setup under our belt, let’s go forward and start by drawing an actual shape. The finished result from this section can be found as [minimal-draw.html][10] in the code download. To create 3D content, WebGL uses the ES2.0 programmable pipeline, shown in Figure 2. We will refer to this multiple times throughout the walkthrough below.
+With this basic setup under our belt, let’s go forward and start by drawing an actual shape. The finished result from this section can be found as [minimal-draw.html][11] in the code download. To create 3D content, WebGL uses the ES2.0 programmable pipeline, shown in Figure 2. We will refer to this multiple times throughout the walkthrough below.
 
-[10]: {{ page.id }}/minimal-draw.html
+[11]: {{ page.id }}/minimal-draw.html
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/pipeline.jpg" alt="A diagram of the ES2.0 programmable pipeline WebGL uses">
