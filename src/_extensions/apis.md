@@ -170,7 +170,7 @@ Below are is the list of extension APIs supported in Opera. Since most of these 
 	<td>Opera currently does not support the <code>InjectDetails</code> and the <code>sendRequest()</code>, <code>getSelected()</code>, <code>getAllInWindow()</code>, and <code>highlight()</code> methods. Also, the <code>onSelectionChanged</code>, <code>onActiveChanged</code>, <code>onHighlightChanged</code>, and <code>onHighlighted</code> events are not supported.</td>
 </tr>
 <tr>
-	<td><a href="https://developer.chrome.com/extensions/types">Topsites</a></td>
+	<td><a href="https://developer.chrome.com/extensions/topSites">Topsites</a></td>
 	<td>None.</td>
 </tr>
 <tr>
