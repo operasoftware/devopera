@@ -11,6 +11,11 @@ tags:
 license: cc-by-3.0
 ---
 
+<div style="background-color: rgb(238, 240, 238); margin: 2em; padding: 1em; border: 6px double rgb(40, 7, 44)">
+  This article is outdated, please refer to:
+  <a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/">https://developers.google.com/web/tools/chrome-devtools/remote-debugging/</a>
+</div>
+
 ## Introduction
 
 Now that Opera for Android is out, you'll sometimes need to debug it, as there are differences in Standards support between Opera and Chrome for Android and Chrome on Android 4+ (`<input type=color>`, `@supports`, etc,).
