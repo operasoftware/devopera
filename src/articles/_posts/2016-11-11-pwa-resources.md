@@ -92,3 +92,10 @@ Take a look at what others are doing with Progressive Web Apps. Get inspiration 
 - [Google PWA Showcase](https://developers.google.com/web/showcase/): Google’s showcase of companies which have befitted from PWAs.
 - [The Business Case for Progressive Web Apps](https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/): Jason Grigsby writes a compelling case for the business benefits of PWAs.
 - [PWAs: An African Perspective](https://dev.opera.com/articles/pwa-nigeria-kenya-interview/): We interview two great developers from Nigeria and Kenya about PWAs. Read their thoughts on how PWAs can help solve problems in that region.
+
+## Books
+
+Books to help you learn about PWAs
+
+- [Progressive Web Apps](https://www.manning.com/books/progressive-web-apps): Progressive Web Apps teaches you PWA design and the skills you need to build fast, reliable websites by taking you step-by-step through real world examples in this practical tutorial.
+
