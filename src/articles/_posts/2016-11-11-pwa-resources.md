@@ -95,7 +95,9 @@ Take a look at what others are doing with Progressive Web Apps. Get inspiration 
 
 ## Books
 
-Books to help you learn about PWAs
+Books to help you learn about PWAs.
 
-- [Progressive Web Apps](https://www.manning.com/books/progressive-web-apps): Progressive Web Apps teaches you PWA design and the skills you need to build fast, reliable websites by taking you step-by-step through real world examples in this practical tutorial.
+- [Progressive Web Apps](https://www.manning.com/books/progressive-web-apps): This book teaches you PWA design and the
+skills you need to build fast, reliable websites by taking you step-by-step
+through real world examples.
 
