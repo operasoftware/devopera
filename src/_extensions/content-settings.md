@@ -17,7 +17,7 @@ You must declare the `contentSettings` permission in your extension’s manifest
 
 ## Content setting patterns
 
-You can use patterns to specify the websites that each content setting affects. For example, `http://*.youtube.com/*` specifies youtube.com and all of its subdomains. The syntax for content setting patterns is the same as for match patterns, with a few differences:
+You can use patterns to specify the websites that each content setting affects. For example, `https://*.youtube.com/*` specifies youtube.com and all of its subdomains. The syntax for content setting patterns is the same as for match patterns, with a few differences:
 
 - For http, https, and ftp URLs, the path must be a wildcard `/*`. For file URLs, the path must be completely specified and must not contain wildcards.
 - In contrast to match patterns, content setting patterns can specify a port number. If a port number is specified, the pattern only matches websites with that port. If no port number is specified, the pattern matches all ports.
