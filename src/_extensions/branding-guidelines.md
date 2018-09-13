@@ -85,6 +85,6 @@ If you want to download the Opera add-ons badge just for a particular language o
 * Don't use any Opera trademarks or any confusingly similar marks as the name of your application or company without written permission from us.
 * You may state that your product is compatible with a Opera product by using text such as "for," "for use with" or "compatible with."  Such as "YOUR PRODUCT compatible with Opera."
 * You can use an Opera trademark in combination with your logo, but the Opera trademark should be smaller in size than your logo.
-* If you do use an Opera trademark - give us attribution.  "Opera is a trademark of Opera Software ASA.  Use of the Opera trademark is subject to its Guidelines."
+* If you do use an Opera trademark - give us attribution.  "Opera is a trademark of Opera Software AS.  Use of the Opera trademark is subject to its Guidelines."
 
 For more information, see our [trademark guidelines](http://www.operasoftware.com/press/trademark).
