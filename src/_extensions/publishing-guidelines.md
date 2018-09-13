@@ -160,6 +160,7 @@ Your extension must satisfy the following acceptance criteria:
 - It must not collect private information without authorization from the user.
 - It must not send private data to an external store, for example through XHR.
 - It must not unlawfully incorporate third party information, code or graphics.
+- It must not change referral parameters, interfere with Opera monetization mechanisms or otherwise misappropriate traffic or revenues from other sources.
 - It must not include “Opera” in the title or any other Opera branding that can indicate the extension was created by Opera Software.
 - It must comply with the [Terms of Service](https://addons.opera.com/developer/terms/).
 - No external JavaScript is allowed. All JavaScript code must be contained in the extension. External APIs are ok.
