@@ -4,6 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Web messaging demo: Channel Messaging</title>
 	<link rel="stylesheet" href="webmessaging.css" media="screen">
+<script>
+function messageHandler(evt) {
+    if (evt.origin == 'https://dev.opera.com') {
+	if (evt.ports.length > 0) {
+	    // transfer the port to our other document.
+	    window.frames[1].postMessage('portopen',
+                                         'https://dev.opera.com',
+                                         evt.ports);
+	}
+    }
+}
+
+window.addEventListener('message', messageHandler, false);
+
+</script>
 </head>
 <body>
 
@@ -18,31 +33,5 @@
 
 </footer>
 
-<script>
-function init(){
-
-
-	var iframes,
-		messageHandler,
-
-	iframes = window.frames;
-
-	messageHandler = function(evt){
-		if( evt.origin == 'https://dev.opera.com'){
-			if( evt.ports.length > 0 ){
-				// transfer the port to our other document.
-				iframes[1].postMessage('portopen','https://dev.opera.com',evt.ports);
-			}
-		}
-	}
-
-
-	// Listen for the message from iframe[0]
-	window.addEventListener('message',messageHandler,false);
-}
-
-window.addEventListener('DOMContentLoaded',init,false);
-
-</script>
 </body>
 </html>
