@@ -21,7 +21,7 @@ In the video below, you can see an example of animated themes in action.
 	</video>
 </figure>
 
-You can download the [Still Lake]({{ page.id }}/still-lake.zip) (6 MB) & [Silent Forest]({{ page.id }}/forest.zip) (10 MB) animated themes used in the video above. Feel free to check out the contents of the theme files. The videos used in those themes are courtesy of [NatureClip](http://natureclip.co.nr/), and have been shared under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+You can download the [Still Lake]({{ page.id }}/still-lake.zip) (6 MB) & [Silent Forest]({{ page.id }}/forest.zip) (10 MB) animated themes used in the video above. Feel free to check out the contents of the theme files. The videos used in those themes are courtesy of [NatureClip](http://natureclip.co.nr/), and have been shared under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 In the above video, you can see the _Still Lake_ animated theme being installed by dragging the .zip file to the `opera://themes` page, after which you can see the theme in action when we go to the speed dial page. Later in the video, we open up the preferences page. You will notice that the background theme is applied there too. In fact, the background theme will be visible on all such internal pages.
 
