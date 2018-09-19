@@ -34,8 +34,9 @@
 		}
 	}
 
-
-	window.addEventListener('DOMContentLoaded', loadHandler, false);
+	// These is a race between iframe a and b and it is important
+	// that iframe b loads before loadHandler runs. Thus this hack.
+	window.setTimeout(loadHandler, 1000);
 
 	</script>
 
