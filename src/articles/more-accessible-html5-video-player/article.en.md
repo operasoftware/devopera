@@ -8,7 +8,7 @@ Author:
 ----
 License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported
 ----
-License_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+License_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 ----
 Text:
 
