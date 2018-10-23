@@ -88,7 +88,7 @@ To add a panel to your sidebar action, create an HTML file with the panel’s co
 - [`setBadgeText`](#method-setbadgetext) — `opr.sidebarAction.setBadgeText(object details)` *
 - [`getBadgeText`](#method-getbadgetext) — `opr.sidebarAction.getBadgeText(object details, function callback)` *
 - [`setBadgeBackgroundColor`](#method-setbadgebackgroundcolor) — `opr.sidebarAction.setBadgeBackgroundColor(object details)` *
-- [`getBadgeBackgroundColor`](#method-getBadgeBackgroundColor) — `opr.sidebarAction.getBadgeBackgroundColor(object details, function callback)` *
+- [`getBadgeBackgroundColor`](#method-getbadgebackgroundcolor) — `opr.sidebarAction.getBadgeBackgroundColor(object details, function callback)` *
 
 * Not supported on Mac yet.
 
@@ -101,17 +101,17 @@ To add a panel to your sidebar action, create an HTML file with the panel’s co
 
 ## Types
 
-### ColorArray
+### ColorArray {#type-colorarray}
 
 Array of integer.
 
-### ImageDataType
+### ImageDataType {#type-imagedatatype}
 
 Pixel data for an image. Must be an `ImageData` object (for example, from a `<canvas>` element).
 
 ## Methods
 
-### `setTitle`
+### `setTitle` {#method-settitle}
 
 	opr.sidebarAction.setTitle(
 		object details
@@ -139,7 +139,7 @@ Sets the title of the sidebar action. This shows up in the tooltip.
 </table>
 </figure>
 
-### `getTitle`
+### `getTitle` {#method-gettitle}
 
 	opr.sidebarAction.getTitle(
 		object details,
@@ -170,7 +170,7 @@ Gets the title of the sidebar action.
 </table>
 </figure>
 
-### `setIcon`
+### `setIcon` {#method-seticon}
 
 	opr.sidebarAction.setIcon(
 		object details,
@@ -208,7 +208,7 @@ Sets the icon for the sidebar action. The icon can be specified either as the pa
 </table>
 </figure>
 
-### `setPanel`
+### `setPanel` {#method-setpanel}
 
 	opr.sidebarAction.setPanel(
 		object details
@@ -236,7 +236,7 @@ Sets the HTML document to be opened as a panel when the user clicks on the sideb
 </table>
 </figure>
 
-### `getPanel`
+### `getPanel` {#method-getpanel}
 
 	opr.sidebarAction.getPanel(
 		object details,
@@ -267,7 +267,7 @@ Gets the HTML document set as the panel for this sidebar action.
 </table>
 </figure>
 
-### `setBadgeText`
+### `setBadgeText` {#method-setbadgetext}
 
 	opr.sidebarAction.setBadgeText(
 		object details
@@ -297,7 +297,7 @@ Sets the badge text for the sidebar action. The badge is displayed on top of the
 
 Not supported on Mac yet.
 
-### `getBadgeText`
+### `getBadgeText` {#method-getbadgetext}
 
 	opr.sidebarAction.getBadgeText(
 		object details,
@@ -330,7 +330,7 @@ Gets the badge text of the sidebar action. If no tab is specified, the non-tab-s
 
 Not supported on Mac yet.
 
-### `setBadgeBackgroundColor`
+### `setBadgeBackgroundColor` {#method-setbadgebackgroundcolor}
 
 	opr.sidebarAction.setBadgeBackgroundColor(
 		object details
@@ -360,7 +360,7 @@ Sets the background color for the badge.
 
 Not supported on Mac yet.
 
-### `getBadgeBackgroundColor`
+### `getBadgeBackgroundColor` {#method-getbadgebackgroundcolor}
 
 	opr.sidebarAction.getBadgeBackgroundColor(
 		object details,
@@ -395,7 +395,7 @@ Not supported on Mac yet.
 
 ## Events
 
-### `onFocus`
+### `onFocus` {#events-onfocus}
 
 	opr.sidebarAction.onFocus.addListener(
 		function callback
@@ -420,7 +420,7 @@ When the panel becomes in focus (user clicks inside the panel).
 
 Not supported on Mac yet.
 
-### `onBlur`
+### `onBlur` {#events-onblur}
 
 	opr.sidebarAction.onBlur.addListener(
 		function callback
