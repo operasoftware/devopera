@@ -1,6 +1,4 @@
 main:
-  - text: Opera DevRel on Twitter
-    link: https://twitter.com/odevrel
   - text: Opera Software on GitHub
     link: https://github.com/operasoftware
   - text: List of Progressive Web Apps
@@ -21,8 +19,8 @@ main:
     link: https://bugs.opera.com/wizard/
   - text: Chromium bug wizard
     link: https://chromiumbugs.appspot.com/
-  - text: Opera TV Emulator
-    link: http://www.operasoftware.com/products/tv-emulator
+  - text: Opera DevRel on Twitter
+    link: https://twitter.com/odevrel
   - text: Opera Mini Simulator
     link: https://dev.opera.com/articles/installing-opera-mini-on-your-computer/
   - text: Extensions for web developers

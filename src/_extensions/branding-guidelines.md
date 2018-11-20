@@ -72,7 +72,7 @@ If you want to download the Opera add-ons badge just for a particular language o
 [Download](opera_addons_badge_pl.zip) the set of badges for Polish in various sizes.
 
 
-**Note**: If you need a logo translated to a different language from those available, please tweet us [@ODevRel](https://twitter.com/odevrel).
+**Note**: If you need a logo translated to a different language from those available, please tweet us [@Opera](https://twitter.com/Opera).
 
 ## Proper use of the Opera add-ons developer badge
 
