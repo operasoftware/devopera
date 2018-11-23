@@ -21,7 +21,6 @@ license: cc-by-3.0
 	- [Create a good icon](#good-icons)
 	- [Take good screenshots](#good-screenshots)
 3. [Submit your extension for review](#submit)
-	- [Acceptance criteria](#acceptance-criteria)
 4. [Your extension is reviewed](#reviewed)
 5. [When the extension satisfies all criteria, it will be published](#published)
 
