@@ -22,7 +22,7 @@ Your extension must satisfy all the following acceptance criteria to be included
 
 - The summary must answer the question: what does your extension do? It must be composed of grammatically correct and complete sentences.
 - The description must answer: 1) How do you use the extension? 2) What does the extension look like?
-- It must perform as described.
+- The extension must perform as described.
 - If defined, the support webpage must be relevant to the extension.
 
 ## Content {#content}
@@ -51,9 +51,9 @@ Your extension must satisfy all the following acceptance criteria to be included
 ## Monetization and data processing {#monetization}
 
 - Ads in content scripts are not allowed.
-- It must not change referral parameters, interfere with Opera monetization mechanisms or otherwise misappropriate traffic or revenues from other sources.
-- It must not collect private information without authorization from the user.
-- It must not send private data to an external store, for example through XHR.
+- The extension must not change referral parameters, interfere with Opera monetization mechanisms or otherwise misappropriate traffic or revenues from other sources.
+- The extension must not collect private information without authorization from the user.
+- The extension must not send private data to an external store, for example through XHR.
 
 If the above criteria are satisfied, your extension undergoes additional testing, to see that it works on all platforms (Windows, Mac and Linux).
 
