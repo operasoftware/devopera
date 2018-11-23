@@ -37,10 +37,12 @@
     - internationalization
     - testing
     - effective-icons
-    - publishing-guidelines
     - inline-installation
-    - branding-guidelines
     - extension-samples
+- title: Opera Addons Store
+  entries:
+    - publishing-guidelines
+    - branding-guidelines
 - title: API Docs
   entries:
     - apis
