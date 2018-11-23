@@ -1,7 +1,6 @@
 ---
 title: Acceptance Criteria
 authors:
-- andreas-bovens
 - tomasz-nowak
 intro: 'This article provides acceptance criteria for extensions to be published in Opera Addons.'
 license: cc-by-3.0
