@@ -32,15 +32,18 @@
     - web-navigation
     - content-settings
     - dev-tools
-- title: Guidelines And Samples
+- title: Final Steps And Samples
   entries:
     - internationalization
     - testing
     - effective-icons
-    - publishing-guidelines
     - inline-installation
-    - branding-guidelines
     - extension-samples
+- title: Opera Addons Store
+  entries:
+    - publishing-guidelines
+    - acceptance-criteria
+    - branding-guidelines
 - title: API Docs
   entries:
     - apis
