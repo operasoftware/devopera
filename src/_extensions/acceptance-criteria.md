@@ -9,6 +9,7 @@ license: cc-by-3.0
 ## Contents
 
 - [Introduction](#intro)
+- [One goal policy](#one-goal-policy)
 - [Extension Metadata](#metadata)
 - [Content](#content)
 - [Development](#development)
@@ -16,13 +17,26 @@ license: cc-by-3.0
 
 ## Introduction {#intro}
 
-Your extension must satisfy all the following acceptance criteria to be included in Opera Addons.
+Your extension must satisfy all the following acceptance criteria to be included in Opera Addons. When these criteria get more specific or restricted, authors of currently published extensions are required to upload updated packages.
+
+All researchers and Opera users and are invited to report improper extensions by using the "Reported issues" functionality on respective addon pages.
+
+## One goal policy {#one-goal-policy}
+
+Your extension needs to have one, clearly stated purpose. Proper examples include:
+- display a weather forecast after clicking a button
+- show a popup if an item can be purchased in a better price somewhere else
+- assist in downloading files from chosen websites
+
+Examples of prohibited behaviours:
+- additional bundling of "shopping assistants"
 
 ## Extension Metadata {#metadata}
 
 - The summary must answer the question: what does your extension do? It must be composed of grammatically correct and complete sentences.
 - The description must answer: 1) How do you use the extension? 2) What does the extension look like?
 - The extension must perform as described.
+- If the extension does something behind the scenes, then it must be described.
 - If defined, the support webpage must be relevant to the extension.
 
 ## Content {#content}
