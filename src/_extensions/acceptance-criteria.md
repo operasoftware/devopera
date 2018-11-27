@@ -19,7 +19,7 @@ license: cc-by-3.0
 
 Your extension must satisfy all the following acceptance criteria to be included in Opera Addons. When these criteria get more specific or restricted, authors of currently published extensions are required to upload updated packages.
 
-All researchers and Opera users and are invited to report improper extensions by using the "Reported issues" functionality on respective addon pages.
+All researchers and Opera users are invited to report improper extensions by using the "Reported issues" functionality on respective addon pages.
 
 ## One goal policy {#one-goal-policy}
 
