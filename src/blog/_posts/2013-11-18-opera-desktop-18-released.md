@@ -51,7 +51,7 @@ Opera 18 adds the following APIs to extensions:
 - [chrome.pageCapture][20]
 - [chrome.privacy][21] ([tutorial][22])
 - [chrome.types][23]
-- [Opera Off-Road Mode extension API (available through chrome.types)][24]
+- Opera Off-Road Mode extension API (available through chrome.types) (UPDATE: removed in Opera 59)
 
 [9]: https://dev.opera.com/extension-docs/permissions.html
 [10]: https://dev.opera.com/extension-docs/tut_optional_permissions.html
@@ -68,7 +68,6 @@ Opera 18 adds the following APIs to extensions:
 [21]: https://dev.opera.com/extension-docs/privacy.html
 [22]: https://dev.opera.com/extension-docs/tut_privacy.html
 [23]: https://dev.opera.com/extension-docs/types.html
-[24]: https://dev.opera.com/extension-docs/tut_offroad.html
 
 See our [Opera 15+ extensions documentation][25] for in-depth discussion of these APIs.
 
