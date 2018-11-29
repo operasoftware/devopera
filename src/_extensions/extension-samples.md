@@ -106,17 +106,6 @@ This is a repository of all the example extensions to help you get started with 
 - [Creating address bar extensions](/extensions/omnibox/)
 - [`chrome.omnibox`](https://developer.chrome.com/extensions/omnibox)
 
-## Off-Road Mode
-
-### Sample extension
-
-- [Extension which toggles Off-Road Mode in the browser](/extensions/extension-samples/off-road.nex)
-
-### Relevant reading
-
-- [Working with Off-Road Mode](/extensions/off-road/)
-- [`chrome.types`](https://developer.chrome.com/extensions/types)
-
 ## Sidebar Extensions
 
 ### Sample extension
