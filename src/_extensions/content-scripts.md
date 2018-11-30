@@ -5,31 +5,46 @@ intro: 'This article lists all you need to know about content scripts.'
 license: cc-by-3.0
 ---
 
-## Contents
-
-1. [Manifest](#registration)
-	1. [Match patterns and globs](#match-patterns-globs)
-2. [Programmatic injection](#pi)
-3. [Execution environment](#execution-environment)
-4. [Communication with the embedding page](#host-page-communication)
-5. [Security considerations](#security-considerations)
-6. [Referring to extension files](#extension-files)
-
 Content scripts are JavaScript files that run in the context of web pages. By using the standard [Document Object Model](http://www.w3.org/TR/DOM-Level-2-HTML/) (DOM), they can read details of the web pages the browser visits, or make changes to them.
 
-Here are some examples of what content scripts can do:
+## Contents
 
-- Find unlinked URLs in web pages and convert them into hyperlinks
-- Increase the font size to make text more legible
-- Find and process [microformat](http://microformats.org/) data in the DOM
+1. [Understand Content Script Capabilities](#capabilities)
+2. [Manifest](#registration)
+	1. [Match patterns and globs](#match-patterns-globs)
+3. [Programmatic injection](#pi)
+4. [Execution environment](#execution-environment)
+5. [Communication with the embedding page](#host-page-communication)
+6. [Security considerations](#security-considerations)
+7. [Referring to extension files](#extension-files)
 
-However, content scripts have some limitations. They **cannot**:
+## Understand Content Script Capabilities
 
-- Use `chrome.*` APIs (except for parts of [`chrome.extension`](https://developer.chrome.com/extensions/extension))
-- Use variables or functions defined by their extension’s pages
-- Use variables or functions defined by web pages or by other content scripts
+Content scripts can access Chrome APIs used by their parent extension by exchanging messages and access information by making cross-site XMLHttpRequests to parent sites.
+They can also access the URL of an extension's file with `chrome.runtime.getURL()` and use the result the same as other URLs.
 
-These limitations aren’t as bad as they sound. Content scripts can _indirectly_ use the `chrome.*` APIs, get access to extension data, and request extension actions by exchanging [messages](/extensions/message-passing/) with their parent extension. Content scripts can also make cross-site `XMLHttpRequests` to the same sites as their parent extensions, and they can communicate with web pages using the shared DOM. For more insight into what content scripts can and can’t do, learn about the execution environment.
+	//Code for displaying extensionDir/images/myimage.png:
+	var imgURL = chrome.runtime.getURL("images/myimage.png");
+	document.getElementById("someImage").src = imgURL;
+
+Additionally, content script can access the following chrome APIs directly:
+
+- [i18n](https://developer.chrome.com/extensions/i18n)
+- [storage](https://developer.chrome.com/extensions/storage)
+- [runtime](https://developer.chrome.com/extensions/runtime):
+  - [connect](https://developer.chrome.com/extensions/runtime#method-connect)
+  - [getManifest](https://developer.chrome.com/extensions/runtime#method-getManifest)
+  - [getURL](https://developer.chrome.com/extensions/runtime#method-getURL)
+  - [id](https://developer.chrome.com/extensions/runtime#property-id)
+  - [onConnect](https://developer.chrome.com/extensions/runtime#event-onConnect)
+  - [onMessage](https://developer.chrome.com/extensions/runtime#event-onMessage)
+  - [sendMessage](https://developer.chrome.com/extensions/runtime#method-sendMessage)
+
+Content scripts are unable to access other APIs directly.
+
+Opera implements an additional privacy protection mechanism. By default, extensions are not allowed to access and manipulate search results provided by most built-in engines. Users can give access to search page results on the [Extensions](https://help.opera.com/en/latest/customization/#extensions) list:
+
+<img elem="media" src="{{ page.id }}/extension_allow_searches.png" alt="Allow access to search page results">
 
 ## Manifest {#registration}
 
