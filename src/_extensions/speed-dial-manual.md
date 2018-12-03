@@ -18,14 +18,15 @@ Speed Dial extensions use an `opr.*` API instead of a `chrome.*` one. Also, they
 
 ## Manifest specifications
 
-The first thing to do is to specify in the manifest that you want the extension to be a Speed Dial extension. First you’ll need to mention `speeddial` in the `permissions` field. You also need to mention the Speed Dial page, which will also act as your background page. Another thing to note is that Speed Dial extensions, do _not_ have permission to create other UI elements like a button or a popup etc.
+The first thing to do is to specify in the manifest that you want the extension to be a Speed Dial extension. You need to mention the Speed Dial page, which will also act as your background page. Another thing to note is that Speed Dial extensions, do _not_ have permission to create other UI elements like a button or a popup etc.
 
 There is also a `speeddial` field in which you need to specify the title of the Speed Dial and the URL to which it will point to, like so:
 
 	{
 		"name": "Speed Dial Extension",
 		"developer": "John Doe",
-		"permissions": ["speeddial"],
+		"manifest_version": 2,
+		"version": "1",
 		"background": {
 			"page": "speeddial.html"
 		},
