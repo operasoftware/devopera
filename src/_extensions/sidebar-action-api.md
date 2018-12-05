@@ -31,7 +31,9 @@ There are some additional elements in the browser that we need to understand in 
 These would be the changes in the manifest:
 
 	{
+		"manifest_version": 2,
 		"name": "My extension",
+		"version": "1",
 		"sidebar_action": {
 			// Required
 			"default_icon": "images/default_icon.png",
