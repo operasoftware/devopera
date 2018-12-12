@@ -65,7 +65,7 @@ The [browser action button](https://developer.chrome.com/extensions/browserActio
 - There should be no obvious bugs.
 - Values in `manifest.json` must be sound and valid.
 - Flash is not allowed.
-- We must be able to review your code, so it can't be obfuscated or minified (this rule doesn't apply to third-party libraries, see other points below). If you do not want the code to be public, then please post a link where we can download the unobfuscated code, and please provide detailed instructions on how to produce the same obfuscated results. Please note that it's more labor-intensive for us and may be handled with a lower priority.
+- We must be able to review your code, so it can't be obfuscated or minified (this rule doesn't apply to third-party libraries - see other points below). If you do not want the code to be public, then please post a link where we can download the unobfuscated code, and please provide detailed instructions on how to produce the same obfuscated results. Please note that reviewing obfuscated code is more labor-intensive for us and your extension may be handled with a lower priority.
 - There must be no unused files.
 - There must be no redundant permissions requested or unnecessary manifest entries.
 - Well-known third-party libraries must be in a genuine and in an unchanged form. They should be acquired from the vendor's official website or a CDN.
