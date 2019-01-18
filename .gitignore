@@ -6,3 +6,4 @@ dest
 node_modules
 src/styles/*.css
 src/styles/*.map
+*~
