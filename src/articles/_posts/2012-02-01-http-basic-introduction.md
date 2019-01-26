@@ -16,7 +16,7 @@ license: cc-by-3.0
 
 In Bhutan, when people meet, they usually greet each other with “Is your body well?” In Japan they might bow, depending on the circumstances. In Oman, men often give each other a kiss on the nose after shaking hands. In Cambodia and Thailand, they often join their hands as if praying. All of these are communication protocols, a simple sequence of codes that have meaning and prepare the two parties for a meaningful exchange.
 
-On the Web, we have a very effective application protocol that prepares computers over the world for meaningful exchanges: [Hypertext Transfer Protocol][1], or HTTP. HTTP is an application-level protocol on top of [TCP/IP][2], a communication protocol. HTTP often seems to get forgotten about when teaching web design and development, which is a shame: understanding it will help you to define better user interactions, achieve better site performance and create effective tools for managing information on the Web.
+On the Web, we have a very effective application protocol that prepares computers all over the world for meaningful exchanges: [Hypertext Transfer Protocol][1], or HTTP. HTTP is an application-level protocol on top of [TCP/IP][2], a communication protocol. HTTP often seems to get forgotten about when teaching web design and development, which is a shame: understanding it will help you to define better user interactions, achieve better site performance and create effective tools for managing information on the Web.
 
 [1]: https://en.wikipedia.org/wiki/HTTP
 [2]: https://en.wikipedia.org/wiki/TCP/IP_model
