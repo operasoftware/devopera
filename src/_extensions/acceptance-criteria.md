@@ -24,11 +24,13 @@ All researchers and Opera users are invited to report improper extensions by usi
 ## One goal policy {#one-goal-policy}
 
 Your extension needs to have one, clearly stated purpose. Proper examples include:
+
 - Display a weather forecast after clicking a button.
 - Show a pop-up if an item can be purchased for a better price somewhere else.
 - Assist in downloading files from chosen websites.
 
 Examples of prohibited behaviors:
+
 - Additional bundling of "shopping assistants".
 - A sidebar extension with a calculator includes a website blocker.
 
