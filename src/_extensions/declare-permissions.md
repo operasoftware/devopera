@@ -42,7 +42,6 @@ The following is an overview of the various permissions declarations possible in
 - `tabs`: Required if the extension uses the [chrome.tabs](https://developer.chrome.com/extensions/tabs) or [chrome.windows](https://developer.chrome.com/extensions/windows) API.
 - `webNavigation`: Gives your extension access to the [chrome.webNavigation](https://developer.chrome.com/extensions/webNavigation) API.
 - `webRequest`: Required if the extension uses the [chrome.webRequest](https://developer.chrome.com/extensions/webNavigation) API.
-- `speeddial`:  Required if the extension uses the [opr.speeddial](/extensions/speed-dial-api/) API.
 
 ## Optional permissions
 

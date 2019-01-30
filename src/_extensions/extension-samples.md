@@ -60,17 +60,6 @@ This is a repository of all the example extensions to help you get started with 
 - [Working with the context menu](/extensions/context-menus/)
 - [`chrome.contextMenus`](https://developer.chrome.com/extensions/contextMenus)
 
-## Speed Dial
-
-### Sample extension
-
-- [Sample Speed Dial extension](/extensions/extension-samples/speed-dial-center-content.nex)
-
-### Relevant reading
-
-- [Speed Dial extensions](/extensions/speed-dial-manual/)
-- [`opr.speeddial`](https://developer.chrome.com/extensions/speeddial)
-
 ## History API
 
 ### Sample extension
