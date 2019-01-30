@@ -8,7 +8,6 @@
     - browser-actions
     - tab-window
     - context-menus
-    - speed-dial-manual
     - sidebar-action-manual
     - bookmarks
     - omnibox
@@ -48,6 +47,5 @@
     - apis
     - addons-api
     - sidebar-action-api
-    - speed-dial-api
     - manifest
     - getrootbyname

@@ -56,7 +56,6 @@ The [browser action button](https://developer.chrome.com/extensions/browserActio
 - It must comply with the [Terms of Service](https://addons.opera.com/developer/terms/).
 - No external JavaScript is allowed. All JavaScript code must be contained in the extension. External APIs are ok.
 - It must not specifically point to, or be related to, gambling or betting services. 
-- Speed Dial extensions cannot just be a static picture linking to a website. They must provide valuable functionality, such as e.g. real-time info.
 - Extensions cannot replace Opera's default start page.
 - Extensions cannot just consist of a button linking to a website, or of a pop-up with some static links pointing to a website. Extensions must provide valuable functionality, such as e.g. a transformation applied on a page when a button is clicked, real-time info in a pop-up, etc.
 - Content inside pop-ups must be optimized for display in a pop-up. The content must match the pop-up's size, and vertical scrolling should only be used if really necessary. Avoid horizontal scrolling inside pop-ups.
