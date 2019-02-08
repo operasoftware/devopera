@@ -88,7 +88,7 @@ Let’s look at an example using the [3×3 matrix][18] used to calculate two dim
 	<figcaption elem="caption">Figure 4: The CSS two-dimensional transform matrix</figcaption>
 </figure>
 
-We can also write this as `transform: matrix(a,b,c,d,e,f)`, where `a` through `f` are numbers, determined by the kind of transform we wish to apply. Matrices are recipes of sorts for applying transforms. This will make more sense in a bit wen we look at some examples.
+We can also write this as `transform: matrix(a,b,c,d,e,f)`, where `a` through `f` are numbers, determined by the kind of transform we wish to apply. Matrices are recipes of sorts for applying transforms. This will make more sense in a bit when we look at some examples.
 
 When we apply a 2D transform, the browser multiplies the matrix by a vector: `[x, y, 1]`. The values of x and y are the coordinates of a particular point within the local coordinate space.
 
