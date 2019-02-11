@@ -49,7 +49,6 @@ RewriteRule ^extensions/tut_extension_samples\.html$ /extensions/extension-sampl
 RewriteRule ^extensions/tut_getting_started\.html$ /extensions/getting-started/ [R=301,L]
 RewriteRule ^extensions/tut_hist\.html$ /extensions/history/ [R=301,L]
 RewriteRule ^extensions/tut_icons\.html$ /extensions/effective-icons/ [R=301,L]
-RewriteRule ^extensions/tut_inline_installation\.html$ /extensions/inline-installation/ [R=301,L]
 RewriteRule ^extensions/tut_internationalization\.html$ /extensions/internationalization/ [R=301,L]
 RewriteRule ^extensions/tut_match_patterns\.html$ /extensions/match-patterns/ [R=301,L]
 RewriteRule ^extensions/tut_message_passing\.html$ /extensions/message-passing/ [R=301,L]
