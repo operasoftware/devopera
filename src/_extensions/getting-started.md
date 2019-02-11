@@ -23,7 +23,7 @@ Identify issues and solve them easily by reading our [guide to testing and debug
 
 You can share your extensions with the world by submitting them to the Opera add-ons gallery. To make this process easier and smoother, read the [guidelines on submitting extensions](/extensions/publishing-guidelines/) to the add-ons store. We’ve also provided a [handy checklist of the acceptance criteria for you to follow](/extensions/publishing-guidelines/#acceptance-criteria), to speed up the submission process further.
 
-Take a look at our [branding guidelines](/extensions/branding-guidelines/) for the official opera add-ons catalog button that you can use on your site to indicate that your extension is available. Pair with with [inline installation](/extensions/inline-installation/) of extension to offer a smooth extension install experience to your users with them leaving your website. 
+Take a look at our [branding guidelines](/extensions/branding-guidelines/) for the official opera add-ons catalog button that you can use on your site to indicate that your extension is available.
 
 ## Discuss and keep up on the latest news
 

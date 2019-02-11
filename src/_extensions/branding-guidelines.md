@@ -9,8 +9,6 @@ intro: 'This lists the branding guidelines for using Opera trademarks for your a
 
 Share the word that your app, extension or theme is available in the [Opera add-ons catalog](https://addons.opera.com) by using the "Get it from Opera add-ons" badge on your site.
 
-It could also be a good idea to use [inline installation](/extensions/inline-installation/) along with this badge on your website.
-
 <figure block="figure">
 <img elem="media" src="{{ page.id }}/addons_206x58_en@2x.png" alt="Opera add-ons badge" width="206">
 </figure>
