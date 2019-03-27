@@ -63,7 +63,7 @@ For our example, we will use the [`onInputEntered`](https://developer.chrome.com
 
 The above code will listen to the user’s input and when he hits enter, then it will take the input and redirect to the Opera extensions documentation page with what the user entered as the search query.
 
-Feel free to [download this extension](/extensions/extension-samples/omnibox-1.nex) and try it out yourself.
+Feel free to [download this extension](/extensions/extension-samples/omnibox-1.crx) and try it out yourself.
 
 ## Suggestions in the address bar
 
@@ -125,7 +125,7 @@ One thing to keep in mind is that when the user selects the default suggestion, 
 		}
 	);
 
-You can [download the extension](/extensions/extension-samples/omnibox-2.nex) — the keyword for this extension is _extdocs_, so type that followed by your search query — and see that the default suggestion is to search on the Opera Extensions documentation site. The next option is a search on StackOverflow with the tag `[opera-extension]`, followed by a Google search. Keep in mind that all other options apart from the default one are listed in alphabetical order of their descriptions.
+You can [download the extension](/extensions/extension-samples/omnibox-2.crx) — the keyword for this extension is _extdocs_, so type that followed by your search query — and see that the default suggestion is to search on the Opera Extensions documentation site. The next option is a search on StackOverflow with the tag `[opera-extension]`, followed by a Google search. Keep in mind that all other options apart from the default one are listed in alphabetical order of their descriptions.
 
 You can go further and have suggestions in the address bar by doing an AJAX request to your web service, with the suggestions executed in a similar manner as the one shown above. Making an address bar extension is pretty easy, so [check out the API](https://developer.chrome.com/extensions/omnibox) and get cracking!
 

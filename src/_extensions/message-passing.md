@@ -74,7 +74,7 @@ The background script once again listens for a message from the content script r
 		}
 	);
 
-Feel free to [download the extension](/extensions/extension-samples/message-passing.nex) and examine it further.
+Feel free to [download the extension](/extensions/extension-samples/message-passing.crx) and examine it further.
 
 ## Cross-extension messaging
 

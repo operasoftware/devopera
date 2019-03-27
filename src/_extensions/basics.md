@@ -18,7 +18,7 @@ An Opera extension contains a _manifest file_ which defines metadata like the na
 
 Apart from all the JS and HTML files, you’ll also need to put in some images for the extension icons.
 
-All of this is wrapped in a ZIP file format with a special header and the .nex file extension. To know more about the architecture of extensions in Opera, please read the [associated article](/extensions/architecture-overview/), which describes it in detail.
+All of this is wrapped in a ZIP file format with the .crx file extension. To know more about the architecture of extensions in Opera, please read the [associated article](/extensions/architecture-overview/), which describes it in detail.
 
 ## Your first extension
 
@@ -83,7 +83,7 @@ If all goes well, you should see an icon in the top right of the browser window 
 
 ### Step 5 — Packing it all up!
 
-Once you are satisfied that your extension is finished, you need to package it into a NEX file, as follows:
+Once you are satisfied that your extension is finished, you need to package it into a CRX file, as follows:
 
 1. Go to the browser address bar and type _opera:extensions_.
 2. Make sure you have “Developer Mode” (located on the top right) checked.
@@ -91,7 +91,7 @@ Once you are satisfied that your extension is finished, you need to package it i
 4. Select the directory of your extension
 5. Click “OK”.
 
-Your NEX package will be generated in the parent directory of the one you had selected. Congratulations!
+Your CRX package will be generated in the parent directory of the one you had selected. Congratulations!
 
 ## What now?
 

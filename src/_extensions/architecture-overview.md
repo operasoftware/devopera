@@ -11,13 +11,11 @@ license: cc-by-3.0
 
 Let’s dive deeper into the architecture and technical details of extensions in Opera.
 
-## The NEX Format
+## The CRX Format
 
-Opera supports the _NEX_ (short for **N**avigator **Ex**tension) file format for extensions. All the files and folders for an extension are packaged into a zip file with a special header and renamed as _.nex_. The NEX format supports a major portion of Chromium extensions, as well as APIs specific to Opera. The API docs section in the right sidebar gives you a good idea of the APIs Opera currently supports.
+Opera supports the _CRX_ (short for **C**h**R**omium e**X**tension) file format for extensions. All the files and folders for an extension are packaged into a zip file and renamed as _.crx_. The CRX format supports a major portion of Chromium extensions, as well as APIs specific to Opera. The APIs from the Chromium project (like tabs) can be called using `chrome.\*`, whereas the ones specific to Opera (like Sidebar Action) will reside under the `opr.\*` object.
 
-The APIs from the Chromium project supported in NEX extensions (like tabs) can be called using `chrome.\*`, whereas the ones specific to Opera (like Sidebar Action) will reside under the `opr.\*` object.
-
-It is important to note that Opera will run extensions in Chromium’s CRX format too, as long as the extension uses the `chrome.\*` APIs that Opera supports.
+It is important to note that Opera will run any extensions in Chromium’s CRX format, as long as the extension uses the `chrome.\*` APIs that Opera supports. The API docs section in the left sidebar gives you a good idea of the APIs Opera currently supports.
 
 If you would like to see the code of an extension, you can rename the file extension to a _.zip_ format, and then use a file unarchiver program (for example [7zip](http://www.7-zip.org/download.html)) to unzip the contents. On Mac, we recommend using the `unzip` command in Terminal, as Archive Utility produces suboptimal results when dealing with signed files.
 
@@ -169,5 +167,3 @@ This will not load as it’s an externally hosted script. To load the library in
 No external scripts or resources loaded over HTTP are allowed — except in the case of your local server, in which case you could add either `http://127.0.0.1` or `localhost` to your whitelist. You could also add the following schemes to the whitelist: `chrome-extension` and `chrome-extension-resource`.
 
 Please note that this does not have any effect on the way you do AJAX. You are free to make a call through `XMLHttpRequest()` to any origin.
-
-Also, if you are familiar with the old version of Opera extensions, then you would be used to declaring permissions for cookie sharing. No such requirement is there for extensions in Opera 15+, so you can do away with it. If you are converting your _.oex_	extension to a _.nex_ based one, then you can remove the requirement for declaring permission for cookie sharing.

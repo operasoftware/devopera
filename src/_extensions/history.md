@@ -103,7 +103,7 @@ In our example, we’ll create a _browser action_, which when clicked, will upda
 
 In the above piece of code, we are getting the URL of the currently active tab. Then we pass the function [`getVisits()`](https://developer.chrome.com/extensions/history#method-getVisits). This will return a callback function which will return an array of [`visitItem`](https://developer.chrome.com/extensions/history#type-VisitItem) objects for that particular URL (A `visitItem` object is generated any time a URL is visited). We can count these objects to get a number of the times the user visited that URL, and then update the badge with that number.
 
-[Download the extension](/extensions/extension-samples/history-api-1.nex) for the example above and install it to see it work.
+[Download the extension](/extensions/extension-samples/history-api-1.crx) for the example above and install it to see it work.
 
 ## Removing URLs from the history
 
@@ -115,7 +115,7 @@ One of the most common use cases regarding the browser history, is to remove par
 		});
 	});
 
-You can [download the extension](/extensions/extension-samples/history-api-2.nex) for this example and see it in action. You can go further and create a list of URLs and then remove them by looping over that list and calling the `deleteUrl()` method for each of those URLs.
+You can [download the extension](/extensions/extension-samples/history-api-2.crx) for this example and see it in action. You can go further and create a list of URLs and then remove them by looping over that list and calling the `deleteUrl()` method for each of those URLs.
 
 If you want to remove URLs within a specified time range, then you can use the [`deleteRange()`](https://developer.chrome.com/extensions/history#method-deleteRange) method, and finally, if you want to remove all the URLs in history, you can simply call the [`deleteAll()`](https://developer.chrome.com/extensions/history#method-deleteAll) method.
 
