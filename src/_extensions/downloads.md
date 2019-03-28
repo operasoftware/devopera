@@ -81,4 +81,4 @@ You can monitor downloads and work on them whenever their state changes using th
 		}
 	});
 
-[Download our sample extension](/extensions/extension-samples/downloads-api.nex) which makes use of the API methods and events to show you the last five downloaded files as well as information about new downloads.
+[Download our sample extension](/extensions/extension-samples/downloads-api.crx) which makes use of the API methods and events to show you the last five downloaded files as well as information about new downloads.

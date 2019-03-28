@@ -14,9 +14,9 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extensions
 
-- [An extension which simply adds a button to the toolbar](/extensions/extension-samples/browser-actions-button.nex)
-- [An extension which simply adds a popup to the toolbar](/extensions/extension-samples/browser-actions-popup.nex)
-- [An extension which adds a page action](/extensions/extension-samples/page-actions.nex)
+- [An extension which simply adds a button to the toolbar](/extensions/extension-samples/browser-actions-button.crx)
+- [An extension which simply adds a popup to the toolbar](/extensions/extension-samples/browser-actions-popup.crx)
+- [An extension which adds a page action](/extensions/extension-samples/page-actions.crx)
 
 ### Relevant reading
 
@@ -27,7 +27,7 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extensions
 
-- [An extension which does simple, short lived communication (it counts the number of paragraphs in the page and updates the badge)](/extensions/extension-samples/message-passing.nex)
+- [An extension which does simple, short lived communication (it counts the number of paragraphs in the page and updates the badge)](/extensions/extension-samples/message-passing.crx)
 
 ### Relevant reading
 
@@ -38,11 +38,11 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extensions
 
-- [An extension which simply creates a new tab](/extensions/extension-samples/win-tabs-create-tab.nex)
-- [An extension which takes current URL, creates a new tab and runs the URL by the WAVE accessibility evaluation tool](/extensions/extension-samples/win-tabs-wave.nex)
-- [If you are on dev.opera.com, then clicking on button will redirect it to opera.com](/extensions/extension-samples/win-tabs-update-tab.nex)
-- [An example of closing, reloading and duplicating tabs](/extensions/extension-samples/win-tabs-close-reload-duplicate.nex)
-- [Creates a new window with three predefined URLs loading in that window](/extensions/extension-samples/win-tabs-private-window.nex)
+- [An extension which simply creates a new tab](/extensions/extension-samples/win-tabs-create-tab.crx)
+- [An extension which takes current URL, creates a new tab and runs the URL by the WAVE accessibility evaluation tool](/extensions/extension-samples/win-tabs-wave.crx)
+- [If you are on dev.opera.com, then clicking on button will redirect it to opera.com](/extensions/extension-samples/win-tabs-update-tab.crx)
+- [An example of closing, reloading and duplicating tabs](/extensions/extension-samples/win-tabs-close-reload-duplicate.crx)
+- [Creates a new window with three predefined URLs loading in that window](/extensions/extension-samples/win-tabs-private-window.crx)
 
 ### Relevant reading
 
@@ -53,7 +53,7 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extension
 
-- [A sample extension showing how to use the Context Menu API](/extensions/extension-samples/context-menu-selected-text.nex)
+- [A sample extension showing how to use the Context Menu API](/extensions/extension-samples/context-menu-selected-text.crx)
 
 ### Relevant reading
 
@@ -64,8 +64,8 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extension
 
-- [Accessing history of currently active tab](/extensions/extension-samples/history-api-1.nex)
-- [Deleting history of the currently active tab](/extensions/extension-samples/history-api-2.nex)
+- [Accessing history of currently active tab](/extensions/extension-samples/history-api-1.crx)
+- [Deleting history of the currently active tab](/extensions/extension-samples/history-api-2.crx)
 
 ### Relevant reading
 
@@ -76,7 +76,7 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extension
 
-- [Extension showing how i18n should work. The text in popup should be correctly translated in Spanish if the browser locale is changed to Spanish](/extensions/extension-samples/i18n-extension.nex)
+- [Extension showing how i18n should work. The text in popup should be correctly translated in Spanish if the browser locale is changed to Spanish](/extensions/extension-samples/i18n-extension.crx)
 
 ### Relevant reading
 
@@ -87,8 +87,8 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extension
 
-- [Type the keyword “extquery” in the address bar followed by your query. The extension will search the query on the Opera extensions documentation site](/extensions/extension-samples/omnibox-1.nex)
-- [Type the keyword “extdocs” in the address bar followed by your query. The default suggestion is to search on the Opera Extensions documentation site. The next option is a search on StackOverflow with the tag `[opera-extension]`, followed by a Google search.](/extensions/extension-samples/omnibox-2.nex)
+- [Type the keyword “extquery” in the address bar followed by your query. The extension will search the query on the Opera extensions documentation site](/extensions/extension-samples/omnibox-1.crx)
+- [Type the keyword “extdocs” in the address bar followed by your query. The default suggestion is to search on the Opera Extensions documentation site. The next option is a search on StackOverflow with the tag `[opera-extension]`, followed by a Google search.](/extensions/extension-samples/omnibox-2.crx)
 
 ### Relevant reading
 
@@ -99,7 +99,7 @@ This is a repository of all the example extensions to help you get started with 
 
 ### Sample extension
 
-- [Sidebar extension which maintains state using background script and localStorage](/extensions/extension-samples/sidebar-maintain-state.nex)
+- [Sidebar extension which maintains state using background script and localStorage](/extensions/extension-samples/sidebar-maintain-state.crx)
 
 ### Relevant reading
 

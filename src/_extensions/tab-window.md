@@ -32,7 +32,7 @@ For example, to specify extension functionality that opens up a new pinned tab c
 		});
 	});
 
-You can [download the sample extension](/extensions/extension-samples/win-tabs-create-tab.nex) and take a better look at how this works.
+You can [download the sample extension](/extensions/extension-samples/win-tabs-create-tab.crx) and take a better look at how this works.
 
 ### Accessing the current tab
 
@@ -56,7 +56,7 @@ Let’s extend this example a bit. To specify that on the click of a button the 
 		});
 	});
 
-You can [download the WAVE extension](/extensions/extension-samples/win-tabs-wave.nex) and play with this code further.
+You can [download the WAVE extension](/extensions/extension-samples/win-tabs-wave.crx) and play with this code further.
 
 ### Modifying existing tabs
 
@@ -89,7 +89,7 @@ This pattern will match all tabs that point to URLs on `dev.opera.com` including
 		});
 	});
 
-You can [download the update example extension](/extensions/extension-samples/win-tabs-update-tab.nex) to see the above code in action.
+You can [download the update example extension](/extensions/extension-samples/win-tabs-update-tab.crx) to see the above code in action.
 
 ### Closing, reloading and duplicating tabs
 
@@ -106,7 +106,7 @@ All three of these methods work in the same way. Let’s look at some example ex
 		chrome.tabs.remove(tab[0].id);
 	});
 
-You can use the `remove()` and `duplicate()` methods in exactly the same way. Take a look at our [sample close, reload and duplicate extension example](/extensions/extension-samples/win-tabs-close-reload-duplicate.nex) where we make use of all three methods to close, reload and duplicate the current tab.
+You can use the `remove()` and `duplicate()` methods in exactly the same way. Take a look at our [sample close, reload and duplicate extension example](/extensions/extension-samples/win-tabs-close-reload-duplicate.crx) where we make use of all three methods to close, reload and duplicate the current tab.
 
 There are more functions available in Opera extensions: to find out about them, consult the [API guide for Tabs and Windows](/extensions/tab-window/).
 
@@ -141,4 +141,4 @@ The list of URLs to load in the new window.
 		});
 	});
 
-[Download the sample window extension](/extensions/extension-samples/win-tabs-private-window.nex) to see the above functionality in action and play with the code yourself.
+[Download the sample window extension](/extensions/extension-samples/win-tabs-private-window.crx) to see the above functionality in action and play with the code yourself.

@@ -108,7 +108,7 @@ The background script will look like so:
 
 Keep in mind that the extensions panel page can be considered as “closed” if the panel is not open, but its background will always be running. So you can maintain state by making sure that the background script either stores data to localStorage, or if it stores the data in the background script itself.
 
-You can [download the sample sidebar extension](/extensions/extension-samples/sidebar-maintain-state.nex) and have a look at the code.
+You can [download the sample sidebar extension](/extensions/extension-samples/sidebar-maintain-state.crx) and have a look at the code.
 
 ## Detecting user focus on the panel
 
