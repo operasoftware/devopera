@@ -177,4 +177,4 @@ But when the locale is set to Spanish, then it will display Spanish text like so
 	<img elem="media" src="{{ page.id }}/popup-es.png" alt="Popup in Spanish">
 </figure>
 
-You can [download a sample extension](/extensions/extension-samples/i18n-extension.nex) which uses i18n API and take a closer look.
+You can [download a sample extension](/extensions/extension-samples/i18n-extension.crx) which uses i18n API and take a closer look.

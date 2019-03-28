@@ -140,4 +140,4 @@ To update the Speed Dial extension, you simply use the `update()` function. For 
 		title: 'Dev.Opera'
 	});
 
-Feel free to [download our sample Speed Dial extension](/extensions/extension-samples/speed-dial-center-content.nex) and have a look around the code.
+Feel free to [download our sample Speed Dial extension](/extensions/extension-samples/speed-dial-center-content.crx) and have a look around the code.
