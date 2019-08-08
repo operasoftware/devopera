@@ -5,6 +5,7 @@ authors:
 tags:
 - css
 - javascript
+- performance
 language: ko
 translator: U-Yeong Ju, Hyunchul Kwak
 license: cc-by-3.0
