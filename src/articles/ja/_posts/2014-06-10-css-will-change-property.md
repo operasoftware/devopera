@@ -5,6 +5,7 @@ authors:
 tags:
 - css
 - javascript
+- performance
 language: ja
 translator: POSTD
 source: http://postd.cc/css-will-change-property/
