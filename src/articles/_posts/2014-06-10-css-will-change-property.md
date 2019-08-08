@@ -6,6 +6,7 @@ intro: 'CSS `will-change` is a new property that allows you to let a browser kno
 tags:
 - css
 - javascript
+- performance
 license: cc-by-3.0
 ---
 
