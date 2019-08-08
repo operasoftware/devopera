@@ -6,6 +6,7 @@ intro: 'CSS `will-change` is a new property that allows you to let a browser kno
 tags:
 - css
 - javascript
+- performance
 language: ru
 translator: Наталья Луканюк
 source: http://frontender.info/css-will-change-property/
