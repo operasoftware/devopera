@@ -44,7 +44,7 @@ None of these make much sense — good variable and function names should be eas
 
 [1]: http://en.wikipedia.org/wiki/Identifier_naming_convention#Metadata_and_hybrid_conventions
 
-For example, if you have a variable called `familyName` and it is supposed to be a string, you would write it as `sFamilyName` in “Hungarian”. An object called `member` would be `oMember` and a Boolean called `isLegal` would be `bIsLegal`.It is very informative for some, but seems like extra overhead to others — it is really up to you whether you use it or not.
+For example, if you have a variable called `familyName` and it is supposed to be a string, you would write it as `sFamilyName` in “Hungarian”. An object called `member` would be `oMember` and a Boolean called `isLegal` would be `bIsLegal`. It is very informative for some, but seems like extra overhead to others — it is really up to you whether you use it or not.
 
 Keeping to English is a good idea, too. Programming languages are in English, so why not keep this as a logical step for the rest of your code. Having spent some time debugging Korean and Slovenian code, I can assure you it is not much fun for a non-native speaker.
 
@@ -498,7 +498,7 @@ For example the [Easy YouTube player][7] has the following configuration object:
 			// be no reults.
 			searchResults:6,
 			loadingMessage:'Searching, please wait',
-			noVideosFoundMessage:'No videos found : (',
+			noVideosFoundMessage:'No videos found :(',
 			// Amount of seconds to repeat when the user hits the rewind
 			// button.
 			secondsToRepeat:10,
@@ -571,7 +571,7 @@ As I am using the generic — really throw-away — variable names `ul` and `li`
 
 ## Optimize loops {#loops}
 
-Loops can become very slow if you don’t do them right. One of the most common mistake is to read the length attribute of an array at every iteration:
+Loops can become very slow if you don’t do them right. One of the most common mistakes is to read the length attribute of an array at every iteration:
 
 	var names = ['George', 'Ringo', 'Paul', 'John'];
 	for(var i = 0; i < names.length; i++) {
