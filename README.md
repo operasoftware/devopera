@@ -11,7 +11,7 @@ We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by
 5. Run `npm install` inside the `devopera` folder.
 6. Run `npm install gulp -g` to install Gulp globally.
 
-Please install the [EditorConfig](https://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`.editorconfig`](.editorconfig) file.
+Please install the [EditorConfig](https://editorconfig.org/#download) plugin for your editor to keep code style declared in the [`Vipadasangkaew-patch-1.editorconfig`](.editorconfig) file.
 
 ## Environment update
 
