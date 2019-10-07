@@ -28,7 +28,7 @@ Note how the tab that’s accessing your video or audio has a pulsing red beacon
 `getUserMedia` is part of [WebRTC][5], a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple Javascript APIs. Try it out by inviting up to seven friends to a video chat room on [appear.in][6], a great simple videoconferencing system using WebRTC. What’s particularly nice about (Oslo-based!) [appear.in][6] is that it’s very webby — no plugins are used (that’s the point of webRTC) and it uses the web’s basic architectural principle: you just share a link to invite friends using Opera, Chrome or Firefox to connect with a simple UI.
 
 [5]: http://www.webrtc.org
-[6]: http://www.appear.in/
+[6]: https://whereby.com/
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/webcam.jpg">
