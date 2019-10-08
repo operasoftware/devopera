@@ -2,7 +2,7 @@
 title: Appear.in workshop and extensions
 authors:
 - andreas-bovens
-intro: 'In early December 2014, we invited the team behind the fantastic WebRTC-powered [appear.in](https://appear.in/) video chat service for a 1-day workshop in Opera’s Oslo office, and, among other things, we came up with three cool appear.in extensions.'
+intro: 'In early December 2014, we invited the team behind the fantastic WebRTC-powered appear.in (now [Whereby](https://whereby.com/)) video chat service for a 1-day workshop in Opera’s Oslo office, and, among other things, we came up with three cool appear.in extensions.'
 tags:
 - extensions
 - webrtc
@@ -12,7 +12,7 @@ license: cc-by-3.0
 
 ## Background
 
-In early December 2014, we invited the team behind the fantastic WebRTC-powered [appear.in](https://appear.in/) video chat service for a 1-day workshop in Opera’s Oslo office: for about 6 hours, we sat together with engineers, designers and product people from both companies — mostly powered by good coffee and tasty pepperkake — and came up with a number of experiments using [appear.in](https://appear.in/).
+In early December 2014, we invited the team behind the fantastic WebRTC-powered appear.in (now [Whereby](https://whereby.com/)) video chat service for a 1-day workshop in Opera’s Oslo office: for about 6 hours, we sat together with engineers, designers and product people from both companies — mostly powered by good coffee and tasty pepperkake — and came up with a number of experiments using appear.in.
 
 <figure block="figure">
 	<img elem="media" src="{{ page.id }}/panorama.jpg" alt="Appear.in and Opera team workshop">
@@ -57,4 +57,4 @@ This extension allows you to easily transfer an ongoing appear.in video chat fro
 
 ## It’s up to you!
 
-If you’re interested in creating your own extension, you can start with the [Appear.in API documentation](https://developer.appear.in/) and our [extension docs](https://dev.opera.com/extensions) and take it from there.
+If you’re interested in creating your own extension, you can start with the [Appear.in (now Whereby) API documentation](https://whereby.dev/) and our [extension docs](https://dev.opera.com/extensions) and take it from there.
