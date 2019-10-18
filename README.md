@@ -24,12 +24,12 @@ If you’ve set up all the above at some point in the past, and want to update y
 
 To start developing Dev.Opera run `gulp`, it would take up to 1 minute to:
 
-1. Build site in a limited mode with only latest 150 posts.
+1. Build site in a limited mode with only the latest 150 posts.
 2. Start local server on `http://0.0.0.0:33310` address.
 3. Open it in your default browser.
 4. Launch a `watch` task for all files.
 
-So now every time you change project files, Dev.Opera will be rebuilt and you browser will update. For HTML and Markdown files it will still take up to 1 minute, for CSS it will be much faster (please request the same fast track for JS or anything else if needed).
+So now every time you change project files, Dev.Opera will be rebuilt and your browser will update. For HTML and Markdown files it will still take up to 1 minute, for CSS it will be much faster (please request the same fast track for JS or anything else if needed).
 
 # Full build and deploy
 
