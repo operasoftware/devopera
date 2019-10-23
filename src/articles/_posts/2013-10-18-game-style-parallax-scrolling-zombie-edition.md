@@ -278,4 +278,6 @@ We’ve obviously only just scraped the surface of what is possible with [Skroll
 
 [11]: https://github.com/Prinzhorn/skrollr
 
-To close, I’m going to hop up on my soapbox for a minute. Sometimes as web designers we feel like slaves to our medium — there are lots of limitations on the web, and lots of frustrating cross browser and cross device issues. At least being one who has worked in multiple mediums of design and development, I certainly feel that way sometimes. But there are also some very unique aspects in this browser-based medium of ours. For example, scrolling provides us with the opportunity to interact with users in different kinds of ways. In my opinion, we should take note of these unique properties, and always be searching for ways to fully leverage them to create great experiences.
+To close, I’m going to hop up on my soapbox for a minute. Sometimes as web designers we feel like slaves to our medium — there are lots of limitations on the web, and lots of frustrating cross [browser and cross device issues][12]. At least being one who has worked in multiple mediums of design and development, I certainly feel that way sometimes. But there are also some very unique aspects in this browser-based medium of ours. For example, scrolling provides us with the opportunity to interact with users in different kinds of ways. In my opinion, we should take note of these unique properties, and always be searching for ways to fully leverage them to create great experiences.
+
+[12]: https://www.thedevicesupport.org/spectrum-customer-support/
