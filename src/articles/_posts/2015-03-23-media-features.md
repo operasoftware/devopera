@@ -10,6 +10,9 @@ cover: jpg
 license: cc-by-3.0
 ---
 
+**Note: this article is now out of date.** It references an old Editor’s Draft of the Media Queries Level 4 specification, and contains a fairly big misunderstanding about how `any-hover:none` would end up being evaluated by browsers in practice. See the updated version here: [CSS-Tricks: Interaction Media Features and Their Potential (for Incorrect Assumptions)](https://css-tricks.com/interaction-media-features-and-their-potential-for-incorrect-assumptions/).
+
+
 The [Media Queries Level 4 Interaction Media Features](http://dev.w3.org/csswg/mediaqueries-4/#mf-interaction) — `pointer`, `hover` and the more recent `any-pointer` and `any-hover` — are meant to allow sites to implement different styles and functionality (either CSS-specific interactivity like `:hover`, or even JavaScript behaviours, when queried using `window.matchMedia`), depending on the particular characteristics of a user’s input modalities.
 
 **Note:** the [Media Queries Level 4 Interaction Media Features](http://dev.w3.org/csswg/mediaqueries-4/#mf-interaction) are still at the Working Draft stage, so some of the wording/functionality – as well as the way in which it is implemented in browsers – may still change before they become stable recommendations. This article is based on the specification's *Editor's Draft, 24 March 2015*.
