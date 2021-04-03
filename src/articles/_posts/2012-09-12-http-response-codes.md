@@ -167,7 +167,7 @@ Above we have looked at just a few of the available HTTP codes; there are [many 
 [11]: https://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics#section-4
 
 - `1xx` (Informational): Request received, continuing process.
-- `2xx` (Successful): The action was successfully received, understood, and accepted.
+- `2xx` (Successful): The action was successfully received, understood, and responded.
 - `3xx` (Redirection): Further action needs to be taken in order to complete the request.
 - `4xx` (Client Error): The request contains bad syntax or cannot be fulfilled.
 - `5xx` (Server Error): The server failed to fulfil an apparently valid request.
