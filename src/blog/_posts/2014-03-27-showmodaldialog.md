@@ -23,7 +23,7 @@ Both documents can communicate with each other through an awkward API that is sp
 * Document A can pass data to the modal document B by using the second `showModalDialog()` parameter. The modal document B can access this data through the `window.dialogArguments` property.
 * The modal document B can pass data to the parent document A by assigning a value to `window.returnValue` and closing itself through `window.close()`, or by waiting for the user to close it.
 
-[A `showModalDialog()` demo page](/articles/showmodaldialog/demo.html) that demonstrates this is available.
+[A `showModalDialog()` demo page](/blog/showmodaldialog/demo.html) that demonstrates this is available.
 
 Another gotcha is that `window.dialogArguments` only works between same-origin documents, even if [Cross-Origin Resource Sharing](https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/) is enabled on your server.
 
