@@ -522,8 +522,8 @@ The other problem of nesting is variable names and loops. As you normally start 
 
 	function renderProfiles(o) {
 		var out = document.getElementById('profiles');
+		var ul = document.createElement('ul');
 		for(var i = 0; i < o.members.length; i++) {
-			var ul = document.createElement('ul');
 			var li = document.createElement('li');
 			li.appendChild(document.createTextNode(o.members[i].name));
 			var nestedul = document.createElement('ul');
@@ -538,6 +538,7 @@ The other problem of nesting is variable names and loops. As you normally start 
 				nestedul.appendChild(datali);
 			}
 			li.appendChild(nestedul);
+			ul.appendChild(li);
 		}
 		out.appendChild(ul);
 	}
@@ -546,26 +547,27 @@ As I am using the generic — really throw-away — variable names `ul` and `li`
 
 	function renderProfiles(o) {
 		var out = document.getElementById('profiles');
+		var ul = document.createElement('ul');
 		for(var i = 0; i < o.members.length; i++) {
-			var ul = document.createElement('ul');
 			var li = document.createElement('li');
-			li.appendChild(document.createTextNode(data.members[i].name));
-			li.appendChild(addMemberData(o.members[i]));
+			li.appendChild(document.createTextNode(o.members[i].name));
+			li.appendChild(addMemberData(o.members[i].data));
+			ul.appendChild(li);
 		}
 		out.appendChild(ul);
 	}
-	function addMemberData(member) {
+	function addMemberData(data) {
 		var ul = document.createElement('ul');
-		for(var i = 0; i < member.data.length; i++) {
+		for(var i = 0; i < data.length; i++) {
 			var li = document.createElement('li');
 			li.appendChild(
 				document.createTextNode(
-					member.data[i].label + ' ' +
-					member.data[i].value
+					data[i].label + ' ' +
+					data[i].value
 				)
 			);
+			ul.appendChild(li);
 		}
-		ul.appendChild(li);
 		return ul;
 	}
 
