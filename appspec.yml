@@ -5,3 +5,13 @@ os: linux
 files:
   - source: dest
     destination: /var/www/html
+
+branch_config:
+  master:
+    deploymentGroupName: MainBackends
+    deploymentConfig:
+      revision:
+        s3Location:
+          bucket: dev-opera
+          bundleType: tgz
+          key: latest/dev-opera.tar.gz
