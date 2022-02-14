@@ -75,3 +75,10 @@ You should be careful about overusing vw units: I especially wouldn’t recommen
 ## Summary
 
 That’s it! I hope you think viewport units are as cool as I do, and I’ll look forward to seeing what you create with them. Well, when I say viewport units are cool — I am pretty much just talking about `vw` and `vh`; I can’t think of a specific use case for `vmin` or `vmax`. If you have got one, I’d love to hear from you.
+
+## Learn More
+Unit is a core concept to learn in CSS, there are timely updates on how CSS units and values should be used. In addition to this article, below are some related resources to learn more.
+* [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+) from MDN
+* [Learn CSS values and units by examples](https://lyty.dev/css/css-unit.html) from Lyty.dev
+* [Sizing units](https://web.dev/learn/css/sizing/) from Web.dev
