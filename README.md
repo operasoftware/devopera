@@ -1,4 +1,4 @@
-# Dev.Opera [![Build status](https://travis-ci.org/operasoftware/devopera.svg?branch=master)](https://travis-ci.org/operasoftware/devopera)
+# Dev.Opera [![Build status](https://github.com/operasoftware/devopera/actions/workflows/jekyll.yml/badge.svg)](https://github.com/operasoftware/devopera/actions/workflows/jekyll.yml)
 
 We’ve rebuilt [Dev.Opera](https://dev.opera.com/) as a static site, powered by Jekyll, Sass, and Gulp. In this repository, you find all the source files and content to build the site, [make improvements](CONTRIBUTING.md#code-improvements), and [submit new articles](CONTRIBUTING.md#article-suggestions--contributions).
 
