@@ -11,7 +11,6 @@ tags:
 - ethereum browser
 license: cc-by-3.0
 ---
-# Opera Wallet Integration Guide
 
 Opera is one of the most popular browsers in the world, with more than 350 million active users. Opera’s built-in Crypto Wallet helps users access the world of Web3 without the complicated setup of other wallet applications.
 
