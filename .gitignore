@@ -2,6 +2,7 @@
 Thumbs.db
 dest
 .jekyll-metadata
+.jekyll-cache
 .sass-cache
 node_modules
 src/styles/*.css
