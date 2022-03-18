@@ -44,7 +44,11 @@ if(window.ethereum){
 }
 ```
 ### Opera Wallet Connection Button
-If you want the user to click “Connect Opera Wallet” themselves, simply apply the same instructions to display Opera Wallet as a connection option for the user. Please make sure the design of the button fits Opera’s [brand guideline](https://brand.opera.com).
+When adding Opera Crypto Wallet as an option in the wallet connection panel, please use the official Opera Wallet logo. 
+
+![Opera Wallet Logo](https://lh6.googleusercontent.com/MyqY0TBos2G5PprSazvsm2FTceS9-o7vg97tCJvncTQSPHOCw6cqEcz2TD3AXowGK3-qinTU8GH5KT6lhmuhg511NwWPvi0OMqSJva2h65tNU7mfUxDxenVcMVEn9RtEGtwr0l6W)
+
+To download the Opera Crypto Wallet logo, please click [here](https://brand.opera.com/wp-content/uploads/sites/6/2022/02/Opera-Wallet-Logo-Sets.zip).
 
 ## Alternative Approach
 The following libraries also allow you to connect to the Opera Wallet:
