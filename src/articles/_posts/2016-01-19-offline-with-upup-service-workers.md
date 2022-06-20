@@ -186,7 +186,7 @@ The scope that the ServiceWorker can affect is determined by where you’ve plac
 
 This is why it’s important to place both files on the same server as your content, and not in a subdirectory. This should ideally be in the root of your site (e.g. `https://yoursite.com/upup.min.js`).
 
-## What’s Next?
+## What’s Next??
 
 It’s hard not to be excited about all the new possibilities ServiceWorker opens up to us as developers.
 
