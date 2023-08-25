@@ -367,9 +367,10 @@ We can now call the `computeMatrix()` function whenever we like, typically durin
 
 ### Using Quaternions {#quaternions}
 
-A [quaternion][27] can be used as another alternative representation for device orientation. A quaternion itself consists of two things. Firstly, every quaternion has an x, y and z component that represents the axis about which a device rotation occurs. Secondly, every quaternion has a w component that represents the amount of rotation that will occur about this axis. With these four numbers it is possible to describe device orientation perfectly while also avoiding introducing the problem of gimbal lock.
+A unit [quaternion][27] can be used as another alternative representation for device orientation. A quaternion is basically a four dimensional vector, where the x, y and z components encode the axis and the w component encodes the angle about that axis. Besides avoiding the so called gimbal lock, quaternions also have the advantage that only addition and multiplication is required to rotate objects in space. This brings a huge performance gain and is numerically more stable. Another advantage of quaternions is that spherical interpolation is easier to look from one point to another, but here libraries such as [Quaternion.js][46] can avoid digging into the math.
 
 [27]: https://en.wikipedia.org/wiki/Quaternion
+[46]: https://github.com/rawify/Quaternion.js
 
 Based on the practical considerations we explained above, we need to follow three steps to create a quaternion we can use in our web application.
 
@@ -391,7 +392,7 @@ This can be represented in JavaScript as follows:
 	var degtorad = Math.PI / 180; // Degree-to-Radian conversion
 
 	function getBaseQuaternion( alpha, beta, gamma ) {
-		var _x = beta  ? beta- degtorad : 0; // beta value
+		var _x = beta  ? beta * degtorad : 0; // beta value
 		var _y = gamma ? gamma * degtorad : 0; // gamma value
 		var _z = alpha ? alpha * degtorad : 0; // alpha value
 
@@ -406,10 +407,10 @@ This can be represented in JavaScript as follows:
 		// ZXY quaternion construction.
 		//
 
-		var w = cX * cY * cZ - sX * sY * sZ;
-		var x = sX * cY * cZ - cX * sY * sZ;
-		var y = cX * sY * cZ + sX * cY * sZ;
-		var z = cX * cY * sZ + sX * sY * cZ;
+		var w = sY * sX * sZ + cY * cX * cZ;
+		var x = sY * sZ * cX + sX * cY * cZ;
+		var y = sY * cX * cZ - sX * sZ * cY;
+		var z = sZ * cY * cX - sY * sX * cZ;
 
 		return [ w, x, y, z ];
 	}
