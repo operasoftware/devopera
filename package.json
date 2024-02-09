@@ -14,7 +14,7 @@
     "gulp-shell": "^0.5.2",
     "hash-files": "^1.1.1",
     "merge-stream": "^1.0.0",
-    "open": "0.0.5",
+    "open": "6.0.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
     "sass-mq": "^3.3.0-beta.3",
