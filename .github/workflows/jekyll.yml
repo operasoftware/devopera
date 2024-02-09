@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Build the site in a container
       run: |
         docker run \
@@ -23,13 +23,13 @@ jobs:
       run: |
         zip -r dev-opera.zip appspec.yml dest
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2
     - name: Create AWS CodeDeploy deployment
-      uses: sourcetoad/aws-codedeploy-action@v1.3.0
+      uses: sourcetoad/aws-codedeploy-action@v1.8.1
       with:
         aws_region: us-west-2
         s3_bucket: dev-opera
